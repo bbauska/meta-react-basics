@@ -1,12 +1,12 @@
-# meta / React Basics
-<p7>(meta-react-basics)</p7>
+# meta (Coursera) / React Basics
+<p5>(meta-react-basics)</p5>
 
-<p5>(Coursera/meta)</p5>
+<p7>(Coursera/meta)</p7>
 
-![image01](./images/image01.png)
+![Coursera](./images/image01.png)
 <!-- {width="1.549261811023622in" height="0.5in"} -->
 
-![image02](./images/image02.png)
+![meta logo](./images/image02.png)
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
 
 React is a powerful JavaScript library that you can use to build user
@@ -53,15 +53,15 @@ To succeed in this course, you do not need prior development experience,
 only basic internet navigation skills and an eagerness to get started
 with coding.
 
-# 1.Introduction to the course: React Basics
+## 1.Introduction to the course: React Basics
 
 Welcome to React basics.
 
 In this course, you\'ll be introduced to the basics of working with
 React.
 
-![](./images/image03.png){width="4.0in"
-height="2.5479451006124236in"}
+![](./images/image03.png)
+<!-- {width="4.0in" height="2.5479451006124236in"} -->
 
 During this module, you\'ll learn how to develop a working familiarity
 with a basic structure and use of the React.js library.
@@ -83,8 +83,9 @@ You\'ll explore components in more detail later in this module.
 For now, it\'s enough for you to know that every website\'s UI is built
 on a foundation of components and composability.
 
-![](./images/image04.png){width="4.0in"
-height="1.6605293088363955in"}
+![](./images/image04.png)
+
+<!-- {width="4.0in" height="1.6605293088363955in"} -->
 
 Simple components combined into more complex ones, which eventually
 merge to form a website.
@@ -104,16 +105,16 @@ with state in React apps.
 
 You\'ll learn a lot more about state, you go through the course.
 
-![](./images/image05.png){width="5.0in"
-height="1.949206036745407in"}
+![](./images/image05.png)
+<!-- {width="5.0in" height="1.949206036745407in"} -->
 
 But for now, here\'s a simple definition of state.
 
 **State is simply all the values of all the variables your app is
 working with at any given point in time.**
 
-![](./images/image06.png){width="4.0in"
-height="2.840391513560805in"}
+![](./images/image06.png)
+<!-- {width="4.0in" height="2.840391513560805in"} -->
 
 As you progress through this course, you\'ll also learn about how to
 style your React apps, which includes the reuse of common styles.
