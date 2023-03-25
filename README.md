@@ -1,10 +1,10 @@
 (Coursera/meta)
 
-![](./images/image01.png){width="1.549261811023622in"
-height="0.5in"}
+![](./images/image01.png)
+<!-- {width="1.549261811023622in" height="0.5in"} -->
 
-![](./images/image02.png){width="1.0175437445319335in"
-height="0.5in"}
+![](./images/image02.png)
+<!-- {width="1.0175437445319335in" height="0.5in"} -->
 
 React is a powerful JavaScript library that you can use to build user
 interfaces for web and mobile applications (apps).
