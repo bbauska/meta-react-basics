@@ -1,9 +1,12 @@
-(Coursera/meta)
+# meta / React Basics
+<p7>(meta-react-basics)</p7>
 
-![](./images/image01.png)
+<p5>(Coursera/meta)</p5>
+
+![image01](./images/image01.png)
 <!-- {width="1.549261811023622in" height="0.5in"} -->
 
-![](./images/image02.png)
+![image02](./images/image02.png)
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
 
 React is a powerful JavaScript library that you can use to build user
