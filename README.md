@@ -2,11 +2,25 @@
 <p5>(meta-react-basics)</p5>
 
 <p7>(Coursera/meta)</p7>
-
-![Coursera](./images/image01.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-------------------------------- readme.md in LFS170x.bauska.org ------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------------------------- 01. linux logo (01) -------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image01.png?raw=true"
+   alt="Coursera logo."
+   width="15%" />
+</p>
 <!-- {width="1.549261811023622in" height="0.5in"} -->
-
-![meta logo](./images/image02.png)
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!------------------------------------- 02. meta logo (01) -------------------------------------->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image02.png?raw=true"
+   alt="meta logo."
+   width="10%" />
+</p>
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
 
 React is a powerful JavaScript library that you can use to build user
@@ -57,10 +71,13 @@ with coding.
 
 Welcome to React basics.
 
-In this course, you\'ll be introduced to the basics of working with
-React.
+In this course, you\'ll be introduced to the basics of working with React.
 
-![](./images/image03.png)
+<p align="center" width="100%">
+<img src="/images/image03.png?raw=true"
+   alt="Basicss of working with React.Linux logo"
+   width="40%" />
+</p>
 <!-- {width="4.0in" height="2.5479451006124236in"} -->
 
 During this module, you\'ll learn how to develop a working familiarity
