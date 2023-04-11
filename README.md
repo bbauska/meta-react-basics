@@ -7,7 +7,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image001.png?raw=true"
+<img src="/images/image01.png?raw=true"
    alt="Coursera logo."
    width="15%" />
 </p>
@@ -16,7 +16,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image002.png?raw=true"
+<img src="/images/image02.png?raw=true"
    alt="meta logo."
    width="10%" />
 </p>
@@ -73,7 +73,7 @@ Welcome to React basics.
 In this course, you\'ll be introduced to the basics of working with React.
 
 <p align="center" width="100%">
-<img src="/images/image003.png?raw=true"
+<img src="/images/image03.png?raw=true"
    alt="Basics of working with React."
    width="40%" />
 </p>
@@ -99,7 +99,7 @@ You\'ll explore components in more detail later in this module.
 For now, it\'s enough for you to know that every website\'s UI is built
 on a foundation of components and composability.
 
-![](./images/image004.png)
+![](./images/image04.png)
 
 <!-- {width="4.0in" height="1.6605293088363955in"} -->
 
@@ -121,7 +121,7 @@ with state in React apps.
 
 You\'ll learn a lot more about state, you go through the course.
 
-![](./images/image005.png)
+![](./images/image05.png)
 <!-- {width="5.0in" height="1.949206036745407in"} -->
 
 But for now, here\'s a simple definition of state.
@@ -129,7 +129,7 @@ But for now, here\'s a simple definition of state.
 **State is simply all the values of all the variables your app is
 working with at any given point in time.**
 
-![](./images/image006.png)
+![](./images/image06.png)
 <!-- {width="4.0in" height="2.840391513560805in"} -->
 
 As you progress through this course, you\'ll also learn about how to
@@ -763,7 +763,7 @@ The labs for this course already have everything installed and setup so
 you can start working with React right away.
 
 ![Explorer panel of React
-lab](./images/image007.png){width="3.0in"
+lab](./images/image07.png){width="3.0in"
 height="1.4006627296587926in"}
 
 In order to run and view your React app you will need to open the VS
@@ -777,7 +777,7 @@ blue background. Click this link.
 That will open the app in the browser in a separate tab.
 
 ![React lab showing npm
-start](./images/image008.png){width="5.0in"
+start](./images/image08.png){width="5.0in"
 height="2.788713910761155in"}
 
 ### **To view your code and instructions side-by-side**, select the following in your VS Code toolbar:
@@ -796,7 +796,7 @@ height="2.788713910761155in"}
 -   Great work! You can now see instructions and code at the same time.
 
 ![\'Your first component exercise\' showing React lab with App.js and
-Instructions](./images/image009.png){width="6.5in"
+Instructions](./images/image09.png){width="6.5in"
 height="3.2298140857392825in"}
 
 # 7.Additional reading
@@ -883,7 +883,7 @@ can name: **firstapp**.
 In VS Code, click on *View*, *Terminal* to open the built-in terminal.
 
 ![How to access the Terminal in Visual Studio
-Code](./images/image010.png){width="5.0in"
+Code](./images/image10.png){width="5.0in"
 height="2.8125in"}
 
 Now run the command to add a brand new React app to the machine:
