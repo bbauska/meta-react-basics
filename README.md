@@ -2213,53 +2213,53 @@ Here\'s **Intro1.js:**
 Here\'s the code for the **Intro2.js** component:
 
 ```
-> function Intro2() {
->     return (
->         <div className="blog-post-intro">
->             <h2>Why I love front-end web development</h2>
->             <div>
->                 <p>In this blog post, I'll list 10 reasons why I love to work as a front-end developer.</p>
->                 <p className="link">Read more...</p>
->             </div>
->         </div>
->     );
-> };
->  
-> export default Intro2;
+function Intro2() {
+    return (
+        <div className="blog-post-intro">
+            <h2>Why I love front-end web development</h2>
+            <div>
+                <p>In this blog post, I'll list 10 reasons why I love to work as a front-end developer.</p>
+                <p className="link">Read more...</p>
+            </div>
+        </div>
+    );
+};
+ 
+export default Intro2;
 ```
 
 You can finish the previews for my blog posts with the code for
 **Intro3.js** component:
 
 ```
-> function Intro3() {
->     return (
->         <div className="blog-post-intro">
->             <h2>What's the best way to style your React apps?</h2>
->             <div>
->                 <p>There are so many options to choose from. Here's a high-level overview of the popular ones.</p>
->                 <p className="link">Read more...</p>
->             </div>
->         </div>
->     );
-> };
->  
-> export default Intro3;
+function Intro3() {
+    return (
+        <div className="blog-post-intro">
+            <h2>What's the best way to style your React apps?</h2>
+            <div>
+                <p>There are so many options to choose from. Here's a high-level overview of the popular ones.</p>
+                <p className="link">Read more...</p>
+            </div>
+        </div>
+    );
+};
+ 
+export default Intro3;
 ```
 
 There\'s just one more thing left to code, the **Footer** component, so
 here it is:
 
 ```
-> function Footer() {
->     return (
->         <div className="copyright">
->             <p>Made with love by Myself</p>
->         </div>
->     );
-> };
->  
-> export default Footer;
+function Footer() {
+    return (
+        <div className="copyright">
+            <p>Made with love by Myself</p>
+        </div>
+    );
+};
+ 
+export default Footer;
 ```
 
 Now that you have completed all the components for the app, here are a
@@ -2481,13 +2481,13 @@ Here are the contents of the Heading.js file:
 Here are the contents of the App.js file:
 
 ```
-> export default App;
->     </div>
->   );
-> }
->   return (
->     <div className="App">
->       <Heading />
+export default App;
+    </div>
+  );
+}
+  return (
+    <div className="App">
+      <Heading />
 ```
 
 Here is a screenshot of the src folder:
@@ -2530,23 +2530,17 @@ the **Heading** JSX element remains in the return statement of the App
 component. 
 
 ```
-> import Heading from "./Heading";
->
-> function App() {
->
->   return (
->
->     <div className="App">
->
->       <Heading />
->
->     </div>
->
->   );
->
-> }
->
-> export default App;
+import Heading from "./Heading";
+function App() {
+  return (
+
+    <div className="App">
+      <Heading />
+    </div>
+
+  );
+}
+export default App;
 ```
 
 <h2>syllabus</h2>
@@ -5425,14 +5419,14 @@ In the Game function, you can add the key as \<li key={move}\>, and if
 you reload the rendered game, React's "key" error should disappear:
 
 ```
-const moves = history.map((squares, move) => {
-//...
-return (
-<li key={move}>
-<button onClick={() => jumpTo(move)}>{description}</button>
-</li>
-);
-});
+  const moves = history.map((squares, move) => {
+    //...
+      return (
+      <li key={move}>
+        <button onClick={() => jumpTo(move)}>{description}</button>
+      </li>
+      );
+  });
 ```
 
 App.js
@@ -5441,37 +5435,37 @@ DownloadReset
 
 ```
 import { useState } from 'react';
-function Square({ value, onSquareClick }) {
-return (
-<button className="square" onClick={onSquareClick}>
-{value}
-</button>
-);
-}
-function Board({ xIsNext, squares, onPlay }) {
-function handleClick(i) {
-if (calculateWinner(squares) || squares[i]) {
-return;
-}
-const nextSquares = squares.slice();
-if (xIsNext) {
-nextSquares[i] = 'X';
-} else {
-nextSquares[i] = 'O';
-}
-onPlay(nextSquares);
-}
-const winner = calculateWinner(squares);
-let status;
-if (winner) {
-status = 'Winner: ' + winner;
-} else {
-status = 'Next player: ' + (xIsNext ? 'X' : 'O');
-}
-return (
-<>
-<div className="status">{status}</div>
-<div className="board-row">
+  function Square({ value, onSquareClick }) {
+    return (
+      <button className="square" onClick={onSquareClick}>
+      {value}
+      </button>
+    );
+  }
+  function Board({ xIsNext, squares, onPlay }) {
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+    nextSquares[i] = 'X';
+  } else {
+    nextSquares[i] = 'O';
+  }
+    onPlay(nextSquares);
+  }
+  const winner = calculateWinner(squares);
+    let status;
+    if (winner) {
+    status = 'Winner: ' + winner;
+    } else {
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    }
+  return (
+  <>
+    <div className="status">{status}</div>
+  <div className="board-row">
 ```
 
 Before you can implement jumpTo, you need the Game component to keep
@@ -5493,14 +5487,14 @@ You'll also set xIsNext to true if the number that you're changing
 currentMove to is even.
 
 ```
-export default function Game() {
-// ...
-function jumpTo(nextMove) {
-setCurrentMove(nextMove);
-setXIsNext(nextMove % 2 === 0);
-}
-//...
-}
+  export default function Game() {
+    // ...
+    function jumpTo(nextMove) {
+      setCurrentMove(nextMove);
+      setXIsNext(nextMove % 2 === 0);
+    }
+    //...
+  }
 ```
 
 You will now make two changes to the Game's handlePlay function which is
@@ -5516,26 +5510,26 @@ called when you click on a square.
     the latest history entry.
 
 ```
-function handlePlay(nextSquares) {
-const nextHistory = [...history.slice(0, currentMove + 1),
-nextSquares];
-setHistory(nextHistory);
-setCurrentMove(nextHistory.length - 1);
-setXIsNext(!xIsNext);
-}
+  function handlePlay(nextSquares) {
+    const nextHistory = [...history.slice(0, currentMove + 1),
+    nextSquares];
+    setHistory(nextHistory);
+    setCurrentMove(nextHistory.length - 1);
+    setXIsNext(!xIsNext);
+  }
 ```
 
 Finally, you will modify the Game component to render the currently
 selected move, instead of always rendering the final move:
 
 ```
-export default function Game() {
-const [xIsNext, setXIsNext] = useState(true);
-const [history, setHistory] = useState([Array(9).fill(null)]);
-const [currentMove, setCurrentMove] = useState(0);
-const currentSquares = history[currentMove];
-// ...
-}
+  export default function Game() {
+    const [xIsNext, setXIsNext] = useState(true);
+    const [history, setHistory] = useState([Array(9).fill(null)]);
+    const [currentMove, setCurrentMove] = useState(0);
+    const currentSquares = history[currentMove];
+    // ...
+  }
 ```
 
 If you click on any step in the game's history, the tic-tac-toe board
