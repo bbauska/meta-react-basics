@@ -1672,21 +1672,19 @@ If you\'ve visited the above-linked URL, you\'ll find a web page that
 has two panels. On the left, there\'s source JSX code:
 
 ```
-> function Heading(props) {
->
->     return <h1>{props.title}</h1>
->
-> }
+  function Heading(props) {
+    return <h1>{props.title}</h1>
+  }
 ```
 
 \... and on the right, there\'s the transpiled, plain JavaScript code:
 
 ```
-> "use strict";
->  
-> function Heading(props) {
->   return /*#__PURE__*/React.createElement("h1", null, props.title);
-> }
+ "use strict";
+  
+ function Heading(props) {
+   return /*#__PURE__*/React.createElement("h1", null, props.title);
+ }
 ```
 
 If you now analyze the difference between the source JSX code and the
@@ -1723,7 +1721,7 @@ Now let's use Babel again, and this time transpile the **render** syntax
 for the **Heading** component:
 
 ```
-> <Heading title="This is the heading text!"></Heading>
+ <Heading title="This is the heading text!"></Heading>
 ```
 
 Again using [the Babel
@@ -2112,14 +2110,14 @@ for each of the sections of the typography-focused blog. Here\'s the
 structural update:
 
 ```
-src/
+  src/
     components/
-        Nav.js
-        Promo.js
-        Intro1.js
-        Intro2.js
-        Intro3.js
-        Footer.js
+      Nav.js
+      Promo.js
+      Intro1.js
+      Intro2.js
+      Intro3.js
+      Footer.js
     App.js
     App.test.js
     index.css
@@ -2153,7 +2151,7 @@ one.
 Here's the contents of the **Nav.js** file:
 
 ```
-function Nav() {
+  function Nav() {
     return (
         <nav className="main-nav">
             <ul>
@@ -2164,7 +2162,7 @@ function Nav() {
             </ul>
         </nav>
     );
-};
+  };
 
 export default Nav;
 ```
@@ -2172,7 +2170,7 @@ export default Nav;
 Next, you can focus on the **Promo.js** file:
 
 ```
-function Promo() {
+  function Promo() {
      return (
         <div className="promo-section">
             <div>
@@ -2183,7 +2181,7 @@ function Promo() {
             </div>
         </div>
     );
-};
+  };
   
 export default Promo;
 ```
@@ -2232,7 +2230,7 @@ You can finish the previews for my blog posts with the code for
 **Intro3.js** component:
 
 ```
-function Intro3() {
+  function Intro3() {
     return (
         <div className="blog-post-intro">
             <h2>What's the best way to style your React apps?</h2>
@@ -2242,7 +2240,7 @@ function Intro3() {
             </div>
         </div>
     );
-};
+  };
  
 export default Intro3;
 ```
@@ -2251,15 +2249,15 @@ There\'s just one more thing left to code, the **Footer** component, so
 here it is:
 
 ```
-function Footer() {
+  function Footer() {
     return (
         <div className="copyright">
             <p>Made with love by Myself</p>
         </div>
     );
-};
+  };
  
-export default Footer;
+  export default Footer;
 ```
 
 Now that you have completed all the components for the app, here are a
@@ -2469,22 +2467,22 @@ a components folder.
 Here are the contents of the Heading.js file:
 
 ```
-> function Heading() {
->     return (
->         <h1>This is an h1 heading</h1>
->     )
-> }
->  
-> export default Heading;
+  function Heading() {
+    return (
+      <h1>This is an h1 heading</h1>
+    )
+  }
+  
+  export default Heading;
 ```
 
 Here are the contents of the App.js file:
 
 ```
-export default App;
+  export default App;
     </div>
-  );
-}
+    );
+  }
   return (
     <div className="App">
       <Heading />
@@ -2506,11 +2504,11 @@ height="1.220472440944882in"}
 component file, named "Heading.js".
 
 ```
-function Heading() {
+  function Heading() {
     return (
-        <h1>This is an h1 heading</h1>
+      <h1>This is an h1 heading</h1>
     )
-}
+  }
 ```
  
 ```
@@ -2521,7 +2519,7 @@ export default Heading;
 **App** component. 
 
 ```
-import Heading from "./Heading";
+  import Heading from "./Heading";
 ```
 
 **Step 3:** Finally, you removed the sentence that reads: *This is the
@@ -2916,16 +2914,14 @@ into a shared parent, like a \<div\>\...\</div\> or an empty
 <>...</> wrapper:
 
 ```
-function AboutPage() {
-
-return (
-
-<>
-<h1>About</h1>
-<p>Hello there.<br />How do you do?</p>
-</>
-);
-}
+  function AboutPage() {
+    return (
+    <>
+    <h1>About</h1>
+    <p>Hello there.<br />How do you do?</p>
+    </>
+    );
+  }
 ```
 
 If you have a lot of HTML to port to JSX, you can use an [online
@@ -2939,16 +2935,16 @@ as the HTML
 attribute:
 
 ```
-<img className="avatar" />
+  <img className="avatar" />
 ```
 
 Then you write the CSS rules for it in a separate CSS file:
 
 ```
-/* In your CSS */
-.avatar {
-border-radius: 50%;
-}
+  /* In your CSS */
+  .avatar {
+  border-radius: 50%;
+  }
 ```
 
 React does not prescribe how you add CSS files. In the simplest case,
@@ -2964,11 +2960,11 @@ back" into JavaScript so that you can embed some variable from your code
 and display it to the user. For example, this will display user.name:
 
 ```
-return (
-<h1>
-{user.name}
-</h1>
-);
+  return (
+    <h1>
+      {user.name}
+    </h1>
+  );
 ```
 
 You can also "escape into JavaScript" from JSX attributes, but you have
@@ -2978,12 +2974,12 @@ src={user.imageUrl} reads the JavaScript user.imageUrl variable value,
 and then passes that value as the src attribute:
 
 ```
-return (
-<img
-className="avatar"
-src={user.imageUrl}
-/>
-);
+  return (
+    <img
+      className="avatar"
+      src={user.imageUrl}
+    />
+  );
 ```
 
 You can put more complex expressions inside the JSX curly braces too,
@@ -4784,13 +4780,13 @@ check at the same time you check if a user has clicked a square that
 already has a X or and O. We'd like to return early in both cases:
 
 ```
-function handleClick(i) {
-if (squares[i] || calculateWinner(squares)) {
-return;
-}
-const nextSquares = squares.slice();
-//...
-}
+  function handleClick(i) {
+    if (squares[i] || calculateWinner(squares)) {
+      return;
+    }
+  const nextSquares = squares.slice();
+  //...
+  }
 ```
 
 To let the players know when the game is over, you can display text such
