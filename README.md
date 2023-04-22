@@ -603,9 +603,9 @@ A module can be as simple as a single function in a separate file.
 Consider the following function declaration:
 
 ```
-> function addTwo(a, b) {
->     console.log(a + b);
-> }
+  function addTwo(a, b) {
+    console.log(a + b);
+  }
 ```
 
 Say that you have a file named **addTwo.js** that contains only the
@@ -939,29 +939,28 @@ Success! Created firstapp at /home/pc/Desktop/firstapp
 Inside that directory, you can run several commands:
 
 ```
-> $ npm start
+$ npm start
 ```
 
 Starts the development server.
 
 ```
-> $ npm run build
+$ npm run build
 ```
 
 Bundles the app into static files for production.
 
 ```
-> npm test
+$ npm test
 ```
 
 Starts the test runner.
 
 ```
-> $ npm run eject
+$ npm run eject
 ```
 
 Removes this tool and copies build dependencies, configuration files
-
 and scripts into the app directory. If you do this, you can't go back!
 
 If you follow the suggestions from the above output, you\'ll run: **cd
@@ -1605,7 +1604,9 @@ code.
 To understand why this is done, here is an example of an ES6 variable
 declaration:
 
-const PI = 3.14
+```
+  const PI = 3.14
+```
 
 This is perfectly valid ES6 syntax.
 
@@ -1619,7 +1620,7 @@ computer\'s browser is likely to be an ES5 JavaScript engine.
 In ES5, the only way to declare a variable is the following:
 
 ```
-> var pi = 3.14
+  var pi = 3.14
 ```
 
 What this means is that for this old browser to understand the ES6 code,
@@ -1673,18 +1674,18 @@ has two panels. On the left, there\'s source JSX code:
 
 ```
   function Heading(props) {
-    return <h1>{props.title}</h1>
+    return <h1>{props.title}</h1>
   }
 ```
 
 \... and on the right, there\'s the transpiled, plain JavaScript code:
 
 ```
- "use strict";
+  "use strict";
   
- function Heading(props) {
-   return /*#__PURE__*/React.createElement("h1", null, props.title);
- }
+  function Heading(props) {
+    return /*#__PURE__*/React.createElement("h1", null, props.title);
+  }
 ```
 
 If you now analyze the difference between the source JSX code and the
@@ -1692,7 +1693,7 @@ transpiled, plain JavaScript code, dis-regarding the comment, here's
 the body of the Heading function:
 
 ```
-> React.createElement("h1", null, props.title);
+  React.createElement("h1", null, props.title);
 ```
 
 So, here you have a React object, and this object has a
@@ -1721,7 +1722,7 @@ Now let's use Babel again, and this time transpile the **render** syntax
 for the **Heading** component:
 
 ```
- <Heading title="This is the heading text!"></Heading>
+  &lt;Heading title="This is the heading text!"&gt;&lt;/Heading&gt;
 ```
 
 Again using [the Babel
@@ -1731,12 +1732,12 @@ link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20i
 the output of the tranpilation is the following code:
 
 ```
-"use strict";
+  "use strict";
   
-/*#__PURE__*/
-React.createElement(Heading, {
-  title: "This is the heading text!"
-});
+  /*#__PURE__*/
+  React.createElement(Heading, {
+    title: "This is the heading text!"
+  });
 ```
 
 Again, you have the **React.createElement()** method call, and this
@@ -1751,10 +1752,10 @@ rendered?
 You can see the answer below:
 
 ```
-function Example() {
-return <div>An element</div>
-}
-export default Example
+  function Example() {
+    return &lt;div&gt;An element&lt;/div&gt;
+    }
+  export default Example
 ```
 
 <h2>13. Solution: Your first component</h2>
@@ -1762,21 +1763,21 @@ export default Example
 Here is the completed solution code for the App.js file:
 
 ```
-function Heading() { 
-  return ( 
-    <h1>This is an h1 heading.</h1> 
-  ) 
-} 
- 
-function App() { 
-  return ( 
-    <div className="App"> 
-      This is the starting code for "Your first component" ungraded lab 
-      <Heading /> 
-    </div> 
-  ); 
-} 
- 
+  function Heading() { 
+    return ( 
+      &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
+    )
+  }
+
+  function App() { 
+    return ( 
+      &lt;div className="App"&gt;
+        This is the starting code for "Your first component" ungraded lab
+        &lt;Heading /&gt;
+      &lt;/div&gt;
+    ); 
+  } 
+
 export default App;
 ```
 
@@ -1791,14 +1792,14 @@ named **\<Heading /\>** , being rendered from the App component, since
 it is a part of the App component\'s return statement.
 
 ```
-function App() { 
-  return ( 
-    <div className="App"> 
-      This is the starting code for "Your first component" ungraded lab 
-      <Heading /> 
-    </div> 
-  ); 
-} 
+  function App() { 
+    return ( 
+      &lt;div className="App"&gt;
+        This is the starting code for "Your first component" ungraded lab 
+        &lt;Heading /&gt;
+      &lt;/div&gt;
+    );
+  }
 ```
  
 ```
@@ -1819,21 +1820,21 @@ return statement and spread it over several lines by following it up
 with an opening and a closing parenthesis.
 
 ```
-function Heading() { 
-  return (
-  )
-}
+  function Heading() { 
+    return (
+    )
+  }
 ```
 
 **Step 3:** Then, inside the parentheses, you added the following code: 
 
 ```
-<h1>This is an h1 heading</h1>
-function Heading() { 
-  return ( 
-    <h1>This is an h1 heading.</h1> 
-  ) 
-} 
+  &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+   function Heading() { 
+     return ( 
+     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
+     )
+   }
 ```
 
 **Step 4:** Finally, you saved your changes and viewed the app in the
@@ -1893,7 +1894,7 @@ displayed to the user in your app.
 For example, image files for logos, the favicon, which displays an icon
 in the browser tab, and the robots.txt file, which is used for search
 
-engine optimization.
+<h4>engine optimization</h4>
 
 Also, there is a manifest.json file, which is used to provide some
 metadata to a device when you\'re React powered web app is installed on
@@ -2081,7 +2082,7 @@ This will produce a brand-new starter app with a familiar structure.
 Inspecting the **src** folder of the starter app, it looks like this:
 
 ```
-src/
+  src/
     App.js
     App.test.js
     index.css
@@ -2094,7 +2095,7 @@ src/
 Then simply add a components folder to it, like this:
 
 ```
-src/
+  src/
     components/
     App.js
     App.test.js
