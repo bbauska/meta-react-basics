@@ -806,9 +806,19 @@ blue background. Click this link.
 
 That will open the app in the browser in a separate tab.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. react lab showing npm start (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image08.png?raw=true"
+  alt="React lab showing npm start."
+  width="50%;" />
+</p>
+<!--
 ![React lab showing npm
 start](./images/image08.png){width="5.0in"
 height="2.788713910761155in"}
+-->
 
 <h4>**To view your code and instructions side-by-side**, select the following in your VS Code toolbar:</h4>
 
@@ -825,9 +835,19 @@ height="2.788713910761155in"}
 
 -   Great work! You can now see instructions and code at the same time.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~ 09. your first component exercise showing react lab with app.js and instructions (##) ~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image09.png?raw=true"
+  alt="Your first component exercise showing React lab with App.js and Instructions."
+  width="65%;" />
+</p>
+<!--
 ![\'Your first component exercise\' showing React lab with App.js and
 Instructions](./images/image09.png){width="6.5in"
 height="3.2298140857392825in"}
+-->
 
 <h2>7. Additional reading</h2>
 
@@ -912,10 +932,19 @@ can name: **firstapp**.
 <h3>**Opening the built-in VS Code terminal and running** *npm init react-app* **command**</h3>
 
 In VS Code, click on *View*, *Terminal* to open the built-in terminal.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 10. how to access the terminal in vs code (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image10.png?raw=true"
+  alt="How to access the terminal in Visual Studio (piece of shit) code."
+  width="50%;" />
+</p>
+<!--
 ![How to access the Terminal in Visual Studio
 Code](./images/image10.png){width="5.0in"
 height="2.8125in"}
+-->
 
 Now run the command to add a brand new React app to the machine:
 
