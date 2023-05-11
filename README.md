@@ -3688,17 +3688,35 @@ return (
 ```
 
 Now you should see:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 33. two x-filled squares (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image33.png?raw=true"
+  alt="Two X-filled squares."
+  width="16%" />
+</p>
+<!--
 ![two x-filled
 squares](./images/image33.png){width="1.6041666666666667in"
 height="0.9166666666666666in"}
+-->
 
 Great! Now you just need to copy-paste a few times to add nine squares
 and...
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 34. nine x-filled squares in a line (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image34.png?raw=true"
+  alt="Nine X-filled squares in a line."
+  width="65%" />
+</p>
+<!--
 ![nine x-filled squares in a
 line](./images/image34.png){width="6.458333333333333in"
 height="1.0in"}
+-->
 
 Oh no! The squares are all in a single line, not in a grid like you need
 for our board. To fix this you'll need to group your squares into rows
@@ -3734,10 +3752,19 @@ return (
 The CSS defined in styles.css styles the divs with the className of
 board-row. Now that you've grouped your components into rows with the
 styled divs you have your tic-tac-toe board:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 35. tic-tac-toe board filled with 1-9 (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image35.png?raw=true"
+  alt="Tic-Tac-Toe board filled with numbers 1 through 9."
+  width="25%" />
+</p>
+<!--
 ![tic-tac-toe board filled with numbers 1 through
 9](./images/image35.png){width="2.4583333333333335in"
 height="2.4583333333333335in"}
+-->
 
 But you now have a problem. Your component named Square, really isn't a
 square anymore. Let's fix that by changing the name to Board:
@@ -3838,9 +3865,18 @@ Note how unlike the browser divs, your own components Board and Square
 must start with a capital letter.
 
 Let's take a look:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 36. one-filled board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image36.png?raw=true"
+  alt="One-filled board."
+  width="23%" />
+</p>
+<!--
 ![one-filled board](./images/image36.png){width="2.3125in"
 height="2.375in"}
+-->
 
 Oh no! You lost the numbered squares you had before. Now each square
 says "1". To fix this, you will use *props* to pass the value each
@@ -3868,10 +3904,18 @@ return <button className="square">value</button>;
 ```
 
 Oops, this is not what you wanted:
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 37. value-filled board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image37.png?raw=true"
+  alt="Value-filled board."
+  width="31%" />
+</p>
+<!--
 ![value-filled board](./images/image37.png){width="3.125in"
 height="2.6041666666666665in"}
+-->
 
 You wanted to render the JavaScript variable called value from your
 component, not the word "value". To "escape into JavaScript" from JSX,
@@ -3884,9 +3928,18 @@ return <button className="square">{value}</button>;
 ```
 
 For now, you should see an empty board:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image38.png?raw=true"
+  alt="Empty board."
+  width="24%" />
+</p>
+<!--
 ![empty board](./images/image38.png){width="2.375in"
 height="2.3333333333333335in"}
+-->
 
 This is because the Board component hasn't passed the value prop to each
 Square component it renders yet. To fix it you'll add the value prop to
@@ -3917,10 +3970,19 @@ return (
 ```
 
 Now you should see a grid of numbers again:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 35. tic-tac-toe board filled with number 1-9 (pg #) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image35.png?raw=true"
+  alt="Tic-Tac-Toe board filled with numbers 1 through 9."
+  width="25%" />
+</p>
+<!--
 ![tic-tac-toe board filled with numbers 1 through
 9](./images/image35.png){width="2.4583333333333335in"
 height="2.4583333333333335in"}
+-->
 
 Your updated code should look like this:
 
@@ -4073,8 +4135,17 @@ React to re-render that Square whenever its \<button\> is clicked. After
 the update, the Square's value will be \'X\', so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:
 
-![adding xes to board](./images/image39.gif){width="2.5in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 39. adding x's to board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image39.png?raw=true"
+  alt="Adding X's to board."
+  width="25%" />
+</p>
+<!-- ![adding xes to board](./images/image39.gif){width="2.5in"
 height="2.5625in"}
+-->
 
 Each Square has its own state: the value stored in each Square is
 completely independent of the others. When you call a set function in a
@@ -6296,7 +6367,6 @@ If want to try using React in your existing app or a website, <a href="https://r
 
 <h4>Next steps</h4>
 
-Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of
-the most important React concepts you will encounter every day.
+<p>Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.</p>
 
-<h7>1:53pm 5-11-23 meta-react-basics markdown</h7>
+<h6>1:53pm 5-11-23 meta-react-basics markdown</h6>
