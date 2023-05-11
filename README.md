@@ -4029,23 +4029,23 @@ the Board component:
 ```
 // ...
 export default function Board() {
-return (
-<>
-<div className="board-row">
-<Square />
-<Square />
-<Square />
-</div>
-<div className="board-row">
-<Square />
-<Square />
-<Square />
-</div>
-<div className="board-row">
-<Square />
-<Square />
-<Square />
-</div>
+  return (
+  <>
+  <div className="board-row">
+    <Square />
+    <Square />
+    <Square />
+  </div>
+  <div className="board-row">
+    <Square />
+    <Square />
+    <Square />
+  </div>
+  <div className="board-row">
+    <Square />
+    <Square />
+    <Square />
+  </div>
 </>
 );
 }
@@ -4057,18 +4057,18 @@ Square component looks like this:
 
 ```
 function Square() {
-const [value, setValue] = useState(null);
+  const [value, setValue] = useState(null);
 function handleClick() {
-setValue('X');
+  setValue('X');
 }
-return (
-<button
-className="square"
-onClick={handleClick}
->
-{value}
-</button>
-);
+  return (
+  <button
+    className="square"
+    onClick={handleClick}
+    >
+    {value}
+  </button>
+  );
 }
 ```
 
@@ -4092,37 +4092,37 @@ DownloadReset
 
 ```
 import { useState } from 'react';
-function Square() {
-const [value, setValue] = useState(null);
-function handleClick() {
-setValue('X');
-}
-return (
-<button
-className="square"
-onClick={handleClick}
->
-{value}
-</button>
-);
-}
-export default function Board() {
-return (
-<>
-<div className="board-row">
-<Square />
-<Square />
-<Square />
-</div>
-<div className="board-row">
-<Square />
-<Square />
-<Square />
-</div>
-<div className="board-row">
-<Square />
-<Square />
-<Square />
+  function Square() {
+    const [value, setValue] = useState(null);
+    function handleClick() {
+      setValue('X');
+    }
+    return (
+      <button
+        className="square"
+        onClick={handleClick}
+        >
+        {value}
+      </button>
+    );
+  }
+  export default function Board() {
+  return (
+  <>
+  <div className="board-row">
+    <Square>
+    <Square>
+    <Square>
+  </div>
+  <div className="board-row">
+    <Square>
+    <Square>
+    <Square>
+  </div>
+  <div className="board-row">
+    <Square>
+    <Square>
+    <Square>
 ```
 
 <h4>React Developer Tools</h4>
@@ -4208,10 +4208,10 @@ array of 9 nulls corresponding to the 9 squares:
 ```
 // ...
 export default function Board() {
-const [squares, setSquares] = useState(Array(9).fill(null));
-return (
-// ...
-);
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+  // ...
+  );
 }
 ```
 
@@ -4231,25 +4231,25 @@ Square that it renders:
 ```
 export default function Board() {
 const [squares, setSquares] = useState(Array(9).fill(null));
-return (
-<>
-<div className="board-row">
-<Square value={squares[0]} />
-<Square value={squares[1]} />
-<Square value={squares[2]} />
-</div>
-<div className="board-row">
-<Square value={squares[3]} />
-<Square value={squares[4]} />
-<Square value={squares[5]} />
-</div>
-<div className="board-row">
-<Square value={squares[6]} />
-<Square value={squares[7]} />
-<Square value={squares[8]} />
-</div>
+  return (
+  <>
+  <div className="board-row">
+    <Square value={squares[0]} />
+    <Square value={squares[1]} />
+    <Square value={squares[2]} />
+  </div>
+  <div className="board-row">
+    <Square value={squares[3]} />
+    <Square value={squares[4]} />
+    <Square value={squares[5]} />
+  </div>
+  <div className="board-row">
+    <Square value={squares[6]} />
+    <Square value={squares[7]} />
+    <Square value={squares[8]} />
+  </div>
 </>
-);
+  );
 }
 ```
 
@@ -4259,7 +4259,7 @@ own stateful tracking of value and the button's onClick prop:
 
 ```
 function Square({value}) {
-return <button className="square">{value}</button>;
+  return <button className="square">{value}</button>;
 }
 ```
 
@@ -4288,29 +4288,29 @@ Fork
 ```
 import { useState } from 'react';
 function Square({ value }) {
-return <button className="square">{value}</button>;
+  return <button className="square">{value}</button>;
 }
-export default function Board() {
-const [squares, setSquares] = useState(Array(9).fill(null));
-return (
-<>
-<div className="board-row">
-<Square value={squares[0]} />
-<Square value={squares[1]} />
-<Square value={squares[2]} />
-</div>
-<div className="board-row">
-<Square value={squares[3]} />
-<Square value={squares[4]} />
-<Square value={squares[5]} />
-</div>
-<div className="board-row">
-<Square value={squares[6]} />
-<Square value={squares[7]} />
-<Square value={squares[8]} />
-</div>
-</>
-);
+  export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+    <>
+    <div className="board-row">
+      <Square value={squares[0]} />
+      <Square value={squares[1]} />
+      <Square value={squares[2]} />
+    </div>
+    <div className="board-row">
+      <Square value={squares[3]} />
+      <Square value={squares[4]} />
+      <Square value={squares[5]} />
+    </div>
+    <div className="board-row">
+      <Square value={squares[6]} />
+      <Square value={squares[7]} />
+      <Square value={squares[8]} />
+    </div>
+    </>
+  );
 }
 ```
 
@@ -4344,11 +4344,11 @@ props:
 
 ```
 function Square({ value, onSquareClick }) {
-return (
-<button className="square" onClick={onSquareClick}>
-{value}
-</button>
-);
+  return (
+  <button className="square" onClick={onSquareClick}>
+    {value}
+  </button>
+  );
 }
 ```
 
@@ -4360,12 +4360,12 @@ first Square component:
 ```
 export default function Board() {
 const [squares, setSquares] = useState(Array(9).fill(null));
-return (
-<>
-<div className="board-row">
-<Square value={squares[0]} onSquareClick={handleClick} />
-//...
-);
+  return (
+    <>
+    <div className="board-row">
+      <Square value={squares[0]} onSquareClick={handleClick} />
+      //...
+  );
 }
 ```
 
@@ -4374,15 +4374,15 @@ component to update the squares array holding your board's state:
 
 ```
 export default function Board() {
-const [squares, setSquares] = useState(Array(9).fill(null));
-function handleClick() {
-const nextSquares = squares.slice();
-nextSquares[0] = "X";
-setSquares(nextSquares);
-}
-return (
-// ...
-)
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  function handleClick() {
+    const nextSquares = squares.slice();
+    nextSquares[0] = "X";
+    setSquares(nextSquares);
+  }
+  return (
+    // ...
+  )
 }
 ```
 
@@ -4414,15 +4414,15 @@ index of the square to update:
 ```
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
-    function handleClick(i) {
-      const nextSquares = squares.slice();
-      nextSquares[i] = "X";
-      setSquares(nextSquares);
-    }
-    return (
-      // ...
-    )
+  function handleClick(i) {
+    const nextSquares = squares.slice();
+    nextSquares[i] = "X";
+    setSquares(nextSquares);
   }
+  return (
+    // ...
+  )
+}
 ```
 
 Next, you will need to pass that i to handleClick. You could try to set
@@ -4464,13 +4464,13 @@ name is too verbose. Instead, let's do this:
 ```
 export default function Board() {
   // ...
-    return (
+  return (
     <>
     <div className="board-row">
-      <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-    // ...
-    );
-  }
+    <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+      // ...
+  );
+}
 ```
 
 Notice the new () =\> syntax. Here, () =\> handleClick(0) is an *arrow
@@ -4534,36 +4534,36 @@ DownloadReset
 ```
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
-return (
-<button className="square" onClick={onSquareClick}>
-{value}
-</button>
-);
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
 }
 export default function Board() {
 const [squares, setSquares] = useState(Array(9).fill(null));
-function handleClick(i) {
-const nextSquares = squares.slice();
-nextSquares[i] = 'X';
-setSquares(nextSquares);
-}
-return (
-<>
-<div className="board-row">
-<Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-<Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-<Square value={squares[2]} onSquareClick={() => handleClick(2)} />
-</div>
-<div className="board-row">
-<Square value={squares[3]} onSquareClick={() => handleClick(3)} />
-<Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-<Square value={squares[5]} onSquareClick={() => handleClick(5)} />
-</div>
-<div className="board-row">
-<Square value={squares[6]} onSquareClick={() => handleClick(6)} />
-<Square value={squares[7]} onSquareClick={() => handleClick(7)} />
-<Square value={squares[8]} onSquareClick={() => handleClick(8)} />
-</div>
+  function handleClick(i) {
+    const nextSquares = squares.slice();
+    nextSquares[i] = 'X';
+    setSquares(nextSquares);
+  }
+  return (
+  <>
+  <div className="board-row">
+    <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+    <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
+    <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+  </div>
+  <div className="board-row">
+    <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
+    <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
+    <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+  </div>
+  <div className="board-row">
+    <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
+    <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
+    <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+  </div>
 ```
 
 Now that your state handling is in the Board component, the parent Board
@@ -4684,21 +4684,21 @@ xIsNext:
 
 ```
 export default function Board() {
-const [xIsNext, setXIsNext] = useState(true);
-const [squares, setSquares] = useState(Array(9).fill(null));
-function handleClick(i) {
-const nextSquares = squares.slice();
-if (xIsNext) {
-nextSquares[i] = "X";
-} else {
-nextSquares[i] = "O";
-}
-setSquares(nextSquares);
-setXIsNext(!xIsNext);
-}
-return (
-//...
-);
+  const [xIsNext, setXIsNext] = useState(true);
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  function handleClick(i) {
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = "X";
+    } else {
+      nextSquares[i] = "O";
+    }
+      setSquares(nextSquares);
+      setXIsNext(!xIsNext);
+  }
+  return (
+    //...
+  );
 }
 ```
 
@@ -4731,11 +4731,11 @@ function early--before it tries to update the board state.
 
 ```
 function handleClick(i) {
-if (squares[i]) {
-return;
-}
-const nextSquares = squares.slice();
-//...
+  if (squares[i]) {
+    return;
+  }
+  const nextSquares = squares.slice();
+    //...
 }
 ```
 
@@ -4746,39 +4746,39 @@ App.js
 
 DownloadReset
 
-Fork
+<h4>Fork</h4>
 
 ```
 import { useState } from 'react';
 function Square({value, onSquareClick}) {
-return (
-<button className="square" onClick={onSquareClick}>
-{value}
-</button>
-);
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
 }
 export default function Board() {
-const [xIsNext, setXIsNext] = useState(true);
-const [squares, setSquares] = useState(Array(9).fill(null));
+  const [xIsNext, setXIsNext] = useState(true);
+  const [squares, setSquares] = useState(Array(9).fill(null));
 function handleClick(i) {
-if (squares[i]) {
-return;
+  if (squares[i]) {
+    return;
+  }
+  const nextSquares = squares.slice();
+  if (xIsNext) {
+    nextSquares[i] = 'X';
+  } else {
+    nextSquares[i] = 'O';
+  }
+  setSquares(nextSquares);
+  setXIsNext(!xIsNext);
 }
-const nextSquares = squares.slice();
-if (xIsNext) {
-nextSquares[i] = 'X';
-} else {
-nextSquares[i] = 'O';
-}
-setSquares(nextSquares);
-setXIsNext(!xIsNext);
-}
-return (
-<>
+  return (
+  <>
 <div className="board-row">
-<Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-<Square value={squares[1]} onSquareClick={() => handleClick(1)} />
-<Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+  <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+  <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
+  <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
 </div>
 <div className="board-row">
 ```
@@ -4794,27 +4794,27 @@ it's not specific to React:
 
 ```
 export default function Board() {
-//...
+  //...
 }
 function calculateWinner(squares) {
-const lines = [
-[0, 1, 2],
-[3, 4, 5],
-[6, 7, 8],
-[0, 3, 6],
-[1, 4, 7],
-[2, 5, 8],
-[0, 4, 8],
-[2, 4, 6]
-];
-for (let i = 0; i < lines.length; i++) {
-const [a, b, c] = lines[i];
-if (squares[a] && squares[a] === squares[b] && squares[a] ===
-squares[c]) {
-return squares[a];
-}
-}
-return null;
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] ===
+      squares[c]) {
+        return squares[a];
+      }
+  }
+  return null;
 }
 ```
 
@@ -4830,13 +4830,13 @@ check at the same time you check if a user has clicked a square that
 already has a X or and O. We'd like to return early in both cases:
 
 ```
-  function handleClick(i) {
-    if (squares[i] || calculateWinner(squares)) {
-      return;
-    }
-  const nextSquares = squares.slice();
-  //...
+function handleClick(i) {
+  if (squares[i] || calculateWinner(squares)) {
+    return;
   }
+  const nextSquares = squares.slice();
+    //...
+}
 ```
 
 To let the players know when the game is over, you can display text such
@@ -4847,20 +4847,20 @@ next:
 
 ```
 export default function Board() {
-// ...
-const winner = calculateWinner(squares);
-let status;
-if (winner) {
-status = "Winner: " + winner;
-} else {
-status = "Next player: " + (xIsNext ? "X" : "O");
-}
-return (
-<div>
-<div className="status">{status}</div>
-<div className="board-row">
-// ...
-)
+  // ...
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = "Winner: " + winner;
+  } else {
+    status = "Next player: " + (xIsNext ? "X" : "O");
+  }
+  return (
+    <div>
+    <div className="status">{status}</div>
+    <div className="board-row">
+    // ...
+  )
 }
 ```
 
