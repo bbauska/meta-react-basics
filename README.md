@@ -273,12 +273,12 @@ if you connect with the community as well.
 
 <h3>By the end of this reading, you will have learned about the scope of things you will cover in this course.</h3>
 
-<h4>**Prerequisites**</h4>
+<h4><i>Prerequisites</i></h4>
 
 To take this course, you should understand the basics of HTML, CSS, and
 JavaScript. Additionally, it always helps to have a can-do attitude!
 
-<h4>**Course content**</h4>
+<h4><b>Course content</b></h4>
 
 This course is an introduction to React development. You\'ll learn
 enough basic concepts to empower you to build simple user interfaces in
@@ -286,7 +286,7 @@ React.
 
 This course consists of four modules. They cover the following topics.
 
-<h3>**Module 1: Anatomy of React**</h3>
+<h3><b>Module 1: Anatomy of React</b></h3>
 
 In this introductory module, you\'ll learn about what React is and where
 it is used. You\'ll also learn how to set up your coding environment so
@@ -317,7 +317,7 @@ By the end of this module you will be able to:
 
 -   Use and manipulate props and components to effect visual results.
 
-<h3>**Module 2: Data and State**</h3>
+<h3><b>Module 2: Data and State</b></h3>
 
 The second module of this course deals with working with events and
 errors in React. You\'ll learn how events work and how you can handle
@@ -339,7 +339,7 @@ By the end of this module you will be able to:
 -   Describe some common errors associated with events and the syntax
     required to handle them.
 
-<h3>**Module 3: Navigation Updating and Assets in React**</h3>
+<h3><b>Module 3: Navigation Updating and Assets in React</b></h3>
 
 In this module, you\'ll learn about routing and navigation in React.
 You\'ll learn how to render partial views and how to update routes in
@@ -363,7 +363,7 @@ By the end of this module you will be able to:
 -   Describe navigation design in React, with a focus on single and
     multi-page navigation.
 
-<h3>**Module 4: Portfolio Mini-Project (Calculator App)**</h3>
+<h3><b>Module 4: Portfolio Mini-Project (Calculator App)</b></h3>
 
 This module is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you\'ll have coded
@@ -452,23 +452,23 @@ following HTML tags and concepts
 
 <h4>Layout & Style</h4>
 
--   **\<html\> **
+-   <b>\<html\> </b>
 
--   **\<head\> **
+-   <b>\<head\> </b>
 
--   **\<body\> **
+-   <b>\<body\> </b>
 
--   **\<div\> **
+-   <b>\<div\> </b>
 
 <h4>Text formatting & lists</h4>
 
--   **\<h1\>...\<h6\> **
+-   <b>\<h1\>...\<h6\> </b>
 
--   **\<p\> **
+-   <b>\<p\> </b>
 
--   **\<ul\>\<li\> **
+-   <b>\<ul\>\<li\> </b>
 
--   **\<b\>\<i\> **
+-   <b>\<b\>\<i\> </b>
 
 <h4>Images and links</h4>
 
@@ -4483,8 +4483,18 @@ export default function Board() {
 Now you can again add X's to any square on the board by clicking on
 them:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. filling the board with x (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image39.gif?raw=true"
+  alt="Filling the board with X."
+  width="25%" />
+</p>
+<!--
 ![filling the board with
 X](./images/media/image39.gif){width="2.5in" height="2.5625in"}
+-->
 
 But this time all the state management is handled by the Board
 component!
@@ -4671,9 +4681,18 @@ and O, as they should!
 
 But wait, there's a problem. Try clicking on the same square multiple
 times:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42. o overwriting x (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image42.png?raw=true"
+  alt="O overwriting an X."
+  width="25%" />
+</p>
+<!--
 ![O overwriting an X](./images/image42.gif){width="2.5in"
 height="2.5625in"}
+-->
 
 The X is overwritten by an O! While this would add a very interesting
 twist to the game, we're going to stick to the original rules for now.
@@ -5732,10 +5751,19 @@ The JSON API returns some data that looks like this:
 ]
 ```
 
-The mockup looks like this:
-
+<h4>The mockup looks like this:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43.  (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image43.png?raw=true"
+  alt="image43."
+  width="31%" />
+</p>
+<!--
 ![https://react.dev/images/docs/s_thinking-in-react_ui.png](./images/image43.png){width="3.125in"
 height="3.5208333333333335in"}
+-->
 
 To implement a UI in React, you will usually follow the same five steps.
 
@@ -5767,9 +5795,18 @@ shape. Separate your UI into components, where each component matches
 one piece of your data model.
 
 There are five components on this screen:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 44.  (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image44.png?raw=true"
+  alt="React Dev image doc thinking in react ui outline."
+  width="52%" />
+</p>
+<!--
 ![https://react.dev/images/docs/s_thinking-in-react_ui_outline.png](./images/media/image44.png){width="5.208333333333333in"
 height="3.2291666666666665in"}
+-->
 
 1.  FilterableProductTable (grey) contains the entire app.
 
