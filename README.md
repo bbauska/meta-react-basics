@@ -1,3 +1,7 @@
+---
+meta-react-basics: meta/Coursera - React Basics
+---
+
 <h1 align="center" width="100%">meta (Coursera) / React Basics</h1>
 
 <h5 align="center">(meta-react-basics)</h5>
@@ -9,7 +13,7 @@
 <p align="center" width="100%">
 <img src="/images/image01.png?raw=true"
   alt="Coursera logo."
-  width="15%" />
+  width="125px" />
 </p>
 <!-- {width="1.549261811023622in" height="0.5in"} -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -18,7 +22,7 @@
 <p align="center" width="100%">
 <img src="/images/image02.png?raw=true"
   alt="meta logo."
-  width="10%" />
+  width="100px" />
 </p>
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
 
@@ -6130,43 +6134,43 @@ placeholder="Search..."
 onChange={(e) => onFilterTextChange(e.target.value)} />
 ```
 
-Now the application fully works!
+<h4>Now the application fully works!</h4>
 
 <h4>App.js</h4>
 
-```
+```JavaScript
 import { useState } from 'react';
 function FilterableProductTable({ products }) {
-const [filterText, setFilterText] = useState('');
-const [inStockOnly, setInStockOnly] = useState(false);
-return (
-<div>
-<SearchBar
-filterText={filterText}
-inStockOnly={inStockOnly}
-onFilterTextChange={setFilterText}
-onInStockOnlyChange={setInStockOnly} />
-<ProductTable
-products={products}
-filterText={filterText}
-inStockOnly={inStockOnly} />
-</div>
-);
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+  return (
+    &lt;div&gt;
+      &lt;SearchBar
+      filterText={filterText}
+      inStockOnly={inStockOnly}
+      onFilterTextChange={setFilterText}
+      onInStockOnlyChange={setInStockOnly} /&gt;
+      &lt;ProductTable
+        products={products}
+        filterText={filterText}
+        inStockOnly={inStockOnly} /&gt;
+    &lt;/div&gt;
+  );
 }
 function ProductCategoryRow({ category }) {
-return (
-<tr>
-<th colSpan="2">
-{category}
-</th>
-</tr>
-);
+  return (
+  &lt;tr&gt;
+    &lt;th colSpan="2"&gt;
+      {category}
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  );
 }
 function ProductRow({ product }) {
-const name = product.stocked ? product.name :
-<span style={{ color: 'red' }}>
-{product.name}
-</span>;
+  const name = product.stocked ? product.name :
+  &lt;span style={{ color: 'red' }}&gt;
+    {product.name}
+  &lt;/span&gt;;
 ```
 
 You can learn all about handling events and updating state in the
@@ -6174,11 +6178,7 @@ You can learn all about handling events and updating state in the
 
 <h3>Where to go from here</h3>
 
-This was a very brief introduction to how to think about building
-components and applications with React. You can [start a React
-project](https://react.dev/learn/installation) right now or [dive deeper
-on all the syntax](https://react.dev/learn/describing-the-ui) used in
-this tutorial.
+<p>This was a very brief introduction to how to think about building components and applications with React. You can <a href="https://react.dev/learn/installation" target="_blank" rel="noopener noreferrer">start a React project</a> right now or <a href="https://react.dev/learn/describing-the-ui" target="_blank" rel="noopener noreferrer">dive deeper on all the syntax used in this tutorial.</p>
 
 <h2>Installation</h2>
 
@@ -6241,3 +6241,4 @@ to an existing project.</a>
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of
 the most important React concepts you will encounter every day.
 
+<h7>10:25am 5-11-23 meta-react-basics markdown</h7>
