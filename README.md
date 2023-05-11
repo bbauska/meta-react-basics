@@ -4130,17 +4130,35 @@ return (
 React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
 *browser* section in CodeSandbox:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 40. react devtools in codesandbox (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image40.png?raw=true"
+  alt="React DevTools in CodeSandbox."
+  width="50%" />
+</p>
+<!--
 ![React DevTools in
 CodeSandbox](./images/image40.png){width="5.0in"
 height="3.720173884514436in"}
+-->
 
 To inspect a particular component on the screen, use the button in the
 top left corner of React DevTools:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ 41. selecting components on the page with react devtools (pg #) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image41.gif?raw=true"
+  alt="Selecting components on the page with React DevTools."
+  width="65%" />
+</p>
+<!--
 ![Selecting components on the page with React
 DevTools](./images/image41.gif){width="6.25in"
 height="4.625in"}
+-->
 
 <h4>Note</h4>
 
@@ -4246,9 +4264,18 @@ return <button className="square">{value}</button>;
 ```
 
 At this point you should see an empty tic-tac-toe board:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image38.png?raw=true"
+  alt="Empty board."
+  width="24%" />
+</p>
+<!-- 
 ![empty board](./images/image38.png){width="2.375in"
 height="2.3333333333333335in"}
+-->
 
 And your code should look like this:
 
@@ -4482,7 +4509,6 @@ export default function Board() {
 
 Now you can again add X's to any square on the board by clicking on
 them:
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. filling the board with x (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
