@@ -840,7 +840,7 @@ dedicated lab environment set up specifically for you to apply the
 skills that you have learned. You can find out more about Working with
 Labs in this course by accessing the link below:
 
-<h3><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course">Working with Labs in this course</a></h3>
+<h3><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working with Labs in this course</a></h3>
 
 You can also use VS Code to practice these exercises on your local
 machine as an alternative option.
@@ -6170,7 +6170,7 @@ const name = product.stocked ? product.name :
 ```
 
 You can learn all about handling events and updating state in the
-<a href="https://react.dev/learn/adding-interactivity">Adding Interactivity</a> section.
+<a href="https://react.dev/learn/adding-interactivity" target="_blank" rel="noopener noreferrer">Adding Interactivity</a> section.
 
 <h3>Where to go from here</h3>
 
@@ -6189,16 +6189,12 @@ React-powered app, this section will help you get started.
 
 <h3>In this chapter</h3>
 
-1.  [How to start a new React
-    project](https://react.dev/learn/start-a-new-react-project)
-
-2.  [How to add React to an existing
-    project](https://react.dev/learn/add-react-to-an-existing-project)
-
-3.  [How to set up your editor](https://react.dev/learn/editor-setup)
-
-4.  [How to install React Developer
-    Tools](https://react.dev/learn/react-developer-tools)
+<ol>
+  <li><a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">How to start a new React project</a><br></li>
+  <li><a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">How to add React to an existing project</a></li>
+  <li><a href="https://react.dev/learn/editor-setup" target="_blank" rel="noopener noreferrer">How to set up your editor]</a></li>
+  <li><a href="https://react.dev/learn/react-developer-tools" target="_blank" rel="noopener noreferrer">How to install React Developer Tools</a></li>
+</ol>
 
 <h4>Try React</h4>
 
@@ -6222,26 +6218,26 @@ button in the upper right corner.
 Most pages in the React documentation contain sandboxes like this.
 Outside of the React documentation, there are many online sandboxes that
 support React: for example, <a href="https://codesandbox.io/s/new">CodeSandbox</a>,
-<a href="https://stackblitz.com/fork/react">StackBlitz</a>, or
-<a href="https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb">CodePen</a>.
+<a href="https://stackblitz.com/fork/react" target="_blank" rel="noopener noreferrer">StackBlitz</a>, or
+<a href="https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb" target="_blank" rel="noopener noreferrer">CodePen</a>.
 
-Try React locally 
+<h4>Try React locally</h4>
 
-To try React locally on your computer, <a href="https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html">download this HTML
+To try React locally on your computer, <a href="https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML
 page.</a>Open it in your editor and in your browser!
 
-Start a new React project 
+<h4>Start a new React project</h4>
 
-If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project">start a new
+If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start a new
 React project.</a>
 
 Add React to an existing project 
 
-If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project">add React
+If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React
 to an existing project.</a>
 
-Next steps 
+<h4>Next steps</h4>
 
-Head to the <a href="https://react.dev/learn">Quick Start</a> guide for a tour of
+Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of
 the most important React concepts you will encounter every day.
 
