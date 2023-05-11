@@ -33,35 +33,31 @@ In this course, you will explore the fundamental concepts that underpin
 the React library and learn the basic skills required to build a simple,
 fast, and scalable app.
 
-By the end of this course, you will be able to:
+<h4>By the end of this course, you will be able to:</h4>
 
--   Use reusable components to render views where data changes over time
+<ul>
+  <li>Use reusable components to render views where data changes over time,<br></li>
+  <li>Create more scalable and maintainable websites and apps,<br></li>
+  <li>Use props to pass data between components,<br></li>
+  <li>Create dynamic and interactive web pages and apps,<br></li>
+  <li>Use forms to allow users to interact with the web page,<br></li>
+  <li>Build an application in React.</li>
+</ul>
 
--   Create more scalable and maintainable websites and apps
+<h4>You'll gain experience with the following tools and software:</h4>
 
--   Use props to pass data between components
+<ul>
+  <li>React.js<br></li>
+  <li>JSX<br></li>
+  <li>React<br></li>
+  <li>HTML, CSS and JavaScript<br></li>
+  <li>VSCode<br></li>
+</ul>
 
--   Create dynamic and interactive web pages and apps
-
--   Use forms to allow users to interact with the web page
-
--   Build an application in React.
-
--   You'll gain experience with the following tools and software:
-
-    -   React.js
-
-    -   JSX
-
-    -   React
-
-    -   HTML, CSS and JavaScript
-
-    -   VSCode
-
--   You will be able to leverage the potential of this course to develop
+<p>You will be able to leverage the potential of this course to develop
     new skills, improve productivity, act effectively with data and
-    boost your career.
+  boost your career.</li>
+</p>
 
 This is a beginner course for learners who would like to prepare
 themselves for a career in mobile development.
@@ -6294,14 +6290,13 @@ page.</a>Open it in your editor and in your browser!
 If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start a new
 React project.</a>
 
-Add React to an existing project 
+<h4>Add React to an existing project</h4>
 
-If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React
-to an existing project.</a>
+If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
 
 <h4>Next steps</h4>
 
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of
 the most important React concepts you will encounter every day.
 
-<h7>10:25am 5-11-23 meta-react-basics markdown</h7>
+<h7>1:53pm 5-11-23 meta-react-basics markdown</h7>
