@@ -505,8 +505,8 @@ styling options:
 -   Colors, Background and Icons 
 
 You can refresh your knowledge of HTML and CSS in the Meta course
-titled: [Introduction to Front-End
-Development](https://www.coursera.org/learn/introduction-to-front-end-development)
+titled: <a href="https://www.coursera.org/learn/introduction-to-front-end-development">Introduction to Front-End
+Development</a>
 
 <h3>JavaScript fundamentals and ES6</h3>
 
@@ -567,8 +567,8 @@ position to learn and apply React concepts and prepare yourself for
 development of React apps.
 
 To refresh your knowledge of JavaScript and the basics of Node and npm,
-please visit Meta course titled: [Programming with
-JavaScript](https://www.coursera.org/learn/programming-with-javascript).
+please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript">Programming with
+JavaScript</a>.
 
 <h2>5. JavaScript modules, imports - exports</h2>
 
@@ -782,9 +782,19 @@ JavaScript.
 The labs for this course already have everything installed and setup so
 you can start working with React right away.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. explorer panel of react lab (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image07.png?raw=true"
+  alt="Explorer panel of React lab."
+  width="30%;" />
+</p>
+<!--
 ![Explorer panel of React
 lab](./images/image07.png){width="3.0in"
 height="1.4006627296587926in"}
+-->
 
 In order to run and view your React app you will need to open the VS
 Code built-in terminal, run **npm start**, and then click **Open
@@ -823,15 +833,16 @@ height="3.2298140857392825in"}
 
 Below you will find links to helpful additional readings.
 
--   [nodejs.org](https://nodejs.org/en/) 
+<ul>
+  <li><a href="https://nodejs.org/en/">nodejs.org</a>,</li>
 
--   [npmjs.com](https://www.npmjs.com/) 
+  <li><a href="https://www.npmjs.com/">npmjs.com</a>,</li>
 
--   [reactjs.org](https://reactjs.org/) 
+  <li><a href="https://reactjs.org/">reactjs.org</a>,</li>
 
--   <https://create-react-app.dev/> 
+  <li><a href="https://create-react-app.dev/">create-react-app.dev</a>,</li>
 
--   [VS Code](https://code.visualstudio.com/) 
+  <li><a href="https://code.visualstudio.com/">POS VS Code</a>. 
 
 <h2>8. Setting up a React project in VS Code (Optional)</h2>
 
@@ -849,11 +860,11 @@ To follow along in this reading, you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
 refer to the Programming with JavaScript course:
 
--   [Setting up VS
-    Code](https://www.coursera.org/learn/react-basics/resources/SSPnG) 
+<ul>
+  <li><a href="https://www.coursera.org/learn/react-basics/resources/SSPnG">Setting up VS Code,</a></li>
 
--   [Installing Node and
-    NPM ](https://www.coursera.org/learn/react-basics/resources/FTd5h)
+  <li><a href="https://www.coursera.org/learn/react-basics/resources/FTd5h">Installing Node and NPM.</a></li>
+</ul>
 
 In VS Code, you\'re ready to start a brand new React project.
 
@@ -1725,11 +1736,7 @@ for the **Heading** component:
   &lt;Heading title="This is the heading text!"&gt;&lt;/Heading&gt;
 ```
 
-Again using [the Babel
-repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
-and as can be confirmed in [the
-link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
-the output of the tranpilation is the following code:
+Again using <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the Babel repl</a>, and as can be confirmed in <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the link</a>, the output of the tranpilation is the following code:
 
 ```
   "use strict";
@@ -2320,8 +2327,7 @@ links in my app.
 
 The answer here depends on whether those links are \"internal\" - inside
 an app, or \"external\", meaning, leading to some external link, such
-as;
-[*[https://www.coursera.org]{.underline}*](https://www.coursera.org/).
+as; <a href="https://www.coursera.org">here </a>.
 
 If the links are internal to the app - as they are envisioned here -
 using the **\<a\>** tag is simply not the React way of doing things.
@@ -2552,8 +2558,8 @@ applications using React components and to use JSX to style them.
 
 <h4>15 videos, 21 readings, 5 practice quizzes</h4>
 
-1.  [**Video: **Introduction to the course: React
-    Basics](https://www.coursera.org/lecture/react-basics/introduction-to-the-course-react-basics-AStT3)
+1.  <a href="https://www.coursera.org/lecture/react-basics/introduction-to-the-course-react-basics-AStT3">**Video: **Introduction to the course: React
+    Basics</a>
 
 2.  **Video: **How is React used in the real world?
 
@@ -2659,8 +2665,8 @@ events and the ability to dynamically change content on a web page.
 
 <h4>13 videos, 9 readings, 8 practice quizzes</h4>
 
-1.  [**Video: **Types of
-    events](https://www.coursera.org/lecture/react-basics/types-of-events-L71Z2)
+1.  <a href="https://www.coursera.org/lecture/react-basics/types-of-events-L71Z2">**Video: **Types of
+    events</a>
 
 2.  **Reading: **Eventful issues
 
@@ -2735,8 +2741,8 @@ in response to user status or choice.
 
 <h4>9 videos, 10 readings, 5 practice quizzes</h4>
 
-1.  [**Video: **Basic Types of
-    navigation](https://www.coursera.org/lecture/react-basics/basic-types-of-navigation-vN7FD)
+1.  <a href="https://www.coursera.org/lecture/react-basics/basic-types-of-navigation-vN7FD">**Video: **Basic Types of
+    navigation</a>
 
 2.  **Reading: **Navigation
 
@@ -2803,8 +2809,8 @@ Course.
 
 <h4>3 videos, 3 readings</h4>
 
-1.  [**Video: **Course recap: React
-    Basics](https://www.coursera.org/lecture/react-basics/course-recap-react-basics-Cr55y)
+1.  <a href="https://www.coursera.org/lecture/react-basics/course-recap-react-basics-Cr55y"><b>Video:</b> Course recap: React
+    Basics</a>
 
 2.  **Reading: **About this graded assessment: Calculator app
 
@@ -2897,17 +2903,14 @@ export default function MyApp() {
 ```
 
 The export default keywords specify the main component in the file. If
-you're not familiar with some piece of JavaScript syntax,
-[MDN](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)
-and [javascript.info](https://javascript.info/import-export) have great
-references.
+you're not familiar with some piece of JavaScript syntax, <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">MDN</a>
+and <a href="https://javascript.info/import-export">javascript.info</a> have great references.
 
 <h3>Writing markup with JSX</h3>
 
 The markup syntax you've seen above is called *JSX*. It is optional, but
-most React projects use JSX for its convenience. All of the [tools we
-recommend for local development](https://react.dev/learn/installation)
-support JSX out of the box.
+most React projects use JSX for its convenience. All of the <a href="https://react.dev/learn/installation">tools we
+recommend for local development</a> support JSX out of the box.
 
 JSX is stricter than HTML. You have to close tags like \<br /\>. Your
 component also can't return multiple JSX tags. You have to wrap them
@@ -2925,14 +2928,13 @@ into a shared parent, like a \<div\>\...\</div\> or an empty
   }
 ```
 
-If you have a lot of HTML to port to JSX, you can use an [online
-converter.](https://transform.tools/html-to-jsx)
+If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online
+converter.</a>
 
 <h3>Adding styles</h3>
 
 In React, you specify a CSS class with className. It works the same way
-as the HTML
-[[class]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
+as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">[class]
 attribute:
 
 ```
@@ -2949,9 +2951,8 @@ Then you write the CSS rules for it in a separate CSS file:
 ```
 
 React does not prescribe how you add CSS files. In the simplest case,
-you'll add a
-[[\<link\>]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
-tag to your HTML. If you use a build tool or a framework, consult its
+you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">
+[&lt;link&gt;] tag to your HTML. If you use a build tool or a framework, consult its
 documentation to learn how to add a CSS file to your project.
 
 <h3>Displaying data</h3>
@@ -2984,8 +2985,8 @@ and then passes that value as the src attribute:
 ```
 
 You can put more complex expressions inside the JSX curly braces too,
-for example, [string
-concatenation](https://javascript.info/operators#string-concatenation-with-binary):
+for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string
+concatenation</a>:
 
 App.js
 
@@ -3025,9 +3026,8 @@ attribute when your styles depend on JavaScript variables.
 
 In React, there is no special syntax for writing conditions. Instead,
 you'll use the same techniques as you use when writing regular
-JavaScript code. For example, you can use an
-[[if]{.underline}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-statement to conditionally include JSX:
+JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">
+[if] statement to conditionally include JSX:</a>
 
 ```
 let content;
@@ -3043,10 +3043,8 @@ return (
 );
 ```
 
-If you prefer more compact code, you can use the [conditional
-[?]{.underline}
-operator.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-Unlike if, it works inside JSX:
+If you prefer more compact code, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional
+[?] operator.</a> Unlike if, it works inside JSX:
 
 ```
 <div>
@@ -3058,9 +3056,8 @@ Unlike if, it works inside JSX:
 </div>
 ```
 
-When you don't need the else branch, you can also use a shorter [logical
-[&&]{.underline}
-syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation):
+When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">logical
+[&&] syntax</a>:
 
 ```
 <div>
@@ -3074,11 +3071,8 @@ you can start by always using if\...else.
 
 <h3>Rendering lists</h3>
 
-You will rely on JavaScript features like [[for]{.underline}
-loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-and the [array [map()]{.underline}
-function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-to render lists of components.
+You will rely on JavaScript features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for"for loop</a>
+and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">[array [map()] function</a>to render lists of components.
 
 For example, let's say you have an array of products:
 
@@ -3165,8 +3159,7 @@ Often, you'll want your component to "remember" some information and
 display it. For example, maybe you want to count the number of times a
 button is clicked. To do this, add *state* to your component.
 
-First, import
-[[useState]{.underline}](https://react.dev/reference/react/useState)
+First, import <a href="https://react.dev/reference/react/useState">useState</a> 
 from React:
 
 ```
@@ -3244,8 +3237,7 @@ affect other buttons.
 <h3>Using Hooks</h3>
 
 Functions starting with use are called *Hooks*. useState is a built-in
-Hook provided by React. You can find other built-in Hooks in the [API
-reference.](https://react.dev/reference/react) You can also write your
+Hook provided by React. You can find other built-in Hooks in the <a href="https://react.dev/reference/react">API reference.</a> You can also write your
 own Hooks by combining the existing ones.
 
 Hooks are more restrictive than other functions. You can only call Hooks
@@ -3406,7 +3398,7 @@ export default function MyApp() {
 
 By now, you know the basics of how to write React code!
 
-Check out the [Tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
+Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a>
 to put them into practice and build your first mini-app with React.
 
 <h2>Tutorial: Tic-Tac-Toe</h2>
@@ -3418,21 +3410,19 @@ and fully understanding it will give you a deep understanding of React.
 
 The tutorial is divided into several sections:
 
--   [Setup for the
-    tutorial](https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial) will
-    give you **a starting point** to follow the tutorial.
+<ul>
 
--   [Overview](https://react.dev/learn/tutorial-tic-tac-toe#overview) will
-    teach you **the fundamentals** of React: components, props, and
-    state.
+<li><a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial">Setup for the
+    tutorial</a> will give you <b>a starting point</b> to follow the tutorial,</li>
 
--   [Completing the
-    game](https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game) will
-    teach you **the most common techniques** in React development.
+<li><a href="https://react.dev/learn/tutorial-tic-tac-toe#overview">Overview</a> will
+    teach you **the fundamentals** of React: components, props, and state,</li>
 
--   [Adding time
-    travel](https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel) will
-    give you **a deeper insight** into the unique strengths of React.
+<li><a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game">Completing the
+    game</a> will teach you **the most common techniques** in React development,</li>
+
+<li><a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel">Adding time
+    travel</a> will give you **a deeper insight** into the unique strengths of React.
 
 <h4>What are you building?</h4>
 
@@ -3519,19 +3509,19 @@ return <button className="square">X</button>;
 You can also follow this tutorial using your local development
 environment. To do this, you need to:
 
-1.  Install [Node.js](https://nodejs.org/en/)
+1.  Install <a href="https://nodejs.org/en/">Node.js</a>,
 
 2.  In the CodeSandbox tab you opened earlier, press the top-left corner
     button to open the menu, and then choose File \> Export to ZIP in
-    that menu to download an archive of the files locally
+    that menu to download an archive of the files locally,
 
 3.  Unzip the archive, then open a terminal and cd to the directory you
-    unzipped
+    unzipped,
 
-4.  Install the dependencies with npm install
+4.  Install the dependencies with npm install,
 
 5.  Run npm start to start a local server and follow the prompts to view
-    the code running in a browser
+    the code running in a browser.
 
 If you get stuck, don't let this stop you! Follow along online instead
 and try a local setup again later.
@@ -4229,12 +4219,11 @@ height="4.625in"}
 
 <h4>Note</h4>
 
-For local development, React DevTools is available as a
-[Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en),
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/),
+For local development, React DevTools is available as a <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">
+Chrome</a>,<a href="https://addons.mozilla.org/en-US/firefox/addon/react-devtools/">
+Firefox</a>,
 and
-[Edge](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
-browser extension. Install it, and the *Components* tab will appear in
+<a href="https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil">Edge</a> browser extension. Install it, and the *Components* tab will appear in
 your browser Developer Tools for sites using React.
 
 <h3>Completing the game</h3>
@@ -4465,8 +4454,7 @@ Square components that make up the board).
 
 <h4>Note</h4>
 
-JavaScript supports
-[closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+JavaScript supports <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">closures</a>
 which means an inner function (e.g. handleClick) has access to variables
 and functions defined in a outer function (e.g. Board). The handleClick
 function can read the squares state and call the setSquares method
@@ -4725,8 +4713,7 @@ re-rendering a part of the tree that clearly wasn't affected by it for
 performance reasons. Immutability makes it very cheap for components to
 compare whether their data has changed or not. You can learn more about
 how React chooses when to re-render a component in [the
-[memo]{.underline} API
-reference](https://react.dev/reference/react/memo).
+[memo]<a href="https://react.dev/reference/react/memo"> API reference</a>.
 
 <h4>Taking turns</h4>
 
@@ -5200,9 +5187,7 @@ setXIsNext(!xIsNext);
 
 Here, \[\...history, nextSquares\] creates a new array that contains all
 the items in history, followed by nextSquares. (You can read the
-\...history [*[spread
-syntax]{.underline}*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-as "enumerate all the items in history".)
+\...history <i><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread syntax</a> as "enumerate all the items in history".)</i>
 
 For example, if history is \[\[null,null,null\], \[\"X\",null,null\]\]
 and nextSquares is \[\"X\",null,\"O\"\], then the new \[\...history,
@@ -5265,8 +5250,8 @@ you can use an array of React elements.
 
 You already have an array of history moves in state, so now you need to
 transform it to an array of React elements. In JavaScript, to transform
-one array into another, you can use the [array [map]{.underline}
-method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+one array into another, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">array [map]
+method:</a>
 
 ```
 [1, 2, 3].map((x) => x * 2) // [2, 4, 6]
@@ -5807,8 +5792,8 @@ game, listed in order of increasing difficulty:
 
 Throughout this tutorial, you've touched on React concepts including
 elements, components, props, and state. Now that you've seen how these
-concepts work when building a game, check out [Thinking in
-React](https://react.dev/learn/thinking-in-react) to see how the same
+concepts work when building a game, check out <a href="https://react.dev/learn/thinking-in-react">Thinking in
+React</a> to see how the same
 React concepts work when build an app's UI.
 
 <h2>Thinking in React</h2>
@@ -5870,9 +5855,8 @@ Depending on your background, you can think about splitting up a design
 into components in different ways:
 
 -   **Programming**---use the same techniques for deciding if you should
-    create a new function or object. One such technique is the [single
-    responsibility
-    principle](https://en.wikipedia.org/wiki/Single_responsibility_principle),
+    create a new function or object. One such technique is the <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single
+    responsibility principle</a>,
     that is, a component should ideally only do one thing. If it ends up
     growing, it should be decomposed into smaller subcomponents.
 
@@ -5946,11 +5930,11 @@ not a lot of typing.
 
 To build a static version of your app that renders your data model,
 you'll want to build
-[components](https://react.dev/learn/your-first-component) that reuse
+<a href="https://react.dev/learn/your-first-component">components</a> that reuse
 other components and pass data using
-[props.](https://react.dev/learn/passing-props-to-a-component) Props are
+<a href="https://react.dev/learn/passing-props-to-a-component">props.</a> Props are
 a way of passing data from parent to child. (If you're familiar with the
-concept of [state](https://react.dev/learn/state-a-components-memory),
+concept of <a href="https://react.dev/learn/state-a-components-memory">state</a>,
 don't use state at all to build this static version. State is reserved
 only for interactivity, that is, data that changes over time. Since this
 is a static version of the app, you don't need it.)
@@ -6002,8 +5986,8 @@ key={product.category} />
 }
 ```
 
-(If this code looks intimidating, go through the [Quick
-Start](https://react.dev/learn) first!)
+(If this code looks intimidating, go through the <a href="https://react.dev/learn">Quick
+Start</a> first!)
 
 After building your components, you'll have a library of reusable
 components that render your data model. Because this is a static app,
@@ -6024,8 +6008,7 @@ data model. You will use *state* for this.
 
 Think of state as the minimal set of changing data that your app needs
 to remember. The most important principle for structuring state is to
-keep it [DRY (Don't Repeat
-Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+keep it <a href=")">DRY (Don't Repeat Yourself).</a>
 Figure out the absolute minimal representation of the state your
 application needs and compute everything else on-demand. For example, if
 you're building a shopping list, you can store the items as an array in
@@ -6127,8 +6110,8 @@ Now let's run through our strategy for them:
 
 So, the state values will live in FilterableProductTable.
 
-Add state to the component with the [useState()
-Hook.](https://react.dev/reference/react/useState) Hooks are special
+Add state to the component with the <a href="https://react.dev/reference/react/useState" target="_blank" rel="noopener noreferrer">useState()
+Hook.</a> Hooks are special
 functions that let you "hook into" React. Add two state variables at the
 top of FilterableProductTable and specify their initial state:
 
@@ -6347,7 +6330,7 @@ button in the upper right corner.
 
 Most pages in the React documentation contain sandboxes like this.
 Outside of the React documentation, there are many online sandboxes that
-support React: for example, <a href="https://codesandbox.io/s/new">CodeSandbox</a>,
+support React: for example, <a href="https://codesandbox.io/s/new" target="_blank" rel="noopener noreferrer">CodeSandbox</a>,
 <a href="https://stackblitz.com/fork/react" target="_blank" rel="noopener noreferrer">StackBlitz</a>, or
 <a href="https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb" target="_blank" rel="noopener noreferrer">CodePen</a>.
 
