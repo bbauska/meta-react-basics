@@ -1,0 +1,4087 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>meta-react-basics</title>
+
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="mvp.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 align="center" width="100%">
+meta (Coursera) / React Basics
+</h1>
+<h5 align="center">
+(meta-react-basics)
+</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ index.html for meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image01.png?raw=true"
+  alt="Coursera logo."
+  width="125px" />
+</p>
+<!-- {width="1.549261811023622in" height="0.5in"} -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image02.png?raw=true"
+  alt="meta logo."
+  width="100px" />
+</p>
+<!-- {width="1.0175437445319335in" height="0.5in"} -->
+<p>React is a powerful JavaScript library that you can use to build user
+interfaces for web and mobile applications (apps).</p>
+<p>In this course, you will explore the fundamental concepts that
+underpin the React library and learn the basic skills required to build
+a simple, fast, and scalable app.</p>
+<h4>
+By the end of this course, you will be able to:
+</h4>
+<ul>
+<li>
+Use reusable components to render views where data changes over
+time,<br>
+</li>
+<li>
+Create more scalable and maintainable websites and apps,<br>
+</li>
+<li>
+Use props to pass data between components,<br>
+</li>
+<li>
+Create dynamic and interactive web pages and apps,<br>
+</li>
+<li>
+Use forms to allow users to interact with the web page,<br>
+</li>
+<li>
+Build an application in React.
+</li>
+</ul>
+<h4>
+You’ll gain experience with the following tools and software:
+</h4>
+<ul>
+<li>
+React.js<br>
+</li>
+<li>
+JSX<br>
+</li>
+<li>
+React<br>
+</li>
+<li>
+HTML, CSS and JavaScript<br>
+</li>
+<li>
+VSCode<br>
+</li>
+</ul>
+<p>
+You will be able to leverage the potential of this course to develop new
+skills, improve productivity, act effectively with data and boost your
+career.
+</li>
+</p>
+<p>This is a beginner course for learners who would like to prepare
+themselves for a career in mobile development.</p>
+<p>To succeed in this course, you do not need prior development
+experience, only basic internet navigation skills and an eagerness to
+get started with coding.</p>
+<h2>
+<ol type="1">
+<li>Introduction to the course: React Basics
+</h2></li>
+</ol>
+<p>Welcome to React basics.</p>
+In this course, you'll be introduced to the basics of working with
+React.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 03. basics of working with react (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image03.png?raw=true"
+  alt="Basics of working with React."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="2.5479451006124236in"} -->
+<p>During this module, you'll learn how to develop a working familiarity
+with a basic structure and use of the React.js library.</p>
+<p>Explore the concepts and practical use of state and stage management
+and discover how to set up navigation and make use of assets in your
+React apps.</p>
+<p>You'll begin by learning how to work with React to build modern user
+interfaces or UIs on websites front ends.</p>
+<p>This involves the concept of standalone parts of the User Interface
+or UI.</p>
+<p>These standalone bits of UI are commonly referred to as
+components.</p>
+<p>You'll explore components in more detail later in this module.</p>
+For now, it's enough for you to know that every website's UI is built on
+a foundation of components and composability.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. react components (xx) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image04.png?raw=true"
+  alt="React Components."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="1.6605293088363955in"} -->
+<p>Simple components combined into more complex ones, which eventually
+merge to form a website.</p>
+<p>A website can essentially be viewed as a highly complex
+component.</p>
+<p>Components and website UIs are not to limited to React.</p>
+<p>There's a part of the reason why React is so popular, is because it
+streamlines the process of building and composing components.</p>
+<p>React does this efficiently and without a significant impact on your
+browser's resources.</p>
+<p>Another major topic that will be discussed in this course is working
+with state in React apps.</p>
+You'll learn a lot more about state, you go through the course.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05.  (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image05.png?raw=true"
+  alt="."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="1.949206036745407in"} -->
+<p>But for now, here's a simple definition of state.</p>
+<p><strong>State is simply all the values of all the variables your app
+is working with at any given point in time.</strong></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06.  (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image06.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="2.840391513560805in"} -->
+<p>As you progress through this course, you'll also learn about how to
+style your React apps, which includes the reuse of common styles.</p>
+<p>Setting up your apps to respond to events such as clicks and
+user-submitted data, creating navigation routes and using assets and
+you'll finish off the course with a portfolio of projects where you'll
+apply your new knowledge.</p>
+<p>I hope you're as excited as I am to begin this course on React
+basics.</p>
+<p>Let's get started.</p>
+<h2>
+<ol start="2" type="1">
+<li>How is React used in the real world?
+</h2></li>
+</ol>
+<p>My team uses React and we use a lot of new and experimental features
+that the React team is building.</p>
+<p>Facebook.com is like a demonstration of all the new and cool features
+that React engineers are working on.</p>
+<p>When we rewrote the website, we were actually using a lot of
+unreleased features and experimenting with a lot of new things that the
+React team was building, which was really cool to use at first.</p>
+<p>My name is Katie and I'm a Software Engineer on the React Apps team
+at Meta, and we work on building a variety of new features for
+Facebook.com.</p>
+<p>There are plenty of React based apps that you've probably used
+before.</p>
+<p>Facebook and Instagram are two examples.</p>
+<p>But Netflix, Airbnb, New York Times, and a variety of other companies
+also use React for their websites as well, so you've likely encountered
+it before.</p>
+<p>These websites that tend to have really interactive UIs are more
+likely to be using something like React.</p>
+<p>Facebook.com had become really not performing and not modern looking
+after the 10 or so years that we have been using it, we had squeezed all
+of the performance wins that we could out of Facebook.com.</p>
+<p>Really the only option at that point was to rewrite it on a different
+stack that was going to be a lot faster and a lot easier to build
+on.</p>
+<p>Basically, there was a need for having a really fast and responsive
+UI and React fills all of those needs.</p>
+<p>So, this was like a shift in thinking differently about how we build
+on web.</p>
+<p>We actually rewrote our website a couple of years ago to be
+completely React and so every engineer who's writing for Facebook.com at
+Meta is pretty much using React.</p>
+<p>I was there for like the middle of it to finally launching it, so it
+was cool that a little bit of it was already written and we were getting
+prepared to show it to real users.</p>
+<p>I think 40 engineers on our team were all working on building out
+this MVP of the redesigned Facebook.com.</p>
+<p>We would work with a variety of product teams to get them to also
+rewrite their product on our new stack as well.</p>
+<p>It was a really big effort and it was also a really big risk. Not all
+the teams that we talked to thought that we could ship this new version
+of Facebook.com, so we really had to prove that it was faster.</p>
+<p>It obviously looked more modern, but we had to prove that it would
+really help these products teams deliver the best version of their
+product that they could on web.</p>
+<p>React is open sourced, meaning that anyone can contribute to it, and
+those engineers are working full-time on React.</p>
+<p>But we also have developers who aren't at Meta who are also
+contributing to React, and that means that there's a really strong
+community around React.</p>
+<p>A lot of people are really excited to build on it and make
+improvements to it.</p>
+<p>If you ever have any questions or you have an idea about a certain
+feature or optimization or improvement, there's really a great
+opportunity to actually contribute to the React library itself.</p>
+<p>There's a React team at Meta, and this team is comprised of engineers
+who are working on React full-time.</p>
+<p>But there's also a group of developers outside of Meta who are
+contributing to React as well.</p>
+<p>I think the open source part of it is really cool just because
+there's such a community around React, it's constantly being updated and
+maintained.</p>
+<p>There's always going to be someone available to answer questions or
+to update documentation, it's very current.</p>
+<p>If you're using React for the first time, definitely take a look at
+our documentation.</p>
+<p>There are a lot of conversations being had about React online, and we
+actually have a React conference every year where we talk about new
+features with React and you can just connect with a lot of React
+developers.</p>
+<p>There are plenty of opportunities to get involved in the React
+community, and I think it makes building with React even more rewarding
+if you connect with the community as well.</p>
+
+<h2>
+<ol start="3" type="1">
+  <li>Course syllabus for React Basics</h2></li>
+</ol>
+
+<h3>
+By the end of this reading, you will have learned about the scope of
+things you will cover in this course.
+</h3>
+
+<h4><i>Prerequisites</i></h4>
+
+<p>To take this course, you should understand the basics of HTML, CSS,
+and JavaScript. Additionally, it always helps to have a can-do
+attitude!</p>
+
+<h4><b>Course content</b></h4>
+
+<p>This course is an introduction to React development. You'll learn
+enough basic concepts to empower you to build simple user interfaces in
+React.</p>
+<p>This course consists of four modules. They cover the following
+topics.</p>
+
+<h3><b>Module 1: Anatomy of React</b></h3>
+
+<p>In this introductory module, you'll learn about what React is and
+where it is used. You'll also learn how to set up your coding
+environment so that you have as productive a learning experience as
+possible. So, the purpose of this module is to understand the what and
+the why, and to get set up for the modules that follow.</p>
+<p>Components are one of the foundations of React. In React, everything
+revolves around components. You'll learn how to build components, how to
+structure and customize your React projects, and how to compose layouts
+by importing components into other components.</p>
+<p>You'll learn about passing data from one component to another. You'll
+learn about JSX syntax in React and how to use it to structure and style
+your components.</p>
+<p>By the end of this module you will be able to:</p>
+
+<ul>
+  <li><p>Explain the concepts behind React and component architecture.</p></li>
+  <li><p>Describe how to use assets within an app to apply styling and functional components.</p></li>
+  <li><p>Create a component to service a specific purpose.</p></li>
+  <li><p>Create a folder and demonstrate how to create and import files within that folder.</p></li>
+  <li><p>Use and manipulate props and components to effect visual results.</p></li>
+</ul>
+
+<h3>Module 2: Data and State</h3>
+
+<p>The second module of this course deals with working with events and
+errors in React. You'll learn how events work and how you can handle
+them in React. Handling events can sometimes get a bit tricky, so you'll
+also learn about dealing with errors related to events in React.</p>
+<p>By the end of this module you will be able to:</p>
+
+<ul>
+  <li><p>Use common methods to manage state in React.</p></li>
+  <li><p>Detail the concept and nature of state and state change.</p></li>
+  <li><p>Describe the hierarchical flow of data in React.</p></li>
+  <li><p>Describe how data flows in both stateful and stateless components.</p></li>
+  <li><p>Use an event to dynamically change content on a web page.</p></li>
+  <li><p>Describe some common errors associated with events and the syntax required to handle them.</p></li>
+</ul>
+
+<h3><b>Module 3: Navigation Updating and Assets in React</b></h3>
+
+<p>In this module, you'll learn about routing and navigation in React.
+You'll learn how to render partial views and how to update routes in
+your React apps. You'll understand how assets are used, bundled and
+embedded.</p>
+<p>By the end of this module you will be able to:</p>
+
+<ul>
+  <li><p>Use media assets, such as audio and video, with React.</p></li>
+  <li><p>Demonstrate how to manipulate image assets using reference paths.</p></li>
+  <li><p>Explain the folder structure of a React project in terms of embedded or referenced assets.</p></li>
+  <li><p>Demonstrate the conditional implementation and rendering of multiple components.</p></li>
+  <li><p>Create and implement a route in the form of a navbar.</p></li>
+  <li><p>Describe navigation design in React, with a focus on single and multi-page navigation.</p></li>
+</ul>
+
+<h3><b>Module 4: Portfolio Mini-Project (Calculator App)</b></h3>
+
+<p>This module is focused on a practical mini project of building a
+calculator app in React. Upon completing this module, you'll have coded
+your own mini project in React, as a starting point for building your
+React portfolio.</p>
+<p>You have now learned about the scope of things you will cover in this
+course.</p>
+<p>By the end of this module you will be able to:</p>
+
+<ul>
+  <li><p>Synthesize the skills from this course to create and style a React component.</p></li>
+  <li><p>Reflect on this course's content and on the learning path that lies ahead.</p></li>
+</ul>
+
+<ol start="4" type="1">
+  <li>Before you learn React</li>
+</ol>
+
+<p>Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
+learned about these technologies from another course. Either way, a
+quick summary will be useful so let's explore some fundamental HTML, CSS
+and JavaScript principles and practices.</p>
+<p>In this reading, let’s take a practical approach, and revisit some of
+the development techniques you'll need to be comfortable with before
+learning React.</p>
+<p>To get the most out of this course on React basics, you should first
+understand the fundamental methods and concepts of JavaScript.
+Otherwise, you may feel like you’re a child learning to run before you
+can walk. React is a declarative, efficient, and flexible JavaScript
+library for building user interfaces. It lets you compose complex UIs
+from small and isolated pieces of code called “components”.</p>
+<p>React apps are built using modern JavaScript features, which are
+commonly known as ES6. Developers use React to develop Singe Page
+Applications. And you can also develop mobile applications with React
+Native.</p>
+<p>As an aspiring developer, you may opt for a ‘learn as you go
+approach’ regarding JavaScript and React. But this may not help your
+productivity and even at times frustrate you. This is because you may
+confuse code or functionality that is plain JavaScript, or code that is
+React.</p>
+<p>For example, with a solid foundational knowledge of JavaScript, you
+can quickly identify code that is JavaScript ES6 and code that is React.
+And throughout this course, there will be help for you along the way
+with some friendly reminders. </p>
+<p>Also, keep in mind that you are using React to build user interfaces
+which also include HTML and CSS code.</p>
+<p>Let’s begin with the fundamental HTML knowledge needed to learn
+React.</p>
+
+<h4>HTML</h4>
+
+<p>Recall that HTML is used to describe the structure of Web pages.
+Developers use HTML elements with their opening and closing tags to
+“mark up” an HTML document. </p>
+<p>These elements form the structure of a web page and describe what to
+display to the web browser.</p>
+<p>When it comes to HTML it's important to know about:</p>
+
+<ol type="1">
+  <li><p>The purpose of HTML in the web browser,</p></li>
+  <li><p>The use of HTML tags and correct syntax,</p></li>
+  <li><p>How HTML elements are used in a web document,</p></li>
+  <li><p>Another important concept to know about when you're talking about HTML is the Document Object Model, or DOM.</p></li>
+</ol>
+
+<p>Users need to be able to interact with elements on a web page. This
+means that an HTML document must be represented in a way that JavaScript
+code can query and update it. And that's the function of the DOM. It's a
+model of the objects in your HTML file.</p>
+<p>And web developers interact with the DOM through JavaScript to update
+content, set up events and animate HTML elements.</p>
+<p>Before you learn React, it’s advisable that you are comfortable with
+the following HTML tags and concepts</p>
+<h4>Layout &amp; Style</h4>
+
+<ul>
+  <li><p><b>&lt;html&gt; </b></p></li>
+  <li><p><b>&lt;head&gt; </b></p></li>
+  <li><p><b>&lt;body&gt; </b></p></li>
+  <li><p><b>&lt;div&gt; </b></p></li>
+</ul>
+
+<h4>Text formatting &amp; lists</h4>
+
+<ul>
+  <li><p><b>&lt;h1&gt;…&lt;h6&gt; </b></p></li>
+  <li><p><b>&lt;p&gt; </b></p></li>
+  <li><p><b>&lt;ul&gt;&lt;li&gt; </b></p></li>
+  <li><p><b>&lt;b&gt;&lt;i&gt; </b></p></li>
+</ul>
+
+<h4>Images and links</h4>
+
+<ul>
+  <li><p><strong>&lt;img src=""&gt; </strong></p></li>
+  <li><p><strong>&lt;a href=""&gt; </strong></p></li>
+</ul>
+
+<h4>Linking and Meta</h4>
+
+<ul>
+<li><p><strong>&lt;link&gt; </strong></p></li>
+<li><p><strong>&lt;title&gt; </strong></p></li>
+<li><p><strong>&lt;meta&gt; </strong></p></li>
+</ul>
+<h4>
+Semantic
+</h4>
+<ul>
+<li><strong>&lt;header&gt; </strong></li>
+</ul>
+<h4>
+CSS
+</h4>
+<p>CSS (Cascading Style Sheets) is the code that you use to style HTML.
+You need to be familiar with basic CSS concepts before you start
+learning React. This is because you will need to style your React
+components as well, and basic CSS knowledge will help your learning
+journey.</p>
+<p>Before you learn React, make sure you are comfortable with these CSS
+styling options:</p>
+<ul>
+<li><p>Font styling (font size, font color, etc.) </p></li>
+<li><p>Flex Box Layout (Layout of items using CSS Flex Box
+Layout) </p></li>
+<li><p>CSS Selectors </p></li>
+<li><p>Position, Padding, Margins and Display </p></li>
+<li><p>Colors, Background and Icons </p></li>
+</ul>
+<p>You can refresh your knowledge of HTML and CSS in the Meta course
+titled:
+<a href="https://www.coursera.org/learn/introduction-to-front-end-development">Introduction
+to Front-End Development</a></p>
+<h3>
+JavaScript fundamentals and ES6
+</h3>
+<p>React is completely written in JavaScript and uses the more modern
+version of JavaScript which is ES6. While learning React, you should
+already know JavaScript fundamentals. </p>
+<p>JavaScript is the programming language and React is a JavaScript UI
+library. This means the first step is to be proficient at
+JavaScript.</p>
+<p>Here are some of the JavaScript topics that you need to be
+comfortable with before you begin your journey learning React.</p>
+<ul>
+<li><p>Data types </p></li>
+<li><p>Using var, let and const </p></li>
+<li><p>Conditionals and Loops </p></li>
+<li><p>Using objects, arrays and functions </p></li>
+<li><p>ES6 Arrow functions </p></li>
+<li><p>In-built functions such as map(), forEach() and
+promises. </p></li>
+<li><p>Destructuring Arrays and Objects </p></li>
+<li><p>Error Handling </p></li>
+</ul>
+<h3>
+Package Manager (Node + npm)
+</h3>
+<p>React is a UI library, and you will encounter that many times you
+will need to add other packages to your React application. A package in
+JavaScript contains all the files needed for a module. To install these
+packages effectively and manage their dependencies you can use a package
+manager like NPM (Node Package Manager).</p>
+<p>You can install npm by installing Node.js, which will then
+automatically install npm.</p>
+<p>You need to be comfortable with using npm as your package manager,
+since you will be using npm to install packages within your React
+application.  Make sure you are aware of how to do the following with
+npm before you get started on this course.</p>
+<ul>
+<li><p>Installation command to install npm modules in your
+project </p></li>
+<li><p>Installing a package as a dev dependency </p></li>
+<li><p>Start command </p></li>
+<li><p>Updating npm version </p></li>
+<li><p>Navigating around the package.json file </p></li>
+</ul>
+<p>Once you have become confident with these skills, you’ll be in a
+better position to learn and apply React concepts and prepare yourself
+for development of React apps.</p>
+<p>To refresh your knowledge of JavaScript and the basics of Node and
+npm, please visit Meta course titled:
+<a href="https://www.coursera.org/learn/programming-with-javascript">Programming
+with JavaScript</a>.</p>
+<h2>
+<ol start="5" type="1">
+<li>JavaScript modules, imports - exports
+</h2></li>
+</ol>
+<p>Before you start creating the next great app, let’s explore a little
+more about modules.</p>
+<p>Modules can help you to save and access your code in a more
+structured way, and in this reading, you'll learn about some
+foundational concepts of working with JavaScript modules.</p>
+<p>This knowledge is crucial in order to understand the syntax and the
+logic behind how the example React apps in this course are put
+together.</p>
+<p>This reading will cover the three main concepts:</p>
+<ul>
+<li><p>JavaScript modules </p></li>
+<li><p>Module exports </p></li>
+<li><p>Module imports </p></li>
+</ul>
+<h3>
+<strong>JavaScript Modules</strong>
+</h3>
+<p>In JavaScript, a module is simply a file.</p>
+<p>The purpose of a module is to have more modular code, where you can
+work with smaller files, and import and export them so that the apps you
+build are more customizable and have more composable parts.</p>
+<p>A module can be as simple as a single function in a separate
+file.</p>
+<p>Consider the following function declaration:</p>
+<pre><code>  function addTwo(a, b) {
+    console.log(a + b);
+  }</code></pre>
+<p>Say that you have a file named <strong>addTwo.js</strong> that
+contains only the above code.</p>
+<p>How would you make this file a JavaScript module?</p>
+<p>All that you would need to do to make it a JavaScript module is use
+the export syntax.</p>
+<h3>
+<strong>Module Exports</strong>
+</h3>
+<p>There is more than one way to export a module in JavaScript.</p>
+<p>While all the various syntactical differences are not listed, here
+are a few examples that will cover all the ways that the importing and
+exporting of JavaScript modules will be done in this course.</p>
+<p>In general, there are two ways to export modules in JavaScript:</p>
+<ol type="1">
+<li><p>Using default exports </p></li>
+<li><p>Using named exports </p></li>
+</ol>
+<h3>
+<strong>Default Exports</strong>
+</h3>
+<p>You can have <strong>one default export</strong> per JavaScript
+module.</p>
+<p>Using the above <strong>addTwo.js</strong> file as an example, here
+are two ways to perform a default export:</p>
+<pre><code>&gt; }</code></pre>
+<p>So, in the above example, you’re adding the <strong>export
+default</strong> keywords in front of the <strong>addTwo</strong>
+function declaration.</p>
+<p>Here's an alternative syntax:</p>
+<pre><code>&gt; function addTwo(a, b) {
+&gt;     console.log(a + b);
+&gt; }
+&gt;  
+&gt; export default addTwo;</code></pre>
+<h3>
+<strong>Named Exports</strong>
+</h3>
+<p>Named exports are a way to export only certain parts of a given
+JavaScript file.</p>
+<p>In contrast with default exports, you can export as many items from
+any JavaScript file as you want.</p>
+<p>In other words, there can be only one default export, but as many
+named exports as you want.</p>
+<p>For example:</p>
+<pre><code>&gt; function addTwo(a, b) {
+&gt;     console.log(a + b);
+&gt; }
+&gt;  
+&gt; function addThree(a + b + c) {
+&gt;     console.log(a + b + c);
+&gt; }</code></pre>
+<p>If you want to export both the <strong>addTwo</strong> and the
+<strong>addThree</strong> functions as named exports, one way to do it
+would be the following:</p>
+<pre><code>&gt; export function addTwo(a, b) {
+&gt;     console.log(a + b);
+&gt; }
+&gt;  
+&gt; export function addThree(a + b + c) {
+&gt;     console.log(a + b + c);
+&gt; }</code></pre>
+<p>Here's another way you could do it:</p>
+<pre><code>&gt; function addTwo(a, b) {
+&gt;     console.log(a + b);
+&gt; }
+&gt;  
+&gt; function addThree(a + b + c) {
+&gt;     console.log(a + b + c);
+&gt; }
+&gt;  
+&gt; export { addTwo, addThree };</code></pre>
+<h3>
+<strong>Importing Modules</strong>
+</h3>
+<p>Just like when exporting modules in JavaScript, there are several
+ways to import them.</p>
+<p>The exact syntax depends on how the module was exported.</p>
+<p>Say that you have two modules in a folder.</p>
+<p>The first module is <strong>addTwo.js</strong> and the second module
+is <strong>mathOperations.js</strong>.</p>
+<p>You want to import the <strong>addTwo.js</strong> module into the
+<strong>mathOperations.js</strong> module.</p>
+<h3>
+<strong>Importing a Module that was Exported as Default</strong>
+</h3>
+<p>Consider the previous example of exporting the
+<strong>addTwo</strong> function as a default module:</p>
+<pre><code>// addTwo.js module:
+function addTwo(a, b) {
+  console.log(a + b);
+}
+export default addTwo;</code></pre>
+<p>To import it into the <strong>mathOperations.js</strong> module, you
+could use the following syntax:</p>
+<pre><code>&gt; import addTwo from &quot;./addTwo&quot;;
+&gt;
+&gt; // the rest of the mathOperations.js code goes here</code></pre>
+<p>So, you could start this import with the <strong>import</strong>
+keyword, then the name under which you’ll use this imported code inside
+the <strong>mathOperations.js</strong> file. You would then type the
+keyword <strong>from</strong>, and finally the location of the file,
+<em>without the .js extension.</em></p>
+<p>Contrast the above import of the default <strong>addTwo
+export</strong> with the different import syntax if the
+<strong>addTwo</strong> function was instead a named export:</p>
+<pre><code>import { addTwo } from &quot;./addTwo&quot;;
+
+// the rest of the mathOperations.js code goes here</code></pre>
+<h3>
+<strong>Conclusion</strong>
+</h3>
+<p>In this reading, you've learned about the very basics of what modules
+are in JavaScript, why they are used and how they get exported and
+imported.</p>
+<p>The examples you've seen here are the core of how you'll deal with
+imports and exports of various modules in the example React apps on this
+course.</p>
+<p>However, please note that there are many more caveats, rules, and
+implementations of working with modules in JavaScript.</p>
+<p>The examples given in this reading are there just to make it easier
+to comprehend what is happening in React apps that you'll be building in
+this course.</p>
+<p>The intent of this reading was just to get you familiar with the most
+common syntax used - not as a comprehensive overview of modules in
+JavaScript.</p>
+<h2>
+<ol start="6" type="1">
+<li>Working with Labs in this course
+</h2></li>
+</ol>
+<p>The labs for this course already have everything installed and setup
+so you can start working with React right away.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. explorer panel of react lab (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image07.png?raw=true"
+  alt="Explorer panel of React lab."
+  width="30%;" />
+</p>
+<!--
+![Explorer panel of React
+lab](./images/image07.png){width="3.0in"
+height="1.4006627296587926in"}
+-->
+<p>In order to run and view your React app you will need to open the VS
+Code built-in terminal, run <strong>npm start</strong>, and then click
+<strong>Open Development server</strong>.</p>
+<p>The <strong>Open Development server</strong> link can be found on the
+blue horizontal bar at the very bottom of the lab window, written in
+white letters on a blue background. Click this link.</p>
+<p>That will open the app in the browser in a separate tab.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. react lab showing npm start (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image08.png?raw=true"
+  alt="React lab showing npm start."
+  width="50%;" />
+</p>
+<!--
+![React lab showing npm
+start](./images/image08.png){width="5.0in"
+height="2.788713910761155in"}
+-->
+<h4>
+<strong>To view your code and instructions side-by-side</strong>, select
+the following in your VS Code toolbar:
+</h4>
+<ul>
+<li><p>View -&gt; Editor Layout -&gt; Two Columns</p></li>
+<li><p>To view a file in Preview mode, right click on the file
+and <strong>Open Preview</strong> (in the EXPLORER sidebar)</p></li>
+<li><p>Select your code file in the code tree, which will open it up in
+a new VS Code tab.</p></li>
+<li><p>You can drag any file over to the second column to view the
+contents in that column.</p></li>
+<li><p>Great work! You can now see instructions and code at the same
+time.</p></li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~ 09. your first component exercise showing react lab with app.js and instructions (##) ~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image09.png?raw=true"
+  alt="Your first component exercise showing React lab with App.js and Instructions."
+  width="65%;" />
+</p>
+<!--
+![\'Your first component exercise\' showing React lab with App.js and
+Instructions](./images/image09.png){width="6.5in"
+height="3.2298140857392825in"}
+-->
+<h2>
+<ol start="7" type="1">
+<li>Additional reading
+</h2></li>
+</ol>
+<p>Below you will find links to helpful additional readings.</p>
+<ul>
+<li>
+<a href="https://nodejs.org/en/">nodejs.org</a>,
+</li>
+<li>
+<a href="https://www.npmjs.com/">npmjs.com</a>,
+</li>
+<li>
+<a href="https://reactjs.org/">reactjs.org</a>,
+</li>
+<li>
+<a href="https://create-react-app.dev/">create-react-app.dev</a>,
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/">POS VS Code</a>. </p>
+<h2>
+<ol start="8" type="1">
+<li>Setting up a React project in VS Code (Optional)
+</h2></li>
+</ol>
+<p>To complete the exercises in this course you have been provided with
+a dedicated lab environment set up specifically for you to apply the
+skills that you have learned. You can find out more about Working with
+Labs in this course by accessing the link below:</p>
+<h3>
+<a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working
+with Labs in this course</a>
+</h3>
+<p>You can also use VS Code to practice these exercises on your local
+machine as an alternative option.</p>
+<p>To follow along in this reading, you need to have Node.js and VS Code
+already installed on your computer. If you don’t have this setup, please
+refer to the Programming with JavaScript course:</p>
+<ul>
+<li>
+<a href="https://www.coursera.org/learn/react-basics/resources/SSPnG">Setting
+up VS Code,</a>
+</li>
+<li>
+<a href="https://www.coursera.org/learn/react-basics/resources/FTd5h">Installing
+Node and NPM.</a>
+</li>
+</ul>
+<p>In VS Code, you're ready to start a brand new React project.</p>
+<p>You can do it using npm.</p>
+<h4>
+<strong>What is npm?</strong>
+</h4>
+<p>When Node.js is installed on a computer, <strong>npm</strong> comes
+bundled with it.</p>
+<p>With <strong>npm</strong>, you can:</p>
+<ol type="1">
+<li><p>Author your own Node.js modules ("packages"), and publish them on
+the npm website so that other people can download and use them </p></li>
+<li><p>Use other people's authored modules ("packages") </p></li>
+</ol>
+<p>So, ultimately, npm is all about <em>code sharing</em> and
+<em>reuse</em>. You can <strong>use other people's code</strong> in your
+own projects, and you can also <strong>publish your own Node.js
+modules</strong> so that other people can use them.</p>
+<p>An example npm module that can be useful for a new React developer is
+<a href="https://create-react-app.dev/">create-react-app</a>. While this
+npm module comes with its own website, you can also find some info on
+the <a
+href="https://github.com/facebook/create-react-app">create-react-app
+project on GitHub</a>. </p>
+<p>Whenever you run the npm command to add other people's code,
+<strong>that code, and all other Node modules that depend on it, get
+downloaded</strong> to your machine.</p>
+<p>However, although it's possible do to so, this is not really
+necessary, at least in the case of the <strong>create-react-app</strong>
+Node module.</p>
+<p>In other words, you can avoid installing the
+<strong>create-react-app</strong> package but still use it.</p>
+<p>You can do that by running the following command: <strong>npm init
+react-app example</strong>, where “example” is the actual name of your
+app. You can use any name you’d like, but it’s always good to have a
+name that is descriptive and short.</p>
+<p>In the next section, you'll learn how to build a brand new app that
+you can name: <strong>firstapp</strong>.</p>
+<h3>
+<strong>Opening the built-in VS Code terminal and running</strong>
+<em>npm init react-app</em> <strong>command</strong>
+</h3>
+In VS Code, click on <em>View</em>, <em>Terminal</em> to open the
+built-in terminal.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 10. how to access the terminal in vs code (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image10.png?raw=true"
+  alt="How to access the terminal in Visual Studio (piece of shit) code."
+  width="50%;" />
+</p>
+<!--
+![How to access the Terminal in Visual Studio
+Code](./images/image10.png){width="5.0in"
+height="2.8125in"}
+-->
+<p>Now run the command to add a brand new React app to the machine:</p>
+<pre><code>&gt; $ npm init react-app firstapp</code></pre>
+<p>The installation and setup might take a few minutes.</p>
+<p>Here's the output of executing the above command:</p>
+<p>Installing template dependencies using npm...</p>
+<pre><code>&gt; $ npm WARN deprecated source-map-resolve@0.6.0:</code></pre>
+<p>See <u>https://github.com/lydell/source-map-resolve#deprecated</u></p>
+<p>To address all issues (including breaking changes), run:</p>
+<pre><code>&gt; $ npm audit fix \--force</code></pre>
+<p>Run `npm audit` for details.</p>
+<p>Created git commit.</p>
+<p>Success! Created firstapp at /home/pc/Desktop/firstapp</p>
+<p>Inside that directory, you can run several commands:</p>
+<pre><code>$ npm start</code></pre>
+<p>Starts the development server.</p>
+<pre><code>$ npm run build</code></pre>
+<p>Bundles the app into static files for production.</p>
+<pre><code>$ npm test</code></pre>
+<p>Starts the test runner.</p>
+<pre><code>$ npm run eject</code></pre>
+<p>Removes this tool and copies build dependencies, configuration files
+and scripts into the app directory. If you do this, you can’t go back!</p>
+<p>If you follow the suggestions from the above output, you'll run:
+<strong>cd firstapp</strong>, and then <strong>npm start</strong>.</p>
+<p>This will end up with the following output in the built-in
+terminal:</p>
+<p><em>Compiled successfully! You can now view firstapp in the browser.
+  Local:            <a
+href="http://localhost:3000/"><u>http://localhost:3000</u></a>   On Your
+Network:  <a
+href="http://192.168.1.167:3000/"><u>http://192.168.1.167:3000</u></a>
+Note that the development build is not optimized. To create a production
+build, use npm run build. webpack compiled successfully</em></p>
+<p>Again, following the instructions, opening a browser with the address
+bar pointing to <a
+href="http://localhost:3000/">http://localhost:3000</a>, will show the
+following page in your browser:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 11. react logo displayed on the browser (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image11.png?raw=true"
+  alt="React logo displayed on the browser."
+  width="50%;" />
+</p>
+<!--
+![React logo displayed on the
+browser](./images/image11.png){width="5.0in"
+height="3.1666666666666665in"}
+-->
+<p>This means that you've successfully:</p>
+<ol type="1">
+<li><p>Set up your local development environment </p></li>
+<li><p>Run the create-react-app npm package (without installing
+it!) </p></li>
+<li><p>Built a starter React app on your local machine </p></li>
+<li><p>Served that starter React app in your browser </p></li>
+<li><p>After you've built your starting setup, in Module 2 you'll start
+working with the basic building blocks of React: components.</p></li>
+</ol>
+<h2>
+<ol start="9" type="1">
+<li>Why React?
+</h2></li>
+</ol>
+<p>React is used everywhere in the tech world and you'll have the chance
+to use it throughout your career. It's a very valuable skill set to
+have.</p>
+<p>My name is Katie and I'm a Software Engineer on the React Apps team
+at Meta, and we work on building new features using React for
+facebook.com.</p>
+<p>My first encounter with React was actually in a senior design project
+back at college.</p>
+<p>We were looking for a great client-side library to use for an app
+that we were building.</p>
+<p>React seemed like the easiest to use and the fastest to build on.</p>
+<p>I had already gotten my job at Meta, but I didn't know what I was
+going to be working on at Meta.</p>
+<p>It was cool to get this experience with React, realized I really
+enjoy working with it and then get to do it in my day-to-day work.</p>
+<p>I feel like in school you tend to do a lot of object-oriented
+programming which uses inheritance.</p>
+<p>React doesn't use any of that.</p>
+<p>It uses something called composition.</p>
+<p>That was a little bit difficult to think about, but there's so much
+documentation around React and such a strong community that it's easy to
+pick up.</p>
+<p>You have support coming from so many different places.</p>
+<p>You can just go onto YouTube and watch a video, read through the
+documentation, or look at other open source projects that use React.</p>
+<p>There are so many resources to pull from.</p>
+<p>I think developers outside of Meta choose to use React for the same
+reasons that we do at Meta.</p>
+<p>It's super easy to learn and pick up.</p>
+<p>You're able to create really custom UIs with React, we're building so
+many different features on facebook.com every day that require a lot of
+custom components and UIs.</p>
+<p>It's nice to have the flexibility that React provides.</p>
+<p>I would say React is the best choice for an app if your UI is really
+costume and you're looking for a lot of flexibility with what other
+libraries you can integrate for your app or website.</p>
+<p>React is just a front-end library.</p>
+<p>You're going to need to interact with other third-party libraries
+too, and if you want the flexibility of integrating with redox or other
+third-party libraries, React is the perfect choice for you.</p>
+<p>React is also great if you have complex UIs where you want to reuse
+code across many different pages.</p>
+<p>I think it's a great choice if you're building a complex website with
+a ton of features across a ton of different pages.</p>
+<p>I think react solves the problem of code reusability really well.</p>
+<p>Here at Meta, we have a core set of UI components that were actually
+able to reuse across the site.</p>
+<p>This means that we're able to build a lot of functionality into these
+core UI components like accessibility.</p>
+<p>I think we're able to have like a high-quality bar across the site
+just because we're reusing components everywhere and we're able to share
+code even across Facebook and Instagram and Messenger.</p>
+<p>I think that's a really unique part of React.</p>
+<p>It's really interesting because if I find a bug and a core UI
+component and I fix it, I'm not only fixing it for my one-use case, I'm
+fixing it for use cases across the site.</p>
+<p>I think it's a really smart way to use engineering effort, you're
+fixing a bug once and you're solving one problem everywhere.</p>
+<p>I would say the biggest competitor of React is Angular.</p>
+<p>Angular is a bit different from React in that it's a full-fledged
+solution for an app or website.</p>
+<p>You don't really need to integrate with third-party libraries when
+using Angular.</p>
+<p>Whereas with React, it's just a client-side library.</p>
+<p>You do need to figure out how you're going to do routing and server
+client communication.</p>
+<p>I would say React provides more flexibility with creating these
+complex costume UIs.</p>
+<p>Whereas angular makes it easier to create a single page web
+application with like an out-of-the-box solution.</p>
+<p>Learn by doing, try to make an example app.</p>
+<p>Don't go and try to create the most complex app you've ever heard
+of.</p>
+<p>I would say start simple. Make sure you're using best practices.</p>
+<p>Continuously reference documentation to see if you're using hooks the
+way you're supposed to and that thing.</p>
+<p>It should come pretty easily.</p>
+<p>I think one of the great benefits of React is how easy it is to pick
+up and learn.</p>
+<p>There are a lot of different pieces of React and a lot of different
+concepts to learn.</p>
+<p>But it's really well worth it in the end because you're going to
+encounter React in your day-to-day work.</p>
+<p>Hopefully for the rest of your career.</p>
+<p>There's a huge community behind you ready to help answer questions
+about React too.</p>
+<h2>
+<ol start="10" type="1">
+<li>React.js overview
+</h2></li>
+</ol>
+<p>Recall the concept of the single-page application or SPA for
+short?</p>
+<p>This is a one-page website where some of the pages content changes
+based on user interaction.</p>
+<p>SPA differ from traditional website, where each web page needs to be
+loaded as the user navigates around the site.</p>
+<p>This frequent reload can be considered inefficient as some of the
+same content such as logos, navigation, and footers need to be loaded
+again.</p>
+<p>And one of the most popular ways to build a SPA is with the React
+library from Meta.</p>
+<p>React used to run many of the world's most popular websites.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 12.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image12.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image12.png){width="5.0in"
+height="2.86878280839895in"}
+-->
+<p>Often on these sites, you're type a search term into the sites input
+box.</p>
+<p>The site then returns the relevant content or results.</p>
+<p>But you might notice that even though the content has updated, the
+sites URL doesn't change.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 13.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image13.png?raw=true"
+  alt="."
+  width="40%;" />
+</p>
+<!--
+![](./images/image13.png){width="4.0in"
+height="1.472169728783902in"}
+-->
+<p>As SPA only load the content as required, they can be ideal for
+businesses and enterprises who need a web app that offers rich user
+interfaces, speed scalability, and flexibility.</p>
+<p>As an aspiring developer, you may feel like there are a lot of new
+concepts and processes to understand when working with React but you can
+be sure that you will have an opportunity to get familiar with and use
+them.</p>
+<p>In this video, you will learn about the basics of React by exploring
+the concepts of the component-based architecture components and the
+virtual DOM.</p>
+<p>Let's begin with components.</p>
+<p>One of the core building blocks of React.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 14.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image14.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image14.png){width="5.0in"
+height="1.8402121609798776in"}
+-->
+<p>When meta released the React library, it included the concept of
+something called component-based architecture.</p>
+<p>This is essentially a design philosophy for building software based
+on reusable components of code.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 15.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image15.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image15.png){width="5.0in"
+height="2.10370406824147in"}
+-->
+<p>Each component consists of well-defined functionality that can be
+inserted into an application without requiring modification of other
+components.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 16.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image16.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image16.png){width="5.0in"
+height="2.10370406824147in"}
+-->
+<p>Because components are reusable, they can be used multiple times and
+easily inserted anywhere we're needed.</p>
+This results in components that can exist within the same space yet
+interact independently from each other.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 17.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image17.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image17.png){width="5.0in"
+height="2.2761909448818898in"}
+-->
+<p>One of the advantages of developing using components is that many
+developers can work on the same project without interfering with the
+code of other developers' components.</p>
+<p>As you may recall, modern front-end web development revolves around
+the concept of creating standalone parts of the user interface, or UI
+for short.</p>
+<p>Well, in react, these standalone parts are created using components
+which form the foundation of all UI design.</p>
+<p>It's important to know that all UI is composed of simple components
+that can be combined into more complex components.</p>
+<p>In fact, you can think of an entire website is just a collection of
+components.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 18.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image18.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image18.png){width="5.0in"
+height="2.249735345581802in"}
+-->
+<p>For example, consider the product check out page of an e-commerce web
+application.</p>
+<p>The page consists of three sections, a header, a payment section, and
+a sidebar.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 19.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image19.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
+![](./images/image19.png){width="5.0in"
+height="0.7195767716535433in"}
+-->
+<p>The header section contains the company logo with a navigation menu
+and a button to view the shopping cart.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 20.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image20.png?raw=true"
+  alt="."
+  width="30%;" />
+</p>
+<!--
+![](./images/image20.png){width="3.0in"
+height="1.7358727034120736in"}
+-->
+<p>The payment section area contains a form where the user inputs their
+payment information.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 21.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image21.png?raw=true"
+  alt="."
+  width="30%;" />
+</p>
+<!--
+![](./images/image21.png){width="3.0in"
+height="2.761124234470691in"}
+-->
+<p>Finally, there's a sidebar with the order summary information.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 22.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image22.png?raw=true"
+  alt="."
+  width="40%;" />
+</p>
+<!--
+![](./images/image22.png){width="4.0in"
+height="2.0774595363079613in"}
+-->
+<p>As the components are self-contained, they have their own HTML, CSS,
+and JavaScript logic for functionality.</p>
+<p>For example, the payment section component has a JavaScript function
+that submits a payment when a button is clicked.</p>
+<p>It's important to know that the use of components in website UI
+design is not limited to just React.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 23.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image23.png?raw=true"
+  alt="."
+  width="30%;" />
+</p>
+<!--
+![](./images/image23.png){width="3.0in"
+height="1.5278346456692913in"}
+-->
+<p>Many website's front end or UI are built on the foundations of
+components and compose ability.</p>
+<p>But React is a powerful tool for streamlining the process of building
+components and composing them.</p>
+<p>It performs these actions efficiently as components are rendered to
+the DOM without significantly impacting the browser's resources.</p>
+<p>This is called component rendering and you'll learn more about this
+and its associated render method later.</p>
+<p>You may recall that the DOM is a logical tree-like structure
+representing the HTML document and it uses nodes to describe the various
+parts of the document.</p>
+<p>Before React, you could still build components style layouts.</p>
+<p>However, it involved much more complicated DOM manipulation and code
+making the layouts more complex and harder to work with.</p>
+<p>This resulted in something known as spaghetti code, a term developers
+use in web development to describe code that is complex, convoluted, and
+difficult to understand like spaghetti.</p>
+<p>React prevents this spaghetti code by avoiding any manipulation of
+the DOM.</p>
+<p>Instead, React provides something known as the virtual DOM.</p>
+<p>You may recall that this is an in-memory representation or clone of
+the real DOM which minimizes updates to the DOM itself.</p>
+<p>React uses the virtual DOM to update the browser Dom only when
+needed.</p>
+<p>This ensures that the update is as minimal as possible, increasing
+the application speed and performance.</p>
+<p>In this module, you learned about the basics of React by exploring
+the concepts of the component-based architecture components and the
+virtual DOM.</p>
+<h2>
+<ol start="11" type="1">
+<li>Introduction to functional components
+</h2></li>
+</ol>
+<p>Recall how you learned about functions in JavaScript.</p>
+<p>They are reusable blocks of code that can take an input, perform some
+procedure or calculation, and then return an output.</p>
+<p>Well, a React component acts much like a traditional JavaScript
+function. In this video, you'll continue your exploration of the
+structure of the React architecture by learning about functional
+components.</p>
+<p>Component types, JSX and trans piling.</p>
+<p>React provides two types of components, functional components and
+class components.</p>
+<p>They behave very similar in React to traditional functions, and
+classes in JavaScript.</p>
+<p>Don't worry about class components for now.</p>
+<p>You'll learn more about them later.</p>
+<p>Instead, let's just focus on functional components, which acts like a
+JavaScript function.</p>
+<p>In the default React application, only one component is rendered and
+it's the app components located inside the index.js file that's located
+inside the source folder.</p>
+<p>It's important to know that every React app must contain at least one
+component, and it's called the root components.</p>
+<p>This component is loaded using the import statement.</p>
+<p>You'll learn more about the import statement in React later.</p>
+<p>For now, just know that it's used to import code needed for React to
+work, such as the import React and import React DOM statements.</p>
+<p>The syntax to render a component is very similar to a self-closing
+tag in HTML, you just place the component name inside the left and
+right-angle brackets and don't forget the forward slash.</p>
+<p>The roots components can contain other components that developers
+create to represent the various UI part of the application.</p>
+<p>Like in the e-commerce example that you learned about earlier.</p>
+<p>Recall that this component is ultimately converted to a DOM fragment
+and placed into the existing DOM as a child of the HTML div element with
+an ID of roots.</p>
+<p>This div element is then rendered to the browser.</p>
+<p>If you analyze the app component, you'll notice that it looks very
+similar to a JavaScript function with some HTML code inside.</p>
+<p>You may also notice an export default statement. You'll learn more
+about this soon.</p>
+<p>For now, just know that you need it to make your components
+available.</p>
+<p>Now that you're familiar with the concept of functional components,
+let's explore how web developers create them in React.</p>
+<p>React is scripted using a special syntax called JavaScript XML or
+JSX.</p>
+<p>For many Reacts developers, this is known as a syntax extension to
+JavaScript.</p>
+<p>What is JSX syntax like? Let's find out by going back to our React
+default app component.</p>
+<p>Recall that in the return statements of the app function, it seemed
+that some HTML content is returned.</p>
+<p>Well, this content is not exactly HTML.</p>
+<p>It's JSX. JSX syntax looks very similar to HTML.</p>
+<p>What are its advantages is that it allows you to write JavaScript
+code inside what looks like HTML elements?</p>
+<p>In fact, you can think of JSX as a combination of custom HTML and
+JavaScript.</p>
+<p>This allows you to make your website dynamic.</p>
+<p>You'll learn more about the differences between HTML and JSX
+later.</p>
+<p>For now, just know that you can place this syntax inside the return
+statement of a functional component.</p>
+<p>It's also important to note that a React component won't render until
+it's used as a JSX element just like a JavaScript function declaration
+and won't run until it's called or invoked.</p>
+<p>Now you know what JSX is.</p>
+<p>Let's explore the steps involved to create a React components which
+will contain some JSX code inside a heading 1 HTML element to display
+some text on a webpage.</p>
+<p>First, you create the component, which is basically just a JavaScript
+file, since its purpose is to return some heading text, you name the
+file Heading.js.</p>
+<p>Notice that the first letter of the component name is
+capitalized.</p>
+<p>This is because there's a difference in how React treats capitalized,
+and non-capitalized component names.</p>
+<p>It's important to remember that all component names in React must be
+capitalized. Why is this?</p>
+<p>Well, because React treats lowercase components as regular HTML
+elements.</p>
+<p>Capitalizing a component name helps React to distinguish JSX elements
+from HTML elements.</p>
+<p>Now let's continue with our component. Next inside the app.js file,
+create a function named Heading.</p>
+<p>The function name must also be declared using a capital letter for
+the first letter of the function.</p>
+<p>Then inside the function body, you create a variable named title and
+assign it the string value of this is some heading text.</p>
+<p>Now you're ready to create the return statement of the function.</p>
+<p>Inside the parentheses of the return, insert a heading 1 tag, and
+inside it places the variable named title.</p>
+<p>To make React evaluate the title variable, you need to place it
+inside curly brackets.</p>
+<p>If you didn't use curly brackets, you'd get the word title instead of
+this is some heading text.</p>
+<p>At this point, it's worth remembering that while you are creating
+HTML like syntax, you are actually coding inside a JavaScript file.</p>
+<p>Because of this, you can output a variable inside your JSX code,
+something you cannot do when writing static HTML.</p>
+<p>The overall syntax instructs React to render the heading HTML element
+with whatever text value that is stored within the variable named
+title.</p>
+<p>This rendering happens behind the scenes because of something called
+trans piling.</p>
+<p>You can think of trans piling as a process of converting JSX to HTML
+and you'll learn more about this later.</p>
+<p>In this section you learned about functional components and how to
+create them in React.</p>
+<p>You also learned about JSX, which acts like a combination of HTML,
+CSS, and JavaScript that you can use to generate dynamic content inside
+your functional components.</p>
+<p>Finally, you explore the concepts of rendering and trans piling.</p>
+<p>If you'd like to learn about these concepts in more detail.</p>
+<p>There's a link to an additional reading at the end of this
+lesson.</p>
+<h2>
+<ol start="12" type="1">
+<li>Creating React components
+</h2></li>
+</ol>
+<p>In this video, you will further explore the concepts of components in
+React and learn how to create a component from scratch.</p>
+<p>You'll be introduced to the concept of the export statements and how
+components can be used to create reusable blocks of code.</p>
+<p>I've launched VS Code here, and I have the creating components folder
+open in the built-in terminal.</p>
+<p>Now, I'll execute the command npm init, React app dot.</p>
+<p>The dot character instructs VS Code to run this command in the
+current folder.</p>
+<p>In other words, I'm using Create React app to build a new app for me
+inside this folder.</p>
+<p>I execute this command by pressing the Enter key.</p>
+<p>I wait for the app to build, and once it's ready, I can start the app
+by typing npm then a space followed by start.</p>
+<p>The process of building the React app could take a couple of minutes,
+so just sit tight while it builds.</p>
+<p>Great. My React app has started and loaded in the browser at
+localhost:3000 which is the local server.</p>
+<p>Notice that I have all these files and folders in the left pane of VS
+Code now, such as node modules, public SRC, and files like package.
+json.</p>
+<p>You'll learn more about these later.</p>
+<p>For now, the only folder I need to work in as the SRC folder.</p>
+<p>Don't worry about all these other files and folders. Instead, I want
+you to focus on how to build a component in React.</p>
+<p>To do that, let's have a clean start.</p>
+<p>The easiest way to do this is to remove all the code inside the
+function inside the app.js file.</p>
+<p>I guess you might say this is the simplest possible component. I'm
+declaring an app function and I'm exporting it as a default module.</p>
+<p>I save my file and notice that my app is just a blank page.</p>
+<p>Now, let me create another component that will contain some texts
+that I want to display in the browser.</p>
+<p>To do this, I create another function called header, and in the
+function body, I'll just return some greeting texts inside an H1 JSX
+elements.</p>
+<p>Inside the H1 I type, Hello world.</p>
+<p>My code looks good now, but my screen is still white.</p>
+<p>This is because I'm not yet rendering anything from my app
+function.</p>
+<p>To do this, I need to return to my app function and call the header
+function from it.</p>
+<p>I use the JSX elements syntax to render a component which is the name
+of my function.</p>
+<p>Inside the body of the app function, I create the return statement
+and type the function name of header inside left and right-angle
+brackets, not forgetting to add the forward slash before the right-angle
+bracket.</p>
+<p>Notice that the syntax to render a component is very similar to a
+self-closing tag in HTML.</p>
+<p>Press Control S or Command S, if you're on Mac to save everything
+again.</p>
+<p>Great, my code is working now.</p>
+<p>I notice in HTML heading with the text Hello World displayed in the
+browser. Congratulations.</p>
+<p>In this video, you'll learned how to create a functional
+component.</p>
+<p>These components named app calls, another component named header,
+which displays an HTML heading with some texts.</p>
+<p>At the moment, the header component code exists in the same file as
+the app component.</p>
+<p>To make the header component isolated and reusable, I need to place
+it in its own file.</p>
+<p>Then I can reuse it multiple times in the application anytime I want
+to display a heading element with some texts, and you'll learn how to do
+this very soon.</p>
+<p>In this module, you'll learn how to create a functional component in
+React, and render it to the root components named app.js.</p>
+<h2>
+<ol start="12" type="1">
+<li>Transpiling JSX
+</h2></li>
+</ol>
+<h3>
+By the end of this reading, you will have learned how a component is
+built.
+</h3>
+<h3>
+Introduction
+</h3>
+<p>Components are a nice way to build websites in React because they
+allow you to build more modular apps. However, how do you build
+components using React, JSX, and JavaScript? You'll learn how this works
+in this lesson item.</p>
+<h3>
+A browser cannot understand JSX syntax.
+</h3>
+<p>This means that making a browser understand React code requires a lot
+of supporting technologies.</p>
+<p>An example of such a technology is a <strong>transpiler</strong>.</p>
+<p>A <strong>transpiler</strong> takes a piece of code and transforms it
+into some other code.</p>
+<p>To understand why this is done, here is an example of an ES6 variable
+declaration:</p>
+<pre><code>  const PI = 3.14</code></pre>
+<p>This is perfectly valid ES6 syntax.</p>
+<p>However, if you were using a very old computer, that computer will
+have an old browser. Perhaps that browser was built before ES6 came out
+in 2015.</p>
+<p>This means that the JavaScript engine that is built into your old
+computer's browser is likely to be an ES5 JavaScript engine.</p>
+<p>In ES5, the only way to declare a variable is the following:</p>
+<pre><code>  var pi = 3.14</code></pre>
+<p>What this means is that for this old browser to understand the ES6
+code, the only way to do it is by <strong>transpiling</strong> it.</p>
+<p>If you feel like it, you can try transpiling ES6 to ES5 code
+yourself, using <a href="https://es6console.com/">the es6console
+website</a>.</p>
+<p>Now, let’s move the focus to another example of transpiling.</p>
+<p>Let's say that you want to use a brand new, most modern ECMAScript
+syntax in an app. The only problem is that this new syntax is currently
+not supported by any browser; even an up-to-date browser.</p>
+<p>However, by transpiling the new most-modern JavaScript syntax into
+something that modern browsers can understand, it is able to convert
+some code that the browser cannot comprehend, into code that it can
+comprehend, run, and produce a result from.</p>
+<p>Likely the most popular site that shows off how this works is <a
+href="https://babeljs.io/">Babel</a>. As the heading of the website
+reads, "Babel is a JavaScript Compiler".</p>
+<p>This finally brings you to the point of this discussion about
+transpiling JavaScript code.</p>
+<p>What Babel does is this: it allows you to transpile JSX code (which
+cannot be understood by a browser) into plain JavaScript code (which can
+be understood by a browser).</p>
+<p>This is where React and JSX come in.</p>
+<p>For React code to be understood by a browser, you need to have a
+<strong>transpiling step</strong> in which the JSX code gets converted
+to plain JavaScript code that a modern browser can work with.</p>
+<p>To demonstrate how this works, let’s use the <strong>Heading</strong>
+component from the previous lesson.</p>
+<p>Add the JSX code into <a
+href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&amp;build=&amp;builtIns=false&amp;corejs=3.21&amp;spec=false&amp;loose=false&amp;code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&amp;debug=false&amp;forceAllTransforms=false">the
+online Babel repl</a>. Repl stands for "read-eval-print loop" and it
+accepts code you write, evaluates it, and produces some result. In the
+specific case of <a
+href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&amp;build=&amp;builtIns=false&amp;corejs=3.21&amp;spec=false&amp;loose=false&amp;code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&amp;debug=false&amp;forceAllTransforms=false">the
+online Babel repl</a>, that result is some transpiled code. Here's a
+more detailed explanation.</p>
+<p>If you've visited the above-linked URL, you'll find a web page that
+has two panels. On the left, there's source JSX code:</p>
+<pre><code>  function Heading(props) {
+    return &lt;h1&gt;{props.title}&lt;/h1&gt;
+  }</code></pre>
+<p>... and on the right, there's the transpiled, plain JavaScript
+code:</p>
+<pre><code>  &quot;use strict&quot;;
+  
+  function Heading(props) {
+    return /*#__PURE__*/React.createElement(&quot;h1&quot;, null, props.title);
+  }</code></pre>
+<p>If you now analyze the difference between the source JSX code and the
+transpiled, plain JavaScript code, dis-regarding the comment, here’s the
+body of the Heading function:</p>
+<pre><code>  React.createElement(&quot;h1&quot;, null, props.title);</code></pre>
+<p>So, here you have a React object, and this object has a
+<strong>createElement()</strong> method on it. The method is invoked
+with three arguments:</p>
+<ol type="1">
+<li><p><strong>"h1"</strong> </p></li>
+<li><p><strong>null</strong> </p></li>
+<li><p><strong>props.title</strong> </p></li>
+</ol>
+<p>The <strong>first</strong> argument is the DOM element to render - in
+this case, an <strong>h1</strong> element.</p>
+<p>The <strong>second</strong> property is any HTML attribute that
+should be added, and there's a null here - meaning, there should be an
+object with some data, but there isn't any data so instead of the object
+there's the null value.</p>
+<p>The <strong>third</strong> property is the contents of the inner HTML
+of the DOM element specified as the first argument - in this case, the
+contents of the inner HTML of the <strong>h1</strong> element.</p>
+<p>Now let’s use Babel again, and this time transpile the
+<strong>render</strong> syntax for the <strong>Heading</strong>
+component:</p>
+<pre><code>  &lt;Heading title=&quot;This is the heading text!&quot;&gt;&lt;/Heading&gt;</code></pre>
+<p>Again using
+<a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the
+Babel repl</a>, and as can be confirmed in
+<a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the
+link</a>, the output of the tranpilation is the following code:</p>
+<pre><code>  &quot;use strict&quot;;
+  
+  /*#__PURE__*/
+  React.createElement(Heading, {
+    title: &quot;This is the heading text!&quot;
+  });</code></pre>
+<p>Again, you have the <strong>React.createElement()</strong> method
+call, and this time, the first item to render is
+<strong>Heading</strong>, and then you have an object as the second
+argument (instead of a null that you had in the previous transpilation
+example).</p>
+<p>This brings me to an interesting question: What is the minimum code
+that a component must have to be able to show something on the screen
+when rendered?</p>
+<p>You can see the answer below:</p>
+<pre><code>  function Example() {
+    return &lt;div&gt;An element&lt;/div&gt;
+    }
+  export default Example</code></pre>
+<h2>
+<ol start="13" type="1">
+<li>Solution: Your first component
+</h2></li>
+</ol>
+<p>Here is the completed solution code for the App.js file:</p>
+<pre><code>  function Heading() { 
+    return ( 
+      &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
+    )
+  }
+
+  function App() { 
+    return ( 
+      &lt;div className=&quot;App&quot;&gt;
+        This is the starting code for &quot;Your first component&quot; ungraded lab
+        &lt;Heading /&gt;
+      &lt;/div&gt;
+    ); 
+  } 
+
+export default App;</code></pre>
+<p>Here is the output from the solution code for the App.js file:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 24. output of the completed component exercise (##) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image24.png?raw=true"
+  alt="The output of the completed first component exercise."
+  width="50%;" />
+</p>
+<!--
+![The output of the completed \'Your first component\'
+exercise.](./images/image24.png){width="5.0in"
+height="0.8566437007874016in"}
+-->
+<p><strong>Step 1:</strong> In the starting code, you already had a JSX
+element named <strong>&lt;Heading /&gt;</strong> , being rendered from
+the App component, since it is a part of the App component's return
+statement.</p>
+<pre><code>function App() { 
+  return ( 
+    &lt;div className=&quot;App&quot;&gt;
+      This is the starting code for &quot;Your first component&quot; ungraded lab 
+      &lt;Heading /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+<p> </p>
+<pre><code>export default App;</code></pre>
+<p>Then, you added a new function to the App component, and named that
+function <strong>Heading ()</strong>. You placed it at the very top of
+the <strong>App.js</strong> file.</p>
+<pre><code>function Heading() {
+}</code></pre>
+<p><strong>Step 2:</strong> Next, in the body of
+the <strong>Heading</strong> component, you added a return statement and
+spread it over several lines by following it up with an opening and a
+closing parenthesis.</p>
+<pre><code>  function Heading() { 
+    return (
+    )
+  }</code></pre>
+<p><strong>Step 3:</strong> Then, inside the parentheses, you added the
+following code: </p>
+<pre><code>  &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+   function Heading() { 
+     return ( 
+     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
+     )
+   }</code></pre>
+<p><strong>Step 4:</strong> Finally, you saved your changes and viewed
+the app in the browser.</p>
+<h2>
+<ol start="14" type="1">
+<li>The React project structure
+</h2></li>
+</ol>
+<p>As you might already be aware, it's important to organize or
+structure your React components so that they're easy to access.</p>
+<p>But what does the structure look like?</p>
+<p>What files and folders are found within a typical React
+application?</p>
+<p>The React project structure is the focus of this video.</p>
+<p>By the time you reach the end of this video, you have learned how to
+explain the default folder structure of a React project, outline the
+benefits of the folder structure, customize the folder structure to hold
+components and assets, and explain the benefits of planning folder use
+for app development.</p>
+<p>Let's begin by examining how the default files and folders are laid
+out in a React app project.</p>
+<p>When you build a React app using the command npm init React app, your
+project is comprised of a specific file and folder structure.</p>
+<p>Notice that there are three folders named node modules, public, and
+SRC or source.</p>
+<p>Let's explore each of these folders briefly now.</p>
+<p>First, let's begin with the node modules folder.</p>
+<p>You can think of this folder as a repository for all the modules in
+your React app.</p>
+<p>The node modules folder is automatically added when you install a
+specific npm package.</p>
+<p>You might recall the packages or groupings of files and/or node.js
+modules.</p>
+<p>Developers use packages when they want to add a piece of
+functionality that someone else coded and made available to other
+developers via the npm ecosystem.</p>
+<p>Don't worry too much about the node modules folder.</p>
+<p>For now, just be aware of it and that it's needed for your React app
+to work.</p>
+<p>Next is the public folder, and it contains the assets that will be
+displayed to the user in your app.</p>
+<p>For example, image files for logos, the favicon, which displays an
+icon in the browser tab, and the robots.txt file, which is used for
+search</p>
+<h4>
+engine optimization
+</h4>
+<p>Also, there is a manifest.json file, which is used to provide some
+metadata to a device when you're React powered web app is installed on
+it.</p>
+<p>While all these files are necessary, the most important one to know
+about for now is index.html.</p>
+<p>A React app gets injected into the specific elements inside the body
+of the index HTML file.</p>
+<p>Based on changes happening inside our React app, it injects those
+updates in that same div of index HTML.</p>
+<p>You'll find out more about how this works later on in the course.</p>
+<p>Finally, let's explore the contents of the SRC or source folder.</p>
+<p>This folder contains all the essential component files required to
+ensure that a React app functions.</p>
+<p>Notice that there are some files already in this folder.</p>
+<p>These were automatically created when I use the npm command Create
+React app to build a starter React app.</p>
+<p>As a React developer, you probably spend most of your time within
+this folder, so let's get a little more familiar with some of these
+files now.</p>
+<p>You may be familiar with some of them already, such as index.js and
+app.js, which are used to render the root components of the app.</p>
+<p>Let's briefly explore the others.</p>
+<p>App.css contains the styles for the app.js components, and the
+index.css file contains the styles to use in the entire app.</p>
+<p>App.test.js, setupTests.js, and the reportsWebVitals.js are files
+related to the app's performance and testing.</p>
+<p>The logo.svg file is displayed on the start page of the default app
+when the app is displayed in the browser on the local host.</p>
+<p>While these can be useful and the functionality is important, I can
+still safely delete them without affecting React's abilities to create a
+very basic application.</p>
+<p>I just need to also remove the code that references them.</p>
+<p>This is because React doesn't have opinions on how you organize your
+files and folders in the source folder.</p>
+<p>However, there are a few common approaches popular in the ecosystem
+and you'll learn about them soon.</p>
+<p>It's that this point is also worth remembering that the most
+important file in the entire source folder is the index.js file.</p>
+<p>This file imports everything that this React app needs to render a
+working React app.</p>
+<p>Now you have explored the main folders, let's explore the files and
+the root of the default app.</p>
+<p>Root files are additional files that are found in the root of the
+project folder itself and include a gitignore file, two json files, and
+a README file.</p>
+<p>The .gitignore file is using version control and it's used to specify
+what files and folders must be excluded from a project.</p>
+<p>It's important to note that this file is not specific to React.</p>
+<p>This means that other systems use this file too.</p>
+<p>The README.md file is a markdown file that gives some basic
+information on this project.</p>
+<p>Developers use this when they want to share the project's code on
+sites like GitHub.</p>
+<p>The package.json file lists information pertaining to my app, which
+allows npm to run several scripts and perform various tasks in the app
+itself.</p>
+<p>Finally, the package-loc.json file holds the list of all dependencies
+with a specific version.</p>
+<p>The package.json file helps npm rebuild the app on another
+machine.</p>
+<p>Or if we delete the node modules folder with all the files that our
+project needs to run, the package-loc.json file has all the information
+for npm to be able to rebuild those files reliably.</p>
+<p>This file is there to ensure the npm tracks all the modules
+installations properly.</p>
+<p>As a general rule, it's better to leave these files where they offer
+the moment as they are required for the app to function.</p>
+<p>You should now be able to explain the default folder structure of a
+React project and outline the benefits of the folder structure.</p>
+<p>In addition, you should know how to customize the folder structure to
+hold components and assets and be able to explain the benefits of
+planning folder use for app development.</p>
+<p>Good job.</p>
+<h2>
+<ol start="15" type="1">
+<li>Customizing the project
+</h2></li>
+</ol>
+<p>So far, you’ve learned about React components, but now you will focus
+on learning how to customize the project. You will learn about the
+software development approach, detailing the creation of separate
+associated files, the requirements gathering and the subsequent folder
+structure to be created.</p>
+<h3>
+Building a Layout
+</h3>
+<p>Imagine that you've been given the task of building a somewhat more
+complex website layout using React.</p>
+<p>At this point, you still don't know too much about how React works,
+but even with your limited knowledge, you can still build some
+relatively interesting designs.</p>
+<p>Currently, you need to build a simple typography-focused layout for a
+coding blog.</p>
+<p>This means that you will not have to use images, which simplifies
+your task significantly.</p>
+<p>The layout you're supposed to build will consist of the following
+sections:</p>
+<ul>
+<li><p>Main navigation </p></li>
+<li><p>Promo (main advertisement)</p></li>
+<li><p>A list of newest posts' previews (intros)</p></li>
+<li><p>The footer </p></li>
+</ul>
+<h3>
+Organizing Your Code
+</h3>
+<p>Keeping in mind the above structure, how would you organize your
+code?</p>
+<p>This is where <u>React docs</u> can help.</p>
+<p>They suggest two approaches:</p>
+<ol type="1">
+<li><p>Grouping by features </p></li>
+<li><p>Grouping by file type </p></li>
+</ol>
+<p>They also advise not to nest folders too deep, and to keep things
+simple and not overthink it.</p>
+<p>They even say that if you're just starting out, you shouldn't spend
+more than five minutes setting up a project.</p>
+<p>Taking this advice into account, you might say that for a small
+project like this, you could keep it as simple as just adding a
+<strong>components</strong> folder and moving all your components into
+it. This is exactly what you’ll do next.</p>
+<h3>
+Building the App
+</h3>
+<p>Since this is app's focus is on customization, let’s name the app
+<strong>customizing-example</strong><em>.</em></p>
+<p>What follows is the command to run <strong>in a suitable folder on
+your own computer</strong>. By "a suitable folder", I mean: "a folder
+where you feel comfortable installing a boilerplate React application".
+This also includes that the folder you chose will need to be accessible
+for your user on your OS (Operating System).</p>
+<pre><code>$ npm init react-app customizing-example</code></pre>
+<p>This will produce a brand-new starter app with a familiar
+structure.</p>
+<p>Inspecting the <strong>src</strong> folder of the starter app, it
+looks like this:</p>
+<pre><code>  src/
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    reportWebVitals.js
+    setupTests.js</code></pre>
+<p>Then simply add a components folder to it, like this:</p>
+<pre><code>  src/
+    components/
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    reportWebVitals.js
+    setupTests.js</code></pre>
+<p>Since the components folder is currently empty, you can add a
+component for each of the sections of the typography-focused blog.
+Here's the structural update:</p>
+<pre><code>  src/
+    components/
+      Nav.js
+      Promo.js
+      Intro1.js
+      Intro2.js
+      Intro3.js
+      Footer.js
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    reportWebVitals.js
+    setupTests.js</code></pre>
+<p>At this point, there's no need to complicate things. You have the
+<strong>Nav</strong> component, the <strong>Promo</strong> component,
+the <strong>Intro1</strong>, <strong>Intro2</strong>, and the
+<strong>Intro3</strong> component. Finally, there's also a
+<strong>Footer.js</strong> component.</p>
+<p>This means you've fully planned the app, based on some best practices
+as suggested by the official React docs website, and based on the level
+of complexity of the project itself. Since this project is relatively
+simple, this structure feels right.</p>
+<p>In this reading, you’ll just build all the components inside the
+components folder, and then, in the upcoming lesson items, import them
+into the <strong>App.js</strong> file.</p>
+<h3>
+Building Components
+</h3>
+<p>For now, let’s just build those components. After you've added the
+components folder, you’ve also added all the functional component files.
+Since they are all currently empty, you can start adding them, one by
+one.</p>
+<p>Here’s the contents of the <strong>Nav.js</strong> file:</p>
+<pre><code>  function Nav() {
+    return (
+        &lt;nav className=&quot;main-nav&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Home&lt;/li&gt;
+                &lt;li&gt;Articles&lt;/li&gt;
+                &lt;li&gt;About&lt;/li&gt;
+                &lt;li&gt;Contact&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    );
+  };
+
+export default Nav;</code></pre>
+<p>Next, you can focus on the <strong>Promo.js</strong> file:</p>
+<pre><code>  function Promo() {
+     return (
+        &lt;div className=&quot;promo-section&quot;&gt;
+            &lt;div&gt;
+                &lt;h1&gt;Don&#39;t miss this deal!&lt;/h1&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                &lt;h2&gt;Subscribe to my newsletter and get all the shop items at 50% off!&lt;/h2&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    );
+  };
+  
+export default Promo;</code></pre>
+<p>Once you’ve finished the promo section, you can focus on the Intro
+components.</p>
+<p>Here's <strong>Intro1.js:</strong></p>
+<pre><code>  function Intro1() {
+    return (
+      &lt;div className=&quot;blog-post-intro&quot;&gt;
+        &lt;h2&gt;I&#39;ve become a React developer!&lt;/h2&gt;
+        &lt;div&gt;
+          &lt;p&gt;I&#39;ve completed the React Basics course and I&#39;m happy to announce 
+            that I&#39;m now a Junior React Developer!&lt;/p&gt;
+          &lt;p className=&quot;link&quot;&gt;Read more...&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    );
+  };
+
+  export default Intro1;</code></pre>
+<p>Here's the code for the <strong>Intro2.js</strong> component:</p>
+<pre><code>function Intro2() {
+    return (
+        &lt;div className=&quot;blog-post-intro&quot;&gt;
+            &lt;h2&gt;Why I love front-end web development&lt;/h2&gt;
+            &lt;div&gt;
+                &lt;p&gt;In this blog post, I&#39;ll list 10 reasons why I love to work as a front-end developer.&lt;/p&gt;
+                &lt;p className=&quot;link&quot;&gt;Read more...&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    );
+};
+ 
+export default Intro2;</code></pre>
+<p>You can finish the previews for my blog posts with the code for
+<strong>Intro3.js</strong> component:</p>
+<pre><code>  function Intro3() {
+    return (
+        &lt;div className=&quot;blog-post-intro&quot;&gt;
+            &lt;h2&gt;What&#39;s the best way to style your React apps?&lt;/h2&gt;
+            &lt;div&gt;
+                &lt;p&gt;There are so many options to choose from. Here&#39;s a high-level overview of the popular ones.&lt;/p&gt;
+                &lt;p className=&quot;link&quot;&gt;Read more...&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    );
+  };
+ 
+export default Intro3;</code></pre>
+<p>There's just one more thing left to code, the <strong>Footer</strong>
+component, so here it is:</p>
+<pre><code>  function Footer() {
+    return (
+        &lt;div className=&quot;copyright&quot;&gt;
+            &lt;p&gt;Made with love by Myself&lt;/p&gt;
+        &lt;/div&gt;
+    );
+  };
+ 
+  export default Footer;</code></pre>
+<p>Now that you have completed all the components for the app, here are
+a few more interesting things about the syntax.</p>
+<p>These are:</p>
+<ul>
+<li><p>The use of the <strong>className</strong> attribute in
+JSX</p></li>
+<li><p>The use of separate components for repetitive code</p></li>
+<li><p>Where are all the props?</p></li>
+<li><p>Why was I not using the <strong>&lt;a&gt;</strong> element for
+empty links? </p></li>
+</ul>
+<h3>
+Discussing the Syntax
+</h3>
+<p>Now let’s briefly discuss the four bullet points above.</p>
+<p>Why use the <strong>className</strong> attribute in the JSX
+syntax?</p>
+<p>Well, with JSX, it looks like HTML so much that it's easy to forget
+that it's actually JavaScript code - not HTML.</p>
+<p>While regular HTML does indeed have a <strong>class</strong>
+attribute, which is used to list one or more CSS classes to be used on a
+given HTML element, this cannot really work in JSX.</p>
+<p>The reason is that JSX is a special kind of JavaScript syntax, and
+the word <strong>class</strong> is a reserved keyword in JSX.</p>
+<p>That's why the React team had to make a compromise and so
+<strong>className</strong> is used in JSX to list one or more CSS
+classes to be used on a given element or component.</p>
+<p>But why use <strong>Intro1.js, Intro2.js,</strong> and
+<strong>Intro3.js</strong>? Isn't one of the tenets of coding the DRY
+approach - that is, the "Don't repeat yourself" approach?</p>
+<p>Indeed, it is. However, there are still a few concepts to discuss
+before you learn how to re-use a single component with variations in its
+content.</p>
+<p>This has to do with data in components, but don't worry, we'll be
+getting to that later.</p>
+<p>The third question is about the <strong>props</strong> object. It has
+been mentioned before, but so far it hasn't been used. It hasn’t been
+used in this example either.</p>
+<p>The answer to this question has to do with the next lesson, titled
+<strong><em>Component Use and Styling</em></strong>.</p>
+<p>In this lesson, you’ll see in practice how you can make components
+work better, with the help of <strong>props</strong>.</p>
+<p>The final question is about not using the <strong>&lt;a&gt;</strong>
+element for empty links in my app.</p>
+<p>The answer here depends on whether those links are "internal" -
+inside an app, or "external", meaning, leading to some external link,
+such as; <a href="https://www.coursera.org">here </a>.</p>
+<p>If the links are internal to the app - as they are envisioned here -
+using the <strong>&lt;a&gt;</strong> tag is simply not the React way of
+doing things. You'll learn why that is the case when discussing the use
+of React Router.</p>
+<h3>
+Conclusion
+</h3>
+<p>Having finished this reading, you have now learned about the software
+development approach, detailing the creation of separate associated
+files, the requirements gathering, and the subsequent folder structure
+to be created.</p>
+<h2>
+<ol start="16" type="1">
+<li>Importing components
+</h2></li>
+</ol>
+<p>One of the advantages of component-based architecture is that your
+app is split up into individual self-contained components.</p>
+<p>As you have already learned, these components can be used to build
+powerful UIs based on reusable components of code.</p>
+<p>In order to create a fully functioning React app, you need to create
+a collection of components.</p>
+<p>But with the app broken into several different components, you might
+be wondering how do you locate and integrate them all into your app.</p>
+<p>In this video, you'll learn about the concept of modules and how to
+manage your React components by placing them in a components folder.</p>
+<p>Finally, you'll explore the structure of the import and export
+statement.</p>
+<p>As a developer, you often need a way to use and reuse components that
+may have been defined elsewhere or created by someone else.</p>
+<p>For example, do you recall the concept of modules in JavaScript?</p>
+<p>Modules are standalone units of code that you can reuse again and
+again.</p>
+<p>Being standalone means that you can add them to your programs, remove
+them, and replace them with other modules and everything will still
+work.</p>
+<p>Well, in React, you can make use of this JavaScript feature to
+separate your components by placing them in their own file.</p>
+<p>Then you can use the import and export statements to make the false
+communicate with each other.</p>
+<p>The export statement is used to make a module available to another
+module.</p>
+<p>It helps to think of every JavaScript file as a module.</p>
+<p>Then in order to make the functions and variables available to other
+files, you need to export them, which makes them available by the import
+statement.</p>
+<p>In JavaScript, there are two types of exports, default exports and
+named exports.</p>
+<p>The default export is used when the function name is the same as the
+file name and named exports are used when you want the function name to
+be different from the file name.</p>
+<p>At this point, you may be wondering what is the difference between
+modules and components, since they are both essentially just JavaScript
+files?</p>
+<p>You are right.</p>
+<p>While they have similarities, it can help to think of a component as
+a single part or small piece of functionality like a button.</p>
+<p>Then you can think of a module as something that's larger than just
+one component like a series of components.</p>
+<p>This technique of splitting your code into several modules is known
+as modular programming, and it complements the component-based
+architecture of React.</p>
+<p>To help you understand this better, let's explore the following
+scenario.</p>
+<p>Suppose you're a developer currently in the process of building an
+application with React and there are several components that needs to be
+included in the app.</p>
+<p>Some of the required components have already been created by your
+fellow developers, so you need a way to import them into your app.</p>
+<p>To do this, you need to use the operation known as importing.</p>
+<p>In React, you import components into your application using the
+import statements.</p>
+<p>You may have already noticed the import statement in the default
+index.js file, where the app component is rendered.</p>
+<p>In React, to import a component, you use the keyword import, followed
+by the component name you want to import.</p>
+<p>Then you use the keyword from, to specify the location of where the
+component is located.</p>
+<p>You need to use a file name sequence, such as a dot forward slash
+before the file name, but the file name extension is not required.</p>
+<p>Now you know about the syntax of the import and export statements.
+Let's explore how you construct your components in React.</p>
+<p>Remember that a component is essentially just a JavaScript file.</p>
+<p>React doesn't have strict rules on how you put files into folders,
+however, there are a few common approaches you may want to consider.</p>
+<p>One approach is to place all components in a folder named
+components.</p>
+<p>This allows you to structure your projects by grouping similar files
+together.</p>
+<p>For example, suppose you are building a payment page for an
+e-commerce app.</p>
+<p>The page contains three sections that will each be represented by a
+component in React.</p>
+<p>First, a Header section using a component called header, then a
+Payment section using a component called main, and finally, a Sidebar
+using a component called sidebar.</p>
+<p>Each component will be called and have its contents returned to the
+root components of our application, which is app.js.</p>
+<p>In this module, you've explored the concept of modules and the
+structure of the import and export statement.</p>
+<p>You also learned how to manage your React components by placing them
+in a components folder.</p>
+<h2>
+17.Solution: Creating and importing components
+</h2>
+<p>Here are the contents of the Heading.js file:</p>
+<pre><code>  function Heading() {
+    return (
+      &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+    )
+  }
+  
+  export default Heading;</code></pre>
+<p>Here are the contents of the App.js file:</p>
+<pre><code>  export default App;
+    &lt;/div&gt;
+    );
+  }
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;Heading /&gt;</code></pre>
+<p>Here is a screenshot of the src folder:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 25. app, heading and index files displayed in src folder (##) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image25.png?raw=true"
+  alt="App, heading and index files displayed in src folder."
+  width="38%;" />
+</p>
+<!--
+!(./images/image25.png){width="3.7708333333333335in"
+height="1.3125in"}
+-->
+<p>Here is the output from the solution code for the App.js file:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 26. output of completed component exercise (##) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image26.png?raw=true"
+  alt="The output of the completed \'Creating and importing components\' exercise."
+  width="50%;" />
+</p>
+<!--
+!(./images/image26.png){width="5.0in"
+height="1.220472440944882in"}
+-->
+<p><strong>Step 1:</strong> You moved the <strong>Heading</strong>
+function from App to a separate component file, named “Heading.js”.</p>
+<pre><code>  function Heading() {
+    return (
+      &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+    )
+  }</code></pre>
+<p> </p>
+<pre><code>export default Heading;</code></pre>
+<p><strong>Step 2:</strong> Next, you imported the
+<strong>Heading</strong> component into the <strong>App</strong>
+component. </p>
+<pre><code>  import Heading from &quot;./Heading&quot;;</code></pre>
+<p><strong>Step 3:</strong> Finally, you removed the sentence that
+reads: <em>This is the starting code for “Your first component” ungraded
+lab</em> - so that only the <strong>Heading</strong> JSX element remains
+in the return statement of the App component. </p>
+<pre><code>import Heading from &quot;./Heading&quot;;
+function App() {
+  return (
+
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;Heading /&gt;
+    &lt;/div&gt;
+
+  );
+}
+export default App;</code></pre>
+<h2>
+syllabus
+</h2>
+<h2>
+React Components
+</h2>
+<p>In this module you will explore the basic structure and use of the
+React.js library. You will learn how to produce single page web
+applications using React components and to use JSX to style them.</p>
+<h4>
+15 videos, 21 readings, 5 practice quizzes
+</h4>
+<ol type="1">
+<li><p><a href="https://www.coursera.org/lecture/react-basics/introduction-to-the-course-react-basics-AStT3"><strong>Video: </strong>Introduction
+to the course: React Basics</a></p></li>
+<li><p><strong>Video: </strong>How is React used in the real
+world?</p></li>
+<li><p><strong>Discussion Prompt: </strong>What do you hope to
+learn?</p></li>
+<li><p><strong>Reading: </strong>Course syllabus for React
+Basics</p></li>
+<li><p><strong>Reading: </strong>How to be successful in this
+course</p></li>
+<li><p><strong>Reading: </strong>Before you learn React</p></li>
+<li><p><strong>Reading: </strong>JavaScript modules, imports -
+exports</p></li>
+<li><p><strong>Reading: </strong>Working with Labs in this
+course</p></li>
+<li><p><strong>Reading: </strong>Additional reading</p></li>
+<li><p><strong>Reading: </strong>Setting up a React project in VS Code
+(Optional)</p></li>
+<li><p><strong>Video: </strong>Why React?</p></li>
+<li><p><strong>Video: </strong>React.js overview</p></li>
+<li><p><strong>Video: </strong>Introduction to functional
+components</p></li>
+<li><p><strong>Video: </strong>Creating React components</p></li>
+<li><p><strong>Reading: </strong>Transpiling JSX</p></li>
+<li><p><strong>Ungraded Lab: </strong>Your first component</p></li>
+<li><p><strong>Reading: </strong>Solution: Your first component</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Your first
+component</p></li>
+<li><p><strong>Video: </strong>The React project structure</p></li>
+<li><p><strong>Reading: </strong>Customizing the project</p></li>
+<li><p><strong>Video: </strong>Importing components</p></li>
+<li><p><strong>Ungraded Lab: </strong>Creating and importing
+components</p></li>
+<li><p><strong>Reading: </strong>Solution: Creating and importing
+components</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Creating and
+importing components</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: React components
+and where they live</p></li>
+<li><p><strong>Reading: </strong>Additional resources for React
+components and where they live</p></li>
+<li><p><strong>Video: </strong>Principles of components: Props</p></li>
+<li><p><strong>Reading: </strong>Dissecting props</p></li>
+<li><p><strong>Video: </strong>Using props in components</p></li>
+<li><p><strong>Ungraded Lab: </strong>Passing props</p></li>
+<li><p><strong>Reading: </strong>Solution: Passing props</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Passing
+props</p></li>
+<li><p><strong>Video: </strong>Introducing JSX</p></li>
+<li><p><strong>Reading: </strong>Props and children</p></li>
+<li><p><strong>Reading: </strong>Styling JSX elements</p></li>
+<li><p><strong>Video: </strong>Practical styling</p></li>
+<li><p><strong>Reading: </strong>JSX syntax and the arrow
+function</p></li>
+<li><p><strong>Video: </strong>Embedded JSX expressions</p></li>
+<li><p><strong>Reading: </strong>Ternary operators and functions in
+JSX</p></li>
+<li><p><strong>Reading: </strong>Expressions as props</p></li>
+<li><p><strong>Video: </strong>Embedding in attributes</p></li>
+<li><p><strong>Ungraded Lab: </strong>Multiple components</p></li>
+<li><p><strong>Reading: </strong>Solution: Multiple components</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Multiple
+components</p></li>
+<li><p><strong>Video: </strong>Module summary</p></li>
+<li><p><strong>Reading: </strong>Additional resources</p></li>
+</ol>
+<h5>
+week 1 material
+</h5>
+<h2>
+Week 2
+</h2>
+<p>Data and State</p>
+<p>In this module you will explore the concept and practical use of
+state and stage-management. You will also gain knowledge on how to
+handle events and the ability to dynamically change content on a web
+page.</p>
+<h4>
+13 videos, 9 readings, 8 practice quizzes
+</h4>
+<ol type="1">
+<li><p><a href="https://www.coursera.org/lecture/react-basics/types-of-events-L71Z2"><strong>Video: </strong>Types
+of events</a></p></li>
+<li><p><strong>Reading: </strong>Eventful issues</p></li>
+<li><p><strong>Video: </strong>Common event handling</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: Events and
+errors</p></li>
+<li><p><strong>Video: </strong>Syntax for handlers</p></li>
+<li><p><strong>Reading: </strong>Event handling and embedded
+expressions</p></li>
+<li><p><strong>Video: </strong>User events</p></li>
+<li><p><strong>Ungraded Lab: </strong>Dynamic events</p></li>
+<li><p><strong>Reading: </strong>Solution: Dynamic events</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Dynamic
+events</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: Dynamic events
+and how to handle them</p></li>
+<li><p><strong>Reading: </strong>Additional resources</p></li>
+<li><p><strong>Video: </strong>Parent-child data flow</p></li>
+<li><p><strong>Reading: </strong>Data flow in React</p></li>
+<li><p><strong>Video: </strong>Children and data</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: Data
+flow</p></li>
+<li><p><strong>Video: </strong>What are hooks?</p></li>
+<li><p><strong>Reading: </strong>Using hooks</p></li>
+<li><p><strong>Video: </strong>What is state?</p></li>
+<li><p><strong>Video: </strong>Observing state</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge Check: State the
+concept</p></li>
+<li><p><strong>Video: </strong>Managing state</p></li>
+<li><p><strong>Reading: </strong>Prop drilling</p></li>
+<li><p><strong>Video: </strong>React state management</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: Passing
+state</p></li>
+<li><p><strong>Video: </strong>Stateful vs. stateless</p></li>
+<li><p><strong>Ungraded Lab: </strong>Managing state in React</p></li>
+<li><p><strong>Reading: </strong>Solution: Managing state in
+React</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Managing state in
+React</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: State or
+stateless</p></li>
+<li><p><strong>Video: </strong>Module summary</p></li>
+<li><p><strong>Reading: </strong>Additional resources</p></li>
+</ol>
+<h2>
+Week 3
+</h2>
+<p>Navigation, Updating and Assets in React.js</p>
+<p>In this module you will explore the basics of single and multi-page
+navigation, as well as the conditional rendering or changing of content
+in response to user status or choice.</p>
+<h4>
+9 videos, 10 readings, 5 practice quizzes
+</h4>
+<ol type="1">
+<li><p><a href="https://www.coursera.org/lecture/react-basics/basic-types-of-navigation-vN7FD"><strong>Video: </strong>Basic
+Types of navigation</a></p></li>
+<li><p><strong>Reading: </strong>Navigation</p></li>
+<li><p><strong>Video: </strong>The navbar</p></li>
+<li><p><strong>Ungraded Lab: </strong>Creating a route</p></li>
+<li><p><strong>Reading: </strong>Solution: Creating a route</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Creating a
+route</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check:
+Navigation</p></li>
+<li><p><strong>Video: </strong>Conditional rendering</p></li>
+<li><p><strong>Reading: </strong>Applying conditional rendering</p></li>
+<li><p><strong>Reading: </strong>Conditional components</p></li>
+<li><p><strong>Video: </strong>Single view conditional updates</p></li>
+<li><p><strong>Practice Quiz: </strong>Knowledge check: Conditional
+updates</p></li>
+<li><p><strong>Reading: </strong>Additional resources</p></li>
+<li><p><strong>Video: </strong>What is an asset and where does it
+live?</p></li>
+<li><p><strong>Reading: </strong>Bundling assets</p></li>
+<li><p><strong>Video: </strong>Using embedded assets</p></li>
+<li><p><strong>Ungraded Lab: </strong>Displaying images</p></li>
+<li><p><strong>Reading: </strong>Solution: Displaying images</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Displaying
+images</p></li>
+<li><p><strong>Video: </strong>Audio and video</p></li>
+<li><p><strong>Reading: </strong>Media packages</p></li>
+<li><p><strong>Video: </strong>Create an audio / video
+component</p></li>
+<li><p><strong>Ungraded Lab: </strong>Song selection</p></li>
+<li><p><strong>Reading: </strong>Solution: Song selection</p></li>
+<li><p><strong>Practice Quiz: </strong>Self review: Song
+selection</p></li>
+<li><p><strong>Discussion Prompt: </strong>What challenges did you
+encounter when creating your song selection feature?</p></li>
+<li><p><strong>Video: </strong>Module summary: navigation, updating and
+assets in React.js</p></li>
+<li><p><strong>Reading: </strong>Additional resources</p></li>
+</ol>
+<h2>
+Week 4
+</h2>
+<h2>
+Your first React app
+</h2>
+<p>In this module, you will be assessed on the key skills covered in the
+Course.</p>
+<h4>
+3 videos, 3 readings
+</h4>
+<ol type="1">
+<li><p><a href="https://www.coursera.org/lecture/react-basics/course-recap-react-basics-Cr55y"><b>Video:</b>
+Course recap: React Basics</a></p></li>
+<li><p><strong>Reading: </strong>About this graded assessment:
+Calculator app</p></li>
+<li><p><strong>Ungraded Lab: </strong>Build a calculator app</p></li>
+<li><p><strong>Reading: </strong>Solution: Build a calculator
+app</p></li>
+<li><p><strong>Video: </strong>Exemplar: Build a calculator app</p></li>
+<li><p><strong>Discussion Prompt: </strong>Share the challenges you
+encountered when creating your calculator app</p></li>
+<li><p><strong>Video: </strong>Congratulations, you completed React
+Basics!</p></li>
+<li><p><strong>Discussion Prompt: </strong>What did you find most
+interesting in this course?</p></li>
+<li><p><strong>Reading: </strong>Next steps</p></li>
+</ol>
+<h2>
+Quick Start
+</h2>
+<h3>
+You will learn
+</h3>
+<ul>
+<li><p>How to create and nest components</p></li>
+<li><p>How to add markup and styles</p></li>
+<li><p>How to display data</p></li>
+<li><p>How to render conditions and lists</p></li>
+<li><p>How to respond to events and update the screen</p></li>
+<li><p>How to share data between components</p></li>
+</ul>
+<h2>
+Creating and nesting components
+</h2>
+<p>React apps are made out of components. A component is a piece of the
+UI (user interface) that has its own logic and appearance. A component
+can be as small as a button, or as large as an entire page.</p>
+<p>React components are JavaScript functions that return markup:</p>
+<pre><code># function MyButton() {
+#  return (
+#  &lt;button&gt;I&#39;m a button&lt;/button&gt;
+#  );
+# }</code></pre>
+<p>Now that you’ve declared MyButton, you can nest it into another
+component:</p>
+<pre><code>export default function MyApp() {
+  return (
+  &lt;div&gt;
+    &lt;h1&gt;Welcome to my app&lt;/h1&gt;
+    &lt;MyButton /&gt;
+  &lt;/div&gt;
+  );
+}</code></pre>
+<p>Notice that &lt;MyButton /&gt; starts with a capital letter. That’s
+how you know it’s a React component. React component names must always
+start with a capital letter, while HTML tags must be lowercase.</p>
+<p>Have a look at the result:</p>
+<h4>
+App.js
+</h4>
+<pre><code>function MyButton() {
+  return (
+    &lt;button&gt;
+      I&#39;m a button
+    &lt;/button&gt;
+    );
+  }
+export default function MyApp() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Welcome to my app&lt;/h1&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
+    );
+  }</code></pre>
+<p>The export default keywords specify the main component in the file.
+If you’re not familiar with some piece of JavaScript syntax,
+<a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">MDN</a>
+and <a href="https://javascript.info/import-export">javascript.info</a>
+have great references.</p>
+<h3>
+Writing markup with JSX
+</h3>
+<p>The markup syntax you’ve seen above is called <em>JSX</em>. It is
+optional, but most React projects use JSX for its convenience. All of
+the <a href="https://react.dev/learn/installation">tools we recommend
+for local development</a> support JSX out of the box.</p>
+<p>JSX is stricter than HTML. You have to close tags like &lt;br /&gt;.
+Your component also can’t return multiple JSX tags. You have to wrap
+them into a shared parent, like a &lt;div&gt;...&lt;/div&gt; or an empty
+&lt;&gt;…&lt;/&gt; wrapper:</p>
+<pre><code>  function AboutPage() {
+    return (
+    &lt;&gt;
+    &lt;h1&gt;About&lt;/h1&gt;
+    &lt;p&gt;Hello there.&lt;br /&gt;How do you do?&lt;/p&gt;
+    &lt;/&gt;
+    );
+  }</code></pre>
+<p>If you have a lot of HTML to port to JSX, you can use an
+<a href="https://transform.tools/html-to-jsx">online converter.</a></p>
+<h3>
+Adding styles
+</h3>
+<p>In React, you specify a CSS class with className. It works the same
+way as the HTML
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">[class]
+attribute:</p>
+<pre><code>  &lt;img className=&quot;avatar&quot; /&gt;</code></pre>
+<p>Then you write the CSS rules for it in a separate CSS file:</p>
+<pre><code>  /* In your CSS */
+  .avatar {
+  border-radius: 50%;
+  }</code></pre>
+<p>React does not prescribe how you add CSS files. In the simplest case,
+you’ll add a
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">
+[&lt;link&gt;] tag to your HTML. If you use a build tool or a framework,
+consult its documentation to learn how to add a CSS file to your
+project.</p>
+<h3>
+Displaying data
+</h3>
+<p>JSX lets you put markup into JavaScript. Curly braces let you “escape
+back” into JavaScript so that you can embed some variable from your code
+and display it to the user. For example, this will display
+user.name:</p>
+<pre><code>return (
+  &lt;h1&gt;
+    {user.name}
+  &lt;/h1&gt;
+);</code></pre>
+<p>You can also “escape into JavaScript” from JSX attributes, but you
+have to use curly braces <em>instead of</em> quotes. For example,
+className="avatar" passes the "avatar" string as the CSS class, but
+src={user.imageUrl} reads the JavaScript user.imageUrl variable value,
+and then passes that value as the src attribute:</p>
+<pre><code>return (
+  &lt;img
+    className=&quot;avatar&quot;
+    src={user.imageUrl}
+  /&gt;
+);</code></pre>
+<p>You can put more complex expressions inside the JSX curly braces too,
+for example,
+<a href="https://javascript.info/operators#string-concatenation-with-binary">string
+concatenation</a>:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<p>Fork</p>
+<pre><code>const user = {
+  name: &#39;Hedy Lamarr&#39;,
+  imageUrl: &#39;https://i.imgur.com/yXOvdOSs.jpg&#39;,
+  imageSize: 90,
+};
+export default function Profile() {
+  return (
+    &lt;&gt;
+      &lt;h1&gt;{user.name}&lt;/h1&gt;
+      &lt;img
+        className=&quot;avatar&quot;
+        src={user.imageUrl}
+        alt={&#39;Photo of &#39; + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      /&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<p>In the above example, style={{}} is not a special syntax, but a
+regular {} object inside the style={ } JSX curly braces. You can use the
+style attribute when your styles depend on JavaScript variables.</p>
+<h3>
+Conditional rendering
+</h3>
+<p>In React, there is no special syntax for writing conditions. Instead,
+you’ll use the same techniques as you use when writing regular
+JavaScript code. For example, you can use an
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">
+[if] statement to conditionally include JSX:</a></p>
+<pre><code>let content;
+if (isLoggedIn) {
+  content = &lt;AdminPanel /&gt;;
+} else {
+  content = &lt;LoginForm /&gt;;
+}
+return (
+  &lt;div&gt;
+    {content}
+  &lt;/div&gt;
+);</code></pre>
+<p>If you prefer more compact code, you can use the
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional
+[?] operator.</a> Unlike if, it works inside JSX:</p>
+<pre><code>&lt;div&gt;
+  {isLoggedIn ? (
+    &lt;AdminPanel /&gt;
+  ) : (
+    &lt;LoginForm /&gt;
+  )}
+&lt;/div&gt;</code></pre>
+<p>When you don’t need the else branch, you can also use a shorter
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">logical
+[&amp;&amp;] syntax</a>:</p>
+<pre><code>&lt;div&gt;
+  {isLoggedIn &amp;&amp; &lt;AdminPanel /&gt;}
+&lt;/div&gt;</code></pre>
+<p>All of these approaches also work for conditionally specifying
+attributes. If you’re unfamiliar with some of this JavaScript syntax,
+you can start by always using if...else.</p>
+<h3>
+Rendering lists
+</h3>
+<p>You will rely on JavaScript features like &lt;a
+href=“https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for”for
+loop</a> and the
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">[array
+[map()] function</a>to render lists of components.</p>
+<p>For example, let’s say you have an array of products:</p>
+<pre><code>const products = [
+  { title: &#39;Cabbage&#39;, id: 1 },
+  { title: &#39;Garlic&#39;, id: 2 },
+  { title: &#39;Apple&#39;, id: 3 },
+];</code></pre>
+<p>Inside your component, use the map() function to transform an array
+of products into an array of &lt;li&gt; items:</p>
+<pre><code>const listItems = products.map(product =&gt;
+  &lt;li key={product.id}&gt;
+    {product.title}
+  &lt;/li&gt;
+);
+return (
+  &lt;ul&gt;{listItems}&lt;/ul&gt;
+);</code></pre>
+<p>Notice how &lt;li&gt; has a key attribute. For each item in a list,
+you should pass a string or a number that uniquely identifies that item
+among its siblings. Usually, a key should be coming from your data, such
+as a database ID. React uses your keys to know what happened if you
+later insert, delete, or reorder the items.</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<pre><code>const products = [
+  { title: &#39;Cabbage&#39;, isFruit: false, id: 1 },
+  { title: &#39;Garlic&#39;, isFruit: false, id: 2 },
+  { title: &#39;Apple&#39;, isFruit: true, id: 3 },
+];
+export default function ShoppingList() {
+  const listItems = products.map(product =&gt;
+    &lt;li
+      key={product.id}
+      style={{
+        color: product.isFruit ? &#39;magenta&#39; : &#39;darkgreen&#39;
+      }}
+     {product.title}
+    &lt;/li&gt;
+  );
+  return (
+    &lt;ul&gt;{listItems}&lt;/ul&gt;
+  );
+}</code></pre>
+<h3>
+Responding to events
+</h3>
+<p>You can respond to events by declaring <em>event handler</em>
+functions inside your components:</p>
+<pre><code>function MyButton() {
+  function handleClick() {
+    alert(&#39;You clicked me!&#39;);
+  }
+  return (
+    &lt;button onClick={handleClick}&gt;
+      Click me
+    &lt;/button&gt;
+  );
+}</code></pre>
+<p>Notice how onClick={handleClick} has no parentheses at the end! Do
+not <em>call</em> the event handler function: you only need to <em>pass
+it down</em>. React will call your event handler when the user clicks
+the button.</p>
+<h3>
+Updating the screen
+</h3>
+<p>Often, you’ll want your component to “remember” some information and
+display it. For example, maybe you want to count the number of times a
+button is clicked. To do this, add <em>state</em> to your component.</p>
+<p>First, import
+<a href="https://react.dev/reference/react/useState">useState</a> from
+React:</p>
+<pre><code>import { useState } from &#39;react&#39;;</code></pre>
+<p>Now you can declare a <em>state variable</em> inside your
+component:</p>
+<pre><code>function MyButton() {
+  const [count, setCount] = useState(0);</code></pre>
+<p>You’ll get two things from useState: the current state (count), and
+the function that lets you update it (setCount). You can give them any
+names, but the convention is to write [something, setSomething].</p>
+<p>The first time the button is displayed, count will be 0 because you
+passed 0 to useState(). When you want to change state, call setCount()
+and pass the new value to it. Clicking this button will increment the
+counter:</p>
+<pre><code>function MyButton() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    &lt;button onClick={handleClick}&gt;
+      Clicked {count} times
+    &lt;/button&gt;
+  );
+}</code></pre>
+<p>React will call your component function again. This time, count will
+be 1. Then it will be 2. And so on.</p>
+<p>If you render the same component multiple times, each will get its
+own state. Click each button separately:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<pre><code>import { useState } from &#39;react&#39;;
+export default function MyApp() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update separately&lt;/h1&gt;
+      &lt;MyButton /&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
+  );
+}
+function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    &lt;button onClick={handleClick}&gt;
+      Clicked {count} times
+    &lt;/button&gt;
+  );
+}</code></pre>
+<p>Notice how each button “remembers” its own count state and doesn’t
+affect other buttons.</p>
+<h3>
+Using Hooks
+</h3>
+<p>Functions starting with use are called <em>Hooks</em>. useState is a
+built-in Hook provided by React. You can find other built-in Hooks in
+the <a href="https://react.dev/reference/react">API reference.</a> You
+can also write your own Hooks by combining the existing ones.</p>
+<p>Hooks are more restrictive than other functions. You can only call
+Hooks <em>at the top</em> of your components (or other Hooks). If you
+want to use useState in a condition or a loop, extract a new component
+and put it there.</p>
+<h3>
+Sharing data between components
+</h3>
+<p>In the previous example, each MyButton had its own independent count,
+and when each button was clicked, only the count for the button clicked
+changed:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 27.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image27.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. Both MyButton components contain a count with value zero."
+  width="50%;" />
+</p>
+<!--
+!(./images/image27.png){width="5.0in"
+height="4.50859908136483in"}
+-->
+<p>Initially, each MyButton’s count state is 0</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 28. same as previous with first child count (##) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image28.png?raw=true"
+  alt="The same diagram as the previous, with the count of the first child MyButton component highlighted indicating a click with the count value incremented to one. The second MyButton component still contains value zero."
+  width="50%;" />
+</p>
+<!--
+!(./images/image28.png){width="5.0in"
+height="4.50859908136483in"}
+-->
+<p>The first MyButton updates its count to 1</p>
+<p>However, often you’ll need components to <em>share data and always
+update together</em>.</p>
+<p>To make both MyButton components display the same count and update
+together, you need to move the state from the individual buttons
+“upwards” to the closest component containing all of them.</p>
+<p>In this example, it is MyApp:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 29. diagram of tree with 3 components (##) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image29.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. MyApp contains a count value of zero which is passed down to both of the MyButton components, which also show value zero."
+  width="50%;" />
+</p>
+<!--
+(./images/image29.png){width="5.0in"
+height="4.6951224846894135in"}
+-->
+<p>Initially, MyApp’s count state is 0 and is passed down to both
+children</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 30. same diagram as previous with parent count (##) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image30.png?raw=true"
+  alt="The same diagram as the previous, with the count of the parent MyApp component highlighted indicating a click with the value incremented to one. The flow to both of the children MyButton components is also highlighted, and the count value in each child is set to one indicating the value was passed down."
+  width="50%;" />
+</p>
+<!--
+(./images/image30.png){width="5.0in"
+height="4.695121391076116in"}
+-->
+<p>On click, MyApp updates its count state to 1 and passes it down to
+both children</p>
+<p>Now when you click either button, the count in MyApp will change,
+which will change both of the counts in MyButton. Here’s how you can
+express this in code.</p>
+<p>First, move the state up from MyButton into MyApp:</p>
+<pre><code>export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update separately&lt;/h1&gt;
+      &lt;MyButton /&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
+  );
+}
+function MyButton() {
+  // ... we&#39;re moving code from here ...
+}</code></pre>
+<p>Then, pass the state down from MyApp to each MyButton, together with
+the shared click handler. You can pass information to MyButton using the
+JSX curly braces, just like you previously did with built-in tags like
+&lt;img&gt;:</p>
+<pre><code>export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update together&lt;/h1&gt;
+      &lt;MyButton count={count} onClick={handleClick} /&gt;
+      &lt;MyButton count={count} onClick={handleClick} /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+<p>The information you pass down like this is called <em>props</em>. Now
+the MyApp component contains the count state and the handleClick event
+handler, and <em>passes both of them down as props</em> to each of the
+buttons.</p>
+<p>Finally, change MyButton to <em>read</em> the props you have passed
+from its parent component:</p>
+<pre><code>function MyButton({ count, onClick }) {
+  return (
+    &lt;button onClick={onClick}&gt;
+      Clicked {count} times
+    &lt;/button&gt;
+  );
+}</code></pre>
+<p>When you click the button, the onClick handler fires. Each button’s
+onClick prop was set to the handleClick function inside MyApp, so the
+code inside of it runs. That code calls setCount(count + 1),
+incrementing the count state variable. The new count value is passed as
+a prop to each button, so they all show the new value. This is called
+“lifting state up”. By moving state up, you’ve shared it between
+components.</p>
+<h4>
+App.js
+</h4>
+<h5>
+Fork
+</h5>
+<pre><code>import { useState } from &#39;react&#39;;
+export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update together&lt;/h1&gt;
+      &lt;MyButton count={count} onClick={handleClick} /&gt;
+      &lt;MyButton count={count} onClick={handleClick} /&gt;
+    &lt;/div&gt;
+    );
+  }
+  function MyButton({ count, onClick }) {
+  return (
+    &lt;button onClick={onClick}&gt;
+      Clicked {count} times
+    &lt;/button&gt;
+    );
+  }</code></pre>
+<h3>
+Next Steps
+</h3>
+<p>By now, you know the basics of how to write React code!</p>
+<p>Check out the
+<a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a> to
+put them into practice and build your first mini-app with React.</p>
+<h2>
+Tutorial: Tic-Tac-Toe
+</h2>
+<p>You will build a small tic-tac-toe game during this tutorial. This
+tutorial does not assume any existing React knowledge. The techniques
+you’ll learn in the tutorial are fundamental to building any React app,
+and fully understanding it will give you a deep understanding of
+React.</p>
+<p>The tutorial is divided into several sections:</p>
+<ul>
+<li>
+<a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial">Setup
+for the tutorial</a> will give you <b>a starting point</b> to follow the
+tutorial,
+</li>
+<li>
+<a href="https://react.dev/learn/tutorial-tic-tac-toe#overview">Overview</a> will
+teach you <strong>the fundamentals</strong> of React: components, props,
+and state,
+</li>
+<li>
+<a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game">Completing
+the game</a> will teach you <strong>the most common
+techniques</strong> in React development,
+</li>
+<li>
+<p><a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel">Adding
+time travel</a> will give you <strong>a deeper insight</strong> into the
+unique strengths of React.</p>
+<h4>
+What are you building?
+</h4>
+<p>In this tutorial, you’ll build an interactive tic-tac-toe game with
+React.</p>
+<p>You can see what it will look like when you’re finished here:</p>
+<h4>
+App.js
+</h4>
+<pre><code>import { useState } from &#39;react&#39;;
+function Square({ value, onSquareClick }) {
+  return (
+    &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+      {value}
+    &lt;/button&gt;
+    );
+  }
+  function Board({ xIsNext, squares, onPlay }) {
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = &#39;X&#39;;
+    } else {
+      nextSquares[i] = &#39;O&#39;;
+      }
+    onPlay(nextSquares);
+  }
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = &#39;Winner: &#39; + winner;
+  } else {
+    status = &#39;Next player: &#39; + (xIsNext ? &#39;X&#39; : &#39;O&#39;);
+  }
+  return (
+  &lt;&gt;
+  &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[0]} onSquareClick={() =&gt; handleClick(0)}/&gt;
+    &lt;Square value={squares[1]} onSquareClick={() =&gt; handleClick(1)}/&gt;
+    &lt;Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)}/&gt;
+  &lt;/div&gt;</code></pre>
+<p>If the code doesn’t make sense to you yet, or if you are unfamiliar
+with the code’s syntax, don’t worry! The goal of this tutorial is to
+help you understand React and its syntax.</p>
+<p>We recommend that you check out the tic-tac-toe game above before
+continuing with the tutorial. One of the features that you’ll notice is
+that there is a numbered list to the right of the game’s board. This
+list gives you a history of all of the moves that have occurred in the
+game, and it is updated as the game progresses.</p>
+<p>Once you’ve played around with the finished tic-tac-toe game, keep
+scrolling. You’ll start with a simpler template in this tutorial. Our
+next step is to set you up so that you can start building the game.</p>
+<h3>
+Setup for the tutorial
+</h3>
+<p>In the live code editor below, click <strong>Fork</strong> in the
+top-right corner to open the editor in a new tab using the website
+CodeSandbox. CodeSandbox lets you write code in your browser and preview
+how your users will see the app you’ve created. The new tab should
+display an empty square and the starter code for this tutorial.</p>
+<h4>
+App.js
+</h4>
+<pre><code>export default function Square() {
+
+return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+
+}</code></pre>
+<h3>
+Note
+</h3>
+<p>You can also follow this tutorial using your local development
+environment. To do this, you need to:</p>
+<ol type="1">
+<li><p>Install <a href="https://nodejs.org/en/">Node.js</a>,</p></li>
+<li><p>In the CodeSandbox tab you opened earlier, press the top-left
+corner button to open the menu, and then choose File &gt; Export to
+ZIP in that menu to download an archive of the files locally,</p></li>
+<li><p>Unzip the archive, then open a terminal and cd to the directory
+you unzipped,</p></li>
+<li><p>Install the dependencies with npm install,</p></li>
+<li><p>Run npm start to start a local server and follow the prompts to
+view the code running in a browser.</p></li>
+</ol>
+<p>If you get stuck, don’t let this stop you! Follow along online
+instead and try a local setup again later.</p>
+<h3>
+Overview
+</h3>
+<p>Now that you’re set up, let’s get an overview of React!</p>
+<h3>
+Inspecting the starter code
+</h3>
+<p>In CodeSandbox you’ll see three main sections:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 31. codesandbox with starter code (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image31.png?raw=true"
+  alt="CodeSandbox with starter code."
+  width="50%;" />
+</p>
+<!--
+![CodeSandbox with starter
+code](./images/image31.png){width="5.0in"
+height="2.3164555993000877in"}
+-->
+<ol type="1">
+<li><p>The Files section with a list of files
+like App.js, index.js, styles.css and a folder called public</p></li>
+<li><p>The code editor where you’ll see the source code of your selected
+file</p></li>
+<li><p>The browser section where you’ll see how the code you’ve written
+will be displayed</p></li>
+</ol>
+<p>The App.js file should be selected in the <em>Files</em> section. The
+contents of that file in the <em>code editor</em> should be:</p>
+<pre><code>export default function Square() {
+  return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+}</code></pre>
+The browser section should be displaying a square with a X in it like
+this:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32. x-filled squares (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image32.png?raw=true"
+  alt="X-filled square."
+  width="10%" />
+</p>
+<!--
+![x-filled
+square](./images/image32.png){width="0.9583333333333334in"
+height="0.9583333333333334in"}
+-->
+<p>Now let’s have a look at the files in the starter code.</p>
+<p>App.js </p>
+<p>The code in App.js creates a <em>component</em>. In React, a
+component is a piece of reusable code that represents a part of a user
+interface. Components are used to render, manage, and update the UI
+elements in your application. Let’s look at the component line by line
+to see what’s going on:</p>
+<pre><code>export default function Square() {
+  return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+}</code></pre>
+<p>The first line defines a function called Square. The export
+JavaScript keyword makes this function accessible outside of this file.
+The default keyword tells other files using your code that it’s the main
+function in your file.</p>
+<pre><code>export default function Square() {
+  return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+}</code></pre>
+<p>The second line returns a button. The return JavaScript keyword means
+whatever comes after is returned as a value to the caller of the
+function. &lt;button&gt; is a <em>JSX element</em>. A JSX element is a
+combination of JavaScript code and HTML tags that describes what you’d
+like to display. className="square" is a button property or
+<em>prop</em> that tells CSS how to style the button. X is the text
+displayed inside of the button and &lt;/button&gt; closes the JSX
+element to indicate that any following content shouldn’t be placed
+inside the button.</p>
+<pre><code>styles.css </code></pre>
+<p>Click on the file labeled styles.css in the <em>Files</em> section of
+CodeSandbox. This file defines the styles for your React app. The first
+two <em>CSS selectors</em> (* and body) define the style of large parts
+of your app while the .square selector defines the style of any
+component where the className property is set to square. In your code,
+that would match the button from your Square component in the App.js
+file.</p>
+<pre><code>index.js </code></pre>
+<p>Click on the file labeled index.js in the <em>Files</em> section of
+CodeSandbox. You won’t be editing this file during the tutorial but it
+is the bridge between the component you created in the App.js file and
+the web browser.</p>
+<pre><code>import {StrictMode} from &#39;react&#39;;
+import {createRoot} from &#39;react-dom/client&#39;;
+import &#39;./styles.css&#39;;
+import App from &#39;./App&#39;;</code></pre>
+<p>Lines 1-5 brings all the necessary pieces together:</p>
+<ul>
+<li><p>React</p></li>
+<li><p>React’s library to talk to web browsers (React DOM)</p></li>
+<li><p>the styles for your components</p></li>
+<li><p>the component you created in App.js.</p></li>
+</ul>
+<p>The remainder of the file brings all the pieces together and injects
+the final product into index.html in the public folder.</p>
+<h3>
+Building the board
+</h3>
+<p>Let’s get back to App.js. This is where you’ll spend the rest of the
+tutorial.</p>
+<p>Currently the board is only a single square, but you need nine! If
+you just try and copy paste your square to make two squares like
+this:</p>
+<pre><code>export default function Square() {
+  return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;&lt;button
+  className=&quot;square&quot;&gt;X&lt;/button&gt;;
+}</code></pre>
+<p>You’ll get this error:</p>
+<p>Console</p>
+<p>/src/App.js: Adjacent JSX elements must be wrapped in an enclosing
+tag. Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?</p>
+<p>React components need to return a single JSX element and not multiple
+adjacent JSX elements like two buttons. To fix this you can use
+<em>fragments</em> (&lt;&gt; and &lt;/&gt;) to wrap multiple adjacent
+JSX elements like this:</p>
+<pre><code>export default function Square() {
+  return (
+    &lt;&gt;
+    &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+Now you should see:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 33. two x-filled squares (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image33.png?raw=true"
+  alt="Two X-filled squares."
+  width="16%" />
+</p>
+<!--
+!(./images/image33.png){width="1.6041666666666667in"
+height="0.9166666666666666in"}
+-->
+Great! Now you just need to copy-paste a few times to add nine squares
+and…
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 34. nine x-filled squares in a row (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image34.png?raw=true"
+  alt="Nine X-filled squares in a row/line."
+  width="65%" />
+</p>
+<!--
+!(./images/image34.png){width="6.458333333333333in"
+height="1.0in"}
+-->
+<p>Oh no! The squares are all in a single line, not in a grid like you
+need for our board. To fix this you’ll need to group your squares into
+rows with divs and add some CSS classes. While you’re at it, you’ll give
+each square a number to make sure you know where each square is
+displayed.</p>
+<p>In the App.js file, update the Square component to look like
+this:</p>
+<pre><code>export default function Square() {
+  return (
+  &lt;&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;2&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;3&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;button className=&quot;square&quot;&gt;4&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;5&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;6&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;button className=&quot;square&quot;&gt;7&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;8&lt;/button&gt;
+    &lt;button className=&quot;square&quot;&gt;9&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;/&gt;
+  );
+}</code></pre>
+The CSS defined in styles.css styles the divs with the className of
+board-row. Now that you’ve grouped your components into rows with the
+styled divs you have your tic-tac-toe board:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 35. tic-tac-toe board filled with 1-9 (##) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image35.png?raw=true"
+  alt="Tic-Tac-Toe board filled with numbers 1 through 9."
+  width="25%" />
+</p>
+<!--
+!(./images/image35.png){width="2.4583333333333335in"
+height="2.4583333333333335in"}
+-->
+<p>But you now have a problem. Your component named Square, really isn’t
+a square anymore. Let’s fix that by changing the name to Board:</p>
+<pre><code>export default function Board() {
+//...
+}</code></pre>
+<p>At this point your code should look something like this:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<pre><code>export default function Board() {
+  return (
+    &lt;&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;
+      &lt;button className=&quot;square&quot;&gt;2&lt;/button&gt;
+      &lt;button className=&quot;square&quot;&gt;3&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;button className=&quot;square&quot;&gt;4&lt;/button&gt;
+      &lt;button className=&quot;square&quot;&gt;5&lt;/button&gt;
+      &lt;button className=&quot;square&quot;&gt;6&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;button className=&quot;square&quot;&gt;7&lt;/button&gt;
+      &lt;button className=&quot;square&quot;&gt;8&lt;/button&gt;
+      &lt;button className=&quot;square&quot;&gt;9&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<h4>
+Note
+</h4>
+<p>Psssst… That’s a lot to type! It’s okay to copy and paste code from
+this page. However, if you’re up for a little challenge, we recommend
+only copying code that you’ve manually typed at least once yourself.</p>
+<h4>
+Passing data through props
+</h4>
+<p>Next, you’ll want to change the value of a square from empty to “X”
+when the user clicks on the square. With how you’ve built the board so
+far you would need to copy-paste the code that updates the square nine
+times (once for each square you have)! Instead of copy-pasting, React’s
+component architecture allows you to create a reusable component to
+avoid messy, duplicated code.</p>
+<p>First, you are going to copy the line defining your first square
+(&lt;button className="square"&gt;1&lt;/button&gt;) from your Board
+component into a new Square component:</p>
+<pre><code>function Square() {
+return \&lt;button className=\&quot;square\&quot;\&gt;1&lt;/button&gt;;
+}
+export default function Board() {
+// ...
+}</code></pre>
+<p>Then you’ll update the Board component to render that Square
+component using JSX syntax:</p>
+<pre><code>// ...
+export default function Board() {
+return (
+&lt;&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square /&gt;
+&lt;Square /&gt;
+&lt;Square /&gt;
+&lt;/div&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square /&gt;
+&lt;Square /&gt;
+&lt;Square /&gt;
+&lt;/div&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square /&gt;
+&lt;Square /&gt;
+&lt;Square /&gt;
+&lt;/div&gt;
+&lt;/&gt;
+);
+}</code></pre>
+<p>Note how unlike the browser divs, your own components Board and
+Square must start with a capital letter.</p>
+Let’s take a look:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. one-filled board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image36.png?raw=true"
+  alt="One-filled board."
+  width="23%" />
+</p>
+<!--
+![one-filled board](./images/image36.png){width="2.3125in"
+height="2.375in"}
+-->
+<p>Oh no! You lost the numbered squares you had before. Now each square
+says “1”. To fix this, you will use <em>props</em> to pass the value
+each square should have from the parent component (Board) to its child
+(Square).</p>
+<p>Update the Square component to read the value prop that you’ll pass
+from the Board:</p>
+<pre><code>function Square({ value }) {
+return &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;;
+}
+function Square({ value }) indicates the Square component can be passed
+a prop called value.</code></pre>
+<p>Now you want to display that value instead of 1 inside every square.
+Try doing it like this:</p>
+<pre><code>function Square({ value }) {
+return &lt;button className=&quot;square&quot;&gt;value&lt;/button&gt;;
+}</code></pre>
+Oops, this is not what you wanted:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. value-filled board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image37.png?raw=true"
+  alt="Value-filled board."
+  width="31%" />
+</p>
+<!--
+![value-filled board](./images/image37.png){width="3.125in"
+height="2.6041666666666665in"}
+-->
+<p>You wanted to render the JavaScript variable called value from your
+component, not the word “value”. To “escape into JavaScript” from JSX,
+you need curly braces. Add curly braces around value in JSX like so:</p>
+<pre><code>function Square({ value }) {
+return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+}</code></pre>
+For now, you should see an empty board:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image38.png?raw=true"
+  alt="Empty board."
+  width="24%" />
+</p>
+<!--
+![empty board](./images/image38.png){width="2.375in"
+height="2.3333333333333335in"}
+-->
+<p>This is because the Board component hasn’t passed the value prop to
+each Square component it renders yet. To fix it you’ll add the value
+prop to each Square component rendered by the Board component:</p>
+<pre><code>export default function Board() {
+return (
+&lt;&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square value=&quot;1&quot; /&gt;
+&lt;Square value=&quot;2&quot; /&gt;
+&lt;Square value=&quot;3&quot; /&gt;
+&lt;/div&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square value=&quot;4&quot; /&gt;
+&lt;Square value=&quot;5&quot; /&gt;
+&lt;Square value=&quot;6&quot; /&gt;
+&lt;/div&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square value=&quot;7&quot; /&gt;
+&lt;Square value=&quot;8&quot; /&gt;
+&lt;Square value=&quot;9&quot; /&gt;
+&lt;/div&gt;
+&lt;/&gt;
+);
+}</code></pre>
+Now you should see a grid of numbers again:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 35. tic-tac-toe board filled with number 1-9 (pg #) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image35.png?raw=true"
+  alt="Tic-Tac-Toe board filled with numbers 1 through 9."
+  width="25%" />
+</p>
+<!--
+![tic-tac-toe board filled with numbers 1 through
+9](./images/image35.png){width="2.4583333333333335in"
+height="2.4583333333333335in"}
+-->
+<p>Your updated code should look like this:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<p>Fork</p>
+<pre><code>function Square({ value }) {
+return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+}
+export default function Board() {
+return (
+&lt;&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square value=&quot;1&quot; /&gt;
+&lt;Square value=&quot;2&quot; /&gt;
+&lt;Square value=&quot;3&quot; /&gt;
+&lt;/div&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square value=&quot;4&quot; /&gt;
+&lt;Square value=&quot;5&quot; /&gt;
+&lt;Square value=&quot;6&quot; /&gt;
+&lt;/div&gt;
+&lt;div className=&quot;board-row&quot;&gt;
+&lt;Square value=&quot;7&quot; /&gt;
+&lt;Square value=&quot;8&quot; /&gt;
+&lt;Square value=&quot;9&quot; /&gt;
+&lt;/div&gt;
+&lt;/&gt;
+);
+}</code></pre>
+<h4>
+Making an interactive component
+</h4>
+<p>Let’s fill the Square component with an X when you click it. Declare
+a function called handleClick inside of the Square. Then, add onClick to
+the props of the button JSX element returned from the Square:</p>
+<pre><code>function Square({ value }) {
+function handleClick() {
+console.log(&#39;clicked!&#39;);
+}
+return (
+&lt;button
+className=&quot;square&quot;
+onClick={handleClick}
+&gt;
+{value}
+&lt;/button&gt;
+);
+}</code></pre>
+<p>If you click on a square now, you should see a log saying "clicked!"
+in the <em>Console</em> tab at the bottom of the <em>Browser</em>
+section in CodeSandbox. Clicking the square more than once will log
+"clicked!" again. Repeated console logs with the same message will not
+create more lines in the console. Instead, you will see an incrementing
+counter next to your first "clicked!" log.</p>
+<h4>
+Note
+</h4>
+<p>If you are following this tutorial using your local development
+environment, you need to open your browser’s Console. For example, if
+you use the Chrome browser, you can view the Console with the keyboard
+shortcut <strong>Shift + Ctrl + J</strong> (on Windows/Linux) or
+<strong>Option + ⌘ + J</strong> (on macOS).</p>
+<p>As a next step, you want the Square component to “remember” that it
+got clicked, and fill it with an “X” mark. To “remember” things,
+components use <em>state</em>.</p>
+<p>React provides a special function called useState that you can call
+from your component to let it “remember” things. Let’s store the current
+value of the Square in state, and change it when the Square is
+clicked.</p>
+<p>Import useState at the top of the file. Remove the value prop from
+the Square component. Instead, add a new line at the start of the Square
+that calls useState. Have it return a state variable called value:</p>
+<pre><code>import { useState } from &#39;react&#39;;
+function Square() {
+const [value, setValue] = useState(null);
+function handleClick() {
+//...</code></pre>
+<p>Value stores the value and setValue is a function that can be used to
+change the value. The null passed to useState is used as the initial
+value for this state variable, so value here starts off equal to
+null.</p>
+<p>Since the Square component no longer accepts props anymore, you’ll
+remove the value prop from all nine of the Square components created by
+the Board component:</p>
+<pre><code>// ...
+export default function Board() {
+  return (
+  &lt;&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square /&gt;
+    &lt;Square /&gt;
+    &lt;Square /&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square /&gt;
+    &lt;Square /&gt;
+    &lt;Square /&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square /&gt;
+    &lt;Square /&gt;
+    &lt;Square /&gt;
+  &lt;/div&gt;
+&lt;/&gt;
+);
+}</code></pre>
+<p>Now you’ll change Square to display an “X” when clicked. Replace the
+console.log("clicked!"); event handler with setValue('X');. Now your
+Square component looks like this:</p>
+<pre><code>function Square() {
+  const [value, setValue] = useState(null);
+function handleClick() {
+  setValue(&#39;X&#39;);
+}
+  return (
+  &lt;button
+    className=&quot;square&quot;
+    onClick={handleClick}
+    &gt;
+    {value}
+  &lt;/button&gt;
+  );
+}</code></pre>
+<p>By calling this set function from an onClick handler, you’re telling
+React to re-render that Square whenever its &lt;button&gt; is clicked.
+After the update, the Square’s value will be 'X', so you’ll see the “X”
+on the game board. Click on any Square, and “X” should show up:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. adding x's to board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image39.gif?raw=true"
+  alt="Adding X's to board."
+  width="25%" />
+</p>
+<!-- (./images/image39.gif){width="2.5in"
+height="2.5625in"}
+-->
+<p>Each Square has its own state: the value stored in each Square is
+completely independent of the others. When you call a set function in a
+component, React automatically updates the child components inside
+too.</p>
+<p>After you’ve made the above changes, your code will look like
+this:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<pre><code>import { useState } from &#39;react&#39;;
+  function Square() {
+    const [value, setValue] = useState(null);
+    function handleClick() {
+      setValue(&#39;X&#39;);
+    }
+    return (
+      &lt;button
+        className=&quot;square&quot;
+        onClick={handleClick}
+        &gt;
+        {value}
+      &lt;/button&gt;
+    );
+  }
+  export default function Board() {
+  return (
+  &lt;&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square&gt;
+    &lt;Square&gt;
+    &lt;Square&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square&gt;
+    &lt;Square&gt;
+    &lt;Square&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square&gt;
+    &lt;Square&gt;
+    &lt;Square&gt;</code></pre>
+<h4>
+React Developer Tools
+</h4>
+React DevTools let you check the props and the state of your React
+components. You can find the React DevTools tab at the bottom of the
+<em>browser</em> section in CodeSandbox:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 40. react devtools in codesandbox (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image40.png?raw=true"
+  alt="React DevTools in CodeSandbox."
+  width="50%" />
+</p>
+<!--
+!(./images/image40.png){width="5.0in"
+height="3.720173884514436in"}
+-->
+To inspect a particular component on the screen, use the button in the
+top left corner of React DevTools:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 41. selecting components on the page with react devtools (##) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image41.gif?raw=true"
+  alt="Selecting components on the page with React DevTools."
+  width="63%" />
+</p>
+<!--
+!(./images/image41.gif){width="6.25in"
+height="4.625in"}
+-->
+<h4>
+Note
+</h4>
+<p>For local development, React DevTools is available as a
+<a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">
+Chrome</a>,<a href="https://addons.mozilla.org/en-US/firefox/addon/react-devtools/">
+Firefox</a>, and
+<a href="https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil">Edge</a>
+browser extension. Install it, and the <em>Components</em> tab will
+appear in your browser Developer Tools for sites using React.</p>
+<h3>
+Completing the game
+</h3>
+<p>By this point, you have all the basic building blocks for your
+tic-tac-toe game. To have a complete game, you now need to alternate
+placing “X”s and “O”s on the board, and you need a way to determine a
+winner.</p>
+<h4>
+Lifting state up
+</h4>
+<p>Currently, each Square component maintains a part of the game’s
+state. To check for a winner in a tic-tac-toe game, the Board would need
+to somehow know the state of each of the 9 Square components.</p>
+<p>How would you approach that? At first, you might guess that the Board
+needs to “ask” each Square for that Square’s state. Although this
+approach is technically possible in React, we discourage it because the
+code becomes difficult to understand, susceptible to bugs, and hard to
+refactor. Instead, the best approach is to store the game’s state in the
+parent Board component instead of in each Square. The Board component
+can tell each Square what to display by passing a prop, like you did
+when you passed a number to each Square.</p>
+<p><strong>To collect data from multiple children, or to have two child
+components communicate with each other, declare the shared state in
+their parent component instead. The parent component can pass that state
+back down to the children via props. This keeps the child components in
+sync with each other and with their parent.</strong></p>
+<p>Lifting state into a parent component is common when React components
+are refactored.</p>
+<p>Let’s take this opportunity to try it out. Edit the Board component
+so that it declares a state variable named squares that defaults to an
+array of 9 nulls corresponding to the 9 squares:</p>
+<pre><code>// ...
+export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+  // ...
+  );
+}</code></pre>
+<p>Array(9).fill(null) creates an array with nine elements and sets each
+of them to null. The useState() call around it declares a squares state
+variable that’s initially set to that array. Each entry in the array
+corresponds to the value of a square. When you fill the board in later,
+the squares array will look like this:</p>
+<pre><code>[&#39;O&#39;, null, &#39;X&#39;, &#39;X&#39;, &#39;X&#39;, &#39;O&#39;, &#39;O&#39;, null, null]</code></pre>
+<p>Now your Board component needs to pass the value prop down to each
+Square that it renders:</p>
+<pre><code>export default function Board() {
+const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+  &lt;&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[0]} /&gt;
+    &lt;Square value={squares[1]} /&gt;
+    &lt;Square value={squares[2]} /&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[3]} /&gt;
+    &lt;Square value={squares[4]} /&gt;
+    &lt;Square value={squares[5]} /&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[6]} /&gt;
+    &lt;Square value={squares[7]} /&gt;
+    &lt;Square value={squares[8]} /&gt;
+  &lt;/div&gt;
+&lt;/&gt;
+  );
+}</code></pre>
+<p>Next, you’ll edit the Square component to receive the value prop from
+the Board component. This will require removing the Square component’s
+own stateful tracking of value and the button’s onClick prop:</p>
+<pre><code>function Square({value}) {
+  return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+}</code></pre>
+At this point you should see an empty tic-tac-toe board:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image38.png?raw=true"
+  alt="Empty board."
+  width="24%" />
+</p>
+<!-- 
+!(./images/image38.png){width="2.375in"
+height="2.3333333333333335in"}
+-->
+<p>And your code should look like this:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<p>Fork</p>
+<pre><code>import { useState } from &#39;react&#39;;
+function Square({ value }) {
+  return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+}
+  export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+    &lt;&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[0]} /&gt;
+      &lt;Square value={squares[1]} /&gt;
+      &lt;Square value={squares[2]} /&gt;
+    &lt;/div&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[3]} /&gt;
+      &lt;Square value={squares[4]} /&gt;
+      &lt;Square value={squares[5]} /&gt;
+    &lt;/div&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[6]} /&gt;
+      &lt;Square value={squares[7]} /&gt;
+      &lt;Square value={squares[8]} /&gt;
+    &lt;/div&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<p>Each Square will now receive a value prop that will either be 'X',
+'O', or null for empty squares.</p>
+<p>Next, you need to change what happens when a Square is clicked. The
+Board component now maintains which squares are filled. You’ll need to
+create a way for the Square to update the Board’s state. Since state is
+private to a component that defines it, you cannot update the Board’s
+state directly from Square.</p>
+<p>Instead, you’ll pass down a function from the Board component to the
+Square component, and you’ll have Square call that function when a
+square is clicked. You’ll start with the function that the Square
+component will call when it is clicked. You’ll call that function
+onSquareClick:</p>
+<pre><code>function Square({ value }) {
+return (
+&lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+{value}
+&lt;/button&gt;
+);
+}</code></pre>
+<p>Next, you’ll add the onSquareClick function to the Square component’s
+props:</p>
+<pre><code>function Square({ value, onSquareClick }) {
+  return (
+  &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+    {value}
+  &lt;/button&gt;
+  );
+}</code></pre>
+<p>Now you’ll connect the onSquareClick prop to a function in the Board
+component that you’ll name handleClick. To connect onSquareClick to
+handleClick you’ll pass a function to the onSquareClick prop of the
+first Square component:</p>
+<pre><code>export default function Board() {
+const [squares, setSquares] = useState(Array(9).fill(null));
+  return (
+    &lt;&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[0]} onSquareClick={handleClick} /&gt;
+      //...
+  );
+}</code></pre>
+<p>Lastly, you will define the handleClick function inside the Board
+component to update the squares array holding your board’s state:</p>
+<pre><code>export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  function handleClick() {
+    const nextSquares = squares.slice();
+    nextSquares[0] = &quot;X&quot;;
+    setSquares(nextSquares);
+  }
+  return (
+    // ...
+  )
+}</code></pre>
+<p>The handleClick function creates a copy of the squares array
+(nextSquares) with the JavaScript slice() Array method. Then,
+handleClick updates the nextSquares array to add X to the first ([0]
+index) square.</p>
+<p>Calling the setSquares function lets React know the state of the
+component has changed. This will trigger a re-render of the components
+that use the squares state (Board) as well as its child components (the
+Square components that make up the board).</p>
+<h4>
+Note
+</h4>
+<p>JavaScript supports
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">closures</a>
+which means an inner function (e.g. handleClick) has access to variables
+and functions defined in a outer function (e.g. Board). The handleClick
+function can read the squares state and call the setSquares method
+because they are both defined inside of the Board function.</p>
+<p>Now you can add X’s to the board… but only to the upper left square.
+Your handleClick function is hardcoded to update the index for the upper
+left square (0). Let’s update handleClick to be able to update any
+square. Add an argument i to the handleClick function that takes the
+index of the square to update:</p>
+<pre><code>export default function Board() {
+  const [squares, setSquares] = useState(Array(9).fill(null));
+  function handleClick(i) {
+    const nextSquares = squares.slice();
+    nextSquares[i] = &quot;X&quot;;
+    setSquares(nextSquares);
+  }
+  return (
+    // ...
+  )
+}</code></pre>
+<p>Next, you will need to pass that i to handleClick. You could try to
+set the onSquareClick prop of square to be handleClick(0) directly in
+the JSX like this, but it won’t work:</p>
+<pre><code>&lt;Square value={squares[0]} onSquareClick={handleClick(0)} /&gt;</code></pre>
+<p>Here is why this doesn’t work. The handleClick(0) call will be a part
+of rendering the board component. Because handleClick(0) alters the
+state of the board component by calling setSquares, your entire board
+component will be re-rendered again. But this runs handleClick(0) again,
+leading to an infinite loop:</p>
+<p>Console</p>
+<p>Too many re-renders. React limits the number of renders to prevent an
+infinite loop.</p>
+<p>Why didn’t this problem happen earlier?</p>
+<p>When you were passing onSquareClick={handleClick}, you were passing
+the handleClick function down as a prop. You were not calling it! But
+now you are <em>calling</em> that function right away—notice the
+parentheses in handleClick(0)—and that’s why it runs too early. You
+don’t <em>want</em> to call handleClick until the user clicks!</p>
+<p>You could fix by creating a function like handleFirstSquareClick that
+calls handleClick(0), a function like handleSecondSquareClick that calls
+handleClick(1), and so on. You would pass (rather than call) these
+functions down as props like onSquareClick={handleFirstSquareClick}.
+This would solve the infinite loop.</p>
+<p>However, defining nine different functions and giving each of them a
+name is too verbose. Instead, let’s do this:</p>
+<pre><code>export default function Board() {
+  // ...
+  return (
+    &lt;&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[0]} onSquareClick={() =&gt; handleClick(0)} /&gt;
+      // ...
+  );
+}</code></pre>
+<p>Notice the new () =&gt; syntax. Here, () =&gt; handleClick(0) is an
+<em>arrow function,</em> which is a shorter way to define functions.
+When the square is clicked, the code after the =&gt; “arrow” will run,
+calling handleClick(0).</p>
+<p>Now you need to update the other eight squares to call handleClick
+from the arrow functions you pass. Make sure that the argument for each
+call of the handleClick corresponds to the index of the correct
+square:</p>
+<pre><code>export default function Board() {
+  // ...
+  return (
+    &lt;&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[0]} onSquareClick={() =&gt; handleClick(0)} /&gt;
+      &lt;Square value={squares[1]} onSquareClick={() =&gt; handleClick(1)} /&gt;
+      &lt;Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)} /&gt;
+    &lt;/div&gt;
+    &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[3]} onSquareClick={() =&gt; handleClick(3)} /&gt;
+      &lt;Square value={squares[4]} onSquareClick={() =&gt; handleClick(4)} /&gt;
+      &lt;Square value={squares[5]} onSquareClick={() =&gt; handleClick(5)} /&gt;
+    &lt;/div&gt;
+      &lt;div className=&quot;board-row&quot;&gt;
+      &lt;Square value={squares[6]} onSquareClick={() =&gt; handleClick(6)} /&gt;
+      &lt;Square value={squares[7]} onSquareClick={() =&gt; handleClick(7)} /&gt;
+      &lt;Square value={squares[8]} onSquareClick={() =&gt; handleClick(8)} /&gt;
+    &lt;/div&gt;
+    &lt;/&gt;
+    );
+  };</code></pre>
+Now you can again add X’s to any square on the board by clicking on
+them:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. filling the board with x (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image39.gif?raw=true"
+  alt="Filling the board with X."
+  width="25%" />
+</p>
+<!--
+![filling the board with
+X](./images/media/image39.gif){width="2.5in" height="2.5625in"}
+-->
+<p>But this time all the state management is handled by the Board
+component!</p>
+<p>This is what your code should look like:</p>
+<p>App.js</p>
+<p>DownloadReset</p>
+<pre><code>import { useState } from &#39;react&#39;;
+function Square({ value, onSquareClick }) {
+  return (
+    &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+      {value}
+    &lt;/button&gt;
+  );
+}
+export default function Board() {
+const [squares, setSquares] = useState(Array(9).fill(null));
+  function handleClick(i) {
+    const nextSquares = squares.slice();
+    nextSquares[i] = &#39;X&#39;;
+    setSquares(nextSquares);
+  }
+  return (
+  &lt;&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[0]} onSquareClick={() =&gt; handleClick(0)} /&gt;
+    &lt;Square value={squares[1]} onSquareClick={() =&gt; handleClick(1)} /&gt;
+    &lt;Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)} /&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[3]} onSquareClick={() =&gt; handleClick(3)} /&gt;
+    &lt;Square value={squares[4]} onSquareClick={() =&gt; handleClick(4)} /&gt;
+    &lt;Square value={squares[5]} onSquareClick={() =&gt; handleClick(5)} /&gt;
+  &lt;/div&gt;
+  &lt;div className=&quot;board-row&quot;&gt;
+    &lt;Square value={squares[6]} onSquareClick={() =&gt; handleClick(6)} /&gt;
+    &lt;Square value={squares[7]} onSquareClick={() =&gt; handleClick(7)} /&gt;
+    &lt;Square value={squares[8]} onSquareClick={() =&gt; handleClick(8)} /&gt;
+  &lt;/div&gt;</code></pre>
+<p>Now that your state handling is in the Board component, the parent
+Board component passes props to the child Square components so that they
+can be displayed correctly. When clicking on a Square, the child Square
+component now asks the parent Board component to update the state of the
+board. When the Board’s state changes, both the Board component and
+every child Square re-renders automatically. Keeping the state of all
+squares in the Board component will allow it to determine the winner in
+the future.</p>
+<p>Let’s recap what happens when a user clicks the top left square on
+your board to add an X to it:</p>
+<ol type="1">
+<li><p>Clicking on the upper left square runs the function that
+the button received as its onClick prop from the Square.
+The Square component received that function as its onSquareClick prop
+from the Board. The Board component defined that function directly in
+the JSX. It calls handleClick with an argument of 0.</p></li>
+<li><p>handleClick uses the argument (0) to update the first element of
+the squares array from null to X.</p></li>
+<li><p>The squares state of the Board component was updated, so
+the Board and all of its children re-render. This causes the value prop
+of the Square component with index 0 to change from null to X.</p></li>
+</ol>
+<p>In the end the user sees that the upper left square has changed from
+empty to having a X after clicking it.</p>
+<h4>
+Note
+</h4>
+<p>The DOM &lt;button&gt; element’s onClick attribute has a special
+meaning to React because it is a built-in component. For custom
+components like Square, the naming is up to you. You could give any name
+to the Square’s onSquareClick prop or Board’s handleClick function, and
+the code would work the same. In React, it’s conventional to use
+onSomething names for props which represent events and handleSomething
+for the function definitions which handle those events.</p>
+<h4>
+Why immutability is important
+</h4>
+<p>Note how in handleClick, you call .slice() to create a copy of the
+squares array instead of modifying the existing array. To explain why,
+we need to discuss immutability and why immutability is important to
+learn.</p>
+<p>There are generally two approaches to changing data. The first
+approach is to <em>mutate</em> the data by directly changing the data’s
+values. The second approach is to replace the data with a new copy which
+has the desired changes. Here is what it would look like if you mutated
+the squares array:</p>
+<pre><code>const squares = [null, null, null, null, null, null, null, null, null];
+
+squares[0] = &#39;X&#39;;
+
+// Now `squares` is [&quot;X&quot;, null, null, null, null, null, null, null, null];</code></pre>
+<p>And here is what it would look like if you changed data without
+mutating the squares array:</p>
+<pre><code>const squares = [null, null, null, null, null, null, null, null, null];
+
+const nextSquares = [&#39;X&#39;, null, null, null, null, null, null, null, null];
+
+// Now `squares` is unchanged, but `nextSquares` first element is &#39;X&#39; rather than `null`.</code></pre>
+<p>The result is the same but by not mutating (changing the underlying
+data) directly, you gain several benefits.</p>
+<p>Immutability makes complex features much easier to implement. Later
+in this tutorial, you will implement a “time travel” feature that lets
+you review the game’s history and “jump back” to past moves. This
+functionality isn’t specific to games—an ability to undo and redo
+certain actions is a common requirement for apps. Avoiding direct data
+mutation lets you keep previous versions of the data intact, and reuse
+them later.</p>
+There is also another benefit of immutability. By default, all child
+components re-render automatically when the state of a parent component
+changes. This includes even the child components that weren’t affected
+by the change. Although re-rendering is not by itself noticeable to the
+user (you shouldn’t actively try to avoid it!), you might want to skip
+re-rendering a part of the tree that clearly wasn’t affected by it for
+performance reasons. Immutability makes it very cheap for components to
+compare whether their data has changed or not. You can learn more about
+how React chooses when to re-render a component in [the
+[memo]<a href="https://react.dev/reference/react/memo"> API
+reference</a>.]</a>
+</li>
+<li>
+<a href="https://react.dev/learn/react-developer-tools" target="_blank" rel="noopener noreferrer">How
+to install React Developer Tools</a>
+</li>
+</ol>
+<h4>
+Try React
+</h4>
+<p>You don’t need to install anything to play with React. Try editing
+this sandbox!</p>
+<h4>
+App.js
+</h4>
+<pre><code>function Greeting({ name }) {
+    return &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
+  }
+  export default function App() {
+    return &lt;Greeting name=&quot;world&quot; /&gt;
+  }</code></pre>
+<p>You can edit it directly or open it in a new tab by pressing the
+“Fork” button in the upper right corner.</p>
+<p>Most pages in the React documentation contain sandboxes like this.
+Outside of the React documentation, there are many online sandboxes that
+support React: for example,
+<a href="https://codesandbox.io/s/new" target="_blank" rel="noopener noreferrer">CodeSandbox</a>,
+<a href="https://stackblitz.com/fork/react" target="_blank" rel="noopener noreferrer">StackBlitz</a>,
+or
+<a href="https://codepen.io/pen?&editors=0010&layout=left&prefill_data_id=3f4569d1-1b11-4bce-bd46-89090eed5ddb" target="_blank" rel="noopener noreferrer">CodePen</a>.</p>
+<h4>
+Try React locally
+</h4>
+<p>To try React locally on your computer,
+<a href="https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download
+this HTML page.</a>Open it in your editor and in your browser!</p>
+<h4>
+Start a new React project
+</h4>
+<p>If you want to build an app or a website fully with React,
+<a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start
+a new React project.</a></p>
+<h4>
+Add React to an existing project
+</h4>
+<p>If want to try using React in your existing app or a website,
+<a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add
+React to an existing project.</a></p>
+<h4>
+Next steps
+</h4>
+<p>
+Head to the
+<a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick
+Start</a> guide for a tour of the most important React concepts you will
+encounter every day.
+</p>
+<h6>
+4:38pm 5-12-23 meta-react-basics markdown
+</h6>
+</body>
+</html>
