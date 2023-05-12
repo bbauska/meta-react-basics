@@ -1891,7 +1891,7 @@ Now let's use Babel again, and this time transpile the **render** syntax
 for the **Heading** component:
 
 ```
-  &lt;Heading title="This is the heading text!"&gt;&lt;/Heading&gt;
+  <Heading title="This is the heading text!"></Heading>
 ```
 
 Again using <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the Babel repl</a>, and as can be confirmed in <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the link</a>, the output of the tranpilation is the following code:
@@ -1918,7 +1918,7 @@ You can see the answer below:
 
 ```
   function Example() {
-    return &lt;div&gt;An element&lt;/div&gt;
+    return <div>An element</div>
     }
   export default Example
 ```
@@ -1930,16 +1930,16 @@ Here is the completed solution code for the App.js file:
 ```
   function Heading() { 
     return ( 
-      &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
+      <h1>This is an h1 heading.</h1>
     )
   }
 
   function App() { 
     return ( 
-      &lt;div className="App"&gt;
+      <div className="App">
         This is the starting code for "Your first component" ungraded lab
-        &lt;Heading /&gt;
-      &lt;/div&gt;
+        <Heading />
+      </div>
     ); 
   } 
 
@@ -1969,10 +1969,10 @@ it is a part of the App component\'s return statement.
 ```
 function App() { 
   return ( 
-    &lt;div className="App"&gt;
+    <div className="App">
       This is the starting code for "Your first component" ungraded lab 
-      &lt;Heading /&gt;
-    &lt;/div&gt;
+      <Heading />
+    </div>
   );
 }
 ```
@@ -2004,10 +2004,10 @@ with an opening and a closing parenthesis.
 **Step 3:** Then, inside the parentheses, you added the following code: 
 
 ```
-  &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+  <h1>This is an h1 heading</h1>
    function Heading() { 
      return ( 
-     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
+     <h1>This is an h1 heading.</h1>
      )
    }
 ```
@@ -3148,11 +3148,11 @@ back" into JavaScript so that you can embed some variable from your code
 and display it to the user. For example, this will display user.name:
 
 ```
-  return (
-    <h1>
-      {user.name}
-    </h1>
-  );
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
 ```
 
 You can also "escape into JavaScript" from JSX attributes, but you have
@@ -3162,12 +3162,12 @@ src={user.imageUrl} reads the JavaScript user.imageUrl variable value,
 and then passes that value as the src attribute:
 
 ```
-  return (
-    <img
-      className="avatar"
-      src={user.imageUrl}
-    />
-  );
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
 ```
 
 You can put more complex expressions inside the JSX curly braces too,
@@ -3182,25 +3182,25 @@ Fork
 
 ```
 const user = {
-name: 'Hedy Lamarr',
-imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-imageSize: 90,
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
 };
 export default function Profile() {
-return (
-<>
-<h1>{user.name}</h1>
-<img
-className="avatar"
-src={user.imageUrl}
-alt={'Photo of ' + user.name}
-style={{
-width: user.imageSize,
-height: user.imageSize
-}}
-/>
-</>
-);
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+        className="avatar"
+        src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
+  );
 }
 ```
 
@@ -3218,14 +3218,14 @@ JavaScript code. For example, you can use an <a href="https://developer.mozilla.
 ```
 let content;
 if (isLoggedIn) {
-content = <AdminPanel />;
+  content = <AdminPanel />;
 } else {
-content = <LoginForm />;
+  content = <LoginForm />;
 }
 return (
-<div>
-{content}
-</div>
+  <div>
+    {content}
+  </div>
 );
 ```
 
@@ -3234,11 +3234,11 @@ If you prefer more compact code, you can use the <a href="https://developer.mozi
 
 ```
 <div>
-{isLoggedIn ? (
-<AdminPanel />
-) : (
-<LoginForm />
-)}
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
 </div>
 ```
 
@@ -3247,7 +3247,7 @@ When you don't need the else branch, you can also use a shorter <a href="https:/
 
 ```
 <div>
-{isLoggedIn && <AdminPanel />}
+  {isLoggedIn && <AdminPanel />}
 </div>
 ```
 
@@ -3264,9 +3264,9 @@ For example, let's say you have an array of products:
 
 ```
 const products = [
-{ title: 'Cabbage', id: 1 },
-{ title: 'Garlic', id: 2 },
-{ title: 'Apple', id: 3 },
+  { title: 'Cabbage', id: 1 },
+  { title: 'Garlic', id: 2 },
+  { title: 'Apple', id: 3 },
 ];
 ```
 
@@ -3275,12 +3275,12 @@ products into an array of \<li\> items:
 
 ```
 const listItems = products.map(product =>
-<li key={product.id}>
-{product.title}
-</li>
+  <li key={product.id}>
+    {product.title}
+  </li>
 );
 return (
-<ul>{listItems}</ul>
+  <ul>{listItems}</ul>
 );
 ```
 
@@ -3296,24 +3296,23 @@ DownloadReset
 
 ```
 const products = [
-{ title: 'Cabbage', isFruit: false, id: 1 },
-{ title: 'Garlic', isFruit: false, id: 2 },
-{ title: 'Apple', isFruit: true, id: 3 },
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
 ];
 export default function ShoppingList() {
-const listItems = products.map(product =>
-<li
-key={product.id}
-style={{
-color: product.isFruit ? 'magenta' : 'darkgreen'
-}}
-
-{product.title}
-</li>
-);
-return (
-<ul>{listItems}</ul>
-);
+  const listItems = products.map(product =>
+    <li
+      key={product.id}
+      style={{
+        color: product.isFruit ? 'magenta' : 'darkgreen'
+      }}
+     {product.title}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
 }
 ```
 
@@ -3324,14 +3323,14 @@ your components:
 
 ```
 function MyButton() {
-function handleClick() {
-alert('You clicked me!');
-}
-return (
-<button onClick={handleClick}>
-Click me
-</button>
-);
+  function handleClick() {
+    alert('You clicked me!');
+  }
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
 }
 ```
 
@@ -3356,7 +3355,7 @@ Now you can declare a *state variable* inside your component:
 
 ```
 function MyButton() {
-const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 ```
 
 You'll get two things from useState: the current state (count), and the
@@ -3370,15 +3369,15 @@ counter:
 
 ```
 function MyButton() {
-const [count, setCount] = useState(0);
-function handleClick() {
-setCount(count + 1);
-}
-return (
-<button onClick={handleClick}>
-Clicked {count} times
-</button>
-);
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
 }
 ```
 
@@ -3395,25 +3394,25 @@ DownloadReset
 ```
 import { useState } from 'react';
 export default function MyApp() {
-return (
-<div>
-<h1>Counters that update separately</h1>
-<MyButton />
-<MyButton />
-</div>
-);
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
 }
 function MyButton() {
-const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-function handleClick() {
-setCount(count + 1);
-}
-return (
-<button onClick={handleClick}>
-Clicked {count} times
-</button>
-);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
 }
 ```
 
@@ -3515,20 +3514,20 @@ First, move the state up from MyButton into MyApp:
 
 ```
 export default function MyApp() {
-const [count, setCount] = useState(0);
-function handleClick() {
-setCount(count + 1);
-}
-return (
-<div>
-<h1>Counters that update separately</h1>
-<MyButton />
-<MyButton />
-</div>
-);
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
 }
 function MyButton() {
-// ... we're moving code from here ...
+  // ... we're moving code from here ...
 }
 ```
 
@@ -3539,18 +3538,18 @@ curly braces, just like you previously did with built-in tags like
 
 ```
 export default function MyApp() {
-const [count, setCount] = useState(0);
-function handleClick() {
-setCount(count + 1);
-}
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
 
-return (
-<div>
-<h1>Counters that update together</h1>
-<MyButton count={count} onClick={handleClick} />
-<MyButton count={count} onClick={handleClick} />
-</div>
-);
+  return (
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
 }
 ```
 
@@ -3563,11 +3562,11 @@ parent component:
 
 ```
 function MyButton({ count, onClick }) {
-return (
-<button onClick={onClick}>
-Clicked {count} times
-</button>
-);
+  return (
+    <button onClick={onClick}>
+      Clicked {count} times
+    </button>
+  );
 }
 ```
 
@@ -3775,7 +3774,7 @@ of that file in the *code editor* should be:
 
 ```
 export default function Square() {
-return <button className="square">X</button>;
+  return <button className="square">X</button>;
 }
 ```
 
@@ -3807,7 +3806,7 @@ going on:
 
 ```
 export default function Square() {
-return <button className="square">X</button>;
+  return <button className="square">X</button>;
 }
 ```
 
@@ -3818,7 +3817,7 @@ your file.
 
 ```
 export default function Square() {
-return <button className="square">X</button>;
+  return <button className="square">X</button>;
 }
 ```
 
@@ -3881,8 +3880,8 @@ just try and copy paste your square to make two squares like this:
 
 ```
 export default function Square() {
-return <button className="square">X</button><button
-className="square">X</button>;
+  return <button className="square">X</button><button
+  className="square">X</button>;
 }
 ```
 
@@ -3947,25 +3946,25 @@ In the App.js file, update the Square component to look like this:
 
 ```
 export default function Square() {
-return (
-<>
-<div className="board-row">
-<button className="square">1</button>
-<button className="square">2</button>
-<button className="square">3</button>
-</div>
-<div className="board-row">
-<button className="square">4</button>
-<button className="square">5</button>
-<button className="square">6</button>
-</div>
-<div className="board-row">
-<button className="square">7</button>
-<button className="square">8</button>
-<button className="square">9</button>
-</div>
-</>
-);
+  return (
+  <>
+  <div className="board-row">
+    <button className="square">1</button>
+    <button className="square">2</button>
+    <button className="square">3</button>
+  </div>
+  <div className="board-row">
+    <button className="square">4</button>
+    <button className="square">5</button>
+    <button className="square">6</button>
+  </div>
+  <div className="board-row">
+    <button className="square">7</button>
+    <button className="square">8</button>
+    <button className="square">9</button>
+  </div>
+  </>
+  );
 }
 ```
 
@@ -4002,25 +4001,25 @@ DownloadReset
 
 ```
 export default function Board() {
-return (
-<>
-<div className="board-row">
-<button className="square">1</button>
-<button className="square">2</button>
-<button className="square">3</button>
-</div>
-<div className="board-row">
-<button className="square">4</button>
-<button className="square">5</button>
-<button className="square">6</button>
-</div>
-<div className="board-row">
-<button className="square">7</button>
-<button className="square">8</button>
-<button className="square">9</button>
-</div>
-</>
-);
+  return (
+    <>
+    <div className="board-row">
+      <button className="square">1</button>
+      <button className="square">2</button>
+      <button className="square">3</button>
+    </div>
+    <div className="board-row">
+      <button className="square">4</button>
+      <button className="square">5</button>
+      <button className="square">6</button>
+    </div>
+    <div className="board-row">
+      <button className="square">7</button>
+      <button className="square">8</button>
+      <button className="square">9</button>
+    </div>
+    </>
+  );
 }
 ```
 
@@ -5630,24 +5629,24 @@ return (
 );
 }
 function calculateWinner(squares) {
-const lines = [
-[0, 1, 2],
-[3, 4, 5],
-[6, 7, 8],
-[0, 3, 6],
-[1, 4, 7],
-[2, 5, 8],
-[0, 4, 8],
-[2, 4, 6],
-];
-for (let i = 0; i < lines.length; i++) {
-const [a, b, c] = lines[i];
-if (squares[a] && squares[a] === squares[b] && squares[a] ===
-squares[c]) {
-return squares[a];
-}
-}
-return null;
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] ===
+      squares[c]) {
+        return squares[a];
+      }
+  }
+  return null;
 }
 ```
 
@@ -5870,31 +5869,31 @@ Fork
 ```
 import { useState } from 'react';
 function Square({value, onSquareClick}) {
-return (
-<button className="square" onClick={onSquareClick}>
-{value}
-</button>
-);
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
 }
 function Board({ xIsNext, squares, onPlay }) {
 function handleClick(i) {
-if (calculateWinner(squares) || squares[i]) {
-return;
-}
-const nextSquares = squares.slice();
-if (xIsNext) {
-nextSquares[i] = 'X';
-} else {
-nextSquares[i] = 'O';
-}
-onPlay(nextSquares);
+  if (calculateWinner(squares) || squares[i]) {
+    return;
+  }
+  const nextSquares = squares.slice();
+  if (xIsNext) {
+    nextSquares[i] = 'X';
+  } else {
+    nextSquares[i] = 'O';
+  }
+  onPlay(nextSquares);
 }
 const winner = calculateWinner(squares);
 let status;
 if (winner) {
-status = 'Winner: ' + winner;
+  status = 'Winner: ' + winner;
 } else {
-status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 }
 return (
 <>
@@ -5917,20 +5916,20 @@ figures it out based on the currentMove:
 
 ```
 export default function Game() {
-const [history, setHistory] = useState([Array(9).fill(null)]);
-const [currentMove, setCurrentMove] = useState(0);
-const xIsNext = currentMove % 2 === 0;
-const currentSquares = history[currentMove];
-function handlePlay(nextSquares) {
-const nextHistory = [...history.slice(0, currentMove + 1),
-nextSquares];
-setHistory(nextHistory);
-setCurrentMove(nextHistory.length - 1);
-}
-function jumpTo(nextMove) {
-setCurrentMove(nextMove);
-}
-// ...
+  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const [currentMove, setCurrentMove] = useState(0);
+  const xIsNext = currentMove % 2 === 0;
+  const currentSquares = history[currentMove];
+  function handlePlay(nextSquares) {
+    const nextHistory = [...history.slice(0, currentMove + 1),
+    nextSquares];
+    setHistory(nextHistory);
+    setCurrentMove(nextHistory.length - 1);
+  }
+  function jumpTo(nextMove) {
+    setCurrentMove(nextMove);
+  }
+  // ...
 }
 ```
 
@@ -5965,33 +5964,33 @@ Fork
 ```
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
-return (
-<button className="square" onClick={onSquareClick}>
-{value}
-</button>
-);
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
 }
 function Board({ xIsNext, squares, onPlay }) {
 function handleClick(i) {
-if (calculateWinner(squares) || squares[i]) {
-return;
-}
-const nextSquares = squares.slice();
-if (xIsNext) {
-nextSquares[i] = 'X';
-} else {
-nextSquares[i] = 'O';
-}
-onPlay(nextSquares);
+  if (calculateWinner(squares) || squares[i]) {
+    return;
+  }
+  const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = 'X';
+    } else {
+    nextSquares[i] = 'O';
+    }
+    onPlay(nextSquares);
 }
 const winner = calculateWinner(squares);
 let status;
 if (winner) {
-status = 'Winner: ' + winner;
+  status = 'Winner: ' + winner;
 } else {
-status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 }
-return (
+  return (
 <>
 <div className="status">{status}</div>
 <div className="board-row">
@@ -6041,18 +6040,18 @@ The JSON API returns some data that looks like this:
 
 ```
 [
-{ category: "Fruits", price: "$1", stocked: true, name: "Apple"
-},
-{ category: "Fruits", price: "$1", stocked: true, name:
-"Dragonfruit" },
-{ category: "Fruits", price: "$2", stocked: false, name:
-"Passionfruit" },
-{ category: "Vegetables", price: "$2", stocked: true, name:
-"Spinach" },
-{ category: "Vegetables", price: "$4", stocked: false, name:
-"Pumpkin" },
-{ category: "Vegetables", price: "$1", stocked: true, name:
-"Peas" }
+  { category: "Fruits", price: "$1", stocked: true, name: "Apple"
+  },
+  { category: "Fruits", price: "$1", stocked: true, name:
+  "Dragonfruit" },
+  { category: "Fruits", price: "$2", stocked: false, name:
+  "Passionfruit" },
+  { category: "Vegetables", price: "$2", stocked: true, name:
+  "Spinach" },
+  { category: "Vegetables", price: "$4", stocked: false, name:
+  "Pumpkin" },
+  { category: "Vegetables", price: "$1", stocked: true, name:
+  "Peas" }
 ]
 ```
 
@@ -6180,36 +6179,36 @@ Fork
 
 ```
 function ProductCategoryRow({ category }) {
-return (
-<tr>
-<th colSpan="2">
-{category}
-</th>
-</tr>
-);
+  return (
+    <tr>
+      <th colSpan="2">
+        {category}
+      </th>
+    </tr>
+  );
 }
 function ProductRow({ product }) {
-const name = product.stocked ? product.name :
-<span style={{ color: 'red' }}>
-{product.name}
-</span>;
-return (
-<tr>
-<td>{name}</td>
-<td>{product.price}</td>
-</tr>
-);
+  const name = product.stocked ? product.name :
+  <span style={{ color: 'red' }}>
+    {product.name}
+  </span>;
+  return (
+    <tr>
+    <td>{name}</td>
+    <td>{product.price}</td>
+    </tr>
+  );
 }
 function ProductTable({ products }) {
 const rows = [];
 let lastCategory = null;
 products.forEach((product) => {
 if (product.category !== lastCategory) {
-rows.push(
-<ProductCategoryRow
-category={product.category}
-key={product.category} />
-);
+  rows.push(
+    <ProductCategoryRow
+    category={product.category}
+    key={product.category} />
+  );
 }
 ```
 
@@ -6373,33 +6372,33 @@ table update:
 ```
 import { useState } from 'react';
 function FilterableProductTable({ products }) {
-const [filterText, setFilterText] = useState('');
-const [inStockOnly, setInStockOnly] = useState(false);
-return (
-<div>
-<SearchBar
-filterText={filterText}
-inStockOnly={inStockOnly} />
-<ProductTable
-products={products}
-filterText={filterText}
-inStockOnly={inStockOnly} />
-</div>
-);
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+  return (
+    <div>
+      <SearchBar
+        filterText={filterText}
+        inStockOnly={inStockOnly} />
+      <ProductTable
+        products={products}
+        filterText={filterText}
+        inStockOnly={inStockOnly} />
+    </div>
+  );
 }
 function ProductCategoryRow({ category }) {
-return (
-<tr>
-<th colSpan="2">
-{category}
-</th>
-</tr>
-);
+  return (
+    <tr>
+      <th colSpan="2">
+        {category}
+      </th>
+    </tr>
+  );
 }
 function ProductRow({ product }) {
 const name = product.stocked ? product.name :
 <span style={{ color: 'red' }}>
-{product.name}
+  {product.name}
 </span>;
 return (
 ```
@@ -6421,8 +6420,8 @@ function SearchBar({ filterText, inStockOnly }) {
 return (
 <form>
 <input
-type="text"
-value={filterText}
+  type="text"
+  value={filterText}
 placeholder="Search..."/>
 ```
 
@@ -6457,9 +6456,9 @@ const [inStockOnly, setInStockOnly] = useState(false);
 return (
 <div>
 <SearchBar
-filterText={filterText}
-inStockOnly={inStockOnly}
-onFilterTextChange={setFilterText}
+  filterText={filterText}
+  inStockOnly={inStockOnly}
+  onFilterTextChange={setFilterText}
 onInStockOnlyChange={setInStockOnly} />
 ```
 
@@ -6468,9 +6467,9 @@ the parent state from them:
 
 ```
 <input
-type="text"
-value={filterText}
-placeholder="Search..."
+  type="text"
+  value={filterText}
+  placeholder="Search..."
 onChange={(e) => onFilterTextChange(e.target.value)} />
 ```
 
@@ -6484,33 +6483,33 @@ function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   return (
-    &lt;div&gt;
-      &lt;SearchBar
+    <div>
+      <SearchBar
       filterText={filterText}
       inStockOnly={inStockOnly}
       onFilterTextChange={setFilterText}
-      onInStockOnlyChange={setInStockOnly} /&gt;
-      &lt;ProductTable
+      onInStockOnlyChange={setInStockOnly} />
+      <ProductTable
         products={products}
         filterText={filterText}
-        inStockOnly={inStockOnly} /&gt;
-    &lt;/div&gt;
+        inStockOnly={inStockOnly} />
+    </div>
   );
 }
 function ProductCategoryRow({ category }) {
   return (
-  &lt;tr&gt;
-    &lt;th colSpan="2"&gt;
+  <tr>
+    <th colSpan="2">
       {category}
-    &lt;/th&gt;
-  &lt;/tr&gt;
+    </th>
+  </tr>
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  &lt;span style={{ color: 'red' }}&gt;
+  <span style={{ color: 'red' }}>
     {product.name}
-  &lt;/span&gt;;
+  </span>;
 ```
 
 You can learn all about handling events and updating state in the
@@ -6545,10 +6544,10 @@ sandbox!
 
 ```
 function Greeting({ name }) {
-  return <h1>Hello, {name}</h1>;
+    return <h1>Hello, {name}</h1>;
   }
   export default function App() {
-  return <Greeting name="world" />
+    return <Greeting name="world" />
   }
 ```
 
