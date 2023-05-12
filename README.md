@@ -1020,9 +1020,19 @@ Again, following the instructions, opening a browser with the address
 bar pointing to [http://localhost:3000](http://localhost:3000/), will
 show the following page in your browser:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 11. react logo displayed on the browser (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image11.png?raw=true"
+  alt="React logo displayed on the browser."
+  width="50%;" />
+</p>
+<!--
 ![React logo displayed on the
 browser](./images/image11.png){width="5.0in"
 height="3.1666666666666665in"}
+-->
 
 This means that you\'ve successfully:
 
@@ -1188,8 +1198,18 @@ library from Meta.
 
 React used to run many of the world\'s most popular websites.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 12.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image12.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image12.png){width="5.0in"
 height="2.86878280839895in"}
+-->
 
 Often on these sites, you\'re type a search term into the sites input
 box.
@@ -1199,8 +1219,18 @@ The site then returns the relevant content or results.
 But you might notice that even though the content has updated, the sites
 URL doesn\'t change.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 13.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image13.png?raw=true"
+  alt="."
+  width="40%;" />
+</p>
+<!--
 ![](./images/image13.png){width="4.0in"
 height="1.472169728783902in"}
+-->
 
 As SPA only load the content as required, they can be ideal for
 businesses and enterprises who need a web app that offers rich user
@@ -1219,8 +1249,18 @@ Let\'s begin with components.
 
 One of the core building blocks of React.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 14.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image14.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image14.png){width="5.0in"
 height="1.8402121609798776in"}
+-->
 
 When meta released the React library, it included the concept of
 something called component-based architecture.
@@ -1228,24 +1268,53 @@ something called component-based architecture.
 This is essentially a design philosophy for building software based on
 reusable components of code.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 15.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image15.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image15.png){width="5.0in"
 height="2.10370406824147in"}
+-->
 
 Each component consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
 components.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 16.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image16.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image16.png){width="5.0in"
 height="2.10370406824147in"}
+-->
 
 Because components are reusable, they can be used multiple times and
 easily inserted anywhere we\'re needed.
 
 This results in components that can exist within the same space yet
 interact independently from each other.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 17.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image17.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image17.png){width="5.0in"
 height="2.2761909448818898in"}
+-->
 
 One of the advantages of developing using components is that many
 developers can work on the same project without interfering with the
@@ -1264,8 +1333,18 @@ that can be combined into more complex components.
 In fact, you can think of an entire website is just a collection of
 components.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 18.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image18.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image18.png){width="5.0in"
 height="2.249735345581802in"}
+-->
 
 For example, consider the product check out page of an e-commerce web
 application.
@@ -1273,25 +1352,65 @@ application.
 The page consists of three sections, a header, a payment section, and a
 sidebar.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 19.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image19.png?raw=true"
+  alt="."
+  width="50%;" />
+</p>
+<!--
 ![](./images/image19.png){width="5.0in"
 height="0.7195767716535433in"}
+-->
 
 The header section contains the company logo with a navigation menu and
 a button to view the shopping cart.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 20.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image20.png?raw=true"
+  alt="."
+  width="30%;" />
+</p>
+<!--
 ![](./images/image20.png){width="3.0in"
 height="1.7358727034120736in"}
+-->
 
 The payment section area contains a form where the user inputs their
 payment information.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 21.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image21.png?raw=true"
+  alt="."
+  width="30%;" />
+</p>
+<!--
 ![](./images/image21.png){width="3.0in"
 height="2.761124234470691in"}
+-->
 
 Finally, there\'s a sidebar with the order summary information.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 22.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image22.png?raw=true"
+  alt="."
+  width="40%;" />
+</p>
+<!--
 ![](./images/image22.png){width="4.0in"
 height="2.0774595363079613in"}
+-->
 
 As the components are self-contained, they have their own HTML, CSS, and
 JavaScript logic for functionality.
@@ -1302,8 +1421,18 @@ that submits a payment when a button is clicked.
 It\'s important to know that the use of components in website UI design
 is not limited to just React.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 23.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image23.png?raw=true"
+  alt="."
+  width="30%;" />
+</p>
+<!--
 ![](./images/image23.png){width="3.0in"
 height="1.5278346456692913in"}
+-->
 
 Many website\'s front end or UI are built on the foundations of
 components and compose ability.
@@ -1819,23 +1948,33 @@ export default App;
 
 Here is the output from the solution code for the App.js file:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ 24. output of the completed component exercise (##) ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image24.png?raw=true"
+  alt="The output of the completed first component exercise."
+  width="50%;" />
+</p>
+<!--
 ![The output of the completed \'Your first component\'
 exercise.](./images/image24.png){width="5.0in"
 height="0.8566437007874016in"}
+-->
 
 **Step 1:** In the starting code, you already had a JSX element
 named **\<Heading /\>** , being rendered from the App component, since
 it is a part of the App component\'s return statement.
 
 ```
-  function App() { 
-    return ( 
-      &lt;div className="App"&gt;
-        This is the starting code for "Your first component" ungraded lab 
-        &lt;Heading /&gt;
-      &lt;/div&gt;
-    );
-  }
+function App() { 
+  return ( 
+    &lt;div className="App"&gt;
+      This is the starting code for "Your first component" ungraded lab 
+      &lt;Heading /&gt;
+    &lt;/div&gt;
+  );
+}
 ```
  
 ```
@@ -2526,15 +2665,33 @@ Here are the contents of the App.js file:
 
 Here is a screenshot of the src folder:
 
-![App, heading and index files displayed in src
-folder](./images/image25.png){width="3.7708333333333335in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 25. app, heading and index files displayed in src folder (##) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image25.png?raw=true"
+  alt="App, heading and index files displayed in src folder."
+  width="38%;" />
+</p>
+<!--
+!(./images/image25.png){width="3.7708333333333335in"
 height="1.3125in"}
+-->
 
 Here is the output from the solution code for the App.js file:
 
-![The output of the completed \'Creating and importing components\'
-exercise.](./images/image26.png){width="5.0in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 26. output of completed component exercise (##) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image26.png?raw=true"
+  alt="The output of the completed \'Creating and importing components\' exercise."
+  width="50%;" />
+</p>
+<!--
+!(./images/image26.png){width="5.0in"
 height="1.220472440944882in"}
+-->
 
 **Step 1:** You moved the **Heading** function from App to a separate
 component file, named "Heading.js".
@@ -3280,18 +3437,33 @@ In the previous example, each MyButton had its own independent count,
 and when each button was clicked, only the count for the button clicked
 changed:
 
-![Diagram showing a tree of three components, one parent labeled MyApp
-and two children labeled MyButton. Both MyButton components contain a
-count with value zero.](./images/image27.png){width="5.0in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 27.  (##) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image27.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. Both MyButton components contain a count with value zero."
+  width="50%;" />
+</p>
+<!--
+!(./images/image27.png){width="5.0in"
 height="4.50859908136483in"}
+-->
 
 Initially, each MyButton's count state is 0
 
-![The same diagram as the previous, with the count of the first child
-MyButton component highlighted indicating a click with the count value
-incremented to one. The second MyButton component still contains value
-zero.](./images/image28.png){width="5.0in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ 28. same as previous with first child count (##) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image28.png?raw=true"
+  alt="The same diagram as the previous, with the count of the first child MyButton component highlighted indicating a click with the count value incremented to one. The second MyButton component still contains value zero."
+  width="50%;" />
+</p>
+<!--
+!(./images/image28.png){width="5.0in"
 height="4.50859908136483in"}
+-->
 
 The first MyButton updates its count to 1
 
@@ -3304,21 +3476,33 @@ together, you need to move the state from the individual buttons
 
 In this example, it is MyApp:
 
-![Diagram showing a tree of three components, one parent labeled MyApp
-and two children labeled MyButton. MyApp contains a count value of zero
-which is passed down to both of the MyButton components, which also show
-value zero.](./images/image29.png){width="5.0in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 29. diagram of tree with 3 components (##) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image29.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp and two children labeled MyButton. MyApp contains a count value of zero which is passed down to both of the MyButton components, which also show value zero."
+  width="50%;" />
+</p>
+<!--
+(./images/image29.png){width="5.0in"
 height="4.6951224846894135in"}
+-->
 
 Initially, MyApp's count state is 0 and is passed down to both children
 
-![The same diagram as the previous, with the count of the parent MyApp
-component highlighted indicating a click with the value incremented to
-one. The flow to both of the children MyButton components is also
-highlighted, and the count value in each child is set to one indicating
-the value was passed
-down.](./images/image30.png){width="5.0in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ 30. same diagram as previous with parent count (##) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image30.png?raw=true"
+  alt="The same diagram as the previous, with the count of the parent MyApp component highlighted indicating a click with the value incremented to one. The flow to both of the children MyButton components is also highlighted, and the count value in each child is set to one indicating the value was passed down."
+  width="50%;" />
+</p>
+<!--
+(./images/image30.png){width="5.0in"
 height="4.695121391076116in"}
+-->
 
 On click, MyApp updates its count state to 1 and passes it down to both
 children
@@ -3563,9 +3747,19 @@ Now that you're set up, let's get an overview of React!
 
 In CodeSandbox you'll see three main sections:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 31. codesandbox with starter code (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image31.png?raw=true"
+  alt="CodeSandbox with starter code."
+  width="50%;" />
+</p>
+<!--
 ![CodeSandbox with starter
 code](./images/image31.png){width="5.0in"
 height="2.3164555993000877in"}
+-->
 
 1.  The Files section with a list of files
     like App.js, index.js, styles.css and a folder called public
@@ -3587,10 +3781,19 @@ return <button className="square">X</button>;
 
 The browser section should be displaying a square with a X in it like
 this:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32. x-filled squares (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image32.png?raw=true"
+  alt="X-filled square."
+  width="10%" />
+</p>
+<!--
 ![x-filled
 square](./images/image32.png){width="0.9583333333333334in"
 height="0.9583333333333334in"}
+-->
 
 Now let's have a look at the files in the starter code.
 
@@ -3697,18 +3900,18 @@ this:
 
 ```
 export default function Square() {
-return (
-<>
-<button className="square">X</button>
-<button className="square">X</button>
-</>
-);
+  return (
+    <>
+    <button className="square">X</button>
+    <button className="square">X</button>
+    </>
+  );
 }
 ```
 
 Now you should see:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 33. two x-filled squares (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 33. two x-filled squares (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image33.png?raw=true"
@@ -3716,24 +3919,22 @@ Now you should see:
   width="16%" />
 </p>
 <!--
-![two x-filled
-squares](./images/image33.png){width="1.6041666666666667in"
+!(./images/image33.png){width="1.6041666666666667in"
 height="0.9166666666666666in"}
 -->
 
 Great! Now you just need to copy-paste a few times to add nine squares
 and...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 34. nine x-filled squares in a line (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 34. nine x-filled squares in a row (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image34.png?raw=true"
-  alt="Nine X-filled squares in a line."
+  alt="Nine X-filled squares in a row/line."
   width="65%" />
 </p>
 <!--
-![nine x-filled squares in a
-line](./images/image34.png){width="6.458333333333333in"
+!(./images/image34.png){width="6.458333333333333in"
 height="1.0in"}
 -->
 
@@ -3772,7 +3973,7 @@ The CSS defined in styles.css styles the divs with the className of
 board-row. Now that you've grouped your components into rows with the
 styled divs you have your tic-tac-toe board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 35. tic-tac-toe board filled with 1-9 (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 35. tic-tac-toe board filled with 1-9 (##) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image35.png?raw=true"
@@ -3780,8 +3981,7 @@ styled divs you have your tic-tac-toe board:
   width="25%" />
 </p>
 <!--
-![tic-tac-toe board filled with numbers 1 through
-9](./images/image35.png){width="2.4583333333333335in"
+!(./images/image35.png){width="2.4583333333333335in"
 height="2.4583333333333335in"}
 -->
 
@@ -3885,7 +4085,7 @@ must start with a capital letter.
 
 Let's take a look:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 36. one-filled board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36. one-filled board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image36.png?raw=true"
@@ -3924,7 +4124,7 @@ return <button className="square">value</button>;
 
 Oops, this is not what you wanted:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 37. value-filled board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37. value-filled board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image37.png?raw=true"
@@ -3948,7 +4148,7 @@ return <button className="square">{value}</button>;
 
 For now, you should see an empty board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image38.png?raw=true"
@@ -4155,14 +4355,14 @@ the update, the Square's value will be \'X\', so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 39. adding x's to board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39. adding x's to board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image39.png?raw=true"
+<img src="/images/image39.gif?raw=true"
   alt="Adding X's to board."
   width="25%" />
 </p>
-<!-- ![adding xes to board](./images/image39.gif){width="2.5in"
+<!-- (./images/image39.gif){width="2.5in"
 height="2.5625in"}
 -->
 
@@ -4217,7 +4417,7 @@ React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
 *browser* section in CodeSandbox:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 40. react devtools in codesandbox (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 40. react devtools in codesandbox (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image40.png?raw=true"
@@ -4225,24 +4425,22 @@ components. You can find the React DevTools tab at the bottom of the
   width="50%" />
 </p>
 <!--
-![React DevTools in
-CodeSandbox](./images/image40.png){width="5.0in"
+!(./images/image40.png){width="5.0in"
 height="3.720173884514436in"}
 -->
 
 To inspect a particular component on the screen, use the button in the
 top left corner of React DevTools:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~ 41. selecting components on the page with react devtools (pg #) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 41. selecting components on the page with react devtools (##) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image41.gif?raw=true"
   alt="Selecting components on the page with React DevTools."
-  width="65%" />
+  width="63%" />
 </p>
 <!--
-![Selecting components on the page with React
-DevTools](./images/image41.gif){width="6.25in"
+!(./images/image41.gif){width="6.25in"
 height="4.625in"}
 -->
 
@@ -4350,7 +4548,7 @@ function Square({value}) {
 
 At this point you should see an empty tic-tac-toe board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38. empty board (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image38.png?raw=true"
@@ -4358,7 +4556,7 @@ At this point you should see an empty tic-tac-toe board:
   width="24%" />
 </p>
 <!-- 
-![empty board](./images/image38.png){width="2.375in"
+!(./images/image38.png){width="2.375in"
 height="2.3333333333333335in"}
 -->
 
@@ -4791,7 +4989,7 @@ and O, as they should!
 But wait, there's a problem. Try clicking on the same square multiple
 times:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42. o overwriting x (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 42. o overwriting x (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image42.png?raw=true"
@@ -4799,7 +4997,7 @@ times:
   width="25%" />
 </p>
 <!--
-![O overwriting an X](./images/image42.gif){width="2.5in"
+!(./images/image42.gif){width="2.5in"
 height="2.5625in"}
 -->
 
@@ -5860,7 +6058,7 @@ The JSON API returns some data that looks like this:
 
 <h4>The mockup looks like this:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43.  (pg #) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 43.  (##) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image43.png?raw=true"
