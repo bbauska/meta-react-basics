@@ -1,10 +1,30 @@
-Coursera.org
+---
+meta-react-basics: meta/Coursera - React Basics
+---
 
-![](./images/image001.png){width="2.0in" height="0.982759186351706in"}
+<h1 align="center" width="100%">meta (Coursera) / React Basics</h1>
 
-![](./images/image002.png){width="0.5in"
-height="0.5in"}![](./images/image003.png){width="1.549261811023622in"
-height="0.5in"}
+<h5 align="center">(meta-react-basics)</h5>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ readme.md in meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image001.png?raw=true"
+  alt="Coursera logo."
+  width="125px" />
+</p>
+<!-- {width="1.549261811023622in" height="0.5in"} -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image002.png?raw=true"
+  alt="meta logo."
+  width="100px" />
+</p>
+<!-- {width="1.0175437445319335in" height="0.5in"} -->
 
 React is a powerful JavaScript library that you can use to build user
 interfaces for web and mobile applications (apps).
