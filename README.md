@@ -2448,10 +2448,8 @@ it is a part of the App component\'s return statement.
 >   ); 
 >
 > } 
-```
- 
-
 > export default App;
+```
 
 Then, you added a new function to the App component, and named that
 function **Heading ()**. You placed it at the very top of the **App.js**
@@ -3479,6 +3477,7 @@ This means that the **createElement** function receives three arguments:
 For example, let's say you have a slightly more complex JSX element
 structure:
 
+```
 > function App() { 
 >
 >   return (
@@ -3492,10 +3491,12 @@ structure:
 >   )
 >
 > }
+```
 
 ... the transpiled return statement in plain JavaScript again returns
 two **createElement** functions:
 
+```
 > \"use strict\";
 >
 > function App() {
@@ -3503,10 +3504,12 @@ two **createElement** functions:
 >   return /\*#\_\_PURE\_\_\*/React.createElement(\"div\", null, /\*#\_\_PURE\_\_\*/React.createElement(\"h1\", null, \"Hello there\"));
 >
 > }
+```
 
 If you format this output, remove the **\"use strict\"** line, and
 remove the **\_\_PURE\_\_** comments, you get a more readable output:
 
+```
 > function App() {
 >
 >   return React.createElement(
@@ -3520,6 +3523,7 @@ remove the **\_\_PURE\_\_** comments, you get a more readable output:
 >   );
 >
 > }
+```
 
 So now the third argument of the outer-most **React.createElement** call
 is another **React.createElement** call.
@@ -3538,6 +3542,7 @@ an empty object.
 In that case, your code would contain a pair of curly braces instead of
 the word **null**:
 
+```
 > \"use strict\";
 >
 >  
@@ -3555,6 +3560,7 @@ the word **null**:
 >   );
 >
 > }
+```
 
 This object is referred to as the *props* object. It is the main
 mechanism of sending data from a parent component to a child component
@@ -3562,6 +3568,7 @@ in React.
 
 The way this works is described in React docs using the following code:
 
+```
 > React.createElement(
 >
 >   type,
@@ -3571,6 +3578,7 @@ The way this works is described in React docs using the following code:
 >   \[\...children\]
 >
 > )
+```
 
 ## The third argument (\...children)
 
@@ -3644,6 +3652,7 @@ passing of props to and within a component using classes and functions.
 
 Here is the completed App.js file:
 
+```
 > import Heading from \"./Heading\";
 >
 >  
@@ -3667,9 +3676,11 @@ Here is the completed App.js file:
 >  
 >
 > export default App;
+```
 
 And here is the completed Heading.js file:
 
+```
 > function Heading(props) {
 >
 >     return (
@@ -3683,7 +3694,7 @@ And here is the completed Heading.js file:
 >  
 >
 > export default Heading;
-
+```
  
 
 Here is the output from the solution code for the App.js file:
@@ -3695,6 +3706,7 @@ height="1.8693788276465442in"}
 **Step 1:** First, you passed the props object as a parameter to the
 **Heading** component in the \'Heading.js\' file. 
 
+```
 > function Heading(props) {
 >
 >     return (
@@ -3708,7 +3720,7 @@ height="1.8693788276465442in"}
 >  
 >
 > export default Heading;
-
+```
  
 
 **Step 2:** Next, inside the **Heading** component's body, you located
@@ -3716,6 +3728,7 @@ the **return** statement, and added a JSX expression that accesses the
 **firstName** property of the props object, inside the **return**
 statement\'s **h1**, after **Hello**. 
 
+```
 > function Heading(props) {
 >
 >     return (
@@ -3729,13 +3742,14 @@ statement\'s **h1**, after **Hello**. 
 >  
 >
 > export default Heading;
-
+```
  
 
 **Step 3:** Then, inside the App component\'s return statement, you
 located the **\<Heading /\>** JSX element, and added the attribute of
 **firstName** and give it the value of **Bob**. 
 
+```
 > import Heading from \"./Heading\";
 >
 >  
@@ -3757,7 +3771,7 @@ located the **\<Heading /\>** JSX element, and added the attribute of
 >  
 >
 > export default App;
-
+```
  
 
 **Step 4:** You saved all your changes and ran the app to preview the
@@ -3767,6 +3781,7 @@ element with the text that reads \"Hello, Bob\". 
 **Step 5:** Then, you changed **firstName** to any name other than 'Bob'
 and see how the page updates with the new name.
 
+```
 > import Heading from \"./Heading\";
 >
 >  
@@ -3788,13 +3803,14 @@ and see how the page updates with the new name.
 >  
 >
 > export default App;
-
+```
  
 
 **Step 6:** Finally, you added a second **\<Heading /\>** after the
 first one.  Again, adding the **firstName** attribute and choosing
 another name for this value.
 
+```
 > import Heading from \"./Heading\";
 >
 >  
@@ -3818,8 +3834,7 @@ another name for this value.
 >  
 >
 > export default App;
-
- 
+```
 
 # 23. Introducing JSX
 
@@ -3901,6 +3916,7 @@ being carried inside of it, without issues.
 
 Now, consider the following component:
 
+```
 > function Apples(props) {
 >
 >   return (
@@ -3926,9 +3942,11 @@ Now, consider the following component:
 > }
 >
 > export default Apples
+```
 
 There is also a **Pears** component:
 
+```
 > function Pears(props) {
 >
 >   return (
@@ -3938,6 +3956,7 @@ There is also a **Pears** component:
 >   )
 >
 > }
+```
 
 Now, the question is this: Let\'s say you want to have a **Bag**
 component, which can be used to \"carry\" **Apples** or **Pears**. How
@@ -3947,6 +3966,7 @@ This is where **props.children** comes in.
 
 You can define a **Bag** component as follows:
 
+```
 > function Bag(props) {
 >
 >     const bag = {
@@ -3974,7 +3994,7 @@ You can define a **Bag** component as follows:
 > }
 >
 > export default Bag
-
+```
 So, what this does in the **Bag** component is: it adds a wrapping
 **div** with a specific styling, and then gives it **props.children** as
 its content.
@@ -3982,9 +4002,9 @@ its content.
 But what is this **props.children?**
 
 Consider a very simple example:
-
+```
 > \</Example\>
-
+```
 The **Hello there** text is a child of the Example JSX element. The
 Example JSX Element above is an \"invocation\" of the **Example.js**
 file, which, in modern React, is usually a function component.
@@ -3993,49 +4013,52 @@ Now, did you know that this **Hello there** piece of text can be passed
 as a **named prop** when rendering the **Example** component?
 
 Here\'s how that would look like:
-
+```
 > \<Example children=\"Hello there\" /\>
-
+```
 Ok, so, there are two ways to do it. But this is just the beginning.
 
 What if you, say, wanted to surround the **Hello there** text in an
 **h3** HTML element?
 
 Obviously, in JSX, that is easily achievable:
-
+```
 > \<Example children={\<h3\>Hello there\</h3\>} /\>
-
+```
 What if the **\<h3\>Hello there\</h3\>** was a separate component, for
 example, named **Hello**?
 
 In that case, you\'d have to update the code like this:
-
+```
 > \<Example children={\<Hello /\>} /\>
-
+```
 You could even make the **Hello** component more dynamic, by giving it
 its own prop:
-
+```
 > \<Example children={\<Hello message=\"Hello there\" /\>} /\>
-
+```
 So, given the **Bag**, **Apples**, and **Pears** examples from the
 beginning of this reading, armed with this new knowledge, how can you
 make it work?
 
 Here\'s how you\'d render the **Bag** component with the **Apples**
 component as its **props.children**:
-
+```
 > \<Bag children={\<Apples color=\"yellow\" number=\"5\" /\>} /\>
-
+```
 And here\'s how you\'d render the **Bag** component, wrapping the
 **Pears** component:
 
+```
 > \<Bag children={\<Pears friend=\"Peter\" /\>} /\>
+```
 
 While the above syntax might look a bit weird, it\'s important to
 understand what is happening \"under the hood\".
 
 Effectively, the above syntax is the same as the two examples below.
 
+```
 > \<Bag\>
 >
 >     \<Apples color=\"yellow\" number=\"5\" /\>
@@ -4049,10 +4072,12 @@ Effectively, the above syntax is the same as the two examples below.
 >     \<Pears friend=\"Peter\" /\>
 >
 > \</Bag\>
+```
 
 You can even have multiple levels of nested JSX elements, or a single
 JSX element having multiple children, such as, for example:
 
+```
 > \<Trunk\>
 >
 >     \<Bag\>
@@ -4064,6 +4089,7 @@ JSX element having multiple children, such as, for example:
 >     \</Bag\>
 >
 > \</Trunk\>
+```
 
 So, in the above structure, there\'s a **Trunk** JSX element, inside of
 which is a single **Bag** JSX element, holding an **Apples** and a
@@ -4071,11 +4097,13 @@ which is a single **Bag** JSX element, holding an **Apples** and a
 
 Before the end of this reading, consider this JSX element again:
 
+```
 > \<Bag\>
 >
 >     \<Apples color=\"yellow\" number=\"5\" /\>
 >
 > \</Bag\>
+```
 
 What is **Apples** to **Bag** in the above code?
 
@@ -4129,6 +4157,7 @@ The **href** attribute loads some CSS styles, probably with some CSS
 classes, and then, inside the function component\'s declarations, you
 can access those CSS classes using the **className** attribute.
 
+```
 > function Promo(props) {
 >
 >     return (
@@ -4152,9 +4181,11 @@ can access those CSS classes using the **className** attribute.
 >     );
 >
 > }
+```
 
 In CSS:
 
+```
 > .promo-section {
 >
 >     font-weight: bold;
@@ -4162,6 +4193,7 @@ In CSS:
 >     line-height: 20px;
 >
 > }
+```
 
 Another way to add CSS styles to components is using inline styles.
 
@@ -4170,6 +4202,7 @@ The syntax of inline styles in JSX is a bit custom.
 Consider a starting **Promo** component, containing code that you
 encountered earlier:
 
+```
 > function Promo(props) {
 >
 >     return (
@@ -4197,9 +4230,11 @@ encountered earlier:
 >  
 >
 > export default Promo;
+```
 
 Now you can add some inline styles to it:
 
+```
 > function Promo(props) {
 >
 >     return (
@@ -4231,6 +4266,7 @@ Now you can add some inline styles to it:
 >  
 >
 > export default Promo;
+```
 
 You can start updating the **Promo** component by adding the JavaScript
 expression syntax:
@@ -4242,10 +4278,13 @@ these opening and closing curly braces is to be parsed as regular
 JavaScript. Now let's add a **style object literal** inside of these
 curly braces:
 
+```
 > \<h1 style={{color:\"tomato\",fontSize:\"40px\"}}\>
+```
 
 You can then re-write this object literal:
 
+```
 > {
 >
 >     color: \"tomato\",
@@ -4253,6 +4292,7 @@ You can then re-write this object literal:
 >     fontSize: \"40px\"
 >
 > }
+```
 
 So, there\'s nothing special about this object, except for the fact that
 you've inlined it and placed it inside a pair of curly braces.
@@ -4268,6 +4308,7 @@ literal.
 That gives you an updated **Promo** component, with the styles object
 saved as a JavaScript variable:
 
+```
 > function Promo(props) {
 >
 >  
@@ -4307,6 +4348,7 @@ saved as a JavaScript variable:
 >     );
 >
 > }
+```
 
 Using this approach makes your components more self-contained, because
 they come with their own styles built-in, but it also makes them a bit
