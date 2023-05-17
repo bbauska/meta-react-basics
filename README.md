@@ -607,17 +607,19 @@ is built.
 
 [Next steps [193](#next-steps-1)](#next-steps-1)
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 # Week 1
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 React Components
-
 # 01. Introduction to the course: React Basics
 
 Welcome to React basics.
 
 In this course, you\'ll be introduced to the basics of working with
 React.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image004.png){width="4.0in" height="2.5479451006124236in"}
 
 During this module (one), you\'ll learn how to develop a working
@@ -639,7 +641,9 @@ You\'ll explore components in more detail later in this module.
 
 For now, it\'s enough for you to know that every website\'s UI is built
 on a foundation of components and composability.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image005.png){width="4.0in" height="1.6605293088363955in"}
 
 Simple components combined into more complex ones, which eventually
@@ -660,6 +664,9 @@ with **state** in React apps.
 
 You\'ll learn a lot more about state as you go through the course.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image006.png){width="5.0in" height="1.949206036745407in"}
 
 But for now, here\'s a simple definition of state.
@@ -667,6 +674,9 @@ But for now, here\'s a simple definition of state.
 **State is simply all the values of all the variables your app is
 working with at any given point in time.**
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image007.png){width="4.0in" height="2.840391513560805in"}
 
 As you progress through this course, you\'ll also learn about how to
@@ -1404,6 +1414,9 @@ can name: **firstapp**.
 
 In VS Code, click on *View*, *Terminal* to open the built-in terminal.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![How to access the Terminal in Visual Studio
 Code](./images/image008.png){width="5.0in" height="2.8125in"}
 
@@ -1419,105 +1432,69 @@ The installation and setup might take a few minutes.
 
 Here\'s the output of executing the above command:
 
+```
 > Creating a new React app in /home/pc/Desktop/firstapp.
->
 > Installing packages. This might take a couple of minutes.
->
 > Installing react, react-dom, and react-scripts with cra-template\...
->
 > added 1383 packages in 56s
->
 > 190 packages are looking for funding
->
 >   run \`npm fund\` for details
->
 > Initialized a git repository.
->
 > Installing template dependencies using npm\...
->
 > npm WARN deprecated source-map-resolve@0.6.0:
->
 > See https://github.com/lydell/source-map-resolve#deprecated
->
 > added 39 packages in 6s
->
 > 190 packages are looking for funding
->
->   run \`npm fund\` for details
->
+> $ run \`npm fund\` for details
 > Removing template package using npm\...
->
 > removed 1 package, and audited 1422 packages in 3s
->
 > 190 packages are looking for funding
->
->   run \`npm fund\` for details
->
+> $ run \`npm fund\` for details
 > 6 high severity vulnerabilities
->
 > To address all issues (including breaking changes), run:
->
-> npm audit fix \--force
->
-> Run \`npm audit\` for details.
->
+> $ npm audit fix \--force
+> Run &apos;npm audit&apos; for details.
 > Created git commit.
->
 > Success! Created firstapp at /home/pc/Desktop/firstapp
->
 > Inside that directory, you can run several commands:
->
-> npm start
->
+> $ npm start
 > Starts the development server.
->
-> npm run build
->
+> $ npm run build
 >     Bundles the app into static files for production.
->
-> npm test
->
+> $ npm test
 >     Starts the test runner.
->
-> npm run eject
->
->     Removes this tool and copies build dependencies, configuration
-> files
->
->     and scripts into the app directory. If you do this, you can't go
-> back!
->
+> $ npm run eject
+>     Removes this tool and copies build dependencies, configuration files
+>     and scripts into the app directory. If you do this, you can't go back!
 > We suggest that you begin by typing:
->
-> cd firstapp
->
-> npm start 
+> $ cd firstapp
+> $ npm start 
+```
 
 If you follow the suggestions from the above output, you\'ll run: **cd
 firstapp**, and then **npm start**.
 
 This will end up with the following output in the built-in terminal:
 
+```
 *Compiled successfully!*
-
 *You can now view firstapp in the browser.  *
-
 *Local:           
 [[http://localhost:3000]{.underline}](http://localhost:3000/)  *
-
 *On Your Network: 
 [[http://192.168.1.167:3000]{.underline}](http://192.168.1.167:3000/)*
-
 *Note that the development build is not optimized.*
-
 *To create a production build, use npm run build.*
-
 *webpack compiled successfully*
+```
 
 Again, following the instructions, opening a browser with the address
 bar pointing to [http://localhost:3000](http://localhost:3000/), will
 show the following page in your browser:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 09.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![React logo displayed on the
 browser](./images/image009.png){width="4.0in"
 height="2.533333333333333in"}
@@ -1686,6 +1663,9 @@ library from Meta.
 
 React used to run many of the world\'s most popular websites.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 .![](./images/image010.png){width="5.0in" height="2.86878280839895in"}
 
 Often on these sites, you will type a search term into the sites input
@@ -1696,6 +1676,9 @@ The site then returns the relevant content or results.
 But you might notice that even though the content has updated, the sites
 URL doesn\'t change.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image011.png){width="4.0in" height="1.472169728783902in"}
 
 As SPA's only load the content as required, they can be ideal for
@@ -1715,6 +1698,9 @@ Let\'s begin with components.
 
 One of the core building blocks of React.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image012.png){width="5.0in" height="1.8402121609798776in"}
 
 When meta released the React library, it included the concept of
@@ -1723,12 +1709,18 @@ something called **component-based architecture**.
 This is essentially a design philosophy for building software based on
 reusable components of code.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image013.png){width="6.5in" height="2.734815179352581in"}
 
 Each **component** consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
 components.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image014.png){width="6.5in" height="2.734815179352581in"}
 
 Because components are reusable, they can be used multiple times and
@@ -1737,6 +1729,9 @@ easily inserted anywhere we\'re needed.
 This results in components that can exist within the same space yet
 interact independently from each other.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image015.png){width="6.0in" height="2.7314293525809274in"}
 
 One of the advantages of development using components is that many
@@ -1756,6 +1751,9 @@ that can be combined into more complex components.
 In fact, you can think of an entire website is just a collection of
 components.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image016.png){width="6.0in" height="2.699682852143482in"}
 
 For example, consider the product check out page of an e-commerce web
@@ -1764,20 +1762,32 @@ application.
 The page consists of three sections, a header, a payment section, and a
 sidebar.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image017.png){width="6.5in" height="0.9354494750656168in"}
 
 The header section contains the company logo with a navigation menu and
 a button to view the shopping cart.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image018.png){width="3.0in" height="1.7358727034120736in"}
 
 The payment section area contains a form where the user inputs their
 payment information.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image019.png){width="3.0in" height="2.761124234470691in"}
 
 Finally, there\'s a sidebar with the order summary information.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image020.png){width="5.0in" height="2.596824146981627in"}
 
 As the components are self-contained, they have their own HTML, CSS, and
@@ -1789,6 +1799,9 @@ that submits a payment when a button is clicked.
 It\'s important to know that the use of components in website UI design
 is not limited to just React.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image021.png){width="3.0in" height="1.5278346456692913in"}
 
 Many website\'s front end or UI are built on the foundations of
@@ -1803,6 +1816,9 @@ DOM without significantly impacting the browser\'s resources.
 This is called component rendering and you\'ll learn more about this and
 its associated render method later.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image022.png){width="1.5in"
 height="1.5720002187226596in"}You may recall that the DOM is a logical
 tree-like structure representing the HTML document and it uses nodes to
@@ -1819,7 +1835,9 @@ difficult to understand like spaghetti.
 
 React prevents this spaghetti code by avoiding any manipulation of the
 DOM.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image023.png){width="5.0in" height="2.960317147856518in"}
 
 Instead, React provides something known as the virtual DOM.
@@ -1838,6 +1856,9 @@ DOM.
 
 # 10. Introduction to functional components
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image024.png){width="6.0in" height="1.6361898512685915in"}
 
 Recall how you learned about functions in JavaScript.
@@ -1852,6 +1873,9 @@ components.
 
 Component types, JSX and trans piling.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image025.png){width="6.0in" height="2.092697944006999in"}
 
 React provides two types of components, functional components and class
@@ -1867,12 +1891,18 @@ You\'ll learn more about them later.
 Instead, let\'s just focus on functional components, which act like a
 JavaScript function.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image026.png){width="4.0in" height="2.56380905511811in"}
 
 In the default React application, only one component is rendered and
 it\'s the app components located inside the index.js file that\'s
 located inside the source folder.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image027.png){width="6.0in" height="2.0984120734908136in"}
 
 It\'s important to know that every React app must contain at least one
@@ -1885,17 +1915,26 @@ You\'ll learn more about the import statement in React later.
 For now, just know that it\'s used to import code needed for React to
 work, such as the import React and import React DOM statements.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 28.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image028.png){width="3.0in"
 height="1.3410400262467193in"}The syntax to render a component is very
 similar to a self-closing tag in HTML, you just place the component name
 inside the left and right-angle brackets and don\'t forget the forward
 slash.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 29.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image029.png){width="4.0in" height="1.6334394138232722in"}
 
 The roots components can contain other components that developers create
 to represent the various UI part of the application.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image030.png){width="4.0in" height="2.5053969816272965in"}
 
 Like in the e-commerce example that you learned about earlier.
@@ -1909,6 +1948,9 @@ This div element is then rendered to the browser.
 If you analyze the app component, you\'ll notice that it looks very
 similar to a JavaScript function with some HTML code inside.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image031.png){width="3.0in" height="3.022305336832896in"}You
 may also notice an export default statement. You\'ll learn more about
 this soon.
@@ -1918,6 +1960,9 @@ For now, just know that you need it to make your components available.
 Now that you\'re familiar with the concept of functional components,
 let\'s explore how web developers create them in React.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image032.png){width="3.0in"
 height="1.0762095363079616in"}React is scripted using a special syntax
 called JavaScript XML or JSX.
@@ -1928,6 +1973,9 @@ JavaScript.
 What is JSX syntax like? Let\'s find out by going back to our React
 default app component.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 33.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image033.png){width="4.0in"
 height="1.7951323272090989in"}Recall that in the return statements of
 the app function, it seemed that some HTML content is returned.
@@ -1949,6 +1997,9 @@ You\'ll learn more about the differences between HTML and JSX later.
 For now, just know that you can place this syntax inside the return
 statement of a functional component.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image034.png){width="5.0in" height="2.5359787839020123in"}
 
 It\'s also important to note that a React component won\'t render until
@@ -1965,6 +2016,9 @@ First, you create the component, which is basically just a JavaScript
 file, since its purpose is to return some heading text, you name the
 file Heading.js.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image035.png){width="6.5625in" height="0.575in"}
 
 Notice that the first letter of the component name is capitalized.
@@ -1981,6 +2035,9 @@ elements.
 Capitalizing a component name helps React to distinguish JSX elements
 from HTML elements.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image036.png){width="3.0in"
 height="1.4707939632545932in"}Now let\'s continue with our component.
 Next inside the app.js file, create a function named Heading.
@@ -1993,6 +2050,9 @@ assign it the string value of this is some heading text.
 
 Now you\'re ready to create the return statement of the function.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image037.png){width="6.5625in"
 height="1.9423611111111112in"}
 
@@ -2014,6 +2074,9 @@ something you cannot do when writing static HTML.
 The overall syntax instructs React to render the heading HTML element
 with whatever text value that is stored within the variable named title.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image038.png){width="3.0in"
 height="0.8577777777777778in"}This rendering happens behind the scenes
 because of something called **trans piling.**
@@ -2170,7 +2233,9 @@ computer\'s browser is likely to be an ES5 JavaScript engine.
 
 In ES5, the only way to declare a variable is the following:
 
+```
 > var pi = 3.14
+```
 
 What this means is that for this old browser to understand the ES6 code,
 the only way to do it is by **transpiling** it.
@@ -2221,14 +2286,17 @@ explanation.
 If you\'ve visited the above-linked URL, you\'ll find a web page that
 has two panels. On the left, there\'s source JSX code:
 
+```
 > function Heading(props) {
 >
 >     return \<h1\>{props.title}\</h1\>
 >
 > }
+```
 
 \... and on the right, there\'s the transpiled, plain JavaScript code:
 
+```
 > \"use strict\";
 >
 >  
@@ -2238,6 +2306,7 @@ has two panels. On the left, there\'s source JSX code:
 >   return /\*#\_\_PURE\_\_\*/React.createElement(\"h1\", null, props.title);
 >
 > }
+```
 
 If you now analyze the difference between the source JSX code and the
 transpiled, plain JavaScript code, dis-regarding the comment, here\'s
@@ -2278,6 +2347,7 @@ and as can be confirmed in [the
 link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
 the output of the tranpilation is the following code:
 
+```
 > \"use strict\";
 >
 >  
@@ -2289,6 +2359,7 @@ the output of the tranpilation is the following code:
 >   title: \"This is the heading text!\"
 >
 > });
+```
 
 Again, you have the **React.createElement()** method call, and this
 time, the first item to render is **Heading**, and then you have an
@@ -2301,6 +2372,7 @@ rendered?
 
 You can see the answer below:
 
+```
 > function Example() {
 >
 > return \<div\>An element\</div\>
@@ -2308,11 +2380,13 @@ You can see the answer below:
 > }
 >
 > export default Example
+```
 
 # 13. Your first component
 
 Here is the completed solution code for the App.js file:
 
+```
 > function Heading() { 
 >
 >   return ( 
@@ -2344,9 +2418,12 @@ Here is the completed solution code for the App.js file:
 >  
 >
 > export default App;
+```
 
 Here is the output from the solution code for the App.js file:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![The output of the completed \'Your first component\'
 exercise.](./images/image039.png){width="5.0in"
 height="0.8566437007874016in"}
@@ -2355,6 +2432,7 @@ height="0.8566437007874016in"}
 named **\<Heading /\>** , being rendered from the App component, since
 it is a part of the App component\'s return statement.
 
+```
 > function App() { 
 >
 >   return ( 
@@ -2370,7 +2448,7 @@ it is a part of the App component\'s return statement.
 >   ); 
 >
 > } 
-
+```
  
 
 > export default App;
@@ -2387,6 +2465,7 @@ file.
 return statement and spread it over several lines by following it up
 with an opening and a closing parenthesis.
 
+```
 > function Heading() { 
 >
 >   return (
@@ -2394,9 +2473,11 @@ with an opening and a closing parenthesis.
 >   )
 >
 > }
+```
 
 **Step 3:** Then, inside the parentheses, you added the following code: 
 
+```
 > **\<h1\>This is an h1 heading\</h1\>** 
 >
 > function Heading() { 
@@ -2408,6 +2489,7 @@ with an opening and a closing parenthesis.
 >   ) 
 >
 > } 
+```
 
 **Step 4:** Finally, you saved your changes and viewed the app in the
 browser.
