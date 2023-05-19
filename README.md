@@ -72,26 +72,27 @@ To succeed in this course, you do not need prior development experience,
 only basic internet navigation skills and an eagerness to get started
 with coding.
 
+### Table of Contents - 7 pages approx
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ## Week 1
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-React Components
-# 01. Introduction to the course: React Basics
+### React Components
+
+## 01. Introduction to the course: React Basics
 
 Welcome to React basics.
 
 In this course, you&apos;ll be introduced to the basics of working with
 React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. 3 basics of react (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image004.png?raw=true"
-  alt="."
+  alt="Develop a working familiarity with a basic structure of react javascript library."
   width="40%" />
 </p>
-
-![](./images/image004.png){width="4.0in" height="2.5479451006124236in"}
+<!-- width="4.0in" height="2.5479451006124236in"} -->
 
 During this module (one), you&apos;ll learn how to develop a working
 familiarity with a basic structure and use of the React.js library.
