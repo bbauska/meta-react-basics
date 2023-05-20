@@ -163,7 +163,7 @@ I hope you&apos;re as excited as I am to begin this course on React basics.
 
 Let&apos;s get started...
 
-# 02. How is React used in the real world?
+## 02. How is React used in the real world?
 
 There are plenty of React based apps that you&apos;ve probably used before.
 
@@ -232,7 +232,7 @@ There are plenty of opportunities to get involved in the React
 community, and I think it makes building with React even more rewarding
 if you connect with the community as well.
 
-# 03. Course syllabus for React Basics
+## 03. Course syllabus for React Basics
 
 By the end of this section (03), you will have learned about the scope
 of things to be covered in this course.
@@ -351,7 +351,7 @@ By the end of this module (four) you will be able to:
 -   Reflect on this course&apos;s content and on the learning path that lies
     ahead.
 
-# 04. Before you learn React
+## 04. Before you learn React
 
 Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
@@ -554,7 +554,7 @@ JavaScript](https://www.coursera.org/learn/programming-with-javascript)
 
 &lsqb;https://www.coursera.org/learn/programming-with-javascript&rsqb;
 
-# 05. JavaScript modules, imports - exports
+## 05. JavaScript modules, imports - exports
 
 Before you start creating the next great app, let's explore a little
 more about modules.
@@ -778,7 +778,7 @@ The intent of this reading was just to get you familiar with the most
 common syntax used - not as a comprehensive overview of modules in
 JavaScript.
 
-# 06. Additional reading
+## 06. Additional reading
 
 Below you will find links to helpful additional readings.
 
@@ -803,7 +803,7 @@ Below you will find links to helpful additional readings.
     of Microsoft's knowledge. Individually, a lot of intelligence. But
     collectively, they ain't shit.
 
-# 07. Setting up a React project in notepad++, VS Code or Sublime
+## 07. Setting up a React project in notepad++, VS Code or Sublime
 
 To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
@@ -951,15 +951,15 @@ firstapp**, and then **npm start**.
 This will end up with the following output in the built-in terminal:
 
 ```
-*Compiled successfully!*
-*You can now view firstapp in the browser.  *
-*Local:           
-[[http://localhost:3000]{.underline}](http://localhost:3000/)  *
-*On Your Network: 
-[[http://192.168.1.167:3000]{.underline}](http://192.168.1.167:3000/)*
-*Note that the development build is not optimized.*
-*To create a production build, use npm run build.*
-*webpack compiled successfully*
+Compiled successfully!
+You can now view firstapp in the browser.
+Local:           
+[[http://localhost:3000]](http://localhost:3000/)
+On Your Network: 
+[[http://192.168.1.167:3000]](http://192.168.1.167:3000/)
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+webpack compiled successfully
 ```
 
 Again, following the instructions, opening a browser with the address
@@ -969,8 +969,7 @@ show the following page in your browser:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 09.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![React logo displayed on the
-browser](./images/image009.png){width="4.0in"
+![React logo displayed on the browser](./images/image009.png){width="4.0in"
 height="2.533333333333333in"}
 
 This means that you&apos;ve successfully:
@@ -5102,7 +5101,7 @@ Below you will find links to helpful additional resources.
 
 Data and State
 
-### 01. Types of Events
+## 01. Types of Events
 
 By now, you&apos;re probably familiar with **events** in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
@@ -5185,7 +5184,7 @@ In this section (1), you learned about the types of events available in
 React and how they came to be. Next, you&apos;ll explore specific examples
 and build the skills to use events competently from various situations.
 
-### 02. Eventful issues
+## 02. Eventful issues
 
 You're now aware that React can work with most of the same events found
 in HTML, although React handles them differently.
@@ -5228,19 +5227,16 @@ To handle this TypeError, you can update the code with a try\...catch
 block that instructs the code to continue running after the error is
 encountered:
 
-> try {
->
->   (5).toUpperCase();
->
-> } 
->
-> catch(e) {
->
->   console.log(\`Oops, you can&apos;t uppercase a number. 
->
->    Trying to do it resulted in the following\`, e);
->
-> }
+```
+try {
+  (5).toUpperCase();
+} 
+
+catch(e) {
+  console.log(\`Oops, you can&apos;t uppercase a number. 
+   Trying to do it resulted in the following\`, e);
+}
+```
 
 The try-catch block will output some text in the console:
 
@@ -5254,32 +5250,28 @@ details after this quick refresher.
 Back to React, here&apos;s an example of a simple error in a React
 component:
 
-> function NumBillboard(props) {
->
-> return (
->
->    <>
->
->      <h1>{prop.num}</h1>
->
->       </>
->
->   )
->
-> }
->
->  
->
-> export default NumBillboard;
+```
+function NumBillboard(props) {
+  return (
+    <>
+      <h1>{prop.num}</h1>
+    </>
+  )
+}
+
+export default NumBillboard;
+```
 
 In React, an error in the code, such as the one above, will result in
 the error overlay showing in the app in the browser.
 
 In this specific example, the error would be:
 
+```
 ReferenceError
 
 prop is not defined
+```
 
 Note: *You can click the X button to close the error overlay.*
 
@@ -5288,7 +5280,7 @@ rendered, all you have to do is use the error-handling mechanism that
 already exists in JavaScript -- that is, you just use the
 **try\...catch** blocks.
 
-# 03. Common event handling
+## 03. Common event handling
 
 I will now show you how to handle several events in React using
 components.
@@ -5344,7 +5336,7 @@ This time, when I hover over the button, the words mouse over are
 showing in the console. This section (3), you&apos;ve learned how to work
 with **event handling** JSX attributes and React.
 
-# 04. Syntax for handlers
+## 04. Syntax for handlers
 
 Every time you click or tap a button, scroll down the page or cancel a
 boring notification, you&apos;re producing events in the browser.
@@ -5447,7 +5439,7 @@ events are supported by some form of event handling.
 In this section (4), you learned how to distinguish the syntax for event
 handling in HTML and JavaScript.
 
-# 05. Event handling and embedded expressions
+## 05. Event handling and embedded expressions
 
 In this reading, you'll learn the different ways to embed expressions in
 event handlers in React:
@@ -5467,63 +5459,58 @@ words. This will allow you to compare the difference in syntax between
 these four approaches, while the result of the event handling will
 always be the same: just some words output to the console.
 
-## **Handling events using inline anonymous ES5 functions**
+#### **Handling events using inline anonymous ES5 functions**
 
 This approach allows you to directly pass in an ES5 function declaration
 as the **onClick** event-handling attribute's value:
 
-> <button onClick={function() {console.log(&apos;first example&apos;)}}>
->
->     An inline anonymous ES5 function event handler
->
-> </button>
+```
+<button onClick={function() {console.log(&apos;first example&apos;)}}>
+  An inline anonymous ES5 function event handler
+</button>
+```
 
 Although it&apos;s possible to write your click handlers using this syntax,
 it&apos;s not a common approach and you will not find such code very often
 in React apps.
 
-## **Handling events using inline anonymous ES6 functions (arrow functions)**
+#### **Handling events using inline anonymous ES6 functions (arrow functions)**
 
 With this approach, you can directly pass in an ES6 function declaration
 as the **onClick** event-handling attribute's value:
 
-> </button>
+```
+</button>
+```
 
 This approach is much more common then the previous one. If you want to
 keep all your logic inside the JSX expression assigned to the onClick
 attribute, use this syntax.
 
-## **Handling events using separate function declarations**
+#### **Handling events using separate function declarations**
 
 With this approach, you declare a separate ES5 function declaration, and
 then you reference its name in the event-handling **onClick** attribute,
 as follows:
 
-> function App() {
->
->     function thirdExample() {
->
->         console.log(&apos;third example&apos;);
->
->     };
->
->     return (
->
->         <div className=&quot;thirdExample&quot;>
->
->             <button onClick={thirdExample}>
->
->                 using a separate function declaration
->
->             </button>
->
->         </div>
->
->     );
->
-> };
->
-> export default App;
+```
+function App() {
+  function thirdExample() {
+    console.log(&apos;third example&apos;);
+
+  };
+
+  return (
+    <div className=&quot;thirdExample&quot;>
+      <button onClick={thirdExample}>
+        using a separate function declaration
+      </button>
+    </div>
+  );
+};
+
+export default App;
+```
 
 This syntax makes sense to be used when your onClick logic is too
 complex to easily fit into an anonymous function. While this example is
@@ -5532,7 +5519,7 @@ example, 20 lines of code, and that needs to be ran when the click event
 is triggered. This is a perfect use-case for a separate function
 declaration.
 
-## **Handling events using separate function expressions**
+#### **Handling events using separate function expressions**
 
 **Tip***:* A way to determine if a function is defined as an expression
 or a declaration is: if it does not start the line with the keyword
@@ -5546,29 +5533,31 @@ You're then using this const variable's name to handle the **onClick**
 event, so this is an example of handling events using a separate
 function expression.
 
-> function App() {
->
->     const fourthExample = () => console.log(&apos;fourth example&apos;);
->
->  
->
->     return (
->
->         <div className=&quot;fourthExample&quot;>
->
->             <button onClick={fourthExample}>
->
->                 using a separate function expression
->
->             </button>
->
->         </div>
->
->   );
->
-> };
->
-> export default App;
+```
+ function App() {
+
+     const fourthExample = () => console.log(&apos;fourth example&apos;);
+
+  
+
+     return (
+
+         <div className=&quot;fourthExample&quot;>
+
+             <button onClick={fourthExample}>
+
+                 using a separate function expression
+
+             </button>
+
+         </div>
+
+   );
+
+ };
+
+ export default App;
+```
 
 The syntax in this example is very common in React. It uses arrow
 functions, but also allows us to handle situations where our separate
@@ -5581,7 +5570,7 @@ doing this, you can understand other people's code more easily, as well
 as choose the syntax that best suits your given use case, such as a
 specific company coding style guide.
 
-# 06. User events
+## 06. User events
 
 In this section, I&apos;m going to demonstrate how to toggle the value of a
 Boolean state variable using user triggered events. And how to handle
@@ -5657,57 +5646,49 @@ should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element
 
-# 07. Dynamic events & how to handle them
+## 07. Dynamic events & how to handle them
 
 Here is the completed App.js file:
 
 #### App.js
 
-> function App() {
->
->  
->
->   function handleClick() {
->
->     let randomNum = Math.floor(Math.random() \* 3) + 1;
->
->     console.log(randomNum);
->
->     let userInput = prompt(&apos;type a number&apos;);
->
->     alert(\`Computer number: \${randomNum}, Your guess: \${userInput}\`);
->
->   }
->
->  
->
->   return (
->
->     <div>
->
->       <h1>Task: Add a button and handle a click event</h1>
->
->       <button onClick={handleClick}>Guess the number between 1 and 3</button>
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+```
+function App() {
+  
+  function handleClick() {
+    let randomNum = Math.floor(Math.random() \* 3) + 1;
+    console.log(randomNum);
+    let userInput = prompt(&apos;type a number&apos;);
+    alert(\`Computer number: \${randomNum}, Your guess: \${userInput}\`);
+  }
+  
+  return (
+    <div>
+      <h1>Task: Add a button and handle a click event</h1>
+      <button onClick={handleClick}>Guess the number between 1 and 3</button>
+    </div>
+  );
+}
+  
+export default App;
+```
 
 Here is the output from the solution code for the App.js file:
 
-![The output of the completed &apos;Dynamic events&apos;
-exercise.](./images/image044.png){width="7.083333333333333in"
-height="0.9637893700787401in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 44. output of the completed dynamic events exercise (xx) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image044.png?raw=true"
+  alt="The output of the completed &apos;Dynamic events&apos; exercise."
+  width="70%" />
+</p>
+<!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
 
 **Step 1.** First, you added a **button** element, with an opening and a
 closing **button** tag, to the App component's **h1** element . 
 
+```
 > function App() {
 >
 >  
@@ -5729,10 +5710,12 @@ closing **button** tag, to the App component's **h1** element . 
 >  
 >
 > export default App;
+```
 
 **Step 2.** In between the opening and closing **button** tags, you
 added the following text: Guess the number between 1 and 3. 
 
+```
 > function App() {
 >
 >  
@@ -5754,11 +5737,13 @@ added the following text: Guess the number between 1 and 3. 
 >  
 >
 > export default App;
+```
 
 **Step 3.** Next, inside the opening **button** tag, you added the
 **onClick** event-handling attribute, and passed it the following JSX
 expression: **{handleClick}**. 
 
+```
 > function App() {
 >
 >  
@@ -5780,11 +5765,13 @@ expression: **{handleClick}**. 
 >  
 >
 > export default App;
+```
 
 **Step 4.** Then, above the **return** statement of the App component -
 but still inside the App function - you added the following ES5 function
 declaration: 
 
+```
 > function App() {
 >
 >  function handleClick() {
@@ -5814,6 +5801,7 @@ declaration: 
 > }
 >
 > export default App;
+```
 
 **Step 5.** Finally, you saved your changes and ran the app to preview
 it in the browser. You should then be able to click a button, which will
@@ -5822,7 +5810,7 @@ up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number &quot;chosen&quot; by the computer one more time. 
 
-# 08. Additional resources (Data & State - Week 2)
+## 08. Additional resources (Data & State - Week 2)
 
 Here is a list of resources that may be helpful as you continue your
 learning journey.
@@ -5844,7 +5832,7 @@ learning journey.
 -   [JavaScript Expressions as
     Children](https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children) 
 
-# 09. Parent-child data flow
+## 09. Parent-child data flow
 
 Imagine you&apos;re working for an online retailer which discount prices
 regularly to keep stock moving. Sales are announced at multiple points
@@ -5936,7 +5924,7 @@ to child. By storing data in the parent component, you can dynamically
 pass it to the child component without the need to update children
 individually.
 
-# 10. Data flow in React
+### 10. Data flow in React
 
 You've just learned how the parent-child relationship can be set up so
 that data flows from parent to child. 
@@ -5947,7 +5935,7 @@ concise. Finally, you will explore data flow in greater detail by
 looking at more examples. This should act as a refresher to knowledge
 gained in previous courses.
 
-## **Parent-child data flow**
+#### **Parent-child data flow**
 
 In React, data flow is a one-way street. Sometimes it&apos;s said that the
 data flow is unidirectional. Put differently, the data in React flows
@@ -5975,7 +5963,7 @@ Imagine that the parent component passes a prop (name) to the child
 component. The child component then uses this prop to render the name in
 the UI.
 
-## **Parent component:**
+#### **Parent component:**
 
 > function Dog() {
 >
@@ -5987,7 +5975,7 @@ the UI.
 >
 > };
 
-## **Child component:**
+#### **Child component:**
 
 > function Puppy(props) {
 >
@@ -6003,7 +5991,7 @@ the UI.
 >
 > };
 
-## **Grandchild component:**
+#### **Grandchild component:**
 
 > function Bowl(props) {
 >
@@ -6025,7 +6013,7 @@ everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
 be as efficient as it could be, especially in modern React.
 
-# 11. Children and data
+### 11. Children and data
 
 In this section (11), you&apos;re going to learn about data flow in ReactJS.
 In this case, data flow is in one direction only. Immediately a question
@@ -6077,9 +6065,9 @@ time. Well done. You&apos;ve now learned how children and data flows in
 ReactJS. You should also be able to showcase the use of stateless and
 stateful examples by focusing on data flow.
 
-# 12. Data flow
+### 12. Data flow
 
-# 13. What are hooks?
+### 13. What are hooks?
 
 By now you&apos;ve probably already learned about some important and useful
 core concepts in React. At this point, you&apos;re ready to learn how to add
@@ -6254,102 +6242,64 @@ To demonstrate, let's extend the previous example, to include three
 input text fields within a single component. This could be a
 registration form with fields for first name, last name and email. 
 
-![Text fields of first name, last name and
-email](./images/image046.png){width="5.375in"
-height="2.4791666666666665in"}
 
-> import { useState } from &apos;react&apos;; 
->
->  
->
-> export default function RegisterForm() { 
->
->   const &lsqb;form, setForm&rsqb; = useState({ 
->
->     firstName: &apos;Luke&apos;, 
->
->     lastName: &apos;Jones&apos;, 
->
->     email: &apos;lukeJones@sculpture.com&apos;, 
->
->   }); 
->
->  
->
->   return ( 
->
->     <> 
->
->       <label> 
->
->         First name: 
->
->         <input 
->
->           value={form.firstName} 
->
->           onChange={e => { 
->
->             setForm({ 
->
->               \...form, 
->
->               firstName: e.target.value 
->
->             }); 
->
->           }} 
->
->         /> 
->
->       </label> 
->
->       <label> 
->
->         Last name: 
->
->         <input 
->
->           value={form.lastName} 
->
->           onChange={e => { 
->
->             setForm({ 
->
->               \...form, 
->
->               lastName: e.target.value 
->
->             }); 
->
->           }} 
->
->         /> 
->
->       </label> 
->
->       <label> 
->
->         Email: 
->
->         <input 
->
->           value={form.email} 
->
->           onChange={e => { 
+![Text fields of first name, last name and email](./images/image046.png)
+
+<!-- {width="5.375in" height="2.4791666666666665in"} -->
+
+```
+ import { useState } from &apos;react&apos;; 
+  
+ export default function RegisterForm() { 
+   const &lsqb;form, setForm&rsqb; = useState({ 
+     firstName: &apos;Luke&apos;, 
+     lastName: &apos;Jones&apos;, 
+     email: &apos;lukeJones@sculpture.com&apos;, 
+   }); 
+  
+   return ( 
+     <>
+       <label> 
+         First name: 
+         <input 
+           value={form.firstName} 
+           onChange={e => { 
+             setForm({ 
+               ...form, 
+               firstName: e.target.value 
+             }); 
+           }} 
+         /> 
+       </label> 
+      <label> 
+         Last name: 
+         <input 
+           value={form.lastName} 
+           onChange={e => { 
+             setForm({ 
+               ...form, 
+               lastName: e.target.value 
+             }); 
+           }} 
+         /> 
+       </label> 
+       <label> 
+         Email: 
+         <input 
+           value={form.email} 
+           onChange={e => { 
+```
 
 Notice that you are using a **form** object to store the state of all
 three text input field values:
 
-> const&lsqb;form, setForm&rsqb; =useState({
->
-> firstName:&apos;Luke&apos;,
->
-> lastName:&apos;Jones&apos;,
->
->     email:&apos;lukeJones@sculpture.com&apos;,
->
-> });
+```
+const&lsqb;form, setForm&rsqb; =useState({
+  firstName:&apos;Luke&apos;,
+  lastName:&apos;Jones&apos;,
+    email:&apos;lukeJones@sculpture.com&apos;,
+});
+```
 
 You do not need to have three separate state variables in this case, and
 instead you can consolidate them all together into one **form** object
@@ -6364,40 +6314,28 @@ form handling, animation, timers, and many more. 
 
 Next, I&apos;ll give you an explanation of how the **useRef** hook works.
 
-## The useRef hook
+#### The useRef hook
 
 We use the **useRef** hook to access a child element directly.
 
 When you invoke the **useRef** hook, it will return a **ref** object.
 The **ref** object has a property named **current**.
 
-> function TextInputWithFocusButton() {
->
->   const inputEl = useRef(null);
->
->   const onButtonClick = () => {
->
->     // \`current\` points to the mounted text input element
->
->     inputEl.current.focus();
->
->   };
->
->   return (
->
->     <>
->
->       <input ref={inputEl} type=&quot;text&quot; />
->
->       <button onClick={onButtonClick}>Focus the input</button>
->
->     </>
->
->   );
->
-> }
-
- 
+```
+function TextInputWithFocusButton() {
+  const inputEl = useRef(null);
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+    inputEl.current.focus();
+  };
+  return (
+    <>
+      <input ref={inputEl} type=&quot;text&quot; />
+      <button onClick={onButtonClick}>Focus the input</button>
+    </>
+  );
+}
+```
 
 Using the ref attribute on the input element, I can then access the
 current value and invoke the **focus()** method on it, thereby focusing
@@ -6406,53 +6344,51 @@ the input field.
 There are situations where accessing the DOM directly is needed, and
 this is where the **useRef** hook comes into play.
 
-## Conclusion
+#### Conclusion
 
 In this reading, you have explored hooks in detail and understand how to
 use the **useState** hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
-# 15. What is state?
+### 15. What is state?
 
 *&quot;Make it as simple as possible, but not simpler.&quot;*\
 Albert Einstein
 
-# 16. Observing state
+### 16. Observing state
 
-# 17. State the concept
+### 17. State the concept
 
-# 18. Managing state
+### 18. Managing state
 
-# 19. Prop drilling
+### 19. Prop drilling
 
-# 20. React state management
+### 20. React state management
 
-# 21. Passing state
+### 21. Passing state
 
-# 22. Stateful vs stateless
+### 22. Stateful vs stateless
 
-# 23. Managing state in React
+### 23. Managing state in React
 
-# 24. State or stateless
+### 24. State or stateless
 
-# 25. Data events & how to handle them
+### 25. Data events & how to handle them
 
-# 26. Additional resources
+### 26. Additional resources
 
-# 
-
-# Week 3
+### Week 3
 
 Navigation, Updating and Assets in React.js
 
-# Week 1
+### Week 1
 
 React Components
 
 In this module (one) you will explore the concept and practical use of
 state and stage-
 
-# Week 2
+### Week 2
 
 Data and State
 
@@ -6461,7 +6397,7 @@ state and stage-management. You will also gain knowledge on how to
 handle events and the ability to dynamically change content on a web
 page.
 
-# Week 3
+### Week 3
 
 Navigation, Updating and Assets in React.js
 
@@ -6469,14 +6405,14 @@ In this module (three) you will explore the basics of single and
 multi-page navigation, as well as the conditional rendering or changing
 of content in response to user status or choice.
 
-# Week 4
+### Week 4
 
-# Your first React app
+### Your first React app
 
 In this module (four), you will be assessed on the key skills covered in
 the Course.
 
-# Quick Start
+### Quick Start
 
 ## You will learn
 
@@ -6500,34 +6436,27 @@ be as small as a button, or as large as an entire page.
 
 React components are JavaScript functions that return markup:
 
-# function MyButton() {
-
-#  return (
-
-#  <button>I&apos;m a button</button>
-
-#  );
-
-# }
+```
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+```
 
 Now that you've declared MyButton, you can nest it into another
 component:
 
-> export default function MyApp() {
->
-> return (
->
-> <div>
->
-> <h1>Welcome to my app</h1>
->
-> <MyButton />
->
-> </div>
->
-> );
->
-> }
+```
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+        <MyButton />
+    </div>
+  );
+}
+```
 
 Notice that <MyButton /> starts with a capital letter. That's how you
 know it's a React component. React component names must always start
@@ -6537,35 +6466,23 @@ Have a look at the result:
 
 #### App.js
 
-> function MyButton() {
->
-> return (
->
-> <button>
->
-> I&apos;m a button
->
-> </button>
->
-> );
->
-> }
->
-> export default function MyApp() {
->
-> return (
->
-> <div>
->
-> <h1>Welcome to my app</h1>
->
-> <MyButton />
->
-> </div>
->
-> );
->
-> }
+```
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
 
 The export default keywords specify the main component in the file. If
 you're not familiar with some piece of JavaScript syntax,
@@ -6585,21 +6502,16 @@ component also can't return multiple JSX tags. You have to wrap them
 into a shared parent, like a <div>\...</div> or an empty
 <>\...</> wrapper:
 
-> function AboutPage() {
->
-> return (
->
-> <>
->
-> <h1>About</h1>
->
-> <p>Hello there.<br />How do you do?</p>
->
-> </>
->
-> );
->
-> }
+```
+function AboutPage() {
+  return (
+    <>
+      <h1>About</h1>
+        <p>Hello there.<br />How do you do?</p>
+    </>
+  );
+}
+```
 
 If you have a lot of HTML to port to JSX, you can use an [online
 converter.](https://transform.tools/html-to-jsx)
@@ -6608,42 +6520,41 @@ converter.](https://transform.tools/html-to-jsx)
 
 In React, you specify a CSS class with className. It works the same way
 as the HTML
-[[class]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
+[[class]](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
 attribute:
 
-> <img className=&quot;avatar&quot; />
+```
+<img className="avatar" />
+```
 
 Then you write the CSS rules for it in a separate CSS file:
 
-> /\* In your CSS \*/
->
-> .avatar {
->
-> border-radius: 50%;
->
-> }
+```
+/* In your CSS */
+  .avatar {
+    border-radius: 50%;
+  }
+```
 
 React does not prescribe how you add CSS files. In the simplest case,
 you'll add a
-[[<link>]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
+[[<link>]](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 tag to your HTML. If you use a build tool or a framework, consult its
 documentation to learn how to add a CSS file to your project.
 
-## Displaying data 
+#### Displaying data 
 
 JSX lets you put markup into JavaScript. Curly braces let you "escape
 back" into JavaScript so that you can embed some variable from your code
 and display it to the user. For example, this will display user.name:
 
-> return (
->
-> <h1>
->
-> {user.name}
->
-> </h1>
->
-> );
+```
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
+```
 
 You can also "escape into JavaScript" from JSX attributes, but you have
 to use curly braces instead of quotes. For example, className=&quot;avatar&quot;
@@ -6651,17 +6562,19 @@ passes the &quot;avatar&quot; string as the CSS class, but src={user.imageUrl}
 reads the JavaScript user.imageUrl variable value, and then passes that
 value as the src attribute:
 
-> return (
->
-> <img
->
-> className=&quot;avatar&quot;
->
-> src={user.imageUrl}
->
-> />
->
-> );
+```
+ return (
+
+ <img
+
+ className=&quot;avatar&quot;
+
+ src={user.imageUrl}
+
+ />
+
+ );
+```
 
 You can put more complex expressions inside the JSX curly braces too,
 for example, [string
