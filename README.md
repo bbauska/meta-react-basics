@@ -10663,70 +10663,36 @@ table update:
 
 #### App.js
 
-> Top of Form
->
-> Bottom of Form
->
 > import { useState } from &apos;react&apos;;
->
 > function FilterableProductTable({ products }) {
->
 > const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
->
 > const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
->
 > return (
->
 > &lt;div&gt;
->
 > &lt;SearchBar
->
 > filterText={filterText}
->
 > inStockOnly={inStockOnly} /&gt;
->
 > &lt;ProductTable
->
 > products={products}
->
 > filterText={filterText}
->
 > inStockOnly={inStockOnly} /&gt;
->
 > &lt;/div&gt;
->
 > );
->
 > }
->
 > function ProductCategoryRow({ category }) {
->
 > return (
->
 > &lt;tr&gt;
->
 > &lt;th colSpan=&quot;2&quot;&gt;
->
 > {category}
->
 > &lt;/th&gt;
->
 > &lt;/tr&gt;
->
 > );
->
 > }
->
 > function ProductRow({ product }) {
->
 > const name = product.stocked ? product.name :
->
 > &lt;span style={{ color: &apos;red&apos; }}&gt;
->
 > {product.name}
->
 > &lt;/span&gt;;
->
 > return (
 
 Notice that editing the form doesn't work yet. There is a console error
@@ -10742,17 +10708,11 @@ inStockOnly props to render the table, the input, and the checkbox. For
 example, here is how SearchBar populates the input value:
 
 > function SearchBar({ filterText, inStockOnly }) {
->
 > return (
->
 > &lt;form&gt;
->
 > &lt;input
->
 > type=&quot;text&quot;
->
 > value={filterText}
->
 > placeholder=&quot;Search\...&quot;/&gt;
 
 However, you haven't added any code to respond to the user actions like
@@ -10780,32 +10740,21 @@ setInStockOnly. To let SearchBar update the FilterableProductTable's
 state, you need to pass these functions down to SearchBar:
 
 > function FilterableProductTable({ products }) {
->
 > const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
->
 > const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
->
 > return (
->
 > &lt;div&gt;
->
 > &lt;SearchBar
->
 > filterText={filterText}
->
 > inStockOnly={inStockOnly}
->
 > onFilterTextChange={setFilterText}
->
 > onInStockOnlyChange={setInStockOnly} /&gt;
 
 Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
 > &lt;input
->
 > type=&quot;text&quot;
->
 > value={filterText onChange={(e) =&gt;
 > onFilterTextChange(e.target.value)} /&gt;
 
@@ -10891,12 +10840,12 @@ sandbox!
 ## App.js
 
 ```
-> function Greeting({ name }) {
-> return &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
-> }
-> export default function App() {
-> return &lt;Greeting name=&quot;world&quot; /&gt;
-> }
+function Greeting({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
+export default function App() {
+  return <Greeting name="world" />
+}
 ```
 
 You can edit it directly or open it in a new tab by pressing the "Fork"
@@ -10915,26 +10864,26 @@ support React: for example, [CodeSandbox](https://codesandbox.io/s/new)
 
 To try React locally on your computer, [download this HTML
 page.](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html)
-(<https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html>)
+
 Open it in your editor and in your browser!
 
 ### Start a new React project 
 
 If you want to build an app or a website fully with React, [start a new
-React project
-(https://react.dev/learn/start-a-new-react-project).](https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20(https:/react.dev/learn/start-a-new-react-project).)
+React project](https://react.dev/learn/start-a-new-react-project).
+[Or, here](https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20)
 
 ### Add React to an existing project 
 
-If want to try using React in your existing app or a website, [add React
-to an existing project
-(https://react.dev/learn/add-react-to-an-existing-project).](https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project).)
+If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project">add React
+to an existing project.
+
+https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project).
 
 ### Next steps 
 
-Head to the [Quick Start](https://react.dev/learn)
-(https://react.dev/learn) guide for a tour of the most important React
+Head to the <a href="https://react.dev/learn">Quick Start</a> guide for a tour of the most important React
 concepts you will encounter every day.
 
 End. . .
-<h7>5/20/2023 8:12am</h7>
+<h6>5/20/2023 8:12am</h6>
