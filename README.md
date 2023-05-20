@@ -10890,12 +10890,14 @@ sandbox!
 
 ## App.js
 
+```
 > function Greeting({ name }) {
 > return &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
 > }
 > export default function App() {
 > return &lt;Greeting name=&quot;world&quot; /&gt;
 > }
+```
 
 You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.
@@ -10934,4 +10936,5 @@ Head to the [Quick Start](https://react.dev/learn)
 (https://react.dev/learn) guide for a tour of the most important React
 concepts you will encounter every day.
 
-End. . .(5/13/2023)
+End. . .
+<h7>5/20/2023 8:12am</h7>
