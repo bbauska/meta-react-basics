@@ -424,41 +424,41 @@ following HTML tags and concepts
 
 ### Layout & Style
 
--   **&lt;html&gt; **
+-   **<html> **
 
--   **&lt;head&gt; **
+-   **<head> **
 
--   **&lt;body&gt; **
+-   **<body> **
 
--   **&lt;div&gt; **
+-   **<div> **
 
 ### Text formatting & lists
 
--   **&lt;h1&gt;...&lt;h6&gt; **
+-   **<h1>...<h6> **
 
--   **&lt;p&gt; **
+-   **<p> **
 
--   **&lt;ul&gt;&lt;li&gt; **
+-   **<ul><li> **
 
--   **&lt;b&gt;&lt;i&gt; **
+-   **<b><i> **
 
 ### Images and links
 
--   **&lt;img src=&quot;&quot;&gt; **
+-   **<img src=&quot;&quot;> **
 
--   **&lt;a href=&quot;&quot;&gt; **
+-   **<a href=&quot;&quot;> **
 
 ### Linking and Meta
 
--   **&lt;link&gt; **
+-   **<link> **
 
--   **&lt;title&gt; **
+-   **<title> **
 
--   **&lt;meta&gt; **
+-   **<meta> **
 
 ### Semantic
 
--   **&lt;header&gt; **
+-   **<header> **
 
 ## CSS
 
@@ -1763,7 +1763,7 @@ has two panels. On the left, there&apos;s source JSX code:
 ```
 > function Heading(props) {
 >
->     return &lt;h1&gt;{props.title}&lt;/h1&gt;
+>     return <h1>{props.title}</h1>
 >
 > }
 ```
@@ -1813,7 +1813,7 @@ the inner HTML of the **h1** element.
 Now let's use Babel again, and this time transpile the **render** syntax
 for the **Heading** component:
 
-> &lt;Heading title=&quot;This is the heading text!&quot;&gt;&lt;/Heading&gt;
+> <Heading title=&quot;This is the heading text!&quot;></Heading>
 
 Again using [the Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
@@ -1849,7 +1849,7 @@ You can see the answer below:
 ```
 > function Example() {
 >
-> return &lt;div&gt;An element&lt;/div&gt;
+> return <div>An element</div>
 >
 > }
 >
@@ -1865,7 +1865,7 @@ Here is the completed solution code for the App.js file:
 >
 >   return ( 
 >
->     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt; 
+>     <h1>This is an h1 heading.</h1> 
 >
 >   ) 
 >
@@ -1877,13 +1877,13 @@ Here is the completed solution code for the App.js file:
 >
 >   return ( 
 >
->     &lt;div className=&quot;App&quot;&gt; 
+>     <div className=&quot;App&quot;> 
 >
 >       This is the starting code for &quot;Your first component&quot; ungraded lab 
 >
->       &lt;Heading /&gt; 
+>       <Heading /> 
 >
->     &lt;/div&gt; 
+>     </div> 
 >
 >   ); 
 >
@@ -1903,7 +1903,7 @@ exercise.](./images/image039.png){width="5.0in"
 height="0.8566437007874016in"}
 
 **Step 1:** In the starting code, you already had a JSX element
-named **&lt;Heading /&gt;** , being rendered from the App component, since
+named **<Heading />** , being rendered from the App component, since
 it is a part of the App component&apos;s return statement.
 
 ```
@@ -1911,13 +1911,13 @@ it is a part of the App component&apos;s return statement.
 >
 >   return ( 
 >
->     &lt;div className=&quot;App&quot;&gt; 
+>     <div className=&quot;App&quot;> 
 >
 >       This is the starting code for &quot;Your first component&quot; ungraded lab 
 >
->       &lt;Heading /&gt; 
+>       <Heading /> 
 >
->     &lt;/div&gt; 
+>     </div> 
 >
 >   ); 
 >
@@ -1950,13 +1950,13 @@ with an opening and a closing parenthesis.
 **Step 3:** Then, inside the parentheses, you added the following code: 
 
 ```
-> **&lt;h1&gt;This is an h1 heading&lt;/h1&gt;** 
+> **<h1>This is an h1 heading</h1>** 
 >
 > function Heading() { 
 >
 >   return ( 
 >
->     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt; 
+>     <h1>This is an h1 heading.</h1> 
 >
 >   ) 
 >
@@ -2301,21 +2301,21 @@ Here's the contents of the **Nav.js** file:
 >
 >     return (
 >
->         &lt;nav className=&quot;main-nav&quot;&gt;
+>         <nav className=&quot;main-nav&quot;>
 >
->             &lt;ul&gt;
+>             <ul>
 >
->                 &lt;li&gt;Home&lt;/li&gt;
+>                 <li>Home</li>
 >
->                 &lt;li&gt;Articles&lt;/li&gt;
+>                 <li>Articles</li>
 >
->                 &lt;li&gt;About&lt;/li&gt;
+>                 <li>About</li>
 >
->                 &lt;li&gt;Contact&lt;/li&gt;
+>                 <li>Contact</li>
 >
->             &lt;/ul&gt;
+>             </ul>
 >
->         &lt;/nav&gt;
+>         </nav>
 >
 >     );
 >
@@ -2331,21 +2331,21 @@ Next, you can focus on the **Promo.js** file:
 >
 >     return (
 >
->         &lt;div className=&quot;promo-section&quot;&gt;
+>         <div className=&quot;promo-section&quot;>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h1&gt;Don&apos;t miss this deal!&lt;/h1&gt;
+>                 <h1>Don&apos;t miss this deal!</h1>
 >
->                 &lt;/div&gt;
+>                 </div>
 >
->                 &lt;div&gt;
+>                 <div>
 >
->                 &lt;h2&gt;Subscribe to my newsletter and get all the shop items at 50% off!&lt;/h2&gt;
+>                 <h2>Subscribe to my newsletter and get all the shop items at 50% off!</h2>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -2364,19 +2364,19 @@ Here&apos;s **Intro1.js:**
 >
 >     return (
 >
->         &lt;div className=&quot;blog-post-intro&quot;&gt;
+>         <div className=&quot;blog-post-intro&quot;>
 >
->             &lt;h2&gt;I&apos;ve become a React developer!&lt;/h2&gt;
+>             <h2>I&apos;ve become a React developer!</h2>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;p&gt;I&apos;ve completed the React Basics course and I&apos;m happy to announce that I&apos;m now a Junior React Developer!&lt;/p&gt;
+>                 <p>I&apos;ve completed the React Basics course and I&apos;m happy to announce that I&apos;m now a Junior React Developer!</p>
 >
->                 &lt;p className=&quot;link&quot;&gt;Read more\...&lt;/p&gt;
+>                 <p className=&quot;link&quot;>Read more\...</p>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -2392,19 +2392,19 @@ Here&apos;s the code for the **Intro2.js** component:
 >
 >     return (
 >
->         &lt;div className=&quot;blog-post-intro&quot;&gt;
+>         <div className=&quot;blog-post-intro&quot;>
 >
->             &lt;h2&gt;Why I love front-end web development&lt;/h2&gt;
+>             <h2>Why I love front-end web development</h2>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;p&gt;In this blog post, I&apos;ll list 10 reasons why I love to work as a front-end developer.&lt;/p&gt;
+>                 <p>In this blog post, I&apos;ll list 10 reasons why I love to work as a front-end developer.</p>
 >
->                 &lt;p className=&quot;link&quot;&gt;Read more\...&lt;/p&gt;
+>                 <p className=&quot;link&quot;>Read more\...</p>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -2421,19 +2421,19 @@ You can finish the previews for my blog posts with the code for
 >
 >     return (
 >
->         &lt;div className=&quot;blog-post-intro&quot;&gt;
+>         <div className=&quot;blog-post-intro&quot;>
 >
->             &lt;h2&gt;What&apos;s the best way to style your React apps?&lt;/h2&gt;
+>             <h2>What&apos;s the best way to style your React apps?</h2>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;p&gt;There are so many options to choose from. Here&apos;s a high-level overview of the popular ones.&lt;/p&gt;
+>                 <p>There are so many options to choose from. Here&apos;s a high-level overview of the popular ones.</p>
 >
->                 &lt;p className=&quot;link&quot;&gt;Read more\...&lt;/p&gt;
+>                 <p className=&quot;link&quot;>Read more\...</p>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -2450,11 +2450,11 @@ here it is:
 >
 >     return (
 >
->         &lt;div className=&quot;copyright&quot;&gt;
+>         <div className=&quot;copyright&quot;>
 >
->             &lt;p&gt;Made with love by Myself&lt;/p&gt;
+>             <p>Made with love by Myself</p>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -2475,7 +2475,7 @@ These are:
 
 -   Where are all the props?
 
--   Why was I not using the **&lt;a&gt;** element for empty links? 
+-   Why was I not using the **<a>** element for empty links? 
 
 ## Discussing the Syntax
 
@@ -2518,7 +2518,7 @@ The answer to this question has to do with the next lesson, titled
 In this lesson, you'll see in practice how you can make components work
 better, with the help of **props**.
 
-The final question is about not using the **&lt;a&gt;** element for empty
+The final question is about not using the **<a>** element for empty
 links in my app.
 
 The answer here depends on whether those links are &quot;internal&quot; - inside
@@ -2527,7 +2527,7 @@ as;
 [*[https://www.coursera.org]{.underline}*](https://www.coursera.org/).
 
 If the links are internal to the app - as they are envisioned here -
-using the **&lt;a&gt;** tag is simply not the React way of doing things.
+using the **<a>** tag is simply not the React way of doing things.
 You&apos;ll learn why that is the case when discussing the use of React
 Router.
 
@@ -2674,7 +2674,7 @@ Here are the contents of the Heading.js file:
 >
 >     return (
 >
->         &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+>         <h1>This is an h1 heading</h1>
 >
 >     )
 >
@@ -2688,7 +2688,7 @@ Here are the contents of the App.js file:
 
 > export default App;
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -2696,9 +2696,9 @@ Here are the contents of the App.js file:
 >
 >   return (
 >
->     &lt;div className=&quot;App&quot;&gt;
+>     <div className=&quot;App&quot;>
 >
->       &lt;Heading /&gt;
+>       <Heading />
 
 Here is a screenshot of the src folder:
 
@@ -2719,7 +2719,7 @@ component file, named "Heading.js".
 >
 >     return (
 >
->         &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
+>         <h1>This is an h1 heading</h1>
 >
 >     )
 >
@@ -2745,11 +2745,11 @@ component. 
 >
 >   return (
 >
->     &lt;div className=&quot;App&quot;&gt;
+>     <div className=&quot;App&quot;>
 >
->       &lt;Heading /&gt;
+>       <Heading />
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -2917,7 +2917,7 @@ For example, let's say you have a component that returns a piece of JSX:
 
 > function App() {
 >
->   return &lt;h1&gt;Hello there&lt;/h1&gt;
+>   return <h1>Hello there</h1>
 >
 > }
 
@@ -2956,11 +2956,11 @@ structure:
 >
 >   return (
 >
->     &lt;div&gt;
+>     <div>
 >
->     &lt;h1&gt;Hello there&lt;/h1&gt; 
+>     <h1>Hello there</h1> 
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   )
 >
@@ -3135,13 +3135,13 @@ Here is the completed App.js file:
 >
 >   return (
 >
->     &lt;div className=&quot;App&quot;&gt;
+>     <div className=&quot;App&quot;>
 >
->       &lt;Heading firstName=&quot;Bob&quot; /&gt;
+>       <Heading firstName=&quot;Bob&quot; />
 >
->       &lt;Heading firstName=&quot;Any name other than Bob&quot; /&gt;
+>       <Heading firstName=&quot;Any name other than Bob&quot; />
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -3159,7 +3159,7 @@ And here is the completed Heading.js file:
 >
 >     return (
 >
->         &lt;h1&gt;Hello, {props.firstName}&lt;/h1&gt;
+>         <h1>Hello, {props.firstName}</h1>
 >
 >     )
 >
@@ -3185,7 +3185,7 @@ height="1.8693788276465442in"}
 >
 >     return (
 >
->         &lt;h1&gt;Hello, &lt;/h1&gt;
+>         <h1>Hello, </h1>
 >
 >     )
 >
@@ -3207,7 +3207,7 @@ statement&apos;s **h1**, after **Hello**. 
 >
 >     return (
 >
->         &lt;h1&gt;Hello, {props.firstName}&lt;/h1&gt;
+>         <h1>Hello, {props.firstName}</h1>
 >
 >     )
 >
@@ -3220,7 +3220,7 @@ statement&apos;s **h1**, after **Hello**. 
  
 
 **Step 3:** Then, inside the App component&apos;s return statement, you
-located the **&lt;Heading /&gt;** JSX element, and added the attribute of
+located the **<Heading />** JSX element, and added the attribute of
 **firstName** and give it the value of **Bob**. 
 
 ```
@@ -3232,11 +3232,11 @@ located the **&lt;Heading /&gt;** JSX element, and added the attribute of
 >
 >   return (
 >
->     &lt;div className=&quot;App&quot;&gt;
+>     <div className=&quot;App&quot;>
 >
->       &lt;Heading firstName=&quot;Bob&quot; /&gt;
+>       <Heading firstName=&quot;Bob&quot; />
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -3264,11 +3264,11 @@ and see how the page updates with the new name.
 >
 >   return (
 >
->     &lt;div className=&quot;App&quot;&gt;
+>     <div className=&quot;App&quot;>
 >
->       &lt;Heading firstName=&quot;Any name other than Bob&quot; /&gt;
+>       <Heading firstName=&quot;Any name other than Bob&quot; />
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -3280,7 +3280,7 @@ and see how the page updates with the new name.
 ```
  
 
-**Step 6:** Finally, you added a second **&lt;Heading /&gt;** after the
+**Step 6:** Finally, you added a second **<Heading />** after the
 first one.  Again, adding the **firstName** attribute and choosing
 another name for this value.
 
@@ -3293,13 +3293,13 @@ another name for this value.
 >
 >   return (
 >
->     &lt;div className=&quot;App&quot;&gt;
+>     <div className=&quot;App&quot;>
 >
->       &lt;Heading firstName=&quot;Any name other than Bob&quot; /&gt;
+>       <Heading firstName=&quot;Any name other than Bob&quot; />
 >
->       &lt;Heading firstName=&quot;Jack&quot; /&gt;
+>       <Heading firstName=&quot;Jack&quot; />
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -3395,21 +3395,21 @@ Now, consider the following component:
 >
 >   return (
 >
->     &lt;div className=&quot;promo-section&quot;&gt;
+>     <div className=&quot;promo-section&quot;>
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h2&gt;These apples are: {props.color}&lt;/h2&gt;
+>             <h2>These apples are: {props.color}</h2>
 >
->             &lt;/div&gt;
+>             </div>
 >
->             &lt;div&gt;
+>             <div>
 >
->             &lt;h3&gt;There are {props.number} apples.&lt;/h3&gt;
+>             <h3>There are {props.number} apples.</h3>
 >
->         &lt;/div&gt;
+>         </div>
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   )
 >
@@ -3425,7 +3425,7 @@ There is also a **Pears** component:
 >
 >   return (
 >
->     &lt;h2&gt;I don&apos;t like pears, but my friend, {props.friend}, does&lt;/h2&gt;
+>     <h2>I don&apos;t like pears, but my friend, {props.friend}, does</h2>
 >
 >   )
 >
@@ -3457,11 +3457,11 @@ You can define a **Bag** component as follows:
 >
 >     return (
 >
->         &lt;div style={bag}&gt;
+>         <div style={bag}>
 >
 >             {props.children}
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     )
 >
@@ -3477,7 +3477,7 @@ But what is this **props.children?**
 
 Consider a very simple example:
 ```
-> &lt;/Example&gt;
+> </Example>
 ```
 The **Hello there** text is a child of the Example JSX element. The
 Example JSX Element above is an &quot;invocation&quot; of the **Example.js**
@@ -3488,7 +3488,7 @@ as a **named prop** when rendering the **Example** component?
 
 Here&apos;s how that would look like:
 ```
-> &lt;Example children=&quot;Hello there&quot; /&gt;
+> <Example children=&quot;Hello there&quot; />
 ```
 Ok, so, there are two ways to do it. But this is just the beginning.
 
@@ -3497,19 +3497,19 @@ What if you, say, wanted to surround the **Hello there** text in an
 
 Obviously, in JSX, that is easily achievable:
 ```
-> &lt;Example children={&lt;h3&gt;Hello there&lt;/h3&gt;} /&gt;
+> <Example children={<h3>Hello there</h3>} />
 ```
-What if the **&lt;h3&gt;Hello there&lt;/h3&gt;** was a separate component, for
+What if the **<h3>Hello there</h3>** was a separate component, for
 example, named **Hello**?
 
 In that case, you&apos;d have to update the code like this:
 ```
-> &lt;Example children={&lt;Hello /&gt;} /&gt;
+> <Example children={<Hello />} />
 ```
 You could even make the **Hello** component more dynamic, by giving it
 its own prop:
 ```
-> &lt;Example children={&lt;Hello message=&quot;Hello there&quot; /&gt;} /&gt;
+> <Example children={<Hello message=&quot;Hello there&quot; />} />
 ```
 So, given the **Bag**, **Apples**, and **Pears** examples from the
 beginning of this reading, armed with this new knowledge, how can you
@@ -3518,13 +3518,13 @@ make it work?
 Here&apos;s how you&apos;d render the **Bag** component with the **Apples**
 component as its **props.children**:
 ```
-> &lt;Bag children={&lt;Apples color=&quot;yellow&quot; number=&quot;5&quot; /&gt;} /&gt;
+> <Bag children={<Apples color=&quot;yellow&quot; number=&quot;5&quot; />} />
 ```
 And here&apos;s how you&apos;d render the **Bag** component, wrapping the
 **Pears** component:
 
 ```
-> &lt;Bag children={&lt;Pears friend=&quot;Peter&quot; /&gt;} /&gt;
+> <Bag children={<Pears friend=&quot;Peter&quot; />} />
 ```
 
 While the above syntax might look a bit weird, it&apos;s important to
@@ -3533,36 +3533,36 @@ understand what is happening &quot;under the hood&quot;.
 Effectively, the above syntax is the same as the two examples below.
 
 ```
-> &lt;Bag&gt;
+> <Bag>
 >
->     &lt;Apples color=&quot;yellow&quot; number=&quot;5&quot; /&gt;
+>     <Apples color=&quot;yellow&quot; number=&quot;5&quot; />
 >
-> &lt;/Bag&gt;
+> </Bag>
 >
 >  
 >
-> &lt;Bag&gt;
+> <Bag>
 >
->     &lt;Pears friend=&quot;Peter&quot; /&gt;
+>     <Pears friend=&quot;Peter&quot; />
 >
-> &lt;/Bag&gt;
+> </Bag>
 ```
 
 You can even have multiple levels of nested JSX elements, or a single
 JSX element having multiple children, such as, for example:
 
 ```
-> &lt;Trunk&gt;
+> <Trunk>
 >
->     &lt;Bag&gt;
+>     <Bag>
 >
->         &lt;Apples color=&quot;yellow&quot; number=&quot;5&quot; /&gt;
+>         <Apples color=&quot;yellow&quot; number=&quot;5&quot; />
 >
->         &lt;Pears friend=&quot;Peter&quot; /&gt;
+>         <Pears friend=&quot;Peter&quot; />
 >
->     &lt;/Bag&gt;
+>     </Bag>
 >
-> &lt;/Trunk&gt;
+> </Trunk>
 ```
 
 So, in the above structure, there&apos;s a **Trunk** JSX element, inside of
@@ -3572,11 +3572,11 @@ which is a single **Bag** JSX element, holding an **Apples** and a
 Before the end of this reading, consider this JSX element again:
 
 ```
-> &lt;Bag&gt;
+> <Bag>
 >
->     &lt;Apples color=&quot;yellow&quot; number=&quot;5&quot; /&gt;
+>     <Apples color=&quot;yellow&quot; number=&quot;5&quot; />
 >
-> &lt;/Bag&gt;
+> </Bag>
 ```
 
 What is **Apples** to **Bag** in the above code?
@@ -3636,21 +3636,21 @@ can access those CSS classes using the **className** attribute.
 >
 >     return (
 >
->         &lt;div className=&quot;promo-section&quot;&gt;
+>         <div className=&quot;promo-section&quot;>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h1&gt;{props.heading}&lt;/h1&gt;
+>                 <h1>{props.heading}</h1>
 >
->             &lt;/div&gt;
+>             </div>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h2&gt;{props.promoSubHeading}&lt;/h2&gt;
+>                 <h2>{props.promoSubHeading}</h2>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -3681,21 +3681,21 @@ encountered earlier:
 >
 >     return (
 >
->         &lt;div className=&quot;promo-section&quot;&gt;
+>         <div className=&quot;promo-section&quot;>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h1&gt;{props.heading}&lt;/h1&gt;
+>                 <h1>{props.heading}</h1>
 >
->             &lt;/div&gt;
+>             </div>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h2&gt;{props.promoSubHeading}&lt;/h2&gt;
+>                 <h2>{props.promoSubHeading}</h2>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -3713,25 +3713,25 @@ Now you can add some inline styles to it:
 >
 >     return (
 >
->         &lt;div className=&quot;promo-section&quot;&gt;
+>         <div className=&quot;promo-section&quot;>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h1 style={{color:&quot;tomato&quot;, fontSize:&quot;40px&quot;, fontWeight:&quot;bold&quot;}}&gt;
+>                 <h1 style={{color:&quot;tomato&quot;, fontSize:&quot;40px&quot;, fontWeight:&quot;bold&quot;}}>
 >
 >                     {props.heading}
 >
->                 &lt;/h1&gt;
+>                 </h1>
 >
->             &lt;/div&gt;
+>             </div>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h2&gt;{props.promoSubHeading}&lt;/h2&gt;
+>                 <h2>{props.promoSubHeading}</h2>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -3745,7 +3745,7 @@ Now you can add some inline styles to it:
 You can start updating the **Promo** component by adding the JavaScript
 expression syntax:
 
-> &lt;h1 style={}&gt;
+> <h1 style={}>
 
 As explained previously, this means that whatever code you add inside
 these opening and closing curly braces is to be parsed as regular
@@ -3753,7 +3753,7 @@ JavaScript. Now let's add a **style object literal** inside of these
 curly braces:
 
 ```
-> &lt;h1 style={{color:&quot;tomato&quot;,fontSize:&quot;40px&quot;}}&gt;
+> <h1 style={{color:&quot;tomato&quot;,fontSize:&quot;40px&quot;}}>
 ```
 
 You can then re-write this object literal:
@@ -3799,25 +3799,25 @@ saved as a JavaScript variable:
 >
 > return (
 >
->         &lt;div className=&quot;promo-section&quot;&gt;
+>         <div className=&quot;promo-section&quot;>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h1 style={styles}&gt;
+>                 <h1 style={styles}>
 >
 >                     {props.heading}
 >
->                 &lt;/h1&gt;
+>                 </h1>
 >
->             &lt;/div&gt;
+>             </div>
 >
->             &lt;div&gt;
+>             <div>
 >
->                 &lt;h2&gt;{props.promoSubHeading}&lt;/h2&gt;
+>                 <h2>{props.promoSubHeading}</h2>
 >
->             &lt;/div&gt;
+>             </div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -3950,11 +3950,11 @@ function Nav(props) {
 
     return (
 
-        &lt;ul&gt;
+        <ul>
 
-            &lt;li&gt;{props.first}&lt;/li&gt;
+            <li>{props.first}</li>
 
-        &lt;/ul&gt;
+        </ul>
 
     )
 
@@ -3969,11 +3969,11 @@ const Nav = function(props) {
 
     return (
 
-        &lt;ul&gt;
+        <ul>
 
-            &lt;li&gt;{props.first}&lt;/li&gt;
+            <li>{props.first}</li>
 
-        &lt;/ul&gt;
+        </ul>
 
     )
 
@@ -3991,7 +3991,7 @@ render the **Nav** component. It&apos;s still the same:
 
 1
 
-&lt;Nav first=&quot;Home&quot; /&gt;
+<Nav first=&quot;Home&quot; />
 
 You can also take this concept a step further, using arrow functions.
 
@@ -4003,15 +4003,15 @@ One of the main benefits of using arrow functions is its shorter syntax.
 
 Consider the Nav function expression written as an arrow function:
 
-const Nav = (props) =&gt; {
+const Nav = (props) => {
 
     return (
 
-        &lt;ul&gt;
+        <ul>
 
-            &lt;li&gt;{props.first}&lt;/li&gt;
+            <li>{props.first}</li>
 
-        &lt;/ul&gt;
+        </ul>
 
     )
 
@@ -4031,7 +4031,7 @@ const example = function() {}
 
 And then observe how this is written as an arrow function:
 
-const example = () =&gt; {}
+const example = () => {}
 
 Another important rule regarding arrow functions is that using the
 parentheses is optional if there&apos;s a single parameter that a function
@@ -4040,15 +4040,15 @@ accepts.
 In other words, another correct way to write the previous Nav arrow
 function component would be to drop the parentheses around 'props':
 
-const Nav = props =&gt; {
+const Nav = props => {
 
     return (
 
-        &lt;ul&gt;
+        <ul>
 
-            &lt;li&gt;{props.first}&lt;/li&gt;
+            <li>{props.first}</li>
 
-        &lt;/ul&gt;
+        </ul>
 
     )
 
@@ -4061,15 +4061,15 @@ parameters is compulsory**.
 For example, if your **Nav** component wasn&apos;t accepting any parameters,
 you&apos;d code it with empty parentheses:
 
-const Nav = () =&gt; {
+const Nav = () => {
 
     return (
 
-        &lt;ul&gt;
+        <ul>
 
-            &lt;li&gt;Home&lt;/li&gt;
+            <li>Home</li>
 
-        &lt;/ul&gt;
+        </ul>
 
     )
 
@@ -4085,7 +4085,7 @@ one-liner:
 
 1
 
-const Nav = () =&gt; &lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/ul&gt;
+const Nav = () => <ul><li>Home</li></ul>
 
 Note that with the implicit return, you don&apos;t even have to use the
 curly braces that are compulsory function body delimiters in all other
@@ -4101,7 +4101,7 @@ For example:
 
 1
 
-&lsqb;10, 20, 30&rsqb;.forEach(item =&gt; item \* 10)
+&lsqb;10, 20, 30&rsqb;.forEach(item => item \* 10)
 
 The output of the above vanilla JavaScript line of code would be three
 number values:
@@ -4139,7 +4139,7 @@ function(item) {
 If you write it as an ES6 function instead, it can be simplified as one
 line:
 
-item =&gt; item \* 10
+item => item \* 10
 
 Both these functions perform the exact same task. Only the syntax is
 different. The ES6 function is a lot shorter because:
@@ -4321,17 +4321,17 @@ to randomly change the text that is displayed.
 >
 >     return (
 >
->         &lt;div className=&quot;heading&quot;&gt;
+>         <div className=&quot;heading&quot;>
 >
->             &lt;h1&gt;{Math.random() &gt;= 0.5 ? &quot;Over 0.5&quot; : &quot;Under 0.5&quot;}&lt;/h1&gt;
+>             <h1>{Math.random() >= 0.5 ? &quot;Over 0.5&quot; : &quot;Under 0.5&quot;}</h1>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
 > };
 
-Inside the **&lt;h1&gt;** element, the curly braces signal to React that you
+Inside the **<h1>** element, the curly braces signal to React that you
 want it to parse the code inside as regular JavaScript.
 
 Then, inside the curly braces, you can add a ternary statement. Every
@@ -4342,7 +4342,7 @@ this:
 
 In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
-the &gt;= (greater-than-or-equal-to operator), to return a Boolean value.
+the >= (greater-than-or-equal-to operator), to return a Boolean value.
 If the result of the comparison evaluates to **true**, then the string
 &quot;Over 0.5&quot; gets returned. In other words, whatever sits between the
 question mark and the semi-colon character will get returned. Otherwise,
@@ -4368,15 +4368,15 @@ return a random number:
 >
 >     return (
 >
->         &lt;div className=&quot;heading&quot;&gt;
+>         <div className=&quot;heading&quot;>
 >
->             &lt;h1&gt;Here&apos;s a random number from 0 to 10: 
+>             <h1>Here&apos;s a random number from 0 to 10: 
 >
 >                 { Math.floor(Math.random() \* 10) + 1 }
 >
->             &lt;/h1&gt;
+>             </h1>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4392,17 +4392,17 @@ You can also extract this functionality into a separate function:
 >
 >  
 >
->     const getRandomNum = () =&gt; Math.floor(Math.random() \* 10) + 1
+>     const getRandomNum = () => Math.floor(Math.random() \* 10) + 1
 >
 >  
 >
 >     return (
 >
->         &lt;div className=&quot;heading&quot;&gt;
+>         <div className=&quot;heading&quot;>
 >
->             &lt;h1&gt;Here&apos;s a random number from 0 to 10: { getRandomNum() }&lt;/h1&gt;
+>             <h1>Here&apos;s a random number from 0 to 10: { getRandomNum() }</h1>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4457,7 +4457,7 @@ For example:
 >
 >     return (
 >
->         &lt;h2&gt;The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}&lt;/h2&gt;
+>         <h2>The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}</h2>
 >
 >     );
 >
@@ -4469,11 +4469,11 @@ For example:
 >
 >     return ( 
 >
->         &lt;div className=&quot;App&quot;&gt; 
+>         <div className=&quot;App&quot;> 
 >
->             &lt;Example toggleBoolean={!bool} /&gt; 
+>             <Example toggleBoolean={!bool} /> 
 >
->         &lt;/div&gt; 
+>         </div> 
 >
 >     ); 
 >
@@ -4503,19 +4503,19 @@ screen.
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h2&gt;
+>             <h2>
 >
 >                 The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
 >
->             &lt;/h2&gt;
+>             </h2>
 >
->             &lt;p&gt;The value of the math prop is: &lt;em&gt;{props.math}&lt;/em&gt;&lt;/p&gt;
+>             <p>The value of the math prop is: <em>{props.math}</em></p>
 >
->             &lt;p&gt;The value of the str prop is: &lt;em&gt;{props.str}&lt;/em&gt;&lt;/p&gt;
+>             <p>The value of the str prop is: <em>{props.str}</em></p>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4527,9 +4527,9 @@ screen.
 >
 >     return (
 >
->         &lt;div className=&quot;App&quot;&gt;
+>         <div className=&quot;App&quot;>
 >
->             &lt;Example
+>             <Example
 >
 >                 toggleBoolean={!bool}
 >
@@ -4537,9 +4537,9 @@ screen.
 >
 >                 str={str1 + &apos; another &apos; + &apos;string&apos;}
 >
->             /&gt;
+>             />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4599,57 +4599,48 @@ this case the SRC attribute of an html image tag.
 
 Here&apos;s the completed App.js file:
 
-> import &quot;./App.css&quot;;
->
-> import Card from &quot;./Card&quot;;
->
->  
->
-> function App() {
->
-> return (
->
->     &lt;div className=&quot;App&quot;&gt;
->
->         &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
->
->         &lt;Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; /&gt;
->
->         &lt;Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; /&gt;
->
->         &lt;Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; /&gt;
->
->     &lt;/div&gt;
->
->   );
->
-> };
->
->  
->
-> export default App;
+<details>
+  <summary>App.js</summary>
+
+```
+import &quot;./App.css&quot;;
+import Card from &quot;./Card&quot;;
+  
+function App() {
+  return (
+    <div className=&quot;App&quot;>
+      <h1>Task: Add three Card elements</h1>
+      <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
+      <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
+      <Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; />
+    </div>
+  );
+};
+
+export default App;
+```
+
+</details>
 
 Here&apos;s the completed Card.js file:
 
-> function Card(props) {
->
->     return (
->
->         &lt;div className=&quot;card&quot;&gt;
->
->             &lt;h2&gt;{props.h2}&lt;/h2&gt;
->
->             &lt;h3&gt;{props.h3}&lt;/h3&gt;
->
->         &lt;/div&gt;
->
->     );
->
-> };
->
->  
->
-> export default Card;
+<details>
+  <summary>Card.js</summary>
+  
+```
+function Card(props) {
+  return (
+    <div className=&quot;card&quot;>
+      <h2>{props.h2}</h2>
+      <h3>{props.h3}</h3>
+    </div>
+  );
+};
+ 
+export default Card;
+```
+
+</details>
 
 Here is the output from the completed solution code:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4665,114 +4656,121 @@ Here is the output from the completed solution code:
 **Step 1.** Your first task was to add a Card.js file, and inside of
 that file, declare a **Card** function.  
 
-> function Card(props) {
->
->     
->
-> };
+```
+function Card(props) {
+    
+    
+};
+```
 
 **Step 2.** Inside the Card.js file&apos;s **Card** function, you added a
 **return** statement with two parentheses after it, to allow the
 **return** statement to spread onto several lines. 
 
-> function Card(props) {
->
->     return (
->
->  
->
->     );
->
-> };
+```
+function Card(props) {
+  return (
+  
+  
+  );
+};
+```
 
 **Step 3.** Inside the **return** statement, you needed to add a
 wrapping **div** element. 
 
+```
 > function Card(props) {
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
 > };
+```
 
 **Step 4.** Inside the wrapping **div** element, you needed to add an
 **h2** element, and under it, an **h3** element. 
 
+```
 > function Card(props) {
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h2&gt;&lt;/h2&gt;
+>             <h2></h2>
 >
->             &lt;h3&gt;&lt;/h3&gt;
+>             <h3></h3>
 >
->         &lt;/div&gt;  
+>         </div>  
 >
 >     );
 >
 > };
+```
 
 Step 5. Inside the h2 element you&apos;ve already added, you needed to add
 the JSX expression of: {props.h2}. 
 
+```
 > function Card(props) {
 >
 >     return (
 >
->         &lt;div className=&quot;card&quot;&gt;
+>         <div className=&quot;card&quot;>
 >
->             &lt;h2&gt;{props.h2}&lt;/h2&gt;
+>             <h2>{props.h2}</h2>
 >
->             &lt;h3&gt;&lt;/h3&gt;
+>             <h3></h3>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
 > };
+```
 
 **Step 6.** Inside the **h3** element you&apos;ve already added, you needed
 to add the JSX expression of: **{props.h3}**. 
 
+```
 > function Card(props) {
 >
 >     return (
 >
->         &lt;div className=&quot;card&quot;&gt;
+>         <div className=&quot;card&quot;>
 >
->             &lt;h2&gt;{props.h2}&lt;/h2&gt;
+>             <h2>{props.h2}</h2>
 >
->             &lt;h3&gt;{props.h3}&lt;/h3&gt;
+>             <h3>{props.h3}</h3>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
 > };
-
- 
+```
 
 **Step 7.** You also had to make sure to not forget the **export default
 Card;** line of code at the bottom of the Card component.
 
+```
 > function Card(props) {
 >
 >     return (
 >
->         &lt;div className=&quot;card&quot;&gt;
+>         <div className=&quot;card&quot;>
 >
->             &lt;h2&gt;{props.h2}&lt;/h2&gt;
+>             <h2>{props.h2}</h2>
 >
->             &lt;h3&gt;{props.h3}&lt;/h3&gt;
+>             <h3>{props.h3}</h3>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4781,10 +4779,12 @@ Card;** line of code at the bottom of the Card component.
 >  
 >
 > export default Card;
+```
 
 **Step 8.** Back inside the App component, you needed to import the
 **Card** component. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4795,11 +4795,11 @@ Card;** line of code at the bottom of the Card component.
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4808,11 +4808,13 @@ Card;** line of code at the bottom of the Card component.
 >  
 >
 > export default App;
+```
 
 **Step 9.** Inside the App component&apos;s **return** statement, under the
-**h1** element, you should have added three **&lt;Card /&gt;** JSX
+**h1** element, you should have added three **<Card />** JSX
 elements. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4823,17 +4825,17 @@ elements. 
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4842,10 +4844,12 @@ elements. 
 >  
 >
 > export default App;
+```
 
-**Step 10.** You needed to add the **h2** prop to the first **&lt;Card
-/&gt;** element, like this: **h2=&quot;First card&apos;s h2&quot;**. 
+**Step 10.** You needed to add the **h2** prop to the first **<Card
+/>** element, like this: **h2=&quot;First card&apos;s h2&quot;**. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4856,17 +4860,17 @@ elements. 
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->             &lt;Card h2=&quot;First card&apos;s h2&quot; /&gt;
+>             <Card h2=&quot;First card&apos;s h2&quot; />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4875,10 +4879,12 @@ elements. 
 >  
 >
 > export default App;
+```
 
-**Step 11.** You needed to add the **h3** prop to the first **&lt;Card
-/&gt;** element, like this: **h3=&quot;First card&apos;s h3&quot;**. 
+**Step 11.** You needed to add the **h3** prop to the first **<Card
+/>** element, like this: **h3=&quot;First card&apos;s h3&quot;**. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4889,17 +4895,17 @@ elements. 
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->             &lt;Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4908,11 +4914,13 @@ elements. 
 >  
 >
 > export default App;
+```
 
 **Step 12.** You should have added the **h2** and **h3** props to the
-second **&lt;Card /&gt;** element, with the **h2** reading: **&quot;Second
+second **<Card />** element, with the **h2** reading: **&quot;Second
 card&apos;s h2&quot;**, and the **h3** reading **&quot;Second card&apos;s h3&quot;**. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4923,17 +4931,17 @@ card&apos;s h2&quot;**, and the **h3** reading **&quot;Second card&apos;s h3&quo
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->             &lt;Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
 >
->             &lt;Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
 >
->             &lt;Card /&gt;
+>             <Card />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4942,11 +4950,13 @@ card&apos;s h2&quot;**, and the **h3** reading **&quot;Second card&apos;s h3&quo
 >  
 >
 > export default App;
+```
 
 **Step 13.** You should have added the **h2** and **h3** props to the
-third **&lt;Card /&gt;** element, with the h2 reading: **&quot;Third card&apos;s
+third **<Card />** element, with the h2 reading: **&quot;Third card&apos;s
 h2&quot;**, and the **h3** reading **&quot;Third card&apos;s h3&quot;**. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4957,17 +4967,17 @@ h2&quot;**, and the **h3** reading **&quot;Third card&apos;s h3&quot;**. 
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->             &lt;Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
 >
->             &lt;Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
 >
->             &lt;Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -4976,11 +4986,13 @@ h2&quot;**, and the **h3** reading **&quot;Third card&apos;s h3&quot;**. 
 >  
 >
 > export default App;
+```
 
 **Step 14.** You needed to add the **className** attribute to the
 Card.js file&apos;s **Card** function&apos;s **return** statement&apos;s wrapping
 **div** element. 
 
+```
 > import &quot;./App.css&quot;;
 >
 > import Card from &quot;./Card&quot;;
@@ -4989,23 +5001,24 @@ Card.js file&apos;s **Card** function&apos;s **return** statement&apos;s wrappin
 >
 >     return (
 >
->         &lt;div className=&quot;App&quot;&gt;
+>         <div className=&quot;App&quot;>
 >
->             &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+>             <h1>Task: Add three Card elements</h1>
 >
->             &lt;Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
 >
->             &lt;Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
 >
->             &lt;Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; /&gt;
+>             <Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
 > };
 >
 > export default App;
+```
 
 # 33. Module Summary -- React Components & where they live
 
@@ -5065,7 +5078,7 @@ within an app to apply styling and functional components.
 That&apos;s a great start to your React journey. Well done on completing
 this module and get ready for the next one.
 
-# 34. Additional resources (React Basics - Week 1)
+## 34. Additional resources (React Basics - Week 1)
 
 Below you will find links to helpful additional resources.
 
@@ -5089,7 +5102,7 @@ Below you will find links to helpful additional resources.
 
 Data and State
 
-# 01. Types of Events
+### 01. Types of Events
 
 By now, you&apos;re probably familiar with **events** in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
@@ -5172,7 +5185,7 @@ In this section (1), you learned about the types of events available in
 React and how they came to be. Next, you&apos;ll explore specific examples
 and build the skills to use events competently from various situations.
 
-# 02. Eventful issues
+### 02. Eventful issues
 
 You're now aware that React can work with most of the same events found
 in HTML, although React handles them differently.
@@ -5182,7 +5195,7 @@ event-driven React code. However, in this reading, you'll learn about
 some of the most common errors associated with events and how you can
 deal with them.
 
-## Event Errors
+#### Event Errors
 
 When you work in any programming environment, language, or framework,
 you are bound to write code that throws errors, for a variety of
@@ -5200,12 +5213,16 @@ The JavaScript language comes with a built-in error handling syntax, the
 
 Let's examine an example of an error in JavaScript:
 
-> (5).toUpperCase()
+```
+(5).toUpperCase()
+```
 
 Obviously, you cannot uppercase a number value, and thus, this throws
 the following error:
 
-> Uncaught TypeError: 5.toUpperCase is not a function
+```
+Uncaught TypeError: 5.toUpperCase is not a function
+```
 
 To handle this TypeError, you can update the code with a try\...catch
 block that instructs the code to continue running after the error is
@@ -5241,11 +5258,11 @@ component:
 >
 > return (
 >
->    &lt;&gt;
+>    <>
 >
->      &lt;h1&gt;{prop.num}&lt;/h1&gt;
+>      <h1>{prop.num}</h1>
 >
->       &lt;/&gt;
+>       </>
 >
 >   )
 >
@@ -5455,11 +5472,11 @@ always be the same: just some words output to the console.
 This approach allows you to directly pass in an ES5 function declaration
 as the **onClick** event-handling attribute's value:
 
-> &lt;button onClick={function() {console.log(&apos;first example&apos;)}}&gt;
+> <button onClick={function() {console.log(&apos;first example&apos;)}}>
 >
 >     An inline anonymous ES5 function event handler
 >
-> &lt;/button&gt;
+> </button>
 
 Although it&apos;s possible to write your click handlers using this syntax,
 it&apos;s not a common approach and you will not find such code very often
@@ -5470,7 +5487,7 @@ in React apps.
 With this approach, you can directly pass in an ES6 function declaration
 as the **onClick** event-handling attribute's value:
 
-> &lt;/button&gt;
+> </button>
 
 This approach is much more common then the previous one. If you want to
 keep all your logic inside the JSX expression assigned to the onClick
@@ -5492,15 +5509,15 @@ as follows:
 >
 >     return (
 >
->         &lt;div className=&quot;thirdExample&quot;&gt;
+>         <div className=&quot;thirdExample&quot;>
 >
->             &lt;button onClick={thirdExample}&gt;
+>             <button onClick={thirdExample}>
 >
 >                 using a separate function declaration
 >
->             &lt;/button&gt;
+>             </button>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -5531,21 +5548,21 @@ function expression.
 
 > function App() {
 >
->     const fourthExample = () =&gt; console.log(&apos;fourth example&apos;);
+>     const fourthExample = () => console.log(&apos;fourth example&apos;);
 >
 >  
 >
 >     return (
 >
->         &lt;div className=&quot;fourthExample&quot;&gt;
+>         <div className=&quot;fourthExample&quot;>
 >
->             &lt;button onClick={fourthExample}&gt;
+>             <button onClick={fourthExample}>
 >
 >                 using a separate function expression
 >
->             &lt;/button&gt;
+>             </button>
 >
->         &lt;/div&gt;
+>         </div>
 >
 >   );
 >
@@ -5644,6 +5661,8 @@ events on a single JSX element
 
 Here is the completed App.js file:
 
+#### App.js
+
 > function App() {
 >
 >  
@@ -5664,13 +5683,13 @@ Here is the completed App.js file:
 >
 >   return (
 >
->     &lt;div&gt;
+>     <div>
 >
->       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+>       <h1>Task: Add a button and handle a click event</h1>
 >
->       &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+>       <button onClick={handleClick}>Guess the number between 1 and 3</button>
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -5695,13 +5714,13 @@ closing **button** tag, to the App component's **h1** element . 
 >
 >   return (
 >
->     &lt;div&gt;
+>     <div>
 >
->       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+>       <h1>Task: Add a button and handle a click event</h1>
 >
->       &lt;button&gt;&lt;/button&gt;
+>       <button></button>
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -5720,13 +5739,13 @@ added the following text: Guess the number between 1 and 3. 
 >
 >   return (
 >
->     &lt;div&gt;
+>     <div>
 >
->       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+>       <h1>Task: Add a button and handle a click event</h1>
 >
->       &lt;button&gt;Guess the number between 1 and 3&lt;/button&gt;
+>       <button>Guess the number between 1 and 3</button>
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -5746,13 +5765,13 @@ expression: **{handleClick}**. 
 >
 >   return (
 >
->     &lt;div&gt;
+>     <div>
 >
->       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+>       <h1>Task: Add a button and handle a click event</h1>
 >
->       &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+>       <button onClick={handleClick}>Guess the number between 1 and 3</button>
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -5782,13 +5801,13 @@ declaration: 
 >
 >  return (
 >
->     &lt;div&gt;
+>     <div>
 >
->       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+>       <h1>Task: Add a button and handle a click event</h1>
 >
->       &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+>       <button onClick={handleClick}>Guess the number between 1 and 3</button>
 >
->     &lt;/div&gt;
+>     </div>
 >
 >   );
 >
@@ -5962,7 +5981,7 @@ the UI.
 >
 >     return (
 >
->         &lt;Puppy name=&quot;Max&quot; bowlShape=&quot;square&quot; bowlStatus=&quot;full&quot; /&gt;
+>         <Puppy name=&quot;Max&quot; bowlShape=&quot;square&quot; bowlStatus=&quot;full&quot; />
 >
 >     );
 >
@@ -5974,11 +5993,11 @@ the UI.
 >
 >     return (
 >
->         &lt;div&gt;
+>         <div>
 >
->             {props.name} has &lt;Bowl bowlShape=&quot;square&quot; bowlStatus=&quot;full&quot; /&gt;
+>             {props.name} has <Bowl bowlShape=&quot;square&quot; bowlStatus=&quot;full&quot; />
 >
->         &lt;/div&gt;
+>         </div>
 >
 >     );
 >
@@ -5990,11 +6009,11 @@ the UI.
 >
 >     return (
 >
->         &lt;span&gt;
+>         <span>
 >
 >             {props.bowlShape}-shaped bowl, and it&apos;s currently {props.bowlStatus}
 >
->         &lt;/span&gt;
+>         </span>
 >
 >     );
 >
@@ -6158,19 +6177,19 @@ Let&apos;s discuss the below example.
 >
 >   return ( 
 >
->     &lt;&gt; 
+>     <> 
 >
->       &lt;input value={inputText} onChange={handleChange} /&gt; 
+>       <input value={inputText} onChange={handleChange} /> 
 >
->       &lt;p&gt;You typed: {inputText}&lt;/p&gt; 
+>       <p>You typed: {inputText}</p> 
 >
->       &lt;button onClick={() =&gt; setText(&apos;hello&apos;)}&gt; 
+>       <button onClick={() => setText(&apos;hello&apos;)}> 
 >
 >         Reset 
 >
->       &lt;/button&gt; 
+>       </button> 
 >
->     &lt;/&gt; 
+>     </> 
 >
 >   ); 
 >
@@ -6259,17 +6278,17 @@ height="2.4791666666666665in"}
 >
 >   return ( 
 >
->     &lt;&gt; 
+>     <> 
 >
->       &lt;label&gt; 
+>       <label> 
 >
 >         First name: 
 >
->         &lt;input 
+>         <input 
 >
 >           value={form.firstName} 
 >
->           onChange={e =&gt; { 
+>           onChange={e => { 
 >
 >             setForm({ 
 >
@@ -6281,19 +6300,19 @@ height="2.4791666666666665in"}
 >
 >           }} 
 >
->         /&gt; 
+>         /> 
 >
->       &lt;/label&gt; 
+>       </label> 
 >
->       &lt;label&gt; 
+>       <label> 
 >
 >         Last name: 
 >
->         &lt;input 
+>         <input 
 >
 >           value={form.lastName} 
 >
->           onChange={e =&gt; { 
+>           onChange={e => { 
 >
 >             setForm({ 
 >
@@ -6305,19 +6324,19 @@ height="2.4791666666666665in"}
 >
 >           }} 
 >
->         /&gt; 
+>         /> 
 >
->       &lt;/label&gt; 
+>       </label> 
 >
->       &lt;label&gt; 
+>       <label> 
 >
 >         Email: 
 >
->         &lt;input 
+>         <input 
 >
 >           value={form.email} 
 >
->           onChange={e =&gt; { 
+>           onChange={e => { 
 
 Notice that you are using a **form** object to store the state of all
 three text input field values:
@@ -6356,7 +6375,7 @@ The **ref** object has a property named **current**.
 >
 >   const inputEl = useRef(null);
 >
->   const onButtonClick = () =&gt; {
+>   const onButtonClick = () => {
 >
 >     // \`current\` points to the mounted text input element
 >
@@ -6366,13 +6385,13 @@ The **ref** object has a property named **current**.
 >
 >   return (
 >
->     &lt;&gt;
+>     <>
 >
->       &lt;input ref={inputEl} type=&quot;text&quot; /&gt;
+>       <input ref={inputEl} type=&quot;text&quot; />
 >
->       &lt;button onClick={onButtonClick}&gt;Focus the input&lt;/button&gt;
+>       <button onClick={onButtonClick}>Focus the input</button>
 >
->     &lt;/&gt;
+>     </>
 >
 >   );
 >
@@ -6485,7 +6504,7 @@ React components are JavaScript functions that return markup:
 
 #  return (
 
-#  &lt;button&gt;I&apos;m a button&lt;/button&gt;
+#  <button>I&apos;m a button</button>
 
 #  );
 
@@ -6498,35 +6517,35 @@ component:
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;h1&gt;Welcome to my app&lt;/h1&gt;
+> <h1>Welcome to my app</h1>
 >
-> &lt;MyButton /&gt;
+> <MyButton />
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
 > }
 
-Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
+Notice that <MyButton /> starts with a capital letter. That's how you
 know it's a React component. React component names must always start
 with a capital letter, while HTML tags must be lowercase.
 
 Have a look at the result:
 
-## App.js
+#### App.js
 
 > function MyButton() {
 >
 > return (
 >
-> &lt;button&gt;
+> <button>
 >
 > I&apos;m a button
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -6536,13 +6555,13 @@ Have a look at the result:
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;h1&gt;Welcome to my app&lt;/h1&gt;
+> <h1>Welcome to my app</h1>
 >
-> &lt;MyButton /&gt;
+> <MyButton />
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -6561,22 +6580,22 @@ most React projects use JSX for its convenience. All of the [tools we
 recommend for local development](https://react.dev/learn/installation)
 support JSX out of the box.
 
-JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
+JSX is stricter than HTML. You have to close tags like <br />. Your
 component also can't return multiple JSX tags. You have to wrap them
-into a shared parent, like a &lt;div&gt;\...&lt;/div&gt; or an empty
-&lt;&gt;\...&lt;/&gt; wrapper:
+into a shared parent, like a <div>\...</div> or an empty
+<>\...</> wrapper:
 
 > function AboutPage() {
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;h1&gt;About&lt;/h1&gt;
+> <h1>About</h1>
 >
-> &lt;p&gt;Hello there.&lt;br /&gt;How do you do?&lt;/p&gt;
+> <p>Hello there.<br />How do you do?</p>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -6592,7 +6611,7 @@ as the HTML
 [[class]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)
 attribute:
 
-> &lt;img className=&quot;avatar&quot; /&gt;
+> <img className=&quot;avatar&quot; />
 
 Then you write the CSS rules for it in a separate CSS file:
 
@@ -6606,7 +6625,7 @@ Then you write the CSS rules for it in a separate CSS file:
 
 React does not prescribe how you add CSS files. In the simplest case,
 you'll add a
-[[&lt;link&gt;]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
+[[<link>]{.underline}](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 tag to your HTML. If you use a build tool or a framework, consult its
 documentation to learn how to add a CSS file to your project.
 
@@ -6618,11 +6637,11 @@ and display it to the user. For example, this will display user.name:
 
 > return (
 >
-> &lt;h1&gt;
+> <h1>
 >
 > {user.name}
 >
-> &lt;/h1&gt;
+> </h1>
 >
 > );
 
@@ -6634,13 +6653,13 @@ value as the src attribute:
 
 > return (
 >
-> &lt;img
+> <img
 >
 > className=&quot;avatar&quot;
 >
 > src={user.imageUrl}
 >
-> /&gt;
+> />
 >
 > );
 
@@ -6648,7 +6667,7 @@ You can put more complex expressions inside the JSX curly braces too,
 for example, [string
 concatenation](https://javascript.info/operators#string-concatenation-with-binary):
 
-## App.js
+#### App.js
 
 > const user = {
 >
@@ -6664,11 +6683,11 @@ concatenation](https://javascript.info/operators#string-concatenation-with-binar
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;h1&gt;{user.name}&lt;/h1&gt;
+> <h1>{user.name}</h1>
 >
-> &lt;img
+> <img
 >
 > className=&quot;avatar&quot;
 >
@@ -6684,9 +6703,9 @@ concatenation](https://javascript.info/operators#string-concatenation-with-binar
 >
 > }}
 >
-> /&gt;
+> />
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -6708,21 +6727,21 @@ statement to conditionally include JSX:
 >
 > if (isLoggedIn) {
 >
-> content = &lt;AdminPanel /&gt;;
+> content = <AdminPanel />;
 >
 > } else {
 >
-> content = &lt;LoginForm /&gt;;
+> content = <LoginForm />;
 >
 > }
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
 > {content}
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 
@@ -6730,29 +6749,29 @@ If you prefer more compact code, you can use the [conditional ?
 operator.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 Unlike if, it works inside JSX:
 
-> &lt;div&gt;
+> <div>
 >
 > {isLoggedIn ? (
 >
-> &lt;AdminPanel /&gt;
+> <AdminPanel />
 >
 > ) : (
 >
-> &lt;LoginForm /&gt;
+> <LoginForm />
 >
 > )}
 >
-> &lt;/div&gt;
+> </div>
 
 When you don't need the else branch, you can also use a shorter [logical
 &&
 syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation):
 
-> &lt;div&gt;
+> <div>
 >
-> {isLoggedIn && &lt;AdminPanel /&gt;}
+> {isLoggedIn && <AdminPanel />}
 >
-> &lt;/div&gt;
+> </div>
 
 All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
@@ -6779,31 +6798,31 @@ For example, let's say you have an array of products:
 > &rsqb;;
 
 Inside your component, use the map() function to transform an array of
-products into an array of &lt;li&gt; items:
+products into an array of <li> items:
 
-> const listItems = products.map(product =&gt;
+> const listItems = products.map(product =>
 >
-> &lt;li key={product.id}&gt;
+> <li key={product.id}>
 >
 > {product.title}
 >
-> &lt;/li&gt;
+> </li>
 >
 > );
 >
 > return (
 >
-> &lt;ul&gt;{listItems}&lt;/ul&gt;
+> <ul>{listItems}</ul>
 >
 > );
 
-Notice how &lt;li&gt; has a key attribute. For each item in a list, you
+Notice how <li> has a key attribute. For each item in a list, you
 should pass a string or a number that uniquely identifies that item
 among its siblings. Usually, a key should be coming from your data, such
 as a database ID. React uses your keys to know what happened if you
 later insert, delete, or reorder the items.
 
-## App.js
+#### App.js
 
 > const products = &lsqb;
 >
@@ -6817,9 +6836,9 @@ later insert, delete, or reorder the items.
 >
 > export default function ShoppingList() {
 >
-> const listItems = products.map(product =&gt;
+> const listItems = products.map(product =>
 >
-> &lt;li
+> <li
 >
 > key={product.id}
 >
@@ -6829,17 +6848,17 @@ later insert, delete, or reorder the items.
 >
 > }}
 >
-> &gt;
+> >
 >
 > {product.title}
 >
-> &lt;/li&gt;
+> </li>
 >
 > );
 >
 > return (
 >
-> &lt;ul&gt;{listItems}&lt;/ul&gt;
+> <ul>{listItems}</ul>
 >
 > );
 >
@@ -6860,11 +6879,11 @@ your components:
 >
 > return (
 >
-> &lt;button onClick={handleClick}&gt;
+> <button onClick={handleClick}>
 >
 > Click me
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -6912,11 +6931,11 @@ counter:
 >
 > return (
 >
-> &lt;button onClick={handleClick}&gt;
+> <button onClick={handleClick}>
 >
 > Clicked {count} times
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -6928,7 +6947,7 @@ be 1. Then it will be 2. And so on.
 If you render the same component multiple times, each will get its own
 state. Click each button separately:
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -6936,15 +6955,15 @@ state. Click each button separately:
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;h1&gt;Counters that update separately&lt;/h1&gt;
+> <h1>Counters that update separately</h1>
 >
-> &lt;MyButton /&gt;
+> <MyButton />
 >
-> &lt;MyButton /&gt;
+> <MyButton />
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -6962,11 +6981,11 @@ state. Click each button separately:
 >
 > return (
 >
-> &lt;button onClick={handleClick}&gt;
+> <button onClick={handleClick}>
 >
 > Clicked {count} times
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -7052,15 +7071,15 @@ First, move the state up from MyButton into MyApp:
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;h1&gt;Counters that update separately&lt;/h1&gt;
+> <h1>Counters that update separately</h1>
 >
-> &lt;MyButton /&gt;
+> <MyButton />
 >
-> &lt;MyButton /&gt;
+> <MyButton />
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -7075,7 +7094,7 @@ First, move the state up from MyButton into MyApp:
 Then, pass the state down from MyApp to each MyButton, together with the
 shared click handler. You can pass information to MyButton using the JSX
 curly braces, just like you previously did with built-in tags like
-&lt;img&gt;:
+<img>:
 
 > export default function MyApp() {
 >
@@ -7089,15 +7108,15 @@ curly braces, just like you previously did with built-in tags like
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;h1&gt;Counters that update together&lt;/h1&gt;
+> <h1>Counters that update together</h1>
 >
-> &lt;MyButton count={count} onClick={handleClick} /&gt;
+> <MyButton count={count} onClick={handleClick} />
 >
-> &lt;MyButton count={count} onClick={handleClick} /&gt;
+> <MyButton count={count} onClick={handleClick} />
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -7114,11 +7133,11 @@ parent component:
 >
 > return (
 >
-> &lt;button onClick={onClick}&gt;
+> <button onClick={onClick}>
 >
 > Clicked {count} times
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -7132,7 +7151,7 @@ a prop to each button, so they all show the new value. This is called
 "lifting state up". By moving state up, you've shared it between
 components.
 
-## App.js
+#### App.js
 
 Top of Form
 
@@ -7154,15 +7173,15 @@ Fork
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;h1&gt;Counters that update together&lt;/h1&gt;
+> <h1>Counters that update together</h1>
 >
-> &lt;MyButton count={count} onClick={handleClick} /&gt;
+> <MyButton count={count} onClick={handleClick} />
 >
-> &lt;MyButton count={count} onClick={handleClick} /&gt;
+> <MyButton count={count} onClick={handleClick} />
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -7172,11 +7191,11 @@ Fork
 >
 > return (
 >
-> &lt;button onClick={onClick}&gt;
+> <button onClick={onClick}>
 >
 > Clicked {count} times
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -7220,7 +7239,7 @@ React.
 
 You can see what it will look like when you're finished here:
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -7228,11 +7247,11 @@ You can see what it will look like when you're finished here:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -7280,22 +7299,22 @@ You can see what it will look like when you're finished here:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+> <div className=&quot;status&quot;>{status}</div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} onSquareClick={() =&gt; handleClick(1)}
-> /&gt;
+> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} onSquareClick={() =&gt; handleClick(2)}
-> /&gt;
+> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 
 If the code doesn't make sense to you yet, or if you are unfamiliar with
 the code's syntax, don't worry! The goal of this tutorial is to help you
@@ -7319,11 +7338,11 @@ lets you write code in your browser and preview how your users will see
 the app you've created. The new tab should display an empty square and
 the starter code for this tutorial.
 
-## App.js
+#### App.js
 
 > export default function Square() {
 >
-> return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+> return <button className=&quot;square&quot;>X</button>;
 >
 > }
 
@@ -7335,7 +7354,7 @@ environment. To do this, you need to:
 1.  Install [Node.js](https://nodejs.org/en/)
 
 2.  In the CodeSandbox tab you opened earlier, press the top-left corner
-    button to open the menu, and then choose File &gt; Export to ZIP in
+    button to open the menu, and then choose File > Export to ZIP in
     that menu to download an archive of the files locally
 
 3.  Unzip the archive, then open a terminal and cd to the directory you
@@ -7374,7 +7393,7 @@ of that file in the *code editor* should be:
 
 > export default function Square() {
 >
-> return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+> return <button className=&quot;square&quot;>X</button>;
 >
 > }
 
@@ -7386,7 +7405,7 @@ height="0.9583333333333334in"}
 
 Now let's have a look at the files in the starter code.
 
-## App.js 
+#### App.js 
 
 The code in App.js creates a *component*. In React, a component is a
 piece of reusable code that represents a part of a user interface.
@@ -7396,7 +7415,7 @@ going on:
 
 > export default function Square() {
 >
-> return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+> return <button className=&quot;square&quot;>X</button>;
 >
 > }
 
@@ -7407,17 +7426,17 @@ your file.
 
 > export default function Square() {
 >
-> return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;;
+> return <button className=&quot;square&quot;>X</button>;
 >
 > }
 
 The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
-function. &lt;button&gt; is a *JSX element*. A JSX element is a combination
+function. <button> is a *JSX element*. A JSX element is a combination
 of JavaScript code and HTML tags that describes what you'd like to
 display. className=&quot;square&quot; is a button property or *prop* that tells
 CSS how to style the button. X is the text displayed inside of the
-button and &lt;/button&gt; closes the JSX element to indicate that any
+button and </button> closes the JSX element to indicate that any
 following content shouldn't be placed inside the button.
 
 > styles.css 
@@ -7467,8 +7486,8 @@ just try and copy paste your square to make two squares like this:
 
 > export default function Square() {
 >
-> return &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;&lt;button
-> className=&quot;square&quot;&gt;X&lt;/button&gt;;
+> return <button className=&quot;square&quot;>X</button><button
+> className=&quot;square&quot;>X</button>;
 >
 > }
 
@@ -7477,24 +7496,24 @@ You'll get this error:
 ## Console
 
 /src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
-Did you want a JSX fragment &lt;&gt;\...&lt;/&gt;?
+Did you want a JSX fragment <>\...</>?
 
 React components need to return a single JSX element and not multiple
 adjacent JSX elements like two buttons. To fix this you can use
-fragments (&lt;&gt; and &lt;/&gt;) to wrap multiple adjacent JSX elements like
+fragments (<> and </>) to wrap multiple adjacent JSX elements like
 this:
 
 > export default function Square() {
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;
+> <button className=&quot;square&quot;>X</button>
 >
-> &lt;button className=&quot;square&quot;&gt;X&lt;/button&gt;
+> <button className=&quot;square&quot;>X</button>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7523,39 +7542,39 @@ In the App.js file, update the Square component to look like this:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;
+> <button className=&quot;square&quot;>1</button>
 >
-> &lt;button className=&quot;square&quot;&gt;2&lt;/button&gt;
+> <button className=&quot;square&quot;>2</button>
 >
-> &lt;button className=&quot;square&quot;&gt;3&lt;/button&gt;
+> <button className=&quot;square&quot;>3</button>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;button className=&quot;square&quot;&gt;4&lt;/button&gt;
+> <button className=&quot;square&quot;>4</button>
 >
-> &lt;button className=&quot;square&quot;&gt;5&lt;/button&gt;
+> <button className=&quot;square&quot;>5</button>
 >
-> &lt;button className=&quot;square&quot;&gt;6&lt;/button&gt;
+> <button className=&quot;square&quot;>6</button>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 
-&lt;button className=&quot;square&quot;&gt;7&lt;/button&gt;
+<button className=&quot;square&quot;>7</button>
 
-> &lt;button className=&quot;square&quot;&gt;8&lt;/button&gt;
+> <button className=&quot;square&quot;>8</button>
 >
-> &lt;button className=&quot;square&quot;&gt;9&lt;/button&gt;
+> <button className=&quot;square&quot;>9</button>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7579,45 +7598,45 @@ square anymore. Let's fix that by changing the name to Board:
 
 At this point your code should look something like this:
 
-## App.js
+#### App.js
 
 > export default function Board() {
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;
+> <button className=&quot;square&quot;>1</button>
 >
-> &lt;button className=&quot;square&quot;&gt;2&lt;/button&gt;
+> <button className=&quot;square&quot;>2</button>
 >
-> &lt;button className=&quot;square&quot;&gt;3&lt;/button&gt;
+> <button className=&quot;square&quot;>3</button>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;button className=&quot;square&quot;&gt;4&lt;/button&gt;
+> <button className=&quot;square&quot;>4</button>
 >
-> &lt;button className=&quot;square&quot;&gt;5&lt;/button&gt;
+> <button className=&quot;square&quot;>5</button>
 >
-> &lt;button className=&quot;square&quot;&gt;6&lt;/button&gt;
+> <button className=&quot;square&quot;>6</button>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;button className=&quot;square&quot;&gt;7&lt;/button&gt;
+> <button className=&quot;square&quot;>7</button>
 >
-> &lt;button className=&quot;square&quot;&gt;8&lt;/button&gt;
+> <button className=&quot;square&quot;>8</button>
 >
-> &lt;button className=&quot;square&quot;&gt;9&lt;/button&gt;
+> <button className=&quot;square&quot;>9</button>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7639,12 +7658,12 @@ component architecture allows you to create a reusable component to
 avoid messy, duplicated code.
 
 First, you are going to copy the line defining your first square
-(&lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;) from your Board component
+(<button className=&quot;square&quot;>1</button>) from your Board component
 into a new Square component:
 
 > function Square() {
 >
-> return &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;;
+> return <button className=&quot;square&quot;>1</button>;
 >
 > }
 >
@@ -7663,39 +7682,39 @@ using JSX syntax:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7718,7 +7737,7 @@ the **Board:**
 
 > function Square({ value }) {
 >
-> return &lt;button className=&quot;square&quot;&gt;1&lt;/button&gt;;
+> return <button className=&quot;square&quot;>1</button>;
 >
 > }
 
@@ -7730,7 +7749,7 @@ doing it like this:
 
 > function Square({ value }) {
 >
-> return &lt;button className=&quot;square&quot;&gt;value&lt;/button&gt;;
+> return <button className=&quot;square&quot;>value</button>;
 >
 > }
 
@@ -7745,7 +7764,7 @@ you need curly braces. Add curly braces around value in JSX like so:
 
 > function Square({ value }) {
 >
-> return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+> return <button className=&quot;square&quot;>{value}</button>;
 >
 > }
 
@@ -7762,39 +7781,39 @@ each Square component rendered by the Board component:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value=&quot;1&quot; /&gt;
+> <Square value=&quot;1&quot; />
 >
-> &lt;Square value=&quot;2&quot; /&gt;
+> <Square value=&quot;2&quot; />
 >
-> &lt;Square value=&quot;3&quot; /&gt;
+> <Square value=&quot;3&quot; />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value=&quot;4&quot; /&gt;
+> <Square value=&quot;4&quot; />
 >
-> &lt;Square value=&quot;5&quot; /&gt;
+> <Square value=&quot;5&quot; />
 >
-> &lt;Square value=&quot;6&quot; /&gt;
+> <Square value=&quot;6&quot; />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value=&quot;7&quot; /&gt;
+> <Square value=&quot;7&quot; />
 >
-> &lt;Square value=&quot;8&quot; /&gt;
+> <Square value=&quot;8&quot; />
 >
-> &lt;Square value=&quot;9&quot; /&gt;
+> <Square value=&quot;9&quot; />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7807,7 +7826,7 @@ Now you should see a grid of numbers again:
 
 Your updated code should look like this:
 
-## App.js
+#### App.js
 
 Top of Form
 
@@ -7815,7 +7834,7 @@ Bottom of Form
 
 > function Square({ value }) {
 >
-> return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+> return <button className=&quot;square&quot;>{value}</button>;
 >
 > }
 >
@@ -7823,39 +7842,39 @@ Bottom of Form
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value=&quot;1&quot; /&gt;
+> <Square value=&quot;1&quot; />
 >
-> &lt;Square value=&quot;2&quot; /&gt;
+> <Square value=&quot;2&quot; />
 >
-> &lt;Square value=&quot;3&quot; /&gt;
+> <Square value=&quot;3&quot; />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value=&quot;4&quot; /&gt;
+> <Square value=&quot;4&quot; />
 >
-> &lt;Square value=&quot;5&quot; /&gt;
+> <Square value=&quot;5&quot; />
 >
-> &lt;Square value=&quot;6&quot; /&gt;
+> <Square value=&quot;6&quot; />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value=&quot;7&quot; /&gt;
+> <Square value=&quot;7&quot; />
 >
-> &lt;Square value=&quot;8&quot; /&gt;
+> <Square value=&quot;8&quot; />
 >
-> &lt;Square value=&quot;9&quot; /&gt;
+> <Square value=&quot;9&quot; />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7877,17 +7896,17 @@ the props of the button JSX element returned from the Square:
 >
 > return (
 >
-> &lt;button
+> <button
 >
 > className=&quot;square&quot;
 >
 > onClick={handleClick}
 >
-> &gt;
+> >
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -7944,39 +7963,39 @@ the Board component:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -7998,24 +8017,24 @@ Square component looks like this:
 >
 > return (
 >
-> &lt;button
+> <button
 >
 > className=&quot;square&quot;
 >
 > onClick={handleClick}
 >
-> &gt;
+> >
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
 > }
 
 By calling this set function from an onClick handler, you're telling
-React to re-render that Square whenever its &lt;button&gt; is clicked. After
+React to re-render that Square whenever its <button> is clicked. After
 the update, the Square's value will be &apos;X&apos;, so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:
 
@@ -8028,7 +8047,7 @@ component, React automatically updates the child components inside too.
 
 After you've made the above changes, your code will look like this:
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -8044,17 +8063,17 @@ After you've made the above changes, your code will look like this:
 >
 > return (
 >
-> &lt;button
+> <button
 >
 > className=&quot;square&quot;
 >
 > onClick={handleClick}
 >
-> &gt;
+> >
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -8064,35 +8083,35 @@ After you've made the above changes, your code will look like this:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 >
-> &lt;Square /&gt;
+> <Square />
 
 ## React Developer Tools 
 
@@ -8185,39 +8204,39 @@ Square that it renders:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} /&gt;
+> <Square value={squares&lsqb;0&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} /&gt;
+> <Square value={squares&lsqb;1&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} /&gt;
+> <Square value={squares&lsqb;2&rsqb;} />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;3&rsqb;} /&gt;
+> <Square value={squares&lsqb;3&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;4&rsqb;} /&gt;
+> <Square value={squares&lsqb;4&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;5&rsqb;} /&gt;
+> <Square value={squares&lsqb;5&rsqb;} />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;6&rsqb;} /&gt;
+> <Square value={squares&lsqb;6&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;7&rsqb;} /&gt;
+> <Square value={squares&lsqb;7&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;8&rsqb;} /&gt;
+> <Square value={squares&lsqb;8&rsqb;} />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -8229,7 +8248,7 @@ own stateful tracking of value and the button's onClick prop:
 
 > function Square({value}) {
 >
-> return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+> return <button className=&quot;square&quot;>{value}</button>;
 >
 > }
 
@@ -8240,7 +8259,7 @@ height="1.964912510936133in"}
 
 And your code should look like this:
 
-### App.js
+#### App.js
 
 Top of Form
 
@@ -8250,7 +8269,7 @@ Bottom of Form
 >
 > function Square({ value }) {
 >
-> return &lt;button className=&quot;square&quot;&gt;{value}&lt;/button&gt;;
+> return <button className=&quot;square&quot;>{value}</button>;
 >
 > }
 >
@@ -8260,39 +8279,39 @@ Bottom of Form
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} /&gt;
+> <Square value={squares&lsqb;0&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} /&gt;
+> <Square value={squares&lsqb;1&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} /&gt;
+> <Square value={squares&lsqb;2&rsqb;} />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;3&rsqb;} /&gt;
+> <Square value={squares&lsqb;3&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;4&rsqb;} /&gt;
+> <Square value={squares&lsqb;4&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;5&rsqb;} /&gt;
+> <Square value={squares&lsqb;5&rsqb;} />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;6&rsqb;} /&gt;
+> <Square value={squares&lsqb;6&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;7&rsqb;} /&gt;
+> <Square value={squares&lsqb;7&rsqb;} />
 >
-> &lt;Square value={squares&lsqb;8&rsqb;} /&gt;
+> <Square value={squares&lsqb;8&rsqb;} />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -8317,11 +8336,11 @@ onSquareClick:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -8334,11 +8353,11 @@ props:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -8355,11 +8374,11 @@ first Square component:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={handleClick} /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={handleClick} />
 >
 > //\...
 >
@@ -8443,7 +8462,7 @@ Next, you will need to pass that i to handleClick. You could try to set
 the onSquareClick prop of square to be handleClick(0) directly in the
 JSX like this, but it won't work:
 
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={handleClick(0)} /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={handleClick(0)} />
 
 Here is why this doesn't work. The handleClick(0) call will be a part of
 rendering the board component. Because handleClick(0) alters the state
@@ -8479,12 +8498,12 @@ name is too verbose. Instead, let's do this:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
 > // \...
 >
@@ -8492,9 +8511,9 @@ name is too verbose. Instead, let's do this:
 >
 > }
 
-Notice the new () =&gt; syntax. Here, () =&gt; handleClick(0) is an *arrow
+Notice the new () => syntax. Here, () => handleClick(0) is an *arrow
 function,* which is a shorter way to define functions. When the square
-is clicked, the code after the =&gt; "arrow" will run, calling
+is clicked, the code after the => "arrow" will run, calling
 handleClick(0).
 
 Now you need to update the other eight squares to call handleClick from
@@ -8507,48 +8526,48 @@ of the handleClick corresponds to the index of the correct square:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} onSquareClick={() =&gt; handleClick(1)}
-> /&gt;
+> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} onSquareClick={() =&gt; handleClick(2)}
-> /&gt;
+> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;3&rsqb;} onSquareClick={() =&gt; handleClick(3)}
-> /&gt;
+> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
+> />
 >
-> &lt;Square value={squares&lsqb;4&rsqb;} onSquareClick={() =&gt; handleClick(4)}
-> /&gt;
+> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
+> />
 >
-> &lt;Square value={squares&lsqb;5&rsqb;} onSquareClick={() =&gt; handleClick(5)}
-> /&gt;
+> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;6&rsqb;} onSquareClick={() =&gt; handleClick(6)}
-> /&gt;
+> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> />
 >
-> &lt;Square value={squares&lsqb;7&rsqb;} onSquareClick={() =&gt; handleClick(7)}
-> /&gt;
+> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> />
 >
-> &lt;Square value={squares&lsqb;8&rsqb;} onSquareClick={() =&gt; handleClick(8)}
-> /&gt;
+> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -8565,7 +8584,7 @@ component!
 
 This is what your code should look like:
 
-## App.js
+#### App.js
 
 > Top of Form
 >
@@ -8577,11 +8596,11 @@ This is what your code should look like:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -8603,46 +8622,46 @@ This is what your code should look like:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} onSquareClick={() =&gt; handleClick(1)}
-> /&gt;
+> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} onSquareClick={() =&gt; handleClick(2)}
-> /&gt;
+> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;3&rsqb;} onSquareClick={() =&gt; handleClick(3)}
-> /&gt;
+> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
+> />
 >
-> &lt;Square value={squares&lsqb;4&rsqb;} onSquareClick={() =&gt; handleClick(4)}
-> /&gt;
+> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
+> />
 >
-> &lt;Square value={squares&lsqb;5&rsqb;} onSquareClick={() =&gt; handleClick(5)}
-> /&gt;
+> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;6&rsqb;} onSquareClick={() =&gt; handleClick(6)}
-> /&gt;
+> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> />
 >
-> &lt;Square value={squares&lsqb;7&rsqb;} onSquareClick={() =&gt; handleClick(7)}
-> /&gt;
+> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> />
 >
-> &lt;Square value={squares&lsqb;8&rsqb;} onSquareClick={() =&gt; handleClick(8)}
-> /&gt;
+> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 
 Now that your state handling is in the Board component, the parent Board
 component passes props to the child Square components so that they can
@@ -8676,7 +8695,7 @@ empty to having a X after clicking it.
 
 ## Note
 
-The DOM &lt;button&gt; element's onClick attribute has a special meaning to
+The DOM <button> element's onClick attribute has a special meaning to
 React because it is a built-in component. For custom components like
 Square, the naming is up to you. You could give any name to the Square's
 onSquareClick prop or Board's handleClick function, and the code would
@@ -8831,7 +8850,7 @@ early---before it tries to update the board state.
 Now you can only add X's or O's to empty squares! Here is what your code
 should look like at this point:
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -8839,11 +8858,11 @@ should look like at this point:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -8883,22 +8902,22 @@ should look like at this point:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} onSquareClick={() =&gt; handleClick(1)}
-> /&gt;
+> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} onSquareClick={() =&gt; handleClick(2)}
-> /&gt;
+> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 
 ## Declaring a winner 
 
@@ -8937,7 +8956,7 @@ it's not specific to React:
 >
 > &rsqb;;
 >
-> for (let i = 0; i &lt; lines.length; i++) {
+> for (let i = 0; i < lines.length; i++) {
 >
 > const &lsqb;a, b, c&rsqb; = lines&lsqb;i&rsqb;;
 >
@@ -9005,11 +9024,11 @@ next:
 >
 > return (
 >
-> &lt;div&gt;
+> <div>
 >
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+> <div className=&quot;status&quot;>{status}</div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
 > // \...
 >
@@ -9021,7 +9040,7 @@ Congratulations! You now have a working tic-tac-toe game. And you've
 just learned the basics of React too. So, you are the real winner here.
 Here is what the code should look like:
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -9029,11 +9048,11 @@ Here is what the code should look like:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -9087,50 +9106,50 @@ Here is what the code should look like:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+> <div className=&quot;status&quot;>{status}</div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} onSquareClick={() =&gt; handleClick(1)}
-> /&gt;
+> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} onSquareClick={() =&gt; handleClick(2)}
-> /&gt;
+> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;3&rsqb;} onSquareClick={() =&gt; handleClick(3)}
-> /&gt;
+> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
+> />
 >
-> &lt;Square value={squares&lsqb;4&rsqb;} onSquareClick={() =&gt; handleClick(4)}
-> /&gt;
+> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
+> />
 >
-> &lt;Square value={squares&lsqb;5&rsqb;} onSquareClick={() =&gt; handleClick(5)}
-> /&gt;
+> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;6&rsqb;} onSquareClick={() =&gt; handleClick(6)}
-> /&gt;
+> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> />
 >
-> &lt;Square value={squares&lsqb;7&rsqb;} onSquareClick={() =&gt; handleClick(7)}
-> /&gt;
+> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> />
 >
-> &lt;Square value={squares&lsqb;8&rsqb;} onSquareClick={() =&gt; handleClick(8)}
-> /&gt;
+> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -9158,7 +9177,7 @@ Here is what the code should look like:
 >
 > &rsqb;;
 >
-> for (let i = 0; i &lt; lines.length; i++) {
+> for (let i = 0; i < lines.length; i++) {
 >
 > const &lsqb;a, b, c&rsqb; = lines&lsqb;i&rsqb;;
 >
@@ -9239,21 +9258,21 @@ Board component and some markup:
 >
 > return (
 >
-> &lt;div className=&quot;game&quot;&gt;
+> <div className=&quot;game&quot;>
 >
-> &lt;div className=&quot;game-board&quot;&gt;
+> <div className=&quot;game-board&quot;>
 >
-> &lt;Board /&gt;
+> <Board />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;game-info&quot;&gt;
+> <div className=&quot;game-info&quot;>
 >
-> &lt;ol&gt;{/\*TODO\*/}&lt;/ol&gt;
+> <ol>{/\*TODO\*/}</ol>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -9314,12 +9333,12 @@ currentSquares and handlePlay as props to the Board component:
 >
 > return (
 >
-> &lt;div className=&quot;game&quot;&gt;
+> <div className=&quot;game&quot;>
 >
-> &lt;div className=&quot;game-board&quot;&gt;
+> <div className=&quot;game-board&quot;>
 >
-> &lt;Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
-> /&gt;
+> <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+> />
 >
 > //\...
 >
@@ -9425,7 +9444,7 @@ At this point, you've moved the state to live in the Game component, and
 the UI should be fully working, just as it was before the refactor. Here
 is what the code should look like at this point:
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -9433,11 +9452,11 @@ is what the code should look like at this point:
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -9485,18 +9504,18 @@ is what the code should look like at this point:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+> <div className=&quot;status&quot;>{status}</div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 
 ## Showing the past moves 
 
 Since you are recording the tic-tac-toe game's history, you can now
 display a list of past moves to the player.
 
-React elements like &lt;button&gt; are regular JavaScript objects; you can
+React elements like <button> are regular JavaScript objects; you can
 pass them around in your application. To render multiple items in React,
 you can use an array of React elements.
 
@@ -9505,7 +9524,7 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-> &lsqb;1, 2, 3&rsqb;.map((x) =&gt; x \* 2) // &lsqb;2, 4, 6&rsqb;
+> &lsqb;1, 2, 3&rsqb;.map((x) => x \* 2) // &lsqb;2, 4, 6&rsqb;
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
@@ -9533,11 +9552,11 @@ representing buttons on the screen, and display a list of buttons to
 >
 > }
 >
-> const moves = history.map((squares, move) =&gt; {
+> const moves = history.map((squares, move) => {
 >
 > let description;
 >
-> if (move &gt; 0) {
+> if (move > 0) {
 >
 > description = &apos;Go to move #&apos; + move;
 >
@@ -9549,11 +9568,11 @@ representing buttons on the screen, and display a list of buttons to
 >
 > return (
 >
-> &lt;li&gt;
+> <li>
 >
-> &lt;button onClick={() =&gt; jumpTo(move)}&gt;{description}&lt;/button&gt;
+> <button onClick={() => jumpTo(move)}>{description}</button>
 >
-> &lt;/li&gt;
+> </li>
 >
 > );
 >
@@ -9561,22 +9580,22 @@ representing buttons on the screen, and display a list of buttons to
 >
 > return (
 >
-> &lt;div className=&quot;game&quot;&gt;
+> <div className=&quot;game&quot;>
 >
-> &lt;div className=&quot;game-board&quot;&gt;
+> <div className=&quot;game-board&quot;>
 >
-> &lt;Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
-> /&gt;
+> <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;game-info&quot;&gt;
+> <div className=&quot;game-info&quot;>
 >
-> &lt;ol&gt;{moves}&lt;/ol&gt;
+> <ol>{moves}</ol>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -9588,7 +9607,7 @@ child in an array or iterator should have a unique &quot;key&quot; prop. Check
 the render method of \`Game\`. You'll fix this error in the next
 section.
 
-## App.js
+#### App.js
 
 > import { useState } from &apos;react&apos;;
 >
@@ -9596,11 +9615,11 @@ section.
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -9648,50 +9667,50 @@ section.
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+> <div className=&quot;status&quot;>{status}</div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;0&rsqb;} onSquareClick={() =&gt; handleClick(0)}
-> /&gt;
+> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> />
 >
-> &lt;Square value={squares&lsqb;1&rsqb;} onSquareClick={() =&gt; handleClick(1)}
-> /&gt;
+> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> />
 >
-> &lt;Square value={squares&lsqb;2&rsqb;} onSquareClick={() =&gt; handleClick(2)}
-> /&gt;
+> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;3&rsqb;} onSquareClick={() =&gt; handleClick(3)}
-> /&gt;
+> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
+> />
 >
-> &lt;Square value={squares&lsqb;4&rsqb;} onSquareClick={() =&gt; handleClick(4)}
-> /&gt;
+> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
+> />
 >
-> &lt;Square value={squares&lsqb;5&rsqb;} onSquareClick={() =&gt; handleClick(5)}
-> /&gt;
+> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
 >
-> &lt;Square value={squares&lsqb;6&rsqb;} onSquareClick={() =&gt; handleClick(6)}
-> /&gt;
+> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> />
 >
-> &lt;Square value={squares&lsqb;7&rsqb;} onSquareClick={() =&gt; handleClick(7)}
-> /&gt;
+> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> />
 >
-> &lt;Square value={squares&lsqb;8&rsqb;} onSquareClick={() =&gt; handleClick(8)}
-> /&gt;
+> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/&gt;
+> </>
 >
 > );
 >
@@ -9719,11 +9738,11 @@ section.
 >
 > }
 >
-> const moves = history.map((squares, move) =&gt; {
+> const moves = history.map((squares, move) => {
 >
 > let description;
 >
-> if (move &gt; 0) {
+> if (move > 0) {
 >
 > description = &apos;Go to move #&apos; + move;
 >
@@ -9735,11 +9754,11 @@ section.
 >
 > return (
 >
-> &lt;li&gt;
+> <li>
 >
-> &lt;button onClick={() =&gt; jumpTo(move)}&gt;{description}&lt;/button&gt;
+> <button onClick={() => jumpTo(move)}>{description}</button>
 >
-> &lt;/li&gt;
+> </li>
 >
 > );
 >
@@ -9747,22 +9766,22 @@ section.
 >
 > return (
 >
-> &lt;div className=&quot;game&quot;&gt;
+> <div className=&quot;game&quot;>
 >
-> &lt;div className=&quot;game-board&quot;&gt;
+> <div className=&quot;game-board&quot;>
 >
-> &lt;Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
-> /&gt;
+> <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+> />
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;div className=&quot;game-info&quot;&gt;
+> <div className=&quot;game-info&quot;>
 >
-> &lt;ol&gt;{moves}&lt;/ol&gt;
+> <ol>{moves}</ol>
 >
-> &lt;/div&gt;
+> </div>
 >
-> &lt;/div&gt;
+> </div>
 >
 > );
 >
@@ -9790,7 +9809,7 @@ section.
 >
 > &rsqb;;
 >
-> for (let i = 0; i &lt; lines.length; i++) {
+> for (let i = 0; i < lines.length; i++) {
 >
 > const &lsqb;a, b, c&rsqb; = lines&lsqb;i&rsqb;;
 >
@@ -9814,7 +9833,7 @@ cases, you'd need the actual array elements, but to render a list of
 moves you will only need indexes.)
 
 For each move in the tic-tac-toe game's history, you create a list item
-&lt;li&gt; which contains a button &lt;button&gt;. The button has an onClick
+<li> which contains a button <button>. The button has an onClick
 handler which calls a function called jumpTo (that you haven't
 implemented yet).
 
@@ -9831,17 +9850,17 @@ the list's items.
 
 Imagine transitioning from
 
-> &lt;li&gt;Alexa: 7 tasks left&lt;/li&gt;
+> <li>Alexa: 7 tasks left</li>
 >
-> &lt;li&gt;Ben: 5 tasks left&lt;/li&gt;
+> <li>Ben: 5 tasks left</li>
 >
 > to
 >
-> &lt;li&gt;Ben: 9 tasks left&lt;/li&gt;
+> <li>Ben: 9 tasks left</li>
 >
-> &lt;li&gt;Claudia: 8 tasks left&lt;/li&gt;
+> <li>Claudia: 8 tasks left</li>
 >
-> &lt;li&gt;Alexa: 5 tasks left&lt;/li&gt;
+> <li>Alexa: 5 tasks left</li>
 
 In addition to the updated counts, a human reading this would probably
 say that you swapped Alexa and Ben's ordering and inserted Claudia
@@ -9851,11 +9870,11 @@ list item to differentiate each list item from its siblings. If your
 data was from a database, Alexa, Ben, and Claudia's database IDs could
 be used as keys.
 
-> &lt;li key={user.id}&gt;
->
-> {user.name}: {user.taskCount} tasks left
->
-> &lt;/li&gt;
+```
+<li key={user.id}>
+{user.name}: {user.taskCount} tasks left
+</li>
+```
 
 When a list is re-rendered, React takes each list item's key and
 searches the previous list's items for a matching key. If the current
@@ -9895,90 +9914,62 @@ associated with it: it's the sequential number of the move. Moves will
 never be re-ordered, deleted, or inserted in the middle, so it's safe to
 use the move index as a key.
 
-In the Game function, you can add the key as &lt;li key={move}&gt;, and if
+In the Game function, you can add the key as <li key={move}>, and if
 you reload the rendered game, React's "key" error should disappear:
 
-> const moves = history.map((squares, move) =&gt; {
+> const moves = history.map((squares, move) => {
 >
 > //\...
 >
 > return (
 >
-> &lt;li key={move}&gt;
+> <li key={move}>
 >
-> &lt;button onClick={() =&gt; jumpTo(move)}&gt;{description}&lt;/button&gt;
+> <button onClick={() => jumpTo(move)}>{description}</button>
 >
-> &lt;/li&gt;
+> </li>
 >
-> );
->
-> });
+);
+});
+```
 
-## App.js
+#### App.js
 
-> import { useState } from &apos;react&apos;;
->
-> function Square({ value, onSquareClick }) {
->
-> return (
->
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
->
-> {value}
->
-> &lt;/button&gt;
->
-> );
->
-> }
->
-> function Board({ xIsNext, squares, onPlay }) {
->
-> function handleClick(i) {
->
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
->
-> return;
->
-> }
->
-> const nextSquares = squares.slice();
->
-> if (xIsNext) {
->
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
->
-> } else {
->
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
->
-> }
->
-> onPlay(nextSquares);
->
-> }
->
-> const winner = calculateWinner(squares);
->
-> let status;
->
-> if (winner) {
->
-> status = &apos;Winner: &apos; + winner;
->
-> } else {
->
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
->
-> }
->
-> return (
->
-> &lt;&gt;
->
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
->
-> &lt;div className=&quot;board-row&quot;&gt;
+```
+import { useState } from &apos;react&apos;;
+function Square({ value, onSquareClick }) {
+return (
+<button className=&quot;square&quot; onClick={onSquareClick}>
+ {value}
+ </button>
+);
+}
+function Board({ xIsNext, squares, onPlay }) {
+function handleClick(i) {
+if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+return;
+}
+const nextSquares = squares.slice();
+if (xIsNext) {
+nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+} else {
+nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+}
+onPlay(nextSquares);
+}
+const winner = calculateWinner(squares);
+let status;
+if (winner) {
+status = &apos;Winner: &apos; + winner;
+} else {
+status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+}
+return (
+<>
+<div className=&quot;status&quot;>{status}</div>
+
+<div className=&quot;board-row&quot;>
+```
 
 ## Show more
 
@@ -9986,39 +9977,30 @@ Before you can implement jumpTo, you need the Game component to keep
 track of which step the user is currently viewing. To do this, define a
 new state variable called currentMove, defaulting to 0:
 
-> export default function Game() {
->
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
->
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
->
-> const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
->
-> const currentSquares = history&lsqb;history.length - 1&rsqb;;
->
-> //\...
->
-> }
+```
+export default function Game() {
+const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
+const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
+const currentSquares = history&lsqb;history.length - 1&rsqb;;
+//...
+}
+```
 
 Next, update the jumpTo function inside Game to update that currentMove.
 You'll also set xIsNext to true if the number that you're changing
 currentMove to is even.
 
-> export default function Game() {
->
-> // \...
->
-> function jumpTo(nextMove) {
->
-> setCurrentMove(nextMove);
->
-> setXIsNext(nextMove % 2 === 0);
->
-> }
->
-> //\...
->
-> }
+```
+export default function Game() {
+// ...
+function jumpTo(nextMove) {
+setCurrentMove(nextMove);
+setXIsNext(nextMove % 2 === 0);
+}
+//...
+}
+```
 
 You will now make two changes to the Game's handlePlay function which is
 called when you click on a square.
@@ -10032,105 +10014,72 @@ called when you click on a square.
 -   Each time a move is made, you need to update currentMove to point to
     the latest history entry.
 
-> function handlePlay(nextSquares) {
->
-> const nextHistory = &lsqb;\...history.slice(0, currentMove + 1),
-> nextSquares&rsqb;;
->
-> setHistory(nextHistory);
->
-> setCurrentMove(nextHistory.length - 1);
->
-> setXIsNext(!xIsNext);
->
-> }
+```
+function handlePlay(nextSquares) {
+const nextHistory = &lsqb;\...history.slice(0, currentMove + 1),
+nextSquares&rsqb;;
+setHistory(nextHistory);
+setCurrentMove(nextHistory.length - 1);
+setXIsNext(!xIsNext);
+}
+```
 
 Finally, you will modify the Game component to render the currently
 selected move, instead of always rendering the final move:
 
-> export default function Game() {
->
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
->
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
->
-> const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
->
-> const currentSquares = history&lsqb;currentMove&rsqb;;
->
-> // \...
->
-> }
+```
+export default function Game() {
+const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
+const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
+const currentSquares = history&lsqb;currentMove&rsqb;;
+// ...
+}
+```
 
 If you click on any step in the game's history, the tic-tac-toe board
 should immediately update to show what the board looked like after that
 step occurred.
 
-### App.js
+#### App.js
 
-> import { useState } from &apos;react&apos;;
->
-> function Square({value, onSquareClick}) {
->
-> return (
->
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
->
-> {value}
->
-> &lt;/button&gt;
->
-> );
->
-> }
->
-> function Board({ xIsNext, squares, onPlay }) {
->
-> function handleClick(i) {
->
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
->
-> return;
->
-> }
->
-> const nextSquares = squares.slice();
->
-> if (xIsNext) {
->
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
->
-> } else {
->
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
->
-> }
->
-> onPlay(nextSquares);
->
-> }
->
-> const winner = calculateWinner(squares);
->
-> let status;
->
-> if (winner) {
->
-> status = &apos;Winner: &apos; + winner;
->
-> } else {
->
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
->
-> }
->
-> return (
->
-> &lt;&gt;
->
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
->
-> &lt;div className=&quot;board-row&quot;&gt;
+```
+import { useState } from &apos;react&apos;;
+function Square({value, onSquareClick}) {
+  return (
+    <button className=&quot;square&quot; onClick={onSquareClick}>
+  {value}
+    </button>
+  );
+}
+function Board({ xIsNext, squares, onPlay }) {
+
+function handleClick(i) {
+  if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+    return;
+  }
+    const nextSquares = squares.slice();
+  if (xIsNext) {
+   nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+  } else {
+   nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+  }
+    onPlay(nextSquares);
+}
+const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = &apos;Winner: &apos; + winner;
+  } else {
+    status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+  }
+
+return (
+  <>
+  <div className=&quot;status&quot;>{status}</div>
+  <div className=&quot;board-row&quot;>
+)
+```
 
 ### Show more
 
@@ -10147,6 +10096,7 @@ reduces bugs and makes your code easier to understand. Change Game so
 that it doesn't store xIsNext as a separate state variable and instead
 figures it out based on the currentMove:
 
+```
 > export default function Game() {
 >
 > const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
@@ -10177,6 +10127,7 @@ figures it out based on the currentMove:
 > // \...
 >
 > }
+```
 
 You no longer need the xIsNext state declaration or the calls to
 setXIsNext. Now, there's no chance for xIsNext to get out of sync with
@@ -10200,19 +10151,20 @@ React works.
 
 Check out the final result here:
 
-### App.js
+#### App.js
 
+```
 > import { useState } from &apos;react&apos;;
 >
 > function Square({ value, onSquareClick }) {
 >
 > return (
 >
-> &lt;button className=&quot;square&quot; onClick={onSquareClick}&gt;
+> <button className=&quot;square&quot; onClick={onSquareClick}>
 >
 > {value}
 >
-> &lt;/button&gt;
+> </button>
 >
 > );
 >
@@ -10260,11 +10212,12 @@ Check out the final result here:
 >
 > return (
 >
-> &lt;&gt;
+> <>
 >
-> &lt;div className=&quot;status&quot;&gt;{status}&lt;/div&gt;
+> <div className=&quot;status&quot;>{status}</div>
 >
-> &lt;div className=&quot;board-row&quot;&gt;
+> <div className=&quot;board-row&quot;>
+```
 
 ### Show more
 
@@ -10431,71 +10384,41 @@ by working from components lower down (like ProductRow). In simpler
 examples, it's usually easier to go top-down, and on larger projects,
 it's easier to go bottom-up.
 
-### App.js
+#### App.js
 
-> function ProductCategoryRow({ category }) {
->
-> return (
->
-> &lt;tr&gt;
->
-> &lt;th colSpan=&quot;2&quot;&gt;
->
-> {category}
->
-> &lt;/th&gt;
->
-> &lt;/tr&gt;
->
-> );
->
-> }
->
-> function ProductRow({ product }) {
->
-> const name = product.stocked ? product.name :
->
-> &lt;span style={{ color: &apos;red&apos; }}&gt;
->
-> {product.name}
->
-> &lt;/span&gt;;
->
-> return (
->
-> &lt;tr&gt;
->
-> &lt;td&gt;{name}&lt;/td&gt;
->
-> &lt;td&gt;{product.price}&lt;/td&gt;
->
-> &lt;/tr&gt;
->
-> );
->
-> }
->
-> function ProductTable({ products }) {
->
-> const rows = &lsqb;&rsqb;;
->
-> let lastCategory = null;
->
-> products.forEach((product) =&gt; {
->
-> if (product.category !== lastCategory) {
->
-> rows.push(
->
-> &lt;ProductCategoryRow
->
-> category={product.category}
->
-> key={product.category} /&gt;
->
-> );
->
-> }
+```
+function ProductCategoryRow({ category }) {
+return (
+&lt;tr>
+&lt;th colSpan=&quot;2&quot;>
+{category}
+&lt;/th>
+&lt;/tr>
+);
+}
+function ProductRow({ product }) {
+const name = product.stocked ? product.name :
+&lt;span style={{ color: &apos;red&apos; }}>
+{product.name}
+&lt;/span>;
+return (
+&lt;tr>
+ &lt;td>{name}&lt;/td>
+ &lt;td>{product.price}&lt;/td>
+ &lt;/tr>
+ );
+ }
+ function ProductTable({ products }) {
+ const rows = &lsqb;&rsqb;;
+ let lastCategory = null;
+ products.forEach((product) => {
+ if (product.category !== lastCategory) {
+ rows.push(
+ &lt;ProductCategoryRow
+ category={product.category}
+ key={product.category} />
+ );
+}
 
 ### Show more
 
@@ -10638,13 +10561,13 @@ top of FilterableProductTable and specify their initial state:
 Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:
 
-> &lt;div&gt;
+> &lt;div>
 >
 > &lt;SearchBar
 >
 > filterText={filterText}
 >
-> inStockOnly={inStockOnly} /&gt;
+> inStockOnly={inStockOnly} />
 >
 > &lt;ProductTable
 >
@@ -10652,9 +10575,9 @@ props:
 >
 > filterText={filterText}
 >
-> inStockOnly={inStockOnly} /&gt;
+> inStockOnly={inStockOnly} />
 >
-> &lt;/div&gt;
+> &lt;/div>
 
 You can start seeing how your application will behave. Edit the
 filterText initial value from useState(&apos;&apos;) to useState(&apos;fruit&apos;) in
@@ -10668,31 +10591,31 @@ table update:
 > const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
 > const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
 > return (
-> &lt;div&gt;
+> &lt;div>
 > &lt;SearchBar
 > filterText={filterText}
-> inStockOnly={inStockOnly} /&gt;
+> inStockOnly={inStockOnly} />
 > &lt;ProductTable
 > products={products}
 > filterText={filterText}
-> inStockOnly={inStockOnly} /&gt;
-> &lt;/div&gt;
+> inStockOnly={inStockOnly} />
+> &lt;/div>
 > );
 > }
 > function ProductCategoryRow({ category }) {
 > return (
-> &lt;tr&gt;
-> &lt;th colSpan=&quot;2&quot;&gt;
+> &lt;tr>
+> &lt;th colSpan=&quot;2&quot;>
 > {category}
-> &lt;/th&gt;
-> &lt;/tr&gt;
+> &lt;/th>
+> &lt;/tr>
 > );
 > }
 > function ProductRow({ product }) {
 > const name = product.stocked ? product.name :
-> &lt;span style={{ color: &apos;red&apos; }}&gt;
+> &lt;span style={{ color: &apos;red&apos; }}>
 > {product.name}
-> &lt;/span&gt;;
+> &lt;/span>;
 > return (
 
 Notice that editing the form doesn't work yet. There is a console error
@@ -10709,11 +10632,11 @@ example, here is how SearchBar populates the input value:
 
 > function SearchBar({ filterText, inStockOnly }) {
 > return (
-> &lt;form&gt;
+> &lt;form>
 > &lt;input
 > type=&quot;text&quot;
 > value={filterText}
-> placeholder=&quot;Search\...&quot;/&gt;
+> placeholder=&quot;Search\...&quot;/>
 
 However, you haven't added any code to respond to the user actions like
 typing yet. This will be your final step.
@@ -10728,7 +10651,7 @@ the hierarchy need to update the state in FilterableProductTable.
 React makes this data flow explicit, but it requires a little more
 typing than two-way data binding. If you try to type or check the box in
 the example above, you'll see that React ignores your input. This is
-intentional. By writing &lt;input value={filterText} /&gt;, you've set the
+intentional. By writing &lt;input value={filterText} />, you've set the
 value prop of the input to always be equal to the filterText state
 passed in from FilterableProductTable. Since filterText state is never
 set, the input never changes.
@@ -10743,63 +10666,65 @@ state, you need to pass these functions down to SearchBar:
 > const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
 > const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
 > return (
-> &lt;div&gt;
+> &lt;div>
 > &lt;SearchBar
 > filterText={filterText}
 > inStockOnly={inStockOnly}
 > onFilterTextChange={setFilterText}
-> onInStockOnlyChange={setInStockOnly} /&gt;
+> onInStockOnlyChange={setInStockOnly} />
 
 Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
 > &lt;input
 > type=&quot;text&quot;
-> value={filterText onChange={(e) =&gt;
-> onFilterTextChange(e.target.value)} /&gt;
+> value={filterText onChange={(e) =>
+> onFilterTextChange(e.target.value)} />
 
 Now the application fully works!
 
-### App.js
+#### App.js
 
-> import { useState } from &apos;react&apos;;
-> function FilterableProductTable({ products }) {
-> const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
-> const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
-> return (
-> &lt;div&gt;
-> &lt;SearchBar
-> filterText={filterText}
-> inStockOnly={inStockOnly}
-> onFilterTextChange={setFilterText}
-> onInStockOnlyChange={setInStockOnly} /&gt;
-> &lt;ProductTable
-> products={products}
-> filterText={filterText}
-> inStockOnly={inStockOnly} /&gt;
-> &lt;/div&gt;
-> );
-> }
-> function ProductCategoryRow({ category }) {
->   return (
->     &lt;tr&gt;
->       &lt;th colSpan=&quot;2&quot;&gt;
->         {category}
->       &lt;/th&gt;
->     &lt;/tr&gt;
->   );
-> }
-> function ProductRow({ product }) {
->   const name = product.stocked ? product.name :
->   &lt;span style={{ color: &apos;red&apos; }}&gt;
->     {product.name}
->   &lt;/span&gt;;
+```
+import { useState } from &apos;react&apos;;
+function FilterableProductTable({ products }) {
+const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
+const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
+return (
+&lt;div>
+&lt;SearchBar
+filterText={filterText}
+inStockOnly={inStockOnly}
+onFilterTextChange={setFilterText}
+onInStockOnlyChange={setInStockOnly} />
+&lt;ProductTable
+products={products}
+filterText={filterText}
+inStockOnly={inStockOnly} />
+&lt;/div>
+);
+}
+function ProductCategoryRow({ category }) {
+  return (
+    &lt;tr>
+      &lt;th colSpan=&quot;2&quot;>
+        {category}
+      &lt;/th>
+    &lt;/tr>
+  );
+}
+function ProductRow({ product }) {
+  const name = product.stocked ? product.name :
+  &lt;span style={{ color: &apos;red&apos; }}>
+    {product.name}
+  &lt;/span>;
+```
 
 You can learn all about handling events and updating state in the
 [Adding Interactivity](https://react.dev/learn/adding-interactivity)
 (<https://react.dev/learn/adding-interactivity>) section.
 
-# Where to go from here 
+### Where to go from here
 
 This was a very brief introduction to how to think about building
 components and applications with React. You can [start a React
@@ -10808,14 +10733,14 @@ project](https://react.dev/learn/installation)
 all the syntax](https://react.dev/learn/describing-the-ui)
 (<https://react.dev/learn/describing-the-ui>) used in this tutorial.
 
-# Installation
+### Installation
 
 React has been designed from the start for gradual adoption. You can use
 as little or as much React as you need. Whether you want to get a taste
 of React, add some interactivity to an HTML page, or start a complex
 React-powered app, this section will help you get started.
 
-## In this chapter
+### In this chapter
 
 1.  [How to start a new React
     project](https://react.dev/learn/start-a-new-react-project)
@@ -10837,7 +10762,7 @@ React-powered app, this section will help you get started.
 You don't need to install anything to play with React. Try editing this
 sandbox!
 
-## App.js
+#### App.js
 
 ```
 function Greeting({ name }) {
