@@ -82,7 +82,7 @@ with coding.
 
 Welcome to React basics.
 
-In this course, you&apos;ll be introduced to the basics of working with
+In this course, you'll be introduced to the basics of working with
 React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. 3 basics of react (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -94,14 +94,14 @@ React.
 </p>
 <!-- width="4.0in" height="2.5479451006124236in"} -->
 
-During this module (one), you&apos;ll learn how to develop a working
+During this module (one), you'll learn how to develop a working
 familiarity with a basic structure and use of the React.js library.
 
 Explore the concepts and practical use of state and stage management and
 discover how to set up navigation and make use of assets in your React
 apps.
 
-You&apos;ll begin by learning how to work with React to build modern user
+You'll begin by learning how to work with React to build modern user
 interfaces or UIs on websites front ends.
 
 This involves the concept of standalone parts of the User Interface or
@@ -109,9 +109,9 @@ UI.
 
 These standalone bits of UI are commonly referred to as **components**.
 
-You&apos;ll explore components in more detail later in this module.
+You'll explore components in more detail later in this module.
 
-For now, it&apos;s enough for you to know that every website&apos;s UI is built
+For now, it's enough for you to know that every website's UI is built
 on a foundation of components and composability.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 05.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -125,23 +125,23 @@ A website can essentially be viewed as a highly complex component.
 
 Components and website UIs are not to limited to React.
 
-There&apos;s a part of the reason why React is so popular, is because it
+There's a part of the reason why React is so popular, is because it
 streamlines the process of building and composing components.
 
 React does this efficiently and without a significant impact on your
-browser&apos;s resources.
+browser's resources.
 
 Another major topic that will be discussed in this course is working
 with **state** in React apps.
 
-You&apos;ll learn a lot more about state as you go through the course.
+You'll learn a lot more about state as you go through the course.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 06.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image006.png){width="5.0in" height="1.949206036745407in"}
 
-But for now, here&apos;s a simple definition of state.
+But for now, here's a simple definition of state.
 
 **State is simply all the values of all the variables your app is
 working with at any given point in time.**
@@ -151,26 +151,26 @@ working with at any given point in time.**
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image007.png){width="4.0in" height="2.840391513560805in"}
 
-As you progress through this course, you&apos;ll also learn about how to
+As you progress through this course, you'll also learn about how to
 style your React apps, which includes the reuse of common styles.
 
 Setting up your apps to respond to events such as clicks and
 user-submitted data, creating navigation routes and using assets and
-you&apos;ll finish off the course with a portfolio of projects where you&apos;ll
+you'll finish off the course with a portfolio of projects where you'll
 apply your new knowledge.
 
-I hope you&apos;re as excited as I am to begin this course on React basics.
+I hope you're as excited as I am to begin this course on React basics.
 
-Let&apos;s get started...
+Let's get started...
 
 ## 02. How is React used in the real world?
 
-There are plenty of React based apps that you&apos;ve probably used before.
+There are plenty of React based apps that you've probably used before.
 
 Facebook and Instagram are two examples.
 
 But Netflix, Airbnb, New York Times, and a variety of other companies
-also use React for their websites as well, so you&apos;ve likely encountered
+also use React for their websites as well, so you've likely encountered
 it before.
 
 These websites that tend to have really interactive UIs are more likely
@@ -195,8 +195,8 @@ specifically, every programmer ever. You've given more than Apple,
 Microsoft, & IBM have ever produced. And you ask for nothing in return.
 Linus, you are a tribute to humanity.
 
-But we also have developers who aren&apos;t at Meta who are also
-contributing to React (for free), and that means that there&apos;s a really
+But we also have developers who aren't at Meta who are also
+contributing to React (for free), and that means that there's a really
 strong community around React (all for free to meta, a trillion-dollar
 company). Something wrong with this picture you say? Hell yes, I say.
 
@@ -204,23 +204,23 @@ A lot of people are really excited to build on it and make improvements
 to it.
 
 If you ever have any questions or an (free) ideas about a certain
-feature or optimization or improvement, there&apos;s really a great
+feature or optimization or improvement, there's really a great
 opportunity to actually contribute to the React library itself.
 
-There&apos;s a React team at Meta, and this team is comprised of engineers
+There's a React team at Meta, and this team is comprised of engineers
 (really?) who are working on React full-time.
 
-But there&apos;s also a group of developers outside of Meta who are
+But there's also a group of developers outside of Meta who are
 contributing to React as well.
 
-I think the open source part of it is really cool just because there&apos;s
-such a community around React, it&apos;s constantly being updated and
+I think the open source part of it is really cool just because there's
+such a community around React, it's constantly being updated and
 maintained.
 
-There&apos;s always going to be someone available to answer questions or to
-update documentation, it&apos;s very current.
+There's always going to be someone available to answer questions or to
+update documentation, it's very current.
 
-If you&apos;re using React for the first time, definitely take a look at our
+If you're using React for the first time, definitely take a look at our
 documentation.
 
 There are a lot of conversations being had about React online, and we
@@ -257,18 +257,18 @@ topics:
 React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.
 
-In this introductory module, you&apos;ll learn about what React is and where
-it is used. You&apos;ll also learn how to set up your coding environment so
+In this introductory module, you'll learn about what React is and where
+it is used. You'll also learn how to set up your coding environment so
 that you have as productive a learning experience as possible. So, the
 purpose of this module is to understand the 'what' and the 'why', and to
 get set up for the modules that follow.
 
 **Components** are one of the foundations of React. In React, everything
-revolves around components. You&apos;ll learn how to build **components**,
+revolves around components. You'll learn how to build **components**,
 how to structure and customize your React projects, and how to compose
 layouts by importing components into other components.
 
-You&apos;ll learn about passing data from one component to another. You&apos;ll
+You'll learn about passing data from one component to another. You'll
 learn about **JSX syntax** in React and how to use it to structure and
 style your components.
 
@@ -289,9 +289,9 @@ By the end of this module (one) you will be able to:
 ## **Module 2: Data and State**
 
 The second module of this course deals with working with **events** and
-**errors** in React. You&apos;ll learn how **events** work and how you can
+**errors** in React. You'll learn how **events** work and how you can
 handle them in React. Handling events can sometimes get a bit tricky, so
-you&apos;ll also learn about dealing with **errors** related to **events**
+you'll also learn about dealing with **errors** related to **events**
 in React.
 
 By the end of this module (two) you will be able to:
@@ -311,9 +311,9 @@ By the end of this module (two) you will be able to:
 
 ## **Module 3: Navigation Updating and Assets in React**
 
-In this module (three), you&apos;ll learn about routing and navigation in
-React. You&apos;ll learn how to render partial views and how to update
-routes in your React apps. You&apos;ll understand how assets are used,
+In this module (three), you'll learn about routing and navigation in
+React. You'll learn how to render partial views and how to update
+routes in your React apps. You'll understand how assets are used,
 bundled and embedded.
 
 By the end of this module (three) you will be able to:
@@ -336,7 +336,7 @@ By the end of this module (three) you will be able to:
 ## **Module 4: Portfolio Mini-Project (Calculator App)**
 
 This module (four) is focused on a practical mini project of building a
-calculator app in React. Upon completing this module, you&apos;ll have coded
+calculator app in React. Upon completing this module, you'll have coded
 your own mini project in React, as a starting point for building your
 React portfolio.
 
@@ -348,18 +348,18 @@ By the end of this module (four) you will be able to:
 -   Synthesize the skills from this course to create and style a React
     component.
 
--   Reflect on this course&apos;s content and on the learning path that lies
+-   Reflect on this course's content and on the learning path that lies
     ahead.
 
 ## 04. Before you learn React
 
 Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
-quick summary will be useful so let&apos;s explore some fundamental HTML,
+quick summary will be useful so let's explore some fundamental HTML,
 CSS and JavaScript principles and practices.
 
 In this section (04), let's take a practical approach, and revisit some
-of the development techniques you&apos;ll need to be comfortable with before
+of the development techniques you'll need to be comfortable with before
 learning React.
 
 To get the most out of this course on React basics, you should first
@@ -400,7 +400,7 @@ Developers use HTML elements with their opening and closing tags to
 These elements form the structure of a web page and describe what to
 display to the web browser.
 
-When it comes to HTML it&apos;s important to know about:
+When it comes to HTML it's important to know about:
 
 1.  The purpose of HTML in the web browser,
 
@@ -408,12 +408,12 @@ When it comes to HTML it&apos;s important to know about:
 
 3.  How HTML elements are used in a web document,
 
-4.  Another important concept to know about when you&apos;re talking about
+4.  Another important concept to know about when you're talking about
     HTML is the Document Object Model, or **DOM**.
 
 Users need to be able to interact with elements on a web page. This
 means that an HTML document must be represented in a way that JavaScript
-code can query and update it. And that&apos;s the function of the DOM. It&apos;s
+code can query and update it. And that's the function of the DOM. It's
 a model of the objects in your HTML file.
 
 And web developers interact with the DOM through JavaScript to update
@@ -444,9 +444,9 @@ following HTML tags and concepts
 
 ### Images and links
 
--   **<img src=&quot;&quot;> **
+-   **<img src=""> **
 
--   **<a href=&quot;&quot;> **
+-   **<a href=""> **
 
 ### Linking and Meta
 
@@ -484,7 +484,7 @@ You can refresh your knowledge of HTML and CSS in the Meta course
 titled: [Introduction to Front-End
 Development](https://www.coursera.org/learn/introduction-to-front-end-development).
 
-&lsqb;https://www.coursera.org/learn/introduction-to-front-end-development&rsqb;
+[https://www.coursera.org/learn/introduction-to-front-end-development]
 
 ## JavaScript fundamentals and ES6
 
@@ -552,7 +552,7 @@ To refresh your knowledge of JavaScript and the basics of **Node** and
 **npm**, please visit Meta course titled: [Programming with
 JavaScript](https://www.coursera.org/learn/programming-with-javascript)
 
-&lsqb;https://www.coursera.org/learn/programming-with-javascript&rsqb;
+[https://www.coursera.org/learn/programming-with-javascript]
 
 ## 05. JavaScript modules, imports - exports
 
@@ -560,7 +560,7 @@ Before you start creating the next great app, let's explore a little
 more about modules.
 
 Modules can help you to save and access your code in a more structured
-way, and in this reading (05), you&apos;ll learn about some foundational
+way, and in this reading (05), you'll learn about some foundational
 concepts of working with JavaScript modules.
 
 This knowledge is crucial in order to understand the syntax and the
@@ -631,7 +631,7 @@ perform a default export:
 In the above example, you're adding the **export default** keywords in
 front of the **addTwo** function declaration.
 
-Here&apos;s an alternative syntax:
+Here's an alternative syntax:
 
 > function addTwo(a, b) {
 >
@@ -687,7 +687,7 @@ as named exports, one way to do it would be the following:
 >
 > }
 
-Here&apos;s another way you could do it:
+Here's another way you could do it:
 
 > function addTwo(a, b) {
 >
@@ -740,7 +740,7 @@ default module:
 To import it into the **mathOperations.js** module, you could use the
 following syntax:
 
-> import addTwo from &quot;./addTwo&quot;;
+> import addTwo from "./addTwo";
 >
 > // the rest of the mathOperations.js code goes here
 
@@ -753,17 +753,17 @@ Contrast the above import of the default **addTwo export** with the
 different import syntax if the **addTwo** function was instead a named
 export:
 
-> import { addTwo } from &quot;./addTwo&quot;;
+> import { addTwo } from "./addTwo";
 >
 > // the rest of the mathOperations.js code goes here
 
 ## **Conclusion**
 
-In this reading, you&apos;ve learned about the very basics of what modules
+In this reading, you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
 imported.
 
-The examples you&apos;ve seen here are the core of how you&apos;ll deal with
+The examples you've seen here are the core of how you'll deal with
 imports and exports of various modules in the example React apps on this
 course.
 
@@ -771,7 +771,7 @@ However, please note that there are many more caveats, rules, and
 implementations of working with modules in JavaScript.
 
 The examples given in this reading are there just to make it easier to
-comprehend what is happening in React apps that you&apos;ll be building in
+comprehend what is happening in React apps that you'll be building in
 this course.
 
 The intent of this reading was just to get you familiar with the most
@@ -782,20 +782,20 @@ JavaScript.
 
 Below you will find links to helpful additional readings.
 
--   nodejs.org  &lsqb;https://nodejs.org/en&rsqb;
+-   nodejs.org  [https://nodejs.org/en]
 
--   npmjs.com  &lsqb;https://www.npmjs.com/&rsqb;
+-   npmjs.com  [https://www.npmjs.com/]
 
--   reactjs.org  &lsqb;https://react.dev/&rsqb;
+-   reactjs.org  [https://react.dev/]
 
--   create-react-app.dev &lsqb;https://create-react-app.dev/&rsqb;
+-   create-react-app.dev [https://create-react-app.dev/]
 
--   VS Code  &lsqb;https://code.visualstudio.com/&rsqb;
+-   VS Code  [https://code.visualstudio.com/]
 
--   Notepad &lsqb;<https://notepad-plus-plus.org/>&rsqb; to truly know & utilize
+-   Notepad [<https://notepad-plus-plus.org/>] to truly know & utilize
     React and NOT VS code.
 
--   Sublime &lsqb;https://www.sublimetext.com/&rsqb;
+-   Sublime [https://www.sublimetext.com/]
 
 -   In the 40+ years I've worked with Microsoft products, I have yet to
     see anything they've done better than everyone else. They can copy,
@@ -814,7 +814,7 @@ accessing the link below:
 
 ## Working with Labs in this course
 
-## &lsqb;https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course&rsqb;
+## [https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course]
 
 You can also use VS Code to practice these exercises on your local
 machine as an alternative option.
@@ -823,18 +823,18 @@ To follow along in this reading, you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
 refer to the Programming with JavaScript course:
 
-&lsqb;https://www.coursera.org/learn/programming-with-javascript&rsqb;
+[https://www.coursera.org/learn/programming-with-javascript]
 
 -   Setting up VS Code -- actually slower than frozen molasses.
 
-######## &lsqb;https://www.coursera.org/learn/react-basics/resources/SSPnG&rsqb;
+######## [https://www.coursera.org/learn/react-basics/resources/SSPnG]
 
 -   [Installing Node and
     NPM ](https://www.coursera.org/learn/react-basics/resources/FTd5h)
 
-######## &lsqb;https://www.coursera.org/learn/react-basics/resources/FTd5h&rsqb;
+######## [https://www.coursera.org/learn/react-basics/resources/FTd5h]
 
-In VS Code, you&apos;re ready to start a brand new React project.
+In VS Code, you're ready to start a brand new React project.
 
 You can do it using npm.
 
@@ -844,31 +844,31 @@ When Node.js is installed on a computer, **npm** comes bundled with it.
 
 With **npm**, you can:
 
-1.  Author your own Node.js modules (&quot;packages&quot;), and publish them on
+1.  Author your own Node.js modules ("packages"), and publish them on
     the npm website so that other people can download and use them, 
 
-2.  Use other people&apos;s authored modules (&quot;packages&quot;).
+2.  Use other people's authored modules ("packages").
 
 So, ultimately, npm is all about ***code sharing*** and ***reuse*.** You
-can **use other people&apos;s code** in your own projects, and you can also
+can **use other people's code** in your own projects, and you can also
 **publish your own Node.js modules** so that other people can use them.
 
 An example npm module that can be useful for a new React developer is
 **[create-react-app](https://create-react-app.dev/):**
 
-&lsqb;<https://create-react-app.dev/>&rsqb;
+[<https://create-react-app.dev/>]
 
 While this npm module comes with its own website, you can also find some
 info on the [**create-react-app** project on
 GitHub](https://github.com/facebook/create-react-app):
 
-&lsqb;<https://github.com/facebook/create-react-app>&rsqb;
+[<https://github.com/facebook/create-react-app>]
 
-Whenever you run the npm command to add other people&apos;s code, **that
+Whenever you run the npm command to add other people's code, **that
 code, and all other Node modules that depend on it, get downloaded** to
 your machine.
 
-However, although it&apos;s possible do to so, this is not really necessary,
+However, although it's possible do to so, this is not really necessary,
 at least in the case of the **create-react-app** Node module.
 
 In other words, you can avoid installing the **create-react-app**
@@ -879,7 +879,7 @@ example**, where "example" is the actual name of your app. You can use
 any name you'd like, but it's always good to have a name that is
 descriptive and short.
 
-In the next section, you&apos;ll learn how to build a brand-new app that you
+In the next section, you'll learn how to build a brand-new app that you
 can name: **firstapp**.
 
 ## **Opening the built-in VS Code terminal and running npm init react-app command**
@@ -900,11 +900,11 @@ Now run the command to add a brand new React app to the machine:
 
 The installation and setup might take a few minutes.
 
-Here&apos;s the output of executing the above command:
+Here's the output of executing the above command:
 
 The installation and setup might take a few minutes.
 
-Here&apos;s the output of executing the above command:
+Here's the output of executing the above command:
 
 ```
 > Creating a new React app in /home/pc/Desktop/firstapp.
@@ -927,7 +927,7 @@ Here&apos;s the output of executing the above command:
 > 6 high severity vulnerabilities
 > To address all issues (including breaking changes), run:
 > $ npm audit fix \--force
-> Run &apos;npm audit&apos; for details.
+> Run 'npm audit' for details.
 > Created git commit.
 > Success! Created firstapp at /home/pc/Desktop/firstapp
 > Inside that directory, you can run several commands:
@@ -945,7 +945,7 @@ Here&apos;s the output of executing the above command:
 > $ npm start 
 ```
 
-If you follow the suggestions from the above output, you&apos;ll run: **cd
+If you follow the suggestions from the above output, you'll run: **cd
 firstapp**, and then **npm start**.
 
 This will end up with the following output in the built-in terminal:
@@ -972,7 +972,7 @@ show the following page in your browser:
 ![React logo displayed on the browser](./images/image009.png){width="4.0in"
 height="2.533333333333333in"}
 
-This means that you&apos;ve successfully:
+This means that you've successfully:
 
 -   Set up your local development environment,
 
@@ -982,16 +982,16 @@ This means that you&apos;ve successfully:
 
 -   Served that starter React app in your browser.
 
-After you&apos;ve built your starting setup, in Module 2 you&apos;ll start
+After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
 
 # 08. Why React?
 
-React is used everywhere in the tech world and you&apos;ll have the chance
-to use it throughout your career. It&apos;s a very valuable skill set to
+React is used everywhere in the tech world and you'll have the chance
+to use it throughout your career. It's a very valuable skill set to
 have.
 
-My name is Katie and I&apos;m a Software Engineer on the React Apps team at
+My name is Katie and I'm a Software Engineer on the React Apps team at
 Meta, and we work on building new features using React for facebook.com.
 
 My first encounter with React was actually in a senior design project
@@ -1002,7 +1002,7 @@ we were building.
 
 React seemed like the easiest to use and the fastest to build on.
 
-I had already gotten my job at Meta, but I didn&apos;t know what I was going
+I had already gotten my job at Meta, but I didn't know what I was going
 to be working on at Meta.
 
 It was cool to get this experience with React, realized I really enjoy
@@ -1011,12 +1011,12 @@ working with it and then get to do it in my day-to-day work.
 I feel like in school you tend to do a lot of object-oriented
 programming which uses inheritance.
 
-React doesn&apos;t use any of that.
+React doesn't use any of that.
 
 It uses something called **composition**.
 
-That was a little bit difficult to think about, but there&apos;s so much
-documentation around React and such a strong community that it&apos;s easy
+That was a little bit difficult to think about, but there's so much
+documentation around React and such a strong community that it's easy
 to pick up.
 
 You have support coming from so many different places.
@@ -1029,28 +1029,28 @@ There are so many resources to pull from.
 I think developers outside of Meta choose to use React for the same
 reasons that we do at Meta.
 
-It&apos;s super easy to learn and pick up.
+It's super easy to learn and pick up.
 
-You&apos;re able to create really custom UIs with React, we&apos;re building so
+You're able to create really custom UIs with React, we're building so
 many different features on facebook.com every day that require a lot of
 custom components and UIs.
 
-It&apos;s nice to have the flexibility that React provides.
+It's nice to have the flexibility that React provides.
 
 I would say React is the best choice for an app if your UI is really
-custom and you&apos;re looking for a lot of flexibility with what other
+custom and you're looking for a lot of flexibility with what other
 libraries you can integrate for your app or website.
 
 React is just a front-end library.
 
-You&apos;re going to need to interact with other third-party libraries too,
+You're going to need to interact with other third-party libraries too,
 and if you want the flexibility of integrating with redux or other
 third-party libraries, React is the perfect choice for you.
 
 React is also great if you have complex UIs where you want to reuse code
 across many different pages.
 
-I think it&apos;s a great choice if you&apos;re building a complex website with
+I think it's a great choice if you're building a complex website with
 a ton of features across a ton of different pages.
 
 I think react solves the problem of code reusability really well.
@@ -1058,33 +1058,33 @@ I think react solves the problem of code reusability really well.
 Here at Meta, we have a core set of UI components that were actually
 able to reuse across the site.
 
-This means that we&apos;re able to build a lot of functionality into these
+This means that we're able to build a lot of functionality into these
 core UI components like accessibility.
 
-I think we&apos;re able to have like a high-quality bar across the site just
-because we&apos;re reusing components everywhere and we&apos;re able to share
+I think we're able to have like a high-quality bar across the site just
+because we're reusing components everywhere and we're able to share
 code even across Facebook and Instagram and Messenger.
 
-I think that&apos;s a really unique part of React.
+I think that's a really unique part of React.
 
-It&apos;s really interesting because if I find a bug and a core UI component
-and I fix it, I&apos;m not only fixing it for my one-use case, I&apos;m fixing
+It's really interesting because if I find a bug and a core UI component
+and I fix it, I'm not only fixing it for my one-use case, I'm fixing
 it for use cases across the site.
 
-I think it&apos;s a really smart way to use engineering effort, you&apos;re
-fixing a bug once and you&apos;re solving one problem everywhere.
+I think it's a really smart way to use engineering effort, you're
+fixing a bug once and you're solving one problem everywhere.
 
 I would say the biggest competitor of React is Angular.
 
-Angular is a bit different from React in that it&apos;s a full-fledged
+Angular is a bit different from React in that it's a full-fledged
 solution for an app or website.
 
-You don&apos;t really need to integrate with third-party libraries when
+You don't really need to integrate with third-party libraries when
 using Angular.
 
-Whereas with React, it&apos;s just a client-side library.
+Whereas with React, it's just a client-side library.
 
-You do need to figure out how you&apos;re going to do routing and server
+You do need to figure out how you're going to do routing and server
 client communication.
 
 I would say React provides more flexibility with creating these complex
@@ -1095,12 +1095,12 @@ with like an out-of-the-box solution.
 
 Learn by doing, try to make an example app.
 
-Don&apos;t go and try to create the most complex app you&apos;ve ever heard of.
+Don't go and try to create the most complex app you've ever heard of.
 
-I would say start simple. Make sure you&apos;re using best practices.
+I would say start simple. Make sure you're using best practices.
 
-Continuously reference documentation to see if you&apos;re using hooks the
-way you&apos;re supposed to and that thing.
+Continuously reference documentation to see if you're using hooks the
+way you're supposed to and that thing.
 
 It should come pretty easily.
 
@@ -1110,12 +1110,12 @@ and learn.
 There are a lot of different pieces of React and a lot of different
 concepts to learn.
 
-But it&apos;s really well worth it in the end because you&apos;re going to
+But it's really well worth it in the end because you're going to
 encounter React in your day-to-day work.
 
 Hopefully for the rest of your career.
 
-There&apos;s a huge community behind you ready to help answer questions
+There's a huge community behind you ready to help answer questions
 about React too.
 
 # 09. React.js overview
@@ -1134,7 +1134,7 @@ content such as logos, navigation, and footers need to be loaded again.
 And one of the most popular ways to build a SPA is with the React
 library from Meta.
 
-React used to run many of the world&apos;s most popular websites.
+React used to run many of the world's most popular websites.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1147,7 +1147,7 @@ box.
 The site then returns the relevant content or results.
 
 But you might notice that even though the content has updated, the sites
-URL doesn&apos;t change.
+URL doesn't change.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1167,7 +1167,7 @@ In this section (09), you will learn about the basics of React by
 exploring the concepts of the component-based architecture components
 and the virtual DOM.
 
-Let&apos;s begin with components.
+Let's begin with components.
 
 One of the core building blocks of React.
 
@@ -1197,7 +1197,7 @@ components.
 ![](./images/image014.png){width="6.5in" height="2.734815179352581in"}
 
 Because components are reusable, they can be used multiple times and
-easily inserted anywhere we&apos;re needed.
+easily inserted anywhere we're needed.
 
 This results in components that can exist within the same space yet
 interact independently from each other.
@@ -1209,7 +1209,7 @@ interact independently from each other.
 
 One of the advantages of development using components is that many
 developers can work on the same project without interfering with the
-code of other developers&apos; components.
+code of other developers' components.
 
 As you may recall, modern front-end web development revolves around the
 concept of creating standalone parts of the user interface, or UI for
@@ -1218,7 +1218,7 @@ short.
 Well, in react, these standalone parts are created using components
 which form the foundation of all UI design.
 
-It&apos;s important to know that all UI is composed of simple components
+It's important to know that all UI is composed of simple components
 that can be combined into more complex components.
 
 In fact, you can think of an entire website is just a collection of
@@ -1256,7 +1256,7 @@ payment information.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image019.png){width="3.0in" height="2.761124234470691in"}
 
-Finally, there&apos;s a sidebar with the order summary information.
+Finally, there's a sidebar with the order summary information.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1269,7 +1269,7 @@ JavaScript logic for functionality.
 For example, the payment section component has a JavaScript function
 that submits a payment when a button is clicked.
 
-It&apos;s important to know that the use of components in website UI design
+It's important to know that the use of components in website UI design
 is not limited to just React.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1277,16 +1277,16 @@ is not limited to just React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image021.png){width="3.0in" height="1.5278346456692913in"}
 
-Many website&apos;s front end or UI are built on the foundations of
+Many website's front end or UI are built on the foundations of
 components and compose ability.
 
 But React is a powerful tool for streamlining the process of building
 components and composing them.
 
 It performs these actions efficiently as components are rendered to the
-DOM without significantly impacting the browser&apos;s resources.
+DOM without significantly impacting the browser's resources.
 
-This is called component rendering and you&apos;ll learn more about this and
+This is called component rendering and you'll learn more about this and
 its associated render method later.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1340,7 +1340,7 @@ They are reusable blocks of code that can take an input, perform some
 procedure or calculation, and then return an output.
 
 Well, a React component acts much like a traditional JavaScript
-function. In this section (10), you&apos;ll continue your exploration of the
+function. In this section (10), you'll continue your exploration of the
 structure of the React architecture by learning about functional
 components.
 
@@ -1357,11 +1357,11 @@ components.
 They behave very similar in React to traditional functions, and classes
 in JavaScript.
 
-Don&apos;t worry about class components for now.
+Don't worry about class components for now.
 
-You&apos;ll learn more about them later.
+You'll learn more about them later.
 
-Instead, let&apos;s just focus on functional components, which act like a
+Instead, let's just focus on functional components, which act like a
 JavaScript function.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1370,7 +1370,7 @@ JavaScript function.
 ![](./images/image026.png){width="4.0in" height="2.56380905511811in"}
 
 In the default React application, only one component is rendered and
-it&apos;s the app components located inside the index.js file that&apos;s
+it's the app components located inside the index.js file that's
 located inside the source folder.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1378,14 +1378,14 @@ located inside the source folder.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image027.png){width="6.0in" height="2.0984120734908136in"}
 
-It&apos;s important to know that every React app must contain at least one
-component, and it&apos;s called the root component.
+It's important to know that every React app must contain at least one
+component, and it's called the root component.
 
 This component is loaded using the import statement.
 
-You&apos;ll learn more about the import statement in React later.
+You'll learn more about the import statement in React later.
 
-For now, just know that it&apos;s used to import code needed for React to
+For now, just know that it's used to import code needed for React to
 work, such as the import React and import React DOM statements.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1394,7 +1394,7 @@ work, such as the import React and import React DOM statements.
 ![](./images/image028.png){width="3.0in"
 height="1.3410400262467193in"}The syntax to render a component is very
 similar to a self-closing tag in HTML, you just place the component name
-inside the left and right-angle brackets and don&apos;t forget the forward
+inside the left and right-angle brackets and don't forget the forward
 slash.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1418,20 +1418,20 @@ ID of roots.
 
 This div element is then rendered to the browser.
 
-If you analyze the app component, you&apos;ll notice that it looks very
+If you analyze the app component, you'll notice that it looks very
 similar to a JavaScript function with some HTML code inside.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image031.png){width="3.0in" height="3.022305336832896in"}You
-may also notice an export default statement. You&apos;ll learn more about
+may also notice an export default statement. You'll learn more about
 this soon.
 
 For now, just know that you need it to make your components available.
 
-Now that you&apos;re familiar with the concept of functional components,
-let&apos;s explore how web developers create them in React.
+Now that you're familiar with the concept of functional components,
+let's explore how web developers create them in React.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1443,7 +1443,7 @@ called JavaScript XML or JSX.
 For many Reacts developers, this is known as a syntax extension to
 JavaScript.
 
-What is JSX syntax like? Let&apos;s find out by going back to our React
+What is JSX syntax like? Let's find out by going back to our React
 default app component.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1455,7 +1455,7 @@ the app function, it seemed that some HTML content is returned.
 
 Well, this content is not exactly HTML.
 
-It&apos;s JSX. JSX syntax looks very similar to HTML.
+It's JSX. JSX syntax looks very similar to HTML.
 
 What are its advantages is that it allows you to write JavaScript code
 inside what looks like HTML elements?
@@ -1465,7 +1465,7 @@ JavaScript.
 
 This allows you to make your website dynamic.
 
-You&apos;ll learn more about the differences between HTML and JSX later.
+You'll learn more about the differences between HTML and JSX later.
 
 For now, just know that you can place this syntax inside the return
 statement of a functional component.
@@ -1475,13 +1475,13 @@ statement of a functional component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image034.png){width="5.0in" height="2.5359787839020123in"}
 
-It&apos;s also important to note that a React component won&apos;t render until
-it&apos;s used as a JSX element just like a JavaScript function declaration
-and won&apos;t run until it&apos;s called or invoked.
+It's also important to note that a React component won't render until
+it's used as a JSX element just like a JavaScript function declaration
+and won't run until it's called or invoked.
 
 Now you know what JSX is.
 
-Let&apos;s explore the steps involved to create a React components which
+Let's explore the steps involved to create a React components which
 will contain some JSX code inside a heading 1 HTML element to display
 some text on a webpage.
 
@@ -1496,10 +1496,10 @@ file Heading.js.
 
 Notice that the first letter of the component name is capitalized.
 
-This is because there&apos;s a difference in how React treats capitalized,
+This is because there's a difference in how React treats capitalized,
 and non-capitalized component names.
 
-It&apos;s important to remember that all component names in React must be
+It's important to remember that all component names in React must be
 capitalized. Why is this?
 
 Well, because React treats lowercase components as regular HTML
@@ -1512,7 +1512,7 @@ from HTML elements.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ![](./images/image036.png){width="3.0in"
-height="1.4707939632545932in"}Now let&apos;s continue with our component.
+height="1.4707939632545932in"}Now let's continue with our component.
 Next inside the app.js file, create a function named Heading.
 
 The function name must also be declared using a capital letter for the
@@ -1521,7 +1521,7 @@ first letter of the function.
 Then inside the function body, you create a variable named title and
 assign it the string value of this is some heading text.
 
-Now you&apos;re ready to create the return statement of the function.
+Now you're ready to create the return statement of the function.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1535,10 +1535,10 @@ it places the variable named title.
 To make React evaluate the title variable, you need to place it inside
 curly brackets.
 
-If you didn&apos;t use curly brackets, you&apos;d get the word title instead of
+If you didn't use curly brackets, you'd get the word title instead of
 this is some heading text.
 
-At this point, it&apos;s worth remembering that while you are creating HTML
+At this point, it's worth remembering that while you are creating HTML
 like syntax, you are actually coding inside a JavaScript file.
 
 Because of this, you can output a variable inside your JSX code,
@@ -1555,7 +1555,7 @@ height="0.8577777777777778in"}This rendering happens behind the scenes
 because of something called **trans piling.**
 
 You can think of trans piling as a process of converting JSX to HTML and
-you&apos;ll learn more about this later.
+you'll learn more about this later.
 
 In this section you learned about functional components and how to
 create them in React.
@@ -1566,7 +1566,7 @@ functional components.
 
 Finally, you explored the concepts of rendering and trans piling.
 
-If you&apos;d like to learn about these concepts in more detail, there&apos;s a
+If you'd like to learn about these concepts in more detail, there's a
 link to an additional reading at the end of this lesson.
 
 # 11. Creating React components
@@ -1574,23 +1574,23 @@ link to an additional reading at the end of this lesson.
 In this section (11), you will further explore the concepts of
 components in React and learn how to create a component from scratch.
 
-You&apos;ll be introduced to the concept of the export statements and how
+You'll be introduced to the concept of the export statements and how
 components can be used to create reusable blocks of code.
 
-I&apos;ve launched VS Code here, and I have the creating components folder
+I've launched VS Code here, and I have the creating components folder
 open in the built-in terminal.
 
-Now, I&apos;ll execute the command npm init, React app dot.
+Now, I'll execute the command npm init, React app dot.
 
 The dot character instructs VS Code to run this command in the current
 folder.
 
-In other words, I&apos;m using Create React app to build a new app for me
+In other words, I'm using Create React app to build a new app for me
 inside this folder.
 
 I execute this command by pressing the Enter key.
 
-I wait for the app to build, and once it&apos;s ready, I can start the app
+I wait for the app to build, and once it's ready, I can start the app
 by typing npm then a space followed by start.
 
 The process of building the React app could take a couple of minutes, so
@@ -1603,20 +1603,20 @@ Notice that I have all these files and folders in the left pane of VS
 Code now, such as node modules, public SRC, and files like package.
 json.
 
-You&apos;ll learn more about these later.
+You'll learn more about these later.
 
 For now, the only folder I need to work in as the SRC folder.
 
-Don&apos;t worry about all these other files and folders. Instead, I want
+Don't worry about all these other files and folders. Instead, I want
 you to focus on how to build a component in React.
 
-To do that, let&apos;s have a clean start.
+To do that, let's have a clean start.
 
 The easiest way to do this is to remove all the code inside the function
 inside the app.js file.
 
-I guess you might say this is the simplest possible component. I&apos;m
-declaring an app function and I&apos;m exporting it as a default module.
+I guess you might say this is the simplest possible component. I'm
+declaring an app function and I'm exporting it as a default module.
 
 I save my file and notice that my app is just a blank page.
 
@@ -1624,13 +1624,13 @@ Now, let me create another component that will contain some texts that I
 want to display in the browser.
 
 To do this, I create another function called header, and in the function
-body, I&apos;ll just return some greeting texts inside an H1 JSX elements.
+body, I'll just return some greeting texts inside an H1 JSX elements.
 
 Inside the H1 I type, Hello world.
 
 My code looks good now, but my screen is still white.
 
-This is because I&apos;m not yet rendering anything from my app function.
+This is because I'm not yet rendering anything from my app function.
 
 To do this, I need to return to my app function and call the header
 function from it.
@@ -1645,7 +1645,7 @@ not forgetting to add the forward slash before the right-angle bracket.
 Notice that the syntax to render a component is very similar to a
 self-closing tag in HTML.
 
-Press Control S or Command S, if you&apos;re on Mac to save everything
+Press Control S or Command S, if you're on Mac to save everything
 again.
 
 Great, my code is working now.
@@ -1665,10 +1665,10 @@ To make the header component isolated and reusable, I need to place it
 in its own file.
 
 Then I can reuse it multiple times in the application anytime I want to
-display a heading element with some texts, and you&apos;ll learn how to do
+display a heading element with some texts, and you'll learn how to do
 this very soon.
 
-In this module, you&apos;ll learn how to create a functional component in
+In this module, you'll learn how to create a functional component in
 React, and render it to the root components named **app.js**.
 
 # 12. Transpiling JSX
@@ -1677,7 +1677,7 @@ React, and render it to the root components named **app.js**.
 
 Components are a nice way to build websites in React because they allow
 you to build more modular apps. However, how do you build components
-using React, JSX, and JavaScript? You&apos;ll learn how this works in this
+using React, JSX, and JavaScript? You'll learn how this works in this
 lesson item.
 
 A browser cannot understand JSX syntax.
@@ -1702,7 +1702,7 @@ an old browser. Perhaps that browser was built before ES6 came out in
 2015.
 
 This means that the JavaScript engine that is built into your old
-computer&apos;s browser is likely to be an ES5 JavaScript engine.
+computer's browser is likely to be an ES5 JavaScript engine.
 
 In ES5, the only way to declare a variable is the following:
 
@@ -1718,7 +1718,7 @@ using [the es6console website](https://es6console.com/).
 
 Now, let's move the focus to another example of transpiling.
 
-Let&apos;s say that you want to use a brand new, most modern ECMAScript
+Let's say that you want to use a brand new, most modern ECMAScript
 syntax in an app. The only problem is that this new syntax is currently
 not supported by any browser; even an up-to-date browser.
 
@@ -1729,7 +1729,7 @@ comprehend, run, and produce a result from.
 
 Likely the most popular site that shows off how this works is
 [Babel](https://babeljs.io/) (https://babeljs.io/). As the heading of
-the website reads, &quot;Babel is a JavaScript Compiler&quot;.
+the website reads, "Babel is a JavaScript Compiler".
 
 This finally brings you to the point of this discussion about
 transpiling JavaScript code.
@@ -1749,15 +1749,15 @@ the previous lesson.
 
 Add the JSX code into [the online Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false).
-Repl stands for &quot;read-eval-print loop&quot; and it accepts code you write,
+Repl stands for "read-eval-print loop" and it accepts code you write,
 evaluates it, and produces some result. In the specific case of [the
 online Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false),
-that result is some transpiled code. Here&apos;s a more detailed
+that result is some transpiled code. Here's a more detailed
 explanation.
 
-If you&apos;ve visited the above-linked URL, you&apos;ll find a web page that
-has two panels. On the left, there&apos;s source JSX code:
+If you've visited the above-linked URL, you'll find a web page that
+has two panels. On the left, there's source JSX code:
 
 ```
 > function Heading(props) {
@@ -1767,31 +1767,31 @@ has two panels. On the left, there&apos;s source JSX code:
 > }
 ```
 
-\... and on the right, there&apos;s the transpiled, plain JavaScript code:
+\... and on the right, there's the transpiled, plain JavaScript code:
 
 ```
-> &quot;use strict&quot;;
+> "use strict";
 >
 >  
 >
 > function Heading(props) {
 >
->   return /\*#\_\_PURE\_\_\*/React.createElement(&quot;h1&quot;, null, props.title);
+>   return /\*#\_\_PURE\_\_\*/React.createElement("h1", null, props.title);
 >
 > }
 ```
 
 If you now analyze the difference between the source JSX code and the
-transpiled, plain JavaScript code, dis-regarding the comment, here&apos;s
+transpiled, plain JavaScript code, dis-regarding the comment, here's
 the body of the Heading function:
 
-> React.createElement(&quot;h1&quot;, null, props.title);
+> React.createElement("h1", null, props.title);
 
 So, here you have a React object, and this object has a
 **createElement()** method on it. The method is invoked with three
 arguments:
 
-1.  **&quot;h1&quot;** 
+1.  **"h1"** 
 
 2.  **null** 
 
@@ -1801,8 +1801,8 @@ The **first** argument is the DOM element to render - in this case, an
 **h1** element.
 
 The **second** property is any HTML attribute that should be added, and
-there&apos;s a null here - meaning, there should be an object with some
-data, but there isn&apos;t any data so instead of the object there&apos;s the
+there's a null here - meaning, there should be an object with some
+data, but there isn't any data so instead of the object there's the
 null value.
 
 The **third** property is the contents of the inner HTML of the DOM
@@ -1812,7 +1812,7 @@ the inner HTML of the **h1** element.
 Now let's use Babel again, and this time transpile the **render** syntax
 for the **Heading** component:
 
-> <Heading title=&quot;This is the heading text!&quot;></Heading>
+> <Heading title="This is the heading text!"></Heading>
 
 Again using [the Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
@@ -1821,7 +1821,7 @@ link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20i
 the output of the tranpilation is the following code:
 
 ```
-> &quot;use strict&quot;;
+> "use strict";
 >
 >  
 >
@@ -1829,7 +1829,7 @@ the output of the tranpilation is the following code:
 >
 > React.createElement(Heading, {
 >
->   title: &quot;This is the heading text!&quot;
+>   title: "This is the heading text!"
 >
 > });
 ```
@@ -1876,9 +1876,9 @@ Here is the completed solution code for the App.js file:
 >
 >   return ( 
 >
->     <div className=&quot;App&quot;> 
+>     <div className="App"> 
 >
->       This is the starting code for &quot;Your first component&quot; ungraded lab 
+>       This is the starting code for "Your first component" ungraded lab 
 >
 >       <Heading /> 
 >
@@ -1897,22 +1897,22 @@ Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![The output of the completed &apos;Your first component&apos;
+![The output of the completed 'Your first component'
 exercise.](./images/image039.png){width="5.0in"
 height="0.8566437007874016in"}
 
 **Step 1:** In the starting code, you already had a JSX element
 named **<Heading />** , being rendered from the App component, since
-it is a part of the App component&apos;s return statement.
+it is a part of the App component's return statement.
 
 ```
 > function App() { 
 >
 >   return ( 
 >
->     <div className=&quot;App&quot;> 
+>     <div className="App"> 
 >
->       This is the starting code for &quot;Your first component&quot; ungraded lab 
+>       This is the starting code for "Your first component" ungraded lab 
 >
 >       <Heading /> 
 >
@@ -1967,8 +1967,8 @@ browser.
 
 # 14. The React project structure
 
-As you might already be aware, it&apos;s important to organize or structure
-your React components so that they&apos;re easy to access.
+As you might already be aware, it's important to organize or structure
+your React components so that they're easy to access.
 
 But what does the structure look like?
 
@@ -1982,7 +1982,7 @@ benefits of the folder structure, customize the folder structure to hold
 components and assets, and explain the benefits of planning folder use
 for app development.
 
-Let&apos;s begin by examining how the default files and folders are laid out
+Let's begin by examining how the default files and folders are laid out
 in a React app project.
 
 When you build a React app using the command npm init React app, your
@@ -1991,9 +1991,9 @@ project is comprised of a specific file and folder structure.
 Notice that there are three folders named node modules, public, and SRC
 or source.
 
-Let&apos;s explore each of these folders briefly now.
+Let's explore each of these folders briefly now.
 
-First, let&apos;s begin with the node modules folder.
+First, let's begin with the node modules folder.
 
 You can think of this folder as a repository for all the modules in your
 React app.
@@ -2008,9 +2008,9 @@ Developers use packages when they want to add a piece of functionality
 that someone else coded and made available to other developers via the
 npm ecosystem.
 
-Don&apos;t worry too much about the node modules folder.
+Don't worry too much about the node modules folder.
 
-For now, just be aware of it and that it&apos;s needed for your React app to
+For now, just be aware of it and that it's needed for your React app to
 work.
 
 Next is the public folder, and it contains the assets that will be
@@ -2021,7 +2021,7 @@ in the browser tab, and the robots.txt file, which is used for search
 engine optimization.
 
 Also, there is a manifest.json file, which is used to provide some
-metadata to a device when you&apos;re React powered web app is installed on
+metadata to a device when you're React powered web app is installed on
 it.
 
 While all these files are necessary, the most important one to know
@@ -2033,9 +2033,9 @@ the index HTML file.
 Based on changes happening inside our React app, it injects those
 updates in that same div of index HTML.
 
-You&apos;ll find out more about how this works later on in the course.
+You'll find out more about how this works later on in the course.
 
-Finally, let&apos;s explore the contents of the SRC or source folder.
+Finally, let's explore the contents of the SRC or source folder.
 
 This folder contains all the essential component files required to
 ensure that a React app functions.
@@ -2046,59 +2046,59 @@ These were automatically created when I use the npm command Create React
 app to build a starter React app.
 
 As a React developer, you probably spend most of your time within this
-folder, so let&apos;s get a little more familiar with some of these files
+folder, so let's get a little more familiar with some of these files
 now.
 
 You may be familiar with some of them already, such as index.js and
 app.js, which are used to render the root components of the app.
 
-Let&apos;s briefly explore the others.
+Let's briefly explore the others.
 
 App.css contains the styles for the app.js components, and the index.css
 file contains the styles to use in the entire app.
 
 App.test.js, setupTests.js, and the reportsWebVitals.js are files
-related to the app&apos;s performance and testing.
+related to the app's performance and testing.
 
 The logo.svg file is displayed on the start page of the default app when
 the app is displayed in the browser on the local host.
 
 While these can be useful and the functionality is important, I can
-still safely delete them without affecting React&apos;s abilities to create
+still safely delete them without affecting React's abilities to create
 a very basic application.
 
 I just need to also remove the code that references them.
 
-This is because React doesn&apos;t have opinions on how you organize your
+This is because React doesn't have opinions on how you organize your
 files and folders in the source folder.
 
 However, there are a few common approaches popular in the ecosystem and
-you&apos;ll learn about them soon.
+you'll learn about them soon.
 
-It&apos;s that this point is also worth remembering that the most important
+It's that this point is also worth remembering that the most important
 file in the entire source folder is the index.js file.
 
 This file imports everything that this React app needs to render a
 working React app.
 
-Now you have explored the main folders, let&apos;s explore the files and the
+Now you have explored the main folders, let's explore the files and the
 root of the default app.
 
 Root files are additional files that are found in the root of the
 project folder itself and include a gitignore file, two json files, and
 a README file.
 
-The .gitignore file is using version control and it&apos;s used to specify
+The .gitignore file is using version control and it's used to specify
 what files and folders must be excluded from a project.
 
-It&apos;s important to note that this file is not specific to React.
+It's important to note that this file is not specific to React.
 
 This means that other systems use this file too.
 
 The README.md file is a markdown file that gives some basic information
 on this project.
 
-Developers use this when they want to share the project&apos;s code on sites
+Developers use this when they want to share the project's code on sites
 like GitHub.
 
 The package.json file lists information pertaining to my app, which
@@ -2117,7 +2117,7 @@ for npm to be able to rebuild those files reliably.
 This file is there to ensure the npm tracks all the modules
 installations properly.
 
-As a general rule, it&apos;s better to leave these files where they are for
+As a general rule, it's better to leave these files where they are for
 the moment as they are required for the app to function.
 
 You should now be able to explain the default folder structure of a
@@ -2139,10 +2139,10 @@ be created.
 
 ## Building a Layout
 
-Imagine that you&apos;ve been given the task of building a somewhat more
+Imagine that you've been given the task of building a somewhat more
 complex website layout using React.
 
-At this point, you still don&apos;t know too much about how React works, but
+At this point, you still don't know too much about how React works, but
 even with your limited knowledge, you can still build some relatively
 interesting designs.
 
@@ -2152,14 +2152,14 @@ coding blog.
 This means that you will not have to use images, which simplifies your
 task significantly.
 
-The layout you&apos;re supposed to build will consist of the following
+The layout you're supposed to build will consist of the following
 sections:
 
 -   Main navigation 
 
 -   Promo (main advertisement)
 
--   A list of newest posts&apos; previews (intros)
+-   A list of newest posts' previews (intros)
 
 -   The footer 
 
@@ -2178,7 +2178,7 @@ They suggest two approaches:
 They also advise not to nest folders too deep, and to keep things simple
 and not overthink it.
 
-They even say that if you&apos;re just starting out, you shouldn&apos;t spend
+They even say that if you're just starting out, you shouldn't spend
 more than five minutes setting up a project.
 
 Taking this advice into account, you might say that for a small project
@@ -2188,12 +2188,12 @@ you'll do next.
 
 ## Building the App
 
-Since this is app&apos;s focus is on customization, let's name the app
+Since this is app's focus is on customization, let's name the app
 **customizing-example***.*
 
 What follows is the command to run **in a suitable folder on your own
-computer**. By &quot;a suitable folder&quot;, I mean: &quot;a folder where you feel
-comfortable installing a boilerplate React application&quot;. This also
+computer**. By "a suitable folder", I mean: "a folder where you feel
+comfortable installing a boilerplate React application". This also
 includes that the folder you chose will need to be accessible for your
 user on your OS (Operating System).
 
@@ -2240,7 +2240,7 @@ Then simply add a components folder to it, like this:
 >     setupTests.js
 
 Since the components folder is currently empty, you can add a component
-for each of the sections of the typography-focused blog. Here&apos;s the
+for each of the sections of the typography-focused blog. Here's the
 structural update:
 
 > src/
@@ -2273,12 +2273,12 @@ structural update:
 >
 >     setupTests.js
 
-At this point, there&apos;s no need to complicate things. You have the
+At this point, there's no need to complicate things. You have the
 **Nav** component, the **Promo** component, the **Intro1**, **Intro2**,
-and the **Intro3** component. Finally, there&apos;s also a **Footer.js**
+and the **Intro3** component. Finally, there's also a **Footer.js**
 component.
 
-This means you&apos;ve fully planned the app, based on some best practices
+This means you've fully planned the app, based on some best practices
 as suggested by the official React docs website, and based on the level
 of complexity of the project itself. Since this project is relatively
 simple, this structure feels right.
@@ -2289,7 +2289,7 @@ into the **App.js** file.
 
 ## Building Components
 
-For now, let's just build those components. After you&apos;ve added the
+For now, let's just build those components. After you've added the
 components folder, you've also added all the functional component files.
 Since they are all currently empty, you can start adding them, one by
 one.
@@ -2300,7 +2300,7 @@ Here's the contents of the **Nav.js** file:
 >
 >     return (
 >
->         <nav className=&quot;main-nav&quot;>
+>         <nav className="main-nav">
 >
 >             <ul>
 >
@@ -2330,11 +2330,11 @@ Next, you can focus on the **Promo.js** file:
 >
 >     return (
 >
->         <div className=&quot;promo-section&quot;>
+>         <div className="promo-section">
 >
 >             <div>
 >
->                 <h1>Don&apos;t miss this deal!</h1>
+>                 <h1>Don't miss this deal!</h1>
 >
 >                 </div>
 >
@@ -2357,21 +2357,21 @@ Next, you can focus on the **Promo.js** file:
 Once you've finished the promo section, you can focus on the Intro
 components.
 
-Here&apos;s **Intro1.js:**
+Here's **Intro1.js:**
 
 > function Intro1() {
 >
 >     return (
 >
->         <div className=&quot;blog-post-intro&quot;>
+>         <div className="blog-post-intro">
 >
->             <h2>I&apos;ve become a React developer!</h2>
+>             <h2>I've become a React developer!</h2>
 >
 >             <div>
 >
->                 <p>I&apos;ve completed the React Basics course and I&apos;m happy to announce that I&apos;m now a Junior React Developer!</p>
+>                 <p>I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!</p>
 >
->                 <p className=&quot;link&quot;>Read more\...</p>
+>                 <p className="link">Read more\...</p>
 >
 >             </div>
 >
@@ -2385,21 +2385,21 @@ Here&apos;s **Intro1.js:**
 >
 > export default Intro1;
 
-Here&apos;s the code for the **Intro2.js** component:
+Here's the code for the **Intro2.js** component:
 
 > function Intro2() {
 >
 >     return (
 >
->         <div className=&quot;blog-post-intro&quot;>
+>         <div className="blog-post-intro">
 >
 >             <h2>Why I love front-end web development</h2>
 >
 >             <div>
 >
->                 <p>In this blog post, I&apos;ll list 10 reasons why I love to work as a front-end developer.</p>
+>                 <p>In this blog post, I'll list 10 reasons why I love to work as a front-end developer.</p>
 >
->                 <p className=&quot;link&quot;>Read more\...</p>
+>                 <p className="link">Read more\...</p>
 >
 >             </div>
 >
@@ -2420,15 +2420,15 @@ You can finish the previews for my blog posts with the code for
 >
 >     return (
 >
->         <div className=&quot;blog-post-intro&quot;>
+>         <div className="blog-post-intro">
 >
->             <h2>What&apos;s the best way to style your React apps?</h2>
+>             <h2>What's the best way to style your React apps?</h2>
 >
 >             <div>
 >
->                 <p>There are so many options to choose from. Here&apos;s a high-level overview of the popular ones.</p>
+>                 <p>There are so many options to choose from. Here's a high-level overview of the popular ones.</p>
 >
->                 <p className=&quot;link&quot;>Read more\...</p>
+>                 <p className="link">Read more\...</p>
 >
 >             </div>
 >
@@ -2442,14 +2442,14 @@ You can finish the previews for my blog posts with the code for
 >
 > export default Intro3;
 
-There&apos;s just one more thing left to code, the **Footer** component, so
+There's just one more thing left to code, the **Footer** component, so
 here it is:
 
 > function Footer() {
 >
 >     return (
 >
->         <div className=&quot;copyright&quot;>
+>         <div className="copyright">
 >
 >             <p>Made with love by Myself</p>
 >
@@ -2482,8 +2482,8 @@ Now let's briefly discuss the four bullet points above.
 
 Why use the **className** attribute in the JSX syntax?
 
-Well, with JSX, it looks like HTML so much that it&apos;s easy to forget
-that it&apos;s actually JavaScript code - not HTML.
+Well, with JSX, it looks like HTML so much that it's easy to forget
+that it's actually JavaScript code - not HTML.
 
 While regular HTML does indeed have a **class** attribute, which is used
 to list one or more CSS classes to be used on a given HTML element, this
@@ -2492,13 +2492,13 @@ cannot really work in JSX.
 The reason is that JSX is a special kind of JavaScript syntax, and the
 word **class** is a reserved keyword in JSX.
 
-That&apos;s why the React team had to make a compromise and so **className**
+That's why the React team had to make a compromise and so **className**
 is used in JSX to list one or more CSS classes to be used on a given
 element or component.
 
-But why use **Intro1.js, Intro2.js,** and **Intro3.js**? Isn&apos;t one of
-the tenets of coding the DRY approach - that is, the &quot;Don&apos;t repeat
-yourself&quot; approach?
+But why use **Intro1.js, Intro2.js,** and **Intro3.js**? Isn't one of
+the tenets of coding the DRY approach - that is, the "Don't repeat
+yourself" approach?
 
 Indeed, it is. However, there are still a few concepts to discuss before
 you learn how to re-use a single component with variations in its
@@ -2508,7 +2508,7 @@ This has to do with data in components, but don't worry, we'll be
 getting to that later.
 
 The third question is about the **props** object. It has been mentioned
-before, but so far it hasn&apos;t been used. It hasn't been used in this
+before, but so far it hasn't been used. It hasn't been used in this
 example either.
 
 The answer to this question has to do with the next lesson, titled
@@ -2520,14 +2520,14 @@ better, with the help of **props**.
 The final question is about not using the **<a>** element for empty
 links in my app.
 
-The answer here depends on whether those links are &quot;internal&quot; - inside
-an app, or &quot;external&quot;, meaning, leading to some external link, such
+The answer here depends on whether those links are "internal" - inside
+an app, or "external", meaning, leading to some external link, such
 as;
 [*[https://www.coursera.org]{.underline}*](https://www.coursera.org/).
 
 If the links are internal to the app - as they are envisioned here -
 using the **<a>** tag is simply not the React way of doing things.
-You&apos;ll learn why that is the case when discussing the use of React
+You'll learn why that is the case when discussing the use of React
 Router.
 
 ## Conclusion
@@ -2551,10 +2551,10 @@ collection of components.
 But with the app broken into several different components, you might be
 wondering how do you locate and integrate them all into your app.
 
-In this section (16), you&apos;ll learn about the concept of modules and how
+In this section (16), you'll learn about the concept of modules and how
 to manage your React components by placing them in a components folder.
 
-Finally, you&apos;ll explore the structure of the import and export
+Finally, you'll explore the structure of the import and export
 statement.
 
 As a developer, you often need a way to use and reuse components that
@@ -2599,17 +2599,17 @@ You are right.
 While they have similarities, it can help to think of a component as a
 single part or small piece of functionality like a button.
 
-Then you can think of a module as something that&apos;s larger than just one
+Then you can think of a module as something that's larger than just one
 component like a series of components.
 
 This technique of splitting your code into several modules is known as
 modular programming, and it complements the component-based architecture
 of React.
 
-To help you understand this better, let&apos;s explore the following
+To help you understand this better, let's explore the following
 scenario.
 
-Suppose you&apos;re a developer currently in the process of building an
+Suppose you're a developer currently in the process of building an
 application with React and there are several components that needs to be
 included in the app.
 
@@ -2634,11 +2634,11 @@ You need to use a file name sequence, such as a dot forward slash before
 the file name, but the file name extension is not required.
 
 Now you know about the syntax of the import and export statements.
-Let&apos;s explore how you construct your components in React.
+Let's explore how you construct your components in React.
 
 Remember that a component is essentially just a JavaScript file.
 
-React doesn&apos;t have strict rules on how you put files into folders,
+React doesn't have strict rules on how you put files into folders,
 however, there are a few common approaches you may want to consider.
 
 One approach is to place all components in a folder named components.
@@ -2659,7 +2659,7 @@ component called sidebar.
 Each component will be called and have its contents returned to the root
 components of our application, which is app.js.
 
-In this module, you&apos;ve explored the concept of modules and the
+In this module, you've explored the concept of modules and the
 structure of the import and export statement.
 
 You also learned how to manage your React components by placing them in
@@ -2695,7 +2695,7 @@ Here are the contents of the App.js file:
 >
 >   return (
 >
->     <div className=&quot;App&quot;>
+>     <div className="App">
 >
 >       <Heading />
 
@@ -2707,7 +2707,7 @@ height="1.3125in"}
 
 Here is the output from the solution code for the App.js file:
 
-![The output of the completed &apos;Creating and importing components&apos;
+![The output of the completed 'Creating and importing components'
 exercise.](./images/image041.png){width="5.0in"
 height="1.220472440944882in"}
 
@@ -2731,20 +2731,20 @@ component file, named "Heading.js".
 **Step 2:** Next, you imported the **Heading** component into the
 **App** component. 
 
-> import Heading from &quot;./Heading&quot;;
+> import Heading from "./Heading";
 
 **Step 3:** Finally, you removed the sentence that reads: *This is the
 starting code for "Your first component" ungraded lab* - so that only
 the **Heading** JSX element remains in the return statement of the App
 component. 
 
-> import Heading from &quot;./Heading&quot;;
+> import Heading from "./Heading";
 >
 > function App() {
 >
 >   return (
 >
->     <div className=&quot;App&quot;>
+>     <div className="App">
 >
 >       <Heading />
 >
@@ -2801,12 +2801,12 @@ as props.
 
 In this section (19), you will learn about the props object and how
 developers use it to pass data from one component to another. Then
-you&apos;ll explore component hierarchy and learn why components are set to
+you'll explore component hierarchy and learn why components are set to
 have a parent-child structure.
 
-Before you begin your journey with props, let&apos;s revisit another piece
+Before you begin your journey with props, let's revisit another piece
 of JavaScript functionality that will help you understand how props
-work. It&apos;s called the JavaScript object. Recall this in JavaScript, an
+work. It's called the JavaScript object. Recall this in JavaScript, an
 object is a special type of variable that can contain many values.
 
 You use objects when you need to store groups of related data of
@@ -2815,16 +2815,16 @@ example, suppose you create an object called fruits that contains
 properties for type, quantity, and color.
 
 Remember that these properties consist of name-value pairs, and you can
-access the object&apos;s properties using dot notation.
+access the object's properties using dot notation.
 
 In React, you can use a similar technique to pass data from one
 component to another using the properties object or simply props. Props
-allow you to pass data from one component to another. It&apos;s helpful to
+allow you to pass data from one component to another. It's helpful to
 think of props as arguments a component can accept and are passed using
 JSX syntax, much like HTML attributes.
 
-Inside the function, you use the keyword props. Now that you&apos;re
-familiar with the concept of props, let&apos;s explore an example to send
+Inside the function, you use the keyword props. Now that you're
+familiar with the concept of props, let's explore an example to send
 some props to a component and print them out in a React app.
 
 Suppose you have the default code for the React app open in the index.js
@@ -2832,12 +2832,12 @@ file, you call the app component. Inside the app component, you return
 an h1 heading with some static title text. While this code works, you
 can make this heading dynamic by using props.
 
-Let&apos;s now explore the syntax involved to create this. In the root
+Let's now explore the syntax involved to create this. In the root
 component, index.js, you send the value you want to pass to the app
 component as an argument in the form of an HTML attribute. Next, in the
 app component, you accept this argument using the props object. To do
 this, you add the keyword props to the function declaration inside of
-the parentheses. Finally, to access this object&apos;s properties, you use
+the parentheses. Finally, to access this object's properties, you use
 dots notation to reference the name of the object property that was
 passed as an argument by the HTML attribute.
 
@@ -2852,36 +2852,36 @@ working with components, especially when you want the flow of data in
 your app to be dynamic.
 
 While you just explore the basic example to dynamically print a heading,
-you&apos;ll get a chance to practice with more complex data structures using
+you'll get a chance to practice with more complex data structures using
 props later.
 
-Now you&apos;re familiar with how props work by sending data between
-components. Let&apos;s explore this data flow in a little more detail.
+Now you're familiar with how props work by sending data between
+components. Let's explore this data flow in a little more detail.
 
 When two components communicate with each other, the component sending
 the props data is known as the parent, and the component receiving the
 props data is known as the child.
 
-As you&apos;ve just learned with the example earlier, this parent-child
+As you've just learned with the example earlier, this parent-child
 relationship allows parent components of past data down to child
 components using props.
 
-It&apos;s also possible for parent components to send the same data to
-multiple child components. However, it&apos;s important to know that this
-communication is a one-directional data flow. It&apos;s not possible to
+It's also possible for parent components to send the same data to
+multiple child components. However, it's important to know that this
+communication is a one-directional data flow. It's not possible to
 communicate from the child component back to the parent components using
-props. Instead, developers use other approaches. Don&apos;t worry about that
+props. Instead, developers use other approaches. Don't worry about that
 for now. You will learn more about them later.
 
 Although props are a very powerful tool in React, they do have some
-limitations. For example, you just learned about how it&apos;s not possible
+limitations. For example, you just learned about how it's not possible
 to send data from the child component back to the parent component using
 prompts.
 
 Another important limitation has to do with something called pure
 functions. In programming, a pure function is a function that will
 always return the same outputs for the same argument values that are
-passed in. Don&apos;t worry too much about pure function for now. Just keep
+passed in. Don't worry too much about pure function for now. Just keep
 in mind that in React, when you declare a component using props, it must
 never modify its own prompts.
 
@@ -2924,16 +2924,16 @@ For example, let's say you have a component that returns a piece of JSX:
 sugar code down to plain JavaScript code, you'd get back some unusual
 code:
 
-> &quot;use strict&quot;;
+> "use strict";
 >
 > function App() {
 >
->     return /\*#\_\_PURE\_\_\*/React.createElement(&quot;h1&quot;, null, &quot;Hello there&quot;);
+>     return /\*#\_\_PURE\_\_\*/React.createElement("h1", null, "Hello there");
 >
 > }
 
-You just want to focus on the **React.createElement(&quot;h1&quot;, null,
-&quot;Hello there&quot;);** part. You can ignore the rest.
+You just want to focus on the **React.createElement("h1", null,
+"Hello there");** part. You can ignore the rest.
 
 This means that the **createElement** function receives three arguments:
 
@@ -2970,16 +2970,16 @@ structure:
 two **createElement** functions:
 
 ```
-> &quot;use strict&quot;;
+> "use strict";
 >
 > function App() {
 >
->   return /\*#\_\_PURE\_\_\*/React.createElement(&quot;div&quot;, null, /\*#\_\_PURE\_\_\*/React.createElement(&quot;h1&quot;, null, &quot;Hello there&quot;));
+>   return /\*#\_\_PURE\_\_\*/React.createElement("div", null, /\*#\_\_PURE\_\_\*/React.createElement("h1", null, "Hello there"));
 >
 > }
 ```
 
-If you format this output, remove the **&quot;use strict&quot;** line, and
+If you format this output, remove the **"use strict"** line, and
 remove the **\_\_PURE\_\_** comments, you get a more readable output:
 
 ```
@@ -2987,11 +2987,11 @@ remove the **\_\_PURE\_\_** comments, you get a more readable output:
 >
 >   return React.createElement(
 >
->     &quot;div&quot;,
+>     "div",
 >
 >     null,
 >
->     React.createElement(&quot;h1&quot;, null, &quot;Hello there&quot;)
+>     React.createElement("h1", null, "Hello there")
 >
 >   );
 >
@@ -3016,7 +3016,7 @@ In that case, your code would contain a pair of curly braces instead of
 the word **null**:
 
 ```
-> &quot;use strict&quot;;
+> "use strict";
 >
 >  
 >
@@ -3024,11 +3024,11 @@ the word **null**:
 >
 >   return React.createElement(
 >
->     &quot;div&quot;,
+>     "div",
 >
 >     {},
 >
->     React.createElement(&quot;h1&quot;, {}, &quot;Hello there&quot;)
+>     React.createElement("h1", {}, "Hello there")
 >
 >   );
 >
@@ -3046,9 +3046,9 @@ The way this works is described in React docs using the following code:
 >
 >   type,
 >
->   &lsqb;props&rsqb;,
+>   [props],
 >
->   &lsqb;\...children&rsqb;
+>   [\...children]
 >
 > )
 ```
@@ -3056,7 +3056,7 @@ The way this works is described in React docs using the following code:
 ## The third argument (\...children)
 
 This is the inner content that will go inside the wrapping element.
-It&apos;s what makes it possible to nest elements inside other elements,
+It's what makes it possible to nest elements inside other elements,
 mimicking the way that HTML works.
 
 In this reading you've learned how to use a transpiler to break JSX code
@@ -3068,12 +3068,12 @@ By now, you should be familiar with the concept of props, and that they
 allow you to pass data from one component to another. Developers use
 props when they want the flow of data in the app to be dynamic. This
 makes the app more versatile, helping it consume data easier. In this
-section (21) you&apos;ll learn the syntax involved to use props and
-components. You&apos;ll also explore the passing of props to and within a
+section (21) you'll learn the syntax involved to use props and
+components. You'll also explore the passing of props to and within a
 component using functions. During this course you were introduced to an
 example of how to build a simple blog layout in react using components.
 
-Now you&apos;ll be introduced to a new component called the Nav component.
+Now you'll be introduced to a new component called the Nav component.
 Developers commonly build navigation menus using html on ordered lists.
 A navigation menu is basically just a list which can be styled easily
 with CSS, such a snippet of code is well suited to be placed in its own
@@ -3084,21 +3084,21 @@ L I tags. And this same Nav component can also be rendered as a JSX
 element to which we can pass dynamic value with props. In order to do
 this successfully you need to be comfortable with the concept of
 attributes. The best way to develop an understanding of attributes is
-with a live example of building a component using props. Here&apos;s a
-practical way to work with props. I&apos;m in my app with the header main
+with a live example of building a component using props. Here's a
+practical way to work with props. I'm in my app with the header main
 and sidebar components and all of them are rendered from the app
 component. The app component is in this case referred to as the parent
 component and the header main and side ball components are referred to
 as the Children of the app component. Are now past data from the app
 components to each of its Children components. First the header
 component receives a name prop, with a value of ANNA and a color prop
-with the value of purple. I&apos;m sending those props from the header JSX
+with the value of purple. I'm sending those props from the header JSX
 element inside the app components return statement. Press control S, or
 command S on a Mac to save these changes. However, my re compiled app is
 not showing any changes because I send this data through the props
-object to the header component. I&apos;m not using this data and the header
-component. So let me open the head of component and I&apos;ll first pass in
-the props object. For now, I&apos;ll just console log the props object Again
+object to the header component. I'm not using this data and the header
+component. So let me open the head of component and I'll first pass in
+the props object. For now, I'll just console log the props object Again
 Press control S, or command s to save the update and wait for it to
 compile. If I now inspect this object in the console, I find the console
 logged props object and it comes with two properties the name ANNA and
@@ -3107,13 +3107,13 @@ inside the header component using props dot name and props dot collar.
 To make sure that the expressions are evaluated inside the JSX syntax, I
 must surround them with an opening and a closing curly brace. I press
 control S or command s on the MAC again, and wait for it to compile. Now
-my header shows the prop state received from the parent component, I&apos;ll
+my header shows the prop state received from the parent component, I'll
 now update the main and sidebar to. Back in the app components render
 statement, I add the greet prop with the value of howdy in the main JXS
 element, and the value of high in the sidebar JXS element. I opened the
 main components file and receive the props object Then outputs the value
 of opening curly brace props dot greet, closing curly brace. I can now
-delete the Hello string. Similarly in the sidebar components file, I&apos;ll
+delete the Hello string. Similarly in the sidebar components file, I'll
 also receive the props object and replace the Hello with an opening
 curly brace props dot greet, closing curly brace. I click file, save all
 and wait for the apps to compile. All my components are now using the
@@ -3126,7 +3126,7 @@ passing of props to and within a component using classes and functions.
 Here is the completed App.js file:
 
 ```
-> import Heading from &quot;./Heading&quot;;
+> import Heading from "./Heading";
 >
 >  
 >
@@ -3134,11 +3134,11 @@ Here is the completed App.js file:
 >
 >   return (
 >
->     <div className=&quot;App&quot;>
+>     <div className="App">
 >
->       <Heading firstName=&quot;Bob&quot; />
+>       <Heading firstName="Bob" />
 >
->       <Heading firstName=&quot;Any name other than Bob&quot; />
+>       <Heading firstName="Any name other than Bob" />
 >
 >     </div>
 >
@@ -3172,12 +3172,12 @@ And here is the completed Heading.js file:
 
 Here is the output from the solution code for the App.js file:
 
-![The output of the completed &apos;Passing props&apos;
+![The output of the completed 'Passing props'
 exercise.](./images/image042.png){width="6.0in"
 height="1.8693788276465442in"}
 
 **Step 1:** First, you passed the props object as a parameter to the
-**Heading** component in the &apos;Heading.js&apos; file. 
+**Heading** component in the 'Heading.js' file. 
 
 ```
 > function Heading(props) {
@@ -3199,7 +3199,7 @@ height="1.8693788276465442in"}
 **Step 2:** Next, inside the **Heading** component's body, you located
 the **return** statement, and added a JSX expression that accesses the
 **firstName** property of the props object, inside the **return**
-statement&apos;s **h1**, after **Hello**. 
+statement's **h1**, after **Hello**. 
 
 ```
 > function Heading(props) {
@@ -3218,12 +3218,12 @@ statement&apos;s **h1**, after **Hello**. 
 ```
  
 
-**Step 3:** Then, inside the App component&apos;s return statement, you
+**Step 3:** Then, inside the App component's return statement, you
 located the **<Heading />** JSX element, and added the attribute of
 **firstName** and give it the value of **Bob**. 
 
 ```
-> import Heading from &quot;./Heading&quot;;
+> import Heading from "./Heading";
 >
 >  
 >
@@ -3231,9 +3231,9 @@ located the **<Heading />** JSX element, and added the attribute of
 >
 >   return (
 >
->     <div className=&quot;App&quot;>
+>     <div className="App">
 >
->       <Heading firstName=&quot;Bob&quot; />
+>       <Heading firstName="Bob" />
 >
 >     </div>
 >
@@ -3249,13 +3249,13 @@ located the **<Heading />** JSX element, and added the attribute of
 
 **Step 4:** You saved all your changes and ran the app to preview the
 updates in the browser, and confirm that the page shows an **h1**
-element with the text that reads &quot;Hello, Bob&quot;. 
+element with the text that reads "Hello, Bob". 
 
 **Step 5:** Then, you changed **firstName** to any name other than 'Bob'
 and see how the page updates with the new name.
 
 ```
-> import Heading from &quot;./Heading&quot;;
+> import Heading from "./Heading";
 >
 >  
 >
@@ -3263,9 +3263,9 @@ and see how the page updates with the new name.
 >
 >   return (
 >
->     <div className=&quot;App&quot;>
+>     <div className="App">
 >
->       <Heading firstName=&quot;Any name other than Bob&quot; />
+>       <Heading firstName="Any name other than Bob" />
 >
 >     </div>
 >
@@ -3284,7 +3284,7 @@ first one.  Again, adding the **firstName** attribute and choosing
 another name for this value.
 
 ```
-> import Heading from &quot;./Heading&quot;;
+> import Heading from "./Heading";
 >
 >  
 >
@@ -3292,11 +3292,11 @@ another name for this value.
 >
 >   return (
 >
->     <div className=&quot;App&quot;>
+>     <div className="App">
 >
->       <Heading firstName=&quot;Any name other than Bob&quot; />
+>       <Heading firstName="Any name other than Bob" />
 >
->       <Heading firstName=&quot;Jack&quot; />
+>       <Heading firstName="Jack" />
 >
 >     </div>
 >
@@ -3311,10 +3311,10 @@ another name for this value.
 
 # 23. Introducing JSX
 
-At this point in the course, you&apos;ve been introduced to the concept of
-JSX, and how it&apos;s used to interact with components. In this section
+At this point in the course, you've been introduced to the concept of
+JSX, and how it's used to interact with components. In this section
 (23), you will explore JSX in more detail in the context of components
-and styling. You&apos;ll also learn how to mix JavaScript, HTML, and CSS
+and styling. You'll also learn how to mix JavaScript, HTML, and CSS
 within a component. What is it that makes JSX so special? In one word,
 expressiveness. Developers can express what they want to react to render
 using a very expressive syntax, almost identical to HTML or XML. In
@@ -3324,28 +3324,28 @@ website by creating a nav component. Then place the HTML semantic nav
 element, and an unordered list inside. Because this is React, the list
 values can be made dynamic by passing values as props. Is important to
 note that a regular JavaScript function is used to define how React
-should render the component wherever it&apos;s referenced using the nav JSX
+should render the component wherever it's referenced using the nav JSX
 elements. This is what makes JSX so powerful, like the fact that you can
 insert specific JSX expressions such as variables and props. The reason
-why this is so great to work with, is because anything that&apos;s placed
+why this is so great to work with, is because anything that's placed
 inside the curly braces of the code is essentially regular JavaScript
 code. For example, you could calculate a series of simple expressions
 using the Li or list item tag. This means that you can think of the
 curly braces as being special areas where you can write any kind of
 JavaScript code you like. You can write the rest of the code inside the
-return statement. Now that you&apos;ve learned a little more about JSX
-expressions, let&apos;s focus on some JSX rules inside the return statement
+return statement. Now that you've learned a little more about JSX
+expressions, let's focus on some JSX rules inside the return statement
 of the function. The return statements can be thought of as the area of
-expressive syntax that allows you to write regular HTML code as you&apos;d
+expressive syntax that allows you to write regular HTML code as you'd
 like to have it in your rendered app. But if you need to return HTML
 code over multiple lines, it must be placed inside parentheses. This
 allows developers to alternate between regular HTML tags, and dynamic
-values represented as JSX expressions inside curly braces. It&apos;s also
+values represented as JSX expressions inside curly braces. It's also
 important to remember that the HTML code must be wrapped in a top level
 element, such as a div tag. If you do not want to add extra div elements
 to the DOM, you can use something called a fragment instead. This is
 like an HTML open and close tag without the tag name. While you can
-think of the code inside the return statement is regular HTML, it&apos;s
+think of the code inside the return statement is regular HTML, it's
 worth remembering you are in a JavaScript file, and as a result, there
 are some differences. For example, you cannot use the keyword class to
 work with CSS classes in your HTML elements. This is because class is a
@@ -3354,14 +3354,14 @@ keyword called className instead. Also notice that class name is written
 in Camel Case, which depicts the separation of words by using a single
 capitalized letter. You can use className to list any number of CSS
 classes to style a specific JSX element inside a component. This is just
-like how you use a class attribute in regular HTML. It&apos;s only one of
-the many ways you can style React apps. You&apos;ll learn more about how to
+like how you use a class attribute in regular HTML. It's only one of
+the many ways you can style React apps. You'll learn more about how to
 do this later. For now, just know that this is the closest to what you
 would do like if you were working with HTML, and CSS website layouts.
-There are some other differences, and you&apos;ll learn about them later.
+There are some other differences, and you'll learn about them later.
 But in practical terms, you can consider the code to be pretty much just
 like regular HTML. In this lesson, you explored further the concept of
-JSX styling, and how it&apos;s used in React. You have now furthered your
+JSX styling, and how it's used in React. You have now furthered your
 understanding of how to use JSX to mix JavaScript, HTML, and CSS within
 a component. Great work.
 
@@ -3374,16 +3374,16 @@ you'll learn about **props.children** and what its purpose is.
 
 To understand the concept of **props.children**, consider the following
 real-life situation: you have a couple of apples, and you have a couple
-of pears. You&apos;d like to carry the apples some distance, so obviously,
-you&apos;ll use a bag.
+of pears. You'd like to carry the apples some distance, so obviously,
+you'll use a bag.
 
-It&apos;s not a &quot;bag for apples&quot;. It&apos;s not a &quot;bag for pairs&quot;. It&apos;s
+It's not a "bag for apples". It's not a "bag for pairs". It's
 just a bag. Nothing about this bag makes it such that it needs to be
-referred to as a bag in which you&apos;d only and always carry apples, nor a
-bag in which you&apos;d only and always carry pears.
+referred to as a bag in which you'd only and always carry apples, nor a
+bag in which you'd only and always carry pears.
 
-In a way, the bag &quot;doesn&apos;t care&quot; if it is used to carry apples or
-pears. Nothing about the bag changes. There are no changes in the bag&apos;s
+In a way, the bag "doesn't care" if it is used to carry apples or
+pears. Nothing about the bag changes. There are no changes in the bag's
 material, size, shape, or color - because it can handle apples or pears
 being carried inside of it, without issues.
 
@@ -3394,7 +3394,7 @@ Now, consider the following component:
 >
 >   return (
 >
->     <div className=&quot;promo-section&quot;>
+>     <div className="promo-section">
 >
 >         <div>
 >
@@ -3424,15 +3424,15 @@ There is also a **Pears** component:
 >
 >   return (
 >
->     <h2>I don&apos;t like pears, but my friend, {props.friend}, does</h2>
+>     <h2>I don't like pears, but my friend, {props.friend}, does</h2>
 >
 >   )
 >
 > }
 ```
 
-Now, the question is this: Let&apos;s say you want to have a **Bag**
-component, which can be used to &quot;carry&quot; **Apples** or **Pears**. How
+Now, the question is this: Let's say you want to have a **Bag**
+component, which can be used to "carry" **Apples** or **Pears**. How
 would you do that?
 
 This is where **props.children** comes in.
@@ -3444,13 +3444,13 @@ You can define a **Bag** component as follows:
 >
 >     const bag = {
 >
->         padding: &quot;20px&quot;,
+>         padding: "20px",
 >
->         border: &quot;1px solid gray&quot;,
+>         border: "1px solid gray",
 >
->         background: &quot;#fff&quot;,
+>         background: "#fff",
 >
->         margin: &quot;20px 0&quot;
+>         margin: "20px 0"
 >
 >     }
 >
@@ -3479,15 +3479,15 @@ Consider a very simple example:
 > </Example>
 ```
 The **Hello there** text is a child of the Example JSX element. The
-Example JSX Element above is an &quot;invocation&quot; of the **Example.js**
+Example JSX Element above is an "invocation" of the **Example.js**
 file, which, in modern React, is usually a function component.
 
 Now, did you know that this **Hello there** piece of text can be passed
 as a **named prop** when rendering the **Example** component?
 
-Here&apos;s how that would look like:
+Here's how that would look like:
 ```
-> <Example children=&quot;Hello there&quot; />
+> <Example children="Hello there" />
 ```
 Ok, so, there are two ways to do it. But this is just the beginning.
 
@@ -3501,40 +3501,40 @@ Obviously, in JSX, that is easily achievable:
 What if the **<h3>Hello there</h3>** was a separate component, for
 example, named **Hello**?
 
-In that case, you&apos;d have to update the code like this:
+In that case, you'd have to update the code like this:
 ```
 > <Example children={<Hello />} />
 ```
 You could even make the **Hello** component more dynamic, by giving it
 its own prop:
 ```
-> <Example children={<Hello message=&quot;Hello there&quot; />} />
+> <Example children={<Hello message="Hello there" />} />
 ```
 So, given the **Bag**, **Apples**, and **Pears** examples from the
 beginning of this reading, armed with this new knowledge, how can you
 make it work?
 
-Here&apos;s how you&apos;d render the **Bag** component with the **Apples**
+Here's how you'd render the **Bag** component with the **Apples**
 component as its **props.children**:
 ```
-> <Bag children={<Apples color=&quot;yellow&quot; number=&quot;5&quot; />} />
+> <Bag children={<Apples color="yellow" number="5" />} />
 ```
-And here&apos;s how you&apos;d render the **Bag** component, wrapping the
+And here's how you'd render the **Bag** component, wrapping the
 **Pears** component:
 
 ```
-> <Bag children={<Pears friend=&quot;Peter&quot; />} />
+> <Bag children={<Pears friend="Peter" />} />
 ```
 
-While the above syntax might look a bit weird, it&apos;s important to
-understand what is happening &quot;under the hood&quot;.
+While the above syntax might look a bit weird, it's important to
+understand what is happening "under the hood".
 
 Effectively, the above syntax is the same as the two examples below.
 
 ```
 > <Bag>
 >
->     <Apples color=&quot;yellow&quot; number=&quot;5&quot; />
+>     <Apples color="yellow" number="5" />
 >
 > </Bag>
 >
@@ -3542,7 +3542,7 @@ Effectively, the above syntax is the same as the two examples below.
 >
 > <Bag>
 >
->     <Pears friend=&quot;Peter&quot; />
+>     <Pears friend="Peter" />
 >
 > </Bag>
 ```
@@ -3555,16 +3555,16 @@ JSX element having multiple children, such as, for example:
 >
 >     <Bag>
 >
->         <Apples color=&quot;yellow&quot; number=&quot;5&quot; />
+>         <Apples color="yellow" number="5" />
 >
->         <Pears friend=&quot;Peter&quot; />
+>         <Pears friend="Peter" />
 >
 >     </Bag>
 >
 > </Trunk>
 ```
 
-So, in the above structure, there&apos;s a **Trunk** JSX element, inside of
+So, in the above structure, there's a **Trunk** JSX element, inside of
 which is a single **Bag** JSX element, holding an **Apples** and a
 **Pairs** JSX element.
 
@@ -3573,7 +3573,7 @@ Before the end of this reading, consider this JSX element again:
 ```
 > <Bag>
 >
->     <Apples color=&quot;yellow&quot; number=&quot;5&quot; />
+>     <Apples color="yellow" number="5" />
 >
 > </Bag>
 ```
@@ -3589,34 +3589,34 @@ wide variety of groceries inside the bag, you can do the same thing in
 React: wrap a wide variety of components inside the **Bag** component,
 using the children prop to achieve this**.**
 
-It&apos;s crucial to understand this when working with React.
+It's crucial to understand this when working with React.
 
-Before the end of this reading, there&apos;s another important concept that
+Before the end of this reading, there's another important concept that
 you need to be aware of: *finding the right amount of modularization*.
 What does this mean? Imagine, for example, that you had a number of
 small bags, and that each bag could only carry a single apple or pear.
-You&apos;d end up having to wrap each &quot;apple&quot; inside a &quot;bag&quot;. That
-doesn&apos;t make much sense. You can think about components making your
-layouts modular in a similar way. You don&apos;t want to have an entire
+You'd end up having to wrap each "apple" inside a "bag". That
+doesn't make much sense. You can think about components making your
+layouts modular in a similar way. You don't want to have an entire
 layout contained in a single component, because that would be very
 difficult to work with. On the flip side, if you made each HTML element
 in your layout a separate component, that would make it very hard to
-work with, although such layout would be modular. So it&apos;s all about
+work with, although such layout would be modular. So it's all about
 moderation. You need to organize your layouts by splitting them into
 meaningful areas of the page, and then code those meaningful areas as
 separate components. that would constitute the right amount of
 modularity. To reinforce this point, It might help to think of it in
-terms of how a person would describe a website: there&apos;s a menu, a
+terms of how a person would describe a website: there's a menu, a
 footer, the shopping cart, etc.
 
 In conclusion, when you see a JSX element wrapping some other JSX
-element, you can easily understand that it&apos;s all just
+element, you can easily understand that it's all just
 **props.children** in the background.
 
 # 25. Styling JSX elements
 
 You've observed that JSX is incredibly versatile, and can accept a
-combination of JavaScript, HTML and CSS.  In this reading, you&apos;ll learn
+combination of JavaScript, HTML and CSS.  In this reading, you'll learn
 some approaches for styling JSX elements and doing so in a way that
 achieves both a functional and visual aspect within an app.
 
@@ -3627,7 +3627,7 @@ in the head of the **index.html** file in which your React app will
 mount.
 
 The **href** attribute loads some CSS styles, probably with some CSS
-classes, and then, inside the function component&apos;s declarations, you
+classes, and then, inside the function component's declarations, you
 can access those CSS classes using the **className** attribute.
 
 ```
@@ -3635,7 +3635,7 @@ can access those CSS classes using the **className** attribute.
 >
 >     return (
 >
->         <div className=&quot;promo-section&quot;>
+>         <div className="promo-section">
 >
 >             <div>
 >
@@ -3680,7 +3680,7 @@ encountered earlier:
 >
 >     return (
 >
->         <div className=&quot;promo-section&quot;>
+>         <div className="promo-section">
 >
 >             <div>
 >
@@ -3712,11 +3712,11 @@ Now you can add some inline styles to it:
 >
 >     return (
 >
->         <div className=&quot;promo-section&quot;>
+>         <div className="promo-section">
 >
 >             <div>
 >
->                 <h1 style={{color:&quot;tomato&quot;, fontSize:&quot;40px&quot;, fontWeight:&quot;bold&quot;}}>
+>                 <h1 style={{color:"tomato", fontSize:"40px", fontWeight:"bold"}}>
 >
 >                     {props.heading}
 >
@@ -3752,7 +3752,7 @@ JavaScript. Now let's add a **style object literal** inside of these
 curly braces:
 
 ```
-> <h1 style={{color:&quot;tomato&quot;,fontSize:&quot;40px&quot;}}>
+> <h1 style={{color:"tomato",fontSize:"40px"}}>
 ```
 
 You can then re-write this object literal:
@@ -3760,19 +3760,19 @@ You can then re-write this object literal:
 ```
 > {
 >
->     color: &quot;tomato&quot;,
+>     color: "tomato",
 >
->     fontSize: &quot;40px&quot;
+>     fontSize: "40px"
 >
 > }
 ```
 
-So, there&apos;s nothing special about this object, except for the fact that
+So, there's nothing special about this object, except for the fact that
 you've inlined it and placed it inside a pair of curly braces.
-Additionally, since it&apos;s just JavaScript, those CSS properties that
+Additionally, since it's just JavaScript, those CSS properties that
 would be hyphenated in plain CSS, such as, for example,
 **font-size:40px**, become camelCased, and the value is a string, making
-it look like this: **fontSize:&quot;40px&quot;**.
+it look like this: **fontSize:"40px"**.
 
 Besides inlining a *style object literal*, you can also save it in a
 variable, and then use that variable instead of passing an object
@@ -3788,9 +3788,9 @@ saved as a JavaScript variable:
 >
 > const styles = {
 >
->     color: &quot;tomato&quot;,
+>     color: "tomato",
 >
->     fontSize: &quot;40px&quot;
+>     fontSize: "40px"
 >
 > }
 >
@@ -3798,7 +3798,7 @@ saved as a JavaScript variable:
 >
 > return (
 >
->         <div className=&quot;promo-section&quot;>
+>         <div className="promo-section">
 >
 >             <div>
 >
@@ -3840,7 +3840,7 @@ inside the HTML element. Next is internal by using the style elements
 in the head section. Finally, external by linking to an external CSS
 file
 
-using the link element. In this section (26), you&apos;ll
+using the link element. In this section (26), you'll
 
 learn how to take CSS style rules from
 
@@ -3854,7 +3854,7 @@ statement of the component. Notice that the
 
 components are styled by the external style
 
-sheet, index dot CSS. For this section (26), I&apos;ll continue
+sheet, index dot CSS. For this section (26), I'll continue
 
 working on an app which consists of the components
 
@@ -3864,9 +3864,9 @@ will be on using internal styling inside
 
 the sidebar components. To demonstrate this,
 
-I don&apos;t need to move all the code from
+I don't need to move all the code from
 
-the index.CSS file. Instead, I&apos;ll just
+the index.CSS file. Instead, I'll just
 
 focus on the style is related to the
 
@@ -3878,13 +3878,13 @@ or Command X on Mac. After saving, notice
 
 that this removes the styling from the
 
-sidebar components displayed in the browser. Now let&apos;s go to the
+sidebar components displayed in the browser. Now let's go to the
 
-sidebar.js file where I&apos;ll paste the code before
+sidebar.js file where I'll paste the code before
 
 the return statement. This will not affect my
 
-component because I&apos;m pasting CSS code into
+component because I'm pasting CSS code into
 
 a JavaScript file. I need to make some
 
@@ -3898,7 +3898,7 @@ and then replace the semi-colons and
 
 the code with commas. I also need to replace the hyphenated names
 
-with camelCase. It&apos;s important to
+with camelCase. It's important to
 
 know that because CSS declarations like background are now an object
 property, I need to make their
@@ -3919,7 +3919,7 @@ save my changes. Notice that the
 
 sidebar components appears in the
 
-browser as before, I edited the index.CSS file. That&apos;s an example of
+browser as before, I edited the index.CSS file. That's an example of
 using inline CSS styling directly
 
 inside a component. In this section (26), you
@@ -3959,10 +3959,10 @@ function Nav(props) {
 
 }
 
-This component&apos;s code returns a list item containing the value of the
+This component's code returns a list item containing the value of the
 'first' prop.
 
-Now, let&apos;s change this function declaration to a function expression:
+Now, let's change this function declaration to a function expression:
 
 const Nav = function(props) {
 
@@ -3978,19 +3978,19 @@ const Nav = function(props) {
 
 }
 
-The component is, for the most part, the same. The only thing that&apos;s
+The component is, for the most part, the same. The only thing that's
 changed is that you're now using an anonymous (nameless) function, and
 assigning this anonymous function declaration to a variable declared
 using the **const** keyword, and the name **Nav**. The rest of the code
 is identical.
 
 Changing a component from a function declaration to a function
-expression doesn&apos;t change its behavior, or how you write the code to
-render the **Nav** component. It&apos;s still the same:
+expression doesn't change its behavior, or how you write the code to
+render the **Nav** component. It's still the same:
 
 1
 
-<Nav first=&quot;Home&quot; />
+<Nav first="Home" />
 
 You can also take this concept a step further, using arrow functions.
 
@@ -4033,7 +4033,7 @@ And then observe how this is written as an arrow function:
 const example = () => {}
 
 Another important rule regarding arrow functions is that using the
-parentheses is optional if there&apos;s a single parameter that a function
+parentheses is optional if there's a single parameter that a function
 accepts.
 
 In other words, another correct way to write the previous Nav arrow
@@ -4057,8 +4057,8 @@ In all other cases, when you write arrow functions, **for any number of
 parameters other than a single parameter, using parentheses around
 parameters is compulsory**.
 
-For example, if your **Nav** component wasn&apos;t accepting any parameters,
-you&apos;d code it with empty parentheses:
+For example, if your **Nav** component wasn't accepting any parameters,
+you'd code it with empty parentheses:
 
 const Nav = () => {
 
@@ -4075,7 +4075,7 @@ const Nav = () => {
 }
 
 Another interesting thing about arrow functions is the **implicit
-return**. However, it only works if it&apos;s on the same line of code as
+return**. However, it only works if it's on the same line of code as
 the arrow itself. In other words, the implicit return works if your
 entire component is a single line of code.
 
@@ -4086,7 +4086,7 @@ one-liner:
 
 const Nav = () => <ul><li>Home</li></ul>
 
-Note that with the implicit return, you don&apos;t even have to use the
+Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
 cases.
 
@@ -4100,23 +4100,23 @@ For example:
 
 1
 
-&lsqb;10, 20, 30&rsqb;.forEach(item => item \* 10)
+[10, 20, 30].forEach(item => item \* 10)
 
 The output of the above vanilla JavaScript line of code would be three
 number values:
 
 **100** **200** **300**
 
-As a side-note, the term &quot;vanilla JavaScript&quot; is often used to
+As a side-note, the term "vanilla JavaScript" is often used to
 describe the plain, regular JavaScript language syntax, without any
 framework-specific or library-specific code. For example, React is a
-library, so in this context, saying that a piece of code is &quot;vanilla
-JavaScript&quot; means that it doesn&apos;t need any special library to run. It
-can run in &quot;plain&quot; JavaScript without any additional dependencies.
+library, so in this context, saying that a piece of code is "vanilla
+JavaScript" means that it doesn't need any special library to run. It
+can run in "plain" JavaScript without any additional dependencies.
 
 You could also write this code in ES5 syntax:
 
-&lsqb;10, 20, 30&rsqb;.forEach(function(item) {
+[10, 20, 30].forEach(function(item) {
 
         return item \* 10
 
@@ -4148,10 +4148,10 @@ different. The ES6 function is a lot shorter because:
 
 -   Since the arrow function fits on one line of code, you don't need to
     use curly braces around the function body, or the return keyword;
-    it&apos;s implicit 
+    it's implicit 
 
 -   Arrow functions are used extensively in JSX in React, and getting
-    used to their syntax and being able to &quot;mentally parse&quot; it as you
+    used to their syntax and being able to "mentally parse" it as you
     read it is an important skill to have and helps you get better at
     writing React apps.
 
@@ -4166,18 +4166,18 @@ React. It allows developers to write HTML as part of their component
 code, and is frequently used in React as it offers greater flexibility.
 
 In this section (28), you will learn how JSX is used and how to use its
-key feature embedded expressions. First, let&apos;s examine a JSX example
+key feature embedded expressions. First, let's examine a JSX example
 that will output some text on a webpage. The code consists of a
 paragraph, HTML elements containing the phrase hello world. It is
 assigned to the constant variable named Result. Note that when this JSX
 code executes, the result variable will contain a react element that can
 then be inserted into the webpage. This is one of the key features of
-JSX. Building React elements from HTML code automatically. Let&apos;s
+JSX. Building React elements from HTML code automatically. Let's
 explore another important feature of JSX, which is embedded expressions.
 Embedded expressions allow developers to insert the values of JavaScript
 variables into the HTML of the resulting React elements. Embedded
-expressions can also embed the outputs of functions. Let&apos;s say you need
-to output the person&apos;s name in a specific format. To do this, you can
+expressions can also embed the outputs of functions. Let's say you need
+to output the person's name in a specific format. To do this, you can
 first create a function named format name that will return the first
 name and surname with a space character between them. In your JSX, you
 can then call this function inside
@@ -4190,7 +4190,7 @@ will be output in HTML. Expressions can also be
 
 used for HTML attributes. This is useful if
 
-you need to insert the address of a person&apos;s
+you need to insert the address of a person's
 
 profile picture. To do this, first, you would store the
 
@@ -4206,7 +4206,7 @@ are not needed for the attribute value as JSX
 will automatically add these. This is just one example of how JSX is an
 efficient way of outputting HTML elements that contain JavaScript
 
-variable content, and you&apos;ll encounter
+variable content, and you'll encounter
 
 more as you progress. In this section (28), you explored
 
@@ -4234,15 +4234,15 @@ functions inside of JSX expressions.
 You are likely familiar with the structure of an if\...else conditional.
 Here is a quick refresher:
 
-let name = &apos;Bob&apos;;
+let name = 'Bob';
 
-if (name == &apos;Bob&apos;) {
+if (name == 'Bob') {
 
-    console.log(&apos;Hello, Bob&apos;);
+    console.log('Hello, Bob');
 
 } else {
 
-    console.log(&apos;Hello, Friend&apos;);
+    console.log('Hello, Friend');
 
 };
 
@@ -4251,63 +4251,63 @@ if (name == &apos;Bob&apos;) {
 The above code works as follows:
 
 1.  First, I declare a **name** variable and set it to a string of
-    **&quot;Bob&quot;**.
+    **"Bob"**.
 
 2.  Next, I use the **if** statement to check if the value of the name
-    variable is **&quot;Bob&quot;**. If it is, I want to **console.log** the
-    word **&quot;Bob&quot;**.
+    variable is **"Bob"**. If it is, I want to **console.log** the
+    word **"Bob"**.
 
-3.  Otherwise, if the name variable&apos;s value is not **&quot;Bob&quot;**, the
-    **else** block will execute and output the words **&quot;Hello,
-    Friend&quot;** in the console.
+3.  Otherwise, if the name variable's value is not **"Bob"**, the
+    **else** block will execute and output the words **"Hello,
+    Friend"** in the console.
 
 Above, I gave you an example of using an **if\...else** conditional. Did
 you know that there is another, different way, to effectively do the
-same thing? It&apos;s known as the **ternary operator**. A ternary operator
+same thing? It's known as the **ternary operator**. A ternary operator
 in JavaScript uses two distict characters: the first oneis **the
 question mark**, that is, the **?** character. To the left of the **?**
-character, you put *a condition that you&apos;d like to check for*. Just
-like I did in the above **if\...else** statement, the condition I&apos;m
-checking is **name == &apos;Bob&apos;**. In other words, I&apos;m asking the
-JavaScript engine to look at the value that&apos;s stored inside the
+character, you put *a condition that you'd like to check for*. Just
+like I did in the above **if\...else** statement, the condition I'm
+checking is **name == 'Bob'**. In other words, I'm asking the
+JavaScript engine to look at the value that's stored inside the
 **name** variable, and to verify if that value is the same as
-**&apos;Bob&apos;**. If it is, then the JavaScript engine will return the
+**'Bob'**. If it is, then the JavaScript engine will return the
 boolean value of **true**. If the value of the **name** variable is
-something different from **&apos;Bob&apos;**, the value that the JavaScript
+something different from **'Bob'**, the value that the JavaScript
 engine returns will be the boolean value of **false**.
 
 Here is the code that reflects the explanation in the previous
 paragraph:
 
-> name == &apos;Bob&apos; ?
+> name == 'Bob' ?
 
-Note that the above code is incompleted. I have the condition that I&apos;m
-checking (the **name == &apos;Bob&apos;** part). I also have the **?**
+Note that the above code is incompleted. I have the condition that I'm
+checking (the **name == 'Bob'** part). I also have the **?**
 character, that is, the first of the two characters needed to construct
 a syntactically valid ternary operator. However, I still need the second
 character, which is the colon, that is the **:** character. This
 character is placed after the question mark character. I can now expand
 my code to include this as well:
 
-> name == &apos;Bob&apos; ? :
+> name == 'Bob' ? :
 
 This brings me a step closer to completing my ternary operator. Although
-I&apos;ve added the characters needed to construct the ternary operator, I
+I've added the characters needed to construct the ternary operator, I
 still need to add the return values. In other words, if **name ==
-&apos;Bob&apos;** evaluates to true, I want to return the words, &quot;Yes, it is
-Bob!&quot;. Otherwise, I want to return the words &quot;I don&apos;t know this
-person&quot;.
+'Bob'** evaluates to true, I want to return the words, "Yes, it is
+Bob!". Otherwise, I want to return the words "I don't know this
+person".
 
-> name == Bob ? &quot;Yes, it is Bob&quot; : &quot;I don&apos;t know this person&quot;;
+> name == Bob ? "Yes, it is Bob" : "I don't know this person";
 
-This, in essence, is how the ternary operator works. It&apos;s just some
+This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the **if**
-statement. To prove that this is really the case, here&apos;s my starting
+statement. To prove that this is really the case, here's my starting
 if\...else example, written as a ternary operator:
 
-> let name = &apos;Bob&apos;;
+> let name = 'Bob';
 >
-> name == &apos;Bob&apos; ? console.log(&apos;Hello, Bob&apos;) : console.log(&apos;Hello, Friend&apos;);
+> name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
 
  
 
@@ -4320,9 +4320,9 @@ to randomly change the text that is displayed.
 >
 >     return (
 >
->         <div className=&quot;heading&quot;>
+>         <div className="heading">
 >
->             <h1>{Math.random() >= 0.5 ? &quot;Over 0.5&quot; : &quot;Under 0.5&quot;}</h1>
+>             <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
 >
 >         </div>
 >
@@ -4343,10 +4343,10 @@ In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
 the >= (greater-than-or-equal-to operator), to return a Boolean value.
 If the result of the comparison evaluates to **true**, then the string
-&quot;Over 0.5&quot; gets returned. In other words, whatever sits between the
+"Over 0.5" gets returned. In other words, whatever sits between the
 question mark and the semi-colon character will get returned. Otherwise,
 if the result of the comparison evaluates to **false**, then the string
-&quot;Under 0.5&quot; gets returned. In other words, the value that sits to the
+"Under 0.5" gets returned. In other words, the value that sits to the
 right of the colon character will get returned from the ternary
 expression.
 
@@ -4367,9 +4367,9 @@ return a random number:
 >
 >     return (
 >
->         <div className=&quot;heading&quot;>
+>         <div className="heading">
 >
->             <h1>Here&apos;s a random number from 0 to 10: 
+>             <h1>Here's a random number from 0 to 10: 
 >
 >                 { Math.floor(Math.random() \* 10) + 1 }
 >
@@ -4397,9 +4397,9 @@ You can also extract this functionality into a separate function:
 >
 >     return (
 >
->         <div className=&quot;heading&quot;>
+>         <div className="heading">
 >
->             <h1>Here&apos;s a random number from 0 to 10: { getRandomNum() }</h1>
+>             <h1>Here's a random number from 0 to 10: { getRandomNum() }</h1>
 >
 >         </div>
 >
@@ -4440,7 +4440,7 @@ more ways that you can use expressions in JSX.
 
 # 30. Expressions as props
 
-You&apos;ve already learned a bit about using expressions as props. These
+You've already learned a bit about using expressions as props. These
 can be, among other things, ternary operators, function calls, or some
 arithmetic operations.
 
@@ -4468,7 +4468,7 @@ For example:
 >
 >     return ( 
 >
->         <div className=&quot;App&quot;> 
+>         <div className="App"> 
 >
 >             <Example toggleBoolean={!bool} /> 
 >
@@ -4494,7 +4494,7 @@ screen.
 
 > const bool = false;
 >
-> const str1 = &quot;just&quot;;
+> const str1 = "just";
 >
 >  
 >
@@ -4526,7 +4526,7 @@ screen.
 >
 >     return (
 >
->         <div className=&quot;App&quot;>
+>         <div className="App">
 >
 >             <Example
 >
@@ -4534,7 +4534,7 @@ screen.
 >
 >                 math={(10 + 20) / 3}
 >
->                 str={str1 + &apos; another &apos; + &apos;string&apos;}
+>                 str={str1 + ' another ' + 'string'}
 >
 >             />
 >
@@ -4563,55 +4563,55 @@ when rendering those function components.
 
 # 31. Embedding in attributes
 
-I&apos;m building an application using react and I now need to add a new
+I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
 expression in an attribute, specifically the SRC attribute of the html
-image tag. Over the next few minutes I&apos;ll guide you through the process
-as I complete the steps. And by the end of this section (31) you&apos;ll be
+image tag. Over the next few minutes I'll guide you through the process
+as I complete the steps. And by the end of this section (31) you'll be
 able to demonstrate how to embed a JS expression in an attribute,
 including adding additional styling and importing additional assets and
 utilize additional assets within an app by importing components. Now
-I&apos;m in the App.js file of a new project and start with an app component
-that returns the h1 header text, hello world. I&apos;ve previously copied
+I'm in the App.js file of a new project and start with an app component
+that returns the h1 header text, hello world. I've previously copied
 the avatar profile image from the Coursera GitHub account which is
 publicly available through the get up API. I have pasted the images into
 the roots of the SRC folder and named it avatar.png. In order to use the
 image I need to import it into the app component. I then add a new
 function in the App.js file named logo. The logo function is essentially
-a separate component. But to keep things clean for this example, I&apos;ll
+a separate component. But to keep things clean for this example, I'll
 save the code in the app component instead of a separate file. The logo
 function except the props object and inside of the logo function I
 declare a userPic const and assign it a JSX element. This is an image
-element and I&apos;m passing the imported avatar PNG image as the value of
-the SRC attribute inside this image element. Finally I&apos;m returning the
+element and I'm passing the imported avatar PNG image as the value of
+the SRC attribute inside this image element. Finally I'm returning the
 userPic const from the logo function. Back inside the app component
-I&apos;ll now render the logo component by adding the logo element inside
+I'll now render the logo component by adding the logo element inside
 the app components return statement. Lemme now preview my app in the
 browser. Great, so it displays the header text along with the image.
 Keep in mind that if I were to continue building this app with more
 components, it would be best to extract the logo component to its own
-file and then import and render it as needed. And that&apos;s a
+file and then import and render it as needed. And that's a
 demonstration on how you can embed a JSX expression in an attribute. In
 this case the SRC attribute of an html image tag.
 
 # 32. Multiple components
 
-Here&apos;s the completed App.js file:
+Here's the completed App.js file:
 
 <details>
   <summary>App.js</summary>
 
 ```
-import &quot;./App.css&quot;;
-import Card from &quot;./Card&quot;;
+import "./App.css";
+import Card from "./Card";
   
 function App() {
   return (
-    <div className=&quot;App&quot;>
+    <div className="App">
       <h1>Task: Add three Card elements</h1>
-      <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
-      <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
-      <Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; />
+      <Card h2="First card's h2" h3="First card's h3" />
+      <Card h2="Second card's h2" h3="Second card's h3" />
+      <Card h2="Third card's h2" h3="Third card's h3" />
     </div>
   );
 };
@@ -4621,7 +4621,7 @@ export default App;
 
 </details>
 
-Here&apos;s the completed Card.js file:
+Here's the completed Card.js file:
 
 <details>
   <summary>Card.js</summary>
@@ -4629,7 +4629,7 @@ Here&apos;s the completed Card.js file:
 ```
 function Card(props) {
   return (
-    <div className=&quot;card&quot;>
+    <div className="card">
       <h2>{props.h2}</h2>
       <h3>{props.h3}</h3>
     </div>
@@ -4662,7 +4662,7 @@ function Card(props) {
 };
 ```
 
-**Step 2.** Inside the Card.js file&apos;s **Card** function, you added a
+**Step 2.** Inside the Card.js file's **Card** function, you added a
 **return** statement with two parentheses after it, to allow the
 **return** statement to spread onto several lines. 
 
@@ -4713,7 +4713,7 @@ wrapping **div** element. 
 > };
 ```
 
-Step 5. Inside the h2 element you&apos;ve already added, you needed to add
+Step 5. Inside the h2 element you've already added, you needed to add
 the JSX expression of: {props.h2}. 
 
 ```
@@ -4721,7 +4721,7 @@ the JSX expression of: {props.h2}. 
 >
 >     return (
 >
->         <div className=&quot;card&quot;>
+>         <div className="card">
 >
 >             <h2>{props.h2}</h2>
 >
@@ -4734,7 +4734,7 @@ the JSX expression of: {props.h2}. 
 > };
 ```
 
-**Step 6.** Inside the **h3** element you&apos;ve already added, you needed
+**Step 6.** Inside the **h3** element you've already added, you needed
 to add the JSX expression of: **{props.h3}**. 
 
 ```
@@ -4742,7 +4742,7 @@ to add the JSX expression of: **{props.h3}**. 
 >
 >     return (
 >
->         <div className=&quot;card&quot;>
+>         <div className="card">
 >
 >             <h2>{props.h2}</h2>
 >
@@ -4763,7 +4763,7 @@ Card;** line of code at the bottom of the Card component.
 >
 >     return (
 >
->         <div className=&quot;card&quot;>
+>         <div className="card">
 >
 >             <h2>{props.h2}</h2>
 >
@@ -4784,9 +4784,9 @@ Card;** line of code at the bottom of the Card component.
 **Card** component. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 >  
 >
@@ -4809,14 +4809,14 @@ Card;** line of code at the bottom of the Card component.
 > export default App;
 ```
 
-**Step 9.** Inside the App component&apos;s **return** statement, under the
+**Step 9.** Inside the App component's **return** statement, under the
 **h1** element, you should have added three **<Card />** JSX
 elements. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 >  
 >
@@ -4846,12 +4846,12 @@ elements. 
 ```
 
 **Step 10.** You needed to add the **h2** prop to the first **<Card
-/>** element, like this: **h2=&quot;First card&apos;s h2&quot;**. 
+/>** element, like this: **h2="First card's h2"**. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 >  
 >
@@ -4863,7 +4863,7 @@ elements. 
 >
 >             <h1>Task: Add three Card elements</h1>
 >
->             <Card h2=&quot;First card&apos;s h2&quot; />
+>             <Card h2="First card's h2" />
 >
 >             <Card />
 >
@@ -4881,12 +4881,12 @@ elements. 
 ```
 
 **Step 11.** You needed to add the **h3** prop to the first **<Card
-/>** element, like this: **h3=&quot;First card&apos;s h3&quot;**. 
+/>** element, like this: **h3="First card's h3"**. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 >  
 >
@@ -4898,7 +4898,7 @@ elements. 
 >
 >             <h1>Task: Add three Card elements</h1>
 >
->             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
+>             <Card h2="First card's h2" h3="First card's h3" />
 >
 >             <Card />
 >
@@ -4916,13 +4916,13 @@ elements. 
 ```
 
 **Step 12.** You should have added the **h2** and **h3** props to the
-second **<Card />** element, with the **h2** reading: **&quot;Second
-card&apos;s h2&quot;**, and the **h3** reading **&quot;Second card&apos;s h3&quot;**. 
+second **<Card />** element, with the **h2** reading: **"Second
+card's h2"**, and the **h3** reading **"Second card's h3"**. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 >  
 >
@@ -4934,9 +4934,9 @@ card&apos;s h2&quot;**, and the **h3** reading **&quot;Second card&apos;s h3&quo
 >
 >             <h1>Task: Add three Card elements</h1>
 >
->             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
+>             <Card h2="First card's h2" h3="First card's h3" />
 >
->             <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
+>             <Card h2="Second card's h2" h3="Second card's h3" />
 >
 >             <Card />
 >
@@ -4952,13 +4952,13 @@ card&apos;s h2&quot;**, and the **h3** reading **&quot;Second card&apos;s h3&quo
 ```
 
 **Step 13.** You should have added the **h2** and **h3** props to the
-third **<Card />** element, with the h2 reading: **&quot;Third card&apos;s
-h2&quot;**, and the **h3** reading **&quot;Third card&apos;s h3&quot;**. 
+third **<Card />** element, with the h2 reading: **"Third card's
+h2"**, and the **h3** reading **"Third card's h3"**. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 >  
 >
@@ -4970,11 +4970,11 @@ h2&quot;**, and the **h3** reading **&quot;Third card&apos;s h3&quot;**. 
 >
 >             <h1>Task: Add three Card elements</h1>
 >
->             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
+>             <Card h2="First card's h2" h3="First card's h3" />
 >
->             <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
+>             <Card h2="Second card's h2" h3="Second card's h3" />
 >
->             <Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; />
+>             <Card h2="Third card's h2" h3="Third card's h3" />
 >
 >         </div>
 >
@@ -4988,27 +4988,27 @@ h2&quot;**, and the **h3** reading **&quot;Third card&apos;s h3&quot;**. 
 ```
 
 **Step 14.** You needed to add the **className** attribute to the
-Card.js file&apos;s **Card** function&apos;s **return** statement&apos;s wrapping
+Card.js file's **Card** function's **return** statement's wrapping
 **div** element. 
 
 ```
-> import &quot;./App.css&quot;;
+> import "./App.css";
 >
-> import Card from &quot;./Card&quot;;
+> import Card from "./Card";
 >
 > function App() {
 >
 >     return (
 >
->         <div className=&quot;App&quot;>
+>         <div className="App">
 >
 >             <h1>Task: Add three Card elements</h1>
 >
->             <Card h2=&quot;First card&apos;s h2&quot; h3=&quot;First card&apos;s h3&quot; />
+>             <Card h2="First card's h2" h3="First card's h3" />
 >
->             <Card h2=&quot;Second card&apos;s h2&quot; h3=&quot;Second card&apos;s h3&quot; />
+>             <Card h2="Second card's h2" h3="Second card's h3" />
 >
->             <Card h2=&quot;Third card&apos;s h2&quot; h3=&quot;Third card&apos;s h3&quot; />
+>             <Card h2="Third card's h2" h3="Third card's h3" />
 >
 >         </div>
 >
@@ -5021,13 +5021,13 @@ Card.js file&apos;s **Card** function&apos;s **return** statement&apos;s wrappin
 
 # 33. Module Summary -- React Components & where they live
 
-Well done. You&apos;ve reached the end of module one on react components.
+Well done. You've reached the end of module one on react components.
 
 Module one gave you an overview of the basic structure and use of
 react.js. The purpose was to enable you to produce single page
 applications with react.
 
-Let&apos;s take a tour of the lessons to determine how it did just that.
+Let's take a tour of the lessons to determine how it did just that.
 
 First, you learned about how reactors used in the real-world from meta
 software engineer Katie.
@@ -5038,7 +5038,7 @@ summary of the fundamentals of html, CSS and JavaScript.
 And then you learned how to set up a project in VS Code (or, and how to
 work with JavaScript modules.
 
-The second lesson was all about react components and where they&apos;re
+The second lesson was all about react components and where they're
 stored within your applications. In this lesson, you were introduced
 component-based architecture, a design philosophy for building software
 based on reusable components of code like the reactor library. You
@@ -5074,7 +5074,7 @@ create an import file within that folder. Use and manipulate props and
 components to affect visual results. And describe how to use assets
 within an app to apply styling and functional components.
 
-That&apos;s a great start to your React journey. Well done on completing
+That's a great start to your React journey. Well done on completing
 this module and get ready for the next one.
 
 ## 34. Additional resources (React Basics - Week 1)
@@ -5103,7 +5103,7 @@ Data and State
 
 ## 01. Types of Events
 
-By now, you&apos;re probably familiar with **events** in JavaScript. Recall
+By now, you're probably familiar with **events** in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
 can occur when the user or the browser manipulates a page. They provide
 enhanced interactive experiences, such as responding to mouse clicks,
@@ -5113,12 +5113,12 @@ interaction to occur before they can be triggered.
 
 Every HTML element contains a set of events that developers can access
 by using HTML attributes, commonly referred to as event listeners. For
-example, it&apos;s a common feature of a website or app to have a button
+example, it's a common feature of a website or app to have a button
 that when clicked, causes something to happen. This action is an example
 of an event and is accomplished with either event listener methods or by
 defining specific JavaScript functions.
 
-Developers can use **events** to execute JavaScript&apos;s code in response
+Developers can use **events** to execute JavaScript's code in response
 to an action based on user interactivity, like clicking a button. This
 process by which the HTML button communicates to the JavaScript event
 handler to execute some code and respond to the event action is known as
@@ -5134,19 +5134,19 @@ icon. The circle then displays the number 2 to indicate that there are
 two items in the cart.
 
 Events are a powerful tool and make up part of the **Document Object
-Model**. As an aspiring React developer, you&apos;ll need to know how to
+Model**. As an aspiring React developer, you'll need to know how to
 work with **events** as they are handled a bit differently.
 
-By the end of this section (01), you&apos;ll be able to identify the broad
+By the end of this section (01), you'll be able to identify the broad
 types of events available in React, and describe some of the most
-commonly used ones. You&apos;ll also know how to explain the event handling
+commonly used ones. You'll also know how to explain the event handling
 process in React at a high level.
 
 In React code, events are handled using **JSX event attributes**, which
 are very similar to HTML event attributes that you may be familiar with.
 For example, the click handling attributes in HTML is the onclick
 attribute with all the letters lowercased. The equivalent click handling
-attributes in React&apos;s JSX is the **camelCased onClick** attribute.
+attributes in React's JSX is the **camelCased onClick** attribute.
 Remember that camel case means that the first letter is lowercase and
 the separation of words is indicated with a capital letter rather than a
 space.
@@ -5164,10 +5164,10 @@ onCopy, onCuts, and onPaste. There are far too many events to cover
 here, but you can find a complete list in the additional reading.
 
 The large number of event types that are accessible in React may seem
-overwhelming at first. But note that it&apos;s actually the browser that
+overwhelming at first. But note that it's actually the browser that
 comes with these features as the various devices that we use to access
 the incident have given rise to many ways for users to interact with
-websites. This means these events are not specific to React and it&apos;s
+websites. This means these events are not specific to React and it's
 probably not necessary to learn about all of these events.
 
 Also keep in mind that many of these events are related to specific use
@@ -5181,7 +5181,7 @@ should be on understanding the overall event handling process and what
 capabilities events can open up to you.
 
 In this section (1), you learned about the types of events available in
-React and how they came to be. Next, you&apos;ll explore specific examples
+React and how they came to be. Next, you'll explore specific examples
 and build the skills to use events competently from various situations.
 
 ## 02. Eventful issues
@@ -5200,7 +5200,7 @@ When you work in any programming environment, language, or framework,
 you are bound to write code that throws errors, for a variety of
 reasons.
 
-Sometimes it&apos;s just about writing the wrong syntax. Other times it&apos;s
+Sometimes it's just about writing the wrong syntax. Other times it's
 about not thinking of all the possible scenarios and all the possible
 ways that things can go wrong in your code.
 
@@ -5233,21 +5233,21 @@ try {
 } 
 
 catch(e) {
-  console.log(\`Oops, you can&apos;t uppercase a number. 
+  console.log(\`Oops, you can't uppercase a number. 
    Trying to do it resulted in the following\`, e);
 }
 ```
 
 The try-catch block will output some text in the console:
 
-**Oops, you can&apos;t uppercase a number. Trying to do it resulted in the
+**Oops, you can't uppercase a number. Trying to do it resulted in the
 following TypeError: 5.toUpperCase is not a function**
 
 It is assumed that if you are taking this course that you are already
-familiar with how the try\...catch syntax works, so I won&apos;t go into any
+familiar with how the try\...catch syntax works, so I won't go into any
 details after this quick refresher.
 
-Back to React, here&apos;s an example of a simple error in a React
+Back to React, here's an example of a simple error in a React
 component:
 
 ```
@@ -5285,11 +5285,11 @@ already exists in JavaScript -- that is, you just use the
 I will now show you how to handle several events in React using
 components.
 
-As I start, I&apos;ve added a new component to the SRC folder. I named it
-**Btn**, and for now it&apos;s just an empty function or the default export.
-Let me simplify the app.js file as return statement. First, I&apos;ll delete
+As I start, I've added a new component to the SRC folder. I named it
+**Btn**, and for now it's just an empty function or the default export.
+Let me simplify the app.js file as return statement. First, I'll delete
 the logo import statements and import the **Btn** component, then remove
-the contents of the return statement. Finally, I&apos;ll add the **Btn** JSX
+the contents of the return statement. Finally, I'll add the **Btn** JSX
 elements so that it can get rendered.
 
 Back in the **Btn** components. I add a button in the return statement,
@@ -5301,22 +5301,22 @@ synthetic events than an equals sign and opening curly brace.
 ClickHandler and a closing curly brace. The return statement, I
 distributed the code on several lines to increase readability.
 
-Now I&apos;m setting up the click handling behavior. Whenever a user clicks
+Now I'm setting up the click handling behavior. Whenever a user clicks
 on the button that will evaluate an expression named **clickHandler**, I
-now need to define this clickHandler and I&apos;ll set it as a function
+now need to define this clickHandler and I'll set it as a function
 expression, meaning I will use the const variable keyword and name it
-**clickHandler**. Then I&apos;ll assign an arrow function to it. That&apos;s it.
-I&apos;ve just set up a clickHandler that receives the click events that&apos;s
+**clickHandler**. Then I'll assign an arrow function to it. That's it.
+I've just set up a clickHandler that receives the click events that's
 fired from this button and handles it by outputting the word clicked in
 the console. Again, I save my changes and, in the browser, I open the
 developer tools. Now I locate and activate the console tab in the
-developer tools, I&apos;ll also zoom in on the button.
+developer tools, I'll also zoom in on the button.
 
 When I click the button, the word clicked appears in the console for
 every click event. Back inside the **Btn.js** file and VS Code, I select
 all the code in the Btn component. Right-click on the selection and
 click the Copy command and the contextual menu that pops up. Next, I use
-the keyboard shortcut of holding down the control key. While it&apos;s
+the keyboard shortcut of holding down the control key. While it's
 pressed down, press and release the K button, then pressing and
 releasing the C button, and finally releasing the Control key.
 
@@ -5333,13 +5333,13 @@ attribute and update my event handling function accordingly to read
 mouse over. I save my changes and wait for the app to recompile.
 
 This time, when I hover over the button, the words mouse over are
-showing in the console. This section (3), you&apos;ve learned how to work
+showing in the console. This section (3), you've learned how to work
 with **event handling** JSX attributes and React.
 
 ## 04. Syntax for handlers
 
 Every time you click or tap a button, scroll down the page or cancel a
-boring notification, you&apos;re producing events in the browser.
+boring notification, you're producing events in the browser.
 
 As you learned earlier, in order for these events that have any effect,
 you need to use **event handlers** that will then execute an action.
@@ -5352,15 +5352,15 @@ There are a few approaches to adding event handlers to your code that
 have different advantages, so you should become familiar with each of
 them.
 
-By the end of this section (4), you&apos;ll be able to describe the syntax
+By the end of this section (4), you'll be able to describe the syntax
 differences for using **event handlers** in HTML and React. You will
 also know how to explain HTML **function call** and React **component
 inclusion**, and discuss the advantage of the component level of
 control.
 
-Suppose you&apos;re a developer working on a React app and you need to
+Suppose you're a developer working on a React app and you need to
 create a button that will trigger an event when a user clicks on it.
-With that scenario in mind, let&apos;s examine some codes that accomplishes
+With that scenario in mind, let's examine some codes that accomplishes
 this in plain HTML.
 
 You might open a tag called button with the ID **js-btn**. You then
@@ -5372,18 +5372,18 @@ closing tag.
 
 The code has an ID HTML attribute with a value JS button, along with the
 event handling attribute on the click. While the HTML code in the
-example seems pretty straightforward, it&apos;s recommended to use
-JavaScript for scenarios like these instead. Why is that? Well, you&apos;ll
+example seems pretty straightforward, it's recommended to use
+JavaScript for scenarios like these instead. Why is that? Well, you'll
 find out later.
 
 But for now, you should understand that the equivalent code in
 JavaScript consists of two primary steps. First, you should use
-JavaScript to plug into these specific HTML elements on what you&apos;d like
+JavaScript to plug into these specific HTML elements on what you'd like
 to listen to for an event. In the previous example, the HTML element is
-button, which signals that it&apos;s a target element for allowing
+button, which signals that it's a target element for allowing
 JavaScript to take control of the HTML structure.
 
-Second, once you&apos;ve got access to an HTML element with JavaScript, you
+Second, once you've got access to an HTML element with JavaScript, you
 can then use the built-in add **EventListener** method on the document
 object to attach a specific event listener.
 
@@ -5404,7 +5404,7 @@ updates to React and let it figure out the rest.
 
 This is best done using event attribute, unfortunately, one-to-one
 mapping between HTML event attributes and JSX event attributes means
-it&apos;s easier to learn.
+it's easier to learn.
 
 Event handling in React is overall quite similar to HTML. But note that
 there is no function invocation syntax in event handling attribute in
@@ -5413,7 +5413,7 @@ an invocation to an event handling function as a value to the on click
 events. In React, you should not invoke a function. Instead, you just
 pass a reference to the event handling function without invoking it.
 
-To illustrate that point, let&apos;s compare the syntax of an HTML click
+To illustrate that point, let's compare the syntax of an HTML click
 handler event and its reactor JSX equivalent. In HTML, you provide the
 event handling attribute starting with **on**, and you append the name
 of the event. All **lowercased**. After the equal sign, you use a pair
@@ -5426,14 +5426,14 @@ closing **curly braces**. Inside of the curly brace delimiters, you add
 the name of the function to be run. Make sure not to invoke it.
 
 Finally, one more feature only using React is the passing of function
-declarations as **props**. For example, in an app component, let&apos;s say
-you&apos;d like to render a child component named **counter**. You can pass
+declarations as **props**. For example, in an app component, let's say
+you'd like to render a child component named **counter**. You can pass
 some data from the app component to the counter component using a
-**prop**. In this case, let&apos;s use an on click prop that passes in the
+**prop**. In this case, let's use an on click prop that passes in the
 data that you want the Counter component to receive. There you have it.
 
-The next time you&apos;re clicking buttons on a webpage, closing
-notifications or simply browsing through, you&apos;ll understand that those
+The next time you're clicking buttons on a webpage, closing
+notifications or simply browsing through, you'll understand that those
 events are supported by some form of event handling.
 
 In this section (4), you learned how to distinguish the syntax for event
@@ -5465,13 +5465,13 @@ This approach allows you to directly pass in an ES5 function declaration
 as the **onClick** event-handling attribute's value:
 
 ```
-<button onClick={function() {console.log(&apos;first example&apos;)}}>
+<button onClick={function() {console.log('first example')}}>
   An inline anonymous ES5 function event handler
 </button>
 ```
 
-Although it&apos;s possible to write your click handlers using this syntax,
-it&apos;s not a common approach and you will not find such code very often
+Although it's possible to write your click handlers using this syntax,
+it's not a common approach and you will not find such code very often
 in React apps.
 
 #### **Handling events using inline anonymous ES6 functions (arrow functions)**
@@ -5496,12 +5496,12 @@ as follows:
 ```
 function App() {
   function thirdExample() {
-    console.log(&apos;third example&apos;);
+    console.log('third example');
 
   };
 
   return (
-    <div className=&quot;thirdExample&quot;>
+    <div className="thirdExample">
       <button onClick={thirdExample}>
         using a separate function declaration
       </button>
@@ -5536,13 +5536,13 @@ function expression.
 ```
  function App() {
 
-     const fourthExample = () => console.log(&apos;fourth example&apos;);
+     const fourthExample = () => console.log('fourth example');
 
   
 
      return (
 
-         <div className=&quot;fourthExample&quot;>
+         <div className="fourthExample">
 
              <button onClick={fourthExample}>
 
@@ -5572,34 +5572,34 @@ specific company coding style guide.
 
 ## 06. User events
 
-In this section, I&apos;m going to demonstrate how to toggle the value of a
+In this section, I'm going to demonstrate how to toggle the value of a
 Boolean state variable using user triggered events. And how to handle
-multiple events on a single JSX element. In the example that you&apos;ll
+multiple events on a single JSX element. In the example that you'll
 explore next, the code consists of another example of a component than
-what you&apos;ve been used to so far in the course. The aim is to
+what you've been used to so far in the course. The aim is to
 demonstrates how all the event handling concepts work together with
-state, styling, and the use of turning the expressions. Let&apos;s say that
+state, styling, and the use of turning the expressions. Let's say that
 you have a component that uses state to keep a Boolean value of dark
 mode on. Based on whether the value of this variable is true or false,
 your component will render an H1 heading with some text in it. Either as
-a dark theme or as a light theme. Additionally, it&apos;s possible to switch
-the theme with a button click. Now, let&apos;s continue with an in depth
-demonstration of event handling. I&apos;m going to demonstrate event
+a dark theme or as a light theme. Additionally, it's possible to switch
+the theme with a button click. Now, let's continue with an in depth
+demonstration of event handling. I'm going to demonstrate event
 handling with an example so that you can gain practical insight into the
-use of events to provide additional functionality to an app. I&apos;m going
-to build a component and I&apos;ll name it mode toddler. So, in the Explorer
+use of events to provide additional functionality to an app. I'm going
+to build a component and I'll name it mode toddler. So, in the Explorer
 Sidebar in VS code, I right click the source folder and click the new
-file command. I name the file ModeToggler. And for now, it&apos;s an empty
+file command. I name the file ModeToggler. And for now, it's an empty
 function declaration with a default export. I press control S or command
 S on a mac to save my updates. Back in the app component, I update its
 return statements to render this new ModeToggler component. I also need
 to import it online one of the app component and save the changes to app
 JS. I now return some JSX code from my ModeToggler component and add a
 return statement. In this statement, a JSX expression wraps the turner
-in which checks if the value of dark mode on is true or false. If it&apos;s
+in which checks if the value of dark mode on is true or false. If it's
 true, it will return whatever restored in the dark mode value. And if
-it&apos;s false, it will return whatever stored in the light mode value.
-However, I don&apos;t have the values I&apos;m evaluating yet. So, if I say this
+it's false, it will return whatever stored in the light mode value.
+However, I don't have the values I'm evaluating yet. So, if I say this
 code now it throws an error. Instead I define these values by declaring
 three variables above the return statements. These are dark mode on,
 which holds a value of true, dark mode which holds the text. Dark mode
@@ -5608,14 +5608,14 @@ is on in an H one header. I save my changes and I get the sentence. Dark
 mode is on in the browser. Let me explain what happened here. The dark
 mode on variable is set to true. Just to do a quick test, I can change
 the variable name of dark mode on in the turn array to the value of
-true. Since this value is true, the value that&apos;s stored in dark mode
+true. Since this value is true, the value that's stored in dark mode
 will be rendered. If I change the value of true to false, the value
-that&apos;s stored in light mode will be displayed. I have replaced the test
-word false with our const dark mode on. And now I&apos;ll save it and test
+that's stored in light mode will be displayed. I have replaced the test
+word false with our const dark mode on. And now I'll save it and test
 it again. Now, I get the light mode is on displayed on the screen. I add
 a button with the on click events to handle this toggle of the value of
 the dark mode on, variable from true to false. So, under this turner
-restatement I&apos;ll add a button with an on click event handler. I&apos;ll
+restatement I'll add a button with an on click event handler. I'll
 also define the handle click function. I start my function by taking the
 value of dark mode on, and change it to the opposite Boolean value using
 the exclamation mark. That is the not operator. I then assign this value
@@ -5638,10 +5638,10 @@ manually by changing false to true. Then saving the app and waiting for
 a rear ender to confirm that my changes have indeed happened. Because
 the previous heading of light mode is on, has now become the heading
 that reads dark mode is on. But as soon as I click the button, the
-console lock changes. However, the heading in the web app doesn&apos;t
+console lock changes. However, the heading in the web app doesn't
 reflect this change. Why is this the case? To understand this, you need
 to go deeper into data flow and react and observe how it moves between
-components. Fortunately, you&apos;ll be learning that soon. Great job, you
+components. Fortunately, you'll be learning that soon. Great job, you
 should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element
@@ -5658,7 +5658,7 @@ function App() {
   function handleClick() {
     let randomNum = Math.floor(Math.random() \* 3) + 1;
     console.log(randomNum);
-    let userInput = prompt(&apos;type a number&apos;);
+    let userInput = prompt('type a number');
     alert(\`Computer number: \${randomNum}, Your guess: \${userInput}\`);
   }
   
@@ -5680,7 +5680,7 @@ Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image044.png?raw=true"
-  alt="The output of the completed &apos;Dynamic events&apos; exercise."
+  alt="The output of the completed 'Dynamic events' exercise."
   width="70%" />
 </p>
 <!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
@@ -5780,7 +5780,7 @@ declaration: 
 >
 >     console.log(randomNum);
 >
->     let userInput = prompt(&apos;type a number&apos;);
+>     let userInput = prompt('type a number');
 >
 >     alert(\`Computer number: \${randomNum}, Your guess: \${userInput}\`);
 >
@@ -5808,7 +5808,7 @@ it in the browser. You should then be able to click a button, which will
 show a prompt pop up which you can type into. After that, an alert pop
 up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
-matching the number &quot;chosen&quot; by the computer one more time. 
+matching the number "chosen" by the computer one more time. 
 
 ## 08. Additional resources (Data & State - Week 2)
 
@@ -5834,22 +5834,22 @@ learning journey.
 
 ## 09. Parent-child data flow
 
-Imagine you&apos;re working for an online retailer which discount prices
+Imagine you're working for an online retailer which discount prices
 regularly to keep stock moving. Sales are announced at multiple points
-on the website. But what&apos;s the best way to keep this information up to
+on the website. But what's the best way to keep this information up to
 date? For example, updating items individually would be tedious and
 time-consuming.
 
-Fortunately, it&apos;s possible to change information at a single point and
+Fortunately, it's possible to change information at a single point and
 have everything else update automatically to match. This idea
 illustrates a parent-child relationship, and in this section (09), we
 will explore this concept as it applies to React.
 
-By the end of this section (09), you&apos;ll be able to describe the
-parent-child unidirectional flow of data, and you&apos;ll gain an
+By the end of this section (09), you'll be able to describe the
+parent-child unidirectional flow of data, and you'll gain an
 understanding of the hierarchy of React.
 
-Let&apos;s start with an example of two **components** which will be used in
+Let's start with an example of two **components** which will be used in
 the same app. First is the promo component, which will return the
 contents of the promo heading components that you will create later.
 
@@ -5858,45 +5858,45 @@ then write a return statement inside of curly braces. This statement has
 a div inside of which **PromoHeading** is called. This is then followed
 by the line export default **Promo** to make the component accessible.
 
-Next, let&apos;s write the **PromoHeading** component. You can declare
+Next, let's write the **PromoHeading** component. You can declare
 function **PromoHeading** and in curly braces type return, opening,
 parenthesis, h1 tag the text 80 percent of sale, h1 closing tag, and
-closing parenthesis. Once again, don&apos;t forget to export the components
+closing parenthesis. Once again, don't forget to export the components
 to make it available. Success.
 
-You&apos;ve now created the **component** promo, which calls a function from
+You've now created the **component** promo, which calls a function from
 the component **PromoHeading** to return the text 80 percent off sale.
 
 In this example, the **Promo** component is known as a parent component,
 and the component it renders, **PromoHeading**, is referred to as the
 child component.
 
-Now, let&apos;s say that the discount increases to 99 percent off and you
+Now, let's say that the discount increases to 99 percent off and you
 need to update the code to reflect this. One approach is to update the
-text inside of the h1 tags in the **Promo** details component. That&apos;s a
+text inside of the h1 tags in the **Promo** details component. That's a
 quick fix because there is only one change to deal with.
 
-However, let&apos;s explore a more complex situation. This time, your
+However, let's explore a more complex situation. This time, your
 manager asks you to call the **PromoHeading** component in the sidebar
 and footer components of the web app in addition to the primary
 component.
 
-They also want two messages displayed &quot;99 percent of all items&quot; and
-&quot;everything must go&quot;. These new requirements mean that the approach of
+They also want two messages displayed "99 percent of all items" and
+"everything must go". These new requirements mean that the approach of
 updating the child component will not work quite as well. Why is that?
 Well, it means that you now have to update multiple components with the
 same data. This is not in line with the general programming principle of
-DRY or don&apos;t repeat yourself, which aims to reduce needless code
+DRY or don't repeat yourself, which aims to reduce needless code
 replication. Also, consider the following possibilities. While entering
-the same text into several components, it&apos;s possible you make a typing
+the same text into several components, it's possible you make a typing
 error. Also, what if your boss decides to change the discount again? It
 means you have to change the text in all the connected components once
 more. But instead of writing the same code over and over, you can change
 your approach. You can establish a single source of truth that contains
-the two strings that store the values for the texts, &quot;99 percent of all
-items&quot; and &quot;everything must go&quot;. This will be contained within the
+the two strings that store the values for the texts, "99 percent of all
+items" and "everything must go". This will be contained within the
 parent component so that any data needed can be passed onto the child
-component using props. Now, let&apos;s use this approach to update the Promo
+component using props. Now, let's use this approach to update the Promo
 component. First, you create a single source of truth, a JavaScript
 object named data. Data is an object that will contain two properties
 named heading and callToAction, both represented as strings. Next, you
@@ -5937,7 +5937,7 @@ gained in previous courses.
 
 #### **Parent-child data flow**
 
-In React, data flow is a one-way street. Sometimes it&apos;s said that the
+In React, data flow is a one-way street. Sometimes it's said that the
 data flow is unidirectional. Put differently, the data in React flows
 from a parent component to a child component. The data flow starts at
 the root and can flow to multiple levels of nesting, from the root
@@ -5969,7 +5969,7 @@ the UI.
 >
 >     return (
 >
->         <Puppy name=&quot;Max&quot; bowlShape=&quot;square&quot; bowlStatus=&quot;full&quot; />
+>         <Puppy name="Max" bowlShape="square" bowlStatus="full" />
 >
 >     );
 >
@@ -5983,7 +5983,7 @@ the UI.
 >
 >         <div>
 >
->             {props.name} has <Bowl bowlShape=&quot;square&quot; bowlStatus=&quot;full&quot; />
+>             {props.name} has <Bowl bowlShape="square" bowlStatus="full" />
 >
 >         </div>
 >
@@ -5999,7 +5999,7 @@ the UI.
 >
 >         <span>
 >
->             {props.bowlShape}-shaped bowl, and it&apos;s currently {props.bowlStatus}
+>             {props.bowlShape}-shaped bowl, and it's currently {props.bowlStatus}
 >
 >         </span>
 >
@@ -6015,12 +6015,12 @@ be as efficient as it could be, especially in modern React.
 
 ### 11. Children and data
 
-In this section (11), you&apos;re going to learn about data flow in ReactJS.
+In this section (11), you're going to learn about data flow in ReactJS.
 In this case, data flow is in one direction only. Immediately a question
 springs to mind. Why is one-way flow in React important? Let me tell
 you. This type of data flow ensures that the data is moving from top to
 bottom through the component hierarchy. It also ensures that changes are
-transmitted through the system. You&apos;ll cover this in more detail later.
+transmitted through the system. You'll cover this in more detail later.
 
 For now, in this section (11), you will also learn how to showcase the
 use of stateless and stateful examples by focusing on data flow. Imagine
@@ -6029,15 +6029,15 @@ money can be considered props. This money props is passed to you and
 becomes your money state. The money props always flow from your employer
 to you, never in the opposite direction. In React, data is passed down
 from parent components to a child components via props. A child
-components can&apos;t mutate or change its props. It can only read them and
-re-render. This means that the data comes from the parents and it&apos;s
+components can't mutate or change its props. It can only read them and
+re-render. This means that the data comes from the parents and it's
 just consumed in the child components. However, if this was always the
-case, then all you&apos;d have in a React app is separate pieces of the DOM
+case, then all you'd have in a React app is separate pieces of the DOM
 acting as component templates to be filled up with a data they receive.
-While this works great, there&apos;d be almost no interactivity.
+While this works great, there'd be almost no interactivity.
 
-You&apos;ve learned about passing data to a child component using props.
-However, there&apos;s another way to work with data in React components, and
+You've learned about passing data to a child component using props.
+However, there's another way to work with data in React components, and
 that data is referred to as **state**.
 
 All the data in React can be divided into **props** data and **states**
@@ -6049,19 +6049,19 @@ It also helps to think of it like this. The **prop** data belongs to the
 parent that renders the components. The **state** data belongs to the
 component itself.
 
-To demonstrate this, let&apos;s open up VS Code and work through an example.
-I&apos;ve built a new app using Create React app. I have two files created,
+To demonstrate this, let's open up VS Code and work through an example.
+I've built a new app using Create React app. I have two files created,
 app.js and child.js. The app.js file defines the app components using a
-class definition instead of a function. When it&apos;s created, it
+class definition instead of a function. When it's created, it
 initializes its state with the current date. The render function then
-renders a component called child. The child&apos;s components has a prop
+renders a component called child. The child's components has a prop
 named message defined and its value is set as the current dates from the
-component&apos;s state converted to a string format, which includes the
+component's state converted to a string format, which includes the
 hours, minutes, and seconds of the date. In the child.js file, the
 component renders the message prop in an H1 elements. Now when I run the
 app, the state of the app component flows. It stays down to the child
 component props, and the H1 elements will display the current date and
-time. Well done. You&apos;ve now learned how children and data flows in
+time. Well done. You've now learned how children and data flows in
 ReactJS. You should also be able to showcase the use of stateless and
 stateful examples by focusing on data flow.
 
@@ -6069,35 +6069,35 @@ stateful examples by focusing on data flow.
 
 ### 13. What are hooks?
 
-By now you&apos;ve probably already learned about some important and useful
-core concepts in React. At this point, you&apos;re ready to learn how to add
+By now you've probably already learned about some important and useful
+core concepts in React. At this point, you're ready to learn how to add
 interactivity, maintain state within a React component and explore
-hooks. In this section, you&apos;ll be introduced to what hooks are, how
+hooks. In this section, you'll be introduced to what hooks are, how
 they can be used and why they are useful. As you progress as a React
-developer, you&apos;ll likely soon use complex components with state fault
+developer, you'll likely soon use complex components with state fault
 logic. Keeping track of state across components can become quite a task
-and this is where React&apos;s hooks can help. One key benefit of hooks is
+and this is where React's hooks can help. One key benefit of hooks is
 that they solve the problem of unnecessary code reuse across components.
-Let&apos;s find out how they do that. Hooks are functions that were
+Let's find out how they do that. Hooks are functions that were
 introduced in React version 16.8. They let you hook into React state and
-lifestyle features from components. Let&apos;s observe an example hook.
-Specifically, you&apos;ll examine an instance of the useState hook as it&apos;s
+lifestyle features from components. Let's observe an example hook.
+Specifically, you'll examine an instance of the useState hook as it's
 the most commonly used one. This hook is used to manage the state within
-a component and keep track of it and it&apos;s built directly into React. To
+a component and keep track of it and it's built directly into React. To
 use it, the first thing you need to do is import the useState from React
-so that it&apos;s available for use. The next step is to declare a state
+so that it's available for use. The next step is to declare a state
 variable within a component. You can provide any name to the state
-variable and the set state function. For this example, let&apos;s call the
+variable and the set state function. For this example, let's call the
 state variable **showMenu** and the set state function **setShowMenu**.
 
-If you&apos;ve learned JavaScript, this syntax may feel somewhat familiar to
-you. You are probably wondering what exactly this code does. Well, it&apos;s
-actually doing something that you&apos;ve likely encountered before. Notice
+If you've learned JavaScript, this syntax may feel somewhat familiar to
+you. You are probably wondering what exactly this code does. Well, it's
+actually doing something that you've likely encountered before. Notice
 that the convention is to name the state variable and the set of
 function using array destructuring. When you declare a state variable
 using the useState, it returns a pair which is an array with two items.
 Without array destructuring, the code would be long and cumbersome.
-Since it&apos;s more confusing and tedious to access the array items by
+Since it's more confusing and tedious to access the array items by
 index, array destructuring is preferred and it significantly simplifies
 the code. You now have a new state variable called showMenu. The
 useState then sets the initial value of showMenu as false.
@@ -6143,15 +6143,15 @@ user types within this text field. You can add state and use the
 As the user keeps typing, the local state that holds the string needs to
 get updated with the latest text that has been typed.
 
-Let&apos;s discuss the below example.
+Let's discuss the below example.
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 >  
 >
 > export default function InputComponent() { 
 >
->   const &lsqb;inputText, setText&rsqb; = useState(&apos;hello&apos;); 
+>   const [inputText, setText] = useState('hello'); 
 >
 >  
 >
@@ -6171,7 +6171,7 @@ Let&apos;s discuss the below example.
 >
 >       <p>You typed: {inputText}</p> 
 >
->       <button onClick={() => setText(&apos;hello&apos;)}> 
+>       <button onClick={() => setText('hello')}> 
 >
 >         Reset 
 >
@@ -6183,7 +6183,7 @@ Let&apos;s discuss the below example.
 >
 > } 
 
-To do this, let&apos;s define a React component and call it
+To do this, let's define a React component and call it
 **InputComponent***.* This component renders three things:
 
 -   An input text field 
@@ -6195,14 +6195,14 @@ To do this, let&apos;s define a React component and call it
 -   As the user starts typing within the text field, the current text
     that was typed is also displayed.
 
-![Display of the word &quot;welcome&quot; typed to
+![Display of the word "welcome" typed to
 bar](./images/image045.png){width="5.979166666666667in" height="2.25in"}
 
 The state variable **inputText** and the **setText** method are used to
 set the current text that is typed. The **useState** hook is initialized
 at the beginning of the component.
 
-> const&lsqb;inputText, setText&rsqb; = useState(&apos;hello&apos;);
+> const[inputText, setText] = useState('hello');
 
 By default, the **inputText** will be set to "hello".
 
@@ -6248,13 +6248,13 @@ registration form with fields for first name, last name and email. 
 <!-- {width="5.375in" height="2.4791666666666665in"} -->
 
 ```
- import { useState } from &apos;react&apos;; 
+ import { useState } from 'react'; 
   
  export default function RegisterForm() { 
-   const &lsqb;form, setForm&rsqb; = useState({ 
-     firstName: &apos;Luke&apos;, 
-     lastName: &apos;Jones&apos;, 
-     email: &apos;lukeJones@sculpture.com&apos;, 
+   const [form, setForm] = useState({ 
+     firstName: 'Luke', 
+     lastName: 'Jones', 
+     email: 'lukeJones@sculpture.com', 
    }); 
   
    return ( 
@@ -6294,10 +6294,10 @@ Notice that you are using a **form** object to store the state of all
 three text input field values:
 
 ```
-const&lsqb;form, setForm&rsqb; =useState({
-  firstName:&apos;Luke&apos;,
-  lastName:&apos;Jones&apos;,
-    email:&apos;lukeJones@sculpture.com&apos;,
+const[form, setForm] =useState({
+  firstName:'Luke',
+  lastName:'Jones',
+    email:'lukeJones@sculpture.com',
 });
 ```
 
@@ -6312,7 +6312,7 @@ components, you can extract the logic into a custom hook. Custom hooks
 offer flexibility and can be used for a wide range of use-cases such as
 form handling, animation, timers, and many more. 
 
-Next, I&apos;ll give you an explanation of how the **useRef** hook works.
+Next, I'll give you an explanation of how the **useRef** hook works.
 
 #### The useRef hook
 
@@ -6330,7 +6330,7 @@ function TextInputWithFocusButton() {
   };
   return (
     <>
-      <input ref={inputEl} type=&quot;text&quot; />
+      <input ref={inputEl} type="text" />
       <button onClick={onButtonClick}>Focus the input</button>
     </>
   );
@@ -6352,7 +6352,7 @@ understand the benefits of using hooks within a React component.
 
 ### 15. What is state?
 
-*&quot;Make it as simple as possible, but not simpler.&quot;*\
+*"Make it as simple as possible, but not simpler."*\
 Albert Einstein
 
 ### 16. Observing state
@@ -6557,8 +6557,8 @@ return (
 ```
 
 You can also "escape into JavaScript" from JSX attributes, but you have
-to use curly braces instead of quotes. For example, className=&quot;avatar&quot;
-passes the &quot;avatar&quot; string as the CSS class, but src={user.imageUrl}
+to use curly braces instead of quotes. For example, className="avatar"
+passes the "avatar" string as the CSS class, but src={user.imageUrl}
 reads the JavaScript user.imageUrl variable value, and then passes that
 value as the src attribute:
 
@@ -6567,7 +6567,7 @@ value as the src attribute:
 
  <img
 
- className=&quot;avatar&quot;
+ className="avatar"
 
  src={user.imageUrl}
 
@@ -6584,9 +6584,9 @@ concatenation](https://javascript.info/operators#string-concatenation-with-binar
 
 > const user = {
 >
-> name: &apos;Hedy Lamarr&apos;,
+> name: 'Hedy Lamarr',
 >
-> imageUrl: &apos;https://i.imgur.com/yXOvdOSs.jpg&apos;,
+> imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
 >
 > imageSize: 90,
 >
@@ -6602,11 +6602,11 @@ concatenation](https://javascript.info/operators#string-concatenation-with-binar
 >
 > <img
 >
-> className=&quot;avatar&quot;
+> className="avatar"
 >
 > src={user.imageUrl}
 >
-> alt={&apos;Photo of &apos; + user.name}
+> alt={'Photo of ' + user.name}
 >
 > style={{
 >
@@ -6700,15 +6700,15 @@ to render lists of components.
 
 For example, let's say you have an array of products:
 
-> const products = &lsqb;
+> const products = [
 >
-> { title: &apos;Cabbage&apos;, id: 1 },
+> { title: 'Cabbage', id: 1 },
 >
-> { title: &apos;Garlic&apos;, id: 2 },
+> { title: 'Garlic', id: 2 },
 >
-> { title: &apos;Apple&apos;, id: 3 },
+> { title: 'Apple', id: 3 },
 >
-> &rsqb;;
+> ];
 
 Inside your component, use the map() function to transform an array of
 products into an array of <li> items:
@@ -6737,15 +6737,15 @@ later insert, delete, or reorder the items.
 
 #### App.js
 
-> const products = &lsqb;
+> const products = [
 >
-> { title: &apos;Cabbage&apos;, isFruit: false, id: 1 },
+> { title: 'Cabbage', isFruit: false, id: 1 },
 >
-> { title: &apos;Garlic&apos;, isFruit: false, id: 2 },
+> { title: 'Garlic', isFruit: false, id: 2 },
 >
-> { title: &apos;Apple&apos;, isFruit: true, id: 3 },
+> { title: 'Apple', isFruit: true, id: 3 },
 >
-> &rsqb;;
+> ];
 >
 > export default function ShoppingList() {
 >
@@ -6757,7 +6757,7 @@ later insert, delete, or reorder the items.
 >
 > style={{
 >
-> color: product.isFruit ? &apos;magenta&apos; : &apos;darkgreen&apos;
+> color: product.isFruit ? 'magenta' : 'darkgreen'
 >
 > }}
 >
@@ -6786,7 +6786,7 @@ your components:
 >
 > function handleClick() {
 >
-> alert(&apos;You clicked me!&apos;);
+> alert('You clicked me!');
 >
 > }
 >
@@ -6815,17 +6815,17 @@ button is clicked. To do this, add state to your component.
 First, import [useState](https://react.dev/reference/react/useState)
 from React:
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 
 Now you can declare a state variable inside your component:
 
 > function MyButton() {
 >
-> const &lsqb;count, setCount&rsqb; = useState(0);
+> const [count, setCount] = useState(0);
 
 You'll get two things from useState: the current state (count), and the
 function that lets you update it (setCount). You can give them any
-names, but the convention is to write &lsqb;something, setSomething&rsqb;.
+names, but the convention is to write [something, setSomething].
 
 The first time the button is displayed, count will be 0 because you
 passed 0 to useState(). When you want to change state, call setCount()
@@ -6834,7 +6834,7 @@ counter:
 
 > function MyButton() {
 >
-> const &lsqb;count, setCount&rsqb; = useState(0);
+> const [count, setCount] = useState(0);
 >
 > function handleClick() {
 >
@@ -6862,7 +6862,7 @@ state. Click each button separately:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > export default function MyApp() {
 >
@@ -6884,7 +6884,7 @@ state. Click each button separately:
 >
 > function MyButton() {
 >
-> const &lsqb;count, setCount&rsqb; = useState(0);
+> const [count, setCount] = useState(0);
 >
 > function handleClick() {
 >
@@ -6974,7 +6974,7 @@ First, move the state up from MyButton into MyApp:
 
 > export default function MyApp() {
 >
-> const &lsqb;count, setCount&rsqb; = useState(0);
+> const [count, setCount] = useState(0);
 >
 > function handleClick() {
 >
@@ -7000,7 +7000,7 @@ First, move the state up from MyButton into MyApp:
 >
 > function MyButton() {
 >
-> // \... we&apos;re moving code from here \...
+> // \... we're moving code from here \...
 >
 > }
 
@@ -7011,7 +7011,7 @@ curly braces, just like you previously did with built-in tags like
 
 > export default function MyApp() {
 >
-> const &lsqb;count, setCount&rsqb; = useState(0);
+> const [count, setCount] = useState(0);
 >
 > function handleClick() {
 >
@@ -7072,11 +7072,11 @@ Bottom of Form
 
 Fork
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > export default function MyApp() {
 >
-> const &lsqb;count, setCount&rsqb; = useState(0);
+> const [count, setCount] = useState(0);
 >
 > function handleClick() {
 >
@@ -7154,13 +7154,13 @@ You can see what it will look like when you're finished here:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({ value, onSquareClick }) {
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -7174,7 +7174,7 @@ You can see what it will look like when you're finished here:
 >
 > function handleClick(i) {
 >
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+> if (calculateWinner(squares) \|\| squares[i]) {
 >
 > return;
 >
@@ -7184,11 +7184,11 @@ You can see what it will look like when you're finished here:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+> nextSquares[i] = 'X';
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+> nextSquares[i] = 'O';
 >
 > }
 >
@@ -7202,11 +7202,11 @@ You can see what it will look like when you're finished here:
 >
 > if (winner) {
 >
-> status = &apos;Winner: &apos; + winner;
+> status = 'Winner: ' + winner;
 >
 > } else {
 >
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 >
 > }
 >
@@ -7214,17 +7214,17 @@ You can see what it will look like when you're finished here:
 >
 > <>
 >
-> <div className=&quot;status&quot;>{status}</div>
+> <div className="status">{status}</div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
 > />
 >
-> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> <Square value={squares[1]} onSquareClick={() => handleClick(1)}
 > />
 >
-> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> <Square value={squares[2]} onSquareClick={() => handleClick(2)}
 > />
 >
 > </div>
@@ -7255,7 +7255,7 @@ the starter code for this tutorial.
 
 > export default function Square() {
 >
-> return <button className=&quot;square&quot;>X</button>;
+> return <button className="square">X</button>;
 >
 > }
 
@@ -7306,7 +7306,7 @@ of that file in the *code editor* should be:
 
 > export default function Square() {
 >
-> return <button className=&quot;square&quot;>X</button>;
+> return <button className="square">X</button>;
 >
 > }
 
@@ -7328,7 +7328,7 @@ going on:
 
 > export default function Square() {
 >
-> return <button className=&quot;square&quot;>X</button>;
+> return <button className="square">X</button>;
 >
 > }
 
@@ -7339,7 +7339,7 @@ your file.
 
 > export default function Square() {
 >
-> return <button className=&quot;square&quot;>X</button>;
+> return <button className="square">X</button>;
 >
 > }
 
@@ -7347,7 +7347,7 @@ The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
 function. <button> is a *JSX element*. A JSX element is a combination
 of JavaScript code and HTML tags that describes what you'd like to
-display. className=&quot;square&quot; is a button property or *prop* that tells
+display. className="square" is a button property or *prop* that tells
 CSS how to style the button. X is the text displayed inside of the
 button and </button> closes the JSX element to indicate that any
 following content shouldn't be placed inside the button.
@@ -7368,13 +7368,13 @@ CodeSandbox. You won't be editing this file during the tutorial but it
 is the bridge between the component you created in the App.js file and
 the web browser.
 
-> import {Strict Mode} from &apos;react&apos;;
+> import {Strict Mode} from 'react';
 >
-> import {createRoot} from &apos;react-dom/client&apos;;
+> import {createRoot} from 'react-dom/client';
 >
-> import &apos;./styles.css&apos;;
+> import './styles.css';
 >
-> import App from &apos;./App&apos;;
+> import App from './App';
 
 Lines 1-5 brings all the necessary pieces together:
 
@@ -7399,8 +7399,8 @@ just try and copy paste your square to make two squares like this:
 
 > export default function Square() {
 >
-> return <button className=&quot;square&quot;>X</button><button
-> className=&quot;square&quot;>X</button>;
+> return <button className="square">X</button><button
+> className="square">X</button>;
 >
 > }
 
@@ -7422,9 +7422,9 @@ this:
 >
 > <>
 >
-> <button className=&quot;square&quot;>X</button>
+> <button className="square">X</button>
 >
-> <button className=&quot;square&quot;>X</button>
+> <button className="square">X</button>
 >
 > </>
 >
@@ -7457,33 +7457,33 @@ In the App.js file, update the Square component to look like this:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <button className=&quot;square&quot;>1</button>
+> <button className="square">1</button>
 >
-> <button className=&quot;square&quot;>2</button>
+> <button className="square">2</button>
 >
-> <button className=&quot;square&quot;>3</button>
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <button className=&quot;square&quot;>4</button>
->
-> <button className=&quot;square&quot;>5</button>
->
-> <button className=&quot;square&quot;>6</button>
+> <button className="square">3</button>
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
-
-<button className=&quot;square&quot;>7</button>
-
-> <button className=&quot;square&quot;>8</button>
+> <div className="board-row">
 >
-> <button className=&quot;square&quot;>9</button>
+> <button className="square">4</button>
+>
+> <button className="square">5</button>
+>
+> <button className="square">6</button>
+>
+> </div>
+>
+> <div className="board-row">
+
+<button className="square">7</button>
+
+> <button className="square">8</button>
+>
+> <button className="square">9</button>
 >
 > </div>
 >
@@ -7519,33 +7519,33 @@ At this point your code should look something like this:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <button className=&quot;square&quot;>1</button>
+> <button className="square">1</button>
 >
-> <button className=&quot;square&quot;>2</button>
+> <button className="square">2</button>
 >
-> <button className=&quot;square&quot;>3</button>
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <button className=&quot;square&quot;>4</button>
->
-> <button className=&quot;square&quot;>5</button>
->
-> <button className=&quot;square&quot;>6</button>
+> <button className="square">3</button>
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <button className=&quot;square&quot;>7</button>
+> <button className="square">4</button>
 >
-> <button className=&quot;square&quot;>8</button>
+> <button className="square">5</button>
 >
-> <button className=&quot;square&quot;>9</button>
+> <button className="square">6</button>
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <button className="square">7</button>
+>
+> <button className="square">8</button>
+>
+> <button className="square">9</button>
 >
 > </div>
 >
@@ -7571,12 +7571,12 @@ component architecture allows you to create a reusable component to
 avoid messy, duplicated code.
 
 First, you are going to copy the line defining your first square
-(<button className=&quot;square&quot;>1</button>) from your Board component
+(<button className="square">1</button>) from your Board component
 into a new Square component:
 
 > function Square() {
 >
-> return <button className=&quot;square&quot;>1</button>;
+> return <button className="square">1</button>;
 >
 > }
 >
@@ -7597,7 +7597,7 @@ using JSX syntax:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -7607,7 +7607,7 @@ using JSX syntax:
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -7617,7 +7617,7 @@ using JSX syntax:
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -7650,7 +7650,7 @@ the **Board:**
 
 > function Square({ value }) {
 >
-> return <button className=&quot;square&quot;>1</button>;
+> return <button className="square">1</button>;
 >
 > }
 
@@ -7662,7 +7662,7 @@ doing it like this:
 
 > function Square({ value }) {
 >
-> return <button className=&quot;square&quot;>value</button>;
+> return <button className="square">value</button>;
 >
 > }
 
@@ -7677,7 +7677,7 @@ you need curly braces. Add curly braces around value in JSX like so:
 
 > function Square({ value }) {
 >
-> return <button className=&quot;square&quot;>{value}</button>;
+> return <button className="square">{value}</button>;
 >
 > }
 
@@ -7696,33 +7696,33 @@ each Square component rendered by the Board component:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value=&quot;1&quot; />
+> <Square value="1" />
 >
-> <Square value=&quot;2&quot; />
+> <Square value="2" />
 >
-> <Square value=&quot;3&quot; />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value=&quot;4&quot; />
->
-> <Square value=&quot;5&quot; />
->
-> <Square value=&quot;6&quot; />
+> <Square value="3" />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value=&quot;7&quot; />
+> <Square value="4" />
 >
-> <Square value=&quot;8&quot; />
+> <Square value="5" />
 >
-> <Square value=&quot;9&quot; />
+> <Square value="6" />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value="7" />
+>
+> <Square value="8" />
+>
+> <Square value="9" />
 >
 > </div>
 >
@@ -7747,7 +7747,7 @@ Bottom of Form
 
 > function Square({ value }) {
 >
-> return <button className=&quot;square&quot;>{value}</button>;
+> return <button className="square">{value}</button>;
 >
 > }
 >
@@ -7757,33 +7757,33 @@ Bottom of Form
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value=&quot;1&quot; />
+> <Square value="1" />
 >
-> <Square value=&quot;2&quot; />
+> <Square value="2" />
 >
-> <Square value=&quot;3&quot; />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value=&quot;4&quot; />
->
-> <Square value=&quot;5&quot; />
->
-> <Square value=&quot;6&quot; />
+> <Square value="3" />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value=&quot;7&quot; />
+> <Square value="4" />
 >
-> <Square value=&quot;8&quot; />
+> <Square value="5" />
 >
-> <Square value=&quot;9&quot; />
+> <Square value="6" />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value="7" />
+>
+> <Square value="8" />
+>
+> <Square value="9" />
 >
 > </div>
 >
@@ -7803,7 +7803,7 @@ the props of the button JSX element returned from the Square:
 >
 > function handleClick() {
 >
-> console.log(&apos;clicked!&apos;);
+> console.log('clicked!');
 >
 > }
 >
@@ -7811,7 +7811,7 @@ the props of the button JSX element returned from the Square:
 >
 > <button
 >
-> className=&quot;square&quot;
+> className="square"
 >
 > onClick={handleClick}
 >
@@ -7825,12 +7825,12 @@ the props of the button JSX element returned from the Square:
 >
 > }
 
-If you click on a square now, you should see a log saying &quot;clicked!&quot;
+If you click on a square now, you should see a log saying "clicked!"
 in the Console tab at the bottom of the Browser section in CodeSandbox.
-Clicking the square more than once will log &quot;clicked!&quot; again. Repeated
+Clicking the square more than once will log "clicked!" again. Repeated
 console logs with the same message will not create more lines in the
 console. Instead, you will see an incrementing counter next to your
-first &quot;clicked!&quot; log.
+first "clicked!" log.
 
 ## Note
 
@@ -7852,11 +7852,11 @@ Import useState at the top of the file. Remove the value prop from the
 Square component. Instead, add a new line at the start of the Square
 that calls useState. Have it return a state variable called value:
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square() {
 >
-> const &lsqb;value, setValue&rsqb; = useState(null);
+> const [value, setValue] = useState(null);
 >
 > function handleClick() {
 >
@@ -7878,7 +7878,7 @@ the Board component:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -7888,7 +7888,7 @@ the Board component:
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -7898,7 +7898,7 @@ the Board component:
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -7915,16 +7915,16 @@ the Board component:
 > }
 
 Now you'll change Square to display an "X" when clicked. Replace the
-console.log(&quot;clicked!&quot;); event handler with setValue(&apos;X&apos;);. Now your
+console.log("clicked!"); event handler with setValue('X');. Now your
 Square component looks like this:
 
 > function Square() {
 >
-> const &lsqb;value, setValue&rsqb; = useState(null);
+> const [value, setValue] = useState(null);
 >
 > function handleClick() {
 >
-> setValue(&apos;X&apos;);
+> setValue('X');
 >
 > }
 >
@@ -7932,7 +7932,7 @@ Square component looks like this:
 >
 > <button
 >
-> className=&quot;square&quot;
+> className="square"
 >
 > onClick={handleClick}
 >
@@ -7948,7 +7948,7 @@ Square component looks like this:
 
 By calling this set function from an onClick handler, you're telling
 React to re-render that Square whenever its <button> is clicked. After
-the update, the Square's value will be &apos;X&apos;, so you'll see the "X" on
+the update, the Square's value will be 'X', so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:
 
 ![adding xes to board](./images/image059.gif){width="2.5in"
@@ -7962,15 +7962,15 @@ After you've made the above changes, your code will look like this:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square() {
 >
-> const &lsqb;value, setValue&rsqb; = useState(null);
+> const [value, setValue] = useState(null);
 >
 > function handleClick() {
 >
-> setValue(&apos;X&apos;);
+> setValue('X');
 >
 > }
 >
@@ -7978,7 +7978,7 @@ After you've made the above changes, your code will look like this:
 >
 > <button
 >
-> className=&quot;square&quot;
+> className="square"
 >
 > onClick={handleClick}
 >
@@ -7998,7 +7998,7 @@ After you've made the above changes, your code will look like this:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -8008,7 +8008,7 @@ After you've made the above changes, your code will look like this:
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -8018,7 +8018,7 @@ After you've made the above changes, your code will look like this:
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > <Square />
 >
@@ -8090,7 +8090,7 @@ array of 9 nulls corresponding to the 9 squares:
 >
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > return (
 >
@@ -8106,46 +8106,46 @@ variable that's initially set to that array. Each entry in the array
 corresponds to the value of a square. When you fill the board in later,
 the squares array will look like this:
 
-> &lsqb;&apos;O&apos;, null, &apos;X&apos;, &apos;X&apos;, &apos;X&apos;, &apos;O&apos;, &apos;O&apos;, null, null&rsqb;
+> ['O', null, 'X', 'X', 'X', 'O', 'O', null, null]
 
 Now your Board component needs to pass the value prop down to each
 Square that it renders:
 
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > return (
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} />
+> <Square value={squares[0]} />
 >
-> <Square value={squares&lsqb;1&rsqb;} />
+> <Square value={squares[1]} />
 >
-> <Square value={squares&lsqb;2&rsqb;} />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;3&rsqb;} />
->
-> <Square value={squares&lsqb;4&rsqb;} />
->
-> <Square value={squares&lsqb;5&rsqb;} />
+> <Square value={squares[2]} />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;6&rsqb;} />
+> <Square value={squares[3]} />
 >
-> <Square value={squares&lsqb;7&rsqb;} />
+> <Square value={squares[4]} />
 >
-> <Square value={squares&lsqb;8&rsqb;} />
+> <Square value={squares[5]} />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value={squares[6]} />
+>
+> <Square value={squares[7]} />
+>
+> <Square value={squares[8]} />
 >
 > </div>
 >
@@ -8161,7 +8161,7 @@ own stateful tracking of value and the button's onClick prop:
 
 > function Square({value}) {
 >
-> return <button className=&quot;square&quot;>{value}</button>;
+> return <button className="square">{value}</button>;
 >
 > }
 
@@ -8178,49 +8178,49 @@ Top of Form
 
 Bottom of Form
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({ value }) {
 >
-> return <button className=&quot;square&quot;>{value}</button>;
+> return <button className="square">{value}</button>;
 >
 > }
 >
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > return (
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} />
+> <Square value={squares[0]} />
 >
-> <Square value={squares&lsqb;1&rsqb;} />
+> <Square value={squares[1]} />
 >
-> <Square value={squares&lsqb;2&rsqb;} />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;3&rsqb;} />
->
-> <Square value={squares&lsqb;4&rsqb;} />
->
-> <Square value={squares&lsqb;5&rsqb;} />
+> <Square value={squares[2]} />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;6&rsqb;} />
+> <Square value={squares[3]} />
 >
-> <Square value={squares&lsqb;7&rsqb;} />
+> <Square value={squares[4]} />
 >
-> <Square value={squares&lsqb;8&rsqb;} />
+> <Square value={squares[5]} />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value={squares[6]} />
+>
+> <Square value={squares[7]} />
+>
+> <Square value={squares[8]} />
 >
 > </div>
 >
@@ -8230,8 +8230,8 @@ Bottom of Form
 >
 > }
 
-Each Square will now receive a value prop that will either be &apos;X&apos;,
-&apos;O&apos;, or null for empty squares.
+Each Square will now receive a value prop that will either be 'X',
+'O', or null for empty squares.
 
 Next, you need to change what happens when a Square is clicked. The
 Board component now maintains which squares are filled. You'll need to
@@ -8249,7 +8249,7 @@ onSquareClick:
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -8266,7 +8266,7 @@ props:
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -8283,15 +8283,15 @@ first Square component:
 
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > return (
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={handleClick} />
+> <Square value={squares[0]} onSquareClick={handleClick} />
 >
 > //\...
 >
@@ -8304,13 +8304,13 @@ component to update the squares array holding your board's state:
 
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > function handleClick() {
 >
 > const nextSquares = squares.slice();
 >
-> nextSquares&lsqb;0&rsqb; = &quot;X&quot;;
+> nextSquares[0] = "X";
 >
 > setSquares(nextSquares);
 >
@@ -8326,7 +8326,7 @@ component to update the squares array holding your board's state:
 
 The handleClick function creates a copy of the squares array
 (nextSquares) with the JavaScript slice() Array method. Then,
-handleClick updates the nextSquares array to add X to the first (&lsqb;0&rsqb;
+handleClick updates the nextSquares array to add X to the first ([0]
 index) square.
 
 Calling the setSquares function lets React know the state of the
@@ -8351,13 +8351,13 @@ index of the square to update:
 
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > function handleClick(i) {
 >
 > const nextSquares = squares.slice();
 >
-> nextSquares&lsqb;i&rsqb; = &quot;X&quot;;
+> nextSquares[i] = "X";
 >
 > setSquares(nextSquares);
 >
@@ -8375,7 +8375,7 @@ Next, you will need to pass that i to handleClick. You could try to set
 the onSquareClick prop of square to be handleClick(0) directly in the
 JSX like this, but it won't work:
 
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={handleClick(0)} />
+> <Square value={squares[0]} onSquareClick={handleClick(0)} />
 
 Here is why this doesn't work. The handleClick(0) call will be a part of
 rendering the board component. Because handleClick(0) alters the state
@@ -8413,9 +8413,9 @@ name is too verbose. Instead, let's do this:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
 > />
 >
 > // \...
@@ -8441,41 +8441,41 @@ of the handleClick corresponds to the index of the correct square:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
 > />
 >
-> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> <Square value={squares[1]} onSquareClick={() => handleClick(1)}
 > />
 >
-> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
-> />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
-> />
->
-> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
-> />
->
-> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> <Square value={squares[2]} onSquareClick={() => handleClick(2)}
 > />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> <Square value={squares[3]} onSquareClick={() => handleClick(3)}
 > />
 >
-> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> <Square value={squares[4]} onSquareClick={() => handleClick(4)}
 > />
 >
-> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+> />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+> />
+>
+> <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+> />
+>
+> <Square value={squares[8]} onSquareClick={() => handleClick(8)}
 > />
 >
 > </div>
@@ -8503,13 +8503,13 @@ This is what your code should look like:
 >
 > Bottom of Form
 >
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({ value, onSquareClick }) {
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -8521,13 +8521,13 @@ This is what your code should look like:
 >
 > export default function Board() {
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > function handleClick(i) {
 >
 > const nextSquares = squares.slice();
 >
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+> nextSquares[i] = 'X';
 >
 > setSquares(nextSquares);
 >
@@ -8537,41 +8537,41 @@ This is what your code should look like:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
 > />
 >
-> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> <Square value={squares[1]} onSquareClick={() => handleClick(1)}
 > />
 >
-> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
-> />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
-> />
->
-> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
-> />
->
-> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> <Square value={squares[2]} onSquareClick={() => handleClick(2)}
 > />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> <Square value={squares[3]} onSquareClick={() => handleClick(3)}
 > />
 >
-> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> <Square value={squares[4]} onSquareClick={() => handleClick(4)}
 > />
 >
-> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+> />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+> />
+>
+> <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+> />
+>
+> <Square value={squares[8]} onSquareClick={() => handleClick(8)}
 > />
 >
 > </div>
@@ -8629,25 +8629,25 @@ approach is to replace the data with a new copy which has the desired
 changes. Here is what it would look like if you mutated the squares
 array:
 
-> const squares = &lsqb;null, null, null, null, null, null, null, null,
-> null&rsqb;;
+> const squares = [null, null, null, null, null, null, null, null,
+> null];
 >
-> squares&lsqb;0&rsqb; = &apos;X&apos;;
+> squares[0] = 'X';
 >
-> // Now \`squares\` is &lsqb;&quot;X&quot;, null, null, null, null, null, null,
-> null, null&rsqb;;
+> // Now \`squares\` is ["X", null, null, null, null, null, null,
+> null, null];
 
 And here is what it would look like if you changed data without mutating
 the squares array:
 
-> const squares = &lsqb;null, null, null, null, null, null, null, null,
-> null&rsqb;;
+> const squares = [null, null, null, null, null, null, null, null,
+> null];
 >
-> const nextSquares = &lsqb;&apos;X&apos;, null, null, null, null, null, null, null,
-> null&rsqb;;
+> const nextSquares = ['X', null, null, null, null, null, null, null,
+> null];
 >
 > // Now \`squares\` is unchanged, but \`nextSquares\` first element is
-> &apos;X&apos; rather than \`null\`
+> 'X' rather than \`null\`
 
 The result is the same but by not mutating (changing the underlying
 data) directly, you gain several benefits.
@@ -8681,9 +8681,9 @@ by adding another piece of state to the Board component:
 
 > function Board() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > // \...
 >
@@ -8696,9 +8696,9 @@ xIsNext:
 
 > export default function Board() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > function handleClick(i) {
 >
@@ -8706,11 +8706,11 @@ xIsNext:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &quot;X&quot;;
+> nextSquares[i] = "X";
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &quot;O&quot;;
+> nextSquares[i] = "O";
 >
 > }
 >
@@ -8748,7 +8748,7 @@ early---before it tries to update the board state.
 
 > function handleClick(i) {
 >
-> if (squares&lsqb;i&rsqb;) {
+> if (squares[i]) {
 >
 > return;
 >
@@ -8765,13 +8765,13 @@ should look like at this point:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({value, onSquareClick}) {
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -8783,13 +8783,13 @@ should look like at this point:
 >
 > export default function Board() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > function handleClick(i) {
 >
-> if (squares&lsqb;i&rsqb;) {
+> if (squares[i]) {
 >
 > return;
 >
@@ -8799,11 +8799,11 @@ should look like at this point:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+> nextSquares[i] = 'X';
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+> nextSquares[i] = 'O';
 >
 > }
 >
@@ -8817,27 +8817,27 @@ should look like at this point:
 >
 > <>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
 > />
 >
-> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> <Square value={squares[1]} onSquareClick={() => handleClick(1)}
 > />
 >
-> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
+> <Square value={squares[2]} onSquareClick={() => handleClick(2)}
 > />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 
 ## Declaring a winner 
 
 Now that you show which player's turn is next, you should also show when
 the game is won and there are no more turns to make. To do this you'll
 add a helper function called calculateWinner that takes an array of 9
-squares, checks for a winner and returns &apos;X&apos;, &apos;O&apos;, or null as
+squares, checks for a winner and returns 'X', 'O', or null as
 appropriate. Don't worry too much about the calculateWinner function;
 it's not specific to React:
 
@@ -8849,34 +8849,34 @@ it's not specific to React:
 >
 > function calculateWinner(squares) {
 >
-> const lines = &lsqb;
+> const lines = [
 >
-> &lsqb;0, 1, 2&rsqb;,
+> [0, 1, 2],
 >
-> &lsqb;3, 4, 5&rsqb;,
+> [3, 4, 5],
 >
-> &lsqb;6, 7, 8&rsqb;,
+> [6, 7, 8],
 >
-> &lsqb;0, 3, 6&rsqb;,
+> [0, 3, 6],
 >
-> &lsqb;1, 4, 7&rsqb;,
+> [1, 4, 7],
 >
-> &lsqb;2, 5, 8&rsqb;,
+> [2, 5, 8],
 >
-> &lsqb;0, 4, 8&rsqb;,
+> [0, 4, 8],
 >
-> &lsqb;2, 4, 6&rsqb;
+> [2, 4, 6]
 >
-> &rsqb;;
+> ];
 >
 > for (let i = 0; i < lines.length; i++) {
 >
-> const &lsqb;a, b, c&rsqb; = lines&lsqb;i&rsqb;;
+> const [a, b, c] = lines[i];
 >
-> if (squares&lsqb;a&rsqb; && squares&lsqb;a&rsqb; === squares&lsqb;b&rsqb; && squares&lsqb;a&rsqb; ===
-> squares&lsqb;c&rsqb;) {
+> if (squares[a] && squares[a] === squares[b] && squares[a] ===
+> squares[c]) {
 >
-> return squares&lsqb;a&rsqb;;
+> return squares[a];
 >
 > }
 >
@@ -8899,7 +8899,7 @@ already has a X or and O. We'd like to return early in both cases:
 
 > function handleClick(i) {
 >
-> if (squares&lsqb;i&rsqb; \|\| calculateWinner(squares)) {
+> if (squares[i] \|\| calculateWinner(squares)) {
 >
 > return;
 >
@@ -8927,11 +8927,11 @@ next:
 >
 > if (winner) {
 >
-> status = &quot;Winner: &quot; + winner;
+> status = "Winner: " + winner;
 >
 > } else {
 >
-> status = &quot;Next player: &quot; + (xIsNext ? &quot;X&quot; : &quot;O&quot;);
+> status = "Next player: " + (xIsNext ? "X" : "O");
 >
 > }
 >
@@ -8939,9 +8939,9 @@ next:
 >
 > <div>
 >
-> <div className=&quot;status&quot;>{status}</div>
+> <div className="status">{status}</div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
 > // \...
 >
@@ -8955,13 +8955,13 @@ Here is what the code should look like:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({value, onSquareClick}) {
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -8973,13 +8973,13 @@ Here is what the code should look like:
 >
 > export default function Board() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;squares, setSquares&rsqb; = useState(Array(9).fill(null));
+> const [squares, setSquares] = useState(Array(9).fill(null));
 >
 > function handleClick(i) {
 >
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+> if (calculateWinner(squares) \|\| squares[i]) {
 >
 > return;
 >
@@ -8989,11 +8989,11 @@ Here is what the code should look like:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+> nextSquares[i] = 'X';
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+> nextSquares[i] = 'O';
 >
 > }
 >
@@ -9009,11 +9009,11 @@ Here is what the code should look like:
 >
 > if (winner) {
 >
-> status = &apos;Winner: &apos; + winner;
+> status = 'Winner: ' + winner;
 >
 > } else {
 >
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 >
 > }
 >
@@ -9021,43 +9021,43 @@ Here is what the code should look like:
 >
 > <>
 >
-> <div className=&quot;status&quot;>{status}</div>
+> <div className="status">{status}</div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
+> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
 > />
 >
-> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
+> <Square value={squares[1]} onSquareClick={() => handleClick(1)}
 > />
 >
-> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
-> />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
-> />
->
-> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
-> />
->
-> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
+> <Square value={squares[2]} onSquareClick={() => handleClick(2)}
 > />
 >
 > </div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 >
-> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
+> <Square value={squares[3]} onSquareClick={() => handleClick(3)}
 > />
 >
-> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
+> <Square value={squares[4]} onSquareClick={() => handleClick(4)}
 > />
 >
-> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
+> <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+> />
+>
+> </div>
+>
+> <div className="board-row">
+>
+> <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+> />
+>
+> <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+> />
+>
+> <Square value={squares[8]} onSquareClick={() => handleClick(8)}
 > />
 >
 > </div>
@@ -9070,34 +9070,34 @@ Here is what the code should look like:
 >
 > function calculateWinner(squares) {
 >
-> const lines = &lsqb;
+> const lines = [
 >
-> &lsqb;0, 1, 2&rsqb;,
+> [0, 1, 2],
 >
-> &lsqb;3, 4, 5&rsqb;,
+> [3, 4, 5],
 >
-> &lsqb;6, 7, 8&rsqb;,
+> [6, 7, 8],
 >
-> &lsqb;0, 3, 6&rsqb;,
+> [0, 3, 6],
 >
-> &lsqb;1, 4, 7&rsqb;,
+> [1, 4, 7],
 >
-> &lsqb;2, 5, 8&rsqb;,
+> [2, 5, 8],
 >
-> &lsqb;0, 4, 8&rsqb;,
+> [0, 4, 8],
 >
-> &lsqb;2, 4, 6&rsqb;,
+> [2, 4, 6],
 >
-> &rsqb;;
+> ];
 >
 > for (let i = 0; i < lines.length; i++) {
 >
-> const &lsqb;a, b, c&rsqb; = lines&lsqb;i&rsqb;;
+> const [a, b, c] = lines[i];
 >
-> if (squares&lsqb;a&rsqb; && squares&lsqb;a&rsqb; === squares&lsqb;b&rsqb; && squares&lsqb;a&rsqb; ===
-> squares&lsqb;c&rsqb;) {
+> if (squares[a] && squares[a] === squares[b] && squares[a] ===
+> squares[c]) {
 >
-> return squares&lsqb;a&rsqb;;
+> return squares[a];
 >
 > }
 >
@@ -9127,23 +9127,23 @@ which you'll store as a new state variable. The history array represents
 all board states, from the first to the last move, and has a shape like
 this:
 
-> &lsqb;
+> [
 >
 > // Before first move
 >
-> &lsqb;null, null, null, null, null, null, null, null, null&rsqb;,
+> [null, null, null, null, null, null, null, null, null],
 >
 > // After first move
 >
-> &lsqb;null, null, null, null, &apos;X&apos;, null, null, null, null&rsqb;,
+> [null, null, null, null, 'X', null, null, null, null],
 >
 > // After second move
 >
-> &lsqb;null, null, null, null, &apos;X&apos;, null, null, null, &apos;O&apos;&rsqb;,
+> [null, null, null, null, 'X', null, null, null, 'O'],
 >
 > // \...
 >
-> &rsqb;
+> ]
 
 ## Lifting state up, again 
 
@@ -9171,15 +9171,15 @@ Board component and some markup:
 >
 > return (
 >
-> <div className=&quot;game&quot;>
+> <div className="game">
 >
-> <div className=&quot;game-board&quot;>
+> <div className="game-board">
 >
 > <Board />
 >
 > </div>
 >
-> <div className=&quot;game-info&quot;>
+> <div className="game-info">
 >
 > <ol>{/\*TODO\*/}</ol>
 >
@@ -9203,13 +9203,13 @@ the history of moves:
 
 > export default function Game() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
+> const [history, setHistory] = useState([Array(9).fill(null)]);
 >
 > // \...
 
-Notice how &lsqb;Array(9).fill(null)&rsqb; is an array with a single item, which
+Notice how [Array(9).fill(null)] is an array with a single item, which
 itself is an array of 9 nulls.
 
 To render the squares for the current move, you'll want to read the last
@@ -9218,11 +9218,11 @@ already have enough information to calculate it during rendering:
 
 > export default function Game() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
+> const [history, setHistory] = useState([Array(9).fill(null)]);
 >
-> const currentSquares = history&lsqb;history.length - 1&rsqb;;
+> const currentSquares = history[history.length - 1];
 >
 > // \...
 
@@ -9232,11 +9232,11 @@ currentSquares and handlePlay as props to the Board component:
 
 > export default function Game() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
+> const [history, setHistory] = useState([Array(9).fill(null)]);
 >
-> const currentSquares = history&lsqb;history.length - 1&rsqb;;
+> const currentSquares = history[history.length - 1];
 >
 > function handlePlay(nextSquares) {
 >
@@ -9246,9 +9246,9 @@ currentSquares and handlePlay as props to the Board component:
 >
 > return (
 >
-> <div className=&quot;game&quot;>
+> <div className="game">
 >
-> <div className=&quot;game-board&quot;>
+> <div className="game-board">
 >
 > <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
 > />
@@ -9285,7 +9285,7 @@ Game component can update the Board when the user clicks a square:
 >
 > function handleClick(i) {
 >
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+> if (calculateWinner(squares) \|\| squares[i]) {
 >
 > return;
 >
@@ -9295,11 +9295,11 @@ Game component can update the Board when the user clicks a square:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &quot;X&quot;;
+> nextSquares[i] = "X";
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &quot;O&quot;;
+> nextSquares[i] = "O";
 >
 > }
 >
@@ -9332,7 +9332,7 @@ just as Board used to do:
 >
 > function handlePlay(nextSquares) {
 >
-> setHistory(&lsqb;\...history, nextSquares&rsqb;);
+> setHistory([\...history, nextSquares]);
 >
 > setXIsNext(!xIsNext);
 >
@@ -9342,16 +9342,16 @@ just as Board used to do:
 >
 > }
 
-Here, &lsqb;\...history, nextSquares&rsqb; creates a new array that contains all
+Here, [\...history, nextSquares] creates a new array that contains all
 the items in history, followed by nextSquares. (You can read the
 \...history [*[spread
 syntax]{.underline}*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 as "enumerate all the items in history".)
 
-For example, if history is &lsqb;&lsqb;null,null,null&rsqb;, &lsqb;&quot;X&quot;,null,null&rsqb;&rsqb;
-and nextSquares is &lsqb;&quot;X&quot;,null,&quot;O&quot;&rsqb;, then the new &lsqb;\...history,
-nextSquares&rsqb; array will be &lsqb;&lsqb;null,null,null&rsqb;, &lsqb;&quot;X&quot;,null,null&rsqb;,
-&lsqb;&quot;X&quot;,null,&quot;O&quot;&rsqb;&rsqb;.
+For example, if history is [[null,null,null], ["X",null,null]]
+and nextSquares is ["X",null,"O"], then the new [\...history,
+nextSquares] array will be [[null,null,null], ["X",null,null],
+["X",null,"O"]].
 
 At this point, you've moved the state to live in the Game component, and
 the UI should be fully working, just as it was before the refactor. Here
@@ -9359,13 +9359,13 @@ is what the code should look like at this point:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({ value, onSquareClick }) {
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -9379,7 +9379,7 @@ is what the code should look like at this point:
 >
 > function handleClick(i) {
 >
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+> if (calculateWinner(squares) \|\| squares[i]) {
 >
 > return;
 >
@@ -9389,11 +9389,11 @@ is what the code should look like at this point:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+> nextSquares[i] = 'X';
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+> nextSquares[i] = 'O';
 >
 > }
 >
@@ -9407,11 +9407,11 @@ is what the code should look like at this point:
 >
 > if (winner) {
 >
-> status = &apos;Winner: &apos; + winner;
+> status = 'Winner: ' + winner;
 >
 > } else {
 >
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 >
 > }
 >
@@ -9419,9 +9419,9 @@ is what the code should look like at this point:
 >
 > <>
 >
-> <div className=&quot;status&quot;>{status}</div>
+> <div className="status">{status}</div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 
 ## Showing the past moves 
 
@@ -9437,7 +9437,7 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-> &lsqb;1, 2, 3&rsqb;.map((x) => x \* 2) // &lsqb;2, 4, 6&rsqb;
+> [1, 2, 3].map((x) => x \* 2) // [2, 4, 6]
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
@@ -9445,15 +9445,15 @@ representing buttons on the screen, and display a list of buttons to
 
 > export default function Game() {
 >
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
+> const [xIsNext, setXIsNext] = useState(true);
 >
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
+> const [history, setHistory] = useState([Array(9).fill(null)]);
 >
-> const currentSquares = history&lsqb;history.length - 1&rsqb;;
+> const currentSquares = history[history.length - 1];
 >
 > function handlePlay(nextSquares) {
 >
-> setHistory(&lsqb;\...history, nextSquares&rsqb;);
+> setHistory([\...history, nextSquares]);
 >
 > setXIsNext(!xIsNext);
 >
@@ -9471,11 +9471,11 @@ representing buttons on the screen, and display a list of buttons to
 >
 > if (move > 0) {
 >
-> description = &apos;Go to move #&apos; + move;
+> description = 'Go to move #' + move;
 >
 > } else {
 >
-> description = &apos;Go to game start&apos;;
+> description = 'Go to game start';
 >
 > }
 >
@@ -9493,16 +9493,16 @@ representing buttons on the screen, and display a list of buttons to
 >
 > return (
 >
-> <div className=&quot;game&quot;>
+> <div className="game">
 >
-> <div className=&quot;game-board&quot;>
+> <div className="game-board">
 >
 > <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
 > />
 >
 > </div>
 >
-> <div className=&quot;game-info&quot;>
+> <div className="game-info">
 >
 > <ol>{moves}</ol>
 >
@@ -9516,228 +9516,135 @@ representing buttons on the screen, and display a list of buttons to
 
 You can see what your code should look like below. Note that you should
 see an error in the developer tools console that says: Warning: Each
-child in an array or iterator should have a unique &quot;key&quot; prop. Check
+child in an array or iterator should have a unique "key" prop. Check
 the render method of \`Game\`. You'll fix this error in the next
 section.
 
-#### App.js
+<details>
+  <summary>App.js</summary>
 
-> import { useState } from &apos;react&apos;;
->
-> function Square({ value, onSquareClick }) {
->
-> return (
->
-> <button className=&quot;square&quot; onClick={onSquareClick}>
->
-> {value}
->
-> </button>
->
-> );
->
-> }
->
-> function Board({ xIsNext, squares, onPlay }) {
->
-> function handleClick(i) {
->
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
->
-> return;
->
-> }
->
-> const nextSquares = squares.slice();
->
-> if (xIsNext) {
->
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
->
-> } else {
->
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
->
-> }
->
-> onPlay(nextSquares);
->
-> }
->
-> const winner = calculateWinner(squares);
->
-> let status;
->
-> if (winner) {
->
-> status = &apos;Winner: &apos; + winner;
->
-> } else {
->
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
->
-> }
->
-> return (
->
-> <>
->
-> <div className=&quot;status&quot;>{status}</div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;0&rsqb;} onSquareClick={() => handleClick(0)}
-> />
->
-> <Square value={squares&lsqb;1&rsqb;} onSquareClick={() => handleClick(1)}
-> />
->
-> <Square value={squares&lsqb;2&rsqb;} onSquareClick={() => handleClick(2)}
-> />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;3&rsqb;} onSquareClick={() => handleClick(3)}
-> />
->
-> <Square value={squares&lsqb;4&rsqb;} onSquareClick={() => handleClick(4)}
-> />
->
-> <Square value={squares&lsqb;5&rsqb;} onSquareClick={() => handleClick(5)}
-> />
->
-> </div>
->
-> <div className=&quot;board-row&quot;>
->
-> <Square value={squares&lsqb;6&rsqb;} onSquareClick={() => handleClick(6)}
-> />
->
-> <Square value={squares&lsqb;7&rsqb;} onSquareClick={() => handleClick(7)}
-> />
->
-> <Square value={squares&lsqb;8&rsqb;} onSquareClick={() => handleClick(8)}
-> />
->
-> </div>
->
-> </>
->
-> );
->
-> }
->
-> export default function Game() {
->
-> const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
->
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
->
-> const currentSquares = history&lsqb;history.length - 1&rsqb;;
->
-> function handlePlay(nextSquares) {
->
-> setHistory(&lsqb;\...history, nextSquares&rsqb;);
->
-> setXIsNext(!xIsNext);
->
-> }
->
-> function jumpTo(nextMove) {
->
-> // TODO
->
-> }
->
-> const moves = history.map((squares, move) => {
->
-> let description;
->
-> if (move > 0) {
->
-> description = &apos;Go to move #&apos; + move;
->
-> } else {
->
-> description = &apos;Go to game start&apos;;
->
-> }
->
-> return (
->
-> <li>
->
-> <button onClick={() => jumpTo(move)}>{description}</button>
->
-> </li>
->
-> );
->
-> });
->
-> return (
->
-> <div className=&quot;game&quot;>
->
-> <div className=&quot;game-board&quot;>
->
-> <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
-> />
->
-> </div>
->
-> <div className=&quot;game-info&quot;>
->
-> <ol>{moves}</ol>
->
-> </div>
->
-> </div>
->
-> );
->
-> }
->
-> function calculateWinner(squares) {
->
-> const lines = &lsqb;
->
-> &lsqb;0, 1, 2&rsqb;,
->
-> &lsqb;3, 4, 5&rsqb;,
->
-> &lsqb;6, 7, 8&rsqb;,
->
-> &lsqb;0, 3, 6&rsqb;,
->
-> &lsqb;1, 4, 7&rsqb;,
->
-> &lsqb;2, 5, 8&rsqb;,
->
-> &lsqb;0, 4, 8&rsqb;,
->
-> &lsqb;2, 4, 6&rsqb;,
->
-> &rsqb;;
->
-> for (let i = 0; i < lines.length; i++) {
->
-> const &lsqb;a, b, c&rsqb; = lines&lsqb;i&rsqb;;
->
-> if (squares&lsqb;a&rsqb; && squares&lsqb;a&rsqb; === squares&lsqb;b&rsqb; && squares&lsqb;a&rsqb; ===
-> squares&lsqb;c&rsqb;) {
->
-> return squares&lsqb;a&rsqb;;
->
-> }
->
-> }
->
-> return null;
->
-> }
+
+```
+ import { useState } from 'react';
+ function Square({ value, onSquareClick }) {
+ return (
+ <button className="square" onClick={onSquareClick}>
+ {value}
+ </button>
+ );
+ }
+ function Board({ xIsNext, squares, onPlay }) {
+ function handleClick(i) {
+ if (calculateWinner(squares) \|\| squares[i]) {
+ return;
+  }
+ const nextSquares = squares.slice();
+ if (xIsNext) {
+ nextSquares[i] = 'X';
+ } else {
+ nextSquares[i] = 'O';
+ }
+ onPlay(nextSquares);
+ }
+ const winner = calculateWinner(squares);
+ let status;
+ if (winner) {
+ status = 'Winner: ' + winner;
+ } else {
+ status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+ }
+
+ return (
+ <>
+ <div className="status">{status}</div>
+ <div className="board-row">
+ <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+  />
+    <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+  />
+ <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+ />
+ </div>
+ <div className="board-row">
+ <Square value={squares[3]} onSquareClick={() => handleClick(3)}
+  />
+ <Square value={squares[4]} onSquareClick={() => handleClick(4)}
+ />
+ <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+ />
+ </div>
+ <div className="board-row">
+ <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+ />
+ <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+ />
+ <Square value={squares[8]} onSquareClick={() => handleClick(8)}
+ />
+ </div>
+ </>
+ );
+ }
+
+ export default function Game() {
+ const [xIsNext, setXIsNext] = useState(true);
+ const [history, setHistory] = useState([Array(9).fill(null)]);
+ const currentSquares = history[history.length - 1];
+
+ function handlePlay(nextSquares) {
+ setHistory([\...history, nextSquares]);
+ setXIsNext(!xIsNext);
+ }
+ function jumpTo(nextMove) {
+ // TODO
+ }
+ const moves = history.map((squares, move) => {
+ let description;
+ if (move > 0) {
+ description = 'Go to move #' + move;
+ } else {
+ description = 'Go to game start';
+ }
+ return (
+ <li>
+ <button onClick={() => jumpTo(move)}>{description}</button>
+ </li>
+ );
+ });
+ return (
+ <div className="game">
+ <div className="game-board">
+ <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+/>
+ </div>
+ <div className="game-info">
+ <ol>{moves}</ol>
+ </div>
+ </div>
+ );
+ }
+ function calculateWinner(squares) {
+ const lines = [
+ [0, 1, 2],
+ [3, 4, 5],
+ [6, 7, 8],
+ [0, 3, 6],
+ [1, 4, 7],
+ [2, 5, 8],
+ [0, 4, 8],
+ [2, 4, 6],
+ ];
+ for (let i = 0; i < lines.length; i++) {
+ const [a, b, c] = lines[i];
+ if (squares[a] && squares[a] === squares[b] && squares[a] ===
+ squares[c]) {
+    return squares[a];
+    }
+  }
+  return null;
+}
+```
+
+</details>
 
 As you iterate through history array inside the function you passed to
 map, the squares argument goes through each element of history, and the
@@ -9763,17 +9670,18 @@ the list's items.
 
 Imagine transitioning from
 
-> <li>Alexa: 7 tasks left</li>
->
-> <li>Ben: 5 tasks left</li>
->
-> to
->
-> <li>Ben: 9 tasks left</li>
->
-> <li>Claudia: 8 tasks left</li>
->
-> <li>Alexa: 5 tasks left</li>
+```
+<li>Alexa: 7 tasks left</li>
+<li>Ben: 5 tasks left</li>
+```
+
+to
+
+```
+<li>Ben: 9 tasks left</li>
+<li>Claudia: 8 tasks left</li>
+<li>Alexa: 5 tasks left</li>
+```
 
 In addition to the updated counts, a human reading this would probably
 say that you swapped Alexa and Ben's ordering and inserted Claudia
@@ -9830,61 +9738,58 @@ use the move index as a key.
 In the Game function, you can add the key as <li key={move}>, and if
 you reload the rendered game, React's "key" error should disappear:
 
-> const moves = history.map((squares, move) => {
->
-> //\...
->
-> return (
->
-> <li key={move}>
->
-> <button onClick={() => jumpTo(move)}>{description}</button>
->
-> </li>
->
-);
+```
+const moves = history.map((squares, move) => {
+  //...
+  return (
+    <li key={move}>
+      <button onClick={() => jumpTo(move)}>{description}</button>
+    </li>
+  );
 });
 ```
 
-#### App.js
+<details>
+  <summary>App.js</summary>
 
 ```
-import { useState } from &apos;react&apos;;
+import { useState } from 'react';
 function Square({ value, onSquareClick }) {
-return (
-<button className=&quot;square&quot; onClick={onSquareClick}>
- {value}
- </button>
-);
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
 }
 function Board({ xIsNext, squares, onPlay }) {
 function handleClick(i) {
-if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
-return;
-}
-const nextSquares = squares.slice();
-if (xIsNext) {
-nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
-} else {
-nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
-}
-onPlay(nextSquares);
+  if (calculateWinner(squares) \|\| squares[i]) {
+    return;
+  }
+  const nextSquares = squares.slice();
+  if (xIsNext) {
+    nextSquares[i] = 'X';
+  } else {
+    nextSquares[i] = 'O';
+  }
+  onPlay(nextSquares);
 }
 const winner = calculateWinner(squares);
 let status;
-if (winner) {
-status = &apos;Winner: &apos; + winner;
-} else {
-status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
-}
-return (
-<>
-<div className=&quot;status&quot;>{status}</div>
-
-<div className=&quot;board-row&quot;>
+  if (winner) {
+    status = 'Winner: ' + winner;
+  } else {
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  }
+  return (
+    <>
+      <div className="status">{status}</div>
+      <div className="board-row">
 ```
 
-## Show more
+</details>
+
+#### Show more
 
 Before you can implement jumpTo, you need the Game component to keep
 track of which step the user is currently viewing. To do this, define a
@@ -9892,11 +9797,11 @@ new state variable called currentMove, defaulting to 0:
 
 ```
 export default function Game() {
-const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
-const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
-const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
-const currentSquares = history&lsqb;history.length - 1&rsqb;;
-//...
+  const [xIsNext, setXIsNext] = useState(true);
+  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const [currentMove, setCurrentMove] = useState(0);
+  const currentSquares = history[history.length - 1];
+  //...
 }
 ```
 
@@ -9929,8 +9834,8 @@ called when you click on a square.
 
 ```
 function handlePlay(nextSquares) {
-const nextHistory = &lsqb;\...history.slice(0, currentMove + 1),
-nextSquares&rsqb;;
+const nextHistory = [\...history.slice(0, currentMove + 1),
+nextSquares];
 setHistory(nextHistory);
 setCurrentMove(nextHistory.length - 1);
 setXIsNext(!xIsNext);
@@ -9942,10 +9847,10 @@ selected move, instead of always rendering the final move:
 
 ```
 export default function Game() {
-const &lsqb;xIsNext, setXIsNext&rsqb; = useState(true);
-const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
-const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
-const currentSquares = history&lsqb;currentMove&rsqb;;
+const [xIsNext, setXIsNext] = useState(true);
+const [history, setHistory] = useState([Array(9).fill(null)]);
+const [currentMove, setCurrentMove] = useState(0);
+const currentSquares = history[currentMove];
 // ...
 }
 ```
@@ -9957,10 +9862,10 @@ step occurred.
 #### App.js
 
 ```
-import { useState } from &apos;react&apos;;
+import { useState } from 'react';
 function Square({value, onSquareClick}) {
   return (
-    <button className=&quot;square&quot; onClick={onSquareClick}>
+    <button className="square" onClick={onSquareClick}>
   {value}
     </button>
   );
@@ -9968,29 +9873,29 @@ function Square({value, onSquareClick}) {
 function Board({ xIsNext, squares, onPlay }) {
 
 function handleClick(i) {
-  if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+  if (calculateWinner(squares) \|\| squares[i]) {
     return;
   }
     const nextSquares = squares.slice();
   if (xIsNext) {
-   nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+   nextSquares[i] = 'X';
   } else {
-   nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+   nextSquares[i] = 'O';
   }
     onPlay(nextSquares);
 }
 const winner = calculateWinner(squares);
   let status;
   if (winner) {
-    status = &apos;Winner: &apos; + winner;
+    status = 'Winner: ' + winner;
   } else {
-    status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
 
 return (
   <>
-  <div className=&quot;status&quot;>{status}</div>
-  <div className=&quot;board-row&quot;>
+  <div className="status">{status}</div>
+  <div className="board-row">
 )
 ```
 
@@ -10009,38 +9914,29 @@ reduces bugs and makes your code easier to understand. Change Game so
 that it doesn't store xIsNext as a separate state variable and instead
 figures it out based on the currentMove:
 
+<details<
+  <summary>JavaScript</summary>
+
 ```
-> export default function Game() {
->
-> const &lsqb;history, setHistory&rsqb; = useState(&lsqb;Array(9).fill(null)&rsqb;);
->
-> const &lsqb;currentMove, setCurrentMove&rsqb; = useState(0);
->
-> const xIsNext = currentMove % 2 === 0;
->
-> const currentSquares = history&lsqb;currentMove&rsqb;;
->
-> function handlePlay(nextSquares) {
->
-> const nextHistory = &lsqb;\...history.slice(0, currentMove + 1),
-> nextSquares&rsqb;;
->
-> setHistory(nextHistory);
->
-> setCurrentMove(nextHistory.length - 1);
->
-> }
->
-> function jumpTo(nextMove) {
->
-> setCurrentMove(nextMove);
->
-> }
->
-> // \...
->
-> }
+ export default function Game() {
+   const [history, setHistory] = useState([Array(9).fill(null)]);
+   const [currentMove, setCurrentMove] = useState(0);
+   const xIsNext = currentMove % 2 === 0;
+   const currentSquares = history[currentMove];
+   function handlePlay(nextSquares) {
+     const nextHistory = [\...history.slice(0, currentMove + 1),
+     nextSquares];
+     setHistory(nextHistory);
+     setCurrentMove(nextHistory.length - 1);
+   }
+   function jumpTo(nextMove) {
+     setCurrentMove(nextMove);
+   }
+   // ...
+ }
 ```
+
+</details>
 
 You no longer need the xIsNext state declaration or the calls to
 setXIsNext. Now, there's no chance for xIsNext to get out of sync with
@@ -10067,13 +9963,13 @@ Check out the final result here:
 #### App.js
 
 ```
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 >
 > function Square({ value, onSquareClick }) {
 >
 > return (
 >
-> <button className=&quot;square&quot; onClick={onSquareClick}>
+> <button className="square" onClick={onSquareClick}>
 >
 > {value}
 >
@@ -10087,7 +9983,7 @@ Check out the final result here:
 >
 > function handleClick(i) {
 >
-> if (calculateWinner(squares) \|\| squares&lsqb;i&rsqb;) {
+> if (calculateWinner(squares) \|\| squares[i]) {
 >
 > return;
 >
@@ -10097,11 +9993,11 @@ Check out the final result here:
 >
 > if (xIsNext) {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;X&apos;;
+> nextSquares[i] = 'X';
 >
 > } else {
 >
-> nextSquares&lsqb;i&rsqb; = &apos;O&apos;;
+> nextSquares[i] = 'O';
 >
 > }
 >
@@ -10115,11 +10011,11 @@ Check out the final result here:
 >
 > if (winner) {
 >
-> status = &apos;Winner: &apos; + winner;
+> status = 'Winner: ' + winner;
 >
 > } else {
 >
-> status = &apos;Next player: &apos; + (xIsNext ? &apos;X&apos; : &apos;O&apos;);
+> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 >
 > }
 >
@@ -10127,9 +10023,9 @@ Check out the final result here:
 >
 > <>
 >
-> <div className=&quot;status&quot;>{status}</div>
+> <div className="status">{status}</div>
 >
-> <div className=&quot;board-row&quot;>
+> <div className="board-row">
 ```
 
 ### Show more
@@ -10176,27 +10072,27 @@ Imagine that you already have a JSON API and a mockup from a designer.
 
 The JSON API returns some data that looks like this:
 
-> &lsqb;
+> [
 >
-> { category: &quot;Fruits&quot;, price: &quot;\$1&quot;, stocked: true, name: &quot;Apple&quot;
+> { category: "Fruits", price: "\$1", stocked: true, name: "Apple"
 > },
 >
-> { category: &quot;Fruits&quot;, price: &quot;\$1&quot;, stocked: true, name:
-> &quot;Dragonfruit&quot; },
+> { category: "Fruits", price: "\$1", stocked: true, name:
+> "Dragonfruit" },
 >
-> { category: &quot;Fruits&quot;, price: &quot;\$2&quot;, stocked: false, name:
-> &quot;Passionfruit&quot; },
+> { category: "Fruits", price: "\$2", stocked: false, name:
+> "Passionfruit" },
 >
-> { category: &quot;Vegetables&quot;, price: &quot;\$2&quot;, stocked: true, name:
-> &quot;Spinach&quot; },
+> { category: "Vegetables", price: "\$2", stocked: true, name:
+> "Spinach" },
 >
-> { category: &quot;Vegetables&quot;, price: &quot;\$4&quot;, stocked: false, name:
-> &quot;Pumpkin&quot; },
+> { category: "Vegetables", price: "\$4", stocked: false, name:
+> "Pumpkin" },
 >
-> { category: &quot;Vegetables&quot;, price: &quot;\$1&quot;, stocked: true, name:
-> &quot;Peas&quot; }
+> { category: "Vegetables", price: "\$1", stocked: true, name:
+> "Peas" }
 >
-> &rsqb;
+> ]
 
 The mockup looks like this:
 
@@ -10303,7 +10199,7 @@ it's easier to go bottom-up.
 function ProductCategoryRow({ category }) {
 return (
 &lt;tr>
-&lt;th colSpan=&quot;2&quot;>
+&lt;th colSpan="2">
 {category}
 &lt;/th>
 &lt;/tr>
@@ -10311,7 +10207,7 @@ return (
 }
 function ProductRow({ product }) {
 const name = product.stocked ? product.name :
-&lt;span style={{ color: &apos;red&apos; }}>
+&lt;span style={{ color: 'red' }}>
 {product.name}
 &lt;/span>;
 return (
@@ -10322,7 +10218,7 @@ return (
  );
  }
  function ProductTable({ products }) {
- const rows = &lsqb;&rsqb;;
+ const rows = [];
  let lastCategory = null;
  products.forEach((product) => {
  if (product.category !== lastCategory) {
@@ -10332,6 +10228,7 @@ return (
  key={product.category} />
  );
 }
+```
 
 ### Show more
 
@@ -10467,9 +10364,9 @@ top of FilterableProductTable and specify their initial state:
 
 # function FilterableProductTable({ products }) {
 
-#  const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
+#  const [filterText, setFilterText] = useState('');
 
-#  const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
+#  const [inStockOnly, setInStockOnly] = useState(false);
 
 Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:
@@ -10493,16 +10390,16 @@ props:
 > &lt;/div>
 
 You can start seeing how your application will behave. Edit the
-filterText initial value from useState(&apos;&apos;) to useState(&apos;fruit&apos;) in
+filterText initial value from useState('') to useState('fruit') in
 the sandbox code below. You'll see both the search input text and the
 table update:
 
 #### App.js
 
-> import { useState } from &apos;react&apos;;
+> import { useState } from 'react';
 > function FilterableProductTable({ products }) {
-> const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
-> const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
+> const [filterText, setFilterText] = useState('');
+> const [inStockOnly, setInStockOnly] = useState(false);
 > return (
 > &lt;div>
 > &lt;SearchBar
@@ -10518,7 +10415,7 @@ table update:
 > function ProductCategoryRow({ category }) {
 > return (
 > &lt;tr>
-> &lt;th colSpan=&quot;2&quot;>
+> &lt;th colSpan="2">
 > {category}
 > &lt;/th>
 > &lt;/tr>
@@ -10526,7 +10423,7 @@ table update:
 > }
 > function ProductRow({ product }) {
 > const name = product.stocked ? product.name :
-> &lt;span style={{ color: &apos;red&apos; }}>
+> &lt;span style={{ color: 'red' }}>
 > {product.name}
 > &lt;/span>;
 > return (
@@ -10547,9 +10444,9 @@ example, here is how SearchBar populates the input value:
 > return (
 > &lt;form>
 > &lt;input
-> type=&quot;text&quot;
+> type="text"
 > value={filterText}
-> placeholder=&quot;Search\...&quot;/>
+> placeholder="Search\..."/>
 
 However, you haven't added any code to respond to the user actions like
 typing yet. This will be your final step.
@@ -10576,8 +10473,8 @@ setInStockOnly. To let SearchBar update the FilterableProductTable's
 state, you need to pass these functions down to SearchBar:
 
 > function FilterableProductTable({ products }) {
-> const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
-> const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
+> const [filterText, setFilterText] = useState('');
+> const [inStockOnly, setInStockOnly] = useState(false);
 > return (
 > &lt;div>
 > &lt;SearchBar
@@ -10590,7 +10487,7 @@ Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
 > &lt;input
-> type=&quot;text&quot;
+> type="text"
 > value={filterText onChange={(e) =>
 > onFilterTextChange(e.target.value)} />
 
@@ -10599,10 +10496,10 @@ Now the application fully works!
 #### App.js
 
 ```
-import { useState } from &apos;react&apos;;
+import { useState } from 'react';
 function FilterableProductTable({ products }) {
-const &lsqb;filterText, setFilterText&rsqb; = useState(&apos;&apos;);
-const &lsqb;inStockOnly, setInStockOnly&rsqb; = useState(false);
+const [filterText, setFilterText] = useState('');
+const [inStockOnly, setInStockOnly] = useState(false);
 return (
 &lt;div>
 &lt;SearchBar
@@ -10620,7 +10517,7 @@ inStockOnly={inStockOnly} />
 function ProductCategoryRow({ category }) {
   return (
     &lt;tr>
-      &lt;th colSpan=&quot;2&quot;>
+      &lt;th colSpan="2">
         {category}
       &lt;/th>
     &lt;/tr>
@@ -10628,7 +10525,7 @@ function ProductCategoryRow({ category }) {
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  &lt;span style={{ color: &apos;red&apos; }}>
+  &lt;span style={{ color: 'red' }}>
     {product.name}
   &lt;/span>;
 ```
