@@ -8,7 +8,7 @@ meta-react-basics: meta/Coursera - React Basics
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ readme.md in meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image001.png?raw=true"
@@ -17,7 +17,7 @@ meta-react-basics: meta/Coursera - React Basics
 </p>
 <!-- {width="1.549261811023622in" height="0.5in"} -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image002.png?raw=true"
@@ -428,41 +428,41 @@ following HTML tags and concepts
 
 ### Layout & Style
 
--   **&lt;html&gt; **
+-   **&lt;html&gt;**
 
--   **&lt;head&gt; **
+-   **&lt;head&gt;**
 
--   **&lt;body&gt; **
+-   **&lt;body&gt;**
 
--   **&lt;div&gt; **
+-   **&lt;div&gt;**
 
 ### Text formatting & lists
 
--   **&lt;h1&gt;...&lt;h6&gt; **
+-   **&lt;h1&gt;...&lt;h6&gt;**
 
--   **&lt;p&gt; **
+-   **&lt;p&gt;**
 
--   **&lt;ul&gt; &lt;li&gt; **
+-   **&lt;ul&gt; &lt;li&gt;**
 
--   **&lt;b&gt; &lt;i&gt; **
+-   **&lt;b&gt; &lt;i&gt;**
 
 ### Images and links
 
--   **&lt;img src&gt; ""> **
+-   **&lt;img src= ""&gt;**
 
--   **&lt;a href=""&gt; **
+-   **&lt;a href=""&gt;**
 
 ### Linking and Meta
 
--   **&lt;link&gt; **
+-   **&lt;link&gt;**
 
--   **&lt;title&gt; **
+-   **&lt;title&gt;**
 
--   **&lt;meta&gt; **
+-   **&lt;meta&gt;**
 
 ### Semantic
 
--   **&lt;header&gt; **
+-   **&lt;header&gt;**
 
 ## CSS
 
