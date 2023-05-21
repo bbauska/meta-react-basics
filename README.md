@@ -600,11 +600,11 @@ A module can be as simple as a single function in a separate file.
 
 Consider the following function declaration:
 
-> function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
+```
+function addTwo(a, b) {
+  console.log(a + b);
+}
+```
 
 Say that you have a file named **addTwo.js** that contains only the
 above code.
@@ -635,26 +635,24 @@ You can have **one default export** per JavaScript module.
 Using the above **addTwo.js** file as an example, here are two ways to
 perform a default export:
 
-> export default function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
+```
+export default function addTwo(a, b) {
+  console.log(a + b);
+}
+```
 
 In the above example, you're adding the **export default** keywords in
 front of the **addTwo** function declaration.
 
 Here's an alternative syntax:
 
-> function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
->
->  
->
-> export default addTwo;
+```
+function addTwo(a, b) {
+  console.log(a + b);
+}
+
+export default addTwo;
+```
 
 ## **Named Exports**
 
@@ -670,19 +668,13 @@ exports as you want.
 For example:
 
 ```
-> function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
->
->  
->
-> function addThree(a + b + c) {
->
->     console.log(a + b + c);
->
-> }
+function addTwo(a, b) {
+  console.log(a + b);
+}
+  
+function addThree(a + b + c) {
+  console.log(a + b + c);
+}
 ```
 
 If you want to export both the **addTwo** and the **addThree** functions
@@ -1196,18 +1188,27 @@ One of the core building blocks of React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 12.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image012.png){width="5.0in" height="1.8402121609798776in"}
+<p align="center" width="100%">
+<img src="/images/image012.png?raw=true"
+  alt="."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="1.8402121609798776in"} -->
 
 When meta released the React library, it included the concept of
 something called **component-based architecture**.
 
 This is essentially a design philosophy for building software based on
 reusable components of code.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image013.png){width="6.5in" height="2.734815179352581in"}
+<p align="center" width="100%">
+<img src="/images/image013.png?raw=true"
+  alt="."
+  width="65%" />
+</p>
+<!-- {width="6.5in" height="2.734815179352581in"} -->
 
 Each **component** consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
@@ -1216,7 +1217,12 @@ components.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image014.png){width="6.5in" height="2.734815179352581in"}
+<p align="center" width="100%">
+<img src="/images/image014.png?raw=true"
+  alt="."
+  width="65%" />
+</p>
+<!-- {width="6.5in" height="2.734815179352581in"} -->
 
 Because components are reusable, they can be used multiple times and
 easily inserted anywhere we're needed.
@@ -1227,7 +1233,12 @@ interact independently from each other.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 15.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image015.png){width="6.0in" height="2.7314293525809274in"}
+<p align="center" width="100%">
+<img src="/images/image015.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<!-- {width="6.0in" height="2.7314293525809274in"} -->
 
 One of the advantages of development using components is that many
 developers can work on the same project without interfering with the
@@ -1249,7 +1260,12 @@ components.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 16.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image016.png){width="6.0in" height="2.699682852143482in"}
+<p align="center" width="100%">
+<img src="/images/image016.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<!-- {width="6.0in" height="2.699682852143482in"} -->
 
 For example, consider the product check out page of an e-commerce web
 application.
@@ -1260,7 +1276,12 @@ sidebar.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 17.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image017.png){width="6.5in" height="0.9354494750656168in"}
+<p align="center" width="100%">
+<img src="/images/image017.png?raw=true"
+  alt="."
+  width="65%" />
+</p>
+<!-- {width="6.5in" height="0.9354494750656168in"} -->
 
 The header section contains the company logo with a navigation menu and
 a button to view the shopping cart.
@@ -1268,7 +1289,12 @@ a button to view the shopping cart.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image018.png){width="3.0in" height="1.7358727034120736in"}
+<p align="center" width="100%">
+<img src="/images/image018.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- {width="3.0in" height="1.7358727034120736in"} -->
 
 The payment section area contains a form where the user inputs their
 payment information.
@@ -1276,14 +1302,24 @@ payment information.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image019.png){width="3.0in" height="2.761124234470691in"}
+<p align="center" width="100%">
+<img src="/images/image019.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- {width="3.0in" height="2.761124234470691in"} -->
 
 Finally, there's a sidebar with the order summary information.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image020.png){width="5.0in" height="2.596824146981627in"}
+<p align="center" width="100%">
+<img src="/images/image020.png?raw=true"
+  alt="."
+  width="50%" />
+</p>
+<!-- (width="5.0in" height="2.596824146981627in"} -->
 
 As the components are self-contained, they have their own HTML, CSS, and
 JavaScript logic for functionality.
@@ -1293,11 +1329,15 @@ that submits a payment when a button is clicked.
 
 It's important to know that the use of components in website UI design
 is not limited to just React.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image021.png){width="3.0in" height="1.5278346456692913in"}
+<p align="center" width="100%">
+<img src="/images/image021.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- {width="3.0in" height="1.5278346456692913in"} -->
 
 Many website's front end or UI are built on the foundations of
 components and compose ability.
@@ -1310,14 +1350,18 @@ DOM without significantly impacting the browser's resources.
 
 This is called component rendering and you'll learn more about this and
 its associated render method later.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image022.png){width="1.5in"
-height="1.5720002187226596in"}You may recall that the DOM is a logical
-tree-like structure representing the HTML document and it uses nodes to
-describe the various parts of the document.
+<p align="center" width="100%">
+<img src="/images/image022.png?raw=true"
+  alt="."
+  width="15%" />
+</p>
+<!-- {width="1.5in" height="1.5720002187226596in"}  -->
+
+You may recall that the DOM is a logical tree-like structure representing the HTML document and 
+it uses nodes to describe the various parts of the document.
 
 Before React, you could still build components style layouts.
 
@@ -1333,7 +1377,12 @@ DOM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image023.png){width="5.0in" height="2.960317147856518in"}
+<p align="center" width="100%">
+<img src="/images/image023.png?raw=true"
+  alt="."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="2.960317147856518in"} -->
 
 Instead, React provides something known as the virtual DOM.
 
@@ -1354,7 +1403,12 @@ DOM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image024.png){width="6.0in" height="1.6361898512685915in"}
+<p align="center" width="100%">
+<img src="/images/image024.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<!-- {width="6.0in" height="1.6361898512685915in"} -->
 
 Recall how you learned about functions in JavaScript.
 
@@ -1367,11 +1421,15 @@ structure of the React architecture by learning about functional
 components.
 
 Component types, JSX and trans piling.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image025.png){width="6.0in" height="2.092697944006999in"}
+<p align="center" width="100%">
+<img src="/images/image025.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<!-- {width="6.0in" height="2.092697944006999in"} -->
 
 React provides two types of components, functional components and class
 components.
@@ -1389,7 +1447,12 @@ JavaScript function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image026.png){width="4.0in" height="2.56380905511811in"}
+<p align="center" width="100%">
+<img src="/images/image026.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="2.56380905511811in"} -->
 
 In the default React application, only one component is rendered and
 it's the app components located inside the index.js file that's
@@ -1398,7 +1461,12 @@ located inside the source folder.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image027.png){width="6.0in" height="2.0984120734908136in"}
+<p align="center" width="100%">
+<img src="/images/image027.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<!-- {width="6.0in" height="2.0984120734908136in"} -->
 
 It's important to know that every React app must contain at least one
 component, and it's called the root component.
@@ -1413,24 +1481,37 @@ work, such as the import React and import React DOM statements.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 28.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image028.png){width="3.0in"
-height="1.3410400262467193in"}The syntax to render a component is very
-similar to a self-closing tag in HTML, you just place the component name
-inside the left and right-angle brackets and don't forget the forward
-slash.
+<p align="center" width="100%">
+<img src="/images/image028.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- {width="3.0in" height="1.3410400262467193in"} -->
+
+The syntax to render a component is very similar to a self-closing tag in HTML, you just place 
+the component name inside the left and right-angle brackets and don't forget the forward slash.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 29.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image029.png){width="4.0in" height="1.6334394138232722in"}
+<p align="center" width="100%">
+<img src="/images/image029.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="1.6334394138232722in"} -->
 
 The roots components can contain other components that developers create
 to represent the various UI part of the application.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 30.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image030.png){width="4.0in" height="2.5053969816272965in"}
+<p align="center" width="100%">
+<img src="/images/image030.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="2.5053969816272965in"} -->
 
 Like in the e-commerce example that you learned about earlier.
 
@@ -1446,8 +1527,14 @@ similar to a JavaScript function with some HTML code inside.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 31.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image031.png){width="3.0in" height="3.022305336832896in"}You
-may also notice an export default statement. You'll learn more about
+<p align="center" width="100%">
+<img src="/images/image031.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- {width="3.0in" height="3.022305336832896in"} -->
+
+You may also notice an export default statement. You'll learn more about
 this soon.
 
 For now, just know that you need it to make your components available.
@@ -1458,9 +1545,14 @@ let's explore how web developers create them in React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 32.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image032.png){width="3.0in"
-height="1.0762095363079616in"}React is scripted using a special syntax
-called JavaScript XML or JSX.
+<p align="center" width="100%">
+<img src="/images/image032.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- ![](./images/image032.png){width="3.0in" height="1.0762095363079616in"} -->
+
+React is scripted using a special syntax called JavaScript XML or JSX.
 
 For many Reacts developers, this is known as a syntax extension to
 JavaScript.
@@ -1471,9 +1563,14 @@ default app component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 33.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image033.png){width="4.0in"
-height="1.7951323272090989in"}Recall that in the return statements of
-the app function, it seemed that some HTML content is returned.
+<p align="center" width="100%">
+<img src="/images/image033.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="1.7951323272090989in"} -->
+
+Recall that in the return statements of the app function, it seemed that some HTML content is returned.
 
 Well, this content is not exactly HTML.
 
@@ -1495,7 +1592,12 @@ statement of a functional component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 34.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image034.png){width="5.0in" height="2.5359787839020123in"}
+<p align="center" width="100%">
+<img src="/images/image034.png?raw=true"
+  alt="."
+  width="50%" />
+</p>
+<!-- ![](./images/image034.png){width="5.0in" height="2.5359787839020123in"} -->
 
 It's also important to note that a React component won't render until
 it's used as a JSX element just like a JavaScript function declaration
@@ -1514,7 +1616,12 @@ file Heading.js.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 35.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image035.png){width="6.5625in" height="0.575in"}
+<p align="center" width="100%">
+<img src="/images/image035.png?raw=true"
+  alt="."
+  width="65%" />
+</p>
+<!-- ![](./images/image035.png){width="6.5625in" height="0.575in"} -->
 
 Notice that the first letter of the component name is capitalized.
 
@@ -1533,8 +1640,14 @@ from HTML elements.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 36.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image036.png){width="3.0in"
-height="1.4707939632545932in"}Now let's continue with our component.
+<p align="center" width="100%">
+<img src="/images/image036.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- ![](./images/image036.png){width="3.0in" height="1.4707939632545932in"} -->
+
+Now let's continue with our component.
 Next inside the app.js file, create a function named Heading.
 
 The function name must also be declared using a capital letter for the
@@ -1548,8 +1661,12 @@ Now you're ready to create the return statement of the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image037.png){width="6.5625in"
-height="1.9423611111111112in"}
+<p align="center" width="100%">
+<img src="/images/image037.png?raw=true"
+  alt="."
+  width="65%" />
+</p>
+<!-- ![](./images/image037.png){width="6.5625in" height="1.9423611111111112in"} -->
 
 Inside the parentheses of the return, insert a heading 1 tag, and inside
 it places the variable named title.
@@ -1572,9 +1689,14 @@ with whatever text value that is stored within the variable named title.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image038.png){width="3.0in"
-height="0.8577777777777778in"}This rendering happens behind the scenes
-because of something called **trans piling.**
+<p align="center" width="100%">
+<img src="/images/image038.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- {width="3.0in" height="0.8577777777777778in"} -->
+
+This rendering happens behind the scenes because of something called **trans piling.**
 
 You can think of trans piling as a process of converting JSX to HTML and
 you'll learn more about this later.
@@ -1591,7 +1713,7 @@ Finally, you explored the concepts of rendering and trans piling.
 If you'd like to learn about these concepts in more detail, there's a
 link to an additional reading at the end of this lesson.
 
-# 11. Creating React components
+## 11. Creating React components
 
 In this section (11), you will further explore the concepts of
 components in React and learn how to create a component from scratch.
@@ -1693,9 +1815,9 @@ this very soon.
 In this module, you'll learn how to create a functional component in
 React, and render it to the root components named **app.js**.
 
-# 12. Transpiling JSX
+## 12. Transpiling JSX
 
-## By the end of this section (12), you will have learned how a component is built.
+### By the end of this section (12), you will have learned how a component is built.
 
 Components are a nice way to build websites in React because they allow
 you to build more modular apps. However, how do you build components
@@ -1868,51 +1990,51 @@ rendered?
 You can see the answer below:
 
 ```
-> function Example() {
->
-> return <div>An element</div>
->
-> }
->
-> export default Example
+ function Example() {
+
+ return <div>An element</div>
+
+ }
+
+ export default Example
 ```
 
-# 13. Your first component
+## 13. Your first component
 
 Here is the completed solution code for the App.js file:
 
 ```
-> function Heading() { 
->
->   return ( 
->
->     <h1>This is an h1 heading.</h1> 
->
->   ) 
->
-> } 
->
->  
->
-> function App() { 
->
->   return ( 
->
->     <div className="App"> 
->
->       This is the starting code for "Your first component" ungraded lab 
->
->       <Heading /> 
->
->     </div> 
->
->   ); 
->
-> } 
->
->  
->
-> export default App;
+ function Heading() { 
+
+   return ( 
+
+     <h1>This is an h1 heading.</h1> 
+
+   ) 
+
+ } 
+
+  
+
+ function App() { 
+
+   return ( 
+
+     <div className="App"> 
+
+       This is the starting code for "Your first component" ungraded lab 
+
+       <Heading /> 
+
+     </div> 
+
+   ); 
+
+ } 
+
+  
+
+ export default App;
 ```
 
 Here is the output from the solution code for the App.js file:
@@ -1928,60 +2050,60 @@ named **<Heading />** , being rendered from the App component, since
 it is a part of the App component's return statement.
 
 ```
-> function App() { 
->
->   return ( 
->
->     <div className="App"> 
->
->       This is the starting code for "Your first component" ungraded lab 
->
->       <Heading /> 
->
->     </div> 
->
->   ); 
->
-> } 
-> export default App;
+ function App() { 
+
+   return ( 
+
+     <div className="App"> 
+
+       This is the starting code for "Your first component" ungraded lab 
+
+       <Heading /> 
+
+    </div> 
+  ); 
+} 
+export default App;
 ```
 
 Then, you added a new function to the App component, and named that
 function **Heading ()**. You placed it at the very top of the **App.js**
 file.
 
-> function Heading() {
->
-> }
+```
+function Heading() {
+
+}
+```
 
 **Step 2:** Next, in the body of the **Heading** component, you added a
 return statement and spread it over several lines by following it up
 with an opening and a closing parenthesis.
 
 ```
-> function Heading() { 
->
->   return (
->
->   )
->
-> }
+ function Heading() { 
+
+   return (
+
+   )
+
+ }
 ```
 
 **Step 3:** Then, inside the parentheses, you added the following code: 
 
 ```
-> **<h1>This is an h1 heading</h1>** 
->
-> function Heading() { 
->
->   return ( 
->
->     <h1>This is an h1 heading.</h1> 
->
->   ) 
->
-> } 
+ **<h1>This is an h1 heading</h1>** 
+
+ function Heading() { 
+
+   return ( 
+
+     <h1>This is an h1 heading.</h1> 
+
+   ) 
+
+ } 
 ```
 
 **Step 4:** Finally, you saved your changes and viewed the app in the
@@ -2151,7 +2273,7 @@ planning folder use for app development.
 
 Good job.
 
-# 15. Customizing the project
+## 15. Customizing the project
 
 So far, you've learned about React components, but now you will focus on
 learning how to customize the project. You will learn about the software
@@ -2159,7 +2281,7 @@ development approach, detailing the creation of separate associated
 files, the requirements gathering and the subsequent folder structure to
 be created.
 
-## Building a Layout
+### Building a Layout
 
 Imagine that you've been given the task of building a somewhat more
 complex website layout using React.
@@ -2185,7 +2307,7 @@ sections:
 
 -   The footer 
 
-## Organizing Your Code
+### Organizing Your Code
 
 Keeping in mind the above structure, how would you organize your code?
 
@@ -2208,7 +2330,7 @@ like this, you could keep it as simple as just adding a **components**
 folder and moving all your components into it. This is exactly what
 you'll do next.
 
-## Building the App
+### Building the App
 
 Since this is app's focus is on customization, let's name the app
 **customizing-example***.*
@@ -2219,81 +2341,75 @@ comfortable installing a boilerplate React application". This also
 includes that the folder you chose will need to be accessible for your
 user on your OS (Operating System).
 
-> \$ npm init react-app customizing-example
+```
+$ npm init react-app customizing-example
+```
 
 This will produce a brand-new starter app with a familiar structure.
 
 Inspecting the **src** folder of the starter app, it looks like this:
 
-> src/
->
->     App.js
->
->     App.test.js
->
->     index.css
->
->     index.js
->
->     logo.svg
->
->     reportWebVitals.js
->
->     setupTests.js
+```
+ src/
+
+     App.js
+
+     App.test.js
+
+     index.css
+
+     index.js
+
+     logo.svg
+
+     reportWebVitals.js
+
+     setupTests.js
+```
 
 Then simply add a components folder to it, like this:
 
-> src/
->
->     components/
->
->     App.js
->
->     App.test.js
->
->     index.css
->
->     index.js
->
->     logo.svg
->
->     reportWebVitals.js
->
->     setupTests.js
+```
+ src/
+
+     components/
+
+     App.js
+
+     App.test.js
+
+     index.css
+
+     index.js
+
+     logo.svg
+
+     reportWebVitals.js
+
+     setupTests.js
+```
 
 Since the components folder is currently empty, you can add a component
 for each of the sections of the typography-focused blog. Here's the
 structural update:
 
-> src/
->
->     components/
->
->         Nav.js
->
->         Promo.js
->
->         Intro1.js
->
->         Intro2.js
->
->         Intro3.js
->
->         Footer.js
->
->     App.js
->
->     App.test.js
->
->     index.css
->
->     index.js
->
->     logo.svg
->
->     reportWebVitals.js
->
->     setupTests.js
+```
+src/
+  components/
+    Nav.js
+    Promo.js
+    Intro1.js
+    Intro2.js
+    Intro3.js
+    Footer.js
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    reportWebVitals.js
+    setupTests.js
+```
 
 At this point, there's no need to complicate things. You have the
 **Nav** component, the **Promo** component, the **Intro1**, **Intro2**,
@@ -2309,7 +2425,7 @@ In this reading, you'll just build all the components inside the
 components folder, and then, in the upcoming lesson items, import them
 into the **App.js** file.
 
-## Building Components
+### Building Components
 
 For now, let's just build those components. After you've added the
 components folder, you've also added all the functional component files.
@@ -2318,172 +2434,139 @@ one.
 
 Here's the contents of the **Nav.js** file:
 
-> function Nav() {
->
->     return (
->
->         <nav className="main-nav">
->
->             <ul>
->
->                 <li>Home</li>
->
->                 <li>Articles</li>
->
->                 <li>About</li>
->
->                 <li>Contact</li>
->
->             </ul>
->
->         </nav>
->
->     );
->
-> };
->
->  
->
-> export default Nav;
+```
+ function Nav() {
+
+     return (
+
+         <nav className="main-nav">
+
+             <ul>
+
+                 <li>Home</li>
+
+                 <li>Articles</li>
+
+                 <li>About</li>
+
+                 <li>Contact</li>
+
+             </ul>
+
+         </nav>
+
+     );
+
+ };
+
+  
+
+ export default Nav;
+```
 
 Next, you can focus on the **Promo.js** file:
 
-> function Promo() {
->
->     return (
->
->         <div className="promo-section">
->
->             <div>
->
->                 <h1>Don't miss this deal!</h1>
->
->                 </div>
->
->                 <div>
->
->                 <h2>Subscribe to my newsletter and get all the shop items at 50% off!</h2>
->
->             </div>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default Promo;
+```
+function Promo() {
+  return (
+    <div className="promo-section">
+      <div>
+        <h1>Don't miss this deal!</h1>
+      </div>
+      <div>
+        <h2>Subscribe to my newsletter and get all the shop items at 50% off!</h2>
+      </div>
+    </div>
+  );
+};
+
+export default Promo;
+```
 
 Once you've finished the promo section, you can focus on the Intro
 components.
 
 Here's **Intro1.js:**
 
-> function Intro1() {
->
->     return (
->
->         <div className="blog-post-intro">
->
->             <h2>I've become a React developer!</h2>
->
->             <div>
->
->                 <p>I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!</p>
->
->                 <p className="link">Read more\...</p>
->
->             </div>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default Intro1;
+```
+ function Intro1() {
+
+     return (
+
+         <div className="blog-post-intro">
+
+             <h2>I've become a React developer!</h2>
+
+             <div>
+
+                 <p>I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!</p>
+
+                 <p className="link">Read more\...</p>
+
+             </div>
+
+         </div>
+
+     );
+
+ };
+
+  
+
+export default Intro1;
+```
 
 Here's the code for the **Intro2.js** component:
 
-> function Intro2() {
->
->     return (
->
->         <div className="blog-post-intro">
->
->             <h2>Why I love front-end web development</h2>
->
->             <div>
->
->                 <p>In this blog post, I'll list 10 reasons why I love to work as a front-end developer.</p>
->
->                 <p className="link">Read more\...</p>
->
->             </div>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default Intro2;
+```
+function Intro2() {
+  return (
+    <div className="blog-post-intro">
+      <h2>Why I love front-end web development</h2>
+      <div>
+        <p>In this blog post, I'll list 10 reasons why I love to work as a front-end developer.</p>
+        <p className="link">Read more\...</p>
+      </div>
+    </div>
+  );
+};
+
+export default Intro2;
+```
 
 You can finish the previews for my blog posts with the code for
 **Intro3.js** component:
 
-> function Intro3() {
->
->     return (
->
->         <div className="blog-post-intro">
->
->             <h2>What's the best way to style your React apps?</h2>
->
->             <div>
->
->                 <p>There are so many options to choose from. Here's a high-level overview of the popular ones.</p>
->
->                 <p className="link">Read more\...</p>
->
->             </div>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default Intro3;
+```
+function Intro3() {
+  return (
+    <div className="blog-post-intro">
+      <h2>What's the best way to style your React apps?</h2>
+      <div>
+        <p>There are so many options to choose from. Here's a high-level overview of the popular ones.</p>
+        <p className="link">Read more\...</p>
+      </div>
+    </div>
+  );
+};
+
+export default Intro3;
+```
 
 There's just one more thing left to code, the **Footer** component, so
 here it is:
 
-> function Footer() {
->
->     return (
->
->         <div className="copyright">
->
->             <p>Made with love by Myself</p>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default Footer;
+```
+function Footer() {
+  return (
+    <div className="copyright">
+      <p>Made with love by Myself</p>
+    </div>
+  );
+};
+
+export default Footer;
+```
 
 Now that you have completed all the components for the app, here are a
 few more interesting things about the syntax.
