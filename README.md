@@ -5607,7 +5607,7 @@ should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element
 
-## 07. Dynamic events & how to handle them
+## 07. Dynamic events &amp; how to handle them
 
 Here is the completed App.js file:
 
@@ -5760,7 +5760,7 @@ up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number "chosen" by the computer one more time. 
 
-## 08. Additional resources (Data & State - Week 2)
+## 08. Additional resources (Data &amp; State - Week 2)
 
 Here is a list of resources that may be helpful as you continue your
 learning journey.
@@ -6332,7 +6332,7 @@ Albert Einstein
 
 ## 24. State or stateless
 
-## 25. Data events & how to handle them
+## 25. Data events &amp; how to handle them
 
 ## 26. Additional resources
 
@@ -6373,7 +6373,7 @@ the Course.
 
 ### Quick Start
 
-## You will learn
+### You will learn
 
 -   How to create and nest components
 
@@ -6387,7 +6387,7 @@ the Course.
 
 -   How to share data between components
 
-# Creating and nesting components 
+### Creating and nesting components 
 
 React apps are made out of components. A component is a piece of the UI
 (user interface) that has its own logic and appearance. A component can
@@ -6449,7 +6449,7 @@ you're not familiar with some piece of JavaScript syntax,
 and [javascript.info](https://javascript.info/import-export) have great
 references.
 
-## Writing markup with JSX 
+### Writing markup with JSX 
 
 The markup syntax you've seen above is called *JSX*. It is optional, but
 most React projects use JSX for its convenience. All of the [tools we
@@ -6475,7 +6475,7 @@ function AboutPage() {
 If you have a lot of HTML to port to JSX, you can use an [online
 converter.](https://transform.tools/html-to-jsx)
 
-## Adding styles 
+### Adding styles 
 
 In React, you specify a CSS class with className. It works the same way
 as the HTML
@@ -6541,53 +6541,36 @@ concatenation](https://javascript.info/operators#string-concatenation-with-binar
 
 #### App.js
 
-> const user = {
->
-> name: 'Hedy Lamarr',
->
-> imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
->
-> imageSize: 90,
->
-> };
->
-> export default function Profile() {
->
-> return (
->
-> <>
->
-> <h1>{user.name}</h1>
->
-> <img
->
-> className="avatar"
->
-> src={user.imageUrl}
->
-> alt={'Photo of ' + user.name}
->
-> style={{
->
-> width: user.imageSize,
->
-> height: user.imageSize
->
-> }}
->
-> />
->
-> </>
->
-> );
->
-> }
+```
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
+};
+
+export default function Profile() {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+      className="avatar"
+      src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
+  );
+}
+```
 
 In the above example, style={{}} is not a special syntax, but a regular
 {} object inside the style={ } JSX curly braces. You can use the style
 attribute when your styles depend on JavaScript variables.
 
-## Conditional rendering 
+### Conditional rendering 
 
 In React, there is no special syntax for writing conditions. Instead,
 you'll use the same techniques as you use when writing regular
@@ -6595,61 +6578,51 @@ JavaScript code. For example, you can use an
 [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 statement to conditionally include JSX:
 
-> let content;
->
-> if (isLoggedIn) {
->
-> content = <AdminPanel />;
->
-> } else {
->
-> content = <LoginForm />;
->
-> }
->
-> return (
->
-> <div>
->
-> {content}
->
-> </div>
->
-> );
+```
+let content;
+
+if (isLoggedIn) {
+
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+  return (
+    <div>
+      {content}
+    </div>
+  );
+```
 
 If you prefer more compact code, you can use the [conditional ?
 operator.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 Unlike if, it works inside JSX:
 
-> <div>
->
-> {isLoggedIn ? (
->
-> <AdminPanel />
->
-> ) : (
->
-> <LoginForm />
->
-> )}
->
-> </div>
+```
+<div>
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
+</div>
+```
 
 When you don't need the else branch, you can also use a shorter [logical
 &&
 syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation):
 
-> <div>
->
-> {isLoggedIn && <AdminPanel />}
->
-> </div>
+```
+<div>
+  {isLoggedIn && <AdminPanel />}
+</div>
+```
 
 All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
 you can start by always using if\...else.
 
-## Rendering lists 
+### Rendering lists 
 
 You will rely on JavaScript features like [for
 loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
@@ -6659,34 +6632,38 @@ to render lists of components.
 
 For example, let's say you have an array of products:
 
-> const products = [
->
-> { title: 'Cabbage', id: 1 },
->
-> { title: 'Garlic', id: 2 },
->
-> { title: 'Apple', id: 3 },
->
-> ];
+```
+ const products = [
+
+ { title: 'Cabbage', id: 1 },
+
+ { title: 'Garlic', id: 2 },
+
+ { title: 'Apple', id: 3 },
+
+ ];
+```
 
 Inside your component, use the map() function to transform an array of
 products into an array of <li> items:
 
-> const listItems = products.map(product =>
->
-> <li key={product.id}>
->
-> {product.title}
->
-> </li>
->
-> );
->
-> return (
->
-> <ul>{listItems}</ul>
->
-> );
+```
+ const listItems = products.map(product =>
+
+ <li key={product.id}>
+
+ {product.title}
+
+ </li>
+
+ );
+
+ return (
+
+ <ul>{listItems}</ul>
+
+ );
+```
 
 Notice how <li> has a key attribute. For each item in a list, you
 should pass a string or a number that uniquely identifies that item
@@ -6696,76 +6673,80 @@ later insert, delete, or reorder the items.
 
 #### App.js
 
-> const products = [
->
-> { title: 'Cabbage', isFruit: false, id: 1 },
->
-> { title: 'Garlic', isFruit: false, id: 2 },
->
-> { title: 'Apple', isFruit: true, id: 3 },
->
-> ];
->
-> export default function ShoppingList() {
->
-> const listItems = products.map(product =>
->
-> <li
->
-> key={product.id}
->
-> style={{
->
-> color: product.isFruit ? 'magenta' : 'darkgreen'
->
-> }}
->
-> >
->
-> {product.title}
->
-> </li>
->
-> );
->
-> return (
->
-> <ul>{listItems}</ul>
->
-> );
->
-> }
+```
+const products = [
 
-## Responding to events 
+ { title: 'Cabbage', isFruit: false, id: 1 },
+
+ { title: 'Garlic', isFruit: false, id: 2 },
+
+ { title: 'Apple', isFruit: true, id: 3 },
+
+ ];
+
+ export default function ShoppingList() {
+
+ const listItems = products.map(product =>
+
+ <li
+
+ key={product.id}
+
+ style={{
+
+ color: product.isFruit ? 'magenta' : 'darkgreen'
+
+ }}
+
+ >
+
+ {product.title}
+
+ </li>
+
+ );
+
+ return (
+
+ <ul>{listItems}</ul>
+
+ );
+
+ }
+```
+
+### Responding to events 
 
 You can respond to events by declaring event handler functions inside
 your components:
 
-> function MyButton() {
->
-> function handleClick() {
->
-> alert('You clicked me!');
->
-> }
->
-> return (
->
-> <button onClick={handleClick}>
->
-> Click me
->
-> </button>
->
-> );
->
-> }
+```
+ function MyButton() {
+
+ function handleClick() {
+
+ alert('You clicked me!');
+
+ }
+
+ return (
+
+ <button onClick={handleClick}>
+
+ Click me
+
+ </button>
+
+ );
+
+ }
+```
 
 Notice how onClick={handleClick} has no parentheses at the end! Do not
 call the event handler function: you only need to pass it down. React
 will call your event handler when the user clicks the button.
 
-## Updating the screen 
+### Updating the screen 
 
 Often, you'll want your component to "remember" some information and
 display it. For example, maybe you want to count the number of times a
@@ -6774,13 +6755,17 @@ button is clicked. To do this, add state to your component.
 First, import [useState](https://react.dev/reference/react/useState)
 from React:
 
-> import { useState } from 'react';
+```
+import { useState } from 'react';
+```
 
 Now you can declare a state variable inside your component:
 
-> function MyButton() {
->
-> const [count, setCount] = useState(0);
+```
+ function MyButton() {
+
+ const [count, setCount] = useState(0);
+```
 
 You'll get two things from useState: the current state (count), and the
 function that lets you update it (setCount). You can give them any
@@ -6791,27 +6776,19 @@ passed 0 to useState(). When you want to change state, call setCount()
 and pass the new value to it. Clicking this button will increment the
 counter:
 
-> function MyButton() {
->
-> const [count, setCount] = useState(0);
->
-> function handleClick() {
->
-> setCount(count + 1);
->
-> }
->
-> return (
->
-> <button onClick={handleClick}>
->
-> Clicked {count} times
->
-> </button>
->
-> );
->
-> }
+```
+function MyButton() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
 
 React will call your component function again. This time, count will
 be 1. Then it will be 2. And so on.
@@ -6821,52 +6798,34 @@ state. Click each button separately:
 
 #### App.js
 
-> import { useState } from 'react';
->
-> export default function MyApp() {
->
-> return (
->
-> <div>
->
-> <h1>Counters that update separately</h1>
->
-> <MyButton />
->
-> <MyButton />
->
-> </div>
->
-> );
->
-> }
->
-> function MyButton() {
->
-> const [count, setCount] = useState(0);
->
-> function handleClick() {
->
-> setCount(count + 1);
->
-> }
->
-> return (
->
-> <button onClick={handleClick}>
->
-> Clicked {count} times
->
-> </button>
->
-> );
->
-> }
+```
+import { useState } from 'react';
+export default function MyApp() {
+return (
+<div>
+<h1>Counters that update separately</h1>
+<MyButton />
+<MyButton />
+</div>
+ );
+ }
+ function MyButton() {
+ const [count, setCount] = useState(0);
+ function handleClick() {
+ setCount(count + 1);
+ }
+ return (
+ <button onClick={handleClick}>
+ Clicked {count} times
+ </button>
+ );
+ }
+```
 
 Notice how each button "remembers" its own count state and doesn't
 affect other buttons.
 
-## Using Hooks 
+### Using Hooks 
 
 Functions starting with use are called Hooks. useState is a built-in
 Hook provided by React. You can find other built-in Hooks in the [API
@@ -6878,7 +6837,7 @@ at the top of your components (or other Hooks). If you want to use
 useState in a condition or a loop, extract a new component and put it
 there.
 
-## Sharing data between components 
+### Sharing data between components 
 
 In the previous example, each MyButton had its own independent count,
 and when each button was clicked, only the count for the button clicked
@@ -6931,68 +6890,57 @@ this in code.
 
 First, move the state up from MyButton into MyApp:
 
-> export default function MyApp() {
->
-> const [count, setCount] = useState(0);
->
-> function handleClick() {
->
-> setCount(count + 1);
->
-> }
->
-> return (
->
-> <div>
->
-> <h1>Counters that update separately</h1>
->
-> <MyButton />
->
-> <MyButton />
->
-> </div>
->
-> );
->
-> }
->
-> function MyButton() {
->
-> // \... we're moving code from here \...
->
-> }
+```
+export default function MyApp() {
+ const [count, setCount] = useState(0);
+ function handleClick() {
+ setCount(count + 1);
+ }
+ return (
+ <div>
+ <h1>Counters that update separately</h1>
+ <MyButton />
+ <MyButton />
+ </div>
+ );
+ }
+ function MyButton() {
+ // \... we're moving code from here \...
+ }
+```
 
 Then, pass the state down from MyApp to each MyButton, together with the
 shared click handler. You can pass information to MyButton using the JSX
 curly braces, just like you previously did with built-in tags like
-<img>:
+&lt;img&gt;:
 
-> export default function MyApp() {
->
-> const [count, setCount] = useState(0);
->
-> function handleClick() {
->
-> setCount(count + 1);
->
-> }
->
-> return (
->
-> <div>
->
-> <h1>Counters that update together</h1>
->
-> <MyButton count={count} onClick={handleClick} />
->
-> <MyButton count={count} onClick={handleClick} />
->
-> </div>
->
-> );
->
-> }
+```
+ export default function MyApp() {
+
+ const [count, setCount] = useState(0);
+
+ function handleClick() {
+
+ setCount(count + 1);
+
+ }
+
+ return (
+
+ <div>
+
+ <h1>Counters that update together</h1>
+
+ <MyButton count={count} onClick={handleClick} />
+
+ <MyButton count={count} onClick={handleClick} />
+
+ </div>
+
+ );
+
+ }
+```
 
 The information you pass down like this is called *props*. Now the MyApp
 component contains the count state and the handleClick event handler,
@@ -7001,19 +6949,18 @@ and *passes both of them down as props* to each of the buttons.
 Finally, change MyButton to *read* the props you have passed from its
 parent component:
 
-> function MyButton({ count, onClick }) {
->
-> return (
->
-> <button onClick={onClick}>
->
-> Clicked {count} times
->
-> </button>
->
-> );
->
-> }
+```
+ function MyButton({ count, onClick }) {
+
+ return (
+
+ <button onClick={onClick}>
+
+ Clicked {count} times
+ </button>
+ );
+ }
+```
 
 When you click the button, the onClick handler fires. Each button's
 onClick prop was set to the handleClick function inside MyApp, so the
@@ -7025,62 +6972,38 @@ components.
 
 #### App.js
 
-Top of Form
+```
+ import { useState } from 'react';
+ export default function MyApp() {
+ const [count, setCount] = useState(0);
+ function handleClick() {
+ setCount(count + 1);
+ }
+ return (
+ <div>
+ <h1>Counters that update together</h1>
+ <MyButton count={count} onClick={handleClick} />
+ <MyButton count={count} onClick={handleClick} />
+ </div>
+ );
+ }
+ function MyButton({ count, onClick }) {
+ return (
+ <button onClick={onClick}>
+ Clicked {count} times
+ </button>
+ );
+ }
+```
 
-Bottom of Form
-
-Fork
-
-> import { useState } from 'react';
->
-> export default function MyApp() {
->
-> const [count, setCount] = useState(0);
->
-> function handleClick() {
->
-> setCount(count + 1);
->
-> }
->
-> return (
->
-> <div>
->
-> <h1>Counters that update together</h1>
->
-> <MyButton count={count} onClick={handleClick} />
->
-> <MyButton count={count} onClick={handleClick} />
->
-> </div>
->
-> );
->
-> }
->
-> function MyButton({ count, onClick }) {
->
-> return (
->
-> <button onClick={onClick}>
->
-> Clicked {count} times
->
-> </button>
->
-> );
->
-> }
-
-## Next Steps 
+### Next Steps 
 
 By now, you know the basics of how to write React code!
 
 Check out the [Tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
 to put them into practice and build your first mini-app with React.
 
-# Tutorial: Tic-Tac-Toe
+### Tutorial: Tic-Tac-Toe
 
 You will build a small tic-tac-toe game during this tutorial. This
 tutorial does not assume any existing React knowledge. The techniques
@@ -7113,80 +7036,47 @@ You can see what it will look like when you're finished here:
 
 #### App.js
 
-> import { useState } from 'react';
->
-> function Square({ value, onSquareClick }) {
->
-> return (
->
-> <button className="square" onClick={onSquareClick}>
->
-> {value}
->
-> </button>
->
-> );
->
-> }
->
-> function Board({ xIsNext, squares, onPlay }) {
->
-> function handleClick(i) {
->
-> if (calculateWinner(squares) \|\| squares[i]) {
->
-> return;
->
-> }
->
-> const nextSquares = squares.slice();
->
-> if (xIsNext) {
->
-> nextSquares[i] = 'X';
->
-> } else {
->
-> nextSquares[i] = 'O';
->
-> }
->
-> onPlay(nextSquares);
->
-> }
->
-> const winner = calculateWinner(squares);
->
-> let status;
->
-> if (winner) {
->
-> status = 'Winner: ' + winner;
->
-> } else {
->
-> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
->
-> }
->
-> return (
->
-> <>
->
-> <div className="status">{status}</div>
->
-> <div className="board-row">
->
-> <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-> />
->
-> <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-> />
->
-> <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-> />
->
-> </div>
+```
+ import { useState } from 'react';
+ function Square({ value, onSquareClick }) {
+ return (
+ <button className="square" onClick={onSquareClick}>
+ {value}
+ </button>
+ );
+ }
+ function Board({ xIsNext, squares, onPlay }) {
+ function handleClick(i) {
+ if (calculateWinner(squares) \|\| squares[i]) {
+ return;
+ }
+ const nextSquares = squares.slice();
+ if (xIsNext) {
+ nextSquares[i] = 'X';
+ } else {
+ nextSquares[i] = 'O';
+ }
+ onPlay(nextSquares);
+ }
+ const winner = calculateWinner(squares);
+ let status;
+ if (winner) {
+ status = 'Winner: ' + winner;
+ } else {
+ status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+ }
+ return (
+ <>
+ <div className="status">{status}</div>
+ <div className="board-row">
+ <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+ />
+ <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+ />
+ <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+ />
+ </div>
+```
 
 If the code doesn't make sense to you yet, or if you are unfamiliar with
 the code's syntax, don't worry! The goal of this tutorial is to help you
@@ -7263,11 +7153,13 @@ height="2.3164555993000877in"}
 The App.js file should be selected in the *Files* section. The contents
 of that file in the *code editor* should be:
 
-> export default function Square() {
->
-> return <button className="square">X</button>;
->
-> }
+```
+ export default function Square() {
+
+ return <button className="square">X</button>;
+
+ }
+```
 
 The browser section should be displaying a square with a X in it like
 this:
@@ -7285,22 +7177,22 @@ Components are used to render, manage, and update the UI elements in
 your application. Let's look at the component line by line to see what's
 going on:
 
-> export default function Square() {
->
-> return <button className="square">X</button>;
->
-> }
+```
+export default function Square() {
+  return <button className="square">X</button>;
+}
+```
 
 The first line defines a function called Square. The export JavaScript
 keyword makes this function accessible outside of this file. The default
 keyword tells other files using your code that it's the main function in
 your file.
 
-> export default function Square() {
->
-> return <button className="square">X</button>;
->
-> }
+```
+export default function Square() {
+  return <button className="square">X</button>;
+}
+```
 
 The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
@@ -7311,7 +7203,9 @@ CSS how to style the button. X is the text displayed inside of the
 button and </button> closes the JSX element to indicate that any
 following content shouldn't be placed inside the button.
 
-> styles.css 
+```
+styles.css 
+```
 
 Click on the file labeled styles.css in the *Files* section of
 CodeSandbox. This file defines the styles for your React app. The first
@@ -7320,20 +7214,24 @@ your app while the .square selector defines the style of any component
 where the className property is set to square. In your code, that would
 match the button from your Square component in the App.js file.
 
-> index.js 
+```
+index.js 
+```
 
 Click on the file labeled index.js in the *Files* section of
 CodeSandbox. You won't be editing this file during the tutorial but it
 is the bridge between the component you created in the App.js file and
 the web browser.
 
-> import {Strict Mode} from 'react';
->
-> import {createRoot} from 'react-dom/client';
->
-> import './styles.css';
->
-> import App from './App';
+```
+import {Strict Mode} from 'react';
+
+import {createRoot} from 'react-dom/client';
+
+import './styles.css';
+
+import App from './App';
+```
 
 Lines 1-5 brings all the necessary pieces together:
 
@@ -7356,12 +7254,14 @@ tutorial.
 Currently the board is only a single square, but you need nine! If you
 just try and copy paste your square to make two squares like this:
 
-> export default function Square() {
->
-> return <button className="square">X</button><button
-> className="square">X</button>;
->
-> }
+```
+ export default function Square() {
+
+ return <button className="square">X</button><button
+ className="square">X</button>;
+
+ }
+```
 
 You'll get this error:
 
@@ -7375,21 +7275,23 @@ adjacent JSX elements like two buttons. To fix this you can use
 fragments (<> and </>) to wrap multiple adjacent JSX elements like
 this:
 
-> export default function Square() {
->
-> return (
->
-> <>
->
-> <button className="square">X</button>
->
-> <button className="square">X</button>
->
-> </>
->
-> );
->
-> }
+```
+ export default function Square() {
+
+ return (
+
+ <>
+
+ <button className="square">X</button>
+
+ <button className="square">X</button>
+
+ </>
+
+ );
+
+ }
+```
 
 Now you should see:
 
@@ -7410,47 +7312,29 @@ square a number to make sure you know where each square is displayed.
 
 In the App.js file, update the Square component to look like this:
 
-> export default function Square() {
->
-> return (
->
-> <>
->
-> <div className="board-row">
->
-> <button className="square">1</button>
->
-> <button className="square">2</button>
->
-> <button className="square">3</button>
->
-> </div>
->
-> <div className="board-row">
->
-> <button className="square">4</button>
->
-> <button className="square">5</button>
->
-> <button className="square">6</button>
->
-> </div>
->
-> <div className="board-row">
-
-<button className="square">7</button>
-
-> <button className="square">8</button>
->
-> <button className="square">9</button>
->
-> </div>
->
-> </>
->
-> );
->
-> }
+```
+export default function Square() {
+  return (
+    <>
+      <div className="board-row">
+        <button className="square">1</button>
+        <button className="square">2</button>
+        <button className="square">3</button>
+      </div>
+      <div className="board-row">
+        <button className="square">4</button>
+        <button className="square">5</button>
+        <button className="square">6</button>
+      </div>
+      <div className="board-row">
+      <button className="square">7</button>
+      <button className="square">8</button>
+      <button className="square">9</button>
+      </div>
+    </>
+  );
+}
+```
 
 The CSS defined in styles.css styles the divs with the className of
 board-row. Now that you've grouped your components into rows with the
@@ -7462,57 +7346,39 @@ styled divs you have your tic-tac-toe board:
 But you now have a problem. Your component named Square, really isn't a
 square anymore. Let's fix that by changing the name to Board:
 
-> export default function Board() {
->
-> //\...
->
-> }
+```
+export default function Board() {
+  //...
+}
+```
 
 At this point your code should look something like this:
 
 #### App.js
 
-> export default function Board() {
->
-> return (
->
-> <>
->
-> <div className="board-row">
->
-> <button className="square">1</button>
->
-> <button className="square">2</button>
->
-> <button className="square">3</button>
->
-> </div>
->
-> <div className="board-row">
->
-> <button className="square">4</button>
->
-> <button className="square">5</button>
->
-> <button className="square">6</button>
->
-> </div>
->
-> <div className="board-row">
->
-> <button className="square">7</button>
->
-> <button className="square">8</button>
->
-> <button className="square">9</button>
->
-> </div>
->
-> </>
->
-> );
->
-> }
+```
+ export default function Board() {
+ return (
+ <>
+ <div className="board-row">
+ <button className="square">1</button>
+ <button className="square">2</button>
+ <button className="square">3</button>
+ </div>
+ <div className="board-row">
+ <button className="square">4</button>
+ <button className="square">5</button>
+ <button className="square">6</button>
+ </div>
+ <div className="board-row">
+ <button className="square">7</button>
+ <button className="square">8</button>
+ <button className="square">9</button>
+ </div>
+ </>
+ );
+ }
+```
 
 ### Note
 
@@ -7520,7 +7386,7 @@ Psssst... That's a lot to type! It's okay to copy and paste code from
 this page. However, if you're up for a little challenge, we recommend
 only copying code that you've manually typed at least once yourself.
 
-## Passing data through props 
+### Passing data through props 
 
 Next, you'll want to change the value of a square from empty to "X" when
 the user clicks on the square. With how you've built the board so far
@@ -9285,21 +9151,16 @@ information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
 just as Board used to do:
 
-> export default function Game() {
->
-> //\...
->
-> function handlePlay(nextSquares) {
->
-> setHistory([\...history, nextSquares]);
->
-> setXIsNext(!xIsNext);
->
-> }
->
-> //\...
->
-> }
+```
+export default function Game() {
+//...
+function handlePlay(nextSquares) {
+setHistory([\...history, nextSquares]);
+setXIsNext(!xIsNext);
+}
+//...
+}
+```
 
 Here, [\...history, nextSquares] creates a new array that contains all
 the items in history, followed by nextSquares. (You can read the
@@ -9318,71 +9179,42 @@ is what the code should look like at this point:
 
 #### App.js
 
-> import { useState } from 'react';
->
-> function Square({ value, onSquareClick }) {
->
-> return (
->
-> <button className="square" onClick={onSquareClick}>
->
-> {value}
->
-> </button>
->
-> );
->
-> }
->
-> function Board({ xIsNext, squares, onPlay }) {
->
-> function handleClick(i) {
->
-> if (calculateWinner(squares) \|\| squares[i]) {
->
-> return;
->
-> }
->
-> const nextSquares = squares.slice();
->
-> if (xIsNext) {
->
-> nextSquares[i] = 'X';
->
-> } else {
->
-> nextSquares[i] = 'O';
->
-> }
->
-> onPlay(nextSquares);
->
-> }
->
-> const winner = calculateWinner(squares);
->
-> let status;
->
-> if (winner) {
->
-> status = 'Winner: ' + winner;
->
-> } else {
->
-> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
->
-> }
->
-> return (
->
-> <>
->
-> <div className="status">{status}</div>
->
-> <div className="board-row">
+```
+ import { useState } from 'react';
+ function Square({ value, onSquareClick }) {
+ return (
+ <button className="square" onClick={onSquareClick}>
+ {value}
+ </button>
+ );
+ }
+ function Board({ xIsNext, squares, onPlay }) {
+ function handleClick(i) {
+ if (calculateWinner(squares) || squares[i]) {
+ return;
+ }
+ const nextSquares = squares.slice();
+ if (xIsNext) {
+ nextSquares[i] = 'X';
+ } else {
+ nextSquares[i] = 'O';
+ }
+ onPlay(nextSquares);
+ }
+ const winner = calculateWinner(squares);
+ let status;
+ if (winner) {
+ status = 'Winner: ' + winner;
+ } else {
+ status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+ }
+ return (
+ <>
+ <div className="status">{status}</div>
+ <div className="board-row">
+```
 
-## Showing the past moves 
+### Showing the past moves 
 
 Since you are recording the tic-tac-toe game's history, you can now
 display a list of past moves to the player.
@@ -9396,82 +9228,52 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-> [1, 2, 3].map((x) => x \* 2) // [2, 4, 6]
+```
+[1, 2, 3].map((x) => x * 2) // [2, 4, 6]
+```
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
 "jump" to past moves. Let's map over the history in the Game component:
 
-> export default function Game() {
->
-> const [xIsNext, setXIsNext] = useState(true);
->
-> const [history, setHistory] = useState([Array(9).fill(null)]);
->
-> const currentSquares = history[history.length - 1];
->
-> function handlePlay(nextSquares) {
->
-> setHistory([\...history, nextSquares]);
->
-> setXIsNext(!xIsNext);
->
-> }
->
-> function jumpTo(nextMove) {
->
-> // TODO
->
-> }
->
-> const moves = history.map((squares, move) => {
->
-> let description;
->
-> if (move > 0) {
->
-> description = 'Go to move #' + move;
->
-> } else {
->
-> description = 'Go to game start';
->
-> }
->
-> return (
->
-> <li>
->
-> <button onClick={() => jumpTo(move)}>{description}</button>
->
-> </li>
->
-> );
->
-> });
->
-> return (
->
-> <div className="game">
->
-> <div className="game-board">
->
-> <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
-> />
->
-> </div>
->
-> <div className="game-info">
->
-> <ol>{moves}</ol>
->
-> </div>
->
-> </div>
->
-> );
->
-> }
+```
+ export default function Game() {
+ const [xIsNext, setXIsNext] = useState(true);
+ const [history, setHistory] = useState([Array(9).fill(null)]);
+ const currentSquares = history[history.length - 1];
+ function handlePlay(nextSquares) {
+ setHistory([...history, nextSquares]);
+ setXIsNext(!xIsNext);
+ }
+ function jumpTo(nextMove) {
+ // TODO
+ }
+ const moves = history.map((squares, move) => {
+ let description;
+ if (move > 0) {
+ description = 'Go to move #' + move;
+ } else {
+ description = 'Go to game start';
+ }
+ return (
+ <li>
+ <button onClick={() => jumpTo(move)}>{description}</button>
+ </li>
+ );
+ });
+ return (
+ <div className="game">
+ <div className="game-board">
+ <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+ />
+ </div>
+ <div className="game-info">
+ <ol>{moves}</ol>
+ </div>
+ </div>
+ );
+}
+```
 
 You can see what your code should look like below. Note that you should
 see an error in the developer tools console that says: Warning: Each
@@ -9494,7 +9296,7 @@ section.
  }
  function Board({ xIsNext, squares, onPlay }) {
  function handleClick(i) {
- if (calculateWinner(squares) \|\| squares[i]) {
+ if (calculateWinner(squares) || squares[i]) {
  return;
   }
  const nextSquares = squares.slice();
@@ -9512,7 +9314,6 @@ section.
  } else {
  status = 'Next player: ' + (xIsNext ? 'X' : 'O');
  }
-
  return (
  <>
  <div className="status">{status}</div>
@@ -9543,14 +9344,12 @@ section.
  </>
  );
  }
-
  export default function Game() {
  const [xIsNext, setXIsNext] = useState(true);
  const [history, setHistory] = useState([Array(9).fill(null)]);
  const currentSquares = history[history.length - 1];
-
  function handlePlay(nextSquares) {
- setHistory([\...history, nextSquares]);
+ setHistory([...history, nextSquares]);
  setXIsNext(!xIsNext);
  }
  function jumpTo(nextMove) {
@@ -9722,7 +9521,7 @@ function Square({ value, onSquareClick }) {
 }
 function Board({ xIsNext, squares, onPlay }) {
 function handleClick(i) {
-  if (calculateWinner(squares) \|\| squares[i]) {
+  if (calculateWinner(squares) || squares[i]) {
     return;
   }
   const nextSquares = squares.slice();
@@ -9793,7 +9592,7 @@ called when you click on a square.
 
 ```
 function handlePlay(nextSquares) {
-const nextHistory = [\...history.slice(0, currentMove + 1),
+const nextHistory = [...history.slice(0, currentMove + 1),
 nextSquares];
 setHistory(nextHistory);
 setCurrentMove(nextHistory.length - 1);
@@ -9832,7 +9631,7 @@ function Square({value, onSquareClick}) {
 function Board({ xIsNext, squares, onPlay }) {
 
 function handleClick(i) {
-  if (calculateWinner(squares) \|\| squares[i]) {
+  if (calculateWinner(squares) || squares[i]) {
     return;
   }
     const nextSquares = squares.slice();
@@ -9883,7 +9682,7 @@ figures it out based on the currentMove:
    const xIsNext = currentMove % 2 === 0;
    const currentSquares = history[currentMove];
    function handlePlay(nextSquares) {
-     const nextHistory = [\...history.slice(0, currentMove + 1),
+     const nextHistory = [...history.slice(0, currentMove + 1),
      nextSquares];
      setHistory(nextHistory);
      setCurrentMove(nextHistory.length - 1);
@@ -9922,72 +9721,41 @@ Check out the final result here:
 #### App.js
 
 ```
-> import { useState } from 'react';
->
-> function Square({ value, onSquareClick }) {
->
-> return (
->
-> <button className="square" onClick={onSquareClick}>
->
-> {value}
->
-> </button>
->
-> );
->
-> }
->
-> function Board({ xIsNext, squares, onPlay }) {
->
-> function handleClick(i) {
->
-> if (calculateWinner(squares) \|\| squares[i]) {
->
-> return;
->
-> }
->
-> const nextSquares = squares.slice();
->
-> if (xIsNext) {
->
-> nextSquares[i] = 'X';
->
-> } else {
->
-> nextSquares[i] = 'O';
->
-> }
->
-> onPlay(nextSquares);
->
-> }
->
-> const winner = calculateWinner(squares);
->
-> let status;
->
-> if (winner) {
->
-> status = 'Winner: ' + winner;
->
-> } else {
->
-> status = 'Next player: ' + (xIsNext ? 'X' : 'O');
->
-> }
->
-> return (
->
-> <>
->
-> <div className="status">{status}</div>
->
-> <div className="board-row">
+ import { useState } from 'react';
+ function Square({ value, onSquareClick }) {
+ return (
+ <button className="square" onClick={onSquareClick}>
+ {value}
+ </button>
+ );
+ }
+ function Board({ xIsNext, squares, onPlay }) {
+ function handleClick(i) {
+ if (calculateWinner(squares) \|\| squares[i]) {
+ return;
+ }
+ const nextSquares = squares.slice();
+ if (xIsNext) {
+ nextSquares[i] = 'X';
+ } else {
+ nextSquares[i] = 'O';
+ }
+ onPlay(nextSquares);
+ }
+ const winner = calculateWinner(squares);
+ let status;
+ if (winner) {
+ status = 'Winner: ' + winner;
+ } else {
+ status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+ }
+ return (
+ <>
+ <div className="status">{status}</div>
+ <div className="board-row">
 ```
 
-### Show more
+#### Show more
 
 If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
@@ -10015,7 +9783,7 @@ concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
 
-## Thinking in React
+#### Thinking in React
 
 React can change how you think about the designs you look at and the
 apps you build. When you build a user interface with React, you will
@@ -10025,33 +9793,35 @@ Finally, you will connect your components together so that the data
 flows through them. In this tutorial, we'll guide you through the
 thought process of building a searchable product data table with React.
 
-## Start with the mockup 
+#### Start with the mockup 
 
 Imagine that you already have a JSON API and a mockup from a designer.
 
 The JSON API returns some data that looks like this:
 
-> [
->
-> { category: "Fruits", price: "\$1", stocked: true, name: "Apple"
-> },
->
-> { category: "Fruits", price: "\$1", stocked: true, name:
-> "Dragonfruit" },
->
-> { category: "Fruits", price: "\$2", stocked: false, name:
-> "Passionfruit" },
->
-> { category: "Vegetables", price: "\$2", stocked: true, name:
-> "Spinach" },
->
-> { category: "Vegetables", price: "\$4", stocked: false, name:
-> "Pumpkin" },
->
-> { category: "Vegetables", price: "\$1", stocked: true, name:
-> "Peas" }
->
-> ]
+```
+ [
+
+ { category: "Fruits", price: "\$1", stocked: true, name: "Apple"
+ },
+
+ { category: "Fruits", price: "\$1", stocked: true, name:
+ "Dragonfruit" },
+
+ { category: "Fruits", price: "\$2", stocked: false, name:
+ "Passionfruit" },
+
+ { category: "Vegetables", price: "\$2", stocked: true, name:
+ "Spinach" },
+
+ { category: "Vegetables", price: "\$4", stocked: false, name:
+ "Pumpkin" },
+
+ { category: "Vegetables", price: "\$1", stocked: true, name:
+ "Peas" }
+
+ ]
+```
 
 The mockup looks like this:
 
@@ -10060,7 +9830,7 @@ height="3.5208333333333335in"}
 
 To implement a UI in React, you will usually follow the same five steps.
 
-## Step 1: Break the UI into a component hierarchy 
+### Step 1: Break the UI into a component hierarchy 
 
 Start by drawing boxes around every component and subcomponent in the
 mockup and naming them. If you work with a designer, they may have
@@ -10125,7 +9895,7 @@ mockup should appear as a child in the hierarchy:
 
         -   ProductRow
 
-## Step 2: Build a static version in React 
+### Step 2: Build a static version in React 
 
 Now that you have your component hierarchy, it's time to implement your
 app. The most straightforward approach is to build a version that
@@ -10157,23 +9927,23 @@ it's easier to go bottom-up.
 ```
 function ProductCategoryRow({ category }) {
 return (
-&lt;tr>
-&lt;th colSpan="2">
+<tr>
+<th colSpan="2">
 {category}
-&lt;/th>
-&lt;/tr>
+</th>
+</tr>
 );
 }
 function ProductRow({ product }) {
 const name = product.stocked ? product.name :
-&lt;span style={{ color: 'red' }}>
+<span style={{ color: 'red' }}>
 {product.name}
-&lt;/span>;
+</span>;
 return (
-&lt;tr>
- &lt;td>{name}&lt;/td>
- &lt;td>{product.price}&lt;/td>
- &lt;/tr>
+<tr>
+ <td>{name}</td>
+ <td>{product.price}</td>
+ </tr>
  );
  }
  function ProductTable({ products }) {
@@ -10182,14 +9952,14 @@ return (
  products.forEach((product) => {
  if (product.category !== lastCategory) {
  rows.push(
- &lt;ProductCategoryRow
+ <ProductCategoryRow
  category={product.category}
  key={product.category} />
  );
 }
 ```
 
-### Show more
+#### Show more
 
 (If this code looks intimidating, go through the [Quick
 Start](https://react.dev/learn) first!)
@@ -10201,12 +9971,12 @@ hierarchy (FilterableProductTable) will take your data model as a prop.
 This is called one-way data flow because the data flows down from the
 top-level component to the ones at the bottom of the tree.
 
-### Pitfall
+#### Pitfall
 
 At this point, you should not be using any state values. That's for the
 next step!
 
-## Step 3: Find the minimal but complete representation of UI state 
+### Step 3: Find the minimal but complete representation of UI state 
 
 To make the UI interactive, you need to let users change your underlying
 data model. You will use state for this.
@@ -10261,11 +10031,11 @@ Let's go through them one by one again:
 This means only the search text and the value of the checkbox are state!
 Nicely done!
 
-DEEP DIVE
+##### DEEP DIVE
 
-Props vs State 
+#### Props vs State 
 
-# Step 4: Identify where your state should live 
+### Step 4: Identify where your state should live 
 
 After identifying your app's minimal state data, you need to identify
 which component is responsible for changing this state, or owns the
@@ -10321,32 +10091,28 @@ Hook.](https://react.dev/reference/react/useState) Hooks are special
 functions that let you "hook into" React. Add two state variables at the
 top of FilterableProductTable and specify their initial state:
 
-# function FilterableProductTable({ products }) {
+```
+function FilterableProductTable({ products }) {
 
-#  const [filterText, setFilterText] = useState('');
-
-#  const [inStockOnly, setInStockOnly] = useState(false);
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+```
 
 Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:
 
-> &lt;div>
->
-> &lt;SearchBar
->
-> filterText={filterText}
->
-> inStockOnly={inStockOnly} />
->
-> &lt;ProductTable
->
-> products={products}
->
-> filterText={filterText}
->
-> inStockOnly={inStockOnly} />
->
-> &lt;/div>
+```
+<div>
+  <SearchBar
+    filterText={filterText}
+  inStockOnly={inStockOnly} />
+
+  <ProductTable
+    products={products}
+    filterText={filterText}
+  inStockOnly={inStockOnly} />
+</div>
+```
 
 You can start seeing how your application will behave. Edit the
 filterText initial value from useState('') to useState('fruit') in
@@ -10355,37 +10121,39 @@ table update:
 
 #### App.js
 
-> import { useState } from 'react';
-> function FilterableProductTable({ products }) {
-> const [filterText, setFilterText] = useState('');
-> const [inStockOnly, setInStockOnly] = useState(false);
-> return (
-> &lt;div>
-> &lt;SearchBar
-> filterText={filterText}
-> inStockOnly={inStockOnly} />
-> &lt;ProductTable
-> products={products}
-> filterText={filterText}
-> inStockOnly={inStockOnly} />
-> &lt;/div>
-> );
-> }
-> function ProductCategoryRow({ category }) {
-> return (
-> &lt;tr>
-> &lt;th colSpan="2">
-> {category}
-> &lt;/th>
-> &lt;/tr>
-> );
-> }
-> function ProductRow({ product }) {
-> const name = product.stocked ? product.name :
-> &lt;span style={{ color: 'red' }}>
-> {product.name}
-> &lt;/span>;
-> return (
+```
+import { useState } from 'react';
+ function FilterableProductTable({ products }) {
+ const [filterText, setFilterText] = useState('');
+ const [inStockOnly, setInStockOnly] = useState(false);
+ return (
+ <div>
+ <SearchBar
+ filterText={filterText}
+ inStockOnly={inStockOnly} />
+ <ProductTable
+ products={products}
+ filterText={filterText}
+ inStockOnly={inStockOnly} />
+ </div>
+ );
+ }
+ function ProductCategoryRow({ category }) {
+ return (
+ <tr>
+ <th colSpan="2">
+ {category}
+ </th>
+ </tr>
+ );
+ }
+ function ProductRow({ product }) {
+ const name = product.stocked ? product.name :
+ <span style={{ color: 'red' }}>
+ {product.name}
+ </span>;
+ return (
+```
 
 Notice that editing the form doesn't work yet. There is a console error
 in the sandbox above explaining why:
@@ -10399,18 +10167,20 @@ In the sandbox above, ProductTable and SearchBar read the filterText and
 inStockOnly props to render the table, the input, and the checkbox. For
 example, here is how SearchBar populates the input value:
 
-> function SearchBar({ filterText, inStockOnly }) {
-> return (
-> &lt;form>
-> &lt;input
-> type="text"
-> value={filterText}
-> placeholder="Search\..."/>
+```
+function SearchBar({ filterText, inStockOnly }) {
+  return (
+    <form>
+      <input
+        type="text"
+        value={filterText}
+        placeholder="Search..."/>
+```
 
 However, you haven't added any code to respond to the user actions like
 typing yet. This will be your final step.
 
-## Step 5: Add inverse data flow 
+### Step 5: Add inverse data flow 
 
 Currently your app renders correctly with props and state flowing down
 the hierarchy. But to change the state according to user input, you will
@@ -10431,24 +10201,28 @@ FilterableProductTable, so only it can call setFilterText and
 setInStockOnly. To let SearchBar update the FilterableProductTable's
 state, you need to pass these functions down to SearchBar:
 
-> function FilterableProductTable({ products }) {
-> const [filterText, setFilterText] = useState('');
-> const [inStockOnly, setInStockOnly] = useState(false);
-> return (
-> &lt;div>
-> &lt;SearchBar
-> filterText={filterText}
-> inStockOnly={inStockOnly}
-> onFilterTextChange={setFilterText}
-> onInStockOnlyChange={setInStockOnly} />
+```
+function FilterableProductTable({ products }) {
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+    return (
+      <div>
+        <SearchBar
+          filterText={filterText}
+          inStockOnly={inStockOnly}
+          onFilterTextChange={setFilterText}
+          onInStockOnlyChange={setInStockOnly} />
+```
 
 Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
-> &lt;input
-> type="text"
-> value={filterText onChange={(e) =>
-> onFilterTextChange(e.target.value)} />
+```
+<input
+  type="text"
+  value={filterText onChange={(e) =>
+  onFilterTextChange(e.target.value)} />
+```
 
 Now the application fully works!
 
@@ -10456,37 +10230,38 @@ Now the application fully works!
 
 ```
 import { useState } from 'react';
+
 function FilterableProductTable({ products }) {
-const [filterText, setFilterText] = useState('');
-const [inStockOnly, setInStockOnly] = useState(false);
-return (
-&lt;div>
-&lt;SearchBar
-filterText={filterText}
-inStockOnly={inStockOnly}
-onFilterTextChange={setFilterText}
-onInStockOnlyChange={setInStockOnly} />
-&lt;ProductTable
-products={products}
-filterText={filterText}
-inStockOnly={inStockOnly} />
-&lt;/div>
-);
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+  return (
+    <div>
+      <SearchBar
+        filterText={filterText}
+        inStockOnly={inStockOnly}
+        onFilterTextChange={setFilterText}
+        onInStockOnlyChange={setInStockOnly} />
+        <ProductTable
+          products={products}
+          filterText={filterText}
+          inStockOnly={inStockOnly} />
+    </div>
+  );
 }
 function ProductCategoryRow({ category }) {
   return (
-    &lt;tr>
-      &lt;th colSpan="2">
+    <tr>
+      <th colSpan="2">
         {category}
-      &lt;/th>
-    &lt;/tr>
+      </th>
+    </tr>
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  &lt;span style={{ color: 'red' }}>
+  <span style={{ color: 'red' }}>
     {product.name}
-  &lt;/span>;
+  </span>;
 ```
 
 You can learn all about handling events and updating state in the
@@ -10580,4 +10355,4 @@ Head to the <a href="https://react.dev/learn">Quick Start</a> guide for a tour o
 concepts you will encounter every day.
 
 End. . .
-<h6>5/21/2023 10:15am</h6>
+<h6>5/21/2023 1:30pm</h6>
