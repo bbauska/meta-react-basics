@@ -143,17 +143,26 @@ You'll learn a lot more about state as you go through the course.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~ 06. state - value of variables your working with at any given point (11) ~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image006.png){width="5.0in" height="1.949206036745407in"}
+<p align="center" width="100%">
+<img src="/images/image006.png?raw=true"
+  alt="State - the value of all variables your working with at any given point."
+  width="50%" />
+</p>
+<!-- (width="5.0in" height="1.949206036745407in"} -->
 
 But for now, here's a simple definition of state.
 
 **State is simply all the values of all the variables your app is
 working with at any given point in time.**
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image007.png){width="4.0in" height="2.840391513560805in"}
+<p align="center" width="100%">
+<img src="/images/image007.png?raw=true"
+  alt="React basics - styling React apps."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="2.840391513560805in"} -->
 
 As you progress through this course, you'll also learn about how to
 style your React apps, which includes the reuse of common styles.
@@ -660,6 +669,7 @@ exports as you want.
 
 For example:
 
+```
 > function addTwo(a, b) {
 >
 >     console.log(a + b);
@@ -673,43 +683,34 @@ For example:
 >     console.log(a + b + c);
 >
 > }
+```
 
 If you want to export both the **addTwo** and the **addThree** functions
 as named exports, one way to do it would be the following:
 
-> export function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
->
->  
->
-> export function addThree(a + b + c) {
->
->     console.log(a + b + c);
->
-> }
+```
+export function addTwo(a, b) {
+  console.log(a + b);
+}
+  
+export function addThree(a + b + c) {
+  console.log(a + b + c);
+}
+```
 
 Here's another way you could do it:
 
-> function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
->
->  
->
-> function addThree(a + b + c) {
->
->     console.log(a + b + c);
->
-> }
->
->  
->
-> export { addTwo, addThree };
+```
+function addTwo(a, b) {
+  console.log(a + b);
+}
+  
+function addThree(a + b + c) {
+  console.log(a + b + c);
+}
+  
+export { addTwo, addThree };
+```
 
 ## **Importing Modules**
 
@@ -731,22 +732,23 @@ You want to import the **addTwo.js** module into the
 Consider the previous example of exporting the **addTwo** function as a
 default module:
 
-> // addTwo.js module:
->
-> function addTwo(a, b) {
->
->     console.log(a + b);
->
-> }
->
-> export default addTwo;
+```
+// addTwo.js module:
+function addTwo(a, b) {
+  console.log(a + b);
+}
+
+export default addTwo;
+```
 
 To import it into the **mathOperations.js** module, you could use the
 following syntax:
 
-> import addTwo from "./addTwo";
->
-> // the rest of the mathOperations.js code goes here
+```
+import addTwo from "./addTwo";
+
+// the rest of the mathOperations.js code goes here
+```
 
 So, you could start this import with the **import** keyword, then the
 name under which you'll use this imported code inside the
@@ -757,9 +759,11 @@ Contrast the above import of the default **addTwo export** with the
 different import syntax if the **addTwo** function was instead a named
 export:
 
-> import { addTwo } from "./addTwo";
->
-> // the rest of the mathOperations.js code goes here
+```
+import { addTwo } from "./addTwo";
+
+// the rest of the mathOperations.js code goes here
+```
 
 ## **Conclusion**
 
@@ -816,9 +820,9 @@ skills that you have learned.
 You can find out more about Working with Labs in this course by
 accessing the link below:
 
-## Working with Labs in this course
+### Working with Labs in this course
 
-## [https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course]
+### [https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course]
 
 You can also use VS Code to practice these exercises on your local
 machine as an alternative option.
@@ -889,17 +893,20 @@ can name: **firstapp**.
 ## **Opening the built-in VS Code terminal and running npm init react-app command**
 
 In VS Code, click on *View*, *Terminal* to open the built-in terminal.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. vs code terminal screen (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![How to access the Terminal in Visual Studio
-Code](./images/image008.png){width="5.0in" height="2.8125in"}
+<p align="center" width="100%">
+<img src="/images/image008.png?raw=true"
+  alt="VS Code terminal screen."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="2.8125in"} -->
 
 Now run the command to add a brand new React app to the machine:
 
 ```
-> &dollar; npm init react-app my-firstapp
+$ npm init react-app my-firstapp
 ```
 
 The installation and setup might take a few minutes.
@@ -911,42 +918,42 @@ The installation and setup might take a few minutes.
 Here's the output of executing the above command:
 
 ```
-> Creating a new React app in /home/pc/Desktop/firstapp.
-> Installing packages. This might take a couple of minutes.
-> Installing react, react-dom, and react-scripts with cra-template\...
-> added 1383 packages in 56s
-> 190 packages are looking for funding
->   run \`npm fund\` for details
-> Initialized a git repository.
-> Installing template dependencies using npm\...
-> npm WARN deprecated source-map-resolve@0.6.0:
-> See https://github.com/lydell/source-map-resolve#deprecated
-> added 39 packages in 6s
-> 190 packages are looking for funding
-> $ run \`npm fund\` for details
-> Removing template package using npm\...
-> removed 1 package, and audited 1422 packages in 3s
-> 190 packages are looking for funding
-> $ run \`npm fund\` for details
-> 6 high severity vulnerabilities
-> To address all issues (including breaking changes), run:
-> $ npm audit fix \--force
-> Run 'npm audit' for details.
-> Created git commit.
-> Success! Created firstapp at /home/pc/Desktop/firstapp
-> Inside that directory, you can run several commands:
-> $ npm start
-> Starts the development server.
-> $ npm run build
->     Bundles the app into static files for production.
-> $ npm test
->     Starts the test runner.
-> $ npm run eject
->     Removes this tool and copies build dependencies, configuration files
->     and scripts into the app directory. If you do this, you can't go back!
-> We suggest that you begin by typing:
-> $ cd firstapp
-> $ npm start 
+Creating a new React app in /home/pc/Desktop/firstapp.
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template\...
+added 1383 packages in 56s
+190 packages are looking for funding
+  run \`npm fund\` for details
+Initialized a git repository.
+Installing template dependencies using npm\...
+npm WARN deprecated source-map-resolve@0.6.0:
+See https://github.com/lydell/source-map-resolve#deprecated
+added 39 packages in 6s
+190 packages are looking for funding
+$ run \`npm fund\` for details
+Removing template package using npm\...
+removed 1 package, and audited 1422 packages in 3s
+190 packages are looking for funding
+$ run \`npm fund\` for details
+6 high severity vulnerabilities
+To address all issues (including breaking changes), run:
+$ npm audit fix \--force
+Run 'npm audit' for details.
+Created git commit.
+Success! Created firstapp at /home/pc/Desktop/firstapp
+Inside that directory, you can run several commands:
+$ npm start
+Starts the development server.
+$ npm run build
+    Bundles the app into static files for production.
+$ npm test
+    Starts the test runner.
+$ npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can't go back!
+We suggest that you begin by typing:
+$ cd firstapp
+$ npm start 
 ```
 
 If you follow the suggestions from the above output, you'll run: **cd
@@ -969,12 +976,15 @@ webpack compiled successfully
 Again, following the instructions, opening a browser with the address
 bar pointing to [http://localhost:3000](http://localhost:3000/), will
 show the following page in your browser:
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 09.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 09. react logo on black screen (27) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![React logo displayed on the browser](./images/image009.png){width="4.0in"
-height="2.533333333333333in"}
+<p align="center" width="100%">
+<img src="/images/image009.png?raw=true"
+  alt="React logo on black screen."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="2.533333333333333in"} -->
 
 This means that you've successfully:
 
@@ -1139,11 +1149,15 @@ And one of the most popular ways to build a SPA is with the React
 library from Meta.
 
 React used to run many of the world's most popular websites.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. sample search screen example (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-.![](./images/image010.png){width="5.0in" height="2.86878280839895in"}
+<p align="center" width="100%">
+<img src="/images/image010.png?raw=true"
+  alt="React search screen example."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="2.86878280839895in"} -->
 
 Often on these sites, you will type a search term into the sites input
 box.
@@ -1152,11 +1166,15 @@ The site then returns the relevant content or results.
 
 But you might notice that even though the content has updated, the sites
 URL doesn't change.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 11.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ 11. spa: rich user interfaces, speed and scalability/flexibility (30) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![](./images/image011.png){width="4.0in" height="1.472169728783902in"}
+<p align="center" width="100%">
+<img src="/images/image011.png?raw=true"
+  alt="SPA: Single Page Apps have rich user interfaces, speed and are scalable and flexible."
+  width="40%" />
+</p>
+<!-- {width="4.0in" height="1.472169728783902in"} -->
 
 As SPA's only load the content as required, they can be ideal for
 businesses and enterprises who need a web app that offers rich user
