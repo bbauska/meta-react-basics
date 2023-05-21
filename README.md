@@ -424,41 +424,41 @@ following HTML tags and concepts
 
 ### Layout & Style
 
--   **<html> **
+-   **&lt;html&gt; **
 
--   **<head> **
+-   **&lt;head&gt; **
 
--   **<body> **
+-   **&lt;body&gt; **
 
--   **<div> **
+-   **&lt;div&gt; **
 
 ### Text formatting & lists
 
--   **<h1>...<h6> **
+-   **&lt;h1&gt;...&lt;h6&gt; **
 
--   **<p> **
+-   **&lt;p&gt; **
 
--   **<ul><li> **
+-   **&lt;ul&gt; &lt;li&gt; **
 
--   **<b><i> **
+-   **&lt;b&gt; &lt;i&gt; **
 
 ### Images and links
 
--   **<img src=""> **
+-   **&lt;img src&gt; ""> **
 
--   **<a href=""> **
+-   **&lt;a href=""&gt; **
 
 ### Linking and Meta
 
--   **<link> **
+-   **&lt;link&gt; **
 
--   **<title> **
+-   **&lt;title&gt; **
 
--   **<meta> **
+-   **&lt;meta&gt; **
 
 ### Semantic
 
--   **<header> **
+-   **&lt;header&gt; **
 
 ## CSS
 
