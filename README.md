@@ -74,7 +74,7 @@ with coding.
 
 ### Table of Contents - 7 pages approx
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-## Week 1
+# Week 1
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### React Components
 
@@ -1657,7 +1657,6 @@ Then inside the function body, you create a variable named title and
 assign it the string value of this is some heading text.
 
 Now you're ready to create the return statement of the function.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 37.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1851,7 +1850,7 @@ computer's browser is likely to be an ES5 JavaScript engine.
 In ES5, the only way to declare a variable is the following:
 
 ```
-> var pi = 3.14
+var pi = 3.14
 ```
 
 What this means is that for this old browser to understand the ES6 code,
@@ -1904,32 +1903,29 @@ If you've visited the above-linked URL, you'll find a web page that
 has two panels. On the left, there's source JSX code:
 
 ```
-> function Heading(props) {
->
->     return <h1>{props.title}</h1>
->
-> }
+function Heading(props) {
+
+  return <h1>{props.title}</h1>
+}
 ```
 
 \... and on the right, there's the transpiled, plain JavaScript code:
 
 ```
-> "use strict";
->
->  
->
-> function Heading(props) {
->
->   return /\*#\_\_PURE\_\_\*/React.createElement("h1", null, props.title);
->
-> }
+"use strict";
+
+function Heading(props) {
+  return /*#__PURE__*/React.createElement("h1", null, props.title);
+}
 ```
 
 If you now analyze the difference between the source JSX code and the
 transpiled, plain JavaScript code, dis-regarding the comment, here's
 the body of the Heading function:
 
-> React.createElement("h1", null, props.title);
+```
+React.createElement("h1", null, props.title);
+```
 
 So, here you have a React object, and this object has a
 **createElement()** method on it. The method is invoked with three
@@ -1956,7 +1952,9 @@ the inner HTML of the **h1** element.
 Now let's use Babel again, and this time transpile the **render** syntax
 for the **Heading** component:
 
-> <Heading title="This is the heading text!"></Heading>
+```
+<Heading title="This is the heading text!"></Heading>
+```
 
 Again using [the Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
@@ -1965,17 +1963,17 @@ link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20i
 the output of the tranpilation is the following code:
 
 ```
-> "use strict";
->
->  
->
-> /\*#\_\_PURE\_\_\*/
->
-> React.createElement(Heading, {
->
->   title: "This is the heading text!"
->
-> });
+ "use strict";
+
+  
+
+ /\*#\_\_PURE\_\_\*/
+
+ React.createElement(Heading, {
+
+   title: "This is the heading text!"
+
+ });
 ```
 
 Again, you have the **React.createElement()** method call, and this
@@ -2039,11 +2037,14 @@ Here is the completed solution code for the App.js file:
 
 Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 39.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 39. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-![The output of the completed 'Your first component'
-exercise.](./images/image039.png){width="5.0in"
-height="0.8566437007874016in"}
+<p align="center" width="100%">
+<img src="/images/image039.png?raw=true"
+  alt="The output of the completed 'Your first component' exercise."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="0.8566437007874016in"} -->
 
 **Step 1:** In the starting code, you already had a JSX element
 named **<Heading />** , being rendered from the App component, since
@@ -2051,15 +2052,10 @@ it is a part of the App component's return statement.
 
 ```
  function App() { 
-
    return ( 
-
      <div className="App"> 
-
        This is the starting code for "Your first component" ungraded lab 
-
        <Heading /> 
-
     </div> 
   ); 
 } 
@@ -2082,34 +2078,27 @@ with an opening and a closing parenthesis.
 
 ```
  function Heading() { 
-
    return (
-
    )
-
  }
 ```
 
 **Step 3:** Then, inside the parentheses, you added the following code: 
 
 ```
- **<h1>This is an h1 heading</h1>** 
+<h1>This is an h1 heading</h1>
 
- function Heading() { 
-
-   return ( 
-
-     <h1>This is an h1 heading.</h1> 
-
-   ) 
-
- } 
+function Heading() { 
+  return ( 
+    <h1>This is an h1 heading.</h1> 
+  ) 
+} 
 ```
 
 **Step 4:** Finally, you saved your changes and viewed the app in the
 browser.
 
-# 14. The React project structure
+## 14. The React project structure
 
 As you might already be aware, it's important to organize or structure
 your React components so that they're easy to access.
@@ -2353,17 +2342,11 @@ Inspecting the **src** folder of the starter app, it looks like this:
  src/
 
      App.js
-
      App.test.js
-
      index.css
-
      index.js
-
      logo.svg
-
      reportWebVitals.js
-
      setupTests.js
 ```
 
@@ -2375,17 +2358,11 @@ Then simply add a components folder to it, like this:
      components/
 
      App.js
-
      App.test.js
-
      index.css
-
      index.js
-
      logo.svg
-
      reportWebVitals.js
-
      setupTests.js
 ```
 
@@ -2402,6 +2379,7 @@ src/
     Intro2.js
     Intro3.js
     Footer.js
+ 
     App.js
     App.test.js
     index.css
@@ -2435,33 +2413,21 @@ one.
 Here's the contents of the **Nav.js** file:
 
 ```
- function Nav() {
+function Nav() {
 
-     return (
+  return (
+    <nav className="main-nav">
+      <ul>
+        <li>Home</li>
+        <li>Articles</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  );
+};
 
-         <nav className="main-nav">
-
-             <ul>
-
-                 <li>Home</li>
-
-                 <li>Articles</li>
-
-                 <li>About</li>
-
-                 <li>Contact</li>
-
-             </ul>
-
-         </nav>
-
-     );
-
- };
-
-  
-
- export default Nav;
+export default Nav;
 ```
 
 Next, you can focus on the **Promo.js** file:
@@ -2489,30 +2455,19 @@ components.
 Here's **Intro1.js:**
 
 ```
- function Intro1() {
+function Intro1() {
 
-     return (
-
-         <div className="blog-post-intro">
-
-             <h2>I've become a React developer!</h2>
-
-             <div>
-
-                 <p>I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!</p>
-
-                 <p className="link">Read more\...</p>
-
-             </div>
-
-         </div>
-
-     );
-
- };
-
+  return (
+    <div className="blog-post-intro">
+      <h2>I've become a React developer!</h2>
+      <div>
+        <p>I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!</p>
+        <p className="link">Read more...</p>
+      </div>
+    </div>
+  );
+};
   
-
 export default Intro1;
 ```
 
@@ -2581,7 +2536,7 @@ These are:
 
 -   Why was I not using the **<a>** element for empty links? 
 
-## Discussing the Syntax
+### Discussing the Syntax
 
 Now let's briefly discuss the four bullet points above.
 
@@ -2635,14 +2590,14 @@ using the **<a>** tag is simply not the React way of doing things.
 You'll learn why that is the case when discussing the use of React
 Router.
 
-## Conclusion
+### Conclusion
 
 Having finished this reading, you have now learned about the software
 development approach, detailing the creation of separate associated
 files, the requirements gathering, and the subsequent folder structure
 to be created.
 
-# 16. Importing components
+## 16. Importing components
 
 One of the advantages of component-based architecture is that your app
 is split up into individual self-contained components.
@@ -2770,96 +2725,97 @@ structure of the import and export statement.
 You also learned how to manage your React components by placing them in
 a components folder.
 
-# 17. Creating and importing components
+## 17. Creating and importing components
 
 Here are the contents of the Heading.js file:
 
-> function Heading() {
->
->     return (
->
->         <h1>This is an h1 heading</h1>
->
->     )
->
-> }
->
->  
->
-> export default Heading;
+```
+function Heading() {
+
+  return (
+    <h1>This is an h1 heading</h1>
+  )
+}
+  
+export default Heading;
+```
 
 Here are the contents of the App.js file:
 
-> export default App;
->
->     </div>
->
->   );
->
-> }
->
->   return (
->
->     <div className="App">
->
->       <Heading />
+```
+export default App;
+
+    </div>
+  );
+}
+   return (
+     <div className="App">
+       <Heading />
+```
 
 Here is a screenshot of the src folder:
-
-![App, heading and index files displayed in src
-folder](./images/image040.png){width="3.7708333333333335in"
-height="1.3125in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 40. app, heading and index files displayed in src folder (0x) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image040.png?raw=true"
+  alt="App, heading and index files displayed in src folder."
+  width="37%" />
+</p>
+<!-- {width="3.7708333333333335in" height="1.3125in"} -->
 
 Here is the output from the solution code for the App.js file:
 
-![The output of the completed 'Creating and importing components'
-exercise.](./images/image041.png){width="5.0in"
-height="1.220472440944882in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. output of exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image041.png?raw=true"
+  alt="Output of the completed 'Creating and importing components' exercise."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="1.220472440944882in"} -->
 
 **Step 1:** You moved the **Heading** function from App to a separate
 component file, named "Heading.js".
 
-> function Heading() {
->
->     return (
->
->         <h1>This is an h1 heading</h1>
->
->     )
->
-> }
+```
+function Heading() {
 
- 
+  return (
+    <h1>This is an h1 heading</h1>
+  )
+}
 
-> export default Heading;
+export default Heading;
+```
 
 **Step 2:** Next, you imported the **Heading** component into the
 **App** component. 
 
-> import Heading from "./Heading";
+```
+import Heading from "./Heading";
+```
 
 **Step 3:** Finally, you removed the sentence that reads: *This is the
 starting code for "Your first component" ungraded lab* - so that only
 the **Heading** JSX element remains in the return statement of the App
 component. 
 
-> import Heading from "./Heading";
->
-> function App() {
->
->   return (
->
->     <div className="App">
->
->       <Heading />
->
->     </div>
->
->   );
->
-> }
+```
+import Heading from "./Heading";
 
-# 18. Additional resources (React components)
+function App() {
+
+   return (
+    <div className="App">
+      <Heading />
+    </div>
+  );
+}
+```
+
+## 18. Additional resources (React components)
 
 [Basic Concepts of
 Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) 
@@ -2890,9 +2846,8 @@ GitHub](https://github.com/webpack/webpack-dev-server) 
 [Visual Studio Code keyboard shortcuts
 (macOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
-# 
 
-# 19. Principles of Components: Props
+## 19. Principles of Components: Props
 
 By now, you should be familiar with the concept of functional components
 in React. They are reusable blocks of code that act much like a
@@ -2999,7 +2954,7 @@ you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
 functions using props must never modify its own props.
 
-# 20. Dissecting props
+## 20. Dissecting props
 
 Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or **props**,
@@ -3019,23 +2974,26 @@ make sure to navigate to the *Try it out* link in the main navigation.
 
 For example, let's say you have a component that returns a piece of JSX:
 
-> function App() {
->
->   return <h1>Hello there</h1>
->
-> }
+```
+function App() {
+
+  return <h1>Hello there</h1>
+}
+```
 
 ... if you used the Babel transpiler to transpile this JSX syntactic
 sugar code down to plain JavaScript code, you'd get back some unusual
 code:
 
-> "use strict";
->
-> function App() {
->
->     return /\*#\_\_PURE\_\_\*/React.createElement("h1", null, "Hello there");
->
-> }
+```
+ "use strict";
+
+ function App() {
+
+     return /\*#\_\_PURE\_\_\*/React.createElement("h1", null, "Hello there");
+
+ }
+```
 
 You just want to focus on the **React.createElement("h1", null,
 "Hello there");** part. You can ignore the rest.
@@ -3056,63 +3014,63 @@ For example, let's say you have a slightly more complex JSX element
 structure:
 
 ```
-> function App() { 
->
->   return (
->
->     <div>
->
->     <h1>Hello there</h1> 
->
->     </div>
->
->   )
->
-> }
+ function App() { 
+
+   return (
+
+     <div>
+
+     <h1>Hello there</h1> 
+
+     </div>
+
+   )
+
+ }
 ```
 
 ... the transpiled return statement in plain JavaScript again returns
 two **createElement** functions:
 
 ```
-> "use strict";
->
-> function App() {
->
->   return /\*#\_\_PURE\_\_\*/React.createElement("div", null, /\*#\_\_PURE\_\_\*/React.createElement("h1", null, "Hello there"));
->
-> }
+ "use strict";
+
+ function App() {
+
+   return /\*#\_\_PURE\_\_\*/React.createElement("div", null, /\*#\_\_PURE\_\_\*/React.createElement("h1", null, "Hello there"));
+
+ }
 ```
 
 If you format this output, remove the **"use strict"** line, and
 remove the **\_\_PURE\_\_** comments, you get a more readable output:
 
 ```
-> function App() {
->
->   return React.createElement(
->
->     "div",
->
->     null,
->
->     React.createElement("h1", null, "Hello there")
->
->   );
->
-> }
+ function App() {
+
+   return React.createElement(
+
+     "div",
+
+     null,
+
+     React.createElement("h1", null, "Hello there")
+
+   );
+
+ }
 ```
 
 So now the third argument of the outer-most **React.createElement** call
 is another **React.createElement** call.
 
-## This is how you can nest as many elements as you want.
+### This is how you can nest as many elements as you want.
 
 This means that a nested JSX structure is just a bunch of nested
 **React.createElement** calls, passed in to other
 **React.createElement** calls as their third argument.
 
-## The second -- null -- argument
+### The second -- null -- argument
 
 The second argument of **null** can -- in this case -- be replaced with
 an empty object.
@@ -3121,23 +3079,23 @@ In that case, your code would contain a pair of curly braces instead of
 the word **null**:
 
 ```
-> "use strict";
->
->  
->
-> function App() {
->
->   return React.createElement(
->
->     "div",
->
->     {},
->
->     React.createElement("h1", {}, "Hello there")
->
->   );
->
-> }
+ "use strict";
+
+  
+
+ function App() {
+
+   return React.createElement(
+
+     "div",
+
+     {},
+
+     React.createElement("h1", {}, "Hello there")
+
+   );
+
+ }
 ```
 
 This object is referred to as the *props* object. It is the main
@@ -3147,18 +3105,18 @@ in React.
 The way this works is described in React docs using the following code:
 
 ```
-> React.createElement(
->
->   type,
->
->   [props],
->
->   [\...children]
->
-> )
+ React.createElement(
+
+   type,
+
+   [props],
+
+   [\...children]
+
+ )
 ```
 
-## The third argument (\...children)
+### The third argument (\...children)
 
 This is the inner content that will go inside the wrapping element.
 It's what makes it possible to nest elements inside other elements,
@@ -3167,7 +3125,7 @@ mimicking the way that HTML works.
 In this reading you've learned how to use a transpiler to break JSX code
 to plain JavaScript, making its purpose more understandable.
 
-# 21. Using props in components
+## 21. Using props in components
 
 By now, you should be familiar with the concept of props, and that they
 allow you to pass data from one component to another. Developers use
@@ -3226,52 +3184,35 @@ data they received from their parent components using their respective
 props objects. You should now be able to effectively demonstrate the
 passing of props to and within a component using classes and functions.
 
-# 22. Passing props
+## 22. Passing props
 
 Here is the completed App.js file:
 
 ```
-> import Heading from "./Heading";
->
->  
->
-> function App() {
->
->   return (
->
->     <div className="App">
->
->       <Heading firstName="Bob" />
->
->       <Heading firstName="Any name other than Bob" />
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ import Heading from "./Heading";
+  
+ function App() {
+   return (
+     <div className="App">
+       <Heading firstName="Bob" />
+       <Heading firstName="Any name other than Bob" />
+     </div>
+   );
+ }
+  
+ export default App;
 ```
 
 And here is the completed Heading.js file:
 
 ```
-> function Heading(props) {
->
->     return (
->
->         <h1>Hello, {props.firstName}</h1>
->
->     )
->
-> }
->
->  
->
-> export default Heading;
+function Heading(props) {
+  return (
+    <h1>Hello, {props.firstName}</h1>
+  )
+}
+ 
+export default Heading;
 ```
  
 
@@ -3285,19 +3226,13 @@ height="1.8693788276465442in"}
 **Heading** component in the 'Heading.js' file. 
 
 ```
-> function Heading(props) {
->
->     return (
->
->         <h1>Hello, </h1>
->
->     )
->
-> }
->
->  
->
-> export default Heading;
+ function Heading(props) {
+     return (
+         <h1>Hello, </h1>
+     )
+ }
+  
+ export default Heading;
 ```
  
 
@@ -3307,19 +3242,13 @@ the **return** statement, and added a JSX expression that accesses the
 statement's **h1**, after **Hello**. 
 
 ```
-> function Heading(props) {
->
->     return (
->
->         <h1>Hello, {props.firstName}</h1>
->
->     )
->
-> }
->
->  
->
-> export default Heading;
+ function Heading(props) {
+     return (
+         <h1>Hello, {props.firstName}</h1>
+     )
+ }
+  
+ export default Heading;
 ```
  
 
@@ -3328,27 +3257,18 @@ located the **<Heading />** JSX element, and added the attribute of
 **firstName** and give it the value of **Bob**. 
 
 ```
-> import Heading from "./Heading";
->
->  
->
-> function App() {
->
->   return (
->
->     <div className="App">
->
->       <Heading firstName="Bob" />
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ import Heading from "./Heading";
+  
+ function App() {
+   return (
+     <div className="App">
+       <Heading firstName="Bob" />
+     </div>
+   );
+ }
+  
+
+ export default App;
 ```
  
 
@@ -3360,27 +3280,27 @@ element with the text that reads "Hello, Bob". 
 and see how the page updates with the new name.
 
 ```
-> import Heading from "./Heading";
->
->  
->
-> function App() {
->
->   return (
->
->     <div className="App">
->
->       <Heading firstName="Any name other than Bob" />
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ import Heading from "./Heading";
+
+  
+
+ function App() {
+
+   return (
+
+     <div className="App">
+
+       <Heading firstName="Any name other than Bob" />
+
+     </div>
+
+   );
+
+ }
+
+  
+
+export default App;
 ```
  
 
@@ -3389,32 +3309,32 @@ first one.  Again, adding the **firstName** attribute and choosing
 another name for this value.
 
 ```
-> import Heading from "./Heading";
->
->  
->
-> function App() {
->
->   return (
->
->     <div className="App">
->
->       <Heading firstName="Any name other than Bob" />
->
->       <Heading firstName="Jack" />
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ import Heading from "./Heading";
+
+  
+
+ function App() {
+
+   return (
+
+     <div className="App">
+
+       <Heading firstName="Any name other than Bob" />
+
+       <Heading firstName="Jack" />
+
+     </div>
+
+   );
+
+ }
+
+  
+
+export default App;
 ```
 
-# 23. Introducing JSX
+## 23. Introducing JSX
 
 At this point in the course, you've been introduced to the concept of
 JSX, and how it's used to interact with components. In this section
@@ -3470,7 +3390,7 @@ JSX styling, and how it's used in React. You have now furthered your
 understanding of how to use JSX to mix JavaScript, HTML, and CSS within
 a component. Great work.
 
-# 24. Props and children
+## 24. Props and children
 
 Previously, you learned that you could pass props to and within a
 component. But there is also a special prop known as **props.children,**
@@ -3495,45 +3415,32 @@ being carried inside of it, without issues.
 Now, consider the following component:
 
 ```
-> function Apples(props) {
->
->   return (
->
->     <div className="promo-section">
->
->         <div>
->
->             <h2>These apples are: {props.color}</h2>
->
->             </div>
->
->             <div>
->
->             <h3>There are {props.number} apples.</h3>
->
->         </div>
->
->     </div>
->
->   )
->
-> }
->
-> export default Apples
+function Apples(props) {
+
+   return (
+     <div className="promo-section">
+         <div>
+             <h2>These apples are: {props.color}</h2>
+             </div>
+             <div>
+             <h3>There are {props.number} apples.</h3>
+         </div>
+     </div>
+   )
+}
+
+ export default Apples
 ```
 
 There is also a **Pears** component:
 
 ```
-> function Pears(props) {
->
->   return (
->
->     <h2>I don't like pears, but my friend, {props.friend}, does</h2>
->
->   )
->
-> }
+function Pears(props) {
+
+  return (
+    <h2>I don't like pears, but my friend, {props.friend}, does</h2>
+  )
+}
 ```
 
 Now, the question is this: Let's say you want to have a **Bag**
@@ -3545,33 +3452,33 @@ This is where **props.children** comes in.
 You can define a **Bag** component as follows:
 
 ```
-> function Bag(props) {
->
->     const bag = {
->
->         padding: "20px",
->
->         border: "1px solid gray",
->
->         background: "#fff",
->
->         margin: "20px 0"
->
->     }
->
->     return (
->
->         <div style={bag}>
->
->             {props.children}
->
->         </div>
->
->     )
->
-> }
->
-> export default Bag
+ function Bag(props) {
+
+     const bag = {
+
+         padding: "20px",
+
+         border: "1px solid gray",
+
+         background: "#fff",
+
+         margin: "20px 0"
+
+     }
+
+     return (
+
+         <div style={bag}>
+
+             {props.children}
+
+         </div>
+
+     )
+
+ }
+
+ export default Bag
 ```
 So, what this does in the **Bag** component is: it adds a wrapping
 **div** with a specific styling, and then gives it **props.children** as
@@ -3580,9 +3487,11 @@ its content.
 But what is this **props.children?**
 
 Consider a very simple example:
+
 ```
-> </Example>
+</Example>
 ```
+
 The **Hello there** text is a child of the Example JSX element. The
 Example JSX Element above is an "invocation" of the **Example.js**
 file, which, in modern React, is usually a function component.
@@ -3591,44 +3500,54 @@ Now, did you know that this **Hello there** piece of text can be passed
 as a **named prop** when rendering the **Example** component?
 
 Here's how that would look like:
+
 ```
-> <Example children="Hello there" />
+<Example children="Hello there" />
 ```
+
 Ok, so, there are two ways to do it. But this is just the beginning.
 
 What if you, say, wanted to surround the **Hello there** text in an
 **h3** HTML element?
 
 Obviously, in JSX, that is easily achievable:
+
 ```
-> <Example children={<h3>Hello there</h3>} />
+<Example children={<h3>Hello there</h3>} />
 ```
-What if the **<h3>Hello there</h3>** was a separate component, for
+
+What if the **&lt;h3&gt;Hello there&lt;/h3&gt;** was a separate component, for
 example, named **Hello**?
 
 In that case, you'd have to update the code like this:
+
 ```
-> <Example children={<Hello />} />
+<Example children={<Hello />} />
 ```
+
 You could even make the **Hello** component more dynamic, by giving it
 its own prop:
+
 ```
-> <Example children={<Hello message="Hello there" />} />
+<Example children={<Hello message="Hello there" />} />
 ```
+
 So, given the **Bag**, **Apples**, and **Pears** examples from the
 beginning of this reading, armed with this new knowledge, how can you
 make it work?
 
 Here's how you'd render the **Bag** component with the **Apples**
 component as its **props.children**:
+
 ```
-> <Bag children={<Apples color="yellow" number="5" />} />
+<Bag children={<Apples color="yellow" number="5" />} />
 ```
+
 And here's how you'd render the **Bag** component, wrapping the
 **Pears** component:
 
 ```
-> <Bag children={<Pears friend="Peter" />} />
+<Bag children={<Pears friend="Peter" />} />
 ```
 
 While the above syntax might look a bit weird, it's important to
@@ -3637,36 +3556,31 @@ understand what is happening "under the hood".
 Effectively, the above syntax is the same as the two examples below.
 
 ```
-> <Bag>
->
->     <Apples color="yellow" number="5" />
->
-> </Bag>
->
->  
->
-> <Bag>
->
->     <Pears friend="Peter" />
->
-> </Bag>
+ <Bag>
+
+     <Apples color="yellow" number="5" />
+
+ </Bag>
+
+  
+
+ <Bag>
+
+     <Pears friend="Peter" />
+
+ </Bag>
 ```
 
 You can even have multiple levels of nested JSX elements, or a single
 JSX element having multiple children, such as, for example:
 
 ```
-> <Trunk>
->
->     <Bag>
->
->         <Apples color="yellow" number="5" />
->
->         <Pears friend="Peter" />
->
->     </Bag>
->
-> </Trunk>
+<Trunk>
+  <Bag>
+    <Apples color="yellow" number="5" />
+    <Pears friend="Peter" />
+  </Bag>
+</Trunk>
 ```
 
 So, in the above structure, there's a **Trunk** JSX element, inside of
@@ -3676,11 +3590,9 @@ which is a single **Bag** JSX element, holding an **Apples** and a
 Before the end of this reading, consider this JSX element again:
 
 ```
-> <Bag>
->
->     <Apples color="yellow" number="5" />
->
-> </Bag>
+<Bag>
+  <Apples color="yellow" number="5" />
+</Bag>
 ```
 
 What is **Apples** to **Bag** in the above code?
@@ -3718,7 +3630,7 @@ In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
 **props.children** in the background.
 
-# 25. Styling JSX elements
+## 25. Styling JSX elements
 
 You've observed that JSX is incredibly versatile, and can accept a
 combination of JavaScript, HTML and CSS.  In this reading, you'll learn
@@ -3736,41 +3648,41 @@ classes, and then, inside the function component's declarations, you
 can access those CSS classes using the **className** attribute.
 
 ```
-> function Promo(props) {
->
->     return (
->
->         <div className="promo-section">
->
->             <div>
->
->                 <h1>{props.heading}</h1>
->
->             </div>
->
->             <div>
->
->                 <h2>{props.promoSubHeading}</h2>
->
->             </div>
->
->         </div>
->
->     );
->
-> }
+ function Promo(props) {
+
+     return (
+
+         <div className="promo-section">
+
+             <div>
+
+                 <h1>{props.heading}</h1>
+
+             </div>
+
+             <div>
+
+                 <h2>{props.promoSubHeading}</h2>
+
+             </div>
+
+         </div>
+
+     );
+
+ }
 ```
 
 In CSS:
 
 ```
-> .promo-section {
->
->     font-weight: bold;
->
->     line-height: 20px;
->
-> }
+ .promo-section {
+
+     font-weight: bold;
+
+     line-height: 20px;
+
+ }
 ```
 
 Another way to add CSS styles to components is using inline styles.
@@ -3781,69 +3693,69 @@ Consider a starting **Promo** component, containing code that you
 encountered earlier:
 
 ```
-> function Promo(props) {
->
->     return (
->
->         <div className="promo-section">
->
->             <div>
->
->                 <h1>{props.heading}</h1>
->
->             </div>
->
->             <div>
->
->                 <h2>{props.promoSubHeading}</h2>
->
->             </div>
->
->         </div>
->
->     );
->
-> }
->
->  
->
-> export default Promo;
+ function Promo(props) {
+
+     return (
+
+         <div className="promo-section">
+
+             <div>
+
+                 <h1>{props.heading}</h1>
+
+             </div>
+
+             <div>
+
+                 <h2>{props.promoSubHeading}</h2>
+
+             </div>
+
+         </div>
+
+     );
+
+ }
+
+  
+
+ export default Promo;
 ```
 
 Now you can add some inline styles to it:
 
 ```
-> function Promo(props) {
->
->     return (
->
->         <div className="promo-section">
->
->             <div>
->
->                 <h1 style={{color:"tomato", fontSize:"40px", fontWeight:"bold"}}>
->
->                     {props.heading}
->
->                 </h1>
->
->             </div>
->
->             <div>
->
->                 <h2>{props.promoSubHeading}</h2>
->
->             </div>
->
->         </div>
->
->     );
->
-> }
->
->  
->
-> export default Promo;
+ function Promo(props) {
+
+     return (
+
+         <div className="promo-section">
+
+             <div>
+
+                 <h1 style={{color:"tomato", fontSize:"40px", fontWeight:"bold"}}>
+
+                     {props.heading}
+
+                 </h1>
+
+             </div>
+
+             <div>
+
+                 <h2>{props.promoSubHeading}</h2>
+
+             </div>
+
+         </div>
+
+     );
+
+ }
+
+  
+
+ export default Promo;
 ```
 
 You can start updating the **Promo** component by adding the JavaScript
@@ -3857,19 +3769,19 @@ JavaScript. Now let's add a **style object literal** inside of these
 curly braces:
 
 ```
-> <h1 style={{color:"tomato",fontSize:"40px"}}>
+<h1 style={{color:"tomato",fontSize:"40px"}}>
 ```
 
 You can then re-write this object literal:
 
 ```
-> {
->
->     color: "tomato",
->
->     fontSize: "40px"
->
-> }
+ {
+
+     color: "tomato",
+
+     fontSize: "40px"
+
+ }
 ```
 
 So, there's nothing special about this object, except for the fact that
@@ -3887,73 +3799,60 @@ That gives you an updated **Promo** component, with the styles object
 saved as a JavaScript variable:
 
 ```
-> function Promo(props) {
->
->  
->
-> const styles = {
->
->     color: "tomato",
->
->     fontSize: "40px"
->
-> }
->
->  
->
-> return (
->
->         <div className="promo-section">
->
->             <div>
->
->                 <h1 style={styles}>
->
->                     {props.heading}
->
->                 </h1>
->
->             </div>
->
->             <div>
->
->                 <h2>{props.promoSubHeading}</h2>
->
->             </div>
->
->         </div>
->
->     );
->
-> }
+function Promo(props) {
+
+  
+
+ const styles = {
+
+     color: "tomato",
+
+     fontSize: "40px"
+
+ }
+
+  
+
+ return (
+
+         <div className="promo-section">
+
+             <div>
+
+                 <h1 style={styles}>
+
+                     {props.heading}
+
+                 </h1>
+
+             </div>
+
+             <div>
+
+                 <h2>{props.promoSubHeading}</h2>
+
+             </div>
+
+         </div>
+
+     );
+
+ }
 ```
 
 Using this approach makes your components more self-contained, because
 they come with their own styles built-in, but it also makes them a bit
 harder to maintain.
 
-# 26. Practical styling
+## 26. Practical styling
 
-Recall that there are
-
-three techniques to include CSS and HTML documents. The first is in
-
-line by utilizing the style attribute
-
-inside the HTML element. Next is internal by using the style elements
-
-in the head section. Finally, external by linking to an external CSS
-file
-
-using the link element. In this section (26), you'll
-
-learn how to take CSS style rules from
-
-an external file named index.CSS and add it inside a component as
-
-an internal style. The style rules can
-
-then be referenced by your code inside the return
+Recall that there are three techniques to include CSS and HTML documents. The first is in
+line by utilizing the style attribute inside the HTML element. Next is internal by using the style elements
+in the head section. 
+Finally, external by linking to an external CSS file using the link element. In this section (26), 
+you'll learn how to take CSS style rules from an external file named index.CSS and add it inside 
+a component as an internal style. 
+The style rules can then be referenced by your code inside the return
 
 statement of the component. Notice that the
 
@@ -4035,7 +3934,7 @@ an external file named index.CSS and added inside a component as an
 
 internal style.
 
-# 27. JSX syntax and the arrow function
+## 27. JSX syntax and the arrow function
 
 ### **Components as Function Expressions**
 
@@ -4050,6 +3949,7 @@ specifically by using function expressions and arrow functions.
 
 Let's start with a function declaration used as a component in React:
 
+```
 function Nav(props) {
 
     return (
@@ -4063,12 +3963,14 @@ function Nav(props) {
     )
 
 }
+```
 
 This component's code returns a list item containing the value of the
 'first' prop.
 
 Now, let's change this function declaration to a function expression:
 
+```
 const Nav = function(props) {
 
     return (
@@ -4082,6 +3984,7 @@ const Nav = function(props) {
     )
 
 }
+```
 
 The component is, for the most part, the same. The only thing that's
 changed is that you're now using an anonymous (nameless) function, and
@@ -4093,9 +3996,9 @@ Changing a component from a function declaration to a function
 expression doesn't change its behavior, or how you write the code to
 render the **Nav** component. It's still the same:
 
-1
-
+```
 <Nav first="Home" />
+```
 
 You can also take this concept a step further, using arrow functions.
 
@@ -4107,6 +4010,7 @@ One of the main benefits of using arrow functions is its shorter syntax.
 
 Consider the Nav function expression written as an arrow function:
 
+```
 const Nav = (props) => {
 
     return (
@@ -4120,6 +4024,7 @@ const Nav = (props) => {
     )
 
 }
+```
 
 So, the way to think about this is the following:
 
@@ -4144,6 +4049,7 @@ accepts.
 In other words, another correct way to write the previous Nav arrow
 function component would be to drop the parentheses around 'props':
 
+```
 const Nav = props => {
 
     return (
@@ -4157,6 +4063,7 @@ const Nav = props => {
     )
 
 }
+```
 
 In all other cases, when you write arrow functions, **for any number of
 parameters other than a single parameter, using parentheses around
@@ -4165,19 +4072,16 @@ parameters is compulsory**.
 For example, if your **Nav** component wasn't accepting any parameters,
 you'd code it with empty parentheses:
 
+```
 const Nav = () => {
 
     return (
-
         <ul>
-
             <li>Home</li>
-
         </ul>
-
     )
-
 }
+```
 
 Another interesting thing about arrow functions is the **implicit
 return**. However, it only works if it's on the same line of code as
@@ -4187,9 +4091,9 @@ entire component is a single line of code.
 To demonstrate how this works, let's re-write the **Nav** component as a
 one-liner:
 
-1
-
+```
 const Nav = () => <ul><li>Home</li></ul>
+```
 
 Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
@@ -4203,9 +4107,9 @@ example, the **forEach()** built-in array method.
 
 For example:
 
-1
-
-[10, 20, 30].forEach(item => item \* 10)
+```
+[10, 20, 30].forEach(item => item * 10)
+```
 
 The output of the above vanilla JavaScript line of code would be three
 number values:
@@ -4221,29 +4125,30 @@ can run in "plain" JavaScript without any additional dependencies.
 
 You could also write this code in ES5 syntax:
 
+```
 [10, 20, 30].forEach(function(item) {
-
-        return item \* 10
-
+        return item * 10
     }
-
 )
+```
 
 Regardless of how you write it, the **forEach()** method can be run on
 an array. The **forEach()** method accepts a single parameter: **an
 anonymous function**. If you write this anonymous function in ES5
 syntax, then it would contain a return statement:
 
+```
 function(item) {
-
     return item \* 10
-
 }
+```
 
 If you write it as an ES6 function instead, it can be simplified as one
 line:
 
+```
 item => item \* 10
+```
 
 Both these functions perform the exact same task. Only the syntax is
 different. The ES6 function is a lot shorter because:
@@ -4264,7 +4169,7 @@ Now that you have completed this reading, you've learned about some
 alternative approaches, specifically by using function expressions and
 arrow functions.
 
-# 28. Embedded JSX expressions
+## 28. Embedded JSX expressions
 
 Recall that JSX is a syntax extension to JavaScripts that is used with
 React. It allows developers to write HTML as part of their component
@@ -4321,7 +4226,7 @@ insert the values of JavaScript variables into
 
 HTML within a React element.
 
-# 29. Ternary operators and functions in JSX
+## 29. Ternary operators and functions in JSX
 
 So you've explored several ways to define components in React; this
 includes function declarations, function expressions and arrow
@@ -4334,24 +4239,20 @@ In this reading, you will become familiar with how to use ternary
 expressions to achieve a random return, as well as how to invoke
 functions inside of JSX expressions.
 
-## A different way of writing an if\...else conditional
+### A different way of writing an if\...else conditional
 
 You are likely familiar with the structure of an if\...else conditional.
 Here is a quick refresher:
 
+```
 let name = 'Bob';
 
 if (name == 'Bob') {
-
-    console.log('Hello, Bob');
-
+  console.log('Hello, Bob');
 } else {
-
-    console.log('Hello, Friend');
-
+  console.log('Hello, Friend');
 };
-
- 
+```
 
 The above code works as follows:
 
@@ -4384,7 +4285,9 @@ engine returns will be the boolean value of **false**.
 Here is the code that reflects the explanation in the previous
 paragraph:
 
-> name == 'Bob' ?
+```
+name == 'Bob' ?
+```
 
 Note that the above code is incompleted. I have the condition that I'm
 checking (the **name == 'Bob'** part). I also have the **?**
@@ -4394,7 +4297,9 @@ character, which is the colon, that is the **:** character. This
 character is placed after the question mark character. I can now expand
 my code to include this as well:
 
-> name == 'Bob' ? :
+```
+name == 'Bob' ? :
+```
 
 This brings me a step closer to completing my ternary operator. Although
 I've added the characters needed to construct the ternary operator, I
@@ -4403,46 +4308,52 @@ still need to add the return values. In other words, if **name ==
 Bob!". Otherwise, I want to return the words "I don't know this
 person".
 
-> name == Bob ? "Yes, it is Bob" : "I don't know this person";
+```
+name == Bob ? "Yes, it is Bob" : "I don't know this person";
+```
 
 This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the **if**
 statement. To prove that this is really the case, here's my starting
 if\...else example, written as a ternary operator:
 
-> let name = 'Bob';
->
-> name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
+```
+let name = 'Bob';
 
- 
+name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
+```
 
 ## **Using ternary expressions in JSX**
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
 
-> function Example() {
->
->     return (
->
->         <div className="heading">
->
->             <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
->
->         </div>
->
->     );
->
-> };
+```
+ function Example() {
 
-Inside the **<h1>** element, the curly braces signal to React that you
+     return (
+
+         <div className="heading">
+
+             <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
+
+         </div>
+
+     );
+
+ };
+```
+
+Inside the **&LT;h1&GT;** element, the curly braces signal to React that you
 want it to parse the code inside as regular JavaScript.
 
 Then, inside the curly braces, you can add a ternary statement. Every
 ternary statement conceptually, expressed in pseudo-code, works like
 this:
 
-> comparison ? true : false
+```
+comparison ? true : false
+```
 
 In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
@@ -4458,7 +4369,7 @@ expression.
 This is how you can use a ternary expression to check for a condition
 right inside a component and return a value dynamically.
 
-## **Using function calls in JSX**
+### **Using function calls in JSX**
 
 Another way to work with an expression in JSX is to invoke a function.
 Function invocation is an expression because every expression returns a
@@ -4468,23 +4379,25 @@ that return value is **undefined**.
 Like the previous example, you can use function invocation inside JSX to
 return a random number:
 
-> function Example2() {
->
->     return (
->
->         <div className="heading">
->
->             <h1>Here's a random number from 0 to 10: 
->
->                 { Math.floor(Math.random() \* 10) + 1 }
->
->             </h1>
->
->         </div>
->
->     );
->
-> };
+```
+ function Example2() {
+
+     return (
+
+         <div className="heading">
+
+             <h1>Here's a random number from 0 to 10: 
+
+                 { Math.floor(Math.random() \* 10) + 1 }
+
+             </h1>
+
+         </div>
+
+     );
+
+ };
+```
 
 In the **Example2** component, built-in **Math.floor()** and
 **Math.random()** methods are being used, as well as some number values
@@ -4492,25 +4405,27 @@ and arithmetic operators, to display a random number between 0 and 10.
 
 You can also extract this functionality into a separate function:
 
-> function Example3() {
->
->  
->
->     const getRandomNum = () => Math.floor(Math.random() \* 10) + 1
->
->  
->
->     return (
->
->         <div className="heading">
->
->             <h1>Here's a random number from 0 to 10: { getRandomNum() }</h1>
->
->         </div>
->
->     );
->
-> };
+```
+ function Example3() {
+
+  
+
+     const getRandomNum = () => Math.floor(Math.random() \* 10) + 1
+
+  
+
+     return (
+
+         <div className="heading">
+
+             <h1>Here's a random number from 0 to 10: { getRandomNum() }</h1>
+
+         </div>
+
+     );
+
+ };
+```
 
 The **getRandomNum()** function can also be written as a function
 declaration, or as a function expression. It does not have to be an
@@ -4519,21 +4434,25 @@ arrow function.
 But let's observe both alternatives: the function expression *and* the
 function declaration.
 
-Function expression:
+<h4>Function expression:</h4>
 
-> const getRandomNum = function() {
->
->     return Math.floor(Math.random() \* 10) + 1
->
-> } ;
+```
+ const getRandomNum = function() {
 
-Function declaration:
+     return Math.floor(Math.random() \* 10) + 1
 
-> function getRandomNum() {
->
->     return Math.floor(Math.random() \*10) + 1
->
-> };
+ } ;
+```
+
+<h4>Function declaration:</h4>
+
+```
+ function getRandomNum() {
+
+     return Math.floor(Math.random() \*10) + 1
+
+ };
+```
 
 Of course, there are many other examples. The ones used here are there
 to help you understand how versatile and seamless the JSX syntax is. As
@@ -4543,7 +4462,7 @@ JavaScript expressions in JSX.
 Now that you have completed this reading, you have learned about a few
 more ways that you can use expressions in JSX.
 
-# 30. Expressions as props
+## 30. Expressions as props
 
 You've already learned a bit about using expressions as props. These
 can be, among other things, ternary operators, function calls, or some
@@ -4553,35 +4472,23 @@ However, you can pass almost any kind of expression as a prop.
 
 For example:
 
-> const bool = false; 
->
->  
->
-> function Example(props) {
->
->     return (
->
->         <h2>The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}</h2>
->
->     );
->
-> };
->
->  
->
-> export default function App() { 
->
->     return ( 
->
->         <div className="App"> 
->
->             <Example toggleBoolean={!bool} /> 
->
->         </div> 
->
->     ); 
->
-> };
+```
+const bool = false; 
+  
+function Example(props) {
+  return (
+    <h2>The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}</h2>
+  );
+};
+  
+export default function App() { 
+  return ( 
+    <div className="App"> 
+      <Example toggleBoolean={!bool} />
+    </div> 
+  ); 
+};
+```
 
 In the example above, you're using the **!bool**, that is, the NOT
 operator, which evaluates to **true**, since **!false** is true.
@@ -4597,57 +4504,34 @@ What is happening here is several props are being passed to the
 **Example** component, and rendering each of these props' values to the
 screen.
 
-> const bool = false;
->
-> const str1 = "just";
->
->  
->
-> function Example(props) {
->
->     return (
->
->         <div>
->
->             <h2>
->
->                 The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
->
->             </h2>
->
->             <p>The value of the math prop is: <em>{props.math}</em></p>
->
->             <p>The value of the str prop is: <em>{props.str}</em></p>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default function App() {
->
->     return (
->
->         <div className="App">
->
->             <Example
->
->                 toggleBoolean={!bool}
->
->                 math={(10 + 20) / 3}
->
->                 str={str1 + ' another ' + 'string'}
->
->             />
->
->         </div>
->
->     );
->
-> };
+```
+ const bool = false;
+ const str1 = "just";
+  
+ function Example(props) {
+     return (
+         <div>
+             <h2>
+                 The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
+             </h2>
+             <p>The value of the math prop is: <em>{props.math}</em></p>
+             <p>The value of the str prop is: <em>{props.str}</em></p>
+         </div>
+     );
+ };
+ 
+export default function App() {
+     return (
+         <div className="App">
+             <Example
+                 toggleBoolean={!bool}
+                 math={(10 + 20) / 3}
+                 str={str1 + ' another ' + 'string'}
+             />
+         </div>
+     );
+};
+```
 
 In this improvement to the **Example** component, three props are being
 passed to it: **toggleBoolean**, **math**, and **str**. The
@@ -4666,7 +4550,7 @@ In summary, just like you can use expressions inside function
 components, you can also use them as prop values inside JSX elements,
 when rendering those function components.
 
-# 31. Embedding in attributes
+## 31. Embedding in attributes
 
 I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
@@ -4699,7 +4583,7 @@ file and then import and render it as needed. And that's a
 demonstration on how you can embed a JSX expression in an attribute. In
 this case the SRC attribute of an html image tag.
 
-# 32. Multiple components
+## 32. Multiple components
 
 Here's the completed App.js file:
 
@@ -4708,6 +4592,7 @@ Here's the completed App.js file:
 
 ```
 import "./App.css";
+
 import Card from "./Card";
   
 function App() {
@@ -4763,7 +4648,6 @@ that file, declare a **Card** function.  
 ```
 function Card(props) {
     
-    
 };
 ```
 
@@ -4775,7 +4659,6 @@ function Card(props) {
 function Card(props) {
   return (
   
-  
   );
 };
 ```
@@ -4784,312 +4667,285 @@ function Card(props) {
 wrapping **div** element. 
 
 ```
-> function Card(props) {
->
->     return (
->
->         <div>
->
->         </div>
->
->     );
->
-> };
+ function Card(props) {
+
+     return (
+
+         <div>
+
+         </div>
+
+     );
+
+ };
 ```
 
 **Step 4.** Inside the wrapping **div** element, you needed to add an
 **h2** element, and under it, an **h3** element. 
 
 ```
-> function Card(props) {
->
->     return (
->
->         <div>
->
->             <h2></h2>
->
->             <h3></h3>
->
->         </div>  
->
->     );
->
-> };
+function Card(props) {
+
+     return (
+         <div>
+             <h2></h2>
+             <h3></h3>
+         </div>  
+     );
+ };
 ```
 
-Step 5. Inside the h2 element you've already added, you needed to add
+**Step 5.** Inside the h2 element you've already added, you needed to add
 the JSX expression of: {props.h2}. 
 
 ```
-> function Card(props) {
->
->     return (
->
->         <div className="card">
->
->             <h2>{props.h2}</h2>
->
->             <h3></h3>
->
->         </div>
->
->     );
->
-> };
+function Card(props) {
+
+    return (
+         <div className="card">
+             <h2>{props.h2}</h2>
+             <h3></h3>
+         </div>
+    );
+};
 ```
 
 **Step 6.** Inside the **h3** element you've already added, you needed
 to add the JSX expression of: **{props.h3}**. 
 
 ```
-> function Card(props) {
->
->     return (
->
->         <div className="card">
->
->             <h2>{props.h2}</h2>
->
->             <h3>{props.h3}</h3>
->
->         </div>
->
->     );
->
-> };
+ function Card(props) {
+
+     return (
+
+         <div className="card">
+
+             <h2>{props.h2}</h2>
+
+             <h3>{props.h3}</h3>
+
+         </div>
+
+     );
+
+ };
 ```
 
 **Step 7.** You also had to make sure to not forget the **export default
 Card;** line of code at the bottom of the Card component.
 
 ```
-> function Card(props) {
->
->     return (
->
->         <div className="card">
->
->             <h2>{props.h2}</h2>
->
->             <h3>{props.h3}</h3>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default Card;
+ function Card(props) {
+
+     return (
+
+         <div className="card">
+
+             <h2>{props.h2}</h2>
+
+             <h3>{props.h3}</h3>
+
+         </div>
+
+     );
+
+ };
+
+  
+
+ export default Card;
 ```
 
 **Step 8.** Back inside the App component, you needed to import the
 **Card** component. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
->  
->
-> function App() {
->
->     return (
->
->         <div>
->
->             <h1>Task: Add three Card elements</h1>
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default App;
+ import "./App.css";
+
+ import Card from "./Card";
+
+  
+
+ function App() {
+
+     return (
+
+         <div>
+
+             <h1>Task: Add three Card elements</h1>
+
+         </div>
+
+     );
+
+ };
+
+  
+
+ export default App;
 ```
 
 **Step 9.** Inside the App component's **return** statement, under the
-**h1** element, you should have added three **<Card />** JSX
+**h1** element, you should have added three **&lt;Card /&gt;** JSX
 elements. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
->  
->
-> function App() {
->
->     return (
->
->         <div>
->
->             <h1>Task: Add three Card elements</h1>
->
->             <Card />
->
->             <Card />
->
->             <Card />
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default App;
+ import "./App.css";
+
+ import Card from "./Card";
+
+  
+
+ function App() {
+
+     return (
+
+         <div>
+
+             <h1>Task: Add three Card elements</h1>
+
+             <Card />
+
+             <Card />
+
+             <Card />
+
+         </div>
+
+     );
+
+ };
+
+  
+
+ export default App;
 ```
 
-**Step 10.** You needed to add the **h2** prop to the first **<Card
-/>** element, like this: **h2="First card's h2"**. 
+**Step 10.** You needed to add the **h2** prop to the first **&lt;Card
+/&gt;** element, like this: **h2="First card's h2"**. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
->  
->
-> function App() {
->
->     return (
->
->         <div>
->
->             <h1>Task: Add three Card elements</h1>
->
->             <Card h2="First card's h2" />
->
->             <Card />
->
->             <Card />
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default App;
+ import "./App.css";
+
+ import Card from "./Card";
+
+  
+
+ function App() {
+
+     return (
+
+         <div>
+
+             <h1>Task: Add three Card elements</h1>
+
+             <Card h2="First card's h2" />
+
+             <Card />
+
+             <Card />
+
+         </div>
+
+     );
+
+ };
+
+  
+ export default App;
 ```
 
-**Step 11.** You needed to add the **h3** prop to the first **<Card
-/>** element, like this: **h3="First card's h3"**. 
+**Step 11.** You needed to add the **h3** prop to the first **&lt;Card
+/&gt;** element, like this: **h3="First card's h3"**. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
->  
->
-> function App() {
->
->     return (
->
->         <div>
->
->             <h1>Task: Add three Card elements</h1>
->
->             <Card h2="First card's h2" h3="First card's h3" />
->
->             <Card />
->
->             <Card />
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default App;
+ import "./App.css";
+ import Card from "./Card";
+  
+ function App() {
+     return (
+         <div>
+             <h1>Task: Add three Card elements</h1>
+             <Card h2="First card's h2" h3="First card's h3" />
+             <Card />
+             <Card />
+         </div>
+     );
+ };
+  
+ export default App;
 ```
 
 **Step 12.** You should have added the **h2** and **h3** props to the
-second **<Card />** element, with the **h2** reading: **"Second
+second **&lt;Card /&gt;** element, with the **h2** reading: **"Second
 card's h2"**, and the **h3** reading **"Second card's h3"**. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
->  
->
-> function App() {
->
->     return (
->
->         <div>
->
->             <h1>Task: Add three Card elements</h1>
->
->             <Card h2="First card's h2" h3="First card's h3" />
->
->             <Card h2="Second card's h2" h3="Second card's h3" />
->
->             <Card />
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default App;
+ import "./App.css";
+
+ import Card from "./Card";
+
+  
+
+ function App() {
+
+     return (
+
+         <div>
+
+             <h1>Task: Add three Card elements</h1>
+
+             <Card h2="First card's h2" h3="First card's h3" />
+
+             <Card h2="Second card's h2" h3="Second card's h3" />
+
+             <Card />
+
+         </div>
+
+     );
+
+ };
+
+  
+
+ export default App;
 ```
 
 **Step 13.** You should have added the **h2** and **h3** props to the
-third **<Card />** element, with the h2 reading: **"Third card's
+third **&lt;Card /&gt;** element, with the h2 reading: **"Third card's
 h2"**, and the **h3** reading **"Third card's h3"**. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
->  
->
-> function App() {
->
->     return (
->
->         <div>
->
->             <h1>Task: Add three Card elements</h1>
->
->             <Card h2="First card's h2" h3="First card's h3" />
->
->             <Card h2="Second card's h2" h3="Second card's h3" />
->
->             <Card h2="Third card's h2" h3="Third card's h3" />
->
->         </div>
->
->     );
->
-> };
->
->  
->
-> export default App;
+ import "./App.css";
+
+ import Card from "./Card";
+
+  
+
+ function App() {
+
+     return (
+
+         <div>
+
+             <h1>Task: Add three Card elements</h1>
+
+             <Card h2="First card's h2" h3="First card's h3" />
+
+             <Card h2="Second card's h2" h3="Second card's h3" />
+
+             <Card h2="Third card's h2" h3="Third card's h3" />
+
+         </div>
+
+     );
+
+ };
+
+  
+
+ export default App;
 ```
 
 **Step 14.** You needed to add the **className** attribute to the
@@ -5097,34 +4953,34 @@ Card.js file's **Card** function's **return** statement's wrapping
 **div** element. 
 
 ```
-> import "./App.css";
->
-> import Card from "./Card";
->
-> function App() {
->
->     return (
->
->         <div className="App">
->
->             <h1>Task: Add three Card elements</h1>
->
->             <Card h2="First card's h2" h3="First card's h3" />
->
->             <Card h2="Second card's h2" h3="Second card's h3" />
->
->             <Card h2="Third card's h2" h3="Third card's h3" />
->
->         </div>
->
->     );
->
-> };
->
-> export default App;
+ import "./App.css";
+
+ import Card from "./Card";
+
+ function App() {
+
+     return (
+
+         <div className="App">
+
+             <h1>Task: Add three Card elements</h1>
+
+             <Card h2="First card's h2" h3="First card's h3" />
+
+             <Card h2="Second card's h2" h3="Second card's h3" />
+
+             <Card h2="Third card's h2" h3="Third card's h3" />
+
+         </div>
+
+     );
+
+ };
+
+ export default App;
 ```
 
-# 33. Module Summary -- React Components & where they live
+## 33. Module Summary -- React Components &amp; where they live
 
 Well done. You've reached the end of module one on react components.
 
@@ -5794,54 +5650,53 @@ Here is the output from the solution code for the App.js file:
 closing **button** tag, to the App component's **h1** element . 
 
 ```
-> function App() {
->
->  
->
->   return (
->
->     <div>
->
->       <h1>Task: Add a button and handle a click event</h1>
->
->       <button></button>
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ function App() {
+
+  
+
+   return (
+
+     <div>
+
+       <h1>Task: Add a button and handle a click event</h1>
+
+       <button></button>
+
+     </div>
+
+   );
+
+ }
+
+  
+
+ export default App;
 ```
 
 **Step 2.** In between the opening and closing **button** tags, you
 added the following text: Guess the number between 1 and 3. 
 
 ```
-> function App() {
->
->  
->
->   return (
->
->     <div>
->
->       <h1>Task: Add a button and handle a click event</h1>
->
->       <button>Guess the number between 1 and 3</button>
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ function App() {
+
+  
+   return (
+
+     <div>
+
+       <h1>Task: Add a button and handle a click event</h1>
+
+       <button>Guess the number between 1 and 3</button>
+
+     </div>
+
+   );
+
+ }
+
+  
+
+ export default App;
 ```
 
 **Step 3.** Next, inside the opening **button** tag, you added the
@@ -5849,27 +5704,17 @@ added the following text: Guess the number between 1 and 3. 
 expression: **{handleClick}**. 
 
 ```
-> function App() {
->
->  
->
->   return (
->
->     <div>
->
->       <h1>Task: Add a button and handle a click event</h1>
->
->       <button onClick={handleClick}>Guess the number between 1 and 3</button>
->
->     </div>
->
->   );
->
-> }
->
->  
->
-> export default App;
+ function App() {
+  
+   return (
+     <div>
+       <h1>Task: Add a button and handle a click event</h1>
+       <button onClick={handleClick}>Guess the number between 1 and 3</button>
+     </div>
+   );
+ }
+  
+ export default App;
 ```
 
 **Step 4.** Then, above the **return** statement of the App component -
@@ -5877,35 +5722,35 @@ but still inside the App function - you added the following ES5 function
 declaration: 
 
 ```
-> function App() {
->
->  function handleClick() {
->
->     let randomNum = Math.floor(Math.random() \* 3) + 1;
->
->     console.log(randomNum);
->
->     let userInput = prompt('type a number');
->
->     alert(\`Computer number: \${randomNum}, Your guess: \${userInput}\`);
->
->   }
->
->  return (
->
->     <div>
->
->       <h1>Task: Add a button and handle a click event</h1>
->
->       <button onClick={handleClick}>Guess the number between 1 and 3</button>
->
->     </div>
->
->   );
->
-> }
->
-> export default App;
+ function App() {
+
+  function handleClick() {
+
+     let randomNum = Math.floor(Math.random() \* 3) + 1;
+
+     console.log(randomNum);
+
+     let userInput = prompt('type a number');
+
+     alert(\`Computer number: \${randomNum}, Your guess: \${userInput}\`);
+
+   }
+
+  return (
+
+     <div>
+
+       <h1>Task: Add a button and handle a click event</h1>
+
+       <button onClick={handleClick}>Guess the number between 1 and 3</button>
+
+     </div>
+
+   );
+
+ }
+
+ export default App;
 ```
 
 **Step 5.** Finally, you saved your changes and ran the app to preview
@@ -6029,7 +5874,7 @@ to child. By storing data in the parent component, you can dynamically
 pass it to the child component without the need to update children
 individually.
 
-### 10. Data flow in React
+## 10. Data flow in React
 
 You've just learned how the parent-child relationship can be set up so
 that data flows from parent to child. 
@@ -6070,47 +5915,53 @@ the UI.
 
 #### **Parent component:**
 
-> function Dog() {
->
->     return (
->
->         <Puppy name="Max" bowlShape="square" bowlStatus="full" />
->
->     );
->
-> };
+```
+ function Dog() {
+
+     return (
+
+         <Puppy name="Max" bowlShape="square" bowlStatus="full" />
+
+     );
+
+ };
+```
 
 #### **Child component:**
 
-> function Puppy(props) {
->
->     return (
->
->         <div>
->
->             {props.name} has <Bowl bowlShape="square" bowlStatus="full" />
->
->         </div>
->
->     );
->
-> };
+```
+ function Puppy(props) {
+
+     return (
+
+         <div>
+
+             {props.name} has <Bowl bowlShape="square" bowlStatus="full" />
+
+         </div>
+
+     );
+
+ };
+```
 
 #### **Grandchild component:**
 
-> function Bowl(props) {
->
->     return (
->
->         <span>
->
->             {props.bowlShape}-shaped bowl, and it's currently {props.bowlStatus}
->
->         </span>
->
->     );
->
-> };
+```
+ function Bowl(props) {
+
+     return (
+
+         <span>
+
+             {props.bowlShape}-shaped bowl, and it's currently {props.bowlStatus}
+
+         </span>
+
+     );
+
+ };
+```
 
 Having data move through props in only one direction makes it simpler to
 understand the logic of how the components interact. If data were moving
@@ -6118,7 +5969,7 @@ everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
 be as efficient as it could be, especially in modern React.
 
-### 11. Children and data
+## 11. Children and data
 
 In this section (11), you're going to learn about data flow in ReactJS.
 In this case, data flow is in one direction only. Immediately a question
@@ -6170,9 +6021,9 @@ time. Well done. You've now learned how children and data flows in
 ReactJS. You should also be able to showcase the use of stateless and
 stateful examples by focusing on data flow.
 
-### 12. Data flow
+## 12. Data flow
 
-### 13. What are hooks?
+## 13. What are hooks?
 
 By now you've probably already learned about some important and useful
 core concepts in React. At this point, you're ready to learn how to add
@@ -6233,7 +6084,7 @@ In this section, you learned the basics on React hooks and explored the
 **useState** hook. You now understand the benefits of using hooks and
 how you can use them within your React applications.
 
-# 14. Using hooks
+## 14. Using hooks
 
 Now that you understand what hooks are in React and have some basic
 knowledge on the **useState** hook, let's dive in deeper. In this
@@ -6250,43 +6101,45 @@ get updated with the latest text that has been typed.
 
 Let's discuss the below example.
 
-> import { useState } from 'react';
->
->  
->
-> export default function InputComponent() { 
->
->   const [inputText, setText] = useState('hello'); 
->
->  
->
->   function handleChange(e) { 
->
->     setText(e.target.value); 
->
->   } 
->
->  
->
->   return ( 
->
->     <> 
->
->       <input value={inputText} onChange={handleChange} /> 
->
->       <p>You typed: {inputText}</p> 
->
->       <button onClick={() => setText('hello')}> 
->
->         Reset 
->
->       </button> 
->
->     </> 
->
->   ); 
->
-> } 
+```
+ import { useState } from 'react';
+
+  
+
+ export default function InputComponent() { 
+
+   const [inputText, setText] = useState('hello'); 
+
+  
+
+   function handleChange(e) { 
+
+     setText(e.target.value); 
+
+   } 
+
+  
+
+   return ( 
+
+     <> 
+
+       <input value={inputText} onChange={handleChange} /> 
+
+       <p>You typed: {inputText}</p> 
+
+       <button onClick={() => setText('hello')}> 
+
+         Reset 
+
+       </button> 
+
+     </> 
+
+   ); 
+
+ } 
+```
 
 To do this, let's define a React component and call it
 **InputComponent***.* This component renders three things:
@@ -6300,14 +6153,15 @@ To do this, let's define a React component and call it
 -   As the user starts typing within the text field, the current text
     that was typed is also displayed.
 
-![Display of the word "welcome" typed to
-bar](./images/image045.png){width="5.979166666666667in" height="2.25in"}
+![Display of the word "welcome" typed to bar](./images/image045.png){width="5.979166666666667in" height="2.25in"}
 
 The state variable **inputText** and the **setText** method are used to
 set the current text that is typed. The **useState** hook is initialized
 at the beginning of the component.
 
-> const[inputText, setText] = useState('hello');
+```
+const[inputText, setText] = useState('hello');
+```
 
 By default, the **inputText** will be set to "hello".
 
@@ -6455,34 +6309,34 @@ In this reading, you have explored hooks in detail and understand how to
 use the **useState** hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
-### 15. What is state?
+## 15. What is state?
 
 *"Make it as simple as possible, but not simpler."*\
 Albert Einstein
 
-### 16. Observing state
+## 16. Observing state
 
-### 17. State the concept
+## 17. State the concept
 
-### 18. Managing state
+## 18. Managing state
 
-### 19. Prop drilling
+## 19. Prop drilling
 
-### 20. React state management
+## 20. React state management
 
-### 21. Passing state
+## 21. Passing state
 
-### 22. Stateful vs stateless
+## 22. Stateful vs stateless
 
-### 23. Managing state in React
+## 23. Managing state in React
 
-### 24. State or stateless
+## 24. State or stateless
 
-### 25. Data events & how to handle them
+## 25. Data events & how to handle them
 
-### 26. Additional resources
+## 26. Additional resources
 
-### Week 3
+# Week 3
 
 Navigation, Updating and Assets in React.js
 
@@ -10726,4 +10580,4 @@ Head to the <a href="https://react.dev/learn">Quick Start</a> guide for a tour o
 concepts you will encounter every day.
 
 End. . .
-<h6>5/20/2023 8:12am</h6>
+<h6>5/21/2023 10:15am</h6>
