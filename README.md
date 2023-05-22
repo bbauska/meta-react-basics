@@ -1273,11 +1273,11 @@ sidebar.
 The header section contains the company logo with a navigation menu and
 a button to view the shopping cart.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 18.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 18. example payment section component (34) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image018.png?raw=true"
-  alt="."
+  alt="Example payment section component."
   width="30%" />
 </p>
 <!-- {width="3.0in" height="1.7358727034120736in"} -->
@@ -1285,22 +1285,22 @@ a button to view the shopping cart.
 The payment section area contains a form where the user inputs their
 payment information.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 19.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 19. example order summary component (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image019.png?raw=true"
-  alt="."
+  alt="Example order summary component."
   width="30%" />
 </p>
 <!-- {width="3.0in" height="2.761124234470691in"} -->
 
 Finally, there's a sidebar with the order summary information.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. self-contained components (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image020.png?raw=true"
-  alt="."
+  alt="Self-contained components comprised of HTML, CSS and JavaScript."
   width="50%" />
 </p>
 <!-- (width="5.0in" height="2.596824146981627in"} -->
@@ -1314,11 +1314,11 @@ that submits a payment when a button is clicked.
 It's important to know that the use of components in website UI design
 is not limited to just React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 21.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 21. components and compost ability (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image021.png?raw=true"
-  alt="."
+  alt="Components and compost ability."
   width="30%" />
 </p>
 <!-- {width="3.0in" height="1.5278346456692913in"} -->
@@ -1335,11 +1335,11 @@ DOM without significantly impacting the browser's resources.
 This is called component rendering and you'll learn more about this and
 its associated render method later.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22. tree-like dom (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image022.png?raw=true"
-  alt="."
+  alt="Logical tree-like DOM."
   width="15%" />
 </p>
 <!-- {width="1.5in" height="1.5720002187226596in"}  -->
@@ -1359,11 +1359,11 @@ difficult to understand like spaghetti.
 React prevents this spaghetti code by avoiding any manipulation of the
 DOM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 23.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 23. react components - virtual dom (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image023.png?raw=true"
-  alt="."
+  alt="React components, virtual DOM."
   width="50%" />
 </p>
 <!-- {width="5.0in" height="2.960317147856518in"} -->
@@ -1384,11 +1384,11 @@ DOM.
 
 ## 10. Introduction to functional components
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. javascript function (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image024.png?raw=true"
-  alt="."
+  alt="JavaScript function, multiply."
   width="60%" />
 </p>
 <!-- {width="6.0in" height="1.6361898512685915in"} -->
@@ -1789,7 +1789,7 @@ React, and render it to the root components named <b>app.js</b>.
 
 ## 12. Transpiling JSX
 
-### By the end of this section (12), you will have learned how a component is built.
+By the end of this section (12), you will know how a component is built.
 
 Components are a nice way to build websites in React because they allow
 you to build more modular apps. However, how do you build components
@@ -3662,62 +3662,53 @@ harder to maintain.
 
 ## 26. Practical styling
 
-Recall that there are three techniques to include CSS and HTML documents. The first is in
-line by utilizing the style attribute inside the HTML element. Next is internal by using the style elements
-in the head section. 
-Finally, external by linking to an external CSS file using the link element. In this section (26), 
-you'll learn how to take CSS style rules from an external file named index.CSS and add it inside 
-a component as an internal style. 
-The style rules can then be referenced by your code inside the return
-statement of the component. Notice that the
-components are styled by the external style
-sheet, index dot CSS. For this section (26), I'll continue
-working on an app which consists of the components
-header, main and sidebar. This time the focus
-will be on using internal styling inside
-the sidebar components. To demonstrate this,
-I don't need to move all the code from
-the index.CSS file. Instead, I'll just
-focus on the style is related to the
-sidebar components. For example, I select
-the CSS code for a site and cut it by pressing Control X
-or Command X on Mac. After saving, notice
-that this removes the styling from the
-sidebar components displayed in the browser. Now let's go to the
-sidebar.js file where I'll paste the code before
-the return statement. This will not affect my
-component because I'm pasting CSS code into
-a JavaScript file. I need to make some
-changes to turn the CSS rule into a
-JavaScript object. To do this, I need to
-declare a site style as a const variable
-and then replace the semi-colons and
-the code with commas. I also need to replace the hyphenated names
-with camelCase. It's important to
-know that because CSS declarations like background are now an object
-property, I need to make their
-respective values a string by wrapping them
-inside double quotes. I also need to repeat this for the other news tile
-elements as well. Finally, inside the a site tag and return statements
-of the component, I need to add a style attribute by typing style equals aside style 
-as a JSX expression. I then choose save all in the file menu to
-save my changes. Notice that the sidebar components appears in the browser as before, I edited the index.CSS file. That's an example of
-using inline CSS styling directly inside a component. In this section (26), you
-learned how to take CSS style rules from an external file named index.CSS and added inside a component as an
-internal style.
+Recall that there are three techniques to include CSS and HTML documents. 
+The first is in line by utilizing the style attribute inside the HTML element. 
+Next is internal by using the style elements in the head section. 
+Finally, external by linking to an external CSS file using the link element. 
 
-## 27. JSX syntax and the arrow function
+In this section (26), you'll learn how to take CSS style rules from an external 
+file named index.CSS and add it inside a component as an internal style. 
+The style rules can then be referenced by your code inside the return statement of 
+the component. Notice that the components are styled by the external style sheet, 
+index dot CSS. 
 
-### <b>Components as Function Expressions</b>
+For this section (26), I'll continue working on an app which consists of the components
+header, main and sidebar. This time the focus will be on using internal styling inside
+the sidebar components. To demonstrate this, I don't need to move all the code from
+the index.CSS file. Instead, I'll just focus on the style is related to the sidebar 
+components. For example, I select the CSS code for a site and cut it by pressing Control X
+or Command X on Mac. After saving, notice that this removes the styling from the sidebar 
+components displayed in the browser. 
+
+Now let's go to the sidebar.js file where I'll paste the code before the return statement. 
+This will not affect my component because I'm pasting CSS code into a JavaScript file. 
+I need to make some changes to turn the CSS rule into a JavaScript object. To do this, I need 
+to declare a site style as a const variable and then replace the semi-colons and the code with 
+commas. I also need to replace the hyphenated names with camelCase. It's important to know 
+that because CSS declarations like background are now an object property, I need to make their 
+respective values a string by wrapping them inside double quotes. I also need to repeat this 
+for the other news tile elements as well. Finally, inside the a site tag and return statements 
+of the component, I need to add a style attribute by typing style equals aside style as a JSX 
+expression. I then choose save all in the file menu to save my changes. Notice that the sidebar 
+components appears in the browser as before, I edited the index.CSS file. 
+That's an example of using inline CSS styling directly inside a component. 
+
+In this section (26), you learned how to take CSS style rules from an external file 
+named index.CSS and add it inside a component as an internal style.
+
+<h2>27. JSX syntax and the arrow function</h2>
+
+<h3>Components as Function Expressions</h3>
 
 Up to this point, you've likely only observed ES5 function declarations
 used to define components in React. However, this is not the only way to
 do it.
 
-In this reading, you learn about some alternative approaches,
+In this section (27), you will learn about some alternative approaches,
 specifically by using function expressions and arrow functions.
 
-<b>Function Expressions</b>
+<h4>Function Expressions</h4>
 
 Let's start with a function declaration used as a component in React:
 
@@ -3790,11 +3781,15 @@ So, the way to think about this is the following:
 
 -   To reiterate, take the smallest possible <b>anonymous ES5 function</b>:
 
+```
 const example = function() {}
+```
 
 And then observe how this is written as an arrow function:
 
+```
 const example = () => {}
+```
 
 Another important rule regarding arrow functions is that using the
 parentheses is optional if there's a single parameter that a function
@@ -3924,33 +3919,40 @@ React. It allows developers to write HTML as part of their component
 code, and is frequently used in React as it offers greater flexibility.
 
 In this section (28), you will learn how JSX is used and how to use its
-key feature embedded expressions. First, let's examine a JSX example
-that will output some text on a webpage. The code consists of a
-paragraph, HTML elements containing the phrase hello world. It is
-assigned to the constant variable named Result. Note that when this JSX
-code executes, the result variable will contain a react element that can
-then be inserted into the webpage. This is one of the key features of
-JSX. Building React elements from HTML code automatically. Let's
-explore another important feature of JSX, which is embedded expressions.
+key feature embedded expressions. 
+
+First, let's examine a JSX example that will output some text on a webpage. 
+The code consists of a paragraph, HTML elements containing the phrase hello world. 
+It is assigned to the constant variable named Result. 
+Note that when this JSX code executes, the result variable will contain a react 
+element that can then be inserted into the webpage. This is one of the key features of
+JSX. Building React elements from HTML code automatically. 
+
+Let's explore another important feature of JSX, which is embedded expressions.
 Embedded expressions allow developers to insert the values of JavaScript
 variables into the HTML of the resulting React elements. Embedded
 expressions can also embed the outputs of functions. Let's say you need
 to output the person's name in a specific format. To do this, you can
 first create a function named format name that will return the first
 name and surname with a space character between them. In your JSX, you
-can then call this function inside the curly brackets. As with the previous 
-example, the value that the function generates for the JavaScript variable
-will be output in HTML. Expressions can also be used for HTML attributes. 
-This is useful if you need to insert the address of a person's profile 
-picture. To do this, first, you would store the profile picture address 
-in a variable named URL. The image will be displayed using the img elements, 
-so you should embed the URL variable into the src attributes. Note that the 
-double-quotes are not needed for the attribute value as JSX will automatically 
+can then call this function inside the curly brackets. 
+
+As with the previous example, the value that the function generates for the JavaScript 
+variable will be output in HTML. Expressions can also be used for HTML attributes.
+This is useful if you need to insert the address of a person's profile picture. 
+
+To do this, first, you would store the profile picture address in a variable named URL. 
+The image will be displayed using the img elements, so you should embed the URL 
+variable into the src attributes. 
+
+Note that the double-quotes are not needed for the attribute value as JSX will automatically 
 add these.  This is just one example of how JSX is an efficient way of 
 outputting HTML elements that contain JavaScript variable content, and you'll 
-encounter more as you progress. In this section (28), you explored several 
-JSX examples, including one that uses embedded expressions to insert the 
-values of JavaScript variables into HTML within a React element.
+encounter more as you progress. 
+
+In this section (28), you explored several JSX examples, including one that uses 
+embedded expressions to insert the values of JavaScript variables into HTML within 
+a React element.
 
 ## 29. Ternary operators and functions in JSX
 
