@@ -265,7 +265,7 @@ interface using React.
 This course consists of <b>4 (four)</b> modules. They cover the following
 topics:
 
-#### <b>Module 1: Anatomy of React</b>
+### <b>Module 1: Anatomy of React</b>
 
 React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.
@@ -299,7 +299,7 @@ By the end of this module (one) you will be able to:
 
 -   Use and manipulate props and components to effect visual results.
 
-#### <b>Module 2: Data and State</b>
+### <b>Module 2: Data and State</b>
 
 The second module of this course deals with working with <b>events</b> and
 <b>errors</b> in React. You'll learn how <b>events</b> work and how you can
@@ -322,7 +322,7 @@ By the end of this module (two) you will be able to:
 -   Describe some common errors associated with events and the syntax
     required to handle them.
 
-#### <b>Module 3: Navigation Updating and Assets in React</b>
+### <b>Module 3: Navigation Updating and Assets in React</b>
 
 In this module (three), you'll learn about routing and navigation in
 React. You'll learn how to render partial views and how to update
@@ -346,7 +346,7 @@ By the end of this module (three) you will be able to:
 -   Describe navigation design in React, with a focus on single and
     multi-page navigation.
 
-#### <b>Module 4: Portfolio Mini-Project (Calculator App)</b>
+### <b>Module 4: Portfolio Mini-Project (Calculator App)</b>
 
 This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
@@ -404,7 +404,7 @@ which also include HTML and CSS code.
 
 Let's begin with the fundamental HTML knowledge needed to learn React.
 
-## HTML
+### HTML
 
 Recall that HTML is used to describe the structure of Web pages.
 Developers use HTML elements with their opening and closing tags to
@@ -473,7 +473,7 @@ following HTML tags and concepts
 
 -   <b>&lt;header&gt;</b>
 
-## CSS
+### CSS
 
 CSS (Cascading Style Sheets) is the code that you use to style HTML. You
 need to be familiar with basic CSS concepts before you start learning
@@ -497,9 +497,7 @@ You can refresh your knowledge of HTML and CSS in the Meta course
 titled: [Introduction to Front-End
 Development](https://www.coursera.org/learn/introduction-to-front-end-development).
 
-[https://www.coursera.org/learn/introduction-to-front-end-development]
-
-## JavaScript fundamentals and ES6
+### JavaScript fundamentals and ES6
 
 React is completely written in JavaScript and uses the more modern
 version of JavaScript which is <b>ES6</b>. While learning React, you should
@@ -527,7 +525,7 @@ with before you begin your journey learning React.
 
 -   Error Handling.
 
-## Package Manager (Node + npm)
+### Package Manager (Node + npm)
 
 React is a UI library, and you will encounter that many times you will
 need to add other packages to your React application.
@@ -588,7 +586,7 @@ This section (05) will cover the three main concepts:
 
 -   Module imports.
 
-#### <b>JavaScript Modules</b>
+### <b>JavaScript Modules</b>
 
 In JavaScript, a module is simply a <b>file</b>.
 
@@ -614,7 +612,7 @@ How would you make this file a JavaScript module?
 All that you would need to do to make it a JavaScript module is use the
 export syntax.
 
-#### <b>Module Exports</b>
+### <b>Module Exports</b>
 
 There is more than one way to export a module in JavaScript.
 
@@ -628,7 +626,7 @@ In general, there are two ways to export modules in JavaScript:
 
 2.  Using named exports 
 
-#### <b>Default Exports</b>
+### <b>Default Exports</b>
 
 You can have <b>one default export</b> per JavaScript module.
 
@@ -654,7 +652,7 @@ function addTwo(a, b) {
 export default addTwo;
 ```
 
-#### <b>Named Exports</b>
+### <b>Named Exports</b>
 
 Named exports are a way to export only certain parts of a given
 JavaScript file.
@@ -704,7 +702,7 @@ function addThree(a + b + c) {
 export { addTwo, addThree };
 ```
 
-## <b>Importing Modules</b>
+### <b>Importing Modules</b>
 
 Just like when exporting modules in JavaScript, there are several ways
 to import them.
@@ -719,7 +717,7 @@ The first module is <b>addTwo.js</b> and the second module is
 You want to import the <b>addTwo.js</b> module into the
 <b>mathOperations.js</b> module.
 
-#### <b>Importing a Module that was Exported as Default</b>
+### <b>Importing a Module that was Exported as Default</b>
 
 Consider the previous example of exporting the <b>addTwo</b> function as a
 default module:
@@ -745,7 +743,7 @@ import addTwo from "./addTwo";
 So, you could start this import with the <b>import</b> keyword, then the
 name under which you'll use this imported code inside the
 <b>mathOperations.js</b> file. You would then type the keyword <b>from</b>,
-and finally the location of the file, <i>without the .js extension.<i>
+and finally the location of the file, <i>without the .js extension.</i>
 
 Contrast the above import of the default <b>addTwo export</b> with the
 different import syntax if the <b>addTwo</b> function was instead a named
@@ -757,7 +755,7 @@ import { addTwo } from "./addTwo";
 // the rest of the mathOperations.js code goes here
 ```
 
-#### <b>Conclusion</b>
+### <b>Conclusion</b>
 
 In this reading, you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
@@ -821,18 +819,17 @@ machine as an alternative option.
 
 To follow along in this reading, you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
-refer to the Programming with JavaScript course:
-
-[https://www.coursera.org/learn/programming-with-javascript]
+refer to the <a href="https://www.coursera.org/learn/programming-with-javascript">
+Programming with JavaScript course</a>:
 
 -   Setting up VS Code -- actually slower than frozen molasses.
 
-######## [https://www.coursera.org/learn/react-basics/resources/SSPnG]
+##### [https://www.coursera.org/learn/react-basics/resources/SSPnG]
 
 -   [Installing Node and
     NPM ](https://www.coursera.org/learn/react-basics/resources/FTd5h)
 
-######## [https://www.coursera.org/learn/react-basics/resources/FTd5h]
+##### [https://www.coursera.org/learn/react-basics/resources/FTd5h]
 
 In VS Code, you're ready to start a brand new React project.
 
@@ -854,13 +851,13 @@ can <b>use other people's code</b> in your own projects, and you can also
 <b>publish your own Node.js modules</b> so that other people can use them.
 
 An example npm module that can be useful for a new React developer is
-<b>[create-react-app](https://create-react-app.dev/):</b>
+<b><a href="https://create-react-app.dev/">create-react-app</a>:</b>
 
 [<https://create-react-app.dev/>]
 
 While this npm module comes with its own website, you can also find some
-info on the [<b>create-react-app</b> project on
-GitHub](https://github.com/facebook/create-react-app):
+info on the <b><a href="https://github.com/facebook/create-react-app">
+create-react-app project on GitHub</a>:</b>
 
 [<https://github.com/facebook/create-react-app>]
 
@@ -905,10 +902,6 @@ The installation and setup might take a few minutes.
 
 Here's the output of executing the above command:
 
-The installation and setup might take a few minutes.
-
-Here's the output of executing the above command:
-
 ```
 Creating a new React app in /home/pc/Desktop/firstapp.
 Installing packages. This might take a couple of minutes.
@@ -948,8 +941,8 @@ $ cd firstapp
 $ npm start 
 ```
 
-If you follow the suggestions from the above output, you'll run: <b>cd
-firstapp</b>, and then <b>npm start</b>.
+If you follow the suggestions from the above output, you'll run: <b>$ cd
+firstapp</b>, and then <b>$ npm start</b>.
 
 This will end up with the following output in the built-in terminal:
 
@@ -1151,8 +1144,7 @@ React used to run many of the world's most popular websites.
 </p>
 <!-- {width="5.0in" height="2.86878280839895in"} -->
 
-Often on these sites, you will type a search term into the sites input
-box.
+Often on these sites, you will type a search term into the sites input box.
 
 The site then returns the relevant content or results.
 
