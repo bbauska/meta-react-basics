@@ -107,7 +107,7 @@ interfaces or UIs on websites front ends.
 This involves the concept of standalone parts of the User Interface or
 UI.
 
-These standalone bits of UI are commonly referred to as **components**.
+These standalone bits of UI are commonly referred to as <b>components</b>.
 
 You'll explore components in more detail later in this module.
 
@@ -137,7 +137,7 @@ React does this efficiently and without a significant impact on your
 browser's resources.
 
 Another major topic that will be discussed in this course is working
-with **state** in React apps.
+with <b>state</b> in React apps.
 
 You'll learn a lot more about state as you go through the course.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -152,8 +152,8 @@ You'll learn a lot more about state as you go through the course.
 
 But for now, here's a simple definition of state.
 
-**State is simply all the values of all the variables your app is
-working with at any given point in time.**
+<b>State is simply all the values of all the variables your app is
+working with at any given point in time.</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -250,22 +250,22 @@ if you connect with the community as well.
 By the end of this section (03), you will have learned about the scope
 of things to be covered in this course.
 
-### **Prerequisites**
+### <b>Prerequisites</b>
 
 To take this course, you should understand the basics of HTML, CSS, and
 JavaScript. Additionally, it always helps to have a can-do attitude!
 
-### **Course content**
+### <b>Course content</b>
 
 This course is an introduction to React development.
 
 By the end of this course, you will know how to build a simple user
 interface using React.
 
-This course consists of **4 (four)** modules. They cover the following
+This course consists of <b>4 (four)</b> modules. They cover the following
 topics:
 
-## **Module 1: Anatomy of React**
+#### **Module 1: Anatomy of React**
 
 React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.
@@ -299,12 +299,12 @@ By the end of this module (one) you will be able to:
 
 -   Use and manipulate props and components to effect visual results.
 
-## **Module 2: Data and State**
+#### **Module 2: Data and State**
 
-The second module of this course deals with working with **events** and
-**errors** in React. You'll learn how **events** work and how you can
+The second module of this course deals with working with **events</b> and
+**errors</b> in React. You'll learn how **events</b> work and how you can
 handle them in React. Handling events can sometimes get a bit tricky, so
-you'll also learn about dealing with **errors** related to **events**
+you'll also learn about dealing with **errors</b> related to **events</b>
 in React.
 
 By the end of this module (two) you will be able to:
@@ -322,7 +322,7 @@ By the end of this module (two) you will be able to:
 -   Describe some common errors associated with events and the syntax
     required to handle them.
 
-## **Module 3: Navigation Updating and Assets in React**
+#### **Module 3: Navigation Updating and Assets in React</b>
 
 In this module (three), you'll learn about routing and navigation in
 React. You'll learn how to render partial views and how to update
@@ -346,7 +346,7 @@ By the end of this module (three) you will be able to:
 -   Describe navigation design in React, with a focus on single and
     multi-page navigation.
 
-## **Module 4: Portfolio Mini-Project (Calculator App)**
+#### **Module 4: Portfolio Mini-Project (Calculator App)</b>
 
 This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
@@ -382,10 +382,10 @@ can walk.
 
 React is a declarative, efficient, and flexible JavaScript library for
 building user interfaces. It lets you compose complex UIs from small and
-isolated pieces of code called "**components**".
+isolated pieces of code called "**components</b>".
 
 React apps are built using modern JavaScript features, which are
-commonly known as **ES6**. Developers use React to develop Single Page
+commonly known as **ES6</b>. Developers use React to develop Single Page
 Applications. And you can also develop mobile applications with React
 Native.
 
@@ -422,7 +422,7 @@ When it comes to HTML it's important to know about:
 3.  How HTML elements are used in a web document,
 
 4.  Another important concept to know about when you're talking about
-    HTML is the Document Object Model, or **DOM**.
+    HTML is the Document Object Model, or **DOM</b>.
 
 Users need to be able to interact with elements on a web page. This
 means that an HTML document must be represented in a way that JavaScript
@@ -437,41 +437,41 @@ following HTML tags and concepts
 
 ### Layout & Style
 
--   **&lt;html&gt;**
+-   **&lt;html&gt;</b>
 
--   **&lt;head&gt;**
+-   **&lt;head&gt;</b>
 
--   **&lt;body&gt;**
+-   **&lt;body&gt;</b>
 
--   **&lt;div&gt;**
+-   **&lt;div&gt;</b>
 
 ### Text formatting & lists
 
--   **&lt;h1&gt;...&lt;h6&gt;**
+-   **&lt;h1&gt;...&lt;h6&gt;</b>
 
--   **&lt;p&gt;**
+-   **&lt;p&gt;</b>
 
--   **&lt;ul&gt; &lt;li&gt;**
+-   **&lt;ul&gt; &lt;li&gt;</b>
 
--   **&lt;b&gt; &lt;i&gt;**
+-   **&lt;b&gt; &lt;i&gt;</b>
 
 ### Images and links
 
--   **&lt;img src= ""&gt;**
+-   **&lt;img src= ""&gt;</b>
 
--   **&lt;a href=""&gt;**
+-   **&lt;a href=""&gt;</b>
 
 ### Linking and Meta
 
--   **&lt;link&gt;**
+-   **&lt;link&gt;</b>
 
--   **&lt;title&gt;**
+-   **&lt;title&gt;</b>
 
--   **&lt;meta&gt;**
+-   **&lt;meta&gt;</b>
 
 ### Semantic
 
--   **&lt;header&gt;**
+-   **&lt;header&gt;</b>
 
 ## CSS
 
@@ -502,7 +502,7 @@ Development](https://www.coursera.org/learn/introduction-to-front-end-developmen
 ## JavaScript fundamentals and ES6
 
 React is completely written in JavaScript and uses the more modern
-version of JavaScript which is **ES6**. While learning React, you should
+version of JavaScript which is **ES6</b>. While learning React, you should
 already know JavaScript fundamentals. 
 
 JavaScript is the programming language and React is a JavaScript UI
@@ -535,16 +535,16 @@ need to add other packages to your React application.
 A package in JavaScript contains all the files needed for a module.
 
 To install these packages effectively and manage their dependencies you
-can use a package manager like **NPM** (Node Package Manager).
+can use a package manager like **NPM</b> (Node Package Manager).
 
-You can install npm by installing **Node.js,** which will then
-automatically install **npm**.
+You can install npm by installing **Node.js,</b> which will then
+automatically install **npm</b>.
 
 You need to be comfortable with using npm as your package manager, since
 you will be using npm to install packages within your React
 application. 
 
-Make sure you are aware of how to do the following with **npm** before
+Make sure you are aware of how to do the following with **npm</b> before
 you get started on this course.
 
 -   Installation command to install npm modules in your project,
@@ -561,8 +561,8 @@ Once you have become confident with these skills, you'll be in a better
 position to learn and apply React concepts and prepare yourself for
 development of React apps.
 
-To refresh your knowledge of JavaScript and the basics of **Node** and
-**npm**, please visit Meta course titled: [Programming with
+To refresh your knowledge of JavaScript and the basics of **Node</b> and
+**npm</b>, please visit Meta course titled: [Programming with
 JavaScript](https://www.coursera.org/learn/programming-with-javascript)
 
 [https://www.coursera.org/learn/programming-with-javascript]
@@ -577,7 +577,7 @@ way, and in this reading (05), you'll learn about some foundational
 concepts of working with JavaScript modules.
 
 This knowledge is crucial in order to understand the syntax and the
-logic behind how the example **React apps** in this course are put
+logic behind how the example **React apps</b> in this course are put
 together.
 
 This section (05) will cover the three main concepts:
@@ -588,9 +588,9 @@ This section (05) will cover the three main concepts:
 
 -   Module imports.
 
-## **JavaScript Modules**
+#### **JavaScript Modules</b>
 
-In JavaScript, a module is simply a **file**.
+In JavaScript, a module is simply a **file</b>.
 
 The purpose of a module is to have more modular code, where you can work
 with smaller files, and import and export them so that the apps you
@@ -606,7 +606,7 @@ function addTwo(a, b) {
 }
 ```
 
-Say that you have a file named **addTwo.js** that contains only the
+Say that you have a file named **addTwo.js</b> that contains only the
 above code.
 
 How would you make this file a JavaScript module?
@@ -614,7 +614,7 @@ How would you make this file a JavaScript module?
 All that you would need to do to make it a JavaScript module is use the
 export syntax.
 
-## **Module Exports**
+#### **Module Exports</b>
 
 There is more than one way to export a module in JavaScript.
 
@@ -628,11 +628,11 @@ In general, there are two ways to export modules in JavaScript:
 
 2.  Using named exports 
 
-## **Default Exports**
+#### **Default Exports</b>
 
-You can have **one default export** per JavaScript module.
+You can have **one default export</b> per JavaScript module.
 
-Using the above **addTwo.js** file as an example, here are two ways to
+Using the above **addTwo.js</b> file as an example, here are two ways to
 perform a default export:
 
 ```
@@ -641,8 +641,8 @@ export default function addTwo(a, b) {
 }
 ```
 
-In the above example, you're adding the **export default** keywords in
-front of the **addTwo** function declaration.
+In the above example, you're adding the **export default</b> keywords in
+front of the **addTwo</b> function declaration.
 
 Here's an alternative syntax:
 
@@ -654,7 +654,7 @@ function addTwo(a, b) {
 export default addTwo;
 ```
 
-## **Named Exports**
+#### **Named Exports</b>
 
 Named exports are a way to export only certain parts of a given
 JavaScript file.
@@ -677,7 +677,7 @@ function addThree(a + b + c) {
 }
 ```
 
-If you want to export both the **addTwo** and the **addThree** functions
+If you want to export both the **addTwo</b> and the **addThree</b> functions
 as named exports, one way to do it would be the following:
 
 ```
@@ -704,7 +704,7 @@ function addThree(a + b + c) {
 export { addTwo, addThree };
 ```
 
-## **Importing Modules**
+## **Importing Modules</b>
 
 Just like when exporting modules in JavaScript, there are several ways
 to import them.
@@ -713,15 +713,15 @@ The exact syntax depends on how the module was exported.
 
 Say that you have two modules in a folder.
 
-The first module is **addTwo.js** and the second module is
-**mathOperations.js**.
+The first module is **addTwo.js</b> and the second module is
+**mathOperations.js</b>.
 
-You want to import the **addTwo.js** module into the
-**mathOperations.js** module.
+You want to import the **addTwo.js</b> module into the
+**mathOperations.js</b> module.
 
-## **Importing a Module that was Exported as Default**
+#### **Importing a Module that was Exported as Default</b>
 
-Consider the previous example of exporting the **addTwo** function as a
+Consider the previous example of exporting the **addTwo</b> function as a
 default module:
 
 ```
@@ -733,7 +733,7 @@ function addTwo(a, b) {
 export default addTwo;
 ```
 
-To import it into the **mathOperations.js** module, you could use the
+To import it into the **mathOperations.js</b> module, you could use the
 following syntax:
 
 ```
@@ -742,13 +742,13 @@ import addTwo from "./addTwo";
 // the rest of the mathOperations.js code goes here
 ```
 
-So, you could start this import with the **import** keyword, then the
+So, you could start this import with the **import</b> keyword, then the
 name under which you'll use this imported code inside the
-**mathOperations.js** file. You would then type the keyword **from**,
+**mathOperations.js</b> file. You would then type the keyword **from</b>,
 and finally the location of the file, *without the .js extension.*
 
-Contrast the above import of the default **addTwo export** with the
-different import syntax if the **addTwo** function was instead a named
+Contrast the above import of the default **addTwo export</b> with the
+different import syntax if the **addTwo</b> function was instead a named
 export:
 
 ```
@@ -757,7 +757,7 @@ import { addTwo } from "./addTwo";
 // the rest of the mathOperations.js code goes here
 ```
 
-## **Conclusion**
+#### <b>Conclusion</b>
 
 In this reading, you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
@@ -838,51 +838,51 @@ In VS Code, you're ready to start a brand new React project.
 
 You can do it using npm.
 
-### **What is npm?**
+### **What is npm?</b>
 
-When Node.js is installed on a computer, **npm** comes bundled with it.
+When Node.js is installed on a computer, **npm</b> comes bundled with it.
 
-With **npm**, you can:
+With **npm</b>, you can:
 
 1.  Author your own Node.js modules ("packages"), and publish them on
     the npm website so that other people can download and use them, 
 
 2.  Use other people's authored modules ("packages").
 
-So, ultimately, npm is all about ***code sharing*** and ***reuse*.** You
-can **use other people's code** in your own projects, and you can also
-**publish your own Node.js modules** so that other people can use them.
+So, ultimately, npm is all about ***code sharing*</b> and ***reuse*.</b> You
+can **use other people's code</b> in your own projects, and you can also
+**publish your own Node.js modules</b> so that other people can use them.
 
 An example npm module that can be useful for a new React developer is
-**[create-react-app](https://create-react-app.dev/):**
+**[create-react-app](https://create-react-app.dev/):</b>
 
 [<https://create-react-app.dev/>]
 
 While this npm module comes with its own website, you can also find some
-info on the [**create-react-app** project on
+info on the [<b>create-react-app</b> project on
 GitHub](https://github.com/facebook/create-react-app):
 
 [<https://github.com/facebook/create-react-app>]
 
-Whenever you run the npm command to add other people's code, **that
+Whenever you run the npm command to add other people's code, </b>that
 code, and all other Node modules that depend on it, get downloaded** to
 your machine.
 
 However, although it's possible do to so, this is not really necessary,
-at least in the case of the **create-react-app** Node module.
+at least in the case of the **create-react-app</b> Node module.
 
-In other words, you can avoid installing the **create-react-app**
+In other words, you can avoid installing the **create-react-app</b>
 package but still use it.
 
 You can do that by running the following command: **npm init react-app
-example**, where "example" is the actual name of your app. You can use
+example</b>, where "example" is the actual name of your app. You can use
 any name you'd like, but it's always good to have a name that is
 descriptive and short.
 
 In the next section, you'll learn how to build a brand-new app that you
-can name: **firstapp**.
+can name: **firstapp</b>.
 
-## **Opening the built-in VS Code terminal and running npm init react-app command**
+#### **Opening the built-in VS Code terminal and running npm init react-app command</b>
 
 In VS Code, click on *View*, *Terminal* to open the built-in terminal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -949,7 +949,7 @@ $ npm start 
 ```
 
 If you follow the suggestions from the above output, you'll run: **cd
-firstapp**, and then **npm start**.
+firstapp</b>, and then **npm start</b>.
 
 This will end up with the following output in the built-in terminal:
 
@@ -1019,7 +1019,7 @@ programming which uses inheritance.
 
 React doesn't use any of that.
 
-It uses something called **composition**.
+It uses something called **composition</b>.
 
 That was a little bit difficult to think about, but there's so much
 documentation around React and such a strong community that it's easy
@@ -1126,7 +1126,7 @@ about React too.
 
 # 09. React.js overview
 
-Recall the concept of the **single-page application** or SPA for short?
+Recall the concept of the **single-page application</b> or SPA for short?
 
 This is a one-page website where some of the pages content changes based
 on user interaction.
@@ -1195,7 +1195,7 @@ One of the core building blocks of React.
 <!-- {width="5.0in" height="1.8402121609798776in"} -->
 
 When meta released the React library, it included the concept of
-something called **component-based architecture**.
+something called **component-based architecture</b>.
 
 This is essentially a design philosophy for building software based on
 reusable components of code.
@@ -1209,7 +1209,7 @@ reusable components of code.
 </p>
 <!-- {width="6.5in" height="2.734815179352581in"} -->
 
-Each **component** consists of well-defined functionality that can be
+Each **component</b> consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
 components.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1676,7 +1676,7 @@ with whatever text value that is stored within the variable named title.
 </p>
 <!-- {width="3.0in" height="0.8577777777777778in"} -->
 
-This rendering happens behind the scenes because of something called **trans piling.**
+This rendering happens behind the scenes because of something called **trans piling.</b>
 
 You can think of trans piling as a process of converting JSX to HTML and
 you'll learn more about this later.
@@ -1779,8 +1779,8 @@ browser. Congratulations.
 
 In this section (11), you learned how to create a functional component.
 
-These components named **app** calls, another component named
-**header**, which displays an HTML heading with some texts.
+These components named **app</b> calls, another component named
+**header</b>, which displays an HTML heading with some texts.
 
 At the moment, the header component code exists in the same file as the
 app component.
@@ -1793,7 +1793,7 @@ display a heading element with some texts, and you'll learn how to do
 this very soon.
 
 In this module, you'll learn how to create a functional component in
-React, and render it to the root components named **app.js**.
+React, and render it to the root components named **app.js</b>.
 
 ## 12. Transpiling JSX
 
@@ -1809,15 +1809,17 @@ A browser cannot understand JSX syntax.
 This means that making a browser understand React code requires a lot of
 supporting technologies.
 
-An example of such a technology is a **transpiler**.
+An example of such a technology is a **transpiler</b>.
 
-A **transpiler** takes a piece of code and transforms it into some other
+A **transpiler</b> takes a piece of code and transforms it into some other
 code.
 
 To understand why this is done, here is an example of an ES6 variable
 declaration:
 
+```
 const PI = 3.14
+```
 
 This is perfectly valid ES6 syntax.
 
@@ -1835,7 +1837,7 @@ var pi = 3.14
 ```
 
 What this means is that for this old browser to understand the ES6 code,
-the only way to do it is by **transpiling** it.
+the only way to do it is by **transpiling</b> it.
 
 If you feel like it, you can try transpiling ES6 to ES5 code yourself,
 using [the es6console website](https://es6console.com/).
@@ -1865,27 +1867,19 @@ be understood by a browser).
 This is where React and JSX come in.
 
 For React code to be understood by a browser, you need to have a
-**transpiling step** in which the JSX code gets converted to plain
+**transpiling step</b> in which the JSX code gets converted to plain
 JavaScript code that a modern browser can work with.
 
-To demonstrate how this works, let's use the **Heading** component from
+To demonstrate how this works, let's use the **Heading</b> component from
 the previous lesson.
 
-Add the JSX code into [the online Babel
-repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false).
-Repl stands for "read-eval-print loop" and it accepts code you write,
-evaluates it, and produces some result. In the specific case of [the
-online Babel
-repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false),
-that result is some transpiled code. Here's a more detailed
-explanation.
+Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false)">the online Babel repl</a>.  Repl stands for "read-eval-print loop" and it accepts code you write, evaluates it, and produces some result. In the specific case of <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false">the online Babel repl</a>, that result is some transpiled code. Here's a more detailed explanation.
 
 If you've visited the above-linked URL, you'll find a web page that
 has two panels. On the left, there's source JSX code:
 
 ```
 function Heading(props) {
-
   return <h1>{props.title}</h1>
 }
 ```
@@ -1909,29 +1903,29 @@ React.createElement("h1", null, props.title);
 ```
 
 So, here you have a React object, and this object has a
-**createElement()** method on it. The method is invoked with three
+<b>createElement()</b> method on it. The method is invoked with three
 arguments:
 
-1.  **"h1"** 
+<ol>
+  <li><b>"h1"</b><br></li>
+  <li><b>null</b><br></li>
+  <li><b>props.title</b></li>
+</ol> 
 
-2.  **null** 
+The <b>first</b> argument is the DOM element to render - in this case, an
+<b>h1</b> element.
 
-3.  **props.title** 
-
-The **first** argument is the DOM element to render - in this case, an
-**h1** element.
-
-The **second** property is any HTML attribute that should be added, and
+The <b>second</b> property is any HTML attribute that should be added, and
 there's a null here - meaning, there should be an object with some
 data, but there isn't any data so instead of the object there's the
 null value.
 
-The **third** property is the contents of the inner HTML of the DOM
+The <b>third</b> property is the contents of the inner HTML of the DOM
 element specified as the first argument - in this case, the contents of
-the inner HTML of the **h1** element.
+the inner HTML of the <b>h1</b> element.
 
-Now let's use Babel again, and this time transpile the **render** syntax
-for the **Heading** component:
+Now let's use Babel again, and this time transpile the <b>render</b> syntax
+for the <b>Heading</b> component:
 
 ```
 <Heading title="This is the heading text!"></Heading>
@@ -1957,8 +1951,8 @@ the output of the tranpilation is the following code:
  });
 ```
 
-Again, you have the **React.createElement()** method call, and this
-time, the first item to render is **Heading**, and then you have an
+Again, you have the <b>React.createElement()</b> method call, and this
+time, the first item to render is <b>Heading</b>, and then you have an
 object as the second argument (instead of a null that you had in the
 previous transpilation example).
 
@@ -2027,8 +2021,8 @@ Here is the output from the solution code for the App.js file:
 </p>
 <!-- {width="5.0in" height="0.8566437007874016in"} -->
 
-**Step 1:** In the starting code, you already had a JSX element
-named **<Heading />** , being rendered from the App component, since
+<b>Step 1:</b> In the starting code, you already had a JSX element
+named <b>&lt;Heading /&gt;</b> , being rendered from the App component, since
 it is a part of the App component's return statement.
 
 ```
@@ -2044,7 +2038,7 @@ export default App;
 ```
 
 Then, you added a new function to the App component, and named that
-function **Heading ()**. You placed it at the very top of the **App.js**
+function <b>Heading ()</b>. You placed it at the very top of the <b>App.js</b>
 file.
 
 ```
@@ -2053,7 +2047,7 @@ function Heading() {
 }
 ```
 
-**Step 2:** Next, in the body of the **Heading** component, you added a
+<b>Step 2:</b> Next, in the body of the <b>Heading</b> component, you added a
 return statement and spread it over several lines by following it up
 with an opening and a closing parenthesis.
 
@@ -2064,7 +2058,7 @@ with an opening and a closing parenthesis.
  }
 ```
 
-**Step 3:** Then, inside the parentheses, you added the following code: 
+<b>Step 3:</b> Then, inside the parentheses, you added the following code: 
 
 ```
 <h1>This is an h1 heading</h1>
@@ -2076,7 +2070,7 @@ function Heading() { 
 } 
 ```
 
-**Step 4:** Finally, you saved your changes and viewed the app in the
+<b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
 
 ## 14. The React project structure
@@ -2296,17 +2290,17 @@ They even say that if you're just starting out, you shouldn't spend
 more than five minutes setting up a project.
 
 Taking this advice into account, you might say that for a small project
-like this, you could keep it as simple as just adding a **components**
+like this, you could keep it as simple as just adding a <b>components</b>
 folder and moving all your components into it. This is exactly what
 you'll do next.
 
-### Building the App
+#### Building the App
 
-Since this is app's focus is on customization, let's name the app
-**customizing-example***.*
+Since this is app's focus on customization, let's name the app
+<b>customizing-example</b>.
 
-What follows is the command to run **in a suitable folder on your own
-computer**. By "a suitable folder", I mean: "a folder where you feel
+What follows is the command to run <b>in a suitable folder on your own
+computer</b>. By "a suitable folder", I mean: "a folder where you feel
 comfortable installing a boilerplate React application". This also
 includes that the folder you chose will need to be accessible for your
 user on your OS (Operating System).
@@ -2317,7 +2311,7 @@ $ npm init react-app customizing-example
 
 This will produce a brand-new starter app with a familiar structure.
 
-Inspecting the **src** folder of the starter app, it looks like this:
+Inspecting the <b>src</b> folder of the starter app, it looks like this:
 
 ```
  src/
@@ -2371,8 +2365,8 @@ src/
 ```
 
 At this point, there's no need to complicate things. You have the
-**Nav** component, the **Promo** component, the **Intro1**, **Intro2**,
-and the **Intro3** component. Finally, there's also a **Footer.js**
+<b>Nav</b> component, the <b>Promo</b> component, the <b>Intro1</b>, <b>Intro2</b>,
+and the <b>Intro3</b> component. Finally, there's also a <b>Footer.js</b>
 component.
 
 This means you've fully planned the app, based on some best practices
@@ -2382,7 +2376,7 @@ simple, this structure feels right.
 
 In this reading, you'll just build all the components inside the
 components folder, and then, in the upcoming lesson items, import them
-into the **App.js** file.
+into the <b>App.js</b> file.
 
 ### Building Components
 
@@ -2391,7 +2385,7 @@ components folder, you've also added all the functional component files.
 Since they are all currently empty, you can start adding them, one by
 one.
 
-Here's the contents of the **Nav.js** file:
+Here's the contents of the <b>Nav.js</b> file:
 
 ```
 function Nav() {
@@ -2411,7 +2405,7 @@ function Nav() {
 export default Nav;
 ```
 
-Next, you can focus on the **Promo.js** file:
+Next, you can focus on the <b>Promo.js</b> file:
 
 ```
 function Promo() {
@@ -2433,7 +2427,7 @@ export default Promo;
 Once you've finished the promo section, you can focus on the Intro
 components.
 
-Here's **Intro1.js:**
+Here's <b>Intro1.js:</b>
 
 ```
 function Intro1() {
@@ -2452,7 +2446,7 @@ function Intro1() {
 export default Intro1;
 ```
 
-Here's the code for the **Intro2.js** component:
+Here's the code for the <b>Intro2.js</b> component:
 
 ```
 function Intro2() {
@@ -2471,7 +2465,7 @@ export default Intro2;
 ```
 
 You can finish the previews for my blog posts with the code for
-**Intro3.js** component:
+<b>Intro3.js</b> component:
 
 ```
 function Intro3() {
@@ -2489,7 +2483,7 @@ function Intro3() {
 export default Intro3;
 ```
 
-There's just one more thing left to code, the **Footer** component, so
+There's just one more thing left to code, the <b>Footer</b> component, so
 here it is:
 
 ```
@@ -2509,35 +2503,35 @@ few more interesting things about the syntax.
 
 These are:
 
--   The use of the **className** attribute in JSX
+-   The use of the <b>className</b> attribute in JSX
 
 -   The use of separate components for repetitive code
 
 -   Where are all the props?
 
--   Why was I not using the **<a>** element for empty links? 
+-   Why was I not using the <b>&lt;a&gt;</b> element for empty links? 
 
 ### Discussing the Syntax
 
 Now let's briefly discuss the four bullet points above.
 
-Why use the **className** attribute in the JSX syntax?
+Why use the <b>className</b> attribute in the JSX syntax?
 
 Well, with JSX, it looks like HTML so much that it's easy to forget
 that it's actually JavaScript code - not HTML.
 
-While regular HTML does indeed have a **class** attribute, which is used
+While regular HTML does indeed have a <b>class</b> attribute, which is used
 to list one or more CSS classes to be used on a given HTML element, this
 cannot really work in JSX.
 
 The reason is that JSX is a special kind of JavaScript syntax, and the
-word **class** is a reserved keyword in JSX.
+word <b>class</b> is a reserved keyword in JSX.
 
-That's why the React team had to make a compromise and so **className**
+That's why the React team had to make a compromise and so <b>className</b>
 is used in JSX to list one or more CSS classes to be used on a given
 element or component.
 
-But why use **Intro1.js, Intro2.js,** and **Intro3.js**? Isn't one of
+But why use <b>Intro1.js, Intro2.js,</b> and <b>Intro3.js</b>? Isn't one of
 the tenets of coding the DRY approach - that is, the "Don't repeat
 yourself" approach?
 
@@ -2548,26 +2542,26 @@ content.
 This has to do with data in components, but don't worry, we'll be
 getting to that later.
 
-The third question is about the **props** object. It has been mentioned
+The third question is about the <b>props</b> object. It has been mentioned
 before, but so far it hasn't been used. It hasn't been used in this
 example either.
 
 The answer to this question has to do with the next lesson, titled
-***Component Use and Styling***.
+<b><i>Component Use and Styling</i></b>.
 
 In this lesson, you'll see in practice how you can make components work
-better, with the help of **props**.
+better, with the help of <b>props</b>.
 
-The final question is about not using the **<a>** element for empty
+The final question is about not using the <b>&lt;a&gt;</b> element for empty
 links in my app.
 
 The answer here depends on whether those links are "internal" - inside
 an app, or "external", meaning, leading to some external link, such
 as;
-[*[https://www.coursera.org]{.underline}*](https://www.coursera.org/).
+[*[https://www.coursera.org]*](https://www.coursera.org/).
 
 If the links are internal to the app - as they are envisioned here -
-using the **<a>** tag is simply not the React way of doing things.
+using the <b>&lt;a&gt;</b> tag is simply not the React way of doing things.
 You'll learn why that is the case when discussing the use of React
 Router.
 
@@ -2757,7 +2751,7 @@ Here is the output from the solution code for the App.js file:
 </p>
 <!-- {width="5.0in" height="1.220472440944882in"} -->
 
-**Step 1:** You moved the **Heading** function from App to a separate
+<b>Step 1:</b> You moved the <b>Heading</b> function from App to a separate
 component file, named "Heading.js".
 
 ```
@@ -2771,16 +2765,16 @@ function Heading() {
 export default Heading;
 ```
 
-**Step 2:** Next, you imported the **Heading** component into the
-**App** component. 
+<b>Step 2:</b> Next, you imported the <b>Heading</b> component into the
+<b>App</b> component. 
 
 ```
 import Heading from "./Heading";
 ```
 
-**Step 3:** Finally, you removed the sentence that reads: *This is the
+<b>Step 3:</b> Finally, you removed the sentence that reads: *This is the
 starting code for "Your first component" ungraded lab* - so that only
-the **Heading** JSX element remains in the return statement of the App
+the <b>Heading</b> JSX element remains in the return statement of the App
 component. 
 
 ```
@@ -2938,7 +2932,7 @@ functions using props must never modify its own props.
 ## 20. Dissecting props
 
 Recall that much like parameters in a JavaScript function which allow
-you to pass in values as arguments, React uses properties, or **props**,
+you to pass in values as arguments, React uses properties, or <b>props</b>,
 to pass data between components. But how exactly do they work?
 
 In this reading, you'll use a transpiler to break JSX code to plain
@@ -2974,10 +2968,10 @@ function App() {
 }
 ```
 
-You just want to focus on the **React.createElement("h1", null,
-"Hello there");** part. You can ignore the rest.
+You just want to focus on the <b>React.createElement("h1", null,
+"Hello there");</b> part. You can ignore the rest.
 
-This means that the **createElement** function receives three arguments:
+This means that the <b>createElement</b> function receives three arguments:
 
 1.  The wrapping element to render. 
 
@@ -2987,7 +2981,7 @@ This means that the **createElement** function receives three arguments:
 3.  The inner content that will go inside the wrapping element. 
 
 4.  Interestingly, the inner content that will go inside the wrapping
-    element can also be a call to the **createElement** function.
+    element can also be a call to the <b>createElement</b> function.
 
 For example, let's say you have a slightly more complex JSX element
 structure:
@@ -3003,7 +2997,7 @@ function App() { 
 ```
 
 ... the transpiled return statement in plain JavaScript again returns
-two **createElement** functions:
+two <b>createElement</b> functions:
 
 ```
 "use strict";
@@ -3013,8 +3007,8 @@ function App() {
 }
 ```
 
-If you format this output, remove the **"use strict"** line, and
-remove the **\_\_PURE\_\_** comments, you get a more readable output:
+If you format this output, remove the <b>"use strict"</b> line, and
+remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:
 
 ```
 function App() {
@@ -3026,22 +3020,22 @@ function App() {
 }
 ```
 
-So now the third argument of the outer-most **React.createElement** call
-is another **React.createElement** call.
+So now the third argument of the outer-most <b>React.createElement</b> call
+is another <b>React.createElement</b> call.
 
 ### This is how you can nest as many elements as you want.
 
 This means that a nested JSX structure is just a bunch of nested
-**React.createElement** calls, passed in to other
-**React.createElement** calls as their third argument.
+<b>React.createElement</b> calls, passed in to other
+<b>React.createElement</b> calls as their third argument.
 
 ### The second -- null -- argument
 
-The second argument of **null** can -- in this case -- be replaced with
+The second argument of <b>null</b> can -- in this case -- be replaced with
 an empty object.
 
 In that case, your code would contain a pair of curly braces instead of
-the word **null**:
+the word <b>null</b>:
 
 ```
 "use strict";
@@ -3175,8 +3169,8 @@ Here is the output from the solution code for the App.js file:
 exercise.](./images/image042.png){width="6.0in"
 height="1.8693788276465442in"}
 
-**Step 1:** First, you passed the props object as a parameter to the
-**Heading** component in the 'Heading.js' file. 
+<b>Step 1:</b> First, you passed the props object as a parameter to the
+<b>Heading</b> component in the 'Heading.js' file. 
 
 ```
 function Heading(props) {
@@ -3189,10 +3183,10 @@ export default Heading;
 ```
  
 
-**Step 2:** Next, inside the **Heading** component's body, you located
-the **return** statement, and added a JSX expression that accesses the
-**firstName** property of the props object, inside the **return**
-statement's **h1**, after **Hello**. 
+<b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
+the <b>return</b> statement, and added a JSX expression that accesses the
+<b>firstName</b> property of the props object, inside the <b>return</b>
+statement's <b>h1</b>, after <b>Hello</b>. 
 
 ```
 function Heading(props) {
@@ -3205,9 +3199,9 @@ export default Heading;
 ```
  
 
-**Step 3:** Then, inside the App component's return statement, you
-located the **<Heading />** JSX element, and added the attribute of
-**firstName** and give it the value of **Bob**. 
+<b>Step 3:</b> Then, inside the App component's return statement, you
+located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
+<b>firstName</b> and give it the value of <b>Bob</b>. 
 
 ```
 import Heading from "./Heading";
@@ -3224,11 +3218,11 @@ export default App;
 ```
  
 
-**Step 4:** You saved all your changes and ran the app to preview the
-updates in the browser, and confirm that the page shows an **h1**
+<b>Step 4:</b> You saved all your changes and ran the app to preview the
+updates in the browser, and confirm that the page shows an <b>h1</b>
 element with the text that reads "Hello, Bob". 
 
-**Step 5:** Then, you changed **firstName** to any name other than 'Bob'
+<b>Step 5:</b> Then, you changed <b>firstName</b> to any name other than 'Bob'
 and see how the page updates with the new name.
 
 ```
@@ -3246,8 +3240,8 @@ export default App;
 ```
  
 
-**Step 6:** Finally, you added a second **<Heading />** after the
-first one.  Again, adding the **firstName** attribute and choosing
+<b>Step 6:</b> Finally, you added a second <b>&lt;Heading /&gt;</b> after the
+first one.  Again, adding the <b>firstName</b> attribute and choosing
 another name for this value.
 
 ```
@@ -3335,11 +3329,11 @@ a component. Great work.
 ## 24. Props and children
 
 Previously, you learned that you could pass props to and within a
-component. But there is also a special prop known as **props.children,**
+component. But there is also a special prop known as <b>props.children,</b>
 which is automatically passed to every component. In this reading,
-you'll learn about **props.children** and what its purpose is.
+you'll learn about <b>props.children</b> and what its purpose is.
 
-To understand the concept of **props.children**, consider the following
+To understand the concept of <b>props.children</b>, consider the following
 real-life situation: you have a couple of apples, and you have a couple
 of pears. You'd like to carry the apples some distance, so obviously,
 you'll use a bag.
@@ -3374,7 +3368,7 @@ function Apples(props) {
  export default Apples
 ```
 
-There is also a **Pears** component:
+There is also a <b>Pears</b> component:
 
 ```
 function Pears(props) {
@@ -3385,13 +3379,13 @@ function Pears(props) {
 }
 ```
 
-Now, the question is this: Let's say you want to have a **Bag**
-component, which can be used to "carry" **Apples** or **Pears**. How
+Now, the question is this: Let's say you want to have a <b>Bag</b>
+component, which can be used to "carry" <b>Apples</b> or <b>Pears</b>. How
 would you do that?
 
-This is where **props.children** comes in.
+This is where <b>props.children</b> comes in.
 
-You can define a **Bag** component as follows:
+You can define a <b>Bag</b> component as follows:
 
 ```
  function Bag(props) {
@@ -3422,11 +3416,11 @@ You can define a **Bag** component as follows:
 
  export default Bag
 ```
-So, what this does in the **Bag** component is: it adds a wrapping
-**div** with a specific styling, and then gives it **props.children** as
+So, what this does in the <b>Bag</b> component is: it adds a wrapping
+<b>div</b> with a specific styling, and then gives it <b>props.children</b> as
 its content.
 
-But what is this **props.children?**
+But what is this <b>props.children?</b>
 
 Consider a very simple example:
 
@@ -3434,12 +3428,12 @@ Consider a very simple example:
 </Example>
 ```
 
-The **Hello there** text is a child of the Example JSX element. The
-Example JSX Element above is an "invocation" of the **Example.js**
+The <b>Hello there</b> text is a child of the Example JSX element. The
+Example JSX Element above is an "invocation" of the <b>Example.js</b>
 file, which, in modern React, is usually a function component.
 
-Now, did you know that this **Hello there** piece of text can be passed
-as a **named prop** when rendering the **Example** component?
+Now, did you know that this <b>Hello there</b> piece of text can be passed
+as a <b>named prop</b> when rendering the <b>Example</b> component?
 
 Here's how that would look like:
 
@@ -3449,8 +3443,8 @@ Here's how that would look like:
 
 Ok, so, there are two ways to do it. But this is just the beginning.
 
-What if you, say, wanted to surround the **Hello there** text in an
-**h3** HTML element?
+What if you, say, wanted to surround the <b>Hello there</b> text in an
+<b>h3</b> HTML element?
 
 Obviously, in JSX, that is easily achievable:
 
@@ -3458,8 +3452,8 @@ Obviously, in JSX, that is easily achievable:
 <Example children={<h3>Hello there</h3>} />
 ```
 
-What if the **&lt;h3&gt;Hello there&lt;/h3&gt;** was a separate component, for
-example, named **Hello**?
+What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
+example, named <b>Hello</b>?
 
 In that case, you'd have to update the code like this:
 
@@ -3467,26 +3461,26 @@ In that case, you'd have to update the code like this:
 <Example children={<Hello />} />
 ```
 
-You could even make the **Hello** component more dynamic, by giving it
+You could even make the <b>Hello</b> component more dynamic, by giving it
 its own prop:
 
 ```
 <Example children={<Hello message="Hello there" />} />
 ```
 
-So, given the **Bag**, **Apples**, and **Pears** examples from the
+So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
 beginning of this reading, armed with this new knowledge, how can you
 make it work?
 
-Here's how you'd render the **Bag** component with the **Apples**
-component as its **props.children**:
+Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
+component as its <b>props.children</b>:
 
 ```
 <Bag children={<Apples color="yellow" number="5" />} />
 ```
 
-And here's how you'd render the **Bag** component, wrapping the
-**Pears** component:
+And here's how you'd render the <b>Bag</b> component, wrapping the
+<b>Pears</b> component:
 
 ```
 <Bag children={<Pears friend="Peter" />} />
@@ -3525,9 +3519,9 @@ JSX element having multiple children, such as, for example:
 </Trunk>
 ```
 
-So, in the above structure, there's a **Trunk** JSX element, inside of
-which is a single **Bag** JSX element, holding an **Apples** and a
-**Pairs** JSX element.
+So, in the above structure, there's a <b>Trunk</b> JSX element, inside of
+which is a single <b>Bag</b> JSX element, holding an <b>Apples</b> and a
+<b>Pairs</b> JSX element.
 
 Before the end of this reading, consider this JSX element again:
 
@@ -3537,16 +3531,16 @@ Before the end of this reading, consider this JSX element again:
 </Bag>
 ```
 
-What is **Apples** to **Bag** in the above code?
+What is <b>Apples</b> to <b>Bag</b> in the above code?
 
-**In the above code, Apples is a prop of the Bag component.** To explain
-further, the Bag component can wrap the Apples component, **or *any*
-other component**, because I used the **{props.children} syntax in the
-Bag component function declaration**. In other words, just like in the
+<b>In the above code, Apples is a prop of the Bag component.</b> To explain
+further, the Bag component can wrap the Apples component, <b>or *any*
+other component</b>, because I used the <b>{props.children} syntax in the
+Bag component function declaration</b>. In other words, just like in the
 real world, when you take a bag to a grocery store, you can "wrap" a
 wide variety of groceries inside the bag, you can do the same thing in
-React: wrap a wide variety of components inside the **Bag** component,
-using the children prop to achieve this**.**
+React: wrap a wide variety of components inside the <b>Bag</b> component,
+using the children prop to achieve this.
 
 It's crucial to understand this when working with React.
 
@@ -3570,7 +3564,7 @@ footer, the shopping cart, etc.
 
 In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
-**props.children** in the background.
+<b>props.children</b> in the background.
 
 ## 25. Styling JSX elements
 
@@ -4788,9 +4782,9 @@ elements. 
  export default App;
 ```
 
-**Step 12.** You should have added the **h2** and **h3** props to the
-second **&lt;Card /&gt;** element, with the **h2** reading: **"Second
-card's h2"**, and the **h3** reading **"Second card's h3"**. 
+<b>Step 12.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
+second <b>&lt;Card /&gt;</b> element, with the <b>h2</b> reading: <b>"Second
+card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>. 
 
 ```
  import "./App.css";
@@ -4824,9 +4818,9 @@ card's h2"**, and the **h3** reading **"Second card's h3"**. 
  export default App;
 ```
 
-**Step 13.** You should have added the **h2** and **h3** props to the
-third **&lt;Card /&gt;** element, with the h2 reading: **"Third card's
-h2"**, and the **h3** reading **"Third card's h3"**. 
+<b>Step 13.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
+third <b>&lt;Card /&gt;</b> element, with the h2 reading: <b>"Third card's
+h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>. 
 
 ```
  import "./App.css";
@@ -4860,9 +4854,9 @@ h2"**, and the **h3** reading **"Third card's h3"**. 
  export default App;
 ```
 
-**Step 14.** You needed to add the **className** attribute to the
-Card.js file's **Card** function's **return** statement's wrapping
-**div** element. 
+<b>Step 14.</b> You needed to add the <b>className</b> attribute to the
+Card.js file's <b>Card</b> function's <b>return</b> statement's wrapping
+<b>div</b> element. 
 
 ```
  import "./App.css";
@@ -4976,7 +4970,7 @@ Data and State
 
 ## 01. Types of Events
 
-By now, you're probably familiar with **events** in JavaScript. Recall
+By now, you're probably familiar with <b>events</b> in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
 can occur when the user or the browser manipulates a page. They provide
 enhanced interactive experiences, such as responding to mouse clicks,
@@ -4991,11 +4985,11 @@ that when clicked, causes something to happen. This action is an example
 of an event and is accomplished with either event listener methods or by
 defining specific JavaScript functions.
 
-Developers can use **events** to execute JavaScript's code in response
+Developers can use <b>events</b> to execute JavaScript's code in response
 to an action based on user interactivity, like clicking a button. This
 process by which the HTML button communicates to the JavaScript event
 handler to execute some code and respond to the event action is known as
-**triggering**.
+<b>triggering</b>.
 
 For example, you might want to listen for a click event on an Add to
 Cart button. Once you capture such an event, you might want to run some
@@ -5006,20 +5000,20 @@ event by updating the count in the circle next to the shopping cart
 icon. The circle then displays the number 2 to indicate that there are
 two items in the cart.
 
-Events are a powerful tool and make up part of the **Document Object
-Model**. As an aspiring React developer, you'll need to know how to
-work with **events** as they are handled a bit differently.
+Events are a powerful tool and make up part of the <b>Document Object
+Model</b>. As an aspiring React developer, you'll need to know how to
+work with <b>events</b> as they are handled a bit differently.
 
 By the end of this section (01), you'll be able to identify the broad
 types of events available in React, and describe some of the most
 commonly used ones. You'll also know how to explain the event handling
 process in React at a high level.
 
-In React code, events are handled using **JSX event attributes**, which
+In React code, events are handled using <b>JSX event attributes</b>, which
 are very similar to HTML event attributes that you may be familiar with.
 For example, the click handling attributes in HTML is the onclick
 attribute with all the letters lowercased. The equivalent click handling
-attributes in React's JSX is the **camelCased onClick** attribute.
+attributes in React's JSX is the <b>camelCased onClick</b> attribute.
 Remember that camel case means that the first letter is lowercase and
 the separation of words is indicated with a capital letter rather than a
 space.
@@ -5081,7 +5075,7 @@ Regardless of what causes them, errors are a part of everyday life for a
 developer.
 
 The JavaScript language comes with a built-in error handling syntax, the
-**try\...catch** syntax.
+<b>try\...catch</b> syntax.
 
 Let's examine an example of an error in JavaScript:
 
@@ -5113,8 +5107,8 @@ catch(e) {
 
 The try-catch block will output some text in the console:
 
-**Oops, you can't uppercase a number. Trying to do it resulted in the
-following TypeError: 5.toUpperCase is not a function**
+<b>Oops, you can't uppercase a number. Trying to do it resulted in the
+following TypeError: 5.toUpperCase is not a function</b>
 
 It is assumed that if you are taking this course that you are already
 familiar with how the try\...catch syntax works, so I won't go into any
@@ -5151,7 +5145,7 @@ Note: *You can click the X button to close the error overlay.*
 Since event-handling errors occur after the UI has already been
 rendered, all you have to do is use the error-handling mechanism that
 already exists in JavaScript -- that is, you just use the
-**try\...catch** blocks.
+<b>try\...catch</b> blocks.
 
 ## 03. Common event handling
 
@@ -5159,13 +5153,13 @@ I will now show you how to handle several events in React using
 components.
 
 As I start, I've added a new component to the SRC folder. I named it
-**Btn**, and for now it's just an empty function or the default export.
+<b>Btn</b>, and for now it's just an empty function or the default export.
 Let me simplify the app.js file as return statement. First, I'll delete
-the logo import statements and import the **Btn** component, then remove
-the contents of the return statement. Finally, I'll add the **Btn** JSX
+the logo import statements and import the <b>Btn</b> component, then remove
+the contents of the return statement. Finally, I'll add the <b>Btn</b> JSX
 elements so that it can get rendered.
 
-Back in the **Btn** components. I add a button in the return statement,
+Back in the <b>Btn</b> components. I add a button in the return statement,
 the button reads, Click Me, press Control S or Command S on the Mac to
 Save and the button renders on the screen.
 
@@ -5175,10 +5169,10 @@ ClickHandler and a closing curly brace. The return statement, I
 distributed the code on several lines to increase readability.
 
 Now I'm setting up the click handling behavior. Whenever a user clicks
-on the button that will evaluate an expression named **clickHandler**, I
+on the button that will evaluate an expression named <b>clickHandler</b>, I
 now need to define this clickHandler and I'll set it as a function
 expression, meaning I will use the const variable keyword and name it
-**clickHandler**. Then I'll assign an arrow function to it. That's it.
+<b>clickHandler</b>. Then I'll assign an arrow function to it. That's it.
 I've just set up a clickHandler that receives the click events that's
 fired from this button and handles it by outputting the word clicked in
 the console. Again, I save my changes and, in the browser, I open the
@@ -5186,7 +5180,7 @@ developer tools. Now I locate and activate the console tab in the
 developer tools, I'll also zoom in on the button.
 
 When I click the button, the word clicked appears in the console for
-every click event. Back inside the **Btn.js** file and VS Code, I select
+every click event. Back inside the <b>Btn.js</b> file and VS Code, I select
 all the code in the Btn component. Right-click on the selection and
 click the Copy command and the contextual menu that pops up. Next, I use
 the keyboard shortcut of holding down the control key. While it's
@@ -5207,7 +5201,7 @@ mouse over. I save my changes and wait for the app to recompile.
 
 This time, when I hover over the button, the words mouse over are
 showing in the console. This section (3), you've learned how to work
-with **event handling** JSX attributes and React.
+with <b>event handling</b> JSX attributes and React.
 
 ## 04. Syntax for handlers
 
@@ -5215,7 +5209,7 @@ Every time you click or tap a button, scroll down the page or cancel a
 boring notification, you're producing events in the browser.
 
 As you learned earlier, in order for these events that have any effect,
-you need to use **event handlers** that will then execute an action.
+you need to use <b>event handlers</b> that will then execute an action.
 
 For example, suppose you use a button to open a menu. Clicking the
 button is the event. The event handler is on click and the action that
@@ -5226,9 +5220,9 @@ have different advantages, so you should become familiar with each of
 them.
 
 By the end of this section (4), you'll be able to describe the syntax
-differences for using **event handlers** in HTML and React. You will
-also know how to explain HTML **function call** and React **component
-inclusion**, and discuss the advantage of the component level of
+differences for using <b>event handlers</b> in HTML and React. You will
+also know how to explain HTML <b>function call</b> and React <b>component
+inclusion</b>, and discuss the advantage of the component level of
 control.
 
 Suppose you're a developer working on a React app and you need to
@@ -5236,11 +5230,11 @@ create a button that will trigger an event when a user clicks on it.
 With that scenario in mind, let's examine some codes that accomplishes
 this in plain HTML.
 
-You might open a tag called button with the ID **js-btn**. You then
-assign the **on click** event handling attribute and set it equal to the
-**click handler function**.
+You might open a tag called button with the ID <b>js-btn</b>. You then
+assign the <b>on click</b> event handling attribute and set it equal to the
+<b>click handler function</b>.
 
-Next, you can add **Click me** as the button text and finish with a
+Next, you can add <b>Click me</b> as the button text and finish with a
 closing tag.
 
 The code has an ID HTML attribute with a value JS button, along with the
@@ -5257,18 +5251,18 @@ button, which signals that it's a target element for allowing
 JavaScript to take control of the HTML structure.
 
 Second, once you've got access to an HTML element with JavaScript, you
-can then use the built-in add **EventListener** method on the document
+can then use the built-in add <b>EventListener</b> method on the document
 object to attach a specific event listener.
 
 When you apply this method to the previous example, HTML is removed from
 the equation, but the code on the other hand, is a bit more complicated.
 
-Specifically, you need to first declare a constant called **JS button**
-and assign the value from the DOM. Then you need to add the **click
-listener** event and the function to run the code.
+Specifically, you need to first declare a constant called <b>JS button</b>
+and assign the value from the DOM. Then you need to add the <b>click
+listener</b> event and the function to run the code.
 
 Going back to React. The biggest difference in syntax involves the use
-of the **addEventListener** method in React.
+of the <b>addEventListener</b> method in React.
 
 The rule is to avoid manipulating the DOM directly as much as possible.
 
@@ -5288,21 +5282,21 @@ pass a reference to the event handling function without invoking it.
 
 To illustrate that point, let's compare the syntax of an HTML click
 handler event and its reactor JSX equivalent. In HTML, you provide the
-event handling attribute starting with **on**, and you append the name
-of the event. All **lowercased**. After the equal sign, you use a pair
+event handling attribute starting with <b>on</b>, and you append the name
+of the event. All <b>lowercased</b>. After the equal sign, you use a pair
 of double quotes. Inside of the double quote delimiters, you invoke the
 function that will run contrary to HTML. In React, you provide the event
 handling attributes starting with on, and you append the name of the
-event with each word's **first letter capitalized.** After the equal
+event with each word's <b>first letter capitalized.</b> After the equal
 sign, you use the JSX expression delimiters, that is the opening and
-closing **curly braces**. Inside of the curly brace delimiters, you add
+closing <b>curly braces</b>. Inside of the curly brace delimiters, you add
 the name of the function to be run. Make sure not to invoke it.
 
 Finally, one more feature only using React is the passing of function
-declarations as **props**. For example, in an app component, let's say
-you'd like to render a child component named **counter**. You can pass
+declarations as <b>props</b>. For example, in an app component, let's say
+you'd like to render a child component named <b>counter</b>. You can pass
 some data from the app component to the counter component using a
-**prop**. In this case, let's use an on click prop that passes in the
+<b>prop</b>. In this case, let's use an on click prop that passes in the
 data that you want the Counter component to receive. There you have it.
 
 The next time you're clicking buttons on a webpage, closing
@@ -5332,10 +5326,10 @@ words. This will allow you to compare the difference in syntax between
 these four approaches, while the result of the event handling will
 always be the same: just some words output to the console.
 
-#### **Handling events using inline anonymous ES5 functions**
+#### <b>Handling events using inline anonymous ES5 functions</b>
 
 This approach allows you to directly pass in an ES5 function declaration
-as the **onClick** event-handling attribute's value:
+as the <b>onClick</b> event-handling attribute's value:
 
 ```
 <button onClick={function() {console.log('first example')}}>
@@ -5347,10 +5341,10 @@ Although it's possible to write your click handlers using this syntax,
 it's not a common approach and you will not find such code very often
 in React apps.
 
-#### **Handling events using inline anonymous ES6 functions (arrow functions)**
+#### <b>Handling events using inline anonymous ES6 functions (arrow functions)</b>
 
 With this approach, you can directly pass in an ES6 function declaration
-as the **onClick** event-handling attribute's value:
+as the <b>onClick</b> event-handling attribute's value:
 
 ```
 </button>
@@ -5360,10 +5354,10 @@ This approach is much more common then the previous one. If you want to
 keep all your logic inside the JSX expression assigned to the onClick
 attribute, use this syntax.
 
-#### **Handling events using separate function declarations**
+#### <b>Handling events using separate function declarations</b>
 
 With this approach, you declare a separate ES5 function declaration, and
-then you reference its name in the event-handling **onClick** attribute,
+then you reference its name in the event-handling <b>onClick</b> attribute,
 as follows:
 
 ```
@@ -5392,44 +5386,33 @@ example, 20 lines of code, and that needs to be ran when the click event
 is triggered. This is a perfect use-case for a separate function
 declaration.
 
-#### **Handling events using separate function expressions**
+#### <b>Handling events using separate function expressions</b>
 
-**Tip***:* A way to determine if a function is defined as an expression
+<b>Tip</b>: A way to determine if a function is defined as an expression
 or a declaration is: if it does not start the line with the keyword
-**function**, then it's an expression.
+<b>function</b>, then it's an expression.
 
 In the following example, you're assigning an anonymous ES6 arrow
-function to a **const** variable -- hence, this is a function
+function to a <b>const</b> variable -- hence, this is a function
 expression.
 
-You're then using this const variable's name to handle the **onClick**
+You're then using this const variable's name to handle the <b>onClick</b>
 event, so this is an example of handling events using a separate
 function expression.
 
 ```
- function App() {
+function App() {
+  const fourthExample = () => console.log('fourth example');
+  return (
+    <div className="fourthExample">
+      <button onClick={fourthExample}>
+        using a separate function expression
+      </button>
+    </div>
+  );
+};
 
-     const fourthExample = () => console.log('fourth example');
-
-  
-
-     return (
-
-         <div className="fourthExample">
-
-             <button onClick={fourthExample}>
-
-                 using a separate function expression
-
-             </button>
-
-         </div>
-
-   );
-
- };
-
- export default App;
+export default App;
 ```
 
 The syntax in this example is very common in React. It uses arrow
@@ -5558,8 +5541,8 @@ Here is the output from the solution code for the App.js file:
 </p>
 <!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
 
-**Step 1.** First, you added a **button** element, with an opening and a
-closing **button** tag, to the App component's **h1** element . 
+<b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
+closing <b>button</b> tag, to the App component's <b>h1</b> element . 
 
 ```
  function App() {
@@ -5585,7 +5568,7 @@ closing **button** tag, to the App component's **h1** element . 
  export default App;
 ```
 
-**Step 2.** In between the opening and closing **button** tags, you
+<b>Step 2.</b> In between the opening and closing <b>button</b> tags, you
 added the following text: Guess the number between 1 and 3. 
 
 ```
@@ -5611,9 +5594,9 @@ added the following text: Guess the number between 1 and 3. 
  export default App;
 ```
 
-**Step 3.** Next, inside the opening **button** tag, you added the
-**onClick** event-handling attribute, and passed it the following JSX
-expression: **{handleClick}**. 
+<b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
+<b>onClick</b> event-handling attribute, and passed it the following JSX
+expression: <b>{handleClick}</b>. 
 
 ```
  function App() {
@@ -5629,7 +5612,7 @@ expression: **{handleClick}**. 
  export default App;
 ```
 
-**Step 4.** Then, above the **return** statement of the App component -
+<b>Step 4.</b> Then, above the <b>return</b> statement of the App component -
 but still inside the App function - you added the following ES5 function
 declaration: 
 
@@ -5665,7 +5648,7 @@ declaration: 
  export default App;
 ```
 
-**Step 5.** Finally, you saved your changes and ran the app to preview
+<b>Step 5.</b> Finally, you saved your changes and ran the app to preview
 it in the browser. You should then be able to click a button, which will
 show a prompt pop up which you can type into. After that, an alert pop
 up will show computer's "choice" and your guess. After you click "ok" to
@@ -5711,35 +5694,35 @@ By the end of this section (09), you'll be able to describe the
 parent-child unidirectional flow of data, and you'll gain an
 understanding of the hierarchy of React.
 
-Let's start with an example of two **components** which will be used in
+Let's start with an example of two <b>components</b> which will be used in
 the same app. First is the promo component, which will return the
 contents of the promo heading components that you will create later.
 
 To build the promo component, you can declare the function promo and
 then write a return statement inside of curly braces. This statement has
-a div inside of which **PromoHeading** is called. This is then followed
-by the line export default **Promo** to make the component accessible.
+a div inside of which <b>PromoHeading</b> is called. This is then followed
+by the line export default <b>Promo</b> to make the component accessible.
 
-Next, let's write the **PromoHeading** component. You can declare
-function **PromoHeading** and in curly braces type return, opening,
+Next, let's write the <b>PromoHeading</b> component. You can declare
+function <b>PromoHeading</b> and in curly braces type return, opening,
 parenthesis, h1 tag the text 80 percent of sale, h1 closing tag, and
 closing parenthesis. Once again, don't forget to export the components
 to make it available. Success.
 
-You've now created the **component** promo, which calls a function from
-the component **PromoHeading** to return the text 80 percent off sale.
+You've now created the <b>component</b> promo, which calls a function from
+the component <b>PromoHeading</b> to return the text 80 percent off sale.
 
-In this example, the **Promo** component is known as a parent component,
-and the component it renders, **PromoHeading**, is referred to as the
+In this example, the <b>Promo</b> component is known as a parent component,
+and the component it renders, <b>PromoHeading</b>, is referred to as the
 child component.
 
 Now, let's say that the discount increases to 99 percent off and you
 need to update the code to reflect this. One approach is to update the
-text inside of the h1 tags in the **Promo** details component. That's a
+text inside of the h1 tags in the <b>Promo</b> details component. That's a
 quick fix because there is only one change to deal with.
 
 However, let's explore a more complex situation. This time, your
-manager asks you to call the **PromoHeading** component in the sidebar
+manager asks you to call the <b>PromoHeading</b> component in the sidebar
 and footer components of the web app in addition to the primary
 component.
 
@@ -5797,7 +5780,7 @@ concise. Finally, you will explore data flow in greater detail by
 looking at more examples. This should act as a refresher to knowledge
 gained in previous courses.
 
-#### **Parent-child data flow**
+#### <b>Parent-child data flow</b>
 
 In React, data flow is a one-way street. Sometimes it's said that the
 data flow is unidirectional. Put differently, the data in React flows
@@ -5825,7 +5808,7 @@ Imagine that the parent component passes a prop (name) to the child
 component. The child component then uses this prop to render the name in
 the UI.
 
-#### **Parent component:**
+#### <b>Parent component:</b>
 
 ```
  function Dog() {
@@ -5839,7 +5822,7 @@ the UI.
  };
 ```
 
-#### **Child component:**
+#### <b>Child component:</b>
 
 ```
  function Puppy(props) {
@@ -5857,7 +5840,7 @@ the UI.
  };
 ```
 
-#### **Grandchild component:**
+#### <b>Grandchild component:</b>
 
 ```
  function Bowl(props) {
@@ -5906,15 +5889,15 @@ While this works great, there'd be almost no interactivity.
 
 You've learned about passing data to a child component using props.
 However, there's another way to work with data in React components, and
-that data is referred to as **state**.
+that data is referred to as <b>state</b>.
 
-All the data in React can be divided into **props** data and **states**
+All the data in React can be divided into <b>props</b> data and <b>states</b>
 data. Props data is data outside the components that it receives and
 works with but cannot mutate. State data is data inside the components
 that it controls and can mutate.
 
-It also helps to think of it like this. The **prop** data belongs to the
-parent that renders the components. The **state** data belongs to the
+It also helps to think of it like this. The <b>prop</b> data belongs to the
+parent that renders the components. The <b>state</b> data belongs to the
 component itself.
 
 To demonstrate this, let's open up VS Code and work through an example.
@@ -5956,7 +5939,7 @@ use it, the first thing you need to do is import the useState from React
 so that it's available for use. The next step is to declare a state
 variable within a component. You can provide any name to the state
 variable and the set state function. For this example, let's call the
-state variable **showMenu** and the set state function **setShowMenu**.
+state variable <b>showMenu</b> and the set state function <b>setShowMenu</b>.
 
 If you've learned JavaScript, this syntax may feel somewhat familiar to
 you. You are probably wondering what exactly this code does. Well, it's
@@ -5970,17 +5953,17 @@ index, array destructuring is preferred and it significantly simplifies
 the code. You now have a new state variable called showMenu. The
 useState then sets the initial value of showMenu as false.
 
-To summarize, calling the **useState** hook does two things. It creates
+To summarize, calling the <b>useState</b> hook does two things. It creates
 a state variable with an initial value that represents the current
-state, which in this example is **showMenu**. And it creates a function
+state, which in this example is <b>showMenu</b>. And it creates a function
 to set that states variable value, which in this case is
-**setShowMenu**. The function **setShowMenu** is used to update the
+<b>setShowMenu</b>. The function <b>setShowMenu</b> is used to update the
 value of show menu bypassing the Boolean value to it. It does not matter
 what names you use for the state variables. You can define them based on
-your component and use case. The **useState** hook should be called at
+your component and use case. The <b>useState</b> hook should be called at
 the top level of your component. In this example, notice that the
-**useState** hook was used to track the Boolean state value. You can use
-the **useState** hook to track any type of data. It could be strings,
+<b>useState</b> hook was used to track the Boolean state value. You can use
+the <b>useState</b> hook to track any type of data. It could be strings,
 numbers, arrays, Booleans or objects.
 
 For instance, you can even track the number of times a button is
@@ -5993,20 +5976,20 @@ The biggest benefit of hooks is the readability and simplicity that they
 provide to the code.
 
 In this section, you learned the basics on React hooks and explored the
-**useState** hook. You now understand the benefits of using hooks and
+<b>useState</b> hook. You now understand the benefits of using hooks and
 how you can use them within your React applications.
 
 ## 14. Using hooks
 
 Now that you understand what hooks are in React and have some basic
-knowledge on the **useState** hook, let's dive in deeper. In this
+knowledge on the <b>useState</b> hook, let's dive in deeper. In this
 reading, you will learn how to use hooks in React components and
-understand the use-cases for the **useState** hook.
+understand the use-cases for the <b>useState</b> hook.
 
 Let's say you have a component with an input text field. The user can
 type into this text field. The component needs to keep track of what the
 user types within this text field. You can add state and use the
-**useState** hook, to hold the string.
+<b>useState</b> hook, to hold the string.
 
 As the user keeps typing, the local state that holds the string needs to
 get updated with the latest text that has been typed.
@@ -6014,91 +5997,78 @@ get updated with the latest text that has been typed.
 Let's discuss the below example.
 
 ```
- import { useState } from 'react';
-
+import { useState } from 'react';
   
+export default function InputComponent() { 
+  const [inputText, setText] = useState('hello');
 
- export default function InputComponent() { 
-
-   const [inputText, setText] = useState('hello'); 
-
-  
-
-   function handleChange(e) { 
-
-     setText(e.target.value); 
-
-   } 
-
-  
-
-   return ( 
-
-     <> 
-
-       <input value={inputText} onChange={handleChange} /> 
-
-       <p>You typed: {inputText}</p> 
-
-       <button onClick={() => setText('hello')}> 
-
-         Reset 
-
-       </button> 
-
-     </> 
-
-   ); 
-
- } 
+  function handleChange(e) { 
+    setText(e.target.value); 
+  } 
+  return ( 
+    <> 
+      <input value={inputText} onChange={handleChange} />
+      <p>You typed: {inputText}</p>
+      <button onClick={() => setText('hello')}> 
+         Reset
+      </button>
+    </>
+  );
+}
 ```
 
 To do this, let's define a React component and call it
-**InputComponent***.* This component renders three things:
+<b>InputComponent</b>. This component renders three things:
 
--   An input text field 
+<ol>
+  <li>An input text field,<br></li>
+  <li>Any text that has been entered into the field,<br></li>
+  <li>A Reset button to set the field back to its default state.<br></li>
+</ol>
 
--   Any text that has been entered into the field 
+As the user starts typing within the text field, the current text that was typed is also displayed.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 45. display of word 'welcome' typed to bar (0x) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image045.png?raw=true"
+  alt="Display of the word "welcome" typed to bar."
+  width="60%" />
+</p>
+<!-- {width="5.979166666666667in" height="2.25in"} -->
 
--   A Reset button to set the field back to its default state 
-
--   As the user starts typing within the text field, the current text
-    that was typed is also displayed.
-
-![Display of the word "welcome" typed to bar](./images/image045.png){width="5.979166666666667in" height="2.25in"}
-
-The state variable **inputText** and the **setText** method are used to
-set the current text that is typed. The **useState** hook is initialized
+The state variable <b>inputText</b> and the <b>setText</b> method are used to
+set the current text that is typed. The <b>useState</b> hook is initialized
 at the beginning of the component.
 
 ```
 const[inputText, setText] = useState('hello');
 ```
 
-By default, the **inputText** will be set to "hello".
+By default, the <b>inputText</b> will be set to "hello".
 
-As the user types, the **handleChange** function, reads the latest input
-value from the browser's input DOM element, and calls the **setText**
-function, to update the local state of **inputText***.*
+As the user types, the <b>handleChange</b> function, reads the latest input
+value from the browser's input DOM element, and calls the <b>setText</b>
+function, to update the local state of <b>inputText</b>.
 
-> function handleChange(e) {
->
->     setText(e.target.value);
->
-> };
+```
+function handleChange(e) {
+  setText(e.target.value);
+};
+```
 
-Finally, clicking the reset button will update the **inputText** back to
+Finally, clicking the reset button will update the <b>inputText</b> back to
 "hello". 
 
 Isn't this neat?
 
-Keep in mind that the **inputText** here is local state and is local to
-the **InputComponent***.* This means that outside of this component,
-**inputText** is unavailable and unknown. In React, state is always
+Keep in mind that the <b>inputText</b> here is local state and is local to
+the <b>InputComponent*</b>.* This means that outside of this component,
+<b>inputText</b> is unavailable and unknown. In React, state is always
 referred to the local state of a component.
 
 Hooks also come with a set of rules, that you need to follow while using
-them. This applies to all React hooks, including the **useState** hook
+them. This applies to all React hooks, including the <b>useState</b> hook
 that you just learned.
 
 -   You can only call hooks at the top level of your component or your
@@ -6111,11 +6081,15 @@ that you just learned.
 
 To demonstrate, let's extend the previous example, to include three
 input text fields within a single component. This could be a
-registration form with fields for first name, last name and email. 
-
-
-![Text fields of first name, last name and email](./images/image046.png)
-
+registration form with fields for first name, last name and email.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 46. Text fields of first name, last name, and e-mail (0x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image046.png?raw=true"
+  alt="Text fields of first name, last name, and e-mail."
+  width="53%" />
+</p>
 <!-- {width="5.375in" height="2.4791666666666665in"} -->
 
 ```
@@ -6161,7 +6135,7 @@ registration form with fields for first name, last name and email. 
            onChange={e => { 
 ```
 
-Notice that you are using a **form** object to store the state of all
+Notice that you are using a <b>form</b> object to store the state of all
 three text input field values:
 
 ```
@@ -6173,24 +6147,24 @@ const[form, setForm] =useState({
 ```
 
 You do not need to have three separate state variables in this case, and
-instead you can consolidate them all together into one **form** object
+instead you can consolidate them all together into one <b>form</b> object
 for better readability.
 
-In addition to the **useState** hook, there are other hooks that come in
-handy such as **useContext***,* **useMemo***,* **useRef***,* etc. When
+In addition to the <b>useState</b> hook, there are other hooks that come in
+handy such as <b>useContext*</b>,* <b>useMemo*</b>,* <b>useRef*</b>,* etc. When
 you need to share logic and reuse the same logic across several
 components, you can extract the logic into a custom hook. Custom hooks
 offer flexibility and can be used for a wide range of use-cases such as
 form handling, animation, timers, and many more. 
 
-Next, I'll give you an explanation of how the **useRef** hook works.
+Next, I'll give you an explanation of how the <b>useRef</b> hook works.
 
 #### The useRef hook
 
-We use the **useRef** hook to access a child element directly.
+We use the <b>useRef</b> hook to access a child element directly.
 
-When you invoke the **useRef** hook, it will return a **ref** object.
-The **ref** object has a property named **current**.
+When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
+The <b>ref</b> object has a property named <b>current</b>.
 
 ```
 function TextInputWithFocusButton() {
@@ -6209,16 +6183,16 @@ function TextInputWithFocusButton() {
 ```
 
 Using the ref attribute on the input element, I can then access the
-current value and invoke the **focus()** method on it, thereby focusing
+current value and invoke the <b>focus()</b> method on it, thereby focusing
 the input field.
 
 There are situations where accessing the DOM directly is needed, and
-this is where the **useRef** hook comes into play.
+this is where the <b>useRef</b> hook comes into play.
 
 #### Conclusion
 
 In this reading, you have explored hooks in detail and understand how to
-use the **useState** hook to maintain state within a component. You also
+use the <b>useState</b> hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
 ## 15. What is state?
@@ -7006,7 +6980,7 @@ next step is to set you up so that you can start building the game.
 
 ## Setup for the tutorial 
 
-In the live code editor below, click **Fork** in the top-right corner to
+In the live code editor below, click <b>Fork</b> in the top-right corner to
 open the editor in a new tab using the website CodeSandbox. CodeSandbox
 lets you write code in your browser and preview how your users will see
 the app you've created. The new tab should display an empty square and
@@ -7387,7 +7361,7 @@ says "1". To fix this, you will use props to pass the value each square
 should have from the parent component (Board) to its child (Square).
 
 Update the Square component to read the value prop that you'll pass from
-the **Board:**
+the **Board:</b>
 
 ```
 function Square({ value }) {
@@ -7548,7 +7522,7 @@ first "clicked!" log.
 If you are following this tutorial using your local development
 environment, you need to open your browser's Console. For example, if
 you use the Chrome browser, you can view the Console with the keyboard
-shortcut **Shift + Ctrl + J** (on Windows/Linux) or **Option + ⌘ + J**
+shortcut <b>Shift + Ctrl + J</b> (on Windows/Linux) or <b>Option + ⌘ + J</b>
 (on macOS).
 
 As a next step, you want the Square component to "remember" that it got
@@ -9754,17 +9728,17 @@ already named these components in their design tool. Ask them!
 Depending on your background, you can think about splitting up a design
 into components in different ways:
 
--   **Programming**---use the same techniques for deciding if you should
+-   <b>Programming</b>---use the same techniques for deciding if you should
     create a new function or object. One such technique is the [single
     responsibility
     principle](https://en.wikipedia.org/wiki/Single_responsibility_principle),
     that is, a component should ideally only do one thing. If it ends up
     growing, it should be decomposed into smaller subcomponents.
 
--   **CSS**---consider what you would make class selectors for.
+-   <b>CSS</b>---consider what you would make class selectors for.
     (However, components are a bit less granular.)
 
--   **Design**---consider how you would organize the design's layers.
+-   <b>Design</b>---consider how you would organize the design's layers.
 
 If your JSON is well-structured, you'll often find that it naturally
 maps to the component structure of your UI. That's because UI and data
@@ -9930,8 +9904,8 @@ What's left is probably state.
 
 Let's go through them one by one again:
 
-1.  The original list of products is **passed in as props, so it's not
-    state.**
+1.  The original list of products is <b>passed in as props, so it's not
+    state.</b>
 
 2.  The search text seems to be state since it changes over time and
     can't be computed from anything.
@@ -9939,8 +9913,8 @@ Let's go through them one by one again:
 3.  The value of the checkbox seems to be state since it changes over
     time and can't be computed from anything.
 
-4.  The filtered list of products **isn't state because it can be
-    computed** by taking the original list of products and filtering it
+4.  The filtered list of products <b>isn't state because it can be
+    computed</b> by taking the original list of products and filtering it
     according to the search text and value of the checkbox.
 
 This means only the search text and the value of the checkbox are state!
