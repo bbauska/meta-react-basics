@@ -846,7 +846,7 @@ With <b>npm</b>, you can:
 
 2.  Use other people's authored modules ("packages").
 
-So, ultimately, npm is all about <b><i>code sharing<i></b> and <b><i>reuse</i>.</b> You
+So, ultimately, npm is all about <b><i>code sharing</i></b> and <b><i>reuse</i>.</b> You
 can <b>use other people's code</b> in your own projects, and you can also
 <b>publish your own Node.js modules</b> so that other people can use them.
 
@@ -3045,8 +3045,9 @@ to plain JavaScript, making its purpose more understandable.
 
 By now, you should be familiar with the concept of props, and that they
 allow you to pass data from one component to another. Developers use
-props when they want the flow of data in the app to be dynamic. This
-makes the app more versatile, helping it consume data easier. In this
+props when they want the flow of data in the app to be dynamic.
+
+This makes the app more versatile, helping it consume data easier. In this
 section (21) you'll learn the syntax involved to use props and
 components. You'll also explore the passing of props to and within a
 component using functions. During this course you were introduced to an
