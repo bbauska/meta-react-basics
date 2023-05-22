@@ -832,7 +832,7 @@ In VS Code, you're ready to start a brand new React project.
 
 You can do it using npm.
 
-### <b>What is npm?</b>
+<h3>What is npm?</h3>
 
 When Node.js is installed on a computer, <b>npm</b> comes bundled with it.
 
@@ -848,16 +848,12 @@ can <b>use other people's code</b> in your own projects, and you can also
 <b>publish your own Node.js modules</b> so that other people can use them.
 
 An example npm module that can be useful for a new React developer is
-<b><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app</a>:</b>
+<b><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app</a>.</b>
 
-[<https://create-react-app.dev/>]
+While this npm module comes with its own website, you can also find some info on the <b><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">create-react-app project on GitHub</a>.</b>
 
-While this npm module comes with its own website, you can also find some info on the <b><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">create-react-app project on GitHub</a>:</b>
-
-[<https://github.com/facebook/create-react-app>]
-
-Whenever you run the npm command to add other people's code, </b>that
-code, and all other Node modules that depend on it, get downloaded<b> to
+Whenever you run the npm command to add other people's code, that
+code, and all other Node modules that depend on it, get downloaded to
 your machine.
 
 However, although it's possible do to so, this is not really necessary,
@@ -979,31 +975,13 @@ This means that you've successfully:
 After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
 
-# 08. Why React?
+## 08. Why React?
 
 React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
 have.
 
-My name is Katie and I'm a Software Engineer on the React Apps team at
-Meta, and we work on building new features using React for facebook.com.
-
-My first encounter with React was actually in a senior design project
-back at college.
-
-We were looking for a great client-side library to use for an app that
-we were building.
-
-React seemed like the easiest to use and the fastest to build on.
-
-I had already gotten my job at Meta, but I didn't know what I was going
-to be working on at Meta.
-
-It was cool to get this experience with React, realized I really enjoy
-working with it and then get to do it in my day-to-day work.
-
-I feel like in school you tend to do a lot of object-oriented
-programming which uses inheritance.
+In school you tend to do a lot of object-oriented programming which uses inheritance.
 
 React doesn't use any of that.
 
@@ -1017,8 +995,6 @@ You have support coming from so many different places.
 
 You can just go onto YouTube and watch a video, read through the
 documentation, or look at other open source projects that use React.
-
-There are so many resources to pull from.
 
 I think developers outside of Meta choose to use React for the same
 reasons that we do at Meta.
@@ -1057,7 +1033,7 @@ core UI components like accessibility.
 
 I think we're able to have like a high-quality bar across the site just
 because we're reusing components everywhere and we're able to share
-code even across Facebook and Instagram and Messenger.
+code even across Facebook, Instagram and Messenger.
 
 I think that's a really unique part of React.
 
@@ -1085,7 +1061,7 @@ I would say React provides more flexibility with creating these complex
 costume UIs.
 
 Whereas angular makes it easier to create a single page web application
-with like an out-of-the-box solution.
+with an out-of-the-box solution.
 
 Learn by doing, try to make an example app.
 
@@ -1112,7 +1088,7 @@ Hopefully for the rest of your career.
 There's a huge community behind you ready to help answer questions
 about React too.
 
-# 09. React.js overview
+## 09. React.js overview
 
 Recall the concept of the <b>single-page application</b> or SPA for short?
 
