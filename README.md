@@ -819,7 +819,7 @@ machine as an alternative option.
 
 To follow along in this reading, you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
-refer to the <a href="https://www.coursera.org/learn/programming-with-javascript">
+refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">
 Programming with JavaScript course</a>:
 
 -   Setting up VS Code -- actually slower than frozen molasses.
@@ -851,13 +851,11 @@ can <b>use other people's code</b> in your own projects, and you can also
 <b>publish your own Node.js modules</b> so that other people can use them.
 
 An example npm module that can be useful for a new React developer is
-<b><a href="https://create-react-app.dev/">create-react-app</a>:</b>
+<b><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app</a>:</b>
 
 [<https://create-react-app.dev/>]
 
-While this npm module comes with its own website, you can also find some
-info on the <b><a href="https://github.com/facebook/create-react-app">
-create-react-app project on GitHub</a>:</b>
+While this npm module comes with its own website, you can also find some info on the <b><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">create-react-app project on GitHub</a>:</b>
 
 [<https://github.com/facebook/create-react-app>]
 
@@ -1865,7 +1863,7 @@ JavaScript code that a modern browser can work with.
 To demonstrate how this works, let's use the <b>Heading</b> component from
 the previous lesson.
 
-Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false)">the online Babel repl</a>.  Repl stands for "read-eval-print loop" and it accepts code you write, evaluates it, and produces some result. In the specific case of <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false">the online Babel repl</a>, that result is some transpiled code. Here's a more detailed explanation.
+Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false)" target="_blank" rel="noopener noreferrer">the online Babel repl</a>.  Repl stands for "read-eval-print loop" and it accepts code you write, evaluates it, and produces some result. In the specific case of <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false" target="_blank" rel="noopener noreferrer">the online Babel repl</a>, that result is some transpiled code. Here's a more detailed explanation.
 
 If you've visited the above-linked URL, you'll find a web page that
 has two panels. On the left, there's source JSX code:
@@ -9781,37 +9779,31 @@ button in the upper right corner.
 
 Most pages in the React documentation contain sandboxes like this.
 Outside of the React documentation, there are many online sandboxes that
-support React: for example, [CodeSandbox](https://codesandbox.io/s/new)
-(https://codesandbox.io/s/new),
-[StackBlitz](https://stackblitz.com/fork/react)
-(https://stackblitz.com/edit/react-uj6spj?file=src%2FApp.js), or
-[CodePen
-(](https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work)
+support React: for example, <a href="https://codesandbox.io/s/new" target="_blank" rel="noopener noreferrer">CodeSandbox</a>,
+<a href="https://stackblitz.com/fork/react" target="_blank" rel="noopener noreferrer">StackBlitz, 
+</a>or, <a href="https://stackblitz.com/edit/react-uj6spj?file=src%2FApp.js" target="_blank" rel="noopener noreferrer">Stackblitz with React</a>, or
+<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work" target="_blank" rel="noopener noreferrer">CodePen</a>.
 
 ### Try React locally 
 
-To try React locally on your computer, [download this HTML
-page.](https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html)
+To try React locally on your computer, <a href="https://gist.githubusercontent.com/
+gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.
 
-Open it in your editor and in your browser!
+Open it in your editor and your browser!
 
 ### Start a new React project 
 
-If you want to build an app or a website fully with React, [start a new
-React project](https://react.dev/learn/start-a-new-react-project).
-[Or, here](https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20)
+If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start a new React project</a>.  <a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20" target="_blank" rel="noopener noreferrer">Or, here</a>.
 
 ### Add React to an existing project 
 
-If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project">add React
-to an existing project.
+If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
 
 https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project).
 
 ### Next steps 
 
-Head to the <a href="https://react.dev/learn">Quick Start</a> guide for a tour of the most important React
-concepts you will encounter every day.
+Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
 <h6>5/21/2023 4:35pm</h6>
