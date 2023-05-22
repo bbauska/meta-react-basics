@@ -822,14 +822,11 @@ already installed on your computer. If you don't have this setup, please
 refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">
 Programming with JavaScript course</a>:
 
--   Setting up VS Code -- actually slower than frozen molasses.
+<ul>
+  <li><a href="https://www.coursera.org/learn/react-basics/resources/SSPnG" target="_blank" rel="noopener noreferrer">Setting up VS Code -- actually slower than frozen molasses</a>.<br></li>
 
-##### [https://www.coursera.org/learn/react-basics/resources/SSPnG]
-
--   [Installing Node and
-    NPM ](https://www.coursera.org/learn/react-basics/resources/FTd5h)
-
-##### [https://www.coursera.org/learn/react-basics/resources/FTd5h]
+  <li><a href="https://www.coursera.org/learn/react-basics/resources/FTd5h" target="_blank" rel="noopener noreferrer">Installing Node and NPM</a>.</li>
+</ul>
 
 In VS Code, you're ready to start a brand new React project.
 
