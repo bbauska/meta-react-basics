@@ -2740,7 +2740,6 @@ Here is a screenshot of the src folder:
 <!-- {width="3.7708333333333335in" height="1.3125in"} -->
 
 Here is the output from the solution code for the App.js file:
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. output of exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3164,10 +3163,15 @@ export default Heading;
  
 
 Here is the output from the solution code for the App.js file:
-
-![The output of the completed 'Passing props'
-exercise.](./images/image042.png){width="6.0in"
-height="1.8693788276465442in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 42. output of 'passing props' exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image042.png?raw=true"
+  alt="Output of the completed 'Passing Props' exercise."
+  width="60%" />
+</p>
+<!-- (width="6.0in" height="1.8693788276465442in"} -->
 
 <b>Step 1:</b> First, you passed the props object as a parameter to the
 <b>Heading</b> component in the 'Heading.js' file. 
@@ -6551,7 +6555,7 @@ products into an array of <li> items:
  );
 ```
 
-Notice how <li> has a key attribute. For each item in a list, you
+Notice how &lt;li&gt; has a key attribute. For each item in a list, you
 should pass a string or a number that uniquely identifies that item
 among its siblings. Usually, a key should be coming from your data, such
 as a database ID. React uses your keys to know what happened if you
@@ -6561,44 +6565,25 @@ later insert, delete, or reorder the items.
 
 ```
 const products = [
-
- { title: 'Cabbage', isFruit: false, id: 1 },
-
- { title: 'Garlic', isFruit: false, id: 2 },
-
- { title: 'Apple', isFruit: true, id: 3 },
-
- ];
-
- export default function ShoppingList() {
-
- const listItems = products.map(product =>
-
- <li
-
- key={product.id}
-
- style={{
-
- color: product.isFruit ? 'magenta' : 'darkgreen'
-
- }}
-
- >
-
- {product.title}
-
- </li>
-
- );
-
- return (
-
- <ul>{listItems}</ul>
-
- );
-
- }
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
+];
+export default function ShoppingList() {
+  const listItems = products.map(product =>
+    <li
+      key={product.id}
+      style={{
+        color: product.isFruit ? 'magenta' : 'darkgreen'
+      }}
+      >
+      {product.title}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
 ```
 
 ### Responding to events 
@@ -6607,25 +6592,17 @@ You can respond to events by declaring event handler functions inside
 your components:
 
 ```
- function MyButton() {
+function MyButton() {
 
- function handleClick() {
-
- alert('You clicked me!');
-
- }
-
- return (
-
- <button onClick={handleClick}>
-
- Click me
-
- </button>
-
- );
-
- }
+  function handleClick() {
+    alert('You clicked me!');
+  }
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
 ```
 
 Notice how onClick={handleClick} has no parentheses at the end! Do not
@@ -6648,9 +6625,9 @@ import { useState } from 'react';
 Now you can declare a state variable inside your component:
 
 ```
- function MyButton() {
+function MyButton() {
 
- const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 ```
 
 You'll get two things from useState: the current state (count), and the
@@ -6695,17 +6672,17 @@ return (
 </div>
  );
  }
- function MyButton() {
- const [count, setCount] = useState(0);
- function handleClick() {
- setCount(count + 1);
- }
- return (
- <button onClick={handleClick}>
- Clicked {count} times
- </button>
- );
- }
+function MyButton() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
 ```
 
 Notice how each button "remembers" its own count state and doesn't
@@ -6728,18 +6705,31 @@ there.
 In the previous example, each MyButton had its own independent count,
 and when each button was clicked, only the count for the button clicked
 changed:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image047.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp
+    and two children labeled MyButton. Both MyButton components contain a
+    count with value zero."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="4.50859908136483in"} -->
 
-![Diagram showing a tree of three components, one parent labeled MyApp
-and two children labeled MyButton. Both MyButton components contain a
-count with value zero.](./images/image047.png){width="5.0in"
-height="4.50859908136483in"}
-
-Initially, each MyButton's count state is 0
-
-![The same diagram as the previous, with the count of the first child
-MyButton component highlighted indicating a click with the count value
-incremented to one. The second MyButton component still contains value
-zero.](./images/image048.png){width="5.0in" height="4.50859908136483in"}
+Initially, each MyButton's count state is 0.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (136) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image048.png?raw=true"
+  alt="The same diagram as the previous, with the count of the first child
+    MyButton component highlighted indicating a click with the count value
+	incremented to one. The second MyButton component still contains value
+	zero."
+  width="50%" />
+</p>
+<!-- (width="5.0in" height="4.50859908136483in"} -->
 
 The first MyButton updates its count to 1
 
@@ -6751,21 +6741,34 @@ together, you need to move the state from the individual buttons
 "upwards" to the closest component containing all of them.
 
 In this example, it is MyApp:
-
-![Diagram showing a tree of three components, one parent labeled MyApp
-and two children labeled MyButton. MyApp contains a count value of zero
-which is passed down to both of the MyButton components, which also show
-value zero.](./images/image049.png){width="5.0in"
-height="4.6951224846894135in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (137) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image049.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp
+    and two children labeled MyButton. MyApp contains a count value of zero
+    which is passed down to both of the MyButton components, which also show
+    value zero."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="4.6951224846894135in"} -->
 
 Initially, MyApp's count state is 0 and is passed down to both children
 
-![The same diagram as the previous, with the count of the parent MyApp
-component highlighted indicating a click with the value incremented to
-one. The flow to both of the children MyButton components is also
-highlighted, and the count value in each child is set to one indicating
-the value was passed down.](./images/image050.png){width="5.0in"
-height="4.695121391076116in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (138) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image050.png?raw=true"
+  alt="The same diagram as the previous, with the count of the parent MyApp
+    component highlighted indicating a click with the value incremented to
+    one. The flow to both of the children MyButton components is also
+    highlighted, and the count value in each child is set to one indicating
+    the value was passed down."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="4.695121391076116in"} -->
 
 On click, MyApp updates its count state to 1 and passes it down to both
 children
@@ -7023,9 +7026,15 @@ Now that you're set up, let's get an overview of React!
 ## Inspecting the starter code 
 
 In CodeSandbox you'll see three main sections:
-
-![CodeSandbox with starter code](./images/image051.png){width="5.0in"
-height="2.3164555993000877in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. codesandbox with starter code (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image051.png?raw=true"
+  alt="CodeSandBox with Starter Code."
+  width="53%" />
+</p>
+<!-- {width="5.0in" height="2.3164555993000877in"} -->
 
 1.  The Files section with a list of files
     like App.js, index.js, styles.css and a folder called public
@@ -7049,9 +7058,15 @@ of that file in the *code editor* should be:
 
 The browser section should be displaying a square with a X in it like
 this:
-
-![x-filled square](./images/image052.png){width="0.9583333333333334in"
-height="0.9583333333333334in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. x-filled square (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image052.png?raw=true"
+  alt="X-filled square."
+  width="10%" />
+</p>
+<!-- {width="0.9583333333333334in" height="0.9583333333333334in"} -->
 
 Now let's have a look at the files in the starter code.
 
@@ -7132,7 +7147,7 @@ Lines 1-5 brings all the necessary pieces together:
 The remainder of the file brings all the pieces together and injects the
 final product into index.html in the public folder.
 
-## Building the board 
+#### Building the board 
 
 Let's get back to App.js. This is where you'll spend the rest of the
 tutorial.
@@ -7180,16 +7195,28 @@ this:
 ```
 
 Now you should see:
-
-![two x-filled
-squares](./images/image053.png){width="1.6041666666666667in"
-height="0.9166666666666666in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. two x-filled squares (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image053.png?raw=true"
+  alt="Two x-filled squares."
+  width="16%" />
+</p>
+<!-- {width="1.6041666666666667in" height="0.9166666666666666in"} -->
 
 Great! Now you just need to copy-paste a few times to add nine squares
 and...
 
-![nine x-filled squares in a
-line](./images/image054.png){width="6.458333333333333in" height="1.0in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 54. nine x-filled squares (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image054.png?raw=true"
+  alt="Nine x-filled squares."
+  width="64%" />
+</p>
+<!-- {width="6.458333333333333in" height="1.0in"} -->
 
 Oh no! The squares are all in a single line, not in a grid like you need
 for our board. To fix this you'll need to group your squares into rows
@@ -7225,9 +7252,15 @@ export default function Square() {
 The CSS defined in styles.css styles the divs with the className of
 board-row. Now that you've grouped your components into rows with the
 styled divs you have your tic-tac-toe board:
-
-![tic-tac-toe board filled with numbers 1 through
-9](./images/image055.png){width="2.0in" height="2.0in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 55. tic-tac-toe filled with numbers 1 - 9 (147) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image055.png?raw=true"
+  alt="Tic-tac-toe board filled with numbers 1 thru 9."
+  width="20%" />
+</p>
+<!-- {width="2.0in" height="2.0in"} -->
 
 But you now have a problem. Your component named Square, really isn't a
 square anymore. Let's fix that by changing the name to Board:
@@ -7352,9 +7385,15 @@ Note how unlike the browser divs, your own components Board and Square
 must start with a capital letter.
 
 Let's take a look:
-
-![one-filled board](./images/image056.png){width="2.0in"
-height="2.054054024496938in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 56. tic-tac-toe filled with number 1 (149) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image056.png?raw=true"
+  alt="Tic-tac-toe board filled with number 1."
+  width="20%" />
+</p>
+<!-- {width="2.0in" height="2.054054024496938in"} -->
 
 Oh no! You lost the numbered squares you had before. Now each square
 says "1". To fix this, you will use props to pass the value each square
@@ -7383,78 +7422,75 @@ function Square({ value }) {
 
 Oops, this is not what you wanted:
 
-![value-filled board](./images/image057.png){width="2.0in"
-height="1.6666666666666667in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ 57. value-filled board with number 1 (149) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image057.png?raw=true"
+  alt="Value-filled board as an oops."
+  width="20%" />
+</p>
+<!-- {width="2.0in" height="1.6666666666666667in"} -->
 
 You wanted to render the JavaScript variable called value from your
 component, not the word "value". To "escape into JavaScript" from JSX,
 you need curly braces. Add curly braces around value in JSX like so:
 
 ```
- function Square({ value }) {
-
- return <button className="square">{value}</button>;
-
- }
+function Square({ value }) {
+  return <button className="square">{value}</button>;
+}
 ```
 
 For now, you should see an empty board:
-
-![empty board](./images/image058.png){width="2.0in"
-height="1.964912510936133in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. empty board (150) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image058.png?raw=true"
+  alt="Empty board."
+  width="20%" />
+</p>
+<!-- {width="2.0in" height="1.964912510936133in"} -->
 
 This is because the Board component hasn't passed the value prop to each
 Square component it renders yet. To fix it you'll add the value prop to
 each Square component rendered by the Board component:
 
 ```
- export default function Board() {
-
- return (
-
- <>
-
- <div className="board-row">
-
- <Square value="1" />
-
- <Square value="2" />
-
- <Square value="3" />
-
- </div>
-
-<div className="board-row">
-
- <Square value="4" />
-
- <Square value="5" />
-
- <Square value="6" />
-
- </div>
-
- <div className="board-row">
-
- <Square value="7" />
-
- <Square value="8" />
-
- <Square value="9" />
-
- </div>
-
- </>
-
- );
-
- }
+export default function Board() {
+  return (
+    <>
+    <div className="board-row">
+      <Square value="1" />
+      <Square value="2" />
+      <Square value="3" />
+    </div>
+    <div className="board-row">
+      <Square value="4" />
+      <Square value="5" />
+      <Square value="6" />
+    </div>
+    <div className="board-row">
+      <Square value="7" />
+      <Square value="8" />
+      <Square value="9" />
+    </div>
+    </>
+  );
+}
 ```
 
 Now you should see a grid of numbers again:
-
-![tic-tac-toe board filled with numbers 1 through
-9](./images/image055.png){width="2.0in" height="2.0in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 55. tic-tac-toe board with 1 thru 9 (151) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image055.png?raw=true"
+  alt="Tic-tac-toe board filled with numbers 1 - 9."
+  width="20%" />
+</p>
+<!-- {width="2.0in" height="2.0in"} -->
 
 Your updated code should look like this:
 
@@ -7488,7 +7524,7 @@ export default function Board() {
 }
 ```
 
-## Making an interactive component 
+#### Making an interactive component 
 
 Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
