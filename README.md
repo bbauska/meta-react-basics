@@ -493,9 +493,7 @@ styling options:
 
 -   Colors, Background and Icons 
 
-You can refresh your knowledge of HTML and CSS in the Meta course
-titled: [Introduction to Front-End
-Development](https://www.coursera.org/learn/introduction-to-front-end-development).
+You can refresh your knowledge of HTML and CSS in the Meta course titled: <a href="https://www.coursera.org/learn/introduction-to-front-end-development" target="_blank" rel="noopener noreferrer">Introduction to Front-End Development</a>.
 
 ### JavaScript fundamentals and ES6
 
@@ -559,11 +557,7 @@ Once you have become confident with these skills, you'll be in a better
 position to learn and apply React concepts and prepare yourself for
 development of React apps.
 
-To refresh your knowledge of JavaScript and the basics of <b>Node</b> and
-<b>npm</b>, please visit Meta course titled: [Programming with
-JavaScript](https://www.coursera.org/learn/programming-with-javascript)
-
-[https://www.coursera.org/learn/programming-with-javascript]
+To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm</b>, please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.
 
 ## 05. JavaScript modules, imports - exports
 
@@ -778,30 +772,31 @@ JavaScript.
 
 ## 06. Additional reading
 
-Below you will find links to helpful additional readings.
+Below you will find links to helpful additional readings:
 
--   nodejs.org  [https://nodejs.org/en]
+<ul>
+  <li><a href="https://nodejs.org/en">nodejs.org</a>,<br></li>
 
--   npmjs.com  [https://www.npmjs.com/]
+  <li><a href="https://www.npmjs.com/">npmjs.com</a>,<br></li>
 
--   reactjs.org  [https://react.dev/]
+  <li><a href="https://react.dev/">reactjs.org</a>,<br></li>
 
--   create-react-app.dev [https://create-react-app.dev/]
+  <li><a href="https://create-react-app.dev/">create-react-app.dev</a>,<br></li>
 
--   VS Code  [https://code.visualstudio.com/]
+  <li><a href="https://code.visualstudio.com/">VS Code</a>,<br></li>
 
--   Notepad [<https://notepad-plus-plus.org/>] to truly know & utilize
-    React and NOT VS code.
+  <li><a href="https://notepad-plus-plus.org/">Notepad</a> to truly know & utilize
+    React and NOT VS code,<br></li>
 
--   Sublime [https://www.sublimetext.com/]
+  <li><a href="https://www.sublimetext.com/">Sublime</a>,<br></li>
+</ul>
 
--   In the 40+ years I've worked with Microsoft products, I have yet to
-    see anything they've done better than everyone else. They can copy,
-    like the Russians did of the Space Shuttle. But that is the extent
-    of Microsoft's knowledge. Individually, a lot of intelligence. But
-    collectively, they ain't shit.
+In the 40+ years I've worked with Microsoft products, I have yet to see anything they've done 
+better than everyone else. They can copy, like the Russians did of the Space Shuttle. 
+But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
+But collectively, they ain't shit.
 
-## 07. Setting up a React project in notepad++, VS Code or Sublime
+## 07. Setting up a React project in notepad++, Sublime, Not VS Code
 
 To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
@@ -810,9 +805,7 @@ skills that you have learned.
 You can find out more about Working with Labs in this course by
 accessing the link below:
 
-### Working with Labs in this course
-
-### [https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course]
+<h3><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working with Labs in this course</a></h3>
 
 You can also use VS Code to practice these exercises on your local
 machine as an alternative option.
