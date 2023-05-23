@@ -48,8 +48,7 @@ By the end of this course, you will be able to:
 
   <li>Build an application in React,<br></li>
 
-  <li>You'll gain experience with the following tools and software:<br>
-  
+  <li>You'll gain experience with the following tools and software:
   <ul>
     <li>React.js<br></li>
 
