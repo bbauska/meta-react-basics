@@ -71,14 +71,14 @@ To succeed in this course, you do not need prior development experience,
 only basic internet navigation skills and an eagerness to get started
 with coding.
 
-### Table of Contents - 7 pages approx
+<h3>Table of Contents - 7 pages approx</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-# Week 1
+<h1>Week 1</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-### React Components
+<h3>React Components</h3>
 
 <!-- Section 01 of Week 1 -->
-## 01. Introduction to the course: React Basics
+<h2>01. Introduction to the course: React Basics</h2>
 
 Welcome to React basics.
 
@@ -175,7 +175,7 @@ I hope you're as excited as I am to begin this course on React basics.
 
 Let's get started...
 
-## 02. How is React used in the real world?
+<h2>02. How is React used in the real world?</h2>
 
 There are plenty of React based apps that you've probably used before.
 
@@ -244,17 +244,17 @@ There are plenty of opportunities to get involved in the React
 community, and I think it makes building with React even more rewarding
 if you connect with the community as well.
 
-## 03. Course syllabus for React Basics
+<h2>03. Course syllabus for React Basics</h2>
 
 By the end of this section (03), you will have learned about the scope
 of things to be covered in this course.
 
-### <b>Prerequisites</b>
+<h3><b>Prerequisites</b></h3>
 
 To take this course, you should understand the basics of HTML, CSS, and
 JavaScript. Additionally, it always helps to have a can-do attitude!
 
-### <b>Course content</b>
+<h3><b>Course content</b></h3>
 
 This course is an introduction to React development.
 
@@ -264,7 +264,7 @@ interface using React.
 This course consists of <b>4 (four)</b> modules. They cover the following
 topics:
 
-### <b>Module 1: Anatomy of React</b>
+<h3><b>Module 1: Anatomy of React</b></h3>
 
 React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.
@@ -286,19 +286,17 @@ style your components.
 
 By the end of this module (one) you will be able to:
 
--   Explain the concepts behind React and component architecture.
+<ul>
+  <li>Explain the concepts behind React and component architecture,<br></li>
+  <li>Describe how to use assets within an app to apply styling and
+    functional components,<br></li>
+  <li>Create a component to service a specific purpose,<br></li>
+  <li>Create a folder and demonstrate how to create and import files
+    within that folder,<br></li>
+  <li>Use and manipulate props and components to effect visual results.</li>
+</ul>
 
--   Describe how to use assets within an app to apply styling and
-    functional components.
-
--   Create a component to service a specific purpose.
-
--   Create a folder and demonstrate how to create and import files
-    within that folder.
-
--   Use and manipulate props and components to effect visual results.
-
-### <b>Module 2: Data and State</b>
+<h3><b>Module 2: Data and State</b></h3>
 
 The second module of this course deals with working with <b>events</b> and
 <b>errors</b> in React. You'll learn how <b>events</b> work and how you can
@@ -308,20 +306,17 @@ in React.
 
 By the end of this module (two) you will be able to:
 
--   Use common methods to manage state in React.
+<ul>
+  <li>Use common methods to manage state in React,<br></li>
+  <li>Detail the concept and nature of state and state change,<br></li>
+  <li>Describe the hierarchical flow of data in React,<br></li>
+  <li>Describe how data flows in both stateful and stateless components,<br></li>
+  <li>Use an event to dynamically change content on a web page,<br></li>
+  <li>Describe some common errors associated with events and the syntax
+    required to handle them.</li>
+</ul>
 
--   Detail the concept and nature of state and state change.
-
--   Describe the hierarchical flow of data in React.
-
--   Describe how data flows in both stateful and stateless components.
-
--   Use an event to dynamically change content on a web page.
-
--   Describe some common errors associated with events and the syntax
-    required to handle them.
-
-### <b>Module 3: Navigation Updating and Assets in React</b>
+<h3><b>Module 3: Navigation Updating and Assets in React</b></h3>
 
 In this module (three), you'll learn about routing and navigation in
 React. You'll learn how to render partial views and how to update
@@ -330,22 +325,19 @@ bundled and embedded.
 
 By the end of this module (three) you will be able to:
 
--   Use media assets, such as audio and video, with React.
+<ul>
+  <li>Use media assets, such as audio and video, with React,<br></li>
+  <li>Demonstrate how to manipulate image assets using reference paths,<br></li>
+  <li>Explain the folder structure of a React project in terms of embedded
+    or referenced assets,<br></li>
+  <li>Demonstrate the conditional implementation and rendering of multiple
+    components,<br></li>
+  <li>Create and implement a route in the form of a navbar,<br></li>
+  <li>Describe navigation design in React, with a focus on single and
+    multi-page navigation.</li>
+</ul>
 
--   Demonstrate how to manipulate image assets using reference paths.
-
--   Explain the folder structure of a React project in terms of embedded
-    or referenced assets.
-
--   Demonstrate the conditional implementation and rendering of multiple
-    components.
-
--   Create and implement a route in the form of a navbar.
-
--   Describe navigation design in React, with a focus on single and
-    multi-page navigation.
-
-### <b>Module 4: Portfolio Mini-Project (Calculator App)</b>
+<h3><b>Module 4: Portfolio Mini-Project (Calculator App)</b></h3>
 
 This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
@@ -363,7 +355,7 @@ By the end of this module (four) you will be able to:
 -   Reflect on this course's content and on the learning path that lies
     ahead.
 
-## 04. Before you learn React
+<h2>04. Before you learn React</h2>
 
 Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
@@ -403,7 +395,7 @@ which also include HTML and CSS code.
 
 Let's begin with the fundamental HTML knowledge needed to learn React.
 
-### HTML
+<h3>HTML</h3>
 
 Recall that HTML is used to describe the structure of Web pages.
 Developers use HTML elements with their opening and closing tags to
@@ -434,45 +426,46 @@ content, set up events and animate HTML elements.
 Before you learn React, it's advisable that you are comfortable with the
 following HTML tags and concepts
 
-### Layout & Style
+<h3>Layout & Style</h3>
 
--   <b>&lt;html&gt;</b>
+<ul>
+  <li><b>&lt;html&gt;</b><br></li>
+  <li><b>&lt;head&gt;</b><br></li>
+  <li><b>&lt;body&gt;</b><br></li>
+  <li><b>&lt;div&gt;</b></li>
+</ul>
 
--   <b>&lt;head&gt;</b>
+<h3>Text formatting & lists</h3>
 
--   <b>&lt;body&gt;</b>
+<ul>
+  <li><b>&lt;h1&gt;...&lt;h6&gt;</b><br></li>
+  <li><b>&lt;p&gt;</b><br></li><br></li>
+  <li><b>&lt;ul&gt; &lt;li&gt;</b><br></li>
+  <li><b>&lt;b&gt; &lt;i&gt;</b><br></li>
+</ul>
 
--   <b>&lt;div&gt;</b>
+<h3>Images and links</h3>
 
-### Text formatting & lists
+<ul>
+  <li><b>&lt;img src= ""&gt;</b><br></li>
+  <li><b>&lt;a href=""&gt;</b><br></li>
+</ul>
 
--   <b>&lt;h1&gt;...&lt;h6&gt;</b>
+<h3>Linking and Meta</h3>
 
--   <b>&lt;p&gt;</b>
+<ul>
+  <li><b>&lt;link&gt;</b><br></li>
+  <li><b>&lt;title&gt;</b><br></li>
+  <li><b>&lt;meta&gt;</b><br></li>
+</ul>
 
--   <b>&lt;ul&gt; &lt;li&gt;</b>
+<h3>Semantic</h3>
 
--   <b>&lt;b&gt; &lt;i&gt;</b>
+<ul>
+  <li><b>&lt;header&gt;</b><br></li>
+</ul>
 
-### Images and links
-
--   <b>&lt;img src= ""&gt;</b>
-
--   <b>&lt;a href=""&gt;</b>
-
-### Linking and Meta
-
--   <b>&lt;link&gt;</b>
-
--   <b>&lt;title&gt;</b>
-
--   <b>&lt;meta&gt;</b>
-
-### Semantic
-
--   <b>&lt;header&gt;</b>
-
-### CSS
+<h3>CSS</h3>
 
 CSS (Cascading Style Sheets) is the code that you use to style HTML. You
 need to be familiar with basic CSS concepts before you start learning
@@ -482,19 +475,17 @@ well, and basic CSS knowledge will help your learning journey.
 Before you learn React, make sure you are comfortable with these CSS
 styling options:
 
--   Font styling (font size, font color, etc.) 
-
--   Flex Box Layout (Layout of items using CSS Flex Box Layout) 
-
--   CSS Selectors 
-
--   Position, Padding, Margins and Display 
-
--   Colors, Background and Icons 
+<ul>
+  <li>Font styling (font size, font color, etc.),<br></li>
+  <li>Flex Box Layout (Layout of items using CSS Flex Box Layout),<br></li>
+  <li>CSS Selectors,<br></li>
+  <li>Position, Padding, Margins and Display,<br></li>
+  <li>Colors, Background and Icons.</li>
+</ul>
 
 You can refresh your knowledge of HTML and CSS in the Meta course titled: <a href="https://www.coursera.org/learn/introduction-to-front-end-development" target="_blank" rel="noopener noreferrer">Introduction to Front-End Development</a>.
 
-### JavaScript fundamentals and ES6
+<h3>JavaScript fundamentals and ES6</h3>
 
 React is completely written in JavaScript and uses the more modern
 version of JavaScript which is <b>ES6</b>. While learning React, you should
@@ -506,23 +497,18 @@ library. This means the first step is to be proficient at JavaScript.
 Here are some of the JavaScript topics that you need to be comfortable
 with before you begin your journey learning React.
 
--   Data types,
+<ul>
+  <li>Data types,<br></li>
+  <li>Using var, let and const,<br></li>
+  <li>Conditionals and Loops,<br></li>
+  <li>Using objects, arrays and functions,<br></li>
+  <li>ES6 Arrow functions,<br></li>
+  <li>In-built functions such as map(), forEach() and promises,<br></li>
+  <li>Destructuring Arrays and Objects,<br></li>
+  <li>Error Handling.</li>
+</ul>
 
--   Using var, let and const, 
-
--   Conditionals and Loops,
-
--   Using objects, arrays and functions,
-
--   ES6 Arrow functions,
-
--   In-built functions such as map(), forEach() and promises,
-
--   Destructuring Arrays and Objects,
-
--   Error Handling.
-
-### Package Manager (Node + npm)
+<h3>Package Manager (Node + npm)</h3>
 
 React is a UI library, and you will encounter that many times you will
 need to add other packages to your React application.
@@ -542,10 +528,10 @@ Make sure you are aware of how to do the following with <b>npm</b> before
 you get started on this course.
 
 <ul>
-  <li>Installation command to install npm modules in your project,<br><br></li>
-  <li>Installing a package as a dev dependency,<br><br></li>
-  <li>Start command,<br><br></li>
-  <li>Updating npm version,<br><br></li>
+  <li>Installation command to install npm modules in your project,<br></li>
+  <li>Installing a package as a dev dependency,<br></li>
+  <li>Start command,<br></li>
+  <li>Updating npm version,<br></li>
   <li>Navigating around the package.json file.<br></li>
 </ul>
 
@@ -2342,7 +2328,6 @@ Here's the contents of the <b>Nav.js</b> file:
 
 ```
 function Nav() {
-
   return (
     <nav className="main-nav">
       <ul>
@@ -3847,12 +3832,11 @@ you'd code it with empty parentheses:
 
 ```
 const Nav = () => {
-
-    return (
-        <ul>
-            <li>Home</li>
-        </ul>
-    )
+  return (
+    <ul>
+      <li>Home</li>
+    </ul>
+  )
 }
 ```
 
@@ -6919,7 +6903,7 @@ export default function Square() {
 
 You'll get this error:
 
-## Console
+#### Console
 
 /src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
 Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?
@@ -7977,7 +7961,7 @@ compare whether their data has changed or not. You can learn more about
 how React chooses when to re-render a component in [the memo API
 reference](https://react.dev/reference/react/memo).
 
-## Taking turns 
+#### Taking turns 
 
 It's now time to fix a major defect in this tic-tac-toe game: the "O"s
 cannot be marked on the board.
@@ -8065,40 +8049,40 @@ should look like at this point:
 
 ```
 import { useState } from 'react';
- function Square({value, onSquareClick}) {
- return (
- <button className="square" onClick={onSquareClick}>
- {value}
- </button>
- );
- }
- export default function Board() {
- const [xIsNext, setXIsNext] = useState(true);
- const [squares, setSquares] = useState(Array(9).fill(null));
- function handleClick(i) {
- if (squares[i]) {
- return;
- }
- const nextSquares = squares.slice();
- if (xIsNext) {
- nextSquares[i] = 'X';
- } else {
- nextSquares[i] = 'O';
- }
- setSquares(nextSquares);
- setXIsNext(!xIsNext);
- }
- return (
- <>
- <div className="board-row">
- <Square value={squares[0]} onSquareClick={() => handleClick(0)}
- />
- <Square value={squares[1]} onSquareClick={() => handleClick(1)}
- />
- <Square value={squares[2]} onSquareClick={() => handleClick(2)}
- />
- </div>
- <div className="board-row">
+  function Square({value, onSquareClick}) {
+    return (
+      <button className="square" onClick={onSquareClick}>
+        {value}
+      </button>
+    );
+  }
+  export default function Board() {
+    const [xIsNext, setXIsNext] = useState(true);
+    const [squares, setSquares] = useState(Array(9).fill(null));
+    function handleClick(i) {
+      if (squares[i]) {
+        return;
+      }
+      const nextSquares = squares.slice();
+      if (xIsNext) {
+      nextSquares[i] = 'X';
+      } else {
+      nextSquares[i] = 'O';
+      }
+      setSquares(nextSquares);
+      setXIsNext(!xIsNext);
+    }
+  return (
+  <>
+  <div className="board-row">
+    <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+    />
+    <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+    />
+    <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+    />
+  </div>
+  <div className="board-row">
 ```
 
 </details>
@@ -9343,8 +9327,6 @@ by working from components lower down (like ProductRow). In simpler
 examples, it's usually easier to go top-down, and on larger projects,
 it's easier to go bottom-up.
 
-#### App.js
-
 <details>
   <summary>App.js</summary>
 
@@ -9457,7 +9439,7 @@ Let's go through them one by one again:
 This means only the search text and the value of the checkbox are state!
 Nicely done!
 
-##### DEEP DIVE
+#### DEEP DIVE
 
 #### Props vs State 
 
@@ -9660,7 +9642,6 @@ the parent state from them:
 
 Now the application fully works!
 
-#### App.js
 <details>
   <summary>App.js</summary>
 
