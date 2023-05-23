@@ -35,35 +35,38 @@ a simple, fast, and scalable app.
 
 By the end of this course, you will be able to:
 
--   Use reusable components to render views where data changes over
-    time,
+<ul>
+  <li>Use reusable components to render views where data changes over time,<br></li>
 
--   Create more scalable and maintainable websites and apps,
+  <li>Create more scalable and maintainable websites and apps,<br></li>
 
--   Use props to pass data between components,
+  <li>Use props to pass data between components,<br></li>
 
--   Create dynamic and interactive web pages and apps,
+  <li>Create dynamic and interactive web pages and apps,<br></li>
 
--   Use forms to allow users to interact with the web page,
+  <li>Use forms to allow users to interact with the web page,<br></li>
 
--   Build an application in React,
+  <li>Build an application in React,<br></li>
 
--   You'll gain experience with the following tools and software:
+  <li>You'll gain experience with the following tools and software:<br>
+  
+  <ul>
+    <li>React.js<br></li>
 
-    -   React.js
+    <li>JSX<br></li>
 
-    -   JSX
+    <li>React<br></li>
 
-    -   React
+    <li>HTML, CSS and JavaScript<br></li>
 
-    -   HTML, CSS and JavaScript
+    <li>VSCode (or other, BETTER, editors with less bullshit), like
+        notepad++,<br></li>
+  </ul></li>
 
-    -   VSCode (or other, BETTER, editors with less bullshit), like
-        notepad++,
-
--   You will be able to leverage the potential of this course to develop
+  <li>You will be able to leverage the potential of this course to develop
     new skills, improve productivity, act effectively with data and
-    boost your career.
+    boost your career.<br></li>
+</ul>
 
 This is a beginner course for learners who would like to prepare
 themselves for a career in mobile development.
@@ -78,12 +81,12 @@ with coding.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 ### React Components
 
+<!-- Section 01 of Week 1 -->
 ## 01. Introduction to the course: React Basics
 
 Welcome to React basics.
 
-In this course, you'll be introduced to the basics of working with
-React.
+In this course, you'll be introduced to the basics of working with React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. 3 basics of react (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8470,13 +8473,13 @@ Add some state to the Game component to track which player is next and
 the history of moves:
 
 ```
- export default function Game() {
+export default function Game() {
 
- const [xIsNext, setXIsNext] = useState(true);
+const [xIsNext, setXIsNext] = useState(true);
 
- const [history, setHistory] = useState([Array(9).fill(null)]);
+const [history, setHistory] = useState([Array(9).fill(null)]);
 
- // ...
+// ...
 ```
 
 Notice how [Array(9).fill(null)] is an array with a single item, which
@@ -8487,15 +8490,15 @@ squares array from the history. You don't need useState for this---you
 already have enough information to calculate it during rendering:
 
 ```
- export default function Game() {
+export default function Game() {
 
- const [xIsNext, setXIsNext] = useState(true);
+const [xIsNext, setXIsNext] = useState(true);
 
- const [history, setHistory] = useState([Array(9).fill(null)]);
+const [history, setHistory] = useState([Array(9).fill(null)]);
 
- const currentSquares = history[history.length - 1];
+const currentSquares = history[history.length - 1];
 
- // ...
+// ...
 ```
 
 Next, create a handlePlay function inside the Game component that will
@@ -8509,15 +8512,15 @@ export default function Game() {
   const currentSquares = history[history.length - 1];
 
   function handlePlay(nextSquares) {
-  // TODO
+    // TODO
   }
   return (
 
-  <div className="game">
-  <div className="game-board">
-  <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
-  />
-  //...
+    <div className="game">
+    <div className="game-board">
+    <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+    />
+      //...
   )
 }
 ```
@@ -8529,13 +8532,13 @@ squares array when a player makes a move. Next, remove the first two
 lines of the Board function that call useState:
 
 ```
-> function Board({ xIsNext, squares, onPlay }) {
->
- function handleClick(i) {
- //...
- }
- // ...
- }
+function Board({ xIsNext, squares, onPlay }) {
+
+  function handleClick(i) {
+    //...
+  }
+    // ...
+}
 ```
 
 Now replace the setSquares and setXIsNext calls in handleClick in the
@@ -8544,6 +8547,7 @@ Game component can update the Board when the user clicks a square:
 
 ```
 function Board({ xIsNext, squares, onPlay }) {
+
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -8556,7 +8560,7 @@ function Board({ xIsNext, squares, onPlay }) {
     }
     onPlay(nextSquares);
   }
-//...
+  //...
 }
 ```
 
@@ -8582,7 +8586,7 @@ export default function Game() {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   }
-  //...
+    //...
 }
 ```
 
@@ -8661,41 +8665,41 @@ representing buttons on the screen, and display a list of buttons to
 "jump" to past moves. Let's map over the history in the Game component:
 
 ```
- export default function Game() {
- const [xIsNext, setXIsNext] = useState(true);
- const [history, setHistory] = useState([Array(9).fill(null)]);
- const currentSquares = history[history.length - 1];
- function handlePlay(nextSquares) {
- setHistory([...history, nextSquares]);
- setXIsNext(!xIsNext);
- }
- function jumpTo(nextMove) {
- // TODO
- }
- const moves = history.map((squares, move) => {
- let description;
- if (move > 0) {
- description = 'Go to move #' + move;
- } else {
- description = 'Go to game start';
- }
- return (
- <li>
- <button onClick={() => jumpTo(move)}>{description}</button>
- </li>
- );
- });
- return (
- <div className="game">
- <div className="game-board">
- <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
- />
- </div>
- <div className="game-info">
- <ol>{moves}</ol>
- </div>
- </div>
- );
+export default function Game() {
+  const [xIsNext, setXIsNext] = useState(true);
+  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const currentSquares = history[history.length - 1];
+  function handlePlay(nextSquares) {
+    setHistory([...history, nextSquares]);
+    setXIsNext(!xIsNext);
+  }
+  function jumpTo(nextMove) {
+    // TODO
+  }
+  const moves = history.map((squares, move) => {
+    let description;
+      if (move > 0) {
+        description = 'Go to move #' + move;
+      } else {
+        description = 'Go to game start';
+      }
+    return (
+      <li>
+        <button onClick={() => jumpTo(move)}>{description}</button>
+      </li>
+    );
+  });
+  return (
+    <div className="game">
+      <div className="game-board">
+        <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
+        />
+      </div>
+      <div className="game-info">
+        <ol>{moves}</ol>
+      </div>
+    </div>
+  );
 }
 ```
 
@@ -8712,42 +8716,42 @@ section.
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
-  <button className="square" onClick={onSquareClick}>
-  {value}
-  </button>
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
- function handleClick(i) {
- if (calculateWinner(squares) || squares[i]) {
- return;
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = 'X';
+    } else {
+      nextSquares[i] = 'O';
+    }
+      onPlay(nextSquares);
   }
- const nextSquares = squares.slice();
- if (xIsNext) {
- nextSquares[i] = 'X';
- } else {
- nextSquares[i] = 'O';
- }
- onPlay(nextSquares);
- }
- const winner = calculateWinner(squares);
- let status;
- if (winner) {
- status = 'Winner: ' + winner;
- } else {
- status = 'Next player: ' + (xIsNext ? 'X' : 'O');
- }
- return (
- <>
- <div className="status">{status}</div>
- <div className="board-row">
- <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-  />
-    <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-  />
- <Square value={squares[2]} onSquareClick={() => handleClick(2)}
- />
- </div>
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = 'Winner: ' + winner;
+  } else {
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  }
+  return (
+    <>
+    <div className="status">{status}</div>
+    <div className="board-row">
+      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      />
+      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      />
+      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      />
+    </div>
     <div className="board-row">
       <Square value={squares[3]} onSquareClick={() => handleClick(3)}
       />
@@ -8776,12 +8780,12 @@ export default function Game() {
     setXIsNext(!xIsNext);
   }
   function jumpTo(nextMove) {
-  // TODO
+    // TODO
   }
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
-    description = 'Go to move #' + move;
+      description = 'Go to move #' + move;
     } else {
       description = 'Go to game start';
     }
@@ -8805,14 +8809,14 @@ export default function Game() {
 }
 function calculateWinner(squares) {
   const lines = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6],
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
   ];
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
@@ -8943,29 +8947,31 @@ function Square({ value, onSquareClick }) {
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
-function handleClick(i) {
-  if (calculateWinner(squares) || squares[i]) {
-    return;
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = 'X';
+    } else {
+      nextSquares[i] = 'O';
+    }
+    onPlay(nextSquares);
   }
-  const nextSquares = squares.slice();
-  if (xIsNext) {
-    nextSquares[i] = 'X';
-  } else {
-    nextSquares[i] = 'O';
-  }
-  onPlay(nextSquares);
-}
-const winner = calculateWinner(squares);
-let status;
-  if (winner) {
-    status = 'Winner: ' + winner;
-  } else {
-    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
-  }
+  const winner = calculateWinner(squares);
+  let status;
+    if (winner) {
+      status = 'Winner: ' + winner;
+    } else {
+      status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+    }
   return (
     <>
-      <div className="status">{status}</div>
-      <div className="board-row">
+    <div className="status">{status}</div>
+    <div className="board-row">
+  )
+}
 ```
 
 </details>
@@ -8992,12 +8998,12 @@ currentMove to is even.
 
 ```
 export default function Game() {
-// ...
-function jumpTo(nextMove) {
-setCurrentMove(nextMove);
-setXIsNext(nextMove % 2 === 0);
-}
-//...
+  // ...
+  function jumpTo(nextMove) {
+    setCurrentMove(nextMove);
+    setXIsNext(nextMove % 2 === 0);
+  }
+    //...
 }
 ```
 
@@ -9015,11 +9021,11 @@ called when you click on a square.
 
 ```
 function handlePlay(nextSquares) {
-const nextHistory = [...history.slice(0, currentMove + 1),
-nextSquares];
-setHistory(nextHistory);
-setCurrentMove(nextHistory.length - 1);
-setXIsNext(!xIsNext);
+  const nextHistory = [...history.slice(0, currentMove + 1),
+  nextSquares];
+  setHistory(nextHistory);
+  setCurrentMove(nextHistory.length - 1);
+  setXIsNext(!xIsNext);
 }
 ```
 
@@ -9028,11 +9034,11 @@ selected move, instead of always rendering the final move:
 
 ```
 export default function Game() {
-const [xIsNext, setXIsNext] = useState(true);
-const [history, setHistory] = useState([Array(9).fill(null)]);
-const [currentMove, setCurrentMove] = useState(0);
-const currentSquares = history[currentMove];
-// ...
+  const [xIsNext, setXIsNext] = useState(true);
+  const [history, setHistory] = useState([Array(9).fill(null)]);
+  const [currentMove, setCurrentMove] = useState(0);
+  const currentSquares = history[currentMove];
+    // ...
 }
 ```
 
@@ -9063,7 +9069,7 @@ function handleClick(i) {
   } else {
    nextSquares[i] = 'O';
   }
-    onPlay(nextSquares);
+  onPlay(nextSquares);
 }
 const winner = calculateWinner(squares);
   let status;
@@ -9144,38 +9150,39 @@ Check out the final result here:
 #### App.js
 
 ```
- import { useState } from 'react';
- function Square({ value, onSquareClick }) {
- return (
- <button className="square" onClick={onSquareClick}>
- {value}
- </button>
- );
- }
- function Board({ xIsNext, squares, onPlay }) {
- function handleClick(i) {
- if (calculateWinner(squares) || squares[i]) {
- return;
- }
- const nextSquares = squares.slice();
- if (xIsNext) {
- nextSquares[i] = 'X';
- } else {
- nextSquares[i] = 'O';
- }
- onPlay(nextSquares);
- }
- const winner = calculateWinner(squares);
- let status;
- if (winner) {
- status = 'Winner: ' + winner;
- } else {
- status = 'Next player: ' + (xIsNext ? 'X' : 'O');
- }
- return (
- <>
- <div className="status">{status}</div>
- <div className="board-row">
+import { useState } from 'react';
+function Square({ value, onSquareClick }) {
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
+}
+function Board({ xIsNext, squares, onPlay }) {
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = 'X';
+    } else {
+      nextSquares[i] = 'O';
+    }
+    onPlay(nextSquares);
+  }
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = 'Winner: ' + winner;
+  } else {
+    status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+  }
+  return (
+  <>
+  <div className="status">{status}</div>
+  <div className="board-row">
+}
 ```
 
 #### Show more
@@ -9223,27 +9230,25 @@ Imagine that you already have a JSON API and a mockup from a designer.
 The JSON API returns some data that looks like this:
 
 ```
- [
+[
+  { category: "Fruits", price: "$1", stocked: true, name: "Apple"
+  },
 
- { category: "Fruits", price: "$1", stocked: true, name: "Apple"
- },
+  { category: "Fruits", price: "$1", stocked: true, name:
+  "Dragonfruit" },
 
- { category: "Fruits", price: "$1", stocked: true, name:
- "Dragonfruit" },
+  { category: "Fruits", price: "$2", stocked: false, name:
+  "Passionfruit" },
 
- { category: "Fruits", price: "$2", stocked: false, name:
- "Passionfruit" },
+  { category: "Vegetables", price: "$2", stocked: true, name:
+  "Spinach" },
 
- { category: "Vegetables", price: "$2", stocked: true, name:
- "Spinach" },
+  { category: "Vegetables", price: "$4", stocked: false, name:
+  "Pumpkin" },
 
- { category: "Vegetables", price: "$4", stocked: false, name:
- "Pumpkin" },
-
- { category: "Vegetables", price: "$1", stocked: true, name:
- "Peas" }
-
- ]
+  { category: "Vegetables", price: "$1", stocked: true, name:
+  "Peas" }
+]
 ```
 
 The mockup looks like this:
@@ -9349,37 +9354,37 @@ it's easier to go bottom-up.
 
 ```
 function ProductCategoryRow({ category }) {
-return (
-<tr>
-<th colSpan="2">
-{category}
-</th>
-</tr>
-);
+  return (
+    <tr>
+      <th colSpan="2">
+        {category}
+      </th>
+    </tr>
+  );
 }
 function ProductRow({ product }) {
-const name = product.stocked ? product.name :
-<span style={{ color: 'red' }}>
-{product.name}
-</span>;
-return (
-<tr>
- <td>{name}</td>
- <td>{product.price}</td>
- </tr>
- );
- }
- function ProductTable({ products }) {
- const rows = [];
- let lastCategory = null;
- products.forEach((product) => {
- if (product.category !== lastCategory) {
- rows.push(
- <ProductCategoryRow
- category={product.category}
- key={product.category} />
- );
+  const name = product.stocked ? product.name :
+  <span style={{ color: 'red' }}>
+    {product.name}
+  </span>;
+  return (
+    <tr>
+      <td>{name}</td>
+      <td>{product.price}</td>
+    </tr>
+  );
 }
+function ProductTable({ products }) {
+  const rows = [];
+  let lastCategory = null;
+  products.forEach((product) => {
+  if (product.category !== lastCategory) {
+    rows.push(
+      <ProductCategoryRow
+      category={product.category}
+      key={product.category} />
+    );
+  }
 ```
 
 #### Show more
@@ -9546,36 +9551,36 @@ table update:
 
 ```
 import { useState } from 'react';
- function FilterableProductTable({ products }) {
- const [filterText, setFilterText] = useState('');
- const [inStockOnly, setInStockOnly] = useState(false);
- return (
- <div>
- <SearchBar
- filterText={filterText}
- inStockOnly={inStockOnly} />
- <ProductTable
- products={products}
- filterText={filterText}
- inStockOnly={inStockOnly} />
- </div>
- );
- }
- function ProductCategoryRow({ category }) {
- return (
- <tr>
- <th colSpan="2">
- {category}
- </th>
- </tr>
- );
- }
- function ProductRow({ product }) {
- const name = product.stocked ? product.name :
- <span style={{ color: 'red' }}>
- {product.name}
- </span>;
- return (
+function FilterableProductTable({ products }) {
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+  return (
+    <div>
+      <SearchBar
+        filterText={filterText}
+        inStockOnly={inStockOnly} />
+      <ProductTable
+        products={products}
+        filterText={filterText}
+        inStockOnly={inStockOnly} />
+    </div>
+  );
+}
+function ProductCategoryRow({ category }) {
+  return (
+    <tr>
+      <th colSpan="2">
+        {category}
+      </th>
+    </tr>
+  );
+}
+function ProductRow({ product }) {
+  const name = product.stocked ? product.name :
+  <span style={{ color: 'red' }}>
+    {product.name}
+  </span>;
+  return (
 ```
 
 Notice that editing the form doesn't work yet. There is a console error
