@@ -536,27 +536,26 @@ You can install npm by installing <b>Node.js,</b> which will then
 automatically install <b>npm</b>.
 
 You need to be comfortable with using npm as your package manager, since
-you will be using npm to install packages within your React
-application. 
+you will be using npm to install packages within your React application. 
 
 Make sure you are aware of how to do the following with <b>npm</b> before
 you get started on this course.
 
--   Installation command to install npm modules in your project,
-
--   Installing a package as a dev dependency,
-
--   Start command,
-
--   Updating npm version,
-
--   Navigating around the package.json file.
+<ul>
+  <li>Installation command to install npm modules in your project,<br><br></li>
+  <li>Installing a package as a dev dependency,<br><br></li>
+  <li>Start command,<br><br></li>
+  <li>Updating npm version,<br><br></li>
+  <li>Navigating around the package.json file.<br></li>
+</ul>
 
 Once you have become confident with these skills, you'll be in a better
 position to learn and apply React concepts and prepare yourself for
 development of React apps.
 
-To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm</b>, please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.
+To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm</b>, 
+please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" 
+target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.
 
 ## 05. JavaScript modules, imports - exports
 
@@ -4640,12 +4639,13 @@ Below you will find links to helpful additional resources.
 
 (https://legacy.reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx)
 
-# Week 2 
-
-Data and State
-
-## 01. Types of Events
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h1>Week 2</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Data and State</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>01. Types of Events</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you're probably familiar with <b>events</b> in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
 can occur when the user or the browser manipulates a page. They provide
@@ -4727,8 +4727,9 @@ In this section (1), you learned about the types of events available in
 React and how they came to be. Next, you'll explore specific examples
 and build the skills to use events competently from various situations.
 
-## 02. Eventful issues
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>02. Eventful issues</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You're now aware that React can work with most of the same events found
 in HTML, although React handles them differently.
 
@@ -4823,7 +4824,9 @@ rendered, all you have to do is use the error-handling mechanism that
 already exists in JavaScript -- that is, you just use the
 <b>try\...catch</b> blocks.
 
-## 03. Common event handling
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>03. Common event handling</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 I will now show you how to handle several events in React using
 components.
@@ -4879,8 +4882,9 @@ This time, when I hover over the button, the words mouse over are
 showing in the console. This section (3), you've learned how to work
 with <b>event handling</b> JSX attributes and React.
 
-## 04. Syntax for handlers
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>04. Syntax for handlers</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Every time you click or tap a button, scroll down the page or cancel a
 boring notification, you're producing events in the browser.
 
@@ -4981,21 +4985,21 @@ events are supported by some form of event handling.
 
 In this section (4), you learned how to distinguish the syntax for event
 handling in HTML and JavaScript.
-
-## 05. Event handling and embedded expressions
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>05. Event handling and embedded expressions</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 In this reading, you'll learn the different ways to embed expressions in
 event handlers in React:
 
--   With an inline anonymous ES5 function 
+<ul>
+  <li><p>With an inline anonymous ES5 function,</p></li>
+  <li><p>With an inline, anonymous ES6 function (an arrow function),</p></li>
+  <li><p>Using a separate function declaration,</p></li>
+  <li>Using a separate function expression,</li>
+</ul>
 
--   With an inline, anonymous ES6 function (an arrow function) 
-
--   Using a separate function declaration 
-
--   Using a separate function expression 
-
--   You may find this reading useful as a reference sheet.
+You may find this reading useful as a reference sheet.
 
 For clarity and simplicity: a function will simply console log some
 words. This will allow you to compare the difference in syntax between
