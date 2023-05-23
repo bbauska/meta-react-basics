@@ -215,7 +215,7 @@ company). Something wrong with this picture you say? Hell yes, I say.
 A lot of people are really excited to build on it and make improvements
 to it.
 
-If you ever have any questions or an (free) ideas about a certain
+If you ever have any questions or any (free) ideas about a certain
 feature or optimization or improvement, there's really a great
 opportunity to actually contribute to the React library itself.
 
