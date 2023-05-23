@@ -886,6 +886,9 @@ The installation and setup might take a few minutes.
 
 Here's the output of executing the above command:
 
+<details>
+  <summary>NPM create-react-app</summary>
+
 ```
 Creating a new React app in /home/pc/Desktop/firstapp.
 Installing packages. This might take a couple of minutes.
@@ -924,6 +927,8 @@ We suggest that you begin by typing:
 $ cd firstapp
 $ npm start 
 ```
+
+</details>
 
 If you follow the suggestions from the above output, you'll run: <b>$ cd
 firstapp</b>, and then <b>$ npm start</b>.
@@ -1926,6 +1931,9 @@ export default Example
 
 Here is the completed solution code for the App.js file:
 
+<details>
+  <summary>App.js</summary>
+
 ```
 function Heading() { 
   return ( 
@@ -1944,6 +1952,8 @@ function App() { 
   
 export default App;
 ```
+
+</details>
 
 Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2280,6 +2290,9 @@ Since the components folder is currently empty, you can add a component
 for each of the sections of the typography-focused blog. Here's the
 structural update:
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 src/
   components/
@@ -2298,6 +2311,8 @@ src/
     reportWebVitals.js
     setupTests.js
 ```
+
+</details>
 
 At this point, there's no need to complicate things. You have the
 <b>Nav</b> component, the <b>Promo</b> component, the <b>Intro1</b>, <b>Intro2</b>,
@@ -2322,6 +2337,9 @@ one.
 
 Here's the contents of the <b>Nav.js</b> file:
 
+<details>
+  <summary>Nav.js</summary>
+
 ```
 function Nav() {
 
@@ -2340,7 +2358,12 @@ function Nav() {
 export default Nav;
 ```
 
+</details>
+
 Next, you can focus on the <b>Promo.js</b> file:
+
+<details>
+  <summary>Promo.js</summary>
 
 ```
 function Promo() {
@@ -2359,10 +2382,15 @@ function Promo() {
 export default Promo;
 ```
 
+</details>
+
 Once you've finished the promo section, you can focus on the Intro
 components.
 
 Here's <b>Intro1.js:</b>
+
+<details>
+  <summary>Intro1.js</summary>
 
 ```
 function Intro1() {
@@ -2381,7 +2409,12 @@ function Intro1() {
 export default Intro1;
 ```
 
+</details>
+
 Here's the code for the <b>Intro2.js</b> component:
+
+<details>
+  <summary>Intro2.js</summary>
 
 ```
 function Intro2() {
@@ -2399,8 +2432,13 @@ function Intro2() {
 export default Intro2;
 ```
 
+</details>
+
 You can finish the previews for my blog posts with the code for
 <b>Intro3.js</b> component:
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 function Intro3() {
@@ -2417,6 +2455,8 @@ function Intro3() {
 
 export default Intro3;
 ```
+
+</details>
 
 There's just one more thing left to code, the <b>Footer</b> component, so
 here it is:
@@ -3277,6 +3317,9 @@ being carried inside of it, without issues.
 
 Now, consider the following component:
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 function Apples(props) {
 
@@ -3294,6 +3337,8 @@ function Apples(props) {
 
 export default Apples
 ```
+
+</details>
 
 There is also a <b>Pears</b> component:
 
@@ -3313,6 +3358,9 @@ This is where <b>props.children</b> comes in.
 
 You can define a <b>Bag</b> component as follows:
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 function Bag(props) {
   const bag = {
@@ -3330,6 +3378,9 @@ function Bag(props) {
 
  export default Bag
 ```
+
+</details>
+
 So, what this does in the <b>Bag</b> component is: it adds a wrapping
 <b>div</b> with a specific styling, and then gives it <b>props.children</b> as
 its content.
@@ -3522,6 +3573,9 @@ The syntax of inline styles in JSX is a bit custom.
 Consider a starting <b>Promo</b> component, containing code that you
 encountered earlier:
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 function Promo(props) {
   return (
@@ -3539,7 +3593,12 @@ function Promo(props) {
 export default Promo;
 ```
 
+</details>
+
 Now you can add some inline styles to it:
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 function Promo(props) {
@@ -3558,6 +3617,8 @@ function Promo(props) {
  
 export default Promo;
 ```
+
+</details>
 
 You can start updating the <b>Promo</b> component by adding the JavaScript
 expression syntax:
@@ -3598,6 +3659,9 @@ literal.
 That gives you an updated <b>Promo</b> component, with the styles object
 saved as a JavaScript variable:
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 function Promo(props) {
   
@@ -3619,6 +3683,8 @@ const styles = {
   );
 }
 ```
+
+</details>
 
 Using this approach makes your components more self-contained, because
 they come with their own styles built-in, but it also makes them a bit
@@ -4135,6 +4201,9 @@ However, you can pass almost any kind of expression as a prop.
 
 For example:
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 const bool = false; 
   
@@ -4153,6 +4222,8 @@ export default function App() { 
 };
 ```
 
+</details>
+
 In the example above, you're using the <b>!bool</b>, that is, the NOT
 operator, which evaluates to <b>true</b>, since <b>!false</b> is true.
 
@@ -4166,6 +4237,9 @@ expressions as props in React.
 What is happening here is several props are being passed to the
 <b>Example</b> component, and rendering each of these props' values to the
 screen.
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 const bool = false;
@@ -4195,6 +4269,8 @@ export default function App() {
   );
 };
 ```
+
+</details>
 
 In this improvement to the <b>Example</b> component, three props are being
 passed to it: <b>toggleBoolean</b>, <b>math</b>, and <b>str</b>. The
@@ -4399,6 +4475,9 @@ export default Card;
 <b>Step 8.</b> Back inside the App component, you needed to import the
 <b>Card</b> component. 
 
+<details>
+  <summary>App.js</summary>
+
 ```
 import "./App.css";
 import Card from "./Card";
@@ -4414,9 +4493,14 @@ function App() {
 export default App;
 ```
 
+</details>
+
 <b>Step 9.</b> Inside the App component's <b>return</b> statement, under the
 <b>h1</b> element, you should have added three <b>&lt;Card /&gt;</b> JSX
 elements. 
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 import "./App.css";
@@ -4436,8 +4520,13 @@ function App() {
 export default App;
 ```
 
+</details>
+
 <b>Step 10.</b> You needed to add the <b>h2</b> prop to the first <b>&lt;Card
 /&gt;</b> element, like this: <b>h2="First card's h2"</b>. 
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 import "./App.css";
@@ -4457,8 +4546,13 @@ function App() {
 export default App;
 ```
 
+</details>
+
 <b>Step 11.</b> You needed to add the <b>h3</b> prop to the first <b>&lt;Card
 /&gt;</b> element, like this: <b>h3="First card's h3"</b>. 
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 import "./App.css";
@@ -4477,6 +4571,8 @@ function App() {
   
 export default App;
 ```
+
+</details>
 
 <b>Step 12.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
 second <b>&lt;Card /&gt;</b> element, with the <b>h2</b> reading: <b>"Second
@@ -5041,7 +5137,7 @@ then you reference its name in the event-handling <b>onClick</b> attribute,
 as follows:
 
 <details>
-  <summary>function App</summary>
+  <summary>JS Functions</summary>
 
 ```
 function App() {
@@ -5271,7 +5367,6 @@ export default App;
 <b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
 <b>onClick</b> event-handling attribute, and passed it the following JSX
 expression: <b>{handleClick}</b>. 
-
 
 ```
 function App() {
@@ -5793,6 +5888,8 @@ export default function RegisterForm() { 
           onChange={e => { 
 ```
 
+</details>
+
 Notice that you are using a <b>form</b> object to store the state of all
 three text input field values:
 
@@ -5824,6 +5921,9 @@ We use the <b>useRef</b> hook to access a child element directly.
 When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
 The <b>ref</b> object has a property named <b>current</b>.
 
+<details>
+  <summary>JS Functions</summary>
+
 ```
 function TextInputWithFocusButton() {
   const inputEl = useRef(null);
@@ -5839,6 +5939,8 @@ function TextInputWithFocusButton() {
   );
 }
 ```
+
+</details>
 
 Using the ref attribute on the input element, I can then access the
 current value and invoke the <b>focus()</b> method on it, thereby focusing
@@ -5967,7 +6069,8 @@ with a capital letter, while HTML tags must be lowercase.
 
 Have a look at the result:
 
-#### App.js
+<details>
+  <summary>App.js</summary>
 
 ```
 function MyButton() {
@@ -5986,6 +6089,8 @@ export default function MyApp() {
   );
 }
 ```
+
+</details>
 
 The export default keywords specify the main component in the file. If
 you're not familiar with some piece of JavaScript syntax,
@@ -6066,24 +6171,20 @@ reads the JavaScript user.imageUrl variable value, and then passes that
 value as the src attribute:
 
 ```
- return (
-
- <img
-
- className="avatar"
-
- src={user.imageUrl}
-
- />
-
- );
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
 ```
 
 You can put more complex expressions inside the JSX curly braces too,
 for example, [string
 concatenation](https://javascript.info/operators#string-concatenation-with-binary):
 
-#### App.js
+<details>
+  <summary>App.js</summary>
 
 ```
 const user = {
@@ -6110,6 +6211,8 @@ export default function Profile() {
 }
 ```
 
+</details>
+
 In the above example, style={{}} is not a special syntax, but a regular
 {} object inside the style={ } JSX curly braces. You can use the style
 attribute when your styles depend on JavaScript variables.
@@ -6121,6 +6224,9 @@ you'll use the same techniques as you use when writing regular
 JavaScript code. For example, you can use an
 [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
 statement to conditionally include JSX:
+
+<details>
+  <summary>JS Functions</summary>
 
 ```
 let content;
@@ -6137,6 +6243,8 @@ if (isLoggedIn) {
     </div>
   );
 ```
+
+</details>
 
 If you prefer more compact code, you can use the [conditional ?
 operator.](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
@@ -6177,36 +6285,25 @@ to render lists of components.
 For example, let's say you have an array of products:
 
 ```
- const products = [
-
- { title: 'Cabbage', id: 1 },
-
- { title: 'Garlic', id: 2 },
-
- { title: 'Apple', id: 3 },
-
- ];
+const products = [
+  { title: 'Cabbage', id: 1 },
+  { title: 'Garlic', id: 2 },
+  { title: 'Apple', id: 3 },
+];
 ```
 
 Inside your component, use the map() function to transform an array of
 products into an array of <li> items:
 
 ```
- const listItems = products.map(product =>
-
- <li key={product.id}>
-
- {product.title}
-
- </li>
-
- );
-
- return (
-
- <ul>{listItems}</ul>
-
- );
+const listItems = products.map(product =>
+  <li key={product.id}>
+    {product.title}
+  </li>
+);
+return (
+  <ul>{listItems}</ul>
+);
 ```
 
 Notice how &lt;li&gt; has a key attribute. For each item in a list, you
@@ -6215,7 +6312,8 @@ among its siblings. Usually, a key should be coming from your data, such
 as a database ID. React uses your keys to know what happened if you
 later insert, delete, or reorder the items.
 
-#### App.js
+<details>
+  <summary>App.js</summary>
 
 ```
 const products = [
@@ -6239,6 +6337,8 @@ export default function ShoppingList() {
   );
 }
 ```
+
+</details>
 
 ### Responding to events 
 
@@ -6280,7 +6380,6 @@ Now you can declare a state variable inside your component:
 
 ```
 function MyButton() {
-
   const [count, setCount] = useState(0);
 ```
 
@@ -6313,19 +6412,20 @@ be 1. Then it will be 2. And so on.
 If you render the same component multiple times, each will get its own
 state. Click each button separately:
 
-#### App.js
+<details>
+  <summary>App.js</summary>
 
 ```
 import { useState } from 'react';
 export default function MyApp() {
-return (
-<div>
-<h1>Counters that update separately</h1>
-<MyButton />
-<MyButton />
-</div>
- );
- }
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
+}
 function MyButton() {
   const [count, setCount] = useState(0);
   function handleClick() {
@@ -6338,6 +6438,8 @@ function MyButton() {
   );
 }
 ```
+
+</details>
 
 Notice how each button "remembers" its own count state and doesn't
 affect other buttons.
@@ -6438,21 +6540,21 @@ First, move the state up from MyButton into MyApp:
 
 ```
 export default function MyApp() {
- const [count, setCount] = useState(0);
- function handleClick() {
- setCount(count + 1);
- }
- return (
- <div>
- <h1>Counters that update separately</h1>
- <MyButton />
- <MyButton />
- </div>
- );
- }
- function MyButton() {
- // ... we're moving code from here ...
- }
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
+}
+function MyButton() {
+  // ... we're moving code from here ...
+}
 ```
 
 </details>
