@@ -339,61 +339,62 @@ By the end of this module (three) you will be able to:
 
 <h3><b>Module 4: Portfolio Mini-Project (Calculator App)</b></h3>
 
-This module (four) is focused on a practical mini project of building a
+<p>This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
 your own mini project in React, as a starting point for building your
-React portfolio.
+React portfolio.<br>
 
 You have now learned about the scope of things you will cover in this
-course.
+course.<br>
 
-By the end of this module (four) you will be able to:
+By the end of this module (four) you will be able to:</p>
 
--   Synthesize the skills from this course to create and style a React
-    component.
-
--   Reflect on this course's content and on the learning path that lies
-    ahead.
+<ul>
+  <li>Synthesize the skills from this course to create and style a React
+    component,<br></li>
+  <li>Reflect on this course's content and on the learning path that lies
+    ahead.</li>
+</ul>
 
 <h2>04. Before you learn React</h2>
 
-Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
+<p>Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
 quick summary will be useful so let's explore some fundamental HTML,
-CSS and JavaScript principles and practices.
+CSS and JavaScript principles and practices.<br>
 
 In this section (04), let's take a practical approach, and revisit some
 of the development techniques you'll need to be comfortable with before
-learning React.
+learning React.<br>
 
 To get the most out of this course on React basics, you should first
 understand the fundamental methods and concepts of JavaScript.
 Otherwise, you may feel like you're a child learning to run before you
-can walk.
+can walk.<br>
 
 React is a declarative, efficient, and flexible JavaScript library for
 building user interfaces. It lets you compose complex UIs from small and
-isolated pieces of code called "<b>components</b>".
+isolated pieces of code called "<b>components</b>".<br>
 
 React apps are built using modern JavaScript features, which are
 commonly known as <b>ES6</b>. Developers use React to develop Single Page
 Applications. And you can also develop mobile applications with React
-Native.
+Native.<br>
 
 As an aspiring developer, you may opt for a 'learn as you go approach'
 regarding JavaScript and React. But this may not help your productivity
 and even at times frustrate you. This is because you may confuse code or
-functionality that is plain JavaScript, or code that is React.
+functionality that is plain JavaScript, or code that is React.<br>
 
 For example, with a solid foundational knowledge of JavaScript, you can
 quickly identify code that is JavaScript ES6 and code that is React. And
 throughout this course, there will be help for you along the way with
-some friendly reminders. 
+some friendly reminders.<br>
 
 Also, keep in mind that you are using React to build user interfaces
-which also include HTML and CSS code.
+which also include HTML and CSS code.<br>
 
-Let's begin with the fundamental HTML knowledge needed to learn React.
+Let's begin with the fundamental HTML knowledge needed to learn React.</p>
 
 <h3>HTML</h3>
 
@@ -439,7 +440,7 @@ following HTML tags and concepts
 
 <ul>
   <li><b>&lt;h1&gt;...&lt;h6&gt;</b><br></li>
-  <li><b>&lt;p&gt;</b><br></li><br></li>
+  <li><b>&lt;p&gt;</b><br></li>
   <li><b>&lt;ul&gt; &lt;li&gt;</b><br></li>
   <li><b>&lt;b&gt; &lt;i&gt;</b><br></li>
 </ul>
@@ -510,22 +511,22 @@ with before you begin your journey learning React.
 
 <h3>Package Manager (Node + npm)</h3>
 
-React is a UI library, and you will encounter that many times you will
-need to add other packages to your React application.
+<p>React is a UI library, and you will encounter that many times you will
+need to add other packages to your React application.<br>
 
-A package in JavaScript contains all the files needed for a module.
+A package in JavaScript contains all the files needed for a module.<br>
 
 To install these packages effectively and manage their dependencies you
-can use a package manager like <b>NPM</b> (Node Package Manager).
+can use a package manager like <b>NPM</b> (Node Package Manager).<br>
 
 You can install npm by installing <b>Node.js,</b> which will then
-automatically install <b>npm</b>.
+automatically install <b>npm</b>.<br>
 
 You need to be comfortable with using npm as your package manager, since
-you will be using npm to install packages within your React application. 
+you will be using npm to install packages within your React application.<br>
 
 Make sure you are aware of how to do the following with <b>npm</b> before
-you get started on this course.
+you get started on this course.</p>
 
 <ul>
   <li>Installation command to install npm modules in your project,<br></li>
@@ -535,28 +536,28 @@ you get started on this course.
   <li>Navigating around the package.json file.<br></li>
 </ul>
 
-Once you have become confident with these skills, you'll be in a better
+<p>Once you have become confident with these skills, you'll be in a better
 position to learn and apply React concepts and prepare yourself for
-development of React apps.
+development of React apps.<br>
 
 To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm</b>, 
 please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" 
-target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.
+target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 
-## 05. JavaScript modules, imports - exports
+<h2>05. JavaScript modules, imports - exports</h2>
 
-Before you start creating the next great app, let's explore a little
-more about modules.
+<p>Before you start creating the next great app, let's explore a little
+more about modules.<br>
 
 Modules can help you save and access your code in a more structured
 way, and in this section (05), you'll learn about some foundational
-concepts of working with JavaScript modules.
+concepts of working with JavaScript modules.<br>
 
 This knowledge is crucial in order to understand the syntax and the
 logic behind how the example <b>React apps</b> in this course are put
-together.
+together.<br>
 
-This section (05) will cover the three main concepts:
+This section (05) will cover the three main concepts:</p>
 
 <ol>
   <li>JavaScript modules,<br></li>
