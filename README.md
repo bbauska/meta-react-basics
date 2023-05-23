@@ -563,8 +563,8 @@ To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm
 Before you start creating the next great app, let's explore a little
 more about modules.
 
-Modules can help you to save and access your code in a more structured
-way, and in this reading (05), you'll learn about some foundational
+Modules can help you save and access your code in a more structured
+way, and in this section (05), you'll learn about some foundational
 concepts of working with JavaScript modules.
 
 This knowledge is crucial in order to understand the syntax and the
@@ -573,11 +573,13 @@ together.
 
 This section (05) will cover the three main concepts:
 
--   JavaScript modules,
+<ol>
+  <li>JavaScript modules,<br></li>
 
--   Module exports,
+  <li>Module exports,<br></li>
 
--   Module imports.
+  <li>Module imports.</li>
+</ol>
 
 ### <b>JavaScript Modules</b>
 
