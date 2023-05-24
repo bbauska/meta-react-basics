@@ -25,15 +25,14 @@ meta-react-basics: meta/Coursera - React Basics
   width="100px" />
 </p>
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
-
-React is a powerful JavaScript library that you can use to build user
-interfaces for web and mobile applications (apps).
+<p>React is a powerful JavaScript library that you can use to build user
+interfaces for web and mobile applications (apps).<br>
 
 In this 4-week course, you will explore the fundamental concepts that
 underpin the React library and learn the basic skills required to build
-a simple, fast, and scalable app.
+a simple, fast, and scalable app.<br>
 
-By the end of this course, you will be able to:
+By the end of this course, you will be able to:</p>
 
 <ul>
   <li>Use reusable components to render views where data changes over time,<br></li>
@@ -48,8 +47,9 @@ By the end of this course, you will be able to:
 
   <li>Build an application in React,<br></li>
 
-  <li>You'll gain experience with the following tools and software:<br></li>
-  </ul>
+  <li>You'll gain experience with the following tools and software:</li>
+</ul>
+
     <ul>
 	  <li>React.js<br></li>
 
