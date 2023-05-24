@@ -48,7 +48,8 @@ By the end of this course, you will be able to:
 
   <li>Build an application in React,<br></li>
 
-  <li>You'll gain experience with the following tools and software:<br>
+  <li>You'll gain experience with the following tools and software:<br></li>
+  </ul>
     <ul>
 	  <li>React.js<br></li>
 
@@ -60,7 +61,8 @@ By the end of this course, you will be able to:
 
       <li>VSCode (or other, BETTER, editors with less bullshit), like
         notepad++,</li>
-    </ul></li>
+    </ul>
+<ul>
   <li>You will be able to leverage the potential of this course to develop
     new skills, improve productivity, act effectively with data and
     boost your career.</li>
