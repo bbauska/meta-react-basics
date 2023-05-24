@@ -567,7 +567,7 @@ This section (05) will cover the three main concepts:</p>
   <li>Module imports.</li>
 </ol>
 
-### <b>JavaScript Modules</b>
+<h3><b>JavaScript Modules</b>
 
 In JavaScript, a module is simply a <b>file</b>.
 
@@ -593,7 +593,7 @@ How would you make this file a JavaScript module?
 All that you would need to do to make it a JavaScript module is use the
 export syntax.
 
-### <b>Module Exports</b>
+<h3><b>Module Exports</b></h3>
 
 There is more than one way to export a module in JavaScript.
 
@@ -607,7 +607,7 @@ In general, there are two ways to export modules in JavaScript:
 
 2.  Using named exports 
 
-### <b>Default Exports</b>
+<h3><b>Default Exports</b></h3>
 
 You can have <b>one default export</b> per JavaScript module.
 
@@ -633,7 +633,7 @@ function addTwo(a, b) {
 export default addTwo;
 ```
 
-### <b>Named Exports</b>
+<h3><b>Named Exports</b></h3>
 
 Named exports are a way to export only certain parts of a given
 JavaScript file.
@@ -683,7 +683,7 @@ function addThree(a + b + c) {
 export { addTwo, addThree };
 ```
 
-### <b>Importing Modules</b>
+<h3><b>Importing Modules</b></h3>
 
 Just like when exporting modules in JavaScript, there are several ways
 to import them.
@@ -698,7 +698,7 @@ The first module is <b>addTwo.js</b> and the second module is
 You want to import the <b>addTwo.js</b> module into the
 <b>mathOperations.js</b> module.
 
-### <b>Importing a Module that was Exported as Default</b>
+<h3><b>Importing a Module that was Exported as Default</b></h3>
 
 Consider the previous example of exporting the <b>addTwo</b> function as a
 default module:
@@ -736,7 +736,7 @@ import { addTwo } from "./addTwo";
 // the rest of the mathOperations.js code goes here
 ```
 
-### <b>Conclusion</b>
+<h3><b>Conclusion</b></h3>
 
 In this reading, you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
@@ -757,7 +757,7 @@ The intent of this reading was just to get you familiar with the most
 common syntax used - not as a comprehensive overview of modules in
 JavaScript.
 
-## 06. Additional reading
+<h2>06. Additional reading</h2>
 
 Below you will find links to helpful additional readings:
 
@@ -783,7 +783,7 @@ better than everyone else. They can copy, like the Russians did of the Space Shu
 But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
 But collectively, they ain't shit.
 
-## 07. Setting up a React project in notepad++, Sublime, Not VS Code
+<h2>07. Setting up a React project in notepad++, Sublime, Not VS Code</h2>
 
 To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
@@ -850,7 +850,7 @@ descriptive and short.
 In the next section, you'll learn how to build a brand-new app that you
 can name: <b>firstapp</b>.
 
-#### <b>Opening the built-in VS Code terminal and running npm init react-app command</b>
+<h4><b>Opening the built-in VS Code terminal and running npm init react-app command</b>
 
 In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -960,7 +960,7 @@ This means that you've successfully:
 After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
 
-## 08. Why React?
+<h2>08. Why React?</h2>
 
 React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
@@ -1073,7 +1073,7 @@ Hopefully for the rest of your career.
 There's a huge community behind you ready to help answer questions
 about React too.
 
-## 09. React.js overview
+<h2>09. React.js overview</h2>
 
 Recall the concept of the <b>single-page application</b> or SPA for short?
 
@@ -1338,7 +1338,7 @@ In this module, you learned about the basics of React by exploring the
 concepts of the component-based architecture components and the virtual
 DOM.
 
-## 10. Introduction to functional components
+<h2>10. Introduction to functional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. javascript function (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1641,7 +1641,7 @@ Finally, you explored the concepts of rendering and trans piling.
 If you'd like to learn about these concepts in more detail, there's a
 link to an additional reading at the end of this lesson.
 
-## 11. Creating React components
+<h2>11. Creating React components</h2>
 
 In this section (11), you will further explore the concepts of
 components in React and learn how to create a component from scratch.
@@ -1743,7 +1743,7 @@ this very soon.
 In this module, you'll learn how to create a functional component in
 React, and render it to the root components named <b>app.js</b>.
 
-## 12. Transpiling JSX
+<h2>12. Transpiling JSX</h2>
 
 By the end of this section (12), you will know how a component is built.
 
@@ -1914,7 +1914,7 @@ function Example() {
 export default Example
 ```
 
-## 13. Your first component
+<h2>13. Your first component</h2>
 
 Here is the completed solution code for the App.js file:
 
@@ -2005,7 +2005,7 @@ function Heading() { 
 <b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
 
-## 14. The React project structure
+<h2>14. The React project structure</h2>
 
 As you might already be aware, it's important to organize or structure
 your React components so that they're easy to access.
@@ -2169,7 +2169,7 @@ planning folder use for app development.
 
 Good job.
 
-## 15. Customizing the project
+<h2>15. Customizing the project</h2>
 
 So far, you've learned about React components, but now you will focus on
 learning how to customize the project. You will learn about the software
@@ -2177,7 +2177,7 @@ development approach, detailing the creation of separate associated
 files, the requirements gathering and the subsequent folder structure to
 be created.
 
-### Building a Layout
+<h3>Building a Layout</h3>
 
 Imagine that you've been given the task of building a somewhat more
 complex website layout using React.
@@ -2203,7 +2203,7 @@ sections:
 
 -   The footer 
 
-### Organizing Your Code
+<h3>Organizing Your Code</h3>
 
 Keeping in mind the above structure, how would you organize your code?
 
@@ -2226,7 +2226,7 @@ like this, you could keep it as simple as just adding a <b>components</b>
 folder and moving all your components into it. This is exactly what
 you'll do next.
 
-#### Building the App
+<h4>Building the App</h4>
 
 Since this is app's focus on customization, let's name the app
 <b>customizing-example</b>.
@@ -2315,7 +2315,7 @@ In this reading, you'll just build all the components inside the
 components folder, and then, in the upcoming lesson items, import them
 into the <b>App.js</b> file.
 
-### Building Components
+<h3>Building Components</h3>
 
 For now, let's just build those components. After you've added the
 components folder, you've also added all the functional component files.
@@ -2472,7 +2472,7 @@ These are:
 
 -   Why was I not using the <b>&lt;a&gt;</b> element for empty links? 
 
-### Discussing the Syntax
+<h3>Discussing the Syntax</h3>
 
 Now let's briefly discuss the four bullet points above.
 
@@ -2526,14 +2526,14 @@ using the <b>&lt;a&gt;</b> tag is simply not the React way of doing things.
 You'll learn why that is the case when discussing the use of React
 Router.
 
-### Conclusion
+<h3>Conclusion</h3>
 
 Having finished this reading, you have now learned about the software
 development approach, detailing the creation of separate associated
 files, the requirements gathering, and the subsequent folder structure
 to be created.
 
-## 16. Importing components
+<h2>16. Importing components</h2>
 
 One of the advantages of component-based architecture is that your app
 is split up into individual self-contained components.
@@ -2661,7 +2661,7 @@ structure of the import and export statement.
 You also learned how to manage your React components by placing them in
 a components folder.
 
-## 17. Creating and importing components
+<h2>17. Creating and importing components</h2>
 
 Here are the contents of the Heading.js file:
 
@@ -2749,7 +2749,7 @@ function App() {
 }
 ```
 
-## 18. Additional resources (React components)
+<h2>18. Additional resources (React components)</h2>
 
 [Basic Concepts of
 Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) 
@@ -2781,7 +2781,7 @@ GitHub](https://github.com/webpack/webpack-dev-server) 
 (macOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
 
-## 19. Principles of Components: Props
+<h2>19. Principles of Components: Props</h2>
 
 By now, you should be familiar with the concept of functional components
 in React. They are reusable blocks of code that act much like a
@@ -2888,7 +2888,7 @@ you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
 functions using props must never modify its own props.
 
-## 20. Dissecting props
+<h2>20. Dissecting props</h2>
 
 Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
@@ -2982,13 +2982,13 @@ function App() {
 So now the third argument of the outer-most <b>React.createElement</b> call
 is another <b>React.createElement</b> call.
 
-### This is how you can nest as many elements as you want.
+This is how you can nest as many elements as you want.
 
 This means that a nested JSX structure is just a bunch of nested
 <b>React.createElement</b> calls, passed in to other
 <b>React.createElement</b> calls as their third argument.
 
-### The second -- null -- argument
+<h3>The second -- null -- argument</h3>
 
 The second argument of <b>null</b> can -- in this case -- be replaced with
 an empty object.
@@ -3022,7 +3022,7 @@ React.createElement(
 )
 ```
 
-### The third argument (\...children)
+<h3>The third argument (\...children)</h3>
 
 This is the inner content that will go inside the wrapping element.
 It's what makes it possible to nest elements inside other elements,
@@ -3031,7 +3031,7 @@ mimicking the way that HTML works.
 In this reading you've learned how to use a transpiler to break JSX code
 to plain JavaScript, making its purpose more understandable.
 
-## 21. Using props in components
+<h2>21. Using props in components</h2>
 
 By now, you should be familiar with the concept of props, and that they
 allow you to pass data from one component to another. Developers use
@@ -3091,7 +3091,7 @@ data they received from their parent components using their respective
 props objects. You should now be able to effectively demonstrate the
 passing of props to and within a component using classes and functions.
 
-## 22. Passing props
+<h2>22. Passing props</h2>
 
 Here is the completed App.js file:
 
@@ -3223,7 +3223,7 @@ function App() {
 export default App;
 ```
 
-## 23. Introducing JSX
+<h2>23. Introducing JSX</h2>
 
 At this point in the course, you've been introduced to the concept of
 JSX, and how it's used to interact with components. In this section
@@ -3279,7 +3279,7 @@ JSX styling, and how it's used in React. You have now furthered your
 understanding of how to use JSX to mix JavaScript, HTML, and CSS within
 a component. Great work.
 
-## 24. Props and children
+<h2>24. Props and children</h2>
 
 Previously, you learned that you could pass props to and within a
 component. But there is also a special prop known as <b>props.children,</b>
@@ -3511,7 +3511,7 @@ In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
 <b>props.children</b> in the background.
 
-## 25. Styling JSX elements
+<h2>25. Styling JSX elements</h2>
 
 You've observed that JSX is incredibly versatile, and can accept a
 combination of JavaScript, HTML and CSS.  In this reading, you'll learn
@@ -3676,7 +3676,7 @@ Using this approach makes your components more self-contained, because
 they come with their own styles built-in, but it also makes them a bit
 harder to maintain.
 
-## 26. Practical styling
+<h2>26. Practical styling</h2>
 
 Recall that there are three techniques to include CSS and HTML documents. 
 The first is in line by utilizing the style attribute inside the HTML element. 
@@ -3769,7 +3769,7 @@ render the <b>Nav</b> component. It's still the same:
 
 You can also take this concept a step further, using arrow functions.
 
-### <b>Components as Arrow Functions</b>
+<h3><b>Components as Arrow Functions</b></h3>
 
 Arrow functions are a core feature of the ES6 version of JavaScript.
 
@@ -3857,7 +3857,7 @@ Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
 cases.
 
-### <b>Using Arrow Functions in Other Situations</b>
+<h3><b>Using Arrow Functions in Other Situations</b></h3>
 
 In React, just like in plain JavaScript, arrow functions can be used in
 many different situations. One such situation is using it with, for
@@ -3927,7 +3927,7 @@ Now that you have completed this reading, you've learned about some
 alternative approaches, specifically by using function expressions and
 arrow functions.
 
-## 28. Embedded JSX expressions
+<h2>28. Embedded JSX expressions</h2>
 
 Recall that JSX is a syntax extension to JavaScripts that is used with
 React. It allows developers to write HTML as part of their component
@@ -3969,7 +3969,7 @@ In this section (28), you explored several JSX examples, including one that uses
 embedded expressions to insert the values of JavaScript variables into HTML within 
 a React element.
 
-## 29. Ternary operators and functions in JSX
+<h2>29. Ternary operators and functions in JSX</h2>
 
 So you've explored several ways to define components in React; this
 includes function declarations, function expressions and arrow
@@ -3982,7 +3982,7 @@ In this reading, you will become familiar with how to use ternary
 expressions to achieve a random return, as well as how to invoke
 functions inside of JSX expressions.
 
-### A different way of writing an if\...else conditional
+<h3>A different way of writing an if\...else conditional</h3>
 
 You are likely familiar with the structure of an if\...else conditional.
 Here is a quick refresher:
@@ -4066,7 +4066,7 @@ let name = 'Bob';
 name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
 ```
 
-## <b>Using ternary expressions in JSX</b>
+<h2><b>Using ternary expressions in JSX</b></h2>
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
@@ -4106,7 +4106,7 @@ expression.
 This is how you can use a ternary expression to check for a condition
 right inside a component and return a value dynamically.
 
-### <b>Using function calls in JSX</b>
+<h3><b>Using function calls in JSX</b></h3>
 
 Another way to work with an expression in JSX is to invoke a function.
 Function invocation is an expression because every expression returns a
@@ -4176,7 +4176,7 @@ JavaScript expressions in JSX.
 Now that you have completed this reading, you have learned about a few
 more ways that you can use expressions in JSX.
 
-## 30. Expressions as props
+<h2>30. Expressions as props</h2>
 
 You've already learned a bit about using expressions as props. These
 can be, among other things, ternary operators, function calls, or some
@@ -4274,7 +4274,7 @@ In summary, just like you can use expressions inside function
 components, you can also use them as prop values inside JSX elements,
 when rendering those function components.
 
-## 31. Embedding in attributes
+<h2>31. Embedding in attributes</h2>
 
 I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
@@ -4307,7 +4307,7 @@ file and then import and render it as needed. And that's a
 demonstration on how you can embed a JSX expression in an attribute. In
 this case the SRC attribute of an html image tag.
 
-## 32. Multiple components
+<h2>32. Multiple components</h2>
 
 Here's the completed App.js file:
 
@@ -4642,7 +4642,7 @@ export default App;
 
 </details>
 
-## 33. Module Summary -- React Components &amp; where they live
+<h2>33. Module Summary -- React Components &amp; where they live</h2>
 
 Well done. You've reached the end of module one on react components.
 
@@ -4700,7 +4700,7 @@ within an app to apply styling and functional components.
 That's a great start to your React journey. Well done on completing
 this module and get ready for the next one.
 
-## 34. Additional resources (React Basics - Week 1)
+<h2>34. Additional resources (React Basics - Week 1)</h2>
 
 Below you will find links to helpful additional resources.
 
@@ -4819,7 +4819,7 @@ event-driven React code. However, in this reading, you'll learn about
 some of the most common errors associated with events and how you can
 deal with them.
 
-#### Event Errors
+<h4>Event Errors</h4>
 
 When you work in any programming environment, language, or framework,
 you are bound to write code that throws errors, for a variety of
@@ -5087,7 +5087,7 @@ words. This will allow you to compare the difference in syntax between
 these four approaches, while the result of the event handling will
 always be the same: just some words output to the console.
 
-#### <b>Handling events using inline anonymous ES5 functions</b>
+<h4><b>Handling events using inline anonymous ES5 functions</b></h4>
 
 This approach allows you to directly pass in an ES5 function declaration
 as the <b>onClick</b> event-handling attribute's value:
@@ -5102,7 +5102,7 @@ Although it's possible to write your click handlers using this syntax,
 it's not a common approach and you will not find such code very often
 in React apps.
 
-#### <b>Handling events using inline anonymous ES6 functions (arrow functions)</b>
+<h4><b>Handling events using inline anonymous ES6 functions (arrow functions)</b></h4>
 
 With this approach, you can directly pass in an ES6 function declaration
 as the <b>onClick</b> event-handling attribute's value:
@@ -5115,7 +5115,7 @@ This approach is much more common then the previous one. If you want to
 keep all your logic inside the JSX expression assigned to the onClick
 attribute, use this syntax.
 
-#### <b>Handling events using separate function declarations</b>
+<h4><b>Handling events using separate function declarations</b></h4>
 
 With this approach, you declare a separate ES5 function declaration, and
 then you reference its name in the event-handling <b>onClick</b> attribute,
@@ -5152,7 +5152,7 @@ example, 20 lines of code, and that needs to be ran when the click event
 is triggered. This is a perfect use-case for a separate function
 declaration.
 
-#### <b>Handling events using separate function expressions</b>
+<h4><b>Handling events using separate function expressions</b></h4>
 
 <b>Tip</b>: A way to determine if a function is defined as an expression
 or a declaration is: if it does not start the line with the keyword
@@ -5197,7 +5197,7 @@ doing this, you can understand other people's code more easily, as well
 as choose the syntax that best suits your given use case, such as a
 specific company coding style guide.
 
-## 06. User events
+<h2>06. User events</h2>
 
 In this section, I'm going to demonstrate how to toggle the value of a
 Boolean state variable using user triggered events. And how to handle
@@ -5273,11 +5273,11 @@ should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element
 
-## 07. Dynamic events &amp; how to handle them
+<h2>07. Dynamic events &amp; how to handle them</h2>
 
 Here is the completed App.js file:
 
-#### App.js
+<h4>App.js</h4>
 
 <details>
   <summary>App.js</summary>
@@ -5401,7 +5401,7 @@ up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number "chosen" by the computer one more time. 
 
-## 08. Additional resources (Data &amp; State - Week 2)
+<h2>08. Additional resources (Data &amp; State - Week 2)</h2>
 
 Here is a list of resources that may be helpful as you continue your
 learning journey.
@@ -5423,7 +5423,7 @@ learning journey.
 -   [JavaScript Expressions as
     Children](https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children) 
 
-## 09. Parent-child data flow
+<h2>09. Parent-child data flow</h2>
 
 Imagine you're working for an online retailer which discount prices
 regularly to keep stock moving. Sales are announced at multiple points
@@ -5515,7 +5515,7 @@ to child. By storing data in the parent component, you can dynamically
 pass it to the child component without the need to update children
 individually.
 
-## 10. Data flow in React
+<h2>10. Data flow in React</h2>
 
 You've just learned how the parent-child relationship can be set up so
 that data flows from parent to child. 
@@ -5526,7 +5526,7 @@ concise. Finally, you will explore data flow in greater detail by
 looking at more examples. This should act as a refresher to knowledge
 gained in previous courses.
 
-#### <b>Parent-child data flow</b>
+<h4><b>Parent-child data flow</b></h4>
 
 In React, data flow is a one-way street. Sometimes it's said that the
 data flow is unidirectional. Put differently, the data in React flows
@@ -5554,7 +5554,7 @@ Imagine that the parent component passes a prop (name) to the child
 component. The child component then uses this prop to render the name in
 the UI.
 
-#### <b>Parent component:</b>
+<h4><b>Parent component:</b></h4>
 
 ```
 function Dog() {
@@ -5564,7 +5564,7 @@ function Dog() {
 };
 ```
 
-#### <b>Child component:</b>
+<h4><b>Child component:</b></h4>
 
 ```
 function Puppy(props) {
@@ -5576,7 +5576,7 @@ function Puppy(props) {
 };
 ```
 
-#### <b>Grandchild component:</b>
+<h4><b>Grandchild component:</b></h4>
 
 ```
 function Bowl(props) {
@@ -5594,7 +5594,7 @@ everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
 be as efficient as it could be, especially in modern React.
 
-## 11. Children and data
+<h2>11. Children and data</h2>
 
 In this section (11), you're going to learn about data flow in ReactJS.
 In this case, data flow is in one direction only. Immediately a question
@@ -5646,9 +5646,9 @@ time. Well done. You've now learned how children and data flows in
 ReactJS. You should also be able to showcase the use of stateless and
 stateful examples by focusing on data flow.
 
-## 12. Data flow
+<h2>12. Data flow</h2>
 
-## 13. What are hooks?
+<h2>13. What are hooks?</h2>
 
 By now you've probably already learned about some important and useful
 core concepts in React. At this point, you're ready to learn how to add
@@ -5709,7 +5709,7 @@ In this section, you learned the basics on React hooks and explored the
 <b>useState</b> hook. You now understand the benefits of using hooks and
 how you can use them within your React applications.
 
-## 14. Using hooks
+<h2>14. Using hooks<h2>
 
 Now that you understand what hooks are in React and have some basic
 knowledge on the <b>useState</b> hook, let's dive in deeper. In this
@@ -5899,7 +5899,7 @@ form handling, animation, timers, and many more. 
 
 Next, I'll give you an explanation of how the <b>useRef</b> hook works.
 
-#### The useRef hook
+<h4>The useRef hook</h4>
 
 We use the <b>useRef</b> hook to access a child element directly.
 
@@ -5934,51 +5934,51 @@ the input field.
 There are situations where accessing the DOM directly is needed, and
 this is where the <b>useRef</b> hook comes into play.
 
-#### Conclusion
+<h4>Conclusion</h4>
 
 In this reading, you have explored hooks in detail and understand how to
 use the <b>useState</b> hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
-## 15. What is state?
+<h2>15. What is state?</h2>
 
 <i>"Make it as simple as possible, but not simpler."</i>
 Albert Einstein
 
-## 16. Observing state
+<h2>16. Observing state</h2>
 
-## 17. State the concept
+<h2>17. State the concept</h2>
 
-## 18. Managing state
+<h2>18. Managing state</h2>
 
-## 19. Prop drilling
+<h2>19. Prop drilling</h2>
 
-## 20. React state management
+<h2>20. React state management</h2>
 
-## 21. Passing state
+<h2>21. Passing state</h2>
 
-## 22. Stateful vs stateless
+<h2>22. Stateful vs stateless</h2>
 
-## 23. Managing state in React
+<h2>23. Managing state in React</h2>
 
-## 24. State or stateless
+<h2>24. State or stateless</h2>
 
-## 25. Data events &amp; how to handle them
+<h2>25. Data events &amp; how to handle them</h2>
 
-## 26. Additional resources
+<h2>26. Additional resources</h2>
 
-# Week 3
+<h1>Week 3</h1>
 
 Navigation, Updating and Assets in React.js
 
-### Week 1
+<h3>Week 1</h3>
 
 React Components
 
 In this module (one) you will explore the concept and practical use of
 state and stage-
 
-### Week 2
+<h3>Week 2</h3>
 
 Data and State
 
@@ -5987,7 +5987,7 @@ state and stage-management. You will also gain knowledge on how to
 handle events and the ability to dynamically change content on a web
 page.
 
-### Week 3
+<h3>Week 3</h3>
 
 Navigation, Updating and Assets in React.js
 
@@ -5995,16 +5995,16 @@ In this module (three) you will explore the basics of single and
 multi-page navigation, as well as the conditional rendering or changing
 of content in response to user status or choice.
 
-### Week 4
+<h3>Week 4</h3>
 
-### Your first React app
+<h3>Your first React app</h3>
 
 In this module (four), you will be assessed on the key skills covered in
 the Course.
 
-### Quick Start
+<h3>Quick Start</h3>
 
-### You will learn
+<h3>You will learn</h3>
 
 -   How to create and nest components
 
@@ -6018,7 +6018,7 @@ the Course.
 
 -   How to share data between components
 
-### Creating and nesting components 
+<h3>Creating and nesting components</h3>
 
 React apps are made out of components. A component is a piece of the UI
 (user interface) that has its own logic and appearance. A component can
@@ -6083,7 +6083,7 @@ you're not familiar with some piece of JavaScript syntax,
 and [javascript.info](https://javascript.info/import-export) have great
 references.
 
-### Writing markup with JSX 
+<h3>Writing markup with JSX</h3>
 
 The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
 most React projects use JSX for its convenience. All of the [tools we
@@ -6109,7 +6109,7 @@ function AboutPage() {
 If you have a lot of HTML to port to JSX, you can use an [online
 converter.](https://transform.tools/html-to-jsx)
 
-### Adding styles 
+<h3>Adding styles</h3>
 
 In React, you specify a CSS class with className. It works the same way
 as the HTML
@@ -6135,7 +6135,7 @@ you'll add a
 tag to your HTML. If you use a build tool or a framework, consult its
 documentation to learn how to add a CSS file to your project.
 
-#### Displaying data 
+<h4>Displaying data</h4>
 
 JSX lets you put markup into JavaScript. Curly braces let you "escape
 back" into JavaScript so that you can embed some variable from your code
@@ -6202,7 +6202,7 @@ In the above example, style={{}} is not a special syntax, but a regular
 {} object inside the style={ } JSX curly braces. You can use the style
 attribute when your styles depend on JavaScript variables.
 
-### Conditional rendering 
+<h3>Conditional rendering</h3>
 
 In React, there is no special syntax for writing conditions. Instead,
 you'll use the same techniques as you use when writing regular
@@ -6259,7 +6259,7 @@ All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
 you can start by always using if\...else.
 
-### Rendering lists 
+<h3>Rendering lists</h3>
 
 You will rely on JavaScript features like [for
 loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
@@ -6325,7 +6325,7 @@ export default function ShoppingList() {
 
 </details>
 
-### Responding to events 
+<h3>Responding to events</h3>
 
 You can respond to events by declaring event handler functions inside
 your components:
@@ -6348,7 +6348,7 @@ Notice how onClick={handleClick} has no parentheses at the end! Do not
 call the event handler function: you only need to pass it down. React
 will call your event handler when the user clicks the button.
 
-### Updating the screen 
+<h3>Updating the screen</h3>
 
 Often, you'll want your component to "remember" some information and
 display it. For example, maybe you want to count the number of times a
@@ -6429,7 +6429,7 @@ function MyButton() {
 Notice how each button "remembers" its own count state and doesn't
 affect other buttons.
 
-### Using Hooks 
+<h3>Using Hooks</h3>
 
 Functions starting with use are called Hooks. useState is a built-in
 Hook provided by React. You can find other built-in Hooks in the [API
@@ -6441,7 +6441,7 @@ at the top of your components (or other Hooks). If you want to use
 useState in a condition or a loop, extract a new component and put it
 there.
 
-### Sharing data between components 
+<h3>Sharing data between components</h3>
 
 In the previous example, each MyButton had its own independent count,
 and when each button was clicked, only the count for the button clicked
@@ -6624,14 +6624,14 @@ export default function MyApp() {
 
 </details>
 
-### Next Steps 
+<h3>Next Steps</h3>
 
 By now, you know the basics of how to write React code!
 
-Check out the [Tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
+Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial </a>
 to put them into practice and build your first mini-app with React.
 
-### Tutorial: Tic-Tac-Toe
+<h3>Tutorial: Tic-Tac-Toe</h3>
 
 You will build a small tic-tac-toe game during this tutorial. This
 tutorial does not assume any existing React knowledge. The techniques
@@ -6655,7 +6655,7 @@ The tutorial is divided into several sections:
     travel](https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel) will
     give you a deeper insight into the unique strengths of React.
 
-### What are you building? 
+<h3>What are you building?</h3>
 
 In this tutorial, you'll build an interactive tic-tac-toe game with
 React.
@@ -6723,7 +6723,7 @@ Once you've played around with the finished tic-tac-toe game, keep
 scrolling. You'll start with a simpler template in this tutorial. Our
 next step is to set you up so that you can start building the game.
 
-#### Setup for the tutorial 
+<h4>Setup for the tutorial</h4>
 
 In the live code editor below, click <b>Fork</b> in the top-right corner to
 open the editor in a new tab using the website CodeSandbox. CodeSandbox
@@ -6731,7 +6731,7 @@ lets you write code in your browser and preview how your users will see
 the app you've created. The new tab should display an empty square and
 the starter code for this tutorial.
 
-#### App.js
+<h4>App.js</h4>
 
 ```
 export default function Square() {
@@ -6739,7 +6739,7 @@ export default function Square() {
 }
 ```
 
-#### Note
+<h4>Note</h4>
 
 You can also follow this tutorial using your local development
 environment. To do this, you need to:
@@ -6761,11 +6761,11 @@ environment. To do this, you need to:
 If you get stuck, don't let this stop you! Follow along online instead
 and try a local setup again later.
 
-#### Overview 
+<h4>Overview</h4>
 
 Now that you're set up, let's get an overview of React!
 
-#### Inspecting the starter code 
+<h4>Inspecting the starter code</h4>
 
 In CodeSandbox you'll see three main sections:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6810,7 +6810,7 @@ this:
 
 Now let's have a look at the files in the starter code.
 
-#### App.js 
+<h4>App.js</h4>
 
 The code in App.js creates a <i>component</i>. In React, a component is a
 piece of reusable code that represents a part of a user interface.
@@ -6887,7 +6887,7 @@ Lines 1-5 brings all the necessary pieces together:
 The remainder of the file brings all the pieces together and injects the
 final product into index.html in the public folder.
 
-#### Building the board 
+<h4>Building the board</h4>
 
 Let's get back to App.js. This is where you'll spend the rest of the
 tutorial.
@@ -6904,7 +6904,7 @@ export default function Square() {
 
 You'll get this error:
 
-#### Console
+<h4>Console</h4>
 
 /src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
 Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?
@@ -7038,13 +7038,13 @@ export default function Board() {
 
 </details>
 
-#### Note
+<h4>Note</h4>
 
 Psssst... That's a lot to type! It's okay to copy and paste code from
 this page. However, if you're up for a little challenge, we recommend
 only copying code that you've manually typed at least once yourself.
 
-#### Passing data through props 
+<h4>Passing data through props</h4>
 
 Next, you'll want to change the value of a square from empty to "X" when
 the user clicks on the square. With how you've built the board so far
@@ -7251,7 +7251,7 @@ export default function Board() {
 
 </details>
 
-#### Making an interactive component 
+<h4>Making an interactive component</h4>
 
 Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
@@ -7280,7 +7280,7 @@ console logs with the same message will not create more lines in the
 console. Instead, you will see an incrementing counter next to your
 first "clicked!" log.
 
-#### Note
+<h4>Note</h4>
 
 If you are following this tutorial using your local development
 environment, you need to open your browser's Console. For example, if
@@ -7430,7 +7430,7 @@ export default function Board() {
 
 </details>
 
-#### React Developer Tools
+<h4>React Developer Tools</h4>
 
 React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
@@ -7445,7 +7445,7 @@ top left corner of React DevTools:
 ![Selecting components on the page with React
 DevTools](./images/image061.gif){width="5.0in" height="3.7in"}
 
-#### Note
+<h4>Note</h4>
 
 For local development, React DevTools is available as a
 [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en),
@@ -7455,14 +7455,14 @@ and
 browser extension. Install it, and the Components tab will appear in
 your browser Developer Tools for sites using React.
 
-#### Completing the game 
+<h4>Completing the game</h4>
 
 By this point, you have all the basic building blocks for your
 tic-tac-toe game. To have a complete game, you now need to alternate
 placing "X"s and "O"s on the board, and you need a way to determine a
 winner.
 
-#### Lifting state up
+<h4>Lifting state up</h4>
 
 Currently, each Square component maintains a part of the game's state.
 To check for a winner in a tic-tac-toe game, the Board would need to
@@ -7677,7 +7677,7 @@ component has changed. This will trigger a re-render of the components
 that use the squares state (Board) as well as its child components (the
 Square components that make up the board).
 
-#### Note
+<h4>Note</h4>
 
 JavaScript supports
 [closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
@@ -7720,7 +7720,7 @@ of the board component by calling setSquares, your entire board
 component will be re-rendered again. But this runs handleClick(0) again,
 leading to an infinite loop:
 
-#### Console
+<h4>Console</h4>
 
 Too many re-renders. React limits the number of renders to prevent an
 infinite loop.
@@ -7893,7 +7893,7 @@ board to add an X to it:
 In the end the user sees that the upper left square has changed from
 empty to having a X after clicking it.
 
-#### Note
+<h4>Note</h4>
 
 The DOM &lt;button&gt; element's onClick attribute has a special meaning to
 React because it is a built-in component. For custom components like
@@ -7903,7 +7903,7 @@ work the same. In React, it's conventional to use onSomething names for
 props which represent events and handleSomething for the function
 definitions which handle those events.
 
-#### Why immutability is important 
+<h4>Why immutability is important</h4>
 
 Note how in handleClick, you call .slice() to create a copy of the
 squares array instead of modifying the existing array. To explain why,
@@ -7962,7 +7962,7 @@ compare whether their data has changed or not. You can learn more about
 how React chooses when to re-render a component in [the memo API
 reference](https://react.dev/reference/react/memo).
 
-#### Taking turns 
+<h4>Taking turns</h4>
 
 It's now time to fix a major defect in this tic-tac-toe game: the "O"s
 cannot be marked on the board.
@@ -8088,7 +8088,7 @@ import { useState } from 'react';
 
 </details>
 
-#### Declaring a winner 
+<h4>Declaring a winner</h4>
 
 Now that you show which player's turn is next, you should also show when
 the game is won and there are no more turns to make. To do this you'll
@@ -8128,7 +8128,7 @@ function calculateWinner(squares) {
 
 </details>
 
-#### Note
+<h4>Note</h4>
 
 It does not matter whether you define calculateWinner before or after
 the Board. Let's put it at the end so that you don't have to scroll past
@@ -8341,12 +8341,12 @@ Here is what the code should look like:
 
 </details>
 
-#### Adding time travel
+<h4>Adding time travel</h4>
 
 As a final exercise, let's make it possible to "go back in time" to the
 previous moves in the game.
 
-#### Storing a history of moves 
+<h4>Storing a history of moves</h4>
 
 If you mutated the squares array, implementing time travel would be very
 difficult.
@@ -8373,7 +8373,7 @@ this:
 ]
 ```
 
-#### Lifting state up, again 
+<h4>Lifting state up, again</h4>
 
 You will now write a new top-level component called Game to display a
 list of past moves. That's where you will place the history state that
@@ -8602,7 +8602,7 @@ is what the code should look like at this point:
 
 </details>
 
-#### Showing the past moves 
+<h4>Showing the past moves</h4>
 
 Since you are recording the tic-tac-toe game's history, you can now
 display a list of past moves to the player.
@@ -8811,7 +8811,7 @@ For now, you should see a list of the moves that occurred in the game
 and an error in the developer tools console. Let's discuss what the
 "key" error means.
 
-#### Picking a key
+<h4>Picking a key</h4>
 
 When you render a list, React stores some information about each
 rendered list item. When you update a list, React needs to determine
@@ -8878,7 +8878,7 @@ as array indices and is not recommended in most cases.
 Keys do not need to be globally unique; they only need to be unique
 between components and their siblings.
 
-#### Implementing time travel
+<h4>Implementing time travel</h4>
 
 In the tic-tac-toe game's history, each past move has a unique ID
 associated with it: it's the sequential number of the move. Moves will
@@ -8941,7 +8941,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-#### Show more
+<h4>Show more</h4>
 
 Before you can implement jumpTo, you need the Game component to keep
 track of which step the user is currently viewing. To do this, define a
@@ -9054,9 +9054,7 @@ return (
 
 </details>
 
-#### Show more
-
-#### Final cleanup 
+<h4>Final cleanup</h4>
 
 If you look at the code very closely, you may notice that xIsNext ===
 true when currentMove is even and xIsNext === false when currentMove is
@@ -9097,25 +9095,25 @@ You no longer need the xIsNext state declaration or the calls to
 setXIsNext. Now, there's no chance for xIsNext to get out of sync with
 currentMove, even if you make a mistake while coding the components.
 
-### Wrapping up 
+<h3>Wrapping up</h3>
 
 Congratulations! You've created a tic-tac-toe game that:
 
--   Lets you play tic-tac-toe,
+<ul>
+  <li>Lets you play tic-tac-toe,<br></li>
 
--   Indicates when a player has won the game,
+  <li>Indicates when a player has won the game,<br></li>
 
--   Stores a game's history as a game progresses,
+  <li>Stores a game's history as a game progresses,<br></li>
 
--   Allows players to review a game's history and see previous versions
-    of a game's board.
+  <li>Allows players to review a game's history and see previous versions
+    of a game's board.</li>
+</ul>
 
 Nice work! We hope you now feel like you have a decent grasp of how
 React works.
 
 Check out the final result here:
-
-#### App.js
 
 <details>
   <summary>App.js</summary>
@@ -9158,7 +9156,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-#### Show more
+<h4>Show more</h4>
 
 If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
@@ -9186,7 +9184,7 @@ concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
 
-#### Thinking in React
+<h4>Thinking in React</h4>
 
 React can change how you think about the designs you look at and the
 apps you build. When you build a user interface with React, you will
@@ -9196,7 +9194,7 @@ Finally, you will connect your components together so that the data
 flows through them. In this tutorial, we'll guide you through the
 thought process of building a searchable product data table with React.
 
-#### Start with the mockup 
+<h4>Start with the mockup</h4>
 
 Imagine that you already have a JSON API and a mockup from a designer.
 
@@ -9231,12 +9229,14 @@ The JSON API returns some data that looks like this:
 
 The mockup looks like this:
 
+
+
 ![https://react.dev/images/docs/s_thinking-in-react_ui.png](./images/image063.png){width="3.125in"
 height="3.5208333333333335in"}
 
 To implement a UI in React, you will usually follow the same five steps.
 
-#### Step 1: Break the UI into a component hierarchy 
+<h4>Step 1: Break the UI into a component hierarchy</h4>
 
 Start by drawing boxes around every component and subcomponent in the
 mockup and naming them. If you work with a designer, they may have
@@ -9264,6 +9264,8 @@ shape. Separate your UI into components, where each component matches
 one piece of your data model.
 
 There are five components on this screen:
+
+
 
 ![https://react.dev/images/docs/s_thinking-in-react_ui_outline.png](./images/image064.png){width="5.0in"
 height="3.1in"}
@@ -9301,7 +9303,7 @@ mockup should appear as a child in the hierarchy:
 
         -   ProductRow
 
-### Step 2: Build a static version in React 
+<h3>Step 2: Build a static version in React</h3>
 
 Now that you have your component hierarchy, it's time to implement your
 app. The most straightforward approach is to build a version that
@@ -9368,7 +9370,7 @@ function ProductTable({ products }) {
 
 </details>
 
-#### Show more
+<h4>Show more</h4>
 
 (If this code looks intimidating, go through the [Quick
 Start](https://react.dev/learn) first!)
@@ -9380,12 +9382,12 @@ hierarchy (FilterableProductTable) will take your data model as a prop.
 This is called one-way data flow because the data flows down from the
 top-level component to the ones at the bottom of the tree.
 
-#### Pitfall
+<h4>Pitfall</h4>
 
 At this point, you should not be using any state values. That's for the
 next step!
 
-### Step 3: Find the minimal but complete representation of UI state 
+<h3>Step 3: Find the minimal but complete representation of UI state</h3>
 
 To make the UI interactive, you need to let users change your underlying
 data model. You will use state for this.
@@ -9440,11 +9442,11 @@ Let's go through them one by one again:
 This means only the search text and the value of the checkbox are state!
 Nicely done!
 
-#### DEEP DIVE
+<h4>DEEP DIVE</h4>
 
-#### Props vs State 
+<h4>Props vs State</h4>
 
-### Step 4: Identify where your state should live 
+<h3>Step 4: Identify where your state should live</h3>
 
 After identifying your app's minimal state data, you need to identify
 which component is responsible for changing this state, or owns the
@@ -9570,7 +9572,7 @@ function ProductRow({ product }) {
 Notice that editing the form doesn't work yet. There is a console error
 in the sandbox above explaining why:
 
-#### Console
+<h4>Console</h4>
 
 You provided a \`value\` prop to a form field without an \`onChange\`
 handler. This will render a read-only field.
@@ -9592,7 +9594,7 @@ function SearchBar({ filterText, inStockOnly }) {
 However, you haven't added any code to respond to the user actions like
 typing yet. This will be your final step.
 
-### Step 5: Add inverse data flow 
+<h3>Step 5: Add inverse data flow</h3>
 
 Currently your app renders correctly with props and state flowing down
 the hierarchy. But to change the state according to user input, you will
@@ -9688,7 +9690,7 @@ You can learn all about handling events and updating state in the
 [Adding Interactivity](https://react.dev/learn/adding-interactivity)
 (<https://react.dev/learn/adding-interactivity>) section.
 
-### Where to go from here
+<h3>Where to go from here</h3>
 
 This was a very brief introduction to how to think about building
 components and applications with React. You can [start a React
@@ -9697,14 +9699,14 @@ project](https://react.dev/learn/installation)
 all the syntax](https://react.dev/learn/describing-the-ui)
 (<https://react.dev/learn/describing-the-ui>) used in this tutorial.
 
-### Installation
+<h3>Installation</h3>
 
 React has been designed from the start for gradual adoption. You can use
 as little or as much React as you need. Whether you want to get a taste
 of React, add some interactivity to an HTML page, or start a complex
 React-powered app, this section will help you get started.
 
-### In this chapter
+<h3>In this chapter</h3>
 
 1.  [How to start a new React
     project](https://react.dev/learn/start-a-new-react-project)
@@ -9721,12 +9723,12 @@ React-powered app, this section will help you get started.
     Tools](https://react.dev/learn/react-developer-tools)
     (https://react.dev/learn/react-developer-tools)
 
-### Try React 
+<h3>Try React</h3>
 
 You don't need to install anything to play with React. Try editing this
 sandbox!
 
-#### App.js
+<h4>App.js</h4>
 
 ```
 function Greeting({ name }) {
@@ -9747,26 +9749,26 @@ support React: for example, <a href="https://codesandbox.io/s/new" target="_blan
 </a>or, <a href="https://stackblitz.com/edit/react-uj6spj?file=src%2FApp.js" target="_blank" rel="noopener noreferrer">Stackblitz with React</a>, or
 <a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work" target="_blank" rel="noopener noreferrer">CodePen</a>.
 
-### Try React locally 
+<h3>Try React locally</h3>
 
 To try React locally on your computer, <a href="https://gist.githubusercontent.com/
 gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.
 
 Open it in your editor and your browser!
 
-### Start a new React project 
+<h3>Start a new React project</h3>
 
 If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start a new React project</a>.  <a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20" target="_blank" rel="noopener noreferrer">Or, here</a>.
 
-### Add React to an existing project 
+<h3>Add React to an existing project</h3>
 
 If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
+<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project">Or, try this one</a>.
 
-https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project).
 
-### Next steps 
+<h3>Next steps</h3>
 
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>5/23/2023 12:00pm</h6>
+<h6>5/23/2023 6:58pm</h6>
