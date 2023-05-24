@@ -740,7 +740,7 @@ import { addTwo } from "./addTwo";
 
 <h3><b>Conclusion</b></h3>
 
-In this reading, you've learned about the very basics of what modules
+In this section (5), you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
 imported.
 
@@ -751,11 +751,11 @@ course.
 However, please note that there are many more caveats, rules, and
 implementations of working with modules in JavaScript.
 
-The examples given in this reading are there just to make it easier to
+The examples given in this section (5) are there just to make it easier to
 comprehend what is happening in React apps that you'll be building in
 this course.
 
-The intent of this reading was just to get you familiar with the most
+The intent of this section (5) was just to get you familiar with the most
 common syntax used - not as a comprehensive overview of modules in
 JavaScript.
 
@@ -786,7 +786,7 @@ better than everyone else. They can copy, like the Russians did of the Space Shu
 But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
 But collectively, they ain't shit.
 
-## 07. Setting up a React project in notepad++, Sublime, Not VS Code
+<h2>07. Setting up a React project in notepad++, Sublime, Not VS Code</h2>
 
 To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
@@ -800,10 +800,9 @@ accessing the link below:
 You can also use VS Code to practice these exercises on your local
 machine as an alternative option.
 
-To follow along in this reading, you need to have Node.js and VS Code
+To follow along in this section (7), you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
-refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">
-Programming with JavaScript course</a>:
+refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">Programming with JavaScript course</a>:
 
 <ul>
   <li><a href="https://www.coursera.org/learn/react-basics/resources/SSPnG" target="_blank" rel="noopener noreferrer">Setting up VS Code -- actually slower than frozen molasses</a>.<br></li>
@@ -1644,7 +1643,7 @@ Finally, you explored the concepts of rendering and trans piling.
 If you'd like to learn about these concepts in more detail, there's a
 link to an additional reading at the end of this lesson.
 
-## 11. Creating React components
+<h2>11. Creating React components</h2>
 
 In this section (11), you will further explore the concepts of
 components in React and learn how to create a component from scratch.
@@ -2315,8 +2314,8 @@ as suggested by the official React docs website, and based on the level
 of complexity of the project itself. Since this project is relatively
 simple, this structure feels right.
 
-In this reading, you'll just build all the components inside the
-components folder, and then, in the upcoming lesson items, import them
+In this section (15), you'll just build all the components inside the
+components folder, and then, in the upcoming sections, import them
 into the <b>App.js</b> file.
 
 <h3>Building Components</h3>
@@ -2468,13 +2467,15 @@ few more interesting things about the syntax.
 
 These are:
 
--   The use of the <b>className</b> attribute in JSX
+<ul>
+  <li>The use of the <b>className</b> attribute in JSX,<br></li>
 
--   The use of separate components for repetitive code
+  <li>The use of separate components for repetitive code,<br></li>
 
--   Where are all the props?
+  <li>Where are all the props?<br></li>
 
--   Why was I not using the <b>&lt;a&gt;</b> element for empty links? 
+  <li>Why was I not using the <b>&lt;a&gt;</b> element for empty links?</li>
+</ul>
 
 <h3>Discussing the Syntax</h3>
 
@@ -2532,7 +2533,7 @@ Router.
 
 <h3>Conclusion</h3>
 
-Having finished this reading, you have now learned about the software
+Having finished this section (15), you have now learned about the software
 development approach, detailing the creation of separate associated
 files, the requirements gathering, and the subsequent folder structure
 to be created.
@@ -2901,7 +2902,7 @@ Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
 to pass data between components. But how exactly do they work?
 
-In this reading, you'll use a transpiler to break JSX code to plain
+In this section (20), you'll use a transpiler to break JSX code to plain
 JavaScript, making its purpose more understandable.
 
 Remember first that JSX code in React is just syntactic sugar - meaning,
@@ -3035,7 +3036,7 @@ This is the inner content that will go inside the wrapping element.
 It's what makes it possible to nest elements inside other elements,
 mimicking the way that HTML works.
 
-In this reading you've learned how to use a transpiler to break JSX code
+In this section (20) you've learned how to use a transpiler to break JSX code
 to plain JavaScript, making its purpose more understandable.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3284,7 +3285,7 @@ a component. Great work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Previously, you learned that you could pass props to and within a
 component. But there is also a special prop known as <b>props.children,</b>
-which is automatically passed to every component. In this reading,
+which is automatically passed to every component. In this section (24),
 you'll learn about <b>props.children</b> and what its purpose is.
 
 To understand the concept of <b>props.children</b>, consider the following
@@ -3421,7 +3422,7 @@ its own prop:
 ```
 
 So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
-beginning of this reading, armed with this new knowledge, how can you
+beginning of this section (24), armed with this new knowledge, how can you
 make it work?
 
 Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
@@ -3490,7 +3491,7 @@ using the children prop to achieve this.
 
 It's crucial to understand this when working with React.
 
-Before the end of this reading, there's another important concept that
+Before the end of this section (24), there's another important concept that
 you need to be aware of: <i>finding the right amount of modularization</i>.
 What does this mean? Imagine, for example, that you had a number of
 small bags, and that each bag could only carry a single apple or pear.
@@ -3516,7 +3517,7 @@ element, you can easily understand that it's all just
 <h2>25. Styling JSX elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've observed that JSX is incredibly versatile, and can accept a
-combination of JavaScript, HTML and CSS.  In this reading, you'll learn
+combination of JavaScript, HTML and CSS.  In this section (25), you'll learn
 some approaches for styling JSX elements and doing so in a way that
 achieves both a functional and visual aspect within an app.
 
@@ -3927,7 +3928,7 @@ different. The ES6 function is a lot shorter because:
     read it is an important skill to have and helps you get better at
     writing React apps.
 
-Now that you have completed this reading, you've learned about some
+Now that you have completed this section (27), you've learned about some
 alternative approaches, specifically by using function expressions and
 arrow functions.
 
@@ -3984,7 +3985,7 @@ functions.
 As you continue with building your knowledge of React syntax, you'll
 learn to make more use of JSX and embedded JSX expressions.
 
-In this reading, you will become familiar with how to use ternary
+In this section (29), you will become familiar with how to use ternary
 expressions to achieve a random return, as well as how to invoke
 functions inside of JSX expressions.
 
@@ -4179,7 +4180,7 @@ to help you understand how versatile and seamless the JSX syntax is. As
 you improve your React skills, you will find many creative ways of using
 JavaScript expressions in JSX.
 
-Now that you have completed this reading, you have learned about a few
+Now that you have completed this section (29), you have learned about a few
 more ways that you can use expressions in JSX.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4826,7 +4827,7 @@ You're now aware that React can work with most of the same events found
 in HTML, although React handles them differently.
 
 This means that you may encounter unfamiliar errors when you run your
-event-driven React code. However, in this reading, you'll learn about
+event-driven React code. However, in this section (2), you'll learn about
 some of the most common errors associated with events and how you can
 deal with them.
 
@@ -5081,17 +5082,17 @@ handling in HTML and JavaScript.
 <h2>05. Event handling and embedded expressions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-In this reading, you'll learn the different ways to embed expressions in
+In this section (5), you'll learn the different ways to embed expressions in
 event handlers in React:
 
 <ul>
   <li><p>With an inline anonymous ES5 function,</p></li>
   <li><p>With an inline, anonymous ES6 function (an arrow function),</p></li>
-  <li><p>Using a separate function declaration,</p></li>
-  <li>Using a separate function expression,</li>
+  <li><p>Using a separate function declaration, or</p></li>
+  <li>Using a separate function expression.</li>
 </ul>
 
-You may find this reading useful as a reference sheet.
+You may find this section (5) useful as a reference sheet.
 
 For clarity and simplicity: a function will simply console log some
 words. This will allow you to compare the difference in syntax between
@@ -5201,17 +5202,16 @@ The syntax in this example is very common in React. It uses arrow
 functions, but also allows us to handle situations where our separate
 function expression spans multiple lines of code.
 
-In this reading lesson item, you've learned the several types of
-functions you can use to handle events in React. Some of those are more
-common than others, but now that you know all the different ways of
-doing this, you can understand other people's code more easily, as well
-as choose the syntax that best suits your given use case, such as a
-specific company coding style guide.
+In this section (5) you've learned the several types of functions you can use to 
+handle events in React. Some of those are more common than others, but now that 
+you know all the different ways of doing this, you can understand other people's 
+code more easily, as well as choose the syntax that best suits your given use case, 
+such as a specific company coding style guide.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. User events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section, I'm going to demonstrate how to toggle the value of a
+In this section (6), I'm going to demonstrate how to toggle the value of a
 Boolean state variable using user triggered events. And how to handle
 multiple events on a single JSX element. In the example that you'll
 explore next, the code consists of another example of a component than
@@ -5536,7 +5536,7 @@ individually.
 You've just learned how the parent-child relationship can be set up so
 that data flows from parent to child. 
 
-In this reading, you'll learn how to detail the flow of data from parent
+In this section (10), you'll learn how to detail the flow of data from parent
 to child. You will then learn why code samples need to be clear and
 concise. Finally, you will explore data flow in greater detail by
 looking at more examples. This should act as a refresher to knowledge
@@ -5732,7 +5732,7 @@ how you can use them within your React applications.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Now that you understand what hooks are in React and have some basic
 knowledge on the <b>useState</b> hook, let's dive in deeper. In this
-reading, you will learn how to use hooks in React components and
+section (14), you will learn how to use hooks in React components and
 understand the use-cases for the <b>useState</b> hook.
 
 Let's say you have a component with an input text field. The user can
@@ -5955,7 +5955,7 @@ this is where the <b>useRef</b> hook comes into play.
 
 <h4>Conclusion</h4>
 
-In this reading, you have explored hooks in detail and understand how to
+In this section (14), you have explored hooks in detail and understand how to
 use the <b>useState</b> hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
