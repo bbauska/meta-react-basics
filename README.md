@@ -50,18 +50,18 @@ By the end of this course, you will be able to:</p>
   <li>You'll gain experience with the following tools and software:</li>
 </ul>
 
-    <ul>
-	  <li>React.js<br></li>
+<ul>
+    <li>React.js<br></li>
 
-	  <li>JSX<br></li>
+	<li>JSX<br></li>
 
-	  <li>React<br></li>
+	<li>React<br></li>
 
-	  <li>HTML, CSS and JavaScript<br></li>
+	<li>HTML, CSS and JavaScript<br></li>
 
-      <li>VSCode (or other, BETTER, editors with less bullshit), like
-        notepad++,</li>
-    </ul>
+    <li>VSCode (or other, BETTER, editors with less bullshit), like notepad++,</li>
+</ul>
+
 <ul>
   <li>You will be able to leverage the potential of this course to develop
     new skills, improve productivity, act effectively with data and
