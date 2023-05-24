@@ -567,7 +567,7 @@ This section (05) will cover the three main concepts:</p>
   <li>Module imports.</li>
 </ol>
 
-<h3><b>JavaScript Modules</b>
+<h3><b>JavaScript Modules</b></h3>
 
 In JavaScript, a module is simply a <b>file</b>.
 
@@ -757,7 +757,7 @@ The intent of this reading was just to get you familiar with the most
 common syntax used - not as a comprehensive overview of modules in
 JavaScript.
 
-<h2>06. Additional reading</h2>
+## 06. Additional reading
 
 Below you will find links to helpful additional readings:
 
@@ -783,7 +783,7 @@ better than everyone else. They can copy, like the Russians did of the Space Shu
 But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
 But collectively, they ain't shit.
 
-<h2>07. Setting up a React project in notepad++, Sublime, Not VS Code</h2>
+## 07. Setting up a React project in notepad++, Sublime, Not VS Code
 
 To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
@@ -850,7 +850,7 @@ descriptive and short.
 In the next section, you'll learn how to build a brand-new app that you
 can name: <b>firstapp</b>.
 
-<h4><b>Opening the built-in VS Code terminal and running npm init react-app command</b>
+<h4><b>Opening the built-in VS Code terminal and running npm init react-app command</b></h4>
 
 In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -960,7 +960,7 @@ This means that you've successfully:
 After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
 
-<h2>08. Why React?</h2>
+## 08. Why React?
 
 React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
@@ -1073,7 +1073,7 @@ Hopefully for the rest of your career.
 There's a huge community behind you ready to help answer questions
 about React too.
 
-<h2>09. React.js overview</h2>
+## 09. React.js overview
 
 Recall the concept of the <b>single-page application</b> or SPA for short?
 
@@ -1338,7 +1338,7 @@ In this module, you learned about the basics of React by exploring the
 concepts of the component-based architecture components and the virtual
 DOM.
 
-<h2>10. Introduction to functional components</h2>
+## 10. Introduction to functional components
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. javascript function (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1641,7 +1641,7 @@ Finally, you explored the concepts of rendering and trans piling.
 If you'd like to learn about these concepts in more detail, there's a
 link to an additional reading at the end of this lesson.
 
-<h2>11. Creating React components</h2>
+## 11. Creating React components
 
 In this section (11), you will further explore the concepts of
 components in React and learn how to create a component from scratch.
@@ -1743,7 +1743,7 @@ this very soon.
 In this module, you'll learn how to create a functional component in
 React, and render it to the root components named <b>app.js</b>.
 
-<h2>12. Transpiling JSX</h2>
+## 12. Transpiling JSX
 
 By the end of this section (12), you will know how a component is built.
 
@@ -1914,7 +1914,7 @@ function Example() {
 export default Example
 ```
 
-<h2>13. Your first component</h2>
+## 13. Your first component
 
 Here is the completed solution code for the App.js file:
 
@@ -2005,7 +2005,7 @@ function Heading() { 
 <b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
 
-<h2>14. The React project structure</h2>
+## 14. The React project structure
 
 As you might already be aware, it's important to organize or structure
 your React components so that they're easy to access.
@@ -2207,7 +2207,7 @@ sections:
 
 Keeping in mind the above structure, how would you organize your code?
 
-This is where [React docs]{.underline} can help.
+This is where [React docs] can help.
 
 They suggest two approaches:
 
@@ -2779,7 +2779,6 @@ GitHub](https://github.com/webpack/webpack-dev-server) 
 
 [Visual Studio Code keyboard shortcuts
 (macOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
-
 
 <h2>19. Principles of Components: Props</h2>
 
@@ -4066,7 +4065,7 @@ let name = 'Bob';
 name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
 ```
 
-<h2><b>Using ternary expressions in JSX</b></h2>
+<h3><b>Using ternary expressions in JSX</b></h3>
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
@@ -5709,7 +5708,7 @@ In this section, you learned the basics on React hooks and explored the
 <b>useState</b> hook. You now understand the benefits of using hooks and
 how you can use them within your React applications.
 
-<h2>14. Using hooks<h2>
+<h2>14. Using hooks</h2>
 
 Now that you understand what hooks are in React and have some basic
 knowledge on the <b>useState</b> hook, let's dive in deeper. In this
@@ -5971,14 +5970,14 @@ Albert Einstein
 
 Navigation, Updating and Assets in React.js
 
-<h3>Week 1</h3>
+### Week 1
 
 React Components
 
 In this module (one) you will explore the concept and practical use of
 state and stage-
 
-<h3>Week 2</h3>
+### Week 2
 
 Data and State
 
@@ -5987,7 +5986,7 @@ state and stage-management. You will also gain knowledge on how to
 handle events and the ability to dynamically change content on a web
 page.
 
-<h3>Week 3</h3>
+### Week 3
 
 Navigation, Updating and Assets in React.js
 
@@ -5995,16 +5994,16 @@ In this module (three) you will explore the basics of single and
 multi-page navigation, as well as the conditional rendering or changing
 of content in response to user status or choice.
 
-<h3>Week 4</h3>
+### Week 4
 
-<h3>Your first React app</h3>
+### Your first React app
 
 In this module (four), you will be assessed on the key skills covered in
 the Course.
 
-<h3>Quick Start</h3>
+### Quick Start
 
-<h3>You will learn</h3>
+### You will learn
 
 -   How to create and nest components
 
@@ -6018,7 +6017,7 @@ the Course.
 
 -   How to share data between components
 
-<h3>Creating and nesting components</h3>
+### Creating and nesting components 
 
 React apps are made out of components. A component is a piece of the UI
 (user interface) that has its own logic and appearance. A component can
@@ -6083,7 +6082,7 @@ you're not familiar with some piece of JavaScript syntax,
 and [javascript.info](https://javascript.info/import-export) have great
 references.
 
-<h3>Writing markup with JSX</h3>
+### Writing markup with JSX 
 
 The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
 most React projects use JSX for its convenience. All of the [tools we
@@ -6109,7 +6108,7 @@ function AboutPage() {
 If you have a lot of HTML to port to JSX, you can use an [online
 converter.](https://transform.tools/html-to-jsx)
 
-<h3>Adding styles</h3>
+### Adding styles 
 
 In React, you specify a CSS class with className. It works the same way
 as the HTML
@@ -6135,7 +6134,7 @@ you'll add a
 tag to your HTML. If you use a build tool or a framework, consult its
 documentation to learn how to add a CSS file to your project.
 
-<h4>Displaying data</h4>
+#### Displaying data 
 
 JSX lets you put markup into JavaScript. Curly braces let you "escape
 back" into JavaScript so that you can embed some variable from your code
@@ -6202,7 +6201,7 @@ In the above example, style={{}} is not a special syntax, but a regular
 {} object inside the style={ } JSX curly braces. You can use the style
 attribute when your styles depend on JavaScript variables.
 
-<h3>Conditional rendering</h3>
+### Conditional rendering 
 
 In React, there is no special syntax for writing conditions. Instead,
 you'll use the same techniques as you use when writing regular
@@ -6259,7 +6258,7 @@ All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
 you can start by always using if\...else.
 
-<h3>Rendering lists</h3>
+### Rendering lists 
 
 You will rely on JavaScript features like [for
 loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
@@ -6325,7 +6324,7 @@ export default function ShoppingList() {
 
 </details>
 
-<h3>Responding to events</h3>
+### Responding to events 
 
 You can respond to events by declaring event handler functions inside
 your components:
@@ -6348,7 +6347,7 @@ Notice how onClick={handleClick} has no parentheses at the end! Do not
 call the event handler function: you only need to pass it down. React
 will call your event handler when the user clicks the button.
 
-<h3>Updating the screen</h3>
+### Updating the screen 
 
 Often, you'll want your component to "remember" some information and
 display it. For example, maybe you want to count the number of times a
@@ -6429,7 +6428,7 @@ function MyButton() {
 Notice how each button "remembers" its own count state and doesn't
 affect other buttons.
 
-<h3>Using Hooks</h3>
+### Using Hooks 
 
 Functions starting with use are called Hooks. useState is a built-in
 Hook provided by React. You can find other built-in Hooks in the [API
@@ -6441,7 +6440,7 @@ at the top of your components (or other Hooks). If you want to use
 useState in a condition or a loop, extract a new component and put it
 there.
 
-<h3>Sharing data between components</h3>
+### Sharing data between components 
 
 In the previous example, each MyButton had its own independent count,
 and when each button was clicked, only the count for the button clicked
@@ -6628,7 +6627,7 @@ export default function MyApp() {
 
 By now, you know the basics of how to write React code!
 
-Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial </a>
+Check out the [Tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
 to put them into practice and build your first mini-app with React.
 
 <h3>Tutorial: Tic-Tac-Toe</h3>
@@ -6887,7 +6886,7 @@ Lines 1-5 brings all the necessary pieces together:
 The remainder of the file brings all the pieces together and injects the
 final product into index.html in the public folder.
 
-<h4>Building the board</h4>
+#### Building the board 
 
 Let's get back to App.js. This is where you'll spend the rest of the
 tutorial.
@@ -6904,7 +6903,7 @@ export default function Square() {
 
 You'll get this error:
 
-<h4>Console</h4>
+#### Console
 
 /src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
 Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?
@@ -7038,13 +7037,13 @@ export default function Board() {
 
 </details>
 
-<h4>Note</h4>
+#### Note
 
 Psssst... That's a lot to type! It's okay to copy and paste code from
 this page. However, if you're up for a little challenge, we recommend
 only copying code that you've manually typed at least once yourself.
 
-<h4>Passing data through props</h4>
+#### Passing data through props 
 
 Next, you'll want to change the value of a square from empty to "X" when
 the user clicks on the square. With how you've built the board so far
@@ -7251,7 +7250,7 @@ export default function Board() {
 
 </details>
 
-<h4>Making an interactive component</h4>
+#### Making an interactive component 
 
 Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
@@ -7280,7 +7279,7 @@ console logs with the same message will not create more lines in the
 console. Instead, you will see an incrementing counter next to your
 first "clicked!" log.
 
-<h4>Note</h4>
+#### Note
 
 If you are following this tutorial using your local development
 environment, you need to open your browser's Console. For example, if
@@ -7380,9 +7379,15 @@ By calling this set function from an onClick handler, you're telling
 React to re-render that Square whenever its <button> is clicked. After
 the update, the Square's value will be 'X', so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:
-
-![adding xes to board](./images/image059.gif){width="2.5in"
-height="2.5625in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. adding x's to board (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image059.gif?raw=true"
+  alt="Adding X's to board."
+  width="25%" />
+</p>
+<!-- {width="2.5in" height="2.5625in"} -->
 
 Each Square has its own state: the value stored in each Square is
 completely independent of the others. When you call a set function in a
@@ -7430,20 +7435,32 @@ export default function Board() {
 
 </details>
 
-<h4>React Developer Tools</h4>
+#### React Developer Tools
 
 React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
 browser section in CodeSandbox:
-
-![React DevTools in CodeSandbox](./images/image060.png){width="5.0in"
-height="3.720173884514436in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 60. react devtools in codesandbox (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image060.png?raw=true"
+  alt="React DevTools in CodeSandbox."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="3.720173884514436in"} -->
 
 To inspect a particular component on the screen, use the button in the
 top left corner of React DevTools:
-
-![Selecting components on the page with React
-DevTools](./images/image061.gif){width="5.0in" height="3.7in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 61. selecting components on the page with react devtools (0x) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image061.gif?raw=true"
+  alt="Selecting components on the page with React DevTools."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="3.7in"} -->
 
 <h4>Note</h4>
 
@@ -7554,9 +7571,15 @@ function Square({value}) {
 ```
 
 At this point you should see an empty tic-tac-toe board:
-
-![empty board](./images/image058.png){width="2.0in"
-height="1.964912510936133in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. empty tic-tac-toe board (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image058.png?raw=true"
+  alt="Empty board."
+  width="20%" />
+</p>
+<!-- {width="2.0in" height="1.964912510936133in"} -->
 
 And your code should look like this:
 
@@ -7805,9 +7828,15 @@ export default function Board() {
 
 Now you can again add X's to any square on the board by clicking on
 them:
-
-![filling the board with X](./images/image059.gif){width="2.5in"
-height="2.5625in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. filling the board with x's (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image059.gif?raw=true"
+  alt="."
+  width="25%" />
+</p>
+<!-- {width="2.5in" height="2.5625in"} -->
 
 But this time all the state management is handled by the Board
 component!
@@ -8013,9 +8042,15 @@ and O, as they should!
 
 But wait, there's a problem. Try clicking on the same square multiple
 times:
-
-![O overwriting an X](./images/image062.gif){width="2.5in"
-height="2.5625in"}
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. o overwriting an x (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image062.gif?raw=true"
+  alt="O overwriting an X."
+  width="25%" />
+</p>
+<!-- {width="2.5in" height="2.5625in"} -->
 
 The X is overwritten by an O! While this would add a very interesting
 twist to the game, we're going to stick to the original rules for now.
@@ -9054,6 +9089,8 @@ return (
 
 </details>
 
+<h4>Show more</h4>
+
 <h4>Final cleanup</h4>
 
 If you look at the code very closely, you may notice that xIsNext ===
@@ -9099,21 +9136,21 @@ currentMove, even if you make a mistake while coding the components.
 
 Congratulations! You've created a tic-tac-toe game that:
 
-<ul>
-  <li>Lets you play tic-tac-toe,<br></li>
+-   Lets you play tic-tac-toe,
 
-  <li>Indicates when a player has won the game,<br></li>
+-   Indicates when a player has won the game,
 
-  <li>Stores a game's history as a game progresses,<br></li>
+-   Stores a game's history as a game progresses,
 
-  <li>Allows players to review a game's history and see previous versions
-    of a game's board.</li>
-</ul>
+-   Allows players to review a game's history and see previous versions
+    of a game's board.
 
 Nice work! We hope you now feel like you have a decent grasp of how
 React works.
 
 Check out the final result here:
+
+<h4>App.js</h4>
 
 <details>
   <summary>App.js</summary>
@@ -9156,7 +9193,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-<h4>Show more</h4>
+#### Show more
 
 If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
@@ -9184,7 +9221,7 @@ concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
 
-<h4>Thinking in React</h4>
+#### Thinking in React
 
 React can change how you think about the designs you look at and the
 apps you build. When you build a user interface with React, you will
@@ -9194,7 +9231,7 @@ Finally, you will connect your components together so that the data
 flows through them. In this tutorial, we'll guide you through the
 thought process of building a searchable product data table with React.
 
-<h4>Start with the mockup</h4>
+#### Start with the mockup 
 
 Imagine that you already have a JSON API and a mockup from a designer.
 
@@ -9228,15 +9265,21 @@ The JSON API returns some data that looks like this:
 </details>
 
 The mockup looks like this:
-
-
-
-![https://react.dev/images/docs/s_thinking-in-react_ui.png](./images/image063.png){width="3.125in"
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 63.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image063.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<!-- ![https://react.dev/images/docs/s_thinking-in-react_ui.png](./images/image063.png){width="3.125in"
 height="3.5208333333333335in"}
+-->
 
 To implement a UI in React, you will usually follow the same five steps.
 
-<h4>Step 1: Break the UI into a component hierarchy</h4>
+<h3>Step 1: Break the UI into a component hierarchy</h3>
 
 Start by drawing boxes around every component and subcomponent in the
 mockup and naming them. If you work with a designer, they may have
@@ -9264,11 +9307,18 @@ shape. Separate your UI into components, where each component matches
 one piece of your data model.
 
 There are five components on this screen:
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image064.png?raw=true"
+  alt="."
+  width="50%" />
+</p>
+<!--
 ![https://react.dev/images/docs/s_thinking-in-react_ui_outline.png](./images/image064.png){width="5.0in"
 height="3.1in"}
+-->
 
 1.  FilterableProductTable (grey) contains the entire app.
 
@@ -9699,14 +9749,14 @@ project](https://react.dev/learn/installation)
 all the syntax](https://react.dev/learn/describing-the-ui)
 (<https://react.dev/learn/describing-the-ui>) used in this tutorial.
 
-<h3>Installation</h3>
+<h4>Installation</h4>
 
 React has been designed from the start for gradual adoption. You can use
 as little or as much React as you need. Whether you want to get a taste
 of React, add some interactivity to an HTML page, or start a complex
 React-powered app, this section will help you get started.
 
-<h3>In this chapter</h3>
+<h4>In this chapter</h4>
 
 1.  [How to start a new React
     project](https://react.dev/learn/start-a-new-react-project)
@@ -9723,7 +9773,7 @@ React-powered app, this section will help you get started.
     Tools](https://react.dev/learn/react-developer-tools)
     (https://react.dev/learn/react-developer-tools)
 
-<h3>Try React</h3>
+<h4>Try React</h4>
 
 You don't need to install anything to play with React. Try editing this
 sandbox!
@@ -9763,12 +9813,12 @@ If you want to build an app or a website fully with React, <a href="https://reac
 <h3>Add React to an existing project</h3>
 
 If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
-<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project">Or, try this one</a>.
 
+https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project).
 
 <h3>Next steps</h3>
 
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>5/23/2023 6:58pm</h6>
+<h6>5/23/2023 12:00pm</h6>
