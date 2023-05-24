@@ -48,9 +48,7 @@ By the end of this course, you will be able to:</p>
   <li>Build an application in React,<br></li>
 
   <li>You'll gain experience with the following tools and software:</li>
-</ul>
-
-<ul>
+  <ul>
     <li>React.js<br></li>
 
 	<li>JSX<br></li>
@@ -60,13 +58,11 @@ By the end of this course, you will be able to:</p>
 	<li>HTML, CSS and JavaScript<br></li>
 
     <li>VSCode (or other, BETTER, editors with less bullshit), like notepad++,</li>
-</ul>
-
-<ul>
+  </ul>
   <li>You will be able to leverage the potential of this course to develop
     new skills, improve productivity, act effectively with data and
     boost your career.</li>
-  </ul>
+</ul>
 
 This is a beginner course for learners who would like to prepare
 themselves for a career in mobile development.
