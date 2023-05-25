@@ -217,7 +217,7 @@ h4,
 h5,
 h6 {
     line-height: var(--line-height);
-    margin: 10px;
+    margin: 2em;
 }
 
 mark {
