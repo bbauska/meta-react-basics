@@ -27,16 +27,16 @@
 
 @media (prefers-color-scheme: dark) {
     :root[color-mode="user"] {
-        --color-accent: #0097fc4f;  /* */
-        --color-bg: #333;  /* */
-        --color-bg-secondary: #555;  /* */
-        --color-link: #0097fc;  /* */
-        --color-secondary: #e20de9;  /* */
-        --color-secondary-accent: #e20de94f;  /* */
-        --color-shadow: #bbbbbb20;  /* */
-        --color-table: #0097fc;  /* */
-        --color-text: #f7f7f7;  /* */
-        --color-text-secondary: #aaa;  /* */
+        --color-accent: #0097fc4f;  /* pure (or mostly pure) blue */
+        --color-bg: #333;  /* very dark gray */
+        --color-bg-secondary: #555;  /* very dark gray */
+        --color-link: #0097fc;  /* pure (or mostly pure) blue */
+        --color-secondary: #e20de9;  /* vivid magenta */
+        --color-secondary-accent: #e20de94f;  /* vivid magenta */
+        --color-shadow: #bbbbbb20;  /* gray */
+        --color-table: #0097fc;  /* pure (or mostly pure) blue */
+        --color-text: #f7f7f7;  /* very light gray (mostly white) */
+        --color-text-secondary: #aaa;  /* gray */
     }
 }
 
@@ -210,10 +210,6 @@ details summary {
     cursor: pointer;
 }
 
-body,
-h1,
-h2,
-h3,
 h4,
 h5,
 h6 {
@@ -505,12 +501,11 @@ blockquote footer {
     line-height: var(--line-height);
     padding: 1.5rem 0;
 }
-<!-- here -->
 /*** summary / details ***/
   details {
     font-size: 13px;
     font-family: Inter, Bahnschrift, Calibri, sans-serif;
-    width: 920px;  /** was 620 **/
+    width: 920px;  /* was 620 */
   }
 
   details > summary {
