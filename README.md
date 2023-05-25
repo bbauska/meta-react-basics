@@ -71,7 +71,9 @@ with coding.
 <h3>React Components</h3>
 
 <!-- Section 01 of Week 1 -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Introduction to the course: React Basics</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Welcome to React basics.
 
@@ -86,7 +88,7 @@ In this course, you'll be introduced to the basics of working with React.
 </p>
 <!-- width="4.0in" height="2.5479451006124236in"} -->
 
-During this module (one), you'll learn how to develop a working
+During this section (01), you'll learn how to develop a working
 familiarity with a basic structure and use of the React.js library.
 
 Explore the concepts and practical use of state and stage management and
@@ -168,7 +170,9 @@ I hope you're as excited as I am to begin this course on React basics.
 
 Let's get started...
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. How is React used in the real world?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 There are plenty of React based apps that you've probably used before.
 
@@ -237,8 +241,9 @@ There are plenty of opportunities to get involved in the React
 community, and I think it makes building with React even more rewarding
 if you connect with the community as well.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Course syllabus for React Basics</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (03), you will have learned about the scope
 of things to be covered in this course.
 
@@ -249,7 +254,7 @@ JavaScript. Additionally, it always helps to have a can-do attitude!
 
 <h3><b>Course content</b></h3>
 
-This course is an introduction to React development.
+This course is an introduction to React development, called React Basics.
 
 By the end of this course, you will know how to build a simple user
 interface using React.
@@ -349,8 +354,9 @@ By the end of this module (four) you will be able to:</p>
     ahead.</li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Before you learn React</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
 quick summary will be useful so let's explore some fundamental HTML,
@@ -537,10 +543,9 @@ To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm
 please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" 
 target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. JavaScript modules, imports - exports</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>Before you start creating the next great app, let's explore a little
 more about modules.<br>
 
@@ -752,7 +757,7 @@ The intent of this section (5) was just to get you familiar with the most
 common syntax used - not as a comprehensive overview of modules in
 JavaScript.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Additional reading</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below you will find links to helpful additional readings:
@@ -779,8 +784,9 @@ better than everyone else. They can copy, like the Russians did of the Space Shu
 But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
 But collectively, they ain't shit.
 
-<h2>07. Setting up a React project in notepad++, Sublime, Not VS Code</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>07. Setting up a React project in notepad++, Sublime, &amp; VS Code</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
 skills that you have learned.
@@ -788,7 +794,7 @@ skills that you have learned.
 You can find out more about Working with Labs in this course by
 accessing the link below:
 
-<h3><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working with Labs in this course</a></h3>
+<h4><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working with Labs in this course</a></h4>
 
 You can also use VS Code to practice these exercises on your local
 machine as an alternative option.
@@ -955,8 +961,9 @@ This means that you've successfully:
 After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
 
-## 08. Why React?
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>08. Why React?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
 have.
@@ -1068,7 +1075,9 @@ Hopefully for the rest of your career.
 There's a huge community behind you ready to help answer questions
 about React too.
 
-## 09. React.js overview
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>09. React.js overview</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Recall the concept of the <b>single-page application</b> or SPA for short?
 
@@ -4729,7 +4738,7 @@ Below you will find links to helpful additional resources.
 <h1>Week 2</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Data and State</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you're probably familiar with <b>events</b> in JavaScript. Recall
@@ -4813,7 +4822,7 @@ In this section (1), you learned about the types of events available in
 React and how they came to be. Next, you'll explore specific examples
 and build the skills to use events competently from various situations.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Eventful issues</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You're now aware that React can work with most of the same events found
@@ -4910,7 +4919,7 @@ rendered, all you have to do is use the error-handling mechanism that
 already exists in JavaScript -- that is, you just use the
 <b>try\...catch</b> blocks.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Common event handling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -4968,7 +4977,7 @@ This time, when I hover over the button, the words mouse over are
 showing in the console. This section (3), you've learned how to work
 with <b>event handling</b> JSX attributes and React.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Syntax for handlers</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Every time you click or tap a button, scroll down the page or cancel a
@@ -5071,7 +5080,7 @@ events are supported by some form of event handling.
 
 In this section (4), you learned how to distinguish the syntax for event
 handling in HTML and JavaScript.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Event handling and embedded expressions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -5201,10 +5210,10 @@ you know all the different ways of doing this, you can understand other people's
 code more easily, as well as choose the syntax that best suits your given use case, 
 such as a specific company coding style guide.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. User events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (6), I'm going to demonstrate how to toggle the value of a
+In this section (06), I'm going to demonstrate how to toggle the value of a
 Boolean state variable using user triggered events. And how to handle
 multiple events on a single JSX element. In the example that you'll
 explore next, the code consists of another example of a component than
@@ -5278,7 +5287,7 @@ should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Dynamic events &amp; how to handle them</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the completed App.js file:
@@ -5407,11 +5416,10 @@ up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number "chosen" by the computer one more time. 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Additional resources (Data &amp; State - Week 2)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is a list of resources that may be helpful as you continue your
-learning journey.
+Here is a list of resources that may be helpful as you continue your learning journey:
 
 -   [Handling
     Events](https://reactjs.org/docs/handling-events.html#gatsby-focus-wrapper) 
@@ -5430,7 +5438,7 @@ learning journey.
 -   [JavaScript Expressions as
     Children](https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children) 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Parent-child data flow</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Imagine you're working for an online retailer which discount prices
@@ -5523,7 +5531,7 @@ to child. By storing data in the parent component, you can dynamically
 pass it to the child component without the need to update children
 individually.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Data flow in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've just learned how the parent-child relationship can be set up so
@@ -5603,7 +5611,7 @@ everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
 be as efficient as it could be, especially in modern React.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Children and data</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (11), you're going to learn about data flow in ReactJS.
@@ -5656,9 +5664,9 @@ time. Well done. You've now learned how children and data flows in
 ReactJS. You should also be able to showcase the use of stateless and
 stateful examples by focusing on data flow.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Data flow</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. What are hooks?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now you've probably already learned about some important and useful
@@ -5720,7 +5728,7 @@ In this section, you learned the basics on React hooks and explored the
 <b>useState</b> hook. You now understand the benefits of using hooks and
 how you can use them within your React applications.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. Using hooks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Now that you understand what hooks are in React and have some basic
@@ -5952,13 +5960,12 @@ In this section (14), you have explored hooks in detail and understand how to
 use the <b>useState</b> hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. What is state?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <i>"Make it as simple as possible, but not simpler."</i>
 Albert Einstein
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Observing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
