@@ -34,35 +34,28 @@ a simple, fast, and scalable app.<br>
 
 By the end of this course, you will be able to:</p>
 
-<ul>
-  <li>Use reusable components to render views where data changes over time,<br></li>
+  - Use reusable components to render views where data changes over time,
 
-  <li>Create more scalable and maintainable websites and apps,<br></li>
+  - Create more scalable and maintainable websites and apps,
 
-  <li>Use props to pass data between components,<br></li>
+  - Use props to pass data between components,
 
-  <li>Create dynamic and interactive web pages and apps,<br></li>
+  - Create dynamic and interactive web pages and apps,
 
-  <li>Use forms to allow users to interact with the web page,<br></li>
+  - Use forms to allow users to interact with the web page,
 
-  <li>Build an application in React,<br></li>
+  - Build an application in React,
 
-  <li>You'll gain experience with the following tools and software:</li>
-  <ul>
-    <li>React.js<br></li>
+  - You'll gain experience with the following tools and software:
+    - React.js
+    - JSX
+    - React
+    - HTML, CSS and JavaScript
+    - VSCode (or other, BETTER, editors with less bullshit), like notepad++,
 
-	<li>JSX<br></li>
-
-	<li>React<br></li>
-
-	<li>HTML, CSS and JavaScript<br></li>
-
-    <li>VSCode (or other, BETTER, editors with less bullshit), like notepad++,</li>
-  </ul>
-  <li>You will be able to leverage the potential of this course to develop
+  - You will be able to leverage the potential of this course to develop
     new skills, improve productivity, act effectively with data and
-    boost your career.</li>
-</ul>
+    boost your career.
 
 This is a beginner course for learners who would like to prepare
 themselves for a career in mobile development.
