@@ -210,6 +210,8 @@ details summary {
     cursor: pointer;
 }
 
+body,
+p,
 h1,
 h2,
 h3,
@@ -218,6 +220,7 @@ h5,
 h6 {
     line-height: var(--line-height);
     margin: 2em;
+    margin-left: 2em;
 }
 
 mark {
@@ -536,4 +539,11 @@ blockquote footer {
     background-color: 00ff00;  /* lime green */
   }
 
-
+  img.displayed {
+    display: block;
+    margin: 0 auto; }
+  .border {
+    border-width: 1px;
+    border-color: #778899;  /* dark grayish blue */
+    border-style: solid; 
+    }
