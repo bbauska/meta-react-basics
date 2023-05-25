@@ -235,16 +235,16 @@ ul li {
 }
 
 pre {
-    margin: 1rem 0;
+    margin: 6% 0;  /* 1rem 0 */
     max-width: var(--width-card-wide);
-    padding: 1rem 0;
+    padding: 6% 0;  /* 1rem 0*/
 }
 
 pre code,
 pre samp {
     display: block;
     max-width: var(--width-card-wide);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 2rem;  /* 0.5rem 2 rem*/
     white-space: pre-wrap;
 }
 
