@@ -977,7 +977,7 @@ This means that you've successfully:
 After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
 
-## 08. Why React?
+<h2>08. Why React?</h2>
 
 React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
@@ -1090,7 +1090,7 @@ Hopefully for the rest of your career.
 There's a huge community behind you ready to help answer questions
 about React too.
 
-## 09. React.js overview
+<h2>09. React.js overview</h2>
 
 Recall the concept of the <b>single-page application</b> or SPA for short?
 
@@ -1355,7 +1355,7 @@ In this module, you learned about the basics of React by exploring the
 concepts of the component-based architecture components and the virtual
 DOM.
 
-## 10. Introduction to functional components
+<h2>10. Introduction to functional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. javascript function (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1760,7 +1760,7 @@ this very soon.
 In this module, you'll learn how to create a functional component in
 React, and render it to the root components named <b>app.js</b>.
 
-## 12. Transpiling JSX
+<h2>12. Transpiling JSX</h2>
 
 By the end of this section (12), you will know how a component is built.
 
@@ -1931,7 +1931,7 @@ function Example() {
 export default Example
 </pre>
 
-## 13. Your first component
+<h2>13. Your first component</h2>
 
 Here is the completed solution code for the App.js file:
 
@@ -2022,7 +2022,7 @@ function Heading() { 
 <b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
 
-## 14. The React project structure
+<h2>14. The React project structure</h2>
 
 As you might already be aware, it's important to organize or structure
 your React components so that they're easy to access.
@@ -2773,34 +2773,19 @@ function App() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Additional resources (React components)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-[Basic Concepts of
-Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) 
-(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-
-[Importing a
-Component](https://create-react-app.dev/docs/importing-a-component/) 
-
-[Babeljs.io](https://babeljs.io/) 
-
-[NPM docs:
-package.json](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) 
-
-[git docs: gitignore](https://git-scm.com/docs/gitignore) 
-
-[NPM docs: node modules
-folder](https://docs.npmjs.com/cli/v8/configuring-npm/folders#node-modules) 
-
-[webpack docs:
-DevServer](https://webpack.js.org/configuration/dev-server/) 
-
-[webpack/webpack-dev-server on
-GitHub](https://github.com/webpack/webpack-dev-server) 
-
-[Visual Studio Code keyboard shortcuts
-(Windows)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-
-[Visual Studio Code keyboard shortcuts
-(macOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+<ul>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">
+  Basic Concepts of Flexbox</a>,<br></li>
+  <li><a href="https://create-react-app.dev/docs/importing-a-component/">Importing a Component</a>,<br></li> 
+  <li><a href="https://babeljs.io/">Babeljs.io</a>,<br></li>
+  <li><a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json">NPM docs: package.json</a><br></li>
+  <li><a href="https://git-scm.com/docs/gitignore">git docs: gitignore</a>,<br></li>
+  <li><a href="https://docs.npmjs.com/cli/v8/configuring-npm/folders#node-modules">NPM docs: node modules folder</a>,<br></li>
+  <li><a href="https://webpack.js.org/configuration/dev-server/">webpack docs: DevServer</a>,<br></li>
+  <li><a href="https://github.com/webpack/webpack-dev-server">webpack/webpack-dev-server on GitHub</a>,<br></li>
+  <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">Visual Studio Code keyboard shortcuts (Windows)</a>,<br></li>
+  <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">Visual Studio Code keyboard shortcuts (macOS)</a></li>
+</ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Principles of Components: Props</h2>
@@ -2925,7 +2910,7 @@ a nicer way to write some hard-to-read code.
 
 For the browser to understand this syntactic sugar, you need to
 transpile JSX down to plain JavaScript code. You have a resource online,
-at the URL of [babeljs.io](https://babeljs.io/), which allows you to
+at the URL of <a href="https://babeljs.io/">babeljs.io</a>, which allows you to
 inspect the results of this transpiling. Once you visit the website,
 make sure to navigate to the <i>Try it out</i> link in the main navigation.
 
@@ -2934,7 +2919,7 @@ For example, let's say you have a component that returns a piece of JSX:
 <pre>
 function App() {
 
-  return <h1>Hello there</h1>
+  return &lt;h1&gt;Hello there&lt;/h1&gt;
 }
 </pre>
 
@@ -2950,30 +2935,25 @@ function App() {
 }
 </pre>
 
-You just want to focus on the <b>React.createElement("h1", null,
-"Hello there");</b> part. You can ignore the rest.
+<p>You just want to focus on the <b>React.createElement("h1", null,
+"Hello there");</b> part. You can ignore the rest.<br>
 
-This means that the <b>createElement</b> function receives three arguments:
+This means that the <b>createElement</b> function receives three arguments:</p>
+<ol>
+  <li>The wrapping element to render,<br></li>
+  <li>A null value (which is there to show an absence of an expected JavaScript object value),<br></li>
+  <li>The inner content that will go inside the wrapping element,<br></li>
+  <li>Interestingly, the inner content that will go inside the wrapping element can also be a call to the <b>createElement</b> function.</li>
+</ol>
 
-1.  The wrapping element to render. 
-
-2.  A null value (which is there to show an absence of an expected
-    JavaScript object value). 
-
-3.  The inner content that will go inside the wrapping element. 
-
-4.  Interestingly, the inner content that will go inside the wrapping
-    element can also be a call to the <b>createElement</b> function.
-
-For example, let's say you have a slightly more complex JSX element
-structure:
+<p>For example, let's say you have a slightly more complex JSX element structure:</p>
 
 <pre>
 function App() { 
   return (
-    <div>
-      <h1>Hello there</h1>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Hello there&lt;/h1&gt;
+    &lt;/div&gt;
   )
 }
 </pre>
@@ -3002,14 +2982,14 @@ function App() {
 }
 </pre>
 
-So now the third argument of the outer-most <b>React.createElement</b> call
-is another <b>React.createElement</b> call.
+<p>So now the third argument of the outer-most <b>React.createElement</b> call
+is another <b>React.createElement</b> call.<br>
 
-This is how you can nest as many elements as you want.
+This is how you can nest as many elements as you want.<br>
 
 This means that a nested JSX structure is just a bunch of nested
 <b>React.createElement</b> calls, passed in to other
-<b>React.createElement</b> calls as their third argument.
+<b>React.createElement</b> calls as their third argument.</p>
 
 <h3>The second -- null -- argument</h3>
 
@@ -6170,7 +6150,7 @@ function AboutPage() {
 
 If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
 
-### Adding styles 
+<h3>Adding styles</h3>
 
 In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">
 [class] attribute:</a>
@@ -6369,7 +6349,7 @@ export default function ShoppingList() {
 
 </details>
 
-### Responding to events 
+<h3>Responding to events</h3>
 
 You can respond to events by declaring event handler functions inside
 your components:
@@ -6392,7 +6372,7 @@ Notice how onClick={handleClick} has no parentheses at the end! Do not
 call the event handler function: you only need to pass it down. React
 will call your event handler when the user clicks the button.
 
-### Updating the screen 
+<h3>Updating the screen</h3>
 
 Often, you'll want your component to "remember" some information and
 display it. For example, maybe you want to count the number of times a
@@ -6925,7 +6905,7 @@ Lines 1-5 brings all the necessary pieces together:
 The remainder of the file brings all the pieces together and injects the
 final product into index.html in the public folder.
 
-#### Building the board 
+<h4>Building the board 
 
 Let's get back to App.js. This is where you'll spend the rest of the
 tutorial.
@@ -6942,7 +6922,7 @@ export default function Square() {
 
 You'll get this error:
 
-#### Console
+<h4>Console</h4>
 
 /src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
 Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?
@@ -7076,13 +7056,13 @@ export default function Board() {
 
 </details>
 
-#### Note
+<h4>Note</h4>
 
 Psssst... That's a lot to type! It's okay to copy and paste code from
 this page. However, if you're up for a little challenge, we recommend
 only copying code that you've manually typed at least once yourself.
 
-#### Passing data through props 
+<h4>Passing data through props</h4>
 
 Next, you'll want to change the value of a square from empty to "X" when
 the user clicks on the square. With how you've built the board so far
@@ -7289,7 +7269,7 @@ export default function Board() {
 
 </details>
 
-#### Making an interactive component 
+<h4>Making an interactive component</h4>
 
 Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
@@ -7318,7 +7298,7 @@ console logs with the same message will not create more lines in the
 console. Instead, you will see an incrementing counter next to your
 first "clicked!" log.
 
-#### Note
+<h4>Note</h4>
 
 If you are following this tutorial using your local development
 environment, you need to open your browser's Console. For example, if
@@ -7474,7 +7454,7 @@ export default function Board() {
 
 </details>
 
-#### React Developer Tools
+<h4>React Developer Tools</h4>
 
 React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
@@ -9232,7 +9212,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-#### Show more
+<h4>Show more
 
 If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
@@ -9260,7 +9240,7 @@ concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
 
-#### Thinking in React
+<h4>Thinking in React
 
 React can change how you think about the designs you look at and the
 apps you build. When you build a user interface with React, you will
@@ -9270,7 +9250,7 @@ Finally, you will connect your components together so that the data
 flows through them. In this tutorial, we'll guide you through the
 thought process of building a searchable product data table with React.
 
-#### Start with the mockup 
+<h4>Start with the mockup 
 
 Imagine that you already have a JSON API and a mockup from a designer.
 
