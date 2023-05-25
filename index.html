@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>meta-react-basics</title>
 
+<!--
   <style>
     body { margin: 2em }
     code{white-space: pre-wrap;}
@@ -19,6 +20,7 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+-->
   <link rel="stylesheet" href="/css/styles.css" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -89,10 +91,7 @@ themselves for a career in mobile development.</p>
 only basic internet navigation skills and an eagerness to get started
 with coding.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1 style="margin-left:.75em">Week 1</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>React Components</h3>
-
+<h1>Week 1 - React Components</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 01 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Introduction to the course: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1750,7 +1749,7 @@ What this means is that for this old browser to understand the ES6 code,
 the only way to do it is by <b>transpiling</b> it.
 
 If you feel like it, you can try transpiling ES6 to ES5 code yourself,
-using [the es6console website](https://es6console.com/).
+using <a href="https://es6console.com/">the es6console website</a>.
 
 Now, let's move the focus to another example of transpiling.
 
@@ -1764,7 +1763,7 @@ some code that the browser cannot comprehend, into code that it can
 comprehend, run, and produce a result from.
 
 Likely the most popular site that shows off how this works is
-[Babel](https://babeljs.io/) (https://babeljs.io/). As the heading of
+<a href="https://babeljs.io/">Babel</a>. As the heading of
 the website reads, "Babel is a JavaScript Compiler".
 
 This finally brings you to the point of this discussion about
@@ -1834,11 +1833,8 @@ for the <b>Heading</b> component:
 
 <pre>&lt;Heading title="This is the heading text!"&gt;&lt;/Heading&gt;</pre>
 
-Again using [the Babel
-repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
-and as can be confirmed in [the
-link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
-the output of the tranpilation is the following code:
+Again using <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the Babel repl</a>, and as can be confirmed in <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c">the
+link</a>, the output of the tranpilation is the following code:
 
 <pre>"use strict";
 
@@ -1868,31 +1864,31 @@ export default Example</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 13 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Your first component</h2>
 
-Here is the completed solution code for the App.js file:
+<p>Here is the completed solution code for the App.js file:</p>
 
 <details>
   <summary>App.js</summary>
 
 <pre>function Heading() { 
   return ( 
-     <h1>This is an h1 heading.</h1> 
+     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
    ) 
 } 
   
-function App() { 
-  return ( 
-    <div className="App"> 
+function App() {
+  return (
+    &lt;div className="App"&gt;
       This is the starting code for "Your first component" ungraded lab 
-      <Heading /> 
-    </div> 
-  ); 
+      &lt;Heading /&gt;
+    &lt;/div&gt;
+  );
 }
-  
+
 export default App;</pre>
 
 </details>
 
-Here is the output from the solution code for the App.js file:
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ 39. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4662,9 +4658,7 @@ Below you will find links to helpful additional resources.
 (https://legacy.reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>Week 2</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Data and State</h3>
+<h1>Week 2 - Data and State</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 01 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5934,49 +5928,36 @@ Albert Einstein
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>Week 3</h1>
+<h1>Week 3 - Navigation, Updating and Assets</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this module (three) you will explore the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice.</p>
+9 videos, 11 readings
+01. Video: Basic Types of navigation
+02. Reading: Navigation
+03. Video: The navbar
+04. Reading: Solution: Creating a route
+05. Video: Conditional rendering
+06. Reading: Applying conditional rendering
+07. Reading: Conditional components
+08. Video: Single view conditional updates
+09. Reading: Additional resources
+2nd section: Using Assets in React
+10. Video: What is an asset and where does it live?
+11. Reading: Bundling assets
+12. Video: Using embedded assets
+13. Reading: Solution: Displaying images
+14. Video: Audio and video
+15. Reading: Media packages
+16. Video: Create an audio / video component
+17. Reading: Solution: Song selection
+18. Video: Module summary: Navigation, Updating and Assets in React.js
+19. Reading: Additional resources
 
-Navigation, Updating and Assets in React.js
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 1</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-React Components
-
-In this module (one) you will explore the concept and practical use of
-state and stage-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 2</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Data and State
-
-In this module (two) you will explore the concept and practical use of
-state and stage-management. You will also gain knowledge on how to
-handle events and the ability to dynamically change content on a web
-page.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 3</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Navigation, Updating and Assets in React.js
-
-In this module (three) you will explore the basics of single and
-multi-page navigation, as well as the conditional rendering or changing
-of content in response to user status or choice.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 4</h3>
+<h3>Week 4 - Your First React App</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<h3>Your first React app</h3>
-
-In this module (four), you will be assessed on the key skills covered in
-the Course.
+<p>In this module (four), you will be assessed on the key skills covered in the course.</p>
 
 <h3>Quick Start</h3>
 
@@ -6004,82 +5985,74 @@ be as small as a button, or as large as an entire page.
 
 React components are JavaScript functions that return markup:
 
-<pre>
-function MyButton() {
+<pre>function MyButton() {
   return (
-    <button>I'm a button</button>
+    &lt;button&gt;I'm a button&lt;/button&gt;
+  );
+}</pre>
+
+<p>Now that you've declared MyButton, you can nest it into another
+component:</p>
+
+<pre>export default function MyApp() {
+  return (
+    &lt;div&gt;
+      &lt;h1&gt;Welcome to my app&lt;/h1&gt;
+        &lt;MyButton /&gt;
+    &lt;/div&gt;
   );
 }
 </pre>
 
-Now that you've declared MyButton, you can nest it into another
-component:
-
-<pre>
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-        <MyButton />
-    </div>
-  );
-}
-</pre>
-
-Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
+<p>Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
 know it's a React component. React component names must always start
-with a capital letter, while HTML tags must be lowercase.
+with a capital letter, while HTML tags must be lowercase.</p>
 
-Have a look at the result:
+<p>Have a look at the result:</p>
 
 <details>
   <summary>App.js</summary>
 
-<pre>
-function MyButton() {
+<pre>function MyButton() {
   return (
-    <button>
+    &lt;button&gt;
       I'm a button
-    </button>
+    &lt;/button&gt;
   );
 }
 export default function MyApp() {
   return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Welcome to my app&lt;/h1&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
-The export default keywords specify the main component in the file. If
+<p>The export default keywords specify the main component in the file. If
 you're not familiar with some piece of JavaScript syntax, <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">MDN</a>
-and <a href="https://javascript.info/import-export">javascript.info</a> have great references.
+and <a href="https://javascript.info/import-export">javascript.info</a> have great references.</p>
 
 <h3>Writing markup with JSX</h3>
 
-The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
-most React projects use JSX for its convenience. All of the <a href="https://react.dev/learn/installation">tools we
-recommend for local development</a> support JSX out of the box.
+<p>The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
+most React projects use JSX for its convenience. All of the <a href="https://react.dev/learn/installation">tools we recommend for local development</a> support JSX out of the box.</p>
 
-JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
+<p>JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
 component also can't return multiple JSX tags. You have to wrap them
 into a shared parent, like a &lt;div&gt;\...&lt;/div&gt; or an empty
-&lt;&gt;\...&lt;/&gt; wrapper:
+&lt;&gt;\...&lt;/&gt; wrapper:</p>
 
-<pre>
-function AboutPage() {
+<pre>function AboutPage() {
   return (
-    <>
-      <h1>About</h1>
-        <p>Hello there.<br />How do you do?</p>
-    </>
+    &lt;&gt;
+      &lt;h1&gt;About&lt;/h1&gt;
+        &lt;p&gt;Hello there.&lt;br /&gt;How do you do?&lt;/p&gt;
+    &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
 
@@ -9773,7 +9746,7 @@ https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>4:57pm 5-24-23 meta-react-basics index.html</h6>
+<h6>1:16pm 5-25-23 Thu meta-react-basics index.html</h6>
 
 </body>
 </html>
