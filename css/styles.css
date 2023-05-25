@@ -220,7 +220,6 @@ h5,
 h6 {
     line-height: var(--line-height);
     margin: 2em;
-    margin-left: 2em;
 }
 
 mark {
