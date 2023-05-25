@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
+  <meta name="description" content="Explore the fundamental concepts that underpin the React library and learn the basic skills required to build a simple, fast, and scalable app.">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>meta-react-basics</title>
@@ -598,11 +599,9 @@ A module can be as simple as a single function in a separate file.
 
 Consider the following function declaration:
 
-```
-function addTwo(a, b) {
+<pre>function addTwo(a, b) {
   console.log(a + b);
-}
-```
+}</pre>
 
 Say that you have a file named <b>addTwo.js</b> that contains only the
 above code.
@@ -633,24 +632,22 @@ In general, there are two ways to export modules in JavaScript:</p>
 Using the above <b>addTwo.js</b> file as an example, here are two ways to
 perform a default export:</p>
 
-```
+<pre>
 export default function addTwo(a, b) {
   console.log(a + b);
 }
-```
+</pre>
 
 <p>In the above example, you're adding the <b>export default</b> keywords in
 front of the <b>addTwo</b> function declaration.
 
 Here's an alternative syntax:</p>
 
-```
-function addTwo(a, b) {
+<pre>function addTwo(a, b) {
   console.log(a + b);
 }
 
-export default addTwo;
-```
+export default addTwo;</pre>
 
 <h3><b>Named Exports</b></h3>
 
@@ -665,7 +662,7 @@ exports as you want.
 
 For example:</p>
 
-```
+<pre>
 function addTwo(a, b) {
   console.log(a + b);
 }
@@ -673,12 +670,12 @@ function addTwo(a, b) {
 function addThree(a + b + c) {
   console.log(a + b + c);
 }
-```
+</pre>
 
 <p>If you want to export both the <b>addTwo</b> and the <b>addThree</b> functions
 as named exports, one way to do it would be the following:</p>
 
-```
+<pre>
 export function addTwo(a, b) {
   console.log(a + b);
 }
@@ -686,11 +683,11 @@ export function addTwo(a, b) {
 export function addThree(a + b + c) {
   console.log(a + b + c);
 }
-```
+</pre>
 
 <p>Here's another way you could do it:</p>
 
-```
+<pre>
 function addTwo(a, b) {
   console.log(a + b);
 }
@@ -700,7 +697,7 @@ function addThree(a + b + c) {
 }
   
 export { addTwo, addThree };
-```
+</pre>
 
 <h3><b>Importing Modules</b></h3>
 
@@ -722,23 +719,23 @@ You want to import the <b>addTwo.js</b> module into the
 Consider the previous example of exporting the <b>addTwo</b> function as a
 default module:</p>
 
-```
+<pre>
 // addTwo.js module:
 function addTwo(a, b) {
   console.log(a + b);
 }
 
 export default addTwo;
-```
+</pre>
 
 <p>To import it into the <b>mathOperations.js</b> module, you could use the
 following syntax:</p>
 
-```
+<pre>
 import addTwo from "./addTwo";
 
 // the rest of the mathOperations.js code goes here
-```
+</pre>
 
 <p>So, you could start this import with the <b>import</b> keyword, then the
 name under which you'll use this imported code inside the
@@ -749,11 +746,11 @@ Contrast the above import of the default <b>addTwo export</b> with the
 different import syntax if the <b>addTwo</b> function was instead a named
 export:</p>
 
-```
+<pre>
 import { addTwo } from "./addTwo";
 
 // the rest of the mathOperations.js code goes here
-```
+</pre>
 
 <h3><b>Conclusion</b></h3>
 
@@ -885,9 +882,9 @@ In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 
 Now run the command to add a brand new React app to the machine:
 
-```
+<pre>
 $ npm init react-app my-firstapp
-```
+</pre>
 
 The installation and setup might take a few minutes.
 
@@ -896,7 +893,7 @@ Here's the output of executing the above command:
 <details>
   <summary>NPM create-react-app</summary>
 
-```
+<pre>
 Creating a new React app in /home/pc/Desktop/firstapp.
 Installing packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...
@@ -933,7 +930,7 @@ $ npm run eject
 We suggest that you begin by typing:
 $ cd firstapp
 $ npm start 
-```
+</pre>
 
 </details>
 
@@ -942,7 +939,7 @@ firstapp</b>, and then <b>$ npm start</b>.
 
 This will end up with the following output in the built-in terminal:
 
-```
+<pre>
 Compiled successfully!
 You can now view firstapp in the browser.
 Local:           
@@ -952,7 +949,7 @@ On Your Network: 
 Note that the development build is not optimized.
 To create a production build, use npm run build.
 webpack compiled successfully
-```
+</pre>
 
 Again, following the instructions, opening a browser with the address
 bar pointing to [http://localhost:3000](http://localhost:3000/), will
@@ -1785,9 +1782,9 @@ code.
 To understand why this is done, here is an example of an ES6 variable
 declaration:
 
-```
+<pre>
 const PI = 3.14
-```
+</pre>
 
 This is perfectly valid ES6 syntax.
 
@@ -1800,9 +1797,9 @@ computer's browser is likely to be an ES5 JavaScript engine.
 
 In ES5, the only way to declare a variable is the following:
 
-```
+<pre>
 var pi = 3.14
-```
+</pre>
 
 What this means is that for this old browser to understand the ES6 code,
 the only way to do it is by <b>transpiling</b> it.
@@ -1846,29 +1843,29 @@ Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20n
 If you've visited the above-linked URL, you'll find a web page that
 has two panels. On the left, there's source JSX code:
 
-```
+<pre>
 function Heading(props) {
   return <h1>{props.title}</h1>
 }
-```
+</pre>
 
 \... and on the right, there's the transpiled, plain JavaScript code:
 
-```
+<pre>
 "use strict";
 
 function Heading(props) {
   return /#__PURE__/React.createElement("h1", null, props.title);
 }
-```
+</pre>
 
 If you now analyze the difference between the source JSX code and the
 transpiled, plain JavaScript code, dis-regarding the comment, here's
 the body of the Heading function:
 
-```
+<pre>
 React.createElement("h1", null, props.title);
-```
+</pre>
 
 So, here you have a React object, and this object has a
 <b>createElement()</b> method on it. The method is invoked with three
@@ -1895,9 +1892,9 @@ the inner HTML of the <b>h1</b> element.
 Now let's use Babel again, and this time transpile the <b>render</b> syntax
 for the <b>Heading</b> component:
 
-```
+<pre>
 <Heading title="This is the heading text!"></Heading>
-```
+</pre>
 
 Again using [the Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
@@ -1905,7 +1902,7 @@ and as can be confirmed in [the
 link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
 the output of the tranpilation is the following code:
 
-```
+<pre>
 "use strict";
   
 /#__PURE__/
@@ -1913,7 +1910,7 @@ the output of the tranpilation is the following code:
 React.createElement(Heading, {
   title: "This is the heading text!"
 });
-```
+</pre>
 
 Again, you have the <b>React.createElement()</b> method call, and this
 time, the first item to render is <b>Heading</b>, and then you have an
@@ -1926,13 +1923,13 @@ rendered?
 
 You can see the answer below:
 
-```
+<pre>
 function Example() {
   return <div>An element</div>
 }
 
 export default Example
-```
+</pre>
 
 ## 13. Your first component
 
@@ -1941,7 +1938,7 @@ Here is the completed solution code for the App.js file:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 function Heading() { 
   return ( 
      <h1>This is an h1 heading.</h1> 
@@ -1958,7 +1955,7 @@ function App() { 
 }
   
 export default App;
-```
+</pre>
 
 </details>
 
@@ -1977,7 +1974,7 @@ Here is the output from the solution code for the App.js file:
 named <b>&lt;Heading /&gt;</b> , being rendered from the App component, since
 it is a part of the App component's return statement.
 
-```
+<pre>
  function App() { 
    return ( 
      <div className="App"> 
@@ -1987,32 +1984,32 @@ it is a part of the App component's return statement.
   ); 
 } 
 export default App;
-```
+</pre>
 
 Then, you added a new function to the App component, and named that
 function <b>Heading ()</b>. You placed it at the very top of the <b>App.js</b>
 file.
 
-```
+<pre>
 function Heading() {
 
 }
-```
+</pre>
 
 <b>Step 2:</b> Next, in the body of the <b>Heading</b> component, you added a
 return statement and spread it over several lines by following it up
 with an opening and a closing parenthesis.
 
-```
+<pre>
  function Heading() { 
    return (
    )
  }
-```
+</pre>
 
 <b>Step 3:</b> Then, inside the parentheses, you added the following code: 
 
-```
+<pre>
 <h1>This is an h1 heading</h1>
 
 function Heading() { 
@@ -2020,7 +2017,7 @@ function Heading() { 
     <h1>This is an h1 heading.</h1> 
   ) 
 } 
-```
+</pre>
 
 <b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
@@ -2258,15 +2255,15 @@ comfortable installing a boilerplate React application". This also
 includes that the folder you chose will need to be accessible for your
 user on your OS (Operating System).
 
-```
+<pre>
 $ npm init react-app customizing-example
-```
+</pre>
 
 This will produce a brand-new starter app with a familiar structure.
 
 Inspecting the <b>src</b> folder of the starter app, it looks like this:
 
-```
+<pre>
  src/
 
      App.js
@@ -2276,11 +2273,11 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
      logo.svg
      reportWebVitals.js
      setupTests.js
-```
+</pre>
 
 Then simply add a components folder to it, like this:
 
-```
+<pre>
  src/
 
      components/
@@ -2292,7 +2289,7 @@ Then simply add a components folder to it, like this:
      logo.svg
      reportWebVitals.js
      setupTests.js
-```
+</pre>
 
 Since the components folder is currently empty, you can add a component
 for each of the sections of the typography-focused blog. Here's the
@@ -2301,7 +2298,7 @@ structural update:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 src/
   components/
     Nav.js
@@ -2318,7 +2315,7 @@ src/
     logo.svg
     reportWebVitals.js
     setupTests.js
-```
+</pre>
 
 </details>
 
@@ -2348,7 +2345,7 @@ Here's the contents of the <b>Nav.js</b> file:
 <details>
   <summary>Nav.js</summary>
 
-```
+<pre>
 function Nav() {
   return (
     <nav className="main-nav">
@@ -2363,7 +2360,7 @@ function Nav() {
 };
 
 export default Nav;
-```
+</pre>
 
 </details>
 
@@ -2372,7 +2369,7 @@ Next, you can focus on the <b>Promo.js</b> file:
 <details>
   <summary>Promo.js</summary>
 
-```
+<pre>
 function Promo() {
   return (
     <div className="promo-section">
@@ -2387,7 +2384,7 @@ function Promo() {
 };
 
 export default Promo;
-```
+</pre>
 
 </details>
 
@@ -2399,7 +2396,7 @@ Here's <b>Intro1.js:</b>
 <details>
   <summary>Intro1.js</summary>
 
-```
+<pre>
 function Intro1() {
 
   return (
@@ -2414,7 +2411,7 @@ function Intro1() {
 };
   
 export default Intro1;
-```
+</pre>
 
 </details>
 
@@ -2423,7 +2420,7 @@ Here's the code for the <b>Intro2.js</b> component:
 <details>
   <summary>Intro2.js</summary>
 
-```
+<pre>
 function Intro2() {
   return (
     <div className="blog-post-intro">
@@ -2437,7 +2434,7 @@ function Intro2() {
 };
 
 export default Intro2;
-```
+</pre>
 
 </details>
 
@@ -2447,7 +2444,7 @@ You can finish the previews for my blog posts with the code for
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Intro3() {
   return (
     <div className="blog-post-intro">
@@ -2461,14 +2458,14 @@ function Intro3() {
 };
 
 export default Intro3;
-```
+</pre>
 
 </details>
 
 There's just one more thing left to code, the <b>Footer</b> component, so
 here it is:
 
-```
+<pre>
 function Footer() {
   return (
     <div className="copyright">
@@ -2478,7 +2475,7 @@ function Footer() {
 };
 
 export default Footer;
-```
+</pre>
 
 Now that you have completed all the components for the app, here are a
 few more interesting things about the syntax.
@@ -2689,7 +2686,7 @@ a components folder.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here are the contents of the Heading.js file:
 
-```
+<pre>
 function Heading() {
   return (
     <h1>This is an h1 heading</h1>
@@ -2697,11 +2694,11 @@ function Heading() {
 }
   
 export default Heading;
-```
+</pre>
 
 Here are the contents of the App.js file:
 
-```
+<pre>
 export default App;
 
     </div>
@@ -2710,7 +2707,7 @@ export default App;
    return (
      <div className="App">
        <Heading />
-```
+</pre>
 
 Here is a screenshot of the src folder:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2737,7 +2734,7 @@ Here is the output from the solution code for the App.js file:
 <b>Step 1:</b> You moved the <b>Heading</b> function from App to a separate
 component file, named "Heading.js".
 
-```
+<pre>
 function Heading() {
 
   return (
@@ -2746,21 +2743,21 @@ function Heading() {
 }
 
 export default Heading;
-```
+</pre>
 
 <b>Step 2:</b> Next, you imported the <b>Heading</b> component into the
 <b>App</b> component. 
 
-```
+<pre>
 import Heading from "./Heading";
-```
+</pre>
 
 <b>Step 3:</b> Finally, you removed the sentence that reads: <i>This is the
 starting code for "Your first component" ungraded lab</i> - so that only
 the <b>Heading</b> JSX element remains in the return statement of the App
 component. 
 
-```
+<pre>
 import Heading from "./Heading";
 
 function App() {
@@ -2771,7 +2768,7 @@ function App() {
     </div>
   );
 }
-```
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Additional resources (React components)</h2>
@@ -2934,24 +2931,24 @@ make sure to navigate to the <i>Try it out</i> link in the main navigation.
 
 For example, let's say you have a component that returns a piece of JSX:
 
-```
+<pre>
 function App() {
 
   return <h1>Hello there</h1>
 }
-```
+</pre>
 
 ... if you used the Babel transpiler to transpile this JSX syntactic
 sugar code down to plain JavaScript code, you'd get back some unusual
 code:
 
-```
+<pre>
 "use strict";
 
 function App() {
   return /#__PURE__/React.createElement("h1", null, "Hello there");
 }
-```
+</pre>
 
 You just want to focus on the <b>React.createElement("h1", null,
 "Hello there");</b> part. You can ignore the rest.
@@ -2971,7 +2968,7 @@ This means that the <b>createElement</b> function receives three arguments:
 For example, let's say you have a slightly more complex JSX element
 structure:
 
-```
+<pre>
 function App() { 
   return (
     <div>
@@ -2979,23 +2976,23 @@ function App() { 
     </div>
   )
 }
-```
+</pre>
 
 ... the transpiled return statement in plain JavaScript again returns
 two <b>createElement</b> functions:
 
-```
+<pre>
 "use strict";
 function App() {
   return /#__PURE__/React.createElement("div", null, /#__PURE__/
     React.createElement("h1", null, "Hello there"));
 }
-```
+</pre>
 
 If you format this output, remove the <b>"use strict"</b> line, and
 remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:
 
-```
+<pre>
 function App() {
   return React.createElement(
     "div",
@@ -3003,7 +3000,7 @@ function App() {
     React.createElement("h1", null, "Hello there")
   );
 }
-```
+</pre>
 
 So now the third argument of the outer-most <b>React.createElement</b> call
 is another <b>React.createElement</b> call.
@@ -3022,7 +3019,7 @@ an empty object.
 In that case, your code would contain a pair of curly braces instead of
 the word <b>null</b>:
 
-```
+<pre>
 "use strict";
   
 function App() {
@@ -3032,7 +3029,7 @@ function App() {
     React.createElement("h1", {}, "Hello there")
   );
 }
-```
+</pre>
 
 This object is referred to as the <i>props</i> object. It is the main
 mechanism of sending data from a parent component to a child component
@@ -3040,13 +3037,13 @@ in React.
 
 The way this works is described in React docs using the following code:
 
-```
+<pre>
 React.createElement(
   type,
   [props],
   [...children]
 )
-```
+</pre>
 
 <h3>The third argument (\...children)</h3>
 
@@ -3129,7 +3126,7 @@ passing of props to and within a component using classes and functions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the completed App.js file:
 
-```import Heading from "./Heading";
+<pre>import Heading from "./Heading";
 
 function App() {
   return (
@@ -3140,17 +3137,17 @@ function App() {
   );
 }
   
-export default App;```
+export default App;</pre>
 
 And here is the completed Heading.js file:
 
-```function Heading(props) {
+<pre>function Heading(props) {
   return (
     <h1>Hello, {props.firstName}</h1>
   )
 }
  
-export default Heading;```
+export default Heading;</pre>
 
 Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3166,13 +3163,13 @@ Here is the output from the solution code for the App.js file:
 <b>Step 1:</b> First, you passed the props object as a parameter to the
 <b>Heading</b> component in the 'Heading.js' file. 
 
-```function Heading(props) {
+<pre>function Heading(props) {
   return (
     <h1>Hello, </h1>
   )
 }
   
-export default Heading;```
+export default Heading;</pre>
  
 
 <b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
@@ -3180,19 +3177,19 @@ the <b>return</b> statement, and added a JSX expression that accesses the
 <b>firstName</b> property of the props object, inside the <b>return</b>
 statement's <b>h1</b>, after <b>Hello</b>. 
 
-```function Heading(props) {
+<pre>function Heading(props) {
   return (
     <h1>Hello, {props.firstName}</h1>
   )
 }
   
-export default Heading;```
+export default Heading;</pre>
  
 <b>Step 3:</b> Then, inside the App component's return statement, you
 located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
 <b>firstName</b> and give it the value of <b>Bob</b>. 
 
-```import Heading from "./Heading";
+<pre>import Heading from "./Heading";
   
 function App() {
   return (
@@ -3202,7 +3199,7 @@ function App() {
   );
 }
 
-export default App;```
+export default App;</pre>
 
 <b>Step 4:</b> You saved all your changes and ran the app to preview the
 updates in the browser, and confirm that the page shows an <b>h1</b>
@@ -3211,7 +3208,7 @@ element with the text that reads "Hello, Bob". 
 <b>Step 5:</b> Then, you changed <b>firstName</b> to any name other than 'Bob'
 and see how the page updates with the new name.
 
-```import Heading from "./Heading";
+<pre>import Heading from "./Heading";
   
 function App() {
   return (
@@ -3221,13 +3218,13 @@ function App() {
   );
 }
   
-export default App;```
+export default App;</pre>
 
 <b>Step 6:</b> Finally, you added a second <b>&lt;Heading /&gt;</b> after the
 first one.  Again, adding the <b>firstName</b> attribute and choosing
 another name for this value.
 
-```import Heading from "./Heading";
+<pre>import Heading from "./Heading";
 
 function App() {
   return (
@@ -3238,7 +3235,7 @@ function App() {
   );
 }
   
-export default App;```
+export default App;</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Introducing JSX</h2>
@@ -3326,7 +3323,7 @@ Now, consider the following component:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Apples(props) {
 
    return (
@@ -3342,19 +3339,19 @@ function Apples(props) {
 }
 
 export default Apples
-```
+</pre>
 
 </details>
 
 There is also a <b>Pears</b> component:
 
-```
+<pre>
 function Pears(props) {
   return (
     <h2>I don't like pears, but my friend, {props.friend}, does</h2>
   )
 }
-```
+</pre>
 
 Now, the question is this: Let's say you want to have a <b>Bag</b>
 component, which can be used to "carry" <b>Apples</b> or <b>Pears</b>. How
@@ -3367,7 +3364,7 @@ You can define a <b>Bag</b> component as follows:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Bag(props) {
   const bag = {
     padding: "20px",
@@ -3383,7 +3380,7 @@ function Bag(props) {
 }
 
  export default Bag
-```
+</pre>
 
 </details>
 
@@ -3395,9 +3392,9 @@ But what is this <b>props.children?</b>
 
 Consider a very simple example:
 
-```
+<pre>
 </Example>
-```
+</pre>
 
 The <b>Hello there</b> text is a child of the Example JSX element. The
 Example JSX Element above is an "invocation" of the <b>Example.js</b>
@@ -3408,9 +3405,9 @@ as a <b>named prop</b> when rendering the <b>Example</b> component?
 
 Here's how that would look like:
 
-```
+<pre>
 <Example children="Hello there" />
-```
+</pre>
 
 Ok, so, there are two ways to do it. But this is just the beginning.
 
@@ -3419,25 +3416,25 @@ What if you, say, wanted to surround the <b>Hello there</b> text in an
 
 Obviously, in JSX, that is easily achievable:
 
-```
+<pre>
 <Example children={<h3>Hello there</h3>} />
-```
+</pre>
 
 What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
 example, named <b>Hello</b>?
 
 In that case, you'd have to update the code like this:
 
-```
+<pre>
 <Example children={<Hello />} />
-```
+</pre>
 
 You could even make the <b>Hello</b> component more dynamic, by giving it
 its own prop:
 
-```
+<pre>
 <Example children={<Hello message="Hello there" />} />
-```
+</pre>
 
 So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
 beginning of this section (24), armed with this new knowledge, how can you
@@ -3446,23 +3443,23 @@ make it work?
 Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
 component as its <b>props.children</b>:
 
-```
+<pre>
 <Bag children={<Apples color="yellow" number="5" />} />
-```
+</pre>
 
 And here's how you'd render the <b>Bag</b> component, wrapping the
 <b>Pears</b> component:
 
-```
+<pre>
 <Bag children={<Pears friend="Peter" />} />
-```
+</pre>
 
 While the above syntax might look a bit weird, it's important to
 understand what is happening "under the hood".
 
 Effectively, the above syntax is the same as the two examples below.
 
-```
+<pre>
 <Bag>
   <Apples color="yellow" number="5" />
 </Bag>
@@ -3470,19 +3467,19 @@ Effectively, the above syntax is the same as the two examples below.
 <Bag>
   <Pears friend="Peter" />
 </Bag>
-```
+</pre>
 
 You can even have multiple levels of nested JSX elements, or a single
 JSX element having multiple children, such as, for example:
 
-```
+<pre>
 <Trunk>
   <Bag>
     <Apples color="yellow" number="5" />
     <Pears friend="Peter" />
   </Bag>
 </Trunk>
-```
+</pre>
 
 So, in the above structure, there's a <b>Trunk</b> JSX element, inside of
 which is a single <b>Bag</b> JSX element, holding an <b>Apples</b> and a
@@ -3490,11 +3487,11 @@ which is a single <b>Bag</b> JSX element, holding an <b>Apples</b> and a
 
 Before the end of this reading, consider this JSX element again:
 
-```
+<pre>
 <Bag>
   <Apples color="yellow" number="5" />
 </Bag>
-```
+</pre>
 
 What is <b>Apples</b> to <b>Bag</b> in the above code?
 
@@ -3549,7 +3546,7 @@ The <b>href</b> attribute loads some CSS styles, probably with some CSS
 classes, and then, inside the function component's declarations, you
 can access those CSS classes using the <b>className</b> attribute.
 
-```
+<pre>
 function Promo(props) {
   return (
     <div className="promo-section">
@@ -3562,16 +3559,16 @@ function Promo(props) {
     </div>
   );
 }
-```
+</pre>
 
 In CSS:
 
-```
+<pre>
 .promo-section {
   font-weight: bold;
   line-height: 20px;
 }
-```
+</pre>
 
 Another way to add CSS styles to components is using inline styles.
 
@@ -3583,7 +3580,7 @@ encountered earlier:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Promo(props) {
   return (
     <div className="promo-section">
@@ -3598,7 +3595,7 @@ function Promo(props) {
 }
   
 export default Promo;
-```
+</pre>
 
 </details>
 
@@ -3607,7 +3604,7 @@ Now you can add some inline styles to it:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Promo(props) {
   return (
     <div className="promo-section">
@@ -3623,34 +3620,34 @@ function Promo(props) {
 }
  
 export default Promo;
-```
+</pre>
 
 </details>
 
 You can start updating the <b>Promo</b> component by adding the JavaScript
 expression syntax:
 
-```
+<pre>
 <h1 style={}>
-```
+</pre>
 
 As explained previously, this means that whatever code you add inside
 these opening and closing curly braces is to be parsed as regular
 JavaScript. Now let's add a <b>style object literal</b> inside of these
 curly braces:
 
-```
+<pre>
 <h1 style={{color:"tomato",fontSize:"40px"}}>
-```
+</pre>
 
 You can then re-write this object literal:
 
-```
+<pre>
 {
   color: "tomato",
   fontSize: "40px"
 }
-```
+</pre>
 
 So, there's nothing special about this object, except for the fact that
 you've inlined it and placed it inside a pair of curly braces.
@@ -3669,7 +3666,7 @@ saved as a JavaScript variable:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Promo(props) {
   
 const styles = {
@@ -3689,7 +3686,7 @@ const styles = {
     </div>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -3751,7 +3748,7 @@ specifically by using function expressions and arrow functions.
 
 Let's start with a function declaration used as a component in React:
 
-```
+<pre>
 function Nav(props) {
   return (
     <ul>
@@ -3759,14 +3756,14 @@ function Nav(props) {
     </ul>
   )
 }
-```
+</pre>
 
 This component's code returns a list item containing the value of the
 'first' prop.
 
 Now, let's change this function declaration to a function expression:
 
-```
+<pre>
 const Nav = function(props) {
   return (
     <ul>
@@ -3774,7 +3771,7 @@ const Nav = function(props) {
     </ul>
   )
 }
-```
+</pre>
 
 The component is, for the most part, the same. The only thing that's
 changed is that you're now using an anonymous (nameless) function, and
@@ -3786,9 +3783,9 @@ Changing a component from a function declaration to a function
 expression doesn't change its behavior, or how you write the code to
 render the <b>Nav</b> component. It's still the same:
 
-```
+<pre>
 <Nav first="Home" />
-```
+</pre>
 
 You can also take this concept a step further, using arrow functions.
 
@@ -3800,7 +3797,7 @@ One of the main benefits of using arrow functions is its shorter syntax.
 
 Consider the Nav function expression written as an arrow function:
 
-```
+<pre>
 const Nav = (props) => {
   return (
     <ul>
@@ -3808,7 +3805,7 @@ const Nav = (props) => {
     </ul>
   )
 }
-```
+</pre>
 
 So, the way to think about this is the following:
 
@@ -3820,15 +3817,15 @@ So, the way to think about this is the following:
 
 -   To reiterate, take the smallest possible <b>anonymous ES5 function</b>:
 
-```
+<pre>
 const example = function() {}
-```
+</pre>
 
 And then observe how this is written as an arrow function:
 
-```
+<pre>
 const example = () => {}
-```
+</pre>
 
 Another important rule regarding arrow functions is that using the
 parentheses is optional if there's a single parameter that a function
@@ -3837,7 +3834,7 @@ accepts.
 In other words, another correct way to write the previous Nav arrow
 function component would be to drop the parentheses around 'props':
 
-```
+<pre>
 const Nav = props => {
   return (
     <ul>
@@ -3845,7 +3842,7 @@ const Nav = props => {
     </ul>
   )
 }
-```
+</pre>
 
 In all other cases, when you write arrow functions, <b>for any number of
 parameters other than a single parameter, using parentheses around
@@ -3854,7 +3851,7 @@ parameters is compulsory</b>.
 For example, if your <b>Nav</b> component wasn't accepting any parameters,
 you'd code it with empty parentheses:
 
-```
+<pre>
 const Nav = () => {
   return (
     <ul>
@@ -3862,7 +3859,7 @@ const Nav = () => {
     </ul>
   )
 }
-```
+</pre>
 
 Another interesting thing about arrow functions is the <b>implicit
 return</b>. However, it only works if it's on the same line of code as
@@ -3872,9 +3869,9 @@ entire component is a single line of code.
 To demonstrate how this works, let's re-write the <b>Nav</b> component as a
 one-liner:
 
-```
+<pre>
 const Nav = () => <ul><li>Home</li></ul>
-```
+</pre>
 
 Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
@@ -3888,9 +3885,9 @@ example, the <b>forEach()</b> built-in array method.
 
 For example:
 
-```
+<pre>
 [10, 20, 30].forEach(item => item * 10)
-```
+</pre>
 
 The output of the above vanilla JavaScript line of code would be three
 number values:
@@ -3906,30 +3903,30 @@ can run in "plain" JavaScript without any additional dependencies.
 
 You could also write this code in ES5 syntax:
 
-```
+<pre>
 [10, 20, 30].forEach(function(item) {
         return item * 10
     }
 )
-```
+</pre>
 
 Regardless of how you write it, the <b>forEach()</b> method can be run on
 an array. The <b>forEach()</b> method accepts a single parameter: <b>an
 anonymous function</b>. If you write this anonymous function in ES5
 syntax, then it would contain a return statement:
 
-```
+<pre>
 function(item) {
     return item * 10
 }
-```
+</pre>
 
 If you write it as an ES6 function instead, it can be simplified as one
 line:
 
-```
+<pre>
 item => item * 10
-```
+</pre>
 
 Both these functions perform the exact same task. Only the syntax is
 different. The ES6 function is a lot shorter because:
@@ -4012,7 +4009,7 @@ functions inside of JSX expressions.
 You are likely familiar with the structure of an if\...else conditional.
 Here is a quick refresher:
 
-```
+<pre>
 let name = 'Bob';
 
 if (name == 'Bob') {
@@ -4020,7 +4017,7 @@ if (name == 'Bob') {
 } else {
   console.log('Hello, Friend');
 };
-```
+</pre>
 
 The above code works as follows:
 
@@ -4053,9 +4050,9 @@ engine returns will be the boolean value of <b>false</b>.
 Here is the code that reflects the explanation in the previous
 paragraph:
 
-```
+<pre>
 name == 'Bob' ?
-```
+</pre>
 
 Note that the above code is incompleted. I have the condition that I'm
 checking (the <b>name == 'Bob'</b> part). I also have the <b>?</b>
@@ -4065,9 +4062,9 @@ character, which is the colon, that is the <b>:</b> character. This
 character is placed after the question mark character. I can now expand
 my code to include this as well:
 
-```
+<pre>
 name == 'Bob' ? :
-```
+</pre>
 
 This brings me a step closer to completing my ternary operator. Although
 I've added the characters needed to construct the ternary operator, I
@@ -4076,27 +4073,27 @@ still need to add the return values. In other words, if <b>name ==
 Bob!". Otherwise, I want to return the words "I don't know this
 person".
 
-```
+<pre>
 name == Bob ? "Yes, it is Bob" : "I don't know this person";
-```
+</pre>
 
 This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the <b>if</b>
 statement. To prove that this is really the case, here's my starting
 if\...else example, written as a ternary operator:
 
-```
+<pre>
 let name = 'Bob';
 
 name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
-```
+</pre>
 
 <h3><b>Using ternary expressions in JSX</b></h3>
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
 
-```
+<pre>
 function Example() {
   return (
     <div className="heading">
@@ -4104,7 +4101,7 @@ function Example() {
     </div>
   );
 };
-```
+</pre>
 
 Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
 want it to parse the code inside as regular JavaScript.
@@ -4113,9 +4110,9 @@ Then, inside the curly braces, you can add a ternary statement. Every
 ternary statement conceptually, expressed in pseudo-code, works like
 this:
 
-```
+<pre>
 comparison ? true : false
-```
+</pre>
 
 In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
@@ -4141,7 +4138,7 @@ that return value is <b>undefined</b>.
 Like the previous example, you can use function invocation inside JSX to
 return a random number:
 
-```
+<pre>
 function Example2() {
   return (
     <div className="heading">
@@ -4151,7 +4148,7 @@ function Example2() {
     </div>
   );
 };
-```
+</pre>
 
 In the <b>Example2</b> component, built-in <b>Math.floor()</b> and
 <b>Math.random()</b> methods are being used, as well as some number values
@@ -4159,7 +4156,7 @@ and arithmetic operators, to display a random number between 0 and 10.
 
 You can also extract this functionality into a separate function:
 
-```
+<pre>
 function Example3() {
   const getRandomNum = () => Math.floor(Math.random() * 10) + 1
     return (
@@ -4168,7 +4165,7 @@ function Example3() {
       </div>
     );
 };
-```
+</pre>
 
 The <b>getRandomNum()</b> function can also be written as a function
 declaration, or as a function expression. It does not have to be an
@@ -4179,19 +4176,19 @@ function declaration.
 
 <h4>Function expression:</h4>
 
-```
+<pre>
 const getRandomNum = function() {
   return Math.floor(Math.random() * 10) + 1
 } ;
-```
+</pre>
 
 <h4>Function declaration:</h4>
 
-```
+<pre>
 function getRandomNum() {
   return Math.floor(Math.random() *10) + 1
 };
-```
+</pre>
 
 Of course, there are many other examples. The ones used here are there
 to help you understand how versatile and seamless the JSX syntax is. As
@@ -4215,7 +4212,7 @@ For example:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 const bool = false; 
   
 function Example(props) {
@@ -4231,7 +4228,7 @@ export default function App() { 
     </div> 
   ); 
 };
-```
+</pre>
 
 </details>
 
@@ -4252,7 +4249,7 @@ screen.
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 const bool = false;
 const str1 = "just";
   
@@ -4279,7 +4276,7 @@ export default function App() {
     </div>
   );
 };
-```
+</pre>
 
 </details>
 
@@ -4342,7 +4339,7 @@ Here's the completed App.js file:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import "./App.css";
 
 import Card from "./Card";
@@ -4359,7 +4356,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4368,7 +4365,7 @@ Here's the completed Card.js file:
 <details>
   <summary>Card.js</summary>
   
-```
+<pre>
 function Card(props) {
   return (
     <div className="card">
@@ -4379,7 +4376,7 @@ function Card(props) {
 };
  
 export default Card;
-```
+</pre>
 
 </details>
 
@@ -4397,40 +4394,40 @@ Here is the output from the completed solution code:
 <b>Step 1.</b> Your first task was to add a Card.js file, and inside of
 that file, declare a <b>Card</b> function.  
 
-```
+<pre>
 function Card(props) {
     
 };
-```
+</pre>
 
 <b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you added a
 <b>return</b> statement with two parentheses after it, to allow the
 <b>return</b> statement to spread onto several lines. 
 
-```
+<pre>
 function Card(props) {
   return (
   
   );
 };
-```
+</pre>
 
 <b>Step 3.</b> Inside the <b>return</b> statement, you needed to add a
 wrapping <b>div</b> element. 
 
-```
+<pre>
 function Card(props) {
   return (
     <div>
     </div>
   );
 };
-```
+</pre>
 
 <b>Step 4.</b> Inside the wrapping <b>div</b> element, you needed to add an
 <b>h2</b> element, and under it, an <b>h3</b> element. 
 
-```
+<pre>
 function Card(props) {
   return (
     <div>
@@ -4439,12 +4436,12 @@ function Card(props) {
     </div>  
   );
 };
-```
+</pre>
 
 <b>Step 5.</b> Inside the h2 element you've already added, you needed to add
 the JSX expression of: {props.h2}. 
 
-```
+<pre>
 function Card(props) {
   return (
     <div className="card">
@@ -4453,12 +4450,12 @@ function Card(props) {
     </div>
   );
 };
-```
+</pre>
 
 <b>Step 6.</b> Inside the <b>h3</b> element you've already added, you needed
 to add the JSX expression of: <b>{props.h3}</b>. 
 
-```
+<pre>
 function Card(props) {
   return (
     <div className="card">
@@ -4467,12 +4464,12 @@ function Card(props) {
     </div>
   );
 };
-```
+</pre>
 
 <b>Step 7.</b> You also had to make sure to not forget the <b>export default
 Card;</b> line of code at the bottom of the Card component.
 
-```
+<pre>
 function Card(props) {
   return (
     <div className="card">
@@ -4483,7 +4480,7 @@ function Card(props) {
 };
   
 export default Card;
-```
+</pre>
 
 <b>Step 8.</b> Back inside the App component, you needed to import the
 <b>Card</b> component. 
@@ -4491,7 +4488,7 @@ export default Card;
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import "./App.css";
 import Card from "./Card";
   
@@ -4504,7 +4501,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4515,7 +4512,7 @@ elements. 
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 import "./App.css";
 import Card from "./Card";
   
@@ -4531,7 +4528,7 @@ function App() {
 };
   
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4541,7 +4538,7 @@ export default App;
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 import "./App.css";
 import Card from "./Card";
   
@@ -4557,7 +4554,7 @@ function App() {
 };
  
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4567,7 +4564,7 @@ export default App;
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 import "./App.css";
 import Card from "./Card";
 
@@ -4583,7 +4580,7 @@ function App() {
 };
   
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4594,7 +4591,7 @@ card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>. 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import "./App.css";
 import Card from "./Card";
   
@@ -4610,7 +4607,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4621,7 +4618,7 @@ h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>. 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import "./App.css";
 
 import Card from "./Card";
@@ -4638,7 +4635,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4649,7 +4646,7 @@ Card.js file's <b>Card</b> function's <b>return</b> statement's wrapping
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import "./App.css";
 
 import Card from "./Card";
@@ -4666,7 +4663,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -4867,22 +4864,22 @@ The JavaScript language comes with a built-in error handling syntax, the
 
 Let's examine an example of an error in JavaScript:
 
-```
+<pre>
 (5).toUpperCase()
-```
+</pre>
 
 Obviously, you cannot uppercase a number value, and thus, this throws
 the following error:
 
-```
+<pre>
 Uncaught TypeError: 5.toUpperCase is not a function
-```
+</pre>
 
 To handle this TypeError, you can update the code with a try\...catch
 block that instructs the code to continue running after the error is
 encountered:
 
-```
+<pre>
 try {
   (5).toUpperCase();
 } 
@@ -4891,7 +4888,7 @@ catch(e) {
   console.log(`Oops, you can't uppercase a number. 
    Trying to do it resulted in the following`, e);
 }
-```
+</pre>
 
 The try-catch block will output some text in the console:
 
@@ -4905,7 +4902,7 @@ details after this quick refresher.
 Back to React, here's an example of a simple error in a React
 component:
 
-```
+<pre>
 function NumBillboard(props) {
   return (
     <>
@@ -4915,18 +4912,18 @@ function NumBillboard(props) {
 }
 
 export default NumBillboard;
-```
+</pre>
 
 In React, an error in the code, such as the one above, will result in
 the error overlay showing in the app in the browser.
 
 In this specific example, the error would be:
 
-```
+<pre>
 ReferenceError
 
 prop is not defined
-```
+</pre>
 
 Note: <i>You can click the X button to close the error overlay.</i>
 
@@ -5122,11 +5119,11 @@ always be the same: just some words output to the console.
 This approach allows you to directly pass in an ES5 function declaration
 as the <b>onClick</b> event-handling attribute's value:
 
-```
+<pre>
 <button onClick={function() {console.log('first example')}}>
   An inline anonymous ES5 function event handler
 </button>
-```
+</pre>
 
 Although it's possible to write your click handlers using this syntax,
 it's not a common approach and you will not find such code very often
@@ -5137,9 +5134,9 @@ in React apps.
 With this approach, you can directly pass in an ES6 function declaration
 as the <b>onClick</b> event-handling attribute's value:
 
-```
+<pre>
 </button>
-```
+</pre>
 
 This approach is much more common then the previous one. If you want to
 keep all your logic inside the JSX expression assigned to the onClick
@@ -5154,7 +5151,7 @@ as follows:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function App() {
   function thirdExample() {
     console.log('third example');
@@ -5171,7 +5168,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -5199,7 +5196,7 @@ function expression.
 <details>
   <summary>function App</summary>
 
-```
+<pre>
 function App() {
   const fourthExample = () => console.log('fourth example');
   return (
@@ -5212,7 +5209,7 @@ function App() {
 };
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -5313,7 +5310,7 @@ Here is the completed App.js file:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 function App() {
   
   function handleClick() {
@@ -5332,7 +5329,7 @@ function App() {
 }
   
 export default App;
-```
+</pre>
 
 </details>
 
@@ -5351,7 +5348,7 @@ Here is the output from the solution code for the App.js file:
 <b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
 closing <b>button</b> tag, to the App component's <b>h1</b> element . 
 
-```
+<pre>
 function App() {
   return (
     <div>
@@ -5362,12 +5359,12 @@ function App() {
 }
   
 export default App;
-```
+</pre>
 
 <b>Step 2.</b> In between the opening and closing <b>button</b> tags, you
 added the following text: Guess the number between 1 and 3. 
 
-```
+<pre>
 function App() {
   return (
     <div>
@@ -5378,13 +5375,13 @@ function App() {
 }
 
 export default App;
-```
+</pre>
 
 <b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
 <b>onClick</b> event-handling attribute, and passed it the following JSX
 expression: <b>{handleClick}</b>. 
 
-```
+<pre>
 function App() {
   return (
     <div>
@@ -5395,7 +5392,7 @@ function App() {
 }
   
 export default App;
-```
+</pre>
 
 <b>Step 4.</b> Then, above the <b>return</b> statement of the App component -
 but still inside the App function - you added the following ES5 function
@@ -5404,7 +5401,7 @@ declaration: 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 function App() {
   function handleClick() {
     let randomNum = Math.floor(Math.random() * 3) + 1;
@@ -5421,7 +5418,7 @@ function App() {
 }
 
 export default App;
-```
+</pre>
 
 </details>
 
@@ -5590,17 +5587,17 @@ the UI.
 
 <h4><b>Parent component:</b></h4>
 
-```
+<pre>
 function Dog() {
   return (
     <Puppy name="Max" bowlShape="square" bowlStatus="full" />
   );
 };
-```
+</pre>
 
 <h4><b>Child component:</b></h4>
 
-```
+<pre>
 function Puppy(props) {
   return (
     <div>
@@ -5608,11 +5605,11 @@ function Puppy(props) {
     </div>
   );
 };
-```
+</pre>
 
 <h4><b>Grandchild component:</b></h4>
 
-```
+<pre>
 function Bowl(props) {
   return (
     <span>
@@ -5620,7 +5617,7 @@ function Bowl(props) {
     </span>
   );
 };
-```
+</pre>
 
 Having data move through props in only one direction makes it simpler to
 understand the logic of how the components interact. If data were moving
@@ -5766,7 +5763,7 @@ Let's discuss the below example.
 <details>
   <summary>React</summary>
 
-```
+<pre>
 import { useState } from 'react';
   
 export default function InputComponent() { 
@@ -5785,7 +5782,7 @@ export default function InputComponent() { 
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -5813,9 +5810,9 @@ The state variable <b>inputText</b> and the <b>setText</b> method are used to
 set the current text that is typed. The <b>useState</b> hook is initialized
 at the beginning of the component.
 
-```
+<pre>
 const[inputText, setText] = useState('hello');
-```
+</pre>
 
 By default, the <b>inputText</b> will be set to "hello".
 
@@ -5823,11 +5820,11 @@ As the user types, the <b>handleChange</b> function, reads the latest input
 value from the browser's input DOM element, and calls the <b>setText</b>
 function, to update the local state of <b>inputText</b>.
 
-```
+<pre>
 function handleChange(e) {
   setText(e.target.value);
 };
-```
+</pre>
 
 Finally, clicking the reset button will update the <b>inputText</b> back to
 "hello". 
@@ -5867,7 +5864,7 @@ registration form with fields for first name, last name and email.
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react'; 
   
 export default function RegisterForm() { 
@@ -5908,20 +5905,20 @@ export default function RegisterForm() { 
         <input 
           value={form.email} 
           onChange={e => { 
-```
+</pre>
 
 </details>
 
 Notice that you are using a <b>form</b> object to store the state of all
 three text input field values:
 
-```
+<pre>
 const[form, setForm] =useState({
   firstName:'Luke',
   lastName:'Jones',
     email:'lukeJones@sculpture.com',
 });
-```
+</pre>
 
 You do not need to have three separate state variables in this case, and
 instead you can consolidate them all together into one <b>form</b> object
@@ -5946,7 +5943,7 @@ The <b>ref</b> object has a property named <b>current</b>.
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function TextInputWithFocusButton() {
   const inputEl = useRef(null);
   const onButtonClick = () => {
@@ -5960,7 +5957,7 @@ function TextInputWithFocusButton() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -6094,18 +6091,18 @@ be as small as a button, or as large as an entire page.
 
 React components are JavaScript functions that return markup:
 
-```
+<pre>
 function MyButton() {
   return (
     <button>I'm a button</button>
   );
 }
-```
+</pre>
 
 Now that you've declared MyButton, you can nest it into another
 component:
 
-```
+<pre>
 export default function MyApp() {
   return (
     <div>
@@ -6114,7 +6111,7 @@ export default function MyApp() {
     </div>
   );
 }
-```
+</pre>
 
 Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
 know it's a React component. React component names must always start
@@ -6125,7 +6122,7 @@ Have a look at the result:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 function MyButton() {
   return (
     <button>
@@ -6141,7 +6138,7 @@ export default function MyApp() {
     </div>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -6160,7 +6157,7 @@ component also can't return multiple JSX tags. You have to wrap them
 into a shared parent, like a &lt;div&gt;\...&lt;/div&gt; or an empty
 &lt;&gt;\...&lt;/&gt; wrapper:
 
-```
+<pre>
 function AboutPage() {
   return (
     <>
@@ -6169,7 +6166,7 @@ function AboutPage() {
     </>
   );
 }
-```
+</pre>
 
 If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
 
@@ -6178,18 +6175,18 @@ If you have a lot of HTML to port to JSX, you can use an <a href="https://transf
 In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">
 [class] attribute:</a>
 
-```
+<pre>
 <img className="avatar" />
-```
+</pre>
 
 Then you write the CSS rules for it in a separate CSS file:
 
-```
+<pre>
 /* In your CSS */
   .avatar {
     border-radius: 50%;
   }
-```
+</pre>
 
 React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[<link>]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.
 
@@ -6199,13 +6196,13 @@ JSX lets you put markup into JavaScript. Curly braces let you "escape
 back" into JavaScript so that you can embed some variable from your code
 and display it to the user. For example, this will display user.name:
 
-```
+<pre>
 return (
   <h1>
     {user.name}
   </h1>
 );
-```
+</pre>
 
 You can also "escape into JavaScript" from JSX attributes, but you have
 to use curly braces instead of quotes. For example, className="avatar"
@@ -6213,21 +6210,21 @@ passes the "avatar" string as the CSS class, but src={user.imageUrl}
 reads the JavaScript user.imageUrl variable value, and then passes that
 value as the src attribute:
 
-```
+<pre>
 return (
   <img
     className="avatar"
     src={user.imageUrl}
   />
 );
-```
+</pre>
 
 You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:
 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 const user = {
   name: 'Hedy Lamarr',
   imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
@@ -6250,7 +6247,7 @@ export default function Profile() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -6265,7 +6262,7 @@ In React, there is no special syntax for writing conditions. Instead, you'll use
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 let content;
 
 if (isLoggedIn) {
@@ -6279,14 +6276,14 @@ if (isLoggedIn) {
       {content}
     </div>
   );
-```
+</pre>
 
 </details>
 
 If you prefer more compact code, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional ?
 operator</a>.  Unlike if, it works inside JSX:
 
-```
+<pre>
 <div>
   {isLoggedIn ? (
     <AdminPanel />
@@ -6294,15 +6291,15 @@ operator</a>.  Unlike if, it works inside JSX:
     <LoginForm />
   )}
 </div>
-```
+</pre>
 
 When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">logical &amp;&amp; syntax</a>:
 
-```
+<pre>
 <div>
   {isLoggedIn && <AdminPanel />}
 </div>
-```
+</pre>
 
 All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
@@ -6316,18 +6313,18 @@ function</a> to render lists of components.
 
 For example, let's say you have an array of products:
 
-```
+<pre>
 const products = [
   { title: 'Cabbage', id: 1 },
   { title: 'Garlic', id: 2 },
   { title: 'Apple', id: 3 },
 ];
-```
+</pre>
 
 Inside your component, use the map() function to transform an array of
 products into an array of <li> items:
 
-```
+<pre>
 const listItems = products.map(product =>
   <li key={product.id}>
     {product.title}
@@ -6336,7 +6333,7 @@ const listItems = products.map(product =>
 return (
   <ul>{listItems}</ul>
 );
-```
+</pre>
 
 Notice how &lt;li&gt; has a key attribute. For each item in a list, you
 should pass a string or a number that uniquely identifies that item
@@ -6347,7 +6344,7 @@ later insert, delete, or reorder the items.
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 const products = [
   { title: 'Cabbage', isFruit: false, id: 1 },
   { title: 'Garlic', isFruit: false, id: 2 },
@@ -6368,7 +6365,7 @@ export default function ShoppingList() {
     <ul>{listItems}</ul>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -6377,7 +6374,7 @@ export default function ShoppingList() {
 You can respond to events by declaring event handler functions inside
 your components:
 
-```
+<pre>
 function MyButton() {
 
   function handleClick() {
@@ -6389,7 +6386,7 @@ function MyButton() {
     </button>
   );
 }
-```
+</pre>
 
 Notice how onClick={handleClick} has no parentheses at the end! Do not
 call the event handler function: you only need to pass it down. React
@@ -6403,16 +6400,16 @@ button is clicked. To do this, add state to your component.
 
 First, import <a href="https://react.dev/reference/react/useState">useState</a> from React:
 
-```
+<pre>
 import { useState } from 'react';
-```
+</pre>
 
 Now you can declare a state variable inside your component:
 
-```
+<pre>
 function MyButton() {
   const [count, setCount] = useState(0);
-```
+</pre>
 
 You'll get two things from useState: the current state (count), and the
 function that lets you update it (setCount). You can give them any
@@ -6423,7 +6420,7 @@ passed 0 to useState(). When you want to change state, call setCount()
 and pass the new value to it. Clicking this button will increment the
 counter:
 
-```
+<pre>
 function MyButton() {
   const [count, setCount] = useState(0);
   function handleClick() {
@@ -6435,7 +6432,7 @@ function MyButton() {
     </button>
   );
 }
-```
+</pre>
 
 React will call your component function again. This time, count will
 be 1. Then it will be 2. And so on.
@@ -6446,7 +6443,7 @@ state. Click each button separately:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 export default function MyApp() {
   return (
@@ -6468,7 +6465,7 @@ function MyButton() {
     </button>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -6568,7 +6565,7 @@ First, move the state up from MyButton into MyApp:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
@@ -6585,7 +6582,7 @@ export default function MyApp() {
 function MyButton() {
   // ... we're moving code from here ...
 }
-```
+</pre>
 
 </details>
 
@@ -6597,7 +6594,7 @@ curly braces, just like you previously did with built-in tags like
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
@@ -6611,7 +6608,7 @@ export default function MyApp() {
     </div>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -6622,7 +6619,7 @@ and <i>passes both of them down as props</i> to each of the buttons.
 Finally, change MyButton to <i>read</i> the props you have passed from its
 parent component:
 
-```
+<pre>
 function MyButton({ count, onClick }) {
   return (
     <button onClick={onClick}>
@@ -6630,7 +6627,7 @@ function MyButton({ count, onClick }) {
     </button>
   );
 }
-```
+</pre>
 
 When you click the button, the onClick handler fires. Each button's
 onClick prop was set to the handleClick function inside MyApp, so the
@@ -6643,7 +6640,7 @@ components.
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 export default function MyApp() {
   const [count, setCount] = useState(0);
@@ -6665,7 +6662,7 @@ export default function MyApp() {
  </button>
  );
  }
-```
+</pre>
 
 </details>
 
@@ -6706,7 +6703,7 @@ You can see what it will look like when you're finished here:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
@@ -6746,7 +6743,7 @@ function Board({ xIsNext, squares, onPlay }) {
       <Square value={squares[2]} onSquareClick={() => handleClick(2)}
       />
     </div>
-```
+</pre>
 
 </details>
 
@@ -6774,11 +6771,11 @@ the starter code for this tutorial.
 
 <h4>App.js</h4>
 
-```
+<pre>
 export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;;
 }
-```
+</pre>
 
 <h4>Note</h4>
 
@@ -6831,11 +6828,11 @@ In CodeSandbox you'll see three main sections:
 The App.js file should be selected in the <i>Files</i> section. The contents
 of that file in the <i>code editor</i> should be:
 
-```
+<pre>
 export default function Square() {
   return <button className="square">X</button>;
 }
-```
+</pre>
 
 The browser section should be displaying a square with a X in it like
 this:
@@ -6859,22 +6856,22 @@ Components are used to render, manage, and update the UI elements in
 your application. Let's look at the component line by line to see what's
 going on:
 
-```
+<pre>
 export default function Square() {
   return <button className="square">X</button>;
 }
-```
+</pre>
 
 The first line defines a function called Square. The export JavaScript
 keyword makes this function accessible outside of this file. The default
 keyword tells other files using your code that it's the main function in
 your file.
 
-```
+<pre>
 export default function Square() {
   return <button className="square">X</button>;
 }
-```
+</pre>
 
 The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
@@ -6885,9 +6882,9 @@ CSS how to style the button. X is the text displayed inside of the
 button and </button> closes the JSX element to indicate that any
 following content shouldn't be placed inside the button.
 
-```
+<pre>
 styles.css 
-```
+</pre>
 
 Click on the file labeled styles.css in the <i>Files</i> section of
 CodeSandbox. This file defines the styles for your React app. The first
@@ -6896,16 +6893,16 @@ your app while the .square selector defines the style of any component
 where the className property is set to square. In your code, that would
 match the button from your Square component in the App.js file.
 
-```
+<pre>
 index.js 
-```
+</pre>
 
 Click on the file labeled index.js in the <i>Files</i> section of
 CodeSandbox. You won't be editing this file during the tutorial but it
 is the bridge between the component you created in the App.js file and
 the web browser.
 
-```
+<pre>
 import {Strict Mode} from 'react';
 
 import {createRoot} from 'react-dom/client';
@@ -6913,7 +6910,7 @@ import {createRoot} from 'react-dom/client';
 import './styles.css';
 
 import App from './App';
-```
+</pre>
 
 Lines 1-5 brings all the necessary pieces together:
 
@@ -6936,12 +6933,12 @@ tutorial.
 Currently the board is only a single square, but you need nine! If you
 just try and copy paste your square to make two squares like this:
 
-```
+<pre>
 export default function Square() {
   return <button className="square">X</button><button
   className="square">X</button>;
 }
-```
+</pre>
 
 You'll get this error:
 
@@ -6955,7 +6952,7 @@ adjacent JSX elements like two buttons. To fix this you can use
 fragments (<> and </>) to wrap multiple adjacent JSX elements like
 this:
 
-```
+<pre>
 export default function Square() {
   return (
     <>
@@ -6964,7 +6961,7 @@ export default function Square() {
     </>
   );
 }
-```
+</pre>
 
 Now you should see:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7000,7 +6997,7 @@ In the App.js file, update the Square component to look like this:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 export default function Square() {
   return (
     <>
@@ -7022,7 +7019,7 @@ export default function Square() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7042,18 +7039,18 @@ styled divs you have your tic-tac-toe board:
 But you now have a problem. Your component named Square, really isn't a
 square anymore. Let's fix that by changing the name to Board:
 
-```
+<pre>
 export default function Board() {
   //...
 }
-```
+</pre>
 
 At this point your code should look something like this:
 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 export default function Board() {
   return (
     <>
@@ -7075,7 +7072,7 @@ export default function Board() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7098,7 +7095,7 @@ First, you are going to copy the line defining your first square
 (<button className="square">1</button>) from your Board component
 into a new Square component:
 
-```
+<pre>
 function Square() {
   return <button className="square">1</button>;
 }
@@ -7106,7 +7103,7 @@ function Square() {
 export default function Board() {
   // ...
 }
-```
+</pre>
 
 Then you'll update the Board component to render that Square component
 using JSX syntax:
@@ -7114,7 +7111,7 @@ using JSX syntax:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 // ...
 export default function Board() {
   return (
@@ -7137,7 +7134,7 @@ export default function Board() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7162,11 +7159,11 @@ should have from the parent component (Board) to its child (Square).
 Update the Square component to read the value prop that you'll pass from
 the <b>Board:</b>
 
-```
+<pre>
 function Square({ value }) {
   return <button className="square">1</button>;
 }
-```
+</pre>
 
 function Square({ value }) indicates the Square component can be passed
 a prop called value.
@@ -7174,11 +7171,11 @@ a prop called value.
 Now you want to display that value instead of 1 inside every square. Try
 doing it like this:
 
-```
+<pre>
 function Square({ value }) {
   return <button className="square">value</button>;
 }
-```
+</pre>
 
 Oops, this is not what you wanted:
 
@@ -7196,11 +7193,11 @@ You wanted to render the JavaScript variable called value from your
 component, not the word "value". To "escape into JavaScript" from JSX,
 you need curly braces. Add curly braces around value in JSX like so:
 
-```
+<pre>
 function Square({ value }) {
   return <button className="square">{value}</button>;
 }
-```
+</pre>
 
 For now, you should see an empty board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7220,7 +7217,7 @@ each Square component rendered by the Board component:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function Board() {
   return (
     <>
@@ -7242,7 +7239,7 @@ export default function Board() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7262,7 +7259,7 @@ Your updated code should look like this:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 function Square({ value }) {
   return <button className="square">{value}</button>;
 }
@@ -7288,7 +7285,7 @@ export default function Board() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7298,7 +7295,7 @@ Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
 the props of the button JSX element returned from the Square:
 
-```
+<pre>
 function Square({ value }) {
   function handleClick() {
     console.log('clicked!');
@@ -7312,7 +7309,7 @@ function Square({ value }) {
     </button>
   );
 }
-```
+</pre>
 
 If you click on a square now, you should see a log saying "clicked!"
 in the Console tab at the bottom of the Browser section in CodeSandbox.
@@ -7341,7 +7338,7 @@ Import useState at the top of the file. Remove the value prop from the
 Square component. Instead, add a new line at the start of the Square
 that calls useState. Have it return a state variable called value:
 
-```
+<pre>
 import { useState } from 'react';
 
 function Square() {
@@ -7351,7 +7348,7 @@ const [value, setValue] = useState(null);
 function handleClick() {
 
 //...
-```
+</pre>
 
 value stores the value and setValue is a function that can be used to
 change the value. The null passed to useState is used as the initial
@@ -7364,7 +7361,7 @@ the Board component:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 // ...
 export default function Board() {
   return (
@@ -7387,7 +7384,7 @@ export default function Board() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7398,7 +7395,7 @@ Square component looks like this:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Square() {
   const [value, setValue] = useState(null);
   function handleClick() {
@@ -7413,7 +7410,7 @@ function Square() {
     </button>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7440,7 +7437,7 @@ After you've made the above changes, your code will look like this:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square() {
   const [value, setValue] = useState(null);
@@ -7473,7 +7470,7 @@ export default function Board() {
       <Square />
       <Square />
       <Square />
-```
+</pre>
 
 </details>
 
@@ -7549,7 +7546,7 @@ Let's take this opportunity to try it out. Edit the Board component so
 that it declares a state variable named squares that defaults to an
 array of 9 nulls corresponding to the 9 squares:
 
-```
+<pre>
 // ...
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -7557,7 +7554,7 @@ export default function Board() {
     // ...
   );
 }
-```
+</pre>
 
 Array(9).fill(null) creates an array with nine elements and sets each of
 them to null. The useState() call around it declares a squares state
@@ -7565,9 +7562,9 @@ variable that's initially set to that array. Each entry in the array
 corresponds to the value of a square. When you fill the board in later,
 the squares array will look like this:
 
-```
+<pre>
 ['O', null, 'X', 'X', 'X', 'O', 'O', null, null]
-```
+</pre>
 
 Now your Board component needs to pass the value prop down to each
 Square that it renders:
@@ -7575,7 +7572,7 @@ Square that it renders:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function Board() {
 const [squares, setSquares] = useState(Array(9).fill(null));
   return (
@@ -7598,7 +7595,7 @@ const [squares, setSquares] = useState(Array(9).fill(null));
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7606,11 +7603,11 @@ Next, you'll edit the Square component to receive the value prop from
 the Board component. This will require removing the Square component's
 own stateful tracking of value and the button's onClick prop:
 
-```
+<pre>
 function Square({value}) {
   return <button className="square">{value}</button>;
 }
-```
+</pre>
 
 At this point you should see an empty tic-tac-toe board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7628,7 +7625,7 @@ And your code should look like this:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 
 function Square({ value }) {
@@ -7656,7 +7653,7 @@ export default function Board() {
     </>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -7675,7 +7672,7 @@ square is clicked. You'll start with the function that the Square
 component will call when it is clicked. You'll call that function
 onSquareClick:
 
-```
+<pre>
 function Square({ value }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -7683,12 +7680,12 @@ function Square({ value }) {
     </button>
   );
 }
-```
+</pre>
 
 Next, you'll add the onSquareClick function to the Square component's
 props:
 
-```
+<pre>
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -7696,14 +7693,14 @@ function Square({ value, onSquareClick }) {
     </button>
   );
 }
-```
+</pre>
 
 Now you'll connect the onSquareClick prop to a function in the Board
 component that you'll name handleClick. To connect onSquareClick to
 handleClick you'll pass a function to the onSquareClick prop of the
 first Square component:
 
-```
+<pre>
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
@@ -7713,12 +7710,12 @@ export default function Board() {
     //...
   );
 }
-```
+</pre>
 
 Lastly, you will define the handleClick function inside the Board
 component to update the squares array holding your board's state:
 
-```
+<pre>
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   function handleClick() {
@@ -7730,7 +7727,7 @@ export default function Board() {
     // ...
   )
 }
-```
+</pre>
 
 The handleClick function creates a copy of the squares array
 (nextSquares) with the JavaScript slice() Array method. Then,
@@ -7757,7 +7754,7 @@ left square (0). Let's update handleClick to be able to update any
 square. Add an argument i to the handleClick function that takes the
 index of the square to update:
 
-```
+<pre>
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   function handleClick(i) {
@@ -7769,15 +7766,15 @@ export default function Board() {
     // ...
   )
 }
-```
+</pre>
 
 Next, you will need to pass that i to handleClick. You could try to set
 the onSquareClick prop of square to be handleClick(0) directly in the
 JSX like this, but it won't work:
 
-```
+<pre>
 <Square value={squares[0]} onSquareClick={handleClick(0)} />
-```
+</pre>
 
 Here is why this doesn't work. The handleClick(0) call will be a part of
 rendering the board component. Because handleClick(0) alters the state
@@ -7807,7 +7804,7 @@ This would solve the infinite loop.
 However, defining nine different functions and giving each of them a
 name is too verbose. Instead, let's do this:
 
-```
+<pre>
 export default function Board() {
   // ...
   return (
@@ -7818,7 +7815,7 @@ export default function Board() {
     // ...
   );
 }
-```
+</pre>
 
 Notice the new () => syntax. Here, () => handleClick(0) is an <i>arrow
 function,</i> which is a shorter way to define functions. When the square
@@ -7832,7 +7829,7 @@ of the handleClick corresponds to the index of the correct square:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function Board() {
   // ...
   return (
@@ -7864,7 +7861,7 @@ export default function Board() {
    </>
   );
 };
-```
+</pre>
 
 </details>
 
@@ -7888,7 +7885,7 @@ This is what your code should look like:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
@@ -7930,7 +7927,7 @@ export default function Board() {
       <Square value={squares[8]} onSquareClick={() => handleClick(8)}
       />
     </div>
-```
+</pre>
 
 </details>
 
@@ -7987,7 +7984,7 @@ approach is to replace the data with a new copy which has the desired
 changes. Here is what it would look like if you mutated the squares
 array:
 
-```
+<pre>
  const squares = [null, null, null, null, null, null, null, null,
  null];
 
@@ -7995,12 +7992,12 @@ array:
 
  // Now `squares` is ["X", null, null, null, null, null, null,
  null, null];
-```
+</pre>
 
 And here is what it would look like if you changed data without mutating
 the squares array:
 
-```
+<pre>
  const squares = [null, null, null, null, null, null, null, null,
  null];
 
@@ -8009,7 +8006,7 @@ the squares array:
 
  // Now `squares` is unchanged, but `nextSquares` first element is
  'X' rather than `null`
-```
+</pre>
 
 The result is the same but by not mutating (changing the underlying
 data) directly, you gain several benefits.
@@ -8041,13 +8038,13 @@ cannot be marked on the board.
 You'll set the first move to be "X" by default. Let's keep track of this
 by adding another piece of state to the Board component:
 
-```
+<pre>
 function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
   // ...
 }
-```
+</pre>
 
 Each time a player moves, xIsNext (a boolean) will be flipped to
 determine which player goes next and the game's state will be saved.
@@ -8057,7 +8054,7 @@ xIsNext:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -8075,7 +8072,7 @@ export default function Board() {
     //...
   );
 }
-```
+</pre>
 
 </details>
 
@@ -8103,7 +8100,7 @@ early. You'll check to see if the square already has a X or an O. If the
 square is already filled, you will return in the handleClick function
 early---before it tries to update the board state.
 
-```
+<pre>
  function handleClick(i) {
 
  if (squares[i]) {
@@ -8117,7 +8114,7 @@ early---before it tries to update the board state.
  //...
 
  }
-```
+</pre>
 
 Now you can only add X's or O's to empty squares! Here is what your code
 should look like at this point:
@@ -8125,7 +8122,7 @@ should look like at this point:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
   function Square({value, onSquareClick}) {
     return (
@@ -8161,7 +8158,7 @@ import { useState } from 'react';
     />
   </div>
   <div className="board-row">
-```
+</pre>
 
 </details>
 
@@ -8177,7 +8174,7 @@ it's not specific to React:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function Board() {
   //...
 }
@@ -8201,7 +8198,7 @@ function calculateWinner(squares) {
   }
   return null;
 }
-```
+</pre>
 
 </details>
 
@@ -8216,7 +8213,7 @@ handleClick function to check if a player has won. You can perform this
 check at the same time you check if a user has clicked a square that
 already has a X or and O. We'd like to return early in both cases:
 
-```
+<pre>
 function handleClick(i) {
   if (squares[i] || calculateWinner(squares)) {
     return;
@@ -8224,7 +8221,7 @@ function handleClick(i) {
   const nextSquares = squares.slice();
   //...
 }
-```
+</pre>
 
 To let the players know when the game is over, you can display text such
 as "Winner: X" or "Winner: O". To do that you'll add a status section to
@@ -8235,7 +8232,7 @@ next:
 <details>
   <summary>JavaScript</summary>
 
-```
+<pre>
 export default function Board() {
   // ...
   const winner = calculateWinner(squares);
@@ -8252,7 +8249,7 @@ export default function Board() {
     // ...
   )
 }
-```
+</pre>
 
 </details>
 
@@ -8263,7 +8260,7 @@ Here is what the code should look like:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
  import { useState } from 'react';
  function Square({value, onSquareClick}) {
 
@@ -8414,7 +8411,7 @@ Here is what the code should look like:
  return null;
 
  }
-```
+</pre>
 
 </details>
 
@@ -8438,7 +8435,7 @@ which you'll store as a new state variable. The history array represents
 all board states, from the first to the last move, and has a shape like
 this:
 
-```
+<pre>
 [
   // Before first move
   [null, null, null, null, null, null, null, null, null],
@@ -8448,7 +8445,7 @@ this:
   [null, null, null, null, 'X', null, null, null, 'O'],
   // ...
 ]
-```
+</pre>
 
 <h4>Lifting state up, again</h4>
 
@@ -8469,7 +8466,7 @@ Board component and some markup:
 <details>
   <summary>JS Functions</summary>
 
-```function Board() {
+<pre>function Board() {
   // ...
 }
 export default function Game() {
@@ -8483,7 +8480,7 @@ export default function Game() {
       </div>
     </div>
   );
-}```
+}</pre>
 
 </details>
 
@@ -8497,7 +8494,7 @@ the game information you'll add to the board later.
 Add some state to the Game component to track which player is next and
 the history of moves:
 
-```
+<pre>
 export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
@@ -8505,7 +8502,7 @@ const [xIsNext, setXIsNext] = useState(true);
 const [history, setHistory] = useState([Array(9).fill(null)]);
 
 // ...
-```
+</pre>
 
 Notice how [Array(9).fill(null)] is an array with a single item, which
 itself is an array of 9 nulls.
@@ -8514,7 +8511,7 @@ To render the squares for the current move, you'll want to read the last
 squares array from the history. You don't need useState for this---you
 already have enough information to calculate it during rendering:
 
-```
+<pre>
 export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
@@ -8524,7 +8521,7 @@ const [history, setHistory] = useState([Array(9).fill(null)]);
 const currentSquares = history[history.length - 1];
 
 // ...
-```
+</pre>
 
 Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
@@ -8533,7 +8530,7 @@ currentSquares and handlePlay as props to the Board component:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -8551,7 +8548,7 @@ export default function Game() {
       //...
   )
 }
-```
+</pre>
 
 </details>
 
@@ -8561,7 +8558,7 @@ squares, and a new onPlay function that Board can call with the updated
 squares array when a player makes a move. Next, remove the first two
 lines of the Board function that call useState:
 
-```
+<pre>
 function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
@@ -8569,7 +8566,7 @@ function Board({ xIsNext, squares, onPlay }) {
   }
     // ...
 }
-```
+</pre>
 
 Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
@@ -8578,7 +8575,7 @@ Game component can update the Board when the user clicks a square:
 <details>
   <summary>JS Functions</summary>
 
-```
+<pre>
 function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
@@ -8595,7 +8592,7 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   //...
 }
-```
+</pre>
 
 </details>
 
@@ -8614,7 +8611,7 @@ information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
 just as Board used to do:
 
-```
+<pre>
 export default function Game() {
   //...
   function handlePlay(nextSquares) {
@@ -8623,7 +8620,7 @@ export default function Game() {
   }
     //...
 }
-```
+</pre>
 
 Here, [\...history, nextSquares] creates a new array that contains all
 the items in history, followed by nextSquares. (You can read the
@@ -8642,7 +8639,7 @@ is what the code should look like at this point:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
   import { useState } from 'react';
   function Square({ value, onSquareClick }) {
     return (
@@ -8675,7 +8672,7 @@ is what the code should look like at this point:
     <>
     <div className="status">{status}</div>
     <div className="board-row">
-```
+</pre>
 
 </details>
 
@@ -8693,9 +8690,9 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-```
+<pre>
 [1, 2, 3].map((x) => x * 2) // [2, 4, 6]
-```
+</pre>
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
@@ -8704,7 +8701,7 @@ representing buttons on the screen, and display a list of buttons to
 <details>
   <summary>JavaScript Functions</summary>
 
-```
+<pre>
 export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -8741,7 +8738,7 @@ export default function Game() {
     </div>
   );
 }
-```
+</pre>
 
 </details>
 
@@ -8754,7 +8751,7 @@ section.
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
@@ -8869,7 +8866,7 @@ function calculateWinner(squares) {
   }
   return null;
 }
-```
+</pre>
 
 </details>
 
@@ -8897,18 +8894,18 @@ the list's items.
 
 Imagine transitioning from
 
-```
+<pre>
 <li>Alexa: 7 tasks left</li>
 <li>Ben: 5 tasks left</li>
-```
+</pre>
 
 to
 
-```
+<pre>
 <li>Ben: 9 tasks left</li>
 <li>Claudia: 8 tasks left</li>
 <li>Alexa: 5 tasks left</li>
-```
+</pre>
 
 In addition to the updated counts, a human reading this would probably
 say that you swapped Alexa and Ben's ordering and inserted Claudia
@@ -8918,11 +8915,11 @@ list item to differentiate each list item from its siblings. If your
 data was from a database, Alexa, Ben, and Claudia's database IDs could
 be used as keys.
 
-```
+<pre>
 <li key={user.id}>
   {user.name}: {user.taskCount} tasks left
 </li>
-```
+</pre>
 
 When a list is re-rendered, React takes each list item's key and
 searches the previous list's items for a matching key. If the current
@@ -8965,7 +8962,7 @@ use the move index as a key.
 In the Game function, you can add the key as &lt;li key={move}&gt;, and if
 you reload the rendered game, React's "key" error should disappear:
 
-```
+<pre>
 const moves = history.map((squares, move) => {
   //...
   return (
@@ -8974,12 +8971,12 @@ const moves = history.map((squares, move) => {
     </li>
   );
 });
-```
+</pre>
 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
@@ -9014,7 +9011,7 @@ function Board({ xIsNext, squares, onPlay }) {
     <div className="board-row">
   )
 }
-```
+</pre>
 
 </details>
 
@@ -9024,7 +9021,7 @@ Before you can implement jumpTo, you need the Game component to keep
 track of which step the user is currently viewing. To do this, define a
 new state variable called currentMove, defaulting to 0:
 
-```
+<pre>
 export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -9032,13 +9029,13 @@ export default function Game() {
   const currentSquares = history[history.length - 1];
   //...
 }
-```
+</pre>
 
 Next, update the jumpTo function inside Game to update that currentMove.
 You'll also set xIsNext to true if the number that you're changing
 currentMove to is even.
 
-```
+<pre>
 export default function Game() {
   // ...
   function jumpTo(nextMove) {
@@ -9047,7 +9044,7 @@ export default function Game() {
   }
     //...
 }
-```
+</pre>
 
 You will now make two changes to the Game's handlePlay function which is
 called when you click on a square.
@@ -9061,7 +9058,7 @@ called when you click on a square.
 -   Each time a move is made, you need to update currentMove to point to
     the latest history entry.
 
-```
+<pre>
 function handlePlay(nextSquares) {
   const nextHistory = [...history.slice(0, currentMove + 1),
   nextSquares];
@@ -9069,12 +9066,12 @@ function handlePlay(nextSquares) {
   setCurrentMove(nextHistory.length - 1);
   setXIsNext(!xIsNext);
 }
-```
+</pre>
 
 Finally, you will modify the Game component to render the currently
 selected move, instead of always rendering the final move:
 
-```
+<pre>
 export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -9082,7 +9079,7 @@ export default function Game() {
   const currentSquares = history[currentMove];
     // ...
 }
-```
+</pre>
 
 If you click on any step in the game's history, the tic-tac-toe board
 should immediately update to show what the board looked like after that
@@ -9091,7 +9088,7 @@ step occurred.
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square({value, onSquareClick}) {
   return (
@@ -9127,7 +9124,7 @@ return (
   <div className="status">{status}</div>
   <div className="board-row">
 )
-```
+</pre>
 
 </details>
 
@@ -9149,7 +9146,7 @@ figures it out based on the currentMove:
 <details>
   <summary>JavaScript Functions</summary>
 
-```
+<pre>
 export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
@@ -9166,7 +9163,7 @@ export default function Game() {
     }
   // ...
 }
-```
+</pre>
 
 </details>
 
@@ -9197,7 +9194,7 @@ Check out the final result here:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
@@ -9231,7 +9228,7 @@ function Board({ xIsNext, squares, onPlay }) {
   <div className="status">{status}</div>
   <div className="board-row">
 }
-```
+</pre>
 
 </details>
 
@@ -9282,7 +9279,7 @@ The JSON API returns some data that looks like this:
 <details>
   <summary>JSON API</summary>
 
-```
+<pre>
 [
   { category: "Fruits", price: "$1", stocked: true, name: "Apple"
   },
@@ -9302,7 +9299,7 @@ The JSON API returns some data that looks like this:
   { category: "Vegetables", price: "$1", stocked: true, name:
   "Peas" }
 ]
-```
+</pre>
 
 </details>
 
@@ -9425,7 +9422,7 @@ it's easier to go bottom-up.
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 function ProductCategoryRow({ category }) {
   return (
     <tr>
@@ -9458,7 +9455,7 @@ function ProductTable({ products }) {
       key={product.category} />
     );
   }
-```
+</pre>
 
 </details>
 
@@ -9594,17 +9591,17 @@ Hook.](https://react.dev/reference/react/useState) Hooks are special
 functions that let you "hook into" React. Add two state variables at the
 top of FilterableProductTable and specify their initial state:
 
-```
+<pre>
 function FilterableProductTable({ products }) {
 
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
-```
+</pre>
 
 Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:
 
-```
+<pre>
 <div>
   <SearchBar
     filterText={filterText}
@@ -9615,7 +9612,7 @@ props:
     filterText={filterText}
   inStockOnly={inStockOnly} />
 </div>
-```
+</pre>
 
 You can start seeing how your application will behave. Edit the
 filterText initial value from useState('') to useState('fruit') in
@@ -9625,7 +9622,7 @@ table update:
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
@@ -9657,7 +9654,7 @@ function ProductRow({ product }) {
     {product.name}
   </span>;
   return (
-```
+</pre>
 
 </details>
 
@@ -9673,7 +9670,7 @@ In the sandbox above, ProductTable and SearchBar read the filterText and
 inStockOnly props to render the table, the input, and the checkbox. For
 example, here is how SearchBar populates the input value:
 
-```
+<pre>
 function SearchBar({ filterText, inStockOnly }) {
   return (
     <form>
@@ -9681,7 +9678,7 @@ function SearchBar({ filterText, inStockOnly }) {
         type="text"
         value={filterText}
         placeholder="Search..."/>
-```
+</pre>
 
 However, you haven't added any code to respond to the user actions like
 typing yet. This will be your final step.
@@ -9710,7 +9707,7 @@ state, you need to pass these functions down to SearchBar:
 <details>
   <summary>JS Function</summary>
 
-```
+<pre>
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
@@ -9721,26 +9718,26 @@ function FilterableProductTable({ products }) {
           inStockOnly={inStockOnly}
           onFilterTextChange={setFilterText}
           onInStockOnlyChange={setInStockOnly} />
-```
+</pre>
 
 </details>
 
 Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
-```
+<pre>
 <input
   type="text"
   value={filterText onChange={(e) =>
   onFilterTextChange(e.target.value)} />
-```
+</pre>
 
 Now the application fully works!
 
 <details>
   <summary>App.js</summary>
 
-```
+<pre>
 import { useState } from 'react';
 
 function FilterableProductTable({ products }) {
@@ -9774,7 +9771,7 @@ function ProductRow({ product }) {
   <span style={{ color: 'red' }}>
     {product.name}
   </span>;
-```
+</pre>
 
 </details>
 
@@ -9822,14 +9819,14 @@ sandbox!
 
 <h4>App.js</h4>
 
-```
+<pre>
 function Greeting({ name }) {
   return <h1>Hello, {name}</h1>;
 }
 export default function App() {
   return <Greeting name="world" />
 }
-```
+</pre>
 
 You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.
