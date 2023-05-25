@@ -25,9 +25,9 @@
   <![endif]-->
 </head>
 <body>
-<h1 style=text-align: center;">meta (Coursera) / React Basics</h1>
+<h1 style="text-align: center;">meta (Coursera) / React Basics</h1>
 
-<h5 style=text-align: center;">(meta-react-basics)</h5>
+<h6 style="text-align: center;">(meta-react-basics)</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -45,13 +45,12 @@
   style="width:100px;" />
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
 <p>React is a powerful JavaScript library that you can use to build user
-interfaces for web and mobile applications (apps).<br>
-
-In this 4-week course, you will explore the fundamental concepts that
+interfaces for web and mobile applications (apps).</p>
+<p>In this 4-week course, you will explore the fundamental concepts that
 underpin the React library and learn the basic skills required to build
-a simple, fast, and scalable app.<br>
+a simple, fast, and scalable app.</p>
 
-By the end of this course, you will be able to:</p>
+<p>By the end of this course, you will be able to:</p>
 
 <ul>
   <li>Use reusable components to render views where data changes over time,<br></li>
@@ -84,9 +83,9 @@ By the end of this course, you will be able to:</p>
 </ul>
 
 <p>This is a beginner course for learners who would like to prepare
-themselves for a career in mobile development.
+themselves for a career in mobile development.</p>
 
-To succeed in this course, you do not need prior development experience,
+<p>To succeed in this course, you do not need prior development experience,
 only basic internet navigation skills and an eagerness to get started
 with coding.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -628,8 +627,7 @@ In general, there are two ways to export modules in JavaScript:</p>
 Using the above <b>addTwo.js</b> file as an example, here are two ways to
 perform a default export:</p>
 
-<pre>
-export default function addTwo(a, b) {
+<pre>export default function addTwo(a, b) {
   console.log(a + b);
 }
 </pre>
@@ -658,33 +656,28 @@ exports as you want.
 
 For example:</p>
 
-<pre>
-function addTwo(a, b) {
+<pre>function addTwo(a, b) {
   console.log(a + b);
 }
   
 function addThree(a + b + c) {
   console.log(a + b + c);
-}
-</pre>
+}</pre>
 
 <p>If you want to export both the <b>addTwo</b> and the <b>addThree</b> functions
 as named exports, one way to do it would be the following:</p>
 
-<pre>
-export function addTwo(a, b) {
+<pre>export function addTwo(a, b) {
   console.log(a + b);
 }
   
 export function addThree(a + b + c) {
   console.log(a + b + c);
-}
-</pre>
+}</pre>
 
 <p>Here's another way you could do it:</p>
 
-<pre>
-function addTwo(a, b) {
+<pre>function addTwo(a, b) {
   console.log(a + b);
 }
   
@@ -692,8 +685,7 @@ function addThree(a + b + c) {
   console.log(a + b + c);
 }
   
-export { addTwo, addThree };
-</pre>
+export { addTwo, addThree };</pre>
 
 <h3><b>Importing Modules</b></h3>
 
@@ -715,11 +707,9 @@ You want to import the <b>addTwo.js</b> module into the
 Consider the previous example of exporting the <b>addTwo</b> function as a
 default module:</p>
 
-<pre>
-// addTwo.js module:
+<pre>// addTwo.js module:
 function addTwo(a, b) {
-  console.log(a + b);
-}
+  console.log(a + b);}
 
 export default addTwo;
 </pre>
@@ -727,11 +717,9 @@ export default addTwo;
 <p>To import it into the <b>mathOperations.js</b> module, you could use the
 following syntax:</p>
 
-<pre>
-import addTwo from "./addTwo";
+<pre>import addTwo from "./addTwo";
 
-// the rest of the mathOperations.js code goes here
-</pre>
+// the rest of the mathOperations.js code goes here</pre>
 
 <p>So, you could start this import with the <b>import</b> keyword, then the
 name under which you'll use this imported code inside the
@@ -742,11 +730,9 @@ Contrast the above import of the default <b>addTwo export</b> with the
 different import syntax if the <b>addTwo</b> function was instead a named
 export:</p>
 
-<pre>
-import { addTwo } from "./addTwo";
+<pre>import { addTwo } from "./addTwo";
 
-// the rest of the mathOperations.js code goes here
-</pre>
+// the rest of the mathOperations.js code goes here</pre>
 
 <h3><b>Conclusion</b></h3>
 
@@ -879,9 +865,7 @@ In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 
 Now run the command to add a brand new React app to the machine:
 
-<pre>
-$ npm init react-app my-firstapp
-</pre>
+<pre>$ npm init react-app my-firstapp</pre>
 
 The installation and setup might take a few minutes.
 
@@ -890,8 +874,7 @@ Here's the output of executing the above command:
 <details>
   <summary>NPM create-react-app</summary>
 
-<pre>
-Creating a new React app in /home/pc/Desktop/firstapp.
+<pre>Creating a new React app in /home/pc/Desktop/firstapp.
 Installing packages. This might take a couple of minutes.
 Installing react, react-dom, and react-scripts with cra-template...
 added 1383 packages in 56s
@@ -926,8 +909,7 @@ $ npm run eject
     and scripts into the app directory. If you do this, you can't go back!
 We suggest that you begin by typing:
 $ cd firstapp
-$ npm start 
-</pre>
+$ npm start</pre>
 
 </details>
 
@@ -936,8 +918,7 @@ firstapp</b>, and then <b>$ npm start</b>.
 
 This will end up with the following output in the built-in terminal:
 
-<pre>
-Compiled successfully!
+<pre>Compiled successfully!
 You can now view firstapp in the browser.
 Local:           
 [[http://localhost:3000]](http://localhost:3000/)
@@ -945,8 +926,7 @@ On Your Network: 
 [[http://192.168.1.167:3000]](http://192.168.1.167:3000/)
 Note that the development build is not optimized.
 To create a production build, use npm run build.
-webpack compiled successfully
-</pre>
+webpack compiled successfully</pre>
 
 Again, following the instructions, opening a browser with the address
 bar pointing to [http://localhost:3000](http://localhost:3000/), will
@@ -1762,9 +1742,7 @@ code.
 To understand why this is done, here is an example of an ES6 variable
 declaration:
 
-<pre>
-const PI = 3.14
-</pre>
+<pre>const PI = 3.14</pre>
 
 This is perfectly valid ES6 syntax.
 
@@ -1777,9 +1755,7 @@ computer's browser is likely to be an ES5 JavaScript engine.
 
 In ES5, the only way to declare a variable is the following:
 
-<pre>
-var pi = 3.14
-</pre>
+<pre>var pi = 3.14</pre>
 
 What this means is that for this old browser to understand the ES6 code,
 the only way to do it is by <b>transpiling</b> it.
@@ -1823,28 +1799,23 @@ Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20n
 If you've visited the above-linked URL, you'll find a web page that
 has two panels. On the left, there's source JSX code:
 
-<pre>
-function Heading(props) {
+<pre>function Heading(props) {
   return <h1>{props.title}</h1>
-}
-</pre>
+}</pre>
 
 \... and on the right, there's the transpiled, plain JavaScript code:
 
-<pre>
-"use strict";
+<pre>"use strict";
 
 function Heading(props) {
   return /#__PURE__/React.createElement("h1", null, props.title);
-}
-</pre>
+}</pre>
 
 If you now analyze the difference between the source JSX code and the
 transpiled, plain JavaScript code, dis-regarding the comment, here's
 the body of the Heading function:
 
-<pre>
-React.createElement("h1", null, props.title);
+<pre>React.createElement("h1", null, props.title);
 </pre>
 
 So, here you have a React object, and this object has a
@@ -1872,9 +1843,7 @@ the inner HTML of the <b>h1</b> element.
 Now let's use Babel again, and this time transpile the <b>render</b> syntax
 for the <b>Heading</b> component:
 
-<pre>
-<Heading title="This is the heading text!"></Heading>
-</pre>
+<pre>&lt;Heading title="This is the heading text!"&gt;&lt;/Heading&gt;</pre>
 
 Again using [the Babel
 repl](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
@@ -1882,15 +1851,13 @@ and as can be confirmed in [the
 link](https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=DwCQpghgJglgdgcwAQBcYoDZgLwCIAqAFjAM5KmqFhJXTzIpgAeKAhLgHzAD04diHIA&debug=false&forceAllTransforms=false&shippedProposals=false&c),
 the output of the tranpilation is the following code:
 
-<pre>
-"use strict";
-  
+<pre>"use strict";
+
 /#__PURE__/
 
 React.createElement(Heading, {
   title: "This is the heading text!"
-});
-</pre>
+});</pre>
 
 Again, you have the <b>React.createElement()</b> method call, and this
 time, the first item to render is <b>Heading</b>, and then you have an
@@ -1903,13 +1870,11 @@ rendered?
 
 You can see the answer below:
 
-<pre>
-function Example() {
-  return <div>An element</div>
+<pre>function Example() {
+  return &lt;div&gt;An element&lt;/div&gt;
 }
 
-export default Example
-</pre>
+export default Example</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 13 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Your first component</h2>
@@ -1919,8 +1884,7 @@ Here is the completed solution code for the App.js file:
 <details>
   <summary>App.js</summary>
 
-<pre>
-function Heading() { 
+<pre>function Heading() { 
   return ( 
      <h1>This is an h1 heading.</h1> 
    ) 
@@ -1935,8 +1899,7 @@ function App() { 
   ); 
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -9821,7 +9784,7 @@ https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>4:57pm 5-24-23 meta-react-basics index.html</h6>
+<h6>12:11pm 5-25-23 Thu meta-react-basics index.html</h6>
 
 </body>
 </html>
