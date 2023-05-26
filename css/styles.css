@@ -4,6 +4,7 @@
 * {
     margin-left: 0.5%;
     padding: 0.5%;
+    font-family: Georgia, Bahnschrift, Inter, Calibri, sans-serif;
 }
 
 .bold-text {
@@ -33,15 +34,16 @@ hr {
 }
 
 pre {
-    margin-left: 6%;
-    margin: 6% 0;  /* 1rem 0 */
+    margin-left: 3%;
+    margin: 3% 0;  /* 1rem 0 */
     max-width: var(--width-card-wide);
-    padding: 6% 0;  /* 1rem 0*/
+    padding: 3% 0;  /* 1rem 0*/
 }
 
 pre code,
 pre samp {
     display: block;
+    margin-left: 3%;
     max-width: var(--width-card-wide);
     padding: 3% 12%;  /* 0.5rem 2rem */
     white-space: pre-wrap;
@@ -278,7 +280,7 @@ blockquote footer {
 /*** summary / details ***/
   details {
     font-size: 13px;
-    font-family: Inter, Bahnschrift, Calibri, sans-serif;
+    font-family: Inter, Bahnschrift, Georgia, Calibri, sans-serif;
     width: 920px;  /* was 620 */
   }
 
