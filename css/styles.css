@@ -1,7 +1,7 @@
 /* styles.css */
 
 * {
-    margin-left: 0.5%;
+    margin-left: 1.5%;
     padding: 0.5%;
 }
 
@@ -36,7 +36,7 @@ pre code,
 pre samp {
     display: block;
     max-width: var(--width-card-wide);
-    padding: 0.5rem 2rem;  /* 0.5rem 2 rem*/
+    padding: 3% 12%;  /* 0.5rem 2rem */
     white-space: pre-wrap;
 }
 
@@ -277,7 +277,7 @@ blockquote footer {
 
   details > summary {
     padding: 2px 6px;
-    width: 15em;
+    width: 12em;  /* 15em */
     line-height:120%; /*or whatever height you like, was 160% */
     background-color: #eee;  /* very light gray */
     border: none;
