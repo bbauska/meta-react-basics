@@ -1,6 +1,7 @@
 /* styles.css */
 /* of meta-react-basics.bauska.org */
 
+b { font-family: Consolas; color: beige; }
 p { margin-left: 1rem }
 h1 { font-size: 3em; margin-left: 1rem }
 
