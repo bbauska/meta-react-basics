@@ -1,8 +1,13 @@
 /* styles.css */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin-left: 0.5%;
+    padding: 0.5%;
+}
+
+ul li,
+ol li {
+    margin-left: 4%;
 }
 
 footer,
