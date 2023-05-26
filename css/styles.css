@@ -1,6 +1,9 @@
 /* styles.css */
 /* of meta-react-basics.bauska.org */
 
+p { margin-left: 1rem }
+h1 { font-size: 3em; margin-left: 1rem }
+
 * {
   margin-left: 0.5%;
   padding: 0.5%;
