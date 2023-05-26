@@ -9301,63 +9301,59 @@ top-level component to the ones at the bottom of the tree.
 
 <h4>Pitfall</h4>
 
-At this point, you should not be using any state values. That's for the
-next step!
+<p>At this point, you should not be using any state values. That's for the
+next step!</p>
 
 <h3>Step 3: Find the minimal but complete representation of UI state</h3>
 
-To make the UI interactive, you need to let users change your underlying
-data model. You will use state for this.
+<p>To make the UI interactive, you need to let users change your underlying
+data model. You will use state for this.</p>
 
-Think of state as the minimal set of changing data that your app needs
+<p>Think of state as the minimal set of changing data that your app needs
 to remember. The most important principle for structuring state is to
-keep it [DRY (Don't Repeat
-Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+keep it <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY (Don't Repeat Yourself)</a>.
 Figure out the absolute minimal representation of the state your
 application needs and compute everything else on-demand. For example, if
 you're building a shopping list, you can store the items as an array in
 state. If you want to also display the number of items in the list,
 don't store the number of items as another state value---instead, read
-the length of your array.
+the length of your array.</p>
 
-Now think of all of the pieces of data in this example application:
+<p>Now think of all of the pieces of data in this example application:</p>
 
-1.  The original list of products
+<ol>
+  <li>The original list of products,<br></li>
+  <li>The search text the user has entered,<br></li>
+  <li>The value of the checkbox,<br></li>
+  <li>The filtered list of products.</li>
+</ol>
 
-2.  The search text the user has entered
+<p>Which of these are state? Identify the ones that are not:</p>
 
-3.  The value of the checkbox
+<ul>
+  <li>Does it remain unchanged over time? If so, it isn't state.<br></li>
+  <li>Is it passed in from a parent via props? If so, it isn't state.<br></li>
+  <li>Can you compute it based on existing state or props in your
+    component? If so, it <i>definitely</i> isn't state!</li>
+</ul>
 
-4.  The filtered list of products
+<p>What's left is probably state.</p>
 
-Which of these are state? Identify the ones that are not:
+<p>Let's go through them one by one again:</p>
 
--   Does it remain unchanged over time? If so, it isn't state.
+<ol>
+  <li>The original list of products is passed in as props, so it's not
+    state.<br></li>
+  <li>The search text seems to be state since it changes over time and
+    can't be computed from anything.<br></li>
+  <li>The value of the checkbox seems to be state since it changes over
+    time and can't be computed from anything.<br></li>
+  <li>The filtered list of products isn't state because it can be
+    computed by taking the original list of products and filtering it
+    according to the search text and value of the checkbox.</li>
+</ol>
 
--   Is it passed in from a parent via props? If so, it isn't state.
-
--   Can you compute it based on existing state or props in your
-    component? If so, it <i>definitely</i> isn't state!
-
-What's left is probably state.
-
-Let's go through them one by one again:
-
-1.  The original list of products is <b>passed in as props, so it's not
-    state.</b>
-
-2.  The search text seems to be state since it changes over time and
-    can't be computed from anything.
-
-3.  The value of the checkbox seems to be state since it changes over
-    time and can't be computed from anything.
-
-4.  The filtered list of products <b>isn't state because it can be
-    computed</b> by taking the original list of products and filtering it
-    according to the search text and value of the checkbox.
-
-This means only the search text and the value of the checkbox are state!
-Nicely done!
+<p>This means only the search text and the value of the checkbox are state!</p>
 
 <h4>DEEP DIVE</h4>
 
@@ -9365,72 +9361,59 @@ Nicely done!
 
 <h3>Step 4: Identify where your state should live</h3>
 
-After identifying your app's minimal state data, you need to identify
+<p>After identifying your app's minimal state data, you need to identify
 which component is responsible for changing this state, or owns the
 state. Remember: React uses one-way data flow, passing data down the
 component hierarchy from parent to child component. It may not be
 immediately clear which component should own what state. This can be
 challenging if you're new to this concept, but you can figure it out by
-following these steps!
+following these steps!</p>
 
-For each piece of state in your application:
-
-1.  Identify every component that renders something based on that state.
-
-2.  Find their closest common parent component---a component above them
-    all in the hierarchy.
-
-3.  Decide where the state should live:
-
-4.  Often, you can put the state directly into their common parent.
-
-5.  You can also put the state into some component above their common
-    parent.
-
-6.  If you can't find a component where it makes sense to own the state,
+<p>For each piece of state in your application:</p>
+<ol>
+<li>Identify every component that renders something based on that state.<br></li>
+<li>Find their closest common parent component---a component above them all in the hierarchy.<br></li>
+<li>Decide where the state should live:<br></li>
+<li>Often, you can put the state directly into their common parent.<br></li>
+<li>You can also put the state into some component above their common parent.<br></li>
+<li>If you can't find a component where it makes sense to own the state,
     create a new component solely for holding the state and add it
-    somewhere in the hierarchy above the common parent component.
+    somewhere in the hierarchy above the common parent component.</li>
+</ol>
 
-In the previous step, you found two pieces of state in this application:
+<p>In the previous step, you found two pieces of state in this application:
 the search input text, and the value of the checkbox. In this example,
 they always appear together, so it makes sense to put them into the same
-place.
+place.</p>
 
-Now let's run through our strategy for them:
+<p>Now let's run through our strategy for them:</p>
 
-1.  Identify components that use state:
+<ol>
+  <li>Identify components that use state:<br></li>
+  <li>ProductTable needs to filter the product list based on that state
+    (search text and checkbox value).<br></li>
+  <li>SearchBar needs to display that state (search text and checkbox
+    value).<br></li>
+  <li>Find their common parent: The first parent component both components
+    share is FilterableProductTable.<br></li>
+  <li>Decide where the state lives: We'll keep the filter text and checked
+    state values in FilterableProductTable.</li>
+</ol>
 
-2.  ProductTable needs to filter the product list based on that state
-    (search text and checkbox value).
+<p>So, the state values will live in FilterableProductTable.</p>
 
-3.  SearchBar needs to display that state (search text and checkbox
-    value).
+<p>Add state to the component with the <a href="https://react.dev/reference/react/useState">useState()
+Hook</a>. Hooks are special functions that let you "hook into" React. Add two state variables at the
+top of FilterableProductTable and specify their initial state:</p>
 
-4.  Find their common parent: The first parent component both components
-    share is FilterableProductTable.
-
-5.  Decide where the state lives: We'll keep the filter text and checked
-    state values in FilterableProductTable.
-
-So, the state values will live in FilterableProductTable.
-
-Add state to the component with the [useState()
-Hook.](https://react.dev/reference/react/useState) Hooks are special
-functions that let you "hook into" React. Add two state variables at the
-top of FilterableProductTable and specify their initial state:
-
-<pre>
-function FilterableProductTable({ products }) {
+<pre>function FilterableProductTable({ products }) {
 
   const [filterText, setFilterText] = useState('');
-  const [inStockOnly, setInStockOnly] = useState(false);
-</pre>
+  const [inStockOnly, setInStockOnly] = useState(false);</pre>
 
-Then, pass filterText and inStockOnly to ProductTable and SearchBar as
-props:
+<p>Then, pass filterText and inStockOnly to ProductTable and SearchBar as props:</p>
 
-<pre>
-&lt;div&gt;
+<pre>&lt;div&gt;
   &lt;SearchBar
     filterText={filterText}
   inStockOnly={inStockOnly} /&gt;
@@ -9439,13 +9422,12 @@ props:
     products={products}
     filterText={filterText}
   inStockOnly={inStockOnly} /&gt;
-&lt;/div&gt;
-</pre>
+&lt;/div&gt;</pre>
 
-You can start seeing how your application will behave. Edit the
+<p>You can start seeing how your application will behave. Edit the
 filterText initial value from useState('') to useState('fruit') in
 the sandbox code below. You'll see both the search input text and the
-table update:
+table update:</p>
 
 <details>
   <summary>App.js</summary>
@@ -9486,30 +9468,28 @@ function ProductRow({ product }) {
 
 </details>
 
-Notice that editing the form doesn't work yet. There is a console error
-in the sandbox above explaining why:
+<p>Notice that editing the form doesn't work yet. There is a console error
+in the sandbox above explaining why:</p>
 
 <h4>Console</h4>
 
-You provided a \`value\` prop to a form field without an \`onChange\`
-handler. This will render a read-only field.
+<p>You provided a `value` prop to a form field without an `onChange`
+handler. This will render a read-only field.</p>
 
-In the sandbox above, ProductTable and SearchBar read the filterText and
+<p>In the sandbox above, ProductTable and SearchBar read the filterText and
 inStockOnly props to render the table, the input, and the checkbox. For
-example, here is how SearchBar populates the input value:
+example, here is how SearchBar populates the input value:</p>
 
-<pre>
-function SearchBar({ filterText, inStockOnly }) {
+<pre>function SearchBar({ filterText, inStockOnly }) {
   return (
     &lt;form&gt;
       &lt;input
         type="text"
         value={filterText}
-        placeholder="Search..."/&gt;
-</pre>
+        placeholder="Search..."/&gt;</pre>
 
-However, you haven't added any code to respond to the user actions like
-typing yet. This will be your final step.
+<p>However, you haven't added any code to respond to the user actions like
+typing yet. This will be your final step.</p>
 
 <h3>Step 5: Add inverse data flow</h3>
 
@@ -9603,47 +9583,35 @@ function ProductRow({ product }) {
 
 </details>
 
-You can learn all about handling events and updating state in the
-[Adding Interactivity](https://react.dev/learn/adding-interactivity)
-(<https://react.dev/learn/adding-interactivity>) section.
+<p>You can learn all about handling events and updating state in the <a href="https://react.dev/learn/adding-interactivity">
+Adding Interactivity</a> section.</p>
 
 <h3>Where to go from here</h3>
 
-This was a very brief introduction to how to think about building
-components and applications with React. You can [start a React
-project](https://react.dev/learn/installation)
-(<https://react.dev/learn/installation>) right now or [dive deeper on
-all the syntax](https://react.dev/learn/describing-the-ui)
-(<https://react.dev/learn/describing-the-ui>) used in this tutorial.
+<p>This was a very brief introduction to how to think about building
+components and applications with React. You can <a href="https://react.dev/learn/installation">start a React
+project</a> right now or <a href="https://react.dev/learn/describing-the-ui">dive deeper on
+all the syntax</a> used in this tutorial.</p>
 
 <h4>Installation</h4>
 
-React has been designed from the start for gradual adoption. You can use
+<p>React has been designed from the start for gradual adoption. You can use
 as little or as much React as you need. Whether you want to get a taste
 of React, add some interactivity to an HTML page, or start a complex
-React-powered app, this section will help you get started.
+React-powered app, this section will help you get started.</p>
 
 <h4>In this chapter</h4>
 
-1.  [How to start a new React
-    project](https://react.dev/learn/start-a-new-react-project)
-    (https://react.dev/learn/start-a-new-react-project)
-
-2.  [How to add React to an existing
-    project](https://react.dev/learn/add-react-to-an-existing-project)
-    (https://react.dev/learn/add-react-to-an-existing-project)
-
-3.  [How to set up your editor](https://react.dev/learn/editor-setup)
-    (https://react.dev/learn/editor-setup)
-
-4.  [How to install React Developer
-    Tools](https://react.dev/learn/react-developer-tools)
-    (https://react.dev/learn/react-developer-tools)
+<ol>
+  <li><a href="https://react.dev/learn/start-a-new-react-project">How to start a new React project</a><br></li>
+  <li><a href="https://react.dev/learn/add-react-to-an-existing-project">How to add React to an existing project</a><br></li>
+  <li><a href="https://react.dev/learn/editor-setup">How to set up your editor</a><br></li>
+  <li><a href="https://react.dev/learn/react-developer-tools">How to install React Developer Tools</a></li>
+</ol>
 
 <h4>Try React</h4>
 
-You don't need to install anything to play with React. Try editing this
-sandbox!
+<p>You don't need to install anything to play with React. Try editing this sandbox!</p>
 
 <h4>App.js</h4>
 
