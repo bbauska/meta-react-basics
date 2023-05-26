@@ -6,8 +6,8 @@ p { margin-left: 1rem }
 h1 { font-size: 3em; margin-left: 1rem }
 
 * {
-  margin-left: 0.5%;
-  padding: 0.5%;
+  margin-left: 1rem;
+  padding: 0;
   font-family: Inter, Georgia, Bahnschrift, Consolas, Calibri, sans-serif;
 }
 
