@@ -2760,12 +2760,11 @@ function App() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Additional resources (React components)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-[Basic Concepts of
-Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) 
+
+[Basic Concepts of Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) 
 (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
-[Importing a
-Component](https://create-react-app.dev/docs/importing-a-component/) 
+[Importing a Component](https://create-react-app.dev/docs/importing-a-component/) 
 
 [Babeljs.io](https://babeljs.io/) 
 
@@ -2792,9 +2791,8 @@ GitHub](https://github.com/webpack/webpack-dev-server) 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Principles of Components: Props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now, you should be familiar with the concept of functional components
-in React. They are reusable blocks of code that act much like a
-JavaScript function.
+By now, you should be familiar with the concept of functional components in React. 
+They are reusable blocks of code that act much like a JavaScript function.
 
 Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
@@ -2920,8 +2918,8 @@ For example, let's say you have a component that returns a piece of JSX:
 
 ```
 function App() {
-
-  return <h1>Hello there</h1>
+  
+  return <h1>Hello there</h1>
 }
 ```
 
@@ -3032,7 +3030,7 @@ React.createElement(
 )
 ```
 
-<h3>The third argument (\...children)</h3>
+<h3>The third argument (...children)</h3>
 
 This is the inner content that will go inside the wrapping element.
 It's what makes it possible to nest elements inside other elements,
