@@ -154,8 +154,8 @@ with <b>state</b> in React apps.</p>
 
 <p>But for now, here's a simple definition of state.</p>
 
-<p><b>State is simply all the values of all the variables your app is
-working with at any given point in time.</b></p>
+<h5>State is simply all the values of all the variables your app is
+working with at any given point in time.</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -277,7 +277,7 @@ that you have as productive a learning experience as possible. So, the
 purpose of this module is to understand the 'what' and the 'why', and to
 get set up for the modules that follow.</p>
 
-<p><b>Components</b> are one of the foundations of React. In React, everything
+<p>Components are one of the foundations of React. In React, everything
 revolves around components. You'll learn how to build <b>components</b>,
 how to structure and customize your React projects, and how to compose
 layouts by importing components into other components.</p>
@@ -444,14 +444,14 @@ following HTML tags and concepts
   <li><b>&lt;h1&gt;...&lt;h6&gt;</b><br></li>
   <li><b>&lt;p&gt;</b><br></li>
   <li><b>&lt;ul&gt; &lt;li&gt;</b><br></li>
-  <li><b>&lt;b&gt; &lt;i&gt;</b><br></li>
+  <li><b>&lt;b&gt; &lt;i&gt;</b></li>
 </ul>
 
 <h3>Images and links</h3>
 
 <ul>
   <li><b>&lt;img src= ""&gt;</b><br></li>
-  <li><b>&lt;a href=""&gt;</b><br></li>
+  <li><b>&lt;a href=""&gt;</b></li>
 </ul>
 
 <h3>Linking and Meta</h3>
@@ -459,13 +459,13 @@ following HTML tags and concepts
 <ul>
   <li><b>&lt;link&gt;</b><br></li>
   <li><b>&lt;title&gt;</b><br></li>
-  <li><b>&lt;meta&gt;</b><br></li>
+  <li><b>&lt;meta&gt;</b></li>
 </ul>
 
 <h3>Semantic</h3>
 
 <ul>
-  <li><b>&lt;header&gt;</b><br></li>
+  <li><b>&lt;header&gt;</b></li>
 </ul>
 
 <h3>CSS</h3>
@@ -586,21 +586,19 @@ Consider the following function declaration:
   console.log(a + b);
 }</pre>
 
-Say that you have a file named <b>addTwo.js</b> that contains only the
-above code.
-
-How would you make this file a JavaScript module?
-
+<p>Say that you have a file named <b>addTwo.js</b> that contains only the
+above code.<br>
+How would you make this file a JavaScript module?<br>
 All that you would need to do to make it a JavaScript module is use the
-export syntax.
+export syntax.</p>
 
 <h3>Module Exports</h3>
 
-<p>There is more than one way to export a module in JavaScript.
+<p>There is more than one way to export a module in JavaScript.<br>
 
 While all the various syntactical differences are not listed, here are a
 few examples that will cover all the ways that the importing and
-exporting of JavaScript modules will be done in this course.
+exporting of JavaScript modules will be done in this course.<br>
 
 In general, there are two ways to export modules in JavaScript:</p>
 <ol>
@@ -610,8 +608,7 @@ In general, there are two ways to export modules in JavaScript:</p>
 
 <h3>Default Exports</h3>
 
-<p>You can have <b>one default export</b> per JavaScript module.
-
+<p>You can have <b>one default export</b> per JavaScript module.<br>
 Using the above <b>addTwo.js</b> file as an example, here are two ways to
 perform a default export:</p>
 
@@ -634,15 +631,15 @@ export default addTwo;</pre>
 <h3>Named Exports</h3>
 
 <p>Named exports are a way to export only certain parts of a given
-JavaScript file.
+JavaScript file.<br>
 
 In contrast with default exports, you can export as many items from any
-JavaScript file as you want.
+JavaScript file as you want.<br>
 
 In other words, there can be only one default export, but as many named
-exports as you want.
+exports as you want.<br>
 
-For example:</p>
+<br>For example:</p>
 
 <pre>function addTwo(a, b) {
   console.log(a + b);
@@ -839,7 +836,7 @@ descriptive and short.
 In the next section, you'll learn how to build a brand-new app that you
 can name: <b>firstapp</b>.</p>
 
-<h4><b>Opening the built-in VS Code terminal and running npm init react-app command</b></h4>
+<h4>Opening the built-in VS Code terminal and running npm init react-app command</b></h4>
 
 In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1606,7 +1603,7 @@ link to an additional reading at the end of this lesson.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 11 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Creating React components</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (11), you will further explore the concepts of
 components in React and learn how to create a component from scratch.
 
@@ -1709,7 +1706,7 @@ React, and render it to the root components named <b>app.js</b>.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 12 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Transpiling JSX</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (12), you will know how a component is built.
 
 Components are a nice way to build websites in React because they allow
@@ -1803,8 +1800,7 @@ If you now analyze the difference between the source JSX code and the
 transpiled, plain JavaScript code, dis-regarding the comment, here's
 the body of the Heading function:
 
-<pre>React.createElement("h1", null, props.title);
-</pre>
+<pre>React.createElement("h1", null, props.title);</pre>
 
 So, here you have a React object, and this object has a
 <b>createElement()</b> method on it. The method is invoked with three
@@ -1863,7 +1859,7 @@ export default Example</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 13 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Your first component</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed solution code for the App.js file:</p>
 
 <details>
@@ -1953,7 +1949,7 @@ browser.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 14 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. The React project structure</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As you might already be aware, it's important to organize or structure
 your React components so that they're easy to access.
 
@@ -4985,7 +4981,7 @@ words. This will allow you to compare the difference in syntax between
 these four approaches, while the result of the event handling will
 always be the same: just some words output to the console.
 
-<h4><b>Handling events using inline anonymous ES5 functions</b></h4>
+<h4>Handling events using inline anonymous ES5 functions</h4>
 
 This approach allows you to directly pass in an ES5 function declaration
 as the <b>onClick</b> event-handling attribute's value:
@@ -5165,7 +5161,7 @@ should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 07 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Dynamic events &amp; how to handle them</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the completed App.js file:
@@ -5294,7 +5290,7 @@ up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number "chosen" by the computer one more time. 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 08 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Additional resources (Data &amp; State - Week 2)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your
@@ -5317,7 +5313,7 @@ learning journey.
 -   [JavaScript Expressions as
     Children](https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children) 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 09 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Parent-child data flow</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Imagine you're working for an online retailer which discount prices
@@ -5410,7 +5406,7 @@ to child. By storing data in the parent component, you can dynamically
 pass it to the child component without the need to update children
 individually.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 10 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Data flow in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've just learned how the parent-child relationship can be set up so
@@ -5484,7 +5480,7 @@ everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
 be as efficient as it could be, especially in modern React.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 11 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Children and data</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (11), you're going to learn about data flow in ReactJS.
@@ -5537,9 +5533,9 @@ time. Well done. You've now learned how children and data flows in
 ReactJS. You should also be able to showcase the use of stateless and
 stateful examples by focusing on data flow.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 12 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Data flow</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 13 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. What are hooks?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now you've probably already learned about some important and useful
@@ -5601,7 +5597,7 @@ In this section, you learned the basics on React hooks and explored the
 <b>useState</b> hook. You now understand the benefits of using hooks and
 how you can use them within your React applications.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 14 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. Using hooks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Now that you understand what hooks are in React and have some basic
@@ -5679,11 +5675,9 @@ As the user types, the <b>handleChange</b> function, reads the latest input
 value from the browser's input DOM element, and calls the <b>setText</b>
 function, to update the local state of <b>inputText</b>.
 
-<pre>
-function handleChange(e) {
+<pre>function handleChange(e) {
   setText(e.target.value);
-};
-</pre>
+};</pre>
 
 Finally, clicking the reset button will update the <b>inputText</b> back to
 "hello". 
@@ -5723,8 +5717,7 @@ registration form with fields for first name, last name and email.
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react'; 
+<pre>import { useState } from 'react'; 
   
 export default function RegisterForm() { 
   const [form, setForm] = useState({ 
@@ -5734,63 +5727,60 @@ export default function RegisterForm() { 
   }); 
  
   return ( 
-    <>
-      <label> 
+    &lt;&gt;
+      &lt;label&gt; 
         First name: 
-        <input 
+        &lt;input 
           value={form.firstName} 
-          onChange={e => { 
+          onChange={e =&gt; { 
             setForm({ 
               ...form, 
               firstName: e.target.value 
             }); 
           }} 
-        />
-      </label> 
-      <label> 
+        /&gt;
+      &lt;/label&gt;
+      &lt;label&gt;
         Last name: 
-        <input 
+        &lt;input 
           value={form.lastName} 
-          onChange={e => { 
+          onChange={e =&gt; { 
             setForm({ 
               ...form, 
               lastName: e.target.value 
             }); 
           }} 
-        /> 
-      </label> 
-      <label> 
+        /&gt;
+      &lt;/label&gt;
+      &lt;label&gt; 
         Email: 
-        <input 
+        &lt;input 
           value={form.email} 
-          onChange={e => { 
-</pre>
+          onChange={e =&gt; {</pre>
 
 </details>
 
-Notice that you are using a <b>form</b> object to store the state of all
-three text input field values:
+<p>Notice that you are using a <b>form</b> object to store the state of all
+three text input field values:</p>
 
-<pre>
-const[form, setForm] =useState({
+<pre>const[form, setForm] =useState({
   firstName:'Luke',
   lastName:'Jones',
     email:'lukeJones@sculpture.com',
-});
-</pre>
+});</pre>
 
-You do not need to have three separate state variables in this case, and
+<p>You do not need to have three separate state variables in this case, and
 instead you can consolidate them all together into one <b>form</b> object
-for better readability.
+for better readability.<br>
 
 In addition to the <b>useState</b> hook, there are other hooks that come in
 handy such as <b>useContext</b>, <b>useMemo</b>, <b>useRef</b>, etc. When
 you need to share logic and reuse the same logic across several
 components, you can extract the logic into a custom hook. Custom hooks
 offer flexibility and can be used for a wide range of use-cases such as
-form handling, animation, timers, and many more. 
+form handling, animation, timers, and many more.<br>
 
-Next, I'll give you an explanation of how the <b>useRef</b> hook works.
+Next, I'll give you an explanation of how the <b>useRef</b> hook works.</p>
 
 <h4>The useRef hook</h4>
 
@@ -5802,21 +5792,19 @@ The <b>ref</b> object has a property named <b>current</b>.
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function TextInputWithFocusButton() {
+<pre>function TextInputWithFocusButton() {
   const inputEl = useRef(null);
-  const onButtonClick = () => {
+  const onButtonClick = () =&gt; {
     // `current` points to the mounted text input element
     inputEl.current.focus();
   };
   return (
-    <>
-      <input ref={inputEl} type="text" />
-      <button onClick={onButtonClick}>Focus the input</button>
-    </>
+    &lt;&gt;
+      &lt;input ref={inputEl} type="text" /&gt;
+      &lt;button onClick={onButtonClick}&gt;Focus the input&lt;/button&gt;
+    &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -5833,49 +5821,50 @@ In this section (14), you have explored hooks in detail and understand how to
 use the <b>useState</b> hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 15 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. What is state?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<i>"Make it as simple as possible, but not simpler."</i>
-Albert Einstein
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<blockquote>
+"Make it as simple as possible, but not simpler."
+--Albert Einstein
+</blockquote>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 16 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Observing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 17 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. State the concept</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 18 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Managing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 19 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Prop drilling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 20 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. React state management</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 21 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Passing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 22 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Stateful vs stateless</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 23 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Managing state in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 24 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>24. State or stateless</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 25 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>25. Data events &amp; how to handle them</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 26 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>26. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -5883,7 +5872,8 @@ Albert Einstein
 <h1>Week 3 - Navigation, Updating and Assets</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this module (three) you will explore the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice.</p>
-9 videos, 11 readings
+
+<pre>9 videos, 11 readings
 01. Video: Basic Types of navigation
 02. Reading: Navigation
 03. Video: The navbar
@@ -5904,7 +5894,7 @@ Albert Einstein
 17. Reading: Solution: Song selection
 18. Video: Module summary: Navigation, Updating and Assets in React.js
 19. Reading: Additional resources
-
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Week 4 - Your First React App</h3>
@@ -9440,16 +9430,16 @@ Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:
 
 <pre>
-<div>
-  <SearchBar
+&lt;div&gt;
+  &lt;SearchBar
     filterText={filterText}
-  inStockOnly={inStockOnly} />
+  inStockOnly={inStockOnly} /&gt;
 
-  <ProductTable
+  &lt;ProductTable
     products={products}
     filterText={filterText}
-  inStockOnly={inStockOnly} />
-</div>
+  inStockOnly={inStockOnly} /&gt;
+&lt;/div&gt;
 </pre>
 
 You can start seeing how your application will behave. Edit the
@@ -9466,31 +9456,31 @@ function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   return (
-    <div>
-      <SearchBar
+    &lt;div&gt;
+      &lt;SearchBar
         filterText={filterText}
-        inStockOnly={inStockOnly} />
-      <ProductTable
+        inStockOnly={inStockOnly} /&gt;
+      &lt;ProductTable
         products={products}
         filterText={filterText}
-        inStockOnly={inStockOnly} />
-    </div>
+        inStockOnly={inStockOnly} /&gt;
+    &lt;/div&gt;
   );
 }
 function ProductCategoryRow({ category }) {
   return (
-    <tr>
-      <th colSpan="2">
+    &lt;tr&gt;
+      &lt;th colSpan="2"&gt;
         {category}
-      </th>
-    </tr>
+      &lt;/th&gt;
+    &lt;/tr&gt;
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  <span style={{ color: 'red' }}>
+  &lt;span style={{ color: 'red' }}&gt;
     {product.name}
-  </span>;
+  &lt;/span&gt;;
   return (
 </pre>
 
@@ -9511,11 +9501,11 @@ example, here is how SearchBar populates the input value:
 <pre>
 function SearchBar({ filterText, inStockOnly }) {
   return (
-    <form>
-      <input
+    &lt;form&gt;
+      &lt;input
         type="text"
         value={filterText}
-        placeholder="Search..."/>
+        placeholder="Search..."/&gt;
 </pre>
 
 However, you haven't added any code to respond to the user actions like
@@ -9550,12 +9540,12 @@ function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
     return (
-      <div>
-        <SearchBar
+      &lt;div&gt;
+        &lt;SearchBar
           filterText={filterText}
           inStockOnly={inStockOnly}
           onFilterTextChange={setFilterText}
-          onInStockOnlyChange={setInStockOnly} />
+          onInStockOnlyChange={setInStockOnly} /&gt;
 </pre>
 
 </details>
@@ -9564,10 +9554,10 @@ Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
 <pre>
-<input
+&lt;input
   type="text"
-  value={filterText onChange={(e) =>
-  onFilterTextChange(e.target.value)} />
+  value={filterText onChange={(e) =&gt;
+  onFilterTextChange(e.target.value)} /&gt;
 </pre>
 
 Now the application fully works!
@@ -9582,33 +9572,33 @@ function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   return (
-    <div>
-      <SearchBar
+    &lt;div&gt;
+      &lt;SearchBar
         filterText={filterText}
         inStockOnly={inStockOnly}
         onFilterTextChange={setFilterText}
-        onInStockOnlyChange={setInStockOnly} />
-        <ProductTable
+        onInStockOnlyChange={setInStockOnly} /&gt;
+        &lt;ProductTable
           products={products}
           filterText={filterText}
-          inStockOnly={inStockOnly} />
-    </div>
+          inStockOnly={inStockOnly} /&gt;
+    &lt;/div&gt;
   );
 }
 function ProductCategoryRow({ category }) {
   return (
-    <tr>
-      <th colSpan="2">
+    &lt;tr&gt;
+      &lt;th colSpan="2"&gt;
         {category}
-      </th>
-    </tr>
+      &lt;/th&gt;
+    &lt;/tr&gt;
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  <span style={{ color: 'red' }}>
+  &lt;span style={{ color: 'red' }}&gt;
     {product.name}
-  </span>;
+  &lt;/span&gt;;
 </pre>
 
 </details>
@@ -9657,14 +9647,12 @@ sandbox!
 
 <h4>App.js</h4>
 
-<pre>
-function Greeting({ name }) {
-  return <h1>Hello, {name}</h1>;
+<pre>function Greeting({ name }) {
+  return &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
 }
 export default function App() {
-  return <Greeting name="world" />
-}
-</pre>
+  return &lt;Greeting name="world" /&gt;
+}</pre>
 
 You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.
