@@ -1,4 +1,5 @@
 /* styles.css */
+/* of meta-react-basics.bauska.org */
 
 * {
     margin-left: 1.5%;
@@ -6,12 +7,12 @@
 }
 
 .bold-text {
-	font-weight: 700;
+	font-weight: 500;
 }
 
 ul li,
 ol li {
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 footer,
@@ -19,7 +20,7 @@ header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-	margin-left: 3%;
+	margin-left: 2%;
     padding: 3% 1%;  /* 3rem 1rem */
 }
 
@@ -32,6 +33,7 @@ hr {
 }
 
 pre {
+    margin-left: 6%;
     margin: 6% 0;  /* 1rem 0 */
     max-width: var(--width-card-wide);
     padding: 6% 0;  /* 1rem 0*/
@@ -283,7 +285,7 @@ blockquote footer {
   details > summary {
     padding: 2px 6px;
     width: 12em;  /* 15em */
-    line-height:120%; /*or whatever height you like, was 160% */
+    line-height:120%; /* or whatever height you like, was 160% */
     background-color: #eee;  /* very light gray */
     border: none;
     box-shadow: 3px 3px 4px black;
