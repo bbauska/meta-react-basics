@@ -15,6 +15,10 @@ ul li,
 ol li {
   margin-left: 2%;
 }
+ul li li,
+ol li li {
+  margin-left: 4%;
+}
 
 footer,
 header,
@@ -35,7 +39,9 @@ hr {
 
 pre {
   font-family: Consolas;
-  margin-left: 2%;
+  line-height:85%;
+  font-size: 12px;
+  margin-left: 4%;
   margin: 2% 0;  /* 1rem 0 */
   max-width: var(--width-card-wide);
   padding: 2% 0;  /* 1rem 0*/
@@ -43,9 +49,11 @@ pre {
 
 pre code,
 pre samp {
+  line-height: 100%;
+  font-size: 12px;
   font-family: Consolas;
   display: block;
-  margin-left: 2%;
+  margin-left: 4%;
   max-width: var(--width-card-wide);
   padding: 2% 8%;  /* 0.5rem 2rem */
   white-space: pre-wrap;
@@ -280,36 +288,37 @@ blockquote footer {
   padding: 1.5rem 0;
 }
 /*** summary / details ***/
-  details {
-    font-size: 13px;
-    font-family: Inter, Bahnschrift, Georgia, Calibri, sans-serif;
-    width: 920px;  /* was 620 */
-  }
+details {
+  font-size: 13px;
+  font-family: Consolas, Inter, Bahnschrift, Georgia, Calibri, sans-serif;
+  width: 520px;  /* was 620 */
+}
 
 details > summary {
   padding: 2px 6px;
   width: 10em;  /* 15em */
-  line-height:75%; /* or whatever height you like, was 160% */
-  background-color: #eee;  /* very light gray */
+  line-height:85%; /* or whatever height you like, was 160% */
+  background-color: #d3d3d3;  /* very light gray */
   border: none;
-  box-shadow: 3px 3px 4px black;
+  box-shadow: 3px 3px 4px blue;
   cursor: pointer;
 }
 
 ul li {
-  line-height: 75%; /* or whatever height you like */
+  line-height: 100%; /* or whatever height you like */
 }
 
 details > p {
   border-radius: 0 0 10px 10px;
-  background-color: #fff;  /* white */
+  background-color: #fff;  /* fff white */
   padding: 2px 6px;
+  margin-left: 6%;
   margin: 0;
   box-shadow: 3px 3px 4px darkgreen;
 }
 
 details[open] > summary {
-  background-color: 00ff00;  /* lime green */
+  background-color: #00ff00;  /* lime green */
 }
 
 img.displayed {
