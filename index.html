@@ -747,18 +747,11 @@ JavaScript.</p>
 
 <ul>
   <li><a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">nodejs.org</a>,<br></li>
-
   <li><a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npmjs.com</a>,<br></li>
-
   <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer">reactjs.org</a>,<br></li>
-
   <li><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app.dev</a>,<br></li>
-
   <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VS Code</a>,<br></li>
-
-  <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer">Notepad</a> to truly know & utilize
-    React and NOT VS code,<br></li>
-
+  <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer">Notepad</a> to truly know & utilize React and NOT VS code,<br></li>
   <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">Sublime</a>,<br></li>
 </ul>
 
@@ -770,26 +763,23 @@ But collectively, they ain't shit.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 07 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Setting up a React project in notepad++, Sublime, Not VS Code</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
-skills that you have learned.
-
-You can find out more about Working with Labs in this course by
+skills that you have learned.</p>
+<p>You can find out more about Working with Labs in this course by
 accessing the link below:</p>
 
 <h3><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working with Labs in this course</a></h3>
 
 <p>You can also use VS Code to practice these exercises on your local
-machine as an alternative option.
+machine as an alternative option.</p>
 
-To follow along in this section (7), you need to have Node.js and VS Code
+<p>To follow along in this section (07), you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
 refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">Programming with JavaScript course</a>:</p>
 
 <ul>
   <li><a href="https://www.coursera.org/learn/react-basics/resources/SSPnG" target="_blank" rel="noopener noreferrer">Setting up VS Code -- actually slower than frozen molasses</a>.<br></li>
-
   <li><a href="https://www.coursera.org/learn/react-basics/resources/FTd5h" target="_blank" rel="noopener noreferrer">Installing Node and NPM</a>.</li>
 </ul>
 
@@ -927,13 +917,12 @@ show the following page in your browser:
 
 This means that you've successfully:
 
--   Set up your local development environment,
-
--   Run the create-react-app npm package (without installing it!),
-
--   Built a starter React app on your local machine,
-
--   Served that starter React app in your browser.
+<ul>
+  <li>Set up your local development environment,<br></li>
+  <li>Run the create-react-app npm package (without installing it!),<br></li>
+  <li>Built a starter React app on your local machine,<br></li>
+  <li>Served that starter React app in your browser.</li>
+</ul>
 
 After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.
@@ -1788,7 +1777,7 @@ has two panels. On the left, there's source JSX code:
   return &lt;h1&gt;{props.title}&lt;/h1&gt;
 }</pre>
 
-\... and on the right, there's the transpiled, plain JavaScript code:
+... and on the right, there's the transpiled, plain JavaScript code:
 
 <pre>"use strict";
 
@@ -2133,13 +2122,12 @@ task significantly.
 The layout you're supposed to build will consist of the following
 sections:
 
--   Main navigation 
-
--   Promo (main advertisement)
-
--   A list of newest posts' previews (intros)
-
--   The footer 
+<ul>
+  <li>Main navigation<br></li>
+  <li>Promo (main advertisement)<br></li>
+  <li>A list of newest posts' previews (intros)<br></li>
+  <li>The footer</li>
+</ul>
 
 <h3>Organizing Your Code</h3>
 
@@ -2148,10 +2136,10 @@ Keeping in mind the above structure, how would you organize your code?
 This is where [React docs] can help.
 
 They suggest two approaches:
-
-1.  Grouping by features 
-
-2.  Grouping by file type 
+<ol>
+  <li>Grouping by features<br></li>
+  <li>Grouping by file type</li>
+</ol>
 
 They also advise not to nest folders too deep, and to keep things simple
 and not overthink it.
@@ -2195,19 +2183,15 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
 
 Then simply add a components folder to it, like this:
 
-<pre>
- src/
-
-     components/
-
-     App.js
-     App.test.js
-     index.css
-     index.js
-     logo.svg
-     reportWebVitals.js
-     setupTests.js
-</pre>
+<pre>src/
+  components/
+    App.js
+    App.test.js
+    index.css
+    index.js
+    logo.svg
+    reportWebVitals.js
+    setupTests.js</pre>
 
 Since the components folder is currently empty, you can add a component
 for each of the sections of the typography-focused blog. Here's the
@@ -2216,8 +2200,7 @@ structural update:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-src/
+<pre>src/
   components/
     Nav.js
     Promo.js
@@ -2232,8 +2215,7 @@ src/
     index.js
     logo.svg
     reportWebVitals.js
-    setupTests.js
-</pre>
+    setupTests.js</pre>
 
 </details>
 
@@ -2263,8 +2245,7 @@ Here's the contents of the <b>Nav.js</b> file:
 <details>
   <summary>Nav.js</summary>
 
-<pre>
-function Nav() {
+<pre>function Nav() {
   return (
     &lt;nav className="main-nav"&gt;
       &lt;ul&gt;
@@ -2277,8 +2258,7 @@ function Nav() {
   );
 };
 
-export default Nav;
-</pre>
+export default Nav;</pre>
 
 </details>
 
@@ -2287,8 +2267,7 @@ Next, you can focus on the <b>Promo.js</b> file:
 <details>
   <summary>Promo.js</summary>
 
-<pre>
-function Promo() {
+<pre>function Promo() {
   return (
     &lt;div className="promo-section"&gt;
       &lt;div&gt;
@@ -2301,8 +2280,7 @@ function Promo() {
   );
 };
 
-export default Promo;
-</pre>
+export default Promo;</pre>
 
 </details>
 
@@ -2358,8 +2336,7 @@ You can finish the previews for my blog posts with the code for
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Intro3() {
+<pre>function Intro3() {
   return (
     &lt;div className="blog-post-intro"&gt;
       &lt;h2&gt;What's the best way to style your React apps?&lt;/h2&gt;
@@ -2371,16 +2348,14 @@ function Intro3() {
   );
 };
 
-export default Intro3;
-</pre>
+export default Intro3;</pre>
 
 </details>
 
 There's just one more thing left to code, the <b>Footer</b> component, so
 here it is:
 
-<pre>
-function Footer() {
+<pre>function Footer() {
   return (
     &lt;div className="copyright"&gt;
       &lt;p&gt;Made with love by Myself&lt;/p&gt;
@@ -2388,8 +2363,7 @@ function Footer() {
   );
 };
 
-export default Footer;
-</pre>
+export default Footer;</pre>
 
 Now that you have completed all the components for the app, here are a
 few more interesting things about the syntax.
@@ -2398,11 +2372,8 @@ These are:
 
 <ul>
   <li>The use of the <b>className</b> attribute in JSX,<br></li>
-
   <li>The use of separate components for repetitive code,<br></li>
-
   <li>Where are all the props?<br></li>
-
   <li>Why was I not using the <b>&lt;a&gt;</b> element for empty links?</li>
 </ul>
 
@@ -2612,7 +2583,7 @@ Here are the contents of the App.js file:
 
 <pre>export default App;
 
-    &lt;/div>
+    &lt;/div&gt;
   );
 }
    return (
@@ -2820,24 +2791,20 @@ make sure to navigate to the <i>Try it out</i> link in the main navigation.
 
 For example, let's say you have a component that returns a piece of JSX:
 
-<pre>
-function App() {
+<pre>function App() {
 
   return &lt;h1&gt;Hello there&lt;/h1&gt;
-}
-</pre>
+}</pre>
 
 ... if you used the Babel transpiler to transpile this JSX syntactic
 sugar code down to plain JavaScript code, you'd get back some unusual
 code:
 
-<pre>
-"use strict";
+<pre>"use strict";
 
 function App() {
   return /#__PURE__/React.createElement("h1", null, "Hello there");
-}
-</pre>
+}</pre>
 
 <p>You just want to focus on the <b>React.createElement("h1", null,
 "Hello there");</b> part. You can ignore the rest.<br>
@@ -2852,39 +2819,33 @@ This means that the <b>createElement</b> function receives three arguments:</p>
 
 <p>For example, let's say you have a slightly more complex JSX element structure:</p>
 
-<pre>
-function App() { 
+<pre>function App() { 
   return (
     &lt;div&gt;
       &lt;h1&gt;Hello there&lt;/h1&gt;
     &lt;/div&gt;
   )
-}
-</pre>
+}</pre>
 
 ... the transpiled return statement in plain JavaScript again returns
 two <b>createElement</b> functions:
 
-<pre>
-"use strict";
+<pre>"use strict";
 function App() {
   return /#__PURE__/React.createElement("div", null, /#__PURE__/
     React.createElement("h1", null, "Hello there"));
-}
-</pre>
+}</pre>
 
 If you format this output, remove the <b>"use strict"</b> line, and
 remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:
 
-<pre>
-function App() {
+<pre>function App() {
   return React.createElement(
     "div",
     null,
     React.createElement("h1", null, "Hello there")
   );
-}
-</pre>
+}</pre>
 
 <p>So now the third argument of the outer-most <b>React.createElement</b> call
 is another <b>React.createElement</b> call.<br>
@@ -2903,8 +2864,7 @@ an empty object.
 In that case, your code would contain a pair of curly braces instead of
 the word <b>null</b>:
 
-<pre>
-"use strict";
+<pre>"use strict";
   
 function App() {
   return React.createElement(
@@ -2912,8 +2872,7 @@ function App() {
     {},
     React.createElement("h1", {}, "Hello there")
   );
-}
-</pre>
+}</pre>
 
 This object is referred to as the <i>props</i> object. It is the main
 mechanism of sending data from a parent component to a child component
@@ -2972,6 +2931,7 @@ and sidebar components and all of them are rendered from the app
 component. The app component is in this case referred to as the parent
 component and the header main and side ball components are referred to
 as the Children of the app component.<br>
+
 They are now past data from the app components to each of its Children components. 
 First the header component receives a name prop, with a value of ANNA and a color prop
 with the value of purple. I'm sending those props from the header JSX
@@ -5031,13 +4991,13 @@ function expression.
 
 <pre>
 function App() {
-  const fourthExample = () => console.log('fourth example');
+  const fourthExample = () =&gt; console.log('fourth example');
   return (
-    <div className="fourthExample">
-      <button onClick={fourthExample}>
+    &lt;div className="fourthExample"&gt;
+      &lt;button onClick={fourthExample}&gt;
         using a separate function expression
-      </button>
-    </div>
+      &lt;/button&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -5143,8 +5103,7 @@ Here is the completed App.js file:
 <details>
   <summary>App.js</summary>
 
-<pre>
-function App() {
+<pre>function App() {
   
   function handleClick() {
     let randomNum = Math.floor(Math.random() * 3) + 1;
@@ -5154,15 +5113,14 @@ function App() {
   }
   
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button onClick={handleClick}>Guess the number between 1 and 3</button>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+      &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+    &lt;/div&gt;
   );
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -5184,10 +5142,10 @@ closing <b>button</b> tag, to the App component's <b>h1</b> element . 
 <pre>
 function App() {
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button></button>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+      &lt;button&gt;&lt;/button&gt;
+    &lt;/div&gt;
   );
 }
   
@@ -5200,10 +5158,10 @@ added the following text: Guess the number between 1 and 3. 
 <pre>
 function App() {
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button>Guess the number between 1 and 3</button>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+      &lt;button&gt;Guess the number between 1 and 3&lt;/button&gt;
+    &lt;/div&gt;
   );
 }
 
@@ -5214,18 +5172,16 @@ export default App;
 <b>onClick</b> event-handling attribute, and passed it the following JSX
 expression: <b>{handleClick}</b>. 
 
-<pre>
-function App() {
+<pre>function App() {
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button onClick={handleClick}>Guess the number between 1 and 3</button>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+      &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+    &lt;/div&gt;
   );
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 <b>Step 4.</b> Then, above the <b>return</b> statement of the App component -
 but still inside the App function - you added the following ES5 function
@@ -5243,10 +5199,10 @@ function App() {
     alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
   }
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button onClick={handleClick}>Guess the number between 1 and 3</button>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+      &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+    &lt;/div&gt;
   );
 }
 
@@ -5432,7 +5388,7 @@ the UI.
   return (
     &lt;div&gt;
       {props.name} has &lt;Bowl bowlShape="square" bowlStatus="full" /&gt;
-    </div>
+    &lt;/div&gt;
   );
 };</pre>
 
@@ -5590,8 +5546,7 @@ Let's discuss the below example.
 <details>
   <summary>React</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
   
 export default function InputComponent() { 
   const [inputText, setText] = useState('hello');
@@ -5600,16 +5555,15 @@ export default function InputComponent() { 
     setText(e.target.value); 
   } 
   return ( 
-    <> 
-      <input value={inputText} onChange={handleChange} />
-      <p>You typed: {inputText}</p>
-      <button onClick={() => setText('hello')}> 
+    &lt;&gt; 
+      &lt;input value={inputText} onChange={handleChange} /&gt;
+      &lt;p&gt;You typed: {inputText}&lt;/p&gt;
+      &lt;button onClick={() =&gt; setText('hello')}&gt; 
          Reset
-      </button>
-    </>
+      &lt;/button&gt;
+    &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -9548,7 +9502,7 @@ https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>4:56pm 5-25-23 Thu meta-react-basics index.html</h6>
+<h6>1:11am 5-26-23 Thu meta-react-basics index.html</h6>
 
 </body>
 </html>
