@@ -251,12 +251,12 @@ if you connect with the community as well.</p>
 <p>By the end of this section (03), you will have learned about the scope
 of things to be covered in this course.</p>
 
-<h3><b>Prerequisites</b></h3>
+<h3>Prerequisites</h3>
 
 <p>To take this course, you should understand the basics of HTML, CSS, and
 JavaScript. Additionally, it always helps to have a can-do attitude!</p>
 
-<h3><b>Course content</b></h3>
+<h3>Course content</h3>
 
 <p>This course is an introduction to React development.</p>
 
@@ -266,7 +266,7 @@ interface using React.</p>
 <p>This course consists of <b>4 (four)</b> modules. They cover the following
 topics:</p>
 
-<h3><b>Module 1: Anatomy of React</b></h3>
+<h3>Module 1: Anatomy of React</h3>
 
 <p>React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.</p>
@@ -298,7 +298,7 @@ style your components.</p>
   <li>Use and manipulate props and components to effect visual results.</li>
 </ul>
 
-<h3><b>Module 2: Data and State</b></h3>
+<h3>Module 2: Data and State</h3>
 
 <p>The second module of this course deals with working with <b>events</b> and
 <b>errors</b> in React. You'll learn how <b>events</b> work and how you can
@@ -318,7 +318,7 @@ in React.</p>
     required to handle them.</li>
 </ul>
 
-<h3><b>Module 3: Navigation Updating and Assets in React</b></h3>
+<h3>Module 3: Navigation Updating and Assets in React</h3>
 
 <p>In this module (three), you'll learn about routing and navigation in
 React. You'll learn how to render partial views and how to update
@@ -339,7 +339,7 @@ bundled and embedded.</p>
     multi-page navigation.</li>
 </ul>
 
-<h3><b>Module 4: Portfolio Mini-Project (Calculator App)</b></h3>
+<h3>Module 4: Portfolio Mini-Project (Calculator App)</h3>
 
 <p>This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
@@ -570,7 +570,7 @@ This section (05) will cover the three main concepts:</p>
   <li>Module imports.</li>
 </ol>
 
-<h3><b>JavaScript Modules</b></h3>
+<h3>JavaScript Modules</h3>
 
 In JavaScript, a module is simply a <b>file</b>.
 
@@ -594,7 +594,7 @@ How would you make this file a JavaScript module?
 All that you would need to do to make it a JavaScript module is use the
 export syntax.
 
-<h3><b>Module Exports</b></h3>
+<h3>Module Exports</h3>
 
 <p>There is more than one way to export a module in JavaScript.
 
@@ -608,7 +608,7 @@ In general, there are two ways to export modules in JavaScript:</p>
   <li>Using named exports</li>
 </ol>
 
-<h3><b>Default Exports</b></h3>
+<h3>Default Exports</h3>
 
 <p>You can have <b>one default export</b> per JavaScript module.
 
@@ -631,7 +631,7 @@ Here's an alternative syntax:</p>
 
 export default addTwo;</pre>
 
-<h3><b>Named Exports</b></h3>
+<h3>Named Exports</h3>
 
 <p>Named exports are a way to export only certain parts of a given
 JavaScript file.
@@ -675,7 +675,7 @@ function addThree(a + b + c) {
   
 export { addTwo, addThree };</pre>
 
-<h3><b>Importing Modules</b></h3>
+<h3>Importing Modules</h3>
 
 <p>Just like when exporting modules in JavaScript, there are several ways
 to import them.
@@ -690,7 +690,7 @@ The first module is <b>addTwo.js</b> and the second module is
 You want to import the <b>addTwo.js</b> module into the
 <b>mathOperations.js</b> module.
 
-<h3><b>Importing a Module that was Exported as Default</b></h3>
+<h3>Importing a Module that was Exported as Default</h3>
 
 Consider the previous example of exporting the <b>addTwo</b> function as a
 default module:</p>
@@ -722,7 +722,7 @@ export:</p>
 
 // the rest of the mathOperations.js code goes here</pre>
 
-<h3><b>Conclusion</b></h3>
+<h3>Conclusion</h3>
 
 <p>In this section (5), you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
@@ -3699,7 +3699,7 @@ render the <b>Nav</b> component. It's still the same:
 
 You can also take this concept a step further, using arrow functions.
 
-<h3><b>Components as Arrow Functions</b></h3>
+<h3>Components as Arrow Functions</h3>
 
 Arrow functions are a core feature of the ES6 version of JavaScript.
 
@@ -3787,7 +3787,7 @@ Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
 cases.
 
-<h3><b>Using Arrow Functions in Other Situations</b></h3>
+<h3>Using Arrow Functions in Other Situations</h3>
 
 In React, just like in plain JavaScript, arrow functions can be used in
 many different situations. One such situation is using it with, for
@@ -3998,7 +3998,7 @@ let name = 'Bob';
 name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
 </pre>
 
-<h3><b>Using ternary expressions in JSX</b></h3>
+<h3>Using ternary expressions in JSX</h3>
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
@@ -4038,7 +4038,7 @@ expression.
 This is how you can use a ternary expression to check for a condition
 right inside a component and return a value dynamically.
 
-<h3><b>Using function calls in JSX</b></h3>
+<h3>Using function calls in JSX</h3>
 
 Another way to work with an expression in JSX is to invoke a function.
 Function invocation is an expression because every expression returns a
@@ -4314,83 +4314,71 @@ function Card(props) {
 <b>return</b> statement with two parentheses after it, to allow the
 <b>return</b> statement to spread onto several lines. 
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
   
   );
-};
-</pre>
+};</pre>
 
 <b>Step 3.</b> Inside the <b>return</b> statement, you needed to add a
 wrapping <b>div</b> element. 
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
-    <div>
-    </div>
+    &lt;div&gt;
+    &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 <b>Step 4.</b> Inside the wrapping <b>div</b> element, you needed to add an
 <b>h2</b> element, and under it, an <b>h3</b> element. 
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
-    <div>
-      <h2></h2>
-      <h3></h3>
-    </div>  
+    &lt;div&gt;
+      &lt;h2&gt;&lt;/h2&gt;
+      &lt;h3&gt;&lt;/h3&gt;
+    &lt;/div&gt;  
   );
-};
-</pre>
+};</pre>
 
 <b>Step 5.</b> Inside the h2 element you've already added, you needed to add
 the JSX expression of: {props.h2}. 
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
-    <div className="card">
-      <h2>{props.h2}</h2>
-      <h3></h3>
-    </div>
+    &lt;div className="card"&gt;
+      &lt;h2&gt;{props.h2}&lt;/h2&gt;
+      &lt;h3&gt;&lt;/h3&gt;
+    &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 <b>Step 6.</b> Inside the <b>h3</b> element you've already added, you needed
 to add the JSX expression of: <b>{props.h3}</b>. 
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
-    <div className="card">
-      <h2>{props.h2}</h2>
-      <h3>{props.h3}</h3>
-    </div>
+    &lt;div className="card"&gt;
+      &lt;h2&gt;{props.h2}&lt;/h2&gt;
+      &lt;h3&gt;{props.h3}&lt;/h3&gt;
+    &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 <b>Step 7.</b> You also had to make sure to not forget the <b>export default
 Card;</b> line of code at the bottom of the Card component.
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
-    <div className="card">
-      <h2>{props.h2}</h2>
-      <h3>{props.h3}</h3>
-    </div>
+    &lt;div className="card"&gt;
+      &lt;h2&gt;{props.h2}&lt;/h2&gt;
+      &lt;h3&gt;{props.h3}&lt;/h3&gt;
+    &lt;/div&gt;
   );
 };
   
-export default Card;
-</pre>
+export default Card;</pre>
 
 <b>Step 8.</b> Back inside the App component, you needed to import the
 <b>Card</b> component. 
@@ -4398,20 +4386,18 @@ export default Card;
 <details>
   <summary>App.js</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+    &lt;/div&gt;
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4422,23 +4408,21 @@ elements. 
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card /&gt;
+      &lt;Card /&gt;
+      &lt;Card /&gt;
+    &lt;/div&gt;
   );
 };
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4448,23 +4432,21 @@ export default App;
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" />
-      <Card />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card h2="First card's h2" /&gt;
+      &lt;Card /&gt;
+      &lt;Card /&gt;
+    &lt;/div&gt;
   );
 };
  
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4474,23 +4456,21 @@ export default App;
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 import Card from "./Card";
 
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card h2="First card's h2" h3="First card's h3" /&gt;
+      &lt;Card /&gt;
+      &lt;Card /&gt;
+    &lt;/div&gt;
   );
 };
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4501,23 +4481,21 @@ card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>. 
 <details>
   <summary>App.js</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card h2="First card's h2" h3="First card's h3" /&gt;
+      &lt;Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      &lt;Card /&gt;
+    &lt;/div&gt;
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4528,24 +4506,22 @@ h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>. 
 <details>
   <summary>App.js</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 
 import Card from "./Card";
 
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card h2="First card's h2" h3="First card's h3" /&gt;
+      &lt;Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      &lt;Card h2="Third card's h2" h3="Third card's h3" /&gt;
+    &lt;/div&gt;
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4556,8 +4532,7 @@ Card.js file's <b>Card</b> function's <b>return</b> statement's wrapping
 <details>
   <summary>App.js</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 
 import Card from "./Card";
 
@@ -4572,8 +4547,7 @@ function App() {
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4772,31 +4746,25 @@ The JavaScript language comes with a built-in error handling syntax, the
 
 Let's examine an example of an error in JavaScript:
 
-<pre>
-(5).toUpperCase()
-</pre>
+<pre>(5).toUpperCase()</pre>
 
 Obviously, you cannot uppercase a number value, and thus, this throws
 the following error:
 
-<pre>
-Uncaught TypeError: 5.toUpperCase is not a function
-</pre>
+<pre>Uncaught TypeError: 5.toUpperCase is not a function</pre>
 
 To handle this TypeError, you can update the code with a try\...catch
 block that instructs the code to continue running after the error is
 encountered:
 
-<pre>
-try {
+<pre>try {
   (5).toUpperCase();
 } 
 
 catch(e) {
   console.log(`Oops, you can't uppercase a number. 
    Trying to do it resulted in the following`, e);
-}
-</pre>
+}</pre>
 
 The try-catch block will output some text in the console:
 
@@ -4810,28 +4778,24 @@ details after this quick refresher.
 Back to React, here's an example of a simple error in a React
 component:
 
-<pre>
-function NumBillboard(props) {
+<pre>function NumBillboard(props) {
   return (
     <>
-      <h1>{prop.num}</h1>
+      &lt;h1&gt;{prop.num}&lt;/h1&gt;
     </>
   )
 }
 
-export default NumBillboard;
-</pre>
+export default NumBillboard;</pre>
 
 In React, an error in the code, such as the one above, will result in
 the error overlay showing in the app in the browser.
 
 In this specific example, the error would be:
 
-<pre>
-ReferenceError
+<pre>ReferenceError
 
-prop is not defined
-</pre>
+prop is not defined</pre>
 
 Note: <i>You can click the X button to close the error overlay.</i>
 
@@ -5026,30 +4990,26 @@ always be the same: just some words output to the console.
 This approach allows you to directly pass in an ES5 function declaration
 as the <b>onClick</b> event-handling attribute's value:
 
-<pre>
-<button onClick={function() {console.log('first example')}}>
+<pre>&lt;button onClick={function() {console.log('first example')}}&gt;
   An inline anonymous ES5 function event handler
-</button>
-</pre>
+&lt;/button&gt;</pre>
 
 Although it's possible to write your click handlers using this syntax,
 it's not a common approach and you will not find such code very often
 in React apps.
 
-<h4><b>Handling events using inline anonymous ES6 functions (arrow functions)</b></h4>
+<h4>Handling events using inline anonymous ES6 functions (arrow functions)</h4>
 
 With this approach, you can directly pass in an ES6 function declaration
 as the <b>onClick</b> event-handling attribute's value:
 
-<pre>
-</button>
-</pre>
+<pre>&lt;/button&gt;</pre>
 
 This approach is much more common then the previous one. If you want to
 keep all your logic inside the JSX expression assigned to the onClick
 attribute, use this syntax.
 
-<h4><b>Handling events using separate function declarations</b></h4>
+<h4>Handling events using separate function declarations</h4>
 
 With this approach, you declare a separate ES5 function declaration, and
 then you reference its name in the event-handling <b>onClick</b> attribute,
@@ -5058,24 +5018,22 @@ as follows:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function App() {
+<pre>function App() {
   function thirdExample() {
     console.log('third example');
 
   };
 
   return (
-    <div className="thirdExample">
-      <button onClick={thirdExample}>
+    &lt;div className="thirdExample"&gt;
+      &lt;button onClick={thirdExample}&gt;
         using a separate function declaration
-      </button>
-    </div>
+      &lt;/button&gt;
+    &lt;/div&gt;
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -5086,7 +5044,7 @@ example, 20 lines of code, and that needs to be ran when the click event
 is triggered. This is a perfect use-case for a separate function
 declaration.
 
-<h4><b>Handling events using separate function expressions</b></h4>
+<h4>Handling events using separate function expressions</h4>
 
 <b>Tip</b>: A way to determine if a function is defined as an expression
 or a declaration is: if it does not start the line with the keyword
@@ -5464,7 +5422,7 @@ concise. Finally, you will explore data flow in greater detail by
 looking at more examples. This should act as a refresher to knowledge
 gained in previous courses.
 
-<h4><b>Parent-child data flow</b></h4>
+<h4>Parent-child data flow</h4>
 
 In React, data flow is a one-way street. Sometimes it's said that the
 data flow is unidirectional. Put differently, the data in React flows
@@ -5492,39 +5450,33 @@ Imagine that the parent component passes a prop (name) to the child
 component. The child component then uses this prop to render the name in
 the UI.
 
-<h4><b>Parent component:</b></h4>
+<h4>Parent component:</h4>
 
-<pre>
-function Dog() {
+<pre>function Dog() {
   return (
-    <Puppy name="Max" bowlShape="square" bowlStatus="full" />
+    &lt;Puppy name="Max" bowlShape="square" bowlStatus="full" /&gt;
   );
-};
-</pre>
+};</pre>
 
-<h4><b>Child component:</b></h4>
+<h4>Child component:</h4>
 
-<pre>
-function Puppy(props) {
+<pre>function Puppy(props) {
   return (
-    <div>
-      {props.name} has <Bowl bowlShape="square" bowlStatus="full" />
+    &lt;div&gt;
+      {props.name} has &lt;Bowl bowlShape="square" bowlStatus="full" /&gt;
     </div>
   );
-};
-</pre>
+};</pre>
 
-<h4><b>Grandchild component:</b></h4>
+<h4>Grandchild component:</h4>
 
-<pre>
-function Bowl(props) {
+<pre>function Bowl(props) {
   return (
-    <span>
+    &lt;span&gt;
       {props.bowlShape}-shaped bowl, and it's currently {props.bowlStatus}
-    </span>
+    &lt;/span&gt;
   );
-};
-</pre>
+};</pre>
 
 Having data move through props in only one direction makes it simpler to
 understand the logic of how the components interact. If data were moving
@@ -9746,7 +9698,7 @@ https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>1:16pm 5-25-23 Thu meta-react-basics index.html</h6>
+<h6>4:56pm 5-25-23 Thu meta-react-basics index.html</h6>
 
 </body>
 </html>
