@@ -8491,20 +8491,17 @@ return (
 
 </details>
 
-<h4>Show more</h4>
-
 <h4>Final cleanup</h4>
 
-If you look at the code very closely, you may notice that xIsNext ===
+<p>If you look at the code very closely, you may notice that xIsNext ===
 true when currentMove is even and xIsNext === false when currentMove is
 odd. In other words, if you know the value of currentMove, then you can
-always figure out what xIsNext should be.
-
-There's no reason for you to store both of these in state. In fact,
+always figure out what xIsNext should be.</p>
+<p>There's no reason for you to store both of these in state. In fact,
 always try to avoid redundant state. Simplifying what you store in state
-reduces bugs and makes your code easier to understand. Change Game so
-that it doesn't store xIsNext as a separate state variable and instead
-figures it out based on the currentMove:
+reduces bugs and makes your code easier to understand.</p>
+<p>Change Game so that it doesn't store xIsNext as a separate state variable and instead
+figures it out based on the currentMove:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -8528,27 +8525,25 @@ figures it out based on the currentMove:
 
 </details>
 
-You no longer need the xIsNext state declaration or the calls to
+<p>You no longer need the xIsNext state declaration or the calls to
 setXIsNext. Now, there's no chance for xIsNext to get out of sync with
-currentMove, even if you make a mistake while coding the components.
+currentMove, even if you make a mistake while coding the components.</p>
 
 <h3>Wrapping up</h3>
 
-Congratulations! You've created a tic-tac-toe game that:
+<p>Congratulations! You've created a tic-tac-toe game that:</p>
 
--   Lets you play tic-tac-toe,
+<ul>
+  <li>Lets you play tic-tac-toe,<br><br></li>
+  <li>Indicates when a player has won the game,<br><br></li>
+  <li>Stores a game's history as a game progresses,<br><br></li>
+  <li>Allows players to review a game's history and see previous versions of a game's board.</li>
+</ul>
 
--   Indicates when a player has won the game,
+<p>Nice work! We hope you now feel like you have a decent grasp of how
+React works.</p>
 
--   Stores a game's history as a game progresses,
-
--   Allows players to review a game's history and see previous versions
-    of a game's board.
-
-Nice work! We hope you now feel like you have a decent grasp of how
-React works.
-
-Check out the final result here:
+<p>Check out the final result here:</p>
 
 <h4>App.js</h4>
 
@@ -8591,27 +8586,22 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-<h4>Show more</h4>
-
-If you have extra time or want to practice your new React skills, here
+<p>If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
-game, listed in order of increasing difficulty:
-
-1.  For the current move only, show "You are at move #..." instead of a
-    button
-
-2.  Rewrite Board to use two loops to make the squares instead of
-    hardcoding them.
-
-3.  Add a toggle button that lets you sort the moves in either ascending
-    or descending order.
-
-4.  When someone wins, highlight the three squares that caused the win
+game, listed in order of increasing difficulty:</p>
+<ol>
+<li>For the current move only, show "You are at move #..." instead of a
+    button,<br><br></li>
+  <li>Rewrite Board to use two loops to make the squares instead of
+    hardcoding them,<br><br></li>
+  <li>Add a toggle button that lets you sort the moves in either ascending
+    or descending order,<br><br></li>
+  <li>When someone wins, highlight the three squares that caused the win
     (and when no one wins, display a message about the result being a
-    draw).
-
-5.  Display the location for each move in the format (col, row) in the
-    move history list.
+    draw),<br><br></li>
+  <li>Display the location for each move in the format (col, row) in the
+    move history list.</li>
+</ol>
 
 Throughout this tutorial, you've touched on React concepts including
 elements, components, props, and state. Now that you've seen how these
@@ -8673,9 +8663,9 @@ thought process of building a searchable product data table with React.
 height="3.5208333333333335in"}
 -->
 
-To implement a UI in React, you will usually follow the same five steps.
+<p>To implement a UI in React, you will usually follow the same five steps:</p>
 
-<h3>Step 1: Break the UI into a component hierarchy</h3>
+<h3>Step 1: Break the UI into a component hierarchy:</h3>
 
 <p>Start by drawing boxes around every component and subcomponent in the
 mockup and naming them. If you work with a designer, they may have
@@ -8690,13 +8680,14 @@ into components in different ways:</p>
   <li><b>Design</b>---consider how you would organize the design's layers.</li>
 </ul>
 
-If your JSON is well-structured, you'll often find that it naturally
+<p>If your JSON is well-structured, you'll often find that it naturally
 maps to the component structure of your UI. That's because UI and data
 models often have the same information architecture---that is, the same
-shape. Separate your UI into components, where each component matches
-one piece of your data model.
+shape.</p>
+<p>Separate your UI into components, where each component matches
+one piece of your data model.</p>
 
-There are five components on this screen:
+<p>There are five components on this screen:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64. five components (204) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8711,60 +8702,59 @@ height="3.1in"}
 -->
 
 <ol>
-  <li>FilterableProductTable (grey) contains the entire app.<br></li>
-  <li>SearchBar (blue) receives the user input.<br></li>
-  <li>ProductTable (lavender) displays and filters the list according to the user input.<br></li>
-  <li>ProductCategoryRow (green) displays a heading for each category.<br></li>
+  <li>FilterableProductTable (grey) contains the entire app.<br><br></li>
+  <li>SearchBar (blue) receives the user input.<br><br></li>
+  <li>ProductTable (lavender) displays and filters the list according to the user input.<br><br></li>
+  <li>ProductCategoryRow (green) displays a heading for each category.<br><br></li>
   <li>ProductRow (yellow) displays a row for each product.</li>
 </ol>
 
-If you look at ProductTable (lavender), you'll see that the table header
+<p>If you look at ProductTable (lavender), you'll see that the table header
 (containing the "Name" and "Price" labels) isn't its own component. This
 is a matter of preference, and you could go either way. For this
 example, it is a part of ProductTable because it appears inside the
 ProductTable's list. However, if this header grows to be complex (e.g.,
 if you add sorting), you can move it into its own ProductTableHeader
-component.
+component.</p>
 
-Now that you've identified the components in the mockup, arrange them
+<p>Now that you've identified the components in the mockup, arrange them
 into a hierarchy. Components that appear within another component in the
-mockup should appear as a child in the hierarchy:
+mockup should appear as a child in the hierarchy:</p>
 
 <ul>
-<li>FilterableProductTable<br></li>
+  <li>FilterableProductTable<br><br></li>
   <ul>
-    <li>SearchBar<br></li>
-    <li>ProductTable<br></li>
+    <li>SearchBar<br><br></li>
+    <li>ProductTable<br><br></li>
       <ul>
-        <li>ProductCategoryRow<br></li>
+        <li>ProductCategoryRow<br><br></li>
         <li>ProductRow</li>
       </ul>
   </ul>
 </ul>
 
-<h3>Step 2: Build a static version in React</h3>
+<h3>Step 2: Build a static version in React:</h3>
 
-Now that you have your component hierarchy, it's time to implement your
+<p>Now that you have your component hierarchy, it's time to implement your
 app. The most straightforward approach is to build a version that
 renders the UI from your data model without adding any interactivity...
-yet! It's often easier to build the static version first and add
+yet!</p>
+<p>It's often easier to build the static version first and add
 interactivity later. Building a static version requires a lot of typing
 and no thinking, but adding interactivity requires a lot of thinking and
-not a lot of typing.
+not a lot of typing.</p>
 
-To build a static version of your app that renders your data model,
-you'll want to build <a href="https://react.dev/learn/your-first-component">components</a> that reuse
-other components and pass data using <a href="https://react.dev/learn/passing-props-to-a-component">props</a>. Props are a way of passing data from parent to child. (If you're familiar with the
-concept of <a href="https://react.dev/learn/state-a-components-memory">state</a>,
+<p>To build a static version of your app that renders your data model,
+you'll want to build <a href="https://react.dev/learn/your-first-component">components</a> that reuse other components and pass data using <a href="https://react.dev/learn/passing-props-to-a-component">props</a>. Props are a way of passing data from parent to child. (If you're familiar with the concept of <a href="https://react.dev/learn/state-a-components-memory">state</a>,
 don't use state at all to build this static version. State is reserved
 only for interactivity, that is, data that changes over time. Since this
-is a static version of the app, you don't need it.)
+is a static version of the app, you don't need it.)</p>
 
-You can either build "top down" by starting with building the components
+<p>You can either build "top down" by starting with building the components
 higher up in the hierarchy (like FilterableProductTable) or "bottom up"
 by working from components lower down (like ProductRow). In simpler
 examples, it's usually easier to go top-down, and on larger projects,
-it's easier to go bottom-up.
+it's easier to go bottom-up.</p>
 
 <details>
   <summary>App.js</summary>
@@ -8806,31 +8796,31 @@ function ProductTable({ products }) {
 
 <h4>Show more</h4>
 
-(If this code looks intimidating, go through the <a href="https://react.dev/learn">Quick Start</a> first!)
+<p>(If this code looks intimidating, go through the <a href="https://react.dev/learn">Quick Start</a> first!)</p>
 
-After building your components, you'll have a library of reusable
+<p>After building your components, you'll have a library of reusable
 components that render your data model. Because this is a static app,
 the components will only return JSX. The component at the top of the
 hierarchy (FilterableProductTable) will take your data model as a prop.
 This is called one-way data flow because the data flows down from the
-top-level component to the ones at the bottom of the tree.
+top-level component to the ones at the bottom of the tree.</p>
 
 <h4>Pitfall</h4>
 
 <p>At this point, you should not be using any state values. That's for the
 next step!</p>
 
-<h3>Step 3: Find the minimal but complete representation of UI state</h3>
+<h3>Step 3: Find the minimal but complete representation of UI state:</h3>
 
 <p>To make the UI interactive, you need to let users change your underlying
 data model. You will use state for this.</p>
 
 <p>Think of state as the minimal set of changing data that your app needs
 to remember. The most important principle for structuring state is to
-keep it <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener noreferrer">DRY (Don't Repeat Yourself)</a>.
-Figure out the absolute minimal representation of the state your
-application needs and compute everything else on-demand. For example, if
-you're building a shopping list, you can store the items as an array in
+keep it <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank" rel="noopener noreferrer">DRY (Don't Repeat Yourself)</a>.</p>
+<p>Figure out the absolute minimal representation of the state your
+application needs and compute everything else on-demand.</p>
+<p>For example, if you're building a shopping list, you can store the items as an array in
 state. If you want to also display the number of items in the list,
 don't store the number of items as another state value---instead, read
 the length of your array.</p>
@@ -8838,17 +8828,17 @@ the length of your array.</p>
 <p>Now think of all of the pieces of data in this example application:</p>
 
 <ol>
-  <li>The original list of products,<br></li>
-  <li>The search text the user has entered,<br></li>
-  <li>The value of the checkbox,<br></li>
+  <li>The original list of products,<br><br></li>
+  <li>The search text the user has entered,<br><br></li>
+  <li>The value of the checkbox,<br><br></li>
   <li>The filtered list of products.</li>
 </ol>
 
 <p>Which of these are state? Identify the ones that are not:</p>
 
 <ul>
-  <li>Does it remain unchanged over time? If so, it isn't state.<br></li>
-  <li>Is it passed in from a parent via props? If so, it isn't state.<br></li>
+  <li>Does it remain unchanged over time? If so, it isn't state.<br><br></li>
+  <li>Is it passed in from a parent via props? If so, it isn't state.<br><br></li>
   <li>Can you compute it based on existing state or props in your
     component? If so, it <i>definitely</i> isn't state!</li>
 </ul>
@@ -8859,11 +8849,11 @@ the length of your array.</p>
 
 <ol>
   <li>The original list of products is passed in as props, so it's not
-    state.<br></li>
+    state.<br><br></li>
   <li>The search text seems to be state since it changes over time and
-    can't be computed from anything.<br></li>
+    can't be computed from anything.<br><br></li>
   <li>The value of the checkbox seems to be state since it changes over
-    time and can't be computed from anything.<br></li>
+    time and can't be computed from anything.<br><br></li>
   <li>The filtered list of products isn't state because it can be
     computed by taking the original list of products and filtering it
     according to the search text and value of the checkbox.</li>
@@ -8888,11 +8878,11 @@ following these steps!</p>
 <p>For each piece of state in your application:</p>
 
 <ol>
-  <li>Identify every component that renders something based on that state.<br></li>
-  <li>Find their closest common parent component---a component above them all in the hierarchy.<br></li>
-  <li>Decide where the state should live:<br></li>
-  <li>Often, you can put the state directly into their common parent.<br></li>
-  <li>You can also put the state into some component above their common parent.<br></li>
+  <li>Identify every component that renders something based on that state.<br><br></li>
+  <li>Find their closest common parent component---a component above them all in the hierarchy.<br><br></li>
+  <li>Decide where the state should live:<br><br></li>
+  <li>Often, you can put the state directly into their common parent.<br><br></li>
+  <li>You can also put the state into some component above their common parent.<br><br></li>
   <li>If you can't find a component where it makes sense to own the state,
     create a new component solely for holding the state and add it
     somewhere in the hierarchy above the common parent component.</li>
@@ -8906,13 +8896,13 @@ place.</p>
 <p>Now let's run through our strategy for them:</p>
 
 <ol>
-  <li>Identify components that use state:<br></li>
+  <li>Identify components that use state:<br><br></li>
   <li>ProductTable needs to filter the product list based on that state
-    (search text and checkbox value).<br></li>
+    (search text and checkbox value).<br><br></li>
   <li>SearchBar needs to display that state (search text and checkbox
-    value).<br></li>
+    value).<br><br></li>
   <li>Find their common parent: The first parent component both components
-    share is FilterableProductTable.<br></li>
+    share is FilterableProductTable.<br><br></li>
   <li>Decide where the state lives: We'll keep the filter text and checked
     state values in FilterableProductTable.</li>
 </ol>
