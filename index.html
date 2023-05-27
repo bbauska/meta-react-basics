@@ -3618,9 +3618,7 @@ Changing a component from a function declaration to a function
 expression doesn't change its behavior, or how you write the code to
 render the <b>Nav</b> component. It's still the same:
 
-<pre>
-&lt;Nav first="Home" /&gt;
-</pre>
+<pre>&lt;Nav first="Home" /&gt;</pre>
 
 You can also take this concept a step further, using arrow functions.
 
@@ -3632,15 +3630,13 @@ One of the main benefits of using arrow functions is its shorter syntax.
 
 Consider the Nav function expression written as an arrow function:
 
-<pre>
-const Nav = (props) =&gt; {
+<pre>const Nav = (props) =&gt; {
   return (
     &lt;ul&gt;
       &lt;li&gt;{props.first}&lt;/li&gt;
     &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 So, the way to think about this is the following:
 
@@ -3652,15 +3648,11 @@ So, the way to think about this is the following:
 
 -   To reiterate, take the smallest possible <b>anonymous ES5 function</b>:
 
-<pre>
-const example = function() {}
-</pre>
+<pre>const example = function() {}</pre>
 
 And then observe how this is written as an arrow function:
 
-<pre>
-const example = () =&gt; {}
-</pre>
+<pre>const example = () =&gt; {}</pre>
 
 Another important rule regarding arrow functions is that using the
 parentheses is optional if there's a single parameter that a function
@@ -3669,15 +3661,13 @@ accepts.
 In other words, another correct way to write the previous Nav arrow
 function component would be to drop the parentheses around 'props':
 
-<pre>
-const Nav = props =&gt; {
+<pre>const Nav = props =&gt; {
   return (
     &lt;ul&gt;
       &lt;li&gt;{props.first}&lt;/li&gt;
     &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 In all other cases, when you write arrow functions, <b>for any number of
 parameters other than a single parameter, using parentheses around
@@ -3686,15 +3676,13 @@ parameters is compulsory</b>.
 For example, if your <b>Nav</b> component wasn't accepting any parameters,
 you'd code it with empty parentheses:
 
-<pre>
-const Nav = () =&gt; {
+<pre>const Nav = () =&gt; {
   return (
     &lt;ul&gt;
       &lt;li&gt;Home&lt;/li&gt;
     &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 Another interesting thing about arrow functions is the <b>implicit
 return</b>. However, it only works if it's on the same line of code as
@@ -3704,9 +3692,7 @@ entire component is a single line of code.
 To demonstrate how this works, let's re-write the <b>Nav</b> component as a
 one-liner:
 
-<pre>
-const Nav = () =&gt; &lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/ul&gt;
-</pre>
+<pre>const Nav = () =&gt; &lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/ul&gt;</pre>
 
 Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
@@ -3720,9 +3706,7 @@ example, the <b>forEach()</b> built-in array method.
 
 For example:
 
-<pre>
-[10, 20, 30].forEach(item =&gt; item * 10)
-</pre>
+<pre>[10, 20, 30].forEach(item =&gt; item * 10)</pre>
 
 The output of the above vanilla JavaScript line of code would be three
 number values:
@@ -3750,18 +3734,14 @@ an array. The <b>forEach()</b> method accepts a single parameter: <b>an
 anonymous function</b>. If you write this anonymous function in ES5
 syntax, then it would contain a return statement:
 
-<pre>
-function(item) {
+<pre>function(item) {
     return item * 10
-}
-</pre>
+}</pre>
 
 If you write it as an ES6 function instead, it can be simplified as one
 line:
 
-<pre>
-item =&gt; item * 10
-</pre>
+<pre>item =&gt; item * 10</pre>
 
 Both these functions perform the exact same task. Only the syntax is
 different. The ES6 function is a lot shorter because:
@@ -3844,15 +3824,13 @@ functions inside of JSX expressions.
 You are likely familiar with the structure of an if\...else conditional.
 Here is a quick refresher:
 
-<pre>
-let name = 'Bob';
+<pre>let name = 'Bob';
 
 if (name == 'Bob') {
   console.log('Hello, Bob');
 } else {
   console.log('Hello, Friend');
-};
-</pre>
+};</pre>
 
 The above code works as follows:
 
@@ -3885,9 +3863,7 @@ engine returns will be the boolean value of <b>false</b>.
 Here is the code that reflects the explanation in the previous
 paragraph:
 
-<pre>
-name == 'Bob' ?
-</pre>
+<pre>name == 'Bob' ?</pre>
 
 Note that the above code is incompleted. I have the condition that I'm
 checking (the <b>name == 'Bob'</b> part). I also have the <b>?</b>
@@ -3897,9 +3873,7 @@ character, which is the colon, that is the <b>:</b> character. This
 character is placed after the question mark character. I can now expand
 my code to include this as well:
 
-<pre>
-name == 'Bob' ? :
-</pre>
+<pre>name == 'Bob' ? :</pre>
 
 This brings me a step closer to completing my ternary operator. Although
 I've added the characters needed to construct the ternary operator, I
@@ -3908,35 +3882,29 @@ still need to add the return values. In other words, if <b>name ==
 Bob!". Otherwise, I want to return the words "I don't know this
 person".
 
-<pre>
-name == Bob ? "Yes, it is Bob" : "I don't know this person";
-</pre>
+<pre>name == Bob ? "Yes, it is Bob" : "I don't know this person";</pre>
 
 This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the <b>if</b>
 statement. To prove that this is really the case, here's my starting
 if\...else example, written as a ternary operator:
 
-<pre>
-let name = 'Bob';
+<pre>let name = 'Bob';
 
-name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
-</pre>
+name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');</pre>
 
 <h3>Using ternary expressions in JSX</h3>
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
 
-<pre>
-function Example() {
+<pre>function Example() {
   return (
-    <div className="heading">
-      <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
-    </div>
+    &lt;div className="heading"&gt;
+      &lt;h1&gt;{Math.random() &gt;= 0.5 ? "Over 0.5" : "Under 0.5"}&lt;/h1&gt;
+    &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
 want it to parse the code inside as regular JavaScript.
@@ -3945,13 +3913,11 @@ Then, inside the curly braces, you can add a ternary statement. Every
 ternary statement conceptually, expressed in pseudo-code, works like
 this:
 
-<pre>
-comparison ? true : false
-</pre>
+<pre>comparison ? true : false</pre>
 
 In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
-the >= (greater-than-or-equal-to operator), to return a Boolean value.
+the &gt;= (greater-than-or-equal-to operator), to return a Boolean value.
 If the result of the comparison evaluates to <b>true</b>, then the string
 "Over 0.5" gets returned. In other words, whatever sits between the
 question mark and the semi-colon character will get returned. Otherwise,
@@ -3973,17 +3939,15 @@ that return value is <b>undefined</b>.
 Like the previous example, you can use function invocation inside JSX to
 return a random number:
 
-<pre>
-function Example2() {
+<pre>function Example2() {
   return (
-    <div className="heading">
-      <h1>Here's a random number from 0 to 10: 
+    &lt;div className="heading"&gt;
+      &lt;h1&gt;Here's a random number from 0 to 10: 
         { Math.floor(Math.random() * 10) + 1 }
-      </h1>
-    </div>
+      &lt;/h1&gt;
+    &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 In the <b>Example2</b> component, built-in <b>Math.floor()</b> and
 <b>Math.random()</b> methods are being used, as well as some number values
@@ -3991,16 +3955,14 @@ and arithmetic operators, to display a random number between 0 and 10.
 
 You can also extract this functionality into a separate function:
 
-<pre>
-function Example3() {
-  const getRandomNum = () => Math.floor(Math.random() * 10) + 1
+<pre>function Example3() {
+  const getRandomNum = () =&gt; Math.floor(Math.random() * 10) + 1
     return (
-      <div className="heading">
-        <h1>Here's a random number from 0 to 10: { getRandomNum() }</h1>
-      </div>
+      &lt;div className="heading"&gt;
+        &lt;h1&gt;Here's a random number from 0 to 10: { getRandomNum() }&lt;/h1&gt;
+      &lt;/div&gt;
     );
-};
-</pre>
+};</pre>
 
 The <b>getRandomNum()</b> function can also be written as a function
 declaration, or as a function expression. It does not have to be an
@@ -4011,19 +3973,15 @@ function declaration.
 
 <h4>Function expression:</h4>
 
-<pre>
-const getRandomNum = function() {
+<pre>const getRandomNum = function() {
   return Math.floor(Math.random() * 10) + 1
-} ;
-</pre>
+} ;</pre>
 
 <h4>Function declaration:</h4>
 
-<pre>
-function getRandomNum() {
+<pre>function getRandomNum() {
   return Math.floor(Math.random() *10) + 1
-};
-</pre>
+};</pre>
 
 Of course, there are many other examples. The ones used here are there
 to help you understand how versatile and seamless the JSX syntax is. As
@@ -4047,20 +4005,19 @@ For example:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-const bool = false; 
+<pre>const bool = false; 
   
 function Example(props) {
   return (
-    <h2>The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}</h2>
+    &lt;h2&gt;The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}&lt;/h2&gt;
   );
 };
   
 export default function App() { 
   return ( 
-    <div className="App"> 
-      <Example toggleBoolean={!bool} />
-    </div> 
+    &lt;div className="App"&gt; 
+      &lt;Example toggleBoolean={!bool} /&gt;
+    &lt;/div&gt; 
   ); 
 };
 </pre>
@@ -4084,34 +4041,32 @@ screen.
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-const bool = false;
+<pre>const bool = false;
 const str1 = "just";
   
 function Example(props) {
   return (
-    <div>
-      <h2>
+    &lt;div&gt;
+      &lt;h2&gt;
         The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
-      </h2>
-      <p>The value of the math prop is: <em>{props.math}</em></p>
-      <p>The value of the str prop is: <em>{props.str}</em></p>
-    </div>
+      &lt;/h2&gt;
+      &lt;p&gt;The value of the math prop is: &lt;em&gt;{props.math}&lt;/em&gt;&lt;/p&gt;
+      &lt;p&gt;The value of the str prop is: &lt;em&gt;{props.str}&lt;/em&gt;&lt;/p&gt;
+    &lt;/div&gt;
   );
 };
 
 export default function App() {
   return (
-    <div className="App">
-      <Example
+    &lt;div className="App"&gt;
+      &lt;Example
         toggleBoolean={!bool}
         math={(10 + 20) / 3}
         str={str1 + ' another ' + 'string'}
-      />
-    </div>
+      /&gt;
+    &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 </details>
 
@@ -4174,24 +4129,22 @@ Here's the completed App.js file:
 <details>
   <summary>App.js</summary>
 
-<pre>
-import "./App.css";
+<pre>import "./App.css";
 
 import Card from "./Card";
   
 function App() {
   return (
-    <div className="App">
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
+    &lt;div className="App"&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card h2="First card's h2" h3="First card's h3" /&gt;
+      &lt;Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      &lt;Card h2="Third card's h2" h3="Third card's h3" /&gt;
+    &lt;/div&gt;
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -4200,18 +4153,16 @@ Here's the completed Card.js file:
 <details>
   <summary>Card.js</summary>
   
-<pre>
-function Card(props) {
+<pre>function Card(props) {
   return (
-    <div className="card">
-      <h2>{props.h2}</h2>
-      <h3>{props.h3}</h3>
-    </div>
+    &lt;div className="card"&gt;
+      &lt;h2&gt;{props.h2}&lt;/h2&gt;
+      &lt;h3&gt;{props.h3}&lt;/h3&gt;
+    &lt;/div&gt;
   );
 };
  
-export default Card;
-</pre>
+export default Card;</pre>
 
 </details>
 
@@ -4229,11 +4180,9 @@ Here is the output from the completed solution code:
 <b>Step 1.</b> Your first task was to add a Card.js file, and inside of
 that file, declare a <b>Card</b> function.  
 
-<pre>
-function Card(props) {
+<pre>function Card(props) {
     
-};
-</pre>
+};</pre>
 
 <b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you added a
 <b>return</b> statement with two parentheses after it, to allow the
@@ -4463,12 +4412,12 @@ import Card from "./Card";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
+    &lt;div className="App"&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      &lt;Card h2="First card's h2" h3="First card's h3" /&gt;
+      &lt;Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      &lt;Card h2="Third card's h2" h3="Third card's h3" /&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -4977,8 +4926,7 @@ function expression.
 <details>
   <summary>JS Function</summary>
 
-<pre>
-function App() {
+<pre>function App() {
   const fourthExample = () =&gt; console.log('fourth example');
   return (
     &lt;div className="fourthExample"&gt;
@@ -4989,8 +4937,7 @@ function App() {
   );
 };
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -5127,8 +5074,7 @@ Here is the output from the solution code for the App.js file:
 <b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
 closing <b>button</b> tag, to the App component's <b>h1</b> element . 
 
-<pre>
-function App() {
+<pre>function App() {
   return (
     &lt;div&gt;
       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
@@ -5137,14 +5083,12 @@ function App() {
   );
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 <b>Step 2.</b> In between the opening and closing <b>button</b> tags, you
 added the following text: Guess the number between 1 and 3. 
 
-<pre>
-function App() {
+<pre>function App() {
   return (
     &lt;div&gt;
       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
@@ -5153,8 +5097,7 @@ function App() {
   );
 }
 
-export default App;
-</pre>
+export default App;</pre>
 
 <b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
 <b>onClick</b> event-handling attribute, and passed it the following JSX
@@ -5922,12 +5865,10 @@ In React, you specify a CSS class with className. It works the same way as the H
 
 Then you write the CSS rules for it in a separate CSS file:
 
-<pre>
-/* In your CSS */
+<pre>/* In your CSS */
   .avatar {
     border-radius: 50%;
-  }
-</pre>
+  }</pre>
 
 <p>React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank" rel="noopener noreferrer">[&lt;link&gt;]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.</p>
 
@@ -5949,14 +5890,12 @@ passes the "avatar" string as the CSS class, but src={user.imageUrl}
 reads the JavaScript user.imageUrl variable value, and then passes that
 value as the src attribute:
 
-<pre>
-return (
+<pre>return (
   <img
     className="avatar"
     src={user.imageUrl}
   />
-);
-</pre>
+);</pre>
 
 You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary" target="_blank" rel="noopener noreferrer">string concatenation</a>:
 
@@ -6280,8 +6219,7 @@ First, move the state up from MyButton into MyApp:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function MyApp() {
+<pre>export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
@@ -6296,8 +6234,7 @@ export default function MyApp() {
 }
 function MyButton() {
   // ... we're moving code from here ...
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6309,8 +6246,7 @@ curly braces, just like you previously did with built-in tags like
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function MyApp() {
+<pre>export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
@@ -6322,8 +6258,7 @@ export default function MyApp() {
       &lt;MyButton count={count} onClick={handleClick} /&gt;
     &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6334,15 +6269,13 @@ and <i>passes both of them down as props</i> to each of the buttons.
 Finally, change MyButton to <i>read</i> the props you have passed from its
 parent component:
 
-<pre>
-function MyButton({ count, onClick }) {
+<pre>function MyButton({ count, onClick }) {
   return (
     &lt;button onClick={onClick}&gt;
       Clicked {count} times
     &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 When you click the button, the onClick handler fires. Each button's
 onClick prop was set to the handleClick function inside MyApp, so the
@@ -6355,8 +6288,7 @@ components.
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
@@ -6370,13 +6302,13 @@ export default function MyApp() {
     &lt;/div&gt;
   );
 }
- function MyButton({ count, onClick }) {
- return (
- &lt;button onClick={onClick}&gt;
- Clicked {count} times
- &lt;/button&gt;
- );
- }
+function MyButton({ count, onClick }) {
+  return (
+    &lt;button onClick={onClick}&gt;
+      Clicked {count} times
+    &lt;/button&gt;
+  );
+}
 </pre>
 
 </details>
@@ -6394,19 +6326,14 @@ tutorial does not assume any existing React knowledge. The techniques
 you'll learn in the tutorial are fundamental to building any React app,
 and fully understanding it will give you a deep understanding of React.
 
-The tutorial is divided into several sections:
+<p>The tutorial is divided into several sections:</p>
 
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial" target="_blank" rel="noopener noreferrer">Setup for the tutorial</a> will
-    give you a starting point to follow the tutorial.
-
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#overview" target="_blank" rel="noopener noreferrer">Overview</a> will
-    teach you the fundamentals of React: components, props, and state.
-
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game" target="_blank" rel="noopener noreferrer">Completing the game</a> will
-    teach you the most common techniques in React development.
-
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel" target="_blank" rel="noopener noreferrer">Adding time travel</a> will
-    give you a deeper insight into the unique strengths of React.
+<ul>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial" target="_blank" rel="noopener noreferrer">Setup for the tutorial</a> will  give you a starting point to follow the tutorial,</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#overview" target="_blank" rel="noopener noreferrer">Overview</a> will teach you the fundamentals of React: components, props, and state,</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game" target="_blank" rel="noopener noreferrer">Completing the game</a> will teach you the most common techniques in React development,</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel" target="_blank" rel="noopener noreferrer">Adding time travel</a> will give you a deeper insight into the unique strengths of React.</p></li>
+</ul>
 
 <h3>What are you building?</h3>
 
@@ -6456,8 +6383,7 @@ function Board({ xIsNext, squares, onPlay }) {
       /&gt;
       &lt;Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)}
       /&gt;
-    &lt;/div&gt;
-</pre>
+    &lt;/div&gt;</pre>
 
 </details>
 
@@ -6485,37 +6411,29 @@ the starter code for this tutorial.
 
 <h4>App.js</h4>
 
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 <h4>Note</h4>
 
 You can also follow this tutorial using your local development
 environment. To do this, you need to:
 
-1.  Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js</a>,
+<ol>
+  <li><p>Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js,</a>,</p></li>
+  <li><p>In the CodeSandbox tab you opened earlier, press the top-left corner button to open the menu, and then choose File &gt; Export to ZIP in that menu to download an archive of the files locally,</p></li>
+  <li><p>Unzip the archive, then open a terminal and cd to the directory you unzipped,</p></li>
+  <li><p>Install the dependencies with npm install,</p></li>
+  <li>Run npm start to start a local server and follow the prompts to view the code running in a browser</p></li>
+</ol>
 
-2.  In the CodeSandbox tab you opened earlier, press the top-left corner
-    button to open the menu, and then choose File &gt; Export to ZIP in
-    that menu to download an archive of the files locally
-
-3.  Unzip the archive, then open a terminal and cd to the directory you
-    unzipped
-
-4.  Install the dependencies with npm install
-
-5.  Run npm start to start a local server and follow the prompts to view
-    the code running in a browser
-
-If you get stuck, don't let this stop you! Follow along online instead
-and try a local setup again later.
+<p>If you get stuck, don't let this stop you! Follow along online instead
+and try a local setup again later.</p>
 
 <h4>Overview</h4>
 
-Now that you're set up, let's get an overview of React!
+<p>Now that you're set up, let's get an overview of React!</p>
 
 <h4>Inspecting the starter code</h4>
 
@@ -6530,23 +6448,18 @@ In CodeSandbox you'll see three main sections:
 </p>
 <!-- {width="5.0in" height="2.3164555993000877in"} -->
 
-1.  The Files section with a list of files
-    like App.js, index.js, styles.css and a folder called public
+<ol>
+  <li><p>The Files section with a list of files like App.js, index.js, styles.css and a folder called public,</p></li>
+  <li>The code editor where you'll see the source code of your selected file,</p></li>
+  <li>The browser section where you'll see how the code you've written will be displayed.</p></li>
+</ol>
 
-2.  The code editor where you'll see the source code of your selected
-    file
+<p>The App.js file should be selected in the <i>Files</i> section. The contents
+of that file in the <i>code editor</i> should be:</p>
 
-3.  The browser section where you'll see how the code you've written
-    will be displayed
-
-The App.js file should be selected in the <i>Files</i> section. The contents
-of that file in the <i>code editor</i> should be:
-
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 The browser section should be displaying a square with a X in it like
 this:
@@ -6570,22 +6483,18 @@ Components are used to render, manage, and update the UI elements in
 your application. Let's look at the component line by line to see what's
 going on:
 
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 The first line defines a function called Square. The export JavaScript
 keyword makes this function accessible outside of this file. The default
 keyword tells other files using your code that it's the main function in
 your file.
 
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
@@ -6596,9 +6505,7 @@ CSS how to style the button. X is the text displayed inside of the
 button and &lt;/button&gt; closes the JSX element to indicate that any
 following content shouldn't be placed inside the button.
 
-<pre>
-styles.css 
-</pre>
+<pre>styles.css</pre>
 
 Click on the file labeled styles.css in the <i>Files</i> section of
 CodeSandbox. This file defines the styles for your React app. The first
@@ -6607,37 +6514,32 @@ your app while the .square selector defines the style of any component
 where the className property is set to square. In your code, that would
 match the button from your Square component in the App.js file.
 
-<pre>
-index.js 
-</pre>
+<pre>index.js</pre>
 
 Click on the file labeled index.js in the <i>Files</i> section of
 CodeSandbox. You won't be editing this file during the tutorial but it
 is the bridge between the component you created in the App.js file and
 the web browser.
 
-<pre>
-import {Strict Mode} from 'react';
+<pre>import {Strict Mode} from 'react';
 
 import {createRoot} from 'react-dom/client';
 
 import './styles.css';
 
-import App from './App';
-</pre>
+import App from './App';</pre>
 
 Lines 1-5 brings all the necessary pieces together:
 
--   React
+<ul>
+<li><p>React,</p></li>
+<li>React's library to talk to web browsers (React DOM),</p></li>
+<li>The styles for your components,</p></li>
+<li>The component you created in App.js.</p></li>
+</ul>
 
--   React's library to talk to web browsers (React DOM)
-
--   the styles for your components
-
--   the component you created in App.js.
-
-The remainder of the file brings all the pieces together and injects the
-final product into index.html in the public folder.
+<p>The remainder of the file brings all the pieces together and injects the
+final product into index.html in the public folder.</p>
 
 <h4>Building the board</h4>
 
@@ -6647,12 +6549,10 @@ tutorial.
 Currently the board is only a single square, but you need nine! If you
 just try and copy paste your square to make two squares like this:
 
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;&lt;button
   className="square"&gt;X&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 You'll get this error:
 
@@ -6666,16 +6566,14 @@ adjacent JSX elements like two buttons. To fix this you can use
 fragments (&lt;> and &lt;/>) to wrap multiple adjacent JSX elements like
 this:
 
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return (
     &lt;&gt;
     &lt;button className="square"&gt;X&lt;/button&gt;
     &lt;button className="square"&gt;X&lt;/button&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 Now you should see:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6711,8 +6609,7 @@ In the App.js file, update the Square component to look like this:
 <details>
   <summary>App.js</summary>
 
-<pre>
-export default function Square() {
+<pre>export default function Square() {
   return (
     &lt;&gt;
       &lt;div className="board-row"&gt;
@@ -6732,8 +6629,7 @@ export default function Square() {
       &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6753,19 +6649,16 @@ styled divs you have your tic-tac-toe board:
 But you now have a problem. Your component named Square, really isn't a
 square anymore. Let's fix that by changing the name to Board:
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   //...
-}
-</pre>
+}</pre>
 
 At this point your code should look something like this:
 
 <details>
   <summary>App.js</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   return (
     &lt;&gt;
     &lt;div className="board-row"&gt;
@@ -6785,8 +6678,7 @@ export default function Board() {
     &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6809,15 +6701,13 @@ First, you are going to copy the line defining your first square
 (&lt;button className="square"&gt;1&lt;/button&gt;) from your Board component
 into a new Square component:
 
-<pre>
-function Square() {
+<pre>function Square() {
   return &lt;button className="square"&gt;1&lt;/button&gt;;
 }
 
 export default function Board() {
   // ...
-}
-</pre>
+}</pre>
 
 Then you'll update the Board component to render that Square component
 using JSX syntax:
@@ -6825,8 +6715,7 @@ using JSX syntax:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-// ...
+<pre>// ...
 export default function Board() {
   return (
     &lt;&gt;
@@ -6847,8 +6736,7 @@ export default function Board() {
     &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6873,11 +6761,9 @@ should have from the parent component (Board) to its child (Square).
 Update the Square component to read the value prop that you'll pass from
 the <b>Board:</b>
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   return &lt;button className="square"&gt;1&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 function Square({ value }) indicates the Square component can be passed
 a prop called value.
@@ -6885,11 +6771,9 @@ a prop called value.
 Now you want to display that value instead of 1 inside every square. Try
 doing it like this:
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   return &lt;button className="square"&gt;value&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 Oops, this is not what you wanted:
 
@@ -6907,11 +6791,9 @@ You wanted to render the JavaScript variable called value from your
 component, not the word "value". To "escape into JavaScript" from JSX,
 you need curly braces. Add curly braces around value in JSX like so:
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   return &lt;button className="square"&gt;{value}&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 For now, you should see an empty board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6931,8 +6813,7 @@ each Square component rendered by the Board component:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   return (
     &lt;&gt;
     &lt;div className="board-row"&gt;
@@ -6952,8 +6833,7 @@ export default function Board() {
     &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6973,8 +6853,7 @@ Your updated code should look like this:
 <details>
   <summary>App.js</summary>
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   return &lt;button className="square"&gt;{value}&lt;/button&gt;;
 }
 
@@ -6998,8 +6877,7 @@ export default function Board() {
     &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7009,8 +6887,7 @@ Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
 the props of the button JSX element returned from the Square:
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   function handleClick() {
     console.log('clicked!');
   }
@@ -7022,8 +6899,7 @@ function Square({ value }) {
     {value}
     &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 If you click on a square now, you should see a log saying "clicked!"
 in the Console tab at the bottom of the Browser section in CodeSandbox.
@@ -7052,8 +6928,7 @@ Import useState at the top of the file. Remove the value prop from the
 Square component. Instead, add a new line at the start of the Square
 that calls useState. Have it return a state variable called value:
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 
 function Square() {
 
@@ -7061,8 +6936,7 @@ const [value, setValue] = useState(null);
 
 function handleClick() {
 
-//...
-</pre>
+//...</pre>
 
 value stores the value and setValue is a function that can be used to
 change the value. The null passed to useState is used as the initial
@@ -7075,8 +6949,7 @@ the Board component:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-// ...
+<pre>// ...
 export default function Board() {
   return (
     &lt;&gt;
@@ -7097,8 +6970,7 @@ export default function Board() {
     &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7109,8 +6981,7 @@ Square component looks like this:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Square() {
+<pre>function Square() {
   const [value, setValue] = useState(null);
   function handleClick() {
     setValue('X');
@@ -7123,8 +6994,7 @@ function Square() {
       {value}
     &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7151,8 +7021,7 @@ After you've made the above changes, your code will look like this:
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square() {
   const [value, setValue] = useState(null);
   function handleClick() {
@@ -7183,8 +7052,7 @@ export default function Board() {
     &lt;div className="board-row"&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
-      &lt;Square /&gt;
-</pre>
+      &lt;Square /&gt;</pre>
 
 </details>
 
@@ -7260,15 +7128,13 @@ Let's take this opportunity to try it out. Edit the Board component so
 that it declares a state variable named squares that defaults to an
 array of 9 nulls corresponding to the 9 squares:
 
-<pre>
-// ...
+<pre>// ...
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     // ...
   );
-}
-</pre>
+}</pre>
 
 Array(9).fill(null) creates an array with nine elements and sets each of
 them to null. The useState() call around it declares a squares state
@@ -7276,9 +7142,7 @@ variable that's initially set to that array. Each entry in the array
 corresponds to the value of a square. When you fill the board in later,
 the squares array will look like this:
 
-<pre>
-['O', null, 'X', 'X', 'X', 'O', 'O', null, null]
-</pre>
+<pre>['O', null, 'X', 'X', 'X', 'O', 'O', null, null]</pre>
 
 Now your Board component needs to pass the value prop down to each
 Square that it renders:
@@ -7286,8 +7150,7 @@ Square that it renders:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
 const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     &lt;&gt;
@@ -7308,8 +7171,7 @@ const [squares, setSquares] = useState(Array(9).fill(null));
     &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7317,11 +7179,9 @@ Next, you'll edit the Square component to receive the value prop from
 the Board component. This will require removing the Square component's
 own stateful tracking of value and the button's onClick prop:
 
-<pre>
-function Square({value}) {
+<pre>function Square({value}) {
   return &lt;button className="square"&gt;{value}&lt;/button&gt;;
-}
-</pre>
+}</pre>
 
 At this point you should see an empty tic-tac-toe board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7339,8 +7199,7 @@ And your code should look like this:
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 
 function Square({ value }) {
   return &lt;button className="square"&gt;{value}&lt;/button&gt;;
@@ -7366,8 +7225,7 @@ export default function Board() {
       &lt;/div&gt;
     &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7386,36 +7244,31 @@ square is clicked. You'll start with the function that the Square
 component will call when it is clicked. You'll call that function
 onSquareClick:
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   return (
     &lt;button className="square" onClick={onSquareClick}&gt;
       {value}
     &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 Next, you'll add the onSquareClick function to the Square component's
 props:
 
-<pre>
-function Square({ value, onSquareClick }) {
+<pre>function Square({ value, onSquareClick }) {
   return (
     &lt;button className="square" onClick={onSquareClick}&gt;
       {value}
     &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 Now you'll connect the onSquareClick prop to a function in the Board
 component that you'll name handleClick. To connect onSquareClick to
 handleClick you'll pass a function to the onSquareClick prop of the
 first Square component:
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     &lt;&gt;
@@ -7423,14 +7276,12 @@ export default function Board() {
     &lt;Square value={squares[0]} onSquareClick={handleClick} /&gt;
     //...
   );
-}
-</pre>
+}</pre>
 
 Lastly, you will define the handleClick function inside the Board
 component to update the squares array holding your board's state:
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   function handleClick() {
     const nextSquares = squares.slice();
@@ -7440,8 +7291,7 @@ export default function Board() {
   return (
     // ...
   )
-}
-</pre>
+}</pre>
 
 The handleClick function creates a copy of the squares array
 (nextSquares) with the JavaScript slice() Array method. Then,
@@ -7468,8 +7318,7 @@ left square (0). Let's update handleClick to be able to update any
 square. Add an argument i to the handleClick function that takes the
 index of the square to update:
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   function handleClick(i) {
     const nextSquares = squares.slice();
@@ -7479,16 +7328,13 @@ export default function Board() {
   return (
     // ...
   )
-}
-</pre>
+}</pre>
 
 Next, you will need to pass that i to handleClick. You could try to set
 the onSquareClick prop of square to be handleClick(0) directly in the
 JSX like this, but it won't work:
 
-<pre>
-&lt;Square value={squares[0]} onSquareClick={handleClick(0)} /&gt;
-</pre>
+<pre>&lt;Square value={squares[0]} onSquareClick={handleClick(0)} /&gt;</pre>
 
 Here is why this doesn't work. The handleClick(0) call will be a part of
 rendering the board component. Because handleClick(0) alters the state
@@ -7518,8 +7364,7 @@ This would solve the infinite loop.
 However, defining nine different functions and giving each of them a
 name is too verbose. Instead, let's do this:
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   // ...
   return (
     &lt;&gt;
@@ -7528,8 +7373,7 @@ export default function Board() {
     /&gt;
     // ...
   );
-}
-</pre>
+}</pre>
 
 Notice the new () =&gt; syntax. Here, () =&gt; handleClick(0) is an <i>arrow
 function,</i> which is a shorter way to define functions. When the square
@@ -7543,8 +7387,7 @@ of the handleClick corresponds to the index of the correct square:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   // ...
   return (
     &lt;&gt;
@@ -7574,8 +7417,7 @@ export default function Board() {
    &lt;/div&gt;
    &lt;/&gt;
   );
-};
-</pre>
+};</pre>
 
 </details>
 
@@ -7599,8 +7441,7 @@ This is what your code should look like:
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
     &lt;button className="square" onClick={onSquareClick}&gt;
@@ -7640,8 +7481,7 @@ export default function Board() {
       /&gt;
       &lt;Square value={squares[8]} onSquareClick={() =&gt; handleClick(8)}
       /&gt;
-    &lt;/div&gt;
-</pre>
+    &lt;/div&gt;</pre>
 
 </details>
 
@@ -7698,29 +7538,25 @@ approach is to replace the data with a new copy which has the desired
 changes. Here is what it would look like if you mutated the squares
 array:
 
-<pre>
- const squares = [null, null, null, null, null, null, null, null,
- null];
+<pre>const squares = [null, null, null, null, null, null, null, null,
+  null];
 
- squares[0] = 'X';
+squares[0] = 'X';
 
- // Now `squares` is ["X", null, null, null, null, null, null,
- null, null];
-</pre>
+// Now `squares` is ["X", null, null, null, null, null, null,
+  null, null];</pre>
 
 And here is what it would look like if you changed data without mutating
 the squares array:
 
-<pre>
- const squares = [null, null, null, null, null, null, null, null,
- null];
+<pre>const squares = [null, null, null, null, null, null, null, null,
+  null];
 
- const nextSquares = ['X', null, null, null, null, null, null, null,
- null];
+const nextSquares = ['X', null, null, null, null, null, null, null,
+  null];
 
- // Now `squares` is unchanged, but `nextSquares` first element is
- 'X' rather than `null`
-</pre>
+// Now `squares` is unchanged, but `nextSquares` first element is
+'X' rather than `null`</pre>
 
 The result is the same but by not mutating (changing the underlying
 data) directly, you gain several benefits.
@@ -7752,13 +7588,11 @@ cannot be marked on the board.
 You'll set the first move to be "X" by default. Let's keep track of this
 by adding another piece of state to the Board component:
 
-<pre>
-function Board() {
+<pre>function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
   // ...
-}
-</pre>
+}</pre>
 
 Each time a player moves, xIsNext (a boolean) will be flipped to
 determine which player goes next and the game's state will be saved.
@@ -7768,8 +7602,7 @@ xIsNext:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
   function handleClick(i) {
@@ -7785,8 +7618,7 @@ export default function Board() {
   return (
     //...
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7862,8 +7694,7 @@ should look like at this point:
     &lt;Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)}
     /&gt;
   &lt;/div&gt;
-  &lt;div className="board-row"&gt;
-</pre>
+  &lt;div className="board-row"&gt;</pre>
 
 </details>
 
@@ -7879,8 +7710,7 @@ it's not specific to React:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   //...
 }
 function calculateWinner(squares) {
@@ -7902,8 +7732,7 @@ function calculateWinner(squares) {
     }
   }
   return null;
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -7918,15 +7747,13 @@ handleClick function to check if a player has won. You can perform this
 check at the same time you check if a user has clicked a square that
 already has a X or and O. We'd like to return early in both cases:
 
-<pre>
-function handleClick(i) {
+<pre>function handleClick(i) {
   if (squares[i] || calculateWinner(squares)) {
     return;
   }
   const nextSquares = squares.slice();
   //...
-}
-</pre>
+}</pre>
 
 To let the players know when the game is over, you can display text such
 as "Winner: X" or "Winner: O". To do that you'll add a status section to
@@ -7965,8 +7792,7 @@ Here is what the code should look like:
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square({value, onSquareClick}) {
   return (
     &lt;button className="square" onClick={onSquareClick}&gt;
@@ -7999,33 +7825,33 @@ if (winner) {
   status = 'Next player: ' + (xIsNext ? 'X' : 'O');
 }
   return (
-    <&gt;
-    <div className="status"&gt;{status}</div&gt;
-    <div className="board-row"&gt;
-      <Square value={squares[0]} onSquareClick={() =&gt; handleClick(0)}
+    &lt;&gt;
+    &lt;div className="status"&gt;{status}&lt;/div&gt;
+    &lt;div className="board-row"&gt;
+      &lt;Square value={squares[0]} onSquareClick={() =&gt; handleClick(0)}
       /&gt;
-      <Square value={squares[1]} onSquareClick={() =&gt; handleClick(1)}
+      &lt;Square value={squares[1]} onSquareClick={() =&gt; handleClick(1)}
       /&gt;
-      <Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)}
+      &lt;Square value={squares[2]} onSquareClick={() =&gt; handleClick(2)}
       /&gt;
-    </div&gt;
-    <div className="board-row"&gt;
-      <Square value={squares[3]} onSquareClick={() =&gt; handleClick(3)}
+    &lt;/div&gt;
+    &lt;div className="board-row"&gt;
+      &lt;Square value={squares[3]} onSquareClick={() =&gt; handleClick(3)}
       /&gt;
-      <Square value={squares[4]} onSquareClick={() =&gt; handleClick(4)}
+      &lt;Square value={squares[4]} onSquareClick={() =&gt; handleClick(4)}
       /&gt;
-      <Square value={squares[5]} onSquareClick={() =&gt; handleClick(5)}
+      &lt;Square value={squares[5]} onSquareClick={() =&gt; handleClick(5)}
       /&gt;
-    </div&gt;
-    <div className="board-row"&gt;
-      <Square value={squares[6]} onSquareClick={() =&gt; handleClick(6)}
+    &lt;/div&gt;
+    &lt;div className="board-row"&gt;
+      &lt;Square value={squares[6]} onSquareClick={() =&gt; handleClick(6)}
       /&gt;
-      <Square value={squares[7]} onSquareClick={() =&gt; handleClick(7)}
+      &lt;Square value={squares[7]} onSquareClick={() =&gt; handleClick(7)}
       /&gt;
-      <Square value={squares[8]} onSquareClick={() =&gt; handleClick(8)}
+      &lt;Square value={squares[8]} onSquareClick={() =&gt; handleClick(8)}
       /&gt;
-    </div&gt;
-    </&gt;
+    &lt;/div&gt;
+    &lt;/&gt;
   );
 }
 function calculateWinner(squares) {
@@ -8039,7 +7865,7 @@ function calculateWinner(squares) {
     [0, 4, 8],
     [2, 4, 6],
   ];
-  for (let i = 0; i < lines.length; i++) {
+  for (let i = 0; i &lt; lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] ===
     squares[c]) {
@@ -8047,8 +7873,7 @@ function calculateWinner(squares) {
     }
   }
   return null;
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8072,8 +7897,7 @@ which you'll store as a new state variable. The history array represents
 all board states, from the first to the last move, and has a shape like
 this:
 
-<pre>
-[
+<pre>[
   // Before first move
   [null, null, null, null, null, null, null, null, null],
   // After first move
@@ -8081,24 +7905,22 @@ this:
   // After second move
   [null, null, null, null, 'X', null, null, null, 'O'],
   // ...
-]
-</pre>
+]</pre>
 
 <h4>Lifting state up, again</h4>
 
-You will now write a new top-level component called Game to display a
+<p>You will now write a new top-level component called Game to display a
 list of past moves. That's where you will place the history state that
-contains the entire game history.
-
-Placing the history state into the Game component will let you remove
-the squares state from its child Board component. Just like you "lifted
-state up" from the Square component into the Board component, you will
-now lift it up from the Board into the top-level Game component. This
-gives the Game component full control over the Board's data and lets it
-instruct the Board to render previous turns from the history.
-
-First, add a Game component with export default. Have it render the
-Board component and some markup:
+contains the entire game history.</p>
+<p>Placing the history state into the Game component will let you remove
+the squares state from its child Board component.<br>
+Just like you "lifted state up" from the Square component into the Board 
+component, you will now lift it up from the Board into the top-level 
+Game component.</p>
+<p>This gives the Game component full control over the Board's data and lets it
+instruct the Board to render previous turns from the history.</p>
+<p>First, add a Game component with export default. Have it render the
+Board component and some markup:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -8131,15 +7953,13 @@ the game information you'll add to the board later.
 Add some state to the Game component to track which player is next and
 the history of moves:
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
 
 const [history, setHistory] = useState([Array(9).fill(null)]);
 
-// ...
-</pre>
+// ...</pre>
 
 Notice how [Array(9).fill(null)] is an array with a single item, which
 itself is an array of 9 nulls.
@@ -8148,8 +7968,7 @@ To render the squares for the current move, you'll want to read the last
 squares array from the history. You don't need useState for this---you
 already have enough information to calculate it during rendering:
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
 
@@ -8157,8 +7976,7 @@ const [history, setHistory] = useState([Array(9).fill(null)]);
 
 const currentSquares = history[history.length - 1];
 
-// ...
-</pre>
+// ...</pre>
 
 Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
@@ -8167,8 +7985,7 @@ currentSquares and handlePlay as props to the Board component:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
@@ -8184,8 +8001,7 @@ export default function Game() {
     /&gt;
       //...
   )
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8195,15 +8011,13 @@ squares, and a new onPlay function that Board can call with the updated
 squares array when a player makes a move. Next, remove the first two
 lines of the Board function that call useState:
 
-<pre>
-function Board({ xIsNext, squares, onPlay }) {
+<pre>function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     //...
   }
     // ...
-}
-</pre>
+}</pre>
 
 Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
@@ -8212,8 +8026,7 @@ Game component can update the Board when the user clicks a square:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Board({ xIsNext, squares, onPlay }) {
+<pre>function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -8228,8 +8041,7 @@ function Board({ xIsNext, squares, onPlay }) {
     onPlay(nextSquares);
   }
   //...
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8248,21 +8060,16 @@ information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
 just as Board used to do:
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   //...
   function handlePlay(nextSquares) {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   }
     //...
-}
-</pre>
+}</pre>
 
-Here, [\...history, nextSquares] creates a new array that contains all
-the items in history, followed by nextSquares. (You can read the
-\...history [[spread syntax]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-as "enumerate all the items in history".)
+Here, [...history, nextSquares] creates a new array that contains all the items in history, followed by nextSquares. (You can read the ...history <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">[spread syntax]</a> as "enumerate all the items in history".)
 
 For example, if history is [[null,null,null], ["X",null,null]]
 and nextSquares is ["X",null,"O"], then the new [\...history,
@@ -8276,8 +8083,7 @@ is what the code should look like at this point:
 <details>
   <summary>App.js</summary>
 
-<pre>
-  import { useState } from 'react';
+<pre>  import { useState } from 'react';
   function Square({ value, onSquareClick }) {
     return (
       &lt;button className="square" onClick={onSquareClick}&gt;
@@ -8308,8 +8114,7 @@ is what the code should look like at this point:
   return (
     &lt;&gt;
     &lt;div className="status"&gt;{status}&lt;/div&gt;
-    &lt;div className="board-row"&gt;
-</pre>
+    &lt;div className="board-row"&gt;</pre>
 
 </details>
 
@@ -8327,9 +8132,7 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-<pre>
-[1, 2, 3].map((x) =&gt; x * 2) // [2, 4, 6]
-</pre>
+<pre>[1, 2, 3].map((x) =&gt; x * 2) // [2, 4, 6]</pre>
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
@@ -8338,8 +8141,7 @@ representing buttons on the screen, and display a list of buttons to
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
@@ -8374,8 +8176,7 @@ export default function Game() {
       &lt;/div&gt;
     &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8388,8 +8189,7 @@ section.
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
     &lt;button className="square" onClick={onSquareClick}&gt;
@@ -8502,8 +8302,7 @@ function calculateWinner(squares) {
     }
   }
   return null;
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8531,18 +8330,14 @@ the list's items.
 
 Imagine transitioning from
 
-<pre>
-&lt;li&gt;Alexa: 7 tasks left&lt;/li&gt;
-&lt;li&gt;Ben: 5 tasks left&lt;/li&gt;
-</pre>
+<pre>&lt;li&gt;Alexa: 7 tasks left&lt;/li&gt;
+&lt;li&gt;Ben: 5 tasks left&lt;/li&gt;</pre>
 
 to
 
-<pre>
-&lt;li&gt;Ben: 9 tasks left&lt;/li&gt;
+<pre>&lt;li&gt;Ben: 9 tasks left&lt;/li&gt;
 &lt;li&gt;Claudia: 8 tasks left&lt;/li&gt;
-&lt;li&gt;Alexa: 5 tasks left&lt;/li&gt;
-</pre>
+&lt;li&gt;Alexa: 5 tasks left&lt;/li&gt;</pre>
 
 In addition to the updated counts, a human reading this would probably
 say that you swapped Alexa and Ben's ordering and inserted Claudia
@@ -8552,11 +8347,9 @@ list item to differentiate each list item from its siblings. If your
 data was from a database, Alexa, Ben, and Claudia's database IDs could
 be used as keys.
 
-<pre>
-&lt;li key={user.id}&gt;
+<pre>&lt;li key={user.id}&gt;
   {user.name}: {user.taskCount} tasks left
-&lt;/li&gt;
-</pre>
+&lt;/li&gt;</pre>
 
 When a list is re-rendered, React takes each list item's key and
 searches the previous list's items for a matching key. If the current
@@ -8599,27 +8392,24 @@ use the move index as a key.
 In the Game function, you can add the key as &lt;li key={move}&gt;, and if
 you reload the rendered game, React's "key" error should disappear:
 
-<pre>
-const moves = history.map((squares, move) => {
+<pre>const moves = history.map((squares, move) =&gt; {
   //...
   return (
-    <li key={move}>
-      <button onClick={() => jumpTo(move)}>{description}</button>
-    </li>
+    &lt;li key={move}&gt;
+      &lt;button onClick={() =&gt; jumpTo(move)}&gt;{description}&lt;/button&gt;
+    &lt;/li&gt;
   );
-});
-</pre>
+});</pre>
 
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}&gt;
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
@@ -8643,12 +8433,11 @@ function Board({ xIsNext, squares, onPlay }) {
       status = 'Next player: ' + (xIsNext ? 'X' : 'O');
     }
   return (
-    <>
-    <div className="status">{status}</div>
-    <div className="board-row">
+    &lt;&gt;
+    &lt;div className="status"&gt;{status}&lt;/div&gt;
+    &lt;div className="board-row"&gt;
   )
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8658,30 +8447,26 @@ Before you can implement jumpTo, you need the Game component to keep
 track of which step the user is currently viewing. To do this, define a
 new state variable called currentMove, defaulting to 0:
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const currentSquares = history[history.length - 1];
   //...
-}
-</pre>
+}</pre>
 
 Next, update the jumpTo function inside Game to update that currentMove.
 You'll also set xIsNext to true if the number that you're changing
 currentMove to is even.
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   // ...
   function jumpTo(nextMove) {
     setCurrentMove(nextMove);
     setXIsNext(nextMove % 2 === 0);
   }
     //...
-}
-</pre>
+}</pre>
 
 You will now make two changes to the Game's handlePlay function which is
 called when you click on a square.
@@ -8695,28 +8480,24 @@ called when you click on a square.
 -   Each time a move is made, you need to update currentMove to point to
     the latest history entry.
 
-<pre>
-function handlePlay(nextSquares) {
+<pre>function handlePlay(nextSquares) {
   const nextHistory = [...history.slice(0, currentMove + 1),
   nextSquares];
   setHistory(nextHistory);
   setCurrentMove(nextHistory.length - 1);
   setXIsNext(!xIsNext);
-}
-</pre>
+}</pre>
 
 Finally, you will modify the Game component to render the currently
 selected move, instead of always rendering the final move:
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const currentSquares = history[currentMove];
     // ...
-}
-</pre>
+}</pre>
 
 If you click on any step in the game's history, the tic-tac-toe board
 should immediately update to show what the board looked like after that
@@ -8725,13 +8506,12 @@ step occurred.
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square({value, onSquareClick}) {
   return (
-    <button className="square" onClick={onSquareClick}>
-  {value}
-    </button>
+    &lt;button className="square" onClick={onSquareClick}&gt;
+      {value}
+    &lt;/button&gt;
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
@@ -8757,11 +8537,10 @@ const winner = calculateWinner(squares);
   }
 
 return (
-  <>
-  <div className="status">{status}</div>
-  <div className="board-row">
-)
-</pre>
+  &lt;&gt;
+  &lt;div className="status"&gt;{status}&lt;/div&gt;
+  &lt;div className="board-row"&gt;
+)</pre>
 
 </details>
 
@@ -8783,8 +8562,7 @@ figures it out based on the currentMove:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-export default function Game() {
+<pre>export default function Game() {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
@@ -8799,8 +8577,7 @@ export default function Game() {
       setCurrentMove(nextMove);
     }
   // ...
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -8831,13 +8608,12 @@ Check out the final result here:
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}&gt;
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
@@ -8861,11 +8637,10 @@ function Board({ xIsNext, squares, onPlay }) {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
   return (
-  <>
-  <div className="status">{status}</div>
-  <div className="board-row">
-}
-</pre>
+  &lt;&gt;
+  &lt;div className="status"&gt;{status}&lt;/div&gt;
+  &lt;div className="board-row"&gt;
+}</pre>
 
 </details>
 
@@ -8916,8 +8691,7 @@ The JSON API returns some data that looks like this:
 <details>
   <summary>JSON API</summary>
 
-<pre>
-[
+<pre>[
   { category: "Fruits", price: "$1", stocked: true, name: "Apple"
   },
 
@@ -8935,8 +8709,7 @@ The JSON API returns some data that looks like this:
 
   { category: "Vegetables", price: "$1", stocked: true, name:
   "Peas" }
-]
-</pre>
+]</pre>
 
 </details>
 
@@ -9058,40 +8831,38 @@ it's easier to go bottom-up.
 <details>
   <summary>App.js</summary>
 
-<pre>
-function ProductCategoryRow({ category }) {
+<pre>function ProductCategoryRow({ category }) {
   return (
-    &lt;tr>
-      &lt;th colSpan="2">
+    &lt;tr&gt;
+      &lt;th colSpan="2"&gt;
         {category}
-      &lt;/th>
-    &lt;/tr>
+      &lt;/th&gt;
+    &lt;/tr&gt;
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  &lt;span style={{ color: 'red' }}>
+  &lt;span style={{ color: 'red' }}&gt;
     {product.name}
-  &lt;/span>;
+  &lt;/span&gt;;
   return (
-    &lt;tr>
-      &lt;td>{name}&lt;/td>
-      &lt;td>{product.price}&lt;/td>
-    &lt;/tr>
+    &lt;tr&gt;
+      &lt;td&gt;{name}&lt;/td&gt;
+      &lt;td&gt;{product.price}&lt;/td&gt;
+    &lt;/tr&gt;
   );
 }
 function ProductTable({ products }) {
   const rows = [];
   let lastCategory = null;
-  products.forEach((product) => {
+  products.forEach((product) =&gt; {
   if (product.category !== lastCategory) {
     rows.push(
       &lt;ProductCategoryRow
       category={product.category}
-      key={product.category} />
+      key={product.category} /&gt;
     );
-  }
-</pre>
+  }</pre>
 
 </details>
 
@@ -9241,8 +9012,7 @@ table update:</p>
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
@@ -9272,8 +9042,7 @@ function ProductRow({ product }) {
   &lt;span style={{ color: 'red' }}&gt;
     {product.name}
   &lt;/span&gt;;
-  return (
-</pre>
+  return (</pre>
 
 </details>
 
@@ -9324,8 +9093,7 @@ state, you need to pass these functions down to SearchBar:
 <details>
   <summary>JS Function</summary>
 
-<pre>
-function FilterableProductTable({ products }) {
+<pre>function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
     return (
@@ -9334,28 +9102,24 @@ function FilterableProductTable({ products }) {
           filterText={filterText}
           inStockOnly={inStockOnly}
           onFilterTextChange={setFilterText}
-          onInStockOnlyChange={setInStockOnly} /&gt;
-</pre>
+          onInStockOnlyChange={setInStockOnly} /&gt;</pre>
 
 </details>
 
 Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:
 
-<pre>
-&lt;input
+<pre>&lt;input
   type="text"
   value={filterText onChange={(e) =&gt;
-  onFilterTextChange(e.target.value)} /&gt;
-</pre>
+  onFilterTextChange(e.target.value)} /&gt;</pre>
 
 Now the application fully works!
 
 <details>
   <summary>App.js</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
@@ -9387,8 +9151,7 @@ function ProductRow({ product }) {
   const name = product.stocked ? product.name :
   &lt;span style={{ color: 'red' }}&gt;
     {product.name}
-  &lt;/span&gt;;
-</pre>
+  &lt;/span&gt;;</pre>
 
 </details>
 
@@ -9461,7 +9224,7 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>11:26am 5-26-23 Thu meta-react-basics index.html</h6>
+<h6>8:26pm 5-26-23 Thu meta-react-basics index.html</h6>
 
 </body>
 </html>
