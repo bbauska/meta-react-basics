@@ -1,9 +1,14 @@
 /* styles.css */
 /* of meta-react-basics.bauska.org */
 
-b { font-family: Consolas; color: #7fff00; }
-p { margin-left: 1rem }
-h1 { font-size: 3em; margin-left: 1rem }
+b { font-family: Consolas; background-color: #7fff00; }
+p { margin-left: 1rem; }
+h1 { font-size: 3em; margin-left: 1rem; }
+h2 { font-size: 2.5em; margin-left: 1rem; }
+h3 { font-size: 2.0em; margin-left: 1rem; }
+h4 { font-size: 1.5em; margin-left: 1rem; }
+h5 { font-size: 1.0em; margin-left: 1rem; }
+h6 { font-size: 0.5em; margin-left: 1rem; }
 
 * {
   margin-left: 1rem;
@@ -45,10 +50,10 @@ pre {
   font-family: Consolas;
   line-height:85%;
   font-size: 12px;
-  margin-left: 4%;
-  margin: 2% 0;  /* 1rem 0 */
+  margin-left: 1rem;
+  margin: 0.5rem 0;  /* 1rem 0 */
   max-width: var(--width-card-wide);
-  padding: 2% 0;  /* 1rem 0*/
+  padding: 0.5rem 0;  /* 1rem 0*/
 }
 
 pre code,
@@ -57,7 +62,7 @@ pre samp {
   font-size: 12px;
   font-family: Consolas;
   display: block;
-  margin-left: 4%;
+  margin-left: 1rem;
   max-width: var(--width-card-wide);
   padding: 2% 8%;  /* 0.5rem 2rem */
   white-space: pre-wrap;
