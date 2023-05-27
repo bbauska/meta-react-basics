@@ -1887,8 +1887,7 @@ export default App;</pre>
 named <b>&lt;Heading /&gt;</b> , being rendered from the App component, since
 it is a part of the App component's return statement.
 
-<pre>
- function App() { 
+<pre> function App() { 
    return ( 
      &lt;div className="App"&gt; 
        This is the starting code for "Your first component" ungraded lab 
@@ -1896,8 +1895,7 @@ it is a part of the App component's return statement.
     &lt;/div&gt; 
   ); 
 } 
-export default App;
-</pre>
+export default App;</pre>
 
 Then, you added a new function to the App component, and named that
 function <b>Heading ()</b>. You placed it at the very top of the <b>App.js</b>
@@ -2168,8 +2166,7 @@ This will produce a brand-new starter app with a familiar structure.
 
 Inspecting the <b>src</b> folder of the starter app, it looks like this:
 
-<pre>
- src/
+<pre> src/
 
      App.js
      App.test.js
@@ -2177,8 +2174,7 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
      index.js
      logo.svg
      reportWebVitals.js
-     setupTests.js
-</pre>
+     setupTests.js</pre>
 
 Then simply add a components folder to it, like this:
 
@@ -3162,23 +3158,21 @@ Now, consider the following component:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Apples(props) {
+<pre>function Apples(props) {
 
-   return (
-     &lt;div className="promo-section"&gt;
-         &lt;div&gt;
-             &lt;h2&gt;These apples are: {props.color}&lt;/h2&gt;
-             &lt;/div&gt;
-             &lt;div&gt;
-             &lt;h3&gt;There are {props.number} apples.&lt;/h3&gt;
-         &lt;/div&gt;
-     &lt;/div&gt;
-   )
+  return (
+    &lt;div className="promo-section"&gt;
+      &lt;div&gt;
+        &lt;h2&gt;These apples are: {props.color}&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h3&gt;There are {props.number} apples.&lt;/h3&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
 }
 
-export default Apples
-</pre>
+export default Apples</pre>
 
 </details>
 
@@ -3227,9 +3221,7 @@ But what is this <b>props.children?</b>
 
 Consider a very simple example:
 
-<pre>
-&lt;/Example&gt;
-</pre>
+<pre>&lt;/Example&gt;</pre>
 
 The <b>Hello there</b> text is a child of the Example JSX element. The
 Example JSX Element above is an "invocation" of the <b>Example.js</b>
@@ -3240,9 +3232,7 @@ as a <b>named prop</b> when rendering the <b>Example</b> component?
 
 Here's how that would look like:
 
-<pre>
-&lt;Example children="Hello there" /&gt;
-</pre>
+<pre>&lt;Example children="Hello there" /&gt;</pre>
 
 Ok, so, there are two ways to do it. But this is just the beginning.
 
@@ -3251,25 +3241,19 @@ What if you, say, wanted to surround the <b>Hello there</b> text in an
 
 Obviously, in JSX, that is easily achievable:
 
-<pre>
-&lt;Example children={&lt;h3&gt;Hello there&lt;/h3&gt;} /&gt;
-</pre>
+<pre>&lt;Example children={&lt;h3&gt;Hello there&lt;/h3&gt;} /&gt;</pre>
 
 What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
 example, named <b>Hello</b>?
 
 In that case, you'd have to update the code like this:
 
-<pre>
-&lt;Example children={&lt;Hello /&gt;} /&gt;
-</pre>
+<pre>&lt;Example children={&lt;Hello /&gt;} /&gt;</pre>
 
 You could even make the <b>Hello</b> component more dynamic, by giving it
 its own prop:
 
-<pre>
-&lt;Example children={&lt;Hello message="Hello there" /&gt;} /&gt;
-</pre>
+<pre>&lt;Example children={&lt;Hello message="Hello there" /&gt;} /&gt;</pre>
 
 So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
 beginning of this section (24), armed with this new knowledge, how can you
@@ -3278,43 +3262,35 @@ make it work?
 Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
 component as its <b>props.children</b>:
 
-<pre>
-&lt;Bag children={&lt;Apples color="yellow" number="5" /&gt;} /&gt;
-</pre>
+<pre>&lt;Bag children={&lt;Apples color="yellow" number="5" /&gt;} /&gt;</pre>
 
 And here's how you'd render the <b>Bag</b> component, wrapping the
 <b>Pears</b> component:
 
-<pre>
-&lt;Bag children={&lt;Pears friend="Peter" /&gt;} /&gt;
-</pre>
+<pre>&lt;Bag children={&lt;Pears friend="Peter" /&gt;} /&gt;</pre>
 
 While the above syntax might look a bit weird, it's important to
 understand what is happening "under the hood".
 
 Effectively, the above syntax is the same as the two examples below.
 
-<pre>
-&lt;Bag&gt;
+<pre>&lt;Bag&gt;
   &lt;Apples color="yellow" number="5" /&gt;
 &lt;/Bag&gt;
 
 &lt;Bag&gt;
   &lt;Pears friend="Peter" /&gt;
-&lt;/Bag&gt;
-</pre>
+&lt;/Bag&gt;</pre>
 
 You can even have multiple levels of nested JSX elements, or a single
 JSX element having multiple children, such as, for example:
 
-<pre>
-&lt;Trunk&gt;
+<pre>&lt;Trunk&gt;
   &lt;Bag&gt;
     &lt;Apples color="yellow" number="5" /&gt;
     &lt;Pears friend="Peter" /&gt;
   &lt;/Bag&gt;
-&lt;/Trunk&gt;
-</pre>
+&lt;/Trunk&gt;</pre>
 
 So, in the above structure, there's a <b>Trunk</b> JSX element, inside of
 which is a single <b>Bag</b> JSX element, holding an <b>Apples</b> and a
@@ -3322,11 +3298,9 @@ which is a single <b>Bag</b> JSX element, holding an <b>Apples</b> and a
 
 Before the end of this reading, consider this JSX element again:
 
-<pre>
-&lt;Bag&gt;
+<pre>&lt;Bag&gt;
   &lt;Apples color="yellow" number="5" /&gt;
-&lt;/Bag&gt;
-</pre>
+&lt;/Bag&gt;</pre>
 
 What is <b>Apples</b> to <b>Bag</b> in the above code?
 
@@ -3381,8 +3355,7 @@ The <b>href</b> attribute loads some CSS styles, probably with some CSS
 classes, and then, inside the function component's declarations, you
 can access those CSS classes using the <b>className</b> attribute.
 
-<pre>
-function Promo(props) {
+<pre>function Promo(props) {
   return (
     &lt;div className="promo-section"&gt;
       &lt;div&gt;
@@ -3393,17 +3366,14 @@ function Promo(props) {
       &lt;/div&gt;
     &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 In CSS:
 
-<pre>
-.promo-section {
+<pre>.promo-section {
   font-weight: bold;
   line-height: 20px;
-}
-</pre>
+}</pre>
 
 Another way to add CSS styles to components is using inline styles.
 
@@ -3415,8 +3385,7 @@ encountered earlier:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Promo(props) {
+<pre>function Promo(props) {
   return (
     &lt;div className="promo-section"&gt;
       &lt;div&gt;
@@ -3429,8 +3398,7 @@ function Promo(props) {
   );
 }
   
-export default Promo;
-</pre>
+export default Promo;</pre>
 
 </details>
 
@@ -3439,8 +3407,7 @@ Now you can add some inline styles to it:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Promo(props) {
+<pre>function Promo(props) {
   return (
     &lt;div className="promo-section"&gt;
       &lt;div&gt;
@@ -3454,35 +3421,28 @@ function Promo(props) {
   );
 }
  
-export default Promo;
-</pre>
+export default Promo;</pre>
 
 </details>
 
 You can start updating the <b>Promo</b> component by adding the JavaScript
 expression syntax:
 
-<pre>
-&lt;h1 style={}&gt;
-</pre>
+<pre>&lt;h1 style={}&gt;</pre>
 
 As explained previously, this means that whatever code you add inside
 these opening and closing curly braces is to be parsed as regular
 JavaScript. Now let's add a <b>style object literal</b> inside of these
 curly braces:
 
-<pre>
-&lt;h1 style={{color:"tomato",fontSize:"40px"}}&gt;
-</pre>
+<pre>&lt;h1 style={{color:"tomato",fontSize:"40px"}}&gt;</pre>
 
 You can then re-write this object literal:
 
-<pre>
-{
+<pre>{
   color: "tomato",
   fontSize: "40px"
-}
-</pre>
+}</pre>
 
 So, there's nothing special about this object, except for the fact that
 you've inlined it and placed it inside a pair of curly braces.
@@ -3501,8 +3461,7 @@ saved as a JavaScript variable:
 <details>
   <summary>JS Functions</summary>
 
-<pre>
-function Promo(props) {
+<pre>function Promo(props) {
   
 const styles = {
      color: "tomato",
@@ -3520,8 +3479,7 @@ const styles = {
       &lt;/div&gt;
     &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -3583,30 +3541,26 @@ specifically by using function expressions and arrow functions.
 
 Let's start with a function declaration used as a component in React:
 
-<pre>
-function Nav(props) {
+<pre>function Nav(props) {
   return (
     &lt;ul&gt;
       &lt;li&gt;{props.first}&lt;/li&gt;
     &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 This component's code returns a list item containing the value of the
 'first' prop.
 
 Now, let's change this function declaration to a function expression:
 
-<pre>
-const Nav = function(props) {
+<pre>const Nav = function(props) {
   return (
     &lt;ul&gt;
       &lt;li&gt;{props.first}&lt;/li&gt;
     &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 The component is, for the most part, the same. The only thing that's
 changed is that you're now using an anonymous (nameless) function, and
@@ -5121,8 +5075,7 @@ declaration: 
 <details>
   <summary>App.js</summary>
 
-<pre>
-function App() {
+<pre>function App() {
   function handleClick() {
     let randomNum = Math.floor(Math.random() * 3) + 1;
     console.log(randomNum);
@@ -5137,8 +5090,7 @@ function App() {
   );
 }
 
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -5966,11 +5918,9 @@ if (isLoggedIn) {
 
 When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation" target="_blank" rel="noopener noreferrer">logical &amp;&amp; syntax</a>:
 
-<pre>
-&lt;div&gt;
+<pre>&lt;div&gt;
   {isLoggedIn &amp;&amp; &lt;AdminPanel /&gt;}
-&lt;/div&gt;
-</pre>
+&lt;/div&gt;</pre>
 
 All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
@@ -5991,16 +5941,14 @@ For example, let's say you have an array of products:
 Inside your component, use the map() function to transform an array of
 products into an array of &lt;li&gt; items:
 
-<pre>
-const listItems = products.map(product =&gt;
+<pre>const listItems = products.map(product =&gt;
   &lt;li key={product.id}&gt;
     {product.title}
   &lt;/li&gt;
 );
 return (
   &lt;ul&gt;{listItems}&lt;/ul&gt;
-);
-</pre>
+);</pre>
 
 Notice how &lt;li&gt; has a key attribute. For each item in a list, you
 should pass a string or a number that uniquely identifies that item
