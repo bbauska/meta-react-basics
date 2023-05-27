@@ -22,11 +22,11 @@ h6 { font-size: 0.5em; margin-left: 1rem; }
 
 ul li,
 ol li {
-  margin-left: 2%;
+  margin-left: 1rem;
 }
 ul li li,
 ol li li {
-  margin-left: 4%;
+  margin-left: 2rem;
 }
 
 footer,
@@ -34,7 +34,7 @@ header,
 main {
   margin: 0 auto;
   max-width: var(--width-content);
-  margin-left: 2%;
+  margin-left: 1rem;  /* 2% */
   padding: 3% 1%;  /* 3rem 1rem */
 }
 
