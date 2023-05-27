@@ -37,7 +37,7 @@ main {
   margin: 0 auto;
   max-width: var(--width-content);
   margin-left: 1rem;  /* 2% */
-  padding: 3% 1%;  /* 3rem 1rem */
+  padding: 1rem 0.5rem;  /* 3rem 1rem */
 }
 
 hr {
@@ -50,7 +50,7 @@ hr {
 
 pre {
   font-family: Consolas;
-  line-height:85%;
+  line-height:100%;
   font-size: 12px;
   margin-left: 1rem;
   margin: 0.5rem 0;  /* 1rem 0 */
@@ -66,7 +66,7 @@ pre samp {
   display: block;
   margin-left: 1rem;
   max-width: var(--width-card-wide);
-  padding: 2% 8%;  /* 0.5rem 2rem */
+  padding: 0.5rem 2rem;  /* 2% 8% 0.5rem 2rem */
   white-space: pre-wrap;
 }
 
@@ -308,7 +308,7 @@ details {
 details > summary {
   padding: 2px 6px;
   width: 15em;  /* 15em */
-  line-height:120%; /* or whatever height you like, was 160% */
+  line-height:110%; /* or whatever height you like, was 160% */
   background-color: #d3d3d3;  /* very light gray */
   border: none;
   box-shadow: 3px 3px 4px blue;
@@ -316,7 +316,7 @@ details > summary {
 }
 
 ul li {
-  line-height: 140%; /* or whatever height you like */
+  line-height: 110%; /* or whatever height you like */
 }
 
 details > p {
