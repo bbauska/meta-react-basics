@@ -2643,15 +2643,15 @@ function App() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" target="_blank" rel="noopener noreferrer">
-  Basic Concepts of Flexbox</a>,<br></li>
-  <li><a href="https://create-react-app.dev/docs/importing-a-component/" target="_blank" rel="noopener noreferrer">Importing a Component</a>,<br></li> 
+  Basic Concepts of Flexbox</a>,<br><br></li>
+  <li><a href="https://create-react-app.dev/docs/importing-a-component/" target="_blank" rel="noopener noreferrer">Importing a Component</a>,<br><br></li> 
   <li><a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babeljs.io</a>,<br></li>
-  <li><a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json" target="_blank" rel="noopener noreferrer">NPM docs: package.json</a><br></li>
-  <li><a href="https://git-scm.com/docs/gitignore" target="_blank" rel="noopener noreferrer">git docs: gitignore</a>,<br></li>
-  <li><a href="https://docs.npmjs.com/cli/v8/configuring-npm/folders#node-modules" target="_blank" rel="noopener noreferrer">NPM docs: node modules folder</a>,<br></li>
-  <li><a href="https://webpack.js.org/configuration/dev-server/" target="_blank" rel="noopener noreferrer">webpack docs: DevServer</a>,<br></li>
-  <li><a href="https://github.com/webpack/webpack-dev-server" target="_blank" rel="noopener noreferrer">webpack/webpack-dev-server on GitHub</a>,<br></li>
-  <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank" rel="noopener noreferrer">Visual Studio Code keyboard shortcuts (Windows)</a>,<br></li>
+  <li><a href="https://docs.npmjs.com/cli/v7/configuring-npm/package-json" target="_blank" rel="noopener noreferrer">NPM docs: package.json</a><br><br></li>
+  <li><a href="https://git-scm.com/docs/gitignore" target="_blank" rel="noopener noreferrer">git docs: gitignore</a>,<br><br></li>
+  <li><a href="https://docs.npmjs.com/cli/v8/configuring-npm/folders#node-modules" target="_blank" rel="noopener noreferrer">NPM docs: node modules folder</a>,<br><br></li>
+  <li><a href="https://webpack.js.org/configuration/dev-server/" target="_blank" rel="noopener noreferrer">webpack docs: DevServer</a>,<br><br></li>
+  <li><a href="https://github.com/webpack/webpack-dev-server" target="_blank" rel="noopener noreferrer">webpack/webpack-dev-server on GitHub</a>,<br><br></li>
+  <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank" rel="noopener noreferrer">Visual Studio Code keyboard shortcuts (Windows)</a>,<br><br></li>
   <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" rel="noopener noreferrer">Visual Studio Code keyboard shortcuts (macOS)</a></li>
 </ul>
 
@@ -3787,62 +3787,59 @@ if (name == 'Bob') {
   console.log('Hello, Friend');
 };</pre>
 
-The above code works as follows:
+<p>The above code works as follows:</p>
 
-1.  First, I declare a <b>name</b> variable and set it to a string of
-    <b>"Bob"</b>.
-
-2.  Next, I use the <b>if</b> statement to check if the value of the name
+<ol>
+  <li>First, I declare a <b>name</b> variable and set it to a string of
+    <b>"Bob"</b>.<br><br></li>
+  <li>Next, I use the <b>if</b> statement to check if the value of the name
     variable is <b>"Bob"</b>. If it is, I want to <b>console.log</b> the
-    word <b>"Bob"</b>.
-
-3.  Otherwise, if the name variable's value is not <b>"Bob"</b>, the
+    word <b>"Bob"</b>.<br><br></li>
+  <li>Otherwise, if the name variable's value is not <b>"Bob"</b>, the
     <b>else</b> block will execute and output the words <b>"Hello,
-    Friend"</b> in the console.
+    Friend"</b> in the console.</li>
+</ol>
 
-Above, I gave you an example of using an <b>if\...else</b> conditional. Did
+<p>Above, I gave you an example of using an <b>if...else</b> conditional. Did
 you know that there is another, different way, to effectively do the
-same thing? It's known as the <b>ternary operator</b>. A ternary operator
-in JavaScript uses two distict characters: the first oneis <b>the
+same thing? It's known as the <b>ternary operator</b>.</p>
+</p>A ternary operator in JavaScript uses two distict characters: the first one is <b>the
 question mark</b>, that is, the <b>?</b> character. To the left of the <b>?</b>
 character, you put <i>a condition that you'd like to check for</i>. Just
-like I did in the above <b>if\...else</b> statement, the condition I'm
-checking is <b>name == 'Bob'</b>. In other words, I'm asking the
-JavaScript engine to look at the value that's stored inside the
-<b>name</b> variable, and to verify if that value is the same as
-<b>'Bob'</b>. If it is, then the JavaScript engine will return the
-boolean value of <b>true</b>. If the value of the <b>name</b> variable is
-something different from <b>'Bob'</b>, the value that the JavaScript
-engine returns will be the boolean value of <b>false</b>.
+like I did in the above <b>if...else</b> statement, the condition I'm
+checking is <b>name == 'Bob'</b>.</p>
+<p>In other words, I'm asking the JavaScript engine to look at the value that's stored inside the
+<b>name</b> variable, and to verify if that value is the same as <b>'Bob'</b>. If it is, then the JavaScript engine will return the boolean value of <b>true</b>. If the value of the <b>name</b> variable is
+something different from <b>'Bob'</b>, the value that the JavaScript engine returns will be the boolean value of <b>false</b>.</p>
 
 Here is the code that reflects the explanation in the previous
 paragraph:
 
 <pre>name == 'Bob' ?</pre>
 
-Note that the above code is incompleted. I have the condition that I'm
+<p>Note that the above code is incompleted. I have the condition that I'm
 checking (the <b>name == 'Bob'</b> part). I also have the <b>?</b>
 character, that is, the first of the two characters needed to construct
 a syntactically valid ternary operator. However, I still need the second
 character, which is the colon, that is the <b>:</b> character. This
 character is placed after the question mark character. I can now expand
-my code to include this as well:
+my code to include this as well:</p>
 
 <pre>name == 'Bob' ? :</pre>
 
-This brings me a step closer to completing my ternary operator. Although
+<p>This brings me a step closer to completing my ternary operator. Although
 I've added the characters needed to construct the ternary operator, I
 still need to add the return values. In other words, if <b>name ==
 'Bob'</b> evaluates to true, I want to return the words, "Yes, it is
 Bob!". Otherwise, I want to return the words "I don't know this
-person".
+person".</p>
 
 <pre>name == Bob ? "Yes, it is Bob" : "I don't know this person";</pre>
 
-This, in essence, is how the ternary operator works. It's just some
+<p>This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the <b>if</b>
 statement. To prove that this is really the case, here's my starting
-if\...else example, written as a ternary operator:
+if\...else example, written as a ternary operator:</p>
 
 <pre>let name = 'Bob';
 
@@ -3850,8 +3847,8 @@ name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend')
 
 <h3>Using ternary expressions in JSX</h3>
 
-Let's examine an example of a component which uses a ternary expression
-to randomly change the text that is displayed.
+<p>Let's examine an example of a component which uses a ternary expression
+to randomly change the text that is displayed.</p>
 
 <pre>function Example() {
   return (
@@ -3861,16 +3858,16 @@ to randomly change the text that is displayed.
   );
 };</pre>
 
-Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
-want it to parse the code inside as regular JavaScript.
+<p>Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
+want it to parse the code inside as regular JavaScript.</p>
 
-Then, inside the curly braces, you can add a ternary statement. Every
+<p>Then, inside the curly braces, you can add a ternary statement. Every
 ternary statement conceptually, expressed in pseudo-code, works like
-this:
+this:</p>
 
 <pre>comparison ? true : false</pre>
 
-In the actual code example at the start of this lesson item, the
+<p>In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
 the &gt;= (greater-than-or-equal-to operator), to return a Boolean value.
 If the result of the comparison evaluates to <b>true</b>, then the string
@@ -3879,20 +3876,20 @@ question mark and the semi-colon character will get returned. Otherwise,
 if the result of the comparison evaluates to <b>false</b>, then the string
 "Under 0.5" gets returned. In other words, the value that sits to the
 right of the colon character will get returned from the ternary
-expression.
+expression.</p>
 
-This is how you can use a ternary expression to check for a condition
-right inside a component and return a value dynamically.
+<p>This is how you can use a ternary expression to check for a condition
+right inside a component and return a value dynamically.</p>
 
 <h3>Using function calls in JSX</h3>
 
-Another way to work with an expression in JSX is to invoke a function.
+<p>Another way to work with an expression in JSX is to invoke a function.
 Function invocation is an expression because every expression returns a
 value, and function invocation will always return a value, even when
-that return value is <b>undefined</b>.
+that return value is <b>undefined</b>.</p>
 
-Like the previous example, you can use function invocation inside JSX to
-return a random number:
+<p>Like the previous example, you can use function invocation inside JSX to
+return a random number:</p>
 
 <pre>function Example2() {
   return (
@@ -3904,11 +3901,11 @@ return a random number:
   );
 };</pre>
 
-In the <b>Example2</b> component, built-in <b>Math.floor()</b> and
+<p>In the <b>Example2</b> component, built-in <b>Math.floor()</b> and
 <b>Math.random()</b> methods are being used, as well as some number values
-and arithmetic operators, to display a random number between 0 and 10.
+and arithmetic operators, to display a random number between 0 and 10.</p>
 
-You can also extract this functionality into a separate function:
+<p>You can also extract this functionality into a separate function:</p>
 
 <pre>function Example3() {
   const getRandomNum = () =&gt; Math.floor(Math.random() * 10) + 1
@@ -3919,12 +3916,12 @@ You can also extract this functionality into a separate function:
     );
 };</pre>
 
-The <b>getRandomNum()</b> function can also be written as a function
+<p>The <b>getRandomNum()</b> function can also be written as a function
 declaration, or as a function expression. It does not have to be an
-arrow function.
+arrow function.</p>
 
-But let's observe both alternatives: the function expression <i>and</i> the
-function declaration.
+<p>But let's observe both alternatives: the function expression <i>and</i> the
+function declaration.</p>
 
 <h4>Function expression:</h4>
 
@@ -3938,24 +3935,24 @@ function declaration.
   return Math.floor(Math.random() *10) + 1
 };</pre>
 
-Of course, there are many other examples. The ones used here are there
+<p>Of course, there are many other examples. The ones used here are there
 to help you understand how versatile and seamless the JSX syntax is. As
 you improve your React skills, you will find many creative ways of using
-JavaScript expressions in JSX.
+JavaScript expressions in JSX.</p>
 
-Now that you have completed this section (29), you have learned about a few
-more ways that you can use expressions in JSX.
+<p>Now that you have completed this section (29), you have learned about a few
+more ways that you can use expressions in JSX.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 30 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>30. Expressions as props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You've already learned a bit about using expressions as props. These
+<p>You've already learned a bit about using expressions as props. These
 can be, among other things, ternary operators, function calls, or some
-arithmetic operations.
+arithmetic operations.</p>
 
-However, you can pass almost any kind of expression as a prop.
+<p>However, you can pass almost any kind of expression as a prop.</p>
 
-For example:
+<p>For example:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -3979,26 +3976,26 @@ export default function App() { 
 
 </details>
 
-In the example above, you're using the <b>!bool</b>, that is, the NOT
-operator, which evaluates to <b>true</b>, since <b>!false</b> is true.
+<p>In the example above, you're using the <b>!bool</b>, that is, the NOT
+operator, which evaluates to <b>true</b>, since <b>!false</b> is true.</p>
 
-Also, for the <b>toggleBoolean</b> prop to be rendered on the page, you're
+<p>Also, for the <b>toggleBoolean</b> prop to be rendered on the page, you're
 converting its boolean value to a string using the JavaScript's built-in
-toString method. 
+toString method.</p>
 
-Here's an extension of the above code which shows more ways to work with
-expressions as props in React.
+<p>Here's an extension of the above code which shows more ways to work with
+expressions as props in React.</p>
 
-What is happening here is several props are being passed to the
+<p>What is happening here is several props are being passed to the
 <b>Example</b> component, and rendering each of these props' values to the
-screen.
+screen.</p>
 
 <details>
   <summary>JS Functions</summary>
 
 <pre>const bool = false;
 const str1 = "just";
-  
+ 
 function Example(props) {
   return (
     &lt;div&gt;
@@ -4025,61 +4022,66 @@ export default function App() {
 
 </details>
 
-In this improvement to the <b>Example</b> component, three props are being
+<p>In this improvement to the <b>Example</b> component, three props are being
 passed to it: <b>toggleBoolean</b>, <b>math</b>, and <b>str</b>. The
 <b>toggleBoolean</b> is unchanged, and the <b>math</b> prop and the <b>str</b>
-prop have been added.
+prop have been added.</p>
 
-The <b>math</b> prop is there to show that you can add arithmetic operators
+<p>The <b>math</b> prop is there to show that you can add arithmetic operators
 and numbers inside JSX, and it will be evaluated just like it does in
-plain JavaScript. 
+plain JavaScript.</p>
 
-The <b>str</b> prop is there to show that you can concatenate strings, as
+<p>The <b>str</b> prop is there to show that you can concatenate strings, as
 well as strings and variables -- which is shown by adding string
-literals of " another " and "string" to the <b>str1</b> variable.
+literals of " another " and "string" to the <b>str1</b> variable.</p>
 
-In summary, just like you can use expressions inside function
+<p>In summary, just like you can use expressions inside function
 components, you can also use them as prop values inside JSX elements,
-when rendering those function components.
+when rendering those function components.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 31 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>31. Embedding in attributes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-I'm building an application using react and I now need to add a new
+</p>I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
 expression in an attribute, specifically the SRC attribute of the html
-image tag. Over the next few minutes I'll guide you through the process
+image tag.</p>
+
+<p>Over the next few minutes I'll guide you through the process
 as I complete the steps. And by the end of this section (31) you'll be
 able to demonstrate how to embed a JS expression in an attribute,
 including adding additional styling and importing additional assets and
-utilize additional assets within an app by importing components. Now
-I'm in the App.js file of a new project and start with an app component
+utilize additional assets within an app by importing components.</p>
+
+<p>Now I'm in the App.js file of a new project and start with an app component
 that returns the h1 header text, hello world. I've previously copied
 the avatar profile image from the Coursera GitHub account which is
-publicly available through the get up API. I have pasted the images into
-the roots of the SRC folder and named it avatar.png. In order to use the
-image I need to import it into the app component. I then add a new
-function in the App.js file named logo. The logo function is essentially
-a separate component. But to keep things clean for this example, I'll
-save the code in the app component instead of a separate file. The logo
-function except the props object and inside of the logo function I
+publicly available through the get up API.</p>
+
+<p>I have pasted the images into the roots of the SRC folder and named it 
+avatar.png.</p>
+<p>In order to use the image I need to import it into the app component.</p>
+<p>I then add a new function in the App.js file named logo. The logo function 
+is essentially a separate component. But to keep things clean for this example, 
+I'll save the code in the app component instead of a separate file.</p>
+<p>The logo function except the props object and inside of the logo function I
 declare a userPic const and assign it a JSX element. This is an image
 element and I'm passing the imported avatar PNG image as the value of
-the SRC attribute inside this image element. Finally I'm returning the
-userPic const from the logo function. Back inside the app component
-I'll now render the logo component by adding the logo element inside
-the app components return statement. Lemme now preview my app in the
-browser. Great, so it displays the header text along with the image.
+the SRC attribute inside this image element.</p>
+<p>Finally I'm returning the userPic const from the logo function.</p>
+<p>Back inside the app component I'll now render the logo component by adding 
+the logo element inside the app components return statement. Now preview my app in the
+browser.</p>
+<p>Great, so it displays the header text along with the image.
 Keep in mind that if I were to continue building this app with more
 components, it would be best to extract the logo component to its own
 file and then import and render it as needed. And that's a
 demonstration on how you can embed a JSX expression in an attribute. In
-this case the SRC attribute of an html image tag.
-
+this case the SRC attribute of an html image tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 32 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>32. Multiple components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here's the completed App.js file:
+<p>Here's the completed App.js file:</p>
 
 <details>
   <summary>App.js</summary>
@@ -4103,7 +4105,7 @@ export default App;</pre>
 
 </details>
 
-Here's the completed Card.js file:
+<p>Here's the completed Card.js file:</p>
 
 <details>
   <summary>Card.js</summary>
@@ -4121,7 +4123,7 @@ export default Card;</pre>
 
 </details>
 
-Here is the output from the completed solution code:
+<p>Here is the output from the completed solution code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 43. output of completed 'multiple components' exercise (xx) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4132,16 +4134,16 @@ Here is the output from the completed solution code:
 </p>
 <!-- {width="6.020833333333333in" height="3.3621489501312336in"} -->
 
-<b>Step 1.</b> Your first task was to add a Card.js file, and inside of
-that file, declare a <b>Card</b> function.  
+<p><b>Step 1.</b> Your first task was to add a Card.js file, and inside of
+that file, declare a <b>Card</b> function.</p>
 
 <pre>function Card(props) {
     
 };</pre>
 
-<b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you added a
+<p><b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you added a
 <b>return</b> statement with two parentheses after it, to allow the
-<b>return</b> statement to spread onto several lines. 
+<b>return</b> statement to spread onto several lines.</p>
 
 <pre>function Card(props) {
   return (
@@ -4149,8 +4151,8 @@ that file, declare a <b>Card</b> function.  
   );
 };</pre>
 
-<b>Step 3.</b> Inside the <b>return</b> statement, you needed to add a
-wrapping <b>div</b> element. 
+<p><b>Step 3.</b> Inside the <b>return</b> statement, you needed to add a
+wrapping <b>div</b> element.</p>
 
 <pre>function Card(props) {
   return (
@@ -4159,8 +4161,8 @@ wrapping <b>div</b> element. 
   );
 };</pre>
 
-<b>Step 4.</b> Inside the wrapping <b>div</b> element, you needed to add an
-<b>h2</b> element, and under it, an <b>h3</b> element. 
+<p><b>Step 4.</b> Inside the wrapping <b>div</b> element, you needed to add an
+<b>h2</b> element, and under it, an <b>h3</b> element.</p>
 
 <pre>function Card(props) {
   return (
@@ -4171,8 +4173,8 @@ wrapping <b>div</b> element. 
   );
 };</pre>
 
-<b>Step 5.</b> Inside the h2 element you've already added, you needed to add
-the JSX expression of: {props.h2}. 
+<p><b>Step 5.</b> Inside the h2 element you've already added, you needed to add
+the JSX expression of: {props.h2}.</p>
 
 <pre>function Card(props) {
   return (
@@ -4183,8 +4185,8 @@ the JSX expression of: {props.h2}. 
   );
 };</pre>
 
-<b>Step 6.</b> Inside the <b>h3</b> element you've already added, you needed
-to add the JSX expression of: <b>{props.h3}</b>. 
+<p><b>Step 6.</b> Inside the <b>h3</b> element you've already added, you needed
+to add the JSX expression of: <b>{props.h3}</b>.</p>
 
 <pre>function Card(props) {
   return (
@@ -4195,8 +4197,8 @@ to add the JSX expression of: <b>{props.h3}</b>. 
   );
 };</pre>
 
-<b>Step 7.</b> You also had to make sure to not forget the <b>export default
-Card;</b> line of code at the bottom of the Card component.
+<p><b>Step 7.</b> You also had to make sure to not forget the <b>export default
+Card;</b> line of code at the bottom of the Card component.</p>
 
 <pre>function Card(props) {
   return (
@@ -4209,8 +4211,8 @@ Card;</b> line of code at the bottom of the Card component.
   
 export default Card;</pre>
 
-<b>Step 8.</b> Back inside the App component, you needed to import the
-<b>Card</b> component. 
+<p><b>Step 8.</b> Back inside the App component, you needed to import the
+<b>Card</b> component.</p>
 
 <details>
   <summary>App.js</summary>
@@ -4230,9 +4232,9 @@ export default App;</pre>
 
 </details>
 
-<b>Step 9.</b> Inside the App component's <b>return</b> statement, under the
+<p><b>Step 9.</b> Inside the App component's <b>return</b> statement, under the
 <b>h1</b> element, you should have added three <b>&lt;Card /&gt;</b> JSX
-elements. 
+elements.</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -4255,8 +4257,8 @@ export default App;</pre>
 
 </details>
 
-<b>Step 10.</b> You needed to add the <b>h2</b> prop to the first <b>&lt;Card
-/&gt;</b> element, like this: <b>h2="First card's h2"</b>. 
+<p><b>Step 10.</b> You needed to add the <b>h2</b> prop to the first <b>&lt;Card
+/&gt;</b> element, like this: <b>h2="First card's h2"</b>.</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -4279,8 +4281,8 @@ export default App;</pre>
 
 </details>
 
-<b>Step 11.</b> You needed to add the <b>h3</b> prop to the first <b>&lt;Card
-/&gt;</b> element, like this: <b>h3="First card's h3"</b>. 
+<p><b>Step 11.</b> You needed to add the <b>h3</b> prop to the first <b>&lt;Card
+/&gt;</b> element, like this: <b>h3="First card's h3"</b>.</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -4303,9 +4305,9 @@ export default App;</pre>
 
 </details>
 
-<b>Step 12.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
+<p><b>Step 12.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
 second <b>&lt;Card /&gt;</b> element, with the <b>h2</b> reading: <b>"Second
-card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>. 
+card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>.</p>
 
 <details>
   <summary>App.js</summary>
@@ -4328,9 +4330,9 @@ export default App;</pre>
 
 </details>
 
-<b>Step 13.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
+<p><b>Step 13.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
 third <b>&lt;Card /&gt;</b> element, with the h2 reading: <b>"Third card's
-h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>. 
+h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>.</p>
 
 <details>
   <summary>App.js</summary>
@@ -4354,9 +4356,9 @@ export default App;</pre>
 
 </details>
 
-<b>Step 14.</b> You needed to add the <b>className</b> attribute to the
+<p><b>Step 14.</b> You needed to add the <b>className</b> attribute to the
 Card.js file's <b>Card</b> function's <b>return</b> statement's wrapping
-<b>div</b> element. 
+<b>div</b> element.</p>
 
 <details>
   <summary>App.js</summary>
@@ -4383,61 +4385,61 @@ export default App;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 33 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>33. Module Summary -- React Components &amp; where they live</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Well done. You've reached the end of module one on react components.
+<p>Well done. You've reached the end of module (week) one on react components.</p>
 
-Module one gave you an overview of the basic structure and use of
+<p>Module one gave you an overview of the basic structure and use of
 react.js. The purpose was to enable you to produce single page
-applications with react.
+applications with react.</p>
 
-Let's take a tour of the lessons to determine how it did just that.
+<p>Let's take a tour of the lessons to determine how it did just that.</p>
 
-First, you learned about how reactors used in the real-world from meta
-software engineer Katie.
+<p>First, you learned about how reactors used in the real-world from meta
+software engineer Katie.</p>
 
-Then to lay the foundation for the hands-on labs, you had a quick
-summary of the fundamentals of html, CSS and JavaScript.
+<p>Then to lay the foundation for the hands-on labs, you had a quick
+summary of the fundamentals of html, CSS and JavaScript.</p>
 
-And then you learned how to set up a project in VS Code (or, and how to
-work with JavaScript modules.
+<p>And then you learned how to set up a project in VS Code (or, and how to
+work with JavaScript modules.</p>
 
-The second lesson was all about react components and where they're
+<p>The second lesson was all about react components and where they're
 stored within your applications. In this lesson, you were introduced
 component-based architecture, a design philosophy for building software
 based on reusable components of code like the reactor library. You
 learned about component types and components style layouts that use the
 virtual DOM. And you learned how to create components that form the
-foundation of UI design.
+foundation of UI design.</p>
 
-In this lesson, you also learned more about JSX, a special kind of
+<p>In this lesson, you also learned more about JSX, a special kind of
 syntax that acts like an extension of JavaScript. You learned how to
 transpire it in other words convert JSX to Html, which helped you to
 understand how a component is built. And you learned how to build a new
 component inside the app component and have it rendered onscreen. As
 well as how to save a component to its own file and importing it into
-its parent component so that it can be rendered onscreen.
+its parent component so that it can be rendered onscreen.</p>
 
-The third lesson was about component use and styling. You learned how to
+<p>The third lesson was about component use and styling. You learned how to
 pass data from one component to another using properties and your
 ability to do so was tested in the lab. And you learned how to render
 one component multiple times using different props. You also learned
 more about how to use JSX and its embedded expressions and how to style
-JSX elements in a way that is functional and looks good.
+JSX elements in a way that is functional and looks good.</p>
 
-As part of this lesson, you learned how to use and manipulate props and
+<p>As part of this lesson, you learned how to use and manipulate props and
 components. Define components using function expressions and arrow
 functions. Invoke functions inside of JSX expressions. Use expressions
 as props. Declare components that require props and use expressions and
-embedded expressions in attributes.
+embedded expressions in attributes.</p>
 
-After completing this module, you are now able to explain the concept
+<p>After completing this module, you are now able to explain the concept
 behind React and component architecture. Create a component to serve a
 specific purpose. Create a component folder and demonstrate how to
 create an import file within that folder. Use and manipulate props and
 components to affect visual results. And describe how to use assets
-within an app to apply styling and functional components.
+within an app to apply styling and functional components.</p>
 
-That's a great start to your React journey. Well done on completing
-this module and get ready for the next one.
+<p>That's a great start to your React journey. Well done on completing
+this module and get ready for the next one.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 34 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>34. Additional resources (React Basics - Week 1)</h2>
@@ -4445,9 +4447,9 @@ this module and get ready for the next one.
 <p>Below you will find links to helpful additional resources.</p>
 
 <ol>
-  <li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">Components and props</a>,<br></li>
-  <li><a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank" rel="noopener noreferrer">Introducing JSX</a>,<br></li>
-  <li><a href="https://reactjs.org/docs/faq-styling.html" target="_blank" rel="noopener noreferrer">Styling and CSS in React</a>,<br></li>
+  <li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank" rel="noopener noreferrer">Components and props</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/introducing-jsx.html" target="_blank" rel="noopener noreferrer">Introducing JSX</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/faq-styling.html" target="_blank" rel="noopener noreferrer">Styling and CSS in React</a>,<br><br></li>
   <li><a href="https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx" target="_blank" rel="noopener noreferrer">Introducing expressions in JSX</a></li>
 </ol>
 
@@ -4456,86 +4458,86 @@ this module and get ready for the next one.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 01 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now, you're probably familiar with <b>events</b> in JavaScript. Recall
+<p>By now, you're probably familiar with <b>events</b> in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
 can occur when the user or the browser manipulates a page. They provide
 enhanced interactive experiences, such as responding to mouse clicks,
 movements, or keyboard commands. Because events usually rely on some
 interaction, they need to wait and listen in the background for that
-interaction to occur before they can be triggered.
+interaction to occur before they can be triggered.</p>
 
-Every HTML element contains a set of events that developers can access
+<p>Every HTML element contains a set of events that developers can access
 by using HTML attributes, commonly referred to as event listeners. For
 example, it's a common feature of a website or app to have a button
 that when clicked, causes something to happen. This action is an example
 of an event and is accomplished with either event listener methods or by
-defining specific JavaScript functions.
+defining specific JavaScript functions.</p>
 
-Developers can use <b>events</b> to execute JavaScript's code in response
+<p>Developers can use <b>events</b> to execute JavaScript's code in response
 to an action based on user interactivity, like clicking a button. This
 process by which the HTML button communicates to the JavaScript event
 handler to execute some code and respond to the event action is known as
-<b>triggering</b>.
+<b>triggering</b>.</p>
 
-For example, you might want to listen for a click event on an Add to
+<p>For example, you might want to listen for a click event on an Add to
 Cart button. Once you capture such an event, you might want to run some
 JavaScript code. In this example, I just circled with a number 1 in the
 shopping cart to indicate one item has been added. If the same event
 gets triggered or fired again, our event handling code that handles the
 event by updating the count in the circle next to the shopping cart
 icon. The circle then displays the number 2 to indicate that there are
-two items in the cart.
+two items in the cart.</p>
 
-Events are a powerful tool and make up part of the <b>Document Object
+<p>Events are a powerful tool and make up part of the <b>Document Object
 Model</b>. As an aspiring React developer, you'll need to know how to
-work with <b>events</b> as they are handled a bit differently.
+work with <b>events</b> as they are handled a bit differently.</p>
 
-By the end of this section (01), you'll be able to identify the broad
+<p>By the end of this section (01), you'll be able to identify the broad
 types of events available in React, and describe some of the most
 commonly used ones. You'll also know how to explain the event handling
-process in React at a high level.
+process in React at a high level.</p>
 
-In React code, events are handled using <b>JSX event attributes</b>, which
+<p>In React code, events are handled using <b>JSX event attributes</b>, which
 are very similar to HTML event attributes that you may be familiar with.
 For example, the click handling attributes in HTML is the onclick
 attribute with all the letters lowercased. The equivalent click handling
 attributes in React's JSX is the <b>camelCased onClick</b> attribute.
 Remember that camel case means that the first letter is lowercase and
 the separation of words is indicated with a capital letter rather than a
-space.
+space.</p>
 
-There are many events supported in React, which can be divided into
+<p>There are many events supported in React, which can be divided into
 several groups. Those groups include clipboard Events, composition
 Events, keyboard Events, and many more. Each group usually holds
-multiple events.
+multiple events.</p>
 
-For example, supported mouse events include onClick, onContextMenu,
-onDoubleClick, and several others.
+<p>For example, supported mouse events include onClick, onContextMenu,
+onDoubleClick, and several others.</p>
 
-You will also find that the clipboard group has the useful events:
+<p>You will also find that the clipboard group has the useful events:
 onCopy, onCuts, and onPaste. There are far too many events to cover
-here, but you can find a complete list in the additional reading.
+here, but you can find a complete list in the additional reading.</p>
 
-The large number of event types that are accessible in React may seem
+<p>The large number of event types that are accessible in React may seem
 overwhelming at first. But note that it's actually the browser that
 comes with these features as the various devices that we use to access
 the incident have given rise to many ways for users to interact with
 websites. This means these events are not specific to React and it's
-probably not necessary to learn about all of these events.
+probably not necessary to learn about all of these events.</p>
 
-Also keep in mind that many of these events are related to specific use
-cases.
+<p>Also keep in mind that many of these events are related to specific use
+cases.</p>
 
-For example, several of the mouse events are limited to the drag and
-drop API.
+<p>For example, several of the mouse events are limited to the drag and
+drop API.</p>
 
-In other words, at this point in your learning journey, your focus
+<p>In other words, at this point in your learning journey, your focus
 should be on understanding the overall event handling process and what
-capabilities events can open up to you.
+capabilities events can open up to you.</p>
 
-In this section (01), you learned about the types of events available in
+<p>In this section (01), you learned about the types of events available in
 React and how they came to be. Next, you'll explore specific examples
-and build the skills to use events competently from various situations.
+and build the skills to use events competently from various situations.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 02 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Eventful issues</h2>
@@ -8593,7 +8595,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-<h4>Show more
+<h4>Show more</h4>
 
 If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
@@ -8621,7 +8623,7 @@ concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
 
-<h4>Thinking in React
+<h4>Thinking in React</h4>
 
 React can change how you think about the designs you look at and the
 apps you build. When you build a user interface with React, you will
@@ -8631,11 +8633,11 @@ Finally, you will connect your components together so that the data
 flows through them. In this tutorial, we'll guide you through the
 thought process of building a searchable product data table with React.
 
-<h4>Start with the mockup 
+<h4>Start with the mockup</h4>
 
-Imagine that you already have a JSON API and a mockup from a designer.
+<p>Imagine that you already have a JSON API and a mockup from a designer.</p>
 
-The JSON API returns some data that looks like this:
+<p>The JSON API returns some data that looks like this:</p>
 
 <details>
   <summary>JSON API</summary>
@@ -8662,7 +8664,7 @@ The JSON API returns some data that looks like this:
 
 </details>
 
-The mockup looks like this:
+<p>The mockup looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 63. mockup in react (203) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8679,24 +8681,18 @@ To implement a UI in React, you will usually follow the same five steps.
 
 <h3>Step 1: Break the UI into a component hierarchy</h3>
 
-Start by drawing boxes around every component and subcomponent in the
+<p>Start by drawing boxes around every component and subcomponent in the
 mockup and naming them. If you work with a designer, they may have
-already named these components in their design tool. Ask them!
+already named these components in their design tool. Ask them!</p>
 
-Depending on your background, you can think about splitting up a design
-into components in different ways:
+<p>Depending on your background, you can think about splitting up a design
+into components in different ways:</p>
 
--   <b>Programming</b>---use the same techniques for deciding if you should
-    create a new function or object. One such technique is the [single
-    responsibility
-    principle](https://en.wikipedia.org/wiki/Single_responsibility_principle),
-    that is, a component should ideally only do one thing. If it ends up
-    growing, it should be decomposed into smaller subcomponents.
-
--   <b>CSS</b>---consider what you would make class selectors for.
-    (However, components are a bit less granular.)
-
--   <b>Design</b>---consider how you would organize the design's layers.
+<ul>
+  <li><b>Programming</b>---use the same techniques for deciding if you should create a new function or object. One such technique is the <a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">single     responsibility principle</a>, that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.<br><br></li>
+  <li><b>CSS</b>--consider what you would make class selectors for. (However, components are a bit less granular.)<br><br></li>
+  <li><b>Design</b>---consider how you would organize the design's layers.</li>
+</ul>
 
 If your JSON is well-structured, you'll often find that it naturally
 maps to the component structure of your UI. That's because UI and data
@@ -8761,12 +8757,9 @@ and no thinking, but adding interactivity requires a lot of thinking and
 not a lot of typing.
 
 To build a static version of your app that renders your data model,
-you'll want to build
-[components](https://react.dev/learn/your-first-component) that reuse
-other components and pass data using
-[props.](https://react.dev/learn/passing-props-to-a-component) Props are
-a way of passing data from parent to child. (If you're familiar with the
-concept of [state](https://react.dev/learn/state-a-components-memory),
+you'll want to build <a href="https://react.dev/learn/your-first-component">components</a> that reuse
+other components and pass data using <a href="https://react.dev/learn/passing-props-to-a-component">props</a>. Props are a way of passing data from parent to child. (If you're familiar with the
+concept of <a href="https://react.dev/learn/state-a-components-memory">state</a>,
 don't use state at all to build this static version. State is reserved
 only for interactivity, that is, data that changes over time. Since this
 is a static version of the app, you don't need it.)
@@ -8817,8 +8810,7 @@ function ProductTable({ products }) {
 
 <h4>Show more</h4>
 
-(If this code looks intimidating, go through the [Quick
-Start](https://react.dev/learn) first!)
+(If this code looks intimidating, go through the <a href="https://react.dev/learn">Quick Start</a> first!)
 
 After building your components, you'll have a library of reusable
 components that render your data model. Because this is a static app,
@@ -9173,7 +9165,7 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>8:26pm 5-26-23 Thu meta-react-basics index.html</h6>
+<h6>1:55pm 5-27-23 Thu meta-react-basics index.html</h6>
 
 </body>
 </html>
