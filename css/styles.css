@@ -24,7 +24,7 @@ h6 { font-size: 0.5em; margin-left: 1rem; }
 
 ul li,
 ol li {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 ul li li,
 ol li li {
@@ -46,28 +46,6 @@ hr {
   height: 1px;
   margin: 4rem 0;
   width: 100%;
-}
-
-pre {
-  font-family: Consolas;
-  line-height:100%;
-  font-size: 12px;
-  margin-left: 1rem;
-  margin: 0.5rem 0;  /* 1rem 0 */
-  max-width: var(--width-card-wide);
-  padding: 0.5rem 0;  /* 1rem 0*/
-}
-
-pre code,
-pre samp {
-  line-height: 100%;
-  font-size: 12px;
-  font-family: Consolas;
-  display: block;
-  margin-left: 1rem;
-  max-width: var(--width-card-wide);
-  padding: 0.5rem 2rem;  /* 2% 8% 0.5rem 2rem */
-  white-space: pre-wrap;
 }
 
 small {
@@ -302,33 +280,53 @@ blockquote footer {
 details {
   font-size: 13px;
   font-family: Inter, Consolas, Bahnschrift, Georgia, Calibri, sans-serif;
-  width: 520px;  /* was 620 */
+  width: 143px;  /* was 620 */
 }
 
 details > summary {
-  padding: 2px 6px;
-  width: 15em;  /* 15em */
-  line-height:110%; /* or whatever height you like, was 160% */
+  padding: .25rem 0.5rem; */
+  width: 8em;  /* 15em */
+  line-height: 120%; /* or whatever height you like, was 160% */
   background-color: #d3d3d3;  /* very light gray */
   border: none;
   box-shadow: 3px 3px 4px blue;
-  cursor: pointer;
-}
-
-ul li {
-  line-height: 110%; /* or whatever height you like */
+  cursor: pointer;  /* switch from arrow to finger pointer */
 }
 
 details > p {
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 5px 5px;
   background-color: #fff;  /* fff white */
-  padding: 2px 6px;
+  padding: 1px 3px;  /* 2 6 */
   margin: 0;
   box-shadow: 3px 3px 4px darkgreen;
 }
 
 details[open] > summary {
   background-color: #00ff00;  /* lime green */
+}
+
+pre {
+  font-family: Consolas;
+  line-height:100%;
+  font-size: 12px;
+  margin-left: 1rem;
+/*  margin: 0.5rem 0;  /* 1rem 0 */
+*/
+  max-width: var(--width-card-wide);
+/*  padding: 0.5rem 0;  /* 1rem 0*/
+*/
+}
+
+pre code,
+pre samp {
+  line-height: 100%;
+  font-size: 12px;
+  font-family: Consolas;
+  display: block;
+  margin-left: 1rem;
+  max-width: var(--width-card-wide);
+  padding: 0.5rem 2rem;  /* 2% 8% 0.5rem 2rem */
+  white-space: pre-wrap;
 }
 
 img.displayed {
