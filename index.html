@@ -2347,8 +2347,8 @@ export default Intro3;</pre>
 
 </details>
 
-There's just one more thing left to code, the <b>Footer</b> component, so
-here it is:
+<p>There's just one more thing left to code, the <b>Footer</b> component, so
+here it is:</p>
 
 <pre>function Footer() {
   return (
@@ -2360,10 +2360,10 @@ here it is:
 
 export default Footer;</pre>
 
-Now that you have completed all the components for the app, here are a
-few more interesting things about the syntax.
+<p>Now that you have completed all the components for the app, here are a
+few more interesting things about the syntax.</p>
 
-These are:
+<p>These are:</p>
 
 <ul>
   <li>The use of the <b>className</b> attribute in JSX,<br></li>
@@ -2374,196 +2374,195 @@ These are:
 
 <h3>Discussing the Syntax</h3>
 
-Now let's briefly discuss the four bullet points above.
+<p>Now let's briefly discuss the four bullet points above.</p>
 
-Why use the <b>className</b> attribute in the JSX syntax?
+<p>Why use the <b>className</b> attribute in the JSX syntax?</p>
 
-Well, with JSX, it looks like HTML so much that it's easy to forget
-that it's actually JavaScript code - not HTML.
+<p>Well, with JSX, it looks like HTML so much that it's easy to forget
+that it's actually JavaScript code - not HTML.</p>
 
-While regular HTML does indeed have a <b>class</b> attribute, which is used
+<p>While regular HTML does indeed have a <b>class</b> attribute, which is used
 to list one or more CSS classes to be used on a given HTML element, this
-cannot really work in JSX.
+cannot really work in JSX.</p>
 
-The reason is that JSX is a special kind of JavaScript syntax, and the
-word <b>class</b> is a reserved keyword in JSX.
+<p>The reason is that JSX is a special kind of JavaScript syntax, and the
+word <b>class</b> is a reserved keyword in JSX.</p>
 
-That's why the React team had to make a compromise and so <b>className</b>
+<p>That's why the React team had to make a compromise and so <b>className</b>
 is used in JSX to list one or more CSS classes to be used on a given
-element or component.
+element or component.</p>
 
-But why use <b>Intro1.js, Intro2.js,</b> and <b>Intro3.js</b>? Isn't one of
+<p>But why use <b>Intro1.js, Intro2.js,</b> and <b>Intro3.js</b>? Isn't one of
 the tenets of coding the DRY approach - that is, the "Don't repeat
-yourself" approach?
+yourself" approach?</p>
 
-Indeed, it is. However, there are still a few concepts to discuss before
+<p>Indeed, it is. However, there are still a few concepts to discuss before
 you learn how to re-use a single component with variations in its
-content.
+content.</p>
 
-This has to do with data in components, but don't worry, we'll be
-getting to that later.
+<p>This has to do with data in components, but don't worry, we'll be
+getting to that later.</p>
 
-The third question is about the <b>props</b> object. It has been mentioned
+<p>The third question is about the <b>props</b> object. It has been mentioned
 before, but so far it hasn't been used. It hasn't been used in this
-example either.
+example either.</p>
 
-The answer to this question has to do with the next lesson, titled
-<b><i>Component Use and Styling</i></b>.
+<p>The answer to this question has to do with the next lesson, titled
+<b><i>Component Use and Styling</i></b>.</p>
 
-In this lesson, you'll see in practice how you can make components work
-better, with the help of <b>props</b>.
+<p>In this lesson, you'll see in practice how you can make components work
+better, with the help of <b>props</b>.</p>
 
-The final question is about not using the <b>&lt;a&gt;</b> element for empty
-links in my app.
+<p>The final question is about not using the <b>&lt;a&gt;</b> element for empty
+links in my app.</p>
 
-The answer here depends on whether those links are "internal" - inside
+<p>The answer here depends on whether those links are "internal" - inside
 an app, or "external", meaning, leading to some external link, such
-as;<a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">Coursera.org</a>.
+as;<a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer">Coursera.org</a>.</p>
 
-If the links are internal to the app - as they are envisioned here -
+<p>If the links are internal to the app - as they are envisioned here -
 using the <b>&lt;a&gt;</b> tag is simply not the React way of doing things.
 You'll learn why that is the case when discussing the use of React
-Router.
+Router.</p>
 
 <h3>Conclusion</h3>
 
-Having finished this section (15), you have now learned about the software
+<p>Having finished this section (15), you have now learned about the software
 development approach, detailing the creation of separate associated
 files, the requirements gathering, and the subsequent folder structure
-to be created.
+to be created.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 16 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Importing components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-One of the advantages of component-based architecture is that your app
-is split up into individual self-contained components.
+<p>One of the advantages of component-based architecture is that your app
+is split up into individual self-contained components.</p>
 
-As you have already learned, these components can be used to build
-powerful UIs based on reusable components of code.
+<p>As you have already learned, these components can be used to build
+powerful UIs based on reusable components of code.</p>
 
-In order to create a fully functioning React app, you need to create a
-collection of components.
+<p>In order to create a fully functioning React app, you need to create a
+collection of components.</p>
 
-But with the app broken into several different components, you might be
-wondering how do you locate and integrate them all into your app.
+<p>But with the app broken into several different components, you might be
+wondering how do you locate and integrate them all into your app.</p>
 
-In this section (16), you'll learn about the concept of modules and how
-to manage your React components by placing them in a components folder.
+<p>In this section (16), you'll learn about the concept of modules and how
+to manage your React components by placing them in a components folder.</p>
 
-Finally, you'll explore the structure of the import and export
-statement.
+<p>Finally, you'll explore the structure of the import and export
+statement.</p>
 
-As a developer, you often need a way to use and reuse components that
-may have been defined elsewhere or created by someone else.
+<p>As a developer, you often need a way to use and reuse components that
+may have been defined elsewhere or created by someone else.</p>
 
-For example, do you recall the concept of modules in JavaScript?
+<p>For example, do you recall the concept of modules in JavaScript?</p>
 
-Modules are standalone units of code that you can reuse again and again.
+<p>Modules are standalone units of code that you can reuse again and again.</p>
 
-Being standalone means that you can add them to your programs, remove
+<p>Being standalone means that you can add them to your programs, remove
 them, and replace them with other modules and everything will still
-work.
+work.</p>
 
-Well, in React, you can make use of this JavaScript feature to separate
-your components by placing them in their own file.
+<p>Well, in React, you can make use of this JavaScript feature to separate
+your components by placing them in their own file.</p>
 
-Then you can use the import and export statements to make the false
-communicate with each other.
+<p>Then you can use the import and export statements to make the false
+communicate with each other.</p>
 
-The export statement is used to make a module available to another
-module.
+<p>The export statement is used to make a module available to another
+module.</p>
 
-It helps to think of every JavaScript file as a module.
+<p>It helps to think of every JavaScript file as a module.</p>
 
-Then in order to make the functions and variables available to other
+<p>Then in order to make the functions and variables available to other
 files, you need to export them, which makes them available by the import
-statement.
+statement.</p>
 
-In JavaScript, there are two types of exports, default exports and named
-exports.
+<p>In JavaScript, there are two types of exports, default exports and named
+exports.</p>
 
-The default export is used when the function name is the same as the
+<p>The default export is used when the function name is the same as the
 file name and named exports are used when you want the function name to
-be different from the file name.
+be different from the file name.</p>
 
-At this point, you may be wondering what is the difference between
+<p>At this point, you may be wondering what is the difference between
 modules and components, since they are both essentially just JavaScript
-files?
+files?</p>
 
-You are right.
+<p>You are right.</p>
 
-While they have similarities, it can help to think of a component as a
-single part or small piece of functionality like a button.
+<p>While they have similarities, it can help to think of a component as a
+single part or small piece of functionality like a button.</p>
 
-Then you can think of a module as something that's larger than just one
-component like a series of components.
+<p>Then you can think of a module as something that's larger than just one
+component like a series of components.</p>
 
-This technique of splitting your code into several modules is known as
+<p>This technique of splitting your code into several modules is known as
 modular programming, and it complements the component-based architecture
-of React.
+of React.</p>
 
-To help you understand this better, let's explore the following
-scenario.
+<p>To help you understand this better, let's explore the following
+scenario.</p>
 
-Suppose you're a developer currently in the process of building an
+<p>Suppose you're a developer currently in the process of building an
 application with React and there are several components that needs to be
-included in the app.
+included in the app.</p>
 
-Some of the required components have already been created by your fellow
-developers, so you need a way to import them into your app.
+<p>Some of the required components have already been created by your fellow
+developers, so you need a way to import them into your app.</p>
 
-To do this, you need to use the operation known as importing.
+<p>To do this, you need to use the operation known as importing.</p>
 
-In React, you import components into your application using the import
-statements.
+<p>In React, you import components into your application using the import
+statements.</p>
 
-You may have already noticed the import statement in the default
-index.js file, where the app component is rendered.
+<p>You may have already noticed the import statement in the default
+index.js file, where the app component is rendered.</p>
 
-In React, to import a component, you use the keyword import, followed by
-the component name you want to import.
+<p>In React, to import a component, you use the keyword import, followed by
+the component name you want to import.</p>
 
-Then you use the keyword from, to specify the location of where the
-component is located.
+<p>Then you use the keyword from, to specify the location of where the
+component is located.</p>
 
-You need to use a file name sequence, such as a dot forward slash before
-the file name, but the file name extension is not required.
+<p>You need to use a file name sequence, such as a dot forward slash before
+the file name, but the file name extension is not required.</p>
 
-Now you know about the syntax of the import and export statements.
-Let's explore how you construct your components in React.
+<p>Now you know about the syntax of the import and export statements.
+Let's explore how you construct your components in React.</p>
 
-Remember that a component is essentially just a JavaScript file.
+<p>Remember that a component is essentially just a JavaScript file.</p>
 
-React doesn't have strict rules on how you put files into folders,
-however, there are a few common approaches you may want to consider.
+<p>React doesn't have strict rules on how you put files into folders,
+however, there are a few common approaches you may want to consider.</p>
 
-One approach is to place all components in a folder named components.
+<p>One approach is to place all components in a folder named components.</p>
 
-This allows you to structure your projects by grouping similar files
-together.
+<p>This allows you to structure your projects by grouping similar files
+together.</p>
 
-For example, suppose you are building a payment page for an e-commerce
-app.
+<p>For example, suppose you are building a payment page for an e-commerce
+app.</p>
 
-The page contains three sections that will each be represented by a
-component in React.
+<p>The page contains three sections that will each be represented by a
+component in React.</p>
 
-First, a Header section using a component called header, then a Payment
+<p>First, a Header section using a component called header, then a Payment
 section using a component called main, and finally, a Sidebar using a
-component called sidebar.
+component called sidebar.</p>
 
-Each component will be called and have its contents returned to the root
-components of our application, which is app.js.
+<p>Each component will be called and have its contents returned to the root
+components of our application, which is app.js.</p>
 
-In this module, you've explored the concept of modules and the
-structure of the import and export statement.
+<p>In this section (16), you've explored the concept of modules and the
+structure of the import and export statement.</p>
 
-You also learned how to manage your React components by placing them in
-a components folder.
-
+<p>You also learned how to manage your React components by placing them in
+a components folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 17 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Creating and importing components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here are the contents of the Heading.js file:
+<p>Here are the contents of the Heading.js file:</p>
 
 <pre>function Heading() {
   return (
@@ -2573,7 +2572,7 @@ Here are the contents of the Heading.js file:
   
 export default Heading;</pre>
 
-Here are the contents of the App.js file:
+<p>Here are the contents of the App.js file:</p>
 
 <pre>export default App;
 
@@ -2584,7 +2583,7 @@ Here are the contents of the App.js file:
      &lt;div className="App"&gt;
        &lt;Heading /&gt;</pre>
 
-Here is a screenshot of the src folder:
+<p>Here is a screenshot of the src folder:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ 40. app, heading and index files displayed in src folder (0x) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2595,9 +2594,9 @@ Here is a screenshot of the src folder:
 </p>
 <!-- {width="3.7708333333333335in" height="1.3125in"} -->
 
-Here is the output from the solution code for the App.js file:
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. output of exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. output of exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image041.png?raw=true"
@@ -2659,139 +2658,139 @@ function App() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 19 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Principles of Components: Props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now, you should be familiar with the concept of functional components
+<p>By now, you should be familiar with the concept of functional components
 in React. They are reusable blocks of code that act much like a
-JavaScript function.
+JavaScript function.</p>
 
-Recall that in JavaScript, you can make your functions more flexible by
+<p>Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
 arguments when you call the function. Well, in React, you can perform a
 similar action using something called properties, which are represented
-as props.
+as props.</p>
 
-In this section (19), you will learn about the props object and how
+<p>In this section (19), you will learn about the props object and how
 developers use it to pass data from one component to another. Then
 you'll explore component hierarchy and learn why components are set to
-have a parent-child structure.
+have a parent-child structure.</p>
 
-Before you begin your journey with props, let's revisit another piece
+<p>Before you begin your journey with props, let's revisit another piece
 of JavaScript functionality that will help you understand how props
 work. It's called the JavaScript object. Recall this in JavaScript, an
-object is a special type of variable that can contain many values.
+object is a special type of variable that can contain many values.</p>
 
-You use objects when you need to store groups of related data of
+<p>You use objects when you need to store groups of related data of
 different types. Each data type is known as an object property, for
 example, suppose you create an object called fruits that contains
-properties for type, quantity, and color.
+properties for type, quantity, and color.</p>
 
-Remember that these properties consist of name-value pairs, and you can
-access the object's properties using dot notation.
+<p>Remember that these properties consist of name-value pairs, and you can
+access the object's properties using dot notation.</p>
 
-In React, you can use a similar technique to pass data from one
+<p>In React, you can use a similar technique to pass data from one
 component to another using the properties object or simply props. Props
 allow you to pass data from one component to another. It's helpful to
 think of props as arguments a component can accept and are passed using
-JSX syntax, much like HTML attributes.
+JSX syntax, much like HTML attributes.</p>
 
-Inside the function, you use the keyword props. Now that you're
+<p>Inside the function, you use the keyword props. Now that you're
 familiar with the concept of props, let's explore an example to send
-some props to a component and print them out in a React app.
+some props to a component and print them out in a React app.</p>
 
-Suppose you have the default code for the React app open in the index.js
+<p>Suppose you have the default code for the React app open in the index.js
 file, you call the app component. Inside the app component, you return
 an h1 heading with some static title text. While this code works, you
-can make this heading dynamic by using props.
+can make this heading dynamic by using props.</p>
 
-Let's now explore the syntax involved to create this. In the root
+<p>Let's now explore the syntax involved to create this. In the root
 component, index.js, you send the value you want to pass to the app
 component as an argument in the form of an HTML attribute. Next, in the
 app component, you accept this argument using the props object. To do
 this, you add the keyword props to the function declaration inside of
 the parentheses. Finally, to access this object's properties, you use
 dots notation to reference the name of the object property that was
-passed as an argument by the HTML attribute.
+passed as an argument by the HTML attribute.</p>
 
-Once again, remember to enclose your code inside curly brackets so React
-knows that you want to work with the props object and not static text.
+<p>Once again, remember to enclose your code inside curly brackets so React
+knows that you want to work with the props object and not static text.</p>
 
-Because props is essentially a JavaScript object, it can accept many
+<p>Because props is essentially a JavaScript object, it can accept many
 data types ranging from simple types such as strings and integers to
 more complex types such as functions, arrays, and objects. As a result,
 props allow developers to have greater flexibility when creating and
 working with components, especially when you want the flow of data in
-your app to be dynamic.
+your app to be dynamic.</p>
 
-While you just explore the basic example to dynamically print a heading,
+<p>While you just explore the basic example to dynamically print a heading,
 you'll get a chance to practice with more complex data structures using
-props later.
+props later.</p>
 
-Now you're familiar with how props work by sending data between
-components. Let's explore this data flow in a little more detail.
+<p>Now you're familiar with how props work by sending data between
+components. Let's explore this data flow in a little more detail.</p>
 
-When two components communicate with each other, the component sending
+<p>When two components communicate with each other, the component sending
 the props data is known as the parent, and the component receiving the
-props data is known as the child.
+props data is known as the child.</p>
 
-As you've just learned with the example earlier, this parent-child
+<p>As you've just learned with the example earlier, this parent-child
 relationship allows parent components of past data down to child
-components using props.
+components using props.</p>
 
-It's also possible for parent components to send the same data to
+<p>It's also possible for parent components to send the same data to
 multiple child components. However, it's important to know that this
 communication is a one-directional data flow. It's not possible to
 communicate from the child component back to the parent components using
 props. Instead, developers use other approaches. Don't worry about that
-for now. You will learn more about them later.
+for now. You will learn more about them later.</p>
 
-Although props are a very powerful tool in React, they do have some
+<p>Although props are a very powerful tool in React, they do have some
 limitations. For example, you just learned about how it's not possible
 to send data from the child component back to the parent component using
-prompts.
+prompts.</p>
 
-Another important limitation has to do with something called pure
+<p>Another important limitation has to do with something called pure
 functions. In programming, a pure function is a function that will
 always return the same outputs for the same argument values that are
 passed in. Don't worry too much about pure function for now. Just keep
 in mind that in React, when you declare a component using props, it must
-never modify its own prompts.
+never modify its own prompts.</p>
 
-In this section (19), you learned about how props are used to pass data
+<p>In this section (19), you learned about how props are used to pass data
 to components. You discovered that a prop is a special react object that
 works in a similar way to a JavaScript object, and that its properties
 can be accessed by dot notation. You also learned why developers use
 props in order to make their apps more dynamic and flexible. Finally,
 you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
-functions using props must never modify its own props.
+functions using props must never modify its own props.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 20 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Dissecting props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Recall that much like parameters in a JavaScript function which allow
+<p>Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
-to pass data between components. But how exactly do they work?
+to pass data between components. But how exactly do they work?</p>
 
-In this section (20), you'll use a transpiler to break JSX code to plain
-JavaScript, making its purpose more understandable.
+<p>In this section (20), you'll use a transpiler to break JSX code to plain
+JavaScript, making its purpose more understandable.</p>
 
-Remember first that JSX code in React is just syntactic sugar - meaning,
-a nicer way to write some hard-to-read code.
+<p>Remember first that JSX code in React is just syntactic sugar - meaning,
+a nicer way to write some hard-to-read code.</p>
 
-For the browser to understand this syntactic sugar, you need to
+<p>For the browser to understand this syntactic sugar, you need to
 transpile JSX down to plain JavaScript code. You have a resource online,
 at the URL of <a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">babeljs.io</a>, which allows you to inspect the results of this transpiling. Once you visit the website,
-make sure to navigate to the <i>Try it out</i> link in the main navigation.
+make sure to navigate to the <i>Try it out</i> link in the main navigation.</p>
 
-For example, let's say you have a component that returns a piece of JSX:
+<p>For example, let's say you have a component that returns a piece of JSX:</p>
 
 <pre>function App() {
 
   return &lt;h1&gt;Hello there&lt;/h1&gt;
 }</pre>
 
-... if you used the Babel transpiler to transpile this JSX syntactic
+<p>... if you used the Babel transpiler to transpile this JSX syntactic
 sugar code down to plain JavaScript code, you'd get back some unusual
-code:
+code:</p>
 
 <pre>"use strict";
 
@@ -2820,8 +2819,8 @@ This means that the <b>createElement</b> function receives three arguments:</p>
   )
 }</pre>
 
-... the transpiled return statement in plain JavaScript again returns
-two <b>createElement</b> functions:
+<p>... the transpiled return statement in plain JavaScript again returns
+two <b>createElement</b> functions:</p>
 
 <pre>"use strict";
 function App() {
@@ -2829,8 +2828,8 @@ function App() {
     React.createElement("h1", null, "Hello there"));
 }</pre>
 
-If you format this output, remove the <b>"use strict"</b> line, and
-remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:
+<p>If you format this output, remove the <b>"use strict"</b> line, and
+remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:</p>
 
 <pre>function App() {
   return React.createElement(
@@ -2841,21 +2840,21 @@ remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:
 }</pre>
 
 <p>So now the third argument of the outer-most <b>React.createElement</b> call
-is another <b>React.createElement</b> call.<br>
+is another <b>React.createElement</b> call.</p>
 
-This is how you can nest as many elements as you want.<br>
+<p>This is how you can nest as many elements as you want.</p>
 
-This means that a nested JSX structure is just a bunch of nested
-<b>React.createElement</b> calls, passed in to other
+<p>This means that a nested JSX structure is just a bunch of nested<br>
+<b>React.createElement</b> calls, passed in to other<br>
 <b>React.createElement</b> calls as their third argument.</p>
 
 <h3>The second -- null -- argument</h3>
 
-The second argument of <b>null</b> can -- in this case -- be replaced with
-an empty object.
+<p>The second argument of <b>null</b> can -- in this case -- be replaced with
+an empty object.</p>
 
-In that case, your code would contain a pair of curly braces instead of
-the word <b>null</b>:
+<p>In that case, your code would contain a pair of curly braces instead of
+the word <b>null</b>:</p>
 
 <pre>"use strict";
   
@@ -2867,11 +2866,11 @@ function App() {
   );
 }</pre>
 
-This object is referred to as the <i>props</i> object. It is the main
+<p>This object is referred to as the <i>props</i> object. It is the main
 mechanism of sending data from a parent component to a child component
-in React.
+in React.</p>
 
-The way this works is described in React docs using the following code:
+<p>The way this works is described in React docs using the following code:</p>
 
 <pre>React.createElement(
   type,
@@ -2881,33 +2880,33 @@ The way this works is described in React docs using the following code:
 
 <h3>The third argument (\...children)</h3>
 
-This is the inner content that will go inside the wrapping element.
+<p>This is the inner content that will go inside the wrapping element.
 It's what makes it possible to nest elements inside other elements,
-mimicking the way that HTML works.
+mimicking the way that HTML works.</p>
 
-In this section (20) you've learned how to use a transpiler to break JSX code
-to plain JavaScript, making its purpose more understandable.
+<p>In this section (20) you've learned how to use a transpiler to break JSX code
+to plain JavaScript, making its purpose more understandable.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 21 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Using props in components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By now, you should be familiar with the concept of props, and that they
 allow you to pass data from one component to another. Developers use
-props when they want the flow of data in the app to be dynamic.<br>
+props when they want the flow of data in the app to be dynamic.</p>
 
-This makes the app more versatile, helping it consume data easier.<br>
+<p>This makes the app more versatile, helping it consume data easier.</p>
 
-In this section (21) you'll learn the syntax involved to use props and
+<p>In this section (21) you'll learn the syntax involved to use props and
 components. You'll also explore the passing of props to and within a
-component using functions.<br>
+component using functions.</p>
 
-During this course you were introduced to an example of how to build a simple blog layout in 
-react using components.<br>
+<p>During this course you were introduced to an example of how to build a simple blog layout in 
+react using components.</p>
 
-Now you'll be introduced to a new component called the Nav component.
-Developers commonly build navigation menus using html on ordered lists.<br>
+<p>Now you'll be introduced to a new component called the Nav component.
+Developers commonly build navigation menus using html on ordered lists.</p>
 
-A navigation menu is basically just a list which can be styled easily
+<p>A navigation menu is basically just a list which can be styled easily
 with CSS, such a snippet of code is well suited to be placed in its own
 react component. Making use of the HTLM Nav elements to act as the block
 of code to return the JSX from it inside the function. For example, the
@@ -2915,17 +2914,17 @@ return statement can contain several HTLM like elements, such as U L and
 L I tags. And this same Nav component can also be rendered as a JSX
 element to which we can pass dynamic value with props. In order to do
 this successfully you need to be comfortable with the concept of
-attributes.<br>
+attributes.</p>
 
-The best way to develop an understanding of attributes is
+<p>The best way to develop an understanding of attributes is
 with a live example of building a component using props. Here's a
 practical way to work with props. I'm in my app with the header main
 and sidebar components and all of them are rendered from the app
 component. The app component is in this case referred to as the parent
 component and the header main and side ball components are referred to
-as the Children of the app component.<br>
+as the Children of the app component.</p>
 
-They are now past data from the app components to each of its Children components. 
+<p>They are now past data from the app components to each of its Children components. 
 First the header component receives a name prop, with a value of ANNA and a color prop
 with the value of purple. I'm sending those props from the header JSX
 element inside the app components return statement. Press control S, or
@@ -2943,7 +2942,9 @@ To make sure that the expressions are evaluated inside the JSX syntax, I
 must surround them with an opening and a closing curly brace. I press
 control S or command s on the MAC again, and wait for it to compile. Now
 my header shows the prop state received from the parent component, I'll
-now update the main and sidebar to. Back in the app components render
+now update the main and sidebar to. </p>
+
+<p>Back in the app components render
 statement, I add the greet prop with the value of howdy in the main JXS
 element, and the value of high in the sidebar JXS element. I opened the
 main components file and receive the props object Then outputs the value
@@ -2954,12 +2955,12 @@ curly brace props dot greet, closing curly brace. I click file, save all
 and wait for the apps to compile. All my components are now using the
 data they received from their parent components using their respective
 props objects. You should now be able to effectively demonstrate the
-passing of props to and within a component using classes and functions.
+passing of props to and within a component using classes and functions.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 22 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Passing props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is the completed App.js file:
+<p>Here is the completed App.js file:</p>
 
 <pre>import Heading from "./Heading";
 
