@@ -7464,26 +7464,27 @@ empty to having a X after clicking it.
 
 <h4>Note</h4>
 
-The DOM &lt;button&gt; element's onClick attribute has a special meaning to
+<p>The DOM &lt;button&gt; element's onClick attribute has a special meaning to
 React because it is a built-in component. For custom components like
 Square, the naming is up to you. You could give any name to the Square's
 onSquareClick prop or Board's handleClick function, and the code would
-work the same. In React, it's conventional to use onSomething names for
+work the same.</p>
+<p>In React, it's conventional to use onSomething names for
 props which represent events and handleSomething for the function
-definitions which handle those events.
+definitions which handle those events.</p>
 
 <h4>Why immutability is important</h4>
 
-Note how in handleClick, you call .slice() to create a copy of the
+<p>Note how in handleClick, you call .slice() to create a copy of the
 squares array instead of modifying the existing array. To explain why,
 we need to discuss immutability and why immutability is important to
-learn.
+learn.</p>
 
-There are generally two approaches to changing data. The first approach
-is to mutate the data by directly changing the data's values. The second
-approach is to replace the data with a new copy which has the desired
-changes. Here is what it would look like if you mutated the squares
-array:
+<p>There are generally two approaches to changing data.</p>
+<p>The first approach is to mutate the data by directly changing the data's values.</p>
+<p>The second approach is to replace the data with a new copy which has the desired
+changes.</p>
+<p>Here is what it would look like if you mutated the squares array:</p>
 
 <pre>const squares = [null, null, null, null, null, null, null, null,
   null];
@@ -7493,8 +7494,8 @@ squares[0] = 'X';
 // Now `squares` is ["X", null, null, null, null, null, null,
   null, null];</pre>
 
-And here is what it would look like if you changed data without mutating
-the squares array:
+<p>And here is what it would look like if you changed data without mutating
+the squares array:</p>
 
 <pre>const squares = [null, null, null, null, null, null, null, null,
   null];
@@ -7505,35 +7506,34 @@ const nextSquares = ['X', null, null, null, null, null, null, null,
 // Now `squares` is unchanged, but `nextSquares` first element is
 'X' rather than `null`</pre>
 
-The result is the same but by not mutating (changing the underlying
-data) directly, you gain several benefits.
+<p>The result is the same but by not mutating (changing the underlying
+data) directly, you gain several benefits.</p>
 
-Immutability makes complex features much easier to implement. Later in
+<p>Immutability makes complex features much easier to implement. Later in
 this tutorial, you will implement a "time travel" feature that lets you
 review the game's history and "jump back" to past moves. This
 functionality isn't specific to games---an ability to undo and redo
 certain actions is a common requirement for apps. Avoiding direct data
 mutation lets you keep previous versions of the data intact, and reuse
-them later.
+them later.</p>
 
-There is also another benefit of immutability. By default, all child
+<p>There is also another benefit of immutability. By default, all child
 components re-render automatically when the state of a parent component
 changes. This includes even the child components that weren't affected
 by the change. Although re-rendering is not by itself noticeable to the
 user (you shouldn't actively try to avoid it!), you might want to skip
 re-rendering a part of the tree that clearly wasn't affected by it for
-performance reasons. Immutability makes it very cheap for components to
-compare whether their data has changed or not. You can learn more about
-how React chooses when to re-render a component in [the memo API
-reference](https://react.dev/reference/react/memo).
+performance reasons.</p>
+<p>Immutability makes it very cheap for components to compare whether their data has changed or not. You can learn more about how React chooses when to re-render a component in [the memo API
+reference](https://react.dev/reference/react/memo).</p>
 
 <h4>Taking turns</h4>
 
-It's now time to fix a major defect in this tic-tac-toe game: the "O"s
-cannot be marked on the board.
+<p>It's now time to fix a major defect in this tic-tac-toe game: the "O"s
+cannot be marked on the board.</p>
 
-You'll set the first move to be "X" by default. Let's keep track of this
-by adding another piece of state to the Board component:
+<p>You'll set the first move to be "X" by default. Let's keep track of this
+by adding another piece of state to the Board component:</p>
 
 <pre>function Board() {
   const [xIsNext, setXIsNext] = useState(true);
@@ -7541,10 +7541,10 @@ by adding another piece of state to the Board component:
   // ...
 }</pre>
 
-Each time a player moves, xIsNext (a boolean) will be flipped to
+<p>Each time a player moves, xIsNext (a boolean) will be flipped to
 determine which player goes next and the game's state will be saved.
 You'll update the Board's handleClick function to flip the value of
-xIsNext:
+xIsNext:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -7569,11 +7569,11 @@ xIsNext:
 
 </details>
 
-Now, as you click on different squares, they will alternate between X
-and O, as they should!
+<p>Now, as you click on different squares, they will alternate between X
+and O, as they should!</p>
 
-But wait, there's a problem. Try clicking on the same square multiple
-times:
+<p>But wait, there's a problem. Try clicking on the same square multiple
+times:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. o overwriting an x (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7584,14 +7584,14 @@ times:
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
-The X is overwritten by an O! While this would add a very interesting
-twist to the game, we're going to stick to the original rules for now.
+<p>The X is overwritten by an O! While this would add a very interesting
+twist to the game, we're going to stick to the original rules for now.</p>
 
-When you mark a square with a X or an O you aren't first checking to see
+<p>When you mark a square with a X or an O you aren't first checking to see
 if the square already has a X or O value. You can fix this by returning
 early. You'll check to see if the square already has a X or an O. If the
 square is already filled, you will return in the handleClick function
-early---before it tries to update the board state.
+early---before it tries to update the board state.</p>
 
 <pre>function handleClick(i) {
   if (squares[i]) {
@@ -7601,8 +7601,8 @@ early---before it tries to update the board state.
   //...
 }</pre>
 
-Now you can only add X's or O's to empty squares! Here is what your code
-should look like at this point:
+<p>Now you can only add X's or O's to empty squares! Here is what your code
+should look like at this point:</p>
 
 <details>
   <summary>App.js</summary>
@@ -7647,12 +7647,12 @@ should look like at this point:
 
 <h4>Declaring a winner</h4>
 
-Now that you show which player's turn is next, you should also show when
+<p>Now that you show which player's turn is next, you should also show when
 the game is won and there are no more turns to make. To do this you'll
 add a helper function called calculateWinner that takes an array of 9
 squares, checks for a winner and returns 'X', 'O', or null as
 appropriate. Don't worry too much about the calculateWinner function;
-it's not specific to React:
+it's not specific to React:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -7685,14 +7685,14 @@ function calculateWinner(squares) {
 
 <h4>Note</h4>
 
-It does not matter whether you define calculateWinner before or after
+<p>It does not matter whether you define calculateWinner before or after
 the Board. Let's put it at the end so that you don't have to scroll past
-it every time you edit your components.
+it every time you edit your components.</p>
 
-You will call calculateWinner(squares) in the Board component's
+<p>You will call calculateWinner(squares) in the Board component's
 handleClick function to check if a player has won. You can perform this
 check at the same time you check if a user has clicked a square that
-already has a X or and O. We'd like to return early in both cases:
+already has a X or and O. We'd like to return early in both cases:</p>
 
 <pre>function handleClick(i) {
   if (squares[i] || calculateWinner(squares)) {
@@ -7702,11 +7702,11 @@ already has a X or and O. We'd like to return early in both cases:
   //...
 }</pre>
 
-To let the players know when the game is over, you can display text such
+<p>To let the players know when the game is over, you can display text such
 as "Winner: X" or "Winner: O". To do that you'll add a status section to
 the Board component. The status will display the winner if the game is
 over and if the game is ongoing you'll display which player's turn is
-next:
+next:</p>
 
 <details>
   <summary>JS Function</summary>
@@ -7732,9 +7732,9 @@ export default function Board() {
 
 </details>
 
-Congratulations! You now have a working tic-tac-toe game. And you've
+<p>Congratulations! You now have a working tic-tac-toe game. And you've
 just learned the basics of React too. So, you are the real winner here.
-Here is what the code should look like:
+Here is what the code should look like:</p>
 
 <details>
   <summary>App.js</summary>
@@ -7826,23 +7826,23 @@ function calculateWinner(squares) {
 
 <h4>Adding time travel</h4>
 
-As a final exercise, let's make it possible to "go back in time" to the
-previous moves in the game.
+<p>As a final exercise, let's make it possible to "go back in time" to the
+previous moves in the game.</p>
 
 <h4>Storing a history of moves</h4>
 
-If you mutated the squares array, implementing time travel would be very
-difficult.
+<p>If you mutated the squares array, implementing time travel would be very
+difficult.</p>
 
-However, you used slice() to create a new copy of the squares array
+<p>However, you used slice() to create a new copy of the squares array
 after every move, and treated it as immutable. This will allow you to
 store every past version of the squares array, and navigate between the
-turns that have already happened.
+turns that have already happened.</p>
 
-You'll store the past squares arrays in another array called history,
+<p>You'll store the past squares arrays in another array called history,
 which you'll store as a new state variable. The history array represents
 all board states, from the first to the last move, and has a shape like
-this:
+this:</p>
 
 <pre>[
   // Before first move
@@ -7890,15 +7890,16 @@ export default function Game() {
 
 </details>
 
-Note that you are removing the export default keywords before the
+<p>Note that you are removing the export default keywords before the
 function Board() { declaration and adding them before the function
 Game() { declaration. This tells your index.js file to use the Game
-component as the top-level component instead of your Board component.
-The additional divs returned by the Game component are making room for
-the game information you'll add to the board later.
+component as the top-level component instead of your Board component.</p>
 
-Add some state to the Game component to track which player is next and
-the history of moves:
+<p>The additional divs returned by the Game component are making room for
+the game information you'll add to the board later.</p>
+
+<p>Add some state to the Game component to track which player is next and
+the history of moves:</p>
 
 <pre>export default function Game() {
 
@@ -7908,12 +7909,12 @@ const [history, setHistory] = useState([Array(9).fill(null)]);
 
 // ...</pre>
 
-Notice how [Array(9).fill(null)] is an array with a single item, which
-itself is an array of 9 nulls.
+<p>Notice how [Array(9).fill(null)] is an array with a single item, which
+itself is an array of 9 nulls.</p>
 
-To render the squares for the current move, you'll want to read the last
+<p>To render the squares for the current move, you'll want to read the last
 squares array from the history. You don't need useState for this---you
-already have enough information to calculate it during rendering:
+already have enough information to calculate it during rendering:</p>
 
 <pre>export default function Game() {
 
@@ -7925,9 +7926,9 @@ const currentSquares = history[history.length - 1];
 
 // ...</pre>
 
-Next, create a handlePlay function inside the Game component that will
+<p>Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
-currentSquares and handlePlay as props to the Board component:
+currentSquares and handlePlay as props to the Board component:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -7952,11 +7953,11 @@ currentSquares and handlePlay as props to the Board component:
 
 </details>
 
-Let's make the Board component fully controlled by the props it
+<p>Let's make the Board component fully controlled by the props it
 receives. Change the Board component to take three props: xIsNext,
 squares, and a new onPlay function that Board can call with the updated
-squares array when a player makes a move. Next, remove the first two
-lines of the Board function that call useState:
+squares array when a player makes a move.</p>
+<p>Next, remove the first two lines of the Board function that call useState:</p>
 
 <pre>function Board({ xIsNext, squares, onPlay }) {
 
@@ -7966,9 +7967,9 @@ lines of the Board function that call useState:
     // ...
 }</pre>
 
-Now replace the setSquares and setXIsNext calls in handleClick in the
+<p>Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
-Game component can update the Board when the user clicks a square:
+Game component can update the Board when the user clicks a square:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -7992,20 +7993,20 @@ Game component can update the Board when the user clicks a square:
 
 </details>
 
-The Board component is fully controlled by the props passed to it by the
+<p>The Board component is fully controlled by the props passed to it by the
 Game component. You need to implement the handlePlay function in the
-Game component to get the game working again.
+Game component to get the game working again.</p>
 
-What should handlePlay do when called? Remember that Board used to call
+<p>What should handlePlay do when called? Remember that Board used to call
 setSquares with an updated array; now it passes the updated squares
-array to onPlay.
+array to onPlay.</p>
 
-The handlePlay function needs to update Game's state to trigger a
+<p>The handlePlay function needs to update Game's state to trigger a
 re-render, but you don't have a setSquares function that you can call
 any more---you're now using the history state variable to store this
 information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
-just as Board used to do:
+just as Board used to do:</p>
 
 <pre>export default function Game() {
   //...
@@ -8016,16 +8017,16 @@ just as Board used to do:
     //...
 }</pre>
 
-Here, [...history, nextSquares] creates a new array that contains all the items in history, followed by nextSquares. (You can read the ...history <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">[spread syntax]</a> as "enumerate all the items in history".)
+<p>Here, [...history, nextSquares] creates a new array that contains all the items in history, followed by nextSquares. (You can read the ...history <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">[spread syntax]</a> as "enumerate all the items in history".)</p>
 
-For example, if history is [[null,null,null], ["X",null,null]]
+<p>For example, if history is [[null,null,null], ["X",null,null]]
 and nextSquares is ["X",null,"O"], then the new [\...history,
 nextSquares] array will be [[null,null,null], ["X",null,null],
-["X",null,"O"]].
+["X",null,"O"]].</p>
 
-At this point, you've moved the state to live in the Game component, and
+<p>At this point, you've moved the state to live in the Game component, and
 the UI should be fully working, just as it was before the refactor. Here
-is what the code should look like at this point:
+is what the code should look like at this point:</p>
 
 <details>
   <summary>App.js</summary>
@@ -8067,23 +8068,20 @@ is what the code should look like at this point:
 
 <h4>Showing the past moves</h4>
 
-Since you are recording the tic-tac-toe game's history, you can now
-display a list of past moves to the player.
+<p>Since you are recording the tic-tac-toe game's history, you can now
+display a list of past moves to the player.</p>
 
-React elements like &lt;button&gt; are regular JavaScript objects; you can
+<p>React elements like &lt;button&gt; are regular JavaScript objects; you can
 pass them around in your application. To render multiple items in React,
-you can use an array of React elements.
+you can use an array of React elements.</p>
 
-You already have an array of history moves in state, so now you need to
-transform it to an array of React elements. In JavaScript, to transform
-one array into another, you can use the [array map
-method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+<p>You already have an array of history moves in state, so now you need to transform it to an array of React elements. In JavaScript, to transform one array into another, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">array map method</a>:</p>
 
 <pre>[1, 2, 3].map((x) =&gt; x * 2) // [2, 4, 6]</pre>
 
-You'll use map to transform your history of moves into React elements
+<p>You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
-"jump" to past moves. Let's map over the history in the Game component:
+"jump" to past moves. Let's map over the history in the Game component:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -8127,11 +8125,10 @@ representing buttons on the screen, and display a list of buttons to
 
 </details>
 
-You can see what your code should look like below. Note that you should
+<p>You can see what your code should look like below. Note that you should
 see an error in the developer tools console that says: Warning: Each
 child in an array or iterator should have a unique "key" prop. Check
-the render method of \`Game\`. You'll fix this error in the next
-section.
+the render method of `Game`. You'll fix this error in the next section.</p>
 
 <details>
   <summary>App.js</summary>
@@ -8253,46 +8250,46 @@ function calculateWinner(squares) {
 
 </details>
 
-As you iterate through history array inside the function you passed to
+<p>As you iterate through history array inside the function you passed to
 map, the squares argument goes through each element of history, and the
 move argument goes through each array index: 0, 1, 2, .... (In most
 cases, you'd need the actual array elements, but to render a list of
-moves you will only need indexes.)
+moves you will only need indexes.)</p>
 
-For each move in the tic-tac-toe game's history, you create a list item
+<p>For each move in the tic-tac-toe game's history, you create a list item
 &lt;li&gt; which contains a button &lt;button&gt;. The button has an onClick
 handler which calls a function called jumpTo (that you haven't
-implemented yet).
+implemented yet).</p>
 
-For now, you should see a list of the moves that occurred in the game
+<p>For now, you should see a list of the moves that occurred in the game
 and an error in the developer tools console. Let's discuss what the
-"key" error means.
+"key" error means.</p>
 
 <h4>Picking a key</h4>
 
-When you render a list, React stores some information about each
+<p>When you render a list, React stores some information about each
 rendered list item. When you update a list, React needs to determine
 what has changed. You could have added, removed, re-arranged, or updated
-the list's items.
+the list's items.</p>
 
-Imagine transitioning from
+<p>Imagine transitioning from;</p>
 
 <pre>&lt;li&gt;Alexa: 7 tasks left&lt;/li&gt;
 &lt;li&gt;Ben: 5 tasks left&lt;/li&gt;</pre>
 
-to
+<p>to:</p>
 
 <pre>&lt;li&gt;Ben: 9 tasks left&lt;/li&gt;
 &lt;li&gt;Claudia: 8 tasks left&lt;/li&gt;
 &lt;li&gt;Alexa: 5 tasks left&lt;/li&gt;</pre>
 
-In addition to the updated counts, a human reading this would probably
+<p>In addition to the updated counts, a human reading this would probably
 say that you swapped Alexa and Ben's ordering and inserted Claudia
 between Alexa and Ben. However, React is a computer program and can't
 know what you intended, so you need to specify a key property for each
 list item to differentiate each list item from its siblings. If your
 data was from a database, Alexa, Ben, and Claudia's database IDs could
-be used as keys.
+be used as keys.</p>
 
 <pre>&lt;li key={user.id}&gt;
   {user.name}: {user.taskCount} tasks left
@@ -9033,15 +9030,15 @@ state, you need to pass these functions down to SearchBar:
 
 </details>
 
-Inside the SearchBar, you will add the onChange event handlers and set
-the parent state from them:
+<p>Inside the SearchBar, you will add the onChange event handlers and set
+the parent state from them:</p>
 
 <pre>&lt;input
   type="text"
   value={filterText onChange={(e) =&gt;
   onFilterTextChange(e.target.value)} /&gt;</pre>
 
-Now the application fully works!
+<p>Now the application fully works!</p>
 
 <details>
   <summary>App.js</summary>
@@ -9121,22 +9118,22 @@ export default function App() {
   return &lt;Greeting name="world" /&gt;
 }</pre>
 
-You can edit it directly or open it in a new tab by pressing the "Fork"
-button in the upper right corner.
+<p>You can edit it directly or open it in a new tab by pressing the "Fork"
+button in the upper right corner.</p>
 
-Most pages in the React documentation contain sandboxes like this.
+<p>Most pages in the React documentation contain sandboxes like this.
 Outside of the React documentation, there are many online sandboxes that
 support React: for example, <a href="https://codesandbox.io/s/new" target="_blank" rel="noopener noreferrer">CodeSandbox</a>,
 <a href="https://stackblitz.com/fork/react" target="_blank" rel="noopener noreferrer">StackBlitz, 
 </a>or, <a href="https://stackblitz.com/edit/react-uj6spj?file=src%2FApp.js" target="_blank" rel="noopener noreferrer">Stackblitz with React</a>, or
-<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work" target="_blank" rel="noopener noreferrer">CodePen</a>.
+<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work" target="_blank" rel="noopener noreferrer">CodePen</a>.</p>
 
 <h3>Try React locally</h3>
 
-To try React locally on your computer, <a href="https://gist.githubusercontent.com/
-gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.
+<p>To try React locally on your computer, <a href="https://gist.githubusercontent.com/
+gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.</p>
 
-Open it in your editor and your browser!
+<p>Open it in your editor and your browser!</p>
 
 <h3>Start a new React project</h3>
 
@@ -9144,13 +9141,13 @@ If you want to build an app or a website fully with React, <a href="https://reac
 
 <h3>Add React to an existing project</h3>
 
-If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
+<p>If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a></p>
 
 <h3>Next steps</h3>
 
-Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
+<p>Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.</p>
 
-End. . .
+<h7>End. . .</h7>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>3:25pm 5-27-23 Sat meta-react-basics index.html</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
