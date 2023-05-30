@@ -2762,7 +2762,6 @@ function App() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 [Basic Concepts of Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) 
-(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
 [Importing a Component](https://create-react-app.dev/docs/importing-a-component/) 
 
@@ -2792,7 +2791,7 @@ GitHub](https://github.com/webpack/webpack-dev-server) 
 <h2>19. Principles of Components: Props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with the concept of functional components in React. 
-They are reusable blocks of code that act much like a JavaScript function.
+They are reusable blocks of code that act much like a JavaScript function.<br>
 
 Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
@@ -3252,9 +3251,11 @@ export default App;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 At this point in the course, you've been introduced to the concept of
 JSX, and how it's used to interact with components.<br>
+
 In this section (23), you will explore JSX in more detail in the context of 
 components and styling.  You'll also learn how to mix JavaScript, HTML, and 
 CSS within a component.<br>
+
 What is it that makes JSX so special? In one word,
 expressiveness. Developers can express what they want to react to render
 using a very expressive syntax, almost identical to HTML or XML.<br>
@@ -9355,11 +9356,11 @@ one piece of your data model.
 
 There are five components on this screen:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 64. data model five components (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image064.png?raw=true"
-  alt="."
+  alt="Five components in this data model example."
   width="50%" />
 </p>
 <!--
@@ -9379,12 +9380,15 @@ height="3.1in"}
 5.  ProductRow (yellow) displays a row for each product.
 
 If you look at ProductTable (lavender), you'll see that the table header
-(containing the "Name" and "Price" labels) isn't its own component. This
-is a matter of preference, and you could go either way. For this
-example, it is a part of ProductTable because it appears inside the
-ProductTable's list. However, if this header grows to be complex (e.g.,
-if you add sorting), you can move it into its own ProductTableHeader
-component.
+(containing the "Name" and "Price" labels) isn't its own component. 
+
+This is a matter of preference, and you could go either way. 
+
+For this example, it is a part of ProductTable because it appears inside the
+ProductTable's list. 
+
+However, if this header grows to be complex (e.g., if you add sorting), you can move it into 
+its own ProductTableHeader component. 
 
 Now that you've identified the components in the mockup, arrange them
 into a hierarchy. Components that appear within another component in the
@@ -9547,7 +9551,9 @@ Nicely done!
 
 After identifying your app's minimal state data, you need to identify
 which component is responsible for changing this state, or owns the
-state. Remember: React uses one-way data flow, passing data down the
+state. 
+
+Remember: React uses one-way data flow, passing data down the
 component hierarchy from parent to child component. It may not be
 immediately clear which component should own what state. This can be
 challenging if you're new to this concept, but you can figure it out by
