@@ -3123,7 +3123,8 @@ a component using classes and functions.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the completed App.js file:
 
-```import Heading from "./Heading";
+```
+import Heading from "./Heading";
 
 function App() {
   return (
@@ -3146,7 +3147,8 @@ function Heading(props) {
   )
 }
  
-export default Heading;```
+export default Heading;
+```
 
 Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3172,7 +3174,6 @@ function Heading(props) {
 export default Heading;
 ```
  
-
 <b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
 the <b>return</b> statement, and added a JSX expression that accesses the
 <b>firstName</b> property of the props object, inside the <b>return</b>
