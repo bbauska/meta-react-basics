@@ -2900,7 +2900,7 @@ functions using props must never modify its own props.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
-to pass data between components. But how exactly do they work?
+to pass data between components. But how exactly do they work?<br>
 
 In this section (20), you'll use a transpiler to break JSX code to plain
 JavaScript, making its purpose more understandable.
@@ -3061,50 +3061,63 @@ Developers commonly build navigation menus using html on ordered lists.<br>
 A navigation menu is basically just a list which can be styled easily
 with CSS, such a snippet of code is well suited to be placed in its own
 react component. Making use of the HTLM Nav elements to act as the block
-of code to return the JSX from it inside the function. For example, the
-return statement can contain several HTLM like elements, such as U L and
-L I tags. And this same Nav component can also be rendered as a JSX
-element to which we can pass dynamic value with props. In order to do
+of code to return the JSX from it inside the function. 
+
+For example, the return statement can contain several HTLM like elements, 
+such as U L and L I tags. And this same Nav component can also be rendered 
+as a JSX element to which we can pass dynamic value with props. In order to do
 this successfully you need to be comfortable with the concept of
 attributes.<br>
 
 The best way to develop an understanding of attributes is
 with a live example of building a component using props. Here's a
-practical way to work with props. I'm in my app with the header main
-and sidebar components and all of them are rendered from the app
-component. The app component is in this case referred to as the parent
+practical way to work with props. 
+
+I'm in my app with the header main and sidebar components and all of them are rendered 
+from the app component. The app component is in this case referred to as the parent
 component and the header main and side ball components are referred to
 as the Children of the app component.<br>
+
 They are now past data from the app components to each of its Children components. 
+
 First the header component receives a name prop, with a value of ANNA and a color prop
 with the value of purple. I'm sending those props from the header JSX
 element inside the app components return statement. Press control S, or
 command S on a Mac to save these changes. However, my re compiled app is
 not showing any changes because I send this data through the props
-object to the header component. I'm not using this data and the header
-component. So let me open the head of component and I'll first pass in
-the props object. For now, I'll just console log the props object Again
-Press control S, or command s to save the update and wait for it to
-compile. If I now inspect this object in the console, I find the console
+object to the header component. 
+
+I'm not using this data and the header component. So let me open the head of 
+component and I'll first pass in the props object. For now, I'll just console 
+log the props object. Again Press control S, or command s to save the update 
+and wait for it to compile.   
+
+If I now inspect this object in the console, I find the console
 logged props object and it comes with two properties the name ANNA and
-the color purple. I can now access the values of the two properties
-inside the header component using props dot name and props dot collar.
-To make sure that the expressions are evaluated inside the JSX syntax, I
-must surround them with an opening and a closing curly brace. I press
-control S or command s on the MAC again, and wait for it to compile. Now
-my header shows the prop state received from the parent component, I'll
+the color purple. 
+
+I can now access the values of the two properties inside the header component using 
+props dot name and props dot collar. To make sure that the expressions are evaluated 
+inside the JSX syntax, I must surround them with an opening and a closing curly brace. 
+I press control S or command s on the MAC again, and wait for it to compile. 
+
+Now my header shows the prop state received from the parent component, I'll
 now update the main and sidebar to. Back in the app components render
 statement, I add the greet prop with the value of howdy in the main JXS
-element, and the value of high in the sidebar JXS element. I opened the
-main components file and receive the props object Then outputs the value
-of opening curly brace props dot greet, closing curly brace. I can now
-delete the Hello string. Similarly in the sidebar components file, I'll
-also receive the props object and replace the Hello with an opening
-curly brace props dot greet, closing curly brace. I click file, save all
-and wait for the apps to compile. All my components are now using the
-data they received from their parent components using their respective
-props objects. You should now be able to effectively demonstrate the
-passing of props to and within a component using classes and functions.
+element, and the value of high in the sidebar JXS element. 
+
+I opened the main components file and receive the props object then output 
+the value of opening curly brace props dot greet, closing curly brace. I can now
+delete the Hello string. 
+
+Similarly in the sidebar components file, I'll also receive the props object and 
+replace the Hello with an opening curly brace props dot greet, closing curly brace. 
+I click file, save all and wait for the apps to compile. All my components are now 
+using the data they received from their parent components using their respective
+props objects. 
+
+You should now be able to effectively demonstrate the passing of props to and within 
+a component using classes and functions.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Passing props</h2>
