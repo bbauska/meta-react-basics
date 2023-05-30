@@ -2899,8 +2899,8 @@ functions using props must never modify its own props.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
-to pass data between components. But how exactly do they work?<br>
-
+to pass data between components. But how exactly do they work?
+<br>
 In this section (20), you'll use a transpiler to break JSX code to plain
 JavaScript, making its purpose more understandable.
 
