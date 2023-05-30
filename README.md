@@ -3135,11 +3135,13 @@ function App() {
   );
 }
   
-export default App;```
+export default App;
+```
 
 And here is the completed Heading.js file:
 
-```function Heading(props) {
+```
+function Heading(props) {
   return (
     <h1>Hello, {props.firstName}</h1>
   )
@@ -3161,13 +3163,15 @@ Here is the output from the solution code for the App.js file:
 <b>Step 1:</b> First, you passed the props object as a parameter to the
 <b>Heading</b> component in the 'Heading.js' file. 
 
-```function Heading(props) {
+```
+function Heading(props) {
   return (
     <h1>Hello, </h1>
   )
 }
   
-export default Heading;```
+export default Heading;
+```
  
 
 <b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
@@ -3175,19 +3179,22 @@ the <b>return</b> statement, and added a JSX expression that accesses the
 <b>firstName</b> property of the props object, inside the <b>return</b>
 statement's <b>h1</b>, after <b>Hello</b>. 
 
-```function Heading(props) {
+```
+function Heading(props) {
   return (
     <h1>Hello, {props.firstName}</h1>
   )
 }
   
-export default Heading;```
+export default Heading;
+```
  
 <b>Step 3:</b> Then, inside the App component's return statement, you
 located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
 <b>firstName</b> and give it the value of <b>Bob</b>. 
 
-```import Heading from "./Heading";
+```
+import Heading from "./Heading";
   
 function App() {
   return (
@@ -3197,7 +3204,8 @@ function App() {
   );
 }
 
-export default App;```
+export default App;
+```
 
 <b>Step 4:</b> You saved all your changes and ran the app to preview the
 updates in the browser, and confirm that the page shows an <b>h1</b>
@@ -3206,7 +3214,8 @@ element with the text that reads "Hello, Bob". 
 <b>Step 5:</b> Then, you changed <b>firstName</b> to any name other than 'Bob'
 and see how the page updates with the new name.
 
-```import Heading from "./Heading";
+```
+import Heading from "./Heading";
   
 function App() {
   return (
@@ -3216,13 +3225,15 @@ function App() {
   );
 }
   
-export default App;```
+export default App;
+```
 
 <b>Step 6:</b> Finally, you added a second <b>&lt;Heading /&gt;</b> after the
 first one.  Again, adding the <b>firstName</b> attribute and choosing
 another name for this value.
 
-```import Heading from "./Heading";
+```
+import Heading from "./Heading";
 
 function App() {
   return (
@@ -3233,7 +3244,8 @@ function App() {
   );
 }
   
-export default App;```
+export default App;
+```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Introducing JSX</h2>
