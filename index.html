@@ -1834,7 +1834,7 @@ export default App;</pre>
 
 <p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 39. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 39. 'your first component' example output (62) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="/images/image039.png?raw=true"
@@ -1901,11 +1901,31 @@ components and assets, and explain the benefits of planning folder use
 for app development.</p>
 <p>Let's begin by examining how the default files and folders are laid out
 in a React app project.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ xx. react file & folder structure (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="React file and folder structure."
+  style="width:xx%;" />
+-->
+
 <p>When you build a React app using the command npm init React app, your
 project is comprised of a specific file and folder structure.</p>
 <p>Notice that there are three folders named node modules, public, and SRC
 or source.</p>
 <p>Let's explore each of these folders briefly now.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. node_modules folder (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Node Modules folder (node_modules)."
+  style="width:xx%;" />
+-->
+
 <p>First, let's begin with the node modules folder.</p>
 <p>You can think of this folder as a repository for all the modules in your
 React app.</p>
@@ -1919,6 +1939,16 @@ npm ecosystem.</p>
 <p>Don't worry too much about the node modules folder.</p>
 <p>For now, just be aware of it and that it's needed for your React app to
 work.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. public folder (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Public folder."
+  style="width:xx%;" />
+-->
+
 <p>Next is the public folder, and it contains the assets that will be
 displayed to the user in your app.</p>
 <p>For example, image files for logos, the favicon, which displays an icon
@@ -1927,6 +1957,16 @@ engine optimization.</p>
 <p>Also, there is a manifest.json file, which is used to provide some
 metadata to a device when you're React powered web app is installed on
 it.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. index.html (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="index.html."
+  style="width:xx%;" />
+-->
+
 <p>While all these files are necessary, the most important one to know
 about for now is index.html.</p>
 <p>A React app gets injected into the specific elements inside the body of
@@ -1934,6 +1974,16 @@ the index HTML file.</p>
 <p>Based on changes happening inside our React app, it injects those
 updates in that same div of index HTML.</p>
 <p>You'll find out more about how this works later on in the course.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. src folder contents (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="SRC folder contents."
+  style="width:xx%;" />
+-->
+
 <p>Finally, let's explore the contents of the SRC or source folder.</p>
 <p>This folder contains all the essential component files required to
 ensure that a React app functions.</p>
@@ -1946,6 +1996,16 @@ now.</p>
 <p>You may be familiar with some of them already, such as index.js and
 app.js, which are used to render the root components of the app.</p>
 <p>Let's briefly explore the others.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. index.css - styles to use (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="index.css with styles to use in project."
+  style="width:xx%;" />
+-->
+
 <p>App.css contains the styles for the app.js components, and the index.css
 file contains the styles to use in the entire app.</p>
 <p>App.test.js, setupTests.js, and the reportsWebVitals.js are files
@@ -1960,27 +2020,87 @@ a very basic application.</p>
 files and folders in the source folder.</p>
 <p>However, there are a few common approaches popular in the ecosystem and
 you'll learn about them soon.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. index.js in source (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="index.js in SRC folder."
+  style="width:xx%;" />
+-->
+
 <p>It's that this point is also worth remembering that the most important
 file in the entire source folder is the index.js file.</p>
 <p>This file imports everything that this React app needs to render a
 working React app.</p>
 <p>Now you have explored the main folders, let's explore the files and the
 root of the default app.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. root src directory (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Root SRC directory."
+  style="width:xx%;" />
+-->
+
 <p>Root files are additional files that are found in the root of the
 project folder itself and include a gitignore file, two json files, and
 a README file.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. .gitignore for exclusion (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt=".gitignore file to specify which files and folders to exclude."
+  style="width:xx%;" />
+-->
+
 <p>The .gitignore file is using version control and it's used to specify
 what files and folders must be excluded from a project.</p>
 <p>It's important to note that this file is not specific to React.</p>
 <p>This means that other systems use this file too.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ xx. readme.md giving basic info on project (60) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Readme.md giving basic info on project."
+  style="width:xx%;" />
+-->
+
 <p>The README.md file is a markdown file that gives some basic information
 on this project.</p>
 <p>Developers use this when they want to share the project's code on sites
 like GitHub.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. package.json (61) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="List of info pertaining to my app."
+  style="width:xx%;" />
+-->
+
 <p>The package.json file lists information pertaining to my app, which
 allows npm to run several scripts and perform various tasks in the app
 itself.</p>
-<p>Finally, the package-loc.json file holds the list of all dependencies
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. package-lock.json (62) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="List of all dependencies with version number."
+  style="width:xx%;" />
+-->
+
+<p>Finally, the package-lock.json file holds the list of all dependencies
 with a specific version.</p>
 <p>The package.json file helps npm rebuild the app on another machine.</p>
 <p>Or if we delete the node modules folder with all the files that our
@@ -2314,6 +2434,16 @@ to be created.</p>
 is split up into individual self-contained components.</p>
 <p>As you have already learned, these components can be used to build
 powerful UIs based on reusable components of code.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. collection of components (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Collection of components."
+  style="width:xx%;" />
+-->
+
 <p>In order to create a fully functioning React app, you need to create a
 collection of components.</p>
 <p>But with the app broken into several different components, you might be
@@ -2325,12 +2455,32 @@ statement.</p>
 <p>As a developer, you often need a way to use and reuse components that
 may have been defined elsewhere or created by someone else.</p>
 <p>For example, do you recall the concept of modules in JavaScript?</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ xx. modules are standalone units of code (69) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Modules are standalone units of code."
+  style="width:xx%;" />
+-->
+
 <p>Modules are standalone units of code that you can reuse again and again.</p>
 <p>Being standalone means that you can add them to your programs, remove
 them, and replace them with other modules and everything will still
 work.</p>
 <p>Well, in React, you can make use of this JavaScript feature to separate
 your components by placing them in their own file.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. import and export modules (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Modules: Imports and Exports."
+  style="width:xx%;" />
+-->
+
 <p>Then you can use the import and export statements to make the false
 communicate with each other.</p>
 <p>The export statement is used to make a module available to another
@@ -2339,6 +2489,16 @@ module.</p>
 <p>Then in order to make the functions and variables available to other
 files, you need to export them, which makes them available by the import
 statement.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. exports: default and named (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Two Types of Exports: default and named."
+  style="width:xx%;" />
+-->
+
 <p>In JavaScript, there are two types of exports, default exports and named
 exports.</p>
 <p>The default export is used when the function name is the same as the
@@ -2350,6 +2510,15 @@ files?</p>
 <p>You are right.</p>
 <p>While they have similarities, it can help to think of a component as a
 single part or small piece of functionality like a button.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. react app with components (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="React app with components."
+  style="width:xx%;" />
+-->
 
 <p>Then you can think of a module as something that's larger than just one
 component like a series of components.</p>
@@ -2360,6 +2529,15 @@ of React.</p>
 
 <p>To help you understand this better, let's explore the following
 scenario.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. react app with components (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="React app with components."
+  style="width:xx%;" />
+-->
 
 <p>Suppose you're a developer currently in the process of building an
 application with React and there are several components that needs to be
@@ -2373,6 +2551,16 @@ statements.</p>
 index.js file, where the app component is rendered.</p>
 <p>In React, to import a component, you use the keyword import, followed by
 the component name you want to import.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. index.js component (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Index.js."
+  style="width:xx%;" />
+-->
+
 <p>Then you use the keyword from, to specify the location of where the
 component is located.</p>
 <p>You need to use a file name sequence, such as a dot forward slash before
@@ -2382,16 +2570,74 @@ Let's explore how you construct your components in React.</p>
 <p>Remember that a component is essentially just a JavaScript file.</p>
 <p>React doesn't have strict rules on how you put files into folders,
 however, there are a few common approaches you may want to consider.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ xx. components with header, main & footer (73) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Components folder with Header, Main &amp; Footer."
+  style="width:xx%;" />
+-->
+
 <p>One approach is to place all components in a folder named components.</p>
 <p>This allows you to structure your projects by grouping similar files
 together.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ xx. payment page for e-commerce app (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Payment page for e-commerce app."
+  style="width:xx%;" />
+-->
+
 <p>For example, suppose you are building a payment page for an e-commerce
 app.</p>
 <p>The page contains three sections that will each be represented by a
 component in React.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. header.js component (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Header section using a component called header."
+  style="width:xx%;" />
+-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ xx. payment.js using component main (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Payment section using a component called main."
+  style="width:xx%;" />
+-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ xx. sidebar.js component (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Sidebar using a component called sidebar."
+  style="width:xx%;" />
+-->
+
 <p>First, a Header section using a component called header, then a Payment
 section using a component called main, and finally, a Sidebar using a
 component called sidebar.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ xx. flowchart app with header, main & sidebar underneath (74) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
+<img class="displayed"
+  src="/images/imagexxx.png?raw=true"
+  alt="Flowchart App with heading, main &amp; sidebar underneath."
+  style="width:xx%;" />
+-->
+
 <p>Each component will be called and have its contents returned to the root
 components of our application, which is app.js.</p>
 <p>In this section (16), you've explored the concept of modules and the
@@ -2424,7 +2670,7 @@ export default Heading;</pre>
 
 <p>Here is a screenshot of the src folder:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 40. app, heading and index files displayed in src folder (0x) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ 40. app, heading and index files displayed in src folder (75) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="/images/image040.png?raw=true"
@@ -2434,7 +2680,7 @@ export default Heading;</pre>
 
 <p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. output of exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 41. output of exercise (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="/images/image041.png?raw=true"
@@ -4944,12 +5190,12 @@ matching the number "chosen" by the computer one more time.</p>
 learning journey.</p>
 
 <ul>
-  <a href="https://reactjs.org/docs/handling-events.html#gatsby-focus-wrapper" target="_blank" rel="noopener noreferrer">Handling Events</a>,<br><br></li>
-  <a href="https://reactjs.org/docs/events.html#supported-events" target="_blank" rel="noopener noreferrer">Supported Events</a>,<br><br></li>
-  <a href="https://reactjs.org/docs/events.html#gatsby-focus-wrapper" target="_blank" rel="noopener noreferrer">SyntheticEvent</a>,<br><br></li>
-  <a href="https://reactjs.org/docs/faq-functions.html#how-do-i-pass-an-event-handler-like-onclick-to-a-component" target="_blank" rel="noopener noreferrer">How do I pass an event handler (like onClick) to a  component?</a>,<br><br></li>
-  <a href="https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-props" target="_blank" rel="noopener noreferrer">JavaScript Expressions as Props</a>,<br><br></li>
-  <a href="https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children" target="_blank" rel="noopener noreferrer">JavaScript Expressions as Children</a></li>
+  <li><a href="https://reactjs.org/docs/handling-events.html#gatsby-focus-wrapper" target="_blank" rel="noopener noreferrer">Handling Events</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/events.html#supported-events" target="_blank" rel="noopener noreferrer">Supported Events</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/events.html#gatsby-focus-wrapper" target="_blank" rel="noopener noreferrer">SyntheticEvent</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/faq-functions.html#how-do-i-pass-an-event-handler-like-onclick-to-a-component" target="_blank" rel="noopener noreferrer">How do I pass an event handler (like onClick) to a  component?</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-props" target="_blank" rel="noopener noreferrer">JavaScript Expressions as Props</a>,<br><br></li>
+  <li><a href="https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children" target="_blank" rel="noopener noreferrer">JavaScript Expressions as Children</a></li>
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section 09 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5906,20 +6152,20 @@ there.</p>
 and when each button was clicked, only the count for the button clicked
 changed:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (145) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image047.png?raw=true"
   alt="Diagram showing a tree of three components, one parent labeled MyApp
     and two children labeled MyButton. Both MyButton components contain a
     count with value zero."
-  width="50%" />
+  width="25%" />
 </p>
 <!-- {width="5.0in" height="4.50859908136483in"} -->
 
 <p>Initially, each MyButton's count state is 0.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (136) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (146) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image048.png?raw=true"
@@ -5927,7 +6173,7 @@ changed:</p>
     MyButton component highlighted indicating a click with the count value
 	incremented to one. The second MyButton component still contains value
 	zero."
-  width="50%" />
+  width="25%" />
 </p>
 <!-- (width="5.0in" height="4.50859908136483in"} -->
 
@@ -5942,7 +6188,7 @@ together, you need to move the state from the individual buttons
 
 <p>In this example, it is MyApp:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (137) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (147) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image049.png?raw=true"
@@ -5950,14 +6196,14 @@ together, you need to move the state from the individual buttons
     and two children labeled MyButton. MyApp contains a count value of zero
     which is passed down to both of the MyButton components, which also show
     value zero."
-  width="50%" />
+  width="25%" />
 </p>
 <!-- {width="5.0in" height="4.6951224846894135in"} -->
 
 <p>Initially, MyApp's count state is 0 and is passed down to both children.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (138) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (148) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image050.png?raw=true"
@@ -5966,7 +6212,7 @@ together, you need to move the state from the individual buttons
     one. The flow to both of the children MyButton components is also
     highlighted, and the count value in each child is set to one indicating
     the value was passed down."
-  width="50%" />
+  width="25%" />
 </p>
 <!-- {width="5.0in" height="4.695121391076116in"} -->
 
@@ -6202,7 +6448,7 @@ and try a local setup again later.</p>
 
 <p>In CodeSandbox you'll see three main sections:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. codesandbox with starter code (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. codesandbox with starter code (153) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image051.png?raw=true"
@@ -6227,7 +6473,7 @@ of that file in the <i>code editor</i> should be:</p>
 <p>The browser section should be displaying a square with a X in it like
 this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. x-filled square (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. x-filled square (153) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image052.png?raw=true"
@@ -6297,10 +6543,10 @@ import App from './App';</pre>
 Lines 1-5 brings all the necessary pieces together:
 
 <ul>
-<li><p>React,</p></li>
-<li>React's library to talk to web browsers (React DOM),</p></li>
-<li>The styles for your components,</p></li>
-<li>The component you created in App.js.</p></li>
+  <li><p>React,</p></li>
+  <li>React's library to talk to web browsers (React DOM),</p></li>
+  <li>The styles for your components,</p></li>
+  <li>The component you created in App.js.</p></li>
 </ul>
 
 <p>The remainder of the file brings all the pieces together and injects the
@@ -6342,7 +6588,7 @@ this:</p>
 
 <p>Now you should see:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. two x-filled squares (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. two x-filled squares (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image053.png?raw=true"
@@ -6355,7 +6601,7 @@ this:</p>
 and...</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 54. nine x-filled squares (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 54. nine x-filled squares horizontal (156) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image054.png?raw=true"
@@ -6402,7 +6648,7 @@ square a number to make sure you know where each square is displayed.</p>
 board-row. Now that you've grouped your components into rows with the
 styled divs you have your tic-tac-toe board:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 55. tic-tac-toe filled with numbers 1 - 9 (147) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ 55. tic-tac-toe filled with numbers 1 - 9 (157) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image055.png?raw=true"
@@ -6840,7 +7086,7 @@ top left corner of React DevTools:</p>
 <!--~~~~~~~~~~~~~~ 61. selecting components on the page with react devtools (0x) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
-  src="/images/image061.png?raw=true"
+  src="/images/image061.gif?raw=true"
   alt="Selecting components on the page with React DevTools."
   style="width:50%;" />
 <!-- {width="5.0in" height="3.7in"} -->
