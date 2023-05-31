@@ -776,7 +776,7 @@ Below you will find links to helpful additional readings:
   <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer">Notepad</a> to truly know & utilize
     React and NOT VS code,<br></li>
 
-  <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">Sublime</a>,<br></li>
+  <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">Sublime</a>.<br></li>
 </ul>
 
 In the 40+ years I've worked with Microsoft products, I have yet to see anything they've done 
@@ -860,7 +860,7 @@ In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 <p align="center" width="100%">
 <img src="/images/image008.png?raw=true"
   alt="VS Code terminal screen."
-  width="50%" />
+  width="80%" />
 </p>
 <!-- {width="5.0in" height="2.8125in"} -->
 
@@ -9879,4 +9879,4 @@ https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>5/24/2023 12:11pm</h6>
+<h6>5/31/2023 12:25pm</h6>
