@@ -2791,7 +2791,8 @@ GitHub](https://github.com/webpack/webpack-dev-server) 
 <h2>19. Principles of Components: Props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with the concept of functional components in React. 
-They are reusable blocks of code that act much like a JavaScript function.<br>
+They are reusable blocks of code that act much like a JavaScript function.
+<br>
 
 Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
@@ -2893,7 +2894,6 @@ props in order to make their apps more dynamic and flexible. Finally,
 you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
 functions using props must never modify its own props.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Dissecting props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2901,8 +2901,10 @@ Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
 to pass data between components. But how exactly do they work?
 <br>
+
 In this section (20), you'll use a transpiler to break JSX code to plain
 JavaScript, making its purpose more understandable.
+<br>
 
 Remember first that JSX code in React is just syntactic sugar - meaning,
 a nicer way to write some hard-to-read code.
@@ -4308,35 +4310,43 @@ literals of " another " and "string" to the <b>str1</b> variable.
 In summary, just like you can use expressions inside function
 components, you can also use them as prop values inside JSX elements,
 when rendering those function components.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>31. Embedding in attributes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
 expression in an attribute, specifically the SRC attribute of the html
-image tag. Over the next few minutes I'll guide you through the process
+image tag. 
+
+Over the next few minutes I'll guide you through the process
 as I complete the steps. And by the end of this section (31) you'll be
 able to demonstrate how to embed a JS expression in an attribute,
 including adding additional styling and importing additional assets and
-utilize additional assets within an app by importing components. Now
-I'm in the App.js file of a new project and start with an app component
+utilize additional assets within an app by importing components. 
+
+Now I'm in the App.js file of a new project and start with an app component
 that returns the h1 header text, hello world. I've previously copied
 the avatar profile image from the Coursera GitHub account which is
-publicly available through the get up API. I have pasted the images into
-the roots of the SRC folder and named it avatar.png. In order to use the
-image I need to import it into the app component. I then add a new
-function in the App.js file named logo. The logo function is essentially
-a separate component. But to keep things clean for this example, I'll
-save the code in the app component instead of a separate file. The logo
+publicly available through the get up API.
+
+I have pasted the images into the roots of the SRC folder and named it avatar.png. 
+In order to use the image I need to import it into the app component. 
+
+I then add a new function in the App.js file named logo. The logo function is 
+essentially a separate component. But to keep things clean for this example, 
+I'll save the code in the app component instead of a separate file. The logo
 function except the props object and inside of the logo function I
 declare a userPic const and assign it a JSX element. This is an image
 element and I'm passing the imported avatar PNG image as the value of
-the SRC attribute inside this image element. Finally I'm returning the
-userPic const from the logo function. Back inside the app component
-I'll now render the logo component by adding the logo element inside
-the app components return statement. Lemme now preview my app in the
-browser. Great, so it displays the header text along with the image.
+the SRC attribute inside this image element. 
+
+Finally I'm returning the userPic const from the logo function. 
+
+Back inside the app component I'll now render the logo component by adding 
+the logo element inside the app components return statement. Lemme now preview 
+my app in the browser. Great, so it displays the header text along with the 
+image.
+
 Keep in mind that if I were to continue building this app with more
 components, it would be best to extract the logo component to its own
 file and then import and render it as needed. And that's a
