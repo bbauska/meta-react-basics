@@ -3257,51 +3257,61 @@ What is it that makes JSX so special? In one word,
 expressiveness. Developers can express what they want to react to render
 using a very expressive syntax, almost identical to HTML or XML.<br>
 In other words, JSX allows developers to write HTML directly inside the
-JavaScript code. For example, you can add navigation function to a
-website by creating a nav component. Then place the HTML semantic nav
-element, and an unordered list inside. Because this is React, the list
-values can be made dynamic by passing values as props. Is important to
-note that a regular JavaScript function is used to define how React
+JavaScript code. 
+
+For example, you can add navigation function to a website by creating a nav component. 
+Then place the HTML semantic nav element, and an unordered list inside. 
+Because this is React, the list values can be made dynamic by passing values as props. It 
+is important to note that a regular JavaScript function is used to define how React
 should render the component wherever it's referenced using the nav JSX
 elements. This is what makes JSX so powerful, like the fact that you can
 insert specific JSX expressions such as variables and props. The reason
 why this is so great to work with, is because anything that's placed
 inside the curly braces of the code is essentially regular JavaScript
-code. For example, you could calculate a series of simple expressions
+code. 
+
+For example, you could calculate a series of simple expressions
 using the Li or list item tag. This means that you can think of the
 curly braces as being special areas where you can write any kind of
 JavaScript code you like. You can write the rest of the code inside the
-return statement. Now that you've learned a little more about JSX
-expressions, let's focus on some JSX rules inside the return statement
-of the function. The return statements can be thought of as the area of
-expressive syntax that allows you to write regular HTML code as you'd
-like to have it in your rendered app. But if you need to return HTML
-code over multiple lines, it must be placed inside parentheses. This
-allows developers to alternate between regular HTML tags, and dynamic
-values represented as JSX expressions inside curly braces. It's also
-important to remember that the HTML code must be wrapped in a top level
+return statement. 
+
+Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
+inside the return statement of the function. The return statements can be thought of 
+as the area of expressive syntax that allows you to write regular HTML code as you'd
+like to have it in your rendered app. 
+
+But if you need to return HTML code over multiple lines, it must be placed inside parentheses. 
+This allows developers to alternate between regular HTML tags, and dynamic
+values represented as JSX expressions inside curly braces. 
+
+It's also important to remember that the HTML code must be wrapped in a top level
 element, such as a div tag. If you do not want to add extra div elements
 to the DOM, you can use something called a fragment instead. This is
 like an HTML open and close tag without the tag name. While you can
 think of the code inside the return statement is regular HTML, it's
 worth remembering you are in a JavaScript file, and as a result, there
-are some differences. For example, you cannot use the keyword class to
-work with CSS classes in your HTML elements. This is because class is a
-reserved keyword in JavaScript, you must use a slightly different
+are some differences. 
+
+For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
+This is because class is a reserved keyword in JavaScript, you must use a slightly different
 keyword called className instead. Also notice that class name is written
 in Camel Case, which depicts the separation of words by using a single
-capitalized letter. You can use className to list any number of CSS
-classes to style a specific JSX element inside a component. This is just
-like how you use a class attribute in regular HTML. It's only one of
-the many ways you can style React apps. You'll learn more about how to
-do this later. For now, just know that this is the closest to what you
-would do like if you were working with HTML, and CSS website layouts.
+capitalized letter. 
+
+You can use className to list any number of CSS classes to style a specific JSX element 
+inside a component. This is just like how you use a class attribute in regular HTML. 
+It's only one of the many ways you can style React apps. 
+
+You'll learn more about how to do this later. For now, just know that this is the closest 
+to what you would do like if you were working with HTML, and CSS website layouts.
 There are some other differences, and you'll learn about them later.
 But in practical terms, you can consider the code to be pretty much just
-like regular HTML. In this lesson, you explored further the concept of
-JSX styling, and how it's used in React. You have now furthered your
-understanding of how to use JSX to mix JavaScript, HTML, and CSS within
-a component. Great work.
+like regular HTML. 
+
+In this lesson, you explored further the concept of JSX styling, and how it's used in React. 
+You have now furthered your understanding of how to use JSX to mix JavaScript, HTML, and CSS 
+within a component. Great work.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>24. Props and children</h2>
@@ -3516,21 +3526,24 @@ It's crucial to understand this when working with React.
 
 Before the end of this section (24), there's another important concept that
 you need to be aware of: <i>finding the right amount of modularization</i>.
+
 What does this mean? Imagine, for example, that you had a number of
 small bags, and that each bag could only carry a single apple or pear.
 You'd end up having to wrap each "apple" inside a "bag". That
 doesn't make much sense. You can think about components making your
 layouts modular in a similar way. You don't want to have an entire
 layout contained in a single component, because that would be very
-difficult to work with. On the flip side, if you made each HTML element
-in your layout a separate component, that would make it very hard to
-work with, although such layout would be modular. So it's all about
-moderation. You need to organize your layouts by splitting them into
-meaningful areas of the page, and then code those meaningful areas as
-separate components. that would constitute the right amount of
-modularity. To reinforce this point, It might help to think of it in
-terms of how a person would describe a website: there's a menu, a
-footer, the shopping cart, etc.
+difficult to work with. 
+
+On the flip side, if you made each HTML element in your layout a separate 
+component, that would make it very hard to work with, although such layout 
+would be modular. So it's all about moderation. 
+
+You need to organize your layouts by splitting them into meaningful areas of 
+the page, and then code those meaningful areas as separate components. 
+That would constitute the right amount of modularity. To reinforce this point, 
+it might help to think of it in terms of how a person would describe a website: 
+there's a menu, a footer, the shopping cart, etc.
 
 In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
@@ -3725,7 +3738,7 @@ or Command X on Mac. After saving, notice that this removes the styling from the
 components displayed in the browser. 
 
 Now let's go to the sidebar.js file where I'll paste the code before the return statement. 
-This will not affect my component because I'm pasting CSS code into a JavaScript file. 
+This will not affect my component because I'm pasting CSS code into a JavaScript file.
 I need to make some changes to turn the CSS rule into a JavaScript object. To do this, I need 
 to declare a site style as a const variable and then replace the semi-colons and the code with 
 commas. I also need to replace the hyphenated names with camelCase. It's important to know 
@@ -3735,6 +3748,7 @@ for the other news tile elements as well. Finally, inside the a site tag and ret
 of the component, I need to add a style attribute by typing style equals aside style as a JSX 
 expression. I then choose save all in the file menu to save my changes. Notice that the sidebar 
 components appears in the browser as before, I edited the index.CSS file. 
+
 That's an example of using inline CSS styling directly inside a component. 
 
 In this section (26), you learned how to take CSS style rules from an external file 
@@ -3974,8 +3988,9 @@ JSX. Building React elements from HTML code automatically.
 
 Let's explore another important feature of JSX, which is embedded expressions.
 Embedded expressions allow developers to insert the values of JavaScript
-variables into the HTML of the resulting React elements. Embedded
-expressions can also embed the outputs of functions. Let's say you need
+variables into the HTML of the resulting React elements. 
+
+Embedded expressions can also embed the outputs of functions. Let's say you need
 to output the person's name in a specific format. To do this, you can
 first create a function named format name that will return the first
 name and surname with a space character between them. In your JSX, you
@@ -4040,13 +4055,16 @@ The above code works as follows:
     <b>else</b> block will execute and output the words <b>"Hello,
     Friend"</b> in the console.
 
-Above, I gave you an example of using an <b>if\...else</b> conditional. Did
+Above, I gave you an example of using an <b>if...else</b> conditional. Did
 you know that there is another, different way, to effectively do the
-same thing? It's known as the <b>ternary operator</b>. A ternary operator
-in JavaScript uses two distict characters: the first oneis <b>the
-question mark</b>, that is, the <b>?</b> character. To the left of the <b>?</b>
-character, you put <i>a condition that you'd like to check for</i>. Just
-like I did in the above <b>if\...else</b> statement, the condition I'm
+same thing? 
+
+It's known as the <b>ternary operator</b>. A ternary operator in JavaScript uses 
+two distict characters: the first oneis <b>the question mark</b>, that is, the 
+<b>?</b> character. To the left of the <b>?</b> character, you put <i>a condition 
+that you'd like to check for</i>. 
+
+Just like I did in the above <b>if...else</b> statement, the condition I'm
 checking is <b>name == 'Bob'</b>. In other words, I'm asking the
 JavaScript engine to look at the value that's stored inside the
 <b>name</b> variable, and to verify if that value is the same as
@@ -4205,7 +4223,6 @@ JavaScript expressions in JSX.
 
 Now that you have completed this section (29), you have learned about a few
 more ways that you can use expressions in JSX.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>30. Expressions as props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4682,7 +4699,6 @@ export default App;
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>33. Module Summary -- React Components &amp; where they live</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
