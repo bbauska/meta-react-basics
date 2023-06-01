@@ -1617,7 +1617,6 @@ something you cannot do when writing static HTML.
 
 The overall syntax instructs React to render the heading HTML element
 with whatever text value that is stored within the variable named title.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 38.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1891,7 +1890,7 @@ the output of the tranpilation is the following code:
 
 ```
 "use strict";
-  
+
 /#__PURE__/
 
 React.createElement(Heading, {
@@ -1931,7 +1930,7 @@ function Heading() { 
      <h1>This is an h1 heading.</h1> 
    ) 
 } 
-  
+
 function App() { 
   return ( 
     <div className="App"> 
@@ -1988,10 +1987,10 @@ return statement and spread it over several lines by following it up
 with an opening and a closing parenthesis.
 
 ```
- function Heading() { 
-   return (
-   )
- }
+function Heading() { 
+  return (
+  )
+}
 ```
 
 <b>Step 3:</b> Then, inside the parentheses, you added the following code: 
@@ -2172,7 +2171,6 @@ hold components and assets and be able to explain the benefits of
 planning folder use for app development.
 
 Good job.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. Customizing the project</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
