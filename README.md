@@ -9832,18 +9832,14 @@ React-powered app, this section will help you get started.
 
 1.  [How to start a new React
     project](https://react.dev/learn/start-a-new-react-project)
-    (https://react.dev/learn/start-a-new-react-project)
 
 2.  [How to add React to an existing
     project](https://react.dev/learn/add-react-to-an-existing-project)
-    (https://react.dev/learn/add-react-to-an-existing-project)
 
 3.  [How to set up your editor](https://react.dev/learn/editor-setup)
-    (https://react.dev/learn/editor-setup)
 
 4.  [How to install React Developer
     Tools](https://react.dev/learn/react-developer-tools)
-    (https://react.dev/learn/react-developer-tools)
 
 <h4>Try React</h4>
 
@@ -9885,8 +9881,6 @@ If you want to build an app or a website fully with React, <a href="https://reac
 <h3>Add React to an existing project</h3>
 
 If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
-
-https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/add%20React%20to%20an%20existing%20project%20%20(https:/react.dev/learn/add-react-to-an-existing-project).
 
 <h3>Next steps</h3>
 
