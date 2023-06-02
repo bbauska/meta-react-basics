@@ -1,6 +1,7 @@
 <!-- styles.css in meta-react-basics/css/ -->
 img.displayed {
     display: block;
+    text-align: center;
     margin: 0 auto; }
 
   .border {
