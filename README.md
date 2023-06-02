@@ -9726,7 +9726,7 @@ the hierarchy need to update the state in FilterableProductTable.
 React makes this data flow explicit, but it requires a little more
 typing than two-way data binding. If you try to type or check the box in
 the example above, you'll see that React ignores your input. This is
-intentional. By writing &lt;input value={filterText} />, you've set the
+intentional. By writing &lt;input value={filterText} /&gt;, you've set the
 value prop of the input to always be equal to the filterText state
 passed in from FilterableProductTable. Since filterText state is never
 set, the input never changes.
