@@ -1,0 +1,3 @@
+Sitemap: http://meta-reacts-basics.bauska.org/sitemap.xml
+User-agent: *
+Disallow: /
