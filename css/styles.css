@@ -1,7 +1,6 @@
 <!-- styles.css in meta-react-basics/css/ -->
 img.displayed {
     display: block;
-    text-align: center;
     margin: 0 auto; }
 
   .border {
@@ -69,7 +68,7 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 
 details {
   font: 11px Inter, sans-serif, Bahnschrift, Calibri;
-  width: 920px;  /* 143px */
+  width: 45%;  /* 920px, 143px */
 }
 
 details > summary {
@@ -160,3 +159,4 @@ body {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #398e41;} /* dark moderate lime green */
+
