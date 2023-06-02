@@ -68,7 +68,7 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
 
 details {
   font: 11px Inter, sans-serif, Bahnschrift, Calibri;
-  width: 143px;
+  width: 920px;  /* 143px */
 }
 
 details > summary {
