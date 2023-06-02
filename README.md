@@ -9810,16 +9810,14 @@ function ProductRow({ product }) {
 
 You can learn all about handling events and updating state in the
 [Adding Interactivity](https://react.dev/learn/adding-interactivity)
-(<https://react.dev/learn/adding-interactivity>) section.
+ section.
 
 <h3>Where to go from here</h3>
 
 This was a very brief introduction to how to think about building
 components and applications with React. You can [start a React
-project](https://react.dev/learn/installation)
-(<https://react.dev/learn/installation>) right now or [dive deeper on
-all the syntax](https://react.dev/learn/describing-the-ui)
-(<https://react.dev/learn/describing-the-ui>) used in this tutorial.
+project](https://react.dev/learn/installation) right now or [dive deeper on
+all the syntax](https://react.dev/learn/describing-the-ui) used in this tutorial.
 
 <h4>Installation</h4>
 
