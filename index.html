@@ -4890,18 +4890,19 @@ function expression.</p>
 <details>
   <summary>JS Function</summary>
 
-<pre>function App() {
-  const fourthExample = () =&gt; console.log('fourth example');
-  return (
-    &lt;div className="fourthExample"&gt;
-      &lt;button onClick={fourthExample}&gt;
-        using a separate function expression
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-};
-
-export default App;</pre>
+<pre>
+01. function App() {
+02.  const fourthExample = () =&gt; console.log('fourth example');
+03.  return (
+04.    &lt;div className="fourthExample"&gt;
+05.      &lt;button onClick={fourthExample}&gt;
+06.        using a separate function expression
+07.      &lt;/button&gt;
+08.    &lt;/div&gt;
+09.  );
+10. };
+11.
+12.export default App;</pre>
 
 </details>
 
@@ -4925,6 +4926,15 @@ multiple events on a single JSX element.</p>
 component than what you've been used to so far in the course.</p>
 <p>The aim is to demonstrates how all the event handling concepts work together with
 state, styling, and the use of turning the expressions.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-a. state boolean value dark on or off (149) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-a.png?raw=true"
+  alt="State boolean value of dark (on or off)."
+  width="70%" />
+</p>
+
 <p>Let's say that you have a component that uses state to keep a Boolean value of dark
 mode on.</p>
 <p>Based on whether the value of this variable is true or false,
@@ -4945,23 +4955,71 @@ return statement. In this statement, a JSX expression wraps the turner
 in which checks if the value of dark mode on is true or false. If it's
 true, it will return whatever restored in the dark mode value. And if
 it's false, it will return whatever stored in the light mode value.</p>
-<p>However, I don't have the values I'm evaluating yet. So, if I say this
-code now it throws an error. Instead I define these values by declaring
-three variables above the return statements. These are dark mode on,
-which holds a value of true, dark mode which holds the text. Dark mode
-is on in an H one header and light mode which holds the text. Light mode
-is on in an H one header. I save my changes and I get the sentence. 
-Dark mode is on in the browser.</p>
+<p>However, I don't have the values I'm evaluating yet.</p>
+<p>So, if I say this code now it throws an error. </p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-b.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-b.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+<p>Instead I define these values by declaring three variables above the return statements. 
+These are dark mode on, which holds a value of true, dark mode which holds the text. 
+Dark mode is on in an H one header and light mode which holds the text. Light mode
+is on in an H one header.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-c.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-c.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+<p>I save my changes and I get the sentence. Dark mode is on in the browser.</p>
 <p>Let me explain what happened here. The dark
-mode on variable is set to true. Just to do a quick test, I can change
+mode on variable is set to true.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-d.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-d.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+<p>Just to do a quick test, I can change
 the variable name of dark mode on in the turn array to the value of
 true. Since this value is true, the value that's stored in dark mode
-will be rendered. If I change the value of true to false, the value
+will be rendered. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-e.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-e.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+If I change the value of true to false, the value
 that's stored in light mode will be displayed. I have replaced the test
 word false with our const dark mode on. And now I'll save it and test
 it again. Now, I get the light mode is on displayed on the screen.</p>
 <p>I add a button with the on click events to handle this toggle of the value of
-the dark mode on, variable from true to false. So, under this turner
+the dark mode on, variable from true to false. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-f.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-f.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+So, under this turner
 restatement I'll add a button with an on click event handler.</p>
 <p>I'll also define the handle click function. I start my function by taking the
 value of dark mode on, and change it to the opposite Boolean value using
@@ -4971,14 +5029,43 @@ as the new value of the dark mode on variable.</p>
 dark mode on will be evaluated to not true. This not true will be
 assigned to the dark mode on variable, thus becoming false.</p>
 <p>I now add to the rest of the code for the handle click function, which is an if
-statement. The logic states that if the dark mode on is set to true,
+statement. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-g.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-g.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+The logic states that if the dark mode on is set to true,
 then console log dark mode is on otherwise console log light mode is on.</p>
 <p>I could have perhaps written this code a bit differently, but I wrote it
 in a way that makes it obvious what is happening here. This is always
 good practice for a developer of any skill level, so that they and
 others can easily examine the code at a later stage. I save.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-h.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-h.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
 <p>And once my app re compiles, if I click the click me button, I get the appropriate
-string output in the console. This brings me to an interesting
+string output in the console. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ wk2-section06-i.  (1xx) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/Wk2-Section06-i.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+
+<p>This brings me to an interesting
 conclusion. Although the console log is updating, there are no changes
 to the actual heading one on the screen. Of course, I can update it
 manually by changing false to true. Then saving the app and waiting for
@@ -5004,35 +5091,35 @@ events on a single JSX element.</p>
 <details>
   <summary>App.js</summary>
 
-<pre>function App() {
-  
-  function handleClick() {
-    let randomNum = Math.floor(Math.random() * 3) + 1;
-    console.log(randomNum);
-    let userInput = prompt('type a number');
-    alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
-  }
-  
-  return (
-    &lt;div&gt;
-      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
-      &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
-  
-export default App;</pre>
+<pre>
+01. function App() {
+02.  
+03.   function handleClick() {
+04.     let randomNum = Math.floor(Math.random() * 3) + 1;
+05.     console.log(randomNum);
+06.     let userInput = prompt('type a number');
+07.     alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
+08.   }
+09.  
+10.   return (
+11.     &lt;div&gt;
+12.       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
+13.       &lt;button onClick={handleClick}&gt;Guess the number between 1 and 3&lt;/button&gt;
+14.     &lt;/div&gt;
+15.   );
+16. }
+17.  
+18. export default App;</pre>
 
 </details>
 
 <p>Here is the output from the solution code for the App.js file:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 44. output of the completed dynamic events exercise (xx) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ 44. output of the completed dynamic events exercise (149) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image044.png?raw=true"
-  alt="The output of the completed 'Dynamic events' exercise."
+  alt="The output of the completed 'Dynamic events exercise."
   width="70%" />
 </p>
 <!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
@@ -9103,7 +9190,7 @@ gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db0
 
 <h7>End. . .</h7>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h6>4:16pm 5-29-23 Mon meta-react-basics index.html</h6>
+<h6>4:16pm 6-3-23 Sat meta-react-basics index.html</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 </body>
 </html>
