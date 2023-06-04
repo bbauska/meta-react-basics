@@ -5715,16 +5715,20 @@ stateful examples by focusing on data flow.
 By now you've probably already learned about some important and useful
 core concepts in React. At this point, you're ready to learn how to add
 interactivity, maintain state within a React component and explore
-hooks. In this section, you'll be introduced to what hooks are, how
+hooks. 
+In this section (13), you'll be introduced to what hooks are, how
 they can be used and why they are useful. As you progress as a React
 developer, you'll likely soon use complex components with state fault
-logic. Keeping track of state across components can become quite a task
+logic. 
+Keeping track of state across components can become quite a task
 and this is where React's hooks can help. One key benefit of hooks is
 that they solve the problem of unnecessary code reuse across components.
+
 Let's find out how they do that. Hooks are functions that were
 introduced in React version 16.8. They let you hook into React state and
-lifestyle features from components. Let's observe an example hook.
-Specifically, you'll examine an instance of the useState hook as it's
+lifestyle features from components. 
+
+Let's observe an example hook. Specifically, you'll examine an instance of the useState hook as it's
 the most commonly used one. This hook is used to manage the state within
 a component and keep track of it and it's built directly into React. To
 use it, the first thing you need to do is import the useState from React
@@ -9885,4 +9889,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>5/31/2023 12:25pm</h6>
+<h6>Saturday 6/3/2023 7:44pm</h6>
