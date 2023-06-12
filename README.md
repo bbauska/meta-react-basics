@@ -3546,7 +3546,6 @@ there's a menu, a footer, the shopping cart, etc.
 In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
 <b>props.children</b> in the background.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>25. Styling JSX elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4784,6 +4783,14 @@ Below you will find links to helpful additional resources.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ week 2, section 01, a - "Clicks  Movements  Commands" (125) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-a.png?raw=true"
+  alt="Clicks  Movements  Commands."
+  width="60%" />
+</p>
+
 By now, you're probably familiar with <b>events</b> in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
 can occur when the user or the browser manipulates a page. They provide
@@ -4791,55 +4798,135 @@ enhanced interactive experiences, such as responding to mouse clicks,
 movements, or keyboard commands. Because events usually rely on some
 interaction, they need to wait and listen in the background for that
 interaction to occur before they can be triggered.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ week 2, section 01, b - event listener button (125) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-b.png?raw=true"
+  alt="Event Listener Button - onclick."
+  width="60%" />
+</p>
 Every HTML element contains a set of events that developers can access
-by using HTML attributes, commonly referred to as event listeners. For
-example, it's a common feature of a website or app to have a button
+by using HTML attributes, commonly referred to as event listeners.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ Week 2, Section 01, c - on click, add to cart html (126) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-c.png?raw=true"
+  alt="On click, add to cart - html."
+  width="60%" />
+</p>
+<p>For example, it's a common feature of a website or app to have a button
 that when clicked, causes something to happen. This action is an example
 of an event and is accomplished with either event listener methods or by
-defining specific JavaScript functions.
+defining specific JavaScript functions.</p>
 
-Developers can use <b>events</b> to execute JavaScript's code in response
+<p>Developers can use <b>events</b> to execute JavaScript's code in response
 to an action based on user interactivity, like clicking a button. This
 process by which the HTML button communicates to the JavaScript event
 handler to execute some code and respond to the event action is known as
 <b>triggering</b>.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ Week 2, Section 01, d - on click, add to cart js (126) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-d.png?raw=true"
+  alt="On click, add to cart - js."
+  width="60%" />
+</p>
 For example, you might want to listen for a click event on an Add to
 Cart button. Once you capture such an event, you might want to run some
-JavaScript code. In this example, I just circled with a number 1 in the
+JavaScript code. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ Week 2, Section 01, e - on click, add 1 to cart js (127) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-e.png?raw=true"
+  alt="On click, add 1 to cart - js."
+  width="60%" />
+</p>
+
+In this example, I just circled with a number 1 in the
 shopping cart to indicate one item has been added. If the same event
 gets triggered or fired again, our event handling code that handles the
 event by updating the count in the circle next to the shopping cart
-icon. The circle then displays the number 2 to indicate that there are
+icon. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ Week 2, Section 01, f - 2 item in cart (127) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-f.png?raw=true"
+  alt="On click, add 1 to cart - js."
+  width="60%" />
+</p>
+
+The circle then displays the number 2 to indicate that there are
 two items in the cart.
 
 Events are a powerful tool and make up part of the <b>Document Object
 Model</b>. As an aspiring React developer, you'll need to know how to
 work with <b>events</b> as they are handled a bit differently.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ Week 2, Section 01, g - identify types of events & event handling (128) ~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-g.png?raw=true"
+  alt="Identify types of events in React and describe most common. Explain event handling."
+  width="60%" />
+</p>
 
-By the end of this section (01), you'll be able to identify the broad
+<p>By the end of this section (01), you'll be able to identify the broad
 types of events available in React, and describe some of the most
 commonly used ones. You'll also know how to explain the event handling
-process in React at a high level.
+process in React at a high level.</p>
 
-In React code, events are handled using <b>JSX event attributes</b>, which
-are very similar to HTML event attributes that you may be familiar with.
-For example, the click handling attributes in HTML is the onclick
+<p>In React code, events are handled using <b>JSX event attributes</b>, which
+are very similar to HTML event attributes that you may be familiar with.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ Week 2, Section 01, h - onclick (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-h.png?raw=true"
+  alt="onclick event handling (all lowercase) in html, and onClick in camelCase for jsx."
+  width="40%" />
+</p>
+<p>For example, the click handling attributes in HTML is the onclick
 attribute with all the letters lowercased. The equivalent click handling
 attributes in React's JSX is the <b>camelCased onClick</b> attribute.
 Remember that camel case means that the first letter is lowercase and
 the separation of words is indicated with a capital letter rather than a
 space.
-
-There are many events supported in React, which can be divided into
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ Week 2, Section 01, i - events supported in react (128) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-i.png?raw=true"
+  alt="Events supported in React."
+  width="60%" />
+</p>
+<p>There are many events supported in React, which can be divided into
 several groups. Those groups include clipboard Events, composition
 Events, keyboard Events, and many more. Each group usually holds
-multiple events.
+multiple events.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ Week 2, Section 01, j - supported mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-j.png?raw=true"
+  alt="Mouse events supported in React."
+  width="60%" />
+</p>
 
 For example, supported mouse events include onClick, onContextMenu,
 onDoubleClick, and several others.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ Week 2, Section 01, k - clipboard events (129) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-k.png?raw=true"
+  alt="Clipboard events supported in React."
+  width="60%" />
+</p>
 You will also find that the clipboard group has the useful events:
 onCopy, onCuts, and onPaste. There are far too many events to cover
 here, but you can find a complete list in the additional reading.
@@ -4853,6 +4940,14 @@ probably not necessary to learn about all of these events.
 
 Also keep in mind that many of these events are related to specific use
 cases.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ Week 2, Section 01, l - supported drag n drop mouse events (129) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s01-l.png?raw=true"
+  alt="Drag 'n drop mouse events supported in React."
+  width="60%" />
+</p>
 
 For example, several of the mouse events are limited to the drag and
 drop API.
@@ -4864,7 +4959,6 @@ capabilities events can open up to you.
 In this section (1), you learned about the types of events available in
 React and how they came to be. Next, you'll explore specific examples
 and build the skills to use events competently from various situations.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Eventful issues</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9889,4 +9983,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>Saturday 6/3/2023 7:44pm</h6>
+<h6>Saturday 6/11/2023 9:19pm</h6>
