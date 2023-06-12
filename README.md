@@ -6191,84 +6191,174 @@ such as a specific company coding style guide.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. User events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (06), I'm going to demonstrate how to toggle the value of a
+<p>In this section (06), I'm going to demonstrate how to toggle the value of a
 Boolean state variable using user triggered events. And how to handle
-multiple events on a single JSX element. In the example that you'll
+multiple events on a single JSX element.</p>
+<p>In the example that you'll
 explore next, the code consists of another example of a component than
 what you've been used to so far in the course. The aim is to
 demonstrates how all the event handling concepts work together with
-state, styling, and the use of turning the expressions. Let's say that
-you have a component that uses state to keep a Boolean value of dark
-mode on. Based on whether the value of this variable is true or false,
+state, styling, and the use of turning the expressions.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, a -  (143) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-a.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>Let's say that you have a component that uses state to keep a Boolean value 
+of dark mode on. Based on whether the value of this variable is true or false,
 your component will render an H1 heading with some text in it. Either as
 a dark theme or as a light theme. Additionally, it's possible to switch
-the theme with a button click. Now, let's continue with an in depth
+the theme with a button click. 
+<p>Now, let's continue with an in depth
 demonstration of event handling. I'm going to demonstrate event
 handling with an example so that you can gain practical insight into the
-use of events to provide additional functionality to an app. I'm going
-to build a component and I'll name it mode toddler. So, in the Explorer
+use of events to provide additional functionality to an app.</p>
+<p>I'm going to build a component and I'll name it mode toddler. So, in the Explorer
 Sidebar in VS code, I right click the source folder and click the new
 file command. I name the file ModeToggler. And for now, it's an empty
 function declaration with a default export. I press control S or command
-S on a mac to save my updates. Back in the app component, I update its
+S on a mac to save my updates.</p>
+<p>Back in the app component, I update its
 return statements to render this new ModeToggler component. I also need
 to import it online one of the app component and save the changes to app
 JS. I now return some JSX code from my ModeToggler component and add a
-return statement. In this statement, a JSX expression wraps the turner
+return statement.</p>
+<p>In this statement, a JSX expression wraps the turner
 in which checks if the value of dark mode on is true or false. If it's
 true, it will return whatever restored in the dark mode value. And if
 it's false, it will return whatever stored in the light mode value.
-However, I don't have the values I'm evaluating yet. So, if I say this
-code now it throws an error. Instead I define these values by declaring
+However, I don't have the values I'm evaluating yet.</p>
+<p>So, if I say this code now it throws an error.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, b -  (144) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-b.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>Instead I define these values by declaring
 three variables above the return statements. These are dark mode on,
 which holds a value of true, dark mode which holds the text. Dark mode
 is on in an H one header and light mode which holds the text. Light mode
-is on in an H one header. I save my changes and I get the sentence. Dark
-mode is on in the browser. Let me explain what happened here. The dark
-mode on variable is set to true. Just to do a quick test, I can change
-the variable name of dark mode on in the turn array to the value of
-true. Since this value is true, the value that's stored in dark mode
-will be rendered. If I change the value of true to false, the value
+is on in an H one header.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, c -  (144) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-c.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>I save my changes and I get the sentence. Dark
+mode is on in the browser.</p>
+<p>Let me explain what happened here. The dark
+mode on variable is set to true.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, d -  (145) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-d.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>Just to do a quick test, I can change the variable name of dark mode 
+on in the turn array to the value of true. Since this value is true, the 
+value that's stored in dark mode will be rendered.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, e -  (145) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-e.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>If I change the value of true to false, the value
 that's stored in light mode will be displayed. I have replaced the test
 word false with our const dark mode on. And now I'll save it and test
 it again. Now, I get the light mode is on displayed on the screen. I add
 a button with the on click events to handle this toggle of the value of
-the dark mode on, variable from true to false. So, under this turner
-restatement I'll add a button with an on click event handler. I'll
-also define the handle click function. I start my function by taking the
+the dark mode on, variable from true to false.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, f -  (146) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-f.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>So, under this turner restatement I'll add a button with an on click event handler.</p>
+<p>I'll also define the handle click function.</p>
+<p>I start my function by taking the
 value of dark mode on, and change it to the opposite Boolean value using
-the exclamation mark. That is the not operator. I then assign this value
-as the new value of the dark mode on variable. To explain this a bit
+the exclamation mark. That is the not operator.</p>
+<p>I then assign this value as the new value of the dark mode on variable.</p>
+<p>To explain this a bit
 more, if the value of dark mode on was for example true, then the not
 dark mode on will be evaluated to not true. This not true will be
-assigned to the dark mode on variable, thus becoming false. I now add to
-the rest of the code for the handle click function, which is an if
-statement. The logic states that if the dark mode on is set to true,
-then console log dark mode is on otherwise console log light mode is on.
-I could have perhaps written this code a bit differently, but I wrote it
-in a way that makes it obvious what is happening here. This is always
+assigned to the dark mode on variable, thus becoming false.</p>
+<p>I now add to the rest of the code for the handle click function, which is an if
+statement.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, g -  (147) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-g.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>The logic states that if the dark mode on is set to true,
+then console log dark mode is on otherwise console log light mode is on.</p>
+<p>	I could have perhaps written this code a bit differently, but I wrote it
+in a way that makes it obvious what is happening here.</p>
+<p>This is always
 good practice for a developer of any skill level, so that they and
-others can easily examine the code at a later stage. I save. And once my
-app re compiles, if I click the click me button, I get the appropriate
-string output in the console. This brings me to an interesting
+others can easily examine the code at a later stage. I save.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, h -  (147) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-h.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+<p>And once my app re compiles, if I click the click me button, I get the appropriate
+string output in the console.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 06, i -  (148) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s06-i.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<p>This brings me to an interesting
 conclusion. Although the console log is updating, there are no changes
-to the actual heading one on the screen. Of course, I can update it
+to the actual heading one on the screen.</p>
+<p>Of course, I can update it
 manually by changing false to true. Then saving the app and waiting for
-a rear ender to confirm that my changes have indeed happened. Because
+a rear ender to confirm that my changes have indeed happened.</p>
+<p>Because
 the previous heading of light mode is on, has now become the heading
 that reads dark mode is on. But as soon as I click the button, the
-console lock changes. However, the heading in the web app doesn't
-reflect this change. Why is this the case? To understand this, you need
-to go deeper into data flow and react and observe how it moves between
-components. Fortunately, you'll be learning that soon. Great job, you
+console lock changes.</p>
+<p>However, the heading in the web app doesn't reflect this change. Why is this 
+the case?</p>
+<p>To understand this, you need to go deeper into data flow and react and observe how it moves between
+components.</p>
+<p>Fortunately, you'll be learning that soon. Great job, you
 should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
-events on a single JSX element
-
+events on a single JSX element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Dynamic events &amp; how to handle them</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is the completed App.js file:
+<p>Here is the completed App.js file:</p>
 
 <h4>App.js</h4>
 
@@ -6276,70 +6366,70 @@ Here is the completed App.js file:
   <summary>App.js</summary>
 
 ```
-function App() {
-  
-  function handleClick() {
-    let randomNum = Math.floor(Math.random() * 3) + 1;
-    console.log(randomNum);
-    let userInput = prompt('type a number');
-    alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
-  }
-  
-  return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button onClick={handleClick}>Guess the number between 1 and 3</button>
-    </div>
-  );
-}
-  
-export default App;
+1.  function App() {
+2.  
+3.    function handleClick() {
+4.      let randomNum = Math.floor(Math.random() * 3) + 1;
+5.      console.log(randomNum);
+6.      let userInput = prompt('type a number');
+7.      alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
+8.    }
+9.  
+10.   return (
+11.     <div>
+12.       <h1>Task: Add a button and handle a click event</h1>
+13.       <button onClick={handleClick}>Guess the number between 1 and 3</button>
+14.     </div>
+15.   );
+16. }
+17.  
+18. export default App;
 ```
 
 </details>
 
-Here is the output from the solution code for the App.js file:
-
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 44. output of the completed dynamic events exercise (xx) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ w2-s07-a. output of the completed dynamic events exercise (149) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image044.png?raw=true"
+<img src="/images/w2-s07-a.png?raw=true"
   alt="The output of the completed 'Dynamic events' exercise."
   width="70%" />
 </p>
 <!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
-
 <b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
 closing <b>button</b> tag, to the App component's <b>h1</b> element . 
 
 ```
-function App() {
-  return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button></button>
-    </div>
-  );
-}
-  
-export default App;
+1.  function App() {
+2.
+3.    return (
+4.      <div>
+5.        <h1>Task: Add a button and handle a click event</h1>
+6.        <button></button>
+7.      </div>
+8.    );
+9.  }
+10.
+11. export default App;
 ```
 
 <b>Step 2.</b> In between the opening and closing <b>button</b> tags, you
 added the following text: Guess the number between 1 and 3. 
 
 ```
-function App() {
-  return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
-      <button>Guess the number between 1 and 3</button>
-    </div>
-  );
-}
-
-export default App;
+1.  function App() {
+2.
+3.    return (
+4.      <div>
+5.        <h1>Task: Add a button and handle a click event</h1>
+6.        <button>Guess the number between 1 and 3</button>
+7.      </div>
+8.    );
+9.  }
+10.
+11. export default App;
 ```
 
 <b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
@@ -6393,7 +6483,6 @@ show a prompt pop up which you can type into. After that, an alert pop
 up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number "chosen" by the computer one more time. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Additional resources (Data &amp; State - Week 2)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6419,96 +6508,215 @@ Here is a list of resources that may be helpful as you continue your learning jo
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Parent-child data flow</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Imagine you're working for an online retailer which discount prices
+<p>Imagine you're working for an online retailer which discount prices
 regularly to keep stock moving. Sales are announced at multiple points
 on the website. But what's the best way to keep this information up to
 date? For example, updating items individually would be tedious and
-time-consuming.
-
-Fortunately, it's possible to change information at a single point and
+time-consuming.</p>
+<p>Fortunately, it's possible to change information at a single point and
 have everything else update automatically to match. This idea
 illustrates a parent-child relationship, and in this section (09), we
-will explore this concept as it applies to React.
-
-By the end of this section (09), you'll be able to describe the
+will explore this concept as it applies to React.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~ w2-s09-a. parent-child unidirectional flow of data and react hierarchy (151) ~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-a.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+<p>By the end of this section (09), you'll be able to describe the
 parent-child unidirectional flow of data, and you'll gain an
-understanding of the hierarchy of React.
-
-Let's start with an example of two <b>components</b> which will be used in
+understanding of the hierarchy of React.</p>
+<p>Let's start with an example of two <b>components</b> which will be used in
 the same app. First is the promo component, which will return the
-contents of the promo heading components that you will create later.
-
-To build the promo component, you can declare the function promo and
+contents of the promo heading components that you will create later.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-b. promo component (152) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-b.png?raw=true"
+  alt="Promo component."
+  width="40%" />
+</p>
+<p>To build the promo component, you can declare the function promo and
 then write a return statement inside of curly braces. This statement has
 a div inside of which <b>PromoHeading</b> is called. This is then followed
-by the line export default <b>Promo</b> to make the component accessible.
-
-Next, let's write the <b>PromoHeading</b> component. You can declare
+by the line export default <b>Promo</b> to make the component accessible.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-c. promoheading component (152) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-c.png?raw=true"
+  alt="PromoHeading component."
+  width="40%" />
+</p>
+<p>Next, let's write the <b>PromoHeading</b> component. You can declare
 function <b>PromoHeading</b> and in curly braces type return, opening,
 parenthesis, h1 tag the text 80 percent of sale, h1 closing tag, and
-closing parenthesis. Once again, don't forget to export the components
-to make it available. Success.
-
-You've now created the <b>component</b> promo, which calls a function from
+closing parenthesis.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w2-s09-d. promoheading component and export (152) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-d.png?raw=true"
+  alt="PromoHeading component with export."
+  width="40%" />
+</p>
+<p>Once again, don't forget to export the components
+to make it available. Success.</p>
+<p>You've now created the <b>component</b> promo, which calls a function from
 the component <b>PromoHeading</b> to return the text 80 percent off sale.
-
-In this example, the <b>Promo</b> component is known as a parent component,
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-e. promo component with child (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-e.png?raw=true"
+  alt="Promo component as parent with rendered PromoHeading child component."
+  width="40%" />
+</p>
+<p>In this example, the <b>Promo</b> component is known as a parent component,
 and the component it renders, <b>PromoHeading</b>, is referred to as the
-child component.
-
-Now, let's say that the discount increases to 99 percent off and you
+child component.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-f. promoheading with 99% off (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-f.png?raw=true"
+  alt="PromoHeading component."
+  width="40%" />
+</p>
+<p>Now, let's say that the discount increases to 99 percent off and you
 need to update the code to reflect this. One approach is to update the
 text inside of the h1 tags in the <b>Promo</b> details component. That's a
-quick fix because there is only one change to deal with.
-
-However, let's explore a more complex situation. This time, your
+quick fix because there is only one change to deal with.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w2-s09-g. call promoheading and show two messages	(153) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-g.png?raw=true"
+  alt="PromoHeading component."
+  width="40%" />
+</p>
+<p>However, let's explore a more complex situation. This time, your
 manager asks you to call the <b>PromoHeading</b> component in the sidebar
 and footer components of the web app in addition to the primary
-component.
-
-They also want two messages displayed "99 percent of all items" and
+component.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-h. promo, sidebar and footer (154) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-h.png?raw=true"
+  alt="PromoHeading component."
+  width="40%" />
+</p>
+<p>They also want two messages displayed "99 percent of all items" and
 "everything must go". These new requirements mean that the approach of
 updating the child component will not work quite as well. Why is that?
 Well, it means that you now have to update multiple components with the
 same data. This is not in line with the general programming principle of
 DRY or don't repeat yourself, which aims to reduce needless code
-replication. Also, consider the following possibilities. While entering
+replication.</p>
+<p>Also, consider the following possibilities. While entering
 the same text into several components, it's possible you make a typing
 error. Also, what if your boss decides to change the discount again? It
 means you have to change the text in all the connected components once
-more. But instead of writing the same code over and over, you can change
+more.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-i. single source of truth (154) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-i.png?raw=true"
+  alt="PromoHeading component."
+  width="40%" />
+</p>
+<p>But instead of writing the same code over and over, you can change
 your approach. You can establish a single source of truth that contains
 the two strings that store the values for the texts, "99 percent of all
 items" and "everything must go". This will be contained within the
 parent component so that any data needed can be passed onto the child
-component using props. Now, let's use this approach to update the Promo
+component using props.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-j.  (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-j.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>Now, let's use this approach to update the Promo
 component. First, you create a single source of truth, a JavaScript
 object named data. Data is an object that will contain two properties
-named heading and callToAction, both represented as strings. Next, you
+named heading and callToAction, both represented as strings.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-k.  (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-k.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>Next, you
 update the Promo component to pass the heading and the callToAction
 values of the data object to the PromoHeading component. This is known
 as passing data from the parent to the child component. Back inside the
 PromoHeading component, you update it to accept data from its parent
-component. To do this, you need to first delete the existing h1 in the
+component.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-l.  (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-l.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>To do this, you need to first delete the existing h1 in the
 return statement, and then add a new h1 for props.heading, and then h2
-for props.callToAction. Now this component accepts a props object,
+for props.callToAction.</p>
+<p>Now this component accepts a props object,
 specifically its two properties, heading and callToAction. The values of
 the props object are determined in the parent component when you add the
-specific JSX element that should be rendered. This was achieved when you
-rendered the PromoHeading inside the Promo component. Here you access
+specific JSX element that should be rendered.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-m.  (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-m.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>This was achieved when you rendered the PromoHeading inside the Promo component. Here you access
 the properties on the data object using the regular dots notation syntax
-of plain JavaScript. Knowing this, you can now go to the sidebar
+of plain JavaScript.</p>
+<p>Knowing this, you can now go to the sidebar
 component and the footer component in a similar way to the PromoHeading
-component. Remember that in React, the prop states always flow from the
+component.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-n.  (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-n.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>Remember that in React, the prop states always flow from the
 parent to the child component, and using props helps you avoid the need
-to change the data in several places. Instead, you make the change at
+to change the data in several places.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-o.  (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s09-o.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>Instead, you make the change at
 the data source, the parent, and the updates will be applied to the
-child automatically. In this section (9), you learned how the
-parent-child relationship can be set up so that data flows from parent
-to child. By storing data in the parent component, you can dynamically
-pass it to the child component without the need to update children
-individually.
-
+child automatically.</p>
+<p>In this section (09), you learned how the parent-child relationship can be 
+set up so that data flows from parent to child. By storing data in the parent 
+component, you can dynamically pass it to the child component without the need 
+to update children individually.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Data flow in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
