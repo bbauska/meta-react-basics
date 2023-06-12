@@ -1679,16 +1679,16 @@ inside this folder.
 
 I execute this command by pressing the Enter key.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-b.  (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-b. npm start (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-b.png?raw=true"
-  alt="."
+  alt="&gt; npm start."
   width="50%" />
 </p>
 
 I wait for the app to build, and once it's ready, I can start the app
-by typing npm then a space followed by start.
+by typing $&gt; npm then a space followed by start ($&gt; npm start).
 
 The process of building the React app could take a couple of minutes, so
 just sit tight while it builds.
@@ -1696,11 +1696,11 @@ just sit tight while it builds.
 Great. My React app has started and loaded in the browser at
 localhost:3000 which is the local server.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-c.  (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-c. on your react network (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-c.png?raw=true"
-  alt="."
+  alt="On your react network."
   width="60%" />
 </p>
 
@@ -1710,14 +1710,13 @@ json.
 
 You'll learn more about these later.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-d.  (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-d. src folder (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-d.png?raw=true"
-  alt="."
+  alt="SRC (source) folder."
   width="70%" />
 </p>
-
 For now, the only folder I need to work in as the SRC folder.
 
 Don't worry about all these other files and folders. Instead, I want
@@ -1726,11 +1725,11 @@ you to focus on how to build a component in React.
 To do that, let's have a clean start.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-e.  (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-e. app.js (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-e.png?raw=true"
-  alt="."
+  alt="app.js."
   width="70%" />
 </p>
 
@@ -1740,11 +1739,11 @@ inside the app.js file.
 I guess you might say this is the simplest possible component. I'm
 declaring an app function and I'm exporting it as a default module.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-f.  (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-f. blank app.js (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-f.png?raw=true"
-  alt="."
+  alt="blank app.js."
   width="70%" />
 </p>
 
@@ -1753,11 +1752,11 @@ I save my file and notice that my app is just a blank page.
 Now, let me create another component that will contain some texts that I
 want to display in the browser.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-g.  (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-g. header function (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-g.png?raw=true"
-  alt="."
+  alt="Header function in app.js."
   width="70%" />
 </p>
 
@@ -1786,11 +1785,11 @@ self-closing tag in HTML.
 Press Control S or Command S, if you're on Mac to save everything
 again.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-h.  (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-h. hello world (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s11-h.png?raw=true"
-  alt="."
+  alt="Hello World in React."
   width="70%" />
 </p>
 
@@ -1877,7 +1876,7 @@ some code that the browser cannot comprehend, into code that it can
 comprehend, run, and produce a result from.
 
 Likely the most popular site that shows off how this works is
-[Babel](https://babeljs.io/) (https://babeljs.io/). As the heading of
+[Babel](https://babeljs.io/). As the heading of
 the website reads, "Babel is a JavaScript Compiler".
 
 This finally brings you to the point of this discussion about
@@ -2020,7 +2019,7 @@ export default App;
 
 Here is the output from the solution code for the App.js file:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ w1-s13-a. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w1-s13-a. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s13-a.png?raw=true"
@@ -5375,11 +5374,11 @@ Let's take a tour of the lessons to determine how it did just that.
 First, you learned about how reactors used in the real-world from meta
 software engineer Katie.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-a.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-a. html, css and js (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s33-a.png?raw=true"
-  alt="."
+  alt="HTML, CSS, and JavaScript (JS)."
   width="40%" />
 </p>
 Then to lay the foundation for the hands-on labs, you had a quick
@@ -5392,55 +5391,53 @@ The second lesson was all about react components and where they're
 stored within your applications. In this lesson, you were introduced
 component-based architecture, a design philosophy for building software
 based on reusable components of code like the reactor library. 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-b.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w1-s33-b. react components and virtual dom (123) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s33-b.png?raw=true"
-  alt="."
+  alt="React Components &amp; component style layouts which use the Virtual DOM."
   width="40%" />
 </p>
 You learned about component types and components style layouts that use the
 virtual DOM. And you learned how to create components that form the
 foundation of UI design.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c. jsx to html (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s33-c.png?raw=true"
-  alt="."
+  alt="React and JSX, transpire from JSX to HTML."
   width="40%" />
 </p>
-
-In this lesson, you also learned more about JSX, a special kind of
+<p>In this lesson, you also learned more about JSX, a special kind of
 syntax that acts like an extension of JavaScript. You learned how to
 transpire it in other words convert JSX to Html, which helped you to
 understand how a component is built. And you learned how to build a new
 component inside the app component and have it rendered onscreen. As
 well as how to save a component to its own file and importing it into
-its parent component so that it can be rendered onscreen.
+its parent component so that it can be rendered onscreen.</p>
 
-The third lesson was about component use and styling. You learned how to
+<p>The third lesson was about component use and styling. You learned how to
 pass data from one component to another using properties and your
 ability to do so was tested in the lab. And you learned how to render
 one component multiple times using different props. You also learned
 more about how to use JSX and its embedded expressions and how to style
-JSX elements in a way that is functional and looks good.
+JSX elements in a way that is functional and looks good.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w1-s33-c.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-d.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ w1-s33-d. use, define components and invoke functions (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s33-d.png?raw=true"
-  alt="."
+  alt="Use props and components, define components, and invoke functions."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ w1-s33-e. use expressions as props and declare components (124) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-e.png?raw=true"
+  alt="Use and manipulate props &amp; components, define components using function expressions &amp; arrow functions."
   width="40%" />
 </p>
 
@@ -5450,18 +5447,18 @@ functions. Invoke functions inside of JSX expressions. Use expressions
 as props. Declare components that require props and use expressions and
 embedded expressions in attributes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-e.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w1-s33-f. explain react &amp; create components (124) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s33-e.png?raw=true"
+<img src="/images/w1-s33-f.png?raw=true"
   alt="."
   width="40%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-f.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ w1-s33-g. use props &amp; components, describe assets (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s33-f.png?raw=true"
+<img src="/images/w1-s33-g.png?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -10699,4 +10696,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>Sunday 6/11/2023 11:59pm</h6>
+<h6>Monday 6/12/2023 11:51am</h6>
