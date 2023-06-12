@@ -5615,7 +5615,7 @@ Remember that camel case means that the first letter is lowercase and
 the separation of words is indicated with a capital letter rather than a
 space.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ Week 2, Section 01, i - events supported in react (128) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ week 2, section 01, i - events supported in react (128) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-i.png?raw=true"
@@ -5627,7 +5627,7 @@ several groups. Those groups include clipboard Events, composition
 Events, keyboard Events, and many more. Each group usually holds
 multiple events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ Week 2, Section 01, j - supported mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ week 2, section 01, j - supported mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-j.png?raw=true"
@@ -5638,7 +5638,7 @@ multiple events.</p>
 For example, supported mouse events include onClick, onContextMenu,
 onDoubleClick, and several others.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ Week 2, Section 01, k - clipboard events (129) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ week 2, section 01, k - clipboard events (129) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-k.png?raw=true"
@@ -5659,7 +5659,7 @@ probably not necessary to learn about all of these events.
 Also keep in mind that many of these events are related to specific use
 cases.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ Week 2, Section 01, l - supported drag n drop mouse events (129) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 01, l - supported drag n drop mouse events (129) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-l.png?raw=true"
@@ -5738,7 +5738,7 @@ The try-catch block will output some text in the console:
 following TypeError: 5.toUpperCase is not a function</b>
 
 It is assumed that if you are taking this course that you are already
-familiar with how the try\...catch syntax works, so I won't go into any
+familiar with how the try...catch syntax works, so I won't go into any
 details after this quick refresher.
 
 Back to React, here's an example of a simple error in a React
@@ -5780,9 +5780,27 @@ already exists in JavaScript -- that is, you just use the
 
 I will now show you how to handle several events in React using
 components.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, a -  (132) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-a.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 As I start, I've added a new component to the SRC folder. I named it
 <b>Btn</b>, and for now it's just an empty function or the default export.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, b -  (132) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-b.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
 Let me simplify the app.js file as return statement. First, I'll delete
 the logo import statements and import the <b>Btn</b> component, then remove
 the contents of the return statement. Finally, I'll add the <b>Btn</b> JSX
@@ -5791,12 +5809,27 @@ elements so that it can get rendered.
 Back in the <b>Btn</b> components. I add a button in the return statement,
 the button reads, Click Me, press Control S or Command S on the Mac to
 Save and the button renders on the screen.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, c -  (133) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-c.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 Now I would like to handle a click on this button. I add the onclick
 synthetic events than an equals sign and opening curly brace.
 ClickHandler and a closing curly brace. The return statement, I
 distributed the code on several lines to increase readability.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, d -  (133) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-d.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 Now I'm setting up the click handling behavior. Whenever a user clicks
 on the button that will evaluate an expression named <b>clickHandler</b>, I
 now need to define this clickHandler and I'll set it as a function
@@ -5805,9 +5838,18 @@ expression, meaning I will use the const variable keyword and name it
 I've just set up a clickHandler that receives the click events that's
 fired from this button and handles it by outputting the word clicked in
 the console. Again, I save my changes and, in the browser, I open the
-developer tools. Now I locate and activate the console tab in the
-developer tools, I'll also zoom in on the button.
+developer tools. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, e -  (134) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-e.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
+Now I locate and activate the console tab in the developer tools, 
+I'll also zoom in on the button.
 When I click the button, the word clicked appears in the console for
 every click event. Back inside the <b>Btn.js</b> file and VS Code, I select
 all the code in the Btn component. Right-click on the selection and
@@ -5815,6 +5857,14 @@ click the Copy command and the contextual menu that pops up. Next, I use
 the keyboard shortcut of holding down the control key. While it's
 pressed down, press and release the K button, then pressing and
 releasing the C button, and finally releasing the Control key.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, f -  (135) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-f.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 Control K, C that comments out all the highlighted code, right under
 this commented code, I now press the Control V keyboard shortcut to
@@ -5823,7 +5873,14 @@ paste in the code that I have previously copied.
 I will now show you how to handle a different event. Let me replace the
 onclick JSX event handling attributes with another one and thus handle a
 different event.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 03, g -  (135) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s03-g.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 For example, I can replace the onclick attribute with the on mouse over
 attribute and update my event handling function accordingly to read
 mouse over. I save my changes and wait for the app to recompile.
@@ -5840,6 +5897,14 @@ boring notification, you're producing events in the browser.
 
 As you learned earlier, in order for these events that have any effect,
 you need to use <b>event handlers</b> that will then execute an action.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, a -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-a.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 For example, suppose you use a button to open a menu. Clicking the
 button is the event. The event handler is on click and the action that
@@ -5848,8 +5913,15 @@ follows the event is opening the menu.
 There are a few approaches to adding event handlers to your code that
 have different advantages, so you should become familiar with each of
 them.
-
-By the end of this section (4), you'll be able to describe the syntax
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, b -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-b.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+By the end of this section (04), you'll be able to describe the syntax
 differences for using <b>event handlers</b> in HTML and React. You will
 also know how to explain HTML <b>function call</b> and React <b>component
 inclusion</b>, and discuss the advantage of the component level of
@@ -5859,7 +5931,14 @@ Suppose you're a developer working on a React app and you need to
 create a button that will trigger an event when a user clicks on it.
 With that scenario in mind, let's examine some codes that accomplishes
 this in plain HTML.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, c -  (1xx) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-c.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 You might open a tag called button with the ID <b>js-btn</b>. You then
 assign the <b>on click</b> event handling attribute and set it equal to the
 <b>click handler function</b>.
@@ -5872,7 +5951,14 @@ event handling attribute on the click. While the HTML code in the
 example seems pretty straightforward, it's recommended to use
 JavaScript for scenarios like these instead. Why is that? Well, you'll
 find out later.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, d -  (1x) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 But for now, you should understand that the equivalent code in
 JavaScript consists of two primary steps. First, you should use
 JavaScript to plug into these specific HTML elements on what you'd like
@@ -5886,7 +5972,14 @@ object to attach a specific event listener.
 
 When you apply this method to the previous example, HTML is removed from
 the equation, but the code on the other hand, is a bit more complicated.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, e -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-e.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 Specifically, you need to first declare a constant called <b>JS button</b>
 and assign the value from the DOM. Then you need to add the <b>click
 listener</b> event and the function to run the code.
@@ -5895,9 +5988,24 @@ Going back to React. The biggest difference in syntax involves the use
 of the <b>addEventListener</b> method in React.
 
 The rule is to avoid manipulating the DOM directly as much as possible.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, f -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-f.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 You should set everything up declaratively, meaning that you describe
 updates to React and let it figure out the rest.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, g -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-g.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 This is best done using event attribute, unfortunately, one-to-one
 mapping between HTML event attributes and JSX event attributes means
@@ -5909,6 +6017,14 @@ React. In other words, while in plain JavaScript, you would need to pass
 an invocation to an event handling function as a value to the on click
 events. In React, you should not invoke a function. Instead, you just
 pass a reference to the event handling function without invoking it.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, h -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-h.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 To illustrate that point, let's compare the syntax of an HTML click
 handler event and its reactor JSX equivalent. In HTML, you provide the
@@ -5921,6 +6037,14 @@ event with each word's <b>first letter capitalized.</b> After the equal
 sign, you use the JSX expression delimiters, that is the opening and
 closing <b>curly braces</b>. Inside of the curly brace delimiters, you add
 the name of the function to be run. Make sure not to invoke it.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ week 2, section 04, i -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s04-i.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 Finally, one more feature only using React is the passing of function
 declarations as <b>props</b>. For example, in an app component, let's say
@@ -5938,7 +6062,6 @@ handling in HTML and JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Event handling and embedded expressions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 In this section (5), you'll learn the different ways to embed expressions in
 event handlers in React:
 
@@ -10696,4 +10819,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>Monday 6/12/2023 11:51am</h6>
+<h6>Monday 6/12/2023 2:00pm</h6>
