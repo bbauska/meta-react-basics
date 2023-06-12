@@ -3676,12 +3676,27 @@ In this section (23), you will explore JSX in more detail in the context of
 components and styling.  You'll also learn how to mix JavaScript, HTML, and 
 CSS within a component.<br>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-a.  (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 What is it that makes JSX so special? In one word,
 expressiveness. Developers can express what they want to react to render
 using a very expressive syntax, almost identical to HTML or XML.<br>
 In other words, JSX allows developers to write HTML directly inside the
 JavaScript code. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-b.  (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-b.png?raw=true"
+  alt="Output of the completed 'Passing Props' exercise."
+  width="60%" />
+</p>
 For example, you can add navigation function to a website by creating a nav component. 
 Then place the HTML semantic nav element, and an unordered list inside. 
 Because this is React, the list values can be made dynamic by passing values as props. It 
@@ -3692,13 +3707,27 @@ insert specific JSX expressions such as variables and props. The reason
 why this is so great to work with, is because anything that's placed
 inside the curly braces of the code is essentially regular JavaScript
 code. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-c.  (91) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-c.png?raw=true"
+  alt="Output of the completed 'Passing Props' exercise."
+  width="60%" />
+</p>
 For example, you could calculate a series of simple expressions
 using the Li or list item tag. This means that you can think of the
 curly braces as being special areas where you can write any kind of
 JavaScript code you like. You can write the rest of the code inside the
 return statement. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-d.  (91) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-d.png?raw=true"
+  alt="Output of the completed 'Passing Props' exercise."
+  width="60%" />
+</p>
 Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
 inside the return statement of the function. The return statements can be thought of 
 as the area of expressive syntax that allows you to write regular HTML code as you'd
@@ -3707,6 +3736,22 @@ like to have it in your rendered app.
 But if you need to return HTML code over multiple lines, it must be placed inside parentheses. 
 This allows developers to alternate between regular HTML tags, and dynamic
 values represented as JSX expressions inside curly braces. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e.  (92) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-e.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-f.  (92) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-f.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 It's also important to remember that the HTML code must be wrapped in a top level
 element, such as a div tag. If you do not want to add extra div elements
@@ -3714,7 +3759,15 @@ to the DOM, you can use something called a fragment instead. This is
 like an HTML open and close tag without the tag name. While you can
 think of the code inside the return statement is regular HTML, it's
 worth remembering you are in a JavaScript file, and as a result, there
-are some differences. 
+are some differences.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-g.  (92) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-g.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
 This is because class is a reserved keyword in JavaScript, you must use a slightly different
@@ -3724,12 +3777,20 @@ capitalized letter.
 
 You can use className to list any number of CSS classes to style a specific JSX element 
 inside a component. This is just like how you use a class attribute in regular HTML. 
-It's only one of the many ways you can style React apps. 
+It's only one of the many ways you can style React apps. You'll learn more about how to 
+do this later. 
 
-You'll learn more about how to do this later. For now, just know that this is the closest 
-to what you would do like if you were working with HTML, and CSS website layouts.
-There are some other differences, and you'll learn about them later.
-But in practical terms, you can consider the code to be pretty much just
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-h.  (93) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s23-h.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+For now, just know that this is the closest to what you would do like if you were working 
+with HTML, and CSS website layouts.  There are some other differences, and you'll learn 
+about them later.  But in practical terms, you can consider the code to be pretty much just
 like regular HTML. 
 
 In this lesson, you explored further the concept of JSX styling, and how it's used in React. 
@@ -4141,16 +4202,41 @@ harder to maintain.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 26 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>26. Practical styling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Recall that there are three techniques to include CSS and HTML documents. 
+Recall that there are three techniques to include CSS and HTML documents.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-a.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-a.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 The first is in line by utilizing the style attribute inside the HTML element. 
 Next is internal by using the style elements in the head section. 
 Finally, external by linking to an external CSS file using the link element. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-b.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-b.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 In this section (26), you'll learn how to take CSS style rules from an external 
 file named index.CSS and add it inside a component as an internal style. 
 The style rules can then be referenced by your code inside the return statement of 
-the component. Notice that the components are styled by the external style sheet, 
-index dot CSS. 
+the component. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-c.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-c.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+Notice that the components are styled by the external style sheet, index dot CSS. 
 
 For this section (26), I'll continue working on an app which consists of the components
 header, main and sidebar. This time the focus will be on using internal styling inside
@@ -4162,17 +4248,58 @@ components displayed in the browser.
 
 Now let's go to the sidebar.js file where I'll paste the code before the return statement. 
 This will not affect my component because I'm pasting CSS code into a JavaScript file.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-d.  (101) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-d.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 I need to make some changes to turn the CSS rule into a JavaScript object. To do this, I need 
 to declare a site style as a const variable and then replace the semi-colons and the code with 
-commas. I also need to replace the hyphenated names with camelCase. It's important to know 
-that because CSS declarations like background are now an object property, I need to make their 
-respective values a string by wrapping them inside double quotes. I also need to repeat this 
-for the other news tile elements as well. Finally, inside the a site tag and return statements 
-of the component, I need to add a style attribute by typing style equals aside style as a JSX 
-expression. I then choose save all in the file menu to save my changes. Notice that the sidebar 
-components appears in the browser as before, I edited the index.CSS file. 
+commas. I also need to replace the hyphenated names with camelCase. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-e.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-e.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+It's important to know that because CSS declarations like background are now an object property, 
+I need to make their respective values a string by wrapping them inside double quotes. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-f.  (102) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-f.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+I also need to repeat this for the other news tile elements as well. Finally, inside the a site tag 
+and return statements of the component, I need to add a style attribute by typing style equals aside 
+style as a JSX expression. I then choose save all in the file menu to save my changes. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-g.  (103) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-g.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+Notice that the sidebar components appears in the browser as before, I edited the index.CSS file. 
 That's an example of using inline CSS styling directly inside a component. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-h.  (104) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s26-h.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 In this section (26), you learned how to take CSS style rules from an external file 
 named index.CSS and add it inside a component as an internal style.
@@ -4404,26 +4531,95 @@ key feature embedded expressions.
 
 First, let's examine a JSX example that will output some text on a webpage. 
 The code consists of a paragraph, HTML elements containing the phrase hello world. 
-It is assigned to the constant variable named Result. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-a.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+It is assigned to the constant variable named Result.
 Note that when this JSX code executes, the result variable will contain a react 
-element that can then be inserted into the webpage. This is one of the key features of
-JSX. Building React elements from HTML code automatically. 
+element that can then be inserted into the webpage. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-b.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+This is one of the key features of
+JSX. Building React elements from HTML code automatically. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-c.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Let's explore another important feature of JSX, which is embedded expressions.
 Embedded expressions allow developers to insert the values of JavaScript
-variables into the HTML of the resulting React elements. 
+variables into the HTML of the resulting React elements. Embedded expressions can also embed 
+the outputs of functions. 
 
-Embedded expressions can also embed the outputs of functions. Let's say you need
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-d.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+Let's say you need
 to output the person's name in a specific format. To do this, you can
 first create a function named format name that will return the first
-name and surname with a space character between them. In your JSX, you
-can then call this function inside the curly brackets. 
+name and surname with a space character between them. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-e.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+In your JSX, you can then call this function inside the curly brackets. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-f.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 As with the previous example, the value that the function generates for the JavaScript 
-variable will be output in HTML. Expressions can also be used for HTML attributes.
+variable will be output in HTML. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-g.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-g.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+Expressions can also be used for HTML attributes.
 This is useful if you need to insert the address of a person's profile picture. 
 
 To do this, first, you would store the profile picture address in a variable named URL. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-h.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s28-h.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 The image will be displayed using the img elements, so you should embed the URL 
 variable into the src attributes. 
 
@@ -4753,13 +4949,28 @@ I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
 expression in an attribute, specifically the SRC attribute of the html
 image tag. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-a.  (115) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s31-a.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 
 Over the next few minutes I'll guide you through the process
 as I complete the steps. And by the end of this section (31) you'll be
 able to demonstrate how to embed a JS expression in an attribute,
 including adding additional styling and importing additional assets and
 utilize additional assets within an app by importing components. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-b.  (116) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s31-b.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 Now I'm in the App.js file of a new project and start with an app component
 that returns the h1 header text, hello world. I've previously copied
 the avatar profile image from the Coursera GitHub account which is
@@ -4767,7 +4978,14 @@ publicly available through the get up API.
 
 I have pasted the images into the roots of the SRC folder and named it avatar.png. 
 In order to use the image I need to import it into the app component. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-c.  (116) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s31-c.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
 I then add a new function in the App.js file named logo. The logo function is 
 essentially a separate component. But to keep things clean for this example, 
 I'll save the code in the app component instead of a separate file. The logo
@@ -4779,13 +4997,31 @@ the SRC attribute inside this image element.
 Finally I'm returning the userPic const from the logo function. 
 
 Back inside the app component I'll now render the logo component by adding 
-the logo element inside the app components return statement. Lemme now preview 
-my app in the browser. Great, so it displays the header text along with the 
+the logo element inside the app components return statement. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-d.  (117) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s31-d.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+Lemme now preview my app in the browser. Great, so it displays the header text along with the 
 image.
 
 Keep in mind that if I were to continue building this app with more
 components, it would be best to extract the logo component to its own
-file and then import and render it as needed. And that's a
+file and then import and render it as needed. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-e.  (117) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s31-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+And that's a
 demonstration on how you can embed a JSX expression in an attribute. In
 this case the SRC attribute of an html image tag.
 
@@ -4840,10 +5076,11 @@ export default Card;
 
 Here is the output from the completed solution code:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s32-a.  (118) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 43. output of completed 'multiple components' exercise (xx) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image043.png?raw=true"
+<img src="/images/w1-s32-a.png?raw=true"
   alt="The output of the completed 'Multiple components' exercise."
   width="60%" />
 </p>
@@ -5137,7 +5374,14 @@ Let's take a tour of the lessons to determine how it did just that.
 
 First, you learned about how reactors used in the real-world from meta
 software engineer Katie.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-a.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Then to lay the foundation for the hands-on labs, you had a quick
 summary of the fundamentals of html, CSS and JavaScript.
 
@@ -5147,10 +5391,27 @@ work with JavaScript modules.
 The second lesson was all about react components and where they're
 stored within your applications. In this lesson, you were introduced
 component-based architecture, a design philosophy for building software
-based on reusable components of code like the reactor library. You
-learned about component types and components style layouts that use the
+based on reusable components of code like the reactor library. 
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-b.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+You learned about component types and components style layouts that use the
 virtual DOM. And you learned how to create components that form the
 foundation of UI design.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 In this lesson, you also learned more about JSX, a special kind of
 syntax that acts like an extension of JavaScript. You learned how to
@@ -5166,12 +5427,44 @@ ability to do so was tested in the lab. And you learned how to render
 one component multiple times using different props. You also learned
 more about how to use JSX and its embedded expressions and how to style
 JSX elements in a way that is functional and looks good.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-d.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 As part of this lesson, you learned how to use and manipulate props and
 components. Define components using function expressions and arrow
 functions. Invoke functions inside of JSX expressions. Use expressions
 as props. Declare components that require props and use expressions and
 embedded expressions in attributes.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-e.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-f.  (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s33-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 After completing this module, you are now able to explain the concept
 behind React and component architecture. Create a component to serve a
