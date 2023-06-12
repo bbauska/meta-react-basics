@@ -8,19 +8,19 @@ meta-react-basics: meta/Coursera - React Basics
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ readme.md in meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-a. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image001.png?raw=true"
+<img src="/images/w1-a.png?raw=true"
   alt="meta logo."
   width="125px" />
 </p>
 <!-- {width="1.549261811023622in" height="0.5in"} -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-b. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image002.png?raw=true"
+<img src="/images/w1-b.png?raw=true"
   alt="Coursera logo."
   width="100px" />
 </p>
@@ -47,10 +47,15 @@ By the end of this course, you will be able to:</p>
   - Build an application in React,
 
   - You'll gain experience with the following tools and software:
+  
     - React.js
+	
     - JSX
+	
     - React
+	
     - HTML, CSS and JavaScript
+	
     - VSCode (or other, BETTER, editors with less bullshit), like notepad++,
 
   - You will be able to leverage the potential of this course to develop
@@ -79,10 +84,10 @@ Welcome to React basics.
 
 In this course, you'll be introduced to the basics of working with React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 04. 3 basics of react (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-a. 3 basics of react (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image004.png?raw=true"
+<img src="/images/w1-s01-a.png?raw=true"
   alt="Develop a working familiarity with a basic structure of react javascript library."
   width="40%" />
 </p>
@@ -108,10 +113,10 @@ You'll explore components in more detail later in this module.
 For now, it's enough for you to know that every website's UI is built
 on a foundation of components and composability.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 05. components & composability (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-b. components & composability (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image005.png?raw=true"
+<img src="/images/w1-s01-b.png?raw=true"
   alt="React is comprised of components."
   width="40%" />
 </p>
@@ -135,10 +140,10 @@ with <b>state</b> in React apps.
 
 You'll learn a lot more about state as you go through the course.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~ 06. state - value of variables your working with at any given point (11) ~~~~~~~~~~-->
+<!--~~~~~~ w1-s01-c. state - value of variables your working with at any given point (10) ~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image006.png?raw=true"
+<img src="/images/w1-s01-c.png?raw=true"
   alt="State - the value of all variables your working with at any given point."
   width="50%" />
 </p>
@@ -149,10 +154,10 @@ But for now, here's a simple definition of state.
 <b>State is simply all the values of all the variables your app is
 working with at any given point in time.</b>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 07. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-d. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image007.png?raw=true"
+<img src="/images/w1-s01-d.png?raw=true"
   alt="React basics - styling React apps."
   width="40%" />
 </p>
@@ -173,7 +178,6 @@ Let's get started...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. How is React used in the real world?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 There are plenty of React based apps that you've probably used before.
 
 Facebook and Instagram are two examples.
@@ -855,10 +859,10 @@ can name: <b>firstapp</b>.
 
 In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 08. vs code terminal screen (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-a. vs code terminal screen (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image008.png?raw=true"
+<img src="/images/w1-s07-a.png?raw=true"
   alt="VS Code terminal screen."
   width="80%" />
 </p>
@@ -939,10 +943,10 @@ Again, following the instructions, opening a browser with the address
 bar pointing to [http://localhost:3000](http://localhost:3000/), will
 show the following page in your browser:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 09. react logo on black screen (27) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-b. react logo on black screen (27) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image009.png?raw=true"
+<img src="/images/w1-s07-b.png?raw=true"
   alt="React logo on black screen."
   width="40%" />
 </p>
@@ -1095,10 +1099,10 @@ library from Meta.
 
 React used to run many of the world's most popular websites.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 10. sample search screen example (30) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-a. sample search screen example (30) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image010.png?raw=true"
+<img src="/images/w1-s09-a.png?raw=true"
   alt="React search screen example."
   width="50%" />
 </p>
@@ -1111,10 +1115,10 @@ The site then returns the relevant content or results.
 But you might notice that even though the content has updated, the sites
 URL doesn't change.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~ 11. spa: rich user interfaces, speed and scalability/flexibility (30) ~~~~~~~~~~~-->
+<!--~~~~~~~ w1-s09-b. spa: rich user interfaces, speed and scalability/flexibility (30) ~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image011.png?raw=true"
+<img src="/images/w1-s09-b.png?raw=true"
   alt="SPA: Single Page Apps have rich user interfaces, speed and are scalable and flexible."
   width="40%" />
 </p>
@@ -1137,10 +1141,10 @@ Let's begin with components.
 
 One of the core building blocks of React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 12. component-based architecture (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-c. component-based architecture (31) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image012.png?raw=true"
+<img src="/images/w1-s09-c.png?raw=true"
   alt="Component-based architecture - build upon reusable code."
   width="50%" />
 </p>
@@ -1152,10 +1156,10 @@ something called <b>component-based architecture</b>.
 This is essentially a design philosophy for building software based on
 reusable components of code.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 13. example component (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-d. example component (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image013.png?raw=true"
+<img src="/images/w1-s09-d.png?raw=true"
   alt="Example component.  Update edit profile and update photo."
   width="65%" />
 </p>
@@ -1165,10 +1169,10 @@ Each <b>component</b> consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
 components.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 14. reusable and independent (32) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-e. reusable and independent (32) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image014.png?raw=true"
+<img src="/images/w1-s09-e.png?raw=true"
   alt="Reusable and independent."
   width="65%" />
 </p>
@@ -1180,10 +1184,10 @@ easily inserted anywhere we're needed.
 This results in components that can exist within the same space yet
 interact independently from each other.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 15. independent developers on independent components (33) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ w1-s09-f. independent developers on independent components (32) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image015.png?raw=true"
+<img src="/images/w1-s09-f.png?raw=true"
   alt="Components with independent developers."
   width="60%" />
 </p>
@@ -1206,10 +1210,10 @@ that can be combined into more complex components.
 In fact, you can think of an entire website is just a collection of
 components.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 16. example product check out page on e-commerce web app (34) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w1-s09-g. example product check out page on e-commerce web app (33) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image016.png?raw=true"
+<img src="/images/w1-s09-g.png?raw=true"
   alt="Example product check out page on an e-commerce web application."
   width="60%" />
 </p>
@@ -1221,7 +1225,7 @@ application.
 The page consists of three sections, a header, a payment section, and a
 sidebar.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ 17. example header section with logo & nav menu (34) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w1-s09-h. example header section with logo & nav menu (33) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/image017.png?raw=true"
@@ -1233,10 +1237,10 @@ sidebar.
 The header section contains the company logo with a navigation menu and
 a button to view the shopping cart.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 18. example payment section component (34) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w1-s09-i. example payment section component (34) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image018.png?raw=true"
+<img src="/images/w1-s09-i.png?raw=true"
   alt="Example payment section component."
   width="30%" />
 </p>
@@ -1245,10 +1249,10 @@ a button to view the shopping cart.
 The payment section area contains a form where the user inputs their
 payment information.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 19. example order summary component (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w1-s09-j. example order summary component (35) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image019.png?raw=true"
+<img src="/images/w1-s09-j.png?raw=true"
   alt="Example order summary component."
   width="30%" />
 </p>
@@ -1256,10 +1260,10 @@ payment information.
 
 Finally, there's a sidebar with the order summary information.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ 20. self-contained components (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-k. self-contained components (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image020.png?raw=true"
+<img src="/images/w1-s09-k.png?raw=true"
   alt="Self-contained components comprised of HTML, CSS and JavaScript."
   width="50%" />
 </p>
@@ -1274,10 +1278,10 @@ that submits a payment when a button is clicked.
 It's important to know that the use of components in website UI design
 is not limited to just React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 21. components and compost ability (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w1-s09-l. components and compost ability (36) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image021.png?raw=true"
+<img src="/images/w1-s09-l.png?raw=true"
   alt="Components and compost ability."
   width="30%" />
 </p>
@@ -1295,10 +1299,10 @@ DOM without significantly impacting the browser's resources.
 This is called component rendering and you'll learn more about this and
 its associated render method later.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 22. tree-like dom (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-m. tree-like dom (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image022.png?raw=true"
+<img src="/images/w1-s09-m.png?raw=true"
   alt="Logical tree-like DOM."
   width="15%" />
 </p>
@@ -1319,10 +1323,10 @@ difficult to understand like spaghetti.
 React prevents this spaghetti code by avoiding any manipulation of the
 DOM.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 23. react components - virtual dom (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w1-s09-n. react components - virtual dom (36) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image023.png?raw=true"
+<img src="/images/w1-s09-n.png?raw=true"
   alt="React components, virtual DOM."
   width="50%" />
 </p>
@@ -1341,13 +1345,13 @@ application speed and performance.
 In this module, you learned about the basics of React by exploring the
 concepts of the component-based architecture components and the virtual
 DOM.
-
-## 10. Introduction to functional components
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>10. Introduction to functional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 24. javascript function (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-a. js multiply function (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image024.png?raw=true"
+<img src="/images/w1-s10-a.png?raw=true"
   alt="JavaScript function, multiply."
   width="60%" />
 </p>
@@ -1365,11 +1369,11 @@ components.
 
 Component types, JSX and trans piling.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 25.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-b. two react components (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image025.png?raw=true"
-  alt="."
+<img src="/images/w1-s10-b.png?raw=true"
+  alt="Two types of React components; Functional and Class."
   width="60%" />
 </p>
 <!-- {width="6.0in" height="2.092697944006999in"} -->
@@ -1387,10 +1391,10 @@ You'll learn more about them later.
 Instead, let's just focus on functional components, which act like a
 JavaScript function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 26.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w1-s10-c. default react appl'n: index.js (38) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image026.png?raw=true"
+<img src="/images/w1-s10-c.png?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -1400,10 +1404,10 @@ In the default React application, only one component is rendered and
 it's the app components located inside the index.js file that's
 located inside the source folder.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 27.  (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-d. root component (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image027.png?raw=true"
+<img src="/images/w1-s10-d.png?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -7917,8 +7921,8 @@ Why didn't this problem happen earlier?
 
 When you were passing onSquareClick={handleClick}, you were passing the
 handleClick function down as a prop. You were not calling it! But now
-you are <i>calling</i> that function right away---notice the parentheses in
-handleClick(0)---and that's why it runs too early. You don't <i>want</i> to
+you are <i>calling</i> that function right away--notice the parentheses in
+handleClick(0)--and that's why it runs too early. You don't <i>want</i> to
 call handleClick until the user clicks!
 
 You could fix by creating a function like handleFirstSquareClick that
@@ -8140,7 +8144,7 @@ data) directly, you gain several benefits.
 Immutability makes complex features much easier to implement. Later in
 this tutorial, you will implement a "time travel" feature that lets you
 review the game's history and "jump back" to past moves. This
-functionality isn't specific to games---an ability to undo and redo
+functionality isn't specific to games--an ability to undo and redo
 certain actions is a common requirement for apps. Avoiding direct data
 mutation lets you keep previous versions of the data intact, and reuse
 them later.
@@ -8224,7 +8228,7 @@ When you mark a square with a X or an O you aren't first checking to see
 if the square already has a X or O value. You can fix this by returning
 early. You'll check to see if the square already has a X or an O. If the
 square is already filled, you will return in the handleClick function
-early---before it tries to update the board state.
+early--before it tries to update the board state.
 
 ```
  function handleClick(i) {
@@ -8634,7 +8638,7 @@ Notice how [Array(9).fill(null)] is an array with a single item, which
 itself is an array of 9 nulls.
 
 To render the squares for the current move, you'll want to read the last
-squares array from the history. You don't need useState for this---you
+squares array from the history. You don't need useState for this--you
 already have enough information to calculate it during rendering:
 
 ```
@@ -8732,7 +8736,7 @@ array to onPlay.
 
 The handlePlay function needs to update Game's state to trigger a
 re-render, but you don't have a setSquares function that you can call
-any more---you're now using the history state variable to store this
+any more--you're now using the history state variable to store this
 information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
 just as Board used to do:
@@ -9453,21 +9457,21 @@ already named these components in their design tool. Ask them!
 Depending on your background, you can think about splitting up a design
 into components in different ways:
 
--   <b>Programming</b>---use the same techniques for deciding if you should
+-   <b>Programming</b>--use the same techniques for deciding if you should
     create a new function or object. One such technique is the [single
     responsibility
     principle](https://en.wikipedia.org/wiki/Single_responsibility_principle),
     that is, a component should ideally only do one thing. If it ends up
     growing, it should be decomposed into smaller subcomponents.
 
--   <b>CSS</b>---consider what you would make class selectors for.
+-   <b>CSS</b>--consider what you would make class selectors for.
     (However, components are a bit less granular.)
 
--   <b>Design</b>---consider how you would organize the design's layers.
+-   <b>Design</b>--consider how you would organize the design's layers.
 
 If your JSON is well-structured, you'll often find that it naturally
 maps to the component structure of your UI. That's because UI and data
-models often have the same information architecture---that is, the same
+models often have the same information architecture--that is, the same
 shape. Separate your UI into components, where each component matches
 one piece of your data model.
 
@@ -9618,7 +9622,7 @@ Figure out the absolute minimal representation of the state your
 application needs and compute everything else on-demand. For example, if
 you're building a shopping list, you can store the items as an array in
 state. If you want to also display the number of items in the list,
-don't store the number of items as another state value---instead, read
+don't store the number of items as another state value--instead, read
 the length of your array.
 
 Now think of all of the pieces of data in this example application:
@@ -9680,7 +9684,7 @@ For each piece of state in your application:
 
 1.  Identify every component that renders something based on that state.
 
-2.  Find their closest common parent component---a component above them
+2.  Find their closest common parent component--a component above them
     all in the hierarchy.
 
 3.  Decide where the state should live:
