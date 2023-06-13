@@ -366,7 +366,7 @@ pre code {
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
-  padding: 6px 10px;
+  padding: 3px 5px;  /* 6px 10px */
   border-radius: 3px;
 }
 
@@ -376,7 +376,7 @@ pre {
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
-  padding: 6px 10px;
+  padding: 3px 5px;  /* 6px 10px */
   border-radius: 3px;
 }
 
