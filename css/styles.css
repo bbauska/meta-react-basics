@@ -102,7 +102,7 @@ background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93
 body {
   font-family: Bahnschrift, Inter, Helvetic, sans-serif;
   font-size: 1.2rem;
-  background-color: #EEEEEE;  /* very light gray */
+  background-color: #eeeeee;  /* very light gray */
   color: #000000;  /* black */
   text-align: left;
   padding: 10px;
