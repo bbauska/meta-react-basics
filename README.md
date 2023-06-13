@@ -1,7 +1,7 @@
 ---
 meta-react-basics: meta/Coursera - React Basics
 ---
-<link rel="stylesheet" type="text/css" media="all" href="./css/styles.css" />
+<link rel="stylesheet" type="text/css" media="all" href="./css/markdown-styles.css" />
 
 <h1 align="center" width="100%">meta (Coursera) / React Basics</h1>
 
