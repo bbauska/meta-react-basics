@@ -6967,18 +6967,17 @@ across components.  Let's find out how they do that.</p>
 </p>
 <p>To use it, the first thing you need to do is import the useState from React so that it's available for use.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. showmenu and setshowmenu #1 and #2 (161) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="left" width="100%">
+<p align="center">
 <img src="/images/w2-s12-f.png?raw=true"
-  alt="Complex components and React hooks."
-  width="30%" />
-<p align="right" width="100%">
+  alt="ShowMenu and SetShowMenu, example #1."
+  width="45%" />
+&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="/images/w2-s12-g.png?raw=true"
-  alt="Complex components and React hooks."
-  width="30%" />
+  alt="ShowMenu and SetShowMenu, example #2."
+  width="45%" />
 </p>
-
 <p>The next step is to declare a state variable within a component. You can provide any name to the state variable and the set state function. For this example, let's call the state variable showMenu and the set state function setShowMenu.</p>
 If you've learned JavaScript, this syntax may feel somewhat familiar to you. You are probably wondering what exactly this code does. Well, it's actually doing something that you've likely encountered before.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
