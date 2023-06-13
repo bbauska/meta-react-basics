@@ -1,10 +1,11 @@
 ---
 meta-react-basics: meta/Coursera - React Basics
 ---
+<link rel="stylesheet" type="text/css" media="all" href="./css/styles.css" />
 
 <h1 align="center" width="100%">meta (Coursera) / React Basics</h1>
 
-<h5 align="center">(meta-react-basics)</h5>
+<h7 align="center">(meta-react-basics)</h7>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ readme.md in meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6914,7 +6915,7 @@ component props, and the H1 elements will display the current date and time. Wel
 <p>You've now learned how children and data flows in ReactJS. You should also be able to 
 showcase the use of stateless and stateful examples by focusing on data flow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>12. Data flow</h2>
+<h2>12. What are hooks?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By now you've probably already learned about some important and useful core concepts in React. At this point, you're ready to learn how to add interactivity, maintain state within a React component and explore hooks.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6922,7 +6923,7 @@ showcase the use of stateless and stateful examples by focusing on data flow.</p
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-a.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="Complex components and React hooks, how they can be used and why they are useful."
   width="60%" />
 </p>
 <p>In this section (12), you'll be introduced to what hooks are, how they can be used and 
@@ -6930,99 +6931,98 @@ why they are useful. As you progress as a React developer, you'll likely soon us
 components with state fault logic. Keeping track of state across components can become 
 quite a task and this is where React's hooks can help.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-b. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-b. code reuse (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-b.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="Code reuse."
   width="60%" />
 </p>
 <p>One key benefit of hooks is that they solve the problem of unnecessary code reuse 
 across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-c. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w2-s12-c. hooks are functions in react (162) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-c.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="Hooks are functions in React."
   width="60%" />
 </p>
 <p>Hooks are functions that were introduced in React version 16.8. They let you hook into React state and lifestyle features from components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-d. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w2-s12-d. manage the state built into react (162) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-d.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="Manage the state built into React."
   width="60%" />
 </p>
 <p>Let's observe an example hook. Specifically, you'll examine an instance of the useState hook as it's the most commonly used one. This hook is used to manage the state within a component and keep track of it and it's built directly into React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-e. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-e. import the usestate (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-e.png?raw=true"
-  alt="Complex components and React hooks."
-  width="30%" />
+  alt="Import the useState from React."
+  width="40%" />
 </p>
 <p>To use it, the first thing you need to do is import the useState from React so that it's available for use.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. showmenu and setshowmenu #1 and #2 (161) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. showmenu and setshowmenu #1 and #2 (163) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
 <img src="/images/w2-s12-f.png?raw=true"
   alt="ShowMenu and SetShowMenu, example #1."
-  width="45%" />
+  width="40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="/images/w2-s12-g.png?raw=true"
   alt="ShowMenu and SetShowMenu, example #2."
-  width="45%" />
+  width="40%" />
 </p>
 <p>The next step is to declare a state variable within a component. You can provide any name to the state variable and the set state function. For this example, let's call the state variable showMenu and the set state function setShowMenu.</p>
 If you've learned JavaScript, this syntax may feel somewhat familiar to you. You are probably wondering what exactly this code does. Well, it's actually doing something that you've likely encountered before.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-h. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-h. array destructuring (163) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-h.png?raw=true"
   alt="Complex components and React hooks."
-  width="30%" />
+  width="40%" />
 </p>
 <p>Notice that the convention is to name the state variable and the set of function using array destructuring. When you declare a state variable using the useState, it returns a pair which is an array with two items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-i. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s12-i. without array destructuring, long &amp; cumbersome (163) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-i.png?raw=true"
-  alt="Complex components and React hooks."
-  width="60%" />
+  alt="Without array destructuring, long &amp; cumbersome."
+  width="40%" />
 </p>
-
 <p>Without array destructuring, the code would be long and cumbersome. Since it's more confusing and tedious to access the array items by index, array destructuring is preferred and it significantly simplifies the code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-j. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-j. simplifies the code (163) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-j.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="showMenu simplified as false."
   width="60%" />
 </p>
 <p>You now have a new state variable called showMenu. The useState then sets the initial value of showMenu as false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-k. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-k. showmenu and setshowmenu (164) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-k.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="showMenu and setShowMenu functions."
   width="60%" />
 </p>
 <p>To summarize, calling the useState hook does two things. It creates a state variable with an initial value that represents the current state, which in this example is showMenu. And it creates a function to set that states variable value, which in this case is setShowMenu. The function setShowMenu is used to update the value of show menu bypassing the Boolean value to it. It does not matter what names you use for the state variables. You can define them based on your component and use case.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~ w2-s12-l. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w2-s12-l. usestate hook - track boolean (164) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s12-l.png?raw=true"
-  alt="Complex components and React hooks."
+  alt="useState hook to track the Boolean state value."
   width="40%" />
 </p>
 <p>The useState hook should be called at the top level of your component. In this example, notice that the useState hook was used to track the Boolean state value. 
@@ -7031,111 +7031,43 @@ You can use the useState hook to track any type of data. It could be strings, nu
 <p>The biggest benefit of hooks is the readability and simplicity that they provide to the code.</p>
 <p>In this section (12), you learned the basics on React hooks and explored the useState hook. You now understand the benefits of using hooks and how you can use them within your React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>13. What are hooks?</h2>
+<h2>13. Using hooks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now you've probably already learned about some important and useful
-core concepts in React. At this point, you're ready to learn how to add
-interactivity, maintain state within a React component and explore
-hooks. 
-In this section (13), you'll be introduced to what hooks are, how
-they can be used and why they are useful. As you progress as a React
-developer, you'll likely soon use complex components with state fault
-logic. 
-Keeping track of state across components can become quite a task
-and this is where React's hooks can help. One key benefit of hooks is
-that they solve the problem of unnecessary code reuse across components.
-
-Let's find out how they do that. Hooks are functions that were
-introduced in React version 16.8. They let you hook into React state and
-lifestyle features from components. 
-
-Let's observe an example hook. Specifically, you'll examine an instance of the useState hook as it's
-the most commonly used one. This hook is used to manage the state within
-a component and keep track of it and it's built directly into React. To
-use it, the first thing you need to do is import the useState from React
-so that it's available for use. The next step is to declare a state
-variable within a component. You can provide any name to the state
-variable and the set state function. For this example, let's call the
-state variable <b>showMenu</b> and the set state function <b>setShowMenu</b>.
-
-If you've learned JavaScript, this syntax may feel somewhat familiar to
-you. You are probably wondering what exactly this code does. Well, it's
-actually doing something that you've likely encountered before. Notice
-that the convention is to name the state variable and the set of
-function using array destructuring. When you declare a state variable
-using the useState, it returns a pair which is an array with two items.
-Without array destructuring, the code would be long and cumbersome.
-Since it's more confusing and tedious to access the array items by
-index, array destructuring is preferred and it significantly simplifies
-the code. You now have a new state variable called showMenu. The
-useState then sets the initial value of showMenu as false.
-
-To summarize, calling the <b>useState</b> hook does two things. It creates
-a state variable with an initial value that represents the current
-state, which in this example is <b>showMenu</b>. And it creates a function
-to set that states variable value, which in this case is
-<b>setShowMenu</b>. The function <b>setShowMenu</b> is used to update the
-value of show menu bypassing the Boolean value to it. It does not matter
-what names you use for the state variables. You can define them based on
-your component and use case. The <b>useState</b> hook should be called at
-the top level of your component. In this example, notice that the
-<b>useState</b> hook was used to track the Boolean state value. You can use
-the <b>useState</b> hook to track any type of data. It could be strings,
-numbers, arrays, Booleans or objects.
-
-For instance, you can even track the number of times a button is
-pressed. In addition to the hooks that come out of the box with React,
-you can also build your own hooks, which will let you extract custom
-component logic into reusable functions. This is an excellent feature
-and benefit of using hooks.
-
-The biggest benefit of hooks is the readability and simplicity that they
-provide to the code.
-
-In this section, you learned the basics on React hooks and explored the
-<b>useState</b> hook. You now understand the benefits of using hooks and
-how you can use them within your React applications.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>14. Using hooks</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Now that you understand what hooks are in React and have some basic
+<p>Now that you understand what hooks are in React and have some basic
 knowledge on the <b>useState</b> hook, let's dive in deeper. In this
 section (14), you will learn how to use hooks in React components and
-understand the use-cases for the <b>useState</b> hook.
-
-Let's say you have a component with an input text field. The user can
+understand the use-cases for the <b>useState</b> hook.</p>
+<p>Let's say you have a component with an input text field. The user can
 type into this text field. The component needs to keep track of what the
 user types within this text field. You can add state and use the
-<b>useState</b> hook, to hold the string.
-
-As the user keeps typing, the local state that holds the string needs to
-get updated with the latest text that has been typed.
-
-Let's discuss the below example.
+<b>useState</b> hook, to hold the string.</p>
+<p>As the user keeps typing, the local state that holds the string needs to
+get updated with the latest text that has been typed.</p>
+<p>Let's discuss the below example.</p>
 
 <details>
   <summary>React</summary>
 
 ```
-import { useState } from 'react';
-  
-export default function InputComponent() { 
-  const [inputText, setText] = useState('hello');
-
-  function handleChange(e) { 
-    setText(e.target.value); 
-  } 
-  return ( 
-    <> 
-      <input value={inputText} onChange={handleChange} />
-      <p>You typed: {inputText}</p>
-      <button onClick={() => setText('hello')}> 
-         Reset
-      </button>
-    </>
-  );
-}
+1.	import { useState } from 'react';
+2.	
+3.	export default function InputComponent() { 
+4.	  const [inputText, setText] = useState('hello'); 
+5.	
+6.	  function handleChange(e) { 
+7.	    setText(e.target.value); 
+8.	  }
+9.	 
+10.	  return ( 
+11.	    <> 
+12.	    <input value={inputText} onChange={handleChange} /> 
+13.	    <p>You typed: {inputText}</p> 
+14.	    <button onClick={() => setText('hello')}> 
+15.	      Reset 
+16.	    </button> 
+17.	    </> 
+18.	  ); 
+19.	} 
 ```
 
 </details>
@@ -7149,13 +7081,13 @@ To do this, let's define a React component and call it
   <li>A Reset button to set the field back to its default state.<br></li>
 </ol>
 
-As the user starts typing within the text field, the current text that was typed is also displayed.
+<p>As the user starts typing within the text field, the current text that was typed is also displayed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 45. display of word 'welcome' typed to bar (0x) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s13-a. display of word 'welcome' typed to bar (166) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image045.png?raw=true"
-  alt="Display of the word "welcome" typed to bar."
+<img src="/images/w2-s13-a.png?raw=true"
+  alt="Display of the word "Welcome" typed to bar."
   width="60%" />
 </p>
 <!-- {width="5.979166666666667in" height="2.25in"} -->
@@ -7206,10 +7138,10 @@ To demonstrate, let's extend the previous example, to include three
 input text fields within a single component. This could be a
 registration form with fields for first name, last name and email.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ 46. Text fields of first name, last name, and e-mail (0x) ~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ w2-s13-b. text fields of first name, last name, and e-mail (167) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image046.png?raw=true"
+<img src="/images/w2-s13-b.png?raw=true"
   alt="Text fields of first name, last name, and e-mail."
   width="53%" />
 </p>
@@ -7219,77 +7151,90 @@ registration form with fields for first name, last name and email.
   <summary>App.js</summary>
 
 ```
-import { useState } from 'react'; 
-  
-export default function RegisterForm() { 
-  const [form, setForm] = useState({ 
-    firstName: 'Luke', 
-    lastName: 'Jones', 
-    email: 'lukeJones@sculpture.com', 
-  }); 
- 
-  return ( 
-    <>
-      <label> 
-        First name: 
-        <input 
-          value={form.firstName} 
-          onChange={e => { 
-            setForm({ 
-              ...form, 
-              firstName: e.target.value 
-            }); 
-          }} 
-        />
-      </label> 
-      <label> 
-        Last name: 
-        <input 
-          value={form.lastName} 
-          onChange={e => { 
-            setForm({ 
-              ...form, 
-              lastName: e.target.value 
-            }); 
-          }} 
-        /> 
-      </label> 
-      <label> 
-        Email: 
-        <input 
-          value={form.email} 
-          onChange={e => { 
+1.	import { useState } from 'react'; 
+2.	
+3.	export default function RegisterForm() { 
+4.	  const [form, setForm] = useState({ 
+5.	    firstName: 'Luke', 
+6.	    lastName: 'Jones', 
+7.	    email: 'lukeJones@sculpture.com', 
+8.	  }); 
+9.	
+10.	  return ( 
+11.	    <> 
+12.	      <label> 
+13.	        First name: 
+14.	        <input 
+15.	          value={form.firstName} 
+16.	          onChange={e => { 
+17.	            setForm({ 
+18.	              ...form, 
+19.	              firstName: e.target.value 
+20.	            }); 
+21.	          }} 
+22.	        /> 
+23.	      </label> 
+24.	      <label> 
+25.	        Last name: 
+26.	        <input 
+27.	          value={form.lastName} 
+28.	          onChange={e => { 
+29.	            setForm({ 
+30.	              ...form, 
+31.	              lastName: e.target.value 
+32.	            }); 
+33.	          }} 
+34.	        /> 
+35.	      </label> 
+36.	      <label> 
+37.	        Email: 
+38.	        <input 
+39.	          value={form.email} 
+40.	          onChange={e => { 
+41.	            setForm({ 
+42.	              ...form, 
+43.	              email: e.target.value 
+44.	            }); 
+45.	          }} 
+46.	        /> 
+47.	      </label> 
+48.	      <p> 
+49.	        {form.firstName}{' '} 
+50.	        {form.lastName}{' '} 
+51.	        ({form.email})
+52.	      </p> 
+53.	    </> 
+54.	  ); 
+55.	} 
 ```
 
 </details>
 
-Notice that you are using a <b>form</b> object to store the state of all
-three text input field values:
+<p>Notice that you are using a <b>form</b> object to store the state of all
+three text input field values:</p>
 
 ```
-const[form, setForm] =useState({
-  firstName:'Luke',
-  lastName:'Jones',
-    email:'lukeJones@sculpture.com',
-});
+1.	const[form, setForm] =useState({
+2.	  firstName:'Luke',
+3.	  lastName:'Jones',
+4.	  email:'lukeJones@sculpture.com',
+5.	});
 ```
 
-You do not need to have three separate state variables in this case, and
+<p>You do not need to have three separate state variables in this case, and
 instead you can consolidate them all together into one <b>form</b> object
-for better readability.
-
-In addition to the <b>useState</b> hook, there are other hooks that come in
+for better readability.</p>
+<p>In addition to the <b>useState</b> hook, there are other hooks that come in
 handy such as <b>useContext</b>, <b>useMemo</b>, <b>useRef</b>, etc. When
 you need to share logic and reuse the same logic across several
 components, you can extract the logic into a custom hook. Custom hooks
 offer flexibility and can be used for a wide range of use-cases such as
-form handling, animation, timers, and many more. 
-
-Next, I'll give you an explanation of how the <b>useRef</b> hook works.
+form handling, animation, timers, and many more.</p>
+<p>Next, I'll give you an explanation of how the <b>useRef</b> hook works.</p>
 
 <h4>The useRef hook</h4>
 
-We use the <b>useRef</b> hook to access a child element directly.
+<p>We use the <b>useRef</b> hook to access a child element directly.</p>
 
 When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
 The <b>ref</b> object has a property named <b>current</b>.
