@@ -7277,14 +7277,45 @@ understand the benefits of using hooks within a React component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <i>"Make it as simple as possible, but not simpler."</i>
 <h6>...Albert Einstein</h6>
-Consider the different modes in an alarm clock and the situations you would use them in. Typically, you have alarm on for setting a time to wake up, alarm off when this feature is not needed, and snooze for sneaking in a few extra minutes of sleep. Setting these modes doesn't require adding anything extra to your clock. They are built-in features that can be set with the push of a button. 
 
+Consider the different modes in an alarm clock and the situations you would use them in. Typically, you have alarm on for setting a time to wake up, alarm off when this feature is not needed, and snooze for sneaking in a few extra minutes of sleep. Setting these modes doesn't require adding anything extra to your clock. They are built-in features that can be set with the push of a button. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ w2-s15-a. components with props (169) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s15-a.png?raw=true"
+  alt="Components with props."
+  width="53%" />
+</p>
 If you create this feature in a React app, you could create a component named clock and then parsing the status values via props.
 Recall the props is a feature of React that essentially allows you to hold information about the UI in the browser. In React, you also have another way to do this by using a similar concept called States, which also allows you to easily change how the component behaves in order to suit a given need.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s15-b.png?raw=true"
+  alt="Describe State in React and explore its features."
+  width="53%" />
+</p>
 
 By the end of this section (15), you'll be able to describe what State is in React and why developers use it to control what is displayed in the browser from a component. It helps to think of State as a component's internal data that determines the current behavior of a component. It's often used to store data that affects the behavior of a component.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ w2-s15-c. state - data in a component that determines behavior (170) ~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s15-c.png?raw=true"
+  alt="State - data in a component that determines behavior."
+  width="53%" />
+</p>
 State is important because it allows components to stay in sync with each other and ensure that your app behaves as intended.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s15-d.  (170) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s15-d.png?raw=true"
+  alt="State - data in a component that determines behavior."
+  width="53%" />
+</p>
 
 For example, if one component updates its State, all other components that depend on that State will automatically update too. This means that a component sends its State to its children by using props. 
 
