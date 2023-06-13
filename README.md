@@ -7729,9 +7729,8 @@ In comparison, using the context API is like teleporting to your destination ins
 <p align="center" width="100%">
 <img src="/images/w2-s19-d.png?raw=true"
   alt="."
-  width="40%" />
+  width="60%" />
 </p>
-
 To set it up, you need to add a piece of code that will be your context provider. It's also where the state will be stored. When a component needs to use the state, it becomes a context consumer. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-e.  (1) ~~~~~~~~~~~-->
@@ -7739,7 +7738,7 @@ To set it up, you need to add a piece of code that will be your context provider
 <p align="center" width="100%">
 <img src="/images/w2-s19-e.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 
 Now let's examine a simple app that utilizes the context API to control state. In my app.js file, I'll use some code for a star to set up. You can also find this file in the additional resources if you'd like to use it to practice working with context API. 
@@ -7749,7 +7748,7 @@ Now let's examine a simple app that utilizes the context API to control state. I
 <p align="center" width="100%">
 <img src="/images/w2-s19-f.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 
 In the app components, I have import statements for meals provider and meals list. The meals provider provides contexts state data and gives it to all the components it wrapped inside the app components. Currently, it wraps two components, the meals list components and the counter components, which are between the div tags of the return  statements. 
@@ -7759,7 +7758,7 @@ In the app components, I have import statements for meals provider and meals lis
 <p align="center" width="100%">
 <img src="/images/w2-s19-g.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 
 The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements. The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the
@@ -7771,7 +7770,7 @@ Finally, in the meals list component, I'm accessing the context date by importin
 <p align="center" width="100%">
 <img src="/images/w2-s19-h.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 
 Let's break down how this component works in more detail. First, I'm destructuring the meals property from the objects returned from the use meals list context call. The original object has a single property named meals, which holds an array of three meals strings. 
@@ -7783,7 +7782,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s19-i.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 
 Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate. 
@@ -7793,7 +7792,7 @@ Lastly, let's examine the counter component. Note that it gets the context data 
 <p align="center" width="100%">
 <img src="/images/w2-s19-j.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 
 Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example. Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function. 
@@ -7803,7 +7802,7 @@ Next, let me show you how the useReducer hook works. Let's move on to the useRed
 <p align="center" width="100%">
 <img src="/images/w2-s19-k.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button. 
 In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.
@@ -7838,7 +7837,7 @@ This might sound like an oversimplification, but let's explore why this general 
 <p align="center" width="100%">
 <img src="/images/w2-s20-c.png?raw=true"
   alt="."
-  width="40%" />
+  width="60%" />
 </p>
 A common approach for organizing components in React is to have a stateful component as the parent which then sends its states down to several stateless components that then receive the state and render it on the screen. The children components are stateless because they don't have their own state and only receive their parent state when passed down by using props. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7856,7 +7855,7 @@ Keep in mind that you should never change the values of props in children compon
 <p align="center" width="100%">
 <img src="/images/w2-s20-e.png?raw=true"
   alt="."
-  width="40%" />
+  width="30%" />
 </p>
 One thing to keep in mind and something that is often overlooked by React beginners is that a prop doesn't always have to pass state. In addition to state, JavaScript values and functions can also be passed to the child component. It's still data but it's props data rather than state data. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7945,7 +7944,7 @@ In this section (20), you learned why and when to utilize stateful or stateless 
 <p align="center" width="100%">
 <img src="/images/w2-s21-a.png?raw=true"
   alt="."
-  width="40%" />
+  width="80%" />
 </p>
 <h4>Step 1.</h4>
 
@@ -8022,54 +8021,50 @@ That completes this ungraded lab's solution.
 <p>You've reached the end of this module (week 2) exploring the concept of data and states. It's now time to recap the key lessons and skills you've learned.</p>
 <p>You began the module with dynamic events and how to handle them in react native. You discovered how to identify common types of events and react. Handle events by using components and write event-handling code using different types of syntax. The next lesson that you encountered focused on data, and event and react.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s22-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-a. click, scroll and/or cancel (198) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s22-a.png?raw=true"
-  alt="."
+  alt="Click, scroll and/or cancel."
   width="40%" />
 </p>
 <p>Now that you've completed this lesson, you can describe how data flows in react, including data from a parent to a child component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s22-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-b. javascript and html (198) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s22-b.png?raw=true"
-  alt="."
+  alt="JavaScript and HTML."
   width="40%" />
 </p>
 <p>Explain what state is and how it relates to component behavior. And describe some common approaches for state management.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s22-c.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-c. state, styling, ternary (198) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s22-c.png?raw=true"
-  alt="."
+  alt="State, styling and ternary."
   width="40%" />
 </p>
 <p>To sum it up in this module, you've learned about two of the most important things that make react apps interactive namely state and events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s22-d.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-d. stateless vs. stateful (199) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s22-d.png?raw=true"
-  alt="."
+  alt="Stateless (not needed to work) vs. Stateful (State must be maintained to work)."
   width="40%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s22-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w2-s22-e/f. data and states module summary (week 2) (199) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p align="center">
 <img src="/images/w2-s22-e.png?raw=true"
-  alt="."
+  alt="Module summary (week 2).  Data and States."
   width="40%" />
-</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s22-f.  (1) ~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+&nbsp; &nbsp; &nbsp; &nbsp;
 <img src="/images/w2-s22-f.png?raw=true"
-  alt="."
+  alt="MOdule summary (week 2), part 2.  Data and States."
   width="40%" />
 </p>
 <p>In the upcoming module, you'll learn about working with links and routing as well as using assets in react. This should finalize your preparations for coding your own portfolio project in react. Excellent. You've made great progress in your journey towards becoming a react developer.</p>
@@ -8091,31 +8086,7 @@ Below you will find links to helpful additional resources.
 •	The event loop in JavaScript 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>Week 3</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Navigation, Updating and Assets in React.js
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 1</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-React Components
-
-In this module (one) you will explore the concept and practical use of
-state and stage-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 2</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Data and State
-
-In this module (two) you will explore the concept and practical use of
-state and stage-management. You will also gain knowledge on how to
-handle events and the ability to dynamically change content on a web
-page.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 3</h3>
+<h1>Week 3 - Navigation, Updating and Assets in React.js</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Navigation, Updating and Assets in React.js
 
@@ -8707,26 +8678,26 @@ components.
   <summary>App.js</summary>
 
 ```
-import { useState } from 'react';
-export default function MyApp() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-  return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
-    </div>
-  );
-}
+ import { useState } from 'react';
+ export default function MyApp() {
+   const [count, setCount] = useState(0);
+   function handleClick() {
+     setCount(count + 1);
+   }
+   return (
+     <div>
+       <h1>Counters that update together</h1>
+       <MyButton count={count} onClick={handleClick} />
+       <MyButton count={count} onClick={handleClick} />
+     </div>
+   );
+ }
  function MyButton({ count, onClick }) {
- return (
- <button onClick={onClick}>
- Clicked {count} times
- </button>
- );
+   return (
+     <button onClick={onClick}>
+       Clicked {count} times
+     </button>
+   );
  }
 ```
 
@@ -11922,5 +11893,5 @@ If want to try using React in your existing app or a website, <a href="https://r
 
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
-end. . .
+End. . .
 <h6>Tuesday 6/13/2023 12:30pm</h6>
