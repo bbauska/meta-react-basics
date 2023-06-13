@@ -7403,7 +7403,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
   alt="State - data in a component that determines behavior."
   width="53%" />
 </p>
-To better understand what is being destructured in the app component, let's call a console log to the useState hook. The output reveals an array holding two things, the string Hello and a function. 
+<p>To better understand what is being destructured in the app component, let's call a console log to the useState hook. The output reveals an array holding two things, the string Hello and a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-n.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7412,8 +7412,7 @@ To better understand what is being destructured in the app component, let's call
   alt="State - data in a component that determines behavior."
   width="53%" />
 </p>
-
-In this case, Hello is the state value assigned to the word state variable. The function is a built-in one that is not declared.  The function can be destructured with any name you'd like, but there is a convention to follow. 
+<p>In this case, Hello is the state value assigned to the word state variable. The function is a built-in one that is not declared.  The function can be destructured with any name you'd like, but there is a convention to follow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-o.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7422,8 +7421,7 @@ In this case, Hello is the state value assigned to the word state variable. The 
   alt="State - data in a component that determines behavior."
   width="53%" />
 </p>
- 
-If you set the States variable name to be Greet, then the destructured state function should be setGreet. This is because the second destructured variable is a function that will be used to update the state of a variable.
+<p>If you set the States variable name to be Greet, then the destructured state function should be setGreet. This is because the second destructured variable is a function that will be used to update the state of a variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-p.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7432,28 +7430,69 @@ If you set the States variable name to be Greet, then the destructured state fun
   alt="State - data in a component that determines behavior."
   width="53%" />
 </p>
-
-Let's examine an updated version of this stateful function component. Notice that the setGreet variable is not actually run, that is something that is done elsewhere. 
-
-Later in this course, you'll learn about how you can extend this code with a clickable button to update the State. 
-In this section (15), you learned about State in React, specifically the characteristics of stateful and stateless components in an app.
+<p>Let's examine an updated version of this stateful function component. Notice that the setGreet variable is not actually run, that is something that is done elsewhere.</p>
+<p>Later in this course, you'll learn about how you can extend this code with a clickable button to update the State.</p>
+<p>In this section (15), you learned about State in React, specifically the characteristics of stateful and stateless components in an app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Observing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Why do we use state in React? Because it's one way to deal with data in our React apps. 
-State is a powerful tool in Reacts that developers use to manage data that is likely to change in an application. Recall that the state data is internal to the component itself. This allows the components to re-render based on the changes in the states data and present the newest updates to the user. 
-With that in mind, let's explore how you can update two components with the useState Hook that you encountered earlier. 
- 
-The useState Hook allows a components to define and track state. It does this with two arguments. The first of which accesses state and the second of which updates it with a function. 
- 
-For example, you can use the date variable to access the date state. Then use the set date function to update the state. 
- 
-To help you understand how useful we use useState Hook can be, you're now going to explore an example that demonstrates how to use it to observe and manipulate the state of the component. In this example app, I have a heading, child components. It receives the props and the object, and it also accesses the message property before it returns it and renders it as an H1 element. In the parent's app.js component, I import the heading component, and I set the word as a state variable, set to the string of Eat. For now, I ignore the comments after the Eat string. In the return statement, I wrap the heading components in a single div. 
- 
+<p>Why do we use state in React? Because it's one way to deal with data in our React apps. 
+State is a powerful tool in Reacts that developers use to manage data that is likely to change in an application. Recall that the state data is internal to the component itself. This allows the components to re-render based on the changes in the states data and present the newest updates to the user.</p>
+<p>With that in mind, let's explore how you can update two components with the useState Hook that you encountered earlier.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s16-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s16-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>The useState Hook allows a components to define and track state. It does this with two arguments. The first of which accesses state and the second of which updates it with a function.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s16-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s16-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>For example, you can use the date variable to access the date state. Then use the set date function to update the state.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s16-c.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s16-c.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
+<p>To help you understand how useful we use useState Hook can be, you're now going to explore an example that demonstrates how to use it to observe and manipulate the state of the component.</p>
+<p>In this example app, I have a heading, child components. It receives the props and the object, and it also accesses the message property before it returns it and renders it as an H1 element. In the parent's app.js component, I import the heading component, and I set the word as a state variable, set to the string of Eat. For now, I ignore the comments after the Eat string. In the return statement, I wrap the heading components in a single div.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s16-d.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s16-d.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
 I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening and closing curly brace. You already know that's an opening and a closing curly brace signifies a JSX expression, which means that all the code inside of those curly braces will be evaluated as regular JavaScript. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s16-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s16-e.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
 The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. Thus, in the browser window, I get the words eat at little lemon. If I want to update the value of the word States variable to something else like drink, I could use the set word function directly to help me achieve this. However, when I save the change and run my code, the app does not work. This is because one can't use the state's setting variable from your state directly. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s16-f.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s16-f.png?raw=true"
+  alt="."
+  width="70%" />
+</p>
 Instead of updating it directly, I can update it based on a click event. I have another element called button and onClick is equal to handleClick. I now set another function which I'll name handledClick. Inside the handleClick function definition, I run set word to drink. I click "File, Save All", and wait for the apps to compile. Now when I click the Click Here button, I get to drink at the little lemon. To observe and update state, you can use the state's setting functions and state variables using the state hook. But you must make sure that you use event handling attributes in JSX syntax or some other approaches which we'll learn more about later. 
 In this section (16), you've learned about state change basics in React, including how to apply the use of state syntax, observe and manipulate state and components.
 
@@ -7461,64 +7500,126 @@ In this section (16), you've learned about state change basics in React, includi
 <h2>17. Managing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As for React applications grow in complexity, so too can the complexity of managing state across components. As a result, developers need a way to manage state in their application. 
-In this section (17), you'll learn how to describe the concept of managing state and explore some of the solutions to managing state in React applications. 
+In this section (17), you'll learn how to describe the concept of managing state and explore some of the solutions to managing state in React applications.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 To illustrate a scenario in which states needs to be managed, consider a small React app that helps promote a healthier lifestyle by allowing the user to monitor their food intake. This app tracts a daily meal plan and the user can click on each individual meal as they've consumed it. 
-
-
-
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 The app then updates to show how many meals that are still left to be consumed for the day. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-c.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 The app consists of three components. A root components called App.js, and then two child components, mealsList and counter. 
-
-
-
 Let's explore each component in a little more detail. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-d.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 First, the app component imports the mealsList and Counter components and renders them on the screen. Next, the mealsList component uses use state to hook to list days meals which are stored in an array. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 The array elements are saved inside the todaysMeals variable. Then the meals state variable is initialized to hold this value. In other words, the meals state variable holds the array. Finally, the counter component tracks the number of meals that a user is allowed to eat today. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-f.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 While this coding components structure may look good, there is a bit of a problem. The counter component needs to get state information from the mealsList components, but both components are rendered by the app component. In other words, the mealsList and the counter components are siblings and not in a parent-child relationship. This brings up a question. How can you pass the state information from the mealsList component to the counter component as the counter component is not a child of the mealsList component? 
- 
+ <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-g.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-g.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Let's explore a possible solution. First, you can simplify the mealsList component by extracting the returned value into its own components, then you can work with the separate components to display different meal items. Let's call this new component mealsIitem. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-h.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-h.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 To do this, you can use the practice known as lifting state up. This means that you move the state from mealsList up to the app components, then you can pass stage three props using the mealsList components as a bridge to the mealItem component. Then you just have to count the data available in the counter components. 
 However, this approach relies on two practices, lifting state up and prop drilling. To understand the issues this can cause, let's recall the current relationship between your app components. The state has now moved up to the app component and my mealsList component becomes a conduits for the state data to be passed to its destination, the mealItem component. 
- 
-The question you must now ask is, what is wrong with prop drilling? Prop drilling is a commonly used term to describe having to pass Stage 3 props in several layers of components, from the parent to the child, to the grandchild, and so on. Note that if the source data changes, you will have to transfer those changes across the entire prop drilled structure. 
-This complicates things because state updates go to all the child components and their siblings, which then needs to be updated to reflect this states change. 
-Additionally, the problem gets bigger as the app grows and you'll potentially have a huge amount of state being kept in the app component. Keep in mind that most of that state is not really supposed to be in the app component. That is because that state is about components such as the mealItem component. 
-
-There's another way to phrase this problem through the viewpoint of global state. Whenever I have states that might have to be used in various places in my app, that's a global state issue. 
- 
-An elegant solution for this issue is Reacts Context API. One way to think about the context API is that it cuts out the middleman. There's no need for prop drilling and lifting state up. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-i.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-i.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>The question you must now ask is, what is wrong with prop drilling? Prop drilling is a commonly used term to describe having to pass Stage 3 props in several layers of components, from the parent to the child, to the grandchild, and so on.</p>
+<p>Note that if the source data changes, you will have to transfer those changes across the entire prop drilled structure.</p>
+<p>This complicates things because state updates go to all the child components and their siblings, which then needs to be updated to reflect this states change.</p>
+<p>Additionally, the problem gets bigger as the app grows and you'll potentially have a huge amount of state being kept in the app component. Keep in mind that most of that state is not really supposed to be in the app component. That is because that state is about components such as the mealItem component.</p>
+<p>There's another way to phrase this problem through the viewpoint of global state. Whenever I have states that might have to be used in various places in my app, that's a global state issue.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-j.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-j.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>An elegant solution for this issue is Reacts Context API. One way to think about the context API is that it cuts out the middleman. There's no need for prop drilling and lifting state up.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s17-k.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s17-k.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Instead, the component that needs the data simply gets it from the context API. The way that this is achieved is by extracting the state into a separate file that holds the state in context, then, any file that needs it simply imports it and uses it. Great job. You should now have a great understanding of managing states in React.
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Prop Drilling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As you’ve learned previously, prop drilling is a situation where you are passing data from a parent to a child component, then to a grandchild component, and so on, until it reaches a more distant component further down the component tree, where this data is required.
-Here is a very simple app that focuses on the process of props passing through several components.
-Please note that the goal here is not to build an app that would exist in the real world. The goal of this app is to examine the practice of prop drilling, so that you can focus on it and understand it in isolation.
-Here is the code for the app:
+<p>As you’ve learned previously, prop drilling is a situation where you are passing data from a parent to a child component, then to a grandchild component, and so on, until it reaches a more distant component further down the component tree, where this data is required.</p>
+<p>Here is a very simple app that focuses on the process of props passing through several components.</p>
+<p>Please note that the goal here is not to build an app that would exist in the real world. The goal of this app is to examine the practice of prop drilling, so that you can focus on it and understand it in isolation.</p>
+<p>Here is the code for the app:</p>
+
+<details>
+  <summary>App.js</summary>
+
+```
 1.	function Main(props) { 
 2.	  return <Header msg={props.msg} />; 
 3.	};
@@ -7559,83 +7660,233 @@ Here is the code for the app:
 38.	}; 
 39.	
 40.	export default App;
+```
+</details>
 
-This app is simple enough that you should be able to understand it on your own. Let’s address the main points to highlight what is happening in the code above.
-The top-most component of this app is the App component. The App component returns the Main component. The Main component accepts a single attribute, named msg, as in “message”.
-At the very top of the app, the Main function declares how the Main component should behave. The Main component is responsible for rendering the Header component. Note that when the Header component is rendered from inside Main, it also receives the msg prop.
-The Header component’s function declaration renders an h1 that reads “Header here”, then another component named Wrapper. Note that the naming here is irrelevant – the components Header and Wrapper are named to make it a bit more like it might appear in a real app – but ultimately, the focus is on having multiple components, rather than describing specific component names properly.
-So, the Header component’s function declaration has a return statement, which renders the Wrapper component with the msg prop passed to it.
-In the Wrapper component’s function declaration, there’s an h2 that reads “Wrapper here”, in addition to the rendering of the Button component, which also receives the msg attribute.
-Finally, the Button component’s function declaration is coded to receive the props object, then inside of the wrapping div, show an h3. The h3 reads “This is the Button component”, and then, under that, there’s a button element with an onClick event-handling attribute. This is passed to an arrow function which should alert the string that comes from the props.msg prop.
-All this code results in the following UI rendered on the screen:
-
-This screenshot illustrates the boundaries of each component. The Main component can’t be found in the UI because it’s just rendering the Header component. The Header component then renders the Wrapper component, and the Wrapper component then renders the Button component.
-Note that the string that was passed on and on through each of the children component’s props’ objects is not found anywhere. However, it will appear when you click the “Click me!” button, as an alert:
-
-The alert’s message reads “I passed through the Header and the Wrapper and I reached the Button component”.
-That’s really all there is to it. Props drilling simply means passing a prop through props objects through several layers of components. The more layers there are, the more repetitive and unnecessary this feels. There are various ways to deal with this, as you’ll learn in the lesson items that follow.
+<p>This app is simple enough that you should be able to understand it on your own. Let’s address the main points to highlight what is happening in the code above.</p>
+<p>The top-most component of this app is the App component. The App component returns the Main component. The Main component accepts a single attribute, named msg, as in “message”.</p>
+<p>At the very top of the app, the Main function declares how the Main component should behave. The Main component is responsible for rendering the Header component. Note that when the Header component is rendered from inside Main, it also receives the msg prop.</p>
+<p>The Header component’s function declaration renders an h1 that reads “Header here”, then another component named Wrapper. Note that the naming here is irrelevant – the components Header and Wrapper are named to make it a bit more like it might appear in a real app – but ultimately, the focus is on having multiple components, rather than describing specific component names properly.</p>
+<p>So, the Header component’s function declaration has a return statement, which renders the Wrapper component with the msg prop passed to it.</p>
+<p>In the Wrapper component’s function declaration, there’s an h2 that reads “Wrapper here”, in addition to the rendering of the Button component, which also receives the msg attribute.</p>
+<p>Finally, the Button component’s function declaration is coded to receive the props object, then inside of the wrapping div, show an h3. The h3 reads “This is the Button component”, and then, under that, there’s a button element with an onClick event-handling attribute. This is passed to an arrow function which should alert the string that comes from the props.msg prop.</p>
+<p>All this code results in the following UI rendered on the screen:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s18-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s18-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>This screenshot illustrates the boundaries of each component. The Main component can’t be found in the UI because it’s just rendering the Header component. The Header component then renders the Wrapper component, and the Wrapper component then renders the Button component.</p>
+<p>Note that the string that was passed on and on through each of the children component’s props’ objects is not found anywhere. However, it will appear when you click the “Click me!” button, as an alert:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s18-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s18-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>The alert’s message reads “I passed through the Header and the Wrapper and I reached the Button component”.</p>
+<p>That’s really all there is to it. Props drilling simply means passing a prop through props objects through several layers of components. The more layers there are, the more repetitive and unnecessary this feels. There are various ways to deal with this, as you’ll learn in the lesson items that follow.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. React state management</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-During this course, you've probably learned a few approaches for managing states between a parent's component and a child components. But have you wondered how well these approaches still apply for more complex apps with multiple levels of components? Fortunately, there are tools available to help you do just that. 
-
+During this course, you've probably learned a few approaches for managing states between a parent's component and a child components. But have you wondered how well these approaches still apply for more complex apps with multiple levels of components? Fortunately, there are tools available to help you do just that.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 By the end of this section (19), you'll understand how context API can be used to manage state more efficiently across multiple levels of components. You'll also be able to perform basic states management using the useContext and a useReducer hooks found in context API. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 By this point, you're probably familiar with the practice of passing states from one component to another by using props. While passing props helps to manage states, it is like taking a bus and going through each stop before you get off at the end. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-c.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 In comparison, using the context API is like teleporting to your destination instantly. It's a way to bypass the redundant passing of data through multiple levels of components. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-d.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 To set it up, you need to add a piece of code that will be your context provider. It's also where the state will be stored. When a component needs to use the state, it becomes a context consumer. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 Now let's examine a simple app that utilizes the context API to control state. In my app.js file, I'll use some code for a star to set up. You can also find this file in the additional resources if you'd like to use it to practice working with context API. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-f.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 In the app components, I have import statements for meals provider and meals list. The meals provider provides contexts state data and gives it to all the components it wrapped inside the app components. Currently, it wraps two components, the meals list components and the counter components, which are between the div tags of the return  statements. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-g.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-g.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements. The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the
 React.useContexts core and passing it to the meals contexts as its single argument. This makes it easier for me to destructure the meals objects from the use meals list context variable. 
 Finally, in the meals list component, I'm accessing the context date by importing the use meals list context from the meals provider file. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-h.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-h.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 Let's break down how this component works in more detail. First, I'm destructuring the meals property from the objects returned from the use meals list context call. The original object has a single property named meals, which holds an array of three meals strings. 
 Once I destructure the meals property from that object, all I have left is the array of three strings saved in the meals variable, which allows me to map over the meals value where I'm rendering an H2 for each member of the meals array. 
 This code is probably more complex than most of what you have encountered. Don't worry if it takes time for you to understand how it works. Just remember the important parts, that this setup gives you a nice starting point for working with the context API. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-i.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-i.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-j.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-j.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 
 Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example. Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s19-k.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s19-k.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button. 
 In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.
-
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Stateful vs stateless</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In life, there are rarely perfect solutions that suit every need. For instance, this concept applies when it comes to selecting a vehicle. A small car is usually more fuel efficient but has limited space. On the other hand, an SUV can handle many passengers but burns fuel quickly. Making the best choice starts with identifying your specific needs. This is no different when it comes to choosing stateful or stateless components in programming. 
-
+In life, there are rarely perfect solutions that suit every need. For instance, this concept applies when it comes to selecting a vehicle. A small car is usually more fuel efficient but has limited space. On the other hand, an SUV can handle many passengers but burns fuel quickly. Making the best choice starts with identifying your specific needs. This is no different when it comes to choosing stateful or stateless components in programming.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 By the end of this section (20), you'll be able to describe the differences between types of state and choose the best types to suit a given need and explain how the dynamic nature of React calls a structured decisions to influence complexity. 
-The distinction between stateful and stateless components is that a stateful component holds states as internal data and its state changes based on the way that the app is built; often as a result of user actions. A stateless component however, doesn't store states and any changes must be inherited through props. 
+The distinction between stateful and stateless components is that a stateful component holds states as internal data and its state changes based on the way that the app is built; often as a result of user actions. A stateless component however, doesn't store states and any changes must be inherited through props.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 When deciding if a component should be stateless or stateful, you can refer to the following rules. Use stateless components when your component doesn't need to maintain its own state in order to work. Use stateful components when your component does need to maintain its own state in order to work. 
 
 This might sound like an oversimplification, but let's explore why this general rule is enough. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-c.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 A common approach for organizing components in React is to have a stateful component as the parent which then sends its states down to several stateless components that then receive the state and render it on the screen. The children components are stateless because they don't have their own state and only receive their parent state when passed down by using props. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-d.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Keep in mind that you should never change the values of props in children components as they are immutable. Now that you know the basic logic, let's break down a specific example of this approach in action starting with two components; the app component and the child  component which returns a message. In the app component, the useState hook defines and keeps the states that will be passed to the child component as the props object. The app component renders the child component and passes the date to it in a string format as a prop named message. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 One thing to keep in mind and something that is often overlooked by React beginners is that a prop doesn't always have to pass state. In addition to state, JavaScript values and functions can also be passed to the child component. It's still data but it's props data rather than state data. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-f.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 In the child component, there is an h1 element. The content of this element will be the message prop that is passed into the component. Note the props are not changed or updated and the components as they are immutable, meaning they can't be changed. Since the child component doesn't store any state, it is a stateless component. 
-
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s20-g.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s20-g.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 All of its data comes from the props passed into the component. The app component stores the state which can be changed through events and functions and is therefore a stateful component. 
 In this section (20), you learned why and when to utilize stateful or stateless components in your React apps based on your specific needs. You also observed that although a stateless component can't directly pass state, it can still trigger actions that will update the state of other components.
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Managing state in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is the completed App.js file:
+<p>Here is the completed App.js file:</p>
+
+<details>
+  <summary>React code:</summary>
+
+```
 1.	import React from "react";
 2.	import Fruits from "./Fruits";
 3.	import FruitsCounter from "./FruitsCounter";
@@ -7657,8 +7908,13 @@ Here is the completed App.js file:
 19.	}
 20.	
 21.	export default App;
- 
-Here is the completed Fruits.js file:
+```
+
+</details>
+
+<p>Here is the completed Fruits.js file:</p>
+
+```
 1.	function Fruits(props) {
 2.	  return (
 3.	    <div>
@@ -7668,7 +7924,11 @@ Here is the completed Fruits.js file:
 7.	}
 8.	
 9.	export default Fruits
-Here is the completed FruitsCounter.js file:
+```
+
+<p>Here is the completed FruitsCounter.js file:</p>
+
+```
 1.	function FruitsCounter(props) {
 2.	  return (
 3.	    <h2>Total fruits: {props.fruits.length}</h2>
@@ -7676,19 +7936,41 @@ Here is the completed FruitsCounter.js file:
 5.	}
 6.	
 7.	export default FruitsCounter;
-The completed app should look as follows:
-Step 1. 
-Move the state from the Fruits component to the App component.
-To complete this step, you need to go to the Fruits component and cut the useState call, namely this piece of code:
+```
+
+<p>The completed app should look as follows:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s21-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s21-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<h4>Step 1.</h4>
+
+<p>Move the state from the Fruits component to the App component.</p>
+<p>To complete this step, you need to go to the Fruits component and cut the useState call, namely this piece of code:</p>
+
+
+```
 1.	const [fruits] = React.useState([
 2.	  {fruitName: 'apple', id: 1},
 3.	  {fruitName: 'apple', id: 2},
 4.	  {fruitName: 'plum', id: 3},
 5.	]);
-You also need to cut the import React from "react"; at the very top of the Fruits component, since you no longer need to access the useState method on the React object from the Fruits file. 
-Additionally, you need to add the import statement to the App component, which means that you should inject a new import at the very top of App.js:
+```
+
+<p>You also need to cut the import React from "react"; at the very top of the Fruits component, since you no longer need to access the useState method on the React object from the Fruits file.</p>
+<p>Additionally, you need to add the import statement to the App component, which means that you should inject a new import at the very top of App.js:</p>
+
+```
 1.	import React from "react";
-Once you've done that, you need to update the App component's return statement so that it sends the fruits data to the Fruits and FruitsCounter component - since both of these components need to get this state's data via props.
+```
+
+<p>Once you've done that, you need to update the App component's return statement so that it sends the fruits data to the Fruits and FruitsCounter component - since both of these components need to get this state's data via props.</p>
+
+```
 1.	// The updated return statement in App.js:
 2.	return (
 3.	  <div className="App">
@@ -7697,10 +7979,14 @@ Once you've done that, you need to update the App component's return statement s
 6.	    <FruitsCounter fruits={fruits} />
 7.	  </div>
 8.	);
-Step 2. 
-The Fruits component should be updated so that it accepts state from the App component.
-Now all that you need to do is to update the code in the Fruits components to accept the props object and render the fruits property where appropriate.
-That means that the Fruits component will end up having the following code:
+```
+
+<h4>Step 2.</h4>
+<p>The Fruits component should be updated so that it accepts state from the App component.
+Now all that you need to do is to update the code in the Fruits components to accept the props object and render the fruits property where appropriate.</p>
+<p>That means that the Fruits component will end up having the following code:</p>
+
+```
 1.	function Fruits(props) {
 2.	  return (
 3.	    <div>
@@ -7710,10 +7996,15 @@ That means that the Fruits component will end up having the following code:
 7.	}
 8.	
 9.	export default Fruits
-Step 3.
-Once you've lifted the state up from the Fruits component to the App component, you also need to update the FruitsCounter component. 
-Just like the Fruits component, the FruitsCounter component should also receive state from the App component, so that it can display the number of the available fruits using the length property of the array of fruits from the fruits state variable.
-The FruitsCounter component will end up having the following code:
+```
+
+<h4>Step 3.</h4>
+
+<p>Once you've lifted the state up from the Fruits component to the App component, you also need to update the FruitsCounter component.</p>
+<p>Just like the Fruits component, the FruitsCounter component should also receive state from the App component, so that it can display the number of the available fruits using the length property of the array of fruits from the fruits state variable.</p>
+<p>The FruitsCounter component will end up having the following code:</p>
+
+```
 1.	function FruitsCounter(props) {
 2.	  return (
 3.	    <h2>Total fruits: {props.fruits.length}</h2>
@@ -7721,14 +8012,67 @@ The FruitsCounter component will end up having the following code:
 5.	}
 6.	
 7.	export default FruitsCounter;
+```
 
 That completes this ungraded lab's solution.
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Module summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
+<p>You've reached the end of this module (week 2) exploring the concept of data and states. It's now time to recap the key lessons and skills you've learned.</p>
+<p>You began the module with dynamic events and how to handle them in react native. You discovered how to identify common types of events and react. Handle events by using components and write event-handling code using different types of syntax. The next lesson that you encountered focused on data, and event and react.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s22-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s22-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>Now that you've completed this lesson, you can describe how data flows in react, including data from a parent to a child component.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s22-b.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s22-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>Explain what state is and how it relates to component behavior. And describe some common approaches for state management.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s22-c.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s22-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>To sum it up in this module, you've learned about two of the most important things that make react apps interactive namely state and events.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s22-d.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s22-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s22-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s22-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s22-f.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s22-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<p>In the upcoming module, you'll learn about working with links and routing as well as using assets in react. This should finalize your preparations for coding your own portfolio project in react. Excellent. You've made great progress in your journey towards becoming a react developer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11578,5 +11922,5 @@ If want to try using React in your existing app or a website, <a href="https://r
 
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
-End. . .
-<h6>Monday 6/12/2023 2:00pm</h6>
+end. . .
+<h6>Tuesday 6/13/2023 12:30pm</h6>
