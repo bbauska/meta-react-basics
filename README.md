@@ -6800,31 +6800,80 @@ be as efficient as it could be, especially in modern React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Children and data</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (11), you're going to learn about data flow in ReactJS.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-a. data flow in reactjs (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-a.png?raw=true"
+  alt="Data flow in ReactJS."
+  width="30%" />
+</p>
+<p>In this section (11), you're going to learn about data flow in ReactJS.
 In this case, data flow is in one direction only. Immediately a question
-springs to mind. Why is one-way flow in React important? Let me tell
+springs to mind.</p>
+<p>Why is one-way flow in React important? Let me tell
 you. This type of data flow ensures that the data is moving from top to
 bottom through the component hierarchy. It also ensures that changes are
-transmitted through the system. You'll cover this in more detail later.
-
-For now, in this section (11), you will also learn how to showcase the
-use of stateless and stateful examples by focusing on data flow. Imagine
-that data is money and the money is controlled by your employer. This
+transmitted through the system. You'll cover this in more detail later.</p>
+<p>For now, in this section (11), you will also learn how to showcase the
+use of stateless and stateful examples by focusing on data flow.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-b. one-way flow in reactjs (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-b.png?raw=true"
+  alt="Data flow in ReactJS."
+  width="40%" />
+</p>
+<p>Imagine that data is money and the money is controlled by your employer. This
 money can be considered props. This money props is passed to you and
 becomes your money state. The money props always flow from your employer
-to you, never in the opposite direction. In React, data is passed down
+to you, never in the opposite direction.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w2-s11-c. data is passed parent to child (159) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-c.png?raw=true"
+  alt="Data flow in ReactJS."
+  width="40%" />
+</p>
+<p>In React, data is passed down
 from parent components to a child components via props. A child
 components can't mutate or change its props. It can only read them and
 re-render. This means that the data comes from the parents and it's
-just consumed in the child components. However, if this was always the
+just consumed in the child components.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-d.  (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-d.png?raw=true"
+  alt="Sample component templates (3)."
+  width="40%" />
+</p>
+<p>However, if this was always the
 case, then all you'd have in a React app is separate pieces of the DOM
 acting as component templates to be filled up with a data they receive.
 While this works great, there'd be almost no interactivity.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ w2-s11-e. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-e.png?raw=true"
+  alt="Passing data to child components using props in ReactJS."
+  width="60%" />
+</p>
 
 You've learned about passing data to a child component using props.
 However, there's another way to work with data in React components, and
 that data is referred to as <b>state</b>.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ w2-s11-f. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-f.png?raw=true"
+  alt="Passing data to child components using props in ReactJS."
+  width="60%" />
+</p>
 All the data in React can be divided into <b>props</b> data and <b>states</b>
 data. Props data is data outside the components that it receives and
 works with but cannot mutate. State data is data inside the components
@@ -6833,25 +6882,155 @@ that it controls and can mutate.
 It also helps to think of it like this. The <b>prop</b> data belongs to the
 parent that renders the components. The <b>state</b> data belongs to the
 component itself.
-
-To demonstrate this, let's open up VS Code and work through an example.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ w2-s11-g. passing data to child components using props (160) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-g.png?raw=true"
+  alt="Passing data to child components using props in ReactJS."
+  width="80%" />
+</p>
+<p>To demonstrate this, let's open up VS Code and work through an example.
 I've built a new app using Create React app. I have two files created,
-app.js and child.js. The app.js file defines the app components using a
+app.js and child.js.</p>
+<p>The app.js file defines the app components using a
 class definition instead of a function. When it's created, it
 initializes its state with the current date. The render function then
 renders a component called child. The child's components has a prop
 named message defined and its value is set as the current dates from the
 component's state converted to a string format, which includes the
-hours, minutes, and seconds of the date. In the child.js file, the
-component renders the message prop in an H1 elements. Now when I run the
-app, the state of the app component flows. It stays down to the child
-component props, and the H1 elements will display the current date and
-time. Well done. You've now learned how children and data flows in
-ReactJS. You should also be able to showcase the use of stateless and
-stateful examples by focusing on data flow.
-
+hours, minutes, and seconds of the date.</p>
+<p>In the child.js file, the component renders the message prop in an H1 elements.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ w2-s11-h. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s11-h.png?raw=true"
+  alt="Passing data to child components using props in ReactJS."
+  width="80%" />
+</p>
+<p>Now when I run the app, the state of the app component flows. It stays down to the child 
+component props, and the H1 elements will display the current date and time. Well done.</p>
+<p>You've now learned how children and data flows in ReactJS. You should also be able to 
+showcase the use of stateless and stateful examples by focusing on data flow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Data flow</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>By now you've probably already learned about some important and useful core concepts in React. At this point, you're ready to learn how to add interactivity, maintain state within a React component and explore hooks.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-a. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-a.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+<p>In this section (12), you'll be introduced to what hooks are, how they can be used and 
+why they are useful. As you progress as a React developer, you'll likely soon use complex 
+components with state fault logic. Keeping track of state across components can become 
+quite a task and this is where React's hooks can help.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-b. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-b.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+<p>One key benefit of hooks is that they solve the problem of unnecessary code reuse 
+across components.  Let's find out how they do that.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-c. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-c.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+<p>Hooks are functions that were introduced in React version 16.8. They let you hook into React state and lifestyle features from components.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-d. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-d.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+<p>Let's observe an example hook. Specifically, you'll examine an instance of the useState hook as it's the most commonly used one. This hook is used to manage the state within a component and keep track of it and it's built directly into React.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-e. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-e.png?raw=true"
+  alt="Complex components and React hooks."
+  width="30%" />
+</p>
+<p>To use it, the first thing you need to do is import the useState from React so that it's available for use.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-f.png?raw=true"
+  alt="Complex components and React hooks."
+  width="30%" />
+<p align="center" width="100%">
+<img src="/images/w2-s12-g.png?raw=true"
+  alt="Complex components and React hooks."
+  width="30%" />
+</p>
+
+<p>The next step is to declare a state variable within a component. You can provide any name to the state variable and the set state function. For this example, let's call the state variable showMenu and the set state function setShowMenu.</p>
+If you've learned JavaScript, this syntax may feel somewhat familiar to you. You are probably wondering what exactly this code does. Well, it's actually doing something that you've likely encountered before.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-h. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-h.png?raw=true"
+  alt="Complex components and React hooks."
+  width="30%" />
+</p>
+<p>Notice that the convention is to name the state variable and the set of function using array destructuring. When you declare a state variable using the useState, it returns a pair which is an array with two items.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-i. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-i.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+
+<p>Without array destructuring, the code would be long and cumbersome. Since it's more confusing and tedious to access the array items by index, array destructuring is preferred and it significantly simplifies the code.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-j. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-j.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+<p>You now have a new state variable called showMenu. The useState then sets the initial value of showMenu as false.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-k. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-k.png?raw=true"
+  alt="Complex components and React hooks."
+  width="60%" />
+</p>
+<p>To summarize, calling the useState hook does two things. It creates a state variable with an initial value that represents the current state, which in this example is showMenu. And it creates a function to set that states variable value, which in this case is setShowMenu. The function setShowMenu is used to update the value of show menu bypassing the Boolean value to it. It does not matter what names you use for the state variables. You can define them based on your component and use case.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s12-l. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w2-s12-l.png?raw=true"
+  alt="Complex components and React hooks."
+  width="40%" />
+</p>
+<p>The useState hook should be called at the top level of your component. In this example, notice that the useState hook was used to track the Boolean state value. 
+You can use the useState hook to track any type of data. It could be strings, numbers, arrays, Booleans or objects.</p>
+<p>For instance, you can even track the number of times a button is pressed. In addition to the hooks that come out of the box with React, you can also build your own hooks, which will let you extract custom component logic into reusable functions. This is an excellent feature and benefit of using hooks.</p>
+<p>The biggest benefit of hooks is the readability and simplicity that they provide to the code.</p>
+<p>In this section (12), you learned the basics on React hooks and explored the useState hook. You now understand the benefits of using hooks and how you can use them within your React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. What are hooks?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
