@@ -6,7 +6,7 @@ body {
   padding-bottom: 10px;
   background-color: white;
   padding: 30px;
-  color: #333;
+  color: #333;  /* v dark gray */
 }
 
 body > *:first-child {
@@ -18,12 +18,12 @@ body > *:last-child {
 }
 
 a {
-  color: #4183C4;
+  color: #4183C4;  /* moderate blue */
   text-decoration: none;
 }
 
 a.absent {
-  color: #cc0000;
+  color: #cc0000;  /* strong red */
 }
 
 a.anchor {
@@ -86,7 +86,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;  /* l gray */
   color: black;
 }
 
@@ -201,9 +201,9 @@ dl dd > :last-child {
 }
 
 blockquote {
-  border-left: 4px solid #dddddd;
+  border-left: 4px solid #dddddd;  /* very light gray */
   padding: 0 15px;
-  color: #777777;
+  color: #777777;  /* dark gray */
 }
 
 blockquote > :first-child {
@@ -218,26 +218,26 @@ table {
   padding: 0;
 }
 table tr {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;  /* l gray */
   background-color: white;
   margin: 0;
   padding: 0;
 }
 
 table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8;  /* very light gray (mostly white) */
 }
 
 table tr th {
   font-weight: bold;
-  border: 1px solid #cccccc;
+  border: 1px solid #cccccc;  /* l gray */
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
 
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid #cccccc;  /* light gray */
   text-align: left;
   margin: 0;
   padding: 6px 13px;
@@ -371,8 +371,8 @@ pre code {
 }
 
 pre {
-  background-color: #f8f8f8;
-  border: 1px solid #cccccc;
+  background-color: #f8f8f8;  /* very light gray */
+  border: 1px solid #cccccc;  /* l gray */
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
