@@ -72,11 +72,7 @@ with coding.
 
 <h3>Table of Contents - 7 pages approx</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>Week 1</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>React Components</h3>
-
-<!-- Section 01 of Week 1 -->
+<h1>Week 1 - React Components</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Introduction to the course: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5496,9 +5492,7 @@ Below you will find links to helpful additional resources.
 (https://legacy.reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx)
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>Week 2</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Data and State</h3>
+<h1>Week 2 - Data and State</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8084,7 +8078,6 @@ Below you will find links to helpful additional resources.
 •	Synchronizing with effects - putting it all together 
 •	Fetch API 
 •	The event loop in JavaScript 
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Week 3 - Navigation, Updating and Assets in React.js</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8093,6 +8086,872 @@ Navigation, Updating and Assets in React.js
 In this module (three) you will explore the basics of single and
 multi-page navigation, as well as the conditional rendering or changing
 of content in response to user status or choice.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+01. Basic Types of navigation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In the early days of the web, there were no true standards for design, which meant that developers were often very experimental. There were various designs and experiments, but ultimately, the web development community settled on a few best practices. Today, the web is a mature medium. 
+ 
+In this section (01), you will learn about the basic types of navigation on websites and how the navigation process works in React. Now, if you think about the history of web layouts and web navigation, it's likely development of other great inventions throughout history. 
+For example, after the Wright Brothers flew the first plane in 1903 and Kitty Hawk, North Carolina, there was a period of a few decades where engineers were experimenting with different designs. Planes with two or three sets of wings were the order of the day. Finally, after this initial exploration stage, airplane design settled down and the rules and best practices of building airplanes were established. 
+ 
+Like the development of rules of airplane construction, after the experimental years of the early web, the Web Design and Development Community settled on a few accepted unexpected designs. The focus and modern website navigation user interfaces is on utility. Stephen Krug's famous book on user experience Don't Make Me Think sums up the rule that developers are following today. 
+It's your duty as a web developer and designer to follow the best practices that have already been established. For example, a steering wheel does not belong on a washing machine, or an old-style phone dial does not belong in a car. In the same way, you wouldn't want to confuse your website visitors by giving them navigation that might look and feel smart, but that's completely different from what their used to. 
+ 
+You might be wondering what is accepted modern website navigation, and how does it work in React. Website navigation is the parts of any website that allows you to browse through various pages or links on that website from a single component. There are several practical implementations of this user interface pattern. Let's explore each briefly now. 
+ 
+The most common navigation components are, a horizontal navigation bar, a vertical navigation menu, a menu hiding behind a button, and a footer navigation menu. 
+ 
+The horizontal navigation bar is often referred to as a navbar, and the vertical navigation bar is also known as a sidebar navigation. The menu hiding behind the button is usually represented by an icon that has three horizontal lines and is thus referred to as the burger icon or the burger menu. 
+ 
+Alternative to this is the drop-down navigation menu, known as the mega menu. This menu is usually also hiding behind a button and it's usually used as a sub or large menu on e-commerce sites and other sites that require many links. 
+The footer navigation menu is usually displayed as several visual columns containing links. All these mentioned menu patterns can often be used simultaneously in different parts of the same page. 
+
+ 
+Additionally, a more complex navigation UI can include multiple navigation approaches in a single component. You may, for example, have a horizontal navigation bar or navbar with drop-down menu items. 
+
+If you're using a smaller resolution, the navigation bar displays as a burger menu icon. When you click on the burger menu icon a mobile sidebar or a vertical menu appears. Now you're familiar with some of the navigation types that are available in your React apps. 
+
+Let's explore how they are implemented to load different pages. If you compare the navigation of websites built with React against HTML and CSS, you will likely find no visual difference. 
+ 
+While visually everything looks the same, in the code, React navigation works a bit differently. This is because the entire app is loaded inside a single div. You're not actually visiting different pages like you would with hyperlinks and HTML files. Instead, the content of that single div is controlled by React, and it's based on changes to the virtual DOM. It either updates the existing view or loads a completely new view, giving the user the impression of visiting a completely different URL. 
+ 
+Recall that with HTML, developers can use a list to make a navigation menu. Each list item contains a hyperlink to an HTML file, then some CSS to style the menu, like the display inline property to make the list display horizontally. 
+ 
+To help illustrate how React's navigation works, think about how the buttons on the inside of an elevator work. Pressing the button will take you to the selected floor. Similarly, if you click on it, each link on a website takes you to a different page. 
+ 
+If however, you're in a React elevator, It says if the elevator never moves. 
+ 
+Instead, when you press a button in this React's elevator, the entire construction of that given floor is injected into a single floor of this impossible building.
+However, this functionality is not available to developers from the React's library itself. In order to achieve this illusion of a multi-page website, you need to add the React router library to your React projects. 
+
+Once again, you add this using the import statement and you'll learn more about how to do this soon. 
+
+In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+02. Navigation
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In this section (02), you’ll learn about the differences between traditional web pages and React-powered web pages (SPAs – single page applications).
+Once you understand the difference between these two ways of building web pages, you will be able to understand the necessary difference between how navigation works in traditional web apps versus how it works in modern SPA websites.
+Before Single-Page Apps
+Before the advent of modern JavaScript frameworks, most websites were implemented as multi-page applications. That is, when a user clicks on a link, the browser navigates to a new webpage, sends a request to the web server; this then responds with the full webpage and the new page is displayed in the browser.
+This can make your application resource intensive to the Web Server. CPU time is spent rendering dynamic pages and network bandwidth is used sending entire webpages back for every request. If your website is complex, it may appear slow to your users, even slower if they have a slow or limited internet connection.
+To solve this problem, many web developers develop their web applications as Single Page Applications.
+Single-Page Apps
+You’re using many Single Page Applications every day. Think of your favorite social network, or online email provider, or the map application you use to find local businesses. Their excellent user experiences are driven by Single Page Applications.
+A Single Page Application allows the user to interact with the website without downloading entire new webpages. Instead, it rewrites the current webpage as the user interacts with it. The outcome is that the application will feel faster and more responsive to the user.
+How Does a Single-Page App Work?
+When the user navigates to the web application in the browser, the Web Server will return the necessary resources to run the application. There are two approaches to serving code and resources in Single Page Applications.
+1.	When the browser requests the application, return and load all necessary HTML, CSS and JavaScript immediately. This is known as bundling. 
+2.	When the browser requests the application, return only the minimum HTML, CSS and JavaScript needed to load the application. Additional resources are downloaded as required by the application, for example, when a user navigates to a specific section of the application. This is known as lazy loading or code splitting. 
+Both approaches are valid and are used depending on the size, complexity and bandwidth requirements of the application. If your application is complex and has a lot of resources, your bundles will grow quite large and take a long time to download – possibly ending up slower than a traditional web application!
+Once the application is loaded, all logic and changes are applied to the current webpage.
+Let’s look at an example.
+ 
+ 
+An Example of a Single-Page App
+Imagine there is a webpage that has a Label and a Button. It will display a random movie name when the button is clicked.
+In a traditional website, when the button is clicked, the browser will send a POST request to the web server. The web server will return a new web page containing the button and movie name, and the web browser renders the new page.
+In a Single Page Application, when the button is clicked, the browser will send a POST request to a web server. The web server will return a JSON object. The application reads the object and updates the Label with the movie name.
+See, more efficient!
+But what if we need to have multiple pages with different layouts in our application?
+Let’s look at another example.
+Practical Differences Between Single-Page Apps and Multi-Page Apps
+ 
+ 
+You have a web application that has a navigation bar on top and two pages. One page shows the latest news, and the other shows the current user’s profile page. The navigation bar contains a link for each page.
+In a traditional website, when the user clicks the Profile link, the web browser sends the request to the web server. The web server generates the HTML page and sends it back to the web browser. The web browser then renders the new web page.
+In a Single Page Application, different pages are broken into templates (or views). Each view will have HTML code containing variables that can be updated by the application.
+The web browser sends the request to the web server, and the web server sends back a JSON object. The web browser then updates the web page by inserting the template with the variables replaced by the values in the JSON object.
+Anchor Tag Elements in Single-Page Elements
+A single-page application can’t have regular anchor tag elements as a traditional web app can. 
+The reason for this is that the default behavior of an anchor tag is to load another HTML file from a server and refresh the page. This page refresh is not possible in a SPA that's powered by a library such as React because a total page refresh is not the way that a SPA works, as explained earlier in this lesson item. 
+Instead, a SPA comes with its own special implementation of anchor tags and links, which only give an illusion of loading different pages to the end user when in fact, they simply load different components into a single element of the real DOM into which the virtual DOM tree gets mounted and updated.
+That's why navigation in a single-page app is fundamentally different from its counterpart in a multi-page app. Understanding the concepts outlined in this lesson item will make you a more well-rounded React developer.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+03. The navbar
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page. 
+ 
+Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component. 
+Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites. 
+However, I can make this possible with the help of another library known as React Router. 
+
+
+ 
+As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work. 
+ 
+ 
+First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags. 
+ 
+With that done, let's return to app.js. Here I need to import routes and route from react-router-dom. I also need to replace the child jsx elements with some different code. Homepage becomes route path equals and then forward slash between double quotes. This is followed by element equals and then the homepage jsx elements inside of curly braces. Note that the route tag is self-closing and has no children inside. For Aboutme, I add a similar line, but I'll add about-me after the forward slash. 
+ 
+These slides will also be encased between route tags. If I go to my browser and type the exact link on one of the routes, for example, /Aboutme, I'll get only the Aboutme components showing under the navigation. However, if I remove the Aboutme from the URL, in other words, if I open the root route that is represented with a forward slash, then it will show the text from the homepage component under the navigation bar. 
+ 
+Notice that I'm grouping all the routes by wrapping them inside the routes jsx element. Also note that the nav tags are outside of the routes tag, meaning that navigation is outside the routes. 
+ 
+Finally, I need to replace the anchor tags with React router links. This allows the correct component to be loaded when the link is clicked, rather than simply refreshing the page. In the app component, the anchor tag for homepage becomes link to equals and then the forward slash between double quotes. This is followed by class name equals and then nav-item in double quotes. 
+ 
+For Aboutme, the change is similar except that about-me appears after the forward slash. 
+ 
+I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser. 
+ 
+In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+04. Solution: Creating a route
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Here is the Contact.js file:
+
+```
+1.	function Contact() {
+2.	  return  <h1>Contact Little Lemon on this page.</h1>
+3.	}
+4.	export default Contact
+Here is the completed App.js file:
+1.	import "./App.css";
+2.	import Homepage from "./Homepage";
+3.	import AboutLittleLemon from "./AboutLittleLemon";
+4.	import Contact from "./Contact";
+5.	import { Routes, Route, Link } from "react-router-dom";
+6.	
+7.	function App() {
+8.	  return (
+9.	    <div> 
+10.	      <nav>
+11.	        <Link to="/" className="nav-item">Homepage</Link>
+12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
+13.	        <Link to="/contact" className="nav-item">Contact</Link>
+14.	      </nav>
+15.	      <Routes> 
+16.	        <Route path="/" element={<Homepage />}></Route>
+17.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
+18.	        <Route path="/contact" element={<Contact />}></Route>
+19.	      </Routes>
+20.	    </div>
+21.	  );
+22.	};
+23.	
+24.	export default App;
+```
+
+Here is the output from the completed solution code:
+
+Step 1
+First, you added a new file, Contact.js, to the root of the src folder. 
+Step 2
+Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace. 
+
+```
+1.	function Contact() {
+2.	
+3.	};
+4.	export default Contact;
+```
+
+Step 3
+Next, inside the body of the Contact function, you added a return statement with the following code: <h1>Contact Little Lemon on this page.</h1>.
+
+```
+1.	function Contact() {
+2.	  return  <h1>Contact Little Lemon on this page.</h1>
+3.	};
+4.	export default Contact;
+```
+
+Step 4
+Inside the App.js file, you imported the newly-built Contact component. 
+
+```
+1.	import "./App.css";
+2.	import Homepage from "./Homepage";
+3.	import AboutLittleLemon from "./AboutLittleLemon";
+4.	import Contact from "./Contact";
+5.	import { Routes, Route, Link } from "react-router-dom";
+6.	
+7.	function App() {
+8.	  return (
+9.	    <div> 
+10.	      <nav>
+11.	        <Link to="/" className="nav-item">Homepage</Link>
+12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
+13.	      </nav>
+14.	      <Routes> 
+15.	        <Route path="/" element={<Homepage />}></Route>
+16.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
+17.	      </Routes>
+18.	    </div>
+19.	  );
+20.	};
+21.	
+22.	export default App;
+```
+
+Step 5
+Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.
+
+```
+1.	import "./App.css";
+2.	import Homepage from "./Homepage";
+3.	import AboutLittleLemon from "./AboutLittleLemon";
+4.	import Contact from "./Contact";
+5.	import { Routes, Route, Link } from "react-router-dom";
+6.	
+7.	function App() {
+8.	  return (
+9.	    <div> 
+10.	      <nav>
+11.	        <Link to="/" className="nav-item">Homepage</Link>
+12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
+13.	        <Link to="/contact" className="nav-item">Contact</Link>
+14.	      </nav>
+15.	      <Routes> 
+16.	        <Route path="/" element={<Homepage />}></Route>
+17.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
+18.	      </Routes>
+19.	    </div>
+20.	  );
+21.	};
+22.	
+23.	export default App;
+```
+
+Step 6
+Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute set to {<Contact />}. 
+
+```
+1.	import "./App.css";
+2.	import Homepage from "./Homepage";
+3.	import AboutLittleLemon from "./AboutLittleLemon";
+4.	import Contact from "./Contact";
+5.	import { Routes, Route, Link } from "react-router-dom";
+6.	
+7.	function App() {
+8.	  return (
+9.	    <div> 
+10.	      <nav>
+11.	        <Link to="/" className="nav-item">Homepage</Link>
+12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
+13.	        <Link to="/contact" className="nav-item">Contact</Link>
+14.	      </nav>
+15.	      <Routes> 
+16.	        <Route path="/" element={<Homepage />}></Route>
+17.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
+18.	        <Route path="/contact" element={<Contact />}></Route>
+19.	      </Routes>
+20.	    </div>
+21.	  );
+22.	};
+```
+
+Step 7
+You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+05. Conditional rendering
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render. 
+ 
+And when you have components that are responsive to events such as clicks, this can add another layer of complexity. Fortunately, there are several approaches for writing the logic to ensure that this process goes smoothly and requires less work from you. 
+By the end of this section (05) you'll have a high level understanding of conditional rendering and know how to set it up using ternary operators. 
+ 
+Recall that state is a component internal data, which that component can control or change as opposed to props, which the component receives but cannot alter.
+In an app, you can render components conditionally based on whether a specific state data has specific values. In other words, when you write the rendering logic in the main app component, you'll need to reference the state of the other components. 
+ 
+For example, suppose you have a component that contains code for a button that shows a sidebar, the button controls the state of the toggle sidebar variable, which is set to false. 
+ 
+When the button is clicked, the state of the toggle sidebar variable is updated to True, and the sidebar component is displayed. 
+ 
+To make this possible react works with conditional concepts and syntax that are already available in JavaScript. For example, recall the conditional if statement in JavaScript, developers use it to run code conditionally based on whether something is either true or false. 
+ 
+To illustrate conditional rendering in action, let's first consider an example productivity app. Based on the device's data at the time of access, the app displays one of two messages.  For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a developer, there are a few ways you can achieve this functionality in react. 
+ 
+But in this section (05), you'll focus on using the ternary operator to write simplified, if else conditions, you start by creating a component called CurrentMessage. 
+ 
+This component uses the built in date function in JavaScript, along with the get day method to store the day of the week as a number, where zero represents Sunday, and six, the following Saturday. 
+ 
+Next, you create the two components that each holds one of the messages to be displayed. Let's name these components Workdays and Weekends. The current message component needs to render the appropriate components based on the value returned from the getDay function call. 
+ 
+Let's set up the conditions to make that happen. Recall that the ternary operator takes three commands. First is the condition, which in this example uses the logical and operator. The condition checks if the value stored in the day variable is greater than or equal to one, and less than or equal to five. Then the question mark symbol, followed by the expression to execute if the condition evaluates as true. 
+In this example, the component, Workdays, is rendered. Next is the colon symbol, which represents the code to be executed if the condition evaluates as false. And if this happens, the component weekends is rendered. Using the logical and operator in the condition means that both expressions have to return true in order to render the Workdays component. Otherwise, the Weekends component will be rendered. 
+While using the ternary operator is a common pattern that you'll see in react code. If you are new to react, it may be difficult to understand what's happening. 
+ 
+So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach. 
+In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+06. Applying conditional rendering
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.
+Consider a minimalistic productivity app.
+The app takes the client computer’s current datetime, and based on the data, displays one of two messages on the screen:
+1.	For workdays, the message is: “Get it done” 
+2.	For weekends, the message is: “Get some rest” 
+There are a few ways you can achieve this in React.
+One approach would include setting a component for each of the possible messages, which means you’d have two components. Let’s name them Workdays and Weekends.
+Then, you’d have a CurrentMessage component, which would render the appropriate component based on the value returned from the getDay() function call.
+Here’s a simplified CurrentMessage component:
+
+```
+1.	function CurrentMessage() {
+2.	  const day = new Date().getDay();
+3.	  if (day >= 1 && day <= 5) {
+4.	    return <Workdays />
+5.	  }
+6.	    return <Weekends />
+7.	}
+```
+
+Instead of calculating it directly, you could use some historical data instead, and perhaps get that data from a user via an input, from a parent component.
+In that case, the CurrentMessage component might look like this:
+
+```
+1.	function CurrentMessage(props) {
+2.	  if (props.day >= 1 && props.day <= 5) {
+3.	    return <Workdays />
+4.	  }
+5.	    return <Weekends />
+6.	}
+```
+
+Conditional rendering with the help of element variables
+To further improve your CurrentMessage component, you might want to use element variables. This is useful in some cases, where you want to streamline your render code - that is, when you want to separate the conditional logic from the code to render your UI.
+Here’s an example of doing this with the CurrentMessage component:
+
+```
+1.	function CurrentMessage({day}) {
+2.	  const weekday = (day >= 1 && day <= 5);
+3.	  const weekend = (day >= 6 && day <= 7);
+4.	  let message;
+5.	
+6.	  if (weekday) {
+7.	    message = <Workdays />
+8.	  } else if (weekend) {
+9.	    message = <Weekends />
+10.	  } else {
+11.	    message = <ErrorComponent />
+12.	  }
+13.	
+14.	  return (
+15.	    <div>
+16.	      {message}
+17.	    </div>
+18.	  )
+19.	}
+```
+
+The output of the CurrentMessage component will depend on what the received value of the day variable is. On the condition of the day variable having the value of any number between 1 and 5 (inclusive), the output will be the contents of the Workdays component. Otherwise, on the condition of the day variable having the value of either 6 or 7, the output will be the contents of the Weekends component.
+Conditional rendering using the logical AND operator
+Another interesting approach in conditional rendering is the use of the logical AND operator &&.
+In the following component, here's how the && operator is used to achieve conditional rendering:
+
+```
+1.	function LogicalAndExample() {
+2.	  const val = prompt('Anything but a 0')
+3.	
+4.	  return (
+5.	    <div>
+6.	      <h1>Please don't type in a zero</h1>
+7.	      {val &&
+8.	        <h2>Yay, no 0 was typed in!</h2>
+9.	      }
+10.	    </div>
+11.	  )
+12.	}
+```
+
+There are a few things to unpack here, so here is the explanation of the LogicalAndExample component, top to bottom:
+1.	First, you ask the user to type into the prompt, specifying that you require anything other than a zero character; and you save the input into the val value.
+2.	In the return statement, an h1 heading is wrapped inside a div element, and then curly braces are used to include a JSX expression. Inside this JSX expression is a single && operator, which is surrounded by some code both on its left and on its right sides; on the left side, the val value is provided, and on the right, a piece of JSX is provided. 
+
+To understand what will be output on screen, consider the following example in standard JavaScript:
+1.	true && console.log('This will show')
+If you ran this command in the browser’s console, the text ‘This will show’ will be output.
+On the flip side, consider the following example:
+1.	false && console.log('This will never show')
+If you ran this command, the output will just be the boolean value of false.
+In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+07. Conditional components
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.
+This is often done using something called conditional rendering.
+In a previous course, you’ve already learned about simple conditions using if and switch statements. Using these statements allows you to change the behaviour of code based on certain conditions being met.
+For example, you can set a variable to a different value based on the result of a condition check.
+
+```
+1.	let name; 
+2.	if (Math.random() > 0.5) { 
+3.	  name = "Mike" 
+4.	} else { 
+5.	  name = "Susan" 
+6.	} 
+```
+
+```
+1.	let name; 
+2.	let newUser = true; 
+3.	if (Math.random() > 0.5 && newUser) { 
+4.	  name = "Mike" 
+5.	} else { 
+6.	  name = "Susan" 
+7.	} 
+```
+
+Conditional rendering is built on the same principle. By using conditions, you can return different child components. This is often done using the props that are passed into the parent component, but can also be done based on component state.
+Let’s take a look at a simple example.
+Let’s say you have two child components called LoginButton and LogoutButton; each displaying their corresponding button.
+In the parent component, named LogInOutButton, you can check the props passed into the parent component and return a different child component based on the value of the props.
+In this example, the props contains a property named isLoggedIn. When this is set to true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.
+
+```
+1.	function LogInOutButton(props) {
+2.	  const isLoggedIn = props.isLoggedIn;
+3.	  if (isLoggedIn) {
+4.	    return <LogoutButton />;
+5.	    } else {
+6.	    return <LoginButton />;
+7.	}
+```
+
+Then when the LogInOutButton parent component is used, the prop can be passed in.
+
+```
+1.	<LogInOutButton isLoggedIn={false} />
+```
+
+This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+08. Single view conditional updates
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally. 
+ 
+I use the create react app to build the starter react app. I'll go through the code in this customized starter app to demonstrate some conditional rendering and practice.  The goal of my app is to use the local computers' time and based on the return values, output various messages inside the same return statement. All wrapped in a single development. Specifically, I want to quote a small app that displays a message for a given work day. And if it's morning time, ask the user if they've had their breakfast yet. I start my app component code by declaring a time variable and assigning the call to the date constructor to it. I then set the day variable.  And I used the built-in to locale string function that exists on the date object to specify the locale as English US. I also specify the weekday value as long which displays the days as full words such as Monday, Tuesday, Wednesday, and so on. Next, I declare a morning variable that stores a Boolean value based on whether the current time is greater than or equal to 6 and less than or equal to 12. Finally, I declare a day message variable but I'm not assigning any value to it yet. To generate a dynamic message. 
+I use an if -else statement passing at the value of the day variable. I also make all the characters in the day variable string lowercase with the help of the built-in to lowercase function. Based on the value stored in the day variable. I then assign a specific string to the day message variable. For example, if it's a Monday. The day message variable stores a string that reads happy Monday. If it's a Tuesday the string reads Tuesday 4 days to go. 
+After I've covered all the possibilities from Monday to Friday I add the L statement with a string value for all the other possibilities. The string reads stay calm and keep having fun. This brings me to the return statement. In the return statement, I have a single heading H1 and inside of it, I'm accessing the string value stored inside the day message variable. 
+Additionally, I use ternary operator to conditionally evaluate the morning variable. If true, I output a string that reads have you had breakfast yet? This string is placed inside the heading 2 element. It false an empty string will be displayed. 
+Notice the output of this code happy Monday.
+ 
+If I change the get hours value from 12 to 19 and save my code. Notice that a new message is displayed underneath the heading that reads have you had breakfast yet? That's all it takes to build quite a dynamic component that conditionally renders various kinds of strings in its return statement. 
+ 
+In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+09. Additional resources
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Here is a list of resources that may be helpful as you continue your learning journey.
+•	React Router v6 
+•	nav: The Navigation Section element 
+•	Conditional (ternary) operator in JavaScript 
+•	if...else 
+
+10. What is an asset and where does it live?
+By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app. 
+ 
+By the end of this section (10), you'll know what assets are and how developers keep them organized in React. You'll also learn some of the common ways to import asset files to be used in your React apps. 
+Let's begin by making sure you fully understand what developers mean when they mention the term, assets. In React, assets can be things like images, style sheets, fonts, media files, or basically any file that's needed by your app at runtime. In other words, assets are all the files that your React app needs to have access to in order to work as intended. 
+
+For example, you might code your app to display specific images or use certain fonts. But if you run your app without these being available, it might exhibit unexpected behavior, such as displaying a placeholder when using a default font. 
+ 
+That's why it's important to keep assets easily and readily available to your components. A common way to do this is to add an assets folder inside of a source folder and keep all your apps assets there. Some assets can also be placed inside the public folder. 
+ 
+For example, in the default React installation, you'll find that some images such as favicon and Logo 512 are stored there by default. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder. 
+ 
+For instance, favicon is in the public folder because no component depends on it. In other words, React doesn't need to use the favicon file to compile all the components into an app that will get served in your local browser while you're building your app. 
+ 
+However, suppose you have an image that needs to be imported into one of the app components, then it's best stored in the assets folder. Now you're familiar with the concept of assets in React. Let's explore how to use assets. 
+ 
+Suppose you're a developer working on an app that helps people adopt animals in their local area. You have built most of the apps components, but you are waiting on the adoption center to send you pictures of the animals that are looking for a new home. In preparation for this, you create the assets folder in the React application. The pictures arrive and you place them inside the assets folder so they can be added to your components. 
+ 
+To add an asset file to a component, you first need to import it. This can be done with an import statement. For example, suppose these components will display a picture of a cat, you type the keyword, import, followed by the name you want to give your asset. 
+You can call this almost anything you like. But it's best to stick to something descriptive that describes your assets. For example, cat. Then you type the keyword, from, followed by the path to your assets. In this case, it's a file named cat.jpg located in the assets folder. 
+ 
+The next step is to create the function and write a return statement. Inside the return statement, you use the image tag and then set the source attribute to reference the asset's name, which is cat in curly braces. 
+ 
+Alternatively, instead of the asset name, you can reference the path to the assets folder relative to the component. You can do this with the require keyword as well as curly braces that encase the JSX Expression and act as delimiters. It's important to know that with this method, you no longer need the import statement. This is because you're using the required syntax right inside the JSX Expression that's assigned to the SRC JSX attribute. 
+In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.
+11. Bundling assets
+Earlier, you learned what assets are in React and the best practices for storing them in your project folders.
+In this section (11), you will learn about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You will also learn about the trade-offs inherent in using asset-heavy apps.
+The app’s files will likely be bundled when working with a React app. Bundling is a process that takes all the imported files in an app and joins them into a single file, referred to as a bundle. Several tools can perform this bundling. Since, in this course, you have used the create-react-app to build various React apps, you will focus on webpack. This is because webpack is the built-in tool for the create-react-app.
+Let’s start by explaining what webpack is and why you need it.
+Simply put, webpack is a module bundler.
+Practically, this means that it will take various kinds of files, such as SVG and image files, CSS and SCSS files, JavaScript files, and TypeScript files, and it will bundle them together so that a browser can understand that bundle and work with it.
+Why is this important?
+When building websites, you could probably do without webpack since your project's structure might be straightforward: you may have a single CSS library, such as Bootstrap, loaded from a CDN (content delivery network). You might also have a single JavaScript file in your static HTML document. If that is all there is to it, you do not need to use webpack in such a scenario.
+However, modern web development can get complex.
+Here is an example of the first few lines of code in a single file of a React application:
+
+```
+1.	import React from 'react';
+2.	import '@atlaskit/css-reset';
+3.	import styled from 'styled-components';
+4.	import './index.css';
+5.	import { ThemeProvider } from './contexts/theme';
+6.	import { DragDropContext } from 'react-beautiful-dnd';
+7.	import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+8.	import Nav from './components/Nav';
+9.	import data from './data';
+10.	import Loading from './components/Loading';
+```
+ 
+The imports here are from fictional libraries and resources because the specific libraries are not necessary. All these different imports can be of various file types: .js, .svg, .css, and so on.
+In turn, all the imported files might have their own imported files, and even those might have their imports.
+This means that depending on other files, all of these files can create a dependency graph. The order in which all these files are loading is essential. That dependency graph can get so complex that it becomes almost impossible for a human to structure a complex project and bundle all those dependencies properly.
+This is the reason you need tools like webpack.
+So, webpack builds a dependency graph and bundles modules into one or more files that a browser can consume.
+While it is doing that, it also does the following: 
+•	It converts modern JS code - which can only be understood by modern browsers - into older versions of JavaScript so that older browsers can understand your code. This process is known as transpiling. For example, you can transpile ES7 code to ES5 code using webpack.  
+•	It optimizes your code to load as quickly as possible when a user visits your web pages. 
+•	It can process your SCSS code into the regular CSS, which browsers can understand. 
+•	It can build source maps of the bundle's building blocks  
+•	It can produce various kinds of files based on rules and templates. This includes HTML files, among others. 
+Another significant characteristic of webpack is that it helps developers create modern web apps.
+It helps you achieve this using two modes: production mode or development mode.
+In development mode, webpack bundles your files and optimizes your bundles for updates - so that any updates to any of the files in your locally developed app are quickly re-bundled. It also builds source maps so you can inspect the original file included in the bundled code.
+In production mode, webpack bundles your files so that they are optimized for speed. This means the files are minified and organized to take up the least amount of memory. So, they are optimized for speed because these bundles are fast to download when a user visits the website online.
+Once all the source files of your app have been bundled into a single bundle file, then that single bundle file gets served to a visitor browsing the live version of your app online, and the entire app’s contents get served at once.
+This works great for smaller apps, but if you have a more extensive app, this approach is likely to affect your site’s speed. The longer it takes for a web app to load, the more likely the visitor will leave and move on to another unrelated website. There are several ways to tackle this issue of a large bundle.
+One such approach is code-splitting, a practice where a module bundler like webpack splits the single bundle file into multiple bundles, which are then loaded on an as-needed basis. With the help of code-splitting, you can lazy load only the parts that the visitor to the app needs to have at any given time. This approach significantly reduces the download times and allows React-powered apps to get much better speeds. 
+There are other ways to tackle these problems. 
+An example of a viable alternative is SSR (Server-side rendering).
+With SSR, React components are rendered to HTML on the server, and the visitor downloads the finished HTML code. An alternative to SSR is client-side rendering, which downloads the index.html file and then lets React inject its own code into a dedicated HTML element (the root element in create-react-app). In this course, you’ve only worked with client-side rendering. 
+Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.
+In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+12. Using embedded assets
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In this section (12), I'll demonstrate various ways of displaying images. You'll learn three different ways to display an image and react app specifically by using the import statement using the require function to set the file path, or by providing an image URL. 
+ 
+To demonstrate how you can work with embedded assets, I've created a basic app called Embedded Assets. In my app source folder I added the assets folder which also contains an image folder. Notice I've added one Jpeg image to the images folder named Central Park. 
+ 
+To view the code of the app component, I click on the app.Js file. Notice that the starting code of my app component just under some text that describes the task at hand, which is to display three images with some styling. 
+
+ 
+For this, I'm going to demonstrate the three distinct ways to import images and react. The first way is to use the import method and I want to demonstrate how you set a name for your imported image. To import the image file Central Park, I type import rooftops and then dot forward slash to provide a relative path to the file enclosed in double quotes. In this example my file is in the images folder inside the assets folder. Next I'll render this image as an image tag. In my code, I use the height attribute to limit the size of the image by making its height exactly 200 pixels. I'm setting the source attribute to the value of rooftops which contains the path to the image file. Finally, for best practice, I add an outer attribute with a basic description of the image. I save my file and notice that my image now displays in the browser. 
+ 
+Okay, so that's one way to import an image using the import statement. The second way to import an image is by using the require keyword.  To do this, I create this image with an image to act like I did before. Again, I limit the size of the image by making its height exactly 200 pixels. But this time I set the source attribute to require, I pass in the relative path of the image to the required function. The path is passed in as a string data type, so that's why the path is enclosed in double quotes. Once again to finish my image code, I add a description of the image to the L to attribute, I saved my code and the second image now appears. Notice that with this approach I don't have to import the image. I just require it and provide the string with the relative path to the image.
+ 
+Now I'll demonstrate the third way to import an image asset by loading an image file hosted on the internet. Instead of a local file, this time I want to display a random image URL from a photo hosting website. To do this, I create a variable by typing const than the variable name random image URL that I use the equals operator followed by the URL for the random image. I can now add my third image element inside the return statement. To do this, I add random image URL to the source attribute. 
+ 
+So there you have it. The three different ways to use image assets in a react component.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+13. Solution: Displaying images
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Here's the completed App.js file:
+
+```
+1.	import logo from"./assets/logo.png"
+2.	
+3.	function App() {
+4.	  return (
+5.	    <div className="App">
+6.	      <h1>Task: Add an image below</h1>
+7.	      <img src={logo} alt="Logo" />
+8.	    </div>
+9.	  );
+10.	};
+11.	
+12.	export default App;
+```
+
+Here is the output from the solution code for the App.js file:
+ 
+Step 1
+First, you imported the logo image.
+
+```
+1.	import logo from"./assets/logo.png"
+2.	function App() {
+3.	  return (
+4.	    <div className="App">
+5.	      <h1>Task: Add an image below</h1>
+6.	    </div>
+7.	  );
+8.	};
+9.	
+10.	export default App;
+```
+
+Step 2
+Then, inside the return statement, you added the new img element, with the src attribute set to the JSX expression evaluating the logo value, and the alt attribute holding the string of "Logo".
+1.	import logo from"./assets/logo.png"
+2.	
+3.	function App() {
+4.	  return (
+5.	    <div className="App">
+6.	      <h1>Task: Add an image below</h1>
+7.	      <img src={logo} alt="Logo" />
+8.	    </div>
+9.	  );
+10.	};
+11.	
+12.	export default App;
+
+14. Audio and video
+Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices. 
+ 
+By the end of this section (14), you'll learn how React developers use audio and video assets within an app. You'll also explore how to find suitable React packages to use when working with audio and video files. Let's begin by exploring a method to load a local video asset into your React app using just HTML. 
+ 
+You can use the readily available HTML5 video tag to load a local video asset to your React app. Like loading an image or any other kind of asset file, you can just declare a variable somewhere above a component's return statement and then add it as a JSX expression to the SRC attribute. 
+However, this approach might not work as easily with some major providers of video content, such as one of the several social media and social video sharing platforms such as YouTube. 
+In that case, you have the option of rolling out your own solutions. This may be a bit more involved than just adding a video tag to an app. It might depend on the specific instructions on how a given social media platform recommends that you embed the video and audio assets into websites. Very often, you'd get a code snippet that you can copy and paste. However, a specific implementation might be slightly different because you would, for example, like to add it as a separate React component. 
+ 
+You might be wondering, why do you want to prepare it as a separate component? One of the reasons is that you'd be able to easily switch one video with another by passing the unique ID of a given video as a prop. You can then control the video output that way. So far, you've learned about two ways of adding videos to your apps. 
+ 
+The first method involves just serving a local video using the video element, and the second method is using embedded third-party videos. 
+
+There's another approach you may consider, namely using a third-party NPM package to streamline the process of adding videos to your app. The NPM package ecosystem is huge. If you visit the npmjs.org website, you'll find millions of various packages. 
+ 
+To make it easier on yourself, type React video in the search bar of the npmjs.org website to find some of the frequently downloaded NPM packages. To choose the right one, you might want to check the frequency or updates. A package that's frequently maintained and has many contributors is usually a sign of a solid package to use. Additionally, make sure to check the packages GitHub page. 
+Finally, you can also perform an Internet search for the package name. These actions will help you make an informed decision on which package to choose. 
+ 
+An example of a package that fits all these criteria is the React player package. Visit the packages GitHub URL at github.com/CookPete/react-player. You'll find that they react-player package has over 6,000 stars, about 115 contributors, and that it's regularly maintained. What is the meaning of the stars? 
+ 
+When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one. 
+You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.
+15. Media packages
+In this section (15), you’ll learn how to install the reactjs-media npm package.
+You can find this package on the npmjs.org website at the following URL: 
+https://www.npmjs.com/package/react-player
+To install this package you'll need to use the following command in the terminal:
+1.	npm install react-player
+Once you have this package installed, you can start using it in your project.
+There are a few ways that you can import and use the installed package. For example, to get the entire package's functionality, use the following import:
+1.	import ReactPlayer from "react-player";
+If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:
+1.	import ReactPlayer from "react-player/youtube";
+Here’s an example of using the react-player packaged in a small React app:
+1.	import React from "react";
+2.	import ReactPlayer from "react-player/youtube";
+3.	
+4.	const App = () => {
+5.	  return (
+6.	    <div>
+7.	      <MyVideo />
+8.	    </div>
+9.	  );
+10.	};
+11.	
+12.	const MyVideo = () => {
+13.	  return (
+14.	    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+15.	  );
+16.	};
+17.	
+18.	export default App;
+In this section (15), you learned how to install and use the react-player npm package.
+16. Create an audio / video component
+By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume. 
+ 
+Let's examine another app that I've created using create react app. Currently it's pretty basic and only renders an 81 heading that reads React Player example, let's make that heading true by adding in a video player. 
+The first step of this process is to install the react player module and the second step is to import it into my app component. 
+
+ 
+To install the module, I'll run the command $ npm install react-player. Once it has finished installing the module becomes available to any component in my project but only if I import it. 
+ 
+So I'll use the command import react player followed by react player and double quotes.  Now I'm ready to add the imported react player package as a component and render it from the app component. 
+ 
+I also want to pre set a few settings for the player specifically to ensure that the video doesn't play automatically on the page loads and to have the starting volume at 50% of the maximum. To do that, I add some attributes to the react player tag playing equals and then false in curly braces and volume equals, followed by 0.5 in curly braces. For a complete list of settings you can refer to the react players. Get up documentation. You may have noticed that the react component also contains the line U R L equals video RL. This refers to the web link for the video which hasn't been set up yet. 
+
+
+
+ 
+
+So let's add that link to the video RL variable now that everything is set up. I'll click file and save and then verify that everything works as expected in the browser. I can play the video, use the built in controls and the video starts at half the volume so it seems that everything is correct. 
+ 
+Finally, you can find the projects get happy or L at dot com slash cook pete with a capital C and capital P slash react dash player. 
+ 
+This page contains an about section on the right in which you'll find a link to the live demo on the link page. 
+ 
+You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video. In section 16 you learned how to install and use the react player package and change common settings for the react player
+17. Solution: Song selection
+Here's the completed App.js file:
+1.	import React from "react"; 
+2.	
+3.	function App() { 
+4.	
+5.	  const bird1 = new Audio( 
+6.	    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hydroprogne_caspia
+    _-_Caspian_Tern_XC432679.mp3" 
+7.	  ); 
+8.	
+9.	  const bird2 = new Audio( 
+10.	    "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hydroprogne_caspia
+    _-_Caspian_Tern_XC432881.mp3" 
+11.	  ); 
+12.	
+13.	  function toggle1() { 
+14.	    if (bird1.paused) { 
+15.	      bird1.play(); 
+16.	    } else { 
+17.	      bird1.pause(); 
+18.	    } 
+19.	  }; 
+20.	
+21.	  function toggle2() { 
+22.	    if (bird2.paused) { 
+23.	      bird2.play(); 
+24.	    } else { 
+25.	      bird2.pause(); 
+26.	    } 
+27.	  }; 
+28.	
+29.	  return ( 
+30.	    <div> 
+31.	      <button onClick={toggle1}>Caspian Tern 1</button> 
+32.	      <button onClick={toggle2}>Caspian Tern 2</button> 
+33.	    </div> 
+34.	  ); 
+35.	} 
+36.	
+37.	export default App;
+Here is the output from the solution code for the App.js file:
+ 
+Step 1
+In this ungraded lab, your goal was to read through the existing code of the App.js file, and update the second button so that it's running the toggle2 function on a click to the second button. 
+1.	import React from "react";
+2.	
+3.	function App() {
+4.	
+5.	  const bird1 = new Audio(
+6.	    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hydroprogne_caspia_-
+    _Caspian_Tern_XC432679.mp3"
+7.	  );
+8.	
+9.	  // const bird2 = new Audio(
+10.	  //   "https://upload.wikimedia.org/wikipedia/commons/b/b5/
+       Hydroprogne_caspia_-_Caspian_Tern_XC432881.mp3"
+11.	  // );
+12.	
+13.	  function toggle1() {
+14.	    if (bird1.paused) {
+15.	      bird1.play();
+16.	    } else {
+17.	      bird1.pause();
+18.	    }
+19.	  };
+20.	
+21.	  return (
+22.	    <div>
+23.	      <button onClick={toggle1}>Caspian Tern 1</button>
+24.	      <button onClick={toggle2}>Caspian Tern 2</button>
+25.	    </div>
+26.	  );
+27.	}
+28.	
+29.	export default App;
+Step 2
+After adding the toggle2 function to the JSX expression in the second button's onClick event-handling attribute, you should have un-commented the bird2 variable on lines 9 to 11. 
+1.	import React from "react";
+2.	
+3.	function App() {
+4.	
+5.	  const bird1 = new Audio(
+6.	    "https://upload.wikimedia.org/wikipedia/commons/9/9b/
+    Hydroprogne_caspia_-_Caspian_Tern_XC432679.mp3"
+7.	  );
+8.	
+9.	  const bird2 = new Audio(
+10.	    "https://upload.wikimedia.org/wikipedia/commons/b/b5/
+    Hydroprogne_caspia_-_Caspian_Tern_XC432881.mp3"
+11.	  );
+12.	
+13.	  function toggle1() {
+14.	    if (bird1.paused) {
+15.	      bird1.play();
+16.	    } else {
+17.	      bird1.pause();
+18.	    }
+19.	  };
+20.	
+21.	  return (
+22.	    <div>
+23.	      <button onClick={toggle1}>Caspian Tern 1</button>
+24.	      <button onClick={toggle2}>Caspian Tern 2</button>
+25.	    </div>
+26.	  );
+27.	}
+28.	
+29.	export default App;
+Step 3
+Next, you needed to define the toggle2 function: it should have had the exact same functionality as the toggle1 function, but it needed to work with the bird2 variable (instead of the bird1 variable as it did in the toggle1 function). 
+1.	import React from "react"; 
+2.	
+3.	function App() { 
+4.	
+5.	  const bird1 = new Audio( 
+6.	    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hydroprogne_caspia_-
+      _Caspian_Tern_XC432679.mp3"
+7.	  ); 
+8.	
+9.	  const bird2 = new Audio( 
+10.	    "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hydroprogne_caspia_-
+      _Caspian_Tern_XC432881.mp3"
+11.	  ); 
+12.	
+13.	  function toggle1() { 
+14.	    if (bird1.paused) { 
+15.	      bird1.play(); 
+16.	    } else { 
+17.	      bird1.pause(); 
+18.	    }
+19.	  }; 
+20.	
+21.	  function toggle2() {
+22.	    if (bird2.paused) { 
+23.	      bird2.play(); 
+24.	    } else { 
+25.	      bird2.pause(); 
+26.	    } 
+27.	  }; 
+28.	
+29.	  return ( 
+30.	    <div>
+31.	      <button onClick={toggle1}>Caspian Tern 1</button> 
+32.	      <button onClick={toggle2}>Caspian Tern 2</button> 
+33.	    </div> 
+34.	  ); 
+35.	} 
+36.	
+37.	export default App;
+
+18. Module summary: Navigation, Updating and 
+     Assets in React.js
+You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice. 
+The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component. 
+ 
+In modern website navigation, the user interface is all about functionality. You learned about the most common navigation components, like the horizontal navigation bar, or navbar. 
+ 
+But of course, most websites have more complex navigation UI that include multiple navigation approaches in a single component, like combining a horizontal navbar with drop-down menu items. 
+ 
+You learned that there's a key difference between the navigation of websites built with React, versus those built with HTML and CSS. With React-powered web pages, called single-page applications or SPAs, the entire app is loaded inside a single div, so you're not actually visiting different pages like you would with hyperlinks in HTML files. That's because a single-page application, or SPA, comes with its own special implementation of anchor tags and links that give the illusion of loading different pages. 
+ 
+To achieve the solution of a multi-page websites, you learn that you need to add the React Router library to your React projects, and you practice using it to create and implement the basic navigation routes for our webpage. 
+ 
+In this lesson's ungraded lab, you used code from the lesson item title to the navbar, and you had to add another link to the existing code. 
+ 
+After this, you learned about conditional rendering, which is necessary for React to be able to dynamically change webpage content. As part of this section, you learned how to set up conditional rendering using ternary operators to write simplified FL's conditions. 
+The second lesson focused on using assets in React.  Here, you learn the assets of files that your app needs at run-time, like images, style sheets, fonts, video, or audio. You learned how developers keep assets organized in React, and about some common ways to import asset files. 
+ 
+A common way to organize assets is to add an assets folder inside of the source folder, and keep all your app's assets there. Some assets can also be placed inside the public folder. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder. 
+ 
+In this part of the module, you learned how to use embedded assets, and about the advantages and disadvantages of embedding assets, as well as about the trade-offs inherent in using asset-heavy apps. 
+ 
+In the first ungraded lab of this lesson, you learned how to add an image from the assets folder that had already been added to the SRC folder. What's more, you also learned more about using audio and video assets in an app. Here you learned how to find suitable React packages to use when working with audio and video files. 
+ 
+You learned about three ways of adding videos to your apps; by serving a local video using the video elements, using embedded third-party videos. We're using a third-party NPM package to streamline the process of adding videos to your app. 
+ 
+Additionally, you learned what you can do to help you decide what package to use. You should check the frequency of updates, check the packages GitHub page, and perform an internet search for the package name. To help you become familiar with using such packages, you learned how to install a React player package, and use it to render a media player in a React app. 
+You learned how to apply common settings like automatic playback and starting volume. 
+ 
+Your final ungraded lab of the module was to finish an already-built app with a user interface that allows visitors to play bird sounds by pressing buttons. 
+  
+Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React. 
+Congratulations. You've now covered most of the basic concepts in React, and you're ready to complete this module's quiz and review the additional resources for this module. There's just one more module left before you complete this course. In the next module, you'll apply your knowledge by completing a mini-project in Reacts by building a calculator app.
+19. Additional resources
+Here is a list of resources that may be helpful as you continue your learning journey.
+•	webpack docs
+•	webpack asset management
+•	npm docs
+•	ReactPlayer on npm
+•	Video and audio content on the web
+
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Week 4</h3>
