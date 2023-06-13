@@ -6969,11 +6969,11 @@ across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p align="left" width="100%">
 <img src="/images/w2-s12-f.png?raw=true"
   alt="Complex components and React hooks."
   width="30%" />
-<p align="center" width="100%">
+<p align="right" width="100%">
 <img src="/images/w2-s12-g.png?raw=true"
   alt="Complex components and React hooks."
   width="30%" />
