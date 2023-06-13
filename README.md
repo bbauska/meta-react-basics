@@ -5,7 +5,7 @@ meta-react-basics: meta/Coursera - React Basics
 
 <h1 align="center" width="100%">meta (Coursera) / React Basics</h1>
 
-<h7 align="center">(meta-react-basics)</h7>
+<h6 align="center">(meta-react-basics)</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ readme.md in meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6829,7 +6829,6 @@ use of stateless and stateful examples by focusing on data flow.</p>
 money can be considered props. This money props is passed to you and
 becomes your money state. The money props always flow from your employer
 to you, never in the opposite direction.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w2-s11-c. data is passed parent to child (159) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7049,25 +7048,25 @@ get updated with the latest text that has been typed.</p>
   <summary>React</summary>
 
 ```
-1.	import { useState } from 'react';
-2.	
-3.	export default function InputComponent() { 
-4.	  const [inputText, setText] = useState('hello'); 
-5.	
-6.	  function handleChange(e) { 
-7.	    setText(e.target.value); 
+1.  import { useState } from 'react';
+2.
+3.  export default function InputComponent() {
+4.   const [inputText, setText] = useState('hello');
+5.
+6.	  function handleChange(e) {
+7.	    setText(e.target.value);
 8.	  }
-9.	 
-10.	  return ( 
-11.	    <> 
-12.	    <input value={inputText} onChange={handleChange} /> 
-13.	    <p>You typed: {inputText}</p> 
-14.	    <button onClick={() => setText('hello')}> 
-15.	      Reset 
-16.	    </button> 
-17.	    </> 
-18.	  ); 
-19.	} 
+9.
+10.	  return (
+11.	    <>
+12.	    <input value={inputText} onChange={handleChange} />
+13.	    <p>You typed: {inputText}</p>
+14.	    <button onClick={() => setText('hello')}>
+15.	      Reset
+16.	    </button>
+17.     </>
+18.	  );
+19. }
 ```
 
 </details>
@@ -7151,15 +7150,15 @@ registration form with fields for first name, last name and email.
   <summary>App.js</summary>
 
 ```
-1.	import { useState } from 'react'; 
-2.	
-3.	export default function RegisterForm() { 
-4.	  const [form, setForm] = useState({ 
-5.	    firstName: 'Luke', 
-6.	    lastName: 'Jones', 
-7.	    email: 'lukeJones@sculpture.com', 
-8.	  }); 
-9.	
+1.	import { useState } from 'react';
+2.
+3.	export default function RegisterForm() {
+4.	  const [form, setForm] = useState({
+5.	    firstName: 'Luke',
+6.	    lastName: 'Jones',
+7.	    email: 'lukeJones@sculpture.com',
+8.	  });
+9.
 10.	  return ( 
 11.	    <> 
 12.	      <label> 
@@ -7214,11 +7213,11 @@ registration form with fields for first name, last name and email.
 three text input field values:</p>
 
 ```
-1.	const[form, setForm] =useState({
-2.	  firstName:'Luke',
-3.	  lastName:'Jones',
-4.	  email:'lukeJones@sculpture.com',
-5.	});
+1. const[form, setForm] =useState({
+2.   firstName:'Luke',
+3.   lastName:'Jones',
+4.   email:'lukeJones@sculpture.com',
+5. });
 ```
 
 <p>You do not need to have three separate state variables in this case, and
@@ -7240,7 +7239,7 @@ When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
 The <b>ref</b> object has a property named <b>current</b>.
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>JS Function</summary>
 
 ```
 function TextInputWithFocusButton() {
