@@ -7640,6 +7640,7 @@ Instead, the component that needs the data simply gets it from the context API. 
 39.	
 40.	export default App;
 ```
+
 </details>
 
 <p>This app is simple enough that you should be able to understand it on your own. Let’s address the main points to highlight what is happening in the code above.</p>
@@ -7670,7 +7671,6 @@ Instead, the component that needs the data simply gets it from the context API. 
 </p>
 <p>The alert’s message reads “I passed through the Header and the Wrapper and I reached the Button component”.</p>
 <p>That’s really all there is to it. Props drilling simply means passing a prop through props objects through several layers of components. The more layers there are, the more repetitive and unnecessary this feels. There are various ways to deal with this, as you’ll learn in the lesson items that follow.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. React state management</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7729,7 +7729,6 @@ Now let's examine a simple app that utilizes the context API to control state. I
   alt="."
   width="80%" />
 </p>
-
 In the app components, I have import statements for meals provider and meals list. The meals provider provides contexts state data and gives it to all the components it wrapped inside the app components. Currently, it wraps two components, the meals list components and the counter components, which are between the div tags of the return  statements. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-g.  (1) ~~~~~~~~~~~-->
@@ -7739,9 +7738,10 @@ In the app components, I have import statements for meals provider and meals lis
   alt="."
   width="80%" />
 </p>
+The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements.
 
-The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements. The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the
-React.useContexts core and passing it to the meals contexts as its single argument. This makes it easier for me to destructure the meals objects from the use meals list context variable. 
+The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the React.useContexts core and passing it to the meals contexts as its single argument. This makes it easier for me to destructure the meals objects from the use meals list context variable. 
+
 Finally, in the meals list component, I'm accessing the context date by importing the use meals list context from the meals provider file. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-h.  (1) ~~~~~~~~~~~-->
@@ -7763,7 +7763,6 @@ This code is probably more complex than most of what you have encountered. Don't
   alt="."
   width="80%" />
 </p>
-
 Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-j.  (1) ~~~~~~~~~~~-->
@@ -7773,7 +7772,6 @@ Lastly, let's examine the counter component. Note that it gets the context data 
   alt="."
   width="80%" />
 </p>
-
 Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example. Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-k.  (1) ~~~~~~~~~~~-->
@@ -7925,6 +7923,7 @@ In this section (20), you learned why and when to utilize stateful or stateless 
   alt="."
   width="80%" />
 </p>
+
 <h4>Step 1.</h4>
 
 <p>Move the state from the Fruits component to the App component.</p>
@@ -8051,18 +8050,18 @@ That completes this ungraded lab's solution.
 <h2>23. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below you will find links to helpful additional resources.
-•	React docs website URL which discusses the issue in depth 
-•	Data flows down 
-•	The Power Of Not Mutating Data 
-•	Add Inverse Data Flow 
-•	Component state 
-•	State: A Component's Memory 
-•	Sharing State Between Components 
-•	State as a Snapshot 
-•	Basic useState examples 
-•	Synchronizing with effects - putting it all together 
-•	Fetch API 
-•	The event loop in JavaScript 
+  - React docs website URL which discusses the issue in depth
+  - Data flows down
+  - The Power Of Not Mutating Data
+  - Add Inverse Data Flow
+  - Component state
+  - State: A Component's Memory 
+  - Sharing State Between Components
+  - State as a Snapshot
+  - Basic useState examples
+  - Synchronizing with effects - putting it all together
+  - Fetch API
+  - The event loop in JavaScript
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Week 3 - Navigation, Updating and Assets in React.js</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8131,8 +8130,7 @@ When the user navigates to the web application in the browser, the Web Server wi
 Both approaches are valid and are used depending on the size, complexity and bandwidth requirements of the application. If your application is complex and has a lot of resources, your bundles will grow quite large and take a long time to download – possibly ending up slower than a traditional web application!
 Once the application is loaded, all logic and changes are applied to the current webpage.
 Let’s look at an example.
- 
- 
+
 An Example of a Single-Page App
 Imagine there is a webpage that has a Label and a Button. It will display a random movie name when the button is clicked.
 In a traditional website, when the button is clicked, the browser will send a POST request to the web server. The web server will return a new web page containing the button and movie name, and the web browser renders the new page.
@@ -8152,7 +8150,7 @@ A single-page application can’t have regular anchor tag elements as a traditio
 The reason for this is that the default behavior of an anchor tag is to load another HTML file from a server and refresh the page. This page refresh is not possible in a SPA that's powered by a library such as React because a total page refresh is not the way that a SPA works, as explained earlier in this lesson item. 
 Instead, a SPA comes with its own special implementation of anchor tags and links, which only give an illusion of loading different pages to the end user when in fact, they simply load different components into a single element of the real DOM into which the virtual DOM tree gets mounted and updated.
 That's why navigation in a single-page app is fundamentally different from its counterpart in a multi-page app. Understanding the concepts outlined in this lesson item will make you a more well-rounded React developer.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 03. The navbar
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page. 
@@ -8160,11 +8158,8 @@ By the end of this section (03), you'll know how to install the react-router lib
 Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component. 
 Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites. 
 However, I can make this possible with the help of another library known as React Router. 
-
-
  
 As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work. 
- 
  
 First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags. 
  
@@ -8181,7 +8176,7 @@ For Aboutme, the change is similar except that about-me appears after the forwar
 I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser. 
  
 In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 04. Solution: Creating a route
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the Contact.js file:
@@ -8191,7 +8186,11 @@ Here is the Contact.js file:
 2.	  return  <h1>Contact Little Lemon on this page.</h1>
 3.	}
 4.	export default Contact
+```
+
 Here is the completed App.js file:
+
+```
 1.	import "./App.css";
 2.	import Homepage from "./Homepage";
 3.	import AboutLittleLemon from "./AboutLittleLemon";
@@ -8222,6 +8221,7 @@ Here is the output from the completed solution code:
 
 Step 1
 First, you added a new file, Contact.js, to the root of the src folder. 
+
 Step 2
 Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace. 
 
@@ -8329,7 +8329,7 @@ Inside the Routes element, add a third route, with the path attribute pointing t
 
 Step 7
 You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 05. Conditional rendering
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render. 
@@ -8360,7 +8360,7 @@ While using the ternary operator is a common pattern that you'll see in react co
  
 So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach. 
 In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 06. Applying conditional rendering
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.
@@ -8452,7 +8452,7 @@ On the flip side, consider the following example:
 1.	false && console.log('This will never show')
 If you ran this command, the output will just be the boolean value of false.
 In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 07. Conditional components
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.
@@ -8502,7 +8502,7 @@ Then when the LogInOutButton parent component is used, the prop can be passed in
 ```
 
 This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 08. Single view conditional updates
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally. 
@@ -8516,7 +8516,7 @@ Notice the output of this code happy Monday.
 If I change the get hours value from 12 to 19 and save my code. Notice that a new message is displayed underneath the heading that reads have you had breakfast yet? That's all it takes to build quite a dynamic component that conditionally renders various kinds of strings in its return statement. 
  
 In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 09. Additional resources
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your learning journey.
@@ -8525,7 +8525,9 @@ Here is a list of resources that may be helpful as you continue your learning jo
 •	Conditional (ternary) operator in JavaScript 
 •	if...else 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 10. What is an asset and where does it live?
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app. 
  
 By the end of this section (10), you'll know what assets are and how developers keep them organized in React. You'll also learn some of the common ways to import asset files to be used in your React apps. 
@@ -8549,9 +8551,14 @@ You can call this almost anything you like. But it's best to stick to something 
 The next step is to create the function and write a return statement. Inside the return statement, you use the image tag and then set the source attribute to reference the asset's name, which is cat in curly braces. 
  
 Alternatively, instead of the asset name, you can reference the path to the assets folder relative to the component. You can do this with the require keyword as well as curly braces that encase the JSX Expression and act as delimiters. It's important to know that with this method, you no longer need the import statement. This is because you're using the required syntax right inside the JSX Expression that's assigned to the SRC JSX attribute. 
+
 In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 11. Bundling assets
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Earlier, you learned what assets are in React and the best practices for storing them in your project folders.
+
 In this section (11), you will learn about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You will also learn about the trade-offs inherent in using asset-heavy apps.
 The app’s files will likely be bundled when working with a React app. Bundling is a process that takes all the imported files in an app and joins them into a single file, referred to as a bundle. Several tools can perform this bundling. Since, in this course, you have used the create-react-app to build various React apps, you will focus on webpack. This is because webpack is the built-in tool for the create-react-app.
 Let’s start by explaining what webpack is and why you need it.
@@ -8580,17 +8587,23 @@ In turn, all the imported files might have their own imported files, and even th
 This means that depending on other files, all of these files can create a dependency graph. The order in which all these files are loading is essential. That dependency graph can get so complex that it becomes almost impossible for a human to structure a complex project and bundle all those dependencies properly.
 This is the reason you need tools like webpack.
 So, webpack builds a dependency graph and bundles modules into one or more files that a browser can consume.
+
 While it is doing that, it also does the following: 
-•	It converts modern JS code - which can only be understood by modern browsers - into older versions of JavaScript so that older browsers can understand your code. This process is known as transpiling. For example, you can transpile ES7 code to ES5 code using webpack.  
-•	It optimizes your code to load as quickly as possible when a user visits your web pages. 
-•	It can process your SCSS code into the regular CSS, which browsers can understand. 
-•	It can build source maps of the bundle's building blocks  
-•	It can produce various kinds of files based on rules and templates. This includes HTML files, among others. 
+  -	It converts modern JS code - which can only be understood by modern browsers - into older versions of JavaScript so that older browsers can understand your code. This process is known as transpiling.
+
+For example, you can transpile ES7 code to ES5 code using webpack.  
+  - It optimizes your code to load as quickly as possible when a user visits your web pages. 
+  - It can process your SCSS code into the regular CSS, which browsers can understand. 
+  - It can build source maps of the bundle's building blocks  
+  - It can produce various kinds of files based on rules and templates. This includes HTML files, among others. 
+
 Another significant characteristic of webpack is that it helps developers create modern web apps.
 It helps you achieve this using two modes: production mode or development mode.
 In development mode, webpack bundles your files and optimizes your bundles for updates - so that any updates to any of the files in your locally developed app are quickly re-bundled. It also builds source maps so you can inspect the original file included in the bundled code.
+
 In production mode, webpack bundles your files so that they are optimized for speed. This means the files are minified and organized to take up the least amount of memory. So, they are optimized for speed because these bundles are fast to download when a user visits the website online.
 Once all the source files of your app have been bundled into a single bundle file, then that single bundle file gets served to a visitor browsing the live version of your app online, and the entire app’s contents get served at once.
+
 This works great for smaller apps, but if you have a more extensive app, this approach is likely to affect your site’s speed. The longer it takes for a web app to load, the more likely the visitor will leave and move on to another unrelated website. There are several ways to tackle this issue of a large bundle.
 One such approach is code-splitting, a practice where a module bundler like webpack splits the single bundle file into multiple bundles, which are then loaded on an as-needed basis. With the help of code-splitting, you can lazy load only the parts that the visitor to the app needs to have at any given time. This approach significantly reduces the download times and allows React-powered apps to get much better speeds. 
 There are other ways to tackle these problems. 
@@ -8598,7 +8611,7 @@ An example of a viable alternative is SSR (Server-side rendering).
 With SSR, React components are rendered to HTML on the server, and the visitor downloads the finished HTML code. An alternative to SSR is client-side rendering, which downloads the index.html file and then lets React inject its own code into a dedicated HTML element (the root element in create-react-app). In this course, you’ve only worked with client-side rendering. 
 Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.
 In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 12. Using embedded assets
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (12), I'll demonstrate various ways of displaying images. You'll learn three different ways to display an image and react app specifically by using the import statement using the require function to set the file path, or by providing an image URL. 
@@ -8615,7 +8628,7 @@ Okay, so that's one way to import an image using the import statement. The secon
 Now I'll demonstrate the third way to import an image asset by loading an image file hosted on the internet. Instead of a local file, this time I want to display a random image URL from a photo hosting website. To do this, I create a variable by typing const than the variable name random image URL that I use the equals operator followed by the URL for the random image. I can now add my third image element inside the return statement. To do this, I add random image URL to the source attribute. 
  
 So there you have it. The three different ways to use image assets in a react component.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 13. Solution: Displaying images
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here's the completed App.js file:
@@ -8655,6 +8668,8 @@ First, you imported the logo image.
 
 Step 2
 Then, inside the return statement, you added the new img element, with the src attribute set to the JSX expression evaluating the logo value, and the alt attribute holding the string of "Logo".
+
+```
 1.	import logo from"./assets/logo.png"
 2.	
 3.	function App() {
@@ -8667,7 +8682,9 @@ Then, inside the return statement, you added the new img element, with the src a
 10.	};
 11.	
 12.	export default App;
+```
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 14. Audio and video
 Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices. 
  
@@ -8690,18 +8707,35 @@ An example of a package that fits all these criteria is the React player package
  
 When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one. 
 You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 15. Media packages
+
 In this section (15), you’ll learn how to install the reactjs-media npm package.
 You can find this package on the npmjs.org website at the following URL: 
 https://www.npmjs.com/package/react-player
+
 To install this package you'll need to use the following command in the terminal:
+
+```
 1.	npm install react-player
+```
+
 Once you have this package installed, you can start using it in your project.
 There are a few ways that you can import and use the installed package. For example, to get the entire package's functionality, use the following import:
+
+```
 1.	import ReactPlayer from "react-player";
+```
+
 If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:
+
+```
 1.	import ReactPlayer from "react-player/youtube";
+```
+
 Here’s an example of using the react-player packaged in a small React app:
+
+```
 1.	import React from "react";
 2.	import ReactPlayer from "react-player/youtube";
 3.	
@@ -8720,8 +8754,13 @@ Here’s an example of using the react-player packaged in a small React app:
 16.	};
 17.	
 18.	export default App;
+```
+
 In this section (15), you learned how to install and use the react-player npm package.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 16. Create an audio / video component
+
 By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume. 
  
 Let's examine another app that I've created using create react app. Currently it's pretty basic and only renders an 81 heading that reads React Player example, let's make that heading true by adding in a video player. 
@@ -8745,8 +8784,11 @@ Finally, you can find the projects get happy or L at dot com slash cook pete wit
 This page contains an about section on the right in which you'll find a link to the live demo on the link page. 
  
 You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video. In section 16 you learned how to install and use the react player package and change common settings for the react player
+
 17. Solution: Song selection
 Here's the completed App.js file:
+
+```
 1.	import React from "react"; 
 2.	
 3.	function App() { 
@@ -8786,10 +8828,14 @@ Here's the completed App.js file:
 35.	} 
 36.	
 37.	export default App;
+```
+
 Here is the output from the solution code for the App.js file:
  
 Step 1
 In this ungraded lab, your goal was to read through the existing code of the App.js file, and update the second button so that it's running the toggle2 function on a click to the second button. 
+
+```
 1.	import React from "react";
 2.	
 3.	function App() {
@@ -8821,8 +8867,12 @@ In this ungraded lab, your goal was to read through the existing code of the App
 27.	}
 28.	
 29.	export default App;
+```
+
 Step 2
 After adding the toggle2 function to the JSX expression in the second button's onClick event-handling attribute, you should have un-commented the bird2 variable on lines 9 to 11. 
+
+```
 1.	import React from "react";
 2.	
 3.	function App() {
@@ -8854,8 +8904,12 @@ After adding the toggle2 function to the JSX expression in the second button's o
 27.	}
 28.	
 29.	export default App;
+```
+
 Step 3
 Next, you needed to define the toggle2 function: it should have had the exact same functionality as the toggle1 function, but it needed to work with the bird2 variable (instead of the bird1 variable as it did in the toggle1 function). 
+
+```
 1.	import React from "react"; 
 2.	
 3.	function App() { 
@@ -8895,9 +8949,11 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 35.	} 
 36.	
 37.	export default App;
+```
 
-18. Module summary: Navigation, Updating and 
-     Assets in React.js
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+18. Module summary: Navigation, Updating and  Assets in React.js
+
 You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice. 
 The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component. 
  
@@ -8936,7 +8992,6 @@ Here is a list of resources that may be helpful as you continue your learning jo
 •	npm docs
 •	ReactPlayer on npm
 •	Video and audio content on the web
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Week 4</h3>
@@ -9806,7 +9861,7 @@ Lines 1-5 brings all the necessary pieces together:
 The remainder of the file brings all the pieces together and injects the
 final product into index.html in the public folder.
 
-<h4>Building the board 
+<h4>Building the board</h4>
 
 Let's get back to App.js. This is where you'll spend the rest of the
 tutorial.
@@ -9823,7 +9878,7 @@ export default function Square() {
 
 You'll get this error:
 
-<h4>Console
+<h4>Console</h4>
 
 /src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
 Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?
@@ -9957,13 +10012,13 @@ export default function Board() {
 
 </details>
 
-<h4>Note
+<h4>Note</h4>
 
 Psssst... That's a lot to type! It's okay to copy and paste code from
 this page. However, if you're up for a little challenge, we recommend
 only copying code that you've manually typed at least once yourself.
 
-<h4>Passing data through props 
+<h4>Passing data through props</h4>
 
 Next, you'll want to change the value of a square from empty to "X" when
 the user clicks on the square. With how you've built the board so far
@@ -10170,7 +10225,7 @@ export default function Board() {
 
 </details>
 
-<h4>Making an interactive component 
+<h4>Making an interactive component</h4>
 
 Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
@@ -10223,12 +10278,10 @@ that calls useState. Have it return a state variable called value:
 import { useState } from 'react';
 
 function Square() {
+  const [value, setValue] = useState(null);
 
-const [value, setValue] = useState(null);
-
-function handleClick() {
-
-//...
+  function handleClick() {
+    //...
 ```
 
 value stores the value and setValue is a function that can be used to
@@ -10867,12 +10920,12 @@ array:
 
 ```
  const squares = [null, null, null, null, null, null, null, null,
- null];
+   null];
 
  squares[0] = 'X';
 
  // Now `squares` is ["X", null, null, null, null, null, null,
- null, null];
+   null, null];
 ```
 
 And here is what it would look like if you changed data without mutating
@@ -10880,13 +10933,13 @@ the squares array:
 
 ```
  const squares = [null, null, null, null, null, null, null, null,
- null];
+   null];
 
  const nextSquares = ['X', null, null, null, null, null, null, null,
- null];
+   null];
 
  // Now `squares` is unchanged, but `nextSquares` first element is
- 'X' rather than `null`
+   'X' rather than `null`
 ```
 
 The result is the same but by not mutating (changing the underlying
@@ -11143,155 +11196,89 @@ Here is what the code should look like:
 
 ```
  import { useState } from 'react';
+
  function Square({value, onSquareClick}) {
-
- return (
-
- <button className="square" onClick={onSquareClick}>
-
- {value}
-
- </button>
-
- );
-
+   return (
+     <button className="square" onClick={onSquareClick}>
+       {value}
+     </button>
+   );
  }
-
  export default function Board() {
+   const [xIsNext, setXIsNext] = useState(true);
+   const [squares, setSquares] = useState(Array(9).fill(null));
 
- const [xIsNext, setXIsNext] = useState(true);
+   function handleClick(i) {
+     if (calculateWinner(squares) || squares[i]) {
+       return;
+     }
+     const nextSquares = squares.slice();
+     if (xIsNext) {
+       nextSquares[i] = 'X';
+     } else {
+       nextSquares[i] = 'O';
+     }
+     setSquares(nextSquares);
+     setXIsNext(!xIsNext);
+   }
+   const winner = calculateWinner(squares);
+   let status;
+   if (winner) {
+     status = 'Winner: ' + winner;
+     } else {
+     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
+     }
+     return (
+       <>
+       <div className="status">{status}</div>
+       <div className="board-row">
+         <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+          />
+         <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+          />
+         <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+          />
+       </div>
+       <div className="board-row">
+         <Square value={squares[3]} onSquareClick={() => handleClick(3)}
+         />
+         <Square value={squares[4]} onSquareClick={() => handleClick(4)}
+         />
+         <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+         />
+       </div>
+       <div className="board-row">
+         <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+         />
+         <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+         />
+         <Square value={squares[8]} onSquareClick={() => handleClick(8)}
+         />
+       </div>
+       </>
+     );
+   }
 
- const [squares, setSquares] = useState(Array(9).fill(null));
-
- function handleClick(i) {
-
- if (calculateWinner(squares) || squares[i]) {
-
- return;
-
- }
-
- const nextSquares = squares.slice();
-
- if (xIsNext) {
-
- nextSquares[i] = 'X';
-
- } else {
-
- nextSquares[i] = 'O';
-
- }
-
- setSquares(nextSquares);
-
- setXIsNext(!xIsNext);
-
- }
-
- const winner = calculateWinner(squares);
-
- let status;
-
- if (winner) {
-
- status = 'Winner: ' + winner;
-
- } else {
-
- status = 'Next player: ' + (xIsNext ? 'X' : 'O');
-
- }
-
- return (
-
- <>
-
- <div className="status">{status}</div>
-
- <div className="board-row">
-
- <Square value={squares[0]} onSquareClick={() => handleClick(0)}
- />
-
- <Square value={squares[1]} onSquareClick={() => handleClick(1)}
- />
-
- <Square value={squares[2]} onSquareClick={() => handleClick(2)}
- />
-
- </div>
-
- <div className="board-row">
-
- <Square value={squares[3]} onSquareClick={() => handleClick(3)}
- />
-
- <Square value={squares[4]} onSquareClick={() => handleClick(4)}
- />
-
- <Square value={squares[5]} onSquareClick={() => handleClick(5)}
- />
-
- </div>
-
- <div className="board-row">
-
- <Square value={squares[6]} onSquareClick={() => handleClick(6)}
- />
-
- <Square value={squares[7]} onSquareClick={() => handleClick(7)}
- />
-
- <Square value={squares[8]} onSquareClick={() => handleClick(8)}
- />
-
- </div>
-
- </>
-
- );
-
- }
-
- function calculateWinner(squares) {
-
- const lines = [
-
- [0, 1, 2],
-
- [3, 4, 5],
-
- [6, 7, 8],
-
- [0, 3, 6],
-
- [1, 4, 7],
-
- [2, 5, 8],
-
- [0, 4, 8],
-
- [2, 4, 6],
-
- ];
-
- for (let i = 0; i < lines.length; i++) {
-
- const [a, b, c] = lines[i];
-
- if (squares[a] && squares[a] === squares[b] && squares[a] ===
- squares[c]) {
-
- return squares[a];
-
- }
-
- }
-
- return null;
-
- }
+   function calculateWinner(squares) {
+     const lines = [
+       [0, 1, 2],
+       [3, 4, 5],
+       [6, 7, 8],
+       [0, 3, 6],
+       [1, 4, 7],
+       [2, 5, 8],
+       [0, 4, 8],
+       [2, 4, 6],
+     ];
+      for (let i = 0; i < lines.length; i++) {
+        const [a, b, c] = lines[i];
+      if (squares[a] && squares[a] === squares[b] && squares[a] ===
+        squares[c]) {
+      return squares[a];
+    }
+  }
+  return null;
+}
 ```
 
 </details>
@@ -12738,4 +12725,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>Tuesday 6/13/2023 12:30pm</h6>
+<h6>Tuesday 6/13/2023 8:13pm</h6>
