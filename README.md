@@ -86,7 +86,7 @@ In this course, you'll be introduced to the basics of working with React.
 <p align="center" width="100%">
 <img src="/images/w1-s01-a.png?raw=true"
   alt="Develop a working familiarity with a basic structure of react javascript library."
-  width="40%" />
+  width="30%" />
 </p>
 <!-- width="4.0in" height="2.5479451006124236in"} -->
 
@@ -263,7 +263,7 @@ interface using React.
 This course consists of <b>4 (four)</b> modules. They cover the following
 topics:
 
-<h3><b>Module 1: Anatomy of React</b></h3>
+<h3>Module 1: Anatomy of React</h3>
 
 React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.
@@ -295,7 +295,7 @@ By the end of this module (one) you will be able to:
   <li>Use and manipulate props and components to effect visual results.</li>
 </ul>
 
-<h3><b>Module 2: Data and State</b></h3>
+<h3>Module 2: Data and State</h3>
 
 The second module of this course deals with working with <b>events</b> and
 <b>errors</b> in React. You'll learn how <b>events</b> work and how you can
@@ -315,7 +315,7 @@ By the end of this module (two) you will be able to:
     required to handle them.</li>
 </ul>
 
-<h3><b>Module 3: Navigation Updating and Assets in React</b></h3>
+<h3>Module 3: Navigation Updating and Assets in React</h3>
 
 In this module (three), you'll learn about routing and navigation in
 React. You'll learn how to render partial views and how to update
@@ -336,7 +336,7 @@ By the end of this module (three) you will be able to:
     multi-page navigation.</li>
 </ul>
 
-<h3><b>Module 4: Portfolio Mini-Project (Calculator App)</b></h3>
+<h3>Module 4: Portfolio Mini-Project (Calculator App)</h3>
 
 <p>This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
@@ -568,7 +568,7 @@ This section (05) will cover the three main concepts:</p>
   <li>Module imports.</li>
 </ol>
 
-<h3><b>JavaScript Modules</b></h3>
+<h3>JavaScript Modules</h3>
 
 In JavaScript, a module is simply a <b>file</b>.
 
@@ -594,7 +594,7 @@ How would you make this file a JavaScript module?
 All that you would need to do to make it a JavaScript module is use the
 export syntax.
 
-<h3><b>Module Exports</b></h3>
+<h3>Module Exports</h3>
 
 There is more than one way to export a module in JavaScript.
 
@@ -608,7 +608,7 @@ In general, there are two ways to export modules in JavaScript:
 
 2.  Using named exports 
 
-<h3><b>Default Exports</b></h3>
+<h3>Default Exports</h3>
 
 You can have <b>one default export</b> per JavaScript module.
 
@@ -634,7 +634,7 @@ function addTwo(a, b) {
 export default addTwo;
 ```
 
-<h3><b>Named Exports</b></h3>
+<h3>Named Exports</h3>
 
 Named exports are a way to export only certain parts of a given
 JavaScript file.
@@ -684,7 +684,7 @@ function addThree(a + b + c) {
 export { addTwo, addThree };
 ```
 
-<h3><b>Importing Modules</b></h3>
+<h3>Importing Modules</h3>
 
 Just like when exporting modules in JavaScript, there are several ways
 to import them.
@@ -699,7 +699,7 @@ The first module is <b>addTwo.js</b> and the second module is
 You want to import the <b>addTwo.js</b> module into the
 <b>mathOperations.js</b> module.
 
-<h3><b>Importing a Module that was Exported as Default</b></h3>
+<h3>Importing a Module that was Exported as Default</h3>
 
 Consider the previous example of exporting the <b>addTwo</b> function as a
 default module:
@@ -737,7 +737,7 @@ import { addTwo } from "./addTwo";
 // the rest of the mathOperations.js code goes here
 ```
 
-<h3><b>Conclusion</b></h3>
+<h3>Conclusion</h3>
 
 In this section (5), you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
@@ -4342,7 +4342,7 @@ render the <b>Nav</b> component. It's still the same:
 
 You can also take this concept a step further, using arrow functions.
 
-<h3><b>Components as Arrow Functions</b></h3>
+<h3>Components as Arrow Functions</h3>
 
 Arrow functions are a core feature of the ES6 version of JavaScript.
 
@@ -4430,7 +4430,7 @@ Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
 cases.
 
-<h3><b>Using Arrow Functions in Other Situations</b></h3>
+<h3>Using Arrow Functions in Other Situations</h3>
 
 In React, just like in plain JavaScript, arrow functions can be used in
 many different situations. One such situation is using it with, for
@@ -4714,7 +4714,7 @@ let name = 'Bob';
 name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
 ```
 
-<h3><b>Using ternary expressions in JSX</b></h3>
+<h3>Using ternary expressions in JSX</h3>
 
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
@@ -4754,7 +4754,7 @@ expression.
 This is how you can use a ternary expression to check for a condition
 right inside a component and return a value dynamically.
 
-<h3><b>Using function calls in JSX</b></h3>
+<h3>Using function calls in JSX</h3>
 
 Another way to work with an expression in JSX is to invoke a function.
 Function invocation is an expression because every expression returns a
@@ -9779,7 +9779,7 @@ the Course.
 
 <h3>Quick Start</h3>
 
-<h3>You will learn</h3>
+<h3>You will learn:</h3>
 
 <ul>
   <li>How to create and nest components,<br></li>
@@ -9882,7 +9882,7 @@ function AboutPage() {
 
 If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
 
-<h3>Adding styles 
+<h3>Adding styles</h3>
 
 In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">
 [class] attribute:</a>
@@ -10034,7 +10034,7 @@ const products = [
 ```
 
 Inside your component, use the map() function to transform an array of
-products into an array of <li> items:
+products into an array of &lt;li&gt; items:
 
 ```
 const listItems = products.map(product =>
@@ -12132,15 +12132,13 @@ the game information you'll add to the board later.
 Add some state to the Game component to track which player is next and
 the history of moves:
 
-```
-export default function Game() {
+```export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
 
 const [history, setHistory] = useState([Array(9).fill(null)]);
 
-// ...
-```
+// ...```
 
 Notice how [Array(9).fill(null)] is an array with a single item, which
 itself is an array of 9 nulls.
@@ -12149,8 +12147,7 @@ To render the squares for the current move, you'll want to read the last
 squares array from the history. You don't need useState for this--you
 already have enough information to calculate it during rendering:
 
-```
-export default function Game() {
+```export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
 
@@ -12158,8 +12155,7 @@ const [history, setHistory] = useState([Array(9).fill(null)]);
 
 const currentSquares = history[history.length - 1];
 
-// ...
-```
+// ...```
 
 Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
@@ -12168,8 +12164,7 @@ currentSquares and handlePlay as props to the Board component:
 <details>
   <summary>JS Functions</summary>
 
-```
-export default function Game() {
+```export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
@@ -12185,8 +12180,7 @@ export default function Game() {
     />
       //...
   )
-}
-```
+}```
 
 </details>
 
@@ -12196,15 +12190,13 @@ squares, and a new onPlay function that Board can call with the updated
 squares array when a player makes a move. Next, remove the first two
 lines of the Board function that call useState:
 
-```
-function Board({ xIsNext, squares, onPlay }) {
+```function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     //...
   }
     // ...
-}
-```
+}```
 
 Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
@@ -12213,8 +12205,7 @@ Game component can update the Board when the user clicks a square:
 <details>
   <summary>JS Functions</summary>
 
-```
-function Board({ xIsNext, squares, onPlay }) {
+```function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -12229,8 +12220,7 @@ function Board({ xIsNext, squares, onPlay }) {
     onPlay(nextSquares);
   }
   //...
-}
-```
+}```
 
 </details>
 
@@ -12249,16 +12239,14 @@ information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
 just as Board used to do:
 
-```
-export default function Game() {
+```export default function Game() {
   //...
   function handlePlay(nextSquares) {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   }
     //...
-}
-```
+}```
 
 Here, [...history, nextSquares] creates a new array that contains all
 the items in history, followed by nextSquares. (You can read the
@@ -12277,8 +12265,7 @@ is what the code should look like at this point:
 <details>
   <summary>App.js</summary>
 
-```
-  import { useState } from 'react';
+```  import { useState } from 'react';
   function Square({ value, onSquareClick }) {
     return (
       <button className="square" onClick={onSquareClick}>
@@ -12309,8 +12296,7 @@ is what the code should look like at this point:
   return (
     <>
     <div className="status">{status}</div>
-    <div className="board-row">
-```
+    <div className="board-row">```
 
 </details>
 
@@ -12328,9 +12314,7 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-```
-[1, 2, 3].map((x) => x * 2) // [2, 4, 6]
-```
+```[1, 2, 3].map((x) => x * 2) // [2, 4, 6]```
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
@@ -12339,8 +12323,7 @@ representing buttons on the screen, and display a list of buttons to
 <details>
   <summary>JavaScript Functions</summary>
 
-```
-export default function Game() {
+```export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
@@ -12375,8 +12358,7 @@ export default function Game() {
       </div>
     </div>
   );
-}
-```
+}```
 
 </details>
 
@@ -13456,14 +13438,12 @@ sandbox!
 
 <h4>App.js</h4>
 
-```
-function Greeting({ name }) {
+```function Greeting({ name }) {
   return <h1>Hello, {name}</h1>;
 }
 export default function App() {
   return <Greeting name="world" />
-}
-```
+}```
 
 You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.
@@ -13494,5 +13474,5 @@ If want to try using React in your existing app or a website, <a href="https://r
 
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
-End. . .
-<h6>Tuesday 6/14/2023 9:0am</h6>
+end. . .
+<h6>Wednesday 6/14/2023 9:00am</h6>
