@@ -2959,7 +2959,7 @@ export default App;
 
 Here is a screenshot of the src folder:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ w1-s17-a. app, heading and index files displayed in src folder (73) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w1-s17-a. app, heading and index files displayed in src folder (73) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s17-a.png?raw=true"
@@ -3049,67 +3049,64 @@ By now, you should be familiar with the concept of functional components in Reac
 They are reusable blocks of code that act much like a JavaScript function.
 <br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-a.  (74) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-a. react javascript function (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-a.png?raw=true"
-  alt="."
+  alt="React function props."
   width="70%" />
 </p>
-
 Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
 arguments when you call the function. Well, in React, you can perform a
 similar action using something called properties, which are represented
 as props.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-b.  (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-b. prop example object (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-b.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="Props object in React functions."
+  width="40%" />
 </p>
-
-In this section (19), you will learn about the props object and how
+<p>In this section (19), you will learn about the props object and how
 developers use it to pass data from one component to another. Then
 you'll explore component hierarchy and learn why components are set to
-have a parent-child structure.
-
-Before you begin your journey with props, let's revisit another piece
+have a parent-child structure.</p>
+<p>Before you begin your journey with props, let's revisit another piece
 of JavaScript functionality that will help you understand how props
 work. It's called the JavaScript object. Recall this in JavaScript, an
-object is a special type of variable that can contain many values.
+object is a special type of variable that can contain many values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-c.  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-c. object property (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-c.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="Object properties in React."
+  width="40%" />
 </p>
 You use objects when you need to store groups of related data of
 different types. Each data type is known as an object property, for
 example, suppose you create an object called fruits that contains
 properties for type, quantity, and color.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-d.  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-d. object with name-value pairs (76) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-d.png?raw=true"
-  alt="."
-  width="40%" />
+  alt="Objects with name-value pairs using dot notation."
+  width="70%" />
 </p>
 
 Remember that these properties consist of name-value pairs, and you can
 access the object's properties using dot notation.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-e.  (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-e. react props (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-c.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="React props."
+  width="40%" />
 </p>
 
 In React, you can use a similar technique to pass data from one
@@ -3122,27 +3119,25 @@ Inside the function, you use the keyword props. Now that you're
 familiar with the concept of props, let's explore an example to send
 some props to a component and print them out in a React app.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-f.  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-f. render app in index.js  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-f.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="Render app in index.js."
+  width="40%" />
 </p>
-
-Suppose you have the default code for the React app open in the index.js
+<p>Suppose you have the default code for the React app open in the index.js
 file, you call the app component. Inside the app component, you return
 an h1 heading with some static title text. While this code works, you
-can make this heading dynamic by using props.
+can make this heading dynamic by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-g.  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-g. index and app.js (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-g.png?raw=true"
-  alt="."
+  alt="Index.js and App.js."
   width="70%" />
 </p>
-
 Let's now explore the syntax involved to create this. In the root
 component, index.js, you send the value you want to pass to the app
 component as an argument in the form of an HTML attribute. Next, in the
@@ -3152,65 +3147,57 @@ the parentheses. Finally, to access this object's properties, you use
 dots notation to reference the name of the object property that was
 passed as an argument by the HTML attribute.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-h.  (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-h. app.js with props title (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-h.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="App.js with props title."
+  width="40%" />
 </p>
-
-Once again, remember to enclose your code inside curly brackets so React
-knows that you want to work with the props object and not static text.
-
-Because props is essentially a JavaScript object, it can accept many
+<p>Once again, remember to enclose your code inside curly brackets so React
+knows that you want to work with the props object and not static text.</p>
+<p>Because props is essentially a JavaScript object, it can accept many
 data types ranging from simple types such as strings and integers to
 more complex types such as functions, arrays, and objects. As a result,
 props allow developers to have greater flexibility when creating and
 working with components, especially when you want the flow of data in
-your app to be dynamic.
-
-While you just explore the basic example to dynamically print a heading,
+your app to be dynamic.</p>
+<p>While you just explore the basic example to dynamically print a heading,
 you'll get a chance to practice with more complex data structures using
-props later.
-
-Now you're familiar with how props work by sending data between
-components. Let's explore this data flow in a little more detail.
-
-When two components communicate with each other, the component sending
+props later.</p>
+<p>Now you're familiar with how props work by sending data between
+components. Let's explore this data flow in a little more detail.</p>
+<p>When two components communicate with each other, the component sending
 the props data is known as the parent, and the component receiving the
-props data is known as the child.
+props data is known as the child.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-i.  (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w1-s19-i. parent to multiple child components (78) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-i.png?raw=true"
-  alt="."
+  alt="Parent-Children passing data using props."
   width="70%" />
 </p>
-
-As you've just learned with the example earlier, this parent-child
+<p>As you've just learned with the example earlier, this parent-child
 relationship allows parent components of past data down to child
-components using props.
-
-It's also possible for parent components to send the same data to
+components using props.</p>
+<p>It's also possible for parent components to send the same data to
 multiple child components. However, it's important to know that this
 communication is a one-directional data flow. It's not possible to
 communicate from the child component back to the parent components using
 props. Instead, developers use other approaches. Don't worry about that
-for now. You will learn more about them later.
-
-Although props are a very powerful tool in React, they do have some
+for now. You will learn more about them later.</p>
+<p>Although props are a very powerful tool in React, they do have some
 limitations. For example, you just learned about how it's not possible
 to send data from the child component back to the parent component using
-prompts.
+prompts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-j.  (79) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-j. pure functions - same (79) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s19-j.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="Pure Function - Always returns same output for same argument value."
+  width="60%" />
 </p>
 
 Another important limitation has to do with something called pure
@@ -3532,7 +3519,6 @@ props objects.
 
 You should now be able to effectively demonstrate the passing of props to and within 
 a component using classes and functions.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Passing props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3565,9 +3551,9 @@ function Heading(props) {
 export default Heading;
 ```
 
-Here is the output from the solution code for the App.js file:
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s22-a. output of 'passing props' exercise (0x) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w1-s22-a. output of 'passing props' exercise (88) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s22-a.png?raw=true"
@@ -3673,7 +3659,7 @@ components and styling.  You'll also learn how to mix JavaScript, HTML, and
 CSS within a component.<br>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-a.  (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-a. jsx - write html in javascript (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-a.png?raw=true"
@@ -3686,29 +3672,28 @@ using a very expressive syntax, almost identical to HTML or XML.<br>
 In other words, JSX allows developers to write HTML directly inside the
 JavaScript code. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-b.  (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-b. nav component with unordered list (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-b.png?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
   width="60%" />
 </p>
-For example, you can add navigation function to a website by creating a nav component. 
+<p>For example, you can add navigation function to a website by creating a nav component. 
 Then place the HTML semantic nav element, and an unordered list inside. 
 Because this is React, the list values can be made dynamic by passing values as props. It 
 is important to note that a regular JavaScript function is used to define how React
 should render the component wherever it's referenced using the nav JSX
 elements. This is what makes JSX so powerful, like the fact that you can
-insert specific JSX expressions such as variables and props. The reason
-why this is so great to work with, is because anything that's placed
-inside the curly braces of the code is essentially regular JavaScript
-code. 
+insert specific JSX expressions such as variables and props.</p>
+<p> The reason why this is so great to work with, is because anything that's placed
+inside the curly braces of the code is essentially regular JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-c.  (91) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-c. jsx component syntax (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-c.png?raw=true"
-  alt="Output of the completed 'Passing Props' exercise."
+  alt="JSX component syntax."
   width="60%" />
 </p>
 For example, you could calculate a series of simple expressions
@@ -3717,11 +3702,11 @@ curly braces as being special areas where you can write any kind of
 JavaScript code you like. You can write the rest of the code inside the
 return statement. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-d.  (91) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-d. jsx return statement (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-d.png?raw=true"
-  alt="Output of the completed 'Passing Props' exercise."
+  alt="JSX return statement."
   width="60%" />
 </p>
 Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
@@ -3733,7 +3718,7 @@ But if you need to return HTML code over multiple lines, it must be placed insid
 This allows developers to alternate between regular HTML tags, and dynamic
 values represented as JSX expressions inside curly braces. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e.  (92) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-e.png?raw=true"
@@ -3741,7 +3726,7 @@ values represented as JSX expressions inside curly braces.
   width="60%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-f.  (92) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ w1-s23-f. jsx return command less than and greater to (92) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-f.png?raw=true"
