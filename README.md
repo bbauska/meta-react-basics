@@ -3376,7 +3376,7 @@ This makes the app more versatile, helping it consume data easier.<br>
 <p align="center" width="100%">
 <img src="/images/w1-s21-a.png?raw=true"
   alt="."
-  width="70%" />
+  width="30%" />
 </p>
 
 In this section (21) you'll learn the syntax involved to use props and
@@ -3391,7 +3391,7 @@ react using components.<br>
 <p align="center" width="100%">
 <img src="/images/w1-s21-b.png?raw=true"
   alt="."
-  width="70%" />
+  width="30%" />
 </p>
 
 Now you'll be introduced to a new component called the Nav component.
