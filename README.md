@@ -8067,7 +8067,7 @@ In this module (three) you will explore the basics of single and
 multi-page navigation, as well as the conditional rendering or changing
 of content in response to user status or choice.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-01. Basic Types of navigation
+<h2>01. Basic Types of navigation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the early days of the web, there were no true standards for design, which meant that developers were often very experimental. There were various designs and experiments, but ultimately, the web development community settled on a few best practices. Today, the web is a mature medium. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8206,7 +8206,7 @@ Once again, you add this using the import statement and you'll learn more about 
 
 In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-02. Navigation
+<h2>02. Navigation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (02), you’ll learn about the differences between traditional web pages and React-powered web pages (SPAs – single page applications).
 Once you understand the difference between these two ways of building web pages, you will be able to understand the necessary difference between how navigation works in traditional web apps versus how it works in modern SPA websites.
@@ -8275,7 +8275,7 @@ The reason for this is that the default behavior of an anchor tag is to load ano
 Instead, a SPA comes with its own special implementation of anchor tags and links, which only give an illusion of loading different pages to the end user when in fact, they simply load different components into a single element of the real DOM into which the virtual DOM tree gets mounted and updated.
 That's why navigation in a single-page app is fundamentally different from its counterpart in a multi-page app. Understanding the concepts outlined in this lesson item will make you a more well-rounded React developer.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-03. The navbar
+<h2>03. The navbar</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8390,7 +8390,7 @@ I also need to import link from react-router-dom and save my changes. Now when I
 </p>
 In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-04. Solution: Creating a route
+<h2>04. Solution: Creating a route</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the Contact.js file:
 
@@ -8551,7 +8551,7 @@ Inside the Routes element, add a third route, with the path attribute pointing t
 Step 7
 You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-05. Conditional rendering
+<h2>05. Conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8663,7 +8663,7 @@ While using the ternary operator is a common pattern that you'll see in react co
 So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach. 
 In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-06. Applying conditional rendering
+<h2>06. Applying conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.
 Consider a minimalistic productivity app.
@@ -8755,7 +8755,7 @@ On the flip side, consider the following example:
 If you ran this command, the output will just be the boolean value of false.
 In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-07. Conditional components
+<h2>07. Conditional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.
 This is often done using something called conditional rendering.
@@ -8805,7 +8805,7 @@ Then when the LogInOutButton parent component is used, the prop can be passed in
 
 This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-08. Single view conditional updates
+<h2>08. Single view conditional updates</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8844,7 +8844,7 @@ If I change the get hours value from 12 to 19 and save my code. Notice that a ne
 </p>
 In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-09. Additional resources
+<h2>09. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your learning journey.
 •	React Router v6 
@@ -8853,7 +8853,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
 •	if...else 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-10. What is an asset and where does it live?
+<h2>10. What is an asset and where does it live?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8953,7 +8953,7 @@ Alternatively, instead of the asset name, you can reference the path to the asse
 In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-11. Bundling assets
+<h2>11. Bundling assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Earlier, you learned what assets are in React and the best practices for storing them in your project folders.
 
@@ -9010,7 +9010,7 @@ With SSR, React components are rendered to HTML on the server, and the visitor d
 Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.
 In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-12. Using embedded assets
+<h2>12. Using embedded assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (12), I'll demonstrate various ways of displaying images. You'll learn three different ways to display an image and react app specifically by using the import statement using the require function to set the file path, or by providing an image URL. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9068,7 +9068,7 @@ Now I'll demonstrate the third way to import an image asset by loading an image 
 </p>
 So there you have it. The three different ways to use image assets in a react component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-13. Solution: Displaying images
+<h2>13. Solution: Displaying images</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here's the completed App.js file:
 
@@ -9132,7 +9132,7 @@ Then, inside the return statement, you added the new img element, with the src a
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-14. Audio and video
+<h2>14. Audio and video</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9212,7 +9212,7 @@ An example of a package that fits all these criteria is the React player package
 When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one. 
 You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-15. Media packages
+<h2>15. Media packages</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (15), you’ll learn how to install the reactjs-media npm package.
 You can find this package on the npmjs.org website at the following URL: 
@@ -9263,7 +9263,7 @@ Here’s an example of using the react-player packaged in a small React app:
 In this section (15), you learned how to install and use the react-player npm package.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-16. Create an audio / video component
+<h2>16. Create an audio / video component</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9339,9 +9339,8 @@ This page contains an about section on the right in which you'll find a link to 
   width="40%" />
 </p>
 You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video. In section 16 you learned how to install and use the react player package and change common settings for the react player
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-17. Solution: Song selection
+<h2>17. Solution: Song selection</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here's the completed App.js file:
 
@@ -9517,7 +9516,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-18. Module summary: Navigation, Updating and  Assets in React.js
+<h2>18. Module summary: Navigation, Updating and  Assets in React.js</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice. 
 The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component. 
@@ -9650,7 +9649,9 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 </p>
 Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React. 
 Congratulations. You've now covered most of the basic concepts in React, and you're ready to complete this module's quiz and review the additional resources for this module. There's just one more module left before you complete this course. In the next module, you'll apply your knowledge by completing a mini-project in Reacts by building a calculator app.
-19. Additional resources
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>19. Additional resources</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your learning journey.
 •	webpack docs
 •	webpack asset management
@@ -9659,10 +9660,120 @@ Here is a list of resources that may be helpful as you continue your learning jo
 •	Video and audio content on the web
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Week 4</h3>
+<h1>Week 4 - Course recap</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Your first React app</h3>
+<h2>01. Course recap: React Basics</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w4-s01-a.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<p align="center" width="100%">
+<img src="/images/w4-s01-b.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals. 
 
+You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w4-s01-c.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<p align="center" width="100%">
+<img src="/images/w4-s01-d.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+
+In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes. 
+Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w4-s01-e.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+<p align="center" width="100%">
+<img src="/images/w4-s01-f.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+  
+You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed. 
+You were also introduce to hooks and now that you can use them to extend the functionality of state, and you were able to identify some common use cases for stateful and stateless components. 
+In the third module, you were introduced to navigation, updating, and assets in React. By completing the first lesson, you can now identify the basic types of navigation on websites. Create a basic navigation routes within React router library. Explain how components can be rendered conditionally. Use several different approaches to set up conditional rendering logic. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w4-s01-g.png?raw=true"
+  alt="."
+  width="30%" />
+</p>
+In the final lesson of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components. 
+You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>02. Exemplar: Build a calculator app</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+I'll now demonstrate how you can use react to build a simple calculator app that is able to perform addition, subtraction, multiplication and division operations. I have some code for this app already written. However, because it's incomplete, it encounters problems when it compiles. 
+
+<p align="center" width="100%">
+<img src="/images/w4-s02-a.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+The first problem is that useRef is not defined. So I'll import to useRef to fix that issue and then press control s to recompile. 
+<p align="center" width="100%">
+<img src="/images/w4-s02-b.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+The second problem is that the useState hook is not defined so let's import that as well. And when I recompile once more, the problems should be resolved. 
+<p align="center" width="100%">
+<img src="/images/w4-s02-c.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+So the structure of the app is there but currently, it can only perform addition so I need to add the other functionalities. Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable. I can use this as a template for the other functions I will write. So I will copy and paste this code into the functions I've started. In the minus function, I update result plus number to result minus number so that it subtracts whatever is in the input. In the times function I update the same snippet to result asterisk number. 
+And finally, for the divide function, I use the divide operator or forward slash to make it result slash number. Now, I also have two functions called reset input which sets the input value to zero and reset results which sets the result value to zero as well. 
+<p align="center" width="100%">
+<img src="/images/w4-s02-d.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that. 
+<p align="center" width="100%">
+<img src="/images/w4-s02-e.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes. 
+<p align="center" width="100%">
+<img src="/images/w4-s02-f.png?raw=true"
+  alt="."
+  width="60%" />
+</p>
+
+I'm ready to test out my app so I type 2 in the input fields and then click on the add button. The result changes from 0 to 2 and then adding 2 again, updates it to 4. Next, if I type 1 and then click on subtract, the result becomes 3. If I enter 10 in the input field and click on multiply, I end up with 30 as the new result. And now, if I type 6 and click on divide, I get a value of 5. 
+Finally, I can click reset inputs to set the value in the input field to 0. As well as click reset results to clear the results and bring it back to 0, and that's it. My code is complete and my app works as per the requirements.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Your first React app</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this module (four), you will be assessed on the key skills covered in
 the Course.
 
@@ -11700,19 +11811,13 @@ square is already filled, you will return in the handleClick function
 early--before it tries to update the board state.
 
 ```
- function handleClick(i) {
-
- if (squares[i]) {
-
- return;
-
- }
-
- const nextSquares = squares.slice();
-
- //...
-
- }
+function handleClick(i) {
+  if (squares[i]) {
+    return;
+  }
+  const nextSquares = squares.slice();
+  //...
+}
 ```
 
 Now you can only add X's or O's to empty squares! Here is what your code
@@ -11860,85 +11965,85 @@ Here is what the code should look like:
   <summary>App.js</summary>
 
 ```
- import { useState } from 'react';
+import { useState } from 'react';
 
- function Square({value, onSquareClick}) {
-   return (
-     <button className="square" onClick={onSquareClick}>
-       {value}
-     </button>
-   );
- }
- export default function Board() {
-   const [xIsNext, setXIsNext] = useState(true);
-   const [squares, setSquares] = useState(Array(9).fill(null));
+function Square({value, onSquareClick}) {
+  return (
+    <button className="square" onClick={onSquareClick}>
+      {value}
+    </button>
+  );
+}
+export default function Board() {
+  const [xIsNext, setXIsNext] = useState(true);
+  const [squares, setSquares] = useState(Array(9).fill(null));
 
-   function handleClick(i) {
-     if (calculateWinner(squares) || squares[i]) {
-       return;
-     }
-     const nextSquares = squares.slice();
-     if (xIsNext) {
-       nextSquares[i] = 'X';
-     } else {
-       nextSquares[i] = 'O';
-     }
-     setSquares(nextSquares);
-     setXIsNext(!xIsNext);
-   }
-   const winner = calculateWinner(squares);
-   let status;
-   if (winner) {
-     status = 'Winner: ' + winner;
-     } else {
+  function handleClick(i) {
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    const nextSquares = squares.slice();
+    if (xIsNext) {
+      nextSquares[i] = 'X';
+    } else {
+      nextSquares[i] = 'O';
+    }
+    setSquares(nextSquares);
+    setXIsNext(!xIsNext);
+  }
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = 'Winner: ' + winner;
+  } else {
      status = 'Next player: ' + (xIsNext ? 'X' : 'O');
-     }
-     return (
-       <>
-       <div className="status">{status}</div>
-       <div className="board-row">
-         <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-          />
-         <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-          />
-         <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-          />
-       </div>
-       <div className="board-row">
-         <Square value={squares[3]} onSquareClick={() => handleClick(3)}
-         />
-         <Square value={squares[4]} onSquareClick={() => handleClick(4)}
-         />
-         <Square value={squares[5]} onSquareClick={() => handleClick(5)}
-         />
-       </div>
-       <div className="board-row">
-         <Square value={squares[6]} onSquareClick={() => handleClick(6)}
-         />
-         <Square value={squares[7]} onSquareClick={() => handleClick(7)}
-         />
-         <Square value={squares[8]} onSquareClick={() => handleClick(8)}
-         />
-       </div>
-       </>
-     );
-   }
+  }
+  return (
+    <>
+    <div className="status">{status}</div>
+    <div className="board-row">
+      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      />
+      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      />
+      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      />
+    </div>
+    <div className="board-row">
+      <Square value={squares[3]} onSquareClick={() => handleClick(3)}
+      />
+      <Square value={squares[4]} onSquareClick={() => handleClick(4)}
+      />
+      <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+      />
+    </div>
+    <div className="board-row">
+      <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+      />
+      <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+      />
+      <Square value={squares[8]} onSquareClick={() => handleClick(8)}
+      />
+    </div>
+    </>
+  );
+}
 
-   function calculateWinner(squares) {
-     const lines = [
-       [0, 1, 2],
-       [3, 4, 5],
-       [6, 7, 8],
-       [0, 3, 6],
-       [1, 4, 7],
-       [2, 5, 8],
-       [0, 4, 8],
-       [2, 4, 6],
-     ];
-      for (let i = 0; i < lines.length; i++) {
-        const [a, b, c] = lines[i];
-      if (squares[a] && squares[a] === squares[b] && squares[a] ===
-        squares[c]) {
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] ===
+      squares[c]) {
       return squares[a];
     }
   }
