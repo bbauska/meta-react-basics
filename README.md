@@ -9661,7 +9661,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Week 4 - Course recap</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Course recap: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9722,11 +9722,13 @@ In the third module, you were introduced to navigation, updating, and assets in 
 </p>
 In the final lesson of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components. 
 You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>02. Exemplar: Build a calculator app</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>02. Build a calculator app</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I'll now demonstrate how you can use react to build a simple calculator app that is able to perform addition, subtraction, multiplication and division operations. I have some code for this app already written. However, because it's incomplete, it encounters problems when it compiles. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-a.png?raw=true"
   alt="."
@@ -9734,20 +9736,30 @@ I'll now demonstrate how you can use react to build a simple calculator app that
 </p>
 
 The first problem is that useRef is not defined. So I'll import to useRef to fix that issue and then press control s to recompile. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-b.png?raw=true"
   alt="."
   width="60%" />
 </p>
 The second problem is that the useState hook is not defined so let's import that as well. And when I recompile once more, the problems should be resolved. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-c.png?raw=true"
   alt="."
   width="60%" />
 </p>
 
-So the structure of the app is there but currently, it can only perform addition so I need to add the other functionalities. Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable. I can use this as a template for the other functions I will write. So I will copy and paste this code into the functions I've started. In the minus function, I update result plus number to result minus number so that it subtracts whatever is in the input. In the times function I update the same snippet to result asterisk number. 
-And finally, for the divide function, I use the divide operator or forward slash to make it result slash number. Now, I also have two functions called reset input which sets the input value to zero and reset results which sets the result value to zero as well. 
+<p>The structure of the app is there.  Currently it can only perform addition, so I need to add the other functionalities.</p>
+<p>Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable. I can use this as a template for the other functions I will write. So I will copy and paste this code into the functions I've started. In the minus function, I update result plus number to result minus number so that it subtracts whatever is in the input. In the times function I update the same snippet to result asterisk number.
+And finally, for the divide function, I use the divide operator or forward slash to make it result slash number. Now, I also have two functions called reset input which sets the input value to zero and reset results which sets the result value to zero as well.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-d.png?raw=true"
   alt="."
@@ -9755,637 +9767,29 @@ And finally, for the divide function, I use the divide operator or forward slash
 </p>
 
 Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that. 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-e.png?raw=true"
   alt="."
   width="60%" />
 </p>
 
-Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes. 
+Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-f. simplest working calculator (264) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-f.png?raw=true"
-  alt="."
-  width="60%" />
+  alt="Simplest working calculator snapshot."
+  width="40%" />
 </p>
-
-I'm ready to test out my app so I type 2 in the input fields and then click on the add button. The result changes from 0 to 2 and then adding 2 again, updates it to 4. Next, if I type 1 and then click on subtract, the result becomes 3. If I enter 10 in the input field and click on multiply, I end up with 30 as the new result. And now, if I type 6 and click on divide, I get a value of 5. 
-Finally, I can click reset inputs to set the value in the input field to 0. As well as click reset results to clear the results and bring it back to 0, and that's it. My code is complete and my app works as per the requirements.
-
+<p>I'm ready to test out my app so I type 2 in the input fields and then click on the add button. The result changes from 0 to 2 and then adding 2 again, updates it to 4. Next, if I type 1 and then click on subtract, the result becomes 3. If I enter 10 in the input field and click on multiply, I end up with 30 as the new result. And now, if I type 6 and click on divide, I get a value of 5.</p>
+<p>Finally, I can click reset inputs to set the value in the input field to 0. As well as click reset results to clear the results and bring it back to 0, and that's it. My code is complete and my app works as per the requirements.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>03. Building a Tic-Tac-Toe app</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Your first React app</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this module (four), you will be assessed on the key skills covered in
-the Course.
-
-<h3>Quick Start</h3>
-
-<h3>You will learn:</h3>
-
-<ul>
-  <li>How to create and nest components,<br></li>
-
-  <li>How to add markup and styles,<br></li>
-
-  <li>How to display data,<br></li>
-
-  <li>How to render conditions and lists,<br></li>
-
-  <li>How to respond to events and update the screen,<br></li>
-
-  <li>How to share data between components.</li>
-</ul>
-
-<h3>Creating and nesting components</h3>
-
-React apps are made out of components. A component is a piece of the UI
-(user interface) that has its own logic and appearance. A component can
-be as small as a button, or as large as an entire page.
-
-React components are JavaScript functions that return markup:
-
-```
-function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
-}
-```
-
-Now that you've declared MyButton, you can nest it into another
-component:
-
-```
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-        <MyButton />
-    </div>
-  );
-}
-```
-
-Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
-know it's a React component. React component names must always start
-with a capital letter, while HTML tags must be lowercase.
-
-Have a look at the result:
-
-<details>
-  <summary>App.js</summary>
-
-```
-function MyButton() {
-  return (
-    <button>
-      I'm a button
-    </button>
-  );
-}
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  );
-}
-```
-
-</details>
-
-The export default keywords specify the main component in the file. If
-you're not familiar with some piece of JavaScript syntax, <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">MDN</a>
-and <a href="https://javascript.info/import-export">javascript.info</a> have great references.
-
-<h3>Writing markup with JSX</h3>
-
-The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
-most React projects use JSX for its convenience. All of the <a href="https://react.dev/learn/installation">tools we
-recommend for local development</a> support JSX out of the box.
-
-JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
-component also can't return multiple JSX tags. You have to wrap them
-into a shared parent, like a &lt;div&gt;...&lt;/div&gt; or an empty
-&lt;&gt;...&lt;/&gt; wrapper:
-
-```
-function AboutPage() {
-  return (
-    <>
-      <h1>About</h1>
-      <p>Hello there.<br />How do you do?</p>
-    </>
-  );
-}
-```
-
-If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
-
-<h3>Adding styles</h3>
-
-In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">
-[class] attribute:</a>
-
-```
-<img className="avatar" />
-```
-
-Then you write the CSS rules for it in a separate CSS file:
-
-```
-/* In your CSS */
-  .avatar {
-    border-radius: 50%;
-  }
-```
-
-React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[<link>]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.
-
-<h4>Displaying data</h4>
-
-JSX lets you put markup into JavaScript. Curly braces let you "escape
-back" into JavaScript so that you can embed some variable from your code
-and display it to the user. For example, this will display user.name:
-
-```
-return (
-  <h1>
-    {user.name}
-  </h1>
-);
-```
-
-You can also "escape into JavaScript" from JSX attributes, but you have
-to use curly braces instead of quotes. For example, className="avatar"
-passes the "avatar" string as the CSS class, but src={user.imageUrl}
-reads the JavaScript user.imageUrl variable value, and then passes that
-value as the src attribute:
-
-```
-return (
-  <img
-    className="avatar"
-    src={user.imageUrl}
-  />
-);
-```
-
-You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:
-
-<details>
-  <summary>App.js</summary>
-
-```
-const user = {
-  name: 'Hedy Lamarr',
-  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-  imageSize: 90,
-};
-
-export default function Profile() {
-  return (
-    <>
-      <h1>{user.name}</h1>
-      <img
-      className="avatar"
-      src={user.imageUrl}
-        alt={'Photo of ' + user.name}
-        style={{
-          width: user.imageSize,
-          height: user.imageSize
-        }}
-      />
-    </>
-  );
-}
-```
-
-</details>
-
-In the above example, style={{}} is not a special syntax, but a regular
-{} object inside the style={ } JSX curly braces. You can use the style
-attribute when your styles depend on JavaScript variables.
-
-<h3>Conditional rendering</h3>
-
-In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:
-
-<details>
-  <summary>JS Functions</summary>
-
-```
-let content;
-
-if (isLoggedIn) {
-
-  content = <AdminPanel />;
-} else {
-  content = <LoginForm />;
-}
-  return (
-    <div>
-      {content}
-    </div>
-  );
-```
-
-</details>
-
-If you prefer more compact code, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional ?
-operator</a>.  Unlike if, it works inside JSX:
-
-```
-<div>
-  {isLoggedIn ? (
-    <AdminPanel />
-  ) : (
-    <LoginForm />
-  )}
-</div>
-```
-
-When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">logical &amp;&amp; syntax</a>:
-
-```
-<div>
-  {isLoggedIn && <AdminPanel />}
-</div>
-```
-
-All of these approaches also work for conditionally specifying
-attributes. If you're unfamiliar with some of this JavaScript syntax,
-you can start by always using if...else.
-
-<h3>Rendering lists</h3>
-
-You will rely on JavaScript features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">for loop</a>
-and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">array map()
-function</a> to render lists of components.
-
-For example, let's say you have an array of products:
-
-```
-const products = [
-  { title: 'Cabbage', id: 1 },
-  { title: 'Garlic', id: 2 },
-  { title: 'Apple', id: 3 },
-];
-```
-
-Inside your component, use the map() function to transform an array of
-products into an array of &lt;li&gt; items:
-
-```
-const listItems = products.map(product =>
-  <li key={product.id}>
-    {product.title}
-  </li>
-);
-return (
-  <ul>{listItems}</ul>
-);
-```
-
-Notice how &lt;li&gt; has a key attribute. For each item in a list, you
-should pass a string or a number that uniquely identifies that item
-among its siblings. Usually, a key should be coming from your data, such
-as a database ID. React uses your keys to know what happened if you
-later insert, delete, or reorder the items.
-
-<details>
-  <summary>App.js</summary>
-
-```
-const products = [
-  { title: 'Cabbage', isFruit: false, id: 1 },
-  { title: 'Garlic', isFruit: false, id: 2 },
-  { title: 'Apple', isFruit: true, id: 3 },
-];
-export default function ShoppingList() {
-  const listItems = products.map(product =>
-    <li
-      key={product.id}
-      style={{
-        color: product.isFruit ? 'magenta' : 'darkgreen'
-      }}
-      >
-      {product.title}
-    </li>
-  );
-  return (
-    <ul>{listItems}</ul>
-  );
-}
-```
-
-</details>
-
-<h3>Responding to events</h3>
-
-You can respond to events by declaring event handler functions inside
-your components:
-
-```
-function MyButton() {
-
-  function handleClick() {
-    alert('You clicked me!');
-  }
-  return (
-    <button onClick={handleClick}>
-      Click me
-    </button>
-  );
-}
-```
-
-Notice how onClick={handleClick} has no parentheses at the end! Do not
-call the event handler function: you only need to pass it down. React
-will call your event handler when the user clicks the button.
-
-<h3>Updating the screen</h3>
-
-Often, you'll want your component to "remember" some information and
-display it. For example, maybe you want to count the number of times a
-button is clicked. To do this, add state to your component.
-
-First, import <a href="https://react.dev/reference/react/useState">useState</a> from React:
-
-```
-import { useState } from 'react';
-```
-
-Now you can declare a state variable inside your component:
-
-```
-function MyButton() {
-  const [count, setCount] = useState(0);
-```
-
-You'll get two things from useState: the current state (count), and the
-function that lets you update it (setCount). You can give them any
-names, but the convention is to write [something, setSomething].
-
-The first time the button is displayed, count will be 0 because you
-passed 0 to useState(). When you want to change state, call setCount()
-and pass the new value to it. Clicking this button will increment the
-counter:
-
-```
-function MyButton() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-  return (
-    <button onClick={handleClick}>
-      Clicked {count} times
-    </button>
-  );
-}
-```
-
-React will call your component function again. This time, count will
-be 1. Then it will be 2. And so on.
-
-If you render the same component multiple times, each will get its own
-state. Click each button separately:
-
-<details>
-  <summary>App.js</summary>
-
-```
-import { useState } from 'react';
-export default function MyApp() {
-  return (
-    <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
-      <MyButton />
-    </div>
-  );
-}
-function MyButton() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-  return (
-    <button onClick={handleClick}>
-      Clicked {count} times
-    </button>
-  );
-}
-```
-
-</details>
-
-Notice how each button "remembers" its own count state and doesn't
-affect other buttons.
-
-<h3>Using Hooks</h3>
-
-Functions starting with use are called Hooks. useState is a built-in
-Hook provided by React. You can find other built-in Hooks in the <a href="https://react.dev/reference/react">API
-reference</a>. You can also write your own Hooks by combining the existing ones.
-
-Hooks are more restrictive than other functions. You can only call Hooks
-at the top of your components (or other Hooks). If you want to use
-useState in a condition or a loop, extract a new component and put it
-there.
-
-<h3>Sharing data between components</h3>
-
-In the previous example, each MyButton had its own independent count,
-and when each button was clicked, only the count for the button clicked
-changed:
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image047.png?raw=true"
-  alt="Diagram showing a tree of three components, one parent labeled MyApp
-    and two children labeled MyButton. Both MyButton components contain a
-    count with value zero."
-  width="50%" />
-</p>
-<!-- {width="5.0in" height="4.50859908136483in"} -->
-
-Initially, each MyButton's count state is 0.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (136) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image048.png?raw=true"
-  alt="The same diagram as the previous, with the count of the first child
-    MyButton component highlighted indicating a click with the count value
-	incremented to one. The second MyButton component still contains value
-	zero."
-  width="50%" />
-</p>
-<!-- (width="5.0in" height="4.50859908136483in"} -->
-
-The first MyButton updates its count to 1.
-
-However, often you'll need components to share data and always update
-together.
-
-To make both MyButton components display the same count and update
-together, you need to move the state from the individual buttons
-"upwards" to the closest component containing all of them.
-
-In this example, it is MyApp:
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (137) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image049.png?raw=true"
-  alt="Diagram showing a tree of three components, one parent labeled MyApp
-    and two children labeled MyButton. MyApp contains a count value of zero
-    which is passed down to both of the MyButton components, which also show
-    value zero."
-  width="50%" />
-</p>
-<!-- {width="5.0in" height="4.6951224846894135in"} -->
-
-Initially, MyApp's count state is 0 and is passed down to both children.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (138) ~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image050.png?raw=true"
-  alt="The same diagram as the previous, with the count of the parent MyApp
-    component highlighted indicating a click with the value incremented to
-    one. The flow to both of the children MyButton components is also
-    highlighted, and the count value in each child is set to one indicating
-    the value was passed down."
-  width="50%" />
-</p>
-<!-- {width="5.0in" height="4.695121391076116in"} -->
-
-On click, MyApp updates its count state to 1 and passes it down to both
-children
-
-Now when you click either button, the count in MyApp will change, which
-will change both of the counts in MyButton. Here's how you can express
-this in code.
-
-First, move the state up from MyButton into MyApp:
-
-<details>
-  <summary>JS Functions</summary>
-
-```
-export default function MyApp() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-  return (
-    <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
-      <MyButton />
-    </div>
-  );
-}
-function MyButton() {
-  // ... we're moving code from here ...
-}
-```
-
-</details>
-
-Then, pass the state down from MyApp to each MyButton, together with the
-shared click handler. You can pass information to MyButton using the JSX
-curly braces, just like you previously did with built-in tags like
-&lt;img&gt;:
-
-<details>
-  <summary>JS Functions</summary>
-
-```
-export default function MyApp() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-  return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
-    </div>
-  );
-}
-```
-
-</details>
-
-The information you pass down like this is called <i>props</i>. Now the MyApp
-component contains the count state and the handleClick event handler,
-and <i>passes both of them down as props</i> to each of the buttons.
-
-Finally, change MyButton to <i>read</i> the props you have passed from its
-parent component:
-
-```
-function MyButton({ count, onClick }) {
-  return (
-    <button onClick={onClick}>
-      Clicked {count} times
-    </button>
-  );
-}
-```
-
-When you click the button, the onClick handler fires. Each button's
-onClick prop was set to the handleClick function inside MyApp, so the
-code inside of it runs. That code calls setCount(count + 1),
-incrementing the count state variable. The new count value is passed as
-a prop to each button, so they all show the new value. This is called
-"lifting state up". By moving state up, you've shared it between
-components.
-
-<details>
-  <summary>App.js</summary>
-
-```
-import { useState } from 'react';
-export default function MyApp() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-  }
-  return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
-    </div>
-  );
-}
-function MyButton({ count, onClick }) {
-  return (
-    <button onClick={onClick}>
-      Clicked {count} times
-    </button>
-  );
-}
-```
-
-</details>
-
-<h3>Next Steps</h3>
-
-By now, you know the basics of how to write React code!
-
-Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a> to put them into practice and build your first mini-app with React.
-
-<h3>Tutorial: Tic-Tac-Toe</h3>
-
 You will build a small tic-tac-toe game during this tutorial. This
 tutorial does not assume any existing React knowledge. The techniques
 you'll learn in the tutorial are fundamental to building any React app,
@@ -10417,6 +9821,7 @@ You can see what it will look like when you're finished here:
 
 ```
 import { useState } from 'react';
+
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -10424,6 +9829,7 @@ function Square({ value, onSquareClick }) {
     </button>
   );
 }
+
 function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -10459,6 +9865,14 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-a. tic-tac-toe game board (265) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w4-s03-a.png?raw=true"
+  alt="Tic-tac-toe game board, early initial version."
+  width="60%" />
+</p>
 If the code doesn't make sense to you yet, or if you are unfamiliar with
 the code's syntax, don't worry! The goal of this tutorial is to help you
 understand React and its syntax.
@@ -10488,6 +9902,15 @@ export default function Square() {
   return &lt;button className="square"&gt;X&lt;/button&gt;;
 }
 ```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-b. tic-tac-toe first 'x' (265) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w4-s03-b.png?raw=true"
+  alt="Tic-tac-toe game board, early initial version."
+  width="60%" />
+</p>
 
 <h4>Note</h4>
 
@@ -10519,12 +9942,12 @@ Now that you're set up, let's get an overview of React!
 
 In CodeSandbox you'll see three main sections:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ 51. codesandbox with starter code (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-c. codesandbox with starter code (267) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image051.png?raw=true"
+<img src="/images/w4-s03-c.png?raw=true"
   alt="CodeSandBox with Starter Code."
-  width="53%" />
+  width="70%" />
 </p>
 <!-- {width="5.0in" height="2.3164555993000877in"} -->
 
@@ -10549,10 +9972,10 @@ export default function Square() {
 The browser section should be displaying a square with a X in it like
 this:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 52. x-filled square (143) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-d. x-filled square (267) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image052.png?raw=true"
+<p align="left" width="100%">
+<img src="/images/w4-s03-d.png?raw=true"
   alt="X-filled square."
   width="10%" />
 </p>
@@ -10677,10 +10100,10 @@ export default function Square() {
 
 Now you should see:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 53. two x-filled squares (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-e. two x-filled squares (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image053.png?raw=true"
+<p align="left" width="100%">
+<img src="/images/w4-s03-e.png?raw=true"
   alt="Two x-filled squares."
   width="16%" />
 </p>
@@ -10690,10 +10113,10 @@ Great! Now you just need to copy-paste a few times to add nine squares
 and...
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 54. nine x-filled squares (146) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-f. nine x-filled squares (271) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image054.png?raw=true"
+<p align="left" width="100%">
+<img src="/images/w4-s03-f.png?raw=true"
   alt="Nine x-filled squares."
   width="64%" />
 </p>
@@ -10739,12 +10162,12 @@ The CSS defined in styles.css styles the divs with the className of
 board-row. Now that you've grouped your components into rows with the
 styled divs you have your tic-tac-toe board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~ 55. tic-tac-toe filled with numbers 1 - 9 (147) ~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w4-s03-g. tic-tac-toe filled with numbers 1 - 9 (271) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image055.png?raw=true"
+<img src="/images/w4-s03-g.png?raw=true"
   alt="Tic-tac-toe board filled with numbers 1 thru 9."
-  width="20%" />
+  width="30%" />
 </p>
 <!-- {width="2.0in" height="2.0in"} -->
 
@@ -10855,12 +10278,12 @@ must start with a capital letter.
 
 Let's take a look:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 56. tic-tac-toe filled with number 1 (149) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-h. tic-tac-toe filled with number 1 (273) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image056.png?raw=true"
+<img src="/images/w4-s03-h.png?raw=true"
   alt="Tic-tac-toe board filled with number 1."
-  width="20%" />
+  width="30%" />
 </p>
 <!-- {width="2.0in" height="2.054054024496938in"} -->
 
@@ -10892,12 +10315,12 @@ function Square({ value }) {
 Oops, this is not what you wanted:
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ 57. value-filled board with number 1 (149) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-i. value-filled board as an oops (273) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image057.png?raw=true"
+<img src="/images/w4-s03-i.png?raw=true"
   alt="Value-filled board as an oops."
-  width="20%" />
+  width="30%" />
 </p>
 <!-- {width="2.0in" height="1.6666666666666667in"} -->
 
@@ -10913,12 +10336,12 @@ function Square({ value }) {
 
 For now, you should see an empty board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. empty board (150) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-j. empty board (274) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image058.png?raw=true"
+<img src="/images/w4-s03-j.png?raw=true"
   alt="Empty board."
-  width="20%" />
+  width="30%" />
 </p>
 <!-- {width="2.0in" height="1.964912510936133in"} -->
 
@@ -10957,12 +10380,12 @@ export default function Board() {
 
 Now you should see a grid of numbers again:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ 55. tic-tac-toe board with 1 thru 9 (151) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w4-s03-k. tic-tac-toe board with 1 thru 9 (275) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image055.png?raw=true"
+<img src="/images/w4-s03-k.png?raw=true"
   alt="Tic-tac-toe board filled with numbers 1 - 9."
-  width="20%" />
+  width="30%" />
 </p>
 <!-- {width="2.0in" height="2.0in"} -->
 
@@ -11129,12 +10552,12 @@ React to re-render that Square whenever its <button> is clicked. After
 the update, the Square's value will be 'X', so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. adding x's to board (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-l. adding x's to board (278) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image059.gif?raw=true"
+<img src="/images/w4-s03-l.gif?raw=true"
   alt="Adding X's to board."
-  width="25%" />
+  width="30%" />
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
@@ -11190,24 +10613,24 @@ React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
 browser section in CodeSandbox:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ 60. react devtools in codesandbox (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-m. react devtools in codesandbox (279) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image060.png?raw=true"
+<img src="/images/w4-s03-m.png?raw=true"
   alt="React DevTools in CodeSandbox."
-  width="50%" />
+  width="60%" />
 </p>
 <!-- {width="5.0in" height="3.720173884514436in"} -->
 
 To inspect a particular component on the screen, use the button in the
 top left corner of React DevTools:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~ 61. selecting components on the page with react devtools (0x) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~ w4-s03-n. selecting components on the page with react devtools (279) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image061.gif?raw=true"
+<img src="/images/w4-s03-n.gif?raw=true"
   alt="Selecting components on the page with React DevTools."
-  width="50%" />
+  width="60%" />
 </p>
 <!-- {width="5.0in" height="3.7in"} -->
 
@@ -11321,12 +10744,12 @@ function Square({value}) {
 
 At this point you should see an empty tic-tac-toe board:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 58. empty tic-tac-toe board (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-o. empty tic-tac-toe board (282) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image058.png?raw=true"
+<img src="/images/w4-s03-o.png?raw=true"
   alt="Empty board."
-  width="20%" />
+  width="30%" />
 </p>
 <!-- {width="2.0in" height="1.964912510936133in"} -->
 
@@ -11578,12 +11001,12 @@ export default function Board() {
 Now you can again add X's to any square on the board by clicking on
 them:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 59. filling the board with x's (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-p. filling the board with x's (286) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image059.gif?raw=true"
-  alt="."
-  width="25%" />
+<img src="/images/w4-s03-p.gif?raw=true"
+  alt="Filling the board with x's."
+  width="30%" />
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
@@ -11792,12 +11215,12 @@ and O, as they should!
 But wait, there's a problem. Try clicking on the same square multiple
 times:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 62. o overwriting an x (0x) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-q. o overwriting an x (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/image062.gif?raw=true"
+<p align="left" width="100%">
+<img src="/images/w4-s03-q.gif?raw=true"
   alt="O overwriting an X."
-  width="25%" />
+  width="30%" />
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
@@ -12899,7 +12322,620 @@ elements, components, props, and state. Now that you've seen how these
 concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>04. Thinking in React</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In this module (four), you will be assessed on the key skills covered in
+the Course.
 
+<h3>Quick Start</h3>
+
+<h3>You will learn:</h3>
+
+<ul>
+  <li>How to create and nest components,<br></li>
+
+  <li>How to add markup and styles,<br></li>
+
+  <li>How to display data,<br></li>
+
+  <li>How to render conditions and lists,<br></li>
+
+  <li>How to respond to events and update the screen,<br></li>
+
+  <li>How to share data between components.</li>
+</ul>
+
+<h3>Creating and nesting components</h3>
+
+React apps are made out of components. A component is a piece of the UI
+(user interface) that has its own logic and appearance. A component can
+be as small as a button, or as large as an entire page.
+
+React components are JavaScript functions that return markup:
+
+```
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+```
+
+Now that you've declared MyButton, you can nest it into another
+component:
+
+```
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+        <MyButton />
+    </div>
+  );
+}
+```
+
+Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
+know it's a React component. React component names must always start
+with a capital letter, while HTML tags must be lowercase.
+
+Have a look at the result:
+
+<details>
+  <summary>App.js</summary>
+
+```
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
+```
+
+</details>
+
+The export default keywords specify the main component in the file. If
+you're not familiar with some piece of JavaScript syntax, <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">MDN</a>
+and <a href="https://javascript.info/import-export">javascript.info</a> have great references.
+
+<h3>Writing markup with JSX</h3>
+
+The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
+most React projects use JSX for its convenience. All of the <a href="https://react.dev/learn/installation">tools we
+recommend for local development</a> support JSX out of the box.
+
+JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
+component also can't return multiple JSX tags. You have to wrap them
+into a shared parent, like a &lt;div&gt;...&lt;/div&gt; or an empty
+&lt;&gt;...&lt;/&gt; wrapper:
+
+```
+function AboutPage() {
+  return (
+    <>
+      <h1>About</h1>
+      <p>Hello there.<br />How do you do?</p>
+    </>
+  );
+}
+```
+
+If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
+
+<h3>Adding styles</h3>
+
+In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">
+[class] attribute:</a>
+
+```
+<img className="avatar" />
+```
+
+Then you write the CSS rules for it in a separate CSS file:
+
+```
+/* In your CSS */
+  .avatar {
+    border-radius: 50%;
+  }
+```
+
+React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[<link>]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.
+
+<h4>Displaying data</h4>
+
+JSX lets you put markup into JavaScript. Curly braces let you "escape
+back" into JavaScript so that you can embed some variable from your code
+and display it to the user. For example, this will display user.name:
+
+```
+return (
+  <h1>
+    {user.name}
+  </h1>
+);
+```
+
+You can also "escape into JavaScript" from JSX attributes, but you have
+to use curly braces instead of quotes. For example, className="avatar"
+passes the "avatar" string as the CSS class, but src={user.imageUrl}
+reads the JavaScript user.imageUrl variable value, and then passes that
+value as the src attribute:
+
+```
+return (
+  <img
+    className="avatar"
+    src={user.imageUrl}
+  />
+);
+```
+
+You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:
+
+<details>
+  <summary>App.js</summary>
+
+```
+const user = {
+  name: 'Hedy Lamarr',
+  imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
+  imageSize: 90,
+};
+
+export default function Profile() {
+  return (
+    <>
+      <h1>{user.name}</h1>
+      <img
+      className="avatar"
+      src={user.imageUrl}
+        alt={'Photo of ' + user.name}
+        style={{
+          width: user.imageSize,
+          height: user.imageSize
+        }}
+      />
+    </>
+  );
+}
+```
+
+</details>
+
+In the above example, style={{}} is not a special syntax, but a regular
+{} object inside the style={ } JSX curly braces. You can use the style
+attribute when your styles depend on JavaScript variables.
+
+<h3>Conditional rendering</h3>
+
+In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:
+
+<details>
+  <summary>JS Functions</summary>
+
+```
+let content;
+
+if (isLoggedIn) {
+
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
+  return (
+    <div>
+      {content}
+    </div>
+  );
+```
+
+</details>
+
+If you prefer more compact code, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional ?
+operator</a>.  Unlike if, it works inside JSX:
+
+```
+<div>
+  {isLoggedIn ? (
+    <AdminPanel />
+  ) : (
+    <LoginForm />
+  )}
+</div>
+```
+
+When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">logical &amp;&amp; syntax</a>:
+
+```
+<div>
+  {isLoggedIn && <AdminPanel />}
+</div>
+```
+
+All of these approaches also work for conditionally specifying
+attributes. If you're unfamiliar with some of this JavaScript syntax,
+you can start by always using if...else.
+
+<h3>Rendering lists</h3>
+
+You will rely on JavaScript features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">for loop</a>
+and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">array map()
+function</a> to render lists of components.
+
+For example, let's say you have an array of products:
+
+```
+const products = [
+  { title: 'Cabbage', id: 1 },
+  { title: 'Garlic', id: 2 },
+  { title: 'Apple', id: 3 },
+];
+```
+
+Inside your component, use the map() function to transform an array of
+products into an array of &lt;li&gt; items:
+
+```
+const listItems = products.map(product =>
+  <li key={product.id}>
+    {product.title}
+  </li>
+);
+return (
+  <ul>{listItems}</ul>
+);
+```
+
+Notice how &lt;li&gt; has a key attribute. For each item in a list, you
+should pass a string or a number that uniquely identifies that item
+among its siblings. Usually, a key should be coming from your data, such
+as a database ID. React uses your keys to know what happened if you
+later insert, delete, or reorder the items.
+
+<details>
+  <summary>App.js</summary>
+
+```
+const products = [
+  { title: 'Cabbage', isFruit: false, id: 1 },
+  { title: 'Garlic', isFruit: false, id: 2 },
+  { title: 'Apple', isFruit: true, id: 3 },
+];
+export default function ShoppingList() {
+  const listItems = products.map(product =>
+    <li
+      key={product.id}
+      style={{
+        color: product.isFruit ? 'magenta' : 'darkgreen'
+      }}
+      >
+      {product.title}
+    </li>
+  );
+  return (
+    <ul>{listItems}</ul>
+  );
+}
+```
+
+</details>
+
+<h3>Responding to events</h3>
+
+You can respond to events by declaring event handler functions inside
+your components:
+
+```
+function MyButton() {
+
+  function handleClick() {
+    alert('You clicked me!');
+  }
+  return (
+    <button onClick={handleClick}>
+      Click me
+    </button>
+  );
+}
+```
+
+Notice how onClick={handleClick} has no parentheses at the end! Do not
+call the event handler function: you only need to pass it down. React
+will call your event handler when the user clicks the button.
+
+<h3>Updating the screen</h3>
+
+Often, you'll want your component to "remember" some information and
+display it. For example, maybe you want to count the number of times a
+button is clicked. To do this, add state to your component.
+
+First, import <a href="https://react.dev/reference/react/useState">useState</a> from React:
+
+```
+import { useState } from 'react';
+```
+
+Now you can declare a state variable inside your component:
+
+```
+function MyButton() {
+  const [count, setCount] = useState(0);
+```
+
+You'll get two things from useState: the current state (count), and the
+function that lets you update it (setCount). You can give them any
+names, but the convention is to write [something, setSomething].
+
+The first time the button is displayed, count will be 0 because you
+passed 0 to useState(). When you want to change state, call setCount()
+and pass the new value to it. Clicking this button will increment the
+counter:
+
+```
+function MyButton() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+React will call your component function again. This time, count will
+be 1. Then it will be 2. And so on.
+
+If you render the same component multiple times, each will get its own
+state. Click each button separately:
+
+<details>
+  <summary>App.js</summary>
+
+```
+import { useState } from 'react';
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
+}
+function MyButton() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+</details>
+
+Notice how each button "remembers" its own count state and doesn't
+affect other buttons.
+
+<h3>Using Hooks</h3>
+
+Functions starting with use are called Hooks. useState is a built-in
+Hook provided by React. You can find other built-in Hooks in the <a href="https://react.dev/reference/react">API
+reference</a>. You can also write your own Hooks by combining the existing ones.
+
+Hooks are more restrictive than other functions. You can only call Hooks
+at the top of your components (or other Hooks). If you want to use
+useState in a condition or a loop, extract a new component and put it
+there.
+
+<h3>Sharing data between components</h3>
+
+In the previous example, each MyButton had its own independent count,
+and when each button was clicked, only the count for the button clicked
+changed:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image047.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp
+    and two children labeled MyButton. Both MyButton components contain a
+    count with value zero."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="4.50859908136483in"} -->
+
+Initially, each MyButton's count state is 0.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (136) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image048.png?raw=true"
+  alt="The same diagram as the previous, with the count of the first child
+    MyButton component highlighted indicating a click with the count value
+	incremented to one. The second MyButton component still contains value
+	zero."
+  width="50%" />
+</p>
+<!-- (width="5.0in" height="4.50859908136483in"} -->
+
+The first MyButton updates its count to 1.
+
+However, often you'll need components to share data and always update
+together.
+
+To make both MyButton components display the same count and update
+together, you need to move the state from the individual buttons
+"upwards" to the closest component containing all of them.
+
+In this example, it is MyApp:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (137) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image049.png?raw=true"
+  alt="Diagram showing a tree of three components, one parent labeled MyApp
+    and two children labeled MyButton. MyApp contains a count value of zero
+    which is passed down to both of the MyButton components, which also show
+    value zero."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="4.6951224846894135in"} -->
+
+Initially, MyApp's count state is 0 and is passed down to both children.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (138) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/image050.png?raw=true"
+  alt="The same diagram as the previous, with the count of the parent MyApp
+    component highlighted indicating a click with the value incremented to
+    one. The flow to both of the children MyButton components is also
+    highlighted, and the count value in each child is set to one indicating
+    the value was passed down."
+  width="50%" />
+</p>
+<!-- {width="5.0in" height="4.695121391076116in"} -->
+
+On click, MyApp updates its count state to 1 and passes it down to both
+children
+
+Now when you click either button, the count in MyApp will change, which
+will change both of the counts in MyButton. Here's how you can express
+this in code.
+
+First, move the state up from MyButton into MyApp:
+
+<details>
+  <summary>JS Functions</summary>
+
+```
+export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Counters that update separately</h1>
+      <MyButton />
+      <MyButton />
+    </div>
+  );
+}
+function MyButton() {
+  // ... we're moving code from here ...
+}
+```
+
+</details>
+
+Then, pass the state down from MyApp to each MyButton, together with the
+shared click handler. You can pass information to MyButton using the JSX
+curly braces, just like you previously did with built-in tags like
+&lt;img&gt;:
+
+<details>
+  <summary>JS Functions</summary>
+
+```
+export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
+}
+```
+
+</details>
+
+The information you pass down like this is called <i>props</i>. Now the MyApp
+component contains the count state and the handleClick event handler,
+and <i>passes both of them down as props</i> to each of the buttons.
+
+Finally, change MyButton to <i>read</i> the props you have passed from its
+parent component:
+
+```
+function MyButton({ count, onClick }) {
+  return (
+    <button onClick={onClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+When you click the button, the onClick handler fires. Each button's
+onClick prop was set to the handleClick function inside MyApp, so the
+code inside of it runs. That code calls setCount(count + 1),
+incrementing the count state variable. The new count value is passed as
+a prop to each button, so they all show the new value. This is called
+"lifting state up". By moving state up, you've shared it between
+components.
+
+<details>
+  <summary>App.js</summary>
+
+```
+import { useState } from 'react';
+export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
+}
+function MyButton({ count, onClick }) {
+  return (
+    <button onClick={onClick}>
+      Clicked {count} times
+    </button>
+  );
+}
+```
+
+</details>
+
+<h3>Next Steps</h3>
+
+By now, you know the basics of how to write React code!
+
+Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a> to put them into practice and build your first mini-app with React.
+
+<!-------------- unknown yet ---------------------------->
 <h4>Thinking in React</h4>
 
 React can change how you think about the designs you look at and the
