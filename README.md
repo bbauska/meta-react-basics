@@ -8440,10 +8440,10 @@ Here is the output from the completed solution code:
   width="70%" />
 </p>
 
-Step 1
+<h4>Step 1</h4>
 First, you added a new file, Contact.js, to the root of the src folder. 
 
-Step 2
+<h4>Step 2</h4>
 Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace. 
 
 ```
@@ -8453,7 +8453,7 @@ Inside the Contact.js file, you added an ES5 function, named Contact. And then, 
 4.	export default Contact;
 ```
 
-Step 3
+<h4>Step 3</h4>
 Next, inside the body of the Contact function, you added a return statement with the following code: <h1>Contact Little Lemon on this page.</h1>.
 
 ```
@@ -8463,7 +8463,7 @@ Next, inside the body of the Contact function, you added a return statement with
 4.	export default Contact;
 ```
 
-Step 4
+<h4>Step 4</h4>
 Inside the App.js file, you imported the newly-built Contact component. 
 
 ```
@@ -8491,7 +8491,7 @@ Inside the App.js file, you imported the newly-built Contact component.
 22.	export default App;
 ```
 
-Step 5
+<h4>Step 5</h4>
 Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.
 
 ```
@@ -8520,7 +8520,7 @@ Inside the App.js file's App function's return statement, locate the nav element
 23.	export default App;
 ```
 
-Step 6
+<h4>Step 6</h4>
 Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute set to {<Contact />}. 
 
 ```
@@ -8548,7 +8548,7 @@ Inside the Routes element, add a third route, with the path attribute pointing t
 22.	};
 ```
 
-Step 7
+<h4>Step 7</h4>
 You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Conditional rendering</h2>
@@ -8792,7 +8792,7 @@ In this example, the props contains a property named isLoggedIn. When this is se
 2.	  const isLoggedIn = props.isLoggedIn;
 3.	  if (isLoggedIn) {
 4.	    return <LogoutButton />;
-5.	    } else {
+5.	  } else {
 6.	    return <LoginButton />;
 7.	}
 ```
@@ -9874,7 +9874,7 @@ function AboutPage() {
   return (
     <>
       <h1>About</h1>
-        <p>Hello there.<br />How do you do?</p>
+      <p>Hello there.<br />How do you do?</p>
     </>
   );
 }
@@ -10353,27 +10353,27 @@ components.
   <summary>App.js</summary>
 
 ```
- import { useState } from 'react';
- export default function MyApp() {
-   const [count, setCount] = useState(0);
-   function handleClick() {
-     setCount(count + 1);
-   }
-   return (
-     <div>
-       <h1>Counters that update together</h1>
-       <MyButton count={count} onClick={handleClick} />
-       <MyButton count={count} onClick={handleClick} />
-     </div>
-   );
- }
- function MyButton({ count, onClick }) {
-   return (
-     <button onClick={onClick}>
-       Clicked {count} times
-     </button>
-   );
- }
+import { useState } from 'react';
+export default function MyApp() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  return (
+    <div>
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
+    </div>
+  );
+}
+function MyButton({ count, onClick }) {
+  return (
+    <button onClick={onClick}>
+      Clicked {count} times
+    </button>
+  );
+}
 ```
 
 </details>
@@ -10624,13 +10624,13 @@ import './styles.css';
 import App from './App';
 ```
 
-Lines 1-5 brings all the necessary pieces together:
+Lines 1-4 bring the necessary pieces together:
 
--   React
+-   React,
 
--   React's library to talk to web browsers (React DOM)
+-   React's library to talk to web browsers (React DOM),
 
--   the styles for your components
+-   the styles for your components,
 
 -   the component you created in App.js.
 
@@ -11695,27 +11695,27 @@ changes. Here is what it would look like if you mutated the squares
 array:
 
 ```
- const squares = [null, null, null, null, null, null, null, null,
-   null];
+const squares = [null, null, null, null, null, null, null, null,
+  null];
 
- squares[0] = 'X';
+squares[0] = 'X';
 
- // Now `squares` is ["X", null, null, null, null, null, null,
-   null, null];
+// Now `squares` is ["X", null, null, null, null, null, null,
+  null, null];
 ```
 
 And here is what it would look like if you changed data without mutating
 the squares array:
 
 ```
- const squares = [null, null, null, null, null, null, null, null,
-   null];
+const squares = [null, null, null, null, null, null, null, null,
+  null];
 
- const nextSquares = ['X', null, null, null, null, null, null, null,
-   null];
+const nextSquares = ['X', null, null, null, null, null, null, null,
+  null];
 
- // Now `squares` is unchanged, but `nextSquares` first element is
-   'X' rather than `null`
+// Now `squares` is unchanged, but `nextSquares` first element is
+  'X' rather than `null`
 ```
 
 The result is the same but by not mutating (changing the underlying
@@ -12104,7 +12104,8 @@ Board component and some markup:
 <details>
   <summary>JS Functions</summary>
 
-```function Board() {
+```
+function Board() {
   // ...
 }
 export default function Game() {
@@ -12118,7 +12119,8 @@ export default function Game() {
       </div>
     </div>
   );
-}```
+}
+```
 
 </details>
 
@@ -12132,13 +12134,15 @@ the game information you'll add to the board later.
 Add some state to the Game component to track which player is next and
 the history of moves:
 
-```export default function Game() {
+```
+export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
 
 const [history, setHistory] = useState([Array(9).fill(null)]);
 
-// ...```
+// ...
+```
 
 Notice how [Array(9).fill(null)] is an array with a single item, which
 itself is an array of 9 nulls.
@@ -12147,7 +12151,8 @@ To render the squares for the current move, you'll want to read the last
 squares array from the history. You don't need useState for this--you
 already have enough information to calculate it during rendering:
 
-```export default function Game() {
+```
+export default function Game() {
 
 const [xIsNext, setXIsNext] = useState(true);
 
@@ -12155,7 +12160,8 @@ const [history, setHistory] = useState([Array(9).fill(null)]);
 
 const currentSquares = history[history.length - 1];
 
-// ...```
+// ...
+```
 
 Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
@@ -12164,7 +12170,8 @@ currentSquares and handlePlay as props to the Board component:
 <details>
   <summary>JS Functions</summary>
 
-```export default function Game() {
+```
+export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
@@ -12180,7 +12187,8 @@ currentSquares and handlePlay as props to the Board component:
     />
       //...
   )
-}```
+}
+```
 
 </details>
 
@@ -12190,13 +12198,15 @@ squares, and a new onPlay function that Board can call with the updated
 squares array when a player makes a move. Next, remove the first two
 lines of the Board function that call useState:
 
-```function Board({ xIsNext, squares, onPlay }) {
+```
+function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     //...
   }
     // ...
-}```
+}
+```
 
 Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
@@ -12205,7 +12215,8 @@ Game component can update the Board when the user clicks a square:
 <details>
   <summary>JS Functions</summary>
 
-```function Board({ xIsNext, squares, onPlay }) {
+```
+function Board({ xIsNext, squares, onPlay }) {
 
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -12220,7 +12231,8 @@ Game component can update the Board when the user clicks a square:
     onPlay(nextSquares);
   }
   //...
-}```
+}
+```
 
 </details>
 
@@ -12239,14 +12251,16 @@ information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
 just as Board used to do:
 
-```export default function Game() {
+```
+export default function Game() {
   //...
   function handlePlay(nextSquares) {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   }
     //...
-}```
+}
+```
 
 Here, [...history, nextSquares] creates a new array that contains all
 the items in history, followed by nextSquares. (You can read the
@@ -12265,7 +12279,8 @@ is what the code should look like at this point:
 <details>
   <summary>App.js</summary>
 
-```  import { useState } from 'react';
+```
+import { useState } from 'react';
   function Square({ value, onSquareClick }) {
     return (
       <button className="square" onClick={onSquareClick}>
@@ -12296,7 +12311,8 @@ is what the code should look like at this point:
   return (
     <>
     <div className="status">{status}</div>
-    <div className="board-row">```
+    <div className="board-row">
+```
 
 </details>
 
@@ -12314,7 +12330,9 @@ transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
 method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
-```[1, 2, 3].map((x) => x * 2) // [2, 4, 6]```
+```
+[1, 2, 3].map((x) => x * 2) // [2, 4, 6]
+```
 
 You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
@@ -12323,7 +12341,8 @@ representing buttons on the screen, and display a list of buttons to
 <details>
   <summary>JavaScript Functions</summary>
 
-```export default function Game() {
+```
+export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
@@ -12358,7 +12377,8 @@ representing buttons on the screen, and display a list of buttons to
       </div>
     </div>
   );
-}```
+}
+```
 
 </details>
 
@@ -13438,12 +13458,14 @@ sandbox!
 
 <h4>App.js</h4>
 
-```function Greeting({ name }) {
+```
+function Greeting({ name }) {
   return <h1>Hello, {name}</h1>;
 }
 export default function App() {
   return <Greeting name="world" />
-}```
+}
+```
 
 You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.
