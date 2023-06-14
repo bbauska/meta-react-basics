@@ -1663,7 +1663,7 @@ open in the built-in terminal.
 <p align="center" width="100%">
 <img src="/images/w1-s11-a.png?raw=true"
   alt="npm init react-app."
-  width="50%" />
+  width="70%" />
 </p>
 
 Now, I'll execute the command npm init, React app dot .
@@ -1681,7 +1681,7 @@ I execute this command by pressing the Enter key.
 <p align="center" width="100%">
 <img src="/images/w1-s11-b.png?raw=true"
   alt="&gt; npm start."
-  width="50%" />
+  width="70%" />
 </p>
 
 I wait for the app to build, and once it's ready, I can start the app
@@ -1698,7 +1698,7 @@ localhost:3000 which is the local server.
 <p align="center" width="100%">
 <img src="/images/w1-s11-c.png?raw=true"
   alt="On your react network."
-  width="60%" />
+  width="70%" />
 </p>
 
 Notice that I have all these files and folders in the left pane of VS
@@ -13495,4 +13495,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>Tuesday 6/13/2023 9:16pm</h6>
+<h6>Tuesday 6/14/2023 9:0am</h6>
