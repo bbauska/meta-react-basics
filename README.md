@@ -5481,7 +5481,7 @@ Below you will find links to helpful additional resources.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ week 2, section 01, a - "clicks  movements  commands" (125) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w2-s01-a. "clicks  movements  commands" (125) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-a.png?raw=true"
@@ -5497,7 +5497,7 @@ movements, or keyboard commands. Because events usually rely on some
 interaction, they need to wait and listen in the background for that
 interaction to occur before they can be triggered.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ week 2, section 01, b - event listener button (125) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w2-s01-b. event listener button (125) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-b.png?raw=true"
@@ -5507,7 +5507,7 @@ interaction to occur before they can be triggered.
 Every HTML element contains a set of events that developers can access
 by using HTML attributes, commonly referred to as event listeners.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ week 2, section 01, c - on click, add to cart html (126) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w2-s01-c. on click, add to cart html (126) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-c.png?raw=true"
@@ -5525,7 +5525,7 @@ process by which the HTML button communicates to the JavaScript event
 handler to execute some code and respond to the event action is known as
 <b>triggering</b>.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ week 2, section 01, d - on click, add to cart js (126) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s01-d. on click, add to cart js (126) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-d.png?raw=true"
@@ -5536,7 +5536,7 @@ For example, you might want to listen for a click event on an Add to
 Cart button. Once you capture such an event, you might want to run some
 JavaScript code. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ week 2, section 01, e - on click, add 1 to cart js (127) ~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w2-s01-e. on click, add 1 to cart js (127) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-e.png?raw=true"
@@ -5550,7 +5550,7 @@ gets triggered or fired again, our event handling code that handles the
 event by updating the count in the circle next to the shopping cart
 icon. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~ week 2, section 01, f - 2 item in cart (127) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w2-s01-f. - 2 item in cart (127) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-f.png?raw=true"
@@ -5565,7 +5565,7 @@ Events are a powerful tool and make up part of the <b>Document Object
 Model</b>. As an aspiring React developer, you'll need to know how to
 work with <b>events</b> as they are handled a bit differently.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ week 2, section 01, g - identify types of events & event handling (128) ~~~~~~~~~~-->
+<!--~~~~~~~~~ w2-s01-g. identify types of events & event handling (128) ~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-g.png?raw=true"
@@ -5581,7 +5581,7 @@ process in React at a high level.</p>
 <p>In React code, events are handled using <b>JSX event attributes</b>, which
 are very similar to HTML event attributes that you may be familiar with.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ week 2, section 01, h - onclick (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s01-h. onclick (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-h.png?raw=true"
@@ -5595,7 +5595,7 @@ Remember that camel case means that the first letter is lowercase and
 the separation of words is indicated with a capital letter rather than a
 space.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ week 2, section 01, i - events supported in react (128) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w2-s01-i. events supported in react (128) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-i.png?raw=true"
@@ -5607,7 +5607,7 @@ several groups. Those groups include clipboard Events, composition
 Events, keyboard Events, and many more. Each group usually holds
 multiple events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~ week 2, section 01, j - supported mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s01-j. supported mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-j.png?raw=true"
@@ -5618,7 +5618,7 @@ multiple events.</p>
 For example, supported mouse events include onClick, onContextMenu,
 onDoubleClick, and several others.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ week 2, section 01, k - clipboard events (129) ~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s01-k. clipboard events (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-k.png?raw=true"
@@ -5639,7 +5639,7 @@ probably not necessary to learn about all of these events.
 Also keep in mind that many of these events are related to specific use
 cases.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 01, l - supported drag n drop mouse events (129) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w2-s01-l - supported drag n drop mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-l.png?raw=true"
@@ -5753,15 +5753,13 @@ Since event-handling errors occur after the UI has already been
 rendered, all you have to do is use the error-handling mechanism that
 already exists in JavaScript -- that is, you just use the
 <b>try...catch</b> blocks.
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Common event handling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 I will now show you how to handle several events in React using
 components.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, a -  (132) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-a.  (132) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-a.png?raw=true"
@@ -5773,7 +5771,7 @@ As I start, I've added a new component to the SRC folder. I named it
 <b>Btn</b>, and for now it's just an empty function or the default export.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, b -  (132) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-b.  (132) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-b.png?raw=true"
@@ -5790,7 +5788,7 @@ Back in the <b>Btn</b> components. I add a button in the return statement,
 the button reads, Click Me, press Control S or Command S on the Mac to
 Save and the button renders on the screen.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, c -  (133) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-c.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-c.png?raw=true"
@@ -5803,7 +5801,7 @@ synthetic events than an equals sign and opening curly brace.
 ClickHandler and a closing curly brace. The return statement, I
 distributed the code on several lines to increase readability.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, d -  (133) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-d.  (133) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-d.png?raw=true"
@@ -5820,14 +5818,13 @@ fired from this button and handles it by outputting the word clicked in
 the console. Again, I save my changes and, in the browser, I open the
 developer tools. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, e -  (134) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-e.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-e.png?raw=true"
   alt="."
   width="60%" />
 </p>
-
 Now I locate and activate the console tab in the developer tools, 
 I'll also zoom in on the button.
 When I click the button, the word clicked appears in the console for
@@ -5838,7 +5835,7 @@ the keyboard shortcut of holding down the control key. While it's
 pressed down, press and release the K button, then pressing and
 releasing the C button, and finally releasing the Control key.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, f -  (135) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-f.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-f.png?raw=true"
@@ -5854,7 +5851,7 @@ I will now show you how to handle a different event. Let me replace the
 onclick JSX event handling attributes with another one and thus handle a
 different event.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 03, g -  (135) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s03-g.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s03-g.png?raw=true"
@@ -5878,7 +5875,7 @@ boring notification, you're producing events in the browser.
 As you learned earlier, in order for these events that have any effect,
 you need to use <b>event handlers</b> that will then execute an action.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, a -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-a.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-a.png?raw=true"
@@ -5894,7 +5891,7 @@ There are a few approaches to adding event handlers to your code that
 have different advantages, so you should become familiar with each of
 them.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, b -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-b.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-b.png?raw=true"
@@ -5912,7 +5909,7 @@ create a button that will trigger an event when a user clicks on it.
 With that scenario in mind, let's examine some codes that accomplishes
 this in plain HTML.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, c -  (1xx) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-c.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-c.png?raw=true"
@@ -5932,7 +5929,7 @@ example seems pretty straightforward, it's recommended to use
 JavaScript for scenarios like these instead. Why is that? Well, you'll
 find out later.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, d -  (1x) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-d.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-d.png?raw=true"
@@ -5953,7 +5950,7 @@ object to attach a specific event listener.
 When you apply this method to the previous example, HTML is removed from
 the equation, but the code on the other hand, is a bit more complicated.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, e -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-e.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-e.png?raw=true"
@@ -5969,7 +5966,7 @@ of the <b>addEventListener</b> method in React.
 
 The rule is to avoid manipulating the DOM directly as much as possible.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, f -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-f.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-f.png?raw=true"
@@ -5979,7 +5976,7 @@ The rule is to avoid manipulating the DOM directly as much as possible.
 You should set everything up declaratively, meaning that you describe
 updates to React and let it figure out the rest.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, g -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-g.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-g.png?raw=true"
@@ -5998,7 +5995,7 @@ an invocation to an event handling function as a value to the on click
 events. In React, you should not invoke a function. Instead, you just
 pass a reference to the event handling function without invoking it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, h -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-h.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-h.png?raw=true"
@@ -6018,7 +6015,7 @@ sign, you use the JSX expression delimiters, that is the opening and
 closing <b>curly braces</b>. Inside of the curly brace delimiters, you add
 the name of the function to be run. Make sure not to invoke it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 04, i -  (1) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s04-i.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s04-i.png?raw=true"
@@ -6181,7 +6178,7 @@ demonstrates how all the event handling concepts work together with
 state, styling, and the use of turning the expressions.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, a -  (143) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-a.  (143) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-a.png?raw=true"
@@ -6214,7 +6211,7 @@ it's false, it will return whatever stored in the light mode value.
 However, I don't have the values I'm evaluating yet.</p>
 <p>So, if I say this code now it throws an error.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, b -  (144) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-b.  (144) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-b.png?raw=true"
@@ -6227,7 +6224,7 @@ which holds a value of true, dark mode which holds the text. Dark mode
 is on in an H one header and light mode which holds the text. Light mode
 is on in an H one header.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, c -  (144) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-c.  (144) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-c.png?raw=true"
@@ -6239,7 +6236,7 @@ mode is on in the browser.</p>
 <p>Let me explain what happened here. The dark
 mode on variable is set to true.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, d -  (145) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-d.  (145) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-d.png?raw=true"
@@ -6250,7 +6247,7 @@ mode on variable is set to true.</p>
 on in the turn array to the value of true. Since this value is true, the 
 value that's stored in dark mode will be rendered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, e -  (145) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-e.  (145) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-e.png?raw=true"
@@ -6264,7 +6261,7 @@ it again. Now, I get the light mode is on displayed on the screen. I add
 a button with the on click events to handle this toggle of the value of
 the dark mode on, variable from true to false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, f -  (146) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-f.  (146) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-f.png?raw=true"
@@ -6284,7 +6281,7 @@ assigned to the dark mode on variable, thus becoming false.</p>
 <p>I now add to the rest of the code for the handle click function, which is an if
 statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, g -  (147) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-g.  (147) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-g.png?raw=true"
@@ -6299,7 +6296,7 @@ in a way that makes it obvious what is happening here.</p>
 good practice for a developer of any skill level, so that they and
 others can easily examine the code at a later stage. I save.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, h -  (147) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-h. -  (147) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-h.png?raw=true"
@@ -6310,7 +6307,7 @@ others can easily examine the code at a later stage. I save.</p>
 <p>And once my app re compiles, if I click the click me button, I get the appropriate
 string output in the console.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~ week 2, section 06, i -  (148) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s06-i. -  (148) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s06-i.png?raw=true"
@@ -7259,7 +7256,7 @@ understand the benefits of using hooks within a React component.
 
 Consider the different modes in an alarm clock and the situations you would use them in. Typically, you have alarm on for setting a time to wake up, alarm off when this feature is not needed, and snooze for sneaking in a few extra minutes of sleep. Setting these modes doesn't require adding anything extra to your clock. They are built-in features that can be set with the push of a button. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ w2-s15-a. components with props (169) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-a. components with props (169) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-a.png?raw=true"
@@ -7269,14 +7266,13 @@ Consider the different modes in an alarm clock and the situations you would use 
 If you create this feature in a React app, you could create a component named clock and then parsing the status values via props.
 Recall the props is a feature of React that essentially allows you to hold information about the UI in the browser. In React, you also have another way to do this by using a similar concept called States, which also allows you to easily change how the component behaves in order to suit a given need.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-b.png?raw=true"
   alt="Describe State in React and explore its features."
   width="53%" />
 </p>
-
 By the end of this section (15), you'll be able to describe what State is in React and why developers use it to control what is displayed in the browser from a component. It helps to think of State as a component's internal data that determines the current behavior of a component. It's often used to store data that affects the behavior of a component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ w2-s15-c. state - data in a component that determines behavior (170) ~~~~~~~~~~~~-->
@@ -7292,7 +7288,7 @@ State is important because it allows components to stay in sync with each other 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-d.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 
@@ -7302,7 +7298,7 @@ For example, if one component updates its State, all other components that depen
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-e.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 If the child components have their own grandchild components, then the child components might have some States that they send us props to those grandchild components. In React, State is kept in a state of variables. The main way to change State is to alter these variables. 
@@ -7311,7 +7307,7 @@ If the child components have their own grandchild components, then the child com
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-f.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 When a component is created, it gets an initial State. The State is used to initialize the component's properties. 
@@ -7322,7 +7318,7 @@ Components can be either stateful or stateless, but what exactly does that mean?
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-g.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 
@@ -7332,7 +7328,7 @@ First is an app component with no state defined. It performs a single action, wh
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-h.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 We'll explore how that works a little later. For now, notice the syntax using the first line of the app's function body. If you're familiar with how array destructuring works in plain JavaScript. This line of code might've already make sense to you.  
@@ -7341,7 +7337,7 @@ We'll explore how that works a little later. For now, notice the syntax using th
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-i.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 To make things clear, consider an example array called fruits, which contains the three strings, apple, pear, and plum.
@@ -7350,7 +7346,7 @@ To make things clear, consider an example array called fruits, which contains th
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-j.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 
@@ -7360,7 +7356,7 @@ With its ES6 version, JavaScript introduced the concept of array destructuring, 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-k.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 
@@ -7379,7 +7375,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-m.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 <p>To better understand what is being destructured in the app component, let's call a console log to the useState hook. The output reveals an array holding two things, the string Hello and a function.</p>
@@ -7388,7 +7384,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-n.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 <p>In this case, Hello is the state value assigned to the word state variable. The function is a built-in one that is not declared.  The function can be destructured with any name you'd like, but there is a convention to follow.</p>
@@ -7397,7 +7393,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-o.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 <p>If you set the States variable name to be Greet, then the destructured state function should be setGreet. This is because the second destructured variable is a function that will be used to update the state of a variable.</p>
@@ -7406,7 +7402,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-p.png?raw=true"
-  alt="State - data in a component that determines behavior."
+  alt="."
   width="53%" />
 </p>
 <p>Let's examine an updated version of this stateful function component. Notice that the setGreet variable is not actually run, that is something that is done elsewhere.</p>
@@ -8074,40 +8070,138 @@ of content in response to user status or choice.
 01. Basic Types of navigation
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the early days of the web, there were no true standards for design, which meant that developers were often very experimental. There were various designs and experiments, but ultimately, the web development community settled on a few best practices. Today, the web is a mature medium. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 In this section (01), you will learn about the basic types of navigation on websites and how the navigation process works in React. Now, if you think about the history of web layouts and web navigation, it's likely development of other great inventions throughout history. 
 For example, after the Wright Brothers flew the first plane in 1903 and Kitty Hawk, North Carolina, there was a period of a few decades where engineers were experimenting with different designs. Planes with two or three sets of wings were the order of the day. Finally, after this initial exploration stage, airplane design settled down and the rules and best practices of building airplanes were established. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Like the development of rules of airplane construction, after the experimental years of the early web, the Web Design and Development Community settled on a few accepted unexpected designs. The focus and modern website navigation user interfaces is on utility. Stephen Krug's famous book on user experience Don't Make Me Think sums up the rule that developers are following today. 
 It's your duty as a web developer and designer to follow the best practices that have already been established. For example, a steering wheel does not belong on a washing machine, or an old-style phone dial does not belong in a car. In the same way, you wouldn't want to confuse your website visitors by giving them navigation that might look and feel smart, but that's completely different from what their used to. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 You might be wondering what is accepted modern website navigation, and how does it work in React. Website navigation is the parts of any website that allows you to browse through various pages or links on that website from a single component. There are several practical implementations of this user interface pattern. Let's explore each briefly now. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 The most common navigation components are, a horizontal navigation bar, a vertical navigation menu, a menu hiding behind a button, and a footer navigation menu. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-e.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 The horizontal navigation bar is often referred to as a navbar, and the vertical navigation bar is also known as a sidebar navigation. The menu hiding behind the button is usually represented by an icon that has three horizontal lines and is thus referred to as the burger icon or the burger menu. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-f.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Alternative to this is the drop-down navigation menu, known as the mega menu. This menu is usually also hiding behind a button and it's usually used as a sub or large menu on e-commerce sites and other sites that require many links. 
 The footer navigation menu is usually displayed as several visual columns containing links. All these mentioned menu patterns can often be used simultaneously in different parts of the same page. 
-
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-g.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Additionally, a more complex navigation UI can include multiple navigation approaches in a single component. You may, for example, have a horizontal navigation bar or navbar with drop-down menu items. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-h.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 If you're using a smaller resolution, the navigation bar displays as a burger menu icon. When you click on the burger menu icon a mobile sidebar or a vertical menu appears. Now you're familiar with some of the navigation types that are available in your React apps. 
 
 Let's explore how they are implemented to load different pages. If you compare the navigation of websites built with React against HTML and CSS, you will likely find no visual difference. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-i.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 While visually everything looks the same, in the code, React navigation works a bit differently. This is because the entire app is loaded inside a single div. You're not actually visiting different pages like you would with hyperlinks and HTML files. Instead, the content of that single div is controlled by React, and it's based on changes to the virtual DOM. It either updates the existing view or loads a completely new view, giving the user the impression of visiting a completely different URL. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-j.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Recall that with HTML, developers can use a list to make a navigation menu. Each list item contains a hyperlink to an HTML file, then some CSS to style the menu, like the display inline property to make the list display horizontally. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-k.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 To help illustrate how React's navigation works, think about how the buttons on the inside of an elevator work. Pressing the button will take you to the selected floor. Similarly, if you click on it, each link on a website takes you to a different page. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-l.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+
 If however, you're in a React elevator, It says if the elevator never moves. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-m.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Instead, when you press a button in this React's elevator, the entire construction of that given floor is injected into a single floor of this impossible building.
 However, this functionality is not available to developers from the React's library itself. In order to achieve this illusion of a multi-page website, you need to add the React router library to your React projects. 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-n.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s01-n.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Once again, you add this using the import statement and you'll learn more about how to do this soon. 
 
 In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.
@@ -8130,8 +8224,23 @@ When the user navigates to the web application in the browser, the Web Server wi
 Both approaches are valid and are used depending on the size, complexity and bandwidth requirements of the application. If your application is complex and has a lot of resources, your bundles will grow quite large and take a long time to download – possibly ending up slower than a traditional web application!
 Once the application is loaded, all logic and changes are applied to the current webpage.
 Let’s look at an example.
-
-An Example of a Single-Page App
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s02-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s02-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<h4>An Example of a Single-Page App</h4>
 Imagine there is a webpage that has a Label and a Button. It will display a random movie name when the button is clicked.
 In a traditional website, when the button is clicked, the browser will send a POST request to the web server. The web server will return a new web page containing the button and movie name, and the web browser renders the new page.
 In a Single Page Application, when the button is clicked, the browser will send a POST request to a web server. The web server will return a JSON object. The application reads the object and updates the Label with the movie name.
@@ -8139,8 +8248,23 @@ See, more efficient!
 But what if we need to have multiple pages with different layouts in our application?
 Let’s look at another example.
 Practical Differences Between Single-Page Apps and Multi-Page Apps
- 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s02-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s02-d.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+
 You have a web application that has a navigation bar on top and two pages. One page shows the latest news, and the other shows the current user’s profile page. The navigation bar contains a link for each page.
 In a traditional website, when the user clicks the Profile link, the web browser sends the request to the web server. The web server generates the HTML page and sends it back to the web browser. The web browser then renders the new web page.
 In a Single Page Application, different pages are broken into templates (or views). Each view will have HTML code containing variables that can be updated by the application.
@@ -8154,27 +8278,117 @@ That's why navigation in a single-page app is fundamentally different from its c
 03. The navbar
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-a.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component. 
-Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites. 
+Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-b.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 However, I can make this possible with the help of another library known as React Router. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-c.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
+
 As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-d.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-e.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
 First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-f.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
 With that done, let's return to app.js. Here I need to import routes and route from react-router-dom. I also need to replace the child jsx elements with some different code. Homepage becomes route path equals and then forward slash between double quotes. This is followed by element equals and then the homepage jsx elements inside of curly braces. Note that the route tag is self-closing and has no children inside. For Aboutme, I add a similar line, but I'll add about-me after the forward slash. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-g.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
+
 These slides will also be encased between route tags. If I go to my browser and type the exact link on one of the routes, for example, /Aboutme, I'll get only the Aboutme components showing under the navigation. However, if I remove the Aboutme from the URL, in other words, if I open the root route that is represented with a forward slash, then it will show the text from the homepage component under the navigation bar. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-h.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
+
 Notice that I'm grouping all the routes by wrapping them inside the routes jsx element. Also note that the nav tags are outside of the routes tag, meaning that navigation is outside the routes. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-i.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 Finally, I need to replace the anchor tags with React router links. This allows the correct component to be loaded when the link is clicked, rather than simply refreshing the page. In the app component, the anchor tag for homepage becomes link to equals and then the forward slash between double quotes. This is followed by class name equals and then nav-item in double quotes. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-j.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
 For Aboutme, the change is similar except that about-me appears after the forward slash. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-k.png?raw=true"
+  alt="."
+  width="80%" />
+</p>
+
 I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser. 
- 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s03-l.png?raw=true"
+  alt="."
+  width="40%" />
+</p>
 In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of week 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 04. Solution: Creating a route
@@ -12725,4 +12939,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 End. . .
-<h6>Tuesday 6/13/2023 8:13pm</h6>
+<h6>Tuesday 6/13/2023 9:16pm</h6>
