@@ -3693,14 +3693,14 @@ values represented as JSX expressions inside curly braces.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p float="left">
 <img src="/images/w1-s23-e.png?raw=true"
-  alt="."
-  width="40%" />
+  alt="JSX return div command."
+  width="45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w1-s23-f. jsx return command less than and greater to (92) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s23-f.png?raw=true"
-  alt="."
-  width="40%" />
+  alt="JSX fragment command rather than div."
+  width="45%" />
 </p>
 
 It's also important to remember that the HTML code must be wrapped in a top level
@@ -9632,14 +9632,13 @@ Here is a list of resources that may be helpful as you continue your learning jo
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-a/b. basics of working with react (259) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w4-s01-a.png?raw=true"
   alt="Course summary: Basics of working with React."
-  width="30%" />
-<p align="center" width="100%">
+  width="45%" />
 <img src="/images/w4-s01-b.png?raw=true"
   alt="Course summary part ii: Basics of working with React."
-  width="30%" />
+  width="45%" />
 </p>
 <p>In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals.</p>
 <p>You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components.</p>
@@ -9669,7 +9668,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
   alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
   width="30%" />
 </p>
-  
+
 You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed. 
 You were also introduce to hooks and now that you can use them to extend the functionality of state, and you were able to identify some common use cases for stateful and stateless components. 
 In the third module, you were introduced to navigation, updating, and assets in React. By completing the first lesson, you can now identify the basic types of navigation on websites. Create a basic navigation routes within React router library. Explain how components can be rendered conditionally. Use several different approaches to set up conditional rendering logic. 
