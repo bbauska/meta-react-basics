@@ -3172,45 +3172,37 @@ prompts.</p>
   alt="Pure Function - Always returns same output for same argument value."
   width="60%" />
 </p>
-
-Another important limitation has to do with something called pure
+<p>Another important limitation has to do with something called pure
 functions. In programming, a pure function is a function that will
 always return the same outputs for the same argument values that are
 passed in. Don't worry too much about pure function for now. Just keep
 in mind that in React, when you declare a component using props, it must
-never modify its own prompts.
-
-In this section (19), you learned about how props are used to pass data
+never modify its own prompts.</p>
+<p>In this section (19), you learned about how props are used to pass data
 to components. You discovered that a prop is a special react object that
 works in a similar way to a JavaScript object, and that its properties
 can be accessed by dot notation. You also learned why developers use
 props in order to make their apps more dynamic and flexible. Finally,
 you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
-functions using props must never modify its own props.
+functions using props must never modify its own props.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Dissecting props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Recall that much like parameters in a JavaScript function which allow
+<p>Recall that much like parameters in a JavaScript function which allow
 you to pass in values as arguments, React uses properties, or <b>props</b>,
-to pass data between components. But how exactly do they work?
-<br>
-
-In this section (20), you'll use a transpiler to break JSX code to plain
-JavaScript, making its purpose more understandable.
-<br>
-
-Remember first that JSX code in React is just syntactic sugar - meaning,
-a nicer way to write some hard-to-read code.
-
-For the browser to understand this syntactic sugar, you need to
+to pass data between components. But how exactly do they work?</p>
+<p>In this section (20), you'll use a transpiler to break JSX code to plain
+JavaScript, making its purpose more understandable.<p>
+<p>Remember first that JSX code in React is just syntactic sugar - meaning,
+a nicer way to write some hard-to-read code.<p>
+<p>For the browser to understand this syntactic sugar, you need to
 transpile JSX down to plain JavaScript code. You have a resource online,
-at the URL of [babeljs.io](https://babeljs.io/), which allows you to
+at the URL of <a href="https://babeljs.io/">babeljs.io</a>, which allows you to
 inspect the results of this transpiling. Once you visit the website,
-make sure to navigate to the <i>Try it out</i> link in the main navigation.
-
-For example, let's say you have a component that returns a piece of JSX:
+make sure to navigate to the <i>Try it out</i> link in the main navigation.</p>
+<p>For example, let's say you have a component that returns a piece of JSX:</p>
 
 ```
 function App() {
@@ -3219,9 +3211,9 @@ function App() {
 }
 ```
 
-... if you used the Babel transpiler to transpile this JSX syntactic
+<p>... if you used the Babel transpiler to transpile this JSX syntactic
 sugar code down to plain JavaScript code, you'd get back some unusual
-code:
+code:</p>
 
 ```
 "use strict";
@@ -3231,23 +3223,21 @@ function App() {
 }
 ```
 
-You just want to focus on the <b>React.createElement("h1", null,
-"Hello there");</b> part. You can ignore the rest.
+<p>You just want to focus on the <b>React.createElement("h1", null,
+"Hello there");</b> part. You can ignore the rest.</p>
+<p>This means that the <b>createElement</b> function receives three arguments:</p>
 
-This means that the <b>createElement</b> function receives three arguments:
+<ol>
+<li><p>The wrapping element to render.</p></li>
+<li><p>A null value (which is there to show an absence of an expected
+    JavaScript object value).</p></li>
+<li><p>The inner content that will go inside the wrapping element.</p></li>
+</ol>
 
-1.  The wrapping element to render. 
-
-2.  A null value (which is there to show an absence of an expected
-    JavaScript object value). 
-
-3.  The inner content that will go inside the wrapping element. 
-
-4.  Interestingly, the inner content that will go inside the wrapping
-    element can also be a call to the <b>createElement</b> function.
-
-For example, let's say you have a slightly more complex JSX element
-structure:
+<p>Interestingly, the inner content that will go inside the wrapping
+    element can also be a call to the <b>createElement</b> function.</p>
+<p>For example, let's say you have a slightly more complex JSX element
+structure:</p>
 
 ```
 function App() { 
@@ -3259,8 +3249,8 @@ function App() { 
 }
 ```
 
-... the transpiled return statement in plain JavaScript again returns
-two <b>createElement</b> functions:
+<p>... the transpiled return statement in plain JavaScript again returns
+two <b>createElement</b> functions:</p>
 
 ```
 "use strict";
@@ -3270,8 +3260,8 @@ function App() {
 }
 ```
 
-If you format this output, remove the <b>"use strict"</b> line, and
-remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:
+<p>If you format this output, remove the <b>"use strict"</b> line, and
+remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:</p>
 
 ```
 function App() {
@@ -3283,22 +3273,22 @@ function App() {
 }
 ```
 
-So now the third argument of the outer-most <b>React.createElement</b> call
-is another <b>React.createElement</b> call.
+<p>The third argument of the outer-most <b>React.createElement</b> call
+is another <b>React.createElement</b> call.</p>
 
-This is how you can nest as many elements as you want.
+<p>This is how you can nest as many elements as you want.</p>
 
-This means that a nested JSX structure is just a bunch of nested
+<p>This means that a nested JSX structure is just a bunch of nested
 <b>React.createElement</b> calls, passed in to other
-<b>React.createElement</b> calls as their third argument.
+<b>React.createElement</b> calls as their third argument.</p>
 
 <h3>The second -- null -- argument</h3>
 
-The second argument of <b>null</b> can -- in this case -- be replaced with
-an empty object.
+<p>The second argument of <b>null</b> can -- in this case -- be replaced with
+an empty object.</p>
 
-In that case, your code would contain a pair of curly braces instead of
-the word <b>null</b>:
+<p>In that case, your code would contain a pair of curly braces instead of
+the word <b>null</b>:</p>
 
 ```
 "use strict";
@@ -3312,11 +3302,11 @@ function App() {
 }
 ```
 
-This object is referred to as the <i>props</i> object. It is the main
+<p>This object is referred to as the <i>props</i> object. It is the main
 mechanism of sending data from a parent component to a child component
-in React.
+in React.</p>
 
-The way this works is described in React docs using the following code:
+<p>The way this works is described in React docs using the following code:</p>
 
 ```
 React.createElement(
@@ -3344,20 +3334,20 @@ props when they want the flow of data in the app to be dynamic.<br>
 
 This makes the app more versatile, helping it consume data easier.<br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-a.  (82) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w1-s21-a. syntax for props and components (82) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s21-a.png?raw=true"
-  alt="."
+  alt="Syntax for props and components."
   width="30%" />
 </p>
 
-In this section (21) you'll learn the syntax involved to use props and
+<p>In this section (21) you'll learn the syntax involved to use props and
 components. You'll also explore the passing of props to and within a
-component using functions.<br>
+component using functions.</p>
 
-During this course you were introduced to an example of how to build a simple blog layout in 
-react using components.<br>
+<p>During this course you were introduced to an example of how to build a simple blog layout in 
+react using components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-b.  (82) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3372,30 +3362,29 @@ Developers commonly build navigation menus using html on ordered lists.<br>
 
 A navigation menu is basically just a list which can be styled easily
 with CSS, such a snippet of code is well suited to be placed in its own
-react component. Making use of the HTLM Nav elements to act as the block
+react component. Making use of the HTML Nav elements to act as the block
 of code to return the JSX from it inside the function. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c.  (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c. jsx nav component (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p float="left">
 <img src="/images/w1-s21-c.png?raw=true"
-  alt="."
-  width="30%" />
+  alt="JSX Nav component."
+  width="45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-d.  (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w1-s21-d. attributes building components with props (83) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s21-d.png?raw=true"
-  alt="."
-  width="30%" />
+  alt="Attributes used in building components with props in React."
+  width="45%" />
 </p>
 
-For example, the return statement can contain several HTLM like elements, 
+<p>For example, the return statement can contain several HTLM like elements, 
 such as U L and L I tags. And this same Nav component can also be rendered 
-as a JSX element to which we can pass dynamic value with props. 
-
-In order to do this successfully you need to be comfortable with the concept of
+as a JSX element to which we can pass dynamic value with props.</p>
+<p>In order to do this successfully you need to be comfortable with the concept of
 attributes.  The best way to develop an understanding of attributes is
-with a live example of building a component using props. 
+with a live example of building a component using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-e.  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3405,12 +3394,11 @@ with a live example of building a component using props.
   width="70%" />
 </p>
 
-Here's a practical way to work with props. I'm in my app with the header main and sidebar components and all of them are rendered 
-from the app component. The app component is in this case referred to as the parent
-component and the header main and side ball components are referred to
-as the Children of the app component.<br>
-
-They are now past data from the app components to each of its Children components. 
+<p>Here's a practical way to work with props. I'm in my app with the header main and sidebar 
+components and all of them are rendered from the app component.  The app component in this case 
+referred to as the parent component and the header main and sidebar components are referred to
+as the Children of the app component.</p>
+<p>They are now past data from the app components to each of its Children components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-f.  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3420,13 +3408,12 @@ They are now past data from the app components to each of its Children component
   width="70%" />
 </p>
 
-First the header component receives a name prop, with a value of ANNA and a color prop
+<p>First the header component receives a name prop, with a value of ANNA and a color prop
 with the value of purple. I'm sending those props from the header JSX
 element inside the app components return statement. Press control S, or
-command S on a Mac to save these changes. 
-
-However, my re compiled app is not showing any changes because I send this data through the props
-object to the header component. I'm not using this data and the header component. 
+command S on a Mac to save these changes.</p>
+<p>However, my re compiled app is not showing any changes because I send this data through the props
+object to the header component. I'm not using this data and the header component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-g.  (85) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3436,13 +3423,12 @@ object to the header component. I'm not using this data and the header component
   width="70%" />
 </p>
 
-So let me open the head of component and I'll first pass in the props object. For now, 
+<p>So let me open the head of component and I'll first pass in the props object. For now, 
 I'll just console log the props object. Again Press control S, or command s to save the 
-update and wait for it to compile.
-
-If I now inspect this object in the console, I find the console logged props object and it 
+update and wait for it to compile.</p>
+<p>If I now inspect this object in the console, I find the console logged props object and it 
 comes with two properties the name ANNA and the color purple. I can now access the values 
-of the two properties inside the header component using props dot name and props dot collar.
+of the two properties inside the header component using props dot name and props dot collar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-h.  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3451,12 +3437,11 @@ of the two properties inside the header component using props dot name and props
   alt="."
   width="70%" />
 </p>
-To make sure that the expressions are evaluated 
+<p>To make sure that the expressions are evaluated 
 inside the JSX syntax, I must surround them with an opening and a closing curly brace. 
-I press control S or command s on the MAC again, and wait for it to compile. 
-
-Now my header shows the prop state received from the parent component, I'll
-now update the main and sidebar to. 
+I press control S or command s on the MAC again, and wait for it to compile.</p>
+<p>Now my header shows the prop state received from the parent component, I'll
+now update the main and sidebar to.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-i.  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3466,13 +3451,10 @@ now update the main and sidebar to.
   width="70%" />
 </p>
 
-Back in the app components render
-statement, I add the greet prop with the value of howdy in the main JXS
-element, and the value of high in the sidebar JXS element. 
-
-I opened the main components file and receive the props object then output 
-the value of opening curly brace props dot greet, closing curly brace. I can now
-delete the Hello string. 
+<p>Back in the app components render statement, I add the greet prop with the value of 
+howdy in the main JXS element, and the value of high in the sidebar JXS element. I opened the 
+main components file and receive the props object then output the value of opening curly 
+brace props dot greet, closing curly brace. I can now delete the Hello string.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-j.  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3482,18 +3464,18 @@ delete the Hello string.
   width="70%" />
 </p>
 
-Similarly in the sidebar components file, I'll also receive the props object and 
+<p>Similarly in the sidebar components file, I'll also receive the props object and 
 replace the Hello with an opening curly brace props dot greet, closing curly brace. 
 I click file, save all and wait for the apps to compile. All my components are now 
 using the data they received from their parent components using their respective
-props objects. 
+props objects.</p>
 
-You should now be able to effectively demonstrate the passing of props to and within 
-a component using classes and functions.
+<p>You should now be able to effectively demonstrate the passing of props to and within 
+a component using classes and functions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Passing props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is the completed App.js file:
+<p>Here is the completed App.js file:</p>
 
 ```
 import Heading from "./Heading";
@@ -3510,7 +3492,7 @@ function App() {
 export default App;
 ```
 
-And here is the completed Heading.js file:
+<p>And here is the completed Heading.js file:</p>
 
 ```
 function Heading(props) {
@@ -3533,8 +3515,8 @@ export default Heading;
 </p>
 <!-- (width="6.0in" height="1.8693788276465442in"} -->
 
-<b>Step 1:</b> First, you passed the props object as a parameter to the
-<b>Heading</b> component in the 'Heading.js' file. 
+<p><b>Step 1:</b> First, you passed the props object as a parameter to the
+<b>Heading</b> component in the 'Heading.js' file.</p>
 
 ```
 function Heading(props) {
@@ -3545,11 +3527,11 @@ function Heading(props) {
   
 export default Heading;
 ```
- 
-<b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
+
+<p><b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
 the <b>return</b> statement, and added a JSX expression that accesses the
 <b>firstName</b> property of the props object, inside the <b>return</b>
-statement's <b>h1</b>, after <b>Hello</b>. 
+statement's <b>h1</b>, after <b>Hello</b>.</p>
 
 ```
 function Heading(props) {
@@ -3561,9 +3543,9 @@ function Heading(props) {
 export default Heading;
 ```
  
-<b>Step 3:</b> Then, inside the App component's return statement, you
+<p><b>Step 3:</b> Then, inside the App component's return statement, you
 located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
-<b>firstName</b> and give it the value of <b>Bob</b>. 
+<b>firstName</b> and give it the value of <b>Bob</b>.</p>
 
 ```
 import Heading from "./Heading";
@@ -3579,12 +3561,12 @@ function App() {
 export default App;
 ```
 
-<b>Step 4:</b> You saved all your changes and ran the app to preview the
+<p><b>Step 4:</b> You saved all your changes and ran the app to preview the
 updates in the browser, and confirm that the page shows an <b>h1</b>
-element with the text that reads "Hello, Bob". 
+element with the text that reads "Hello, Bob".</p>
 
-<b>Step 5:</b> Then, you changed <b>firstName</b> to any name other than 'Bob'
-and see how the page updates with the new name.
+<p><b>Step 5:</b> Then, you changed <b>firstName</b> to any name other than 'Bob'
+and see how the page updates with the new name.</p>
 
 ```
 import Heading from "./Heading";
@@ -3600,9 +3582,9 @@ function App() {
 export default App;
 ```
 
-<b>Step 6:</b> Finally, you added a second <b>&lt;Heading /&gt;</b> after the
+<p><b>Step 6:</b> Finally, you added a second <b>&lt;Heading /&gt;</b> after the
 first one.  Again, adding the <b>firstName</b> attribute and choosing
-another name for this value.
+another name for this value.</p>
 
 ```
 import Heading from "./Heading";
@@ -3622,13 +3604,11 @@ export default App;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Introducing JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-At this point in the course, you've been introduced to the concept of
-JSX, and how it's used to interact with components.<br>
-
-In this section (23), you will explore JSX in more detail in the context of 
+<p>At this point in the course, you've been introduced to the concept of
+JSX, and how it's used to interact with components.</p>
+<p>In this section (23), you will explore JSX in more detail in the context of 
 components and styling.  You'll also learn how to mix JavaScript, HTML, and 
-CSS within a component.<br>
-
+CSS within a component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-a. jsx - write html in javascript (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3637,20 +3617,20 @@ CSS within a component.<br>
   alt="."
   width="40%" />
 </p>
-What is it that makes JSX so special? In one word,
+<p>What is it that makes JSX so special? In one word,
 expressiveness. Developers can express what they want to react to render
 using a very expressive syntax, almost identical to HTML or XML.<br>
 In other words, JSX allows developers to write HTML directly inside the
-JavaScript code. 
+JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-b. nav component with unordered list (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w1-s23-b. nav component with unordered list (90) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-b.png?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
   width="60%" />
 </p>
-<p>For example, you can add navigation function to a website by creating a nav component. 
+<p>For example, you can add a navigation function to a website by creating a nav component. 
 Then place the HTML semantic nav element, and an unordered list inside. 
 Because this is React, the list values can be made dynamic by passing values as props. It 
 is important to note that a regular JavaScript function is used to define how React
@@ -3667,11 +3647,11 @@ inside the curly braces of the code is essentially regular JavaScript code.</p>
   alt="JSX component syntax."
   width="60%" />
 </p>
-For example, you could calculate a series of simple expressions
+<p>For example, you could calculate a series of simple expressions
 using the Li or list item tag. This means that you can think of the
 curly braces as being special areas where you can write any kind of
 JavaScript code you like. You can write the rest of the code inside the
-return statement. 
+return statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-d. jsx return statement (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3680,14 +3660,13 @@ return statement.
   alt="JSX return statement."
   width="60%" />
 </p>
-Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
-inside the return statement of the function. The return statements can be thought of 
-as the area of expressive syntax that allows you to write regular HTML code as you'd
-like to have it in your rendered app. 
-
-But if you need to return HTML code over multiple lines, it must be placed inside parentheses. 
-This allows developers to alternate between regular HTML tags, and dynamic
-values represented as JSX expressions inside curly braces. 
+<p>Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
+inside the return statement of the function.</p>
+<p>The return statements can be thought of as the area of expressive syntax that allows you to 
+write regular HTML code as you'd like to have it in your rendered app.  But if you need to return 
+HTML code over multiple lines, it must be placed inside parentheses.  This allows developers 
+to alternate between regular HTML tags, and dynamic values represented as JSX expressions inside 
+curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3702,40 +3681,35 @@ values represented as JSX expressions inside curly braces.
   alt="JSX fragment command rather than div."
   width="45%" />
 </p>
-
-It's also important to remember that the HTML code must be wrapped in a top level
+<p>It's also important to remember that the HTML code must be wrapped in a top level
 element, such as a div tag. If you do not want to add extra div elements
 to the DOM, you can use something called a fragment instead. This is
 like an HTML open and close tag without the tag name. While you can
 think of the code inside the return statement is regular HTML, it's
 worth remembering you are in a JavaScript file, and as a result, there
-are some differences.
+are some differences.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-g.  (92) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-g. jsx component syntax (92) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-g.png?raw=true"
-  alt="."
+  alt="JSX component syntax."
   width="60%" />
 </p>
-
-For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
+<p>For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
 This is because class is a reserved keyword in JavaScript, you must use a slightly different
-keyword called className instead. Also notice that class name is written
-in Camel Case, which depicts the separation of words by using a single
-capitalized letter. 
-
-You can use className to list any number of CSS classes to style a specific JSX element 
-inside a component. This is just like how you use a class attribute in regular HTML. 
+keyword called className instead.</p>
+<p>Also notice that class name is written in Camel Case, which depicts the separation of words by 
+using a single capitalized letter.  You can use className to list any number of CSS classes to style a specific JSX element inside a component.</p>
+<p>This is just like how you use a class attribute in regular HTML. 
 It's only one of the many ways you can style React apps. You'll learn more about how to 
-do this later. 
-
+do this later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-h.  (93) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-h. html and jsx (93) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s23-h.png?raw=true"
-  alt="."
+  alt="JSX and HTML syntax."
   width="60%" />
 </p>
 For now, just know that this is the closest to what you would do like if you were working 
