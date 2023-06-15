@@ -2413,7 +2413,7 @@ for each of the sections of the typography-focused blog. Here's the
 structural update:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Components</summary>
 
 ```
 src/
@@ -2559,7 +2559,7 @@ You can finish the previews for my blog posts with the code for
 <b>Intro3.js</b> component:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Intro3() {
@@ -3747,7 +3747,7 @@ being carried inside of it, without issues.
 Now, consider the following component:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Apples(props) {
@@ -3788,7 +3788,7 @@ This is where <b>props.children</b> comes in.
 You can define a <b>Bag</b> component as follows:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Bag(props) {
@@ -4007,7 +4007,7 @@ Consider a starting <b>Promo</b> component, containing code that you
 encountered earlier:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Promo(props) {
@@ -4031,7 +4031,7 @@ export default Promo;
 Now you can add some inline styles to it:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Promo(props) {
@@ -4093,7 +4093,7 @@ That gives you an updated <b>Promo</b> component, with the styles object
 saved as a JavaScript variable:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Promo(props) {
@@ -4778,7 +4778,7 @@ arithmetic operations.</p>
 <p>For example:</p>
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 const bool = false; 
@@ -4815,7 +4815,7 @@ What is happening here is several props are being passed to the
 screen.
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 const bool = false;
@@ -5132,7 +5132,7 @@ export default App;
 <b>h1</b> element, add three <b>&lt;Card /&gt;</b> JSX elements.
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 import "./App.css";
@@ -5158,7 +5158,7 @@ export default App;
 /&gt;</b> element, like this: <b>h2="First card's h2"</b>. 
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 import "./App.css";
@@ -5184,7 +5184,7 @@ export default App;
 /&gt;</b> element, like so: <b>h3="First card's h3"</b>. 
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 import "./App.css";
@@ -6033,7 +6033,7 @@ then you reference its name in the event-handling <b>onClick</b> attribute,
 as follows:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function App() {
@@ -7157,7 +7157,7 @@ When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
 The <b>ref</b> object has a property named <b>current</b>.
 
 <details>
-  <summary>JS Function</summary>
+  <summary>React Function</summary>
 
 ```
 function TextInputWithFocusButton() {
@@ -9650,7 +9650,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
 <p align="center" width="100%">
 <img src="/images/w4-s01-g.png?raw=true"
   alt="Assets in React and how to use them."
-  width="30%" />
+  width="45%" />
 </p>
 <p>In the final section (18) of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components.</p>
 <p>You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.</p>
@@ -9721,34 +9721,33 @@ Reset input needs to run prevent default and I follow this with inputRef.current
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Building a Tic-Tac-Toe app</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You will build a small tic-tac-toe game during this tutorial. This
+Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a> to put them into practice and build your second mini-app with React.
+
+<p>You will build a small tic-tac-toe game during this tutorial. This
 tutorial does not assume any existing React knowledge. The techniques
 you'll learn in the tutorial are fundamental to building any React app,
-and fully understanding it will give you a deep understanding of React.
+and fully understanding it will give you a deep understanding of React.</p>
 
-The tutorial is divided into several sections:
+<p>The tutorial is divided into several sections:</p>
 
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial">Setup for the tutorial</a> will
-    give you a starting point to follow the tutorial.
+<ul>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial">Setup for the tutorial</a> will give you a starting point to follow the tutorial.</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#overview">Overview</a> will
+    teach you the fundamentals of React: components, props, and state.</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game">Completing the game</a> will teach you the most common techniques in React development.</p></li>
 
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#overview">Overview</a> will
-    teach you the fundamentals of React: components, props, and state.
-
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game">Completing the game</a> will
-    teach you the most common techniques in React development.
-
--   <a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel">Adding time travel</a> will
-    give you a deeper insight into the unique strengths of React.
+  <li><a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel">Adding time travel</a> will
+    give you a deeper insight into the unique strengths of React.</li>
+</ul>
 
 <h3>What are you building?</h3>
 
-In this tutorial, you'll build an interactive tic-tac-toe game with
-React.
-
-You can see what it will look like when you're finished here:
+<p>In this tutorial, you'll build an interactive tic-tac-toe game with
+React.</p>
+<p>You can see what it will look like when you're finished here:</p>
 
 <details>
-  <summary>App.js</summary>
+  <summary>React functions</summary>
 
 ```
 import { useState } from 'react';
@@ -9797,34 +9796,33 @@ function Board({ xIsNext, squares, onPlay }) {
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-a. tic-tac-toe game board (265) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-a. tic-tac-toe game board (266) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s03-a.png?raw=true"
   alt="Tic-tac-toe game board, early initial version."
   width="60%" />
 </p>
-If the code doesn't make sense to you yet, or if you are unfamiliar with
+<p>If the code doesn't make sense to you yet, or if you are unfamiliar with
 the code's syntax, don't worry! The goal of this tutorial is to help you
-understand React and its syntax.
-
-We recommend that you check out the tic-tac-toe game above before
+understand React and its syntax.</p>
+<p>We recommend that you check out the tic-tac-toe game above before
 continuing with the tutorial. One of the features that you'll notice is
 that there is a numbered list to the right of the game's board. This
 list gives you a history of all of the moves that have occurred in the
-game, and it is updated as the game progresses.
+game, and it is updated as the game progresses.</p>
 
-Once you've played around with the finished tic-tac-toe game, keep
+<p>Once you've played around with the finished tic-tac-toe game, keep
 scrolling. You'll start with a simpler template in this tutorial. Our
-next step is to set you up so that you can start building the game.
+next step is to set you up so that you can start building the game.</p>
 
 <h4>Setup for the tutorial</h4>
 
-In the live code editor below, click <b>Fork</b> in the top-right corner to
+<p>In the live code editor, click <b>Fork</b> in the top-right corner to
 open the editor in a new tab using the website CodeSandbox. CodeSandbox
 lets you write code in your browser and preview how your users will see
 the app you've created. The new tab should display an empty square and
-the starter code for this tutorial.
+the starter code for this tutorial.</p>
 
 <h4>App.js</h4>
 
@@ -9835,7 +9833,7 @@ export default function Square() {
 ```
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-b. tic-tac-toe first 'x' (265) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-b. tic-tac-toe first 'x' (266) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s03-b.png?raw=true"
@@ -9848,22 +9846,20 @@ export default function Square() {
 You can also follow this tutorial using your local development
 environment. To do this, you need to:
 
-1.  Install <a href="https://nodejs.org/en/">Node.js</a>,
-
-2.  In the CodeSandbox tab you opened earlier, press the top-left corner
+<ol>
+  <li><p>Install <a href="https://nodejs.org/en/">Node.js</a>,</p></li>
+  <li><p>In the CodeSandbox tab you opened earlier, press the top-left corner
     button to open the menu, and then choose File &gt; Export to ZIP in
-    that menu to download an archive of the files locally
+    that menu to download an archive of the files locally,</p></li>
+  <li><p>Unzip the archive, then open a terminal and cd to the directory you
+    unzipped,</p></li>
+  <li><p>Install the dependencies with npm install,</p></li>
+  <li><p>Run npm start to start a local server and follow the prompts to view
+    the code running in a browser.</li>
+</ol>
 
-3.  Unzip the archive, then open a terminal and cd to the directory you
-    unzipped
-
-4.  Install the dependencies with npm install
-
-5.  Run npm start to start a local server and follow the prompts to view
-    the code running in a browser
-
-If you get stuck, don't let this stop you! Follow along online instead
-and try a local setup again later.
+<p>If you get stuck, don't let this stop you! Follow along online instead
+and try a local setup again later.</p>
 
 <h4>Overview</h4>
 
@@ -9882,17 +9878,17 @@ In CodeSandbox you'll see three main sections:
 </p>
 <!-- {width="5.0in" height="2.3164555993000877in"} -->
 
-1.  The Files section with a list of files
-    like App.js, index.js, styles.css and a folder called public
+<ol>
+  <li><p>The Files section with a list of files, like App.js, index.js, styles.css 
+  and a folder called public,</p></li>
+  <li><p>The code editor where you'll see the source code of your selected 
+  file,</p></li>
+  <li>The browser section where you'll see how the code you've written will 
+  be displayed.</li>
+</ol>
 
-2.  The code editor where you'll see the source code of your selected
-    file
-
-3.  The browser section where you'll see how the code you've written
-    will be displayed
-
-The App.js file should be selected in the <i>Files</i> section. The contents
-of that file in the <i>code editor</i> should be:
+<p>The App.js file should be selected in the <i>Files</i> section. The contents
+of that file in the <i>code editor</i> should be:</p>
 
 ```
 export default function Square() {
@@ -9900,10 +9896,10 @@ export default function Square() {
 }
 ```
 
-The browser section should be displaying a square with a X in it like
-this:
+<p>The browser section should be displaying a square with an X in it like
+this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-d. x-filled square (267) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-d. x-filled square (268) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="/images/w4-s03-d.png?raw=true"
@@ -9912,92 +9908,90 @@ this:
 </p>
 <!-- {width="0.9583333333333334in" height="0.9583333333333334in"} -->
 
-Now let's have a look at the files in the starter code.
+<p>Now let's have a look at the files in the starter code:</p>
 
 <h4>App.js</h4>
 
-The code in App.js creates a <i>component</i>. In React, a component is a
+<p>The code in <strong>App.js</strong> creates a <i>component</i>. In React, a component is a
 piece of reusable code that represents a part of a user interface.
 Components are used to render, manage, and update the UI elements in
 your application. Let's look at the component line by line to see what's
-going on:
+going on:</p>
 
 ```
-export default function Square() {
-  return <button className="square">X</button>;
-}
+1.  export default function Square() {
+2.    return <button className="square">X</button>;
+3.  }
 ```
 
-The first line defines a function called Square. The export JavaScript
+<p>The first line defines a function called Square. The export JavaScript
 keyword makes this function accessible outside of this file. The default
 keyword tells other files using your code that it's the main function in
-your file.
+your file.</p>
 
 ```
-export default function Square() {
-  return <button className="square">X</button>;
-}
+1.  export default function Square() {
+2.    return <button className="square">X</button>;
+3.  }
 ```
 
-The second line returns a button. The return JavaScript keyword means
+<p>The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
 function. <button> is a <i>JSX element</i>. A JSX element is a combination
 of JavaScript code and HTML tags that describes what you'd like to
 display. className="square" is a button property or <i>prop</i> that tells
 CSS how to style the button. X is the text displayed inside of the
 button and </button> closes the JSX element to indicate that any
-following content shouldn't be placed inside the button.
+following content shouldn't be placed inside the button.</p>
 
 ```
 styles.css 
 ```
 
-Click on the file labeled styles.css in the <i>Files</i> section of
+<p>Click on the file labeled styles.css in the <i>Files</i> section of
 CodeSandbox. This file defines the styles for your React app. The first
 two <i>CSS selectors</i> ( and body) define the style of large parts of
 your app while the .square selector defines the style of any component
 where the className property is set to square. In your code, that would
-match the button from your Square component in the App.js file.
+match the button from your Square component in the App.js file.</p>
 
 ```
 index.js 
 ```
 
-Click on the file labeled index.js in the <i>Files</i> section of
+<p>Click on the file labeled index.js in the <i>Files</i> section of
 CodeSandbox. You won't be editing this file during the tutorial but it
 is the bridge between the component you created in the App.js file and
-the web browser.
+the web browser.</p>
 
 ```
-import {Strict Mode} from 'react';
+1.  import {Strict Mode} from 'react';
 
-import {createRoot} from 'react-dom/client';
+2.  import {createRoot} from 'react-dom/client';
 
-import './styles.css';
+3.  import './styles.css';
 
-import App from './App';
+4.  import App from './App';
 ```
 
-Lines 1-4 bring the necessary pieces together:
+<p>Lines 1-4 bring the necessary pieces together:</p>
 
--   React,
+<ul>
+  <li><p>React,</p></li>
+  <li><p>React's library to talk to web browsers (React DOM),</p></li>
+  <li><p>the styles for your components,</p></li>
+  <li>the component you created in App.js.</li>
+</ul>
 
--   React's library to talk to web browsers (React DOM),
-
--   the styles for your components,
-
--   the component you created in App.js.
-
-The remainder of the file brings all the pieces together and injects the
-final product into index.html in the public folder.
+<p>The remainder of the file brings all the pieces together and injects the
+final product into index.html in the public folder.</p>
 
 <h4>Building the board</h4>
 
-Let's get back to App.js. This is where you'll spend the rest of the
-tutorial.
-
-Currently the board is only a single square, but you need nine! If you
-just try and copy paste your square to make two squares like this:
+<p>Let's get back to App.js. This is where you'll spend the rest of the
+tutorial.</p>
+<p>Currently the board is only a single square, but you need nine! If you
+just try and copy paste your square to make two squares like this:</p>
 
 ```
 export default function Square() {
@@ -10006,17 +10000,17 @@ export default function Square() {
 }
 ```
 
-You'll get this error:
+<p>You'll get this error:</p>
 
 <h4>Console</h4>
 
-/src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
-Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?
+<p>/src/App.js: Adjacent JSX elements must be wrapped in an enclosing tag.
+Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?</p>
 
-React components need to return a single JSX element and not multiple
+<p>React components need to return a single JSX element and not multiple
 adjacent JSX elements like two buttons. To fix this you can use
 fragments (<> and </>) to wrap multiple adjacent JSX elements like
-this:
+this:</p>
 
 ```
 export default function Square() {
@@ -10029,7 +10023,8 @@ export default function Square() {
 }
 ```
 
-Now you should see:
+<p>Now you should see:</p>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-e. two x-filled squares (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10040,11 +10035,11 @@ Now you should see:
 </p>
 <!-- {width="1.6041666666666667in" height="0.9166666666666666in"} -->
 
-Great! Now you just need to copy-paste a few times to add nine squares
-and...
+<p>Great! Now you just need to copy-paste a few times to add nine squares
+and...</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-f. nine x-filled squares (271) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-f. nine x-filled squares (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
 <img src="/images/w4-s03-f.png?raw=true"
@@ -10053,12 +10048,12 @@ and...
 </p>
 <!-- {width="6.458333333333333in" height="1.0in"} -->
 
-Oh no! The squares are all in a single line, not in a grid like you need
+<p>Oh no! The squares are all in a single line, not in a grid like you need
 for our board. To fix this you'll need to group your squares into rows
 with divs and add some CSS classes. While you're at it, you'll give each
-square a number to make sure you know where each square is displayed.
+square a number to make sure you know where each square is displayed.</p>
 
-In the App.js file, update the Square component to look like this:
+<p>In the App.js file, update the Square component to look like this:</p>
 
 <details>
   <summary>App.js</summary>
@@ -10089,9 +10084,9 @@ export default function Square() {
 
 </details>
 
-The CSS defined in styles.css styles the divs with the className of
+<p>The CSS defined in styles.css styles the divs with the className of
 board-row. Now that you've grouped your components into rows with the
-styled divs you have your tic-tac-toe board:
+styled divs you have your tic-tac-toe board:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w4-s03-g. tic-tac-toe filled with numbers 1 - 9 (271) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10102,8 +10097,8 @@ styled divs you have your tic-tac-toe board:
 </p>
 <!-- {width="2.0in" height="2.0in"} -->
 
-But you now have a problem. Your component named Square, really isn't a
-square anymore. Let's fix that by changing the name to Board:
+<p>But you now have a problem. Your component named Square, really isn't a
+square anymore. Let's fix that by changing the name to Board:</p>
 
 ```
 export default function Board() {
@@ -10111,7 +10106,7 @@ export default function Board() {
 }
 ```
 
-At this point your code should look something like this:
+<p>At this point your code should look something like this:</p>
 
 <details>
   <summary>App.js</summary>
@@ -10144,22 +10139,22 @@ export default function Board() {
 
 <h4>Note</h4>
 
-Psssst... That's a lot to type! It's okay to copy and paste code from
+<p>Psssst... That's a lot to type! It's okay to copy and paste code from
 this page. However, if you're up for a little challenge, we recommend
-only copying code that you've manually typed at least once yourself.
+only copying code that you've manually typed at least once yourself.</p>
 
 <h4>Passing data through props</h4>
 
-Next, you'll want to change the value of a square from empty to "X" when
+<p>Next, you'll want to change the value of a square from empty to "X" when
 the user clicks on the square. With how you've built the board so far
 you would need to copy-paste the code that updates the square nine times
 (once for each square you have)! Instead of copy-pasting, React's
 component architecture allows you to create a reusable component to
-avoid messy, duplicated code.
+avoid messy, duplicated code.</p>
 
-First, you are going to copy the line defining your first square
-(<button className="square">1</button>) from your Board component
-into a new Square component:
+<p>First, you are going to copy the line defining your first square
+(&lt;button className="square"&gt;1&lt;/button&gt;) from your Board component
+into a new Square component:</p>
 
 ```
 function Square() {
@@ -10171,11 +10166,11 @@ export default function Board() {
 }
 ```
 
-Then you'll update the Board component to render that Square component
-using JSX syntax:
+<p>Then you'll update the Board component to render that Square component
+using JSX syntax:</p>
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 // ...
@@ -10204,12 +10199,12 @@ export default function Board() {
 
 </details>
 
-Note how unlike the browser divs, your own components Board and Square
-must start with a capital letter.
+<p>Note how unlike the browser divs, your own components Board and Square
+must start with a capital letter.</p>
 
-Let's take a look:
+<p>Let's take a look:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-h. tic-tac-toe filled with number 1 (273) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w4-s03-h. tic-tac-toe filled with number 1 (273) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s03-h.png?raw=true"
@@ -10218,12 +10213,11 @@ Let's take a look:
 </p>
 <!-- {width="2.0in" height="2.054054024496938in"} -->
 
-Oh no! You lost the numbered squares you had before. Now each square
+<p>Oh no! You lost the numbered squares you had before. Now each square
 says "1". To fix this, you will use props to pass the value each square
-should have from the parent component (Board) to its child (Square).
-
-Update the Square component to read the value prop that you'll pass from
-the <b>Board:</b>
+should have from the parent component (Board) to its child (Square).</p>
+<p>Update the Square component to read the value prop that you'll pass from
+the <b>Board:</b></p>
 
 ```
 function Square({ value }) {
@@ -10231,11 +10225,10 @@ function Square({ value }) {
 }
 ```
 
-function Square({ value }) indicates the Square component can be passed
-a prop called value.
-
-Now you want to display that value instead of 1 inside every square. Try
-doing it like this:
+<p>function Square({ value }) indicates the Square component can be passed
+a prop called value.</p>
+<p>Now you want to display that value instead of 1 inside every square. Try
+doing it like this:</p>
 
 ```
 function Square({ value }) {
@@ -10255,9 +10248,9 @@ Oops, this is not what you wanted:
 </p>
 <!-- {width="2.0in" height="1.6666666666666667in"} -->
 
-You wanted to render the JavaScript variable called value from your
+<p>You wanted to render the JavaScript variable called value from your
 component, not the word "value". To "escape into JavaScript" from JSX,
-you need curly braces. Add curly braces around value in JSX like so:
+you need curly braces. Add curly braces around value in JSX like so:</p>
 
 ```
 function Square({ value }) {
@@ -10276,12 +10269,12 @@ For now, you should see an empty board:
 </p>
 <!-- {width="2.0in" height="1.964912510936133in"} -->
 
-This is because the Board component hasn't passed the value prop to each
+<p>This is because the Board component hasn't passed the value prop to each
 Square component it renders yet. To fix it you'll add the value prop to
-each Square component rendered by the Board component:
+each Square component rendered by the Board component:</p>
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 export default function Board() {
@@ -10423,7 +10416,7 @@ remove the value prop from all nine of the Square components created by
 the Board component:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Function</summary>
 
 ```
 // ...
@@ -10457,11 +10450,12 @@ console.log("clicked!"); event handler with setValue('X');. Now your
 Square component looks like this:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Square() {
   const [value, setValue] = useState(null);
+  
   function handleClick() {
     setValue('X');
   }
@@ -10634,7 +10628,7 @@ Now your Board component needs to pass the value prop down to each
 Square that it renders:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Code</summary>
 
 ```
 export default function Board() {
@@ -10883,7 +10877,7 @@ export default function Board() {
 
 Notice the new () => syntax. Here, () => handleClick(0) is an <i>arrow
 function,</i> which is a shorter way to define functions. When the square
-is clicked, the code after the => "arrow" will run, calling
+is clicked, the code after the =&gt; "arrow" will run, calling
 handleClick(0).
 
 Now you need to update the other eight squares to call handleClick from
@@ -10891,7 +10885,7 @@ the arrow functions you pass. Make sure that the argument for each call
 of the handleClick corresponds to the index of the correct square:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Function</summary>
 
 ```
 export default function Board() {
@@ -11116,12 +11110,13 @@ You'll update the Board's handleClick function to flip the value of
 xIsNext:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
+  
   function handleClick(i) {
     const nextSquares = squares.slice();
     if (xIsNext) {
@@ -11230,7 +11225,7 @@ appropriate. Don't worry too much about the calculateWinner function;
 it's not specific to React:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 export default function Board() {
@@ -11456,7 +11451,7 @@ First, add a Game component with export default. Have it render the
 Board component and some markup:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Board() {
@@ -11522,7 +11517,7 @@ be called by the Board component to update the game. Pass xIsNext,
 currentSquares and handlePlay as props to the Board component:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 export default function Game() {
@@ -11567,7 +11562,7 @@ Board component with a single call to your new onPlay function so the
 Game component can update the Board when the user clicks a square:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 function Board({ xIsNext, squares, onPlay }) {
@@ -12454,7 +12449,7 @@ attribute when your styles depend on JavaScript variables.
 In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Code</summary>
 
 ```
 let content;
@@ -12757,7 +12752,7 @@ this in code.
 First, move the state up from MyButton into MyApp:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 export default function MyApp() {
@@ -12786,7 +12781,7 @@ curly braces, just like you previously did with built-in tags like
 &lt;img&gt;:
 
 <details>
-  <summary>JS Functions</summary>
+  <summary>React Functions</summary>
 
 ```
 export default function MyApp() {
@@ -13317,7 +13312,7 @@ setInStockOnly. To let SearchBar update the FilterableProductTable's
 state, you need to pass these functions down to SearchBar:
 
 <details>
-  <summary>JS Function</summary>
+  <summary>React Function</summary>
 
 ```
 function FilterableProductTable({ products }) {
