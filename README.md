@@ -49,13 +49,13 @@ By the end of this course, you will be able to:</p>
 
   - You'll gain experience with the following tools and software:
   
-    - React.js
+    - React.js,
 	
-    - JSX
+    - JSX,
 	
-    - React
+    - React,
 	
-    - HTML, CSS and JavaScript
+    - HTML, CSS and JavaScript,
 	
     - VSCode (or other, BETTER, editors with less bullshit), like notepad++,
 
@@ -76,7 +76,6 @@ with coding.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Introduction to the course: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 Welcome to React basics.
 
 In this course, you'll be introduced to the basics of working with React.
@@ -156,7 +155,7 @@ working with at any given point in time.</b>
 <p align="center" width="100%">
 <img src="/images/w1-s01-d.png?raw=true"
   alt="React basics - styling React apps."
-  width="40%" />
+  width="30%" />
 </p>
 <!-- {width="4.0in" height="2.840391513560805in"} -->
 
@@ -175,115 +174,95 @@ Let's get started...
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. How is React used in the real world?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-There are plenty of React based apps that you've probably used before.
-
-Facebook and Instagram are two examples.
-
-But Netflix, Airbnb, New York Times, and a variety of other companies
+<p>There are plenty of React based apps that you've probably used before.</p>
+<p>Facebook and Instagram are two examples.</p>
+<p>But Netflix, Airbnb, New York Times, and a variety of other companies
 also use React for their websites as well, so you've likely encountered
-it before.
-
-These websites that tend to have really interactive UIs are more likely
-to be using something like React.
-
-Facebook.com was not performing and not modern looking after the 10 or
-so years it had been in use. They had milked that cow dry.
-
-Really the only option at that point was to rewrite it on a different
-stack that was going to be faster and easier to build on.
-
-Basically, there was a need for having a truly fast and responsive UI
-and React fills that need.
-
-Facebook has been rewritten using React.
-
-React is open sourced, meaning that anyone can contribute to it, without
+it before.</p>
+<p>These websites that tend to have really interactive UIs are more likely
+to be using something like React.</p>
+<p>Facebook.com was not performing and not modern looking after the 10 or
+so years it had been in use. They had milked that cow dry.</p>
+<p>Really the only option at that point was to rewrite it on a different
+stack that was going to be faster and easier to build on.</p>
+<p>Basically, there was a need for having a truly fast and responsive UI
+and React fills that need.</p>
+<p>Facebook has been rewritten using React.</p>
+<p>React is open sourced, meaning that anyone can contribute to it, without
 dues and licensing crap. Unlike Apple, Microsoft, and EVERYONE else!
 'Thank you' goes out to Linus Benedict Trivolds, creator of GitHub and
 the first Linux kernel. You are an inspiration to humanity, and more
 specifically, every programmer ever. You've given more than Apple,
 Microsoft, & IBM have ever produced. And you ask for nothing in return.
-Linus, you are a tribute to humanity.
-
-But we also have developers who aren't at Meta who are also
+Linus, you are a tribute to humanity.</p>
+<p>But we also have developers who aren't at Meta who are also
 contributing to React (for free), and that means that there's a really
 strong community around React (all for free to meta, a trillion-dollar
-company). Something wrong with this picture you say? Hell yes, I say.
-
-A lot of people are really excited to build on it and make improvements
-to it.
-
-If you ever have any questions or any (free) ideas about a certain
+company). Something wrong with this picture you say? Hell yes, I say.</p>
+<p>A lot of people are really excited to build on it and make improvements
+to it.</p>
+<p>If you ever have any questions or any (free) ideas about a certain
 feature or optimization or improvement, there's really a great
-opportunity to actually contribute to the React library itself.
-
-There's a React team at Meta, and this team is comprised of engineers
-(really?) who are working on React full-time.
-
-But there's also a group of developers outside of Meta who are
-contributing to React as well.
-
-I think the open source part of it is really cool just because there's
+opportunity to actually contribute to the React library itself.</p>
+<p>There's a React team at Meta, and this team is comprised of engineers
+(really?) who are working on React full-time.</p>
+<p>But there's also a group of developers outside of Meta who are
+contributing to React as well.</p>
+<p>I think the open source part of it is really cool just because there's
 such a community around React, it's constantly being updated and
-maintained.
-
-There's always going to be someone available to answer questions or to
-update documentation, it's very current.
-
-If you're using React for the first time, definitely take a look at our
-documentation.
-
-There are a lot of conversations being had about React online, and we
+maintained.</p>
+<p>There's always going to be someone available to answer questions or to
+update documentation, it's very current.</p>
+<p>If you're using React for the first time, definitely take a look at our
+documentation.</p>
+<p>There are a lot of conversations being had about React online, and we
 actually have a React conference every year where we talk about new
 features with React and you can just connect with a lot of React
-developers.
-
-There are plenty of opportunities to get involved in the React
+developers.</p>
+<p>There are plenty of opportunities to get involved in the React
 community, and I think it makes building with React even more rewarding
-if you connect with the community as well.
-
+if you connect with the community as well.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Course syllabus for React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By the end of this section (03), you will have learned about the scope
-of things to be covered in this course.
+<p>By the end of this section (03), you will have learned about the scope
+of things to be covered in this course.</p>
 
-<h3><b>Prerequisites</b></h3>
+<h3>Prerequisites</h3>
 
-To take this course, you should understand the basics of HTML, CSS, and
-JavaScript. Additionally, it always helps to have a can-do attitude!
+<p>To take this course, you should understand the basics of HTML, CSS, and
+JavaScript. Additionally, it always helps to have a can-do attitude!</p>
 
-<h3><b>Course content</b></h3>
+<h3>Course content</h3>
 
-This course is an introduction to React development, called React Basics.
+<p>This course is an introduction to React development, called React Basics.</p>
 
-By the end of this course, you will know how to build a simple user
-interface using React.
+<p>By the end of this course, you will know how to build a simple user
+interface using React.</p>
 
-This course consists of <b>4 (four)</b> modules. They cover the following
-topics:
+<p>This course consists of <b>4 (four)</b> modules. They cover the following topics:</p>
 
 <h3>Module 1: Anatomy of React</h3>
 
-React is an increasingly popular JavaScript framework for building
-isomorphic web applications. It is developed and used by Facebook.
+<p>React is an increasingly popular JavaScript framework for building
+isomorphic web applications. It is developed and used by Facebook.</p>
 
-In this introductory module, you'll learn about what React is and where
+<p>In this introductory module, you'll learn about what React is and where
 it is used. You'll also learn how to set up your coding environment so
 that you have as productive a learning experience as possible. So, the
 purpose of this module is to understand the 'what' and the 'why', and to
-get set up for the modules that follow.
+get set up for the modules that follow.</p>
 
-<b>Components</b> are one of the foundations of React. In React, everything
+<p><b>Components</b> are one of the foundations of React. In React, everything
 revolves around components. You'll learn how to build <b>components</b>,
 how to structure and customize your React projects, and how to compose
-layouts by importing components into other components.
+layouts by importing components into other components.</p>
 
-You'll learn about passing data from one component to another. You'll
+<p>You'll learn about passing data from one component to another. You'll
 learn about <b>JSX syntax</b> in React and how to use it to structure and
-style your components.
+style your components.</p>
 
-By the end of this module (one) you will be able to:
+<p>By the end of this module (one) you will be able to:</p>
 
 <ul>
   <li>Explain the concepts behind React and component architecture,<br></li>
@@ -297,13 +276,13 @@ By the end of this module (one) you will be able to:
 
 <h3>Module 2: Data and State</h3>
 
-The second module of this course deals with working with <b>events</b> and
+<p>The second module of this course deals with working with <b>events</b> and
 <b>errors</b> in React. You'll learn how <b>events</b> work and how you can
 handle them in React. Handling events can sometimes get a bit tricky, so
 you'll also learn about dealing with <b>errors</b> related to <b>events</b>
-in React.
+in React.</p>
 
-By the end of this module (two) you will be able to:
+<p>By the end of this module (two) you will be able to:</p>
 
 <ul>
   <li>Use common methods to manage state in React,<br></li>
@@ -317,12 +296,12 @@ By the end of this module (two) you will be able to:
 
 <h3>Module 3: Navigation Updating and Assets in React</h3>
 
-In this module (three), you'll learn about routing and navigation in
+<p>In this module (three), you'll learn about routing and navigation in
 React. You'll learn how to render partial views and how to update
 routes in your React apps. You'll understand how assets are used,
-bundled and embedded.
+bundled and embedded.</p>
 
-By the end of this module (three) you will be able to:
+<p>By the end of this module (three) you will be able to:</p>
 
 <ul>
   <li>Use media assets, such as audio and video, with React,<br></li>
@@ -341,12 +320,12 @@ By the end of this module (three) you will be able to:
 <p>This module (four) is focused on a practical mini project of building a
 calculator app in React. Upon completing this module, you'll have coded
 your own mini project in React, as a starting point for building your
-React portfolio.<br>
+React portfolio.</p>
 
-You have now learned about the scope of things you will cover in this
-course.<br>
+<p>You have now learned about the scope of things you will cover in this
+course.</p>
 
-By the end of this module (four) you will be able to:</p>
+<p>By the end of this module (four) you will be able to:</p>
 
 <ul>
   <li>Synthesize the skills from this course to create and style a React
@@ -361,51 +340,51 @@ By the end of this module (four) you will be able to:</p>
 <p>Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
 quick summary will be useful so let's explore some fundamental HTML,
-CSS and JavaScript principles and practices.<br>
+CSS and JavaScript principles and practices.</p>
 
-In this section (04), let's take a practical approach, and revisit some
+<p>In this section (04), let's take a practical approach, and revisit some
 of the development techniques you'll need to be comfortable with before
-learning React.<br>
+learning React.</p>
 
-To get the most out of this course on React basics, you should first
+<p>To get the most out of this course on React basics, you should first
 understand the fundamental methods and concepts of JavaScript.
 Otherwise, you may feel like you're a child learning to run before you
-can walk.<br>
+can walk.</p>
 
-React is a declarative, efficient, and flexible JavaScript library for
+<p>React is a declarative, efficient, and flexible JavaScript library for
 building user interfaces. It lets you compose complex UIs from small and
-isolated pieces of code called "<b>components</b>".<br>
+isolated pieces of code called "<b>components</b>".</p>
 
-React apps are built using modern JavaScript features, which are
+<p>React apps are built using modern JavaScript features, which are
 commonly known as <b>ES6</b>. Developers use React to develop Single Page
 Applications. And you can also develop mobile applications with React
-Native.<br>
+Native.</p>
 
-As an aspiring developer, you may opt for a 'learn as you go approach'
+<p>As an aspiring developer, you may opt for a 'learn as you go approach'
 regarding JavaScript and React. But this may not help your productivity
 and even at times frustrate you. This is because you may confuse code or
-functionality that is plain JavaScript, or code that is React.<br>
+functionality that is plain JavaScript, or code that is React.</p>
 
-For example, with a solid foundational knowledge of JavaScript, you can
+<p>For example, with a solid foundational knowledge of JavaScript, you can
 quickly identify code that is JavaScript ES6 and code that is React. And
 throughout this course, there will be help for you along the way with
-some friendly reminders.<br>
+some friendly reminders.</p>
 
-Also, keep in mind that you are using React to build user interfaces
-which also include HTML and CSS code.<br>
+<p>Also, keep in mind that you are using React to build user interfaces
+which also include HTML and CSS code.</p>
 
-Let's begin with the fundamental HTML knowledge needed to learn React.</p>
+<p>Let's begin with the fundamental HTML knowledge needed to learn React.</p>
 
 <h3>HTML</h3>
 
-Recall that HTML is used to describe the structure of Web pages.
+<p>Recall that HTML is used to describe the structure of Web pages.
 Developers use HTML elements with their opening and closing tags to
-"mark up" an HTML document. 
+"mark up" an HTML document.</p>
 
-These elements form the structure of a web page and describe what to
-display to the web browser.
+<p>These elements form the structure of a web page and describe what to
+display to the web browser.</p>
 
-When it comes to HTML it's important to know about:
+<p>When it comes to HTML it's important to know about:</p>
 
 1.  The purpose of HTML in the web browser,
 
@@ -416,16 +395,16 @@ When it comes to HTML it's important to know about:
 4.  Another important concept to know about when you're talking about
     HTML is the Document Object Model, or <b>DOM</b>.
 
-Users need to be able to interact with elements on a web page. This
+<p>Users need to be able to interact with elements on a web page. This
 means that an HTML document must be represented in a way that JavaScript
 code can query and update it. And that's the function of the DOM. It's
-a model of the objects in your HTML file.
+a model of the objects in your HTML file.</p>
 
-And web developers interact with the DOM through JavaScript to update
-content, set up events and animate HTML elements.
+<p>And web developers interact with the DOM through JavaScript to update
+content, set up events and animate HTML elements.</p>
 
-Before you learn React, it's advisable that you are comfortable with the
-following HTML tags and concepts
+<p>Before you learn React, it's advisable that you are comfortable with the
+following HTML tags and concepts:</p>
 
 <h3>Layout & Style</h3>
 
@@ -538,9 +517,9 @@ you get started on this course.</p>
 
 <p>Once you have become confident with these skills, you'll be in a better
 position to learn and apply React concepts and prepare yourself for
-development of React apps.<br>
+development of React apps.</p>
 
-To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm</b>, 
+<p>To refresh your knowledge of JavaScript and the basics of <b>Node</b> and <b>npm</b>, 
 please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" 
 target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 
@@ -548,17 +527,17 @@ target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 <h2>05. JavaScript modules, imports - exports</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Before you start creating the next great app, let's explore a little
-more about modules.<br>
+more about modules.</p>
 
-Modules can help you save and access your code in a more structured
+<p>Modules can help you save and access your code in a more structured
 way, and in this section (05), you'll learn about some foundational
-concepts of working with JavaScript modules.<br>
+concepts of working with JavaScript modules.</p>
 
-This knowledge is crucial in order to understand the syntax and the
+<p>This knowledge is crucial in order to understand the syntax and the
 logic behind how the example <b>React apps</b> in this course are put
-together.<br>
+together.</p>
 
-This section (05) will cover the three main concepts:</p>
+<p>This section (05) will cover the three main concepts:</p>
 
 <ol>
   <li>JavaScript modules,<br></li>
@@ -570,15 +549,15 @@ This section (05) will cover the three main concepts:</p>
 
 <h3>JavaScript Modules</h3>
 
-In JavaScript, a module is simply a <b>file</b>.
+<p>In JavaScript, a module is simply a <b>file</b>.</p>
 
-The purpose of a module is to have more modular code, where you can work
+<p>The purpose of a module is to have more modular code, where you can work
 with smaller files, and import and export them so that the apps you
-build are more customizable and have more composable parts.
+build are more customizable and have more composable parts.</p>
 
-A module can be as simple as a single function in a separate file.
+<p>A module can be as simple as a single function in a separate file.</p>
 
-Consider the following function declaration:
+<p>Consider the following function declaration:</p>
 
 ```
 function addTwo(a, b) {
@@ -604,9 +583,9 @@ exporting of JavaScript modules will be done in this course.
 
 In general, there are two ways to export modules in JavaScript:
 
-1.  Using default exports
+1.  Using default exports,
 
-2.  Using named exports 
+2.  Using named exports.
 
 <h3>Default Exports</h3>
 
@@ -761,30 +740,22 @@ JavaScript.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Additional reading</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Below you will find links to helpful additional readings:
+<p>Below you will find links to helpful additional readings:</p>
 
 <ul>
   <li><a href="https://nodejs.org/en" target="_blank" rel="noopener noreferrer">nodejs.org</a>,<br></li>
-
   <li><a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npmjs.com</a>,<br></li>
-
   <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer">reactjs.org</a>,<br></li>
-
   <li><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app.dev</a>,<br></li>
-
   <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VS Code</a>,<br></li>
-
-  <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer">Notepad</a> to truly know & utilize
-    React and NOT VS code,<br></li>
-
+  <li><a href="https://notepad-plus-plus.org/" target="_blank" rel="noopener noreferrer">Notepad</a> to truly know & utilize React and NOT VS code,<br></li>
   <li><a href="https://www.sublimetext.com/" target="_blank" rel="noopener noreferrer">Sublime</a>.<br></li>
 </ul>
 
-In the 40+ years I've worked with Microsoft products, I have yet to see anything they've done 
+<p>In the 40+ years I've worked with Microsoft products, I have yet to see anything they've done 
 better than everyone else. They can copy, like the Russians did of the Space Shuttle. 
 But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
-But collectively, they ain't shit.
-
+But collectively, they ain't shit.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Setting up a React project in notepad++, Sublime, &amp; VS Code</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7514,48 +7485,48 @@ Let's explore each component in a little more detail.
 </p>
 First, the app component imports the mealsList and Counter components and renders them on the screen. Next, the mealsList component uses use state to hook to list days meals which are stored in an array. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-e.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-e. mealslist.js (179) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-e.png?raw=true"
-  alt="."
+  alt="MealsList.js."
   width="40%" />
 </p>
 The array elements are saved inside the todaysMeals variable. Then the meals state variable is initialized to hold this value. In other words, the meals state variable holds the array. Finally, the counter component tracks the number of meals that a user is allowed to eat today. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-f.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ w2-s17-f. mealslist to counter via siblings component (179) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-f.png?raw=true"
-  alt="."
+  alt="MealsList to Counter vis siblings components."
   width="40%" />
 </p>
 While this coding components structure may look good, there is a bit of a problem. The counter component needs to get state information from the mealsList components, but both components are rendered by the app component. In other words, the mealsList and the counter components are siblings and not in a parent-child relationship. This brings up a question. How can you pass the state information from the mealsList component to the counter component as the counter component is not a child of the mealsList component? 
- <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-g.  (1) ~~~~~~~~~~~-->
+ <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s17-g. mealslist to app via state component (179) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-g.png?raw=true"
-  alt="."
+  alt="MealsList to App via state components."
   width="40%" />
 </p>
 Let's explore a possible solution. First, you can simplify the mealsList component by extracting the returned value into its own components, then you can work with the separate components to display different meal items. Let's call this new component mealsIitem. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-h.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w2-s17-h. app to mealslist to mealitem components (180) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-h.png?raw=true"
-  alt="."
+  alt="App to MealsList to MealItem components."
   width="40%" />
 </p>
 To do this, you can use the practice known as lifting state up. This means that you move the state from mealsList up to the app components, then you can pass stage three props using the mealsList components as a bridge to the mealItem component. Then you just have to count the data available in the counter components. 
 However, this approach relies on two practices, lifting state up and prop drilling. To understand the issues this can cause, let's recall the current relationship between your app components. The state has now moved up to the app component and my mealsList component becomes a conduits for the state data to be passed to its destination, the mealItem component. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-i.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w2-s17-i. prop drilling passing parent to child (180) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-i.png?raw=true"
-  alt="."
+  alt="Prop drilling passing parent to child and grandchild."
   width="40%" />
 </p>
 <p>The question you must now ask is, what is wrong with prop drilling? Prop drilling is a commonly used term to describe having to pass Stage 3 props in several layers of components, from the parent to the child, to the grandchild, and so on.</p>
@@ -7564,25 +7535,23 @@ However, this approach relies on two practices, lifting state up and prop drilli
 <p>Additionally, the problem gets bigger as the app grows and you'll potentially have a huge amount of state being kept in the app component. Keep in mind that most of that state is not really supposed to be in the app component. That is because that state is about components such as the mealItem component.</p>
 <p>There's another way to phrase this problem through the viewpoint of global state. Whenever I have states that might have to be used in various places in my app, that's a global state issue.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-j.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ w2-s17-j. api cuts out prop drilling and lifting state up (181) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-j.png?raw=true"
-  alt="."
+  alt="API cuts out prop drilling and lifting state up."
   width="40%" />
 </p>
 <p>An elegant solution for this issue is Reacts Context API. One way to think about the context API is that it cuts out the middleman. There's no need for prop drilling and lifting state up.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s17-k.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w2-s17-k. extract state to separate file (181) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s17-k.png?raw=true"
-  alt="."
+  alt="Components which needs data gets it from the context API."
   width="40%" />
 </p>
 Instead, the component that needs the data simply gets it from the context API. The way that this is achieved is by extracting the state into a separate file that holds the state in context, then, any file that needs it simply imports it and uses it. Great job. You should now have a great understanding of managing states in React.
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of week 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Prop Drilling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7648,12 +7617,12 @@ Instead, the component that needs the data simply gets it from the context API. 
 <p>Finally, the Button component’s function declaration is coded to receive the props object, then inside of the wrapping div, show an h3. The h3 reads “This is the Button component”, and then, under that, there’s a button element with an onClick event-handling attribute. This is passed to an arrow function which should alert the string that comes from the props.msg prop.</p>
 <p>All this code results in the following UI rendered on the screen:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s18-a.  (1) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w2-s18-a. ui boundaries are illustrated (184) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s18-a.png?raw=true"
-  alt="."
-  width="40%" />
+  alt="Illustrating the boundaries of each component."
+  width="70%" />
 </p>
 <p>This screenshot illustrates the boundaries of each component. The Main component can’t be found in the UI because it’s just rendering the Header component. The Header component then renders the Wrapper component, and the Wrapper component then renders the Button component.</p>
 <p>Note that the string that was passed on and on through each of the children component’s props’ objects is not found anywhere. However, it will appear when you click the “Click me!” button, as an alert:</p>
