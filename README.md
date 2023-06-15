@@ -9619,33 +9619,31 @@ Here is a list of resources that may be helpful as you continue your learning jo
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d. components and events (260) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w4-s01-c.png?raw=true"
   alt="Course summary part iii: Components in greater detail."
-  width="30%" />
-<p align="center" width="100%">
+  width="45%" />
 <img src="/images/w4-s01-d.png?raw=true"
   alt="Course summary part iv: Events, event handlers and event syntax."
-  width="30%" />
+  width="45%" />
 </p>
 <p>In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes.</p>
 <p>Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f. data flow and web navigation (260) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w4-s01-e.png?raw=true"
   alt="Course summary part v: Data flow, state, hooks, stateful/stateless."
-  width="30%" />
-<p align="center" width="100%">
+  width="45%" />
 <img src="/images/w4-s01-f.png?raw=true"
   alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
-  width="30%" />
+  width="45%" />
 </p>
 
-You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed. 
-You were also introduce to hooks and now that you can use them to extend the functionality of state, and you were able to identify some common use cases for stateful and stateless components. 
-In the third module, you were introduced to navigation, updating, and assets in React. By completing the first lesson, you can now identify the basic types of navigation on websites. Create a basic navigation routes within React router library. Explain how components can be rendered conditionally. Use several different approaches to set up conditional rendering logic. 
+<p>You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed.</p>
+<p>You were also introduce to hooks and now that you can use them to extend the functionality of state, and you were able to identify some common use cases for stateful and stateless components.</p>
+<p>In the next module, you were introduced to navigation, updating, and assets in React. By completing the  lesson, you can now identify the basic types of navigation on websites. Create a basic navigation routes within React router library. Explain how components can be rendered conditionally. Use several different approaches to set up conditional rendering logic.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-g. assets in react (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9654,43 +9652,43 @@ In the third module, you were introduced to navigation, updating, and assets in 
   alt="Assets in React and how to use them."
   width="30%" />
 </p>
-In the final lesson of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components. 
-You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.
+<p>In the final section (18) of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components.</p>
+<p>You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Build a calculator app</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-I'll now demonstrate how you can use react to build a simple calculator app that is able to perform addition, subtraction, multiplication and division operations. I have some code for this app already written. However, because it's incomplete, it encounters problems when it compiles. 
+<p>I'll now demonstrate how you can use react to build a simple calculator app that is able to perform addition, subtraction, multiplication and division operations. I have some code for this app already written. However, because it's incomplete, it encounters problems when it compiles.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-a. 1st problem (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-a.png?raw=true"
-  alt="."
+  alt="1st problem: useRef is not defined."
   width="60%" />
 </p>
 
-The first problem is that useRef is not defined. So I'll import to useRef to fix that issue and then press control s to recompile. 
+<p>The first problem is that useRef is not defined. So I'll import to useRef to fix that issue and then press control s to recompile.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-b. 2nd problem (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-b.png?raw=true"
-  alt="."
+  alt="2nd problem: useState hook is not defined."
   width="60%" />
 </p>
-The second problem is that the useState hook is not defined so let's import that as well. And when I recompile once more, the problems should be resolved. 
+<p>The second problem is that the useState hook is not defined so let's import that as well. And when I recompile once more, the problems should be resolved.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-c. calculator, first draft (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-c.png?raw=true"
-  alt="."
+  alt="Calculator, first draft."
   width="60%" />
 </p>
-
 <p>The structure of the app is there.  Currently it can only perform addition, so I need to add the other functionalities.</p>
-<p>Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable. I can use this as a template for the other functions I will write. So I will copy and paste this code into the functions I've started. In the minus function, I update result plus number to result minus number so that it subtracts whatever is in the input. In the times function I update the same snippet to result asterisk number.
-And finally, for the divide function, I use the divide operator or forward slash to make it result slash number. Now, I also have two functions called reset input which sets the input value to zero and reset results which sets the result value to zero as well.</p>
+<p>Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable.</p>
+<p>I can use this as a template for the other functions I will write. So I will copy and paste this code into the functions I've started. In the minus function, I update result plus number to result minus number so that it subtracts whatever is in the input. In the times function I update the same snippet to result asterisk number.</p>
+<p>And finally, for the divide function, I use the divide operator or forward slash to make it result slash number. Now, I also have two functions called reset input which sets the input value to zero and reset results which sets the result value to zero as well.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9702,15 +9700,14 @@ And finally, for the divide function, I use the divide operator or forward slash
 
 Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w4-s02-e. five button components added (263) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s02-e.png?raw=true"
-  alt="."
+  alt="Five button components bound to on-click events."
   width="60%" />
 </p>
-
-Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes.
+<p>Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-f. simplest working calculator (264) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
