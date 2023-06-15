@@ -3377,15 +3377,13 @@ of code to return the JSX from it inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c.  (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w1-s21-c.png?raw=true"
   alt="."
   width="30%" />
-</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-d.  (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
 <img src="/images/w1-s21-d.png?raw=true"
   alt="."
   width="30%" />
@@ -3693,18 +3691,16 @@ values represented as JSX expressions inside curly braces.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w1-s23-e.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  width="40%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w1-s23-f. jsx return command less than and greater to (92) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
 <img src="/images/w1-s23-f.png?raw=true"
   alt="."
-  width="60%" />
+  width="40%" />
 </p>
 
 It's also important to remember that the HTML code must be wrapped in a top level
@@ -4800,13 +4796,12 @@ more ways that you can use expressions in JSX.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 30 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>30. Expressions as props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You've already learned a bit about using expressions as props. These
+<p>You've already learned a bit about using expressions as props. These
 can be, among other things, ternary operators, function calls, or some
-arithmetic operations.
+arithmetic operations.</p>
+<p>However, you can pass almost any kind of expression as a prop.</p>
 
-However, you can pass almost any kind of expression as a prop.
-
-For example:
+<p>For example:</p>
 
 <details>
   <summary>JS Functions</summary>
@@ -4904,92 +4899,101 @@ feature to the app that renders images. I can do this by embedding a JS
 expression in an attribute, specifically the SRC attribute of the html
 image tag. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-a.  (115) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-a. embedding jsx expressions (115) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s31-a.png?raw=true"
-  alt="."
-  width="60%" />
+  alt="Section 31a - what to expect."
+  width="50%" />
 </p>
-
 Over the next few minutes I'll guide you through the process
 as I complete the steps. And by the end of this section (31) you'll be
 able to demonstrate how to embed a JS expression in an attribute,
 including adding additional styling and importing additional assets and
 utilize additional assets within an app by importing components. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-b.  (116) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-b. screenshot app.js (116) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s31-b.png?raw=true"
-  alt="."
-  width="60%" />
+  alt="Screenshot App.js."
+  width="70%" />
 </p>
-Now I'm in the App.js file of a new project and start with an app component
-that returns the h1 header text, hello world. I've previously copied
-the avatar profile image from the Coursera GitHub account which is
-publicly available through the get up API.
-
-I have pasted the images into the roots of the SRC folder and named it avatar.png. 
-In order to use the image I need to import it into the app component. 
+<p>Now I'm in the App.js file of a new project and start with an app component
+that returns the h1 header text, hello world.</p>
+<p>I've previously copied the avatar profile image from the Coursera GitHub account which is
+publicly available through the get up API.</p>
+<p>I have pasted the images into the roots of the SRC folder and named it avatar.png.</p>
+<p>In order to use the image I need to import it into the app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-c.  (116) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-c. add logo function to app.js (116) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s31-c.png?raw=true"
-  alt="."
-  width="60%" />
+  alt="Add new function in App.js named logo."
+  width="70%" />
 </p>
-I then add a new function in the App.js file named logo. The logo function is 
+<p>I then add a new function in the App.js file named logo. The logo function is 
 essentially a separate component. But to keep things clean for this example, 
-I'll save the code in the app component instead of a separate file. The logo
-function except the props object and inside of the logo function I
+I'll save the code in the app component instead of a separate file.</p>
+<p>The logo function except the props object and inside of the logo function I
 declare a userPic const and assign it a JSX element. This is an image
 element and I'm passing the imported avatar PNG image as the value of
-the SRC attribute inside this image element. 
-
-Finally I'm returning the userPic const from the logo function. 
-
-Back inside the app component I'll now render the logo component by adding 
-the logo element inside the app components return statement. 
-
+the SRC attribute inside this image element. Finally I'm returning the userPic 
+const from the logo function.</p>
+<p>Back inside the app component I'll now render the logo component by adding 
+the logo element inside the app components return statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-d.  (117) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w1-s31-d. snapshot of preview header and image (117) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s31-d.png?raw=true"
-  alt="."
-  width="60%" />
+  alt="Snapshot of preview, displaying header text and an image."
+  width="70%" />
 </p>
-Lemme now preview my app in the browser. Great, so it displays the header text along with the 
-image.
-
-Keep in mind that if I were to continue building this app with more
+<p>Lemme now preview my app in the browser. Great, so it displays the header text along with the 
+image.</p>
+<p>Keep in mind that if I were to continue building this app with more
 components, it would be best to extract the logo component to its own
-file and then import and render it as needed. 
+file and then import and render it as needed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-e.  (117) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w1-s31-e. embed a jsx expression in an attribute (117) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s31-e.png?raw=true"
-  alt="."
+  alt="How to embed a JSX expression in an attribute."
   width="40%" />
 </p>
-And that's a
-demonstration on how you can embed a JSX expression in an attribute. In
-this case the SRC attribute of an html image tag.
-
+<p>And that's a demonstration on how you can embed a JSX expression in an attribute. In
+this case the SRC attribute of an html image tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 32 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>32. Multiple components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here's the completed App.js file:
+<p>Here's the completed App.js file:</p>
 
 <details>
   <summary>App.js</summary>
 
 ```
-import "./App.css";
+1.	import "./App.css";
+2.	import Card from "./Card";
+3.	
+4.	function App() {
+5.	  return (
+6.	    <div className="App">
+7.	      <h1>Task: Add three Card elements</h1>
+8.	        <Card h2="First card's h2" h3="First card's h3" />
+9.	        <Card h2="Second card's h2" h3="Second card's h3" />
+10.	        <Card h2="Third card's h2" h3="Third card's h3" />
+11.	    </div>
+12.	  );
+13.	};
+14.	
+15.	export default App;
+```
 
+```
+import "./App.css";
 import Card from "./Card";
   
 function App() {
@@ -5008,7 +5012,7 @@ export default App;
 
 </details>
 
-Here's the completed Card.js file:
+<p>Here's the completed Card.js file:</p>
 
 <details>
   <summary>Card.js</summary>
@@ -5028,7 +5032,7 @@ export default Card;
 
 </details>
 
-Here is the output from the completed solution code:
+<p>Here is the output from the completed solution code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s32-a.  (118) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ 43. output of completed 'multiple components' exercise (xx) ~~~~~~~~~~~~~~~~-->
@@ -5040,16 +5044,16 @@ Here is the output from the completed solution code:
 </p>
 <!-- {width="6.020833333333333in" height="3.3621489501312336in"} -->
 
-<b>Step 1.</b> Your first task was to add a Card.js file, and inside of
+<b>Step 1.</b> Your first task is to add a Card.js file, and inside of
 that file, declare a <b>Card</b> function.  
 
 ```
-function Card(props) {
-    
+function Card(props) {
+
 };
 ```
 
-<b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you added a
+<b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you add a
 <b>return</b> statement with two parentheses after it, to allow the
 <b>return</b> statement to spread onto several lines. 
 
@@ -5061,8 +5065,8 @@ function Card(props) {
 };
 ```
 
-<b>Step 3.</b> Inside the <b>return</b> statement, you needed to add a
-wrapping <b>div</b> element. 
+<b>Step 3.</b> Inside the <b>return</b> statement, you need to add a
+wrapping <b>div</b> element.
 
 ```
 function Card(props) {
@@ -5073,7 +5077,7 @@ function Card(props) {
 };
 ```
 
-<b>Step 4.</b> Inside the wrapping <b>div</b> element, you needed to add an
+<b>Step 4.</b> Inside the wrapping <b>div</b> element, you need to add an
 <b>h2</b> element, and under it, an <b>h3</b> element. 
 
 ```
@@ -5087,8 +5091,7 @@ function Card(props) {
 };
 ```
 
-<b>Step 5.</b> Inside the h2 element you've already added, you needed to add
-the JSX expression of: {props.h2}. 
+<b>Step 5.</b> Inside the <b>h2</b> element add the JSX expression: {props.h2}. 
 
 ```
 function Card(props) {
@@ -5101,8 +5104,7 @@ function Card(props) {
 };
 ```
 
-<b>Step 6.</b> Inside the <b>h3</b> element you've already added, you needed
-to add the JSX expression of: <b>{props.h3}</b>. 
+<b>Step 6.</b> Inside the <b>h3</b> element add the JSX expression: <b>{props.h3}</b>. 
 
 ```
 function Card(props) {
@@ -5115,8 +5117,7 @@ function Card(props) {
 };
 ```
 
-<b>Step 7.</b> You also had to make sure to not forget the <b>export default
-Card;</b> line of code at the bottom of the Card component.
+<b>Step 7.</b> Then, add <b>export default Card;</b> at the bottom of the Card component.
 
 ```
 function Card(props) {
@@ -5131,8 +5132,7 @@ function Card(props) {
 export default Card;
 ```
 
-<b>Step 8.</b> Back inside the App component, you needed to import the
-<b>Card</b> component. 
+<b>Step 8.</b> Back inside the App component, import the <b>Card</b> component. 
 
 <details>
   <summary>App.js</summary>
@@ -5155,8 +5155,7 @@ export default App;
 </details>
 
 <b>Step 9.</b> Inside the App component's <b>return</b> statement, under the
-<b>h1</b> element, you should have added three <b>&lt;Card /&gt;</b> JSX
-elements. 
+<b>h1</b> element, add three <b>&lt;Card /&gt;</b> JSX elements.
 
 <details>
   <summary>JS Functions</summary>
@@ -5181,7 +5180,7 @@ export default App;
 
 </details>
 
-<b>Step 10.</b> You needed to add the <b>h2</b> prop to the first <b>&lt;Card
+<b>Step 10.</b> You need to add the <b>h2</b> prop to the first <b>&lt;Card
 /&gt;</b> element, like this: <b>h2="First card's h2"</b>. 
 
 <details>
@@ -5207,8 +5206,8 @@ export default App;
 
 </details>
 
-<b>Step 11.</b> You needed to add the <b>h3</b> prop to the first <b>&lt;Card
-/&gt;</b> element, like this: <b>h3="First card's h3"</b>. 
+<b>Step 11.</b> You need to add the <b>h3</b> prop to the first <b>&lt;Card
+/&gt;</b> element, like so: <b>h3="First card's h3"</b>. 
 
 <details>
   <summary>JS Functions</summary>
@@ -5233,7 +5232,7 @@ export default App;
 
 </details>
 
-<b>Step 12.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
+<b>Step 12.</b> You should next add the <b>h2</b> and <b>h3</b> props to the
 second <b>&lt;Card /&gt;</b> element, with the <b>h2</b> reading: <b>"Second
 card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>. 
 
@@ -5260,7 +5259,7 @@ export default App;
 
 </details>
 
-<b>Step 13.</b> You should have added the <b>h2</b> and <b>h3</b> props to the
+<b>Step 13.</b> Next, add the <b>h2</b> and <b>h3</b> props to the
 third <b>&lt;Card /&gt;</b> element, with the h2 reading: <b>"Third card's
 h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>. 
 
@@ -5288,9 +5287,9 @@ export default App;
 
 </details>
 
-<b>Step 14.</b> You needed to add the <b>className</b> attribute to the
+<b>Step 14.</b> You need to add the <b>className</b> attribute to the
 Card.js file's <b>Card</b> function's <b>return</b> statement's wrapping
-<b>div</b> element. 
+<b>div</b> element.  That's it!  You've done it!
 
 <details>
   <summary>App.js</summary>
@@ -5318,16 +5317,13 @@ export default App;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 33 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>33. Module Summary -- React Components &amp; where they live</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Well done. You've reached the end of module one on react components.
-
-Module one gave you an overview of the basic structure and use of
+<p>Well done. You've reached the end of module one (1), section 32 on React components.</p>
+<p>Module one, section 32 gave you an overview of the basic structure and use of
 react.js. The purpose was to enable you to produce single page
-applications with react.
-
-Let's take a tour of the lessons to determine how it did just that.
-
-First, you learned about how reactors used in the real-world from meta
-software engineer Katie.
+applications with react.</p>
+<p>Let's take a tour of the lessons to determine how it did just that.</p>
+<p>First, you learned about how reactors used in the real-world from meta
+software engineer Katie.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-a. html, css and js (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5336,11 +5332,10 @@ software engineer Katie.
   alt="HTML, CSS, and JavaScript (JS)."
   width="40%" />
 </p>
-Then to lay the foundation for the hands-on labs, you had a quick
-summary of the fundamentals of html, CSS and JavaScript.
-
-And then you learned how to set up a project in VS Code (or, and how to
-work with JavaScript modules.
+<p>Then to lay the foundation for the hands-on labs, you had a quick
+summary of the fundamentals of HTML, CSS and JavaScript.</p>
+<p>And then you learned how to set up a project in VS Code and how to
+work with JavaScript modules.</p>
 
 The second lesson was all about react components and where they're
 stored within your applications. In this lesson, you were introduced
@@ -5354,9 +5349,9 @@ based on reusable components of code like the reactor library.
   alt="React Components &amp; component style layouts which use the Virtual DOM."
   width="40%" />
 </p>
-You learned about component types and components style layouts that use the
+<p>You learned about component types and components style layouts that use the
 virtual DOM. And you learned how to create components that form the
-foundation of UI design.
+foundation of UI design.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c. jsx to html (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5406,7 +5401,7 @@ embedded expressions in attributes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s33-f.png?raw=true"
-  alt="."
+  alt="Explain React and create components."
   width="40%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5414,7 +5409,7 @@ embedded expressions in attributes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s33-g.png?raw=true"
-  alt="."
+  alt="Use props and components, describe assets."
   width="40%" />
 </p>
 
@@ -9635,48 +9630,43 @@ Here is a list of resources that may be helpful as you continue your learning jo
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Course recap: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-a/b. basics of working with react (259) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s01-a.png?raw=true"
-  alt="."
+  alt="Course summary: Basics of working with React."
   width="30%" />
-</p>
 <p align="center" width="100%">
 <img src="/images/w4-s01-b.png?raw=true"
-  alt="."
+  alt="Course summary part ii: Basics of working with React."
   width="30%" />
 </p>
-In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals. 
-
-You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components. 
+<p>In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals.</p>
+<p>You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d. components and events (260) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s01-c.png?raw=true"
-  alt="."
+  alt="Course summary part iii: Components in greater detail."
   width="30%" />
-</p>
 <p align="center" width="100%">
 <img src="/images/w4-s01-d.png?raw=true"
-  alt="."
+  alt="Course summary part iv: Events, event handlers and event syntax."
   width="30%" />
 </p>
-
-In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes. 
-Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.
+<p>In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes.</p>
+<p>Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f. data flow and web navigation (260) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s01-e.png?raw=true"
-  alt="."
+  alt="Course summary part v: Data flow, state, hooks, stateful/stateless."
   width="30%" />
-</p>
 <p align="center" width="100%">
 <img src="/images/w4-s01-f.png?raw=true"
-  alt="."
+  alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
   width="30%" />
 </p>
   
@@ -9684,11 +9674,11 @@ You then learned about the relationship between data and events. As a result, yo
 You were also introduce to hooks and now that you can use them to extend the functionality of state, and you were able to identify some common use cases for stateful and stateless components. 
 In the third module, you were introduced to navigation, updating, and assets in React. By completing the first lesson, you can now identify the basic types of navigation on websites. Create a basic navigation routes within React router library. Explain how components can be rendered conditionally. Use several different approaches to set up conditional rendering logic. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-g. assets in react (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w4-s01-g.png?raw=true"
-  alt="."
+  alt="Assets in React and how to use them."
   width="30%" />
 </p>
 In the final lesson of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components. 
@@ -13504,4 +13494,4 @@ If want to try using React in your existing app or a website, <a href="https://r
 Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
 
 end. . .
-<h6>Wednesday 6/14/2023 9:00am</h6>
+<h6>Wednesday 6/15/2023 11:33am</h6>
