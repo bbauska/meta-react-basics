@@ -1142,7 +1142,7 @@ components.
 <p align="center" width="100%">
 <img src="/images/w1-s09-e.png?raw=true"
   alt="Reusable and independent."
-  width="65%" />
+  width="50%" />
 </p>
 <!-- {width="6.5in" height="2.734815179352581in"} -->
 
@@ -1157,7 +1157,7 @@ interact independently from each other.
 <p align="center" width="100%">
 <img src="/images/w1-s09-f.png?raw=true"
   alt="Components with independent developers."
-  width="60%" />
+  width="65%" />
 </p>
 <!-- {width="6.0in" height="2.7314293525809274in"} -->
 
@@ -1183,7 +1183,7 @@ components.
 <p align="center" width="100%">
 <img src="/images/w1-s09-g.png?raw=true"
   alt="Example product check out page on an e-commerce web application."
-  width="60%" />
+  width="65%" />
 </p>
 <!-- {width="6.0in" height="2.699682852143482in"} -->
 
@@ -1196,7 +1196,7 @@ sidebar.
 <!--~~~~~~~~~~~~~~~~ w1-s09-h. example header section with logo & nav menu (33) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image017.png?raw=true"
+<img src="/images/w1-s09-h.png?raw=true"
   alt="Example header section with logo & nav menu."
   width="65%" />
 </p>
@@ -1469,11 +1469,11 @@ JavaScript.
 What is JSX syntax like? Let's find out by going back to our React
 default app component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-j. app.js (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-j. app.js with jsx example (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s10-j.png?raw=true"
-  alt="."
+  alt="App.js with JSX example 'Hello React'."
   width="40%" />
 </p>
 <!-- {width="4.0in" height="1.7951323272090989in"} -->
@@ -1497,11 +1497,11 @@ You'll learn more about the differences between HTML and JSX later.
 For now, just know that you can place this syntax inside the return
 statement of a functional component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-k.  (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-k. must be used as a jsx element (41) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s10-k.png?raw=true"
-  alt="."
+  alt="React component must be used as a JSX element or won't be rendered."
   width="50%" />
 </p>
 <!-- ![](./images/image034.png){width="5.0in" height="2.5359787839020123in"} -->
@@ -2066,11 +2066,11 @@ benefits of the folder structure, customize the folder structure to hold
 components and assets, and explain the benefits of planning folder use
 for app development.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-a.  (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-a. default files and folders (54) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-a.png?raw=true"
-  alt="."
+  alt="Default files and folders."
   width="70%" />
 </p>
 
@@ -2082,16 +2082,16 @@ project is comprised of a specific file and folder structure.
 
 Notice that there are three folders named node modules, public, and SRC
 or source.
+
+Let's explore each of these folders briefly now.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-b.  (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-b. node module folder (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-b.png?raw=true"
-  alt="."
+  alt="Node module folder - repository for all modules in React app."
   width="70%" />
 </p>
-
-Let's explore each of these folders briefly now.
 
 First, let's begin with the node modules folder.
 
@@ -2113,11 +2113,11 @@ Don't worry too much about the node modules folder.
 For now, just be aware of it and that it's needed for your React app to
 work.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-c.  (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-c. public folder (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-c.png?raw=true"
-  alt="."
+  alt="Public folder - contains assets displayed to user in app."
   width="70%" />
 </p>
 
@@ -2132,11 +2132,11 @@ Also, there is a manifest.json file, which is used to provide some
 metadata to a device when you're React powered web app is installed on
 it.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-d.  (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-d. index.html (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-d.png?raw=true"
-  alt="."
+  alt="Index.html."
   width="70%" />
 </p>
 
@@ -2151,14 +2151,13 @@ updates in that same div of index HTML.
 
 You'll find out more about how this works later on in the course.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-e.  (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-e. src folder (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-e.png?raw=true"
-  alt="."
+  alt="Contents of the SRC (source) folder."
   width="70%" />
 </p>
-
 Finally, let's explore the contents of the SRC or source folder.
 
 This folder contains all the essential component files required to
@@ -2178,14 +2177,13 @@ app.js, which are used to render the root components of the app.
 
 Let's briefly explore the others.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-f.  (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-f. styles (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-f.png?raw=true"
-  alt="."
+  alt="App.css contains styles for app.js and index.css contains styles for the entire app."
   width="70%" />
 </p>
-
 App.css contains the styles for the app.js components, and the index.css
 file contains the styles to use in the entire app.
 
@@ -2207,14 +2205,13 @@ files and folders in the source folder.
 However, there are a few common approaches popular in the ecosystem and
 you'll learn about them soon.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-g.  (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-g. index.js (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s14-g.png?raw=true"
   alt="."
   width="70%" />
 </p>
-
 It's that this point is also worth remembering that the most important
 file in the entire source folder is the index.js file.
 
@@ -2223,16 +2220,23 @@ working React app.
 
 Now you have explored the main folders, let's explore the files and the
 root of the default app.
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-h. root files (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w1-s14-h.png?raw=true"
+  alt="Root files are additional root project files.."
+  width="70%" />
+</p>
 Root files are additional files that are found in the root of the
 project folder itself and include a gitignore file, two json files, and
 a README file.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-h.  (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-i. .gitignore for version control (58) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-h.png?raw=true"
-  alt="."
+<img src="/images/w1-s14-i.png?raw=true"
+  alt=".gitignore using version control to specify which files/folders to exclude."
   width="70%" />
 </p>
 
@@ -2243,11 +2247,11 @@ It's important to note that this file is not specific to React.
 
 This means that other systems use this file too.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-i.  (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w1-s14-j. readme.md giving basic project info (59) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-i.png?raw=true"
-  alt="."
+<img src="/images/w1-s14-j.png?raw=true"
+  alt="readme.md giving basic project info."
   width="70%" />
 </p>
 
@@ -2257,11 +2261,11 @@ on this project.
 Developers use this when they want to share the project's code on sites
 like GitHub.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-j.  (59) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w1-s14-k. package.json list info for npm (59) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-j.png?raw=true"
-  alt="."
+<img src="/images/w1-s14-k.png?raw=true"
+  alt="package.json list info for npm."
   width="70%" />
 </p>
 
@@ -2269,15 +2273,14 @@ The package.json file lists information pertaining to my app, which
 allows npm to run several scripts and perform various tasks in the app
 itself.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-k.  (60) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w1-s14-l. package-lock.json for recovery (59) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-k.png?raw=true"
-  alt="."
+<img src="/images/w1-s14-l.png?raw=true"
+  alt="package-lock.json holds list of dependencies with a specific version for recovery."
   width="70%" />
 </p>
-
-Finally, the package-loc.json file holds the list of all dependencies
+Finally, the package-lock.json file holds the list of all dependencies
 with a specific version.
 
 The package.json file helps npm rebuild the app on another machine.
