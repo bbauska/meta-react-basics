@@ -63,7 +63,7 @@ with coding.</p>
 <h3>Table of Contents - 7 pages approx</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Module 1 - React Components</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Introduction to the course: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Welcome to React basics.</p>
@@ -147,7 +147,7 @@ you'll finish off the course with a portfolio of projects where you'll
 apply your new knowledge.</p>
 <p>I hope you're as excited as I am to begin this course on React basics.</p>
 <p>Let's get started...</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. How is React used in the real world?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There are plenty of React based apps that you've probably used before.</p>
@@ -198,7 +198,7 @@ developers.</p>
 <p>There are plenty of opportunities to get involved in the React
 community, and I think it makes building with React even more rewarding
 if you connect with the community as well.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Course syllabus for React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By the end of this section (03), you will have learned about the scope
@@ -302,7 +302,7 @@ course.</p>
     ahead.</li>
 </ul>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Before you learn React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
@@ -344,7 +344,7 @@ Developers use HTML elements with their opening and closing tags to
 display to the web browser.</p>
 <p>When it comes to HTML it's important to know about:</p>
 
-<ol>
+<ol type="1">
   <li><p>The purpose of HTML in the web browser,</p></li>
   <li><p>The use of HTML tags and correct syntax,</p></li>
   <li><p>How HTML elements are used in a web document,</p></li>
@@ -475,7 +475,7 @@ development of React apps.</p>
 please visit Meta course titled: <a href="https://www.coursera.org/learn/programming-with-javascript" 
 target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. JavaScript modules, imports - exports</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Before you start creating the next great app, let's explore a little
@@ -488,7 +488,7 @@ logic behind how the example <b>React apps</b> in this course are put
 together.</p>
 <p>This section (05) will cover the three main concepts:</p>
 
-<ol>
+<ol type="1">
   <li>JavaScript modules,<br></li>
   <li>Module exports,<br></li>
   <li>Module imports.</li>
@@ -527,7 +527,7 @@ exporting of JavaScript modules will be done in this course.</p>
 
 <p>In general, there are two ways to export modules in JavaScript:</p>
 
-<ol>
+<ol type="1">
   <li><p>Using default exports,</p></li>
   <li>Using named exports.</li>
 </ol>
@@ -669,7 +669,7 @@ this course.</p>
 common syntax used - not as a comprehensive overview of modules in
 JavaScript.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Additional reading</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Below you will find links to helpful additional readings:</p>
@@ -688,7 +688,7 @@ JavaScript.</p>
 better than everyone else. They can copy, like the Russians did of the Space Shuttle. 
 But that is the extent of Microsoft's knowledge. Individually, a lot of intelligence. 
 But collectively, they ain't shit.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Setting up a React project in notepad++, Sublime, &amp; VS Code</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>To complete the exercises in this course you have been provided with a
@@ -719,7 +719,7 @@ refer to the <a href="https://www.coursera.org/learn/programming-with-javascript
 <p>When Node.js is installed on a computer, <b>npm</b> comes bundled with it.</p>
 <p>With <b>npm</b>, you can:</p>
 
-<ol>
+<ol type="1">
   <li><p>Author your own Node.js modules ("packages"), and publish them on
     the npm website so that other people can download and use them,</p></li>
   <li>Use other people's authored modules ("packages").</li>
@@ -860,7 +860,7 @@ show the following page in your browser:</p>
 <p>After you've built your starting setup, in Module 2 you'll start
 working with the basic building blocks of React: components.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Why React?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>React is used everywhere in the tech world and you'll have the chance
@@ -964,7 +964,7 @@ encounter React in your day-to-day work.</p>
 <p>There's a huge community behind you ready to help answer questions
 about React too.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. React.js overview</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -1200,7 +1200,7 @@ application speed and performance.</p>
 <p>In this section (09), you learned about the basics of React by exploring the
 concepts of the component-based architecture components and the virtual
 DOM.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Introduction to functional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-a. js multiply function (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1503,7 +1503,7 @@ Finally, you explored the concepts of rendering and trans piling.
 If you'd like to learn about these concepts in more detail, there's a
 link to an additional reading at the end of this lesson.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Creating React components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (11), you will further explore the concepts of
@@ -1671,7 +1671,7 @@ this very soon.
 In this module, you'll learn how to create a functional component in
 React, and render it to the root components named <b>app.js</b>.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Transpiling JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (12), you will know how a component is built.
@@ -1707,53 +1707,53 @@ an old browser. Perhaps that browser was built before ES6 came out in
 This means that the JavaScript engine that is built into your old
 computer's browser is likely to be an ES5 JavaScript engine.
 
-In ES5, the only way to declare a variable is the following:
+<p>In ES5, the only way to declare a variable is the following:</p>
 
 ```
 var pi = 3.14
 ```
 
-What this means is that for this old browser to understand the ES6 code,
-the only way to do it is by <b>transpiling</b> it.
+<p>What this means is that for this old browser to understand the ES6 code,
+the only way to do it is by <b>transpiling</b> it.</p>
 
-If you feel like it, you can try transpiling ES6 to ES5 code yourself,
-using [the es6console website](https://es6console.com/).
+<p>If you feel like it, you can try transpiling ES6 to ES5 code yourself,
+using <a href="https://es6console.com/" target="_blank" rel="noopener noreferrer">the es6console website</a>.</p>
 
-Now, let's move the focus to another example of transpiling.
+<p>Now, let's move the focus to another example of transpiling.</p>
 
-Let's say that you want to use a brand new, most modern ECMAScript
+<p>Let's say that you want to use a brand new, most modern ECMAScript
 syntax in an app. The only problem is that this new syntax is currently
-not supported by any browser; even an up-to-date browser.
+not supported by any browser; even an up-to-date browser.</p>
 
-However, by transpiling the new most-modern JavaScript syntax into
+<p>However, by transpiling the new most-modern JavaScript syntax into
 something that modern browsers can understand, it is able to convert
 some code that the browser cannot comprehend, into code that it can
-comprehend, run, and produce a result from.
+comprehend, run, and produce a result from.</p>
 
-Likely the most popular site that shows off how this works is
-[Babel](https://babeljs.io/). As the heading of
-the website reads, "Babel is a JavaScript Compiler".
+<p>Likely the most popular site that shows off how this works is 
+<a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel</a>. As the heading of
+the website reads, "Babel is a JavaScript Compiler".</p>
 
-This finally brings you to the point of this discussion about
-transpiling JavaScript code.
+<p>This finally brings you to the point of this discussion about
+transpiling JavaScript code.</p>
 
-What Babel does is this: it allows you to transpile JSX code (which
+<p>What Babel does is this: it allows you to transpile JSX code (which
 cannot be understood by a browser) into plain JavaScript code (which can
-be understood by a browser).
+be understood by a browser).</p>
 
-This is where React and JSX come in.
+<p>This is where React and JSX come in.</p>
 
-For React code to be understood by a browser, you need to have a
+<p>For React code to be understood by a browser, you need to have a
 <b>transpiling step</b> in which the JSX code gets converted to plain
-JavaScript code that a modern browser can work with.
+JavaScript code that a modern browser can work with.</p>
 
-To demonstrate how this works, let's use the <b>Heading</b> component from
-the previous lesson.
+<p>To demonstrate how this works, let's use the <b>Heading</b> component from
+the previous lesson.</p>
 
 Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false)" target="_blank" rel="noopener noreferrer">the online Babel repl</a>.  Repl stands for "read-eval-print loop" and it accepts code you write, evaluates it, and produces some result. In the specific case of <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false" target="_blank" rel="noopener noreferrer">the online Babel repl</a>, that result is some transpiled code. Here's a more detailed explanation.
 
-If you've visited the above-linked URL, you'll find a web page that
-has two panels. On the left, there's source JSX code:
+<p>If you've visited the above-linked URL, you'll find a web page that
+has two panels. On the left, there's source JSX code:</p>
 
 ```
 function Heading(props) {
@@ -1761,7 +1761,7 @@ function Heading(props) {
 }
 ```
 
-... and on the right, there's the transpiled, plain JavaScript code:
+<p>... and on the right, there's the transpiled, plain JavaScript code:</p>
 
 ```
 "use strict";
@@ -1771,38 +1771,38 @@ function Heading(props) {
 }
 ```
 
-If you now analyze the difference between the source JSX code and the
+<p>If you now analyze the difference between the source JSX code and the
 transpiled, plain JavaScript code, dis-regarding the comment, here's
-the body of the Heading function:
+the body of the Heading function:</p>
 
 ```
 React.createElement("h1", null, props.title);
 ```
 
-So, here you have a React object, and this object has a
+<p>So, here you have a React object, and this object has a
 <b>createElement()</b> method on it. The method is invoked with three
-arguments:
+arguments:</p>
 
-<ol>
+<ol type="1">
   <li><b>"h1"</b><br></li>
   <li><b>null</b><br></li>
   <li><b>props.title</b></li>
 </ol> 
 
-The <b>first</b> argument is the DOM element to render - in this case, an
-<b>h1</b> element.
+<p>The <b>first</b> argument is the DOM element to render - in this case, an
+<b>h1</b> element.</p>
 
-The <b>second</b> property is any HTML attribute that should be added, and
+<p>The <b>second</b> property is any HTML attribute that should be added, and
 there's a null here - meaning, there should be an object with some
 data, but there isn't any data so instead of the object there's the
-null value.
+null value.</p>
 
-The <b>third</b> property is the contents of the inner HTML of the DOM
+<p>The <b>third</b> property is the contents of the inner HTML of the DOM
 element specified as the first argument - in this case, the contents of
-the inner HTML of the <b>h1</b> element.
+the inner HTML of the <b>h1</b> element.</p>
 
-Now let's use Babel again, and this time transpile the <b>render</b> syntax
-for the <b>Heading</b> component:
+<p>Now let's use Babel again, and this time transpile the <b>render</b> syntax
+for the <b>Heading</b> component:</p>
 
 ```
 <Heading title="This is the heading text!"></Heading>
@@ -1843,7 +1843,7 @@ function Example() {
 export default Example
 ```
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Your first component</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the completed solution code for the App.js file:
@@ -1935,7 +1935,7 @@ function Heading() { 
 <b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. The React project structure</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As you might already be aware, it's important to organize or structure
@@ -2190,7 +2190,7 @@ hold components and assets and be able to explain the benefits of
 planning folder use for app development.
 
 Good job.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. Customizing the project</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So far, you've learned about React components, but now you will focus on
@@ -2551,7 +2551,7 @@ Having finished this section (15), you have now learned about the software
 development approach, detailing the creation of separate associated
 files, the requirements gathering, and the subsequent folder structure
 to be created.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Importing components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 One of the advantages of component-based architecture is that your app
@@ -2784,7 +2784,7 @@ structure of the import and export statement.
 
 You also learned how to manage your React components by placing them in
 a components folder.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Creating and importing components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here are the contents of the Heading.js file:
@@ -2873,7 +2873,7 @@ function App() {
 }
 ```
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Additional resources (React components)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -2897,7 +2897,7 @@ function App() {
 
   - [Visual Studio Code keyboard shortcuts (macOS)](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Principles of Components: Props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with the concept of functional components in React. 
@@ -3069,7 +3069,7 @@ you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
 functions using props must never modify its own props.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Dissecting props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Recall that much like parameters in a JavaScript function which allow
@@ -3109,11 +3109,11 @@ function App() {
 "Hello there");</b> part. You can ignore the rest.</p>
 <p>This means that the <b>createElement</b> function receives three arguments:</p>
 
-<ol>
-<li><p>The wrapping element to render.</p></li>
-<li><p>A null value (which is there to show an absence of an expected
+<ol type="1">
+  <li><p>The wrapping element to render.</p></li>
+  <li><p>A null value (which is there to show an absence of an expected
     JavaScript object value).</p></li>
-<li><p>The inner content that will go inside the wrapping element.</p></li>
+  <li>The inner content that will go inside the wrapping element.</li>
 </ol>
 
 <p>Interestingly, the inner content that will go inside the wrapping
@@ -3207,7 +3207,7 @@ mimicking the way that HTML works.
 In this section (20) you've learned how to use a transpiler to break JSX code
 to plain JavaScript, making its purpose more understandable.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Using props in components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By now, you should be familiar with the concept of props, and that they
@@ -3354,7 +3354,7 @@ props objects.</p>
 
 <p>You should now be able to effectively demonstrate the passing of props to and within 
 a component using classes and functions.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Passing props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed App.js file:</p>
@@ -3483,7 +3483,7 @@ function App() {
 export default App;
 ```
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Introducing JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>At this point in the course, you've been introduced to the concept of
@@ -3603,7 +3603,7 @@ In this lesson, you explored further the concept of JSX styling, and how it's us
 You have now furthered your understanding of how to use JSX to mix JavaScript, HTML, and CSS 
 within a component. Great work.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 24 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 24 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>24. Props and children</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Previously, you learned that you could pass props to and within a
@@ -3839,7 +3839,7 @@ In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
 <b>props.children</b> in the background.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 25 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 25 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>25. Styling JSX elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've observed that JSX is incredibly versatile, and can accept a
@@ -4005,7 +4005,7 @@ Using this approach makes your components more self-contained, because
 they come with their own styles built-in, but it also makes them a bit
 harder to maintain.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 26 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 26 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>26. Practical styling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Recall that there are three techniques to include CSS and HTML documents.
@@ -4110,7 +4110,7 @@ That's an example of using inline CSS styling directly inside a component.
 In this section (26), you learned how to take CSS style rules from an external file 
 named index.CSS and add it inside a component as an internal style.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 27 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 27 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>27. JSX syntax and the arrow function</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Components as Function Expressions</h3>
@@ -4325,7 +4325,7 @@ Now that you have completed this section (27), you've learned about some
 alternative approaches, specifically by using function expressions and
 arrow functions.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 28 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 28 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>28. Embedded JSX expressions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Recall that JSX is a syntax extension to JavaScripts that is used with
@@ -4438,7 +4438,7 @@ In this section (28), you explored several JSX examples, including one that uses
 embedded expressions to insert the values of JavaScript variables into HTML within 
 a React element.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 29 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 29 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>29. Ternary operators and functions in JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 So you've explored several ways to define components in React; this
@@ -4649,7 +4649,7 @@ JavaScript expressions in JSX.
 Now that you have completed this section (29), you have learned about a few
 more ways that you can use expressions in JSX.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 30 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 30 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>30. Expressions as props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You've already learned a bit about using expressions as props. These
@@ -4747,7 +4747,7 @@ In summary, just like you can use expressions inside function
 components, you can also use them as prop values inside JSX elements,
 when rendering those function components.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 31 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 31 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>31. Embedding in attributes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I'm building an application using react and I now need to add a new
@@ -4822,7 +4822,7 @@ file and then import and render it as needed.</p>
 </p>
 <p>And that's a demonstration on how you can embed a JSX expression in an attribute. In
 this case the SRC attribute of an html image tag.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 32 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 32 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>32. Multiple components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here's the completed App.js file:</p>
@@ -5170,7 +5170,7 @@ export default App;
 ```
 
 </details>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 33 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 33 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>33. Module Summary -- React Components &amp; where they live</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Well done. You've reached the end of module one (1), section 32 on React components.</p>
@@ -5279,7 +5279,7 @@ within an app to apply styling and functional components.
 That's a great start to your React journey. Well done on completing
 this module and get ready for the next one.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 34 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 34 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>34. Additional resources (React Basics - Module 1)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below you will find links to helpful additional resources.
@@ -5302,7 +5302,7 @@ Below you will find links to helpful additional resources.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Module 2 - Data and State</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s01-a. "clicks  movements  commands" (125) ~~~~~~~~~~~~~~~-->
@@ -5481,7 +5481,7 @@ capabilities events can open up to you.
 In this section (1), you learned about the types of events available in
 React and how they came to be. Next, you'll explore specific examples
 and build the skills to use events competently from various situations.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Eventful issues</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You're now aware that React can work with most of the same events found
@@ -5577,7 +5577,7 @@ Since event-handling errors occur after the UI has already been
 rendered, all you have to do is use the error-handling mechanism that
 already exists in JavaScript -- that is, you just use the
 <b>try...catch</b> blocks.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Common event handling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I will now show you how to handle several events in React using
@@ -5690,7 +5690,7 @@ This time, when I hover over the button, the words mouse over are
 showing in the console. This section (3), you've learned how to work
 with <b>event handling</b> JSX attributes and React.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Syntax for handlers</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Every time you click or tap a button, scroll down the page or cancel a
@@ -5860,7 +5860,7 @@ events are supported by some form of event handling.
 
 In this section (4), you learned how to distinguish the syntax for event
 handling in HTML and JavaScript.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Event handling and embedded expressions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (5), you'll learn the different ways to embed expressions in
@@ -5988,8 +5988,7 @@ handle events in React. Some of those are more common than others, but now that
 you know all the different ways of doing this, you can understand other people's 
 code more easily, as well as choose the syntax that best suits your given use case, 
 such as a specific company coding style guide.
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. User events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this section (06), I'm going to demonstrate how to toggle the value of a
@@ -6156,7 +6155,7 @@ components.</p>
 should now be able to demonstrate how to toggle the value of a Boolean
 state variable using user triggered events. And how to handle multiple
 events on a single JSX element.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Dynamic events &amp; how to handle them</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed App.js file:</p>
@@ -6284,7 +6283,7 @@ show a prompt pop up which you can type into. After that, an alert pop
 up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
 matching the number "chosen" by the computer one more time. 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Additional resources (Data &amp; State - module 2)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your learning journey:
@@ -6306,7 +6305,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
 -   [JavaScript Expressions as
     Children](https://reactjs.org/docs/jsx-in-depth.html#javascript-expressions-as-children) 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Parent-child data flow</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Imagine you're working for an online retailer which discount prices
@@ -6518,7 +6517,7 @@ child automatically.</p>
 set up so that data flows from parent to child. By storing data in the parent 
 component, you can dynamically pass it to the child component without the need 
 to update children individually.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Data flow in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've just learned how the parent-child relationship can be set up so
@@ -6598,10 +6597,10 @@ everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
 be as efficient as it could be, especially in modern React.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Children and data</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-a. data flow in reactjs (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-a. data flow in reactjs (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s11-a.png?raw=true"
@@ -6713,7 +6712,7 @@ hours, minutes, and seconds of the date.</p>
 component props, and the H1 elements will display the current date and time. Well done.</p>
 <p>You've now learned how children and data flows in ReactJS. You should also be able to 
 showcase the use of stateless and stateful examples by focusing on data flow.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. What are hooks?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By now you've probably already learned about some important and useful core concepts in React. At this point, you're ready to learn how to add interactivity, maintain state within a React component and explore hooks.</p>
@@ -6829,7 +6828,7 @@ You can use the useState hook to track any type of data. It could be strings, nu
 <p>For instance, you can even track the number of times a button is pressed. In addition to the hooks that come out of the box with React, you can also build your own hooks, which will let you extract custom component logic into reusable functions. This is an excellent feature and benefit of using hooks.</p>
 <p>The biggest benefit of hooks is the readability and simplicity that they provide to the code.</p>
 <p>In this section (12), you learned the basics on React hooks and explored the useState hook. You now understand the benefits of using hooks and how you can use them within your React applications.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Using hooks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Now that you understand what hooks are in React and have some basic
@@ -6874,7 +6873,7 @@ get updated with the latest text that has been typed.</p>
 To do this, let's define a React component and call it
 <b>InputComponent</b>. This component renders three things:
 
-<ol>
+<ol type="1">
   <li>An input text field,<br></li>
   <li>Any text that has been entered into the field,<br></li>
   <li>A Reset button to set the field back to its default state.<br></li>
@@ -7072,7 +7071,7 @@ In this section (14), you have explored hooks in detail and understand how to
 use the <b>useState</b> hook to maintain state within a component. You also
 understand the benefits of using hooks within a React component.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. What is state?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <i>"Make it as simple as possible, but not simpler."</i>
@@ -7232,7 +7231,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <p>Let's examine an updated version of this stateful function component. Notice that the setGreet variable is not actually run, that is something that is done elsewhere.</p>
 <p>Later in this course, you'll learn about how you can extend this code with a clickable button to update the State.</p>
 <p>In this section (15), you learned about State in React, specifically the characteristics of stateful and stateless components in an app.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Observing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Why do we use state in React? Because it's one way to deal with data in our React apps. 
@@ -7295,7 +7294,7 @@ The JavaScript engine takes the word Eat and concatenates it, so the words at Li
 Instead of updating it directly, I can update it based on a click event. I have another element called button and onClick is equal to handleClick. I now set another function which I'll name handledClick. Inside the handleClick function definition, I run set word to drink. I click "File, Save All", and wait for the apps to compile. Now when I click the Click Here button, I get to drink at the little lemon. To observe and update state, you can use the state's setting functions and state variables using the state hook. But you must make sure that you use event handling attributes in JSX syntax or some other approaches which we'll learn more about later. 
 In this section (16), you've learned about state change basics in React, including how to apply the use of state syntax, observe and manipulate state and components.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Managing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 As for React applications grow in complexity, so too can the complexity of managing state across components. As a result, developers need a way to manage state in their application. 
@@ -7405,7 +7404,7 @@ However, this approach relies on two practices, lifting state up and prop drilli
   width="40%" />
 </p>
 Instead, the component that needs the data simply gets it from the context API. The way that this is achieved is by extracting the state into a separate file that holds the state in context, then, any file that needs it simply imports it and uses it. Great job. You should now have a great understanding of managing states in React.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Prop Drilling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>As you’ve learned previously, prop drilling is a situation where you are passing data from a parent to a child component, then to a grandchild component, and so on, until it reaches a more distant component further down the component tree, where this data is required.</p>
@@ -7489,7 +7488,7 @@ Instead, the component that needs the data simply gets it from the context API. 
 </p>
 <p>The alert’s message reads “I passed through the Header and the Wrapper and I reached the Button component”.</p>
 <p>That’s really all there is to it. Props drilling simply means passing a prop through props objects through several layers of components. The more layers there are, the more repetitive and unnecessary this feels. There are various ways to deal with this, as you’ll learn in the lesson items that follow.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. React state management</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 During this course, you've probably learned a few approaches for managing states between a parent's component and a child components. But have you wondered how well these approaches still apply for more complex apps with multiple levels of components? Fortunately, there are tools available to help you do just that.
@@ -7601,7 +7600,7 @@ Next, let me show you how the useReducer hook works. Let's move on to the useRed
 </p>
 Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button. 
 In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Stateful vs stateless</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In life, there are rarely perfect solutions that suit every need. For instance, this concept applies when it comes to selecting a vehicle. A small car is usually more fuel efficient but has limited space. On the other hand, an SUV can handle many passengers but burns fuel quickly. Making the best choice starts with identifying your specific needs. This is no different when it comes to choosing stateful or stateless components in programming.
@@ -7672,7 +7671,7 @@ In the child component, there is an h1 element. The content of this element will
 </p>
 All of its data comes from the props passed into the component. The app component stores the state which can be changed through events and functions and is therefore a stateful component. 
 In this section (20), you learned why and when to utilize stateful or stateless components in your React apps based on your specific needs. You also observed that although a stateless component can't directly pass state, it can still trigger actions that will update the state of other components.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Managing state in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed App.js file:</p>
@@ -7811,7 +7810,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 
 That completes this ungraded lab's solution.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Module summary</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You've reached the end of this module (module 2) exploring the concept of data and states. It's now time to recap the key lessons and skills you've learned.</p>
@@ -7864,7 +7863,7 @@ That completes this ungraded lab's solution.
   width="40%" />
 </p>
 <p>In the upcoming module, you'll learn about working with links and routing as well as using assets in react. This should finalize your preparations for coding your own portfolio project in react. Excellent. You've made great progress in your journey towards becoming a react developer.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Below you will find links to helpful additional resources.
@@ -7888,7 +7887,7 @@ Navigation, Updating and Assets in React.js
 In this module (three) you will explore the basics of single and
 multi-page navigation, as well as the conditional rendering or changing
 of content in response to user status or choice.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Basic Types of navigation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In the early days of the web, there were no true standards for design, which meant that developers were often very experimental. There were various designs and experiments, but ultimately, the web development community settled on a few best practices. Today, the web is a mature medium. 
@@ -8027,7 +8026,7 @@ However, this functionality is not available to developers from the React's libr
 Once again, you add this using the import statement and you'll learn more about how to do this soon. 
 
 In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Navigation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (02), you’ll learn about the differences between traditional web pages and React-powered web pages (SPAs – single page applications).
@@ -8096,7 +8095,7 @@ A single-page application can’t have regular anchor tag elements as a traditio
 The reason for this is that the default behavior of an anchor tag is to load another HTML file from a server and refresh the page. This page refresh is not possible in a SPA that's powered by a library such as React because a total page refresh is not the way that a SPA works, as explained earlier in this lesson item. 
 Instead, a SPA comes with its own special implementation of anchor tags and links, which only give an illusion of loading different pages to the end user when in fact, they simply load different components into a single element of the real DOM into which the virtual DOM tree gets mounted and updated.
 That's why navigation in a single-page app is fundamentally different from its counterpart in a multi-page app. Understanding the concepts outlined in this lesson item will make you a more well-rounded React developer.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. The navbar</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page. 
@@ -8211,7 +8210,7 @@ I also need to import link from react-router-dom and save my changes. Now when I
   width="30%" />
 </p>
 In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Solution: Creating a route</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is the Contact.js file:
@@ -8372,7 +8371,7 @@ Inside the Routes element, add a third route, with the path attribute pointing t
 
 <h4>Step 7</h4>
 You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render. 
@@ -8484,7 +8483,7 @@ While using the ternary operator is a common pattern that you'll see in react co
 </p>
 So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach. 
 In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Applying conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.
@@ -8576,7 +8575,7 @@ On the flip side, consider the following example:
 1.	false && console.log('This will never show')
 If you ran this command, the output will just be the boolean value of false.
 In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Conditional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.
@@ -8626,7 +8625,7 @@ Then when the LogInOutButton parent component is used, the prop can be passed in
 ```
 
 This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Single view conditional updates</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally. 
@@ -8665,7 +8664,7 @@ If I change the get hours value from 12 to 19 and save my code. Notice that a ne
   width="40%" />
 </p>
 In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your learning journey.
@@ -8674,7 +8673,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
 •	Conditional (ternary) operator in JavaScript 
 •	if...else 
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. What is an asset and where does it live?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app. 
@@ -8774,7 +8773,7 @@ Alternatively, instead of the asset name, you can reference the path to the asse
 
 In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Bundling assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Earlier, you learned what assets are in React and the best practices for storing them in your project folders.
@@ -8831,7 +8830,7 @@ An example of a viable alternative is SSR (Server-side rendering).
 With SSR, React components are rendered to HTML on the server, and the visitor downloads the finished HTML code. An alternative to SSR is client-side rendering, which downloads the index.html file and then lets React inject its own code into a dedicated HTML element (the root element in create-react-app). In this course, you’ve only worked with client-side rendering. 
 Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.
 In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Using embedded assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (12), I'll demonstrate various ways of displaying images. You'll learn three different ways to display an image and react app specifically by using the import statement using the require function to set the file path, or by providing an image URL. 
@@ -8889,7 +8888,7 @@ Now I'll demonstrate the third way to import an image asset by loading an image 
   width="40%" />
 </p>
 So there you have it. The three different ways to use image assets in a react component.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Solution: Displaying images</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here's the completed App.js file:
@@ -8953,7 +8952,7 @@ Then, inside the return statement, you added the new img element, with the src a
 12.	export default App;
 ```
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. Audio and video</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices. 
@@ -9033,7 +9032,7 @@ An example of a package that fits all these criteria is the React player package
 </p>
 When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one. 
 You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. Media packages</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this section (15), you’ll learn how to install the reactjs-media npm package.
@@ -9084,7 +9083,7 @@ Here’s an example of using the react-player packaged in a small React app:
 
 In this section (15), you learned how to install and use the react-player npm package.
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Create an audio / video component</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume. 
@@ -9161,7 +9160,7 @@ This page contains an about section on the right in which you'll find a link to 
   width="40%" />
 </p>
 You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video. In section 16 you learned how to install and use the react player package and change common settings for the react player
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Solution: Song selection</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here's the completed App.js file:
@@ -9337,7 +9336,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 37.	export default App;
 ```
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Module summary: Navigation, Updating and  Assets in React.js</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice. 
@@ -9471,7 +9470,7 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 </p>
 Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React. 
 Congratulations. You've now covered most of the basic concepts in React, and you're ready to complete this module's quiz and review the additional resources for this module. There's just one more module left before you complete this course. In the next module, you'll apply your knowledge by completing a mini-project in Reacts by building a calculator app.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here is a list of resources that may be helpful as you continue your learning journey.
@@ -9483,7 +9482,7 @@ Here is a list of resources that may be helpful as you continue your learning jo
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Module 4 - Course recap</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Course recap: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-a/b. basics of working with react (259) ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9728,7 +9727,7 @@ export default function Square() {
 You can also follow this tutorial using your local development
 environment. To do this, you need to:
 
-<ol>
+<ol type="1">
   <li><p>Install <a href="https://nodejs.org/en/">Node.js</a>,</p></li>
   <li><p>In the CodeSandbox tab you opened earlier, press the top-left corner
     button to open the menu, and then choose File &gt; Export to ZIP in
@@ -9760,7 +9759,7 @@ In CodeSandbox you'll see three main sections:
 </p>
 <!-- {width="5.0in" height="2.3164555993000877in"} -->
 
-<ol>
+<ol type="1">
   <li><p>The Files section with a list of files, like App.js, index.js, styles.css 
   and a folder called public,</p></li>
   <li><p>The code editor where you'll see the source code of your selected 
@@ -12130,7 +12129,7 @@ elements, components, props, and state. Now that you've seen how these
 concepts work when building a game, check out [Thinking in
 React](https://react.dev/learn/thinking-in-react) to see how the same
 React concepts work when build an app's UI.
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Thinking in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this module (four), you will be assessed on the key skills covered in
@@ -12977,7 +12976,7 @@ don't store the number of items as another state value--instead, read
 the length of your array.</p>
 <p>Now think of all of the pieces of data in this example application:</p>
 
-<ol>
+<ol type="1">
   <li><p>The original list of products</p></li>
   <li><p>The search text the user has entered</p></li>
   <li><p>The value of the checkbox</p></li>
@@ -12997,7 +12996,7 @@ the length of your array.</p>
 
 <p>Let's go through them one by one again:</p>
 
-<ol>
+<ol type="1">
   <li><p>The original list of products is <b>passed in as props, so it's not
     state.</b></p></li>
   <li><p>The search text seems to be state since it changes over time and
@@ -13007,6 +13006,7 @@ the length of your array.</p>
   <li>The filtered list of products <b>isn't state because it can be
     computed</b> by taking the original list of products and filtering it
     according to the search text and value of the checkbox.</li>
+</ol>
 
 <p>This means only the search text and the value of the checkbox are state!
 Nicely done!</p>
@@ -13029,7 +13029,7 @@ following these steps!</p>
 
 <p>For each piece of state in your application:</p>
 
-<ol>
+<ol type="1">
   <li><p>Identify every component that renders something based on that state.</p></li>
   <li><p>Find their closest common parent component--a component above them all in the hierarchy.</p></li>
   <li><p>Decide where the state should live:</p></li>
@@ -13048,26 +13048,21 @@ place.</p>
 
 <p>Now let's run through our strategy for them:</p>
 
-<ol>
-<li><p>
-1.  Identify components that use state:
-
-<li><p>ProductTable needs to filter the product list based on that state
-    (search text and checkbox value).
-
-<li><p>SearchBar needs to display that state (search text and checkbox
-    value).
-
-<li><p>Find their common parent: The first parent component both components
-    share is FilterableProductTable.
-
-<li>Decide where the state lives: We'll keep the filter text and checked
-    state values in FilterableProductTable.
+<ol type="1">
+  <li><p>Identify components that use state:</p></li>
+  <li><p>ProductTable needs to filter the product list based on that state
+    (search text and checkbox value).</p></li>
+  <li><p>SearchBar needs to display that state (search text and checkbox
+    value).</p></li>
+  <li><p>Find their common parent: The first parent component both components
+    share is FilterableProductTable.</p></li>
+  <li>Decide where the state lives: We'll keep the filter text and checked
+    state values in FilterableProductTable.</li>
+</ol>
 
 <p>So, the state values will live in FilterableProductTable.</p>
-<p>Add state to the component with the [useState()
-Hook.](https://react.dev/reference/react/useState) Hooks are special
-functions that let you "hook into" React. Add two state variables at the
+<p>Add state to the component with the <a href="https://react.dev/reference/react/useState">useState()
+Hook.</a> Hooks are special functions that let you "hook into" React. Add two state variables at the
 top of FilterableProductTable and specify their initial state:</p>
 
 ```
@@ -13271,7 +13266,7 @@ React-powered app, this section will help you get started.</p>
 
 <h4>In this chapter:</h4>
 
-<ol>
+<ol type="1">
   <li><p><a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">How to start a new React project</a></p></li>
   <li><p><a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">How to add React to an existing project</a></p></li>
   <li><p><a href="https://react.dev/learn/editor-setup" target="_blank" rel="noopener noreferrer">How to set up your editor</a></p></li>
