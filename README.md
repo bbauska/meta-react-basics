@@ -774,7 +774,7 @@ $ npm init react-app my-firstapp
 <p>The installation and setup might take a few minutes.</p>
 <p>Here's the output of executing the above command:</p>
 
-<details>
+<details open>
   <summary>NPM create-react-app</summary>
 
 ```
@@ -1772,7 +1772,7 @@ export default Example
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed solution code for the App.js file:</p>
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -2359,7 +2359,7 @@ export default Intro2;
 <p>You can finish the previews for my blog posts with the code for
 <b>Intro3.js</b> component:</p>
 
-<details>
+<details open>
   <summary>React Functions</summary>
 
 ```
@@ -11977,7 +11977,7 @@ Check out the final result here:
 
 <h4>App.js</h4>
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12105,7 +12105,7 @@ with a capital letter, while HTML tags must be lowercase.
 
 Have a look at the result:
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12207,7 +12207,7 @@ return (
 
 You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12245,7 +12245,7 @@ attribute when your styles depend on JavaScript variables.
 
 In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:
 
-<details>
+<details open>
   <summary>React Code</summary>
 
 ```
@@ -12327,7 +12327,7 @@ among its siblings. Usually, a key should be coming from your data, such
 as a database ID. React uses your keys to know what happened if you
 later insert, delete, or reorder the items.
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12426,7 +12426,7 @@ be 1. Then it will be 2. And so on.
 If you render the same component multiple times, each will get its own
 state. Click each button separately:
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12548,7 +12548,7 @@ this in code.
 
 First, move the state up from MyButton into MyApp:
 
-<details>
+<details open>
   <summary>React Functions</summary>
 
 ```
@@ -12577,7 +12577,7 @@ shared click handler. You can pass information to MyButton using the JSX
 curly braces, just like you previously did with built-in tags like
 &lt;img&gt;:</p>
 
-<details>
+<details open>
   <summary>React Functions</summary>
 
 ```
@@ -12623,7 +12623,7 @@ a prop to each button, so they all show the new value. This is called
 "lifting state up". By moving state up, you've shared it between
 components.</p>
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12674,7 +12674,7 @@ thought process of building a searchable product data table with React.</p>
 
 <p>The JSON API returns some data that looks like this:</p>
 
-<details>
+<details open>
   <summary>JSON API</summary>
 
 ```
@@ -12804,7 +12804,7 @@ by working from components lower down (like ProductRow). In simpler
 examples, it's usually easier to go top-down, and on larger projects,
 it's easier to go bottom-up.</p>
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -12992,7 +12992,7 @@ filterText initial value from useState('') to useState('fruit') in
 the sandbox code below. You'll see both the search input text and the
 table update:</p>
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -13076,7 +13076,7 @@ FilterableProductTable, so only it can call setFilterText and
 setInStockOnly. To let SearchBar update the FilterableProductTable's
 state, you need to pass these functions down to SearchBar:</p>
 
-<details>
+<details open>
   <summary>React Function</summary>
 
 ```
@@ -13106,7 +13106,7 @@ the parent state from them:</p>
 
 <p>Now the application fully works!</p>
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
