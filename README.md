@@ -1212,17 +1212,14 @@ DOM.</p>
 </p>
 <!-- {width="6.0in" height="1.6361898512685915in"} -->
 
-Recall how you learned about functions in JavaScript.
-
-They are reusable blocks of code that can take an input, perform some
-procedure or calculation, and then return an output.
-
-Well, a React component acts much like a traditional JavaScript
+<p>Recall how you learned about functions in JavaScript.</p>
+<p>They are reusable blocks of code that can take an input, perform some
+procedure or calculation, and then return an output.</p>
+<p>Well, a React component acts much like a traditional JavaScript
 function. In this section (10), you'll continue your exploration of the
 structure of the React architecture by learning about functional
-components.
-
-Component types, JSX and trans piling.
+components.</p>
+<p>Component types, JSX and trans piling.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-b. two react components (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1233,18 +1230,14 @@ Component types, JSX and trans piling.
 </p>
 <!-- {width="6.0in" height="2.092697944006999in"} -->
 
-React provides two types of components, functional components and class
-components.
-
-They behave very similar in React to traditional functions, and classes
-in JavaScript.
-
-Don't worry about class components for now.
-
-You'll learn more about them later.
-
-Instead, let's just focus on functional components, which act like a
-JavaScript function.
+<p>React provides two types of components, functional components and class
+components.</p>
+<p>They behave very similar in React to traditional functions, and classes
+in JavaScript.</p>
+<p>Don't worry about class components for now.</p>
+<p>You'll learn more about them later.</p>
+<p>Instead, let's just focus on functional components, which act like a
+JavaScript function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s10-c. default react appl'n: index.js (38) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1255,9 +1248,9 @@ JavaScript function.
 </p>
 <!-- {width="4.0in" height="2.56380905511811in"} -->
 
-In the default React application, only one component is rendered and
+<p>In the default React application, only one component is rendered and
 it's the app components located inside the index.js file that's
-located inside the source folder.
+located inside the source folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-d. root component (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1268,15 +1261,12 @@ located inside the source folder.
 </p>
 <!-- {width="6.0in" height="2.0984120734908136in"} -->
 
-It's important to know that every React app must contain at least one
-component, and it's called the root component.
-
-This component is loaded using the import statement.
-
-You'll learn more about the import statement in React later.
-
-For now, just know that it's used to import code needed for React to
-work, such as the import React and import React DOM statements.
+<p>It's important to know that every React app must contain at least one
+component, and it's called the root component.</p>
+<p>This component is loaded using the import statement.</p>
+<p>You'll learn more about the import statement in React later.</p>
+<p>For now, just know that it's used to import code needed for React to
+work, such as the import React and import React DOM statements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-e. render syntax (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1287,8 +1277,8 @@ work, such as the import React and import React DOM statements.
 </p>
 <!-- {width="3.0in" height="1.3410400262467193in"} -->
 
-The syntax to render a component is very similar to a self-closing tag in HTML, you just place 
-the component name inside the left and right-angle brackets and don't forget the forward slash.
+<p>The syntax to render a component is very similar to a self-closing tag in HTML, you just place 
+the component name inside the left and right-angle brackets and don't forget the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-f. roots components (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1299,8 +1289,8 @@ the component name inside the left and right-angle brackets and don't forget the
 </p>
 <!-- {width="4.0in" height="1.6334394138232722in"} -->
 
-The roots components can contain other components that developers create
-to represent the various UI part of the application.
+<p>The roots components can contain other components that developers create
+to represent the various UI part of the application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-g. index.html (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1311,16 +1301,13 @@ to represent the various UI part of the application.
 </p>
 <!-- {width="4.0in" height="2.5053969816272965in"} -->
 
-Like in the e-commerce example that you learned about earlier.
-
-Recall that this component is ultimately converted to a DOM fragment and
+<p>Like in the e-commerce example that you learned about earlier.</p>
+<p>Recall that this component is ultimately converted to a DOM fragment and
 placed into the existing DOM as a child of the HTML div element with an
-ID of roots.
-
-This div element is then rendered to the browser.
-
-If you analyze the app component, you'll notice that it looks very
-similar to a JavaScript function with some HTML code inside.
+ID of roots.</p>
+<p>This div element is then rendered to the browser.</p>
+<p>If you analyze the app component, you'll notice that it looks very
+similar to a JavaScript function with some HTML code inside.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-h. function app in app.js (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1331,13 +1318,11 @@ similar to a JavaScript function with some HTML code inside.
 </p>
 <!-- {width="3.0in" height="3.022305336832896in"} -->
 
-You may also notice an export default statement. You'll learn more about
-this soon.
-
-For now, just know that you need it to make your components available.
-
-Now that you're familiar with the concept of functional components,
-let's explore how web developers create them in React.
+<p>You may also notice an export default statement. You'll learn more about
+this soon.</p>
+<p>For now, just know that you need it to make your components available.</p>
+<p>Now that you're familiar with the concept of functional components,
+let's explore how web developers create them in React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-i. jsx syntax (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1348,13 +1333,11 @@ let's explore how web developers create them in React.
 </p>
 <!-- ![](./images/image032.png){width="3.0in" height="1.0762095363079616in"} -->
 
-React is scripted using a special syntax called JavaScript XML or JSX.
-
-For many Reacts developers, this is known as a syntax extension to
-JavaScript.
-
-What is JSX syntax like? Let's find out by going back to our React
-default app component.
+<p>React is scripted using a special syntax called JavaScript XML or JSX.</p>
+<p>For many Reacts developers, this is known as a syntax extension to
+JavaScript.</p>
+<p>What is JSX syntax like? Let's find out by going back to our React
+default app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-j. app.js with jsx example (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1365,24 +1348,17 @@ default app component.
 </p>
 <!-- {width="4.0in" height="1.7951323272090989in"} -->
 
-Recall that in the return statements of the app function, it seemed that some HTML content is returned.
-
-Well, this content is not exactly HTML.
-
-It's JSX. JSX syntax looks very similar to HTML.
-
-What are its advantages is that it allows you to write JavaScript code
-inside what looks like HTML elements?
-
-In fact, you can think of JSX as a combination of custom HTML and
-JavaScript.
-
-This allows you to make your website dynamic.
-
-You'll learn more about the differences between HTML and JSX later.
-
-For now, just know that you can place this syntax inside the return
-statement of a functional component.
+<p>Recall that in the return statements of the app function, it seemed that some HTML content is returned.</p>
+<p>Well, this content is not exactly HTML.</p>
+<p>It's JSX. JSX syntax looks very similar to HTML.</p>
+<p>What are its advantages is that it allows you to write JavaScript code
+inside what looks like HTML elements?</p>
+<p>In fact, you can think of JSX as a combination of custom HTML and
+JavaScript.</p>
+<p>This allows you to make your website dynamic.</p>
+<p>You'll learn more about the differences between HTML and JSX later.</p>
+<p>For now, just know that you can place this syntax inside the return
+statement of a functional component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-k. must be used as a jsx element (41) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1393,19 +1369,16 @@ statement of a functional component.
 </p>
 <!-- ![](./images/image034.png){width="5.0in" height="2.5359787839020123in"} -->
 
-It's also important to note that a React component won't render until
+<p>It's also important to note that a React component won't render until
 it's used as a JSX element just like a JavaScript function declaration
-and won't run until it's called or invoked.
-
-Now you know what JSX is.
-
-Let's explore the steps involved to create a React components which
+and won't run until it's called or invoked.</p>
+<p>Now you know what JSX is.</p>
+<p>Let's explore the steps involved to create a React components which
 will contain some JSX code inside a heading 1 HTML element to display
-some text on a webpage.
-
-First, you create the component, which is basically just a JavaScript
+some text on a webpage.</p>
+<p>First, you create the component, which is basically just a JavaScript
 file, since its purpose is to return some heading text, you name the
-file Heading.js.
+file Heading.js.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-l.  (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1416,19 +1389,15 @@ file Heading.js.
 </p>
 <!-- ![](./images/image035.png){width="6.5625in" height="0.575in"} -->
 
-Notice that the first letter of the component name is capitalized.
-
-This is because there's a difference in how React treats capitalized,
-and non-capitalized component names.
-
-It's important to remember that all component names in React must be
-capitalized. Why is this?
-
-Well, because React treats lowercase components as regular HTML
-elements.
-
-Capitalizing a component name helps React to distinguish JSX elements
-from HTML elements.
+<p>Notice that the first letter of the component name is capitalized.</p>
+<p>This is because there's a difference in how React treats capitalized,
+and non-capitalized component names.</p>
+<p>It's important to remember that all component names in React must be
+capitalized. Why is this?</p>
+<p>Well, because React treats lowercase components as regular HTML
+elements.</p>
+<p>Capitalizing a component name helps React to distinguish JSX elements
+from HTML elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-m.  (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1439,16 +1408,13 @@ from HTML elements.
 </p>
 <!-- ![](./images/image036.png){width="3.0in" height="1.4707939632545932in"} -->
 
-Now let's continue with our component.
-Next inside the app.js file, create a function named Heading.
-
-The function name must also be declared using a capital letter for the
-first letter of the function.
-
-Then inside the function body, you create a variable named title and
-assign it the string value of this is some heading text.
-
-Now you're ready to create the return statement of the function.
+<p>Now let's continue with our component.</p>
+Next inside the app.js file, create a function named Heading.</p>
+<p>The function name must also be declared using a capital letter for the
+first letter of the function.</p>
+<p>Then inside the function body, you create a variable named title and
+assign it the string value of this is some heading text.</p>
+<p>Now you're ready to create the return statement of the function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-n.  (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1459,23 +1425,18 @@ Now you're ready to create the return statement of the function.
 </p>
 <!-- ![](./images/image037.png){width="6.5625in" height="1.9423611111111112in"} -->
 
-Inside the parentheses of the return, insert a heading 1 tag, and inside
-it places the variable named title.
-
-To make React evaluate the title variable, you need to place it inside
-curly brackets.
-
-If you didn't use curly brackets, you'd get the word title instead of
-this is some heading text.
-
-At this point, it's worth remembering that while you are creating HTML
-like syntax, you are actually coding inside a JavaScript file.
-
-Because of this, you can output a variable inside your JSX code,
-something you cannot do when writing static HTML.
-
-The overall syntax instructs React to render the heading HTML element
-with whatever text value that is stored within the variable named title.
+<p>Inside the parentheses of the return, insert a heading 1 tag, and inside
+it places the variable named title.</p>
+<p>To make React evaluate the title variable, you need to place it inside
+curly brackets.</p>
+<p>If you didn't use curly brackets, you'd get the word title instead of
+this is some heading text.</p>
+<p>At this point, it's worth remembering that while you are creating HTML
+like syntax, you are actually coding inside a JavaScript file.</p>
+<p>Because of this, you can output a variable inside your JSX code,
+something you cannot do when writing static HTML.</p>
+<p>The overall syntax instructs React to render the heading HTML element
+with whatever text value that is stored within the variable named title.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-o.  (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1486,35 +1447,26 @@ with whatever text value that is stored within the variable named title.
 </p>
 <!-- {width="3.0in" height="0.8577777777777778in"} -->
 
-This rendering happens behind the scenes because of something called <b>trans piling.</b>
-
-You can think of trans piling as a process of converting JSX to HTML and
-you'll learn more about this later.
-
-In this section you learned about functional components and how to
-create them in React.
-
-You also learned about JSX, which acts like a combination of HTML, CSS,
+<p>This rendering happens behind the scenes because of something called <b>trans piling.</b></p>
+<p>You can think of trans piling as a process of converting JSX to HTML and
+you'll learn more about this later.</p>
+<p>In this section you learned about functional components and how to
+create them in React.</p>
+<p>You also learned about JSX, which acts like a combination of HTML, CSS,
 and JavaScript that you can use to generate dynamic content inside your
-functional components.
-
-Finally, you explored the concepts of rendering and trans piling.
-
-If you'd like to learn about these concepts in more detail, there's a
-link to an additional reading at the end of this lesson.
-
+functional components.</p>
+<p>Finally, you explored the concepts of rendering and trans piling.</p>
+<p>If you'd like to learn about these concepts in more detail, there's a
+link to an additional reading at the end of this lesson.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Creating React components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (11), you will further explore the concepts of
-components in React and learn how to create a component from scratch.
-
-You'll be introduced to the concept of the export statements and how
-components can be used to create reusable blocks of code.
-
-I've launched VS Code here, and I have the creating components folder
-open in the built-in terminal.
-
+<p>In this section (11), you will further explore the concepts of
+components in React and learn how to create a component from scratch.</p>
+<p>You'll be introduced to the concept of the export statements and how
+components can be used to create reusable blocks of code.</p>
+<p>I've launched VS Code here, and I have the creating components folder
+open in the built-in terminal.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-a. npm init react-app (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1524,15 +1476,12 @@ open in the built-in terminal.
   width="70%" />
 </p>
 
-Now, I'll execute the command npm init, React app dot .
-
-The dot character instructs VS Code to run this command in the current
-folder.
-
-In other words, I'm using Create React app to build a new app for me
-inside this folder.
-
-I execute this command by pressing the Enter key.
+<p>Now, I'll execute the command npm init, React app dot .</p>
+<p>The dot character instructs VS Code to run this command in the current
+folder.</p>
+<p>In other words, I'm using Create React app to build a new app for me
+inside this folder.</p>
+<p>I execute this command by pressing the Enter key.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-b. npm start (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1542,13 +1491,13 @@ I execute this command by pressing the Enter key.
   width="70%" />
 </p>
 
-I wait for the app to build, and once it's ready, I can start the app
+<p>I wait for the app to build, and once it's ready, I can start the app
 by typing $&gt; npm then a space followed by start ($&gt; npm start).
 
-The process of building the React app could take a couple of minutes, so
+<p>The process of building the React app could take a couple of minutes, so
 just sit tight while it builds.
 
-Great. My React app has started and loaded in the browser at
+<p>Great. My React app has started and loaded in the browser at
 localhost:3000 which is the local server.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-c. on your react network (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1559,11 +1508,10 @@ localhost:3000 which is the local server.
   width="70%" />
 </p>
 
-Notice that I have all these files and folders in the left pane of VS
+<p>Notice that I have all these files and folders in the left pane of VS
 Code now, such as node modules, public SRC, and files like package.
-json.
-
-You'll learn more about these later.
+json.</p>
+<p>You'll learn more about these later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-d. src folder (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1572,13 +1520,11 @@ You'll learn more about these later.
   alt="SRC (source) folder."
   width="70%" />
 </p>
-For now, the only folder I need to work in as the SRC folder.
 
-Don't worry about all these other files and folders. Instead, I want
-you to focus on how to build a component in React.
-
-To do that, let's have a clean start.
-
+<p>For now, the only folder I need to work in as the SRC folder.</p>
+<p>Don't worry about all these other files and folders. Instead, I want
+you to focus on how to build a component in React.</p>
+<p>To do that, let's have a clean start.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-e. app.js (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1588,11 +1534,10 @@ To do that, let's have a clean start.
   width="70%" />
 </p>
 
-The easiest way to do this is to remove all the code inside the function
-inside the app.js file.
-
-I guess you might say this is the simplest possible component. I'm
-declaring an app function and I'm exporting it as a default module.
+<p>The easiest way to do this is to remove all the code inside the function
+inside the app.js file.</p>
+<p>I guess you might say this is the simplest possible component. I'm
+declaring an app function and I'm exporting it as a default module.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-f. blank app.js (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1602,10 +1547,9 @@ declaring an app function and I'm exporting it as a default module.
   width="70%" />
 </p>
 
-I save my file and notice that my app is just a blank page.
-
-Now, let me create another component that will contain some texts that I
-want to display in the browser.
+<p>I save my file and notice that my app is just a blank page.</p>
+<p>Now, let me create another component that will contain some texts that I
+want to display in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-g. header function (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1615,30 +1559,23 @@ want to display in the browser.
   width="70%" />
 </p>
 
-To do this, I create another function called header, and in the function
-body, I'll just return some greeting texts inside an H1 JSX elements.
+<p>To do this, I create another function called header, and in the function
+body, I'll just return some greeting texts inside an H1 JSX elements.</p>
+<p>Inside the H1 I type, Hello world.</p>
+<p>My code looks good now, but my screen is still white.</p>
+<p>This is because I'm not yet rendering anything from my app function.</p>
 
-Inside the H1 I type, Hello world.
-
-My code looks good now, but my screen is still white.
-
-This is because I'm not yet rendering anything from my app function.
-
-To do this, I need to return to my app function and call the header
-function from it.
-
-I use the JSX elements syntax to render a component which is the name of
-my function.
-
-Inside the body of the app function, I create the return statement and
+<p>To do this, I need to return to my app function and call the header
+function from it.</p>
+<p>I use the JSX elements syntax to render a component which is the name of
+my function.</p>
+<p>Inside the body of the app function, I create the return statement and
 type the function name of header inside left and right-angle brackets,
-not forgetting to add the forward slash before the right-angle bracket.
-
-Notice that the syntax to render a component is very similar to a
-self-closing tag in HTML.
-
-Press Control S or Command S, if you're on Mac to save everything
-again.
+not forgetting to add the forward slash before the right-angle bracket.</p>
+<p>Notice that the syntax to render a component is very similar to a
+self-closing tag in HTML.</p>
+<p>Press Control S or Command S, if you're on Mac to save everything
+again.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-h. hello world (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1648,64 +1585,57 @@ again.
   width="70%" />
 </p>
 
-Great, my code is working now.
+<p>Great, my code is working now.</p>
 
-I notice in HTML heading with the text Hello World displayed in the
-browser. Congratulations.
-
-In this section (11), you learned how to create a functional component.
-
-These components named <b>app</b> calls, another component named
-<b>header</b>, which displays an HTML heading with some texts.
-
-At the moment, the header component code exists in the same file as the
-app component.
-
-To make the header component isolated and reusable, I need to place it
-in its own file.
-
-Then I can reuse it multiple times in the application anytime I want to
+<p>I notice in HTML heading with the text Hello World displayed in the
+browser. Congratulations.</p>
+<p>In this section (11), you learned how to create a functional component.</p>
+<p>These components named <b>app</b> calls, another component named
+<b>header</b>, which displays an HTML heading with some texts.</p>
+<p>At the moment, the header component code exists in the same file as the
+app component.</p>
+<p>To make the header component isolated and reusable, I need to place it
+in its own file.</p>
+<p>Then I can reuse it multiple times in the application anytime I want to
 display a heading element with some texts, and you'll learn how to do
-this very soon.
-
-In this module, you'll learn how to create a functional component in
-React, and render it to the root components named <b>app.js</b>.
-
+this very soon.</p>
+<p>In this nexton section (12), you will learn how to create a functional component in
+React, and render it to the root components named <b>app.js</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Transpiling JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By the end of this section (12), you will know how a component is built.
+<p>By the end of this section (12), you will know how a component is built.</p>
 
-Components are a nice way to build websites in React because they allow
+<p>Components are a nice way to build websites in React because they allow
 you to build more modular apps. However, how do you build components
 using React, JSX, and JavaScript? You'll learn how this works in this
-lesson item.
+lesson item.</p>
 
-A browser cannot understand JSX syntax.
+<p>A browser cannot understand JSX syntax.</p>
 
-This means that making a browser understand React code requires a lot of
-supporting technologies.
+<p>This means that making a browser understand React code requires a lot of
+supporting technologies.</p>
 
-An example of such a technology is a <b>transpiler</b>.
+<p>An example of such a technology is a <b>transpiler</b>.</p>
 
-A <b>transpiler</b> takes a piece of code and transforms it into some other
-code.
+<p>A <b>transpiler</b> takes a piece of code and transforms it into some other
+code.</p>
 
-To understand why this is done, here is an example of an ES6 variable
-declaration:
+<p>To understand why this is done, here is an example of an ES6 variable
+declaration:</p>
 
 ```
 const PI = 3.14
 ```
 
-This is perfectly valid ES6 syntax.
+<p>This is perfectly valid ES6 syntax.</p>
 
-However, if you were using a very old computer, that computer will have
+<p>However, if you were using a very old computer, that computer will have
 an old browser. Perhaps that browser was built before ES6 came out in
-2015.
+2015.</p>
 
-This means that the JavaScript engine that is built into your old
-computer's browser is likely to be an ES5 JavaScript engine.
+<p>This means that the JavaScript engine that is built into your old
+computer's browser is likely to be an ES5 JavaScript engine.</p>
 
 <p>In ES5, the only way to declare a variable is the following:</p>
 
@@ -1733,16 +1663,12 @@ comprehend, run, and produce a result from.</p>
 <p>Likely the most popular site that shows off how this works is 
 <a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel</a>. As the heading of
 the website reads, "Babel is a JavaScript Compiler".</p>
-
 <p>This finally brings you to the point of this discussion about
 transpiling JavaScript code.</p>
-
 <p>What Babel does is this: it allows you to transpile JSX code (which
 cannot be understood by a browser) into plain JavaScript code (which can
 be understood by a browser).</p>
-
 <p>This is where React and JSX come in.</p>
-
 <p>For React code to be understood by a browser, you need to have a
 <b>transpiling step</b> in which the JSX code gets converted to plain
 JavaScript code that a modern browser can work with.</p>
@@ -1750,7 +1676,7 @@ JavaScript code that a modern browser can work with.</p>
 <p>To demonstrate how this works, let's use the <b>Heading</b> component from
 the previous lesson.</p>
 
-Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false)" target="_blank" rel="noopener noreferrer">the online Babel repl</a>.  Repl stands for "read-eval-print loop" and it accepts code you write, evaluates it, and produces some result. In the specific case of <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false" target="_blank" rel="noopener noreferrer">the online Babel repl</a>, that result is some transpiled code. Here's a more detailed explanation.
+<p>Add the JSX code into <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false)" target="_blank" rel="noopener noreferrer">the online Babel repl</a>.  Repl stands for "read-eval-print loop" and it accepts code you write, evaluates it, and produces some result. In the specific case of <a href="https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=GYVwdgxgLglg9mABACQKYEMAmMwHMAUADgE5yEDOAlIgN4BQijixqUIxSAPABYCMAfDRJlyAOlhQANqgC-nAPR9-dGUA&debug=false&forceAllTransforms=false" target="_blank" rel="noopener noreferrer">the online Babel repl</a>, that result is some transpiled code. Here's a more detailed explanation.</p>
 
 <p>If you've visited the above-linked URL, you'll find a web page that
 has two panels. On the left, there's source JSX code:</p>
@@ -1824,16 +1750,14 @@ React.createElement(Heading, {
 });
 ```
 
-Again, you have the <b>React.createElement()</b> method call, and this
+<p>Again, you have the <b>React.createElement()</b> method call, and this
 time, the first item to render is <b>Heading</b>, and then you have an
 object as the second argument (instead of a null that you had in the
-previous transpilation example).
-
-This brings me to an interesting question: What is the minimum code that
+previous transpilation example).</p>
+<p>This brings me to an interesting question: What is the minimum code that
 a component must have to be able to show something on the screen when
 rendered?
-
-You can see the answer below:
+<p>You can see the answer below:</p>
 
 ```
 function Example() {
@@ -1846,7 +1770,7 @@ export default Example
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Your first component</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is the completed solution code for the App.js file:
+<p>Here is the completed solution code for the App.js file:</p>
 
 <details>
   <summary>App.js</summary>
@@ -1872,7 +1796,7 @@ export default App;
 
 </details>
 
-Here is the output from the solution code for the App.js file:
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w1-s13-a. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1883,9 +1807,9 @@ Here is the output from the solution code for the App.js file:
 </p>
 <!-- {width="5.0in" height="0.8566437007874016in"} -->
 
-<b>Step 1:</b> In the starting code, you already had a JSX element
+<p><b>Step 1:</b> In the starting code, you already had a JSX element
 named <b>&lt;Heading /&gt;</b> , being rendered from the App component, since
-it is a part of the App component's return statement.
+it is a part of the App component's return statement.</p>
 
 ```
  function App() { 
@@ -1899,9 +1823,9 @@ it is a part of the App component's return statement.
 export default App;
 ```
 
-Then, you added a new function to the App component, and named that
+<p>Then, you added a new function to the App component, and named that
 function <b>Heading ()</b>. You placed it at the very top of the <b>App.js</b>
-file.
+file.</p>
 
 ```
 function Heading() {
@@ -1909,9 +1833,9 @@ function Heading() {
 }
 ```
 
-<b>Step 2:</b> Next, in the body of the <b>Heading</b> component, you added a
+<p><b>Step 2:</b> Next, in the body of the <b>Heading</b> component, you added a
 return statement and spread it over several lines by following it up
-with an opening and a closing parenthesis.
+with an opening and a closing parenthesis.</p>
 
 ```
 function Heading() { 
@@ -1920,7 +1844,7 @@ function Heading() { 
 }
 ```
 
-<b>Step 3:</b> Then, inside the parentheses, you added the following code: 
+<p><b>Step 3:</b> Then, inside the parentheses, you added the following code:</p>
 
 ```
 <h1>This is an h1 heading</h1>
@@ -1932,26 +1856,22 @@ function Heading() { 
 } 
 ```
 
-<b>Step 4:</b> Finally, you saved your changes and viewed the app in the
+<p><b>Step 4:</b> Finally, you saved your changes and viewed the app in the
 browser.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. The React project structure</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-As you might already be aware, it's important to organize or structure
-your React components so that they're easy to access.
-
-But what does the structure look like?
-
-What files and folders are found within a typical React application?
-
-The React project structure is the focus of this section (14).
-
-By the time you reach the end of this section (14), you have learned how
+<p>As you might already be aware, it's important to organize or structure
+your React components so that they're easy to access.</p>
+<p>But what does the structure look like?</p>
+<p>What files and folders are found within a typical React application?</p>
+<p>The React project structure is the focus of this section (14).</p>
+<p>By the time you reach the end of this section (14), you have learned how
 to explain the default folder structure of a React project, outline the
 benefits of the folder structure, customize the folder structure to hold
 components and assets, and explain the benefits of planning folder use
-for app development.
+for app development.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-a. default files and folders (54) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1961,16 +1881,16 @@ for app development.
   width="70%" />
 </p>
 
-Let's begin by examining how the default files and folders are laid out
-in a React app project.
+<p>Let's begin by examining how the default files and folders are laid out
+in a React app project.</p>
 
-When you build a React app using the command npm init React app, your
-project is comprised of a specific file and folder structure.
+<p>When you build a React app using the command npm init React app, your
+project is comprised of a specific file and folder structure.</p>
 
-Notice that there are three folders named node modules, public, and SRC
-or source.
+<p>Notice that there are three folders named node modules, public, and SRC
+or source.</p>
 
-Let's explore each of these folders briefly now.
+<p>Let's explore each of these folders briefly now.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-b. node module folder (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1980,25 +1900,25 @@ Let's explore each of these folders briefly now.
   width="70%" />
 </p>
 
-First, let's begin with the node modules folder.
+<p>First, let's begin with the node modules folder.</p>
 
-You can think of this folder as a repository for all the modules in your
-React app.
+<p>You can think of this folder as a repository for all the modules in your
+React app.</p>
 
-The node modules folder is automatically added when you install a
-specific npm package.
+<p>The node modules folder is automatically added when you install a
+specific npm package.</p>
 
-You might recall the packages or groupings of files and/or node.js
-modules.
+<p>You might recall the packages or groupings of files and/or node.js
+modules.</p>
 
-Developers use packages when they want to add a piece of functionality
+<p>Developers use packages when they want to add a piece of functionality
 that someone else coded and made available to other developers via the
-npm ecosystem.
+npm ecosystem.</p>
 
-Don't worry too much about the node modules folder.
+<p>Don't worry too much about the node modules folder.</p>
 
-For now, just be aware of it and that it's needed for your React app to
-work.
+<p>For now, just be aware of it and that it's needed for your React app to
+work.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-c. public folder (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2008,16 +1928,14 @@ work.
   width="70%" />
 </p>
 
-Next is the public folder, and it contains the assets that will be
-displayed to the user in your app.
-
-For example, image files for logos, the favicon, which displays an icon
+<p>Next is the public folder, and it contains the assets that will be
+displayed to the user in your app.</p>
+<p>For example, image files for logos, the favicon, which displays an icon
 in the browser tab, and the robots.txt file, which is used for search
-engine optimization.
-
-Also, there is a manifest.json file, which is used to provide some
+engine optimization.</p>
+<p>Also, there is a manifest.json file, which is used to provide some
 metadata to a device when you're React powered web app is installed on
-it.
+it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-d. index.html (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2812,7 +2730,8 @@ export default App;
        <Heading />
 ```
 
-Here is a screenshot of the src folder:
+<p>Here is a screenshot of the src folder:</p>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w1-s17-a. app, heading and index files displayed in src folder (73) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2823,7 +2742,8 @@ Here is a screenshot of the src folder:
 </p>
 <!-- {width="3.7708333333333335in" height="1.3125in"} -->
 
-Here is the output from the solution code for the App.js file:
+<p>Here is the output from the solution code for the App.js file:</p>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s17-b. output of exercise (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2834,8 +2754,8 @@ Here is the output from the solution code for the App.js file:
 </p>
 <!-- {width="5.0in" height="1.220472440944882in"} -->
 
-<b>Step 1:</b> You moved the <b>Heading</b> function from App to a separate
-component file, named "Heading.js".
+<p><b>Step 1:</b> You moved the <b>Heading</b> function from App to a separate
+component file, named "Heading.js".</p>
 
 ```
 function Heading() {
@@ -2848,17 +2768,17 @@ function Heading() {
 export default Heading;
 ```
 
-<b>Step 2:</b> Next, you imported the <b>Heading</b> component into the
-<b>App</b> component. 
+<p><b>Step 2:</b> Next, you imported the <b>Heading</b> component into the
+<b>App</b> component.</p>
 
 ```
 import Heading from "./Heading";
 ```
 
-<b>Step 3:</b> Finally, you removed the sentence that reads: <i>This is the
+<p><b>Step 3:</b> Finally, you removed the sentence that reads: <i>This is the
 starting code for "Your first component" ungraded lab</i> - so that only
 the <b>Heading</b> JSX element remains in the return statement of the App
-component. 
+component.</p>
 
 ```
 import Heading from "./Heading";
@@ -2900,9 +2820,9 @@ function App() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Principles of Components: Props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now, you should be familiar with the concept of functional components in React. 
+<p>By now, you should be familiar with the concept of functional components in React. 
 They are reusable blocks of code that act much like a JavaScript function.
-<br>
+</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-a. react javascript function (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2911,11 +2831,11 @@ They are reusable blocks of code that act much like a JavaScript function.
   alt="React function props."
   width="70%" />
 </p>
-Recall that in JavaScript, you can make your functions more flexible by
+<p>Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
 arguments when you call the function. Well, in React, you can perform a
 similar action using something called properties, which are represented
-as props.
+as props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-b. prop example object (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2940,10 +2860,10 @@ object is a special type of variable that can contain many values.</p>
   alt="Object properties in React."
   width="40%" />
 </p>
-You use objects when you need to store groups of related data of
+<p>You use objects when you need to store groups of related data of
 different types. Each data type is known as an object property, for
 example, suppose you create an object called fruits that contains
-properties for type, quantity, and color.
+properties for type, quantity, and color.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-d. object with name-value pairs (76) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2953,8 +2873,8 @@ properties for type, quantity, and color.
   width="70%" />
 </p>
 
-Remember that these properties consist of name-value pairs, and you can
-access the object's properties using dot notation.
+<p>Remember that these properties consist of name-value pairs, and you can
+access the object's properties using dot notation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-e. react props (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2964,15 +2884,14 @@ access the object's properties using dot notation.
   width="40%" />
 </p>
 
-In React, you can use a similar technique to pass data from one
+<p>In React, you can use a similar technique to pass data from one
 component to another using the properties object or simply props. Props
 allow you to pass data from one component to another. It's helpful to
 think of props as arguments a component can accept and are passed using
-JSX syntax, much like HTML attributes.
-
-Inside the function, you use the keyword props. Now that you're
+JSX syntax, much like HTML attributes.</p>
+<p>Inside the function, you use the keyword props. Now that you're
 familiar with the concept of props, let's explore an example to send
-some props to a component and print them out in a React app.
+some props to a component and print them out in a React app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-f. render app in index.js  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2993,14 +2912,15 @@ can make this heading dynamic by using props.</p>
   alt="Index.js and App.js."
   width="70%" />
 </p>
-Let's now explore the syntax involved to create this. In the root
+<p>Let's now explore the syntax involved to create this. In the root
 component, index.js, you send the value you want to pass to the app
-component as an argument in the form of an HTML attribute. Next, in the
-app component, you accept this argument using the props object. To do
+component as an argument in the form of an HTML attribute.
+
+Next, in the app component, you accept this argument using the props object. To do
 this, you add the keyword props to the function declaration inside of
 the parentheses. Finally, to access this object's properties, you use
 dots notation to reference the name of the object property that was
-passed as an argument by the HTML attribute.
+passed as an argument by the HTML attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-h. app.js with props title (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13291,7 +13211,6 @@ export default function App() {
 
 <p>You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.</p>
-
 <p>Most pages in the React documentation contain sandboxes like this.
 Outside of the React documentation, there are many online sandboxes that
 support React: for example, <a href="https://codesandbox.io/s/new" target="_blank" rel="noopener noreferrer">CodeSandbox</a>,
@@ -13303,7 +13222,6 @@ support React: for example, <a href="https://codesandbox.io/s/new" target="_blan
 
 <p>To try React locally on your computer, <a href="https://gist.githubusercontent.com/
 gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.</p>
-
 <p>Open it in your editor and your browser!</p>
 
 <h3>Start a new React project</h3>
