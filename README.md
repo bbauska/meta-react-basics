@@ -3168,11 +3168,11 @@ of code to return the JSX from it inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c. jsx nav component (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p align="center">
 <img src="/images/w1-s21-c.png?raw=true"
   alt="JSX Nav component."
   width="25%" />
-  
+&nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w1-s21-d. attributes building components with props (83) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7758,7 +7758,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
   width="40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="/images/w2-s22-f.png?raw=true"
-  alt="Module 2 Summary, part 2. Data and States."
+  alt="Module 2 Summary, part ii. Data and States."
   width="40%" />
 </p>
 <p>In the upcoming module, you'll learn about working with links and routing as well as using assets in react. This should finalize your preparations for coding your own portfolio project in react. Excellent. You've made great progress in your journey towards becoming a react developer.</p>
