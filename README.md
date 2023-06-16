@@ -8274,75 +8274,74 @@ You saved all your changes and viewed your updates in the served app. You should
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ w3-s05-a. 3 levels event - components - web page (219) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-a.png?raw=true"
-  alt="."
+  alt="Three (3) level tree of event - components - web page."
   width="50%" />
 </p>
-
-And when you have components that are responsive to events such as clicks, this can add another layer of complexity. Fortunately, there are several approaches for writing the logic to ensure that this process goes smoothly and requires less work from you. 
-By the end of this section (05) you'll have a high level understanding of conditional rendering and know how to set it up using ternary operators. 
+<p>And when you have components that are responsive to events such as clicks, this can add another layer of complexity. Fortunately, there are several approaches for writing the logic to ensure that this process goes smoothly and requires less work from you.</p>
+<p>By the end of this section (05) you'll have a high level understanding of conditional rendering and know how to set it up using ternary operators.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-b. data to props and state (220) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-b.png?raw=true"
-  alt="."
+  alt="Data to props and state."
   width="50%" />
 </p>
-Recall that state is a component internal data, which that component can control or change as opposed to props, which the component receives but cannot alter.
-In an app, you can render components conditionally based on whether a specific state data has specific values. In other words, when you write the rendering logic in the main app component, you'll need to reference the state of the other components. 
+<p>Recall that state is a component internal data, which that component can control or change as opposed to props, which the component receives but cannot alter.</p>
+<p>In an app, you can render components conditionally based on whether a specific state data has specific values. In other words, when you write the rendering logic in the main app component, you'll need to reference the state of the other components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-c. togglebutton.js to false state (220) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-c.png?raw=true"
-  alt="."
+  alt="ToggleButton.js - false state."
   width="50%" />
 </p>
 
 For example, suppose you have a component that contains code for a button that shows a sidebar, the button controls the state of the toggle sidebar variable, which is set to false. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-d. togglebutton.js to true state (220) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-d.png?raw=true"
-  alt="."
+  alt="ToggleButton.js to true state as sidebar."
   width="50%" />
 </p>
  
 When the button is clicked, the state of the toggle sidebar variable is updated to True, and the sidebar component is displayed. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w3-s05-e. javascript - conditional if statement (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-e.png?raw=true"
-  alt="."
+  alt="JavaScript - conditional if statement example."
   width="50%" />
 </p>
 To make this possible react works with conditional concepts and syntax that are already available in JavaScript. For example, recall the conditional if statement in JavaScript, developers use it to run code conditionally based on whether something is either true or false. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w3-s05-f. get it done or get some rest (boolean) (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-f.png?raw=true"
-  alt="."
+  alt="Conditional boolean; Get it Done or Get Some Rest."
   width="50%" />
 </p>
 To illustrate conditional rendering in action, let's first consider an example productivity app. Based on the device's data at the time of access, the app displays one of two messages.  For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a developer, there are a few ways you can achieve this functionality in react. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-g. currentmessage component (221) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-g.png?raw=true"
-  alt="."
+  alt="CurrentMessage component."
   width="40%" />
 </p>
 But in this section (05), you'll focus on using the ternary operator to write simplified, if else conditions, you start by creating a component called CurrentMessage. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-h. built-in date function sun-sat (222) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-h.png?raw=true"
@@ -8351,48 +8350,53 @@ But in this section (05), you'll focus on using the ternary operator to write si
 </p>
 This component uses the built in date function in JavaScript, along with the get day method to store the day of the week as a number, where zero represents Sunday, and six, the following Saturday. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w3-s05-i. two components - each with a message (222) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-i.png?raw=true"
-  alt="."
+  alt="Two components (workdays and weekends); each with a message."
   width="40%" />
 </p>
 Next, you create the two components that each holds one of the messages to be displayed. Let's name these components Workdays and Weekends. The current message component needs to render the appropriate components based on the value returned from the getDay function call. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-j. ternary operator example (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-j.png?raw=true"
-  alt="."
+  alt="Ternary operator example."
   width="60%" />
 </p>
 
-Let's set up the conditions to make that happen. Recall that the ternary operator takes three commands. First is the condition, which in this example uses the logical and operator. The condition checks if the value stored in the day variable is greater than or equal to one, and less than or equal to five. Then the question mark symbol, followed by the expression to execute if the condition evaluates as true. 
-In this example, the component, Workdays, is rendered. Next is the colon symbol, which represents the code to be executed if the condition evaluates as false. And if this happens, the component weekends is rendered. Using the logical and operator in the condition means that both expressions have to return true in order to render the Workdays component. Otherwise, the Weekends component will be rendered. 
-While using the ternary operator is a common pattern that you'll see in react code. If you are new to react, it may be difficult to understand what's happening. 
+<p>Let's set up the conditions to make that happen. Recall that the ternary operator takes three commands. First is the condition, which in this example uses the logical and operator. The condition checks if the value stored in the day variable is greater than or equal to one, and less than or equal to five. Then the question mark symbol, followed by the expression to execute if the condition evaluates as true.</p>
+<p>In this example, the component, Workdays, is rendered. Next is the colon symbol, which represents the code to be executed if the condition evaluates as false. And if this happens, the component weekends is rendered. Using the logical and operator in the condition means that both expressions have to return true in order to render the Workdays component. Otherwise, the Weekends component will be rendered.</p>
+<p>While using the ternary operator is a common pattern that you'll see in react code. If you are new to react, it may be difficult to understand what's happening.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-k. isitsummeryet component (223) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s05-k.png?raw=true"
-  alt="."
+  alt="IsItSummerYet component - boolean yes or no."
   width="60%" />
 </p>
-So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach. 
-In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.
+<p>So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach.</p>
+<p>In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Applying conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.
-Consider a minimalistic productivity app.
-The app takes the client computer’s current datetime, and based on the data, displays one of two messages on the screen:
-1.	For workdays, the message is: “Get it done” 
-2.	For weekends, the message is: “Get some rest” 
-There are a few ways you can achieve this in React.
-One approach would include setting a component for each of the possible messages, which means you’d have two components. Let’s name them Workdays and Weekends.
-Then, you’d have a CurrentMessage component, which would render the appropriate component based on the value returned from the getDay() function call.
-Here’s a simplified CurrentMessage component:
+<p>State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.</p>
+
+<h4>Consider a minimalistic productivity app</h4>
+<p>The app takes the client computer’s current datetime, and based on the data, displays one of two messages on the screen:</p>
+
+<ol type="1">
+  <li>For workdays, the message is: “Get it done”,<br></li>
+  <li>For weekends, the message is: “Get some rest”.</li>
+</ol>
+
+<p>There are a few ways you can achieve this in React.</p>
+<p>One approach would include setting a component for each of the possible messages, which means you’d have two components. Let’s name them Workdays and Weekends.</p>
+<p>Then, you’d have a CurrentMessage component, which would render the appropriate component based on the value returned from the getDay() function call.</p>
+<p>Here’s a simplified CurrentMessage component:</p>
 
 ```
 1.	function CurrentMessage() {
@@ -8404,8 +8408,8 @@ Here’s a simplified CurrentMessage component:
 7.	}
 ```
 
-Instead of calculating it directly, you could use some historical data instead, and perhaps get that data from a user via an input, from a parent component.
-In that case, the CurrentMessage component might look like this:
+<p>Instead of calculating it directly, you could use some historical data instead, and perhaps get that data from a user via an input, from a parent component.</p>
+<p>In that case, the CurrentMessage component might look like this:</p>
 
 ```
 1.	function CurrentMessage(props) {
@@ -8416,9 +8420,10 @@ In that case, the CurrentMessage component might look like this:
 6.	}
 ```
 
-Conditional rendering with the help of element variables
-To further improve your CurrentMessage component, you might want to use element variables. This is useful in some cases, where you want to streamline your render code - that is, when you want to separate the conditional logic from the code to render your UI.
-Here’s an example of doing this with the CurrentMessage component:
+<h4>Conditional rendering with the help of element variables</h4>
+
+<p>To further improve your CurrentMessage component, you might want to use element variables. This is useful in some cases, where you want to streamline your render code - that is, when you want to separate the conditional logic from the code to render your UI.</p>
+<p>Here’s an example of doing this with the CurrentMessage component:</p>
 
 ```
 1.	function CurrentMessage({day}) {
@@ -8442,10 +8447,9 @@ Here’s an example of doing this with the CurrentMessage component:
 19.	}
 ```
 
-The output of the CurrentMessage component will depend on what the received value of the day variable is. On the condition of the day variable having the value of any number between 1 and 5 (inclusive), the output will be the contents of the Workdays component. Otherwise, on the condition of the day variable having the value of either 6 or 7, the output will be the contents of the Weekends component.
-Conditional rendering using the logical AND operator
-Another interesting approach in conditional rendering is the use of the logical AND operator &&.
-In the following component, here's how the && operator is used to achieve conditional rendering:
+<p>The output of the CurrentMessage component will depend on what the received value of the day variable is. On the condition of the day variable having the value of any number between 1 and 5 (inclusive), the output will be the contents of the Workdays component. Otherwise, on the condition of the day variable having the value of either 6 or 7, the output will be the contents of the Weekends component.
+Conditional rendering using the logical AND operator.  Another interesting approach in conditional rendering is the use of the logical AND operator &&.</p>
+<p>In the following component, here's how the && operator is used to achieve conditional rendering:</p>
 
 ```
 1.	function LogicalAndExample() {
@@ -8462,24 +8466,34 @@ In the following component, here's how the && operator is used to achieve condit
 12.	}
 ```
 
-There are a few things to unpack here, so here is the explanation of the LogicalAndExample component, top to bottom:
-1.	First, you ask the user to type into the prompt, specifying that you require anything other than a zero character; and you save the input into the val value.
-2.	In the return statement, an h1 heading is wrapped inside a div element, and then curly braces are used to include a JSX expression. Inside this JSX expression is a single && operator, which is surrounded by some code both on its left and on its right sides; on the left side, the val value is provided, and on the right, a piece of JSX is provided. 
+<p>There are a few things to unpack here, so here is the explanation of the LogicalAndExample component, top to bottom:</p>
+<ol type="1">
+  <li>First, you ask the user to type into the prompt, specifying that you require anything other than a zero character; and you save the input into the val value,</li>
+  <li>In the return statement, an h1 heading is wrapped inside a div element, and then curly braces are used to include a JSX expression. Inside this JSX expression is a single && operator, which is surrounded by some code both on its left and on its right sides; on the left side, the val value is provided, and on the right, a piece of JSX is provided.</li>
+</ol>
 
-To understand what will be output on screen, consider the following example in standard JavaScript:
+<p>To understand what will be output on screen, consider the following example in standard JavaScript:</p>
+
+```
 1.	true && console.log('This will show')
-If you ran this command in the browser’s console, the text ‘This will show’ will be output.
-On the flip side, consider the following example:
+```
+
+<p>If you ran this command in the browser’s console, the text ‘This will show’ will be output.
+On the flip side, consider the following example:</p>
+
+```
 1.	false && console.log('This will never show')
-If you ran this command, the output will just be the boolean value of false.
-In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.
+```
+
+<p>If you ran this command, the output will just be the boolean value of false.
+In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Conditional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.
-This is often done using something called conditional rendering.
-In a previous course, you’ve already learned about simple conditions using if and switch statements. Using these statements allows you to change the behaviour of code based on certain conditions being met.
-For example, you can set a variable to a different value based on the result of a condition check.
+<p>Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.</p>
+<p>This is often done using something called conditional rendering.</p>
+<p>In a previous course, you’ve already learned about simple conditions using if and switch statements. Using these statements allows you to change the behaviour of code based on certain conditions being met.</p>
+<p>For example, you can set a variable to a different value based on the result of a condition check.</p>
 
 ```
 1.	let name; 
@@ -8500,11 +8514,11 @@ For example, you can set a variable to a different value based on the result of 
 7.	} 
 ```
 
-Conditional rendering is built on the same principle. By using conditions, you can return different child components. This is often done using the props that are passed into the parent component, but can also be done based on component state.
-Let’s take a look at a simple example.
-Let’s say you have two child components called LoginButton and LogoutButton; each displaying their corresponding button.
-In the parent component, named LogInOutButton, you can check the props passed into the parent component and return a different child component based on the value of the props.
-In this example, the props contains a property named isLoggedIn. When this is set to true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.
+<p>Conditional rendering is built on the same principle. By using conditions, you can return different child components. This is often done using the props that are passed into the parent component, but can also be done based on component state.</p>
+<p>Let’s take a look at a simple example.</p>
+<p>Let’s say you have two child components called LoginButton and LogoutButton; each displaying their corresponding button.</p>
+<p>In the parent component, named LogInOutButton, you can check the props passed into the parent component and return a different child component based on the value of the props.</p>
+<p>In this example, the props contains a property named isLoggedIn. When this is set to true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.</p>
 
 ```
 1.	function LogInOutButton(props) {
@@ -8516,85 +8530,84 @@ In this example, the props contains a property named isLoggedIn. When this is se
 7.	}
 ```
 
-Then when the LogInOutButton parent component is used, the prop can be passed in.
+<p>Then when the LogInOutButton parent component is used, the prop can be passed in.</p>
 
 ```
 1.	<LogInOutButton isLoggedIn={false} />
 ```
 
-This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.
+<p>This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Single view conditional updates</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally. 
+<p>By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-a. customized startere app (228) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s08-a.png?raw=true"
-  alt="."
+  alt="Customized stater app."
   width="80%" />
 </p>
-I use the create react app to build the starter react app. I'll go through the code in this customized starter app to demonstrate some conditional rendering and practice.  The goal of my app is to use the local computers' time and based on the return values, output various messages inside the same return statement. All wrapped in a single development. Specifically, I want to quote a small app that displays a message for a given work day. And if it's morning time, ask the user if they've had their breakfast yet. I start my app component code by declaring a time variable and assigning the call to the date constructor to it. I then set the day variable.  And I used the built-in to locale string function that exists on the date object to specify the locale as English US. I also specify the weekday value as long which displays the days as full words such as Monday, Tuesday, Wednesday, and so on. Next, I declare a morning variable that stores a Boolean value based on whether the current time is greater than or equal to 6 and less than or equal to 12. Finally, I declare a day message variable but I'm not assigning any value to it yet. To generate a dynamic message.
-
-I use an if -else statement passing at the value of the day variable. I also make all the characters in the day variable string lowercase with the help of the built-in to lowercase function. Based on the value stored in the day variable. I then assign a specific string to the day message variable. For example, if it's a Monday. The day message variable stores a string that reads happy Monday. If it's a Tuesday the string reads Tuesday 4 days to go. 
-
-After I've covered all the possibilities from Monday to Friday I add the L statement with a string value for all the other possibilities. The string reads stay calm and keep having fun. This brings me to the return statement. In the return statement, I have a single heading H1 and inside of it, I'm accessing the string value stored inside the day message variable. 
-
-Additionally, I use ternary operator to conditionally evaluate the morning variable. If true, I output a string that reads have you had breakfast yet? This string is placed inside the heading 2 element. It false an empty string will be displayed. 
-
-Notice the output of this code happy Monday.
+<p>I use the create react app to build the starter react app. I'll go through the code in this customized starter app to demonstrate some conditional rendering and practice.  The goal of my app is to use the local computers' time and based on the return values, output various messages inside the same return statement. All wrapped in a single development.</p>
+<p>Specifically, I want to quote a small app that displays a message for a given work day. And if it's morning time, ask the user if they've had their breakfast yet. I start my app component code by declaring a time variable and assigning the call to the date constructor to it. I then set the day variable.  And I used the built-in to locale string function that exists on the date object to specify the locale as English US. I also specify the weekday value as long which displays the days as full words such as Monday, Tuesday, Wednesday, and so on. Next, I declare a morning variable that stores a Boolean value based on whether the current time is greater than or equal to 6 and less than or equal to 12. Finally, I declare a day message variable but I'm not assigning any value to it yet.</p>
+<p>To generate a dynamic message, I use an if -else statement passing at the value of the day variable. I also make all the characters in the day variable string lowercase with the help of the built-in to lowercase function. Based on the value stored in the day variable. I then assign a specific string to the day message variable. For example, if it's a Monday. The day message variable stores a string that reads happy Monday. If it's a Tuesday the string reads Tuesday 4 days to go.</p>
+<p>After I've covered all the possibilities from Monday to Friday I add the L statement with a string value for all the other possibilities. The string reads stay calm and keep having fun. This brings me to the return statement. In the return statement, I have a single heading H1 and inside of it, I'm accessing the string value stored inside the day message variable</p>
+<p>Additionally, I use ternary operator to conditionally evaluate the morning variable. If true, I output a string that reads have you had breakfast yet? This string is placed inside the heading 2 element. It false an empty string will be displayed.</p>
+<p>Notice the output of this code happy Monday:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-b. happy monday example (229) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s08-b.png?raw=true"
-  alt="."
+  alt="Happy Monday React example."
   width="80%" />
 </p>
-If I change the get hours value from 12 to 19 and save my code. Notice that a new message is displayed underneath the heading that reads have you had breakfast yet? That's all it takes to build quite a dynamic component that conditionally renders various kinds of strings in its return statement. 
+<p>If I change the get hours value from 12 to 19 and save my code. Notice that a new message is displayed underneath the heading that reads have you had breakfast yet? That's all it takes to build quite a dynamic component that conditionally renders various kinds of strings in its return statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w3-s08-c. conditional and ternary rendering (230) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s08-c.png?raw=true"
-  alt="."
+  alt="Conditional rendering and React."
   width="40%" />
 </p>
-In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.
+<p>In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is a list of resources that may be helpful as you continue your learning journey.
-•	React Router v6 
-•	nav: The Navigation Section element 
-•	Conditional (ternary) operator in JavaScript 
-•	if...else 
+<p>Here is a list of resources that may be helpful as you continue your learning journey:</p>
+
+<ul>
+  <li><a href="https://reactrouter.com/en/main">React Router v6</a>,</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">nav: The Navigation Section element</a>,</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">Conditional (ternary) operator in JavaScript</a>,</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else</a>.</li>
+</ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. What is an asset and where does it live?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-a. assets (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s10-a.png?raw=true"
   alt="."
   width="40%" />
 </p>
-By the end of this section (10), you'll know what assets are and how developers keep them organized in React. You'll also learn some of the common ways to import asset files to be used in your React apps. 
+<p>By the end of this section (10), you'll know what assets are and how developers keep them organized in React. You'll also learn some of the common ways to import asset files to be used in your React apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~ w3-s10-b. images, stylesheets, fonts and any files needed (231) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s10-b.png?raw=true"
-  alt="."
+  alt="Images, Stylesheets, Fonts and Any files needed."
   width="40%" />
 </p>
-Let's begin by making sure you fully understand what developers mean when they mention the term, assets. In React, assets can be things like images, style sheets, fonts, media files, or basically any file that's needed by your app at runtime. In other words, assets are all the files that your React app needs to have access to in order to work as intended. 
-
-For example, you might code your app to display specific images or use certain fonts. But if you run your app without these being available, it might exhibit unexpected behavior, such as displaying a placeholder when using a default font. 
+<p>Let's begin by making sure you fully understand what developers mean when they mention the term, assets. In React, assets can be things like images, style sheets, fonts, media files, or basically any file that's needed by your app at runtime. In other words, assets are all the files that your React app needs to have access to in order to work as intended.</p>
+<p>For example, you might code your app to display specific images or use certain fonts. But if you run your app without these being available, it might exhibit unexpected behavior, such as displaying a placeholder when using a default font.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
