@@ -79,25 +79,22 @@ with coding.</p>
 </p>
 <!-- width="4.0in" height="2.5479451006124236in"} -->
 
-During this section (01), you'll learn how to develop a working
-familiarity with a basic structure and use of the React.js library.
-
-Explore the concepts and practical use of state and stage management and
+<p>During this section (01), you'll learn how to develop a working
+familiarity with a basic structure and use of the React.js library.</p>
+<p>Explore the concepts and practical use of state and stage management and
 discover how to set up navigation and make use of assets in your React
-apps.
+apps.</p>
+<p>You'll begin by learning how to work with React to build modern user
+interfaces or UIs on websites front ends.</p>
+<p>This involves the concept of standalone parts of the User Interface or
+UI.</p>
 
-You'll begin by learning how to work with React to build modern user
-interfaces or UIs on websites front ends.
+<p>These standalone bits of UI are commonly referred to as <b>components</b>.</p>
 
-This involves the concept of standalone parts of the User Interface or
-UI.
+<p>You'll explore components in more detail later in this module.</p>
 
-These standalone bits of UI are commonly referred to as <b>components</b>.
-
-You'll explore components in more detail later in this module.
-
-For now, it's enough for you to know that every website's UI is built
-on a foundation of components and composability.
+<p>For now, it's enough for you to know that every website's UI is built
+on a foundation of components and composability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-b. components & composability (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -108,23 +105,17 @@ on a foundation of components and composability.
 </p>
 <!-- ![](./images/image005.png){width="4.0in" height="1.6605293088363955in"} -->
 
-Simple components combined into more complex ones, which eventually
-merge to form a website.
-
-A website can essentially be viewed as a highly complex component.
-
-Components and website UIs are not to limited to React.
-
-There's a part of the reason why React is so popular, is because it
-streamlines the process of building and composing components.
-
-React does this efficiently and without a significant impact on your
-browser's resources.
-
-Another major topic that will be discussed in this course is working
-with <b>state</b> in React apps.
-
-You'll learn a lot more about state as you go through the course.
+<p>Simple components combined into more complex ones, which eventually
+merge to form a website.</p>
+<p>A website can essentially be viewed as a highly complex component.</p>
+<p>Components and website UIs are not to limited to React.</p>
+<p>There's a part of the reason why React is so popular, is because it
+streamlines the process of building and composing components.</p>
+<p>React does this efficiently and without a significant impact on your
+browser's resources.</p>
+<p>Another major topic that will be discussed in this course is working
+with <b>state</b> in React apps.</p>
+<p>You'll learn a lot more about state as you go through the course.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~ w1-s01-c. state - value of variables your working with at any given point (10) ~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -135,10 +126,9 @@ You'll learn a lot more about state as you go through the course.
 </p>
 <!-- (width="5.0in" height="1.949206036745407in"} -->
 
-But for now, here's a simple definition of state.
-
-<b>State is simply all the values of all the variables your app is
-working with at any given point in time.</b>
+<p>But for now, here's a simple definition of state.</p>
+<p><b>State is simply all the values of all the variables your app is
+working with at any given point in time.</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-d. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -149,18 +139,14 @@ working with at any given point in time.</b>
 </p>
 <!-- {width="4.0in" height="2.840391513560805in"} -->
 
-As you progress through this course, you'll also learn about how to
-style your React apps, which includes the reuse of common styles.
-
-Setting up your apps to respond to events such as clicks and
+<p>As you progress through this course, you'll also learn about how to
+style your React apps, which includes the reuse of common styles.</p>
+<p>Setting up your apps to respond to events such as clicks and
 user-submitted data, creating navigation routes and using assets and
 you'll finish off the course with a portfolio of projects where you'll
-apply your new knowledge.
-
-I hope you're as excited as I am to begin this course on React basics.
-
-Let's get started...
-
+apply your new knowledge.</p>
+<p>I hope you're as excited as I am to begin this course on React basics.</p>
+<p>Let's get started...</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. How is React used in the real world?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -226,10 +212,8 @@ JavaScript. Additionally, it always helps to have a can-do attitude!</p>
 <h3>Course content</h3>
 
 <p>This course is an introduction to React development, called React Basics.</p>
-
 <p>By the end of this course, you will know how to build a simple user
 interface using React.</p>
-
 <p>This course consists of <b>4 (four)</b> main modules. Each split up into sections.
 Section 01 thru 31 in Module 1.  Section 01 thru They cover the following topics:</p>
 
@@ -237,22 +221,18 @@ Section 01 thru 31 in Module 1.  Section 01 thru They cover the following topics
 
 <p>React is an increasingly popular JavaScript framework for building
 isomorphic web applications. It is developed and used by Facebook.</p>
-
 <p>In this introductory module, you'll learn about what React is and where
 it is used. You'll also learn how to set up your coding environment so
 that you have as productive a learning experience as possible. So, the
 purpose of this module is to understand the 'what' and the 'why', and to
 get set up for the modules that follow.</p>
-
 <p><b>Components</b> are one of the foundations of React. In React, everything
 revolves around components. You'll learn how to build <b>components</b>,
 how to structure and customize your React projects, and how to compose
 layouts by importing components into other components.</p>
-
 <p>You'll learn about passing data from one component to another. You'll
 learn about <b>JSX syntax</b> in React and how to use it to structure and
 style your components.</p>
-
 <p>By the end of this module (one) you will be able to:</p>
 
 <ul>
@@ -272,7 +252,6 @@ style your components.</p>
 handle them in React. Handling events can sometimes get a bit tricky, so
 you'll also learn about dealing with <b>errors</b> related to <b>events</b>
 in React.</p>
-
 <p>By the end of this module (two) you will be able to:</p>
 
 <ul>
@@ -312,10 +291,8 @@ bundled and embedded.</p>
 calculator app in React. Upon completing this module, you'll have coded
 your own mini project in React, as a starting point for building your
 React portfolio.</p>
-
 <p>You have now learned about the scope of things you will cover in this
 course.</p>
-
 <p>By the end of this module (four) you will be able to:</p>
 
 <ul>
@@ -332,38 +309,30 @@ course.</p>
 learned about these technologies from another course. Either way, a
 quick summary will be useful so let's explore some fundamental HTML,
 CSS and JavaScript principles and practices.</p>
-
 <p>In this section (04), let's take a practical approach, and revisit some
 of the development techniques you'll need to be comfortable with before
 learning React.</p>
-
 <p>To get the most out of this course on React basics, you should first
 understand the fundamental methods and concepts of JavaScript.
 Otherwise, you may feel like you're a child learning to run before you
 can walk.</p>
-
 <p>React is a declarative, efficient, and flexible JavaScript library for
 building user interfaces. It lets you compose complex UIs from small and
 isolated pieces of code called "<b>components</b>".</p>
-
 <p>React apps are built using modern JavaScript features, which are
 commonly known as <b>ES6</b>. Developers use React to develop Single Page
 Applications. And you can also develop mobile applications with React
 Native.</p>
-
 <p>As an aspiring developer, you may opt for a 'learn as you go approach'
 regarding JavaScript and React. But this may not help your productivity
 and even at times frustrate you. This is because you may confuse code or
 functionality that is plain JavaScript, or code that is React.</p>
-
 <p>For example, with a solid foundational knowledge of JavaScript, you can
 quickly identify code that is JavaScript ES6 and code that is React. And
 throughout this course, there will be help for you along the way with
 some friendly reminders.</p>
-
 <p>Also, keep in mind that you are using React to build user interfaces
 which also include HTML and CSS code.</p>
-
 <p>Let's begin with the fundamental HTML knowledge needed to learn React.</p>
 
 <h3>HTML</h3>
@@ -371,20 +340,17 @@ which also include HTML and CSS code.</p>
 <p>Recall that HTML is used to describe the structure of Web pages.
 Developers use HTML elements with their opening and closing tags to
 "mark up" an HTML document.</p>
-
 <p>These elements form the structure of a web page and describe what to
 display to the web browser.</p>
-
 <p>When it comes to HTML it's important to know about:</p>
 
-1.  The purpose of HTML in the web browser,
-
-2.  The use of HTML tags and correct syntax,
-
-3.  How HTML elements are used in a web document,
-
-4.  Another important concept to know about when you're talking about
-    HTML is the Document Object Model, or <b>DOM</b>.
+<ol>
+  <li><p>The purpose of HTML in the web browser,</p></li>
+  <li><p>The use of HTML tags and correct syntax,</p></li>
+  <li><p>How HTML elements are used in a web document,</p></li>
+  <li>Another important concept to know about when you're talking about
+    HTML is the Document Object Model, or <b>DOM</b>.</li>
+</ol>
 
 <p>Users need to be able to interact with elements on a web page. This
 means that an HTML document must be represented in a way that JavaScript
@@ -438,13 +404,13 @@ following HTML tags and concepts:</p>
 
 <h3>CSS</h3>
 
-CSS (Cascading Style Sheets) is the code that you use to style HTML. You
+<p>CSS (Cascading Style Sheets) is the code that you use to style HTML. You
 need to be familiar with basic CSS concepts before you start learning
 React. This is because you will need to style your React components as
-well, and basic CSS knowledge will help your learning journey.
+well, and basic CSS knowledge will help your learning journey.</p>
 
-Before you learn React, make sure you are comfortable with these CSS
-styling options:
+<p>Before you learn React, make sure you are comfortable with these CSS
+styling options:</p>
 
 <ul>
   <li>Font styling (font size, font color, etc.),<br></li>
@@ -454,19 +420,19 @@ styling options:
   <li>Colors, Background and Icons.</li>
 </ul>
 
-You can refresh your knowledge of HTML and CSS in the Meta course titled: <a href="https://www.coursera.org/learn/introduction-to-front-end-development" target="_blank" rel="noopener noreferrer">Introduction to Front-End Development</a>.
+<p>You can refresh your knowledge of HTML and CSS in the Meta course titled: <a href="https://www.coursera.org/learn/introduction-to-front-end-development" target="_blank" rel="noopener noreferrer">Introduction to Front-End Development</a>.</p>
 
 <h3>JavaScript fundamentals and ES6</h3>
 
-React is completely written in JavaScript and uses the more modern
+<p>React is completely written in JavaScript and uses the more modern
 version of JavaScript which is <b>ES6</b>. While learning React, you should
-already know JavaScript fundamentals. 
+already know JavaScript fundamentals.</p>
 
-JavaScript is the programming language and React is a JavaScript UI
-library. This means the first step is to be proficient at JavaScript.
+<p>JavaScript is the programming language and React is a JavaScript UI
+library. This means the first step is to be proficient at JavaScript.</p>
 
-Here are some of the JavaScript topics that you need to be comfortable
-with before you begin your journey learning React:
+<p>Here are some of the JavaScript topics that you need to be comfortable
+with before you begin your journey learning React:</p>
 
 <ul>
   <li>Data types,<br></li>
@@ -482,20 +448,15 @@ with before you begin your journey learning React:
 <h3>Package Manager (Node + npm)</h3>
 
 <p>React is a UI library, and you will encounter that many times you will
-need to add other packages to your React application.<br>
-
-A package in JavaScript contains all the files needed for a module.<br>
-
-To install these packages effectively and manage their dependencies you
-can use a package manager like <b>NPM</b> (Node Package Manager).<br>
-
-You can install npm by installing <b>Node.js,</b> which will then
-automatically install <b>npm</b>.<br>
-
-You need to be comfortable with using npm as your package manager, since
-you will be using npm to install packages within your React application.<br>
-
-Make sure you are aware of how to do the following with <b>npm</b> before
+need to add other packages to your React application.</p>
+<p>A package in JavaScript contains all the files needed for a module.</p>
+<p>To install these packages effectively and manage their dependencies you
+can use a package manager like <b>NPM</b> (Node Package Manager).</p>
+<p>You can install npm by installing <b>Node.js,</b> which will then
+automatically install <b>npm</b>.</p>
+<p>You need to be comfortable with using npm as your package manager, since
+you will be using npm to install packages within your React application.</p>
+<p>Make sure you are aware of how to do the following with <b>npm</b> before
 you get started on this course.</p>
 
 <ul>
@@ -519,35 +480,27 @@ target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Before you start creating the next great app, let's explore a little
 more about modules.</p>
-
 <p>Modules can help you save and access your code in a more structured
 way, and in this section (05), you'll learn about some foundational
 concepts of working with JavaScript modules.</p>
-
 <p>This knowledge is crucial in order to understand the syntax and the
 logic behind how the example <b>React apps</b> in this course are put
 together.</p>
-
 <p>This section (05) will cover the three main concepts:</p>
 
 <ol>
   <li>JavaScript modules,<br></li>
-
   <li>Module exports,<br></li>
-
   <li>Module imports.</li>
 </ol>
 
 <h3>JavaScript Modules</h3>
 
 <p>In JavaScript, a module is simply a <b>file</b>.</p>
-
 <p>The purpose of a module is to have more modular code, where you can work
 with smaller files, and import and export them so that the apps you
 build are more customizable and have more composable parts.</p>
-
 <p>A module can be as simple as a single function in a separate file.</p>
-
 <p>Consider the following function declaration:</p>
 
 ```
@@ -556,34 +509,34 @@ function addTwo(a, b) {
 }
 ```
 
-Say that you have a file named <b>addTwo.js</b> that contains only the
-above code.
+<p>Say that you have a file named <b>addTwo.js</b> that contains only the
+above code.</p>
 
-How would you make this file a JavaScript module?
+<p>How would you make this file a JavaScript module?</p>
 
-All that you would need to do to make it a JavaScript module is use the
-export syntax.
+<p>All that you would need to do to make it a JavaScript module is use the
+export syntax.</p>
 
 <h3>Module Exports</h3>
 
-There is more than one way to export a module in JavaScript.
+<p>There is more than one way to export a module in JavaScript.</p>
 
-While all the various syntactical differences are not listed, here are a
+<p>While all the various syntactical differences are not listed, here are a
 few examples that will cover all the ways that the importing and
-exporting of JavaScript modules will be done in this course.
+exporting of JavaScript modules will be done in this course.</p>
 
-In general, there are two ways to export modules in JavaScript:
+<p>In general, there are two ways to export modules in JavaScript:</p>
 
-1.  Using default exports,
-
-2.  Using named exports.
+<ol>
+  <li><p>Using default exports,</p></li>
+  <li>Using named exports.</li>
+</ol>
 
 <h3>Default Exports</h3>
 
-You can have <b>one default export</b> per JavaScript module.
-
-Using the above <b>addTwo.js</b> file as an example, here are two ways to
-perform a default export:
+<p>You can have <b>one default export</b> per JavaScript module.</p>
+<p>Using the above <b>addTwo.js</b> file as an example, here are two ways to
+perform a default export:</p>
 
 ```
 export default function addTwo(a, b) {
@@ -591,10 +544,9 @@ export default function addTwo(a, b) {
 }
 ```
 
-In the above example, you're adding the <b>export default</b> keywords in
-front of the <b>addTwo</b> function declaration.
-
-Here's an alternative syntax:
+<p>In the above example, you're adding the <b>export default</b> keywords in
+front of the <b>addTwo</b> function declaration.</p>
+<p>Here's an alternative syntax:</p>
 
 ```
 function addTwo(a, b) {
@@ -606,16 +558,13 @@ export default addTwo;
 
 <h3>Named Exports</h3>
 
-Named exports are a way to export only certain parts of a given
-JavaScript file.
-
-In contrast with default exports, you can export as many items from any
-JavaScript file as you want.
-
-In other words, there can be only one default export, but as many named
-exports as you want.
-
-For example:
+<p>Named exports are a way to export only certain parts of a given
+JavaScript file.</p>
+<p>In contrast with default exports, you can export as many items from any
+JavaScript file as you want.</p>
+<p>In other words, there can be only one default export, but as many named
+exports as you want.</p>
+<p>For example:</p>
 
 ```
 function addTwo(a, b) {
@@ -627,8 +576,8 @@ function addThree(a + b + c) {
 }
 ```
 
-If you want to export both the <b>addTwo</b> and the <b>addThree</b> functions
-as named exports, one way to do it would be the following:
+<p>If you want to export both the <b>addTwo</b> and the <b>addThree</b> functions
+as named exports, one way to do it would be the following:</p>
 
 ```
 export function addTwo(a, b) {
@@ -640,7 +589,7 @@ export function addThree(a + b + c) {
 }
 ```
 
-Here's another way you could do it:
+<p>Here's another way you could do it:</p>
 
 ```
 function addTwo(a, b) {
@@ -656,23 +605,19 @@ export { addTwo, addThree };
 
 <h3>Importing Modules</h3>
 
-Just like when exporting modules in JavaScript, there are several ways
-to import them.
-
-The exact syntax depends on how the module was exported.
-
-Say that you have two modules in a folder.
-
-The first module is <b>addTwo.js</b> and the second module is
-<b>mathOperations.js</b>.
-
-You want to import the <b>addTwo.js</b> module into the
-<b>mathOperations.js</b> module.
+<p>Just like when exporting modules in JavaScript, there are several ways
+to import them.</p>
+<p>The exact syntax depends on how the module was exported.</p>
+<p>Say that you have two modules in a folder.</p>
+<p>The first module is <b>addTwo.js</b> and the second module is
+<b>mathOperations.js</b>.</p>
+<p>You want to import the <b>addTwo.js</b> module into the
+<b>mathOperations.js</b> module.</p>
 
 <h3>Importing a Module that was Exported as Default</h3>
 
-Consider the previous example of exporting the <b>addTwo</b> function as a
-default module:
+<p>Consider the previous example of exporting the <b>addTwo</b> function as a
+default module:</p>
 
 ```
 // addTwo.js module:
@@ -683,8 +628,8 @@ function addTwo(a, b) {
 export default addTwo;
 ```
 
-To import it into the <b>mathOperations.js</b> module, you could use the
-following syntax:
+<p>To import it into the <b>mathOperations.js</b> module, you could use the
+following syntax:</p>
 
 ```
 import addTwo from "./addTwo";
@@ -692,14 +637,14 @@ import addTwo from "./addTwo";
 // the rest of the mathOperations.js code goes here
 ```
 
-So, you could start this import with the <b>import</b> keyword, then the
+<p>So, you could start this import with the <b>import</b> keyword, then the
 name under which you'll use this imported code inside the
 <b>mathOperations.js</b> file. You would then type the keyword <b>from</b>,
-and finally the location of the file, <i>without the .js extension.</i>
+and finally the location of the file, <i>without the .js extension.</i></p>
 
-Contrast the above import of the default <b>addTwo export</b> with the
+<p>Contrast the above import of the default <b>addTwo export</b> with the
 different import syntax if the <b>addTwo</b> function was instead a named
-export:
+export:</p>
 
 ```
 import { addTwo } from "./addTwo";
@@ -709,24 +654,20 @@ import { addTwo } from "./addTwo";
 
 <h3>Conclusion</h3>
 
-In this section (5), you've learned about the very basics of what modules
+<p>In this section (5), you've learned about the very basics of what modules
 are in JavaScript, why they are used and how they get exported and
-imported.
-
-The examples you've seen here are the core of how you'll deal with
+imported.</p>
+<p>The examples you've seen here are the core of how you'll deal with
 imports and exports of various modules in the example React apps on this
-course.
-
-However, please note that there are many more caveats, rules, and
-implementations of working with modules in JavaScript.
-
-The examples given in this section (5) are there just to make it easier to
+course.</p>
+<p>However, please note that there are many more caveats, rules, and
+implementations of working with modules in JavaScript.</p>
+<p>The examples given in this section (5) are there just to make it easier to
 comprehend what is happening in React apps that you'll be building in
-this course.
-
-The intent of this section (5) was just to get you familiar with the most
+this course.</p>
+<p>The intent of this section (5) was just to get you familiar with the most
 common syntax used - not as a comprehensive overview of modules in
-JavaScript.
+JavaScript.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Additional reading</h2>
@@ -750,21 +691,19 @@ But collectively, they ain't shit.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Setting up a React project in notepad++, Sublime, &amp; VS Code</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-To complete the exercises in this course you have been provided with a
+<p>To complete the exercises in this course you have been provided with a
 dedicated lab environment set up specifically for you to apply the
-skills that you have learned.
-
-You can find out more about Working with Labs in this course by
-accessing the link below:
+skills that you have learned.</p>
+<p>You can find out more about Working with Labs in this course by
+accessing the link below:</p>
 
 <h4><a href="https://www.coursera.org/learn/react-basics/supplement/7e8Ea/working-with-labs-in-this-course" target="_blank" rel="noopener noreferrer">Working with Labs in this course</a></h4>
 
-You can also use VS Code to practice these exercises on your local
-machine as an alternative option.
-
-To follow along in this section (7), you need to have Node.js and VS Code
+<p>You can also use VS Code to practice these exercises on your local
+machine as an alternative option.</p>
+<p>To follow along in this section (7), you need to have Node.js and VS Code
 already installed on your computer. If you don't have this setup, please
-refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">Programming with JavaScript course</a>:
+refer to the <a href="https://www.coursera.org/learn/programming-with-javascript" target="_blank" rel="noopener noreferrer">Programming with JavaScript course</a>:</p>
 
 <ul>
   <li><a href="https://www.coursera.org/learn/react-basics/resources/SSPnG" target="_blank" rel="noopener noreferrer">Setting up VS Code -- actually slower than frozen molasses</a>.<br></li>
@@ -772,51 +711,50 @@ refer to the <a href="https://www.coursera.org/learn/programming-with-javascript
   <li><a href="https://www.coursera.org/learn/react-basics/resources/FTd5h" target="_blank" rel="noopener noreferrer">Installing Node and NPM</a>.</li>
 </ul>
 
-In VS Code, you're ready to start a brand new React project.
-
-You can do it using npm.
+<p>In VS Code, you're ready to start a brand new React project.</p>
+<p>You can do it using npm.</p>
 
 <h3>What is npm?</h3>
 
-When Node.js is installed on a computer, <b>npm</b> comes bundled with it.
+<p>When Node.js is installed on a computer, <b>npm</b> comes bundled with it.</p>
+<p>With <b>npm</b>, you can:</p>
 
-With <b>npm</b>, you can:
+<ol>
+  <li><p>Author your own Node.js modules ("packages"), and publish them on
+    the npm website so that other people can download and use them,</p></li>
+  <li>Use other people's authored modules ("packages").</li>
+</ol>
 
-1.  Author your own Node.js modules ("packages"), and publish them on
-    the npm website so that other people can download and use them, 
-
-2.  Use other people's authored modules ("packages").
-
-So, ultimately, npm is all about <b><i>code sharing</i></b> and <b><i>reuse</i>.</b> You
+<p>So, ultimately, npm is all about <b><i>code sharing</i></b> and <b><i>reuse</i>.</b> You
 can <b>use other people's code</b> in your own projects, and you can also
-<b>publish your own Node.js modules</b> so that other people can use them.
+<b>publish your own Node.js modules</b> so that other people can use them.</p>
 
-An example npm module that can be useful for a new React developer is
-<b><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app</a>.</b>
+<p>An example npm module that can be useful for a new React developer is
+<b><a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">create-react-app</a>.</b></p>
 
-While this npm module comes with its own website, you can also find some info on the <b><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">create-react-app project on GitHub</a>.</b>
+<p>While this npm module comes with its own website, you can also find some info on the <b><a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener noreferrer">create-react-app project on GitHub</a>.</b></p>
 
-Whenever you run the npm command to add other people's code, that
+<p>Whenever you run the npm command to add other people's code, that
 code, and all other Node modules that depend on it, get downloaded to
-your machine.
+your machine.</p>
 
-However, although it's possible do to so, this is not really necessary,
-at least in the case of the <b>create-react-app</b> Node module.
+<p>However, although it's possible do to so, this is not really necessary,
+at least in the case of the <b>create-react-app</b> Node module.</p>
 
-In other words, you can avoid installing the <b>create-react-app</b>
-package but still use it.
+<p>In other words, you can avoid installing the <b>create-react-app</b>
+package but still use it.</p>
 
-You can do that by running the following command: <b>npm init react-app
+<p>You can do that by running the following command: <b>npm init react-app
 example</b>, where "example" is the actual name of your app. You can use
 any name you'd like, but it's always good to have a name that is
-descriptive and short.
+descriptive and short.</p>
 
-In the next section, you'll learn how to build a brand-new app that you
-can name: <b>firstapp</b>.
+<p>In the next section (07), you'll learn how to build a brand-new app that you
+can name: <b>firstapp</b>.</p>
 
 <h4>Opening the built-in VS Code terminal and running npm init react-app command</h4>
 
-In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
+<p>In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-a. vs code terminal screen (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -827,15 +765,14 @@ In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.
 </p>
 <!-- {width="5.0in" height="2.8125in"} -->
 
-Now run the command to add a brand new React app to the machine:
+<p>Now run the command to add a brand new React app to the machine:</p>
 
 ```
 $ npm init react-app my-firstapp
 ```
 
-The installation and setup might take a few minutes.
-
-Here's the output of executing the above command:
+<p>The installation and setup might take a few minutes.</p>
+<p>Here's the output of executing the above command:</p>
 
 <details>
   <summary>NPM create-react-app</summary>
@@ -881,10 +818,10 @@ $ npm start 
 
 </details>
 
-If you follow the suggestions from the above output, you'll run: <b>$ cd
-firstapp</b>, and then <b>$ npm start</b>.
+<p>If you follow the suggestions from the above output, you'll run: <b>$ cd
+firstapp</b>, and then <b>$ npm start</b>.</p>
 
-This will end up with the following output in the built-in terminal:
+<p>This will end up with the following output in the built-in terminal:</p>
 
 ```
 Compiled successfully!
@@ -898,9 +835,9 @@ To create a production build, use npm run build.
 webpack compiled successfully
 ```
 
-Again, following the instructions, opening a browser with the address
-bar pointing to [http://localhost:3000](http://localhost:3000/), will
-show the following page in your browser:
+<p>Again, following the instructions, opening a browser with the address
+bar pointing to <a href="http://localhost:3000/">http://localhost:3000</a>, will
+show the following page in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-b. react logo on black screen (27) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -911,152 +848,136 @@ show the following page in your browser:
 </p>
 <!-- {width="4.0in" height="2.533333333333333in"} -->
 
-This means that you've successfully:
+<p>This means that you've successfully:</p>
 
--   Set up your local development environment,
+<ul>
+  <li><p>Set up your local development environment,</p></li>
+  <li><p>Run the create-react-app npm package (without installing it!),</p></li>
+  <li><p>Built a starter React app on your local machine,</p></li>
+  <li>Served that starter React app in your browser.</li>
+</ul>
 
--   Run the create-react-app npm package (without installing it!),
-
--   Built a starter React app on your local machine,
-
--   Served that starter React app in your browser.
-
-After you've built your starting setup, in Module 2 you'll start
-working with the basic building blocks of React: components.
+<p>After you've built your starting setup, in Module 2 you'll start
+working with the basic building blocks of React: components.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Why React?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-React is used everywhere in the tech world and you'll have the chance
+<p>React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
-have.
+have.</p>
 
-In school you tend to do a lot of object-oriented programming which uses inheritance.
+<p>In school you tend to do a lot of object-oriented programming which uses inheritance.</p>
 
-React doesn't use any of that.
+<p>React doesn't use any of that.</p>
 
-It uses something called <b>composition</b>.
+<p>It uses something called <b>composition</b>.</p>
 
-That was a little bit difficult to think about, but there's so much
+<p>That was a little bit difficult to think about, but there's so much
 documentation around React and such a strong community that it's easy
-to pick up.
+to pick up.</p>
 
-You have support coming from so many different places.
+<p>You have support coming from so many different places.</p>
 
-You can just go onto YouTube and watch a video, read through the
-documentation, or look at other open source projects that use React.
+<p>You can just go onto YouTube and watch a video, read through the
+documentation, or look at other open source projects that use React.</p>
 
-I think developers outside of Meta choose to use React for the same
-reasons that we do at Meta.
+<p>I think developers outside of Meta choose to use React for the same
+reasons that we do at Meta.</p>
 
-It's super easy to learn and pick up.
+<p>It's super easy to learn and pick up.</p>
 
-You're able to create really custom UIs with React, we're building so
+<p>You're able to create really custom UIs with React, we're building so
 many different features on facebook.com every day that require a lot of
-custom components and UIs.
+custom components and UIs.</p>
 
-It's nice to have the flexibility that React provides.
+<p>It's nice to have the flexibility that React provides.</p>
 
-I would say React is the best choice for an app if your UI is really
+<p>I would say React is the best choice for an app if your UI is really
 custom and you're looking for a lot of flexibility with what other
-libraries you can integrate for your app or website.
+libraries you can integrate for your app or website.</p>
 
-React is just a front-end library.
+<p>React is just a front-end library.</p>
 
-You're going to need to interact with other third-party libraries too,
+<p>You're going to need to interact with other third-party libraries too,
 and if you want the flexibility of integrating with redux or other
-third-party libraries, React is the perfect choice for you.
+third-party libraries, React is the perfect choice for you.</p>
 
-React is also great if you have complex UIs where you want to reuse code
-across many different pages.
+<p>React is also great if you have complex UIs where you want to reuse code
+across many different pages.</p>
 
-I think it's a great choice if you're building a complex website with
-a ton of features across a ton of different pages.
+<p>I think it's a great choice if you're building a complex website with
+a ton of features across a ton of different pages.</p>
 
-I think react solves the problem of code reusability really well.
+<p>I think react solves the problem of code reusability really well.</p>
 
-Here at Meta, we have a core set of UI components that were actually
-able to reuse across the site.
+<p>Here at Meta, we have a core set of UI components that were actually
+able to reuse across the site.</p>
 
-This means that we're able to build a lot of functionality into these
-core UI components like accessibility.
+<p>This means that we're able to build a lot of functionality into these
+core UI components like accessibility.</p>
 
-I think we're able to have like a high-quality bar across the site just
+<p>I think we're able to have like a high-quality bar across the site just
 because we're reusing components everywhere and we're able to share
-code even across Facebook, Instagram and Messenger.
+code even across Facebook, Instagram and Messenger.</p>
 
-I think that's a really unique part of React.
+<p>I think that's a really unique part of React.</p>
 
-It's really interesting because if I find a bug and a core UI component
+<p>It's really interesting because if I find a bug and a core UI component
 and I fix it, I'm not only fixing it for my one-use case, I'm fixing
-it for use cases across the site.
+it for use cases across the site.</p>
 
-I think it's a really smart way to use engineering effort, you're
-fixing a bug once and you're solving one problem everywhere.
+<p>I think it's a really smart way to use engineering effort, you're
+fixing a bug once and you're solving one problem everywhere.</p>
 
-I would say the biggest competitor of React is Angular.
+<p>I would say the biggest competitor of React is Angular.</p>
 
-Angular is a bit different from React in that it's a full-fledged
-solution for an app or website.
+<p>Angular is a bit different from React in that it's a full-fledged
+solution for an app or website.</p>
 
-You don't really need to integrate with third-party libraries when
-using Angular.
+<p>You don't really need to integrate with third-party libraries when
+using Angular.</p>
 
-Whereas with React, it's just a client-side library.
+<p>Whereas with React, it's just a client-side library.</p>
 
-You do need to figure out how you're going to do routing and server
-client communication.
+<p>You do need to figure out how you're going to do routing and server
+client communication.</p>
 
-I would say React provides more flexibility with creating these complex
-costume UIs.
+<p>I would say React provides more flexibility with creating these complex
+costume UIs.</p>
 
-Whereas angular makes it easier to create a single page web application
-with an out-of-the-box solution.
-
-Learn by doing, try to make an example app.
-
-Don't go and try to create the most complex app you've ever heard of.
-
-I would say start simple. Make sure you're using best practices.
-
-Continuously reference documentation to see if you're using hooks the
-way you're supposed to and that thing.
-
-It should come pretty easily.
-
-I think one of the great benefits of React is how easy it is to pick up
-and learn.
-
-There are a lot of different pieces of React and a lot of different
-concepts to learn.
-
-But it's really well worth it in the end because you're going to
-encounter React in your day-to-day work.
-
-Hopefully for the rest of your career.
-
-There's a huge community behind you ready to help answer questions
-about React too.
+<p>Whereas angular makes it easier to create a single page web application
+with an out-of-the-box solution.</p>
+<p><p>Learn by doing, try to make an example app.</p>
+<p>Don't go and try to create the most complex app you've ever heard of.</p>
+<p>I would say start simple. Make sure you're using best practices.</p>
+<p>Continuously reference documentation to see if you're using hooks the
+way you're supposed to and that thing.</p>
+<p>It should come pretty easily.</p>
+<p>I think one of the great benefits of React is how easy it is to pick up
+and learn.</p>
+<p>There are a lot of different pieces of React and a lot of different
+concepts to learn.</p>
+<p>But it's really well worth it in the end because you're going to
+encounter React in your day-to-day work.</p>
+<p>Hopefully for the rest of your career.</p>
+<p>There's a huge community behind you ready to help answer questions
+about React too.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. React.js overview</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-Recall the concept of the <b>single-page application</b> or SPA for short?
-
-This is a one-page website where some of the pages content changes based
-on user interaction.
-
-SPA differ from traditional website, where each web page needs to be
-loaded as the user navigates around the site.
-
-This frequent reload can be considered inefficient as some of the same
-content such as logos, navigation, and footers need to be loaded again.
-
-And one of the most popular ways to build a SPA is with the React
-library from Meta.
-
-React used to run many of the world's most popular websites.
+<p>Recall the concept of the <b>single-page application</b> or SPA for short?</p>
+<p>This is a one-page website where some of the pages content changes based
+on user interaction.</p>
+<p>SPA differ from traditional website, where each web page needs to be
+loaded as the user navigates around the site.</p>
+<p>This frequent reload can be considered inefficient as some of the same
+content such as logos, navigation, and footers need to be loaded again.</p>
+<p>And one of the most popular ways to build a SPA is with the React
+library from Meta.</p>
+<p>React used to run many of the world's most popular websites.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-a. sample search screen example (30) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1067,12 +988,10 @@ React used to run many of the world's most popular websites.
 </p>
 <!-- {width="5.0in" height="2.86878280839895in"} -->
 
-Often on these sites, you will type a search term into the sites input box.
-
-The site then returns the relevant content or results.
-
-But you might notice that even though the content has updated, the sites
-URL doesn't change.
+<p>Often on these sites, you will type a search term into the sites input box.</p>
+<p>The site then returns the relevant content or results.</p>
+<p>But you might notice that even though the content has updated, the sites
+URL doesn't change.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~ w1-s09-b. spa: rich user interfaces, speed and scalability/flexibility (30) ~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1083,22 +1002,18 @@ URL doesn't change.
 </p>
 <!-- {width="4.0in" height="1.472169728783902in"} -->
 
-As SPA's only load the content as required, they can be ideal for
+<p>As SPA's only load the content as required, they can be ideal for
 businesses and enterprises who need a web app that offers rich user
-interfaces, speed scalability, & flexibility.
-
-As an aspiring developer, you may feel like there are a lot of new
+interfaces, speed scalability, & flexibility.</p>
+<p>As an aspiring developer, you may feel like there are a lot of new
 concepts and processes to understand when working with React but you can
 be sure that you will have an opportunity to get familiar with and use
-them.
-
-In this section (09), you will learn about the basics of React by
+them.</p>
+<p>In this section (09), you will learn about the basics of React by
 exploring the concepts of the component-based architecture components
-and the virtual DOM.
-
-Let's begin with components.
-
-One of the core building blocks of React.
+and the virtual DOM.</p>
+<p>Let's begin with components.</p>
+<p>One of the core building blocks of React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-c. component-based architecture (31) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1109,11 +1024,10 @@ One of the core building blocks of React.
 </p>
 <!-- {width="5.0in" height="1.8402121609798776in"} -->
 
-When meta released the React library, it included the concept of
-something called <b>component-based architecture</b>.
-
-This is essentially a design philosophy for building software based on
-reusable components of code.
+<p>When meta released the React library, it included the concept of
+something called <b>component-based architecture</b>.</p>
+<p>This is essentially a design philosophy for building software based on
+reusable components of code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-d. example component (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1124,9 +1038,9 @@ reusable components of code.
 </p>
 <!-- {width="6.5in" height="2.734815179352581in"} -->
 
-Each <b>component</b> consists of well-defined functionality that can be
+<p>Each <b>component</b> consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
-components.
+components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-e. reusable and independent (32) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1137,11 +1051,11 @@ components.
 </p>
 <!-- {width="6.5in" height="2.734815179352581in"} -->
 
-Because components are reusable, they can be used multiple times and
-easily inserted anywhere we're needed.
+<p>Because components are reusable, they can be used multiple times and
+easily inserted anywhere we're needed.</p>
 
-This results in components that can exist within the same space yet
-interact independently from each other.
+<p>This results in components that can exist within the same space yet
+interact independently from each other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w1-s09-f. independent developers on independent components (32) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1152,22 +1066,18 @@ interact independently from each other.
 </p>
 <!-- {width="6.0in" height="2.7314293525809274in"} -->
 
-One of the advantages of development using components is that many
+<p>One of the advantages of development using components is that many
 developers can work on the same project without interfering with the
-code of other developers' components.
-
-As you may recall, modern front-end web development revolves around the
+code of other developers' components.</p>
+<p>As you may recall, modern front-end web development revolves around the
 concept of creating standalone parts of the user interface, or UI for
-short.
-
-Well, in react, these standalone parts are created using components
-which form the foundation of all UI design.
-
-It's important to know that all UI is composed of simple components
-that can be combined into more complex components.
-
-In fact, you can think of an entire website is just a collection of
-components.
+short.</p>
+<p>Well, in react, these standalone parts are created using components
+which form the foundation of all UI design.</p>
+<p>It's important to know that all UI is composed of simple components
+that can be combined into more complex components.</p>
+<p>In fact, you can think of an entire website is just a collection of
+components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w1-s09-g. example product check out page on e-commerce web app (33) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1178,11 +1088,10 @@ components.
 </p>
 <!-- {width="6.0in" height="2.699682852143482in"} -->
 
-For example, consider the product check out page of an e-commerce web
-application.
-
-The page consists of three sections, a header, a payment section, and a
-sidebar.
+<p>For example, consider the product check out page of an e-commerce web
+application.</p>
+<p>The page consists of three sections, a header, a payment section, and a
+sidebar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w1-s09-h. example header section with logo & nav menu (33) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1193,8 +1102,8 @@ sidebar.
 </p>
 <!-- {width="6.5in" height="0.9354494750656168in"} -->
 
-The header section contains the company logo with a navigation menu and
-a button to view the shopping cart.
+<p>The header section contains the company logo with a navigation menu and
+a button to view the shopping cart.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s09-i. example payment section component (34) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1205,8 +1114,8 @@ a button to view the shopping cart.
 </p>
 <!-- {width="3.0in" height="1.7358727034120736in"} -->
 
-The payment section area contains a form where the user inputs their
-payment information.
+<p>The payment section area contains a form where the user inputs their
+payment information.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w1-s09-j. example order summary component (35) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1217,7 +1126,7 @@ payment information.
 </p>
 <!-- {width="3.0in" height="2.761124234470691in"} -->
 
-Finally, there's a sidebar with the order summary information.
+<p>Finally, there's a sidebar with the order summary information.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-k. self-contained components (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1228,14 +1137,12 @@ Finally, there's a sidebar with the order summary information.
 </p>
 <!-- (width="5.0in" height="2.596824146981627in"} -->
 
-As the components are self-contained, they have their own HTML, CSS, and
-JavaScript logic for functionality.
-
-For example, the payment section component has a JavaScript function
-that submits a payment when a button is clicked.
-
-It's important to know that the use of components in website UI design
-is not limited to just React.
+<p>As the components are self-contained, they have their own HTML, CSS, and
+JavaScript logic for functionality.</p>
+<p>For example, the payment section component has a JavaScript function
+that submits a payment when a button is clicked.</p>
+<p>It's important to know that the use of components in website UI design
+is not limited to just React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s09-l. components and compost ability (36) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1246,17 +1153,14 @@ is not limited to just React.
 </p>
 <!-- {width="3.0in" height="1.5278346456692913in"} -->
 
-Many website's front end or UI are built on the foundations of
-components and compose ability.
-
-But React is a powerful tool for streamlining the process of building
-components and composing them.
-
-It performs these actions efficiently as components are rendered to the
-DOM without significantly impacting the browser's resources.
-
-This is called component rendering and you'll learn more about this and
-its associated render method later.
+<p>Many website's front end or UI are built on the foundations of
+components and compose ability.</p>
+<p>But React is a powerful tool for streamlining the process of building
+components and composing them.</p>
+<p>It performs these actions efficiently as components are rendered to the
+DOM without significantly impacting the browser's resources.</p>
+<p>This is called component rendering and you'll learn more about this and
+its associated render method later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-m. tree-like dom (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1267,20 +1171,16 @@ its associated render method later.
 </p>
 <!-- {width="1.5in" height="1.5720002187226596in"}  -->
 
-You may recall that the DOM is a logical tree-like structure representing the HTML document and 
-it uses nodes to describe the various parts of the document.
-
-Before React, you could still build components style layouts.
-
-However, it involved much more complicated DOM manipulation and code
-making the layouts more complex and harder to work with.
-
-This resulted in something known as spaghetti code, a term developers
+<p>You may recall that the DOM is a logical tree-like structure representing the HTML document and 
+it uses nodes to describe the various parts of the document.</p>
+<p>Before React, you could still build components style layouts.</p>
+<p>However, it involved much more complicated DOM manipulation and code
+making the layouts more complex and harder to work with.</p>
+<p>This resulted in something known as spaghetti code, a term developers
 use in web development to describe code that is complex, convoluted, and
-difficult to understand like spaghetti.
-
-React prevents this spaghetti code by avoiding any manipulation of the
-DOM.
+difficult to understand like spaghetti.</p>
+<p>React prevents this spaghetti code by avoiding any manipulation of the
+DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s09-n. react components - virtual dom (36) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1291,19 +1191,15 @@ DOM.
 </p>
 <!-- {width="5.0in" height="2.960317147856518in"} -->
 
-Instead, React provides something known as the virtual DOM.
-
-You may recall that this is an in-memory representation or clone of the
-real DOM which minimizes updates to the DOM itself.
-
-React uses the virtual DOM to update the browser Dom only when needed.
-
-This ensures that the update is as minimal as possible, increasing the
-application speed and performance.
-
-In this module, you learned about the basics of React by exploring the
+<p>Instead, React provides something known as the virtual DOM.</p>
+<p>You may recall that this is an in-memory representation or clone of the
+real DOM which minimizes updates to the DOM itself.</p>
+<p>React uses the virtual DOM to update the browser Dom only when needed.</p>
+<p>This ensures that the update is as minimal as possible, increasing the
+application speed and performance.</p>
+<p>In this section (09), you learned about the basics of React by exploring the
 concepts of the component-based architecture components and the virtual
-DOM.
+DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Introduction to functional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2399,9 +2295,9 @@ Then simply add a components folder to it, like this:
      setupTests.js
 ```
 
-Since the components folder is currently empty, you can add a component
+<p>Since the components folder is currently empty, you can add a component
 for each of the sections of the typography-focused blog. Here's the
-structural update:
+structural update:</p>
 
 <details>
   <summary>React Components</summary>
@@ -2427,28 +2323,25 @@ src/
 
 </details>
 
-At this point, there's no need to complicate things. You have the
+<p>At this point, there's no need to complicate things. You have the
 <b>Nav</b> component, the <b>Promo</b> component, the <b>Intro1</b>, <b>Intro2</b>,
 and the <b>Intro3</b> component. Finally, there's also a <b>Footer.js</b>
-component.
-
-This means you've fully planned the app, based on some best practices
+component.</p>
+<p>This means you've fully planned the app, based on some best practices
 as suggested by the official React docs website, and based on the level
 of complexity of the project itself. Since this project is relatively
-simple, this structure feels right.
-
-In this section (15), you'll just build all the components inside the
+simple, this structure feels right.</p>
+<p>In this section (15), you'll just build all the components inside the
 components folder, and then, in the upcoming sections, import them
-into the <b>App.js</b> file.
+into the <b>App.js</b> file.</p>
 
 <h3>Building Components</h3>
 
-For now, let's just build those components. After you've added the
+<p>For now, let's just build those components. After you've added the
 components folder, you've also added all the functional component files.
 Since they are all currently empty, you can start adding them, one by
-one.
-
-Here's the contents of the <b>Nav.js</b> file:
+one.</p>
+<p>Here's the contents of the <b>Nav.js</b> file:</p>
 
 <details>
   <summary>Nav.js</summary>
@@ -2472,7 +2365,7 @@ export default Nav;
 
 </details>
 
-Next, you can focus on the <b>Promo.js</b> file:
+<p>Next, you can focus on the <b>Promo.js</b> file:</p>
 
 <details>
   <summary>Promo.js</summary>
@@ -2496,10 +2389,9 @@ export default Promo;
 
 </details>
 
-Once you've finished the promo section, you can focus on the Intro
-components.
-
-Here's <b>Intro1.js:</b>
+<p>Once you've finished the promo section, you can focus on the Intro
+components.</p>
+<p>Here's <b>Intro1.js:</b></p>
 
 <details>
   <summary>Intro1.js</summary>
@@ -2523,7 +2415,7 @@ export default Intro1;
 
 </details>
 
-Here's the code for the <b>Intro2.js</b> component:
+<p>Here's the code for the <b>Intro2.js</b> component:</p>
 
 <details>
   <summary>Intro2.js</summary>
@@ -2546,8 +2438,8 @@ export default Intro2;
 
 </details>
 
-You can finish the previews for my blog posts with the code for
-<b>Intro3.js</b> component:
+<p>You can finish the previews for my blog posts with the code for
+<b>Intro3.js</b> component:</p>
 
 <details>
   <summary>React Functions</summary>
@@ -2570,8 +2462,8 @@ export default Intro3;
 
 </details>
 
-There's just one more thing left to code, the <b>Footer</b> component, so
-here it is:
+<p>There's just one more thing left to code, the <b>Footer</b> component, so
+here it is:</p>
 
 ```
 function Footer() {
@@ -2585,10 +2477,9 @@ function Footer() {
 export default Footer;
 ```
 
-Now that you have completed all the components for the app, here are a
-few more interesting things about the syntax.
-
-These are:
+<p>Now that you have completed all the components for the app, here are a
+few more interesting things about the syntax.</p>
+<p>These are:</p>
 
 <ul>
   <li>The use of the <b>className</b> attribute in JSX,<br></li>
@@ -2602,57 +2493,57 @@ These are:
 
 <h3>Discussing the Syntax</h3>
 
-Now let's briefly discuss the four bullet points above.
+<p>Now let's briefly discuss the four bullet points above.</p>
 
-Why use the <b>className</b> attribute in the JSX syntax?
+<p>Why use the <b>className</b> attribute in the JSX syntax?</p>
 
-Well, with JSX, it looks like HTML so much that it's easy to forget
-that it's actually JavaScript code - not HTML.
+<p>Well, with JSX, it looks like HTML so much that it's easy to forget
+that it's actually JavaScript code - not HTML.</p>
 
-While regular HTML does indeed have a <b>class</b> attribute, which is used
+<p>While regular HTML does indeed have a <b>class</b> attribute, which is used
 to list one or more CSS classes to be used on a given HTML element, this
-cannot really work in JSX.
+cannot really work in JSX.</p>
 
-The reason is that JSX is a special kind of JavaScript syntax, and the
-word <b>class</b> is a reserved keyword in JSX.
+<p>The reason is that JSX is a special kind of JavaScript syntax, and the
+word <b>class</b> is a reserved keyword in JSX.</p>
 
-That's why the React team had to make a compromise and so <b>className</b>
+<p>That's why the React team had to make a compromise and so <b>className</b>
 is used in JSX to list one or more CSS classes to be used on a given
-element or component.
+element or component.</p>
 
-But why use <b>Intro1.js, Intro2.js,</b> and <b>Intro3.js</b>? Isn't one of
+<p>But why use <b>Intro1.js, Intro2.js,</b> and <b>Intro3.js</b>? Isn't one of
 the tenets of coding the DRY approach - that is, the "Don't repeat
-yourself" approach?
+yourself" approach?</p>
 
-Indeed, it is. However, there are still a few concepts to discuss before
+<p>Indeed, it is. However, there are still a few concepts to discuss before
 you learn how to re-use a single component with variations in its
-content.
+content.</p>
 
-This has to do with data in components, but don't worry, we'll be
-getting to that later.
+<p>This has to do with data in components, but don't worry, we'll be
+getting to that later.</p>
 
-The third question is about the <b>props</b> object. It has been mentioned
+<p>The third question is about the <b>props</b> object. It has been mentioned
 before, but so far it hasn't been used. It hasn't been used in this
-example either.
+example either.</p>
 
-The answer to this question has to do with the next lesson, titled
-<b><i>Component Use and Styling</i></b>.
+<p>The answer to this question has to do with the next lesson, titled
+<b><i>Component Use and Styling</i></b>.</p>
 
-In this lesson, you'll see in practice how you can make components work
-better, with the help of <b>props</b>.
+<p>In this lesson, you'll see in practice how you can make components work
+better, with the help of <b>props</b>.</p>
 
-The final question is about not using the <b>&lt;a&gt;</b> element for empty
-links in my app.
+<p>The final question is about not using the <b>&lt;a&gt;</b> element for empty
+links in my app.</p>
 
 The answer here depends on whether those links are "internal" - inside
 an app, or "external", meaning, leading to some external link, such
 as;
 [[https://www.coursera.org]](https://www.coursera.org/).
 
-If the links are internal to the app - as they are envisioned here -
+<p>If the links are internal to the app - as they are envisioned here -
 using the <b>&lt;a&gt;</b> tag is simply not the React way of doing things.
 You'll learn why that is the case when discussing the use of React
-Router.
+Router.</p>
 
 <h3>Conclusion</h3>
 
@@ -13057,75 +12948,68 @@ function ProductTable({ products }) {
 
 <h4>Show more</h4>
 
-(If this code looks intimidating, go through the [Quick
-Start](https://react.dev/learn) first!)
-
-After building your components, you'll have a library of reusable
+<p>(If this code looks intimidating, go through the <a href="https://react.dev/learn">Quick Start</a> first!)</p>
+<p>After building your components, you'll have a library of reusable
 components that render your data model. Because this is a static app,
 the components will only return JSX. The component at the top of the
 hierarchy (FilterableProductTable) will take your data model as a prop.
 This is called one-way data flow because the data flows down from the
-top-level component to the ones at the bottom of the tree.
+top-level component to the ones at the bottom of the tree.</p>
 
 <h4>Pitfall</h4>
 
-At this point, you should not be using any state values. That's for the
-next step!
+<p>At this point, you should not be using any state values. That's for the
+next step!</p>
 
 <h3>Step 3: Find the minimal but complete representation of UI state</h3>
 
-To make the UI interactive, you need to let users change your underlying
-data model. You will use state for this.
-
-Think of state as the minimal set of changing data that your app needs
+<p>To make the UI interactive, you need to let users change your underlying
+data model. You will use state for this.</p>
+<p>Think of state as the minimal set of changing data that your app needs
 to remember. The most important principle for structuring state is to
-keep it [DRY (Don't Repeat
-Yourself).](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-Figure out the absolute minimal representation of the state your
+keep it <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY (Don't Repeat
+Yourself).)</a></p>
+<p>Figure out the absolute minimal representation of the state your
 application needs and compute everything else on-demand. For example, if
 you're building a shopping list, you can store the items as an array in
 state. If you want to also display the number of items in the list,
 don't store the number of items as another state value--instead, read
-the length of your array.
+the length of your array.</p>
+<p>Now think of all of the pieces of data in this example application:</p>
 
-Now think of all of the pieces of data in this example application:
+<ol>
+  <li><p>The original list of products</p></li>
+  <li><p>The search text the user has entered</p></li>
+  <li><p>The value of the checkbox</p></li>
+  <li>The filtered list of products</li>
+</ol>
 
-1.  The original list of products
+<p>Which of these are state? Identify the ones that are not:</p>
 
-2.  The search text the user has entered
+<ul>
+  <li><p>Does it remain unchanged over time? If so, it isn't state.</p></li>
+  <li><p>Is it passed in from a parent via props? If so, it isn't state.</p></li>
+  <li><p>Can you compute it based on existing state or props in your
+    component? If so, it <i>definitely</i> isn't state!</li>
+</ul>
 
-3.  The value of the checkbox
+<p>What's left is probably state.</p>
 
-4.  The filtered list of products
+<p>Let's go through them one by one again:</p>
 
-Which of these are state? Identify the ones that are not:
-
--   Does it remain unchanged over time? If so, it isn't state.
-
--   Is it passed in from a parent via props? If so, it isn't state.
-
--   Can you compute it based on existing state or props in your
-    component? If so, it <i>definitely</i> isn't state!
-
-What's left is probably state.
-
-Let's go through them one by one again:
-
-1.  The original list of products is <b>passed in as props, so it's not
-    state.</b>
-
-2.  The search text seems to be state since it changes over time and
-    can't be computed from anything.
-
-3.  The value of the checkbox seems to be state since it changes over
-    time and can't be computed from anything.
-
-4.  The filtered list of products <b>isn't state because it can be
+<ol>
+  <li><p>The original list of products is <b>passed in as props, so it's not
+    state.</b></p></li>
+  <li><p>The search text seems to be state since it changes over time and
+    can't be computed from anything.</p></li>
+  <li><p>The value of the checkbox seems to be state since it changes over
+    time and can't be computed from anything.</p></li>
+  <li>The filtered list of products <b>isn't state because it can be
     computed</b> by taking the original list of products and filtering it
-    according to the search text and value of the checkbox.
+    according to the search text and value of the checkbox.</li>
 
-This means only the search text and the value of the checkbox are state!
-Nicely done!
+<p>This means only the search text and the value of the checkbox are state!
+Nicely done!</p>
 
 <h4>DEEP DIVE</h4>
 
@@ -13133,61 +13017,58 @@ Nicely done!
 
 <h3>Step 4: Identify where your state should live</h3>
 
-After identifying your app's minimal state data, you need to identify
+<p>After identifying your app's minimal state data, you need to identify
 which component is responsible for changing this state, or owns the
-state. 
+state.</p>
 
-Remember: React uses one-way data flow, passing data down the
+<p>Remember: React uses one-way data flow, passing data down the
 component hierarchy from parent to child component. It may not be
 immediately clear which component should own what state. This can be
 challenging if you're new to this concept, but you can figure it out by
-following these steps!
+following these steps!</p>
 
-For each piece of state in your application:
+<p>For each piece of state in your application:</p>
 
-1.  Identify every component that renders something based on that state.
-
-2.  Find their closest common parent component--a component above them
-    all in the hierarchy.
-
-3.  Decide where the state should live:
-
-4.  Often, you can put the state directly into their common parent.
-
-5.  You can also put the state into some component above their common
-    parent.
-
-6.  If you can't find a component where it makes sense to own the state,
+<ol>
+  <li><p>Identify every component that renders something based on that state.</p></li>
+  <li><p>Find their closest common parent component--a component above them all in the hierarchy.</p></li>
+  <li><p>Decide where the state should live:</p></li>
+  <li><p>Often, you can put the state directly into their common parent.</p></li>
+  <li><p>You can also put the state into some component above their common
+    parent.</p></li>
+  <li>If you can't find a component where it makes sense to own the state,
     create a new component solely for holding the state and add it
-    somewhere in the hierarchy above the common parent component.
+    somewhere in the hierarchy above the common parent component.</li>
+</ol>
 
-In the previous step, you found two pieces of state in this application:
+<p>In the previous step, you found two pieces of state in this application:
 the search input text, and the value of the checkbox. In this example,
 they always appear together, so it makes sense to put them into the same
-place.
+place.</p>
 
-Now let's run through our strategy for them:
+<p>Now let's run through our strategy for them:</p>
 
+<ol>
+<li><p>
 1.  Identify components that use state:
 
-2.  ProductTable needs to filter the product list based on that state
+<li><p>ProductTable needs to filter the product list based on that state
     (search text and checkbox value).
 
-3.  SearchBar needs to display that state (search text and checkbox
+<li><p>SearchBar needs to display that state (search text and checkbox
     value).
 
-4.  Find their common parent: The first parent component both components
+<li><p>Find their common parent: The first parent component both components
     share is FilterableProductTable.
 
-5.  Decide where the state lives: We'll keep the filter text and checked
+<li>Decide where the state lives: We'll keep the filter text and checked
     state values in FilterableProductTable.
 
-So, the state values will live in FilterableProductTable.
-
-Add state to the component with the [useState()
+<p>So, the state values will live in FilterableProductTable.</p>
+<p>Add state to the component with the [useState()
 Hook.](https://react.dev/reference/react/useState) Hooks are special
 functions that let you "hook into" React. Add two state variables at the
-top of FilterableProductTable and specify their initial state:
+top of FilterableProductTable and specify their initial state:</p>
 
 ```
 function FilterableProductTable({ products }) {
@@ -13196,8 +13077,8 @@ function FilterableProductTable({ products }) {
   const [inStockOnly, setInStockOnly] = useState(false);
 ```
 
-Then, pass filterText and inStockOnly to ProductTable and SearchBar as
-props:
+<p>Then, pass filterText and inStockOnly to ProductTable and SearchBar as
+props:</p>
 
 ```
 <div>
@@ -13212,10 +13093,10 @@ props:
 </div>
 ```
 
-You can start seeing how your application will behave. Edit the
+<p>You can start seeing how your application will behave. Edit the
 filterText initial value from useState('') to useState('fruit') in
 the sandbox code below. You'll see both the search input text and the
-table update:
+table update:</p>
 
 <details>
   <summary>App.js</summary>
@@ -13256,17 +13137,16 @@ function ProductRow({ product }) {
 
 </details>
 
-Notice that editing the form doesn't work yet. There is a console error
-in the sandbox above explaining why:
+<p>Notice that editing the form doesn't work yet. There is a console error
+in the sandbox above explaining why:</p>
 
 <h4>Console</h4>
 
-You provided a \`value\` prop to a form field without an \`onChange\`
-handler. This will render a read-only field.
-
-In the sandbox above, ProductTable and SearchBar read the filterText and
+<p>You provided a \`value\` prop to a form field without an \`onChange\`
+handler. This will render a read-only field.</p>
+<p>In the sandbox above, ProductTable and SearchBar read the filterText and
 inStockOnly props to render the table, the input, and the checkbox. For
-example, here is how SearchBar populates the input value:
+example, here is how SearchBar populates the input value:</p>
 
 ```
 function SearchBar({ filterText, inStockOnly }) {
@@ -13278,29 +13158,29 @@ function SearchBar({ filterText, inStockOnly }) {
         placeholder="Search..."/>
 ```
 
-However, you haven't added any code to respond to the user actions like
-typing yet. This will be your final step.
+<p>However, you haven't added any code to respond to the user actions like
+typing yet. This will be your final step.</p>
 
 <h3>Step 5: Add inverse data flow</h3>
 
-Currently your app renders correctly with props and state flowing down
+<p>Currently your app renders correctly with props and state flowing down
 the hierarchy. But to change the state according to user input, you will
 need to support data flowing the other way: the form components deep in
-the hierarchy need to update the state in FilterableProductTable.
+the hierarchy need to update the state in FilterableProductTable.</p>
 
-React makes this data flow explicit, but it requires a little more
+<p>React makes this data flow explicit, but it requires a little more
 typing than two-way data binding. If you try to type or check the box in
 the example above, you'll see that React ignores your input. This is
 intentional. By writing &lt;input value={filterText} /&gt;, you've set the
 value prop of the input to always be equal to the filterText state
 passed in from FilterableProductTable. Since filterText state is never
-set, the input never changes.
+set, the input never changes.</p>
 
-You want to make it so whenever the user changes the form inputs, the
+<p>You want to make it so whenever the user changes the form inputs, the
 state updates to reflect those changes. The state is owned by
 FilterableProductTable, so only it can call setFilterText and
 setInStockOnly. To let SearchBar update the FilterableProductTable's
-state, you need to pass these functions down to SearchBar:
+state, you need to pass these functions down to SearchBar:</p>
 
 <details>
   <summary>React Function</summary>
@@ -13320,8 +13200,8 @@ function FilterableProductTable({ products }) {
 
 </details>
 
-Inside the SearchBar, you will add the onChange event handlers and set
-the parent state from them:
+<p>Inside the SearchBar, you will add the onChange event handlers and set
+the parent state from them:</p>
 
 ```
 <input
@@ -13330,7 +13210,7 @@ the parent state from them:
   onFilterTextChange(e.target.value)} />
 ```
 
-Now the application fully works!
+<p>Now the application fully works!</p>
 
 <details>
   <summary>App.js</summary>
@@ -13373,41 +13253,35 @@ function ProductRow({ product }) {
 
 </details>
 
-You can learn all about handling events and updating state in the
-[Adding Interactivity](https://react.dev/learn/adding-interactivity)
- section.
+<p>You can learn all about handling events and updating state in the
+<a href="https://react.dev/learn/adding-interactivity"  target="_blank" rel="noopener noreferrer">Adding Interactivity</a>
+ section.</p>
 
 <h3>Where to go from here</h3>
 
-This was a very brief introduction to how to think about building
-components and applications with React. You can [start a React
-project](https://react.dev/learn/installation) right now or [dive deeper on
-all the syntax](https://react.dev/learn/describing-the-ui) used in this tutorial.
+<p>This was a very brief introduction to how to think about building
+components and applications with React. You can <a href="https://react.dev/learn/installation" target="_blank" rel="noopener noreferrer">start a React project</a> right now or <a href="https://react.dev/learn/describing-the-ui" target="_blank" rel="noopener noreferrer">dive deeper on all the syntax</a> used in this tutorial.</p>
 
 <h4>Installation</h4>
 
-React has been designed from the start for gradual adoption. You can use
+<p>React has been designed from the start for gradual adoption. You can use
 as little or as much React as you need. Whether you want to get a taste
 of React, add some interactivity to an HTML page, or start a complex
-React-powered app, this section will help you get started.
+React-powered app, this section will help you get started.</p>
 
-<h4>In this chapter</h4>
+<h4>In this chapter:</h4>
 
-1.  [How to start a new React
-    project](https://react.dev/learn/start-a-new-react-project)
-
-2.  [How to add React to an existing
-    project](https://react.dev/learn/add-react-to-an-existing-project)
-
-3.  [How to set up your editor](https://react.dev/learn/editor-setup)
-
-4.  [How to install React Developer
-    Tools](https://react.dev/learn/react-developer-tools)
+<ol>
+  <li><p><a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">How to start a new React project</a></p></li>
+  <li><p><a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">How to add React to an existing project</a></p></li>
+  <li><p><a href="https://react.dev/learn/editor-setup" target="_blank" rel="noopener noreferrer">How to set up your editor</a></p></li>
+  <li><a href="https://react.dev/learn/react-developer-tools" target="_blank" rel="noopener noreferrer">How to install React Developer  Tools</a></li>
+</ol>
 
 <h4>Try React</h4>
 
-You don't need to install anything to play with React. Try editing this
-sandbox!
+<p>You don't need to install anything to play with React. Try editing this
+sandbox!</p>
 
 <h4>App.js</h4>
 
@@ -13420,34 +13294,34 @@ export default function App() {
 }
 ```
 
-You can edit it directly or open it in a new tab by pressing the "Fork"
-button in the upper right corner.
+<p>You can edit it directly or open it in a new tab by pressing the "Fork"
+button in the upper right corner.</p>
 
-Most pages in the React documentation contain sandboxes like this.
+<p>Most pages in the React documentation contain sandboxes like this.
 Outside of the React documentation, there are many online sandboxes that
 support React: for example, <a href="https://codesandbox.io/s/new" target="_blank" rel="noopener noreferrer">CodeSandbox</a>,
 <a href="https://stackblitz.com/fork/react" target="_blank" rel="noopener noreferrer">StackBlitz, 
 </a>or, <a href="https://stackblitz.com/edit/react-uj6spj?file=src%2FApp.js" target="_blank" rel="noopener noreferrer">Stackblitz with React</a>, or
-<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work" target="_blank" rel="noopener noreferrer">CodePen</a>.
+<a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/CodePen%20()https://codepen.io/your-work" target="_blank" rel="noopener noreferrer">CodePen</a>.</p>
 
 <h3>Try React locally</h3>
 
-To try React locally on your computer, <a href="https://gist.githubusercontent.com/
-gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.
+<p>To try React locally on your computer, <a href="https://gist.githubusercontent.com/
+gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html" target="_blank" rel="noopener noreferrer">download this HTML page</a>.</p>
 
-Open it in your editor and your browser!
+<p>Open it in your editor and your browser!</p>
 
 <h3>Start a new React project</h3>
 
-If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start a new React project</a>.  <a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20" target="_blank" rel="noopener noreferrer">Or, here</a>.
+<p>If you want to build an app or a website fully with React, <a href="https://react.dev/learn/start-a-new-react-project" target="_blank" rel="noopener noreferrer">start a new React project</a>.  <a href="https://d.docs.live.net/34c3f5576bfda3c0/meta/meta%20React%20Basics/start%20a%20new%20React%20project%20%20" target="_blank" rel="noopener noreferrer">Or, here</a>.</p>
 
 <h3>Add React to an existing project</h3>
 
-If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a>
+<p>If want to try using React in your existing app or a website, <a href="https://react.dev/learn/add-react-to-an-existing-project" target="_blank" rel="noopener noreferrer">add React to an existing project.</a></p>
 
 <h3>Next steps</h3>
 
-Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.
+<p>Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.</p>
 
-end. . .
+<p>end. . .</p>
 <h6>Wednesday 6/15/2023 11:33am</h6>
