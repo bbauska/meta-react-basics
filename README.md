@@ -3168,7 +3168,6 @@ of code to return the JSX from it inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c. jsx nav component (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- <p float="center"> -->
 <p float="left">
 <img src="/images/w1-s21-c.png?raw=true"
   alt="JSX Nav component."
@@ -9196,7 +9195,7 @@ After adding the toggle2 function to the JSX expression in the second button's o
 17.	      bird1.pause();
 18.	    }
 19.	  };
-20.	
+20.
 21.	  return (
 22.	    <div>
 23.	      <button onClick={toggle1}>Caspian Tern 1</button>
@@ -9204,7 +9203,7 @@ After adding the toggle2 function to the JSX expression in the second button's o
 25.	    </div>
 26.	  );
 27.	}
-28.	
+28.
 29.	export default App;
 ```
 
@@ -9212,44 +9211,44 @@ Step 3
 Next, you needed to define the toggle2 function: it should have had the exact same functionality as the toggle1 function, but it needed to work with the bird2 variable (instead of the bird1 variable as it did in the toggle1 function). 
 
 ```
-1.	import React from "react"; 
-2.	
-3.	function App() { 
-4.	
-5.	  const bird1 = new Audio( 
-6.	    "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hydroprogne_caspia_-
-      _Caspian_Tern_XC432679.mp3"
-7.	  ); 
-8.	
-9.	  const bird2 = new Audio( 
-10.	    "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hydroprogne_caspia_-
-      _Caspian_Tern_XC432881.mp3"
-11.	  ); 
-12.	
-13.	  function toggle1() { 
-14.	    if (bird1.paused) { 
-15.	      bird1.play(); 
-16.	    } else { 
-17.	      bird1.pause(); 
-18.	    }
-19.	  }; 
-20.	
-21.	  function toggle2() {
-22.	    if (bird2.paused) { 
-23.	      bird2.play(); 
-24.	    } else { 
-25.	      bird2.pause(); 
-26.	    } 
-27.	  }; 
-28.	
-29.	  return ( 
+1.  import React from "react";
+2.
+3.  function App() {
+4.
+5.    const bird1 = new Audio(
+6.      "https://upload.wikimedia.org/wikipedia/commons/9/9b/Hydroprogne_caspia_-
+        _Caspian_Tern_XC432679.mp3"
+7.    );
+8.
+9.    const bird2 = new Audio(
+10.     "https://upload.wikimedia.org/wikipedia/commons/b/b5/Hydroprogne_caspia_-
+        _Caspian_Tern_XC432881.mp3"
+11.   );
+12.
+13.   function toggle1() {
+14.     if (bird1.paused) {
+15.       bird1.play();
+16.     } else {
+17.       bird1.pause();
+18.     }
+19.   };
+20.
+21.   function toggle2() {
+22.     if (bird2.paused) {
+23.       bird2.play();
+24.     } else {
+25.       bird2.pause();
+26.	    }
+27.	  };
+28.
+29.	  return (
 30.	    <div>
-31.	      <button onClick={toggle1}>Caspian Tern 1</button> 
-32.	      <button onClick={toggle2}>Caspian Tern 2</button> 
-33.	    </div> 
-34.	  ); 
-35.	} 
-36.	
+31.	      <button onClick={toggle1}>Caspian Tern 1</button>
+32.	      <button onClick={toggle2}>Caspian Tern 2</button>
+33.	    </div>
+34.	  );
+35.	}
+36.
 37.	export default App;
 ```
 
@@ -9372,15 +9371,13 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w3-s18-m.png?raw=true"
   alt="."
   width="30%" />
-</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-n.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
 <img src="/images/w3-s18-n.png?raw=true"
   alt="."
   width="30%" />
@@ -9390,12 +9387,15 @@ Congratulations. You've now covered most of the basic concepts in React, and you
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is a list of resources that may be helpful as you continue your learning journey.
-•	webpack docs
-•	webpack asset management
-•	npm docs
-•	ReactPlayer on npm
-•	Video and audio content on the web
+<p>Here is a list of resources that may be helpful as you continue your learning journey.</p>
+
+<ul>
+  <li><p>webpack docs,</p></li>
+  <li><p>webpack asset management,</p></li>
+  <li><p>npm docs,</p></li>
+  <li><p>ReactPlayer on npm,</p></li>
+  <li>Video and audio content on the web.</li>
+</ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Module 4 - Course recap</h1>
