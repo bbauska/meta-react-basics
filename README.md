@@ -3471,7 +3471,7 @@ curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left"; margin-right: 5%; width: 65%">
+<p float="left"; margin-right: auto; margin-left: auto;">
 <img src="/images/w1-s23-e.png?raw=true"
   alt="JSX return div command."
   width="30%" />
