@@ -27,48 +27,38 @@ meta-react-basics: meta/Coursera - React Basics
 </p>
 <!-- {width="1.0175437445319335in" height="0.5in"} -->
 <p>React is a powerful JavaScript library that you can use to build user
-interfaces for web and mobile applications (apps).<br>
+interfaces for web and mobile applications (apps).</p>
 
-In this 4-week course, you will explore the fundamental concepts that
+<p>In this 4-week course, you will explore the fundamental concepts that
 underpin the React library and learn the basic skills required to build
-a simple, fast, and scalable app.<br>
+a simple, fast, and scalable app.</p>
 
-By the end of this course, you will be able to:</p>
+<p>By the end of this course, you will be able to:</p>
 
-  - Use reusable components to render views where data changes over time,
+<ul>
+  <li><p>Use reusable components to render views where data changes over time,</p></li>
+  <li><p>Create more scalable and maintainable websites and apps,</p></li>
+  <li><p>Use props to pass data between components,</p></li>
+  <li><p>Create dynamic and interactive web pages and apps,</p></li>
+  <li><p>Use forms to allow users to interact with the web page,</p></li>
+  <li><p>Build an application in React,</p></li>
+  <li><p>You'll gain experience with the following tools and software:</p></li>
+  <ul>
+    <li><p>React.js,</p></li>
+    <li><p>JSX,</p></li>
+    <li><p>React,</p></li>
+    <li><p>HTML, CSS and JavaScript,</p></li>
+    <li><p>VSCode (or other, BETTER, editors with less bullshit), like notepad++,</p></li>
+  </ul>
+<li>You will be able to leverage the potential of this course to develop new skills, improve productivity, act effectively with data and boost your career.</li>
+</ul>
 
-  - Create more scalable and maintainable websites and apps,
+<p>This is a beginner course for learners who would like to prepare
+themselves for a career in mobile development.</p>
 
-  - Use props to pass data between components,
-
-  - Create dynamic and interactive web pages and apps,
-
-  - Use forms to allow users to interact with the web page,
-
-  - Build an application in React,
-
-  - You'll gain experience with the following tools and software:
-  
-    - React.js,
-	
-    - JSX,
-	
-    - React,
-	
-    - HTML, CSS and JavaScript,
-	
-    - VSCode (or other, BETTER, editors with less bullshit), like notepad++,
-
-  - You will be able to leverage the potential of this course to develop
-    new skills, improve productivity, act effectively with data and
-    boost your career.
-
-This is a beginner course for learners who would like to prepare
-themselves for a career in mobile development.
-
-To succeed in this course, you do not need prior development experience,
+<p>To succeed in this course, you do not need prior development experience,
 only basic internet navigation skills and an eagerness to get started
-with coding.
+with coding.</p>
 
 <h3>Table of Contents - 7 pages approx</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -76,9 +66,9 @@ with coding.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of week 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Introduction to the course: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Welcome to React basics.
+<p>Welcome to React basics.</p>
 
-In this course, you'll be introduced to the basics of working with React.
+<p>In this course, you'll be introduced to the basics of working with React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-a. 3 basics of react (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
