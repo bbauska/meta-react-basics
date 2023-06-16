@@ -3168,11 +3168,12 @@ of code to return the JSX from it inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c. jsx nav component (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="center">
+<!-- <p float="center"> -->
+<p float="left">
 <img src="/images/w1-s21-c.png?raw=true"
   alt="JSX Nav component."
   width="25%" />
-  <br><br><br>
+  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w1-s21-d. attributes building components with props (83) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3471,7 +3472,8 @@ curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p margin-right: auto; margin-left: auto;">
+<p "margin-right: auto; margin-left: auto;">
+<p float="left">
 <img src="/images/w1-s23-e.png?raw=true"
   alt="JSX return div command."
   width="30%" />
@@ -6848,61 +6850,61 @@ registration form with fields for first name, last name and email.
   <summary>App.js</summary>
 
 ```
-1.	import { useState } from 'react';
+1.  import { useState } from 'react';
 2.
-3.	export default function RegisterForm() {
-4.	  const [form, setForm] = useState({
-5.	    firstName: 'Luke',
-6.	    lastName: 'Jones',
-7.	    email: 'lukeJones@sculpture.com',
-8.	  });
+3.  export default function RegisterForm() {
+4.    const [form, setForm] = useState({
+5.      firstName: 'Luke',
+6.      lastName: 'Jones',
+7.      email: 'lukeJones@sculpture.com',
+8.    });
 9.
-10.	  return ( 
-11.	    <> 
-12.	      <label> 
-13.	        First name: 
-14.	        <input 
-15.	          value={form.firstName} 
-16.	          onChange={e => { 
-17.	            setForm({ 
-18.	              ...form, 
-19.	              firstName: e.target.value 
-20.	            }); 
-21.	          }} 
-22.	        /> 
-23.	      </label> 
-24.	      <label> 
-25.	        Last name: 
-26.	        <input 
-27.	          value={form.lastName} 
-28.	          onChange={e => { 
-29.	            setForm({ 
-30.	              ...form, 
-31.	              lastName: e.target.value 
-32.	            }); 
-33.	          }} 
-34.	        /> 
-35.	      </label> 
-36.	      <label> 
-37.	        Email: 
-38.	        <input 
-39.	          value={form.email} 
-40.	          onChange={e => { 
-41.	            setForm({ 
-42.	              ...form, 
-43.	              email: e.target.value 
-44.	            }); 
-45.	          }} 
-46.	        /> 
-47.	      </label> 
-48.	      <p> 
-49.	        {form.firstName}{' '} 
-50.	        {form.lastName}{' '} 
-51.	        ({form.email})
-52.	      </p> 
-53.	    </> 
-54.	  ); 
-55.	} 
+10.   return (
+11.     <>
+12.       <label>
+13.	        First name:
+14.	        <input
+15.	          value={form.firstName}
+16.	          onChange={e => {
+17.	            setForm({
+18.	              ...form,
+19.	              firstName: e.target.value
+20.	            });
+21.	          }}
+22.	        />
+23.	      </label>
+24.	      <label>
+25.	        Last name:
+26.	        <input
+27.	          value={form.lastName}
+28.	          onChange={e => {
+29.	            setForm({
+30.	              ...form,
+31.	              lastName: e.target.value
+32.	            });
+33.	          }}
+34.	        />
+35.	      </label>
+36.	      <label>
+37.	        Email:
+38.	        <input
+39.	          value={form.email}
+40.	          onChange={e => {
+41.	            setForm({
+42.	              ...form,
+43.	              email: e.target.value
+44.	            });
+45.	          }}
+46.	        />
+47.       </label>
+48.       <p>
+49.         {form.firstName}{' '}
+50.         {form.lastName}{' '}
+51.         ({form.email})
+52.       </p>
+53.     </>
+54.   );
+55. }
 ```
 
 </details>
@@ -6983,17 +6985,18 @@ Consider the different modes in an alarm clock and the situations you would use 
 <p align="center" width="100%">
 <img src="/images/w2-s15-a.png?raw=true"
   alt="Components with props."
-  width="53%" />
+  width="40%" />
 </p>
-If you create this feature in a React app, you could create a component named clock and then parsing the status values via props.
-Recall the props is a feature of React that essentially allows you to hold information about the UI in the browser. In React, you also have another way to do this by using a similar concept called States, which also allows you to easily change how the component behaves in order to suit a given need.
+<p>If you create this feature in a React app, you could create a component named clock and then parsing the status values via props.</p>
+<p>Recall the props is a feature of React that essentially allows you to hold information about the UI in the browser.</p>
+<p>In React, you also have another way to do this by using a similar concept called States, which also allows you to easily change how the component behaves in order to suit a given need.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s15-b.png?raw=true"
   alt="Describe State in React and explore its features."
-  width="53%" />
+  width="40%" />
 </p>
 By the end of this section (15), you'll be able to describe what State is in React and why developers use it to control what is displayed in the browser from a component. It helps to think of State as a component's internal data that determines the current behavior of a component. It's often used to store data that affects the behavior of a component.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7002,7 +7005,7 @@ By the end of this section (15), you'll be able to describe what State is in Rea
 <p align="center" width="100%">
 <img src="/images/w2-s15-c.png?raw=true"
   alt="State - data in a component that determines behavior."
-  width="53%" />
+  width="40%" />
 </p>
 State is important because it allows components to stay in sync with each other and ensure that your app behaves as intended.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7011,7 +7014,7 @@ State is important because it allows components to stay in sync with each other 
 <p align="center" width="100%">
 <img src="/images/w2-s15-d.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 
 For example, if one component updates its State, all other components that depend on that State will automatically update too. This means that a component sends its State to its children by using props. 
@@ -7021,7 +7024,7 @@ For example, if one component updates its State, all other components that depen
 <p align="center" width="100%">
 <img src="/images/w2-s15-e.png?raw=true"
   alt="."
-  width="53%" />
+  width="30%" />
 </p>
 If the child components have their own grandchild components, then the child components might have some States that they send us props to those grandchild components. In React, State is kept in a state of variables. The main way to change State is to alter these variables. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7030,7 +7033,7 @@ If the child components have their own grandchild components, then the child com
 <p align="center" width="100%">
 <img src="/images/w2-s15-f.png?raw=true"
   alt="."
-  width="53%" />
+  width="30%" />
 </p>
 When a component is created, it gets an initial State. The State is used to initialize the component's properties. 
 
@@ -7041,7 +7044,7 @@ Components can be either stateful or stateless, but what exactly does that mean?
 <p align="center" width="100%">
 <img src="/images/w2-s15-g.png?raw=true"
   alt="."
-  width="53%" />
+  width="40%" />
 </p>
 
 First is an app component with no state defined. It performs a single action, which is to render the text a  stateless component and then you have a stateful function component. This component also renders some texts, but it references a variable to do so. 
@@ -7051,7 +7054,7 @@ First is an app component with no state defined. It performs a single action, wh
 <p align="center" width="100%">
 <img src="/images/w2-s15-h.png?raw=true"
   alt="."
-  width="53%" />
+  width="60%" />
 </p>
 We'll explore how that works a little later. For now, notice the syntax using the first line of the app's function body. If you're familiar with how array destructuring works in plain JavaScript. This line of code might've already make sense to you.  
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7060,7 +7063,7 @@ We'll explore how that works a little later. For now, notice the syntax using th
 <p align="center" width="100%">
 <img src="/images/w2-s15-i.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 To make things clear, consider an example array called fruits, which contains the three strings, apple, pear, and plum.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7069,7 +7072,7 @@ To make things clear, consider an example array called fruits, which contains th
 <p align="center" width="100%">
 <img src="/images/w2-s15-j.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 
 With its ES6 version, JavaScript introduced the concept of array destructuring, which allows you to assign several variables from the array using a single line of code. In other words, you can assign apple, pear, and plum to the fruit 1, fruit 2 and fruit 3 variables quickly instead of one at a time.
@@ -7079,7 +7082,7 @@ With its ES6 version, JavaScript introduced the concept of array destructuring, 
 <p align="center" width="100%">
 <img src="/images/w2-s15-k.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 
 With this in mind, let's come back to that line in the stateful component. Notice that the syntax used is similar to the array destructuring example you just examined but with an interesting bit of code. React.useState. 
@@ -7089,7 +7092,7 @@ With this in mind, let's come back to that line in the stateful component. Notic
 <p align="center" width="100%">
 <img src="/images/w2-s15-l.png?raw=true"
   alt="State - data in a component that determines behavior."
-  width="53%" />
+  width="50%" />
 </p>
 Hooks allow developers to hook into some otherwise inaccessible functionality. For example, to access the State object you would use the useState hook. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7098,7 +7101,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <p align="center" width="100%">
 <img src="/images/w2-s15-m.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 <p>To better understand what is being destructured in the app component, let's call a console log to the useState hook. The output reveals an array holding two things, the string Hello and a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7107,7 +7110,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <p align="center" width="100%">
 <img src="/images/w2-s15-n.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 <p>In this case, Hello is the state value assigned to the word state variable. The function is a built-in one that is not declared.  The function can be destructured with any name you'd like, but there is a convention to follow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7116,7 +7119,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <p align="center" width="100%">
 <img src="/images/w2-s15-o.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 <p>If you set the States variable name to be Greet, then the destructured state function should be setGreet. This is because the second destructured variable is a function that will be used to update the state of a variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7125,7 +7128,7 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
 <p align="center" width="100%">
 <img src="/images/w2-s15-p.png?raw=true"
   alt="."
-  width="53%" />
+  width="50%" />
 </p>
 <p>Let's examine an updated version of this stateful function component. Notice that the setGreet variable is not actually run, that is something that is done elsewhere.</p>
 <p>Later in this course, you'll learn about how you can extend this code with a clickable button to update the State.</p>
@@ -7142,7 +7145,7 @@ State is a powerful tool in Reacts that developers use to manage data that is li
 <p align="center" width="100%">
 <img src="/images/w2-s16-a.png?raw=true"
   alt="."
-  width="40%" />
+  width="50%" />
 </p>
 <p>The useState Hook allows a components to define and track state. It does this with two arguments. The first of which accesses state and the second of which updates it with a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7151,7 +7154,7 @@ State is a powerful tool in Reacts that developers use to manage data that is li
 <p align="center" width="100%">
 <img src="/images/w2-s16-b.png?raw=true"
   alt="."
-  width="40%" />
+  width="50%" />
 </p>
 <p>For example, you can use the date variable to access the date state. Then use the set date function to update the state.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7170,7 +7173,7 @@ State is a powerful tool in Reacts that developers use to manage data that is li
 <p align="center" width="100%">
 <img src="/images/w2-s16-d.png?raw=true"
   alt="."
-  width="70%" />
+  width="50%" />
 </p>
 I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening and closing curly brace. You already know that's an opening and a closing curly brace signifies a JSX expression, which means that all the code inside of those curly braces will be evaluated as regular JavaScript. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7181,7 +7184,7 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="."
   width="70%" />
 </p>
-The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. Thus, in the browser window, I get the words eat at little lemon. If I want to update the value of the word States variable to something else like drink, I could use the set word function directly to help me achieve this. However, when I save the change and run my code, the app does not work. This is because one can't use the state's setting variable from your state directly. 
+<p>The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. Thus, in the browser window, I get the words eat at little lemon. If I want to update the value of the word States variable to something else like drink, I could use the set word function directly to help me achieve this. However, when I save the change and run my code, the app does not work. This is because one can't use the state's setting variable from your state directly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s16-f.  (1) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7190,7 +7193,7 @@ The JavaScript engine takes the word Eat and concatenates it, so the words at Li
   alt="."
   width="70%" />
 </p>
-Instead of updating it directly, I can update it based on a click event. I have another element called button and onClick is equal to handleClick. I now set another function which I'll name handledClick. Inside the handleClick function definition, I run set word to drink. I click "File, Save All", and wait for the apps to compile. Now when I click the Click Here button, I get to drink at the little lemon. To observe and update state, you can use the state's setting functions and state variables using the state hook. But you must make sure that you use event handling attributes in JSX syntax or some other approaches which we'll learn more about later. 
+<p>Instead of updating it directly, I can update it based on a click event. I have another element called button and onClick is equal to handleClick. I now set another function which I'll name handledClick. Inside the handleClick function definition, I run set word to drink. I click "File, Save All", and wait for the apps to compile. Now when I click the Click Here button, I get to drink at the little lemon. To observe and update state, you can use the state's setting functions and state variables using the state hook. But you must make sure that you use event handling attributes in JSX syntax or some other approaches which we'll learn more about later. 
 In this section (16), you've learned about state change basics in React, including how to apply the use of state syntax, observe and manipulate state and components.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
