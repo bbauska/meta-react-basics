@@ -2691,7 +2691,7 @@ component called sidebar.
 <p align="center" width="100%">
 <img src="/images/w1-s16-m.png?raw=true"
   alt="Tree view of components."
-  width="70%" />
+  width="40%" />
 </p>
 
 Each component will be called and have its contents returned to the root
@@ -2738,7 +2738,7 @@ export default App;
 <p align="center" width="100%">
 <img src="/images/w1-s17-a.png?raw=true"
   alt="App, heading and index files displayed in src folder."
-  width="37%" />
+  width="40%" />
 </p>
 <!-- {width="3.7708333333333335in" height="1.3125in"} -->
 
@@ -2829,7 +2829,7 @@ They are reusable blocks of code that act much like a JavaScript function.
 <p align="center" width="100%">
 <img src="/images/w1-s19-a.png?raw=true"
   alt="React function props."
-  width="70%" />
+  width="60%" />
 </p>
 <p>Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
@@ -2842,7 +2842,7 @@ as props.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-b.png?raw=true"
   alt="Props object in React functions."
-  width="40%" />
+  width="30%" />
 </p>
 <p>In this section (19), you will learn about the props object and how
 developers use it to pass data from one component to another. Then
@@ -2858,7 +2858,7 @@ object is a special type of variable that can contain many values.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-c.png?raw=true"
   alt="Object properties in React."
-  width="40%" />
+  width="30%" />
 </p>
 <p>You use objects when you need to store groups of related data of
 different types. Each data type is known as an object property, for
@@ -2870,7 +2870,7 @@ properties for type, quantity, and color.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-d.png?raw=true"
   alt="Objects with name-value pairs using dot notation."
-  width="70%" />
+  width="60%" />
 </p>
 
 <p>Remember that these properties consist of name-value pairs, and you can
@@ -2881,7 +2881,7 @@ access the object's properties using dot notation.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-c.png?raw=true"
   alt="React props."
-  width="40%" />
+  width="30%" />
 </p>
 
 <p>In React, you can use a similar technique to pass data from one
@@ -2898,7 +2898,7 @@ some props to a component and print them out in a React app.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-f.png?raw=true"
   alt="Render app in index.js."
-  width="40%" />
+  width="30%" />
 </p>
 <p>Suppose you have the default code for the React app open in the index.js
 file, you call the app component. Inside the app component, you return
@@ -2910,7 +2910,7 @@ can make this heading dynamic by using props.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-g.png?raw=true"
   alt="Index.js and App.js."
-  width="70%" />
+  width="60%" />
 </p>
 <p>Let's now explore the syntax involved to create this. In the root
 component, index.js, you send the value you want to pass to the app
@@ -2927,7 +2927,7 @@ passed as an argument by the HTML attribute.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-h.png?raw=true"
   alt="App.js with props title."
-  width="40%" />
+  width="30%" />
 </p>
 <p>Once again, remember to enclose your code inside curly brackets so React
 knows that you want to work with the props object and not static text.</p>
@@ -2951,7 +2951,7 @@ props data is known as the child.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-i.png?raw=true"
   alt="Parent-Children passing data using props."
-  width="70%" />
+  width="40%" />
 </p>
 <p>As you've just learned with the example earlier, this parent-child
 relationship allows parent components of past data down to child
@@ -2972,7 +2972,7 @@ prompts.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-j.png?raw=true"
   alt="Pure Function - Always returns same output for same argument value."
-  width="60%" />
+  width="40%" />
 </p>
 <p>Another important limitation has to do with something called pure
 functions. In programming, a pure function is a function that will
@@ -3140,7 +3140,7 @@ This makes the app more versatile, helping it consume data easier.<br>
 <p align="center" width="100%">
 <img src="/images/w1-s21-a.png?raw=true"
   alt="Syntax for props and components."
-  width="30%" />
+  width="40%" />
 </p>
 
 <p>In this section (21) you'll learn the syntax involved to use props and
@@ -3168,16 +3168,17 @@ of code to return the JSX from it inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c. jsx nav component (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p float="center">
 <img src="/images/w1-s21-c.png?raw=true"
   alt="JSX Nav component."
-  width="45%" />
+  width="25%" />
+  <br><br><br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w1-s21-d. attributes building components with props (83) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s21-d.png?raw=true"
   alt="Attributes used in building components with props in React."
-  width="45%" />
+  width="25%" />
 </p>
 
 <p>For example, the return statement can contain several HTLM like elements, 
@@ -3428,7 +3429,7 @@ JavaScript code.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-b.png?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
-  width="60%" />
+  width="30%" />
 </p>
 <p>For example, you can add a navigation function to a website by creating a nav component. 
 Then place the HTML semantic nav element, and an unordered list inside. 
@@ -3458,7 +3459,7 @@ return statement.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-d.png?raw=true"
   alt="JSX return statement."
-  width="60%" />
+  width="30%" />
 </p>
 <p>Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
 inside the return statement of the function.</p>
@@ -3470,16 +3471,17 @@ curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p float="center">
 <img src="/images/w1-s23-e.png?raw=true"
   alt="JSX return div command."
-  width="45%" />
+  width="30%" />
+  <br><br><br><br><br>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w1-s23-f. jsx return command less than and greater to (92) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s23-f.png?raw=true"
   alt="JSX fragment command rather than div."
-  width="45%" />
+  width="30%" />
 </p>
 <p>It's also important to remember that the HTML code must be wrapped in a top level
 element, such as a div tag. If you do not want to add extra div elements
@@ -3494,7 +3496,7 @@ are some differences.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-g.png?raw=true"
   alt="JSX component syntax."
-  width="40%" />
+  width="30%" />
 </p>
 <p>For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
 This is because class is a reserved keyword in JavaScript, you must use a slightly different
