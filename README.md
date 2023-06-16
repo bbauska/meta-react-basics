@@ -2663,7 +2663,7 @@ component in React.
 <p align="center" width="100%">
 <img src="/images/w1-s16-j.png?raw=true"
   alt="Header section."
-  width="40%" />
+  width="60%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-k. payment section as main (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2671,7 +2671,7 @@ component in React.
 <p align="center" width="100%">
 <img src="/images/w1-s16-k.png?raw=true"
   alt="Main section = payment."
-  width="40%" />
+  width="60%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-l. sidebar section (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2679,7 +2679,7 @@ component in React.
 <p align="center" width="100%">
 <img src="/images/w1-s16-l.png?raw=true"
   alt="Sidebar section."
-  width="40%" />
+  width="30%" />
 </p>
 
 First, a Header section using a component called header, then a Payment
