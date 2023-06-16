@@ -7318,46 +7318,46 @@ Instead, the component that needs the data simply gets it from the context API. 
   <summary>App.js</summary>
 
 ```
-1.	function Main(props) {
-2.	  return <Header msg={props.msg} />;
-3.	};
+1.  function Main(props) {
+2.    return <Header msg={props.msg} />;
+3.  };
 4.
-5.	function Header(props) {
-6.	  return (
-7.	    <div style={{ border: "10px solid whitesmoke" }}>
-8.	      <h1>Header here</h1>
-9.	      <Wrapper msg={props.msg} />
-10.	    </div>
-11.	  );
-12.	};
+5.  function Header(props) {
+6.    return (
+7.      <div style={{ border: "10px solid whitesmoke" }}>
+8.        <h1>Header here</h1>
+9.        <Wrapper msg={props.msg} />
+10.     </div>
+11.   );
+12. };
 13.
-14.	function Wrapper(props) {
-15.	  return (
-16.	    <div style={{ border: "10px solid lightgray" }}>
-17.	      <h2>Wrapper here</h2>
-18.	      <Button msg={props.msg} />
-19.	    </div>
-20.	  );
-21.	};
+14. function Wrapper(props) {
+15.   return (
+16.     <div style={{ border: "10px solid lightgray" }}>
+17.       <h2>Wrapper here</h2>
+18.       <Button msg={props.msg} />
+19.     </div>
+20.   );
+21. };
 22.
-23.	function Button(props) {
-24.	  return (
-25.	    <div style={{ border: "20px solid orange" }}>
-26.	      <h3>This is the Button component</h3>
-27.	      <button onClick={() => alert(props.msg)}>Click me!</button>
-28.	    </div>
-29.	  );
-30.	};
+23. function Button(props) {
+24.   return (
+25.     <div style={{ border: "20px solid orange" }}>
+26.       <h3>This is the Button component</h3>
+27.       <button onClick={() => alert(props.msg)}>Click me!</button>
+28.     </div>
+29.   );
+30. };
 31.
-32.	function App() {
-33.	  return (
-34.	    <Main
-35.	msg="I passed through the Header and the Wrapper and I reached the Button component"
-36.	    />
-37.	  );
-38.	};
+32. function App() {
+33.   return (
+34.     <Main
+35. msg="I passed through the Header and the Wrapper and I reached the Button component"
+36.     />
+37.   );
+38. };
 39.
-40.	export default App;
+40. export default App;
 ```
 
 </details>
