@@ -4382,7 +4382,7 @@ if (name == 'Bob') {
 };
 ```
 
-The above code works as follows:
+<p>The above code works as follows:</p>
 
 1.  First, I declare a <b>name</b> variable and set it to a string of
     <b>"Bob"</b>.
@@ -11651,27 +11651,27 @@ function calculateWinner(squares) {
 
 </details>
 
-As you iterate through history array inside the function you passed to
+<p>As you iterate through history array inside the function you passed to
 map, the squares argument goes through each element of history, and the
 move argument goes through each array index: 0, 1, 2, .... (In most
 cases, you'd need the actual array elements, but to render a list of
-moves you will only need indexes.)
+moves you will only need indexes).</p>
 
-For each move in the tic-tac-toe game's history, you create a list item
-<li> which contains a button <button>. The button has an onClick
+<p>For each move in the tic-tac-toe game's history, you create a list item
+&lt;li&gt; which contains a button &lt;button&gt;. The button has an onClick
 handler which calls a function called jumpTo (that you haven't
-implemented yet).
+implemented yet).</p>
 
-For now, you should see a list of the moves that occurred in the game
+<p>For now, you should see a list of the moves that occurred in the game
 and an error in the developer tools console. Let's discuss what the
-"key" error means.
+"key" error means.</p>
 
 <h4>Picking a key</h4>
 
-When you render a list, React stores some information about each
+<p>When you render a list, React stores some information about each
 rendered list item. When you update a list, React needs to determine
 what has changed. You could have added, removed, re-arranged, or updated
-the list's items.
+the list's items.</p>
 
 Imagine transitioning from
 
