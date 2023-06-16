@@ -2988,7 +2988,6 @@ props in order to make their apps more dynamic and flexible. Finally,
 you examined some of the limitations about using props in that you
 cannot use them to send data back to a parent component, and the
 functions using props must never modify its own props.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Dissecting props</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3120,12 +3119,12 @@ React.createElement(
 
 <h3>The third argument (...children)</h3>
 
-This is the inner content that will go inside the wrapping element.
+<p>This is the inner content that will go inside the wrapping element.
 It's what makes it possible to nest elements inside other elements,
-mimicking the way that HTML works.
+mimicking the way that HTML works.</p>
 
-In this section (20) you've learned how to use a transpiler to break JSX code
-to plain JavaScript, making its purpose more understandable.
+<p>In this section (20) you've learned how to use a transpiler to break JSX code
+to plain JavaScript, making its purpose more understandable.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Using props in components</h2>
@@ -3271,7 +3270,6 @@ replace the Hello with an opening curly brace props dot greet, closing curly bra
 I click file, save all and wait for the apps to compile. All my components are now 
 using the data they received from their parent components using their respective
 props objects.</p>
-
 <p>You should now be able to effectively demonstrate the passing of props to and within 
 a component using classes and functions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3496,7 +3494,7 @@ are some differences.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-g.png?raw=true"
   alt="JSX component syntax."
-  width="60%" />
+  width="40%" />
 </p>
 <p>For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
 This is because class is a reserved keyword in JavaScript, you must use a slightly different
@@ -3514,39 +3512,36 @@ do this later.</p>
   alt="JSX and HTML syntax."
   width="60%" />
 </p>
-For now, just know that this is the closest to what you would do like if you were working 
+<p>For now, just know that this is the closest to what you would do like if you were working 
 with HTML, and CSS website layouts.  There are some other differences, and you'll learn 
 about them later.  But in practical terms, you can consider the code to be pretty much just
-like regular HTML. 
-
-In this lesson, you explored further the concept of JSX styling, and how it's used in React. 
+like regular HTML.</p>
+<p>In this lesson, you explored further the concept of JSX styling, and how it's used in React. 
 You have now furthered your understanding of how to use JSX to mix JavaScript, HTML, and CSS 
-within a component. Great work.
+within a component. Great work.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 24 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>24. Props and children</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Previously, you learned that you could pass props to and within a
+<p>Previously, you learned that you could pass props to and within a
 component. But there is also a special prop known as <b>props.children,</b>
 which is automatically passed to every component. In this section (24),
-you'll learn about <b>props.children</b> and what its purpose is.
-
-To understand the concept of <b>props.children</b>, consider the following
+you'll learn about <b>props.children</b> and what its purpose is.</p>
+<p>To understand the concept of <b>props.children</b>, consider the following
 real-life situation: you have a couple of apples, and you have a couple
 of pears. You'd like to carry the apples some distance, so obviously,
-you'll use a bag.
+you'll use a bag.</p>
 
-It's not a "bag for apples". It's not a "bag for pairs". It's
+<p>It's not a "bag for apples". It's not a "bag for pairs". It's
 just a bag. Nothing about this bag makes it such that it needs to be
 referred to as a bag in which you'd only and always carry apples, nor a
-bag in which you'd only and always carry pears.
+bag in which you'd only and always carry pears.</p>
 
-In a way, the bag "doesn't care" if it is used to carry apples or
+<p>In a way, the bag "doesn't care" if it is used to carry apples or
 pears. Nothing about the bag changes. There are no changes in the bag's
 material, size, shape, or color - because it can handle apples or pears
-being carried inside of it, without issues.
-
-Now, consider the following component:
+being carried inside of it, without issues.</p>
+<p>Now, consider the following component:</p>
 
 <details>
   <summary>React Functions</summary>
@@ -3571,7 +3566,7 @@ export default Apples
 
 </details>
 
-There is also a <b>Pears</b> component:
+<p>There is also a <b>Pears</b> component:</p>
 
 ```
 function Pears(props) {
@@ -5112,11 +5107,10 @@ software engineer Katie.</p>
 summary of the fundamentals of HTML, CSS and JavaScript.</p>
 <p>And then you learned how to set up a project in VS Code and how to
 work with JavaScript modules.</p>
-
-The second lesson was all about react components and where they're
+<p>The second lesson was all about react components and where they're
 stored within your applications. In this lesson, you were introduced
 component-based architecture, a design philosophy for building software
-based on reusable components of code like the reactor library. 
+based on reusable components of code like the reactor library.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s33-b. react components and virtual dom (123) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5143,7 +5137,6 @@ understand how a component is built. And you learned how to build a new
 component inside the app component and have it rendered onscreen. As
 well as how to save a component to its own file and importing it into
 its parent component so that it can be rendered onscreen.</p>
-
 <p>The third lesson was about component use and styling. You learned how to
 pass data from one component to another using properties and your
 ability to do so was tested in the lab. And you learned how to render
@@ -5153,18 +5146,16 @@ JSX elements in a way that is functional and looks good.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w1-s33-d. use, define components and invoke functions (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w1-s33-d.png?raw=true"
   alt="Use props and components, define components, and invoke functions."
-  width="40%" />
-</p>
+  width="45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w1-s33-e. use expressions as props and declare components (124) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
 <img src="/images/w1-s33-e.png?raw=true"
   alt="Use and manipulate props &amp; components, define components using function expressions &amp; arrow functions."
-  width="40%" />
+  width="45%" />
 </p>
 
 As part of this lesson, you learned how to use and manipulate props and
@@ -5175,57 +5166,45 @@ embedded expressions in attributes.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ w1-s33-f. explain react &amp; create components (124) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p float="left">
 <img src="/images/w1-s33-f.png?raw=true"
   alt="Explain React and create components."
-  width="40%" />
-</p>
+  width="45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w1-s33-g. use props &amp; components, describe assets (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
 <img src="/images/w1-s33-g.png?raw=true"
   alt="Use props and components, describe assets."
-  width="40%" />
+  width="45%" />
 </p>
 
-After completing this module, you are now able to explain the concept
+<p>After completing this module, you are now able to explain the concept
 behind React and component architecture. Create a component to serve a
 specific purpose. Create a component folder and demonstrate how to
 create an import file within that folder. Use and manipulate props and
 components to affect visual results. And describe how to use assets
-within an app to apply styling and functional components.
+within an app to apply styling and functional components.</p>
 
-That's a great start to your React journey. Well done on completing
-this module and get ready for the next one.
-
+<p>That's a great start to your React journey. Well done on completing
+this module and get ready for the next one.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 34 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>34. Additional resources (React Basics - Module 1)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Below you will find links to helpful additional resources.
+<p>Below you will find links to helpful additional resources.</p>
 
-1.  [Components and
-    props](https://reactjs.org/docs/components-and-props.html) 
-    (https://legacy.reactjs.org/docs/components-and-props.html)
-
-2.  [Introducing JSX](https://reactjs.org/docs/introducing-jsx.html) 
-    (https://legacy.reactjs.org/docs/introducing-jsx.html)
-
-3.  [Styling and CSS in
-    React](https://reactjs.org/docs/faq-styling.html) 
-    (https://legacy.reactjs.org/docs/faq-styling.html)
-
-4.  [Introducing expressions in
-    JSX](https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx) 
-
-(https://legacy.reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx)
+<ol type="1">
+  <li><p><a href="https://reactjs.org/docs/components-and-props.html">Components and props</a>,</p></li>
+  <li><p><a href="https://reactjs.org/docs/introducing-jsx.html">Introducing JSX</a>,</p></li>
+  <li><p><a href="https://reactjs.org/docs/faq-styling.html">Styling and CSS in React</a>,</p></li>
+  <li><a href="https://reactjs.org/docs/introducing-jsx.html#embedding-expressions-in-jsx">Introducing expressions in JSX</a>.</li>
+</ol>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Module 2 - Data and State</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>01. Types of Events</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~ w2-s01-a. "clicks  movements  commands" (125) ~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w2-s01-a. "clicks  movements  commands" (125) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-a.png?raw=true"
@@ -5233,22 +5212,22 @@ Below you will find links to helpful additional resources.
   width="60%" />
 </p>
 
-By now, you're probably familiar with <b>events</b> in JavaScript. Recall
+<p>By now, you're probably familiar with <b>events</b> in JavaScript. Recall
 that events are the process by which JavaScript interacts with HTML and
 can occur when the user or the browser manipulates a page. They provide
 enhanced interactive experiences, such as responding to mouse clicks,
 movements, or keyboard commands. Because events usually rely on some
 interaction, they need to wait and listen in the background for that
-interaction to occur before they can be triggered.
+interaction to occur before they can be triggered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~ w2-s01-b. event listener button (125) ~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s01-b. event listener button (125) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s01-b.png?raw=true"
   alt="Event Listener Button - onclick."
-  width="60%" />
+  width="40%" />
 </p>
-Every HTML element contains a set of events that developers can access
+<p>Every HTML element contains a set of events that developers can access
 by using HTML attributes, commonly referred to as event listeners.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s01-c. on click, add to cart html (126) ~~~~~~~~~~~~~~~~~~-->
@@ -5321,7 +5300,6 @@ work with <b>events</b> as they are handled a bit differently.
 types of events available in React, and describe some of the most
 commonly used ones. You'll also know how to explain the event handling
 process in React at a high level.</p>
-
 <p>In React code, events are handled using <b>JSX event attributes</b>, which
 are very similar to HTML event attributes that you may be familiar with.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5932,7 +5910,7 @@ state, styling, and the use of turning the expressions.</p>
 of dark mode on. Based on whether the value of this variable is true or false,
 your component will render an H1 heading with some text in it. Either as
 a dark theme or as a light theme. Additionally, it's possible to switch
-the theme with a button click. 
+the theme with a button click.</p>
 <p>Now, let's continue with an in depth
 demonstration of event handling. I'm going to demonstrate event
 handling with an example so that you can gain practical insight into the
@@ -6286,7 +6264,7 @@ closing parenthesis.</p>
 <p>Once again, don't forget to export the components
 to make it available. Success.</p>
 <p>You've now created the <b>component</b> promo, which calls a function from
-the component <b>PromoHeading</b> to return the text 80 percent off sale.
+the component <b>PromoHeading</b> to return the text 80 percent off sale.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-e. promo component with child (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
