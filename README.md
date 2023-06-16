@@ -7318,45 +7318,45 @@ Instead, the component that needs the data simply gets it from the context API. 
   <summary>App.js</summary>
 
 ```
-1.	function Main(props) { 
-2.	  return <Header msg={props.msg} />; 
+1.	function Main(props) {
+2.	  return <Header msg={props.msg} />;
 3.	};
-4.	
-5.	function Header(props) { 
-6.	  return ( 
-7.	    <div style={{ border: "10px solid whitesmoke" }}> 
-8.	      <h1>Header here</h1> 
-9.	      <Wrapper msg={props.msg} /> 
-10.	    </div> 
-11.	  ); 
+4.
+5.	function Header(props) {
+6.	  return (
+7.	    <div style={{ border: "10px solid whitesmoke" }}>
+8.	      <h1>Header here</h1>
+9.	      <Wrapper msg={props.msg} />
+10.	    </div>
+11.	  );
 12.	};
-13.	
-14.	function Wrapper(props) { 
-15.	  return ( 
-16.	    <div style={{ border: "10px solid lightgray" }}> 
-17.	      <h2>Wrapper here</h2> 
-18.	      <Button msg={props.msg} /> 
-19.	    </div> 
+13.
+14.	function Wrapper(props) {
+15.	  return (
+16.	    <div style={{ border: "10px solid lightgray" }}>
+17.	      <h2>Wrapper here</h2>
+18.	      <Button msg={props.msg} />
+19.	    </div>
 20.	  );
 21.	};
-22.	
-23.	function Button(props) { 
-24.	  return ( 
-25.	    <div style={{ border: "20px solid orange" }}> 
-26.	      <h3>This is the Button component</h3> 
-27.	      <button onClick={() => alert(props.msg)}>Click me!</button> 
-28.	    </div> 
-29.	  ); 
+22.
+23.	function Button(props) {
+24.	  return (
+25.	    <div style={{ border: "20px solid orange" }}>
+26.	      <h3>This is the Button component</h3>
+27.	      <button onClick={() => alert(props.msg)}>Click me!</button>
+28.	    </div>
+29.	  );
 30.	};
-31.	
-32.	function App() { 
-33.	  return ( 
-34.	    <Main  
-35.	msg="I passed through the Header and the Wrapper and I reached the Button component"  
-36.	    /> 
-37.	  ); 
-38.	}; 
-39.	
+31.
+32.	function App() {
+33.	  return (
+34.	    <Main
+35.	msg="I passed through the Header and the Wrapper and I reached the Button component"
+36.	    />
+37.	  );
+38.	};
+39.
 40.	export default App;
 ```
 
@@ -7582,26 +7582,26 @@ In this section (20), you learned why and when to utilize stateful or stateless 
   <summary>React code:</summary>
 
 ```
-1.	import React from "react";
-2.	import Fruits from "./Fruits";
-3.	import FruitsCounter from "./FruitsCounter";
-4.	
-5.	function App() {
-6.	  const [fruits] = React.useState([
-7.	    {fruitName: 'apple', id: 1},
-8.	    {fruitName: 'apple', id: 2},
-9.	    {fruitName: 'plum', id: 3},
-10.	  ]);
-11.	
-12.	  return (
-13.	    <div className="App">
-14.	      <h1>Where should the state go?</h1>
-15.	      <Fruits fruits={fruits} />
-16.	      <FruitsCounter fruits={fruits} />
-17.	    </div>
-18.	  );
-19.	}
-20.	
+1.  import React from "react";
+2.  import Fruits from "./Fruits";
+3.  import FruitsCounter from "./FruitsCounter";
+4.
+5.  function App() {
+6.    const [fruits] = React.useState([
+7.      {fruitName: 'apple', id: 1},
+8.      {fruitName: 'apple', id: 2},
+9.      {fruitName: 'plum', id: 3},
+10.   ]);
+11.
+12.   return (
+13.     <div className="App">
+14.       <h1>Where should the state go?</h1>
+15.       <Fruits fruits={fruits} />
+16.       <FruitsCounter fruits={fruits} />
+17.     </div>
+18.   );
+19. }
+20.
 21.	export default App;
 ```
 
@@ -7610,27 +7610,27 @@ In this section (20), you learned why and when to utilize stateful or stateless 
 <p>Here is the completed Fruits.js file:</p>
 
 ```
-1.	function Fruits(props) {
-2.	  return (
-3.	    <div>
-4.	      {props.fruits.map(f => <p key={f.id}>{f.fruitName}</p>)}
-5.	    </div>
-6.	  )
-7.	}
-8.	
-9.	export default Fruits
+1.  function Fruits(props) {
+2.    return (
+3.      <div>
+4.        {props.fruits.map(f => <p key={f.id}>{f.fruitName}</p>)}
+5.      </div>
+6.    )
+7.  }
+8.
+9.  export default Fruits
 ```
 
 <p>Here is the completed FruitsCounter.js file:</p>
 
 ```
-1.	function FruitsCounter(props) {
-2.	  return (
-3.	    <h2>Total fruits: {props.fruits.length}</h2>
-4.	  )
-5.	}
-6.	
-7.	export default FruitsCounter;
+1.  function FruitsCounter(props) {
+2.    return (
+3.      <h2>Total fruits: {props.fruits.length}</h2>
+4.    )
+5.  }
+6.
+7.  export default FruitsCounter;
 ```
 
 <p>The completed app should look as follows:</p>
@@ -7650,18 +7650,18 @@ In this section (20), you learned why and when to utilize stateful or stateless 
 
 
 ```
-1.	const [fruits] = React.useState([
-2.	  {fruitName: 'apple', id: 1},
-3.	  {fruitName: 'apple', id: 2},
-4.	  {fruitName: 'plum', id: 3},
-5.	]);
+1.  const [fruits] = React.useState([
+2.    {fruitName: 'apple', id: 1},
+3.    {fruitName: 'apple', id: 2},
+4.    {fruitName: 'plum', id: 3},
+5.  ]);
 ```
 
 <p>You also need to cut the import React from "react"; at the very top of the Fruits component, since you no longer need to access the useState method on the React object from the Fruits file.</p>
 <p>Additionally, you need to add the import statement to the App component, which means that you should inject a new import at the very top of App.js:</p>
 
 ```
-1.	import React from "react";
+1.  import React from "react";
 ```
 
 <p>Once you've done that, you need to update the App component's return statement so that it sends the fruits data to the Fruits and FruitsCounter component - since both of these components need to get this state's data via props.</p>
@@ -7683,15 +7683,15 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <p>That means that the Fruits component will end up having the following code:</p>
 
 ```
-1.	function Fruits(props) {
-2.	  return (
-3.	    <div>
-4.	      {props.fruits.map(f => <p key={f.id}>{f.fruitName}</p>)}
-5.	    </div>
-6.	  )
-7.	}
-8.	
-9.	export default Fruits
+1.  function Fruits(props) {
+2.    return (
+3.      <div>
+4.        {props.fruits.map(f => <p key={f.id}>{f.fruitName}</p>)}
+5.      </div>
+6.    )
+7.  }
+8.
+9.  export default Fruits
 ```
 
 <h4>Step 3.</h4>
@@ -7701,16 +7701,16 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <p>The FruitsCounter component will end up having the following code:</p>
 
 ```
-1.	function FruitsCounter(props) {
-2.	  return (
-3.	    <h2>Total fruits: {props.fruits.length}</h2>
-4.	  )
-5.	}
-6.	
-7.	export default FruitsCounter;
+1.  function FruitsCounter(props) {
+2.    return (
+3.      <h2>Total fruits: {props.fruits.length}</h2>
+4.    )
+5.  }
+6.
+7.  export default FruitsCounter;
 ```
 
-That completes this ungraded lab's solution.
+<p>That completes this ungraded lab's solution.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 22 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>22. Module summary</h2>
@@ -8118,38 +8118,38 @@ In this section (03), you learned how to install the react-router library and ne
 Here is the Contact.js file:
 
 ```
-1.	function Contact() {
-2.	  return  <h1>Contact Little Lemon on this page.</h1>
-3.	}
-4.	export default Contact
+1.  function Contact() {
+2.    return  <h1>Contact Little Lemon on this page.</h1>
+3.  }
+4.  export default Contact
 ```
 
 Here is the completed App.js file:
 
 ```
-1.	import "./App.css";
-2.	import Homepage from "./Homepage";
-3.	import AboutLittleLemon from "./AboutLittleLemon";
-4.	import Contact from "./Contact";
-5.	import { Routes, Route, Link } from "react-router-dom";
-6.	
-7.	function App() {
-8.	  return (
-9.	    <div> 
-10.	      <nav>
-11.	        <Link to="/" className="nav-item">Homepage</Link>
-12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
-13.	        <Link to="/contact" className="nav-item">Contact</Link>
-14.	      </nav>
-15.	      <Routes> 
-16.	        <Route path="/" element={<Homepage />}></Route>
-17.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
-18.	        <Route path="/contact" element={<Contact />}></Route>
+1.  import "./App.css";
+2.  import Homepage from "./Homepage";
+3.  import AboutLittleLemon from "./AboutLittleLemon";
+4.  import Contact from "./Contact";
+5.  import { Routes, Route, Link } from "react-router-dom";
+6.
+7.  function App() {
+8.    return (
+9.      <div> 
+10.       <nav>
+11.         <Link to="/" className="nav-item">Homepage</Link>
+12.         <Link to="/about" className="nav-item">About Little Lemon</Link>
+13.         <Link to="/contact" className="nav-item">Contact</Link>
+14.       </nav>
+15.       <Routes> 
+16.         <Route path="/" element={<Homepage />}></Route>
+17.         <Route path="/about" element={<AboutLittleLemon />}></Route>
+18.         <Route path="/contact" element={<Contact />}></Route>
 19.	      </Routes>
-20.	    </div>
-21.	  );
+20.     </div>
+21.   );
 22.	};
-23.	
+23.
 24.	export default App;
 ```
 
@@ -8170,20 +8170,20 @@ First, you added a new file, Contact.js, to the root of the src folder.
 Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace. 
 
 ```
-1.	function Contact() {
-2.	
-3.	};
-4.	export default Contact;
+1.  function Contact() {
+2.
+3.  };
+4.  export default Contact;
 ```
 
 <h4>Step 3</h4>
 Next, inside the body of the Contact function, you added a return statement with the following code: <h1>Contact Little Lemon on this page.</h1>.
 
 ```
-1.	function Contact() {
-2.	  return  <h1>Contact Little Lemon on this page.</h1>
-3.	};
-4.	export default Contact;
+1.  function Contact() {
+2.    return  <h1>Contact Little Lemon on this page.</h1>
+3.  };
+4.  export default Contact;
 ```
 
 <h4>Step 4</h4>
@@ -8218,15 +8218,15 @@ Inside the App.js file, you imported the newly-built Contact component.
 Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.
 
 ```
-1.	import "./App.css";
-2.	import Homepage from "./Homepage";
-3.	import AboutLittleLemon from "./AboutLittleLemon";
-4.	import Contact from "./Contact";
-5.	import { Routes, Route, Link } from "react-router-dom";
-6.	
-7.	function App() {
-8.	  return (
-9.	    <div> 
+1.  import "./App.css";
+2.  import Homepage from "./Homepage";
+3.  import AboutLittleLemon from "./AboutLittleLemon";
+4.  import Contact from "./Contact";
+5.  import { Routes, Route, Link } from "react-router-dom";
+6.
+7.  function App() {
+8.    return (
+9.      <div> 
 10.	      <nav>
 11.	        <Link to="/" className="nav-item">Homepage</Link>
 12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
@@ -8247,31 +8247,32 @@ Inside the App.js file's App function's return statement, locate the nav element
 Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute set to {<Contact />}. 
 
 ```
-1.	import "./App.css";
-2.	import Homepage from "./Homepage";
-3.	import AboutLittleLemon from "./AboutLittleLemon";
-4.	import Contact from "./Contact";
-5.	import { Routes, Route, Link } from "react-router-dom";
-6.	
-7.	function App() {
-8.	  return (
-9.	    <div> 
-10.	      <nav>
-11.	        <Link to="/" className="nav-item">Homepage</Link>
-12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
-13.	        <Link to="/contact" className="nav-item">Contact</Link>
-14.	      </nav>
-15.	      <Routes> 
-16.	        <Route path="/" element={<Homepage />}></Route>
-17.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
-18.	        <Route path="/contact" element={<Contact />}></Route>
-19.	      </Routes>
-20.	    </div>
-21.	  );
-22.	};
+1.  import "./App.css";
+2.  import Homepage from "./Homepage";
+3.  import AboutLittleLemon from "./AboutLittleLemon";
+4.  import Contact from "./Contact";
+5.  import { Routes, Route, Link } from "react-router-dom";
+6.
+7.  function App() {
+8.    return (
+9.      <div> 
+10.       <nav>
+11.         <Link to="/" className="nav-item">Homepage</Link>
+12.         <Link to="/about" className="nav-item">About Little Lemon</Link>
+13.         <Link to="/contact" className="nav-item">Contact</Link>
+14.       </nav>
+15.       <Routes> 
+16.         <Route path="/" element={<Homepage />}></Route>
+17.         <Route path="/about" element={<AboutLittleLemon />}></Route>
+18.         <Route path="/contact" element={<Contact />}></Route>
+19.       </Routes>
+20.     </div>
+21.   );
+22. };
 ```
 
 <h4>Step 7</h4>
+
 You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Conditional rendering</h2>
@@ -8416,12 +8417,12 @@ Next, you create the two components that each holds one of the messages to be di
 <p>In that case, the CurrentMessage component might look like this:</p>
 
 ```
-1.	function CurrentMessage(props) {
-2.	  if (props.day >= 1 && props.day <= 5) {
-3.	    return <Workdays />
-4.	  }
-5.	    return <Weekends />
-6.	}
+1.  function CurrentMessage(props) {
+2.    if (props.day >= 1 && props.day <= 5) {
+3.      return <Workdays />
+4.    }
+5.      return <Weekends />
+6.  }
 ```
 
 <h4>Conditional rendering with the help of element variables</h4>
@@ -8430,16 +8431,16 @@ Next, you create the two components that each holds one of the messages to be di
 <p>Here’s an example of doing this with the CurrentMessage component:</p>
 
 ```
-1.	function CurrentMessage({day}) {
-2.	  const weekday = (day >= 1 && day <= 5);
-3.	  const weekend = (day >= 6 && day <= 7);
-4.	  let message;
-5.	
-6.	  if (weekday) {
-7.	    message = <Workdays />
-8.	  } else if (weekend) {
-9.	    message = <Weekends />
-10.	  } else {
+1.  function CurrentMessage({day}) {
+2.    const weekday = (day >= 1 && day <= 5);
+3.    const weekend = (day >= 6 && day <= 7);
+4.    let message;
+5.
+6.    if (weekday) {
+7.      message = <Workdays />
+8.    } else if (weekend) {
+9.      message = <Weekends />
+10.   } else {
 11.	    message = <ErrorComponent />
 12.	  }
 13.	
@@ -8456,21 +8457,22 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 <p>In the following component, here's how the && operator is used to achieve conditional rendering:</p>
 
 ```
-1.	function LogicalAndExample() {
-2.	  const val = prompt('Anything but a 0')
-3.	
-4.	  return (
-5.	    <div>
-6.	      <h1>Please don't type in a zero</h1>
-7.	      {val &&
-8.	        <h2>Yay, no 0 was typed in!</h2>
-9.	      }
-10.	    </div>
-11.	  )
-12.	}
+1.  function LogicalAndExample() {
+2.    const val = prompt('Anything but a 0')
+3.
+4.    return (
+5.      <div>
+6.        <h1>Please don't type in a zero</h1>
+7.        {val &&
+8.          <h2>Yay, no 0 was typed in!</h2>
+9.        }
+10.     </div>
+11.   )
+12. }
 ```
 
 <p>There are a few things to unpack here, so here is the explanation of the LogicalAndExample component, top to bottom:</p>
+
 <ol type="1">
   <li>First, you ask the user to type into the prompt, specifying that you require anything other than a zero character; and you save the input into the val value,</li>
   <li>In the return statement, an h1 heading is wrapped inside a div element, and then curly braces are used to include a JSX expression. Inside this JSX expression is a single && operator, which is surrounded by some code both on its left and on its right sides; on the left side, the val value is provided, and on the right, a piece of JSX is provided.</li>
@@ -8479,14 +8481,14 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 <p>To understand what will be output on screen, consider the following example in standard JavaScript:</p>
 
 ```
-1.	true && console.log('This will show')
+1.  true && console.log('This will show')
 ```
 
 <p>If you ran this command in the browser’s console, the text ‘This will show’ will be output.
 On the flip side, consider the following example:</p>
 
 ```
-1.	false && console.log('This will never show')
+1.  false && console.log('This will never show')
 ```
 
 <p>If you ran this command, the output will just be the boolean value of false.
@@ -8500,22 +8502,22 @@ In other words, if a prop gets evaluated to true, using the && operator, you can
 <p>For example, you can set a variable to a different value based on the result of a condition check.</p>
 
 ```
-1.	let name; 
-2.	if (Math.random() > 0.5) { 
-3.	  name = "Mike" 
-4.	} else { 
-5.	  name = "Susan" 
-6.	} 
+1.  let name; 
+2.  if (Math.random() > 0.5) { 
+3.    name = "Mike" 
+4.  } else { 
+5.    name = "Susan" 
+6.  } 
 ```
 
 ```
-1.	let name; 
-2.	let newUser = true; 
-3.	if (Math.random() > 0.5 && newUser) { 
-4.	  name = "Mike" 
-5.	} else { 
-6.	  name = "Susan" 
-7.	} 
+1.  let name; 
+2.  let newUser = true; 
+3.  if (Math.random() > 0.5 && newUser) { 
+4.    name = "Mike" 
+5.  } else { 
+6.    name = "Susan" 
+7.  } 
 ```
 
 <p>Conditional rendering is built on the same principle. By using conditions, you can return different child components. This is often done using the props that are passed into the parent component, but can also be done based on component state.</p>
@@ -8525,19 +8527,19 @@ In other words, if a prop gets evaluated to true, using the && operator, you can
 <p>In this example, the props contains a property named isLoggedIn. When this is set to true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.</p>
 
 ```
-1.	function LogInOutButton(props) {
-2.	  const isLoggedIn = props.isLoggedIn;
-3.	  if (isLoggedIn) {
-4.	    return <LogoutButton />;
-5.	  } else {
-6.	    return <LoginButton />;
-7.	}
+1.  function LogInOutButton(props) {
+2.    const isLoggedIn = props.isLoggedIn;
+3.    if (isLoggedIn) {
+4.      return <LogoutButton />;
+5.    } else {
+6.      return <LoginButton />;
+7.  }
 ```
 
 <p>Then when the LogInOutButton parent component is used, the prop can be passed in.</p>
 
 ```
-1.	<LogInOutButton isLoggedIn={false} />
+1.  <LogInOutButton isLoggedIn={false} />
 ```
 
 <p>This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.</p>
@@ -8704,16 +8706,16 @@ However, modern web development can get complex.
 Here is an example of the first few lines of code in a single file of a React application:
 
 ```
-1.	import React from 'react';
-2.	import '@atlaskit/css-reset';
-3.	import styled from 'styled-components';
-4.	import './index.css';
-5.	import { ThemeProvider } from './contexts/theme';
-6.	import { DragDropContext } from 'react-beautiful-dnd';
-7.	import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-8.	import Nav from './components/Nav';
-9.	import data from './data';
-10.	import Loading from './components/Loading';
+1.  import React from 'react';
+2.  import '@atlaskit/css-reset';
+3.  import styled from 'styled-components';
+4.  import './index.css';
+5.  import { ThemeProvider } from './contexts/theme';
+6.  import { DragDropContext } from 'react-beautiful-dnd';
+7.  import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+8.  import Nav from './components/Nav';
+9.  import data from './data';
+10. import Loading from './components/Loading';
 ```
  
 The imports here are from fictional libraries and resources because the specific libraries are not necessary. All these different imports can be of various file types: .js, .svg, .css, and so on.
