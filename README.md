@@ -9554,7 +9554,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 
 <p>The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-a.  (253) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-a.png?raw=true"
@@ -9563,7 +9563,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 </p>
 <p>In modern website navigation, the user interface is all about functionality. You learned about the most common navigation components, like the horizontal navigation bar, or navbar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-b.  (254) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-b.png?raw=true"
@@ -9581,7 +9581,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 </p>
 <p>You learned that there's a key difference between the navigation of websites built with React, versus those built with HTML and CSS. With React-powered web pages, called single-page applications or SPAs, the entire app is loaded inside a single div, so you're not actually visiting different pages like you would with hyperlinks in HTML files. That's because a single-page application, or SPA, comes with its own special implementation of anchor tags and links that give the illusion of loading different pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-d.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-d.png?raw=true"
@@ -9590,7 +9590,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 </p>
 <p>To achieve the solution of a multi-page websites, you learn that you need to add the React Router library to your React projects, and you practice using it to create and implement the basic navigation routes for our webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-e.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-e.png?raw=true"
@@ -9599,7 +9599,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 </p>
 <p>In this lesson's ungraded lab, you used code from the lesson item title to the navbar, and you had to add another link to the existing code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-f.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-f.png?raw=true"
@@ -9609,7 +9609,7 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 <p>After this, you learned about conditional rendering, which is necessary for React to be able to dynamically change webpage content. As part of this section, you learned how to set up conditional rendering using ternary operators to write simplified FL's conditions.</p>
 <p>The second lesson focused on using assets in React.  Here, you learn the assets of files that your app needs at run-time, like images, style sheets, fonts, video, or audio. You learned how developers keep assets organized in React, and about some common ways to import asset files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-g.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-g.png?raw=true"
@@ -9618,63 +9618,64 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 </p>
 <p>A common way to organize assets is to add an assets folder inside of the source folder, and keep all your app's assets there. Some assets can also be placed inside the public folder. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ w3-s18-h. advantages and disadvantages of embedded assets (256) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-h.png?raw=true"
-  alt="."
+  alt="Embedded assets: Advantages and Disadvantages."
   width="40%" />
 </p>
 <p>In this part of the module, you learned how to use embedded assets, and about the advantages and disadvantages of embedding assets, as well as about the trade-offs inherent in using asset-heavy apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-i. ungraded lab: add an image (256) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-i.png?raw=true"
-  alt="."
+  alt="Ungraded lab: Add an image."
   width="60%" />
 </p>
 <p>In the first ungraded lab of this lesson, you learned how to add an image from the assets folder that had already been added to the SRC folder. What's more, you also learned more about using audio and video assets in an app. Here you learned how to find suitable React packages to use when working with audio and video files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-j. three ways of adding videos (256) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-j.png?raw=true"
-  alt="."
+  alt="Three ways to add videos; serving local video, using embedded 3rd-party asshole videos, streamline using NPM."
   width="40%" />
 </p>
 <p>You learned about three ways of adding videos to your apps; by serving a local video using the video elements, using embedded third-party videos. We're using a third-party NPM package to streamline the process of adding videos to your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ w3-s18-k. frequency of updates, github page, internet search (257) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-k.png?raw=true"
-  alt="."
+  alt="Frequency of updates, Github page, Internet search."
   width="40%" />
 </p>
 <p>Additionally, you learned what you can do to help you decide what package to use. You should check the frequency of updates, check the packages GitHub page, and perform an internet search for the package name. To help you become familiar with using such packages, you learned how to install a React player package, and use it to render a media player in a React app.</p>
 <p>You learned how to apply common settings like automatic playback and starting volume.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w3-s18-l. ungraded lab: finish song app (257) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-l.png?raw=true"
-  alt="."
+  alt="Final ungraded lab and finish already built app to play bird sounds."
   width="40%" />
 </p>
 Your final ungraded lab of the module was to finish an already-built app with a user interface that allows visitors to play bird sounds by pressing buttons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w3-s18-m. describe react navigation design and more (257) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p align="center">
 <img src="/images/w3-s18-m.png?raw=true"
-  alt="."
+  alt="Describe React navigation design and more."
   width="30%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-n.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w3-s18-n. explain react project structure and more (257) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w3-s18-n.png?raw=true"
-  alt="."
+  alt="Explain React project structure, use and manipulate image and media assets."
   width="30%" />
 </p>
 <p>Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React.</p>
@@ -9685,7 +9686,7 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 <p>Here is a list of resources that may be helpful as you continue your learning journey.</p>
 
 <ul>
-  <li><p>webpack docs,</p></li>
+  <li><p><a href="https://webpack.js.org/guides/getting-started/">webpack docs</a>,</p></li>
   <li><p>webpack asset management,</p></li>
   <li><p>npm docs,</p></li>
   <li><p>ReactPlayer on npm,</p></li>
