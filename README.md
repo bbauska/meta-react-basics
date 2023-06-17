@@ -591,6 +591,9 @@ export function addThree(a + b + c) {
 
 <p>Here's another way you could do it:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function addTwo(a, b) {
   console.log(a + b);
@@ -602,6 +605,8 @@ function addThree(a + b + c) {
   
 export { addTwo, addThree };
 ```
+
+</details>
 
 <h3>Importing Modules</h3>
 
@@ -775,7 +780,7 @@ $ npm init react-app my-firstapp
 <p>Here's the output of executing the above command:</p>
 
 <details open>
-  <summary>NPM create-react-app</summary>
+  <summary>NPM create-react-app:</summary>
 
 ```
 Creating a new React app in /home/pc/Desktop/firstapp.
@@ -823,6 +828,9 @@ firstapp</b>, and then <b>$ npm start</b>.</p>
 
 <p>This will end up with the following output in the built-in terminal:</p>
 
+<details open>
+  <summary>Terminal output:</summary>
+
 ```
 Compiled successfully!
 You can now view firstapp in the browser.
@@ -834,6 +842,8 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 webpack compiled successfully
 ```
+
+</details>
 
 <p>Again, following the instructions, opening a browser with the address
 bar pointing to <a href="http://localhost:3000/">http://localhost:3000</a>, will
@@ -1773,7 +1783,7 @@ export default Example
 <p>Here is the completed solution code for the App.js file:</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 function Heading() { 
@@ -1811,6 +1821,9 @@ export default App;
 named <b>&lt;Heading /&gt;</b> , being rendered from the App component, since
 it is a part of the App component's return statement.</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
  function App() { 
    return ( 
@@ -1822,6 +1835,8 @@ it is a part of the App component's return statement.</p>
 } 
 export default App;
 ```
+
+</details>
 
 <p>Then, you added a new function to the App component, and named that
 function <b>Heading ()</b>. You placed it at the very top of the <b>App.js</b>
@@ -2185,6 +2200,9 @@ This will produce a brand-new starter app with a familiar structure.
 
 Inspecting the <b>src</b> folder of the starter app, it looks like this:
 
+<details open>
+  <summary>React components:</summary>
+
 ```
  src/
 
@@ -2197,7 +2215,12 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
      setupTests.js
 ```
 
-Then simply add a components folder to it, like this:
+</details>
+
+<p>Then simply add a components folder to it, like this:</p>
+
+<details open>
+  <summary>React components:</summary>
 
 ```
  src/
@@ -2213,12 +2236,14 @@ Then simply add a components folder to it, like this:
      setupTests.js
 ```
 
+</details>
+
 <p>Since the components folder is currently empty, you can add a component
 for each of the sections of the typography-focused blog. Here's the
 structural update:</p>
 
-<details>
-  <summary>React Components</summary>
+<details open>
+  <summary>React components:</summary>
 
 ```
 src/
@@ -2261,8 +2286,8 @@ Since they are all currently empty, you can start adding them, one by
 one.</p>
 <p>Here's the contents of the <b>Nav.js</b> file:</p>
 
-<details>
-  <summary>Nav.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Nav() {
@@ -2285,8 +2310,8 @@ export default Nav;
 
 <p>Next, you can focus on the <b>Promo.js</b> file:</p>
 
-<details>
-  <summary>Promo.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Promo() {
@@ -2311,8 +2336,8 @@ export default Promo;
 components.</p>
 <p>Here's <b>Intro1.js:</b></p>
 
-<details>
-  <summary>Intro1.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Intro1() {
@@ -2335,8 +2360,8 @@ export default Intro1;
 
 <p>Here's the code for the <b>Intro2.js</b> component:</p>
 
-<details>
-  <summary>Intro2.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Intro2() {
@@ -2360,7 +2385,7 @@ export default Intro2;
 <b>Intro3.js</b> component:</p>
 
 <details open>
-  <summary>React Functions</summary>
+  <summary>React code:</summary>
 
 ```
 function Intro3() {
@@ -2383,6 +2408,9 @@ export default Intro3;
 <p>There's just one more thing left to code, the <b>Footer</b> component, so
 here it is:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function Footer() {
   return (
@@ -2394,6 +2422,8 @@ function Footer() {
 
 export default Footer;
 ```
+
+</details>
 
 <p>Now that you have completed all the components for the app, here are a
 few more interesting things about the syntax.</p>
@@ -2705,7 +2735,7 @@ a components folder.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Creating and importing components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here are the contents of the Heading.js file:
+<p>Here are the contents of the Heading.js file:</p>
 
 ```
 function Heading() {
@@ -2717,7 +2747,10 @@ function Heading() {
 export default Heading;
 ```
 
-Here are the contents of the App.js file:
+<p>Here are the contents of the App.js file:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default App;
@@ -2729,6 +2762,8 @@ export default App;
      <div className="App">
        <Heading />
 ```
+
+</details>
 
 <p>Here is a screenshot of the src folder:</p>
 
@@ -2757,9 +2792,11 @@ export default App;
 <p><b>Step 1:</b> You moved the <b>Heading</b> function from App to a separate
 component file, named "Heading.js".</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function Heading() {
-
   return (
     <h1>This is an h1 heading</h1>
   )
@@ -2767,6 +2804,8 @@ function Heading() {
 
 export default Heading;
 ```
+
+</details>
 
 <p><b>Step 2:</b> Next, you imported the <b>Heading</b> component into the
 <b>App</b> component.</p>
@@ -2780,11 +2819,13 @@ starting code for "Your first component" ungraded lab</i> - so that only
 the <b>Heading</b> JSX element remains in the return statement of the App
 component.</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 import Heading from "./Heading";
 
 function App() {
-
    return (
     <div className="App">
       <Heading />
@@ -2793,6 +2834,7 @@ function App() {
 }
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Additional resources (React components)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3091,6 +3133,9 @@ an empty object.</p>
 <p>In that case, your code would contain a pair of curly braces instead of
 the word <b>null</b>:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 "use strict";
   
@@ -3102,6 +3147,8 @@ function App() {
   );
 }
 ```
+
+</details>
 
 <p>This object is referred to as the <i>props</i> object. It is the main
 mechanism of sending data from a parent component to a child component
@@ -3278,6 +3325,9 @@ a component using classes and functions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed App.js file:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 import Heading from "./Heading";
 
@@ -3292,6 +3342,8 @@ function App() {
   
 export default App;
 ```
+
+</details>
 
 <p>And here is the completed Heading.js file:</p>
 
@@ -3348,6 +3400,9 @@ export default Heading;
 located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
 <b>firstName</b> and give it the value of <b>Bob</b>.</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 import Heading from "./Heading";
   
@@ -3362,12 +3417,17 @@ function App() {
 export default App;
 ```
 
+</details>
+
 <p><b>Step 4:</b> You saved all your changes and ran the app to preview the
 updates in the browser, and confirm that the page shows an <b>h1</b>
 element with the text that reads "Hello, Bob".</p>
 
 <p><b>Step 5:</b> Then, you changed <b>firstName</b> to any name other than 'Bob'
 and see how the page updates with the new name.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 import Heading from "./Heading";
@@ -3383,9 +3443,14 @@ function App() {
 export default App;
 ```
 
+</details>
+
 <p><b>Step 6:</b> Finally, you added a second <b>&lt;Heading /&gt;</b> after the
 first one.  Again, adding the <b>firstName</b> attribute and choosing
 another name for this value.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 import Heading from "./Heading";
@@ -3402,6 +3467,7 @@ function App() {
 export default App;
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Introducing JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3545,8 +3611,8 @@ material, size, shape, or color - because it can handle apples or pears
 being carried inside of it, without issues.</p>
 <p>Now, consider the following component:</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Apples(props) {
@@ -3586,8 +3652,8 @@ This is where <b>props.children</b> comes in.
 
 You can define a <b>Bag</b> component as follows:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Bag(props) {
@@ -3774,6 +3840,9 @@ The <b>href</b> attribute loads some CSS styles, probably with some CSS
 classes, and then, inside the function component's declarations, you
 can access those CSS classes using the <b>className</b> attribute.
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function Promo(props) {
   return (
@@ -3789,7 +3858,9 @@ function Promo(props) {
 }
 ```
 
-In CSS:
+</details>
+
+<p>In CSS:</p>
 
 ```
 .promo-section {
@@ -3798,15 +3869,15 @@ In CSS:
 }
 ```
 
-Another way to add CSS styles to components is using inline styles.
+<p>Another way to add CSS styles to components is using inline styles.</p>
 
-The syntax of inline styles in JSX is a bit custom.
+<p>The syntax of inline styles in JSX is a bit custom.</p>
 
-Consider a starting <b>Promo</b> component, containing code that you
-encountered earlier:
+<p>Consider a starting <b>Promo</b> component, containing code that you
+encountered earlier:</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Promo(props) {
@@ -3829,8 +3900,8 @@ export default Promo;
 
 Now you can add some inline styles to it:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Promo(props) {
@@ -3891,8 +3962,8 @@ literal.
 That gives you an updated <b>Promo</b> component, with the styles object
 saved as a JavaScript variable:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Promo(props) {
@@ -4397,38 +4468,38 @@ if (name == 'Bob') {
     <b>else</b> block will execute and output the words <b>"Hello,
     Friend"</b> in the console.
 
-Above, I gave you an example of using an <b>if...else</b> conditional. Did
+<p>Above, I gave you an example of using an <b>if...else</b> conditional. Did
 you know that there is another, different way, to effectively do the
-same thing? 
+same thing?</p>
 
-It's known as the <b>ternary operator</b>. A ternary operator in JavaScript uses 
+<p>It's known as the <b>ternary operator</b>. A ternary operator in JavaScript uses 
 two distict characters: the first oneis <b>the question mark</b>, that is, the 
 <b>?</b> character. To the left of the <b>?</b> character, you put <i>a condition 
-that you'd like to check for</i>. 
+that you'd like to check for</i>.</p>
 
-Just like I did in the above <b>if...else</b> statement, the condition I'm
+<p>Just like I did in the above <b>if...else</b> statement, the condition I'm
 checking is <b>name == 'Bob'</b>. In other words, I'm asking the
 JavaScript engine to look at the value that's stored inside the
 <b>name</b> variable, and to verify if that value is the same as
 <b>'Bob'</b>. If it is, then the JavaScript engine will return the
 boolean value of <b>true</b>. If the value of the <b>name</b> variable is
 something different from <b>'Bob'</b>, the value that the JavaScript
-engine returns will be the boolean value of <b>false</b>.
+engine returns will be the boolean value of <b>false</b>.</p>
 
-Here is the code that reflects the explanation in the previous
-paragraph:
+<p>Here is the code that reflects the explanation in the previous
+paragraph:</p>
 
 ```
 name == 'Bob' ?
 ```
 
-Note that the above code is incompleted. I have the condition that I'm
+<p>Note that the above code is incompleted. I have the condition that I'm
 checking (the <b>name == 'Bob'</b> part). I also have the <b>?</b>
 character, that is, the first of the two characters needed to construct
 a syntactically valid ternary operator. However, I still need the second
 character, which is the colon, that is the <b>:</b> character. This
 character is placed after the question mark character. I can now expand
-my code to include this as well:
+my code to include this as well:</p>
 
 ```
 name == 'Bob' ? :
@@ -4461,6 +4532,9 @@ name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend')
 Let's examine an example of a component which uses a ternary expression
 to randomly change the text that is displayed.
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function Example() {
   return (
@@ -4471,12 +4545,14 @@ function Example() {
 };
 ```
 
-Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
-want it to parse the code inside as regular JavaScript.
+</details.
 
-Then, inside the curly braces, you can add a ternary statement. Every
+<p>Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
+want it to parse the code inside as regular JavaScript.</p>
+
+<p>Then, inside the curly braces, you can add a ternary statement. Every
 ternary statement conceptually, expressed in pseudo-code, works like
-this:
+this:</p>
 
 ```
 comparison ? true : false
@@ -4506,6 +4582,9 @@ that return value is <b>undefined</b>.
 Like the previous example, you can use function invocation inside JSX to
 return a random number:
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function Example2() {
   return (
@@ -4518,11 +4597,16 @@ function Example2() {
 };
 ```
 
-In the <b>Example2</b> component, built-in <b>Math.floor()</b> and
-<b>Math.random()</b> methods are being used, as well as some number values
-and arithmetic operators, to display a random number between 0 and 10.
+</details>
 
-You can also extract this functionality into a separate function:
+<p>In the <b>Example2</b> component, built-in <b>Math.floor()</b> and
+<b>Math.random()</b> methods are being used, as well as some number values
+and arithmetic operators, to display a random number between 0 and 10.</p>
+
+<p>You can also extract this functionality into a separate function:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Example3() {
@@ -4535,12 +4619,14 @@ function Example3() {
 };
 ```
 
-The <b>getRandomNum()</b> function can also be written as a function
-declaration, or as a function expression. It does not have to be an
-arrow function.
+</details>
 
-But let's observe both alternatives: the function expression <i>and</i> the
-function declaration.
+<p>The <b>getRandomNum()</b> function can also be written as a function
+declaration, or as a function expression. It does not have to be an
+arrow function.</p>
+
+<p>But let's observe both alternatives: the function expression <i>and</i> the
+function declaration.</p>
 
 <h4>Function expression:</h4>
 
@@ -4576,8 +4662,8 @@ arithmetic operations.</p>
 
 <p>For example:</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 const bool = false; 
@@ -4613,8 +4699,8 @@ What is happening here is several props are being passed to the
 <b>Example</b> component, and rendering each of these props' values to the
 screen.
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 const bool = false;
@@ -4744,8 +4830,8 @@ this case the SRC attribute of an html image tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here's the completed App.js file:</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.	import "./App.css";
@@ -4764,6 +4850,11 @@ this case the SRC attribute of an html image tag.</p>
 14.	
 15.	export default App;
 ```
+
+</details>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -4787,8 +4878,8 @@ export default App;
 
 <p>Here's the completed Card.js file:</p>
 
-<details>
-  <summary>Card.js</summary>
+<details open>
+  <summary>React code:</summary>
   
 ```
 function Card(props) {
@@ -4817,8 +4908,8 @@ export default Card;
 </p>
 <!-- {width="6.020833333333333in" height="3.3621489501312336in"} -->
 
-<b>Step 1.</b> Your first task is to add a Card.js file, and inside of
-that file, declare a <b>Card</b> function.  
+<p><b>Step 1.</b> Your first task is to add a Card.js file, and inside of
+that file, declare a <b>Card</b> function.</p>
 
 ```
 function Card(props) {
@@ -4826,9 +4917,9 @@ function Card(props) {
 };
 ```
 
-<b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you add a
+<p><b>Step 2.</b> Inside the Card.js file's <b>Card</b> function, you add a
 <b>return</b> statement with two parentheses after it, to allow the
-<b>return</b> statement to spread onto several lines. 
+<b>return</b> statement to spread onto several lines.</p>
 
 ```
 function Card(props) {
@@ -4838,8 +4929,8 @@ function Card(props) {
 };
 ```
 
-<b>Step 3.</b> Inside the <b>return</b> statement, you need to add a
-wrapping <b>div</b> element.
+<p><b>Step 3.</b> Inside the <b>return</b> statement, you need to add a
+wrapping <b>div</b> element.</p>
 
 ```
 function Card(props) {
@@ -4850,8 +4941,11 @@ function Card(props) {
 };
 ```
 
-<b>Step 4.</b> Inside the wrapping <b>div</b> element, you need to add an
-<b>h2</b> element, and under it, an <b>h3</b> element. 
+<p><b>Step 4.</b> Inside the wrapping <b>div</b> element, you need to add an
+<b>h2</b> element, and under it, an <b>h3</b> element.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Card(props) {
@@ -4864,7 +4958,12 @@ function Card(props) {
 };
 ```
 
-<b>Step 5.</b> Inside the <b>h2</b> element add the JSX expression: {props.h2}. 
+</details>
+
+<p><b>Step 5.</b> Inside the <b>h2</b> element add the JSX expression: {props.h2}.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Card(props) {
@@ -4877,7 +4976,12 @@ function Card(props) {
 };
 ```
 
-<b>Step 6.</b> Inside the <b>h3</b> element add the JSX expression: <b>{props.h3}</b>. 
+</details>
+
+<p><b>Step 6.</b> Inside the <b>h3</b> element add the JSX expression: <b>{props.h3}</b>.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Card(props) {
@@ -4890,7 +4994,12 @@ function Card(props) {
 };
 ```
 
-<b>Step 7.</b> Then, add <b>export default Card;</b> at the bottom of the Card component.
+</details>
+
+<p><b>Step 7.</b> Then, add <b>export default Card;</b> at the bottom of the Card component.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Card(props) {
@@ -4905,10 +5014,12 @@ function Card(props) {
 export default Card;
 ```
 
-<b>Step 8.</b> Back inside the App component, import the <b>Card</b> component. 
+</details>
 
-<details>
-  <summary>App.js</summary>
+<p><b>Step 8.</b> Back inside the App component, import the <b>Card</b> component.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -4927,11 +5038,11 @@ export default App;
 
 </details>
 
-<b>Step 9.</b> Inside the App component's <b>return</b> statement, under the
-<b>h1</b> element, add three <b>&lt;Card /&gt;</b> JSX elements.
+<p><b>Step 9.</b> Inside the App component's <b>return</b> statement, under the
+<b>h1</b> element, add three <b>&lt;Card /&gt;</b> JSX elements.</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -4953,11 +5064,11 @@ export default App;
 
 </details>
 
-<b>Step 10.</b> You need to add the <b>h2</b> prop to the first <b>&lt;Card
-/&gt;</b> element, like this: <b>h2="First card's h2"</b>. 
+<p><b>Step 10.</b> You need to add the <b>h2</b> prop to the first <b>&lt;Card
+/&gt;</b> element, like this: <b>h2="First card's h2"</b>.</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -4979,11 +5090,11 @@ export default App;
 
 </details>
 
-<b>Step 11.</b> You need to add the <b>h3</b> prop to the first <b>&lt;Card
-/&gt;</b> element, like so: <b>h3="First card's h3"</b>. 
+<p><b>Step 11.</b> You need to add the <b>h3</b> prop to the first <b>&lt;Card
+/&gt;</b> element, like so: <b>h3="First card's h3"</b>.</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -5005,12 +5116,12 @@ export default App;
 
 </details>
 
-<b>Step 12.</b> You should next add the <b>h2</b> and <b>h3</b> props to the
+<p><b>Step 12.</b> You should next add the <b>h2</b> and <b>h3</b> props to the
 second <b>&lt;Card /&gt;</b> element, with the <b>h2</b> reading: <b>"Second
-card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>. 
+card's h2"</b>, and the <b>h3</b> reading <b>"Second card's h3"</b>.</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -5032,12 +5143,12 @@ export default App;
 
 </details>
 
-<b>Step 13.</b> Next, add the <b>h2</b> and <b>h3</b> props to the
+<p><b>Step 13.</b> Next, add the <b>h2</b> and <b>h3</b> props to the
 third <b>&lt;Card /&gt;</b> element, with the h2 reading: <b>"Third card's
-h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>. 
+h2"</b>, and the <b>h3</b> reading <b>"Third card's h3"</b>.</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -5060,12 +5171,12 @@ export default App;
 
 </details>
 
-<b>Step 14.</b> You need to add the <b>className</b> attribute to the
+<p><b>Step 14.</b> You need to add the <b>className</b> attribute to the
 Card.js file's <b>Card</b> function's <b>return</b> statement's wrapping
-<b>div</b> element.  That's it!  You've done it!
+<b>div</b> element.  That's it!  You've done it!</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import "./App.css";
@@ -5810,12 +5921,12 @@ attribute, use this syntax.
 
 <h4>Handling events using separate function declarations</h4>
 
-With this approach, you declare a separate ES5 function declaration, and
+<p>With this approach, you declare a separate ES5 function declaration, and
 then you reference its name in the event-handling <b>onClick</b> attribute,
-as follows:
+as follows:</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function App() {
@@ -5838,29 +5949,29 @@ export default App;
 
 </details>
 
-This syntax makes sense to be used when your onClick logic is too
+<p>This syntax makes sense to be used when your onClick logic is too
 complex to easily fit into an anonymous function. While this example is
 not really showing this scenario, imagine a function that has, for
 example, 20 lines of code, and that needs to be ran when the click event
 is triggered. This is a perfect use-case for a separate function
-declaration.
+declaration.</p>
 
 <h4>Handling events using separate function expressions</h4>
 
-<b>Tip</b>: A way to determine if a function is defined as an expression
+<p><b>Tip</b>: A way to determine if a function is defined as an expression
 or a declaration is: if it does not start the line with the keyword
-<b>function</b>, then it's an expression.
+<b>function</b>, then it's an expression.</p>
 
-In the following example, you're assigning an anonymous ES6 arrow
+<p>In the following example, you're assigning an anonymous ES6 arrow
 function to a <b>const</b> variable -- hence, this is a function
-expression.
+expression.</p>
 
-You're then using this const variable's name to handle the <b>onClick</b>
+<p>You're then using this const variable's name to handle the <b>onClick</b>
 event, so this is an example of handling events using a separate
-function expression.
+function expression.</p>
 
-<details>
-  <summary>function App</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function App() {
@@ -6062,8 +6173,8 @@ events on a single JSX element.</p>
 
 <h4>App.js</h4>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  function App() {
@@ -6098,8 +6209,11 @@ events on a single JSX element.</p>
   width="70%" />
 </p>
 <!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
-<b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
-closing <b>button</b> tag, to the App component's <b>h1</b> element . 
+<p><b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
+closing <b>button</b> tag, to the App component's <b>h1</b> element.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  function App() {
@@ -6115,8 +6229,13 @@ closing <b>button</b> tag, to the App component's <b>h1</b> element . 
 11. export default App;
 ```
 
-<b>Step 2.</b> In between the opening and closing <b>button</b> tags, you
-added the following text: Guess the number between 1 and 3. 
+</details>
+
+<p><b>Step 2.</b> In between the opening and closing <b>button</b> tags, you
+added the following text: Guess the number between 1 and 3.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  function App() {
@@ -6132,9 +6251,14 @@ added the following text: Guess the number between 1 and 3. 
 11. export default App;
 ```
 
-<b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
+</details>
+
+<p><b>Step 3.</b> Next, inside the opening <b>button</b> tag, you added the
 <b>onClick</b> event-handling attribute, and passed it the following JSX
-expression: <b>{handleClick}</b>. 
+expression: <b>{handleClick}</b>.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function App() {
@@ -6149,12 +6273,14 @@ function App() {
 export default App;
 ```
 
-<b>Step 4.</b> Then, above the <b>return</b> statement of the App component -
-but still inside the App function - you added the following ES5 function
-declaration: 
+</details>
 
-<details>
-  <summary>App.js</summary>
+<p><b>Step 4.</b> Then, above the <b>return</b> statement of the App component -
+but still inside the App function - you added the following ES5 function
+declaration:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function App() {
@@ -6177,16 +6303,16 @@ export default App;
 
 </details>
 
-<b>Step 5.</b> Finally, you saved your changes and ran the app to preview
+<p><b>Step 5.</b> Finally, you saved your changes and ran the app to preview
 it in the browser. You should then be able to click a button, which will
 show a prompt pop up which you can type into. After that, an alert pop
 up will show computer's "choice" and your guess. After you click "ok" to
 close the alert, you'll be able to click the button again and try
-matching the number "chosen" by the computer one more time. 
+matching the number "chosen" by the computer one more time.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Additional resources (Data &amp; State - module 2)</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is a list of resources that may be helpful as you continue your learning journey:
+<p>Here is a list of resources that may be helpful as you continue your learning journey:</p>
 
 -   [Handling
     Events](https://reactjs.org/docs/handling-events.html#gatsby-focus-wrapper) 
@@ -6743,8 +6869,8 @@ user types within this text field. You can add state and use the
 get updated with the latest text that has been typed.</p>
 <p>Let's discuss the below example.</p>
 
-<details>
-  <summary>React</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import { useState } from 'react';
@@ -6845,8 +6971,8 @@ registration form with fields for first name, last name and email.
 </p>
 <!-- {width="5.375in" height="2.4791666666666665in"} -->
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import { useState } from 'react';
@@ -6937,8 +7063,8 @@ form handling, animation, timers, and many more.</p>
 When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
 The <b>ref</b> object has a property named <b>current</b>.
 
-<details>
-  <summary>React Function</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function TextInputWithFocusButton() {
@@ -7313,8 +7439,8 @@ Instead, the component that needs the data simply gets it from the context API. 
 <p>Please note that the goal here is not to build an app that would exist in the real world. The goal of this app is to examine the practice of prop drilling, so that you can focus on it and understand it in isolation.</p>
 <p>Here is the code for the app:</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  function Main(props) {
@@ -7575,7 +7701,7 @@ In this section (20), you learned why and when to utilize stateful or stateless 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here is the completed App.js file:</p>
 
-<details>
+<details open>
   <summary>React code:</summary>
 
 ```
@@ -9543,7 +9669,7 @@ and fully understanding it will give you a deep understanding of React.</p>
 React.</p>
 <p>You can see what it will look like when you're finished here:</p>
 
-<details>
+<details open>
   <summary>React functions</summary>
 
 ```
@@ -9852,8 +9978,8 @@ square a number to make sure you know where each square is displayed.</p>
 
 <p>In the App.js file, update the Square component to look like this:</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Square() {
@@ -9905,8 +10031,8 @@ export default function Board() {
 
 <p>At this point your code should look something like this:</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -9966,8 +10092,8 @@ export default function Board() {
 <p>Then you'll update the Board component to render that Square component
 using JSX syntax:</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 // ...
@@ -10070,8 +10196,8 @@ For now, you should see an empty board:
 Square component it renders yet. To fix it you'll add the value prop to
 each Square component rendered by the Board component:</p>
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -10112,8 +10238,8 @@ Now you should see a grid of numbers again:
 
 Your updated code should look like this:
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Square({ value }) {
@@ -10151,6 +10277,9 @@ Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
 the props of the button JSX element returned from the Square:
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function Square({ value }) {
   function handleClick() {
@@ -10167,32 +10296,34 @@ function Square({ value }) {
 }
 ```
 
-If you click on a square now, you should see a log saying "clicked!"
-in the Console tab at the bottom of the Browser section in CodeSandbox.
-Clicking the square more than once will log "clicked!" again. Repeated
+</details>
+
+<p>If you click on a square now, you should see a log saying "clicked!"
+in the Console tab at the bottom of the Browser section in CodeSandbox.</p>
+<p>Clicking the square more than once will log "clicked!" again. Repeated
 console logs with the same message will not create more lines in the
 console. Instead, you will see an incrementing counter next to your
-first "clicked!" log.
+first "clicked!" log.</p>
 
 <h4>Note</h4>
 
-If you are following this tutorial using your local development
+<p>If you are following this tutorial using your local development
 environment, you need to open your browser's Console. For example, if
 you use the Chrome browser, you can view the Console with the keyboard
 shortcut <b>Shift + Ctrl + J</b> (on Windows/Linux) or <b>Option + ⌘ + J</b>
-(on macOS).
+(on macOS).</p>
 
-As a next step, you want the Square component to "remember" that it got
+<p>As a next step, you want the Square component to "remember" that it got
 clicked, and fill it with an "X" mark. To "remember" things, components
-use <i>state</i>.
+use <i>state</i>.</p>
 
-React provides a special function called useState that you can call from
+<p>React provides a special function called useState that you can call from
 your component to let it "remember" things. Let's store the current
-value of the Square in state, and change it when the Square is clicked.
+value of the Square in state, and change it when the Square is clicked.</p>
 
-Import useState at the top of the file. Remove the value prop from the
+<p>Import useState at the top of the file. Remove the value prop from the
 Square component. Instead, add a new line at the start of the Square
-that calls useState. Have it return a state variable called value:
+that calls useState. Have it return a state variable called value:</p>
 
 ```
 import { useState } from 'react';
@@ -10204,16 +10335,16 @@ function Square() {
     //...
 ```
 
-value stores the value and setValue is a function that can be used to
+<p>value stores the value and setValue is a function that can be used to
 change the value. The null passed to useState is used as the initial
-value for this state variable, so value here starts off equal to null.
+value for this state variable, so value here starts off equal to null.</p>
 
-Since the Square component no longer accepts props anymore, you'll
+<p>Since the Square component no longer accepts props anymore, you'll
 remove the value prop from all nine of the Square components created by
-the Board component:
+the Board component:</p>
 
-<details>
-  <summary>React Function</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 // ...
@@ -10246,8 +10377,8 @@ Now you'll change Square to display an "X" when clicked. Replace the
 console.log("clicked!"); event handler with setValue('X');. Now your
 Square component looks like this:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Square() {
@@ -10289,11 +10420,12 @@ component, React automatically updates the child components inside too.
 
 After you've made the above changes, your code will look like this:
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code</summary>
 
 ```
 import { useState } from 'react';
+
 function Square() {
   const [value, setValue] = useState(null);
   function handleClick() {
@@ -10308,6 +10440,7 @@ function Square() {
     </button>
   );
 }
+
 export default function Board() {
   return (
     <>
@@ -10424,8 +10557,8 @@ the squares array will look like this:
 Now your Board component needs to pass the value prop down to each
 Square that it renders:
 
-<details>
-  <summary>React Code</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -10477,8 +10610,8 @@ At this point you should see an empty tic-tac-toe board:
 
 And your code should look like this:
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -10555,6 +10688,9 @@ component that you'll name handleClick. To connect onSquareClick to
 handleClick you'll pass a function to the onSquareClick prop of the
 first Square component:
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -10567,8 +10703,13 @@ export default function Board() {
 }
 ```
 
-Lastly, you will define the handleClick function inside the Board
-component to update the squares array holding your board's state:
+</details>
+
+<p>Lastly, you will define the handleClick function inside the Board
+component to update the squares array holding your board's state:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -10584,34 +10725,39 @@ export default function Board() {
 }
 ```
 
-The handleClick function creates a copy of the squares array
+</details>
+
+<p>The handleClick function creates a copy of the squares array
 (nextSquares) with the JavaScript slice() Array method. Then,
 handleClick updates the nextSquares array to add X to the first ([0]
-index) square.
+index) square.</p>
 
-Calling the setSquares function lets React know the state of the
+<p>Calling the setSquares function lets React know the state of the
 component has changed. This will trigger a re-render of the components
 that use the squares state (Board) as well as its child components (the
-Square components that make up the board).
+Square components that make up the board).</p>
 
 <h4>Note</h4>
 
-JavaScript supports
-[closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+<p>JavaScript supports <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">closures</a>
 which means an inner function (e.g. handleClick) has access to variables
 and functions defined in a outer function (e.g. Board). The handleClick
 function can read the squares state and call the setSquares method
-because they are both defined inside of the Board function.
+because they are both defined inside of the Board function.</p>
 
-Now you can add X's to the board... but only to the upper left square.
+<p>Now you can add X's to the board... but only to the upper left square.
 Your handleClick function is hardcoded to update the index for the upper
 left square (0). Let's update handleClick to be able to update any
 square. Add an argument i to the handleClick function that takes the
-index of the square to update:
+index of the square to update:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
+  
   function handleClick(i) {
     const nextSquares = squares.slice();
     nextSquares[i] = "X";
@@ -10623,41 +10769,43 @@ export default function Board() {
 }
 ```
 
-Next, you will need to pass that i to handleClick. You could try to set
+</details>
+
+<p>Next, you will need to pass that i to handleClick. You could try to set
 the onSquareClick prop of square to be handleClick(0) directly in the
-JSX like this, but it won't work:
+JSX like this, but it won't work:</p>
 
 ```
 <Square value={squares[0]} onSquareClick={handleClick(0)} />
 ```
 
-Here is why this doesn't work. The handleClick(0) call will be a part of
+<p>Here is why this doesn't work. The handleClick(0) call will be a part of
 rendering the board component. Because handleClick(0) alters the state
 of the board component by calling setSquares, your entire board
 component will be re-rendered again. But this runs handleClick(0) again,
-leading to an infinite loop:
+leading to an infinite loop:</p>
 
 <h4>Console</h4>
 
-Too many re-renders. React limits the number of renders to prevent an
-infinite loop.
+<p>Too many re-renders. React limits the number of renders to prevent an
+infinite loop.</p>
 
-Why didn't this problem happen earlier?
+<p>Why didn't this problem happen earlier?</p>
 
-When you were passing onSquareClick={handleClick}, you were passing the
+<p>When you were passing onSquareClick={handleClick}, you were passing the
 handleClick function down as a prop. You were not calling it! But now
 you are <i>calling</i> that function right away--notice the parentheses in
 handleClick(0)--and that's why it runs too early. You don't <i>want</i> to
-call handleClick until the user clicks!
+call handleClick until the user clicks!</p>
 
-You could fix by creating a function like handleFirstSquareClick that
+<p>You could fix by creating a function like handleFirstSquareClick that
 calls handleClick(0), a function like handleSecondSquareClick that calls
 handleClick(1), and so on. You would pass (rather than call) these
 functions down as props like onSquareClick={handleFirstSquareClick}.
-This would solve the infinite loop.
+This would solve the infinite loop.</p>
 
-However, defining nine different functions and giving each of them a
-name is too verbose. Instead, let's do this:
+<p>However, defining nine different functions and giving each of them a
+name is too verbose. Instead, let's do this:</p>
 
 ```
 export default function Board() {
@@ -10681,8 +10829,8 @@ Now you need to update the other eight squares to call handleClick from
 the arrow functions you pass. Make sure that the argument for each call
 of the handleClick corresponds to the index of the correct square:
 
-<details>
-  <summary>React Function</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -10737,7 +10885,7 @@ component!
 
 This is what your code should look like:
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -10906,8 +11054,8 @@ determine which player goes next and the game's state will be saved.
 You'll update the Board's handleClick function to flip the value of
 xIsNext:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -10969,7 +11117,7 @@ function handleClick(i) {
 Now you can only add X's or O's to empty squares! Here is what your code
 should look like at this point:
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -11021,8 +11169,8 @@ squares, checks for a winner and returns 'X', 'O', or null as
 appropriate. Don't worry too much about the calculateWinner function;
 it's not specific to React:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Board() {
@@ -11079,7 +11227,7 @@ the Board component. The status will display the winner if the game is
 over and if the game is ongoing you'll display which player's turn is
 next:
 
-<details>
+<details open>
   <summary>JavaScript</summary>
 
 ```
@@ -11107,7 +11255,7 @@ Congratulations! You now have a working tic-tac-toe game. And you've
 just learned the basics of React too. So, you are the real winner here.
 Here is what the code should look like:
 
-<details>
+<details open>
   <summary>App.js</summary>
 
 ```
@@ -11247,8 +11395,8 @@ instruct the Board to render previous turns from the history.
 First, add a Game component with export default. Have it render the
 Board component and some markup:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Board() {
@@ -11313,8 +11461,8 @@ Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
 currentSquares and handlePlay as props to the Board component:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Game() {
@@ -11358,8 +11506,8 @@ Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
 Game component can update the Board when the user clicks a square:
 
-<details>
-  <summary>React Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 function Board({ xIsNext, squares, onPlay }) {
@@ -11382,20 +11530,23 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-The Board component is fully controlled by the props passed to it by the
+<p>The Board component is fully controlled by the props passed to it by the
 Game component. You need to implement the handlePlay function in the
-Game component to get the game working again.
+Game component to get the game working again.</p>
 
-What should handlePlay do when called? Remember that Board used to call
+<p>What should handlePlay do when called? Remember that Board used to call
 setSquares with an updated array; now it passes the updated squares
-array to onPlay.
+array to onPlay.</p>
 
-The handlePlay function needs to update Game's state to trigger a
+<p>The handlePlay function needs to update Game's state to trigger a
 re-render, but you don't have a setSquares function that you can call
 any more--you're now using the history state variable to store this
 information. You'll want to update history by appending the updated
 squares array as a new history entry. You also want to toggle xIsNext,
-just as Board used to do:
+just as Board used to do:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Game() {
@@ -11408,22 +11559,23 @@ export default function Game() {
 }
 ```
 
-Here, [...history, nextSquares] creates a new array that contains all
-the items in history, followed by nextSquares. (You can read the
-...history [[spread syntax]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-as "enumerate all the items in history".)
+</details>
 
-For example, if history is [[null,null,null], ["X",null,null]]
+<p>Here, [...history, nextSquares] creates a new array that contains all
+the items in history, followed by nextSquares. (You can read the ...history <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread syntax</a>
+as "enumerate all the items in history".)</p>
+
+<p>For example, if history is [[null,null,null], ["X",null,null]]
 and nextSquares is ["X",null,"O"], then the new [...history,
 nextSquares] array will be [[null,null,null], ["X",null,null],
-["X",null,"O"]].
+["X",null,"O"]].</p>
 
-At this point, you've moved the state to live in the Game component, and
+<p>At this point, you've moved the state to live in the Game component, and
 the UI should be fully working, just as it was before the refactor. Here
-is what the code should look like at this point:
+is what the code should look like at this point:</p>
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -11484,8 +11636,8 @@ You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
 "jump" to past moves. Let's map over the history in the Game component:
 
-<details>
-  <summary>JavaScript Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Game() {
@@ -11496,6 +11648,7 @@ export default function Game() {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   }
+
   function jumpTo(nextMove) {
     // TODO
   }
@@ -11534,8 +11687,8 @@ child in an array or iterator should have a unique "key" prop. Check
 the render method of \`Game\`. You'll fix this error in the next
 section.
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -11748,6 +11901,9 @@ use the move index as a key.
 In the Game function, you can add the key as &lt;li key={move}&gt;, and if
 you reload the rendered game, React's "key" error should disappear:
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 const moves = history.map((squares, move) => {
   //...
@@ -11759,11 +11915,14 @@ const moves = history.map((squares, move) => {
 });
 ```
 
-<details>
-  <summary>App.js</summary>
+</details>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
+
 function Square({ value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -11771,7 +11930,9 @@ function Square({ value, onSquareClick }) {
     </button>
   );
 }
+
 function Board({ xIsNext, squares, onPlay }) {
+
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -11871,8 +12032,8 @@ If you click on any step in the game's history, the tic-tac-toe board
 should immediately update to show what the board looked like after that
 step occurred.
 
-<details>
-  <summary>App.js</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -11929,8 +12090,8 @@ reduces bugs and makes your code easier to understand. Change Game so
 that it doesn't store xIsNext as a separate state variable and instead
 figures it out based on the currentMove:
 
-<details>
-  <summary>JavaScript Functions</summary>
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function Game() {
@@ -11938,12 +12099,14 @@ export default function Game() {
   const [currentMove, setCurrentMove] = useState(0);
   const xIsNext = currentMove % 2 === 0;
   const currentSquares = history[currentMove];
+  
     function handlePlay(nextSquares) {
       const nextHistory = [...history.slice(0, currentMove + 1),
       nextSquares];
       setHistory(nextHistory);
       setCurrentMove(nextHistory.length - 1);
     }
+	
     function jumpTo(nextMove) {
       setCurrentMove(nextMove);
     }
@@ -11953,32 +12116,30 @@ export default function Game() {
 
 </details>
 
-You no longer need the xIsNext state declaration or the calls to
+<p>You no longer need the xIsNext state declaration or the calls to
 setXIsNext. Now, there's no chance for xIsNext to get out of sync with
-currentMove, even if you make a mistake while coding the components.
+currentMove, even if you make a mistake while coding the components.</p>
 
 <h3>Wrapping up</h3>
 
-Congratulations! You've created a tic-tac-toe game that:
+<p>Congratulations! You've created a tic-tac-toe game that:</p>
 
--   Lets you play tic-tac-toe,
+<ul>
+  <li><p>Lets you play tic-tac-toe,</p></li>
+  <li><p>Indicates when a player has won the game,</p></li>
+  <li><p>Stores a game's history as a game progresses,</p></li>
+  <li>Allows players to review a game's history and see previous versions of a game's board.</li>
+</ul>
 
--   Indicates when a player has won the game,
+<p>Nice work! We hope you now feel like you have a decent grasp of how
+React works.</p>
 
--   Stores a game's history as a game progresses,
-
--   Allows players to review a game's history and see previous versions
-    of a game's board.
-
-Nice work! We hope you now feel like you have a decent grasp of how
-React works.
-
-Check out the final result here:
+<p>Check out the final result here:</p>
 
 <h4>App.js</h4>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -12020,36 +12181,27 @@ function Board({ xIsNext, squares, onPlay }) {
 
 <h4>Show more</h4>
 
-If you have extra time or want to practice your new React skills, here
+<p>If you have extra time or want to practice your new React skills, here
 are some ideas for improvements that you could make to the tic-tac-toe
-game, listed in order of increasing difficulty:
+game, listed in order of increasing difficulty:</p>
 
-1.  For the current move only, show "You are at move #..." instead of a
-    button
+<ol type="1">
+  <li><p>For the current move only, show "You are at move #..." instead of a button.</p></li>
+  <li><p>Rewrite Board to use two loops to make the squares instead of hardcoding them.</p></li>
+  <li><p>Add a toggle button that lets you sort the moves in either ascending or descending order.</p></li>
+  <li><p>When someone wins, highlight the three squares that caused the win (and when no one wins, display a message about the result being a draw).</p></li>
+  <li><p>Display the location for each move in the format (col, row) in the move history list.</li>
+</ol>
 
-2.  Rewrite Board to use two loops to make the squares instead of
-    hardcoding them.
-
-3.  Add a toggle button that lets you sort the moves in either ascending
-    or descending order.
-
-4.  When someone wins, highlight the three squares that caused the win
-    (and when no one wins, display a message about the result being a
-    draw).
-
-5.  Display the location for each move in the format (col, row) in the
-    move history list.
-
-Throughout this tutorial, you've touched on React concepts including
+<p>Throughout this tutorial, you've touched on React concepts including
 elements, components, props, and state. Now that you've seen how these
-concepts work when building a game, check out [Thinking in
-React](https://react.dev/learn/thinking-in-react) to see how the same
-React concepts work when build an app's UI.
+concepts work when building a game, check out <a href="https://react.dev/learn/thinking-in-react">Thinking in
+React</a> to see how the same React concepts work when build an app's UI.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Thinking in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this module (four), you will be assessed on the key skills covered in
-the Course.
+<p>In this module (four), you will be assessed on the key skills covered in
+the Course.</p>
 
 <h3>Quick Start</h3>
 
@@ -12071,11 +12223,11 @@ the Course.
 
 <h3>Creating and nesting components</h3>
 
-React apps are made out of components. A component is a piece of the UI
+<p>React apps are made out of components. A component is a piece of the UI
 (user interface) that has its own logic and appearance. A component can
-be as small as a button, or as large as an entire page.
+be as small as a button, or as large as an entire page.</p>
 
-React components are JavaScript functions that return markup:
+<p>React components are JavaScript functions that return markup:</p>
 
 ```
 function MyButton() {
@@ -12085,8 +12237,11 @@ function MyButton() {
 }
 ```
 
-Now that you've declared MyButton, you can nest it into another
-component:
+<p>Now that you've declared MyButton, you can nest it into another
+component:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 export default function MyApp() {
@@ -12099,14 +12254,16 @@ export default function MyApp() {
 }
 ```
 
-Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
-know it's a React component. React component names must always start
-with a capital letter, while HTML tags must be lowercase.
+</details>
 
-Have a look at the result:
+<p>Notice that &lt;MyButton /&gt; starts with a capital letter. That's how you
+know it's a React component. React component names must always start
+with a capital letter, while HTML tags must be lowercase.</p>
+
+<p>Have a look at the result:</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 function MyButton() {
@@ -12128,20 +12285,23 @@ export default function MyApp() {
 
 </details>
 
-The export default keywords specify the main component in the file. If
+<p>The export default keywords specify the main component in the file. If
 you're not familiar with some piece of JavaScript syntax, <a href="https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export">MDN</a>
-and <a href="https://javascript.info/import-export">javascript.info</a> have great references.
+and <a href="https://javascript.info/import-export">javascript.info</a> have great references.</p>
 
 <h3>Writing markup with JSX</h3>
 
-The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
+<p>The markup syntax you've seen above is called <i>JSX</i>. It is optional, but
 most React projects use JSX for its convenience. All of the <a href="https://react.dev/learn/installation">tools we
-recommend for local development</a> support JSX out of the box.
+recommend for local development</a> support JSX out of the box.</p>
 
-JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
+<p>JSX is stricter than HTML. You have to close tags like &lt;br /&gt;. Your
 component also can't return multiple JSX tags. You have to wrap them
 into a shared parent, like a &lt;div&gt;...&lt;/div&gt; or an empty
-&lt;&gt;...&lt;/&gt; wrapper:
+&lt;&gt;...&lt;/&gt; wrapper:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function AboutPage() {
@@ -12154,12 +12314,13 @@ function AboutPage() {
 }
 ```
 
-If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.
+</details>
+
+<p>If you have a lot of HTML to port to JSX, you can use an <a href="https://transform.tools/html-to-jsx">online converter</a>.</p>
 
 <h3>Adding styles</h3>
 
-In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">
-[class] attribute:</a>
+<p>In React, you specify a CSS class with className. It works the same way as the HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class">class</a> attribute:</p>
 
 ```
 <img className="avatar" />
@@ -12208,7 +12369,7 @@ return (
 You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 const user = {
@@ -12246,7 +12407,7 @@ attribute when your styles depend on JavaScript variables.
 In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:
 
 <details open>
-  <summary>React Code</summary>
+  <summary>React code:</summary>
 
 ```
 let content;
@@ -12310,6 +12471,9 @@ const products = [
 Inside your component, use the map() function to transform an array of
 products into an array of &lt;li&gt; items:
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 const listItems = products.map(product =>
   <li key={product.id}>
@@ -12321,14 +12485,16 @@ return (
 );
 ```
 
-Notice how &lt;li&gt; has a key attribute. For each item in a list, you
+</details>
+
+<p>Notice how &lt;li&gt; has a key attribute. For each item in a list, you
 should pass a string or a number that uniquely identifies that item
 among its siblings. Usually, a key should be coming from your data, such
 as a database ID. React uses your keys to know what happened if you
-later insert, delete, or reorder the items.
+later insert, delete, or reorder the items.</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 const products = [
@@ -12360,6 +12526,9 @@ export default function ShoppingList() {
 You can respond to events by declaring event handler functions inside
 your components:
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 function MyButton() {
 
@@ -12374,37 +12543,42 @@ function MyButton() {
 }
 ```
 
-Notice how onClick={handleClick} has no parentheses at the end! Do not
+</details>
+
+<p>Notice how onClick={handleClick} has no parentheses at the end! Do not
 call the event handler function: you only need to pass it down. React
-will call your event handler when the user clicks the button.
+will call your event handler when the user clicks the button.</p>
 
 <h3>Updating the screen</h3>
 
-Often, you'll want your component to "remember" some information and
+<p>Often, you'll want your component to "remember" some information and
 display it. For example, maybe you want to count the number of times a
-button is clicked. To do this, add state to your component.
+button is clicked. To do this, add state to your component.</p>
 
-First, import <a href="https://react.dev/reference/react/useState">useState</a> from React:
+<p>First, import <a href="https://react.dev/reference/react/useState">useState</a> from React:</p>
 
 ```
 import { useState } from 'react';
 ```
 
-Now you can declare a state variable inside your component:
+<p>Now you can declare a state variable inside your component:</p>
 
 ```
 function MyButton() {
   const [count, setCount] = useState(0);
 ```
 
-You'll get two things from useState: the current state (count), and the
+<p>You'll get two things from useState: the current state (count), and the
 function that lets you update it (setCount). You can give them any
-names, but the convention is to write [something, setSomething].
+names, but the convention is to write [something, setSomething].</p>
 
-The first time the button is displayed, count will be 0 because you
+<p>The first time the button is displayed, count will be 0 because you
 passed 0 to useState(). When you want to change state, call setCount()
 and pass the new value to it. Clicking this button will increment the
-counter:
+counter:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 function MyButton() {
@@ -12420,14 +12594,16 @@ function MyButton() {
 }
 ```
 
-React will call your component function again. This time, count will
-be 1. Then it will be 2. And so on.
+</details>
 
-If you render the same component multiple times, each will get its own
-state. Click each button separately:
+<p>React will call your component function again. This time, count will
+be 1. Then it will be 2. And so on.</p>
+
+<p>If you render the same component multiple times, each will get its own
+state. Click each button separately:</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -12539,17 +12715,17 @@ Initially, MyApp's count state is 0 and is passed down to both children.
 </p>
 <!-- {width="5.0in" height="4.695121391076116in"} -->
 
-On click, MyApp updates its count state to 1 and passes it down to both
-children
+<p>On click, MyApp updates its count state to 1 and passes it down to both
+children.</p>
 
-Now when you click either button, the count in MyApp will change, which
+<p>Now when you click either button, the count in MyApp will change, which
 will change both of the counts in MyButton. Here's how you can express
-this in code.
+this in code.</p>
 
-First, move the state up from MyButton into MyApp:
+<p>First, move the state up from MyButton into MyApp:</p>
 
 <details open>
-  <summary>React Functions</summary>
+  <summary>React code:</summary>
 
 ```
 export default function MyApp() {
@@ -12578,7 +12754,7 @@ curly braces, just like you previously did with built-in tags like
 &lt;img&gt;:</p>
 
 <details open>
-  <summary>React Functions</summary>
+  <summary>React code:</summary>
 
 ```
 export default function MyApp() {
@@ -12624,12 +12800,13 @@ a prop to each button, so they all show the new value. This is called
 components.</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
 export default function MyApp() {
   const [count, setCount] = useState(0);
+  
   function handleClick() {
     setCount(count + 1);
   }
@@ -12641,6 +12818,7 @@ export default function MyApp() {
     </div>
   );
 }
+
 function MyButton({ count, onClick }) {
   return (
     <button onClick={onClick}>
@@ -12675,7 +12853,7 @@ thought process of building a searchable product data table with React.</p>
 <p>The JSON API returns some data that looks like this:</p>
 
 <details open>
-  <summary>JSON API</summary>
+  <summary>JSON API:</summary>
 
 ```
 [
@@ -12805,7 +12983,7 @@ examples, it's usually easier to go top-down, and on larger projects,
 it's easier to go bottom-up.</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 function ProductCategoryRow({ category }) {
@@ -12974,6 +13152,9 @@ function FilterableProductTable({ products }) {
 <p>Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 <div>
   <SearchBar
@@ -12987,13 +13168,15 @@ props:</p>
 </div>
 ```
 
+</details>
+
 <p>You can start seeing how your application will behave. Edit the
 filterText initial value from useState('') to useState('fruit') in
 the sandbox code below. You'll see both the search input text and the
 table update:</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -13077,7 +13260,7 @@ setInStockOnly. To let SearchBar update the FilterableProductTable's
 state, you need to pass these functions down to SearchBar:</p>
 
 <details open>
-  <summary>React Function</summary>
+  <summary>React code:</summary>
 
 ```
 function FilterableProductTable({ products }) {
@@ -13107,7 +13290,7 @@ the parent state from them:</p>
 <p>Now the application fully works!</p>
 
 <details open>
-  <summary>App.js</summary>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
