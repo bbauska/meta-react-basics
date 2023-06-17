@@ -1390,11 +1390,11 @@ some text on a webpage.</p>
 file, since its purpose is to return some heading text, you name the
 file Heading.js.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-l.  (41) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~ w1-s10-l. capitalized first letter of component name (41) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s10-l.png?raw=true"
-  alt="."
+  alt="First character of a component name is capitalized in React."
   width="65%" />
 </p>
 <!-- ![](./images/image035.png){width="6.5625in" height="0.575in"} -->
@@ -1409,11 +1409,11 @@ elements.</p>
 <p>Capitalizing a component name helps React to distinguish JSX elements
 from HTML elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-m.  (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-m. heading function with title (42) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s10-m.png?raw=true"
-  alt="."
+  alt="Heading function with title."
   width="30%" />
 </p>
 <!-- ![](./images/image036.png){width="3.0in" height="1.4707939632545932in"} -->
@@ -1426,11 +1426,11 @@ first letter of the function.</p>
 assign it the string value of this is some heading text.</p>
 <p>Now you're ready to create the return statement of the function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-n.  (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-n. title variable (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s10-n.png?raw=true"
-  alt="."
+  alt="Title variable."
   width="65%" />
 </p>
 <!-- ![](./images/image037.png){width="6.5625in" height="1.9423611111111112in"} -->
@@ -1448,11 +1448,11 @@ something you cannot do when writing static HTML.</p>
 <p>The overall syntax instructs React to render the heading HTML element
 with whatever text value that is stored within the variable named title.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-o.  (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-o. trans piling jsx to html (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s10-o.png?raw=true"
-  alt="."
+  alt="Trans piling JSX to HTML."
   width="30%" />
 </p>
 <!-- {width="3.0in" height="0.8577777777777778in"} -->
@@ -11962,11 +11962,9 @@ function Board({ xIsNext, squares, onPlay }) {
 
 </details>
 
-<h4>Show more</h4>
-
-Before you can implement jumpTo, you need the Game component to keep
+<p>Before you can implement jumpTo, you need the Game component to keep
 track of which step the user is currently viewing. To do this, define a
-new state variable called currentMove, defaulting to 0:
+new state variable called currentMove, defaulting to 0:</p>
 
 ```
 export default function Game() {
@@ -11978,9 +11976,9 @@ export default function Game() {
 }
 ```
 
-Next, update the jumpTo function inside Game to update that currentMove.
+<p>Next, update the jumpTo function inside Game to update that currentMove.
 You'll also set xIsNext to true if the number that you're changing
-currentMove to is even.
+currentMove to is even.</p>
 
 ```
 export default function Game() {
@@ -11993,17 +11991,18 @@ export default function Game() {
 }
 ```
 
-You will now make two changes to the Game's handlePlay function which is
-called when you click on a square.
+<p>You will now make two changes to the Game's handlePlay function which is
+called when you click on a square.</p>
 
--   If you "go back in time" and then make a new move from that point,
+<ul>
+  <li><p>If you "go back in time" and then make a new move from that point,
     you only want to keep the history up to that point. Instead of
     adding nextSquares after all items (... spread syntax) in history,
     you'll add it after all items in history.slice(0, currentMove +
-    1) so that you're only keeping that portion of the old history.
-
--   Each time a move is made, you need to update currentMove to point to
-    the latest history entry.
+    1) so that you're only keeping that portion of the old history.</p></li>
+  <li>Each time a move is made, you need to update currentMove to point to
+    the latest history entry.</li>
+</ul>
 
 ```
 function handlePlay(nextSquares) {
@@ -12015,8 +12014,8 @@ function handlePlay(nextSquares) {
 }
 ```
 
-Finally, you will modify the Game component to render the currently
-selected move, instead of always rendering the final move:
+<p>Finally, you will modify the Game component to render the currently
+selected move, instead of always rendering the final move:</p>
 
 ```
 export default function Game() {
@@ -12028,9 +12027,9 @@ export default function Game() {
 }
 ```
 
-If you click on any step in the game's history, the tic-tac-toe board
+<p>If you click on any step in the game's history, the tic-tac-toe board
 should immediately update to show what the board looked like after that
-step occurred.
+step occurred.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12079,16 +12078,16 @@ return (
 
 <h4>Final cleanup</h4>
 
-If you look at the code very closely, you may notice that xIsNext ===
+<p>If you look at the code very closely, you may notice that xIsNext ===
 true when currentMove is even and xIsNext === false when currentMove is
 odd. In other words, if you know the value of currentMove, then you can
-always figure out what xIsNext should be.
+always figure out what xIsNext should be.</p>
 
-There's no reason for you to store both of these in state. In fact,
+<p>There's no reason for you to store both of these in state. In fact,
 always try to avoid redundant state. Simplifying what you store in state
 reduces bugs and makes your code easier to understand. Change Game so
 that it doesn't store xIsNext as a separate state variable and instead
-figures it out based on the currentMove:
+figures it out based on the currentMove:</p>
 
 <details open>
   <summary>React code:</summary>
