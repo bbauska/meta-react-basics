@@ -3104,7 +3104,7 @@ function App() {
 ```
 
 <p>If you format this output, remove the <b>"use strict"</b> line, and
-remove the <b>\_\_PURE\_\_</b> comments, you get a more readable output:</p>
+remove the <b>&#95;&#95;PURE&#95;&#95;</b> comments, you get a more readable output:</p>
 
 ```
 function App() {
@@ -12098,7 +12098,7 @@ export default function Game() {
 You can see what your code should look like below. Note that you should
 see an error in the developer tools console that says: Warning: Each
 child in an array or iterator should have a unique "key" prop. Check
-the render method of \`Game\`. You'll fix this error in the next
+the render method of `Game`. You'll fix this error in the next
 section.
 
 <details open>
@@ -12748,13 +12748,13 @@ Then you write the CSS rules for it in a separate CSS file:
   }
 ```
 
-React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[<link>]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.
+<p>React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[<link>]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.</p>
 
 <h4>Displaying data</h4>
 
-JSX lets you put markup into JavaScript. Curly braces let you "escape
+<p>JSX lets you put markup into JavaScript. Curly braces let you "escape
 back" into JavaScript so that you can embed some variable from your code
-and display it to the user. For example, this will display user.name:
+and display it to the user. For example, this will display user.name:</p>
 
 ```
 return (
@@ -12764,11 +12764,11 @@ return (
 );
 ```
 
-You can also "escape into JavaScript" from JSX attributes, but you have
+<p>You can also "escape into JavaScript" from JSX attributes, but you have
 to use curly braces instead of quotes. For example, className="avatar"
 passes the "avatar" string as the CSS class, but src={user.imageUrl}
 reads the JavaScript user.imageUrl variable value, and then passes that
-value as the src attribute:
+value as the src attribute:</p>
 
 ```
 return (
@@ -12779,7 +12779,7 @@ return (
 );
 ```
 
-You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:
+<p>You can put more complex expressions inside the JSX curly braces too, for example, <a href="https://javascript.info/operators#string-concatenation-with-binary">string concatenation</a>:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12811,13 +12811,13 @@ export default function Profile() {
 
 </details>
 
-In the above example, style={{}} is not a special syntax, but a regular
+<p>In the above example, style={{}} is not a special syntax, but a regular
 {} object inside the style={ } JSX curly braces. You can use the style
-attribute when your styles depend on JavaScript variables.
+attribute when your styles depend on JavaScript variables.</p>
 
 <h3>Conditional rendering</h3>
 
-In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:
+<p>In React, there is no special syntax for writing conditions. Instead, you'll use the same techniques as you use when writing regular JavaScript code. For example, you can use an <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if</a> statement to conditionally include JSX:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12840,8 +12840,8 @@ if (isLoggedIn) {
 
 </details>
 
-If you prefer more compact code, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional ?
-operator</a>.  Unlike if, it works inside JSX:
+<p>If you prefer more compact code, you can use the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">conditional ?
+operator</a>.  Unlike if, it works inside JSX:</p>
 
 ```
 <div>
@@ -12853,7 +12853,8 @@ operator</a>.  Unlike if, it works inside JSX:
 </div>
 ```
 
-When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">logical &amp;&amp; syntax</a>:
+<p>When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">
+logical &amp;&amp; syntax</a>:</p>
 
 ```
 <div>
@@ -12861,17 +12862,18 @@ When you don't need the else branch, you can also use a shorter <a href="https:/
 </div>
 ```
 
-All of these approaches also work for conditionally specifying
+<p>All of these approaches also work for conditionally specifying
 attributes. If you're unfamiliar with some of this JavaScript syntax,
-you can start by always using if...else.
+you can start by always using if...else.</p>
 
 <h3>Rendering lists</h3>
 
-You will rely on JavaScript features like <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">for loop</a>
+<p>You will rely on JavaScript features like 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">for loop</a>
 and the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map">array map()
-function</a> to render lists of components.
+function</a> to render lists of components.</p>
 
-For example, let's say you have an array of products:
+<p>For example, let's say you have an array of products:</p>
 
 ```
 const products = [
@@ -12881,8 +12883,8 @@ const products = [
 ];
 ```
 
-Inside your component, use the map() function to transform an array of
-products into an array of &lt;li&gt; items:
+<p>Inside your component, use the map() function to transform an array of
+products into an array of &lt;li&gt; items:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12936,8 +12938,8 @@ export default function ShoppingList() {
 
 <h3>Responding to events</h3>
 
-You can respond to events by declaring event handler functions inside
-your components:
+<p>You can respond to events by declaring event handler functions inside
+your components:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -13044,8 +13046,8 @@ function MyButton() {
 
 </details>
 
-Notice how each button "remembers" its own count state and doesn't
-affect other buttons.
+<p>Notice how each button "remembers" its own count state and doesn't
+affect other buttons.</p>
 
 <h3>Using Hooks</h3>
 
@@ -13292,7 +13294,7 @@ thought process of building a searchable product data table with React.</p>
 
 </details>
 
-The mockup looks like this:
+<p>The mockup looks like this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w4-s04-a. mockup fruits and prices (310) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -13363,12 +13365,14 @@ mockup should appear as a child in the hierarchy:</p>
 
 <ul>
   <li><p>FilterableProductTable</p></li>
-  <li><p>SearchBar</p></li>
-  <li><p>ProductTable</p></li>
     <ul>
-      <li><p>ProductCategoryRow</p></li>
-      <li>ProductRow</li>
-	</ul>
+      <li><p>SearchBar</p></li>
+      <li><p>ProductTable</p></li>
+        <ul>
+          <li><p>ProductCategoryRow</p></li>
+          <li>ProductRow</li>
+        </ul>
+    </ul>
 </ul>
 
 <h3>Step 2: Build a static version in React</h3>
@@ -13434,8 +13438,6 @@ function ProductTable({ products }) {
 ```
 
 </details>
-
-<h4>Show more</h4>
 
 <p>(If this code looks intimidating, go through the <a href="https://react.dev/learn">Quick Start</a> first!)</p>
 <p>After building your components, you'll have a library of reusable
@@ -13632,7 +13634,7 @@ in the sandbox above explaining why:</p>
 
 <h4>Console</h4>
 
-<p>You provided a \`value\` prop to a form field without an \`onChange\`
+<p>You provided a `value` prop to a form field without an `onChange`
 handler. This will render a read-only field.</p>
 <p>In the sandbox above, ProductTable and SearchBar read the filterText and
 inStockOnly props to render the table, the input, and the checkbox. For
