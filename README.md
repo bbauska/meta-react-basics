@@ -6348,8 +6348,8 @@ will explore this concept as it applies to React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-a.png?raw=true"
-  alt="."
-  width="70%" />
+  alt="Parent-Child unidirectional flow of data and React hierarchy."
+  width="40%" />
 </p>
 <p>By the end of this section (09), you'll be able to describe the
 parent-child unidirectional flow of data, and you'll gain an
@@ -6463,52 +6463,48 @@ items" and "everything must go". This will be contained within the
 parent component so that any data needed can be passed onto the child
 component using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-j.  (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-j. single source for text (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-j.png?raw=true"
-  alt="."
+  alt="Singel source for text updates."
   width="40%" />
 </p>
-<p>Now, let's use this approach to update the Promo
-component. First, you create a single source of truth, a JavaScript
-object named data. Data is an object that will contain two properties
-named heading and callToAction, both represented as strings.</p>
+<p>Now, let's use this approach to update the Promo component. First, you create a 
+single source of truth, a JavaScript object named data. Data is an object that will 
+contain two properties named heading and callToAction, both represented as strings.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-k.  (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-k. parent to child component (155) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-k.png?raw=true"
-  alt="."
+  alt="Example Parent-Child component."
   width="40%" />
 </p>
-<p>Next, you
-update the Promo component to pass the heading and the callToAction
+<p>Next, you update the Promo component to pass the heading and the callToAction
 values of the data object to the PromoHeading component. This is known
 as passing data from the parent to the child component. Back inside the
 PromoHeading component, you update it to accept data from its parent
 component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-l.  (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-l. another example parent-child (155) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-l.png?raw=true"
-  alt="."
+  alt="Another example of Parent-Child component."
   width="40%" />
 </p>
-<p>To do this, you need to first delete the existing h1 in the
-return statement, and then add a new h1 for props.heading, and then h2
-for props.callToAction.</p>
-<p>Now this component accepts a props object,
-specifically its two properties, heading and callToAction. The values of
-the props object are determined in the parent component when you add the
-specific JSX element that should be rendered.</p>
+<p>To do this, you need to first delete the existing h1 in the return statement, 
+and then add a new h1 for props.heading, and then h2 for props.callToAction.</p>
+<p>Now this component accepts a props object, specifically its two properties, 
+heading and callToAction. The values of the props object are determined in the 
+parent component when you add the specific JSX element that should be rendered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-m.  (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-m. promoheading rendering (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-m.png?raw=true"
-  alt="."
+  alt="Promoheading rendering."
   width="40%" />
 </p>
 <p>This was achieved when you rendered the PromoHeading inside the Promo component. Here you access
@@ -6518,22 +6514,22 @@ of plain JavaScript.</p>
 component and the footer component in a similar way to the PromoHeading
 component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-n.  (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-n. parent to 3 child component (156) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-n.png?raw=true"
-  alt="."
+  alt="Prop states flow from parent to child components."
   width="40%" />
 </p>
 <p>Remember that in React, the prop states always flow from the
 parent to the child component, and using props helps you avoid the need
 to change the data in several places.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-o.  (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-o. parent prop to child (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s09-o.png?raw=true"
-  alt="."
+  alt="Parent prop updates reflect on child components."
   width="40%" />
 </p>
 <p>Instead, you make the change at
@@ -6546,42 +6542,43 @@ to update children individually.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. Data flow in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You've just learned how the parent-child relationship can be set up so
-that data flows from parent to child. 
+<p>You've just learned how the parent-child relationship can be set up so
+that data flows from parent to child.</p>
 
-In this section (10), you'll learn how to detail the flow of data from parent
+<p>In this section (10), you'll learn how to detail the flow of data from parent
 to child. You will then learn why code samples need to be clear and
 concise. Finally, you will explore data flow in greater detail by
 looking at more examples. This should act as a refresher to knowledge
-gained in previous courses.
+gained in previous courses.</p>
 
 <h4>Parent-child data flow</h4>
 
-In React, data flow is a one-way street. Sometimes it's said that the
+<p>In React, data flow is a one-way street. Sometimes it's said that the
 data flow is unidirectional. Put differently, the data in React flows
 from a parent component to a child component. The data flow starts at
 the root and can flow to multiple levels of nesting, from the root
 component (parent component) to the child component, then the grandchild
-component, and further down the hierarchy.
+component, and further down the hierarchy.</p>
 
-A React app consists of many components, organized as a component tree.
+<p>A React app consists of many components, organized as a component tree.
 The data flows from the root component to all the components in the tree
-structure that require this data, using props.
+structure that require this data, using props.</p>
 
-Props are immutable (cannot be changed).
+<p>Props are immutable (cannot be changed).</p>
 
-The two main benefits of this unidirectional data flow are that it
-allows developers to:
+<p>The two main benefits of this unidirectional data flow are that it
+allows developers to:</p>
 
-1.  comprehend the logic of React apps more quickly and 
+<ol type="1">
+  <li><p>comprehend the logic of React apps more quickly and</p></li>
+  <li>simplify the data flow.</li>
+</ol>
 
-2.  simplify the data flow. 
+<p>Here's a practical example of this:</p>
 
-Here's a practical example of this:
-
-Imagine that the parent component passes a prop (name) to the child
+<p>Imagine that the parent component passes a prop (name) to the child
 component. The child component then uses this prop to render the name in
-the UI.
+the UI.</p>
 
 <h4>Parent component:</h4>
 
@@ -6617,11 +6614,11 @@ function Bowl(props) {
 };
 ```
 
-Having data move through props in only one direction makes it simpler to
+<p>Having data move through props in only one direction makes it simpler to
 understand the logic of how the components interact. If data were moving
 everywhere, all the time, then it would be much harder to comprehend its
 logical flow. Any optimization you tried to implement would likely not
-be as efficient as it could be, especially in modern React.
+be as efficient as it could be, especially in modern React.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Children and data</h2>
@@ -6643,11 +6640,11 @@ transmitted through the system. You'll cover this in more detail later.</p>
 <p>For now, in this section (11), you will also learn how to showcase the
 use of stateless and stateful examples by focusing on data flow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-b. one-way flow in reactjs (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-b. one-way flow in reactjs (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s11-b.png?raw=true"
-  alt="Data flow in ReactJS."
+  alt="Company to you, minimum money (the lazy and greedy keep the rest)."
   width="40%" />
 </p>
 <p>Imagine that data is money and the money is controlled by your employer. This
@@ -6659,26 +6656,24 @@ to you, never in the opposite direction.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s11-c.png?raw=true"
-  alt="Data flow in ReactJS."
+  alt="Data is passed parent to child."
   width="40%" />
 </p>
-<p>In React, data is passed down
-from parent components to a child components via props. A child
-components can't mutate or change its props. It can only read them and
-re-render. This means that the data comes from the parents and it's
-just consumed in the child components.</p>
+<p>In React, data is passed down from parent components to a child components 
+via props. A child components can't mutate or change its props. It can only 
+read them and re-render. This means that the data comes from the parents and 
+it's just consumed in the child components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-d.  (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-d. component templates (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w2-s11-d.png?raw=true"
   alt="Sample component templates (3)."
   width="40%" />
 </p>
-<p>However, if this was always the
-case, then all you'd have in a React app is separate pieces of the DOM
-acting as component templates to be filled up with a data they receive.
-While this works great, there'd be almost no interactivity.
+<p>However, if this was always the case, then all you'd have in a React app 
+is separate pieces of the DOM acting as component templates to be filled up 
+with a data they receive. While this works great, there'd be almost no interactivity.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w2-s11-e. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6688,9 +6683,9 @@ While this works great, there'd be almost no interactivity.
   width="60%" />
 </p>
 
-You've learned about passing data to a child component using props.
+<p>You've learned about passing data to a child component using props.
 However, there's another way to work with data in React components, and
-that data is referred to as <b>state</b>.
+that data is referred to as <b>state</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w2-s11-f. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6699,14 +6694,13 @@ that data is referred to as <b>state</b>.
   alt="Passing data to child components using props in ReactJS."
   width="60%" />
 </p>
-All the data in React can be divided into <b>props</b> data and <b>states</b>
+<p>All the data in React can be divided into <b>props</b> data and <b>states</b>
 data. Props data is data outside the components that it receives and
 works with but cannot mutate. State data is data inside the components
-that it controls and can mutate.
-
-It also helps to think of it like this. The <b>prop</b> data belongs to the
+that it controls and can mutate.</p>
+<p>It also helps to think of it like this. The <b>prop</b> data belongs to the
 parent that renders the components. The <b>state</b> data belongs to the
-component itself.
+component itself.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w2-s11-g. passing data to child components using props (160) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6896,8 +6890,8 @@ get updated with the latest text that has been typed.</p>
 
 </details>
 
-To do this, let's define a React component and call it
-<b>InputComponent</b>. This component renders three things:
+<p>To do this, let's define a React component and call it
+<b>InputComponent</b>. This component renders three things:</p>
 
 <ol type="1">
   <li>An input text field,<br></li>
@@ -6916,19 +6910,19 @@ To do this, let's define a React component and call it
 </p>
 <!-- {width="5.979166666666667in" height="2.25in"} -->
 
-The state variable <b>inputText</b> and the <b>setText</b> method are used to
+<p>The state variable <b>inputText</b> and the <b>setText</b> method are used to
 set the current text that is typed. The <b>useState</b> hook is initialized
-at the beginning of the component.
+at the beginning of the component.</p>
 
 ```
 const[inputText, setText] = useState('hello');
 ```
 
-By default, the <b>inputText</b> will be set to "hello".
+<p>By default, the <b>inputText</b> will be set to "hello".</p>
 
-As the user types, the <b>handleChange</b> function, reads the latest input
+<p>As the user types, the <b>handleChange</b> function, reads the latest input
 value from the browser's input DOM element, and calls the <b>setText</b>
-function, to update the local state of <b>inputText</b>.
+function, to update the local state of <b>inputText</b>.</p>
 
 ```
 function handleChange(e) {
@@ -6936,31 +6930,29 @@ function handleChange(e) {
 };
 ```
 
-Finally, clicking the reset button will update the <b>inputText</b> back to
-"hello". 
+<p>Finally, clicking the reset button will update the <b>inputText</b> back to
+"hello".</p>
 
-Isn't this neat?
+<p>Isn't this neat?</p>
 
-Keep in mind that the <b>inputText</b> here is local state and is local to
+<p>Keep in mind that the <b>inputText</b> here is local state and is local to
 the <b>InputComponent</b>. This means that outside of this component,
 <b>inputText</b> is unavailable and unknown. In React, state is always
-referred to the local state of a component.
+referred to the local state of a component.</p>
 
-Hooks also come with a set of rules, that you need to follow while using
+<p>Hooks also come with a set of rules, that you need to follow while using
 them. This applies to all React hooks, including the <b>useState</b> hook
-that you just learned.
+that you just learned.</p>
 
--   You can only call hooks at the top level of your component or your
-    own hooks. 
+<ul>
+  <li><p>You can only call hooks at the top level of your component or your own hooks.</p></li>
+  <li><p>You cannot call hooks inside loops or conditions.</p></li>
+  <li>You can only call hooks from React functions, and not regular JavaScript functions.</li>
+</ul>
 
--   You cannot call hooks inside loops or conditions. 
-
--   You can only call hooks from React functions, and not regular
-    JavaScript functions. 
-
-To demonstrate, let's extend the previous example, to include three
+<p>To demonstrate, let's extend the previous example, to include three
 input text fields within a single component. This could be a
-registration form with fields for first name, last name and email.
+registration form with fields for first name, last name and email.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w2-s13-b. text fields of first name, last name, and e-mail (167) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7060,8 +7052,8 @@ form handling, animation, timers, and many more.</p>
 
 <p>We use the <b>useRef</b> hook to access a child element directly.</p>
 
-When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
-The <b>ref</b> object has a property named <b>current</b>.
+<p>When you invoke the <b>useRef</b> hook, it will return a <b>ref</b> object.
+The <b>ref</b> object has a property named <b>current</b>.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -7084,26 +7076,27 @@ function TextInputWithFocusButton() {
 
 </details>
 
-Using the ref attribute on the input element, I can then access the
+<p>Using the ref attribute on the input element, I can then access the
 current value and invoke the <b>focus()</b> method on it, thereby focusing
-the input field.
+the input field.</p>
 
-There are situations where accessing the DOM directly is needed, and
-this is where the <b>useRef</b> hook comes into play.
+<p>There are situations where accessing the DOM directly is needed, and
+this is where the <b>useRef</b> hook comes into play.</p>
 
 <h4>Conclusion</h4>
 
-In this section (14), you have explored hooks in detail and understand how to
+<p>In this section (14), you have explored hooks in detail and understand how to
 use the <b>useState</b> hook to maintain state within a component. You also
-understand the benefits of using hooks within a React component.
+understand the benefits of using hooks within a React component.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. What is state?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<i>"Make it as simple as possible, but not simpler."</i>
-<h6>...Albert Einstein</h6>
+<p align="center"><i>"Make it as simple as possible, but not simpler."</i></p>
 
-Consider the different modes in an alarm clock and the situations you would use them in. Typically, you have alarm on for setting a time to wake up, alarm off when this feature is not needed, and snooze for sneaking in a few extra minutes of sleep. Setting these modes doesn't require adding anything extra to your clock. They are built-in features that can be set with the push of a button. 
+<h6 align="center">...Albert Einstein</h6>
+
+<p>Consider the different modes in an alarm clock and the situations you would use them in. Typically, you have alarm on for setting a time to wake up, alarm off when this feature is not needed, and snooze for sneaking in a few extra minutes of sleep. Setting these modes doesn't require adding anything extra to your clock. They are built-in features that can be set with the push of a button.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-a. components with props (169) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7112,9 +7105,12 @@ Consider the different modes in an alarm clock and the situations you would use 
   alt="Components with props."
   width="40%" />
 </p>
-<p>If you create this feature in a React app, you could create a component named clock and then parsing the status values via props.</p>
-<p>Recall the props is a feature of React that essentially allows you to hold information about the UI in the browser.</p>
-<p>In React, you also have another way to do this by using a similar concept called States, which also allows you to easily change how the component behaves in order to suit a given need.</p>
+<p>If you create this feature in a React app, you could create a component named clock and then 
+parsing the status values via props.</p>
+<p>Recall the props is a feature of React that essentially allows you to hold information 
+about the UI in the browser.</p>
+<p>In React, you also have another way to do this by using a similar concept called States, 
+which also allows you to easily change how the component behaves in order to suit a given need.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7123,7 +7119,10 @@ Consider the different modes in an alarm clock and the situations you would use 
   alt="Describe State in React and explore its features."
   width="40%" />
 </p>
-By the end of this section (15), you'll be able to describe what State is in React and why developers use it to control what is displayed in the browser from a component. It helps to think of State as a component's internal data that determines the current behavior of a component. It's often used to store data that affects the behavior of a component.
+<p>By the end of this section (15), you'll be able to describe what State is in React and why 
+developers use it to control what is displayed in the browser from a component. It helps to 
+think of State as a component's internal data that determines the current behavior of a component. 
+It's often used to store data that affects the behavior of a component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ w2-s15-c. state - data in a component that determines behavior (170) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7132,7 +7131,8 @@ By the end of this section (15), you'll be able to describe what State is in Rea
   alt="State - data in a component that determines behavior."
   width="40%" />
 </p>
-State is important because it allows components to stay in sync with each other and ensure that your app behaves as intended.
+<p>State is important because it allows components to stay in sync with each other and ensure 
+that your app behaves as intended.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-d.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7142,7 +7142,9 @@ State is important because it allows components to stay in sync with each other 
   width="50%" />
 </p>
 
-For example, if one component updates its State, all other components that depend on that State will automatically update too. This means that a component sends its State to its children by using props. 
+<p>For example, if one component updates its State, all other components that depend on that 
+State will automatically update too. This means that a component sends its State to its 
+children by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-e.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7151,7 +7153,10 @@ For example, if one component updates its State, all other components that depen
   alt="."
   width="30%" />
 </p>
-If the child components have their own grandchild components, then the child components might have some States that they send us props to those grandchild components. In React, State is kept in a state of variables. The main way to change State is to alter these variables. 
+<p>If the child components have their own grandchild components, then the child components 
+might have some States that they send us props to those grandchild components. In React, 
+State is kept in a state of variables. The main way to change State is to alter these 
+variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-f.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7160,9 +7165,11 @@ If the child components have their own grandchild components, then the child com
   alt="."
   width="30%" />
 </p>
-When a component is created, it gets an initial State. The State is used to initialize the component's properties. 
+<p>When a component is created, it gets an initial State. The State is used to initialize the 
+component's properties.</p>
 
-Components can be either stateful or stateless, but what exactly does that mean? To gain a better understanding, let's explore an example of each. 
+<p>Components can be either stateful or stateless, but what exactly does that mean? To gain a 
+better understanding, let's explore an example of each.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-g.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7172,7 +7179,9 @@ Components can be either stateful or stateless, but what exactly does that mean?
   width="40%" />
 </p>
 
-First is an app component with no state defined. It performs a single action, which is to render the text a  stateless component and then you have a stateful function component. This component also renders some texts, but it references a variable to do so. 
+<p>First is an app component with no state defined. It performs a single action, which is to 
+render the text a  stateless component and then you have a stateful function component. 
+This component also renders some texts, but it references a variable to do so.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-h.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7181,7 +7190,9 @@ First is an app component with no state defined. It performs a single action, wh
   alt="."
   width="60%" />
 </p>
-We'll explore how that works a little later. For now, notice the syntax using the first line of the app's function body. If you're familiar with how array destructuring works in plain JavaScript. This line of code might've already make sense to you.  
+<p>We'll explore how that works a little later. For now, notice the syntax using the first 
+line of the app's function body. If you're familiar with how array destructuring works in 
+plain JavaScript. This line of code might've already make sense to you.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-i.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7190,7 +7201,8 @@ We'll explore how that works a little later. For now, notice the syntax using th
   alt="."
   width="50%" />
 </p>
-To make things clear, consider an example array called fruits, which contains the three strings, apple, pear, and plum.
+<p>To make things clear, consider an example array called fruits, which contains the three strings, 
+apple, pear, and plum.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-j.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7200,7 +7212,10 @@ To make things clear, consider an example array called fruits, which contains th
   width="50%" />
 </p>
 
-With its ES6 version, JavaScript introduced the concept of array destructuring, which allows you to assign several variables from the array using a single line of code. In other words, you can assign apple, pear, and plum to the fruit 1, fruit 2 and fruit 3 variables quickly instead of one at a time.
+<p>With its ES6 version, JavaScript introduced the concept of array destructuring, which 
+allows you to assign several variables from the array using a single line of code. In other 
+words, you can assign apple, pear, and plum to the fruit 1, fruit 2 and fruit 3 variables 
+quickly instead of one at a time.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-k.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7210,7 +7225,9 @@ With its ES6 version, JavaScript introduced the concept of array destructuring, 
   width="50%" />
 </p>
 
-With this in mind, let's come back to that line in the stateful component. Notice that the syntax used is similar to the array destructuring example you just examined but with an interesting bit of code. React.useState. 
+<p>With this in mind, let's come back to that line in the stateful component. Notice that the 
+syntax used is similar to the array destructuring example you just examined but with an interesting 
+bit of code. React.useState.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-l.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7219,7 +7236,8 @@ With this in mind, let's come back to that line in the stateful component. Notic
   alt="State - data in a component that determines behavior."
   width="50%" />
 </p>
-Hooks allow developers to hook into some otherwise inaccessible functionality. For example, to access the State object you would use the useState hook. 
+<p>Hooks allow developers to hook into some otherwise inaccessible functionality. For example, to 
+access the State object you would use the useState hook.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-m.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7228,7 +7246,9 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
   alt="."
   width="50%" />
 </p>
-<p>To better understand what is being destructured in the app component, let's call a console log to the useState hook. The output reveals an array holding two things, the string Hello and a function.</p>
+<p>To better understand what is being destructured in the app component, let's call a console 
+log to the useState hook. The output reveals an array holding two things, the string Hello 
+and a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-n.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7237,7 +7257,9 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
   alt="."
   width="50%" />
 </p>
-<p>In this case, Hello is the state value assigned to the word state variable. The function is a built-in one that is not declared.  The function can be destructured with any name you'd like, but there is a convention to follow.</p>
+<p>In this case, Hello is the state value assigned to the word state variable. The function is 
+a built-in one that is not declared.  The function can be destructured with any name you'd like, 
+but there is a convention to follow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-o.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7246,7 +7268,9 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
   alt="."
   width="50%" />
 </p>
-<p>If you set the States variable name to be Greet, then the destructured state function should be setGreet. This is because the second destructured variable is a function that will be used to update the state of a variable.</p>
+<p>If you set the States variable name to be Greet, then the destructured state function 
+should be setGreet. This is because the second destructured variable is a function that 
+will be used to update the state of a variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-p.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7255,15 +7279,22 @@ Hooks allow developers to hook into some otherwise inaccessible functionality. F
   alt="."
   width="50%" />
 </p>
-<p>Let's examine an updated version of this stateful function component. Notice that the setGreet variable is not actually run, that is something that is done elsewhere.</p>
-<p>Later in this course, you'll learn about how you can extend this code with a clickable button to update the State.</p>
-<p>In this section (15), you learned about State in React, specifically the characteristics of stateful and stateless components in an app.</p>
+<p>Let's examine an updated version of this stateful function component. Notice that the 
+setGreet variable is not actually run, that is something that is done elsewhere.</p>
+<p>Later in this course, you'll learn about how you can extend this code with a 
+clickable button to update the State.</p>
+<p>In this section (15), you learned about State in React, specifically the characteristics 
+of stateful and stateless components in an app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Observing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Why do we use state in React? Because it's one way to deal with data in our React apps. 
-State is a powerful tool in Reacts that developers use to manage data that is likely to change in an application. Recall that the state data is internal to the component itself. This allows the components to re-render based on the changes in the states data and present the newest updates to the user.</p>
-<p>With that in mind, let's explore how you can update two components with the useState Hook that you encountered earlier.</p>
+State is a powerful tool in Reacts that developers use to manage data that is likely to 
+change in an application. Recall that the state data is internal to the component itself. 
+This allows the components to re-render based on the changes in the states data and present 
+the newest updates to the user.</p>
+<p>With that in mind, let's explore how you can update two components with the useState 
+Hook that you encountered earlier.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s16-a. usestate hook to access the date state (174) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7272,7 +7303,8 @@ State is a powerful tool in Reacts that developers use to manage data that is li
   alt="useState Hook - access the date state."
   width="50%" />
 </p>
-<p>The useState Hook allows a components to define and track state. It does this with two arguments. The first of which accesses state and the second of which updates it with a function.</p>
+<p>The useState Hook allows a components to define and track state. It does this with two 
+arguments. The first of which accesses state and the second of which updates it with a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s16-b. usestate hook to access the date state (174) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7281,7 +7313,8 @@ State is a powerful tool in Reacts that developers use to manage data that is li
   alt="useState Hook - access the date state."
   width="50%" />
 </p>
-<p>For example, you can use the date variable to access the date state. Then use the set date function to update the state.</p>
+<p>For example, you can use the date variable to access the date state. Then use the set date 
+function to update the state.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w2-s16-c. observe and manipulate the state of the component (174) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7290,8 +7323,13 @@ State is a powerful tool in Reacts that developers use to manage data that is li
   alt="Demonstration how to observe and manipulate the state of a component."
   width="70%" />
 </p>
-<p>To help you understand how useful we use useState Hook can be, you're now going to explore an example that demonstrates how to use it to observe and manipulate the state of the component.</p>
-<p>In this example app, I have a heading, child components. It receives the props and the object, and it also accesses the message property before it returns it and renders it as an H1 element. In the parent's app.js component, I import the heading component, and I set the word as a state variable, set to the string of Eat. For now, I ignore the comments after the Eat string. In the return statement, I wrap the heading components in a single div.</p>
+<p>To help you understand how useful we use useState Hook can be, you're now going to explore 
+an example that demonstrates how to use it to observe and manipulate the state of the component.</p>
+<p>In this example app, I have a heading, child components. It receives the props and the object, 
+and it also accesses the message property before it returns it and renders it as an H1 element. 
+In the parent's app.js component, I import the heading component, and I set the word as a 
+state variable, set to the string of Eat. For now, I ignore the comments after the Eat 
+string. In the return statement, I wrap the heading components in a single div.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w2-s16-d. jsx expression - message prop + word (175) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7300,7 +7338,10 @@ State is a powerful tool in Reacts that developers use to manage data that is li
   alt="Example JSX expression with message prop of word + word variable."
   width="50%" />
 </p>
-I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening and closing curly brace. You already know that's an opening and a closing curly brace signifies a JSX expression, which means that all the code inside of those curly braces will be evaluated as regular JavaScript. 
+I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening 
+and closing curly brace. You already know that's an opening and a closing curly brace 
+signifies a JSX expression, which means that all the code inside of those curly braces 
+will be evaluated as regular JavaScript. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s16-e. setword function to manipulate messaging (175) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7309,7 +7350,12 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="setWord to manipulate messaging."
   width="70%" />
 </p>
-<p>The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. Thus, in the browser window, I get the words eat at little lemon. If I want to update the value of the word States variable to something else like drink, I could use the set word function directly to help me achieve this. However, when I save the change and run my code, the app does not work. This is because one can't use the state's setting variable from your state directly.</p>
+<p>The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. 
+Thus, in the browser window, I get the words eat at little lemon. If I want to update the value 
+of the word States variable to something else like drink, I could use the set word function 
+directly to help me achieve this. However, when I save the change and run my code, the app 
+does not work. This is because one can't use the state's setting variable from your state 
+directly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s16-f. onclick event example (175) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7318,14 +7364,23 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="onClick event example."
   width="70%" />
 </p>
-<p>Instead of updating it directly, I can update it based on a click event. I have another element called button and onClick is equal to handleClick. I now set another function which I'll name handledClick. Inside the handleClick function definition, I run set word to drink. I click "File, Save All", and wait for the apps to compile. Now when I click the Click Here button, I get to drink at the little lemon.</p>
-<p>To observe and update state, you can use the state's setting functions and state variables using the state hook. But you must make sure that you use event handling attributes in JSX syntax or some other approaches which we'll learn more about later.</p>
-<p>In this section (16), you've learned about state change basics in React, including how to apply the use of state syntax, observe and manipulate state and components.</p>
+<p>Instead of updating it directly, I can update it based on a click event. I have another 
+element called button and onClick is equal to handleClick. I now set another function which 
+I'll name handledClick. Inside the handleClick function definition, I run set word to drink. 
+I click "File, Save All", and wait for the apps to compile. Now when I click the Click Here 
+button, I get to drink at the little lemon.</p>
+<p>To observe and update state, you can use the state's setting functions and state variables 
+using the state hook. But you must make sure that you use event handling attributes in JSX 
+syntax or some other approaches which we'll learn more about later.</p>
+<p>In this section (16), you've learned about state change basics in React, including how 
+to apply the use of state syntax, observe and manipulate state and components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Managing state</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>As for React applications grow in complexity, so too can the complexity of managing state across components. As a result, developers need a way to manage state in their application.</p>
-<p>In this section (17), you'll learn how to describe the concept of managing state and explore some of the solutions to managing state in React applications.</p>
+<p>As for React applications grow in complexity, so too can the complexity of managing state 
+across components. As a result, developers need a way to manage state in their application.</p>
+<p>In this section (17), you'll learn how to describe the concept of managing state and explore 
+some of the solutions to managing state in React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-a. managing state example (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7334,7 +7389,10 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="Managing state example."
   width="40%" />
 </p>
-<p>To illustrate a scenario in which states needs to be managed, consider a small React app that helps promote a healthier lifestyle by allowing the user to monitor their food intake. This app tracts a daily meal plan and the user can click on each individual meal as they've consumed it.</p>
+<p>To illustrate a scenario in which states needs to be managed, consider a small React app 
+that helps promote a healthier lifestyle by allowing the user to monitor their food intake. 
+This app tracts a daily meal plan and the user can click on each individual meal as they've 
+consumed it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-b. meals left to eat (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7352,7 +7410,8 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="Healthy eating app."
   width="40%" />
 </p>
-<p>The app consists of three components. A root components called App.js, and then two child components, mealsList and counter.</p>
+<p>The app consists of three components. A root components called App.js, and then two 
+child components, mealsList and counter.</p>
 <p>Let's explore each component in a little more detail.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w2-s17-d. app component imports mealslist and counter (178) ~~~~~~~~~~~~~~~~-->
@@ -7362,7 +7421,9 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="App component imports MealsList and Counter components and renders them on screen."
   width="40%" />
 </p>
-<p>First, the app component imports the mealsList and Counter components and renders them on the screen. Next, the mealsList component uses use state to hook to list days meals which are stored in an array.</p>
+<p>First, the app component imports the mealsList and Counter components and renders them 
+on the screen. Next, the mealsList component uses use state to hook to list days meals 
+which are stored in an array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-e. mealslist.js (178) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7371,7 +7432,10 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="MealsList.js."
   width="40%" />
 </p>
-<p>The array elements are saved inside the todaysMeals variable. Then the meals state variable is initialized to hold this value. In other words, the meals state variable holds the array. Finally, the counter component tracks the number of meals that a user is allowed to eat today.</p>
+<p>The array elements are saved inside the todaysMeals variable. Then the meals state 
+variable is initialized to hold this value. In other words, the meals state variable 
+holds the array. Finally, the counter component tracks the number of meals that a 
+user is allowed to eat today.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w2-s17-f. mealslist to counter via siblings component (179) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7380,8 +7444,14 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="MealsList to Counter vis siblings components."
   width="40%" />
 </p>
-<p>While this coding components structure may look good, there is a bit of a problem. The counter component needs to get state information from the mealsList components, but both components are rendered by the app component. In other words, the mealsList and the counter components are siblings and not in a parent-child relationship. This brings up a question. How can you pass the state information from the mealsList component to the counter component as the counter component is not a child of the mealsList component?</p>
- <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>While this coding components structure may look good, there is a bit of a problem. 
+The counter component needs to get state information from the mealsList components, 
+but both components are rendered by the app component. In other words, the mealsList 
+and the counter components are siblings and not in a parent-child relationship. 
+This brings up a question. How can you pass the state information from the mealsList 
+component to the counter component as the counter component is not a child of the 
+mealsList component?</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ w2-s17-g. mealslist to app via state component (179) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
@@ -7389,7 +7459,9 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="MealsList to App via state components."
   width="40%" />
 </p>
-<p>Let's explore a possible solution. First, you can simplify the mealsList component by extracting the returned value into its own components, then you can work with the separate components to display different meal items. Let's call this new component mealsIitem.</p>
+<p>Let's explore a possible solution. First, you can simplify the mealsList component by 
+extracting the returned value into its own components, then you can work with the separate 
+components to display different meal items. Let's call this new component mealsIitem.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s17-h. app to mealslist to mealitem components (180) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7398,8 +7470,15 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="App to MealsList to MealItem components."
   width="40%" />
 </p>
-<p>To do this, you can use the practice known as lifting state up. This means that you move the state from mealsList up to the app components, then you can pass stage three props using the mealsList components as a bridge to the mealItem component. Then you just have to count the data available in the counter components.</p>
-<p>However, this approach relies on two practices, lifting state up and prop drilling. To understand the issues this can cause, let's recall the current relationship between your app components. The state has now moved up to the app component and my mealsList component becomes a conduits for the state data to be passed to its destination, the mealItem component.</p>
+<p>To do this, you can use the practice known as lifting state up. This means that you move the 
+state from mealsList up to the app components, then you can pass stage three props using the 
+mealsList components as a bridge to the mealItem component. Then you just have to count the 
+data available in the counter components.</p>
+<p>However, this approach relies on two practices, lifting state up and prop drilling. To 
+understand the issues this can cause, let's recall the current relationship between your 
+app components. The state has now moved up to the app component and my mealsList component 
+becomes a conduits for the state data to be passed to its destination, the mealItem 
+component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w2-s17-i. prop drilling passing parent to child (180) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7408,11 +7487,20 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="Prop drilling passing parent to child and grandchild."
   width="40%" />
 </p>
-<p>The question you must now ask is, what is wrong with prop drilling? Prop drilling is a commonly used term to describe having to pass Stage 3 props in several layers of components, from the parent to the child, to the grandchild, and so on.</p>
-<p>Note that if the source data changes, you will have to transfer those changes across the entire prop drilled structure.</p>
-<p>This complicates things because state updates go to all the child components and their siblings, which then needs to be updated to reflect this states change.</p>
-<p>Additionally, the problem gets bigger as the app grows and you'll potentially have a huge amount of state being kept in the app component. Keep in mind that most of that state is not really supposed to be in the app component. That is because that state is about components such as the mealItem component.</p>
-<p>There's another way to phrase this problem through the viewpoint of global state. Whenever I have states that might have to be used in various places in my app, that's a global state issue.</p>
+<p>The question you must now ask is, what is wrong with prop drilling? Prop drilling is 
+a commonly used term to describe having to pass Stage 3 props in several layers of 
+components, from the parent to the child, to the grandchild, and so on.</p>
+<p>Note that if the source data changes, you will have to transfer those changes 
+across the entire prop drilled structure.</p>
+<p>This complicates things because state updates go to all the child components 
+and their siblings, which then needs to be updated to reflect this states change.</p>
+<p>Additionally, the problem gets bigger as the app grows and you'll potentially 
+have a huge amount of state being kept in the app component. Keep in mind that 
+most of that state is not really supposed to be in the app component. That is 
+because that state is about components such as the mealItem component.</p>
+<p>There's another way to phrase this problem through the viewpoint of 
+global state. Whenever I have states that might have to be used in various 
+places in my app, that's a global state issue.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w2-s17-j. api cuts out prop drilling and lifting state up (181) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7421,7 +7509,8 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="API cuts out prop drilling and lifting state up."
   width="40%" />
 </p>
-<p>An elegant solution for this issue is Reacts Context API. One way to think about the context API is that it cuts out the middleman. There's no need for prop drilling and lifting state up.</p>
+<p>An elegant solution for this issue is Reacts Context API. One way to think about the context 
+API is that it cuts out the middleman. There's no need for prop drilling and lifting state up.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w2-s17-k. extract state to separate file (181) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7430,13 +7519,22 @@ I pass the message prop of word plus, and then "at Little Lemon", all wrapped in
   alt="Components which needs data gets it from the context API."
   width="40%" />
 </p>
-Instead, the component that needs the data simply gets it from the context API. The way that this is achieved is by extracting the state into a separate file that holds the state in context, then, any file that needs it simply imports it and uses it. Great job. You should now have a great understanding of managing states in React.
+Instead, the component that needs the data simply gets it from the context API. The way that 
+this is achieved is by extracting the state into a separate file that holds the state in 
+context, then, any file that needs it simply imports it and uses it. Great job. You should 
+now have a great understanding of managing states in React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Prop Drilling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>As you’ve learned previously, prop drilling is a situation where you are passing data from a parent to a child component, then to a grandchild component, and so on, until it reaches a more distant component further down the component tree, where this data is required.</p>
-<p>Here is a very simple app that focuses on the process of props passing through several components.</p>
-<p>Please note that the goal here is not to build an app that would exist in the real world. The goal of this app is to examine the practice of prop drilling, so that you can focus on it and understand it in isolation.</p>
+<p>As you’ve learned previously, prop drilling is a situation where you are passing data 
+from a parent to a child component, then to a grandchild component, and so on, until 
+it reaches a more distant component further down the component tree, where this data 
+is required.</p>
+<p>Here is a very simple app that focuses on the process of props passing through several 
+components.</p>
+<p>Please note that the goal here is not to build an app that would exist in the real 
+world. The goal of this app is to examine the practice of prop drilling, so that you 
+can focus on it and understand it in isolation.</p>
 <p>Here is the code for the app:</p>
 
 <details open>
@@ -7487,12 +7585,30 @@ Instead, the component that needs the data simply gets it from the context API. 
 
 </details>
 
-<p>This app is simple enough that you should be able to understand it on your own. Let’s address the main points to highlight what is happening in the code above.  The top-most component of this app is the App component. The App component returns the Main component. The Main component accepts a single attribute, named msg, as in “message”.</p>
-<p>At the very top of the app, the Main function declares how the Main component should behave. The Main component is responsible for rendering the Header component. Note that when the Header component is rendered from inside Main, it also receives the msg prop.</p>
-<p>The Header component’s function declaration renders an h1 that reads “Header here”, then another component named Wrapper. Note that the naming here is irrelevant – the components Header and Wrapper are named to make it a bit more like it might appear in a real app – but ultimately, the focus is on having multiple components, rather than describing specific component names properly.</p>
-<p>So, the Header component’s function declaration has a return statement, which renders the Wrapper component with the msg prop passed to it.</p>
-<p>In the Wrapper component’s function declaration, there’s an h2 that reads “Wrapper here”, in addition to the rendering of the Button component, which also receives the msg attribute.</p>
-<p>Finally, the Button component’s function declaration is coded to receive the props object, then inside of the wrapping div, show an h3. The h3 reads “This is the Button component”, and then, under that, there’s a button element with an onClick event-handling attribute. This is passed to an arrow function which should alert the string that comes from the props.msg prop.</p>
+<p>This app is simple enough that you should be able to understand it on your own. 
+Let’s address the main points to highlight what is happening in the code above.  
+The top-most component of this app is the App component. The App component returns 
+the Main component. The Main component accepts a single attribute, named msg, as 
+in “message”.</p>
+<p>At the very top of the app, the Main function declares how the Main component 
+should behave. The Main component is responsible for rendering the Header 
+component. Note that when the Header component is rendered from inside Main, 
+it also receives the msg prop.</p>
+<p>The Header component’s function declaration renders an h1 that reads “Header here”, 
+then another component named Wrapper. Note that the naming here is irrelevant – the 
+components Header and Wrapper are named to make it a bit more like it might appear 
+in a real app – but ultimately, the focus is on having multiple components, rather 
+than describing specific component names properly.</p>
+<p>So, the Header component’s function declaration has a return statement, which 
+renders the Wrapper component with the msg prop passed to it.</p>
+<p>In the Wrapper component’s function declaration, there’s an h2 that reads “Wrapper here”, 
+in addition to the rendering of the Button component, which also receives the 
+msg attribute.</p>
+<p>Finally, the Button component’s function declaration is coded to receive the 
+props object, then inside of the wrapping div, show an h3. The h3 reads “This is 
+the Button component”, and then, under that, there’s a button element with an 
+onClick event-handling attribute. This is passed to an arrow function which 
+should alert the string that comes from the props.msg prop.</p>
 <p>All this code results in the following UI rendered on the screen:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s18-a. ui boundaries are illustrated (184) ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7502,8 +7618,13 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="Illustrating the boundaries of each component."
   width="70%" />
 </p>
-<p>This screenshot illustrates the boundaries of each component. The Main component can’t be found in the UI because it’s just rendering the Header component. The Header component then renders the Wrapper component, and the Wrapper component then renders the Button component.</p>
-<p>Note that the string that was passed on and on through each of the children component’s props’ objects is not found anywhere. However, it will appear when you click the “Click me!” button, as an alert:</p>
+<p>This screenshot illustrates the boundaries of each component. The Main component can’t 
+be found in the UI because it’s just rendering the Header component. The Header component 
+then renders the Wrapper component, and the Wrapper component then renders the Button 
+component.</p>
+<p>Note that the string that was passed on and on through each of the children component’s 
+props’ objects is not found anywhere. However, it will appear when you click the “Click me!” 
+button, as an alert:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s18-b. i passed through the header and wrapper to the button (185) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7512,12 +7633,19 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="I passed through the Header and Wrapper to reach the Button component."
   width="70%" />
 </p>
-<p>The alert’s message reads “I passed through the Header and the Wrapper and I reached the Button component”.</p>
-<p>That’s really all there is to it. Props drilling simply means passing a prop through props objects through several layers of components. The more layers there are, the more repetitive and unnecessary this feels. There are various ways to deal with this, as you’ll learn in the lesson items that follow.</p>
+<p>The alert’s message reads “I passed through the Header and the Wrapper and I reached 
+the Button component”.</p>
+<p>That’s really all there is to it. Props drilling simply means passing a prop through 
+props objects through several layers of components. The more layers there are, the more 
+repetitive and unnecessary this feels. There are various ways to deal with this, as you’ll 
+learn in the lesson items that follow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. React state management</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>During this course, you've probably learned a few approaches for managing states between a parent's component and a child components. But have you wondered how well these approaches still apply for more complex apps with multiple levels of components? Fortunately, there are tools available to help you do just that.</p>
+<p>During this course, you've probably learned a few approaches for managing states 
+between a parent's component and a child components. But have you wondered how well 
+these approaches still apply for more complex apps with multiple levels of components? 
+Fortunately, there are tools available to help you do just that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w2-s19-a. context api to manage state and state management (186) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7526,7 +7654,10 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="How context API is used to manage state and perform basic state management."
   width="40%" />
 </p>
-<p>By the end of this section (19), you'll understand how context API can be used to manage state more efficiently across multiple levels of components. You'll also be able to perform basic states management using the useContext and a useReducer hooks found in context API.</p>
+<p>By the end of this section (19), you'll understand how context API can be used to 
+manage state more efficiently across multiple levels of components. You'll also be 
+able to perform basic states management using the useContext and a useReducer hooks 
+found in context API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s19-b. passing state from 1 component to another (186) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7535,7 +7666,9 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="Passing state from 1 component to another component."
   width="40%" />
 </p>
-<p>By this point, you're probably familiar with the practice of passing states from one component to another by using props. While passing props helps to manage states, it is like taking a bus and going through each stop before you get off at the end.</p>
+<p>By this point, you're probably familiar with the practice of passing states from 
+one component to another by using props. While passing props helps to manage states, 
+it is like taking a bus and going through each stop before you get off at the end.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s19-c. context api is like teleporting to your destination (186) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7544,7 +7677,9 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="Context API is like teleporting to your destination."
   width="40%" />
 </p>
-<p>In comparison, using the context API is like teleporting to your destination instantly. It's a way to bypass the redundant passing of data through multiple levels of components.</p>
+<p>In comparison, using the context API is like teleporting to your destination 
+instantly. It's a way to bypass the redundant passing of data through multiple levels 
+of components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s19-d. context provider defined to store state (187) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7553,7 +7688,9 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="Context Provider to store state."
   width="60%" />
 </p>
-<p>To set it up, you need to add a piece of code that will be your context provider. It's also where the state will be stored. When a component needs to use the state, it becomes a context consumer.</p>
+<p>To set it up, you need to add a piece of code that will be your context provider. 
+It's also where the state will be stored. When a component needs to use the state, 
+it becomes a context consumer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w2-s19-e. example utilizing context api to control state (187) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7562,7 +7699,10 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="Utilizing context API to control state."
   width="80%" />
 </p>
-<p>Now let's examine a simple app that utilizes the context API to control state. In my app.js file, I'll use some code for a star to set up. You can also find this file in the additional resources if you'd like to use it to practice working with context API.</p>
+<p>Now let's examine a simple app that utilizes the context API to control state. 
+In my app.js file, I'll use some code for a star to set up. You can also find 
+this file in the additional resources if you'd like to use it to practice working 
+with context API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-f.  (188) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7571,7 +7711,11 @@ Instead, the component that needs the data simply gets it from the context API. 
   alt="."
   width="80%" />
 </p>
-In the app components, I have import statements for meals provider and meals list. The meals provider provides contexts state data and gives it to all the components it wrapped inside the app components. Currently, it wraps two components, the meals list components and the counter components, which are between the div tags of the return  statements. 
+<p>In the app components, I have import statements for meals provider and meals list. 
+The meals provider provides contexts state data and gives it to all the components 
+it wrapped inside the app components. Currently, it wraps two components, the meals 
+list components and the counter components, which are between the div tags of the 
+return  statements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-g.  (188) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7580,11 +7724,11 @@ In the app components, I have import statements for meals provider and meals lis
   alt="."
   width="80%" />
 </p>
-The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements.
+<p>The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements.</p>
 
-The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the React.useContexts core and passing it to the meals contexts as its single argument. This makes it easier for me to destructure the meals objects from the use meals list context variable. 
+<p>The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the React.useContexts core and passing it to the meals contexts as its single argument. This makes it easier for me to destructure the meals objects from the use meals list context variable.</p>
 
-Finally, in the meals list component, I'm accessing the context date by importing the use meals list context from the meals provider file. 
+<p>Finally, in the meals list component, I'm accessing the context date by importing the use meals list context from the meals provider file.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-h.  (189) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7594,9 +7738,10 @@ Finally, in the meals list component, I'm accessing the context date by importin
   width="80%" />
 </p>
 
-Let's break down how this component works in more detail. First, I'm destructuring the meals property from the objects returned from the use meals list context call. The original object has a single property named meals, which holds an array of three meals strings. 
-Once I destructure the meals property from that object, all I have left is the array of three strings saved in the meals variable, which allows me to map over the meals value where I'm rendering an H2 for each member of the meals array. 
-This code is probably more complex than most of what you have encountered. Don't worry if it takes time for you to understand how it works. Just remember the important parts, that this setup gives you a nice starting point for working with the context API. 
+<p>Let's break down how this component works in more detail. First, I'm destructuring the meals property from the objects returned from the use meals list context call. The original object has a single property named meals, which holds an array of three meals strings.</p>
+
+<p>Once I destructure the meals property from that object, all I have left is the array of three strings saved in the meals variable, which allows me to map over the meals value where I'm rendering an H2 for each member of the meals array. 
+This code is probably more complex than most of what you have encountered. Don't worry if it takes time for you to understand how it works. Just remember the important parts, that this setup gives you a nice starting point for working with the context API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-i.  (190) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7605,7 +7750,7 @@ This code is probably more complex than most of what you have encountered. Don't
   alt="."
   width="80%" />
 </p>
-Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate. 
+<p>Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-j.  (190) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7614,7 +7759,8 @@ Lastly, let's examine the counter component. Note that it gets the context data 
   alt="."
   width="80%" />
 </p>
-Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example. Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function. 
+<p>Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example.</p>
+<p>Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-k.  (191) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7623,12 +7769,12 @@ Next, let me show you how the useReducer hook works. Let's move on to the useRed
   alt="."
   width="80%" />
 </p>
-Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button. 
-In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.
+<p>Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button.</p>
+<p>In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>20. Stateful vs stateless</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In life, there are rarely perfect solutions that suit every need. For instance, this concept applies when it comes to selecting a vehicle. A small car is usually more fuel efficient but has limited space. On the other hand, an SUV can handle many passengers but burns fuel quickly. Making the best choice starts with identifying your specific needs. This is no different when it comes to choosing stateful or stateless components in programming.
+<p>In life, there are rarely perfect solutions that suit every need. For instance, this concept applies when it comes to selecting a vehicle. A small car is usually more fuel efficient but has limited space. On the other hand, an SUV can handle many passengers but burns fuel quickly. Making the best choice starts with identifying your specific needs. This is no different when it comes to choosing stateful or stateless components in programming.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-a.  (192) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7637,8 +7783,8 @@ In life, there are rarely perfect solutions that suit every need. For instance, 
   alt="."
   width="40%" />
 </p>
-By the end of this section (20), you'll be able to describe the differences between types of state and choose the best types to suit a given need and explain how the dynamic nature of React calls a structured decisions to influence complexity. 
-The distinction between stateful and stateless components is that a stateful component holds states as internal data and its state changes based on the way that the app is built; often as a result of user actions. A stateless component however, doesn't store states and any changes must be inherited through props.
+<p>By the end of this section (20), you'll be able to describe the differences between types of state and choose the best types to suit a given need and explain how the dynamic nature of React calls a structured decisions to influence complexity.</p>
+<p>The distinction between stateful and stateless components is that a stateful component holds states as internal data and its state changes based on the way that the app is built; often as a result of user actions. A stateless component however, doesn't store states and any changes must be inherited through props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-b.  (192) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7647,9 +7793,9 @@ The distinction between stateful and stateless components is that a stateful com
   alt="."
   width="40%" />
 </p>
-When deciding if a component should be stateless or stateful, you can refer to the following rules. Use stateless components when your component doesn't need to maintain its own state in order to work. Use stateful components when your component does need to maintain its own state in order to work. 
+<p>When deciding if a component should be stateless or stateful, you can refer to the following rules. Use stateless components when your component doesn't need to maintain its own state in order to work. Use stateful components when your component does need to maintain its own state in order to work.</p>
 
-This might sound like an oversimplification, but let's explore why this general rule is enough. 
+<p>This might sound like an oversimplification, but let's explore why this general rule is enough.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-c.  (193) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7658,7 +7804,7 @@ This might sound like an oversimplification, but let's explore why this general 
   alt="."
   width="60%" />
 </p>
-A common approach for organizing components in React is to have a stateful component as the parent which then sends its states down to several stateless components that then receive the state and render it on the screen. The children components are stateless because they don't have their own state and only receive their parent state when passed down by using props. 
+<p>A common approach for organizing components in React is to have a stateful component as the parent which then sends its states down to several stateless components that then receive the state and render it on the screen. The children components are stateless because they don't have their own state and only receive their parent state when passed down by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-d.  (193) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7667,7 +7813,7 @@ A common approach for organizing components in React is to have a stateful compo
   alt="."
   width="40%" />
 </p>
-Keep in mind that you should never change the values of props in children components as they are immutable. Now that you know the basic logic, let's break down a specific example of this approach in action starting with two components; the app component and the child  component which returns a message. In the app component, the useState hook defines and keeps the states that will be passed to the child component as the props object. The app component renders the child component and passes the date to it in a string format as a prop named message. 
+<p>Keep in mind that you should never change the values of props in children components as they are immutable. Now that you know the basic logic, let's break down a specific example of this approach in action starting with two components; the app component and the child  component which returns a message. In the app component, the useState hook defines and keeps the states that will be passed to the child component as the props object. The app component renders the child component and passes the date to it in a string format as a prop named message.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-e.  (194) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7676,7 +7822,7 @@ Keep in mind that you should never change the values of props in children compon
   alt="."
   width="30%" />
 </p>
-One thing to keep in mind and something that is often overlooked by React beginners is that a prop doesn't always have to pass state. In addition to state, JavaScript values and functions can also be passed to the child component. It's still data but it's props data rather than state data. 
+<p>One thing to keep in mind and something that is often overlooked by React beginners is that a prop doesn't always have to pass state. In addition to state, JavaScript values and functions can also be passed to the child component. It's still data but it's props data rather than state data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-f.  (194) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7685,7 +7831,7 @@ One thing to keep in mind and something that is often overlooked by React beginn
   alt="."
   width="40%" />
 </p>
-In the child component, there is an h1 element. The content of this element will be the message prop that is passed into the component. Note the props are not changed or updated and the components as they are immutable, meaning they can't be changed. Since the child component doesn't store any state, it is a stateless component. 
+<p>In the child component, there is an h1 element. The content of this element will be the message prop that is passed into the component. Note the props are not changed or updated and the components as they are immutable, meaning they can't be changed. Since the child component doesn't store any state, it is a stateless component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-g.  (194) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7694,8 +7840,8 @@ In the child component, there is an h1 element. The content of this element will
   alt="."
   width="40%" />
 </p>
-All of its data comes from the props passed into the component. The app component stores the state which can be changed through events and functions and is therefore a stateful component. 
-In this section (20), you learned why and when to utilize stateful or stateless components in your React apps based on your specific needs. You also observed that although a stateless component can't directly pass state, it can still trigger actions that will update the state of other components.
+<p>All of its data comes from the props passed into the component. The app component stores the state which can be changed through events and functions and is therefore a stateful component.</p>
+<p>In this section (20), you learned why and when to utilize stateful or stateless components in your React apps based on your specific needs. You also observed that although a stateless component can't directly pass state, it can still trigger actions that will update the state of other components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Managing state in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7801,6 +7947,7 @@ In this section (20), you learned why and when to utilize stateful or stateless 
 ```
 
 <h4>Step 2.</h4>
+
 <p>The Fruits component should be updated so that it accepts state from the App component.
 Now all that you need to do is to update the code in the Fruits components to accept the props object and render the fruits property where appropriate.</p>
 <p>That means that the Fruits component will end up having the following code:</p>
@@ -7925,8 +8072,8 @@ of content in response to user status or choice.</p>
   alt="."
   width="40%" />
 </p>
-In this section (01), you will learn about the basic types of navigation on websites and how the navigation process works in React. Now, if you think about the history of web layouts and web navigation, it's likely development of other great inventions throughout history. 
-For example, after the Wright Brothers flew the first plane in 1903 and Kitty Hawk, North Carolina, there was a period of a few decades where engineers were experimenting with different designs. Planes with two or three sets of wings were the order of the day. Finally, after this initial exploration stage, airplane design settled down and the rules and best practices of building airplanes were established. 
+<p>In this section (01), you will learn about the basic types of navigation on websites and how the navigation process works in React. Now, if you think about the history of web layouts and web navigation, it's likely development of other great inventions throughout history.</p>
+<p>For example, after the Wright Brothers flew the first plane in 1903 and Kitty Hawk, North Carolina, there was a period of a few decades where engineers were experimenting with different designs. Planes with two or three sets of wings were the order of the day. Finally, after this initial exploration stage, airplane design settled down and the rules and best practices of building airplanes were established.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7935,8 +8082,8 @@ For example, after the Wright Brothers flew the first plane in 1903 and Kitty Ha
   alt="."
   width="40%" />
 </p>
-Like the development of rules of airplane construction, after the experimental years of the early web, the Web Design and Development Community settled on a few accepted unexpected designs. The focus and modern website navigation user interfaces is on utility. Stephen Krug's famous book on user experience Don't Make Me Think sums up the rule that developers are following today. 
-It's your duty as a web developer and designer to follow the best practices that have already been established. For example, a steering wheel does not belong on a washing machine, or an old-style phone dial does not belong in a car. In the same way, you wouldn't want to confuse your website visitors by giving them navigation that might look and feel smart, but that's completely different from what their used to. 
+<p>Like the development of rules of airplane construction, after the experimental years of the early web, the Web Design and Development Community settled on a few accepted unexpected designs. The focus and modern website navigation user interfaces is on utility. Stephen Krug's famous book on user experience Don't Make Me Think sums up the rule that developers are following today.</p>
+<p>It's your duty as a web developer and designer to follow the best practices that have already been established. For example, a steering wheel does not belong on a washing machine, or an old-style phone dial does not belong in a car. In the same way, you wouldn't want to confuse your website visitors by giving them navigation that might look and feel smart, but that's completely different from what their used to.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7945,7 +8092,7 @@ It's your duty as a web developer and designer to follow the best practices that
   alt="."
   width="40%" />
 </p>
-You might be wondering what is accepted modern website navigation, and how does it work in React. Website navigation is the parts of any website that allows you to browse through various pages or links on that website from a single component. There are several practical implementations of this user interface pattern. Let's explore each briefly now. 
+<p>You might be wondering what is accepted modern website navigation, and how does it work in React. Website navigation is the parts of any website that allows you to browse through various pages or links on that website from a single component. There are several practical implementations of this user interface pattern. Let's explore each briefly now.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7954,7 +8101,7 @@ You might be wondering what is accepted modern website navigation, and how does 
   alt="."
   width="40%" />
 </p>
-The most common navigation components are, a horizontal navigation bar, a vertical navigation menu, a menu hiding behind a button, and a footer navigation menu. 
+<p>The most common navigation components are, a horizontal navigation bar, a vertical navigation menu, a menu hiding behind a button, and a footer navigation menu.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7963,7 +8110,7 @@ The most common navigation components are, a horizontal navigation bar, a vertic
   alt="."
   width="40%" />
 </p>
-The horizontal navigation bar is often referred to as a navbar, and the vertical navigation bar is also known as a sidebar navigation. The menu hiding behind the button is usually represented by an icon that has three horizontal lines and is thus referred to as the burger icon or the burger menu. 
+<p>The horizontal navigation bar is often referred to as a navbar, and the vertical navigation bar is also known as a sidebar navigation. The menu hiding behind the button is usually represented by an icon that has three horizontal lines and is thus referred to as the burger icon or the burger menu.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7972,8 +8119,8 @@ The horizontal navigation bar is often referred to as a navbar, and the vertical
   alt="."
   width="40%" />
 </p>
-Alternative to this is the drop-down navigation menu, known as the mega menu. This menu is usually also hiding behind a button and it's usually used as a sub or large menu on e-commerce sites and other sites that require many links. 
-The footer navigation menu is usually displayed as several visual columns containing links. All these mentioned menu patterns can often be used simultaneously in different parts of the same page. 
+<p>Alternative to this is the drop-down navigation menu, known as the mega menu. This menu is usually also hiding behind a button and it's usually used as a sub or large menu on e-commerce sites and other sites that require many links. 
+The footer navigation menu is usually displayed as several visual columns containing links. All these mentioned menu patterns can often be used simultaneously in different parts of the same page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7982,7 +8129,7 @@ The footer navigation menu is usually displayed as several visual columns contai
   alt="."
   width="40%" />
 </p>
-Additionally, a more complex navigation UI can include multiple navigation approaches in a single component. You may, for example, have a horizontal navigation bar or navbar with drop-down menu items. 
+<p>Additionally, a more complex navigation UI can include multiple navigation approaches in a single component. You may, for example, have a horizontal navigation bar or navbar with drop-down menu items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7991,9 +8138,9 @@ Additionally, a more complex navigation UI can include multiple navigation appro
   alt="."
   width="40%" />
 </p>
-If you're using a smaller resolution, the navigation bar displays as a burger menu icon. When you click on the burger menu icon a mobile sidebar or a vertical menu appears. Now you're familiar with some of the navigation types that are available in your React apps. 
+<p>If you're using a smaller resolution, the navigation bar displays as a burger menu icon. When you click on the burger menu icon a mobile sidebar or a vertical menu appears. Now you're familiar with some of the navigation types that are available in your React apps.</p>
 
-Let's explore how they are implemented to load different pages. If you compare the navigation of websites built with React against HTML and CSS, you will likely find no visual difference. 
+<p>Let's explore how they are implemented to load different pages. If you compare the navigation of websites built with React against HTML and CSS, you will likely find no visual difference.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8002,7 +8149,7 @@ Let's explore how they are implemented to load different pages. If you compare t
   alt="."
   width="40%" />
 </p>
-While visually everything looks the same, in the code, React navigation works a bit differently. This is because the entire app is loaded inside a single div. You're not actually visiting different pages like you would with hyperlinks and HTML files. Instead, the content of that single div is controlled by React, and it's based on changes to the virtual DOM. It either updates the existing view or loads a completely new view, giving the user the impression of visiting a completely different URL. 
+<p>While visually everything looks the same, in the code, React navigation works a bit differently. This is because the entire app is loaded inside a single div. You're not actually visiting different pages like you would with hyperlinks and HTML files. Instead, the content of that single div is controlled by React, and it's based on changes to the virtual DOM. It either updates the existing view or loads a completely new view, giving the user the impression of visiting a completely different URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8011,7 +8158,7 @@ While visually everything looks the same, in the code, React navigation works a 
   alt="."
   width="40%" />
 </p>
-Recall that with HTML, developers can use a list to make a navigation menu. Each list item contains a hyperlink to an HTML file, then some CSS to style the menu, like the display inline property to make the list display horizontally. 
+<p>Recall that with HTML, developers can use a list to make a navigation menu. Each list item contains a hyperlink to an HTML file, then some CSS to style the menu, like the display inline property to make the list display horizontally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8020,7 +8167,7 @@ Recall that with HTML, developers can use a list to make a navigation menu. Each
   alt="."
   width="40%" />
 </p>
-To help illustrate how React's navigation works, think about how the buttons on the inside of an elevator work. Pressing the button will take you to the selected floor. Similarly, if you click on it, each link on a website takes you to a different page. 
+<p>To help illustrate how React's navigation works, think about how the buttons on the inside of an elevator work. Pressing the button will take you to the selected floor. Similarly, if you click on it, each link on a website takes you to a different page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8030,7 +8177,7 @@ To help illustrate how React's navigation works, think about how the buttons on 
   width="40%" />
 </p>
 
-If however, you're in a React elevator, It says if the elevator never moves. 
+<p>If however, you're in a React elevator, It says if the elevator never moves.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8039,8 +8186,8 @@ If however, you're in a React elevator, It says if the elevator never moves.
   alt="."
   width="40%" />
 </p>
-Instead, when you press a button in this React's elevator, the entire construction of that given floor is injected into a single floor of this impossible building.
-However, this functionality is not available to developers from the React's library itself. In order to achieve this illusion of a multi-page website, you need to add the React router library to your React projects. 
+<p>Instead, when you press a button in this React's elevator, the entire construction of that given floor is injected into a single floor of this impossible building.
+However, this functionality is not available to developers from the React's library itself. In order to achieve this illusion of a multi-page website, you need to add the React router library to your React projects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-n.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8049,82 +8196,92 @@ However, this functionality is not available to developers from the React's libr
   alt="."
   width="40%" />
 </p>
-Once again, you add this using the import statement and you'll learn more about how to do this soon. 
+<p>Once again, you add this using the import statement and you'll learn more about how to do this soon.</p>
 
-In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.
+<p>In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Navigation</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (02), you’ll learn about the differences between traditional web pages and React-powered web pages (SPAs – single page applications).
-Once you understand the difference between these two ways of building web pages, you will be able to understand the necessary difference between how navigation works in traditional web apps versus how it works in modern SPA websites.
+<p>In this section (02), you’ll learn about the differences between traditional web pages and React-powered web pages (SPAs – single page applications).</p>
+<p>Once you understand the difference between these two ways of building web pages, you will be able to understand the necessary difference between how navigation works in traditional web apps versus how it works in modern SPA websites.</p>
+
 <h4>Before Single-Page Apps</h4>
-Before the advent of modern JavaScript frameworks, most websites were implemented as multi-page applications. That is, when a user clicks on a link, the browser navigates to a new webpage, sends a request to the web server; this then responds with the full webpage and the new page is displayed in the browser.
-This can make your application resource intensive to the Web Server. CPU time is spent rendering dynamic pages and network bandwidth is used sending entire webpages back for every request. If your website is complex, it may appear slow to your users, even slower if they have a slow or limited internet connection.
-To solve this problem, many web developers develop their web applications as Single Page Applications.
+
+<p>Before the advent of modern JavaScript frameworks, most websites were implemented as multi-page applications. That is, when a user clicks on a link, the browser navigates to a new webpage, sends a request to the web server; this then responds with the full webpage and the new page is displayed in the browser.</p>
+<p>This can make your application resource intensive to the Web Server. CPU time is spent rendering dynamic pages and network bandwidth is used sending entire webpages back for every request. If your website is complex, it may appear slow to your users, even slower if they have a slow or limited internet connection.</p>
+<p>To solve this problem, many web developers develop their web applications as Single Page Applications.</p>
+
 <h4>Single-Page Apps</h4>
-You’re using many Single Page Applications every day. Think of your favorite social network, or online email provider, or the map application you use to find local businesses. Their excellent user experiences are driven by Single Page Applications.
-A Single Page Application allows the user to interact with the website without downloading entire new webpages. Instead, it rewrites the current webpage as the user interacts with it. The outcome is that the application will feel faster and more responsive to the user.
+
+<p>You’re using many Single Page Applications every day. Think of your favorite social network, or online email provider, or the map application you use to find local businesses. Their excellent user experiences are driven by Single Page Applications.
+A Single Page Application allows the user to interact with the website without downloading entire new webpages. Instead, it rewrites the current webpage as the user interacts with it. The outcome is that the application will feel faster and more responsive to the user.</p>
+
 <h4>How Does a Single-Page App Work?</h4>
-When the user navigates to the web application in the browser, the Web Server will return the necessary resources to run the application. There are two approaches to serving code and resources in Single Page Applications.
-1.	When the browser requests the application, return and load all necessary HTML, CSS and JavaScript immediately. This is known as bundling. 
-2.	When the browser requests the application, return only the minimum HTML, CSS and JavaScript needed to load the application. Additional resources are downloaded as required by the application, for example, when a user navigates to a specific section of the application. This is known as lazy loading or code splitting. 
-Both approaches are valid and are used depending on the size, complexity and bandwidth requirements of the application. If your application is complex and has a lot of resources, your bundles will grow quite large and take a long time to download – possibly ending up slower than a traditional web application!
-Once the application is loaded, all logic and changes are applied to the current webpage.
-Let’s look at an example.
+
+<p>When the user navigates to the web application in the browser, the Web Server will return the necessary resources to run the application. There are two approaches to serving code and resources in Single Page Applications.</p>
+
+<ol type="1">
+  <li><p>When the browser requests the application, return and load all necessary HTML, CSS and JavaScript immediately. This is known as bundling.</p></li>
+  <li><p>When the browser requests the application, return only the minimum HTML, CSS and JavaScript needed to load the application. Additional resources are downloaded as required by the application, for example, when a user navigates to a specific section of the application. This is known as lazy loading or code splitting.</li>
+</ol>
+
+<p>Both approaches are valid and are used depending on the size, complexity and bandwidth requirements of the application. If your application is complex and has a lot of resources, your bundles will grow quite large and take a long time to download – possibly ending up slower than a traditional web application!</p>
+<p>Once the application is loaded, all logic and changes are applied to the current webpage.</p>
+<p>Let’s look at an example.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-a. traditional page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s02-a.png?raw=true"
-  alt="."
+  alt="Traditional Page Lifecycle."
   width="40%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-b. spa page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s02-b.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
-<h4>An Example of a Single-Page App</h4>
-Imagine there is a webpage that has a Label and a Button. It will display a random movie name when the button is clicked.
-In a traditional website, when the button is clicked, the browser will send a POST request to the web server. The web server will return a new web page containing the button and movie name, and the web browser renders the new page.
-In a Single Page Application, when the button is clicked, the browser will send a POST request to a web server. The web server will return a JSON object. The application reads the object and updates the Label with the movie name.
-See, more efficient!
-But what if we need to have multiple pages with different layouts in our application?
-Let’s look at another example.
-<h4>Practical Differences Between Single-Page Apps and Multi-Page Apps</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s02-c.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s02-d.png?raw=true"
-  alt="."
+  alt="SPA Page Lifecycle."
   width="40%" />
 </p>
 
-You have a web application that has a navigation bar on top and two pages. One page shows the latest news, and the other shows the current user’s profile page. The navigation bar contains a link for each page.
-In a traditional website, when the user clicks the Profile link, the web browser sends the request to the web server. The web server generates the HTML page and sends it back to the web browser. The web browser then renders the new web page.
-In a Single Page Application, different pages are broken into templates (or views). Each view will have HTML code containing variables that can be updated by the application.
-The web browser sends the request to the web server, and the web server sends back a JSON object. The web browser then updates the web page by inserting the template with the variables replaced by the values in the JSON object.
+<h4>An Example of a Single-Page App</h4>
+
+<p>Imagine there is a webpage that has a Label and a Button. It will display a random movie name when the button is clicked.</p>
+<p>In a traditional website, when the button is clicked, the browser will send a POST request to the web server. The web server will return a new web page containing the button and movie name, and the web browser renders the new page.</p>
+<p>In a Single Page Application, when the button is clicked, the browser will send a POST request to a web server. The web server will return a JSON object. The application reads the object and updates the Label with the movie name.</p>
+<p>See, more efficient!</p>
+<p>But what if we need to have multiple pages with different layouts in our application?</p>
+<p>Let’s look at another example.</p>
+
+<h4>Practical Differences Between Single-Page Apps and Multi-Page Apps</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~ w3-s02-c/d. example single page and traditional page applications (208) ~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+<img src="/images/w3-s02-c.png?raw=true"
+  alt="SPA templates."
+  width="40%" />
+<img src="/images/w3-s02-d.png?raw=true"
+  alt="Traditional page application."
+  width="40%" />
+</p>
+
+<p>You have a web application that has a navigation bar on top and two pages. One page shows the latest news, and the other shows the current user’s profile page. The navigation bar contains a link for each page.</p>
+<p>In a traditional website, when the user clicks the Profile link, the web browser sends the request to the web server. The web server generates the HTML page and sends it back to the web browser. The web browser then renders the new web page.</p>
+<p>In a Single Page Application, different pages are broken into templates (or views). Each view will have HTML code containing variables that can be updated by the application.</p>
+<p>The web browser sends the request to the web server, and the web server sends back a JSON object. The web browser then updates the web page by inserting the template with the variables replaced by the values in the JSON object.</p>
+
 <h4>Anchor Tag Elements in Single-Page Elements</h4>
-A single-page application can’t have regular anchor tag elements as a traditional web app can. 
-The reason for this is that the default behavior of an anchor tag is to load another HTML file from a server and refresh the page. This page refresh is not possible in a SPA that's powered by a library such as React because a total page refresh is not the way that a SPA works, as explained earlier in this lesson item. 
-Instead, a SPA comes with its own special implementation of anchor tags and links, which only give an illusion of loading different pages to the end user when in fact, they simply load different components into a single element of the real DOM into which the virtual DOM tree gets mounted and updated.
-That's why navigation in a single-page app is fundamentally different from its counterpart in a multi-page app. Understanding the concepts outlined in this lesson item will make you a more well-rounded React developer.
+
+<p>A single-page application can’t have regular anchor tag elements as a traditional web app can.</p>
+<p>The reason for this is that the default behavior of an anchor tag is to load another HTML file from a server and refresh the page. This page refresh is not possible in a SPA that's powered by a library such as React because a total page refresh is not the way that a SPA works, as explained earlier in this lesson item.</p>
+<p>Instead, a SPA comes with its own special implementation of anchor tags and links, which only give an illusion of loading different pages to the end user when in fact, they simply load different components into a single element of the real DOM into which the virtual DOM tree gets mounted and updated.</p>
+<p>That's why navigation in a single-page app is fundamentally different from its counterpart in a multi-page app. Understanding the concepts outlined in this lesson item will make you a more well-rounded React developer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. The navbar</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page. 
+<p>By the end of this section (03), you'll know how to install the react-router library on your machine, which gives you more tools for setting up navigation in your apps. You'll also practice using this library to create a basic navigation for a web-page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8133,8 +8290,8 @@ By the end of this section (03), you'll know how to install the react-router lib
   alt="."
   width="80%" />
 </p>
-Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component. 
-Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites.
+<p>Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component.</p>
+<p>Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8143,7 +8300,7 @@ Notice that Homepage and Aboutme are both imported into the app component and re
   alt="."
   width="40%" />
 </p>
-However, I can make this possible with the help of another library known as React Router. 
+<p>However, I can make this possible with the help of another library known as React Router.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8152,7 +8309,7 @@ However, I can make this possible with the help of another library known as Reac
   alt="."
   width="40%" />
 </p>
-As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work. 
+<p>As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8169,7 +8326,7 @@ As you may have guessed from the name React Router gives you more control over t
   alt="."
   width="70%" />
 </p>
-First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags. 
+<p>First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8178,7 +8335,7 @@ First, I'll access the index.js file, and enter a statement to import browser ro
   alt="."
   width="70%" />
 </p>
-With that done, let's return to app.js. Here I need to import routes and route from react-router-dom. I also need to replace the child jsx elements with some different code. Homepage becomes route path equals and then forward slash between double quotes. This is followed by element equals and then the homepage jsx elements inside of curly braces. Note that the route tag is self-closing and has no children inside. For Aboutme, I add a similar line, but I'll add about-me after the forward slash. 
+<p>With that done, let's return to app.js. Here I need to import routes and route from react-router-dom. I also need to replace the child jsx elements with some different code. Homepage becomes route path equals and then forward slash between double quotes. This is followed by element equals and then the homepage jsx elements inside of curly braces. Note that the route tag is self-closing and has no children inside. For Aboutme, I add a similar line, but I'll add about-me after the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8188,7 +8345,7 @@ With that done, let's return to app.js. Here I need to import routes and route f
   width="70%" />
 </p>
 
-These slides will also be encased between route tags. If I go to my browser and type the exact link on one of the routes, for example, /Aboutme, I'll get only the Aboutme components showing under the navigation. However, if I remove the Aboutme from the URL, in other words, if I open the root route that is represented with a forward slash, then it will show the text from the homepage component under the navigation bar. 
+<p>These slides will also be encased between route tags. If I go to my browser and type the exact link on one of the routes, for example, /Aboutme, I'll get only the Aboutme components showing under the navigation. However, if I remove the Aboutme from the URL, in other words, if I open the root route that is represented with a forward slash, then it will show the text from the homepage component under the navigation bar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8198,7 +8355,7 @@ These slides will also be encased between route tags. If I go to my browser and 
   width="70%" />
 </p>
 
-Notice that I'm grouping all the routes by wrapping them inside the routes jsx element. Also note that the nav tags are outside of the routes tag, meaning that navigation is outside the routes. 
+<p>Notice that I'm grouping all the routes by wrapping them inside the routes jsx element. Also note that the nav tags are outside of the routes tag, meaning that navigation is outside the routes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8207,7 +8364,7 @@ Notice that I'm grouping all the routes by wrapping them inside the routes jsx e
   alt="."
   width="70%" />
 </p>
-Finally, I need to replace the anchor tags with React router links. This allows the correct component to be loaded when the link is clicked, rather than simply refreshing the page. In the app component, the anchor tag for homepage becomes link to equals and then the forward slash between double quotes. This is followed by class name equals and then nav-item in double quotes. 
+<p>Finally, I need to replace the anchor tags with React router links. This allows the correct component to be loaded when the link is clicked, rather than simply refreshing the page. In the app component, the anchor tag for homepage becomes link to equals and then the forward slash between double quotes. This is followed by class name equals and then nav-item in double quotes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8216,7 +8373,7 @@ Finally, I need to replace the anchor tags with React router links. This allows 
   alt="."
   width="70%" />
 </p>
-For Aboutme, the change is similar except that about-me appears after the forward slash. 
+<p>For Aboutme, the change is similar except that about-me appears after the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8226,7 +8383,7 @@ For Aboutme, the change is similar except that about-me appears after the forwar
   width="70%" />
 </p>
 
-I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser. 
+<p>I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8235,11 +8392,11 @@ I also need to import link from react-router-dom and save my changes. Now when I
   alt="."
   width="30%" />
 </p>
-In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.
+<p>In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Solution: Creating a route</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here is the Contact.js file:
+<p>Here is the Contact.js file:</p>
 
 ```
 1.  function Contact() {
@@ -8248,7 +8405,7 @@ Here is the Contact.js file:
 4.  export default Contact
 ```
 
-Here is the completed App.js file:
+<p>Here is the completed App.js file:</p>
 
 ```
 1.  import "./App.css";
@@ -8277,7 +8434,7 @@ Here is the completed App.js file:
 24.	export default App;
 ```
 
-Here is the output from the completed solution code:
+<p>Here is the output from the completed solution code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s04-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8288,10 +8445,12 @@ Here is the output from the completed solution code:
 </p>
 
 <h4>Step 1</h4>
-First, you added a new file, Contact.js, to the root of the src folder. 
+
+<p>First, you added a new file, Contact.js, to the root of the src folder.</p>
 
 <h4>Step 2</h4>
-Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace. 
+
+<p>Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace.</p>
 
 ```
 1.  function Contact() {
@@ -8301,7 +8460,9 @@ Inside the Contact.js file, you added an ES5 function, named Contact. And then, 
 ```
 
 <h4>Step 3</h4>
-Next, inside the body of the Contact function, you added a return statement with the following code: <h1>Contact Little Lemon on this page.</h1>.
+
+<p>Next, inside the body of the Contact function, you added a return statement with the following code: &lt;h1&gt;Contact Little Lemon on this 
+page.&lt;/h1&gt;.</p>
 
 ```
 1.  function Contact() {
@@ -8311,7 +8472,8 @@ Next, inside the body of the Contact function, you added a return statement with
 ```
 
 <h4>Step 4</h4>
-Inside the App.js file, you imported the newly-built Contact component. 
+
+<p>Inside the App.js file, you imported the newly-built Contact component.</p>
 
 ```
 1.	import "./App.css";
@@ -8339,7 +8501,8 @@ Inside the App.js file, you imported the newly-built Contact component.
 ```
 
 <h4>Step 5</h4>
-Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.
+
+<p>Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.</p>
 
 ```
 1.  import "./App.css";
@@ -8368,7 +8531,9 @@ Inside the App.js file's App function's return statement, locate the nav element
 ```
 
 <h4>Step 6</h4>
-Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute set to {<Contact />}. 
+
+<p>Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute 
+set to {&lt;Contact /&gt;}.</p>
 
 ```
 1.  import "./App.css";
@@ -8397,11 +8562,11 @@ Inside the Routes element, add a third route, with the path attribute pointing t
 
 <h4>Step 7</h4>
 
-You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.
+<p>You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render. 
+<p>By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w3-s05-a. 3 levels event - components - web page (219) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8431,7 +8596,7 @@ By now you should be familiar with the concept that react dynamically changes we
   width="50%" />
 </p>
 
-For example, suppose you have a component that contains code for a button that shows a sidebar, the button controls the state of the toggle sidebar variable, which is set to false. 
+<p>For example, suppose you have a component that contains code for a button that shows a sidebar, the button controls the state of the toggle sidebar variable, which is set to false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-d. togglebutton.js to true state (220) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8440,8 +8605,8 @@ For example, suppose you have a component that contains code for a button that s
   alt="ToggleButton.js to true state as sidebar."
   width="50%" />
 </p>
- 
-When the button is clicked, the state of the toggle sidebar variable is updated to True, and the sidebar component is displayed. 
+
+<p>When the button is clicked, the state of the toggle sidebar variable is updated to True, and the sidebar component is displayed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w3-s05-e. javascript - conditional if statement (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8450,7 +8615,7 @@ When the button is clicked, the state of the toggle sidebar variable is updated 
   alt="JavaScript - conditional if statement example."
   width="50%" />
 </p>
-To make this possible react works with conditional concepts and syntax that are already available in JavaScript. For example, recall the conditional if statement in JavaScript, developers use it to run code conditionally based on whether something is either true or false. 
+<p>To make this possible react works with conditional concepts and syntax that are already available in JavaScript. For example, recall the conditional if statement in JavaScript, developers use it to run code conditionally based on whether something is either true or false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ w3-s05-f. get it done or get some rest (boolean) (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8459,7 +8624,8 @@ To make this possible react works with conditional concepts and syntax that are 
   alt="Conditional boolean; Get it Done or Get Some Rest."
   width="50%" />
 </p>
-To illustrate conditional rendering in action, let's first consider an example productivity app. Based on the device's data at the time of access, the app displays one of two messages.  For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a developer, there are a few ways you can achieve this functionality in react. 
+
+<p>To illustrate conditional rendering in action, let's first consider an example productivity app. Based on the device's data at the time of access, the app displays one of two messages.  For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a developer, there are a few ways you can achieve this functionality in react.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-g. currentmessage component (221) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8468,7 +8634,7 @@ To illustrate conditional rendering in action, let's first consider an example p
   alt="CurrentMessage component."
   width="40%" />
 </p>
-But in this section (05), you'll focus on using the ternary operator to write simplified, if else conditions, you start by creating a component called CurrentMessage. 
+<p>But in this section (05), you'll focus on using the ternary operator to write simplified, if else conditions, you start by creating a component called CurrentMessage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-h. built-in date function sun-sat (222) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8477,7 +8643,7 @@ But in this section (05), you'll focus on using the ternary operator to write si
   alt="."
   width="40%" />
 </p>
-This component uses the built in date function in JavaScript, along with the get day method to store the day of the week as a number, where zero represents Sunday, and six, the following Saturday. 
+<p>This component uses the built in date function in JavaScript, along with the get day method to store the day of the week as a number, where zero represents Sunday, and six, the following Saturday.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w3-s05-i. two components - each with a message (222) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8486,7 +8652,7 @@ This component uses the built in date function in JavaScript, along with the get
   alt="Two components (workdays and weekends); each with a message."
   width="40%" />
 </p>
-Next, you create the two components that each holds one of the messages to be displayed. Let's name these components Workdays and Weekends. The current message component needs to render the appropriate components based on the value returned from the getDay function call. 
+<p>Next, you create the two components that each holds one of the messages to be displayed. Let's name these components Workdays and Weekends. The current message component needs to render the appropriate components based on the value returned from the getDay function call.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-j. ternary operator example (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8515,6 +8681,7 @@ Next, you create the two components that each holds one of the messages to be di
 <p>State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.</p>
 
 <h4>Consider a minimalistic productivity app</h4>
+
 <p>The app takes the client computer’s current datetime, and based on the data, displays one of two messages on the screen:</p>
 
 <ol type="1">
@@ -8996,7 +9163,7 @@ Then, inside the return statement, you added the new img element, with the src a
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. Audio and video</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices. 
+<p>Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9005,7 +9172,7 @@ Since the introduction of the smartphone and high-speed WiFi, we now enjoy creat
   alt="."
   width="40%" />
 </p>
-By the end of this section (14), you'll learn how React developers use audio and video assets within an app. You'll also explore how to find suitable React packages to use when working with audio and video files. Let's begin by exploring a method to load a local video asset into your React app using just HTML. 
+<p>By the end of this section (14), you'll learn how React developers use audio and video assets within an app. You'll also explore how to find suitable React packages to use when working with audio and video files. Let's begin by exploring a method to load a local video asset into your React app using just HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9014,9 +9181,10 @@ By the end of this section (14), you'll learn how React developers use audio and
   alt="."
   width="60%" />
 </p>
-You can use the readily available HTML5 video tag to load a local video asset to your React app. Like loading an image or any other kind of asset file, you can just declare a variable somewhere above a component's return statement and then add it as a JSX expression to the SRC attribute. 
-However, this approach might not work as easily with some major providers of video content, such as one of the several social media and social video sharing platforms such as YouTube. 
-In that case, you have the option of rolling out your own solutions. This may be a bit more involved than just adding a video tag to an app. It might depend on the specific instructions on how a given social media platform recommends that you embed the video and audio assets into websites. Very often, you'd get a code snippet that you can copy and paste. However, a specific implementation might be slightly different because you would, for example, like to add it as a separate React component. 
+<p>You can use the readily available HTML5 video tag to load a local video asset to your React app. Like loading an image or any other kind of asset file, you can just declare a variable somewhere above a component's return statement and then add it as a JSX expression to the SRC attribute. 
+However, this approach might not work as easily with some major providers of video content, such as one of the several social media and social video sharing platforms such as YouTube.</p>
+
+<p>In that case, you have the option of rolling out your own solutions. This may be a bit more involved than just adding a video tag to an app. It might depend on the specific instructions on how a given social media platform recommends that you embed the video and audio assets into websites. Very often, you'd get a code snippet that you can copy and paste. However, a specific implementation might be slightly different because you would, for example, like to add it as a separate React component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9025,7 +9193,7 @@ In that case, you have the option of rolling out your own solutions. This may be
   alt="."
   width="80%" />
 </p>
-You might be wondering, why do you want to prepare it as a separate component? One of the reasons is that you'd be able to easily switch one video with another by passing the unique ID of a given video as a prop. You can then control the video output that way. So far, you've learned about two ways of adding videos to your apps. 
+<p>You might be wondering, why do you want to prepare it as a separate component? One of the reasons is that you'd be able to easily switch one video with another by passing the unique ID of a given video as a prop. You can then control the video output that way. So far, you've learned about two ways of adding videos to your apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9034,7 +9202,7 @@ You might be wondering, why do you want to prepare it as a separate component? O
   alt="."
   width="80%" />
 </p>
-The first method involves just serving a local video using the video element, and the second method is using embedded third-party videos. 
+<p>The first method involves just serving a local video using the video element, and the second method is using embedded third-party videos.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9043,7 +9211,7 @@ The first method involves just serving a local video using the video element, an
   alt="."
   width="40%" />
 </p>
-There's another approach you may consider, namely using a third-party NPM package to streamline the process of adding videos to your app. The NPM package ecosystem is huge. If you visit the npmjs.org website, you'll find millions of various packages. 
+<p>There's another approach you may consider, namely using a third-party NPM package to streamline the process of adding videos to your app. The NPM package ecosystem is huge. If you visit the npmjs.org website, you'll find millions of various packages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9052,8 +9220,8 @@ There's another approach you may consider, namely using a third-party NPM packag
   alt="."
   width="60%" />
 </p>
-To make it easier on yourself, type React video in the search bar of the npmjs.org website to find some of the frequently downloaded NPM packages. To choose the right one, you might want to check the frequency or updates. A package that's frequently maintained and has many contributors is usually a sign of a solid package to use. Additionally, make sure to check the packages GitHub page. 
-Finally, you can also perform an Internet search for the package name. These actions will help you make an informed decision on which package to choose. 
+<p>To make it easier on yourself, type React video in the search bar of the npmjs.org website to find some of the frequently downloaded NPM packages. To choose the right one, you might want to check the frequency or updates. A package that's frequently maintained and has many contributors is usually a sign of a solid package to use. Additionally, make sure to check the packages GitHub page. 
+Finally, you can also perform an Internet search for the package name. These actions will help you make an informed decision on which package to choose.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9062,7 +9230,7 @@ Finally, you can also perform an Internet search for the package name. These act
   alt="."
   width="60%" />
 </p>
-An example of a package that fits all these criteria is the React player package. Visit the packages GitHub URL at github.com/CookPete/react-player. You'll find that they react-player package has over 6,000 stars, about 115 contributors, and that it's regularly maintained. What is the meaning of the stars? 
+An example of a package that fits all these criteria is the React player package. Visit the packages GitHub URL at github.com/CookPete/react-player. You'll find that they react-player package has over 6,000 stars, about 115 contributors, and that it's regularly maintained. What is the meaning of the stars?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9071,35 +9239,36 @@ An example of a package that fits all these criteria is the React player package
   alt="."
   width="40%" />
 </p>
-When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one. 
-You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.
+<p>When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one.</p>
+
+<p>You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. Media packages</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (15), you’ll learn how to install the reactjs-media npm package.
+<p>In this section (15), you’ll learn how to install the reactjs-media npm package.
 You can find this package on the npmjs.org website at the following URL: 
-https://www.npmjs.com/package/react-player
+https://www.npmjs.com/package/react-player</p>
 
-To install this package you'll need to use the following command in the terminal:
+<p>To install this package you'll need to use the following command in the terminal:</p>
 
 ```
 1.	npm install react-player
 ```
 
-Once you have this package installed, you can start using it in your project.
-There are a few ways that you can import and use the installed package. For example, to get the entire package's functionality, use the following import:
+<p>Once you have this package installed, you can start using it in your project.
+There are a few ways that you can import and use the installed package. For example, to get the entire package's functionality, use the following import:</p>
 
 ```
 1.	import ReactPlayer from "react-player";
 ```
 
-If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:
+<p>If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:</p>
 
 ```
 1.	import ReactPlayer from "react-player/youtube";
 ```
 
-Here’s an example of using the react-player packaged in a small React app:
+<p>Here’s an example of using the react-player packaged in a small React app:</p>
 
 ```
 1.	import React from "react";
@@ -9122,12 +9291,12 @@ Here’s an example of using the react-player packaged in a small React app:
 18.	export default App;
 ```
 
-In this section (15), you learned how to install and use the react-player npm package.
+<p>In this section (15), you learned how to install and use the react-player npm package.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Create an audio / video component</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume. 
+<p>By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9136,8 +9305,8 @@ By the end of this section (16) you will know how to install the react player pa
   alt="."
   width="60%" />
 </p>
-Let's examine another app that I've created using create react app. Currently it's pretty basic and only renders an 81 heading that reads React Player example, let's make that heading true by adding in a video player. 
-The first step of this process is to install the react player module and the second step is to import it into my app component. 
+<p>Let's examine another app that I've created using create react app. Currently it's pretty basic and only renders an 81 heading that reads React Player example, let's make that heading true by adding in a video player.</p>
+The first step of this process is to install the react player module and the second step is to import it into my app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9146,7 +9315,7 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="80%" />
 </p>
-To install the module, I'll run the command $ npm install react-player. Once it has finished installing the module becomes available to any component in my project but only if I import it.
+<p>To install the module, I'll run the command $ npm install react-player. Once it has finished installing the module becomes available to any component in my project but only if I import it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9155,7 +9324,7 @@ To install the module, I'll run the command $ npm install react-player. Once it 
   alt="."
   width="60%" />
 </p>
-So I'll use the command import react player followed by react player and double quotes.  Now I'm ready to add the imported react player package as a component and render it from the app component. 
+<p>So I'll use the command import react player followed by react player and double quotes.  Now I'm ready to add the imported react player package as a component and render it from the app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9164,7 +9333,7 @@ So I'll use the command import react player followed by react player and double 
   alt="."
   width="60%" />
 </p>
-I also want to pre set a few settings for the player specifically to ensure that the video doesn't play automatically on the page loads and to have the starting volume at 50% of the maximum. To do that, I add some attributes to the react player tag playing equals and then false in curly braces and volume equals, followed by 0.5 in curly braces. For a complete list of settings you can refer to the react players. Get up documentation. You may have noticed that the react component also contains the line U R L equals video RL. This refers to the web link for the video which hasn't been set up yet. 
+<p>I also want to pre set a few settings for the player specifically to ensure that the video doesn't play automatically on the page loads and to have the starting volume at 50% of the maximum. To do that, I add some attributes to the react player tag playing equals and then false in curly braces and volume equals, followed by 0.5 in curly braces. For a complete list of settings you can refer to the react players. Get up documentation. You may have noticed that the react component also contains the line U R L equals video RL. This refers to the web link for the video which hasn't been set up yet.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9173,7 +9342,7 @@ I also want to pre set a few settings for the player specifically to ensure that
   alt="."
   width="60%" />
 </p>
-So let's add that link to the video RL variable now that everything is set up. I'll click file and save and then verify that everything works as expected in the browser. I can play the video, use the built in controls and the video starts at half the volume so it seems that everything is correct. 
+<p>So let's add that link to the video RL variable now that everything is set up. I'll click file and save and then verify that everything works as expected in the browser. I can play the video, use the built in controls and the video starts at half the volume so it seems that everything is correct.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9182,7 +9351,7 @@ So let's add that link to the video RL variable now that everything is set up. I
   alt="."
   width="80%" />
 </p>
-Finally, you can find the projects get happy or L at dot com slash cook pete with a capital C and capital P slash react dash player. 
+<p>Finally, you can find the projects get happy or L at dot com slash cook pete with a capital C and capital P slash react dash player.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9191,7 +9360,7 @@ Finally, you can find the projects get happy or L at dot com slash cook pete wit
   alt="."
   width="60%" />
 </p>
-This page contains an about section on the right in which you'll find a link to the live demo on the link page. 
+<p>This page contains an about section on the right in which you'll find a link to the live demo on the link page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9200,11 +9369,12 @@ This page contains an about section on the right in which you'll find a link to 
   alt="."
   width="40%" />
 </p>
-You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video. In section 16 you learned how to install and use the react player package and change common settings for the react player
+<p>You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video.</p>
+<p>In section 16 you learned how to install and use the react player package and change common settings for the react player.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Solution: Song selection</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here's the completed App.js file:
+Here's the completed App.js file:</p>
 
 ```
 1.	import React from "react"; 
@@ -9248,7 +9418,7 @@ Here's the completed App.js file:
 37.	export default App;
 ```
 
-Here is the output from the solution code for the App.js file:
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s17-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9258,8 +9428,8 @@ Here is the output from the solution code for the App.js file:
   width="80%" />
 </p>
 
-Step 1
-In this ungraded lab, your goal was to read through the existing code of the App.js file, and update the second button so that it's running the toggle2 function on a click to the second button. 
+<p>Step 1<br>
+In this ungraded lab, your goal was to read through the existing code of the App.js file, and update the second button so that it's running the toggle2 function on a click to the second button.</p>
 
 ```
 1.  import React from "react";
@@ -9295,8 +9465,8 @@ In this ungraded lab, your goal was to read through the existing code of the App
 29. export default App;
 ```
 
-Step 2
-After adding the toggle2 function to the JSX expression in the second button's onClick event-handling attribute, you should have un-commented the bird2 variable on lines 9 to 11. 
+<p>Step 2<br>
+After adding the toggle2 function to the JSX expression in the second button's onClick event-handling attribute, you should have un-commented the bird2 variable on lines 9 to 11.</p>
 
 ```
 1.  import React from "react";
@@ -9332,8 +9502,8 @@ After adding the toggle2 function to the JSX expression in the second button's o
 29. export default App;
 ```
 
-Step 3
-Next, you needed to define the toggle2 function: it should have had the exact same functionality as the toggle1 function, but it needed to work with the bird2 variable (instead of the bird1 variable as it did in the toggle1 function). 
+<p>Step 3<br>
+Next, you needed to define the toggle2 function: it should have had the exact same functionality as the toggle1 function, but it needed to work with the bird2 variable (instead of the bird1 variable as it did in the toggle1 function).</p>
 
 ```
 1.  import React from "react";
@@ -9380,8 +9550,9 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Module summary: Navigation, Updating and  Assets in React.js</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice. 
-The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component. 
+<p>You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice.</p>
+
+<p>The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9390,7 +9561,7 @@ The first lesson covered linking and routing of components in React for navigati
   alt="."
   width="60%" />
 </p>
-In modern website navigation, the user interface is all about functionality. You learned about the most common navigation components, like the horizontal navigation bar, or navbar. 
+<p>In modern website navigation, the user interface is all about functionality. You learned about the most common navigation components, like the horizontal navigation bar, or navbar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9399,7 +9570,7 @@ In modern website navigation, the user interface is all about functionality. You
   alt="."
   width="60%" />
 </p>
-But of course, most websites have more complex navigation UI that include multiple navigation approaches in a single component, like combining a horizontal navbar with drop-down menu items. 
+<p>But of course, most websites have more complex navigation UI that include multiple navigation approaches in a single component, like combining a horizontal navbar with drop-down menu items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9408,7 +9579,7 @@ But of course, most websites have more complex navigation UI that include multip
   alt="."
   width="40%" />
 </p>
-You learned that there's a key difference between the navigation of websites built with React, versus those built with HTML and CSS. With React-powered web pages, called single-page applications or SPAs, the entire app is loaded inside a single div, so you're not actually visiting different pages like you would with hyperlinks in HTML files. That's because a single-page application, or SPA, comes with its own special implementation of anchor tags and links that give the illusion of loading different pages. 
+<p>You learned that there's a key difference between the navigation of websites built with React, versus those built with HTML and CSS. With React-powered web pages, called single-page applications or SPAs, the entire app is loaded inside a single div, so you're not actually visiting different pages like you would with hyperlinks in HTML files. That's because a single-page application, or SPA, comes with its own special implementation of anchor tags and links that give the illusion of loading different pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9417,7 +9588,7 @@ You learned that there's a key difference between the navigation of websites bui
   alt="."
   width="40%" />
 </p>
-To achieve the solution of a multi-page websites, you learn that you need to add the React Router library to your React projects, and you practice using it to create and implement the basic navigation routes for our webpage. 
+<p>To achieve the solution of a multi-page websites, you learn that you need to add the React Router library to your React projects, and you practice using it to create and implement the basic navigation routes for our webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9426,7 +9597,7 @@ To achieve the solution of a multi-page websites, you learn that you need to add
   alt="."
   width="40%" />
 </p>
-In this lesson's ungraded lab, you used code from the lesson item title to the navbar, and you had to add another link to the existing code. 
+<p>In this lesson's ungraded lab, you used code from the lesson item title to the navbar, and you had to add another link to the existing code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9435,8 +9606,8 @@ In this lesson's ungraded lab, you used code from the lesson item title to the n
   alt="."
   width="40%" />
 </p>
-After this, you learned about conditional rendering, which is necessary for React to be able to dynamically change webpage content. As part of this section, you learned how to set up conditional rendering using ternary operators to write simplified FL's conditions. 
-The second lesson focused on using assets in React.  Here, you learn the assets of files that your app needs at run-time, like images, style sheets, fonts, video, or audio. You learned how developers keep assets organized in React, and about some common ways to import asset files. 
+<p>After this, you learned about conditional rendering, which is necessary for React to be able to dynamically change webpage content. As part of this section, you learned how to set up conditional rendering using ternary operators to write simplified FL's conditions.</p>
+<p>The second lesson focused on using assets in React.  Here, you learn the assets of files that your app needs at run-time, like images, style sheets, fonts, video, or audio. You learned how developers keep assets organized in React, and about some common ways to import asset files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9445,8 +9616,7 @@ The second lesson focused on using assets in React.  Here, you learn the assets 
   alt="."
   width="40%" />
 </p>
-
-A common way to organize assets is to add an assets folder inside of the source folder, and keep all your app's assets there. Some assets can also be placed inside the public folder. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder. 
+<p>A common way to organize assets is to add an assets folder inside of the source folder, and keep all your app's assets there. Some assets can also be placed inside the public folder. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9455,7 +9625,7 @@ A common way to organize assets is to add an assets folder inside of the source 
   alt="."
   width="40%" />
 </p>
-In this part of the module, you learned how to use embedded assets, and about the advantages and disadvantages of embedding assets, as well as about the trade-offs inherent in using asset-heavy apps. 
+<p>In this part of the module, you learned how to use embedded assets, and about the advantages and disadvantages of embedding assets, as well as about the trade-offs inherent in using asset-heavy apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9464,7 +9634,7 @@ In this part of the module, you learned how to use embedded assets, and about th
   alt="."
   width="60%" />
 </p>
-In the first ungraded lab of this lesson, you learned how to add an image from the assets folder that had already been added to the SRC folder. What's more, you also learned more about using audio and video assets in an app. Here you learned how to find suitable React packages to use when working with audio and video files. 
+<p>In the first ungraded lab of this lesson, you learned how to add an image from the assets folder that had already been added to the SRC folder. What's more, you also learned more about using audio and video assets in an app. Here you learned how to find suitable React packages to use when working with audio and video files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9473,7 +9643,7 @@ In the first ungraded lab of this lesson, you learned how to add an image from t
   alt="."
   width="40%" />
 </p>
-You learned about three ways of adding videos to your apps; by serving a local video using the video elements, using embedded third-party videos. We're using a third-party NPM package to streamline the process of adding videos to your app. 
+<p>You learned about three ways of adding videos to your apps; by serving a local video using the video elements, using embedded third-party videos. We're using a third-party NPM package to streamline the process of adding videos to your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9482,8 +9652,8 @@ You learned about three ways of adding videos to your apps; by serving a local v
   alt="."
   width="40%" />
 </p>
-Additionally, you learned what you can do to help you decide what package to use. You should check the frequency of updates, check the packages GitHub page, and perform an internet search for the package name. To help you become familiar with using such packages, you learned how to install a React player package, and use it to render a media player in a React app. 
-You learned how to apply common settings like automatic playback and starting volume.
+<p>Additionally, you learned what you can do to help you decide what package to use. You should check the frequency of updates, check the packages GitHub page, and perform an internet search for the package name. To help you become familiar with using such packages, you learned how to install a React player package, and use it to render a media player in a React app.</p>
+<p>You learned how to apply common settings like automatic playback and starting volume.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9492,7 +9662,7 @@ You learned how to apply common settings like automatic playback and starting vo
   alt="."
   width="40%" />
 </p>
-Your final ungraded lab of the module was to finish an already-built app with a user interface that allows visitors to play bird sounds by pressing buttons. 
+Your final ungraded lab of the module was to finish an already-built app with a user interface that allows visitors to play bird sounds by pressing buttons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9507,8 +9677,8 @@ Your final ungraded lab of the module was to finish an already-built app with a 
   alt="."
   width="30%" />
 </p>
-Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React. 
-Congratulations. You've now covered most of the basic concepts in React, and you're ready to complete this module's quiz and review the additional resources for this module. There's just one more module left before you complete this course. In the next module, you'll apply your knowledge by completing a mini-project in Reacts by building a calculator app.
+<p>Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React.</p>
+<p>Congratulations. You've now covered most of the basic concepts in React, and you're ready to complete this module's quiz and review the additional resources for this module. There's just one more module left before you complete this course. In the next module, you'll apply your knowledge by completing a mini-project in Reacts by building a calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9621,7 +9791,7 @@ Congratulations. You've now covered most of the basic concepts in React, and you
   width="60%" />
 </p>
 
-Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that. 
+<p>Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s02-e. five button components added (263) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9786,11 +9956,11 @@ and try a local setup again later.</p>
 
 <h4>Overview</h4>
 
-Now that you're set up, let's get an overview of React!
+<p>Now that you're set up, let's get an overview of React!</p>
 
 <h4>Inspecting the starter code</h4>
 
-In CodeSandbox you'll see three main sections:
+<p>In CodeSandbox you'll see three main sections:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-c. codesandbox with starter code (267) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9864,7 +10034,7 @@ function. <button> is a <i>JSX element</i>. A JSX element is a combination
 of JavaScript code and HTML tags that describes what you'd like to
 display. className="square" is a button property or <i>prop</i> that tells
 CSS how to style the button. X is the text displayed inside of the
-button and </button> closes the JSX element to indicate that any
+button and &lt;/button&gt; closes the JSX element to indicate that any
 following content shouldn't be placed inside the button.</p>
 
 ```
@@ -10159,7 +10329,7 @@ function Square({ value }) {
 }
 ```
 
-Oops, this is not what you wanted:
+<p>Oops, this is not what you wanted:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-i. value-filled board as an oops (273) ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10181,7 +10351,7 @@ function Square({ value }) {
 }
 ```
 
-For now, you should see an empty board:
+<p>For now, you should see an empty board:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-j. empty board (274) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10225,7 +10395,7 @@ export default function Board() {
 
 </details>
 
-Now you should see a grid of numbers again:
+<p>Now you should see a grid of numbers again:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s03-k. tic-tac-toe board with 1 thru 9 (275) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10236,7 +10406,7 @@ Now you should see a grid of numbers again:
 </p>
 <!-- {width="2.0in" height="2.0in"} -->
 
-Your updated code should look like this:
+<p>Your updated code should look like this:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10273,9 +10443,9 @@ export default function Board() {
 
 <h4>Making an interactive component</h4>
 
-Let's fill the Square component with an X when you click it. Declare a
+<p>Let's fill the Square component with an X when you click it. Declare a
 function called handleClick inside of the Square. Then, add onClick to
-the props of the button JSX element returned from the Square:
+the props of the button JSX element returned from the Square:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10373,9 +10543,9 @@ export default function Board() {
 
 </details>
 
-Now you'll change Square to display an "X" when clicked. Replace the
+<p>Now you'll change Square to display an "X" when clicked. Replace the
 console.log("clicked!"); event handler with setValue('X');. Now your
-Square component looks like this:
+Square component looks like this:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10400,10 +10570,10 @@ function Square() {
 
 </details>
 
-By calling this set function from an onClick handler, you're telling
+<p>By calling this set function from an onClick handler, you're telling
 React to re-render that Square whenever its <button> is clicked. After
 the update, the Square's value will be 'X', so you'll see the "X" on
-the game board. Click on any Square, and "X" should show up:
+the game board. Click on any Square, and "X" should show up:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-l. adding x's to board (278) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10414,11 +10584,11 @@ the game board. Click on any Square, and "X" should show up:
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
-Each Square has its own state: the value stored in each Square is
+<p>Each Square has its own state: the value stored in each Square is
 completely independent of the others. When you call a set function in a
-component, React automatically updates the child components inside too.
+component, React automatically updates the child components inside too.</p>
 
-After you've made the above changes, your code will look like this:
+<p>After you've made the above changes, your code will look like this:</p>
 
 <details open>
   <summary>React code</summary>
@@ -10464,9 +10634,9 @@ export default function Board() {
 
 <h4>React Developer Tools</h4>
 
-React DevTools let you check the props and the state of your React
+<p>React DevTools let you check the props and the state of your React
 components. You can find the React DevTools tab at the bottom of the
-browser section in CodeSandbox:
+browser section in CodeSandbox:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-m. react devtools in codesandbox (279) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10477,8 +10647,8 @@ browser section in CodeSandbox:
 </p>
 <!-- {width="5.0in" height="3.720173884514436in"} -->
 
-To inspect a particular component on the screen, use the button in the
-top left corner of React DevTools:
+<p>To inspect a particular component on the screen, use the button in the
+top left corner of React DevTools:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ w4-s03-n. selecting components on the page with react devtools (279) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10491,48 +10661,45 @@ top left corner of React DevTools:
 
 <h4>Note</h4>
 
-For local development, React DevTools is available as a
-[Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en),
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/),
-and
-[Edge](https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil)
-browser extension. Install it, and the Components tab will appear in
-your browser Developer Tools for sites using React.
+<p>For local development, React DevTools is available as a <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en">
+Chrome</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/react-devtools/">Firefox</a>,
+and <a href="https://microsoftedge.microsoft.com/addons/detail/react-developer-tools/gpphkfbcpidddadnkolkpfckpihlkkil">Edge</a>
+browser extension. Install it, and the Components tab will appear in your browser Developer Tools for sites using React.</p>
 
 <h4>Completing the game</h4>
 
-By this point, you have all the basic building blocks for your
+<p>By this point, you have all the basic building blocks for your
 tic-tac-toe game. To have a complete game, you now need to alternate
 placing "X"s and "O"s on the board, and you need a way to determine a
-winner.
+winner.</p>
 
 <h4>Lifting state up</h4>
 
-Currently, each Square component maintains a part of the game's state.
+<p>Currently, each Square component maintains a part of the game's state.
 To check for a winner in a tic-tac-toe game, the Board would need to
-somehow know the state of each of the 9 Square components.
+somehow know the state of each of the 9 Square components.</p>
 
-How would you approach that? At first, you might guess that the Board
+<p>How would you approach that? At first, you might guess that the Board
 needs to "ask" each Square for that Square's state. Although this
 approach is technically possible in React, we discourage it because the
 code becomes difficult to understand, susceptible to bugs, and hard to
 refactor. Instead, the best approach is to store the game's state in the
 parent Board component instead of in each Square. The Board component
 can tell each Square what to display by passing a prop, like you did
-when you passed a number to each Square.
+when you passed a number to each Square.</p>
 
-To collect data from multiple children, or to have two child components
+<p>To collect data from multiple children, or to have two child components
 communicate with each other, declare the shared state in their parent
 component instead. The parent component can pass that state back down to
 the children via props. This keeps the child components in sync with
-each other and with their parent.
+each other and with their parent.</p>
 
-Lifting state into a parent component is common when React components
-are refactored.
+<p>Lifting state into a parent component is common when React components
+are refactored.</p>
 
-Let's take this opportunity to try it out. Edit the Board component so
+<p>Let's take this opportunity to try it out. Edit the Board component so
 that it declares a state variable named squares that defaults to an
-array of 9 nulls corresponding to the 9 squares:
+array of 9 nulls corresponding to the 9 squares:</p>
 
 ```
 // ...
@@ -10544,18 +10711,18 @@ export default function Board() {
 }
 ```
 
-Array(9).fill(null) creates an array with nine elements and sets each of
+<p>Array(9).fill(null) creates an array with nine elements and sets each of
 them to null. The useState() call around it declares a squares state
 variable that's initially set to that array. Each entry in the array
 corresponds to the value of a square. When you fill the board in later,
-the squares array will look like this:
+the squares array will look like this:</p>
 
 ```
 ['O', null, 'X', 'X', 'X', 'O', 'O', null, null]
 ```
 
-Now your Board component needs to pass the value prop down to each
-Square that it renders:
+<p>Now your Board component needs to pass the value prop down to each
+Square that it renders:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10587,9 +10754,9 @@ const [squares, setSquares] = useState(Array(9).fill(null));
 
 </details>
 
-Next, you'll edit the Square component to receive the value prop from
+<p>Next, you'll edit the Square component to receive the value prop from
 the Board component. This will require removing the Square component's
-own stateful tracking of value and the button's onClick prop:
+own stateful tracking of value and the button's onClick prop:</p>
 
 ```
 function Square({value}) {
@@ -10597,7 +10764,7 @@ function Square({value}) {
 }
 ```
 
-At this point you should see an empty tic-tac-toe board:
+<p>At this point you should see an empty tic-tac-toe board:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-o. empty tic-tac-toe board (282) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10608,7 +10775,7 @@ At this point you should see an empty tic-tac-toe board:
 </p>
 <!-- {width="2.0in" height="1.964912510936133in"} -->
 
-And your code should look like this:
+<p>And your code should look like this:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10646,19 +10813,19 @@ export default function Board() {
 </details>
 
 Each Square will now receive a value prop that will either be 'X',
-'O', or null for empty squares.
+'O', or null for empty squares.</p>
 
-Next, you need to change what happens when a Square is clicked. The
+<p>Next, you need to change what happens when a Square is clicked. The
 Board component now maintains which squares are filled. You'll need to
 create a way for the Square to update the Board's state. Since state is
 private to a component that defines it, you cannot update the Board's
-state directly from Square.
+state directly from Square.</p>
 
-Instead, you'll pass down a function from the Board component to the
+<p>Instead, you'll pass down a function from the Board component to the
 Square component, and you'll have Square call that function when a
 square is clicked. You'll start with the function that the Square
 component will call when it is clicked. You'll call that function
-onSquareClick:
+onSquareClick:</p>
 
 ```
 function Square({ value }) {
@@ -10670,8 +10837,8 @@ function Square({ value }) {
 }
 ```
 
-Next, you'll add the onSquareClick function to the Square component's
-props:
+<p>Next, you'll add the onSquareClick function to the Square component's
+props:</p>
 
 ```
 function Square({ value, onSquareClick }) {
@@ -10683,10 +10850,10 @@ function Square({ value, onSquareClick }) {
 }
 ```
 
-Now you'll connect the onSquareClick prop to a function in the Board
+<p>Now you'll connect the onSquareClick prop to a function in the Board
 component that you'll name handleClick. To connect onSquareClick to
 handleClick you'll pass a function to the onSquareClick prop of the
-first Square component:
+first Square component:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10820,14 +10987,14 @@ export default function Board() {
 }
 ```
 
-Notice the new () => syntax. Here, () => handleClick(0) is an <i>arrow
+<p>Notice the new () => syntax. Here, () => handleClick(0) is an <i>arrow
 function,</i> which is a shorter way to define functions. When the square
 is clicked, the code after the =&gt; "arrow" will run, calling
-handleClick(0).
+handleClick(0).</p>
 
-Now you need to update the other eight squares to call handleClick from
+<p>Now you need to update the other eight squares to call handleClick from
 the arrow functions you pass. Make sure that the argument for each call
-of the handleClick corresponds to the index of the correct square:
+of the handleClick corresponds to the index of the correct square:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -10868,8 +11035,8 @@ export default function Board() {
 
 </details>
 
-Now you can again add X's to any square on the board by clicking on
-them:
+<p>Now you can again add X's to any square on the board by clicking on
+them:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-p. filling the board with x's (286) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10880,10 +11047,10 @@ them:
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
-But this time all the state management is handled by the Board
-component!
+<p>But this time all the state management is handled by the Board
+component!</p>
 
-This is what your code should look like:
+<p>This is what your code should look like:</p>
 
 <details open>
   <summary>App.js</summary>
@@ -10934,35 +11101,35 @@ export default function Board() {
 
 </details>
 
-Now that your state handling is in the Board component, the parent Board
+<p>Now that your state handling is in the Board component, the parent Board
 component passes props to the child Square components so that they can
 be displayed correctly. When clicking on a Square, the child Square
 component now asks the parent Board component to update the state of the
 board. When the Board's state changes, both the Board component and
 every child Square re-renders automatically. Keeping the state of all
 squares in the Board component will allow it to determine the winner in
-the future.
+the future.</p>
 
-Let's recap what happens when a user clicks the top left square on your
-board to add an X to it:
+<p>Let's recap what happens when a user clicks the top left square on your
+board to add an X to it:</p>
 
-1.  Clicking on the upper left square runs the function that
+<ol type="1">
+  <li><p>Clicking on the upper left square runs the function that
     the button received as its onClick prop from the Square.
     The Square component received that function as
     its onSquareClick prop from the Board. The Board component defined
     that function directly in the JSX. It calls handleClick with an
-    argument of 0.
-
-2.  handleClick uses the argument (0) to update the first element of
-    the squares array from null to X.
-
-3.  The squares state of the Board component was updated, so
+    argument of 0.</p></li>
+  <li><p>handleClick uses the argument (0) to update the first element of
+    the squares array from null to X.</p></li>
+  <li>The squares state of the Board component was updated, so
     the Board and all of its children re-render. This causes
     the value prop of the Square component with index 0 to change
-    from null to X.
+    from null to X.</li>
+</ol>
 
-In the end the user sees that the upper left square has changed from
-empty to having a X after clicking it.
+<p>In the end the user sees that the upper left square has changed from
+empty to having a X after clicking it.</p>
 
 <h4>Note</h4>
 
@@ -11080,11 +11247,11 @@ export default function Board() {
 
 </details>
 
-Now, as you click on different squares, they will alternate between X
-and O, as they should!
+<p>Now, as you click on different squares, they will alternate between X
+and O, as they should!</p>
 
-But wait, there's a problem. Try clicking on the same square multiple
-times:
+<p>But wait, there's a problem. Try clicking on the same square multiple
+times:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-q. o overwriting an x (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -11095,14 +11262,14 @@ times:
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
-The X is overwritten by an O! While this would add a very interesting
-twist to the game, we're going to stick to the original rules for now.
+<p>The X is overwritten by an O! While this would add a very interesting
+twist to the game, we're going to stick to the original rules for now.</p>
 
-When you mark a square with a X or an O you aren't first checking to see
+<p>When you mark a square with a X or an O you aren't first checking to see
 if the square already has a X or O value. You can fix this by returning
 early. You'll check to see if the square already has a X or an O. If the
 square is already filled, you will return in the handleClick function
-early--before it tries to update the board state.
+early--before it tries to update the board state.</p>
 
 ```
 function handleClick(i) {
@@ -12635,20 +12802,20 @@ affect other buttons.
 
 <h3>Using Hooks</h3>
 
-Functions starting with use are called Hooks. useState is a built-in
+<p>Functions starting with use are called Hooks. useState is a built-in
 Hook provided by React. You can find other built-in Hooks in the <a href="https://react.dev/reference/react">API
-reference</a>. You can also write your own Hooks by combining the existing ones.
+reference</a>. You can also write your own Hooks by combining the existing ones.</p>
 
-Hooks are more restrictive than other functions. You can only call Hooks
+<p>Hooks are more restrictive than other functions. You can only call Hooks
 at the top of your components (or other Hooks). If you want to use
 useState in a condition or a loop, extract a new component and put it
-there.
+there.</p>
 
 <h3>Sharing data between components</h3>
 
-In the previous example, each MyButton had its own independent count,
+<p>In the previous example, each MyButton had its own independent count,
 and when each button was clicked, only the count for the button clicked
-changed:
+changed:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12661,7 +12828,7 @@ changed:
 </p>
 <!-- {width="5.0in" height="4.50859908136483in"} -->
 
-Initially, each MyButton's count state is 0.
+<p>Initially, each MyButton's count state is 0.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (136) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12675,16 +12842,16 @@ Initially, each MyButton's count state is 0.
 </p>
 <!-- (width="5.0in" height="4.50859908136483in"} -->
 
-The first MyButton updates its count to 1.
+<p>The first MyButton updates its count to 1.</p>
 
-However, often you'll need components to share data and always update
-together.
+<p>However, often you'll need components to share data and always update
+together.</p>
 
-To make both MyButton components display the same count and update
+<p>To make both MyButton components display the same count and update
 together, you need to move the state from the individual buttons
-"upwards" to the closest component containing all of them.
+"upwards" to the closest component containing all of them.</p>
 
-In this example, it is MyApp:
+<p>In this example, it is MyApp:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (137) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -12698,7 +12865,7 @@ In this example, it is MyApp:
 </p>
 <!-- {width="5.0in" height="4.6951224846894135in"} -->
 
-Initially, MyApp's count state is 0 and is passed down to both children.
+<p>Initially, MyApp's count state is 0 and is passed down to both children.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (138) ~~~~~~~~~~~~~~~~~~-->
@@ -13064,7 +13231,7 @@ the length of your array.</p>
 <ul>
   <li><p>Does it remain unchanged over time? If so, it isn't state.</p></li>
   <li><p>Is it passed in from a parent via props? If so, it isn't state.</p></li>
-  <li><p>Can you compute it based on existing state or props in your
+  <li>Can you compute it based on existing state or props in your
     component? If so, it <i>definitely</i> isn't state!</li>
 </ul>
 
