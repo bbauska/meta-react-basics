@@ -5592,7 +5592,7 @@ already exists in JavaScript -- that is, you just use the
 <h2>03. Common event handling</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 I will now show you how to handle several events in React using
-components.
+components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-a.  (132) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5603,7 +5603,7 @@ components.
 </p>
 
 As I start, I've added a new component to the SRC folder. I named it
-<b>Btn</b>, and for now it's just an empty function or the default export.
+<b>Btn</b>, and for now it's just an empty function or the default export.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-b.  (132) ~~~~~~~~~~~~~~~-->
@@ -5617,11 +5617,11 @@ As I start, I've added a new component to the SRC folder. I named it
 Let me simplify the app.js file as return statement. First, I'll delete
 the logo import statements and import the <b>Btn</b> component, then remove
 the contents of the return statement. Finally, I'll add the <b>Btn</b> JSX
-elements so that it can get rendered.
+elements so that it can get rendered.</p>
 
 Back in the <b>Btn</b> components. I add a button in the return statement,
 the button reads, Click Me, press Control S or Command S on the Mac to
-Save and the button renders on the screen.
+Save and the button renders on the screen.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-c.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5630,11 +5630,10 @@ Save and the button renders on the screen.
   alt="."
   width="60%" />
 </p>
-
-Now I would like to handle a click on this button. I add the onclick
+<p>Now I would like to handle a click on this button. I add the onclick
 synthetic events than an equals sign and opening curly brace.
 ClickHandler and a closing curly brace. The return statement, I
-distributed the code on several lines to increase readability.
+distributed the code on several lines to increase readability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-d.  (133) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5643,7 +5642,7 @@ distributed the code on several lines to increase readability.
   alt="."
   width="60%" />
 </p>
-Now I'm setting up the click handling behavior. Whenever a user clicks
+<p>Now I'm setting up the click handling behavior. Whenever a user clicks
 on the button that will evaluate an expression named <b>clickHandler</b>, I
 now need to define this clickHandler and I'll set it as a function
 expression, meaning I will use the const variable keyword and name it
@@ -5651,7 +5650,7 @@ expression, meaning I will use the const variable keyword and name it
 I've just set up a clickHandler that receives the click events that's
 fired from this button and handles it by outputting the word clicked in
 the console. Again, I save my changes and, in the browser, I open the
-developer tools. 
+developer tools.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-e.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5660,15 +5659,13 @@ developer tools.
   alt="."
   width="60%" />
 </p>
-Now I locate and activate the console tab in the developer tools, 
-I'll also zoom in on the button.
-When I click the button, the word clicked appears in the console for
-every click event. Back inside the <b>Btn.js</b> file and VS Code, I select
-all the code in the Btn component. Right-click on the selection and
-click the Copy command and the contextual menu that pops up. Next, I use
-the keyboard shortcut of holding down the control key. While it's
-pressed down, press and release the K button, then pressing and
-releasing the C button, and finally releasing the Control key.
+<p>Now I locate and activate the console tab in the developer tools, I'll also zoom in 
+on the button.  When I click the button, the word clicked appears in the console for 
+every click event. Back inside the <b>Btn.js</b> file and VS Code, I select all the 
+code in the Btn component. Right-click on the selection and click the Copy command 
+and the contextual menu that pops up. Next, I use the keyboard shortcut of holding 
+down the control key. While it's pressed down, press and release the K button, then 
+pressing and releasing the C button, and finally releasing the Control key.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-f.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5678,13 +5675,12 @@ releasing the C button, and finally releasing the Control key.
   width="60%" />
 </p>
 
-Control K, C that comments out all the highlighted code, right under
+<p>Control K, C that comments out all the highlighted code, right under
 this commented code, I now press the Control V keyboard shortcut to
-paste in the code that I have previously copied.
-
-I will now show you how to handle a different event. Let me replace the
+paste in the code that I have previously copied.</p>
+<p>I will now show you how to handle a different event. Let me replace the
 onclick JSX event handling attributes with another one and thus handle a
-different event.
+different event.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s03-g.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5693,22 +5689,21 @@ different event.
   alt="."
   width="60%" />
 </p>
-For example, I can replace the onclick attribute with the on mouse over
+<p>For example, I can replace the onclick attribute with the on mouse over
 attribute and update my event handling function accordingly to read
-mouse over. I save my changes and wait for the app to recompile.
+mouse over. I save my changes and wait for the app to recompile.</p>
 
-This time, when I hover over the button, the words mouse over are
+<p>This time, when I hover over the button, the words mouse over are
 showing in the console. This section (3), you've learned how to work
-with <b>event handling</b> JSX attributes and React.
-
+with <b>event handling</b> JSX attributes and React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Syntax for handlers</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Every time you click or tap a button, scroll down the page or cancel a
-boring notification, you're producing events in the browser.
+<p>Every time you click or tap a button, scroll down the page or cancel a
+boring notification, you're producing events in the browser.</p>
 
-As you learned earlier, in order for these events that have any effect,
-you need to use <b>event handlers</b> that will then execute an action.
+<p>As you learned earlier, in order for these events that have any effect,
+you need to use <b>event handlers</b> that will then execute an action.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s04-a.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5718,13 +5713,13 @@ you need to use <b>event handlers</b> that will then execute an action.
   width="60%" />
 </p>
 
-For example, suppose you use a button to open a menu. Clicking the
+<p>For example, suppose you use a button to open a menu. Clicking the
 button is the event. The event handler is on click and the action that
-follows the event is opening the menu.
+follows the event is opening the menu.</p>
 
-There are a few approaches to adding event handlers to your code that
+<p>There are a few approaches to adding event handlers to your code that
 have different advantages, so you should become familiar with each of
-them.
+them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s04-b.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5733,16 +5728,16 @@ them.
   alt="."
   width="60%" />
 </p>
-By the end of this section (04), you'll be able to describe the syntax
+<p>By the end of this section (04), you'll be able to describe the syntax
 differences for using <b>event handlers</b> in HTML and React. You will
 also know how to explain HTML <b>function call</b> and React <b>component
 inclusion</b>, and discuss the advantage of the component level of
-control.
+control.</p>
 
-Suppose you're a developer working on a React app and you need to
+<p>Suppose you're a developer working on a React app and you need to
 create a button that will trigger an event when a user clicks on it.
 With that scenario in mind, let's examine some codes that accomplishes
-this in plain HTML.
+this in plain HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s04-c.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5751,18 +5746,18 @@ this in plain HTML.
   alt="."
   width="60%" />
 </p>
-You might open a tag called button with the ID <b>js-btn</b>. You then
+<p>You might open a tag called button with the ID <b>js-btn</b>. You then
 assign the <b>on click</b> event handling attribute and set it equal to the
-<b>click handler function</b>.
+<b>click handler function</b>.</p>
 
-Next, you can add <b>Click me</b> as the button text and finish with a
-closing tag.
+<p>Next, you can add <b>Click me</b> as the button text and finish with a
+closing tag.</p>
 
-The code has an ID HTML attribute with a value JS button, along with the
+<p>The code has an ID HTML attribute with a value JS button, along with the
 event handling attribute on the click. While the HTML code in the
 example seems pretty straightforward, it's recommended to use
 JavaScript for scenarios like these instead. Why is that? Well, you'll
-find out later.
+find out later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s04-d.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -5771,19 +5766,19 @@ find out later.
   alt="."
   width="40%" />
 </p>
-But for now, you should understand that the equivalent code in
+<p>But for now, you should understand that the equivalent code in
 JavaScript consists of two primary steps. First, you should use
 JavaScript to plug into these specific HTML elements on what you'd like
 to listen to for an event. In the previous example, the HTML element is
 button, which signals that it's a target element for allowing
-JavaScript to take control of the HTML structure.
+JavaScript to take control of the HTML structure.</p>
 
-Second, once you've got access to an HTML element with JavaScript, you
+<p>Second, once you've got access to an HTML element with JavaScript, you
 can then use the built-in add <b>EventListener</b> method on the document
-object to attach a specific event listener.
+object to attach a specific event listener.</p>
 
-When you apply this method to the previous example, HTML is removed from
-the equation, but the code on the other hand, is a bit more complicated.
+<p>When you apply this method to the previous example, HTML is removed from
+the equation, but the code on the other hand, is a bit more complicated.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s04-e.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7338,10 +7333,10 @@ string. In the return statement, I wrap the heading components in a single div.<
   alt="Example JSX expression with message prop of word + word variable."
   width="50%" />
 </p>
-I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening 
+<p>I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening 
 and closing curly brace. You already know that's an opening and a closing curly brace 
 signifies a JSX expression, which means that all the code inside of those curly braces 
-will be evaluated as regular JavaScript. 
+will be evaluated as regular JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s16-e. setword function to manipulate messaging (175) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8407,6 +8402,9 @@ A Single Page Application allows the user to interact with the website without d
 
 <p>Here is the completed App.js file:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 1.  import "./App.css";
 2.  import Homepage from "./Homepage";
@@ -8433,6 +8431,8 @@ A Single Page Application allows the user to interact with the website without d
 23.
 24.	export default App;
 ```
+
+</details>
 
 <p>Here is the output from the completed solution code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8475,6 +8475,9 @@ page.&lt;/h1&gt;.</p>
 
 <p>Inside the App.js file, you imported the newly-built Contact component.</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 1.	import "./App.css";
 2.	import Homepage from "./Homepage";
@@ -8500,9 +8503,14 @@ page.&lt;/h1&gt;.</p>
 22.	export default App;
 ```
 
+</details>
+
 <h4>Step 5</h4>
 
 <p>Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import "./App.css";
@@ -8530,10 +8538,15 @@ page.&lt;/h1&gt;.</p>
 23.	export default App;
 ```
 
+</details>
+
 <h4>Step 6</h4>
 
 <p>Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute 
 set to {&lt;Contact /&gt;}.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import "./App.css";
@@ -8559,6 +8572,8 @@ set to {&lt;Contact /&gt;}.</p>
 21.   );
 22. };
 ```
+
+</details>
 
 <h4>Step 7</h4>
 
@@ -8721,6 +8736,9 @@ set to {&lt;Contact /&gt;}.</p>
 <p>To further improve your CurrentMessage component, you might want to use element variables. This is useful in some cases, where you want to streamline your render code - that is, when you want to separate the conditional logic from the code to render your UI.</p>
 <p>Here’s an example of doing this with the CurrentMessage component:</p>
 
+<details open>
+  <summary>React code:</summary>
+
 ```
 1.  function CurrentMessage({day}) {
 2.    const weekday = (day >= 1 && day <= 5);
@@ -8743,9 +8761,14 @@ set to {&lt;Contact /&gt;}.</p>
 19.	}
 ```
 
+</details>
+
 <p>The output of the CurrentMessage component will depend on what the received value of the day variable is. On the condition of the day variable having the value of any number between 1 and 5 (inclusive), the output will be the contents of the Workdays component. Otherwise, on the condition of the day variable having the value of either 6 or 7, the output will be the contents of the Weekends component.
 Conditional rendering using the logical AND operator.  Another interesting approach in conditional rendering is the use of the logical AND operator &&.</p>
 <p>In the following component, here's how the && operator is used to achieve conditional rendering:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  function LogicalAndExample() {
@@ -8761,6 +8784,8 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 11.   )
 12. }
 ```
+
+</details>
 
 <p>There are a few things to unpack here, so here is the explanation of the LogicalAndExample component, top to bottom:</p>
 
@@ -8783,14 +8808,19 @@ On the flip side, consider the following example:</p>
 ```
 
 <p>If you ran this command, the output will just be the boolean value of false.
-In other words, if a prop gets evaluated to true, using the && operator, you can render whatever JSX elements you want to the right of the && operator.</p>
+In other words, if a prop gets evaluated to true, using the && operator, you can render whatever 
+JSX elements you want to the right of the && operator.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 07 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>07. Conditional components</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Have you ever visited a website that required a user account? To log in you click on a Log in button and once you’ve logged in, the Log in button changes to a Log out button.</p>
+<p>Have you ever visited a website that required a user account? To log in you click on a Log 
+in button and once you’ve logged in, the Log in button changes to a Log out button.</p>
 <p>This is often done using something called conditional rendering.</p>
-<p>In a previous course, you’ve already learned about simple conditions using if and switch statements. Using these statements allows you to change the behaviour of code based on certain conditions being met.</p>
-<p>For example, you can set a variable to a different value based on the result of a condition check.</p>
+<p>In a previous course, you’ve already learned about simple conditions using if and switch 
+statements. Using these statements allows you to change the behaviour of code based on 
+certain conditions being met.</p>
+<p>For example, you can set a variable to a different value based on the result of a 
+condition check.</p>
 
 ```
 1.  let name; 
@@ -8811,11 +8841,17 @@ In other words, if a prop gets evaluated to true, using the && operator, you can
 7.  } 
 ```
 
-<p>Conditional rendering is built on the same principle. By using conditions, you can return different child components. This is often done using the props that are passed into the parent component, but can also be done based on component state.</p>
+<p>Conditional rendering is built on the same principle. By using conditions, you 
+can return different child components. This is often done using the props that are 
+passed into the parent component, but can also be done based on 
+component state.</p>
 <p>Let’s take a look at a simple example.</p>
-<p>Let’s say you have two child components called LoginButton and LogoutButton; each displaying their corresponding button.</p>
-<p>In the parent component, named LogInOutButton, you can check the props passed into the parent component and return a different child component based on the value of the props.</p>
-<p>In this example, the props contains a property named isLoggedIn. When this is set to true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.</p>
+<p>Let’s say you have two child components called LoginButton and LogoutButton; each 
+displaying their corresponding button.</p>
+<p>In the parent component, named LogInOutButton, you can check the props passed into the 
+parent component and return a different child component based on the value of the props.</p>
+<p>In this example, the props contains a property named isLoggedIn. When this is set to 
+true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.</p>
 
 ```
 1.  function LogInOutButton(props) {
@@ -8833,7 +8869,8 @@ In other words, if a prop gets evaluated to true, using the && operator, you can
 1.  <LogInOutButton isLoggedIn={false} />
 ```
 
-<p>This is a simple example showing how you can change what is displayed based on a condition check. You will use this often when developing React applications.</p>
+<p>This is a simple example showing how you can change what is displayed based on a condition 
+check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Single view conditional updates</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8885,7 +8922,7 @@ In other words, if a prop gets evaluated to true, using the && operator, you can
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. What is an asset and where does it live?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app. 
+<p>By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-a. assets (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8913,7 +8950,7 @@ By now, you should be familiar with creating React components and adding text to
   alt="."
   width="60%" />
 </p>
-That's why it's important to keep assets easily and readily available to your components. A common way to do this is to add an assets folder inside of a source folder and keep all your apps assets there. Some assets can also be placed inside the public folder. 
+<p>That's why it's important to keep assets easily and readily available to your components. A common way to do this is to add an assets folder inside of a source folder and keep all your apps assets there. Some assets can also be placed inside the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8922,7 +8959,7 @@ That's why it's important to keep assets easily and readily available to your co
   alt="."
   width="60%" />
 </p>
-For example, in the default React installation, you'll find that some images such as favicon and Logo 512 are stored there by default. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder. 
+<p>For example, in the default React installation, you'll find that some images such as favicon and Logo 512 are stored there by default. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8931,7 +8968,7 @@ For example, in the default React installation, you'll find that some images suc
   alt="."
   width="60%" />
 </p>
-For instance, favicon is in the public folder because no component depends on it. In other words, React doesn't need to use the favicon file to compile all the components into an app that will get served in your local browser while you're building your app. 
+<p>For instance, favicon is in the public folder because no component depends on it. In other words, React doesn't need to use the favicon file to compile all the components into an app that will get served in your local browser while you're building your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8940,7 +8977,7 @@ For instance, favicon is in the public folder because no component depends on it
   alt="."
   width="60%" />
 </p>
-However, suppose you have an image that needs to be imported into one of the app components, then it's best stored in the assets folder. Now you're familiar with the concept of assets in React. Let's explore how to use assets. 
+<p>However, suppose you have an image that needs to be imported into one of the app components, then it's best stored in the assets folder. Now you're familiar with the concept of assets in React. Let's explore how to use assets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8949,7 +8986,7 @@ However, suppose you have an image that needs to be imported into one of the app
   alt="."
   width="60%" />
 </p>
-Suppose you're a developer working on an app that helps people adopt animals in their local area. You have built most of the apps components, but you are waiting on the adoption center to send you pictures of the animals that are looking for a new home. In preparation for this, you create the assets folder in the React application. The pictures arrive and you place them inside the assets folder so they can be added to your components. 
+<p>Suppose you're a developer working on an app that helps people adopt animals in their local area. You have built most of the apps components, but you are waiting on the adoption center to send you pictures of the animals that are looking for a new home. In preparation for this, you create the assets folder in the React application. The pictures arrive and you place them inside the assets folder so they can be added to your components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8958,8 +8995,9 @@ Suppose you're a developer working on an app that helps people adopt animals in 
   alt="."
   width="60%" />
 </p>
-To add an asset file to a component, you first need to import it. This can be done with an import statement. For example, suppose these components will display a picture of a cat, you type the keyword, import, followed by the name you want to give your asset. 
-You can call this almost anything you like. But it's best to stick to something descriptive that describes your assets. For example, cat. Then you type the keyword, from, followed by the path to your assets. In this case, it's a file named cat.jpg located in the assets folder. 
+<p>To add an asset file to a component, you first need to import it. This can be done with an import statement. For example, suppose these components will display a picture of a cat, you type the keyword, import, followed by the name you want to give your asset.</p>
+
+<p>You can call this almost anything you like. But it's best to stick to something descriptive that describes your assets. For example, cat. Then you type the keyword, from, followed by the path to your assets. In this case, it's a file named cat.jpg located in the assets folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8968,7 +9006,7 @@ You can call this almost anything you like. But it's best to stick to something 
   alt="."
   width="60%" />
 </p>
-The next step is to create the function and write a return statement. Inside the return statement, you use the image tag and then set the source attribute to reference the asset's name, which is cat in curly braces. 
+<p>The next step is to create the function and write a return statement. Inside the return statement, you use the image tag and then set the source attribute to reference the asset's name, which is cat in curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8977,24 +9015,41 @@ The next step is to create the function and write a return statement. Inside the
   alt="."
   width="60%" />
 </p>
-Alternatively, instead of the asset name, you can reference the path to the assets folder relative to the component. You can do this with the require keyword as well as curly braces that encase the JSX Expression and act as delimiters. It's important to know that with this method, you no longer need the import statement. This is because you're using the required syntax right inside the JSX Expression that's assigned to the SRC JSX attribute. 
+<p>Alternatively, instead of the asset name, you can reference the path to the assets folder relative to the component. You can do this with the require keyword as well as curly braces that encase the JSX Expression and act as delimiters. It's important to know that with this method, you no longer need the import statement. This is because you're using the required syntax right inside the JSX Expression that's assigned to the SRC JSX attribute.</p>
 
-In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.
-
+<p>In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Bundling assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Earlier, you learned what assets are in React and the best practices for storing them in your project folders.
+<p>Earlier, you learned what assets are in React and the best practices for storing them 
+in your project folders.</p>
 
-In this section (11), you will learn about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You will also learn about the trade-offs inherent in using asset-heavy apps.
-The app’s files will likely be bundled when working with a React app. Bundling is a process that takes all the imported files in an app and joins them into a single file, referred to as a bundle. Several tools can perform this bundling. Since, in this course, you have used the create-react-app to build various React apps, you will focus on webpack. This is because webpack is the built-in tool for the create-react-app.
-Let’s start by explaining what webpack is and why you need it.
-Simply put, webpack is a module bundler.
-Practically, this means that it will take various kinds of files, such as SVG and image files, CSS and SCSS files, JavaScript files, and TypeScript files, and it will bundle them together so that a browser can understand that bundle and work with it.
-Why is this important?
-When building websites, you could probably do without webpack since your project's structure might be straightforward: you may have a single CSS library, such as Bootstrap, loaded from a CDN (content delivery network). You might also have a single JavaScript file in your static HTML document. If that is all there is to it, you do not need to use webpack in such a scenario.
-However, modern web development can get complex.
-Here is an example of the first few lines of code in a single file of a React application:
+<p>In this section (11), you will learn about the advantages and disadvantages of embedding 
+assets, including examples of client/server-side assets. You will also learn about the 
+trade-offs inherent in using asset-heavy apps.</p>
+
+<p>The app’s files will likely be bundled when working with a React app. Bundling is a 
+process that takes all the imported files in an app and joins them into a single file, 
+referred to as a bundle. Several tools can perform this bundling. Since, in this course, 
+you have used the create-react-app to build various React apps, you will focus on 
+webpack. This is because webpack is the built-in tool for the create-react-app.</p>
+
+<p>Let’s start by explaining what webpack is and why you need it.</p>
+
+<p>Simply put, webpack is a module bundler.</p>
+
+<p>Practically, this means that it will take various kinds of files, such as SVG and image files, CSS and SCSS files, JavaScript files, and TypeScript files, and it will bundle them together so that a browser can understand that bundle and work with it.</p>
+
+<p>Why is this important?</p>
+
+<p>When building websites, you could probably do without webpack since your project's structure might be straightforward: you may have a single CSS library, such as Bootstrap, loaded from a CDN (content delivery network). You might also have a single JavaScript file in your static HTML document. If that is all there is to it, you do not need to use webpack in such a scenario.</p>
+
+<p>However, modern web development can get complex.</p>
+
+<p>Here is an example of the first few lines of code in a single file of a React application:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import React from 'react';
@@ -9008,40 +9063,49 @@ Here is an example of the first few lines of code in a single file of a React ap
 9.  import data from './data';
 10. import Loading from './components/Loading';
 ```
+
+</details>
  
-The imports here are from fictional libraries and resources because the specific libraries are not necessary. All these different imports can be of various file types: .js, .svg, .css, and so on.
-In turn, all the imported files might have their own imported files, and even those might have their imports.
-This means that depending on other files, all of these files can create a dependency graph. The order in which all these files are loading is essential. That dependency graph can get so complex that it becomes almost impossible for a human to structure a complex project and bundle all those dependencies properly.
-This is the reason you need tools like webpack.
-So, webpack builds a dependency graph and bundles modules into one or more files that a browser can consume.
+<p>The imports here are from fictional libraries and resources because the specific libraries are not necessary. All these different imports can be of various file types: .js, .svg, .css, and so on.</p>
+<p>In turn, all the imported files might have their own imported files, and even those might have their imports.</p>
+<p>This means that depending on other files, all of these files can create a dependency graph. The order in which all these files are loading is essential. That dependency graph can get so complex that it becomes almost impossible for a human to structure a complex project and bundle all those dependencies properly.</p>
+<p>This is the reason you need tools like webpack.</p>
+<p>So, webpack builds a dependency graph and bundles modules into one or more files that a browser can consume.</p>
 
-While it is doing that, it also does the following: 
-  -	It converts modern JS code - which can only be understood by modern browsers - into older versions of JavaScript so that older browsers can understand your code. This process is known as transpiling.
+<p>While it is doing that, it also does the following:</p>
 
-For example, you can transpile ES7 code to ES5 code using webpack.  
-  - It optimizes your code to load as quickly as possible when a user visits your web pages. 
-  - It can process your SCSS code into the regular CSS, which browsers can understand. 
-  - It can build source maps of the bundle's building blocks  
-  - It can produce various kinds of files based on rules and templates. This includes HTML files, among others. 
+<ul>
+  <li><p>It converts modern JS code - which can only be understood by modern browsers - into older versions of 
+  JavaScript so that older browsers can understand your code. This process is known as transpiling.  For example, 
+  you can transpile ES7 code to ES5 code using webpack,</p></li>
+  <li><p>It optimizes your code to load as quickly as possible when a user visits your web pages,</p></li>
+  <li><p>It can process your SCSS code into the regular CSS, which browsers can understand,</p></li>
+  <li><p>It can build source maps of the bundle's building blocks,</p></li>
+  <li>It can produce various kinds of files based on rules and templates. This includes HTML files, among others.</li>
+</ul>
 
-Another significant characteristic of webpack is that it helps developers create modern web apps.
-It helps you achieve this using two modes: production mode or development mode.
-In development mode, webpack bundles your files and optimizes your bundles for updates - so that any updates to any of the files in your locally developed app are quickly re-bundled. It also builds source maps so you can inspect the original file included in the bundled code.
+<p>Another significant characteristic of webpack is that it helps developers create modern web apps.</p>
+<p>It helps you achieve this using two modes: production mode or development mode.</p>
+<p>In development mode, webpack bundles your files and optimizes your bundles for updates - 
+so that any updates to any of the files in your locally developed app are quickly 
+re-bundled. It also builds source maps so you can inspect the original file included in the bundled code.</p>
 
-In production mode, webpack bundles your files so that they are optimized for speed. This means the files are minified and organized to take up the least amount of memory. So, they are optimized for speed because these bundles are fast to download when a user visits the website online.
-Once all the source files of your app have been bundled into a single bundle file, then that single bundle file gets served to a visitor browsing the live version of your app online, and the entire app’s contents get served at once.
+<p>In production mode, webpack bundles your files so that they are optimized for speed. This means the files are minified and organized to take up the least amount of memory. So, they are optimized for speed because these bundles are fast to download when a user visits the website online.</p>
+<p>Once all the source files of your app have been bundled into a single bundle file, then that single bundle file gets served to a visitor browsing the live version of your app online, and the entire app’s contents get served at once.</p>
 
-This works great for smaller apps, but if you have a more extensive app, this approach is likely to affect your site’s speed. The longer it takes for a web app to load, the more likely the visitor will leave and move on to another unrelated website. There are several ways to tackle this issue of a large bundle.
-One such approach is code-splitting, a practice where a module bundler like webpack splits the single bundle file into multiple bundles, which are then loaded on an as-needed basis. With the help of code-splitting, you can lazy load only the parts that the visitor to the app needs to have at any given time. This approach significantly reduces the download times and allows React-powered apps to get much better speeds. 
-There are other ways to tackle these problems. 
-An example of a viable alternative is SSR (Server-side rendering).
-With SSR, React components are rendered to HTML on the server, and the visitor downloads the finished HTML code. An alternative to SSR is client-side rendering, which downloads the index.html file and then lets React inject its own code into a dedicated HTML element (the root element in create-react-app). In this course, you’ve only worked with client-side rendering. 
-Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.
-In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.
+<p>This works great for smaller apps, but if you have a more extensive app, this approach is likely to affect your site’s speed. The longer it takes for a web app to load, the more likely the visitor will leave and move on to another unrelated website. There are several ways to tackle this issue of a large bundle.</p>
+<p>One such approach is code-splitting, a practice where a module bundler like webpack splits the single bundle file into multiple bundles, which are then loaded on an as-needed basis. With the help of code-splitting, you can lazy load only the parts that the visitor to the app needs to have at any given time. This approach significantly reduces the download times and allows React-powered apps to get much better speeds.</p>
+There are other ways to tackle these problems.</p>
+<p>An example of a viable alternative is SSR (Server-side rendering).
+With SSR, React components are rendered to HTML on the server, and the visitor downloads the finished HTML code. An alternative to SSR is client-side rendering, which downloads the index.html file and then lets React inject its own code into a dedicated HTML element (the root element in create-react-app). In this course, you’ve only worked with client-side rendering.</p>
+<p>Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.</p>
+<p>In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Using embedded assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this section (12), I'll demonstrate various ways of displaying images. You'll learn three different ways to display an image and react app specifically by using the import statement using the require function to set the file path, or by providing an image URL. 
+<p>In this section (12), I'll demonstrate various ways of displaying images. You'll 
+learn three different ways to display an image and react app specifically by using 
+the import statement using the require function to set the file path, or by providing an image URL. 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9050,7 +9114,10 @@ In this section (12), I'll demonstrate various ways of displaying images. You'll
   alt="."
   width="60%" />
 </p>
-To demonstrate how you can work with embedded assets, I've created a basic app called Embedded Assets. In my app source folder I added the assets folder which also contains an image folder. Notice I've added one Jpeg image to the images folder named Central Park. 
+<p>To demonstrate how you can work with embedded assets, I've created a basic app 
+called Embedded Assets. In my app source folder I added the assets folder which 
+also contains an image folder. Notice I've added one Jpeg image to the images 
+folder named Central Park.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9059,7 +9126,9 @@ To demonstrate how you can work with embedded assets, I've created a basic app c
   alt="."
   width="60%" />
 </p>
-To view the code of the app component, I click on the app.Js file. Notice that the starting code of my app component just under some text that describes the task at hand, which is to display three images with some styling. 
+<p>To view the code of the app component, I click on the app.Js file. Notice that the 
+starting code of my app component just under some text that describes the task at 
+hand, which is to display three images with some styling.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9068,7 +9137,16 @@ To view the code of the app component, I click on the app.Js file. Notice that t
   alt="."
   width="60%" />
 </p>
-For this, I'm going to demonstrate the three distinct ways to import images and react. The first way is to use the import method and I want to demonstrate how you set a name for your imported image. To import the image file Central Park, I type import rooftops and then dot forward slash to provide a relative path to the file enclosed in double quotes. In this example my file is in the images folder inside the assets folder. Next I'll render this image as an image tag. In my code, I use the height attribute to limit the size of the image by making its height exactly 200 pixels. I'm setting the source attribute to the value of rooftops which contains the path to the image file. Finally, for best practice, I add an outer attribute with a basic description of the image. I save my file and notice that my image now displays in the browser. 
+<p>For this, I'm going to demonstrate the three distinct ways to import images and react. 
+The first way is to use the import method and I want to demonstrate how you set a name for 
+your imported image. To import the image file Central Park, I type import rooftops and 
+then dot forward slash to provide a relative path to the file enclosed in double quotes. 
+In this example my file is in the images folder inside the assets folder. Next I'll 
+render this image as an image tag. In my code, I use the height attribute to limit 
+the size of the image by making its height exactly 200 pixels. I'm setting the source 
+attribute to the value of rooftops which contains the path to the image file. Finally, 
+for best practice, I add an outer attribute with a basic description of the image. I 
+save my file and notice that my image now displays in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9077,7 +9155,15 @@ For this, I'm going to demonstrate the three distinct ways to import images and 
   alt="."
   width="60%" />
 </p>
-Okay, so that's one way to import an image using the import statement. The second way to import an image is by using the require keyword.  To do this, I create this image with an image to act like I did before. Again, I limit the size of the image by making its height exactly 200 pixels. But this time I set the source attribute to require, I pass in the relative path of the image to the required function. The path is passed in as a string data type, so that's why the path is enclosed in double quotes. Once again to finish my image code, I add a description of the image to the L to attribute, I saved my code and the second image now appears. Notice that with this approach I don't have to import the image. I just require it and provide the string with the relative path to the image.
+<p>Okay, so that's one way to import an image using the import statement. The second way to 
+import an image is by using the require keyword.  To do this, I create this image with an 
+image to act like I did before. Again, I limit the size of the image by making its height 
+exactly 200 pixels. But this time I set the source attribute to require, I pass in the 
+relative path of the image to the required function. The path is passed in as a string 
+data type, so that's why the path is enclosed in double quotes. Once again to finish my 
+image code, I add a description of the image to the L to attribute, I saved my code and 
+the second image now appears. Notice that with this approach I don't have to import the 
+image. I just require it and provide the string with the relative path to the image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9086,7 +9172,7 @@ Okay, so that's one way to import an image using the import statement. The secon
   alt="."
   width="60%" />
 </p>
-Now I'll demonstrate the third way to import an image asset by loading an image file hosted on the internet. Instead of a local file, this time I want to display a random image URL from a photo hosting website. To do this, I create a variable by typing const than the variable name random image URL that I use the equals operator followed by the URL for the random image. I can now add my third image element inside the return statement. To do this, I add random image URL to the source attribute. 
+<p>Now I'll demonstrate the third way to import an image asset by loading an image file hosted on the internet. Instead of a local file, this time I want to display a random image URL from a photo hosting website. To do this, I create a variable by typing const than the variable name random image URL that I use the equals operator followed by the URL for the random image. I can now add my third image element inside the return statement. To do this, I add random image URL to the source attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9095,11 +9181,14 @@ Now I'll demonstrate the third way to import an image asset by loading an image 
   alt="."
   width="40%" />
 </p>
-So there you have it. The three different ways to use image assets in a react component.
+<p>So there you have it. The three different ways to use image assets in a react component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Solution: Displaying images</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here's the completed App.js file:
+<p>Here's the completed App.js file:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.	import logo from"./assets/logo.png"
@@ -9116,7 +9205,9 @@ Here's the completed App.js file:
 12.	export default App;
 ```
 
-Here is the output from the solution code for the App.js file:
+</details>
+
+<p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s13-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9126,8 +9217,11 @@ Here is the output from the solution code for the App.js file:
   width="80%" />
 </p>
 
-Step 1
-First, you imported the logo image.
+<p>Step 1
+First, you imported the logo image.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.	import logo from"./assets/logo.png"
@@ -9142,8 +9236,15 @@ First, you imported the logo image.
 10.	export default App;
 ```
 
-Step 2
-Then, inside the return statement, you added the new img element, with the src attribute set to the JSX expression evaluating the logo value, and the alt attribute holding the string of "Logo".
+</details>
+
+<p>Step 2
+Then, inside the return statement, you added the new img element, with the src attribute 
+set to the JSX expression evaluating the logo value, and the alt attribute holding the 
+string of "Logo".
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.	import logo from"./assets/logo.png"
@@ -9160,10 +9261,13 @@ Then, inside the return statement, you added the new img element, with the src a
 12.	export default App;
 ```
 
+</details>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 14 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>14. Audio and video</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, consuming, and sharing video and audio content daily on our devices.</p>
+<p>Since the introduction of the smartphone and high-speed WiFi, we now enjoy creating, 
+consuming, and sharing video and audio content daily on our devices.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9172,7 +9276,10 @@ Then, inside the return statement, you added the new img element, with the src a
   alt="."
   width="40%" />
 </p>
-<p>By the end of this section (14), you'll learn how React developers use audio and video assets within an app. You'll also explore how to find suitable React packages to use when working with audio and video files. Let's begin by exploring a method to load a local video asset into your React app using just HTML.</p>
+<p>By the end of this section (14), you'll learn how React developers use audio and 
+video assets within an app. You'll also explore how to find suitable React packages 
+to use when working with audio and video files. Let's begin by exploring a method 
+to load a local video asset into your React app using just HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9181,10 +9288,21 @@ Then, inside the return statement, you added the new img element, with the src a
   alt="."
   width="60%" />
 </p>
-<p>You can use the readily available HTML5 video tag to load a local video asset to your React app. Like loading an image or any other kind of asset file, you can just declare a variable somewhere above a component's return statement and then add it as a JSX expression to the SRC attribute. 
-However, this approach might not work as easily with some major providers of video content, such as one of the several social media and social video sharing platforms such as YouTube.</p>
+<p>You can use the readily available HTML5 video tag to load a local video asset to your 
+React app. Like loading an image or any other kind of asset file, you can just declare a 
+variable somewhere above a component's return statement and then add it as a JSX 
+expression to the SRC attribute. 
+However, this approach might not work as easily with some major providers of video 
+content, such as one of the several social media and social video sharing platforms 
+such as YouTube.</p>
 
-<p>In that case, you have the option of rolling out your own solutions. This may be a bit more involved than just adding a video tag to an app. It might depend on the specific instructions on how a given social media platform recommends that you embed the video and audio assets into websites. Very often, you'd get a code snippet that you can copy and paste. However, a specific implementation might be slightly different because you would, for example, like to add it as a separate React component.</p>
+<p>In that case, you have the option of rolling out your own solutions. This may be 
+a bit more involved than just adding a video tag to an app. It might depend on the 
+specific instructions on how a given social media platform recommends that you 
+embed the video and audio assets into websites. Very often, you'd get a code 
+snippet that you can copy and paste. However, a specific implementation might 
+be slightly different because you would, for example, like to add it as a separate 
+React component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9193,7 +9311,10 @@ However, this approach might not work as easily with some major providers of vid
   alt="."
   width="80%" />
 </p>
-<p>You might be wondering, why do you want to prepare it as a separate component? One of the reasons is that you'd be able to easily switch one video with another by passing the unique ID of a given video as a prop. You can then control the video output that way. So far, you've learned about two ways of adding videos to your apps.</p>
+<p>You might be wondering, why do you want to prepare it as a separate component? 
+One of the reasons is that you'd be able to easily switch one video with another 
+by passing the unique ID of a given video as a prop. You can then control the 
+video output that way. So far, you've learned about two ways of adding videos to your apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9202,7 +9323,8 @@ However, this approach might not work as easily with some major providers of vid
   alt="."
   width="80%" />
 </p>
-<p>The first method involves just serving a local video using the video element, and the second method is using embedded third-party videos.</p>
+<p>The first method involves just serving a local video using the video element, and 
+the second method is using embedded third-party videos.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9211,7 +9333,9 @@ However, this approach might not work as easily with some major providers of vid
   alt="."
   width="40%" />
 </p>
-<p>There's another approach you may consider, namely using a third-party NPM package to streamline the process of adding videos to your app. The NPM package ecosystem is huge. If you visit the npmjs.org website, you'll find millions of various packages.</p>
+<p>There's another approach you may consider, namely using a third-party NPM package 
+to streamline the process of adding videos to your app. The NPM package ecosystem is 
+huge. If you visit the npmjs.org website, you'll find millions of various packages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9220,8 +9344,14 @@ However, this approach might not work as easily with some major providers of vid
   alt="."
   width="60%" />
 </p>
-<p>To make it easier on yourself, type React video in the search bar of the npmjs.org website to find some of the frequently downloaded NPM packages. To choose the right one, you might want to check the frequency or updates. A package that's frequently maintained and has many contributors is usually a sign of a solid package to use. Additionally, make sure to check the packages GitHub page. 
-Finally, you can also perform an Internet search for the package name. These actions will help you make an informed decision on which package to choose.</p>
+<p>To make it easier on yourself, type React video in the search bar of the 
+npmjs.org website to find some of the frequently downloaded NPM packages. 
+To choose the right one, you might want to check the frequency or updates. 
+A package that's frequently maintained and has many contributors is usually 
+a sign of a solid package to use. Additionally, make sure to check the packages 
+GitHub page. 
+Finally, you can also perform an Internet search for the package name. These actions 
+will help you make an informed decision on which package to choose.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9230,7 +9360,10 @@ Finally, you can also perform an Internet search for the package name. These act
   alt="."
   width="60%" />
 </p>
-An example of a package that fits all these criteria is the React player package. Visit the packages GitHub URL at github.com/CookPete/react-player. You'll find that they react-player package has over 6,000 stars, about 115 contributors, and that it's regularly maintained. What is the meaning of the stars?</p>
+An example of a package that fits all these criteria is the React player package. Visit 
+the packages GitHub URL at github.com/CookPete/react-player. You'll find that they 
+react-player package has over 6,000 stars, about 115 contributors, and that it's 
+regularly maintained. What is the meaning of the stars?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9239,9 +9372,14 @@ An example of a package that fits all these criteria is the React player package
   alt="."
   width="40%" />
 </p>
-<p>When a developer visits any repository on GitHub, they can show their appreciation of the project by clicking the Start button. This is known as starring a repo. This can be done for various reasons. But if a project has been starred many times, that's usually an indication of its popularity. These are all good signs. So if you want a custom open-source solution for your video needs in React, you can choose this package or a similar one.</p>
+<p>When a developer visits any repository on GitHub, they can show their appreciation of the 
+project by clicking the Start button. This is known as starring a repo. This can be done for 
+various reasons. But if a project has been starred many times, that's usually an indication 
+of its popularity. These are all good signs. So if you want a custom open-source solution 
+for your video needs in React, you can choose this package or a similar one.</p>
 
-<p>You now have a general idea of how to use audio and video assets in a React app, and how to find packages using npmjs.org and github.com.</p>
+<p>You now have a general idea of how to use audio and video assets in a React app, and 
+how to find packages using npmjs.org and github.com.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 15 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>15. Media packages</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9256,7 +9394,8 @@ https://www.npmjs.com/package/react-player</p>
 ```
 
 <p>Once you have this package installed, you can start using it in your project.
-There are a few ways that you can import and use the installed package. For example, to get the entire package's functionality, use the following import:</p>
+There are a few ways that you can import and use the installed package. For example, to 
+get the entire package's functionality, use the following import:</p>
 
 ```
 1.	import ReactPlayer from "react-player";
@@ -9269,6 +9408,9 @@ There are a few ways that you can import and use the installed package. For exam
 ```
 
 <p>Here’s an example of using the react-player packaged in a small React app:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.	import React from "react";
@@ -9291,12 +9433,17 @@ There are a few ways that you can import and use the installed package. For exam
 18.	export default App;
 ```
 
+</details>
+
 <p>In this section (15), you learned how to install and use the react-player npm package.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 16 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>16. Create an audio / video component</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>By the end of this section (16) you will know how to install the react player package and then use it to render a media player in react apps you'll also know how to apply several common settings and react player such as automatic playback and the starting volume.</p>
+<p>By the end of this section (16) you will know how to install the react player package 
+and then use it to render a media player in react apps you'll also know how to apply 
+several common settings and react player such as automatic playback and the starting 
+volume.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9305,8 +9452,11 @@ There are a few ways that you can import and use the installed package. For exam
   alt="."
   width="60%" />
 </p>
-<p>Let's examine another app that I've created using create react app. Currently it's pretty basic and only renders an 81 heading that reads React Player example, let's make that heading true by adding in a video player.</p>
-The first step of this process is to install the react player module and the second step is to import it into my app component.</p>
+<p>Let's examine another app that I've created using create react app. Currently it's pretty 
+basic and only renders an 81 heading that reads React Player example, let's make that heading 
+true by adding in a video player.</p>
+The first step of this process is to install the react player module and the second step is to 
+import it into my app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9315,7 +9465,9 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="80%" />
 </p>
-<p>To install the module, I'll run the command $ npm install react-player. Once it has finished installing the module becomes available to any component in my project but only if I import it.</p>
+<p>To install the module, I'll run the command $ npm install react-player. Once it has 
+finished installing the module becomes available to any component in my project but only 
+if I import it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9324,7 +9476,9 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="60%" />
 </p>
-<p>So I'll use the command import react player followed by react player and double quotes.  Now I'm ready to add the imported react player package as a component and render it from the app component.</p>
+<p>So I'll use the command import react player followed by react player and double quotes.  
+Now I'm ready to add the imported react player package as a component and render it from 
+the app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9333,7 +9487,14 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="60%" />
 </p>
-<p>I also want to pre set a few settings for the player specifically to ensure that the video doesn't play automatically on the page loads and to have the starting volume at 50% of the maximum. To do that, I add some attributes to the react player tag playing equals and then false in curly braces and volume equals, followed by 0.5 in curly braces. For a complete list of settings you can refer to the react players. Get up documentation. You may have noticed that the react component also contains the line U R L equals video RL. This refers to the web link for the video which hasn't been set up yet.</p>
+<p>I also want to pre set a few settings for the player specifically to ensure 
+that the video doesn't play automatically on the page loads and to have the starting 
+volume at 50% of the maximum. To do that, I add some attributes to the react player 
+tag playing equals and then false in curly braces and volume equals, followed by 0.5 
+in curly braces. For a complete list of settings you can refer to the react players. 
+Get up documentation. You may have noticed that the react component also contains the 
+line U R L equals video RL. This refers to the web link for the video which hasn't 
+been set up yet.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9342,7 +9503,10 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="60%" />
 </p>
-<p>So let's add that link to the video RL variable now that everything is set up. I'll click file and save and then verify that everything works as expected in the browser. I can play the video, use the built in controls and the video starts at half the volume so it seems that everything is correct.</p>
+<p>So let's add that link to the video RL variable now that everything is set up. 
+I'll click file and save and then verify that everything works as expected in the 
+browser. I can play the video, use the built in controls and the video starts at 
+half the volume so it seems that everything is correct.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9351,7 +9515,8 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="80%" />
 </p>
-<p>Finally, you can find the projects get happy or L at dot com slash cook pete with a capital C and capital P slash react dash player.</p>
+<p>Finally, you can find the projects get happy or L at dot com slash cook pete 
+with a capital C and capital P slash react dash player.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9360,7 +9525,8 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="60%" />
 </p>
-<p>This page contains an about section on the right in which you'll find a link to the live demo on the link page.</p>
+<p>This page contains an about section on the right in which you'll find a link to the 
+live demo on the link page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9369,12 +9535,19 @@ The first step of this process is to install the react player module and the sec
   alt="."
   width="40%" />
 </p>
-<p>You can select from several video sources and change the video settings such as playback speed, light mode, loop and more. If you would like to know more about the react player. I recommend experimenting with these settings and consulting the projects. Get help documentation in this video.</p>
-<p>In section 16 you learned how to install and use the react player package and change common settings for the react player.</p>
+<p>You can select from several video sources and change the video settings such as 
+playback speed, light mode, loop and more. If you would like to know more about the 
+react player. I recommend experimenting with these settings and consulting the 
+projects. Get help documentation in this video.</p>
+<p>In section 16 you learned how to install and use the react player package and 
+change common settings for the react player.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 17 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>17. Solution: Song selection</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here's the completed App.js file:</p>
+<p>Here's the completed App.js file:</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.	import React from "react"; 
@@ -9418,6 +9591,8 @@ Here's the completed App.js file:</p>
 37.	export default App;
 ```
 
+</details>
+
 <p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s17-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9429,7 +9604,12 @@ Here's the completed App.js file:</p>
 </p>
 
 <p>Step 1<br>
-In this ungraded lab, your goal was to read through the existing code of the App.js file, and update the second button so that it's running the toggle2 function on a click to the second button.</p>
+In this ungraded lab, your goal was to read through the existing code of the App.js file, 
+and update the second button so that it's running the toggle2 function on a click to the 
+second button.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import React from "react";
@@ -9465,8 +9645,14 @@ In this ungraded lab, your goal was to read through the existing code of the App
 29. export default App;
 ```
 
+</details>
+
 <p>Step 2<br>
-After adding the toggle2 function to the JSX expression in the second button's onClick event-handling attribute, you should have un-commented the bird2 variable on lines 9 to 11.</p>
+After adding the toggle2 function to the JSX expression in the second button's onClick 
+event-handling attribute, you should have un-commented the bird2 variable on lines 9 to 11.</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import React from "react";
@@ -9502,8 +9688,15 @@ After adding the toggle2 function to the JSX expression in the second button's o
 29. export default App;
 ```
 
+</details>
+
 <p>Step 3<br>
-Next, you needed to define the toggle2 function: it should have had the exact same functionality as the toggle1 function, but it needed to work with the bird2 variable (instead of the bird1 variable as it did in the toggle1 function).</p>
+Next, you needed to define the toggle2 function: it should have had the exact same 
+functionality as the toggle1 function, but it needed to work with the bird2 variable 
+(instead of the bird1 variable as it did in the toggle1 function).</p>
+
+<details open>
+  <summary>React code:</summary>
 
 ```
 1.  import React from "react";
@@ -9547,12 +9740,19 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
 37.	export default App;
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>18. Module summary: Navigation, Updating and  Assets in React.js</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You've reached the end of this module on setting up navigation, updating, and using assets in ReactJS. It's now time to recap the key lessons you learned, and the skills that you gained. In the module, you explored the basics of single and multi-page navigation, as well as the conditional rendering or changing of content in response to user status or choice.</p>
+<p>You've reached the end of this module on setting up navigation, updating, and 
+using assets in ReactJS. It's now time to recap the key lessons you learned, and 
+the skills that you gained. In the module, you explored the basics of single and 
+multi-page navigation, as well as the conditional rendering or changing of content 
+in response to user status or choice.</p>
 
-<p>The first lesson covered linking and routing of components in React for navigation. Website navigation is the part of any website that allows you to browse through various pages or links on that website from a single component.</p>
+<p>The first lesson covered linking and routing of components in React for navigation. 
+Website navigation is the part of any website that allows you to browse through 
+various pages or links on that website from a single component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-a.  (253) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9561,7 +9761,9 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="60%" />
 </p>
-<p>In modern website navigation, the user interface is all about functionality. You learned about the most common navigation components, like the horizontal navigation bar, or navbar.</p>
+<p>In modern website navigation, the user interface is all about functionality. 
+You learned about the most common navigation components, like the horizontal 
+navigation bar, or navbar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-b.  (254) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9570,7 +9772,9 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="60%" />
 </p>
-<p>But of course, most websites have more complex navigation UI that include multiple navigation approaches in a single component, like combining a horizontal navbar with drop-down menu items.</p>
+<p>But of course, most websites have more complex navigation UI that include 
+multiple navigation approaches in a single component, like combining a horizontal 
+navbar with drop-down menu items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9579,7 +9783,13 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="40%" />
 </p>
-<p>You learned that there's a key difference between the navigation of websites built with React, versus those built with HTML and CSS. With React-powered web pages, called single-page applications or SPAs, the entire app is loaded inside a single div, so you're not actually visiting different pages like you would with hyperlinks in HTML files. That's because a single-page application, or SPA, comes with its own special implementation of anchor tags and links that give the illusion of loading different pages.</p>
+<p>You learned that there's a key difference between the navigation of websites built 
+with React, versus those built with HTML and CSS. With React-powered web pages, 
+called single-page applications or SPAs, the entire app is loaded inside a single 
+div, so you're not actually visiting different pages like you would with hyperlinks 
+in HTML files. That's because a single-page application, or SPA, comes with its own 
+special implementation of anchor tags and links that give the illusion of loading 
+different pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-d.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9588,7 +9798,9 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="40%" />
 </p>
-<p>To achieve the solution of a multi-page websites, you learn that you need to add the React Router library to your React projects, and you practice using it to create and implement the basic navigation routes for our webpage.</p>
+<p>To achieve the solution of a multi-page websites, you learn that you need to add the 
+React Router library to your React projects, and you practice using it to create and 
+implement the basic navigation routes for our webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-e.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9597,7 +9809,8 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="40%" />
 </p>
-<p>In this lesson's ungraded lab, you used code from the lesson item title to the navbar, and you had to add another link to the existing code.</p>
+<p>In this lesson's ungraded lab, you used code from the lesson item title to the navbar, 
+and you had to add another link to the existing code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-f.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9606,8 +9819,14 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="40%" />
 </p>
-<p>After this, you learned about conditional rendering, which is necessary for React to be able to dynamically change webpage content. As part of this section, you learned how to set up conditional rendering using ternary operators to write simplified FL's conditions.</p>
-<p>The second lesson focused on using assets in React.  Here, you learn the assets of files that your app needs at run-time, like images, style sheets, fonts, video, or audio. You learned how developers keep assets organized in React, and about some common ways to import asset files.</p>
+<p>After this, you learned about conditional rendering, which is necessary for React 
+to be able to dynamically change webpage content. As part of this section, you learned 
+how to set up conditional rendering using ternary operators to write simplified FL's 
+conditions.</p>
+<p>The second lesson focused on using assets in React.  Here, you learn the assets of 
+files that your app needs at run-time, like images, style sheets, fonts, video, or 
+audio. You learned how developers keep assets organized in React, and about some 
+common ways to import asset files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-g.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9616,7 +9835,10 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="."
   width="40%" />
 </p>
-<p>A common way to organize assets is to add an assets folder inside of the source folder, and keep all your app's assets there. Some assets can also be placed inside the public folder. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder.</p>
+<p>A common way to organize assets is to add an assets folder inside of the source folder, and 
+keep all your app's assets there. Some assets can also be placed inside the public folder. The 
+general rule for asset storage is that if your app can compile without it, you can keep it 
+in the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w3-s18-h. advantages and disadvantages of embedded assets (256) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9625,7 +9847,9 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="Embedded assets: Advantages and Disadvantages."
   width="40%" />
 </p>
-<p>In this part of the module, you learned how to use embedded assets, and about the advantages and disadvantages of embedding assets, as well as about the trade-offs inherent in using asset-heavy apps.</p>
+<p>In this part of the module, you learned how to use embedded assets, and about the 
+advantages and disadvantages of embedding assets, as well as about the trade-offs 
+inherent in using asset-heavy apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-i. ungraded lab: add an image (256) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9634,16 +9858,22 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="Ungraded lab: Add an image."
   width="60%" />
 </p>
-<p>In the first ungraded lab of this lesson, you learned how to add an image from the assets folder that had already been added to the SRC folder. What's more, you also learned more about using audio and video assets in an app. Here you learned how to find suitable React packages to use when working with audio and video files.</p>
+<p>In the first ungraded lab of this lesson, you learned how to add an image from 
+the assets folder that had already been added to the SRC folder. What's more, you 
+also learned more about using audio and video assets in an app. Here you learned 
+how to find suitable React packages to use when working with audio and video files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-j. three ways of adding videos (256) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w3-s18-j.png?raw=true"
-  alt="Three ways to add videos; serving local video, using embedded 3rd-party asshole videos, streamline using NPM."
+  alt="Three ways to add videos; serving local video, using embedded 3rd-party asshole videos, 
+  streamline using NPM."
   width="40%" />
 </p>
-<p>You learned about three ways of adding videos to your apps; by serving a local video using the video elements, using embedded third-party videos. We're using a third-party NPM package to streamline the process of adding videos to your app.</p>
+<p>You learned about three ways of adding videos to your apps; by serving a local video 
+using the video elements, using embedded third-party videos. We're using a third-party 
+NPM package to streamline the process of adding videos to your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w3-s18-k. frequency of updates, github page, internet search (257) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9652,7 +9882,11 @@ Next, you needed to define the toggle2 function: it should have had the exact sa
   alt="Frequency of updates, Github page, Internet search."
   width="40%" />
 </p>
-<p>Additionally, you learned what you can do to help you decide what package to use. You should check the frequency of updates, check the packages GitHub page, and perform an internet search for the package name. To help you become familiar with using such packages, you learned how to install a React player package, and use it to render a media player in a React app.</p>
+<p>Additionally, you learned what you can do to help you decide what package to use. 
+You should check the frequency of updates, check the packages GitHub page, and perform 
+an internet search for the package name. To help you become familiar with using such 
+packages, you learned how to install a React player package, and use it to render a 
+media player in a React app.</p>
 <p>You learned how to apply common settings like automatic playback and starting volume.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w3-s18-l. ungraded lab: finish song app (257) ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9678,8 +9912,17 @@ Your final ungraded lab of the module was to finish an already-built app with a 
   alt="Explain React project structure, use and manipulate image and media assets."
   width="30%" />
 </p>
-<p>Now that you've completed the module, you should be able to describe navigation design in React with a focus on single and multi-page navigation, create and implement a root in the form of a navbar, demonstrate the conditional implementation and rendering of multiple components, explain the folder structure of a React project in terms of embedded or referenced assets, demonstrate how to manipulate image assets using reference paths, and use media assets such as audio and video with React.</p>
-<p>Congratulations. You've now covered most of the basic concepts in React, and you're ready to complete this module's quiz and review the additional resources for this module. There's just one more module left before you complete this course. In the next module, you'll apply your knowledge by completing a mini-project in Reacts by building a calculator app.</p>
+<p>Now that you've completed the module, you should be able to describe navigation design in 
+React with a focus on single and multi-page navigation, create and implement a root in the 
+form of a navbar, demonstrate the conditional implementation and rendering of multiple 
+components, explain the folder structure of a React project in terms of embedded or 
+referenced assets, demonstrate how to manipulate image assets using reference paths, 
+and use media assets such as audio and video with React.</p>
+<p>Congratulations. You've now covered most of the basic concepts in React, and you're 
+ready to complete this module's quiz and review the additional resources for this module. 
+There's just one more module left before you complete this course. In the next module, 
+you'll apply your knowledge by completing a mini-project in Reacts by building a 
+calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 19 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>19. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9687,10 +9930,10 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 
 <ul>
   <li><p><a href="https://webpack.js.org/guides/getting-started/">webpack docs</a>,</p></li>
-  <li><p>webpack asset management,</p></li>
-  <li><p>npm docs,</p></li>
-  <li><p>ReactPlayer on npm,</p></li>
-  <li>Video and audio content on the web.</li>
+  <li><p><a href="https://webpack.js.org/guides/asset-management/">webpack asset management</a>,</p></li>
+  <li><p><a href="https://docs.npmjs.com/">npm docs</a>,</p></li>
+  <li><p><a href="https://www.npmjs.com/package/react-player">ReactPlayer on npm</a>,</p></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">Video and audio content on the web</a>.</li>
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9844,7 +10087,7 @@ React.</p>
 <p>You can see what it will look like when you're finished here:</p>
 
 <details open>
-  <summary>React functions</summary>
+  <summary>React code:</summary>
 
 ```
 import { useState } from 'react';
@@ -13569,4 +13812,4 @@ gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db0
 <p>Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.</p>
 
 <p>end. . .</p>
-<h6>Friday 6/16/2023 3:03am</h6>
+<h6>Sunday 6/18/2023 11:23am</h6>
