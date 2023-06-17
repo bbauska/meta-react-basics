@@ -9700,39 +9700,42 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-a/b. basics of working with react (259) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p align="center">
 <img src="/images/w4-s01-a.png?raw=true"
   alt="Course summary: Basics of working with React."
-  width="45%" />
+  width="30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/images/w4-s01-b.png?raw=true"
   alt="Course summary part ii: Basics of working with React."
-  width="45%" />
+  width="30%" />
 </p>
 <p>In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals.</p>
 <p>You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d. components and events (260) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p align="center">
 <img src="/images/w4-s01-c.png?raw=true"
   alt="Course summary part iii: Components in greater detail."
-  width="45%" />
+  width="30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/images/w4-s01-d.png?raw=true"
   alt="Course summary part iv: Events, event handlers and event syntax."
-  width="45%" />
+  width="30%" />
 </p>
 <p>In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes.</p>
 <p>Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f. data flow and web navigation (260) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p float="left">
+<p align="center">
 <img src="/images/w4-s01-e.png?raw=true"
   alt="Course summary part v: Data flow, state, hooks, stateful/stateless."
-  width="45%" />
+  width="30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/images/w4-s01-f.png?raw=true"
   alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
-  width="45%" />
+  width="30%" />
 </p>
 
 <p>You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed.</p>
@@ -9744,7 +9747,7 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 <p align="center" width="100%">
 <img src="/images/w4-s01-g.png?raw=true"
   alt="Assets in React and how to use them."
-  width="45%" />
+  width="30%" />
 </p>
 <p>In the final section (18) of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components.</p>
 <p>You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.</p>
