@@ -3694,61 +3694,61 @@ file, which, in modern React, is usually a function component.
 Now, did you know that this <b>Hello there</b> piece of text can be passed
 as a <b>named prop</b> when rendering the <b>Example</b> component?
 
-Here's how that would look like:
+<p>Here's how that would look like:</p>
 
 ```
 <Example children="Hello there" />
 ```
 
-Ok, so, there are two ways to do it. But this is just the beginning.
+<p>Ok, so, there are two ways to do it. But this is just the beginning.</p>
 
-What if you, say, wanted to surround the <b>Hello there</b> text in an
-<b>h3</b> HTML element?
+<p>What if you, say, wanted to surround the <b>Hello there</b> text in an
+<b>h3</b> HTML element?</p>
 
-Obviously, in JSX, that is easily achievable:
+<p>Obviously, in JSX, that is easily achievable:</p>
 
 ```
 <Example children={<h3>Hello there</h3>} />
 ```
 
-What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
-example, named <b>Hello</b>?
+<p>What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
+example, named <b>Hello</b>?</p>
 
-In that case, you'd have to update the code like this:
+<p>In that case, you'd have to update the code like this:</p>
 
 ```
 <Example children={<Hello />} />
 ```
 
-You could even make the <b>Hello</b> component more dynamic, by giving it
-its own prop:
+<p>You could even make the <b>Hello</b> component more dynamic, by giving it
+its own prop:</p>
 
 ```
 <Example children={<Hello message="Hello there" />} />
 ```
 
-So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
+<p>So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
 beginning of this section (24), armed with this new knowledge, how can you
-make it work?
+make it work?</p>
 
-Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
-component as its <b>props.children</b>:
+<p>Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
+component as its <b>props.children</b>:</p>
 
 ```
 <Bag children={<Apples color="yellow" number="5" />} />
 ```
 
-And here's how you'd render the <b>Bag</b> component, wrapping the
-<b>Pears</b> component:
+<p>And here's how you'd render the <b>Bag</b> component, wrapping the
+<b>Pears</b> component:</p>
 
 ```
 <Bag children={<Pears friend="Peter" />} />
 ```
 
-While the above syntax might look a bit weird, it's important to
-understand what is happening "under the hood".
+<p>While the above syntax might look a bit weird, it's important to
+understand what is happening "under the hood".</p>
 
-Effectively, the above syntax is the same as the two examples below.
+<p>Effectively, the above syntax is the same as the two examples below.</p>
 
 ```
 <Bag>
@@ -3760,8 +3760,8 @@ Effectively, the above syntax is the same as the two examples below.
 </Bag>
 ```
 
-You can even have multiple levels of nested JSX elements, or a single
-JSX element having multiple children, such as, for example:
+<p>You can even have multiple levels of nested JSX elements, or a single
+JSX element having multiple children, such as, for example:</p>
 
 ```
 <Trunk>
@@ -3772,11 +3772,11 @@ JSX element having multiple children, such as, for example:
 </Trunk>
 ```
 
-So, in the above structure, there's a <b>Trunk</b> JSX element, inside of
+<p>So, in the above structure, there's a <b>Trunk</b> JSX element, inside of
 which is a single <b>Bag</b> JSX element, holding an <b>Apples</b> and a
-<b>Pairs</b> JSX element.
+<b>Pairs</b> JSX element.</p>
 
-Before the end of this reading, consider this JSX element again:
+<p>Before the end of this reading, consider this JSX element again:</p>
 
 ```
 <Bag>
@@ -3784,61 +3784,61 @@ Before the end of this reading, consider this JSX element again:
 </Bag>
 ```
 
-What is <b>Apples</b> to <b>Bag</b> in the above code?
+<p>What is <b>Apples</b> to <b>Bag</b> in the above code?</p>
 
-<b>In the above code, Apples is a prop of the Bag component.</b> To explain
+<p><b>In the above code, Apples is a prop of the Bag component.</b> To explain
 further, the Bag component can wrap the Apples component, <b>or <i>any</i>
 other component</b>, because I used the <b>{props.children} syntax in the
 Bag component function declaration</b>. In other words, just like in the
 real world, when you take a bag to a grocery store, you can "wrap" a
 wide variety of groceries inside the bag, you can do the same thing in
 React: wrap a wide variety of components inside the <b>Bag</b> component,
-using the children prop to achieve this.
+using the children prop to achieve this.</p>
 
-It's crucial to understand this when working with React.
+<p>It's crucial to understand this when working with React.</p>
 
-Before the end of this section (24), there's another important concept that
-you need to be aware of: <i>finding the right amount of modularization</i>.
+<p>Before the end of this section (24), there's another important concept that
+you need to be aware of: <i>finding the right amount of modularization</i>.</p>
 
-What does this mean? Imagine, for example, that you had a number of
+<p>What does this mean? Imagine, for example, that you had a number of
 small bags, and that each bag could only carry a single apple or pear.
 You'd end up having to wrap each "apple" inside a "bag". That
 doesn't make much sense. You can think about components making your
 layouts modular in a similar way. You don't want to have an entire
 layout contained in a single component, because that would be very
-difficult to work with. 
+difficult to work with.</p>
 
-On the flip side, if you made each HTML element in your layout a separate 
+<p>On the flip side, if you made each HTML element in your layout a separate 
 component, that would make it very hard to work with, although such layout 
-would be modular. So it's all about moderation. 
+would be modular. So it's all about moderation.</p>
 
-You need to organize your layouts by splitting them into meaningful areas of 
+<p>You need to organize your layouts by splitting them into meaningful areas of 
 the page, and then code those meaningful areas as separate components. 
 That would constitute the right amount of modularity. To reinforce this point, 
 it might help to think of it in terms of how a person would describe a website: 
-there's a menu, a footer, the shopping cart, etc.
+there's a menu, a footer, the shopping cart, etc.</p>
 
-In conclusion, when you see a JSX element wrapping some other JSX
+<p>In conclusion, when you see a JSX element wrapping some other JSX
 element, you can easily understand that it's all just
-<b>props.children</b> in the background.
+<b>props.children</b> in the background.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 25 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>25. Styling JSX elements</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-You've observed that JSX is incredibly versatile, and can accept a
+<p>You've observed that JSX is incredibly versatile, and can accept a
 combination of JavaScript, HTML and CSS.  In this section (25), you'll learn
 some approaches for styling JSX elements and doing so in a way that
-achieves both a functional and visual aspect within an app.
+achieves both a functional and visual aspect within an app.</p>
 
-There are various ways to style JSX elements.
+<p>There are various ways to style JSX elements.</p>
 
-Probably the simplest way to do this is using the <b>link</b> HTML element
+<p>Probably the simplest way to do this is using the <b>link</b> HTML element
 in the head of the <b>index.html</b> file in which your React app will
-mount.
+mount.</p>
 
-The <b>href</b> attribute loads some CSS styles, probably with some CSS
+<p>The <b>href</b> attribute loads some CSS styles, probably with some CSS
 classes, and then, inside the function component's declarations, you
-can access those CSS classes using the <b>className</b> attribute.
+can access those CSS classes using the <b>className</b> attribute.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -3898,7 +3898,7 @@ export default Promo;
 
 </details>
 
-Now you can add some inline styles to it:
+<p>Now you can add some inline styles to it:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -3923,23 +3923,23 @@ export default Promo;
 
 </details>
 
-You can start updating the <b>Promo</b> component by adding the JavaScript
-expression syntax:
+<p>You can start updating the <b>Promo</b> component by adding the JavaScript
+expression syntax:</p>
 
 ```
 <h1 style={}>
 ```
 
-As explained previously, this means that whatever code you add inside
+<p>As explained previously, this means that whatever code you add inside
 these opening and closing curly braces is to be parsed as regular
 JavaScript. Now let's add a <b>style object literal</b> inside of these
-curly braces:
+curly braces:</p>
 
 ```
 <h1 style={{color:"tomato",fontSize:"40px"}}>
 ```
 
-You can then re-write this object literal:
+<p>You can then re-write this object literal:</p>
 
 ```
 {
@@ -3948,19 +3948,19 @@ You can then re-write this object literal:
 }
 ```
 
-So, there's nothing special about this object, except for the fact that
+<p>So, there's nothing special about this object, except for the fact that
 you've inlined it and placed it inside a pair of curly braces.
 Additionally, since it's just JavaScript, those CSS properties that
 would be hyphenated in plain CSS, such as, for example,
 <b>font-size:40px</b>, become camelCased, and the value is a string, making
-it look like this: <b>fontSize:"40px"</b>.
+it look like this: <b>fontSize:"40px"</b>.</p>
 
-Besides inlining a <i>style object literal</i>, you can also save it in a
+<p>Besides inlining a <i>style object literal</i>, you can also save it in a
 variable, and then use that variable instead of passing an object
-literal.
+literal.</p>
 
-That gives you an updated <b>Promo</b> component, with the styles object
-saved as a JavaScript variable:
+<p>That gives you an updated <b>Promo</b> component, with the styles object
+saved as a JavaScript variable:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -3989,9 +3989,9 @@ const styles = {
 
 </details>
 
-Using this approach makes your components more self-contained, because
+<p>Using this approach makes your components more self-contained, because
 they come with their own styles built-in, but it also makes them a bit
-harder to maintain.
+harder to maintain.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 26 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>26. Practical styling</h2>
@@ -3999,49 +3999,49 @@ harder to maintain.
 Recall that there are three techniques to include CSS and HTML documents.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-a.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-a. index.css (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s26-a.png?raw=true"
-  alt="."
+  alt="Index.css."
   width="60%" />
 </p>
-The first is in line by utilizing the style attribute inside the HTML element. 
-Next is internal by using the style elements in the head section. 
-Finally, external by linking to an external CSS file using the link element. 
+<p>The first is in line by utilizing the style attribute inside the HTML element.</p>
+<p>Next is internal by using the style elements in the head section.</p>
+<p>Finally, external by linking to an external CSS file using the link element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-b.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w1-s26-b. move css style inside component (100) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s26-b.png?raw=true"
-  alt="."
+  alt="Move CSS style inside component."
   width="60%" />
 </p>
-In this section (26), you'll learn how to take CSS style rules from an external 
+<p>In this section (26), you'll learn how to take CSS style rules from an external 
 file named index.CSS and add it inside a component as an internal style. 
 The style rules can then be referenced by your code inside the return statement of 
-the component. 
+the component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-c.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-c. external style sheet (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s26-c.png?raw=true"
-  alt="."
+  alt="External style sheet."
   width="60%" />
 </p>
 
-Notice that the components are styled by the external style sheet, index dot CSS. 
-
-For this section (26), I'll continue working on an app which consists of the components
+<p>Notice that the components are styled by the external style sheet, index dot CSS.</p>
+<p>For this section (26), I'll continue working on an app which consists of the components
 header, main and sidebar. This time the focus will be on using internal styling inside
-the sidebar components. To demonstrate this, I don't need to move all the code from
+the sidebar components.</p>
+<p>To demonstrate this, I don't need to move all the code from
 the index.CSS file. Instead, I'll just focus on the style is related to the sidebar 
-components. For example, I select the CSS code for a site and cut it by pressing Control X
+components.</p>
+<p>For example, I select the CSS code for a site and cut it by pressing Control X
 or Command X on Mac. After saving, notice that this removes the styling from the sidebar 
-components displayed in the browser. 
-
-Now let's go to the sidebar.js file where I'll paste the code before the return statement. 
-This will not affect my component because I'm pasting CSS code into a JavaScript file.
+components displayed in the browser.</p>
+<p>Now let's go to the sidebar.js file where I'll paste the code before the return statement. 
+This will not affect my component because I'm pasting CSS code into a JavaScript file.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-d.  (101) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4050,9 +4050,9 @@ This will not affect my component because I'm pasting CSS code into a JavaScript
   alt="."
   width="60%" />
 </p>
-I need to make some changes to turn the CSS rule into a JavaScript object. To do this, I need 
+<p>I need to make some changes to turn the CSS rule into a JavaScript object. To do this, I need 
 to declare a site style as a const variable and then replace the semi-colons and the code with 
-commas. I also need to replace the hyphenated names with camelCase. 
+commas. I also need to replace the hyphenated names with camelCase.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-e.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4061,8 +4061,8 @@ commas. I also need to replace the hyphenated names with camelCase.
   alt="."
   width="60%" />
 </p>
-It's important to know that because CSS declarations like background are now an object property, 
-I need to make their respective values a string by wrapping them inside double quotes. 
+<p>It's important to know that because CSS declarations like background are now an object property, 
+I need to make their respective values a string by wrapping them inside double quotes.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-f.  (102) ~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4072,9 +4072,9 @@ I need to make their respective values a string by wrapping them inside double q
   alt="."
   width="60%" />
 </p>
-I also need to repeat this for the other news tile elements as well. Finally, inside the a site tag 
+<p>I also need to repeat this for the other news tile elements as well. Finally, inside the a site tag 
 and return statements of the component, I need to add a style attribute by typing style equals aside 
-style as a JSX expression. I then choose save all in the file menu to save my changes. 
+style as a JSX expression. I then choose save all in the file menu to save my changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-g.  (103) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4084,8 +4084,8 @@ style as a JSX expression. I then choose save all in the file menu to save my ch
   width="60%" />
 </p>
 
-Notice that the sidebar components appears in the browser as before, I edited the index.CSS file. 
-That's an example of using inline CSS styling directly inside a component. 
+<p>Notice that the sidebar components appears in the browser as before, I edited the index.CSS file. 
+That's an example of using inline CSS styling directly inside a component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-h.  (104) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4095,24 +4095,24 @@ That's an example of using inline CSS styling directly inside a component.
   width="60%" />
 </p>
 
-In this section (26), you learned how to take CSS style rules from an external file 
-named index.CSS and add it inside a component as an internal style.
+<p>In this section (26), you learned how to take CSS style rules from an external file 
+named index.CSS and add it inside a component as an internal style.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 27 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>27. JSX syntax and the arrow function</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Components as Function Expressions</h3>
 
-Up to this point, you've likely only observed ES5 function declarations
+<p>Up to this point, you've likely only observed ES5 function declarations
 used to define components in React. However, this is not the only way to
-do it.
+do it.</p>
 
-In this section (27), you will learn about some alternative approaches,
-specifically by using function expressions and arrow functions.
+<p>In this section (27), you will learn about some alternative approaches,
+specifically by using function expressions and arrow functions.</p>
 
 <h4>Function Expressions</h4>
 
-Let's start with a function declaration used as a component in React:
+<p>Let's start with a function declaration used as a component in React:</p>
 
 ```
 function Nav(props) {
@@ -4124,10 +4124,10 @@ function Nav(props) {
 }
 ```
 
-This component's code returns a list item containing the value of the
-'first' prop.
+<p>This component's code returns a list item containing the value of the
+'first' prop.</p>
 
-Now, let's change this function declaration to a function expression:
+<p>Now, let's change this function declaration to a function expression:</p>
 
 ```
 const Nav = function(props) {
@@ -4139,29 +4139,29 @@ const Nav = function(props) {
 }
 ```
 
-The component is, for the most part, the same. The only thing that's
+<p>The component is, for the most part, the same. The only thing that's
 changed is that you're now using an anonymous (nameless) function, and
 assigning this anonymous function declaration to a variable declared
 using the <b>const</b> keyword, and the name <b>Nav</b>. The rest of the code
-is identical.
+is identical.</p>
 
-Changing a component from a function declaration to a function
+<p>Changing a component from a function declaration to a function
 expression doesn't change its behavior, or how you write the code to
-render the <b>Nav</b> component. It's still the same:
+render the <b>Nav</b> component. It's still the same:</p>
 
 ```
 <Nav first="Home" />
 ```
 
-You can also take this concept a step further, using arrow functions.
+<p>You can also take this concept a step further, using arrow functions.</p>
 
 <h3>Components as Arrow Functions</h3>
 
-Arrow functions are a core feature of the ES6 version of JavaScript.
+<p>Arrow functions are a core feature of the ES6 version of JavaScript.</p>
 
-One of the main benefits of using arrow functions is its shorter syntax.
+<p>One of the main benefits of using arrow functions is its shorter syntax.</p>
 
-Consider the Nav function expression written as an arrow function:
+<p>Consider the Nav function expression written as an arrow function:</p>
 
 ```
 const Nav = (props) => {
@@ -4173,32 +4173,32 @@ const Nav = (props) => {
 }
 ```
 
-So, the way to think about this is the following:
+<p>So, the way to think about this is the following:</p>
 
--   The arrow itself can be thought of as the replacement for the
-    <b>function</b> keyword. 
-
--   The parameters that this arrow function accepts are listed before
-    the arrow itself. 
-
--   To reiterate, take the smallest possible <b>anonymous ES5 function</b>:
+<ul>
+  <li><p>The arrow itself can be thought of as the replacement for the
+    <b>function</b> keyword.</p></li>
+  <li><p>The parameters that this arrow function accepts are listed before
+    the arrow itself.</p></li>
+  <li>To reiterate, take the smallest possible <b>anonymous ES5 function</b>:</li>
+</ul>
 
 ```
 const example = function() {}
 ```
 
-And then observe how this is written as an arrow function:
+<p>And then observe how this is written as an arrow function:</p>
 
 ```
 const example = () => {}
 ```
 
-Another important rule regarding arrow functions is that using the
+<p>Another important rule regarding arrow functions is that using the
 parentheses is optional if there's a single parameter that a function
-accepts.
+accepts.</p>
 
-In other words, another correct way to write the previous Nav arrow
-function component would be to drop the parentheses around 'props':
+<p>In other words, another correct way to write the previous Nav arrow
+function component would be to drop the parentheses around 'props':</p>
 
 ```
 const Nav = props => {
@@ -4210,12 +4210,12 @@ const Nav = props => {
 }
 ```
 
-In all other cases, when you write arrow functions, <b>for any number of
+<p>In all other cases, when you write arrow functions, <b>for any number of
 parameters other than a single parameter, using parentheses around
-parameters is compulsory</b>.
+parameters is compulsory</b>.</p>
 
-For example, if your <b>Nav</b> component wasn't accepting any parameters,
-you'd code it with empty parentheses:
+<p>For example, if your <b>Nav</b> component wasn't accepting any parameters,
+you'd code it with empty parentheses:</p>
 
 ```
 const Nav = () => {
@@ -4227,36 +4227,36 @@ const Nav = () => {
 }
 ```
 
-Another interesting thing about arrow functions is the <b>implicit
+<p>Another interesting thing about arrow functions is the <b>implicit
 return</b>. However, it only works if it's on the same line of code as
 the arrow itself. In other words, the implicit return works if your
-entire component is a single line of code.
+entire component is a single line of code.</p>
 
-To demonstrate how this works, let's re-write the <b>Nav</b> component as a
-one-liner:
+<p>To demonstrate how this works, let's re-write the <b>Nav</b> component as a
+one-liner:</p>
 
 ```
 const Nav = () => <ul><li>Home</li></ul>
 ```
 
-Note that with the implicit return, you don't even have to use the
+<p>Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
-cases.
+cases.</p>
 
 <h3>Using Arrow Functions in Other Situations</h3>
 
-In React, just like in plain JavaScript, arrow functions can be used in
+<p>In React, just like in plain JavaScript, arrow functions can be used in
 many different situations. One such situation is using it with, for
-example, the <b>forEach()</b> built-in array method.
+example, the <b>forEach()</b> built-in array method.</p>
 
-For example:
+<p>For example:</p>
 
 ```
 [10, 20, 30].forEach(item => item * 10)
 ```
 
-The output of the above vanilla JavaScript line of code would be three
-number values:
+<p>The output of the above vanilla JavaScript line of code would be three
+number values:</p>
 
 <b>100</b> <b>200</b> <b>300</b>
 
@@ -11514,8 +11514,8 @@ function handleClick(i) {
 }
 ```
 
-Now you can only add X's or O's to empty squares! Here is what your code
-should look like at this point:
+<p>Now you can only add X's or O's to empty squares! Here is what your code
+should look like at this point:</p>
 
 <details open>
   <summary>App.js</summary>
@@ -11562,12 +11562,12 @@ import { useState } from 'react';
 
 <h4>Declaring a winner</h4>
 
-Now that you show which player's turn is next, you should also show when
+<p>Now that you show which player's turn is next, you should also show when
 the game is won and there are no more turns to make. To do this you'll
 add a helper function called calculateWinner that takes an array of 9
 squares, checks for a winner and returns 'X', 'O', or null as
 appropriate. Don't worry too much about the calculateWinner function;
-it's not specific to React:
+it's not specific to React:<p>
 
 <details open>
   <summary>React code:</summary>
@@ -11602,14 +11602,14 @@ function calculateWinner(squares) {
 
 <h4>Note</h4>
 
-It does not matter whether you define calculateWinner before or after
+<p>It does not matter whether you define calculateWinner before or after
 the Board. Let's put it at the end so that you don't have to scroll past
-it every time you edit your components.
+it every time you edit your components.</p>
 
-You will call calculateWinner(squares) in the Board component's
+<p>You will call calculateWinner(squares) in the Board component's
 handleClick function to check if a player has won. You can perform this
 check at the same time you check if a user has clicked a square that
-already has a X or and O. We'd like to return early in both cases:
+already has a X or and O. We'd like to return early in both cases:</p>
 
 ```
 function handleClick(i) {
@@ -11621,11 +11621,11 @@ function handleClick(i) {
 }
 ```
 
-To let the players know when the game is over, you can display text such
+<p>To let the players know when the game is over, you can display text such
 as "Winner: X" or "Winner: O". To do that you'll add a status section to
 the Board component. The status will display the winner if the game is
 over and if the game is ongoing you'll display which player's turn is
-next:
+next:</p>
 
 <details open>
   <summary>JavaScript</summary>
@@ -11749,23 +11749,23 @@ function calculateWinner(squares) {
 
 <h4>Adding time travel</h4>
 
-As a final exercise, let's make it possible to "go back in time" to the
-previous moves in the game.
+<p>As a final exercise, let's make it possible to "go back in time" to the
+previous moves in the game.</p>
 
 <h4>Storing a history of moves</h4>
 
-If you mutated the squares array, implementing time travel would be very
-difficult.
+<p>If you mutated the squares array, implementing time travel would be very
+difficult.</p>
 
-However, you used slice() to create a new copy of the squares array
+<p>However, you used slice() to create a new copy of the squares array
 after every move, and treated it as immutable. This will allow you to
 store every past version of the squares array, and navigate between the
-turns that have already happened.
+turns that have already happened.</p>
 
-You'll store the past squares arrays in another array called history,
+<p>You'll store the past squares arrays in another array called history,
 which you'll store as a new state variable. The history array represents
 all board states, from the first to the last move, and has a shape like
-this:
+this:</p>
 
 ```
 [
@@ -11781,19 +11781,19 @@ this:
 
 <h4>Lifting state up, again</h4>
 
-You will now write a new top-level component called Game to display a
+<p>You will now write a new top-level component called Game to display a
 list of past moves. That's where you will place the history state that
-contains the entire game history.
+contains the entire game history.</p>
 
-Placing the history state into the Game component will let you remove
+<p>Placing the history state into the Game component will let you remove
 the squares state from its child Board component. Just like you "lifted
 state up" from the Square component into the Board component, you will
 now lift it up from the Board into the top-level Game component. This
 gives the Game component full control over the Board's data and lets it
-instruct the Board to render previous turns from the history.
+instruct the Board to render previous turns from the history.</p>
 
-First, add a Game component with export default. Have it render the
-Board component and some markup:
+<p>First, add a Game component with export default. Have it render the
+Board component and some markup:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -11818,15 +11818,15 @@ export default function Game() {
 
 </details>
 
-Note that you are removing the export default keywords before the
+<p>Note that you are removing the export default keywords before the
 function Board() { declaration and adding them before the function
 Game() { declaration. This tells your index.js file to use the Game
 component as the top-level component instead of your Board component.
 The additional divs returned by the Game component are making room for
-the game information you'll add to the board later.
+the game information you'll add to the board later.</p>
 
-Add some state to the Game component to track which player is next and
-the history of moves:
+<p>Add some state to the Game component to track which player is next and
+the history of moves:</p>
 
 ```
 export default function Game() {
@@ -11838,12 +11838,12 @@ const [history, setHistory] = useState([Array(9).fill(null)]);
 // ...
 ```
 
-Notice how [Array(9).fill(null)] is an array with a single item, which
-itself is an array of 9 nulls.
+<p>Notice how [Array(9).fill(null)] is an array with a single item, which
+itself is an array of 9 nulls.</p>
 
-To render the squares for the current move, you'll want to read the last
+<p>To render the squares for the current move, you'll want to read the last
 squares array from the history. You don't need useState for this--you
-already have enough information to calculate it during rendering:
+already have enough information to calculate it during rendering:</p>
 
 ```
 export default function Game() {
@@ -11857,9 +11857,9 @@ const currentSquares = history[history.length - 1];
 // ...
 ```
 
-Next, create a handlePlay function inside the Game component that will
+<p>Next, create a handlePlay function inside the Game component that will
 be called by the Board component to update the game. Pass xIsNext,
-currentSquares and handlePlay as props to the Board component:
+currentSquares and handlePlay as props to the Board component:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -11886,11 +11886,11 @@ export default function Game() {
 
 </details>
 
-Let's make the Board component fully controlled by the props it
+<p>Let's make the Board component fully controlled by the props it
 receives. Change the Board component to take three props: xIsNext,
 squares, and a new onPlay function that Board can call with the updated
 squares array when a player makes a move. Next, remove the first two
-lines of the Board function that call useState:
+lines of the Board function that call useState:</p>
 
 ```
 function Board({ xIsNext, squares, onPlay }) {
@@ -11902,9 +11902,9 @@ function Board({ xIsNext, squares, onPlay }) {
 }
 ```
 
-Now replace the setSquares and setXIsNext calls in handleClick in the
+<p>Now replace the setSquares and setXIsNext calls in handleClick in the
 Board component with a single call to your new onPlay function so the
-Game component can update the Board when the user clicks a square:
+Game component can update the Board when the user clicks a square:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12016,25 +12016,25 @@ import { useState } from 'react';
 
 <h4>Showing the past moves</h4>
 
-Since you are recording the tic-tac-toe game's history, you can now
-display a list of past moves to the player.
+<p>Since you are recording the tic-tac-toe game's history, you can now
+display a list of past moves to the player.</p>
 
-React elements like <button> are regular JavaScript objects; you can
+<p>React elements like <button> are regular JavaScript objects; you can
 pass them around in your application. To render multiple items in React,
-you can use an array of React elements.
+you can use an array of React elements.</p>
 
-You already have an array of history moves in state, so now you need to
+<p>You already have an array of history moves in state, so now you need to
 transform it to an array of React elements. In JavaScript, to transform
 one array into another, you can use the [array map
-method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+method:](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)</p>
 
 ```
 [1, 2, 3].map((x) => x * 2) // [2, 4, 6]
 ```
 
-You'll use map to transform your history of moves into React elements
+<p>You'll use map to transform your history of moves into React elements
 representing buttons on the screen, and display a list of buttons to
-"jump" to past moves. Let's map over the history in the Game component:
+"jump" to past moves. Let's map over the history in the Game component:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12081,11 +12081,11 @@ export default function Game() {
 
 </details>
 
-You can see what your code should look like below. Note that you should
+<p>You can see what your code should look like below. Note that you should
 see an error in the developer tools console that says: Warning: Each
 child in an array or iterator should have a unique "key" prop. Check
 the render method of `Game`. You'll fix this error in the next
-section.
+section.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -12231,14 +12231,14 @@ rendered list item. When you update a list, React needs to determine
 what has changed. You could have added, removed, re-arranged, or updated
 the list's items.</p>
 
-Imagine transitioning from
+<p>Imagine transitioning from:</p>
 
 ```
 <li>Alexa: 7 tasks left</li>
 <li>Ben: 5 tasks left</li>
 ```
 
-to
+<p>to</p>
 
 ```
 <li>Ben: 9 tasks left</li>
@@ -12246,13 +12246,13 @@ to
 <li>Alexa: 5 tasks left</li>
 ```
 
-In addition to the updated counts, a human reading this would probably
+<p>In addition to the updated counts, a human reading this would probably
 say that you swapped Alexa and Ben's ordering and inserted Claudia
 between Alexa and Ben. However, React is a computer program and can't
 know what you intended, so you need to specify a key property for each
 list item to differentiate each list item from its siblings. If your
 data was from a database, Alexa, Ben, and Claudia's database IDs could
-be used as keys.
+be used as keys.</p>
 
 ```
 <li key={user.id}>
@@ -12260,46 +12260,46 @@ be used as keys.
 </li>
 ```
 
-When a list is re-rendered, React takes each list item's key and
+<p>When a list is re-rendered, React takes each list item's key and
 searches the previous list's items for a matching key. If the current
 list has a key that didn't exist before, React creates a component. If
 the current list is missing a key that existed in the previous list,
 React destroys the previous component. If two keys match, the
-corresponding component is moved.
+corresponding component is moved.</p>
 
-Keys tell React about the identity of each component, which allows React
+<p>Keys tell React about the identity of each component, which allows React
 to maintain state between re-renders. If a component's key changes, the
-component will be destroyed and re-created with a new state.
+component will be destroyed and re-created with a new state.</p>
 
-key is a special and reserved property in React. When an element is
+<p>key is a special and reserved property in React. When an element is
 created, React extracts the key property and stores the key directly on
 the returned element. Even though key may look like it is passed as
 props, React automatically uses key to decide which components to
 update. There's no way for a component to ask what key its parent
-specified.
+specified.</p>
 
-It's strongly recommended that you assign proper keys whenever you build
+<p>It's strongly recommended that you assign proper keys whenever you build
 dynamic lists. If you don't have an appropriate key, you may want to
-consider restructuring your data so that you do.
+consider restructuring your data so that you do.</p>
 
-If no key is specified, React will report an error and use the array
+<p>If no key is specified, React will report an error and use the array
 index as a key by default. Using the array index as a key is problematic
 when trying to re-order a list's items or inserting/removing list items.
 Explicitly passing key={i} silences the error but has the same problems
-as array indices and is not recommended in most cases.
+as array indices and is not recommended in most cases.</p>
 
-Keys do not need to be globally unique; they only need to be unique
-between components and their siblings.
+<p>Keys do not need to be globally unique; they only need to be unique
+between components and their siblings.</p>
 
 <h4>Implementing time travel</h4>
 
-In the tic-tac-toe game's history, each past move has a unique ID
+<p>In the tic-tac-toe game's history, each past move has a unique ID
 associated with it: it's the sequential number of the move. Moves will
 never be re-ordered, deleted, or inserted in the middle, so it's safe to
-use the move index as a key.
+use the move index as a key.</p>
 
-In the Game function, you can add the key as &lt;li key={move}&gt;, and if
-you reload the rendered game, React's "key" error should disappear:
+<p>In the Game function, you can add the key as &lt;li key={move}&gt;, and if
+you reload the rendered game, React's "key" error should disappear:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -13800,4 +13800,5 @@ gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db0
 <p>Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.</p>
 
 <p>end. . .</p>
+
 <h6>Sunday 6/18/2023 11:23am</h6>
