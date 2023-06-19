@@ -4260,14 +4260,15 @@ number values:
 
 <b>100</b> <b>200</b> <b>300</b>
 
-As a side-note, the term "vanilla JavaScript" is often used to
+<p>As a side-note, the term "vanilla JavaScript" is often used to
 describe the plain, regular JavaScript language syntax, without any
-framework-specific or library-specific code. For example, React is a
-library, so in this context, saying that a piece of code is "vanilla
-JavaScript" means that it doesn't need any special library to run. It
-can run in "plain" JavaScript without any additional dependencies.
+framework-specific or library-specific code.</p>
+<p>For example, React is a library, so in this context, saying that a 
+piece of code is "vanilla JavaScript" means that it doesn't need any 
+special library to run. It can run in "plain" JavaScript without any 
+additional dependencies.</p>
 
-You could also write this code in ES5 syntax:
+<p>You could also write this code in ES5 syntax:</p>
 
 ```
 [10, 20, 30].forEach(function(item) {
@@ -4276,10 +4277,10 @@ You could also write this code in ES5 syntax:
 )
 ```
 
-Regardless of how you write it, the <b>forEach()</b> method can be run on
+<p>Regardless of how you write it, the <b>forEach()</b> method can be run on
 an array. The <b>forEach()</b> method accepts a single parameter: <b>an
 anonymous function</b>. If you write this anonymous function in ES5
-syntax, then it would contain a return statement:
+syntax, then it would contain a return statement:</p>
 
 ```
 function(item) {
@@ -4287,163 +4288,152 @@ function(item) {
 }
 ```
 
-If you write it as an ES6 function instead, it can be simplified as one
-line:
+<p>If you write it as an ES6 function instead, it can be simplified as one
+line:</p>
 
 ```
 item => item * 10
 ```
 
-Both these functions perform the exact same task. Only the syntax is
-different. The ES6 function is a lot shorter because:
+<p>Both these functions perform the exact same task. Only the syntax is
+different. The ES6 function is a lot shorter because:</p>
 
--   The arrow function has a single parameter, so you do not need to add
-    parentheses around the item parameter (to the left of the arrow) 
-
--   Since the arrow function fits on one line of code, you don't need to
+<ul>
+  <li><p>The arrow function has a single parameter, so you do not need to add
+    parentheses around the item parameter (to the left of the arrow).</li></p>
+  <li><p>Since the arrow function fits on one line of code, you don't need to
     use curly braces around the function body, or the return keyword;
-    it's implicit 
-
--   Arrow functions are used extensively in JSX in React, and getting
+    it's implicit.</li></p>
+  <li>Arrow functions are used extensively in JSX in React, and getting
     used to their syntax and being able to "mentally parse" it as you
     read it is an important skill to have and helps you get better at
-    writing React apps.
+    writing React apps.</li>
+</ul>
 
-Now that you have completed this section (27), you've learned about some
+<p>Now that you have completed this section (27), you've learned about some
 alternative approaches, specifically by using function expressions and
-arrow functions.
-
+arrow functions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 28 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>28. Embedded JSX expressions</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Recall that JSX is a syntax extension to JavaScripts that is used with
+<p>Recall that JSX is a syntax extension to JavaScripts that is used with
 React. It allows developers to write HTML as part of their component
-code, and is frequently used in React as it offers greater flexibility.
-
-In this section (28), you will learn how JSX is used and how to use its
-key feature embedded expressions. 
-
-First, let's examine a JSX example that will output some text on a webpage. 
-The code consists of a paragraph, HTML elements containing the phrase hello world. 
+code, and is frequently used in React as it offers greater flexibility.</p>
+<p>In this section (28), you will learn how JSX is used and how to use its
+key feature embedded expressions.</p>
+<p>First, let's examine a JSX example that will output some text on a webpage. 
+The code consists of a paragraph, HTML elements containing the phrase hello world.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-a.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-a. jsx example (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-a.png?raw=true"
-  alt="."
+  alt="JSX example."
   width="40%" />
 </p>
-It is assigned to the constant variable named Result.
-Note that when this JSX code executes, the result variable will contain a react 
-element that can then be inserted into the webpage. 
-
+<p>It is assigned to the constant variable named Result.</p>
+<p>Note that when this JSX code executes, the result variable will contain a React 
+element that can then be inserted into the webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-b.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-b. html to jsx to react (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-b.png?raw=true"
-  alt="."
+  alt="HTML to JSX to React."
   width="40%" />
 </p>
-This is one of the key features of
-JSX. Building React elements from HTML code automatically. 
+<p>This is one of the key features of JSX.</p>
+<p>Building React elements from HTML code automatically.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-c.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-c. embedded expressions (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-c.png?raw=true"
-  alt="."
+  alt="Embedded expressions."
   width="40%" />
 </p>
-Let's explore another important feature of JSX, which is embedded expressions.
-Embedded expressions allow developers to insert the values of JavaScript
-variables into the HTML of the resulting React elements. Embedded expressions can also embed 
-the outputs of functions. 
-
+<p>Let's explore another important feature of JSX, which is embedded expressions.</p>
+<p>Embedded expressions allow developers to insert the values of JavaScript
+variables into the HTML of the resulting React elements.</p>
+<p>Embedded expressions can also embed the outputs of functions.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-d.  (108) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-d. function: formatname (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-d.png?raw=true"
-  alt="."
+  alt="function: formatname."
   width="40%" />
 </p>
-Let's say you need
-to output the person's name in a specific format. To do this, you can
-first create a function named format name that will return the first
-name and surname with a space character between them. 
-
+<p>Let's say you need to output the person's name in a specific format. To do 
+this, you can first create a function named format name that will return the 
+first name and surname with a space character between them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-e.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-e. embedded function outputs (109) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-e.png?raw=true"
-  alt="."
+  alt="Embedded function outputs."
   width="40%" />
 </p>
-In your JSX, you can then call this function inside the curly brackets. 
+<p>In your JSX, you can then call this function inside the curly brackets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-f.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~ w1-s28-f. more embedded function outputs (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-f.png?raw=true"
-  alt="."
+  alt="More embedded function outputs."
   width="40%" />
 </p>
-As with the previous example, the value that the function generates for the JavaScript 
-variable will be output in HTML. 
-
+<p>As with the previous example, the value that the function generates for the JavaScript 
+variable will be output in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-g.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~ w1-s28-g. expression in html attributes (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-g.png?raw=true"
-  alt="."
+  alt="Expressions in HTML attributes."
   width="40%" />
 </p>
-Expressions can also be used for HTML attributes.
-This is useful if you need to insert the address of a person's profile picture. 
-
-To do this, first, you would store the profile picture address in a variable named URL. 
-
+<p>Expressions can also be used for HTML attributes.</p>
+<p>This is useful if you need to insert the address of a person's profile picture.</p>
+<p>To do this, first, you would store the profile picture address in a variable named URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-h.  (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w1-s28-h. more expressions in html attributes (109) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s28-h.png?raw=true"
-  alt="."
+  alt="More expressions in HTML attributes."
   width="40%" />
 </p>
-The image will be displayed using the img elements, so you should embed the URL 
-variable into the src attributes. 
+<p>The image will be displayed using the img elements, so you should embed the URL 
+variable into the src attributes.</p>
 
-Note that the double-quotes are not needed for the attribute value as JSX will automatically 
+<p>Note that the double-quotes are not needed for the attribute value as JSX will automatically 
 add these.  This is just one example of how JSX is an efficient way of 
 outputting HTML elements that contain JavaScript variable content, and you'll 
-encounter more as you progress. 
+encounter more as you progress.</p>
 
-In this section (28), you explored several JSX examples, including one that uses 
+<p>In this section (28), you explored several JSX examples, including one that uses 
 embedded expressions to insert the values of JavaScript variables into HTML within 
-a React element.
-
+a React element.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 29 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>29. Ternary operators and functions in JSX</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-So you've explored several ways to define components in React; this
+<p>So you've explored several ways to define components in React; this
 includes function declarations, function expressions and arrow
-functions.
+functions.</p>
 
-As you continue with building your knowledge of React syntax, you'll
-learn to make more use of JSX and embedded JSX expressions.
+<p>As you continue with building your knowledge of React syntax, you'll
+learn to make more use of JSX and embedded JSX expressions.</p>
 
-In this section (29), you will become familiar with how to use ternary
+<p>In this section (29), you will become familiar with how to use ternary
 expressions to achieve a random return, as well as how to invoke
-functions inside of JSX expressions.
+functions inside of JSX expressions.</p>
 
 <h3>A different way of writing an if...else conditional</h3>
 
-You are likely familiar with the structure of an if...else conditional.
-Here is a quick refresher:
+<p>You are likely familiar with the structure of an if...else conditional.</p>
+<p>Here is a quick refresher:</p>
 
 ```
 let name = 'Bob';
@@ -4457,16 +4447,16 @@ if (name == 'Bob') {
 
 <p>The above code works as follows:</p>
 
-1.  First, I declare a <b>name</b> variable and set it to a string of
-    <b>"Bob"</b>.
-
-2.  Next, I use the <b>if</b> statement to check if the value of the name
+<ol type="1">
+  <li><p>First, I declare a <b>name</b> variable and set it to a string of
+    <b>"Bob"</b>.</p></li>
+  <li><p>Next, I use the <b>if</b> statement to check if the value of the name
     variable is <b>"Bob"</b>. If it is, I want to <b>console.log</b> the
-    word <b>"Bob"</b>.
-
-3.  Otherwise, if the name variable's value is not <b>"Bob"</b>, the
+    word <b>"Bob"</b>.</p></li>
+  <li>Otherwise, if the name variable's value is not <b>"Bob"</b>, the
     <b>else</b> block will execute and output the words <b>"Hello,
-    Friend"</b> in the console.
+    Friend"</b> in the console.</li>
+</ol>
 
 <p>Above, I gave you an example of using an <b>if...else</b> conditional. Did
 you know that there is another, different way, to effectively do the
@@ -4505,21 +4495,21 @@ my code to include this as well:</p>
 name == 'Bob' ? :
 ```
 
-This brings me a step closer to completing my ternary operator. Although
+<p>This brings me a step closer to completing my ternary operator. Although
 I've added the characters needed to construct the ternary operator, I
 still need to add the return values. In other words, if <b>name ==
 'Bob'</b> evaluates to true, I want to return the words, "Yes, it is
 Bob!". Otherwise, I want to return the words "I don't know this
-person".
+person".</p>
 
 ```
 name == Bob ? "Yes, it is Bob" : "I don't know this person";
 ```
 
-This, in essence, is how the ternary operator works. It's just some
+<p>This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the <b>if</b>
 statement. To prove that this is really the case, here's my starting
-if...else example, written as a ternary operator:
+if...else example, written as a ternary operator:</p>
 
 ```
 let name = 'Bob';
@@ -4545,7 +4535,7 @@ function Example() {
 };
 ```
 
-</details.
+</details>
 
 <p>Inside the <b>&lt;h1&gt;</b> element, the curly braces signal to React that you
 want it to parse the code inside as regular JavaScript.</p>
@@ -4558,7 +4548,7 @@ this:</p>
 comparison ? true : false
 ```
 
-In the actual code example at the start of this lesson item, the
+<p>In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
 the >= (greater-than-or-equal-to operator), to return a Boolean value.
 If the result of the comparison evaluates to <b>true</b>, then the string
@@ -4567,20 +4557,20 @@ question mark and the semi-colon character will get returned. Otherwise,
 if the result of the comparison evaluates to <b>false</b>, then the string
 "Under 0.5" gets returned. In other words, the value that sits to the
 right of the colon character will get returned from the ternary
-expression.
+expression.</p>
 
-This is how you can use a ternary expression to check for a condition
-right inside a component and return a value dynamically.
+<p>This is how you can use a ternary expression to check for a condition
+right inside a component and return a value dynamically.</p>
 
 <h3>Using function calls in JSX</h3>
 
-Another way to work with an expression in JSX is to invoke a function.
+<p>Another way to work with an expression in JSX is to invoke a function.
 Function invocation is an expression because every expression returns a
 value, and function invocation will always return a value, even when
-that return value is <b>undefined</b>.
+that return value is <b>undefined</b>.</p>
 
-Like the previous example, you can use function invocation inside JSX to
-return a random number:
+<p>Like the previous example, you can use function invocation inside JSX to
+return a random number:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -4644,13 +4634,13 @@ function getRandomNum() {
 };
 ```
 
-Of course, there are many other examples. The ones used here are there
+<p>Of course, there are many other examples. The ones used here are there
 to help you understand how versatile and seamless the JSX syntax is. As
 you improve your React skills, you will find many creative ways of using
-JavaScript expressions in JSX.
+JavaScript expressions in JSX.</p>
 
-Now that you have completed this section (29), you have learned about a few
-more ways that you can use expressions in JSX.
+<p>Now that you have completed this section (29), you have learned about a few
+more ways that you can use expressions in JSX.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 30 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>30. Expressions as props</h2>
@@ -4685,19 +4675,19 @@ export default function App() { 
 
 </details>
 
-In the example above, you're using the <b>!bool</b>, that is, the NOT
-operator, which evaluates to <b>true</b>, since <b>!false</b> is true.
+<p>In the example above, you're using the <b>!bool</b>, that is, the NOT
+operator, which evaluates to <b>true</b>, since <b>!false</b> is true.</p>
 
-Also, for the <b>toggleBoolean</b> prop to be rendered on the page, you're
+<p>Also, for the <b>toggleBoolean</b> prop to be rendered on the page, you're
 converting its boolean value to a string using the JavaScript's built-in
-toString method. 
-
+toString method.</p>
+<p>
 Here's an extension of the above code which shows more ways to work with
-expressions as props in React.
+expressions as props in React.</p>
 
-What is happening here is several props are being passed to the
+<p>What is happening here is several props are being passed to the
 <b>Example</b> component, and rendering each of these props' values to the
-screen.
+screen.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -4733,30 +4723,26 @@ export default function App() {
 
 </details>
 
-In this improvement to the <b>Example</b> component, three props are being
+<p>In this improvement to the <b>Example</b> component, three props are being
 passed to it: <b>toggleBoolean</b>, <b>math</b>, and <b>str</b>. The
 <b>toggleBoolean</b> is unchanged, and the <b>math</b> prop and the <b>str</b>
-prop have been added.
-
-The <b>math</b> prop is there to show that you can add arithmetic operators
+prop have been added.</p>
+<p>The <b>math</b> prop is there to show that you can add arithmetic operators
 and numbers inside JSX, and it will be evaluated just like it does in
-plain JavaScript. 
-
-The <b>str</b> prop is there to show that you can concatenate strings, as
+plain JavaScript.</p>
+<p>The <b>str</b> prop is there to show that you can concatenate strings, as
 well as strings and variables -- which is shown by adding string
-literals of " another " and "string" to the <b>str1</b> variable.
-
-In summary, just like you can use expressions inside function
+literals of " another " and "string" to the <b>str1</b> variable.</p>
+<p>In summary, just like you can use expressions inside function
 components, you can also use them as prop values inside JSX elements,
-when rendering those function components.
-
+when rendering those function components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 31 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>31. Embedding in attributes</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-I'm building an application using react and I now need to add a new
+<p>I'm building an application using react and I now need to add a new
 feature to the app that renders images. I can do this by embedding a JS
 expression in an attribute, specifically the SRC attribute of the html
-image tag. 
+image tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-a. embedding jsx expressions (115) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4765,11 +4751,11 @@ image tag.
   alt="Section 31a - what to expect."
   width="50%" />
 </p>
-Over the next few minutes I'll guide you through the process
+<p>Over the next few minutes I'll guide you through the process
 as I complete the steps. And by the end of this section (31) you'll be
 able to demonstrate how to embed a JS expression in an attribute,
 including adding additional styling and importing additional assets and
-utilize additional assets within an app by importing components. 
+utilize additional assets within an app by importing components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-b. screenshot app.js (116) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
