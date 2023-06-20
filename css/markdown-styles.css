@@ -384,3 +384,15 @@ pre code, pre tt {
   background-color: transparent;
   border: none;
 }
+details.test {
+    position: relative;
+    padding: 5px 0;
+}
+
+details.test[open]>summary::after {
+    display: inline-block;
+    content: "close";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
