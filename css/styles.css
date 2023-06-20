@@ -97,6 +97,18 @@ details[open] > summary {
   background-color: yellow;
 }
 
+details.test {
+    position: relative;
+    padding: 5px 0;
+}
+
+details.test[open]>summary::after {
+    display: inline-block;
+    content: "close";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 background: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%)
 
 body {
