@@ -3,7 +3,7 @@ img.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
   }
 .border {
   border-width: 1px;
