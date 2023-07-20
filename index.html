@@ -1756,24 +1756,22 @@ export default Example</pre>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Heading() { 
+<pre>function Heading() { 
   return ( 
-     <h1>This is an h1 heading.</h1> 
+     &lt;h1&gt;This is an h1 heading.&lt;/h1&gt;
    ) 
 } 
 
 function App() { 
   return ( 
-    <div className="App"> 
+    &lt;div className="App"&gt;
       This is the starting code for "Your first component" ungraded lab 
-      <Heading /> 
-    </div> 
+      &lt;Heading /&gt;
+    &lt;/div&gt;
   ); 
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -1795,17 +1793,15 @@ it is a part of the App component's return statement.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
- function App() { 
+<pre> function App() { 
    return ( 
-     <div className="App"> 
+     &lt;div className="App"&gt;
        This is the starting code for "Your first component" ungraded lab 
-       <Heading /> 
-    </div> 
-  ); 
-} 
-export default App;
-</pre>
+       &lt;Heading /&gt;
+    &lt;/div&gt;
+  );
+}
+export default App;</pre>
 
 </details>
 
@@ -2105,77 +2101,64 @@ be created.
 
 <h3>Building a Layout</h3>
 
-Imagine that you've been given the task of building a somewhat more
-complex website layout using React.
-
-At this point, you still don't know too much about how React works, but
+<p>Imagine that you've been given the task of building a somewhat more
+complex website layout using React.</p>
+<p>At this point, you still don't know too much about how React works, but
 even with your limited knowledge, you can still build some relatively
-interesting designs.
+interesting designs.</p>
+<p>Currently, you need to build a simple typography-focused layout for a
+coding blog.</p>
+<p>This means that you will not have to use images, which simplifies your
+task significantly.</p>
+<p>The layout you're supposed to build will consist of the following
+sections:</p>
 
-Currently, you need to build a simple typography-focused layout for a
-coding blog.
-
-This means that you will not have to use images, which simplifies your
-task significantly.
-
-The layout you're supposed to build will consist of the following
-sections:
-
--   Main navigation 
-
--   Promo (main advertisement)
-
--   A list of newest posts' previews (intros)
-
--   The footer 
+<ul>
+  <li>Main navigation,</li>
+  <li>Promo (main advertisement),</li>
+  <li>A list of newest posts' previews (intros),</li>
+  <li>The footer.</li>
+</ul>
 
 <h3>Organizing Your Code</h3>
 
-Keeping in mind the above structure, how would you organize your code?
+<p>Keeping in mind the above structure, how would you organize your code?</p>
+<p>This is where [React docs] can help.</p>
+<p>They suggest two approaches:</p>
 
-This is where [React docs] can help.
+<ol>
+  <li>Grouping by features,</li>
+  <li>Grouping by file type.</li>
+</ol>
 
-They suggest two approaches:
-
-1.  Grouping by features 
-
-2.  Grouping by file type 
-
-They also advise not to nest folders too deep, and to keep things simple
-and not overthink it.
-
-They even say that if you're just starting out, you shouldn't spend
-more than five minutes setting up a project.
-
-Taking this advice into account, you might say that for a small project
+<p>They also advise not to nest folders too deep, and to keep things simple
+and not overthink it.</p>
+<p>They even say that if you're just starting out, you shouldn't spend
+more than five minutes setting up a project.</p>
+<p>Taking this advice into account, you might say that for a small project
 like this, you could keep it as simple as just adding a <b>components</b>
 folder and moving all your components into it. This is exactly what
-you'll do next.
+you'll do next.</p>
 
 <h4>Building the App</h4>
 
-Since this is app's focus on customization, let's name the app
-<b>customizing-example</b>.
-
-What follows is the command to run <b>in a suitable folder on your own
+<p>Since this is app's focus on customization, let's name the app
+<b>customizing-example</b>.</p>
+<p>What follows is the command to run <b>in a suitable folder on your own
 computer</b>. By "a suitable folder", I mean: "a folder where you feel
 comfortable installing a boilerplate React application". This also
 includes that the folder you chose will need to be accessible for your
-user on your OS (Operating System).
+user on your OS (Operating System).</p>
 
-<pre>
-$ npm init react-app customizing-example
-</pre>
+<pre>$ npm init react-app customizing-example</pre>
 
-This will produce a brand-new starter app with a familiar structure.
-
-Inspecting the <b>src</b> folder of the starter app, it looks like this:
+<p>This will produce a brand-new starter app with a familiar structure.</p>
+<p>Inspecting the <b>src</b> folder of the starter app, it looks like this:</p>
 
 <details open>
   <summary>React components:</summary>
 
-<pre>
- src/
+<pre> src/
 
      App.js
      App.test.js
@@ -2183,8 +2166,7 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
      index.js
      logo.svg
      reportWebVitals.js
-     setupTests.js
-</pre>
+     setupTests.js</pre>
 
 </details>
 
@@ -2193,8 +2175,7 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
 <details open>
   <summary>React components:</summary>
 
-<pre>
- src/
+<pre> src/
 
      components/
 
@@ -2204,8 +2185,7 @@ Inspecting the <b>src</b> folder of the starter app, it looks like this:
      index.js
      logo.svg
      reportWebVitals.js
-     setupTests.js
-</pre>
+     setupTests.js</pre>
 
 </details>
 
@@ -2216,8 +2196,7 @@ structural update:</p>
 <details open>
   <summary>React components:</summary>
 
-<pre>
-src/
+<pre>src/
   components/
     Nav.js
     Promo.js
@@ -2232,8 +2211,7 @@ src/
     index.js
     logo.svg
     reportWebVitals.js
-    setupTests.js
-</pre>
+    setupTests.js</pre>
 
 </details>
 
@@ -2263,19 +2241,18 @@ one.</p>
 <pre>
 function Nav() {
   return (
-    <nav className="main-nav">
-      <ul>
-        <li>Home</li>
-        <li>Articles</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <nav className="main-nav"&gt;
+      <ul&gt;
+        <li&gt;Home</li&gt;
+        <li&gt;Articles</li&gt;
+        <li&gt;About</li&gt;
+        <li&gt;Contact</li&gt;
+      </ul&gt;
+    </nav&gt;
   );
 };
 
-export default Nav;
-</pre>
+export default Nav;</pre>
 
 </details>
 
@@ -13107,24 +13084,22 @@ this in code.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-export default function MyApp() {
+<pre>export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
   }
   return (
-    <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
-      <MyButton />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update separately&lt;/h1&gt;
+      &lt;MyButton /&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
   );
 }
 function MyButton() {
   // ... we're moving code from here ...
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -13136,21 +13111,19 @@ curly braces, just like you previously did with built-in tags like
 <details open>
   <summary>React code:</summary>
 
-<pre>
-export default function MyApp() {
+<pre>export default function MyApp() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
   }
   return (
-    <div>
-      <h1>Counters that update together</h1>
-      <MyButton count={count} onClick={handleClick} />
-      <MyButton count={count} onClick={handleClick} />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update together&lt;/h1&gt;
+      &lt;MyButton count={count} onClick={handleClick} /&gt;
+      &lt;MyButton count={count} onClick={handleClick} /&gt;
+    &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -13161,15 +13134,13 @@ and <i>passes both of them down as props</i> to each of the buttons.</p>
 <p>Finally, change MyButton to <i>read</i> the props you have passed from its
 parent component:</p>
 
-<pre>
-function MyButton({ count, onClick }) {
+<pre>function MyButton({ count, onClick }) {
   return (
-    <button onClick={onClick}>
+    &lt;button onClick={onClick}&gt;
       Clicked {count} times
-    </button>
+    &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 <p>When you click the button, the onClick handler fires. Each button's
 onClick prop was set to the handleClick function inside MyApp, so the
@@ -13392,7 +13363,7 @@ function ProductTable({ products }) {
   products.forEach((product) =&gt; {
   if (product.category !== lastCategory) {
     rows.push(
-      <ProductCategoryRow
+      &lt;ProductCategoryRow
       category={product.category}
       key={product.category} /&gt;
     );
@@ -13518,12 +13489,10 @@ place.</p>
 Hook.</a> Hooks are special functions that let you "hook into" React. Add two state variables at the
 top of FilterableProductTable and specify their initial state:</p>
 
-</pre>
-function FilterableProductTable({ products }) {
+</pre>function FilterableProductTable({ products }) {
 
   const [filterText, setFilterText] = useState('');
-  const [inStockOnly, setInStockOnly] = useState(false);
-</pre>
+  const [inStockOnly, setInStockOnly] = useState(false);</pre>
 
 <p>Then, pass filterText and inStockOnly to ProductTable and SearchBar as
 props:</p>
@@ -13540,8 +13509,7 @@ props:</p>
     products={products}
     filterText={filterText}
   inStockOnly={inStockOnly} /&gt;
-&lt;/div&gt;
-</pre>
+&lt;/div&gt;</pre>
 
 </details>
 
@@ -13553,39 +13521,37 @@ table update:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   return (
-    <div>
-      <SearchBar
+    &lt;div&gt;
+      &lt;SearchBar
         filterText={filterText}
-        inStockOnly={inStockOnly} />
-      <ProductTable
+        inStockOnly={inStockOnly} /&gt;
+      &lt;ProductTable
         products={products}
         filterText={filterText}
-        inStockOnly={inStockOnly} />
-    </div>
+        inStockOnly={inStockOnly} /&gt;
+    &lt;/div&gt;
   );
 }
 function ProductCategoryRow({ category }) {
   return (
-    <tr>
-      <th colSpan="2">
+    &lt;tr&gt;
+      &lt;th colSpan="2"&gt;
         {category}
-      </th>
-    </tr>
+      &lt;/th&gt;
+    &lt;/tr&gt;
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  <span style={{ color: 'red' }}>
+  &lt;span style={{ color: 'red' }}&gt;
     {product.name}
-  </span>;
-  return (
-</pre>
+  &lt;/span&gt;;
+  return (</pre>
 
 </details>
 
@@ -13600,15 +13566,13 @@ handler. This will render a read-only field.</p>
 inStockOnly props to render the table, the input, and the checkbox. For
 example, here is how SearchBar populates the input value:</p>
 
-<pre>
-function SearchBar({ filterText, inStockOnly }) {
+<pre>function SearchBar({ filterText, inStockOnly }) {
   return (
-    <form>
-      <input
+    &lt;form&gt;
+      &lt;input
         type="text"
         value={filterText}
-        placeholder="Search..."/>
-</pre>
+        placeholder="Search..."/&gt;</pre>
 
 <p>However, you haven't added any code to respond to the user actions like
 typing yet. This will be your final step.</p>
@@ -13637,71 +13601,65 @@ state, you need to pass these functions down to SearchBar:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function FilterableProductTable({ products }) {
+<pre>function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
     return (
-      <div>
-        <SearchBar
+      &lt;div&gt;
+        &lt;SearchBar
           filterText={filterText}
           inStockOnly={inStockOnly}
           onFilterTextChange={setFilterText}
-          onInStockOnlyChange={setInStockOnly} />
-</pre>
+          onInStockOnlyChange={setInStockOnly} /&gt;</pre>
 
 </details>
 
 <p>Inside the SearchBar, you will add the onChange event handlers and set
 the parent state from them:</p>
 
-<pre>
-<input
+<pre>&lt;input
   type="text"
-  value={filterText onChange={(e) =>
-  onFilterTextChange(e.target.value)} />
-</pre>
+  value={filterText onChange={(e) =&gt;
+  onFilterTextChange(e.target.value)} /&gt;</pre>
 
 <p>Now the application fully works!</p>
 
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
   return (
-    <div>
-      <SearchBar
+    &lt;div&gt;
+      &lt;SearchBar
         filterText={filterText}
         inStockOnly={inStockOnly}
         onFilterTextChange={setFilterText}
-        onInStockOnlyChange={setInStockOnly} />
-        <ProductTable
+        onInStockOnlyChange={setInStockOnly} /&gt;
+        &lt;ProductTable
           products={products}
           filterText={filterText}
-          inStockOnly={inStockOnly} />
-    </div>
+          inStockOnly={inStockOnly} /&gt;
+    &lt;/div&gt;
   );
 }
 function ProductCategoryRow({ category }) {
   return (
-    <tr>
-      <th colSpan="2">
+    &lt;tr&gt;
+      &lt;th colSpan="2"&gt;
         {category}
-      </th>
-    </tr>
+      &lt;/th&gt;
+    &lt;/tr&gt;
   );
 }
 function ProductRow({ product }) {
   const name = product.stocked ? product.name :
-  <span style={{ color: 'red' }}>
+  &lt;span style={{ color: 'red' }}&gt;
     {product.name}
-  </span>;
-</pre>
+  &lt;/span&gt;;</pre>
 
 </details>
 
@@ -13737,14 +13695,12 @@ sandbox!</p>
 
 <h4>App.js</h4>
 
-<pre>
-function Greeting({ name }) {
-  return <h1>Hello, {name}</h1>;
+<pre>function Greeting({ name }) {
+  return &lt;h1&gt;Hello, {name}&lt;/h1&gt;;
 }
 export default function App() {
-  return <Greeting name="world" />
-}
-</pre>
+  return &lt;Greeting name="world" /&gt;
+}</pre>
 
 <p>You can edit it directly or open it in a new tab by pressing the "Fork"
 button in the upper right corner.</p>
@@ -13774,6 +13730,6 @@ gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db0
 <p>Head to the <a href="https://react.dev/learn" target="_blank" rel="noopener noreferrer">Quick Start</a> guide for a tour of the most important React concepts you will encounter every day.</p>
 
 <p>end. . .</p>
-<h6>Sunday 6/17/2023 11:23am</h6>
+<h6>Sunday 7/20/2023 11:05am</h6>
 </body>
 </html>
