@@ -1,14 +1,13 @@
 <!-- styles.css in meta-react-basics -->
-  img.displayed {
+img.displayed {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto; 
+    width: 50%; }
 
   .border {
     border-width: 1px;
     border-color: #778899;  /* dark grayish blue */
     border-style: solid; }
-
-/* margin: 0 auto; */
 
 font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", 
   "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
