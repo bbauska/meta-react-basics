@@ -16,16 +16,13 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   p { font-size: 15px;
       font-family: Bahnschrift, Inter, Helvetic, sans-serif;
       text-align: left; 
-      margin-left: 5px; 
-  }
+      margin-left: 5px; }
   pre, code {
     font-family: monospace, monospace;
-    font-size: 10px;
-  }
+    font-size: 10px; }
 
   pre {
-    overflow: auto;
-  }
+    overflow: auto; }
 
   pre > code {
     display: block;
