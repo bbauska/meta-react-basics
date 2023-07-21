@@ -2,7 +2,7 @@
 
 img.displayed {
 width: 100%;
-max-width: 150px; //your width
+max-width: 500px; //your width
 height: auto;
 position: relative;
 left: calc(25%);
