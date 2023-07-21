@@ -6519,98 +6519,99 @@ quite a task and this is where React's hooks can help.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-b. code reuse (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-b.png?raw=true"
   alt="Code reuse."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>One key benefit of hooks is that they solve the problem of unnecessary code reuse 
 across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s12-c. hooks are functions in react (162) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-c.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-c.png?raw=true"
   alt="Hooks are functions in React."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>Hooks are functions that were introduced in React version 16.8. They let you hook into React state and lifestyle features from components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ w2-s12-d. manage the state built into react (162) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-d.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-d.png?raw=true"
   alt="Manage the state built into React."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>Let's observe an example hook. Specifically, you'll examine an instance of the useState hook as it's the most commonly used one. This hook is used to manage the state within a component and keep track of it and it's built directly into React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-e. import the usestate (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-e.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-e.png?raw=true"
   alt="Import the useState from React."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>To use it, the first thing you need to do is import the useState from React so that it's available for use.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. showmenu and setshowmenu #1 and #2 (163) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-<img src="/images/w2-s12-f.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-f.png?raw=true"
   alt="ShowMenu and SetShowMenu, example #1."
-  width="40%" />
+  style="width:40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="/images/w2-s12-g.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-g.png?raw=true"
   alt="ShowMenu and SetShowMenu, example #2."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The next step is to declare a state variable within a component. You can provide any name to the state variable and the set state function. For this example, let's call the state variable showMenu and the set state function setShowMenu.</p>
 If you've learned JavaScript, this syntax may feel somewhat familiar to you. You are probably wondering what exactly this code does. Well, it's actually doing something that you've likely encountered before.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-h. array destructuring (163) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-h.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-h.png?raw=true"
   alt="Complex components and React hooks."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Notice that the convention is to name the state variable and the set of function using array destructuring. When you declare a state variable using the useState, it returns a pair which is an array with two items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s12-i. without array destructuring, long &amp; cumbersome (163) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-i.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-i.png?raw=true"
   alt="Without array destructuring, long &amp; cumbersome."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Without array destructuring, the code would be long and cumbersome. Since it's more confusing and tedious to access the array items by index, array destructuring is preferred and it significantly simplifies the code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-j. simplifies the code (163) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-j.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-j.png?raw=true"
   alt="showMenu simplified as false."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>You now have a new state variable called showMenu. The useState then sets the initial value of showMenu as false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-k. showmenu and setshowmenu (164) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-k.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-k.png?raw=true"
   alt="showMenu and setShowMenu functions."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>To summarize, calling the useState hook does two things. It creates a state variable with an initial value that represents the current state, which in this example is showMenu. And it creates a function to set that states variable value, which in this case is setShowMenu. The function setShowMenu is used to update the value of show menu bypassing the Boolean value to it. It does not matter what names you use for the state variables. You can define them based on your component and use case.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s12-l. usestate hook - track boolean (164) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s12-l.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s12-l.png?raw=true"
   alt="useState hook to track the Boolean state value."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The useState hook should be called at the top level of your component. In this example, notice that the useState hook was used to track the Boolean state value. 
 You can use the useState hook to track any type of data. It could be strings, numbers, arrays, Booleans or objects.</p>
 <p>For instance, you can even track the number of times a button is pressed. In addition to the hooks that come out of the box with React, you can also build your own hooks, which will let you extract custom component logic into reusable functions. This is an excellent feature and benefit of using hooks.</p>
@@ -6671,11 +6672,10 @@ get updated with the latest text that has been typed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s13-a. display of word 'welcome' typed to bar (166) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s13-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s13-a.png?raw=true"
   alt="Display of the word "Welcome" typed to bar."
-  width="60%" />
-</p>
+  style="width:60%" />
 <!-- {width="5.979166666666667in" height="2.25in"} -->
 
 <p>The state variable <b>inputText</b> and the <b>setText</b> method are used to
@@ -6724,18 +6724,16 @@ registration form with fields for first name, last name and email.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w2-s13-b. text fields of first name, last name, and e-mail (167) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s13-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s13-b.png?raw=true"
   alt="Text fields of first name, last name, and e-mail."
-  width="53%" />
-</p>
+  style="width:53%" />
 <!-- {width="5.375in" height="2.4791666666666665in"} -->
 
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  import { useState } from 'react';
+<pre>1.  import { useState } from 'react';
 2.
 3.  export default function RegisterForm() {
 4.    const [form, setForm] = useState({
@@ -6745,49 +6743,49 @@ registration form with fields for first name, last name and email.</p>
 8.    });
 9.
 10.   return (
-11.     <>
-12.       <label>
+11.     &lt;&gt;
+12.       &lt;label&gt;
 13.	        First name:
-14.	        <input
+14.	        &lt;input
 15.	          value={form.firstName}
-16.	          onChange={e => {
+16.	          onChange={e =&gt; {
 17.	            setForm({
 18.	              ...form,
 19.	              firstName: e.target.value
 20.	            });
 21.	          }}
 22.	        /&gt;
-23.	      </label>
-24.	      <label>
+23.	      &lt;/label&gt;
+24.	      &lt;label&gt;
 25.	        Last name:
-26.	        <input
+26.	        &lt;input
 27.	          value={form.lastName}
-28.	          onChange={e => {
+28.	          onChange={e =&gt; {
 29.	            setForm({
 30.	              ...form,
 31.	              lastName: e.target.value
 32.	            });
 33.	          }}
 34.	        /&gt;
-35.	      </label>
-36.	      <label>
+35.	      &lt;/label&gt;
+36.	      &lt;label&gt;
 37.	        Email:
-38.	        <input
+38.	        &lt;input
 39.	          value={form.email}
-40.	          onChange={e => {
+40.	          onChange={e =&gt; {
 41.	            setForm({
 42.	              ...form,
 43.	              email: e.target.value
 44.	            });
 45.	          }}
 46.	        /&gt;
-47.       </label>
-48.       <p>
+47.       &lt;/label&gt;
+48.       &lt;p&gt;
 49.         {form.firstName}{' '}
 50.         {form.lastName}{' '}
 51.         ({form.email})
-52.       </p>
-53.     </&gt;
+52.       &lt;/p&gt;
+53.     &lt;/&gt;
 54.   );
 55. }
 </pre>
@@ -6797,13 +6795,11 @@ registration form with fields for first name, last name and email.</p>
 <p>Notice that you are using a <b>form</b> object to store the state of all
 three text input field values:</p>
 
-<pre>
-1. const[form, setForm] =useState({
+<pre>1. const[form, setForm] =useState({
 2.   firstName:'Luke',
 3.   lastName:'Jones',
 4.   email:'lukeJones@sculpture.com',
-5. });
-</pre>
+5. });</pre>
 
 <p>You do not need to have three separate state variables in this case, and
 instead you can consolidate them all together into one <b>form</b> object
@@ -6826,21 +6822,19 @@ The <b>ref</b> object has a property named <b>current</b>.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function TextInputWithFocusButton() {
+<pre>function TextInputWithFocusButton() {
   const inputEl = useRef(null);
-  const onButtonClick = () => {
+  const onButtonClick = () =&gt; {
     // `current` points to the mounted text input element
     inputEl.current.focus();
   };
   return (
-    <>
-      <input ref={inputEl} type="text" /&gt;
-      &lt;button onClick={onButtonClick}>Focus the input&lt;/button&gt;
-    </&gt;
+    &lt;&gt;
+      &lt;input ref={inputEl} type="text" /&gt;
+      &lt;button onClick={onButtonClick}&gt;Focus the input&lt;/button&gt;
+    &lt;/&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -6868,11 +6862,11 @@ understand the benefits of using hooks within a React component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-a. components with props (169) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-a.png?raw=true"
   alt="Components with props."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>If you create this feature in a React app, you could create a component named clock and then 
 parsing the status values via props.</p>
 <p>Recall the props is a feature of React that essentially allows you to hold information 
@@ -6882,11 +6876,11 @@ which also allows you to easily change how the component behaves in order to sui
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-b.png?raw=true"
   alt="Describe State in React and explore its features."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>By the end of this section (15), you'll be able to describe what State is in React and why 
 developers use it to control what is displayed in the browser from a component. It helps to 
 think of State as a component's internal data that determines the current behavior of a component. 
@@ -6894,21 +6888,20 @@ It's often used to store data that affects the behavior of a component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~ w2-s15-c. state - data in a component that determines behavior (170) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-c.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-c.png?raw=true"
   alt="State - data in a component that determines behavior."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>State is important because it allows components to stay in sync with each other and ensure 
 that your app behaves as intended.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-d.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-d.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-d.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
 
 <p>For example, if one component updates its State, all other components that depend on that 
 State will automatically update too. This means that a component sends its State to its 
@@ -6916,11 +6909,11 @@ children by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-e.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-e.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-e.png?raw=true"
   alt="."
-  width="30%" />
-</p>
+  style="width:30%" />
+
 <p>If the child components have their own grandchild components, then the child components 
 might have some States that they send us props to those grandchild components. In React, 
 State is kept in a state of variables. The main way to change State is to alter these 
@@ -6928,11 +6921,11 @@ variables.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-f.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-f.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-f.png?raw=true"
   alt="."
-  width="30%" />
-</p>
+  style="width:30%" />
+
 <p>When a component is created, it gets an initial State. The State is used to initialize the 
 component's properties.</p>
 
@@ -6941,11 +6934,10 @@ better understanding, let's explore an example of each.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-g.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-g.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-g.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
 
 <p>First is an app component with no state defined. It performs a single action, which is to 
 render the text a  stateless component and then you have a stateful function component. 
@@ -6953,32 +6945,31 @@ This component also renders some texts, but it references a variable to do so.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-h.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-h.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-h.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>We'll explore how that works a little later. For now, notice the syntax using the first 
 line of the app's function body. If you're familiar with how array destructuring works in 
 plain JavaScript. This line of code might've already make sense to you.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-i.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-i.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-i.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>To make things clear, consider an example array called fruits, which contains the three strings, 
 apple, pear, and plum.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-j.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-j.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-j.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
 
 <p>With its ES6 version, JavaScript introduced the concept of array destructuring, which 
 allows you to assign several variables from the array using a single line of code. In other 
@@ -6987,11 +6978,10 @@ quickly instead of one at a time.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-k.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-k.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-k.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
 
 <p>With this in mind, let's come back to that line in the stateful component. Notice that the 
 syntax used is similar to the array destructuring example you just examined but with an interesting 
@@ -6999,54 +6989,54 @@ bit of code. React.useState.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-l.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-l.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-l.png?raw=true"
   alt="State - data in a component that determines behavior."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>Hooks allow developers to hook into some otherwise inaccessible functionality. For example, to 
 access the State object you would use the useState hook.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-m.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-m.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-m.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>To better understand what is being destructured in the app component, let's call a console 
 log to the useState hook. The output reveals an array holding two things, the string Hello 
 and a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-n.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-n.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-n.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>In this case, Hello is the state value assigned to the word state variable. The function is 
 a built-in one that is not declared.  The function can be destructured with any name you'd like, 
 but there is a convention to follow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-o.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-o.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-o.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>If you set the States variable name to be Greet, then the destructured state function 
 should be setGreet. This is because the second destructured variable is a function that 
 will be used to update the state of a variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s15-p.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s15-p.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s15-p.png?raw=true"
   alt="."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>Let's examine an updated version of this stateful function component. Notice that the 
 setGreet variable is not actually run, that is something that is done elsewhere.</p>
 <p>Later in this course, you'll learn about how you can extend this code with a 
@@ -7066,31 +7056,31 @@ Hook that you encountered earlier.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s16-a. usestate hook to access the date state (174) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s16-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s16-a.png?raw=true"
   alt="useState Hook - access the date state."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>The useState Hook allows a components to define and track state. It does this with two 
 arguments. The first of which accesses state and the second of which updates it with a function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s16-b. usestate hook to access the date state (174) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s16-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s16-b.png?raw=true"
   alt="useState Hook - access the date state."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>For example, you can use the date variable to access the date state. Then use the set date 
 function to update the state.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w2-s16-c. observe and manipulate the state of the component (174) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s16-c.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s16-c.png?raw=true"
   alt="Demonstration how to observe and manipulate the state of a component."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>To help you understand how useful we use useState Hook can be, you're now going to explore 
 an example that demonstrates how to use it to observe and manipulate the state of the component.</p>
 <p>In this example app, I have a heading, child components. It receives the props and the object, 
@@ -7101,11 +7091,11 @@ string. In the return statement, I wrap the heading components in a single div.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w2-s16-d. jsx expression - message prop + word (175) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s16-d.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s16-d.png?raw=true"
   alt="Example JSX expression with message prop of word + word variable."
-  width="50%" />
-</p>
+  style="width:50%" />
+
 <p>I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening 
 and closing curly brace. You already know that's an opening and a closing curly brace 
 signifies a JSX expression, which means that all the code inside of those curly braces 
@@ -7113,11 +7103,11 @@ will be evaluated as regular JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s16-e. setword function to manipulate messaging (175) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s16-e.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s16-e.png?raw=true"
   alt="setWord to manipulate messaging."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. 
 Thus, in the browser window, I get the words eat at little lemon. If I want to update the value 
 of the word States variable to something else like drink, I could use the set word function 
@@ -7127,11 +7117,11 @@ directly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s16-f. onclick event example (175) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s16-f.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s16-f.png?raw=true"
   alt="onClick event example."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>Instead of updating it directly, I can update it based on a click event. I have another 
 element called button and onClick is equal to handleClick. I now set another function which 
 I'll name handledClick. Inside the handleClick function definition, I run set word to drink. 
@@ -7152,11 +7142,11 @@ some of the solutions to managing state in React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-a. managing state example (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-a.png?raw=true"
   alt="Managing state example."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>To illustrate a scenario in which states needs to be managed, consider a small React app 
 that helps promote a healthier lifestyle by allowing the user to monitor their food intake. 
 This app tracts a daily meal plan and the user can click on each individual meal as they've 
@@ -7164,42 +7154,42 @@ consumed it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-b. meals left to eat (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-b.png?raw=true"
   alt="Meals left to eat."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The app then updates to show how many meals that are still left to be consumed for the day.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-c. healthy eating app (178) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-c.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-c.png?raw=true"
   alt="Healthy eating app."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The app consists of three components. A root components called App.js, and then two 
 child components, mealsList and counter.</p>
 <p>Let's explore each component in a little more detail.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w2-s17-d. app component imports mealslist and counter (178) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-d.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-d.png?raw=true"
   alt="App component imports MealsList and Counter components and renders them on screen."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>First, the app component imports the mealsList and Counter components and renders them 
 on the screen. Next, the mealsList component uses use state to hook to list days meals 
 which are stored in an array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-e. mealslist.js (178) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-e.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-e.png?raw=true"
   alt="MealsList.js."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The array elements are saved inside the todaysMeals variable. Then the meals state 
 variable is initialized to hold this value. In other words, the meals state variable 
 holds the array. Finally, the counter component tracks the number of meals that a 
@@ -7207,11 +7197,11 @@ user is allowed to eat today.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w2-s17-f. mealslist to counter via siblings component (179) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-f.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-f.png?raw=true"
   alt="MealsList to Counter vis siblings components."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>While this coding components structure may look good, there is a bit of a problem. 
 The counter component needs to get state information from the mealsList components, 
 but both components are rendered by the app component. In other words, the mealsList 
@@ -7222,22 +7212,22 @@ mealsList component?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ w2-s17-g. mealslist to app via state component (179) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-g.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-g.png?raw=true"
   alt="MealsList to App via state components."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Let's explore a possible solution. First, you can simplify the mealsList component by 
 extracting the returned value into its own components, then you can work with the separate 
 components to display different meal items. Let's call this new component mealsIitem.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s17-h. app to mealslist to mealitem components (180) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-h.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-h.png?raw=true"
   alt="App to MealsList to MealItem components."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>To do this, you can use the practice known as lifting state up. This means that you move the 
 state from mealsList up to the app components, then you can pass stage three props using the 
 mealsList components as a bridge to the mealItem component. Then you just have to count the 
@@ -7250,11 +7240,11 @@ component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w2-s17-i. prop drilling passing parent to child (180) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-i.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-i.png?raw=true"
   alt="Prop drilling passing parent to child and grandchild."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The question you must now ask is, what is wrong with prop drilling? Prop drilling is 
 a commonly used term to describe having to pass Stage 3 props in several layers of 
 components, from the parent to the child, to the grandchild, and so on.</p>
@@ -7272,21 +7262,21 @@ places in my app, that's a global state issue.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w2-s17-j. api cuts out prop drilling and lifting state up (181) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-j.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-j.png?raw=true"
   alt="API cuts out prop drilling and lifting state up."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>An elegant solution for this issue is Reacts Context API. One way to think about the context 
 API is that it cuts out the middleman. There's no need for prop drilling and lifting state up.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w2-s17-k. extract state to separate file (181) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s17-k.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s17-k.png?raw=true"
   alt="Components which needs data gets it from the context API."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 Instead, the component that needs the data simply gets it from the context API. The way that 
 this is achieved is by extracting the state into a separate file that holds the state in 
 context, then, any file that needs it simply imports it and uses it. Great job. You should 
@@ -7379,11 +7369,11 @@ should alert the string that comes from the props.msg prop.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s18-a. ui boundaries are illustrated (184) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s18-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s18-a.png?raw=true"
   alt="Illustrating the boundaries of each component."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>This screenshot illustrates the boundaries of each component. The Main component can’t 
 be found in the UI because it’s just rendering the Header component. The Header component 
 then renders the Wrapper component, and the Wrapper component then renders the Button 
@@ -7394,11 +7384,11 @@ button, as an alert:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s18-b. i passed through the header and wrapper to the button (185) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s18-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s18-b.png?raw=true"
   alt="I passed through the Header and Wrapper to reach the Button component."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>The alert’s message reads “I passed through the Header and the Wrapper and I reached 
 the Button component”.</p>
 <p>That’s really all there is to it. Props drilling simply means passing a prop through 
@@ -7415,11 +7405,11 @@ Fortunately, there are tools available to help you do just that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~ w2-s19-a. context api to manage state and state management (186) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-a.png?raw=true"
   alt="How context API is used to manage state and perform basic state management."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>By the end of this section (19), you'll understand how context API can be used to 
 manage state more efficiently across multiple levels of components. You'll also be 
 able to perform basic states management using the useContext and a useReducer hooks 
@@ -7427,44 +7417,44 @@ found in context API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w2-s19-b. passing state from 1 component to another (186) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-b.png?raw=true"
   alt="Passing state from 1 component to another component."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>By this point, you're probably familiar with the practice of passing states from 
 one component to another by using props. While passing props helps to manage states, 
 it is like taking a bus and going through each stop before you get off at the end.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~ w2-s19-c. context api is like teleporting to your destination (186) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-c.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-c.png?raw=true"
   alt="Context API is like teleporting to your destination."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>In comparison, using the context API is like teleporting to your destination 
 instantly. It's a way to bypass the redundant passing of data through multiple levels 
 of components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w2-s19-d. context provider defined to store state (187) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-d.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-d.png?raw=true"
   alt="Context Provider to store state."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>To set it up, you need to add a piece of code that will be your context provider. 
 It's also where the state will be stored. When a component needs to use the state, 
 it becomes a context consumer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w2-s19-e. example utilizing context api to control state (187) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-e.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-e.png?raw=true"
   alt="Utilizing context API to control state."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>Now let's examine a simple app that utilizes the context API to control state. 
 In my app.js file, I'll use some code for a star to set up. You can also find 
 this file in the additional resources if you'd like to use it to practice working 
@@ -7472,11 +7462,11 @@ with context API.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-f.  (188) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-f.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-f.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>In the app components, I have import statements for meals provider and meals list. 
 The meals provider provides contexts state data and gives it to all the components 
 it wrapped inside the app components. Currently, it wraps two components, the meals 
@@ -7485,24 +7475,35 @@ return  statements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-g.  (188) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-g.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-g.png?raw=true"
   alt="."
-  width="80%" />
-</p>
-<p>The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements.</p>
+  style="width:80%" />
 
-<p>The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes gets assigned the meals object, which is the value I sent to the use of state variable earlier. Before exporting the meals provider component at the bottom of the file, I'm also setting the use meals list contexts variable to the React.useContexts core and passing it to the meals contexts as its single argument. This makes it easier for me to destructure the meals objects from the use meals list context variable.</p>
+<p>The meals provide a component to holds all the states which is organized with the help of the 
+context API.  First I set the meals contexts variable using the React.createContext function. 
+Next, I declare the today's meals array, which contains several food items saved as strings. 
+I then coach the meals provider as an ES6 function that accepts the children value. This 
+value holds everything that we wrapped into the meals provider component when it gets rendered 
+inside the app component. The children value is just returned from the meals provider, wraps 
+into the MealsContexts.Provider JSX elements.</p>
 
-<p>Finally, in the meals list component, I'm accessing the context date by importing the use meals list context from the meals provider file.</p>
+<p>The MealsContexts.Provider JSX elements comes with the value attribute. This value attributes 
+gets assigned the meals object, which is the value I sent to the use of state variable earlier. 
+Before exporting the meals provider component at the bottom of the file, I'm also setting the 
+use meals list contexts variable to the React.useContexts core and passing it to the meals 
+contexts as its single argument. This makes it easier for me to destructure the meals objects 
+from the use meals list context variable.</p>
+
+<p>Finally, in the meals list component, I'm accessing the context date by importing the use 
+meals list context from the meals provider file.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-h.  (189) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-h.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-h.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
 
 <p>Let's break down how this component works in more detail. First, I'm destructuring the meals property from the objects returned from the use meals list context call. The original object has a single property named meals, which holds an array of three meals strings.</p>
 
@@ -7511,30 +7512,30 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-i.  (190) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-i.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-i.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-j.  (190) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-j.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-j.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example.</p>
 <p>Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s19-k.  (191) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s19-k.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s19-k.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button.</p>
 <p>In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 20 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7544,70 +7545,86 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w2-s20-a.  (192) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s20-a.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>By the end of this section (20), you'll be able to describe the differences between types of state and choose the best types to suit a given need and explain how the dynamic nature of React calls a structured decisions to influence complexity.</p>
 <p>The distinction between stateful and stateless components is that a stateful component holds states as internal data and its state changes based on the way that the app is built; often as a result of user actions. A stateless component however, doesn't store states and any changes must be inherited through props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s20-b.  (192) ~~~~~~~~~~~-->
+<!--~~ w2-s20-b. stateless=state not needed to work or stateful-state must be maintained (192) ~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-b.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
-<p>When deciding if a component should be stateless or stateful, you can refer to the following rules. Use stateless components when your component doesn't need to maintain its own state in order to work. Use stateful components when your component does need to maintain its own state in order to work.</p>
+<img class="displayed"
+  src="/images/w2-s20-b.png?raw=true"
+  alt="Stateless - Component does NOT need to maintain its own state to work.  Stateful - DOES need."
+  style="width:40%" />
+
+<p>When deciding if a component should be stateless or stateful, you can refer to the following rules. 
+Use stateless components when your component doesn't need to maintain its own state in order to work. 
+Use stateful components when your component does need to maintain its own state in order to work.</p>
 
 <p>This might sound like an oversimplification, but let's explore why this general rule is enough.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s20-c.  (193) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~ w2-s20-c. stateless component tree with stateless children (193) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-c.png?raw=true"
-  alt="."
-  width="60%" />
-</p>
-<p>A common approach for organizing components in React is to have a stateful component as the parent which then sends its states down to several stateless components that then receive the state and render it on the screen. The children components are stateless because they don't have their own state and only receive their parent state when passed down by using props.</p>
+<img class="displayed"
+  src="/images/w2-s20-c.png?raw=true"
+  alt="Stateless components tree with Stateless chldren."
+  style="width:60%" />
+
+<p>A common approach for organizing components in React is to have a stateful component as the 
+parent which then sends its states down to several stateless components that then receive the 
+state and render it on the screen. The children components are stateless because they don't 
+have their own state and only receive their parent state when passed down by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s20-d.  (193) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ w2-s20-d. app component with imutable children (193) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-d.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
-<p>Keep in mind that you should never change the values of props in children components as they are immutable. Now that you know the basic logic, let's break down a specific example of this approach in action starting with two components; the app component and the child  component which returns a message. In the app component, the useState hook defines and keeps the states that will be passed to the child component as the props object. The app component renders the child component and passes the date to it in a string format as a prop named message.</p>
+<img class="displayed"
+  src="/images/w2-s20-d.png?raw=true"
+  alt="App components have imutable children."
+  style="width:40%" />
+
+<p>Keep in mind that you should never change the values of props in children components as they are 
+immutable. Now that you know the basic logic, let's break down a specific example of this approach 
+in action starting with two components; the app component and the child  component which returns a 
+message. In the app component, the useState hook defines and keeps the states that will be passed 
+to the child component as the props object. The app component renders the child component and passes 
+the date to it in a string format as a prop named message.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s20-e.  (194) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~ w2-s20-e. values and functions as well as state may be passed (194) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-e.png?raw=true"
-  alt="."
-  width="30%" />
-</p>
-<p>One thing to keep in mind and something that is often overlooked by React beginners is that a prop doesn't always have to pass state. In addition to state, JavaScript values and functions can also be passed to the child component. It's still data but it's props data rather than state data.</p>
+<img class="displayed"
+  src="/images/w2-s20-e.png?raw=true"
+  alt="Prop does NOT always have to pass state.  Values and functions may also be passed."
+  style="width:30%" />
+
+<p>One thing to keep in mind and something that is often overlooked by React beginners is that 
+a prop doesn't always have to pass state. In addition to state, JavaScript values and functions 
+can also be passed to the child component. It's still data but it's props data rather than state data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s20-f.  (194) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~ w2-s20-f. child component, export function (194) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-f.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
+<img class="displayed"
+  src="/images/w2-s20-f.png?raw=true"
+  alt="Child component, export function Child(props)."
+  style="width:40%" />
+
 <p>In the child component, there is an h1 element. The content of this element will be the message prop that is passed into the component. Note the props are not changed or updated and the components as they are immutable, meaning they can't be changed. Since the child component doesn't store any state, it is a stateless component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~ w2-s20-g.  (194) ~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~ w2-s20-g. child (stateless) and app (stateful) (194) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s20-g.png?raw=true"
-  alt="."
-  width="40%" />
-</p>
-<p>All of its data comes from the props passed into the component. The app component stores the state which can be changed through events and functions and is therefore a stateful component.</p>
-<p>In this section (20), you learned why and when to utilize stateful or stateless components in your React apps based on your specific needs. You also observed that although a stateless component can't directly pass state, it can still trigger actions that will update the state of other components.</p>
+<img class="displayed"
+  src="/images/w2-s20-g.png?raw=true"
+  alt="Child (stateless) and App (stateful)."
+  style="width:40%" />
+
+<p>All of its data comes from the props passed into the component. The app component stores the 
+state which can be changed through events and functions and is therefore a stateful component.</p>
+<p>In this section (20), you learned why and when to utilize stateful or stateless components 
+in your React apps based on your specific needs. You also observed that although a stateless 
+component can't directly pass state, it can still trigger actions that will update the state 
+of other components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 21 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>21. Managing state in React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7666,11 +7683,10 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s21-a. where should the state go? (196) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s21-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s21-a.png?raw=true"
   alt="Where should the state go?  Move state from fruits component to the app component."
-  width="80%" />
-</p>
+  style="width:80%" />
 
 <h4>Step 1.</h4>
 
@@ -7740,50 +7756,51 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-a. click, scroll and/or cancel (198) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s22-a.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s22-a.png?raw=true"
   alt="Click, scroll and/or cancel."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Now that you've completed this lesson, you can describe how data flows in react, including data from a parent to a child component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-b. javascript and html (198) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s22-b.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s22-b.png?raw=true"
   alt="JavaScript and HTML."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Explain what state is and how it relates to component behavior. And describe some common approaches for state management.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-c. state, styling, ternary (198) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s22-c.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s22-c.png?raw=true"
   alt="State, styling and ternary."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>To sum it up in this module, you've learned about two of the most important things that make react apps interactive namely state and events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-d. stateless vs. stateful (199) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w2-s22-d.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s22-d.png?raw=true"
   alt="Stateless (not needed to work) vs. Stateful (State must be maintained to work)."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w2-s22-e/f. data and states module summary (module 2) (199) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center">
-<img src="/images/w2-s22-e.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s22-e.png?raw=true"
   alt="Module 2 Summary, part i. Data and States."
-  width="40%" />
+  style="width:40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="/images/w2-s22-f.png?raw=true"
+<img class="displayed"
+  src="/images/w2-s22-f.png?raw=true"
   alt="Module 2 Summary, part ii. Data and States."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>In the upcoming module, you'll learn about working with links and routing as well as using assets in react. This should finalize your preparations for coding your own portfolio project in react. Excellent. You've made great progress in your journey towards becoming a react developer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>23. Additional resources</h2>
@@ -7817,135 +7834,134 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-a.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>In this section (01), you will learn about the basic types of navigation on websites and how the navigation process works in React. Now, if you think about the history of web layouts and web navigation, it's likely development of other great inventions throughout history.</p>
 <p>For example, after the Wright Brothers flew the first plane in 1903 and Kitty Hawk, North Carolina, there was a period of a few decades where engineers were experimenting with different designs. Planes with two or three sets of wings were the order of the day. Finally, after this initial exploration stage, airplane design settled down and the rules and best practices of building airplanes were established.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-b.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Like the development of rules of airplane construction, after the experimental years of the early web, the Web Design and Development Community settled on a few accepted unexpected designs. The focus and modern website navigation user interfaces is on utility. Stephen Krug's famous book on user experience Don't Make Me Think sums up the rule that developers are following today.</p>
 <p>It's your duty as a web developer and designer to follow the best practices that have already been established. For example, a steering wheel does not belong on a washing machine, or an old-style phone dial does not belong in a car. In the same way, you wouldn't want to confuse your website visitors by giving them navigation that might look and feel smart, but that's completely different from what their used to.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-c.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>You might be wondering what is accepted modern website navigation, and how does it work in React. Website navigation is the parts of any website that allows you to browse through various pages or links on that website from a single component. There are several practical implementations of this user interface pattern. Let's explore each briefly now.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-d.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-d.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The most common navigation components are, a horizontal navigation bar, a vertical navigation menu, a menu hiding behind a button, and a footer navigation menu.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-e.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-e.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>The horizontal navigation bar is often referred to as a navbar, and the vertical navigation bar is also known as a sidebar navigation. The menu hiding behind the button is usually represented by an icon that has three horizontal lines and is thus referred to as the burger icon or the burger menu.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-f.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-f.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Alternative to this is the drop-down navigation menu, known as the mega menu. This menu is usually also hiding behind a button and it's usually used as a sub or large menu on e-commerce sites and other sites that require many links. 
 The footer navigation menu is usually displayed as several visual columns containing links. All these mentioned menu patterns can often be used simultaneously in different parts of the same page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-g.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-g.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Additionally, a more complex navigation UI can include multiple navigation approaches in a single component. You may, for example, have a horizontal navigation bar or navbar with drop-down menu items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-h.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-h.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>If you're using a smaller resolution, the navigation bar displays as a burger menu icon. When you click on the burger menu icon a mobile sidebar or a vertical menu appears. Now you're familiar with some of the navigation types that are available in your React apps.</p>
 
 <p>Let's explore how they are implemented to load different pages. If you compare the navigation of websites built with React against HTML and CSS, you will likely find no visual difference.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-i.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-i.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>While visually everything looks the same, in the code, React navigation works a bit differently. This is because the entire app is loaded inside a single div. You're not actually visiting different pages like you would with hyperlinks and HTML files. Instead, the content of that single div is controlled by React, and it's based on changes to the virtual DOM. It either updates the existing view or loads a completely new view, giving the user the impression of visiting a completely different URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-j.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-j.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Recall that with HTML, developers can use a list to make a navigation menu. Each list item contains a hyperlink to an HTML file, then some CSS to style the menu, like the display inline property to make the list display horizontally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-k.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-k.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>To help illustrate how React's navigation works, think about how the buttons on the inside of an elevator work. Pressing the button will take you to the selected floor. Similarly, if you click on it, each link on a website takes you to a different page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-l.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-l.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
 
 <p>If however, you're in a React elevator, It says if the elevator never moves.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-m.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-m.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Instead, when you press a button in this React's elevator, the entire construction of that given floor is injected into a single floor of this impossible building.
 However, this functionality is not available to developers from the React's library itself. In order to achieve this illusion of a multi-page website, you need to add the React router library to your React projects.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-n.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s01-n.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s01-n.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>Once again, you add this using the import statement and you'll learn more about how to do this soon.</p>
 
 <p>In this section (01), you learned about the basic types of navigation on websites and how the navigation process works in React.</p>
@@ -7981,19 +7997,17 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-a. traditional page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s02-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s02-a.png?raw=true"
   alt="Traditional Page Lifecycle."
-  width="40%" />
-</p>
+  style="width:40%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-b. spa page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s02-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s02-b.png?raw=true"
   alt="SPA Page Lifecycle."
-  width="40%" />
-</p>
+  style="width:40%" />
 
 <h4>An Example of a Single-Page App</h4>
 
@@ -8008,14 +8022,14 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~ w3-s02-c/d. example single page and traditional page applications (208) ~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s02-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s02-c.png?raw=true"
   alt="SPA templates."
-  width="40%" />
-<img src="/images/w3-s02-d.png?raw=true"
+  style="width:40%" />
+<img class="displayed"
+  src="/images/w3-s02-d.png?raw=true"
   alt="Traditional page application."
-  width="40%" />
-</p>
+  style="width40%" />
 
 <p>You have a web application that has a navigation bar on top and two pages. One page shows the latest news, and the other shows the current user’s profile page. The navigation bar contains a link for each page.</p>
 <p>In a traditional website, when the user clicks the Profile link, the web browser sends the request to the web server. The web server generates the HTML page and sends it back to the web browser. The web browser then renders the new web page.</p>
@@ -8035,113 +8049,109 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-a.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component.</p>
 <p>Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-b.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>However, I can make this possible with the help of another library known as React Router.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-c.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-d.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-d.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-e.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-e.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-f.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-f.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>With that done, let's return to app.js. Here I need to import routes and route from react-router-dom. I also need to replace the child jsx elements with some different code. Homepage becomes route path equals and then forward slash between double quotes. This is followed by element equals and then the homepage jsx elements inside of curly braces. Note that the route tag is self-closing and has no children inside. For Aboutme, I add a similar line, but I'll add about-me after the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-g.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-g.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
 
 <p>These slides will also be encased between route tags. If I go to my browser and type the exact link on one of the routes, for example, /Aboutme, I'll get only the Aboutme components showing under the navigation. However, if I remove the Aboutme from the URL, in other words, if I open the root route that is represented with a forward slash, then it will show the text from the homepage component under the navigation bar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-h.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-h.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
 
 <p>Notice that I'm grouping all the routes by wrapping them inside the routes jsx element. Also note that the nav tags are outside of the routes tag, meaning that navigation is outside the routes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-i.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-i.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>Finally, I need to replace the anchor tags with React router links. This allows the correct component to be loaded when the link is clicked, rather than simply refreshing the page. In the app component, the anchor tag for homepage becomes link to equals and then the forward slash between double quotes. This is followed by class name equals and then nav-item in double quotes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-j.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-j.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
+
 <p>For Aboutme, the change is similar except that about-me appears after the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-k.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-k.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
 
 <p>I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s03-l.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s03-l.png?raw=true"
   alt="."
-  width="30%" />
-</p>
+  style="width:30%" />
+
 <p>In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>04. Solution: Creating a route</h2>
@@ -8189,11 +8199,10 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s04-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s04-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s04-a.png?raw=true"
   alt="."
-  width="70%" />
-</p>
+  style="width:70%" />
 
 <h4>Step 1</h4>
 
@@ -8201,7 +8210,8 @@ A Single Page Application allows the user to interact with the website without d
 
 <h4>Step 2</h4>
 
-<p>Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export default Contact after the Contact function's closing curly brace.</p>
+<p>Inside the Contact.js file, you added an ES5 function, named Contact. And then, added the export 
+default Contact after the Contact function's closing curly brace.</p>
 
 <pre>1.  function Contact() {
 2.
@@ -8210,8 +8220,8 @@ A Single Page Application allows the user to interact with the website without d
 
 <h4>Step 3</h4>
 
-<p>Next, inside the body of the Contact function, you added a return statement with the following code: &lt;h1&gt;Contact Little Lemon on this 
-page.&lt;/h1&gt;.</p>
+<p>Next, inside the body of the Contact function, you added a return statement with the following 
+code: &lt;h1&gt;Contact Little Lemon on this page.&lt;/h1&gt;.</p>
 
 <pre>1.  function Contact() {
 2.    return  &lt;h1&gt;Contact Little Lemon on this page.&lt;/h1&gt;
@@ -8252,7 +8262,9 @@ page.&lt;/h1&gt;.</p>
 
 <h4>Step 5</h4>
 
-<p>Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another &lt;Link&gt; element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.</p>
+<p>Inside the App.js file's App function's return statement, locate the nav element, and inside of it, 
+add another &lt;Link&gt; element, with the to attribute pointing to contact, the className set to 
+"nav-item", and the the text inside the Link element's opening and closing tags set to Contact.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -8285,8 +8297,8 @@ page.&lt;/h1&gt;.</p>
 
 <h4>Step 6</h4>
 
-<p>Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and the element attribute 
-set to {&lt;Contact /&gt;}.</p>
+<p>Inside the Routes element, add a third route, with the path attribute pointing to "/contact", and 
+the element attribute set to {&lt;Contact /&gt;}.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -8318,127 +8330,165 @@ set to {&lt;Contact /&gt;}.</p>
 
 <h4>Step 7</h4>
 
-<p>You saved all your changes and viewed your updates in the served app. You should have had three links in the top navbar, and the third link should have been Contact. Once you clicked the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other content was under the navbar previously.</p>
+<p>You saved all your changes and viewed your updates in the served app. You should have had 
+three links in the top navbar, and the third link should have been Contact. Once you clicked 
+the link, the sentence "Contact Little Lemon on this page" should have replaced whatever other 
+content was under the navbar previously.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>05. Conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>By now you should be familiar with the concept that react dynamically changes web page content. For example, you discover that when they react website changes from home page text to about me text, it isn't going to a new page, it's rendering one component instead of another. While this is useful, you need to give react very specific instructions about what and what not to render.</p>
+<p>By now you should be familiar with the concept that react dynamically changes web page 
+content. For example, you discover that when they react website changes from home page text 
+to about me text, it isn't going to a new page, it's rendering one component instead of 
+another. While this is useful, you need to give react very specific instructions about 
+what and what not to render.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~ w3-s05-a. 3 levels event - components - web page (219) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-a.png?raw=true"
   alt="Three (3) level tree of event - components - web page."
-  width="50%" />
-</p>
-<p>And when you have components that are responsive to events such as clicks, this can add another layer of complexity. Fortunately, there are several approaches for writing the logic to ensure that this process goes smoothly and requires less work from you.</p>
-<p>By the end of this section (05) you'll have a high level understanding of conditional rendering and know how to set it up using ternary operators.</p>
+  style="width:50%" />
+
+<p>And when you have components that are responsive to events such as clicks, this can add 
+another layer of complexity. Fortunately, there are several approaches for writing the logic 
+to ensure that this process goes smoothly and requires less work from you.</p>
+<p>By the end of this section (05) you'll have a high level understanding of conditional 
+rendering and know how to set it up using ternary operators.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-b. data to props and state (220) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-b.png?raw=true"
   alt="Data to props and state."
-  width="50%" />
-</p>
-<p>Recall that state is a component internal data, which that component can control or change as opposed to props, which the component receives but cannot alter.</p>
-<p>In an app, you can render components conditionally based on whether a specific state data has specific values. In other words, when you write the rendering logic in the main app component, you'll need to reference the state of the other components.</p>
+  style="width:50%" />
+
+<p>Recall that state is a component internal data, which that component can control or change 
+as opposed to props, which the component receives but cannot alter.</p>
+<p>In an app, you can render components conditionally based on whether a specific state data 
+has specific values. In other words, when you write the rendering logic in the main app 
+component, you'll need to reference the state of the other components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-c. togglebutton.js to false state (220) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-c.png?raw=true"
   alt="ToggleButton.js - false state."
-  width="50%" />
-</p>
+  style="width:50%" />
 
-<p>For example, suppose you have a component that contains code for a button that shows a sidebar, the button controls the state of the toggle sidebar variable, which is set to false.</p>
+<p>For example, suppose you have a component that contains code for a button that shows a sidebar, 
+the button controls the state of the toggle sidebar variable, which is set to false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-d. togglebutton.js to true state (220) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-d.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-d.png?raw=true"
   alt="ToggleButton.js to true state as sidebar."
-  width="50%" />
-</p>
+  style="width:50%" />
 
-<p>When the button is clicked, the state of the toggle sidebar variable is updated to True, and the sidebar component is displayed.</p>
+<p>When the button is clicked, the state of the toggle sidebar variable is updated to True, 
+and the sidebar component is displayed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w3-s05-e. javascript - conditional if statement (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-e.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-e.png?raw=true"
   alt="JavaScript - conditional if statement example."
-  width="50%" />
-</p>
-<p>To make this possible react works with conditional concepts and syntax that are already available in JavaScript. For example, recall the conditional if statement in JavaScript, developers use it to run code conditionally based on whether something is either true or false.</p>
+  style="width:50%" />
+
+<p>To make this possible react works with conditional concepts and syntax that are already 
+available in JavaScript. For example, recall the conditional if statement in JavaScript, 
+developers use it to run code conditionally based on whether something is either true or false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ w3-s05-f. get it done or get some rest (boolean) (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-f.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-f.png?raw=true"
   alt="Conditional boolean; Get it Done or Get Some Rest."
-  width="50%" />
-</p>
+  style="width:50%" />
 
-<p>To illustrate conditional rendering in action, let's first consider an example productivity app. Based on the device's data at the time of access, the app displays one of two messages.  For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a developer, there are a few ways you can achieve this functionality in react.</p>
+<p>To illustrate conditional rendering in action, let's first consider an example productivity 
+app. Based on the device's data at the time of access, the app displays one of two messages.  
+For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a 
+developer, there are a few ways you can achieve this functionality in react.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-g. currentmessage component (221) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-g.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-g.png?raw=true"
   alt="CurrentMessage component."
-  width="40%" />
-</p>
-<p>But in this section (05), you'll focus on using the ternary operator to write simplified, if else conditions, you start by creating a component called CurrentMessage.</p>
+  style="width:40%" />
+
+<p>But in this section (05), you'll focus on using the ternary operator to write simplified, 
+if else conditions, you start by creating a component called CurrentMessage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-h. built-in date function sun-sat (222) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-h.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-h.png?raw=true"
   alt="."
-  width="40%" />
-</p>
-<p>This component uses the built in date function in JavaScript, along with the get day method to store the day of the week as a number, where zero represents Sunday, and six, the following Saturday.</p>
+  style="width:40%" />
+
+<p>This component uses the built in date function in JavaScript, along with the get day method to 
+store the day of the week as a number, where zero represents Sunday, and six, the following Saturday.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~ w3-s05-i. two components - each with a message (222) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-i.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-i.png?raw=true"
   alt="Two components (workdays and weekends); each with a message."
-  width="40%" />
-</p>
-<p>Next, you create the two components that each holds one of the messages to be displayed. Let's name these components Workdays and Weekends. The current message component needs to render the appropriate components based on the value returned from the getDay function call.</p>
+  style="width:40%" />
+
+<p>Next, you create the two components that each holds one of the messages to be displayed. Let's 
+name these components Workdays and Weekends. The current message component needs to render the 
+appropriate components based on the value returned from the getDay function call.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-j. ternary operator example (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-j.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-j.png?raw=true"
   alt="Ternary operator example."
-  width="60%" />
-</p>
+  style="width:60%" />
 
-<p>Let's set up the conditions to make that happen. Recall that the ternary operator takes three commands. First is the condition, which in this example uses the logical and operator. The condition checks if the value stored in the day variable is greater than or equal to one, and less than or equal to five. Then the question mark symbol, followed by the expression to execute if the condition evaluates as true.</p>
-<p>In this example, the component, Workdays, is rendered. Next is the colon symbol, which represents the code to be executed if the condition evaluates as false. And if this happens, the component weekends is rendered. Using the logical and operator in the condition means that both expressions have to return true in order to render the Workdays component. Otherwise, the Weekends component will be rendered.</p>
-<p>While using the ternary operator is a common pattern that you'll see in react code. If you are new to react, it may be difficult to understand what's happening.</p>
+<p>Let's set up the conditions to make that happen. Recall that the ternary operator takes 
+three commands. First is the condition, which in this example uses the logical and operator. 
+The condition checks if the value stored in the day variable is greater than or equal to one, 
+and less than or equal to five. Then the question mark symbol, followed by the expression to 
+execute if the condition evaluates as true.</p>
+<p>In this example, the component, Workdays, is rendered. Next is the colon symbol, which 
+represents the code to be executed if the condition evaluates as false. And if this happens, 
+the component weekends is rendered. Using the logical and operator in the condition means 
+that both expressions have to return true in order to render the Workdays component. 
+Otherwise, the Weekends component will be rendered.</p>
+<p>While using the ternary operator is a common pattern that you'll see in react code. If 
+you are new to react, it may be difficult to understand what's happening.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-k. isitsummeryet component (223) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s05-k.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s05-k.png?raw=true"
   alt="IsItSummerYet component - boolean yes or no."
-  width="60%" />
-</p>
-<p>So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach.</p>
-<p>In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.</p>
+  style="width:60%" />
+
+<p>So let's refer to a simpler version that uses boolean values. In this example component, 
+IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns 
+to the expression after the question mark if the condition before the question mark is true. 
+Otherwise, it returns the expression after the colon symbol. So since the variable, summer, 
+evaluates to true, rendering this component will return the string, Let's go to the beach.</p>
+<p>In this section (05), you learned about conditional rendering and how to implement it within 
+dynamic apps by using ternary operators.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>06. Applying conditional rendering</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>State is all the data your app is currently working with. With this in mind, you can decide to conditionally render specific components in your app, based on whether specific state data has specific values. To make this possible, React works with the readily available JavaScript syntax and concepts.</p>
+<p>State is all the data your app is currently working with. With this in mind, you can decide 
+to conditionally render specific components in your app, based on whether specific state data 
+has specific values. To make this possible, React works with the readily available JavaScript 
+syntax and concepts.</p>
 
 <h4>Consider a minimalistic productivity app</h4>
 
-<p>The app takes the client computer’s current datetime, and based on the data, displays one of two messages on the screen:</p>
+<p>The app takes the client computer’s current datetime, and based on the data, displays 
+one of two messages on the screen:</p>
 
 <ol type="1">
   <li>For workdays, the message is: “Get it done”,<br></li>
@@ -8446,8 +8496,10 @@ set to {&lt;Contact /&gt;}.</p>
 </ol>
 
 <p>There are a few ways you can achieve this in React.</p>
-<p>One approach would include setting a component for each of the possible messages, which means you’d have two components. Let’s name them Workdays and Weekends.</p>
-<p>Then, you’d have a CurrentMessage component, which would render the appropriate component based on the value returned from the getDay() function call.</p>
+<p>One approach would include setting a component for each of the possible messages, 
+which means you’d have two components. Let’s name them Workdays and Weekends.</p>
+<p>Then, you’d have a CurrentMessage component, which would render the appropriate 
+component based on the value returned from the getDay() function call.</p>
 <p>Here’s a simplified CurrentMessage component:</p>
 
 <pre>1.	function CurrentMessage() {
@@ -8458,7 +8510,8 @@ set to {&lt;Contact /&gt;}.</p>
 6.	    return &lt;Weekends /&gt;
 7.	}</pre>
 
-<p>Instead of calculating it directly, you could use some historical data instead, and perhaps get that data from a user via an input, from a parent component.</p>
+<p>Instead of calculating it directly, you could use some historical data instead, 
+and perhaps get that data from a user via an input, from a parent component.</p>
 <p>In that case, the CurrentMessage component might look like this:</p>
 
 <pre>1.  function CurrentMessage(props) {
@@ -8470,7 +8523,10 @@ set to {&lt;Contact /&gt;}.</p>
 
 <h4>Conditional rendering with the help of element variables</h4>
 
-<p>To further improve your CurrentMessage component, you might want to use element variables. This is useful in some cases, where you want to streamline your render code - that is, when you want to separate the conditional logic from the code to render your UI.</p>
+<p>To further improve your CurrentMessage component, you might want to use element 
+variables. This is useful in some cases, where you want to streamline your render 
+code - that is, when you want to separate the conditional logic from the code to 
+render your UI.</p>
 <p>Here’s an example of doing this with the CurrentMessage component:</p>
 
 <details open>
@@ -8498,9 +8554,15 @@ set to {&lt;Contact /&gt;}.</p>
 
 </details>
 
-<p>The output of the CurrentMessage component will depend on what the received value of the day variable is. On the condition of the day variable having the value of any number between 1 and 5 (inclusive), the output will be the contents of the Workdays component. Otherwise, on the condition of the day variable having the value of either 6 or 7, the output will be the contents of the Weekends component.
-Conditional rendering using the logical AND operator.  Another interesting approach in conditional rendering is the use of the logical AND operator &&.</p>
-<p>In the following component, here's how the && operator is used to achieve conditional rendering:</p>
+<p>The output of the CurrentMessage component will depend on what the received 
+value of the day variable is. On the condition of the day variable having the 
+value of any number between 1 and 5 (inclusive), the output will be the contents 
+of the Workdays component. Otherwise, on the condition of the day variable having 
+the value of either 6 or 7, the output will be the contents of the Weekends component.
+Conditional rendering using the logical AND operator.  Another interesting 
+approach in conditional rendering is the use of the logical AND operator &&.</p>
+<p>In the following component, here's how the && operator is used to achieve 
+conditional rendering:</p>
 
 <details open>
   <summary>React code:</summary>
@@ -8520,11 +8582,16 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 
 </details>
 
-<p>There are a few things to unpack here, so here is the explanation of the LogicalAndExample component, top to bottom:</p>
+<p>There are a few things to unpack here, so here is the explanation of the LogicalAndExample 
+component, top to bottom:</p>
 
 <ol type="1">
-  <li>First, you ask the user to type into the prompt, specifying that you require anything other than a zero character; and you save the input into the val value,</li>
-  <li>In the return statement, an h1 heading is wrapped inside a div element, and then curly braces are used to include a JSX expression. Inside this JSX expression is a single && operator, which is surrounded by some code both on its left and on its right sides; on the left side, the val value is provided, and on the right, a piece of JSX is provided.</li>
+  <li>First, you ask the user to type into the prompt, specifying that you require anything 
+    other than a zero character; and you save the input into the val value,</li>
+  <li>In the return statement, an h1 heading is wrapped inside a div element, and then curly 
+    braces are used to include a JSX expression. Inside this JSX expression is a single && 
+	operator, which is surrounded by some code both on its left and on its right sides; on 
+	the left side, the val value is provided, and on the right, a piece of JSX is provided.</li>
 </ol>
 
 <p>To understand what will be output on screen, consider the following example in standard JavaScript:</p>
@@ -8595,39 +8662,67 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>08. Single view conditional updates</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>By the end of this section (08) you'll be able to describe the various approaches to conditional rendering and react. And you'll be able to use the if-else statements and ternary operators to render components conditionally.</p>
+<p>By the end of this section (08) you'll be able to describe the various approaches to conditional 
+rendering and react. And you'll be able to use the if-else statements and ternary operators to render 
+components conditionally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-a. customized startere app (228) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s08-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s08-a.png?raw=true"
   alt="Customized stater app."
-  width="80%" />
-</p>
-<p>I use the create react app to build the starter react app. I'll go through the code in this customized starter app to demonstrate some conditional rendering and practice.  The goal of my app is to use the local computers' time and based on the return values, output various messages inside the same return statement. All wrapped in a single development.</p>
-<p>Specifically, I want to quote a small app that displays a message for a given work day. And if it's morning time, ask the user if they've had their breakfast yet. I start my app component code by declaring a time variable and assigning the call to the date constructor to it. I then set the day variable.  And I used the built-in to locale string function that exists on the date object to specify the locale as English US. I also specify the weekday value as long which displays the days as full words such as Monday, Tuesday, Wednesday, and so on. Next, I declare a morning variable that stores a Boolean value based on whether the current time is greater than or equal to 6 and less than or equal to 12. Finally, I declare a day message variable but I'm not assigning any value to it yet.</p>
-<p>To generate a dynamic message, I use an if -else statement passing at the value of the day variable. I also make all the characters in the day variable string lowercase with the help of the built-in to lowercase function. Based on the value stored in the day variable. I then assign a specific string to the day message variable. For example, if it's a Monday. The day message variable stores a string that reads happy Monday. If it's a Tuesday the string reads Tuesday 4 days to go.</p>
-<p>After I've covered all the possibilities from Monday to Friday I add the L statement with a string value for all the other possibilities. The string reads stay calm and keep having fun. This brings me to the return statement. In the return statement, I have a single heading H1 and inside of it, I'm accessing the string value stored inside the day message variable</p>
-<p>Additionally, I use ternary operator to conditionally evaluate the morning variable. If true, I output a string that reads have you had breakfast yet? This string is placed inside the heading 2 element. It false an empty string will be displayed.</p>
+  style="width:80%" />
+
+<p>I use the create react app to build the starter react app. I'll go through the code in 
+this customized starter app to demonstrate some conditional rendering and practice.  The 
+goal of my app is to use the local computers' time and based on the return values, output 
+various messages inside the same return statement. All wrapped in a single development.</p>
+<p>Specifically, I want to quote a small app that displays a message for a given work day. 
+And if it's morning time, ask the user if they've had their breakfast yet. I start my app 
+component code by declaring a time variable and assigning the call to the date constructor 
+to it. I then set the day variable.  And I used the built-in to locale string function that 
+exists on the date object to specify the locale as English US. I also specify the weekday 
+value as long which displays the days as full words such as Monday, Tuesday, Wednesday, 
+and so on. Next, I declare a morning variable that stores a Boolean value based on whether 
+the current time is greater than or equal to 6 and less than or equal to 12. Finally, I 
+declare a day message variable but I'm not assigning any value to it yet.</p>
+<p>To generate a dynamic message, I use an if -else statement passing at the value of 
+the day variable. I also make all the characters in the day variable string lowercase 
+with the help of the built-in to lowercase function. Based on the value stored in the 
+day variable. I then assign a specific string to the day message variable. For example, 
+if it's a Monday. The day message variable stores a string that reads happy Monday. If 
+it's a Tuesday the string reads Tuesday 4 days to go.</p>
+<p>After I've covered all the possibilities from Monday to Friday I add the L statement 
+with a string value for all the other possibilities. The string reads stay calm and keep 
+having fun. This brings me to the return statement. In the return statement, I have a 
+single heading H1 and inside of it, I'm accessing the string value stored inside the 
+day message variable</p>
+<p>Additionally, I use ternary operator to conditionally evaluate the morning variable. 
+If true, I output a string that reads have you had breakfast yet? This string is placed 
+inside the heading 2 element. It false an empty string will be displayed.</p>
 <p>Notice the output of this code happy Monday:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-b. happy monday example (229) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s08-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s08-b.png?raw=true"
   alt="Happy Monday React example."
-  width="80%" />
-</p>
-<p>If I change the get hours value from 12 to 19 and save my code. Notice that a new message is displayed underneath the heading that reads have you had breakfast yet? That's all it takes to build quite a dynamic component that conditionally renders various kinds of strings in its return statement.</p>
+  style="width:80%" />
+
+<p>If I change the get hours value from 12 to 19 and save my code. Notice that a new message is 
+displayed underneath the heading that reads have you had breakfast yet? That's all it takes to 
+build quite a dynamic component that conditionally renders various kinds of strings in its return 
+statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~ w3-s08-c. conditional and ternary rendering (230) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s08-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s08-c.png?raw=true"
   alt="Conditional rendering and React."
-  width="40%" />
-</p>
-<p>In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.</p>
+  style="width:40%" />
+
+<p>In this section (08), you learned about the various approaches to conditional rendering and 
+react using the if-else statement. And ternary operators to render components conditionally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>09. Additional resources</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8635,110 +8730,146 @@ check. You will use this often when developing React applications.</p>
 
 <ul>
   <li><a href="https://reactrouter.com/en/main">React Router v6</a>,</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">nav: The Navigation Section element</a>,</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">Conditional (ternary) operator in JavaScript</a>,</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">if...else</a>.</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">
+    nav: The Navigation Section element</a>,</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator">
+    Conditional (ternary) operator in JavaScript</a>,</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else">
+    if...else</a>.</li>
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 10 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>10. What is an asset and where does it live?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>By now, you should be familiar with creating React components and adding text to them. But text will only go so far in an app and users expect things like images, video, or audio for a more complete experience. Fortunately, you're here to learn about assets and how to use them to liven up your app.</p>
+<p>By now, you should be familiar with creating React components and adding text to them. But text will 
+only go so far in an app and users expect things like images, video, or audio for a more complete 
+experience. Fortunately, you're here to learn about assets and how to use them to liven up your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-a. assets (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-a.png?raw=true"
   alt="."
-  width="40%" />
-</p>
-<p>By the end of this section (10), you'll know what assets are and how developers keep them organized in React. You'll also learn some of the common ways to import asset files to be used in your React apps.</p>
+  style="width:40%" />
+
+<p>By the end of this section (10), you'll know what assets are and how developers keep them 
+organized in React. You'll also learn some of the common ways to import asset files to be used 
+in your React apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w3-s10-b. images, stylesheets, fonts and any files needed (231) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-b.png?raw=true"
   alt="Images, Stylesheets, Fonts and Any files needed."
-  width="40%" />
-</p>
-<p>Let's begin by making sure you fully understand what developers mean when they mention the term, assets. In React, assets can be things like images, style sheets, fonts, media files, or basically any file that's needed by your app at runtime. In other words, assets are all the files that your React app needs to have access to in order to work as intended.</p>
-<p>For example, you might code your app to display specific images or use certain fonts. But if you run your app without these being available, it might exhibit unexpected behavior, such as displaying a placeholder when using a default font.</p>
+  style="width:40%" />
+
+<p>Let's begin by making sure you fully understand what developers mean when they mention the 
+term, assets. In React, assets can be things like images, style sheets, fonts, media files, 
+or basically any file that's needed by your app at runtime. In other words, assets are all 
+the files that your React app needs to have access to in order to work as intended.</p>
+<p>For example, you might code your app to display specific images or use certain fonts. 
+But if you run your app without these being available, it might exhibit unexpected behavior, 
+such as displaying a placeholder when using a default font.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-c.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>That's why it's important to keep assets easily and readily available to your components. A common way to do this is to add an assets folder inside of a source folder and keep all your apps assets there. Some assets can also be placed inside the public folder.</p>
+  style="width:60%" />
+
+<p>That's why it's important to keep assets easily and readily available to your components. 
+A common way to do this is to add an assets folder inside of a source folder and keep all 
+your apps assets there. Some assets can also be placed inside the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-d.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-d.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>For example, in the default React installation, you'll find that some images such as favicon and Logo 512 are stored there by default. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder.</p>
+  style="width:60%" />
+
+<p>For example, in the default React installation, you'll find that some images such as 
+favicon and Logo 512 are stored there by default. The general rule for asset storage is 
+that if your app can compile without it, you can keep it in the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-e.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-e.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>For instance, favicon is in the public folder because no component depends on it. In other words, React doesn't need to use the favicon file to compile all the components into an app that will get served in your local browser while you're building your app.</p>
+  style="width:60%" />
+
+<p>For instance, favicon is in the public folder because no component depends on it. In other 
+words, React doesn't need to use the favicon file to compile all the components into an app 
+that will get served in your local browser while you're building your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-f.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-f.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>However, suppose you have an image that needs to be imported into one of the app components, then it's best stored in the assets folder. Now you're familiar with the concept of assets in React. Let's explore how to use assets.</p>
+  style="width:60%" />
+
+<p>However, suppose you have an image that needs to be imported into one of the app components, 
+then it's best stored in the assets folder. Now you're familiar with the concept of assets in 
+React. Let's explore how to use assets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-g.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-g.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>Suppose you're a developer working on an app that helps people adopt animals in their local area. You have built most of the apps components, but you are waiting on the adoption center to send you pictures of the animals that are looking for a new home. In preparation for this, you create the assets folder in the React application. The pictures arrive and you place them inside the assets folder so they can be added to your components.</p>
+  style="width:60%" />
+
+<p>Suppose you're a developer working on an app that helps people adopt animals in their local 
+area. You have built most of the apps components, but you are waiting on the adoption center to 
+send you pictures of the animals that are looking for a new home. In preparation for this, you 
+create the assets folder in the React application. The pictures arrive and you place them 
+inside the assets folder so they can be added to your components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-h.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-h.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>To add an asset file to a component, you first need to import it. This can be done with an import statement. For example, suppose these components will display a picture of a cat, you type the keyword, import, followed by the name you want to give your asset.</p>
+  style="width:60%" />
 
-<p>You can call this almost anything you like. But it's best to stick to something descriptive that describes your assets. For example, cat. Then you type the keyword, from, followed by the path to your assets. In this case, it's a file named cat.jpg located in the assets folder.</p>
+<p>To add an asset file to a component, you first need to import it. This can be done with an 
+import statement. For example, suppose these components will display a picture of a cat, you 
+type the keyword, import, followed by the name you want to give your asset.</p>
+
+<p>You can call this almost anything you like. But it's best to stick to something descriptive 
+that describes your assets. For example, cat. Then you type the keyword, from, followed by 
+the path to your assets. In this case, it's a file named cat.jpg located in the assets folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-i.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-i.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>The next step is to create the function and write a return statement. Inside the return statement, you use the image tag and then set the source attribute to reference the asset's name, which is cat in curly braces.</p>
+  style="width:60%" />
+
+<p>The next step is to create the function and write a return statement. Inside the return 
+statement, you use the image tag and then set the source attribute to reference the asset's 
+name, which is cat in curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s10-j.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s10-j.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>Alternatively, instead of the asset name, you can reference the path to the assets folder relative to the component. You can do this with the require keyword as well as curly braces that encase the JSX Expression and act as delimiters. It's important to know that with this method, you no longer need the import statement. This is because you're using the required syntax right inside the JSX Expression that's assigned to the SRC JSX attribute.</p>
+  style="width:60%" />
 
-<p>In this section (10), you've learned what assets are in React and the best practices for storing them in your project folders. You've also learned some of the most common ways of importing and using image assets in your React apps.</p>
+<p>Alternatively, instead of the asset name, you can reference the path to the assets folder 
+relative to the component. You can do this with the required keyword as well as curly braces 
+that encase the JSX Expression and act as delimiters. It's important to know that with this 
+method, you no longer need the import statement. This is because you're using the required 
+syntax right inside the JSX Expression that's assigned to the SRC JSX attribute.</p>
+
+<p>In this section (10), you've learned what assets are in React and the best practices 
+for storing them in your project folders. You've also learned some of the most common 
+ways of importing and using image assets in your React apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 11 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>11. Bundling assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8759,11 +8890,17 @@ webpack. This is because webpack is the built-in tool for the create-react-app.<
 
 <p>Simply put, webpack is a module bundler.</p>
 
-<p>Practically, this means that it will take various kinds of files, such as SVG and image files, CSS and SCSS files, JavaScript files, and TypeScript files, and it will bundle them together so that a browser can understand that bundle and work with it.</p>
+<p>Practically, this means that it will take various kinds of files, such as SVG and image 
+files, CSS and SCSS files, JavaScript files, and TypeScript files, and it will bundle them 
+together so that a browser can understand that bundle and work with it.</p>
 
 <p>Why is this important?</p>
 
-<p>When building websites, you could probably do without webpack since your project's structure might be straightforward: you may have a single CSS library, such as Bootstrap, loaded from a CDN (content delivery network). You might also have a single JavaScript file in your static HTML document. If that is all there is to it, you do not need to use webpack in such a scenario.</p>
+<p>When building websites, you could probably do without webpack since your project's 
+structure might be straightforward: you may have a single CSS library, such as Bootstrap, 
+loaded from a CDN (content delivery network). You might also have a single JavaScript file 
+in your static HTML document. If that is all there is to it, you do not need to use webpack 
+in such a scenario.</p>
 
 <p>However, modern web development can get complex.</p>
 
@@ -8785,40 +8922,72 @@ webpack. This is because webpack is the built-in tool for the create-react-app.<
 
 </details>
  
-<p>The imports here are from fictional libraries and resources because the specific libraries are not necessary. All these different imports can be of various file types: .js, .svg, .css, and so on.</p>
-<p>In turn, all the imported files might have their own imported files, and even those might have their imports.</p>
-<p>This means that depending on other files, all of these files can create a dependency graph. The order in which all these files are loading is essential. That dependency graph can get so complex that it becomes almost impossible for a human to structure a complex project and bundle all those dependencies properly.</p>
+<p>The imports here are from fictional libraries and resources because the specific 
+libraries are not necessary. All these different imports can be of various file 
+types: .js, .svg, .css, and so on.</p>
+<p>In turn, all the imported files might have their own imported files, and even 
+those might have their imports.</p>
+<p>This means that depending on other files, all of these files can create a 
+dependency graph. The order in which all these files are loading is essential. 
+That dependency graph can get so complex that it becomes almost impossible for 
+a human to structure a complex project and bundle all those dependencies properly.</p>
 <p>This is the reason you need tools like webpack.</p>
-<p>So, webpack builds a dependency graph and bundles modules into one or more files that a browser can consume.</p>
+<p>So, webpack builds a dependency graph and bundles modules into one or more 
+files that a browser can consume.</p>
 
 <p>While it is doing that, it also does the following:</p>
 
 <ul>
-  <li><p>It converts modern JS code - which can only be understood by modern browsers - into older versions of 
-  JavaScript so that older browsers can understand your code. This process is known as transpiling.  For example, 
-  you can transpile ES7 code to ES5 code using webpack,</p></li>
-  <li><p>It optimizes your code to load as quickly as possible when a user visits your web pages,</p></li>
+  <li><p>It converts modern JS code - which can only be understood by modern browsers - 
+    into older versions of   JavaScript so that older browsers can understand your code. 
+    This process is known as transpiling.  For example, you can transpile ES7 code to 
+    ES5 code using webpack,</p></li>
+  <li><p>It optimizes your code to load as quickly as possible when a user visits your 
+    web pages,</p></li>
   <li><p>It can process your SCSS code into the regular CSS, which browsers can understand,</p></li>
   <li><p>It can build source maps of the bundle's building blocks,</p></li>
-  <li>It can produce various kinds of files based on rules and templates. This includes HTML files, among others.</li>
+  <li>It can produce various kinds of files based on rules and templates. This includes 
+    HTML files, among others.</li>
 </ul>
 
-<p>Another significant characteristic of webpack is that it helps developers create modern web apps.</p>
+<p>Another significant characteristic of webpack is that it helps developers create 
+  modern web apps.</p>
 <p>It helps you achieve this using two modes: production mode or development mode.</p>
-<p>In development mode, webpack bundles your files and optimizes your bundles for updates - 
-so that any updates to any of the files in your locally developed app are quickly 
-re-bundled. It also builds source maps so you can inspect the original file included in the bundled code.</p>
+<p>In development mode, webpack bundles your files and optimizes your bundles for 
+  updates - so that any updates to any of the files in your locally developed app are 
+  quickly re-bundled. It also builds source maps so you can inspect the original file 
+  included in the bundled code.</p>
 
-<p>In production mode, webpack bundles your files so that they are optimized for speed. This means the files are minified and organized to take up the least amount of memory. So, they are optimized for speed because these bundles are fast to download when a user visits the website online.</p>
-<p>Once all the source files of your app have been bundled into a single bundle file, then that single bundle file gets served to a visitor browsing the live version of your app online, and the entire app’s contents get served at once.</p>
-
-<p>This works great for smaller apps, but if you have a more extensive app, this approach is likely to affect your site’s speed. The longer it takes for a web app to load, the more likely the visitor will leave and move on to another unrelated website. There are several ways to tackle this issue of a large bundle.</p>
-<p>One such approach is code-splitting, a practice where a module bundler like webpack splits the single bundle file into multiple bundles, which are then loaded on an as-needed basis. With the help of code-splitting, you can lazy load only the parts that the visitor to the app needs to have at any given time. This approach significantly reduces the download times and allows React-powered apps to get much better speeds.</p>
+<p>In production mode, webpack bundles your files so that they are optimized for 
+speed. This means the files are minified and organized to take up the least amount 
+of memory. So, they are optimized for speed because these bundles are fast to 
+download when a user visits the website online.</p>
+<p>Once all the source files of your app have been bundled into a single bundle 
+file, then that single bundle file gets served to a visitor browsing the live 
+version of your app online, and the entire app’s contents get served at once.</p>
+<p>This works great for smaller apps, but if you have a more extensive app, 
+this approach is likely to affect your site’s speed. The longer it takes for 
+a web app to load, the more likely the visitor will leave and move on to 
+another unrelated website. There are several ways to tackle this issue of 
+a large bundle.</p>
+<p>One such approach is code-splitting, a practice where a module bundler 
+like webpack splits the single bundle file into multiple bundles, which 
+are then loaded on an as-needed basis. With the help of code-splitting, 
+you can lazy load only the parts that the visitor to the app needs to have 
+at any given time. This approach significantly reduces the download times 
+and allows React-powered apps to get much better speeds.</p>
 There are other ways to tackle these problems.</p>
 <p>An example of a viable alternative is SSR (Server-side rendering).
-With SSR, React components are rendered to HTML on the server, and the visitor downloads the finished HTML code. An alternative to SSR is client-side rendering, which downloads the index.html file and then lets React inject its own code into a dedicated HTML element (the root element in create-react-app). In this course, you’ve only worked with client-side rendering.</p>
-<p>Sometimes, you can combine client-side rendering and server-side rendering. This approach results in what’s referred to as isomorphic apps.</p>
-<p>In this section (11), you learned about the advantages and disadvantages of embedding assets, including examples of client/server-side assets. You also learned about the trade-offs inherent in the use of asset-heavy apps.</p>
+With SSR, React components are rendered to HTML on the server, and the visitor 
+downloads the finished HTML code. An alternative to SSR is client-side 
+rendering, which downloads the index.html file and then lets React inject 
+its own code into a dedicated HTML element (the root element in create-react-app). 
+In this course, you’ve only worked with client-side rendering.</p>
+<p>Sometimes, you can combine client-side rendering and server-side rendering. 
+This approach results in what’s referred to as isomorphic apps.</p>
+<p>In this section (11), you learned about the advantages and disadvantages of 
+embedding assets, including examples of client/server-side assets. You also 
+learned about the trade-offs inherent in the use of asset-heavy apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 12 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>12. Using embedded assets</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8828,11 +8997,11 @@ the import statement using the require function to set the file path, or by prov
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s12-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s12-a.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>To demonstrate how you can work with embedded assets, I've created a basic app 
 called Embedded Assets. In my app source folder I added the assets folder which 
 also contains an image folder. Notice I've added one Jpeg image to the images 
@@ -8840,22 +9009,22 @@ folder named Central Park.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s12-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s12-b.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>To view the code of the app component, I click on the app.Js file. Notice that the 
 starting code of my app component just under some text that describes the task at 
 hand, which is to display three images with some styling.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s12-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s12-c.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>For this, I'm going to demonstrate the three distinct ways to import images and react. 
 The first way is to use the import method and I want to demonstrate how you set a name for 
 your imported image. To import the image file Central Park, I type import rooftops and 
@@ -8869,11 +9038,11 @@ save my file and notice that my image now displays in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s12-d.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s12-d.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>Okay, so that's one way to import an image using the import statement. The second way to 
 import an image is by using the require keyword.  To do this, I create this image with an 
 image to act like I did before. Again, I limit the size of the image by making its height 
@@ -8886,20 +9055,25 @@ image. I just require it and provide the string with the relative path to the im
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s12-e.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s12-e.png?raw=true"
   alt="."
-  width="60%" />
-</p>
-<p>Now I'll demonstrate the third way to import an image asset by loading an image file hosted on the internet. Instead of a local file, this time I want to display a random image URL from a photo hosting website. To do this, I create a variable by typing const than the variable name random image URL that I use the equals operator followed by the URL for the random image. I can now add my third image element inside the return statement. To do this, I add random image URL to the source attribute.</p>
+  style="width:60%" />
+
+<p>Now I'll demonstrate the third way to import an image asset by loading an image file 
+hosted on the internet. Instead of a local file, this time I want to display a random 
+image URL from a photo hosting website. To do this, I create a variable by typing const 
+than the variable name random image URL that I use the equals operator followed by the 
+URL for the random image. I can now add my third image element inside the return statement. 
+To do this, I add random image URL to the source attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s12-f.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s12-f.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>So there you have it. The three different ways to use image assets in a react component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>13. Solution: Displaying images</h2>
@@ -8928,11 +9102,10 @@ image. I just require it and provide the string with the relative path to the im
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s13-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s13-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s13-a.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
 
 <p>Step 1
 First, you imported the logo image.</p>
@@ -8984,11 +9157,11 @@ consuming, and sharing video and audio content daily on our devices.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s14-a.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s14-a.png?raw=true"
   alt="."
-  width="40%" />
-</p>
+  style="width:40%" />
+
 <p>By the end of this section (14), you'll learn how React developers use audio and 
 video assets within an app. You'll also explore how to find suitable React packages 
 to use when working with audio and video files. Let's begin by exploring a method 
@@ -8996,11 +9169,11 @@ to load a local video asset into your React app using just HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s14-b.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s14-b.png?raw=true"
   alt="."
-  width="60%" />
-</p>
+  style="width:60%" />
+
 <p>You can use the readily available HTML5 video tag to load a local video asset to your 
 React app. Like loading an image or any other kind of asset file, you can just declare a 
 variable somewhere above a component's return statement and then add it as a JSX 
@@ -9019,11 +9192,11 @@ React component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s14-c.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s14-c.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>You might be wondering, why do you want to prepare it as a separate component? 
 One of the reasons is that you'd be able to easily switch one video with another 
 by passing the unique ID of a given video as a prop. You can then control the 
@@ -9031,11 +9204,11 @@ video output that way. So far, you've learned about two ways of adding videos to
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-<img src="/images/w3-s14-d.png?raw=true"
+<img class="displayed"
+  src="/images/w3-s14-d.png?raw=true"
   alt="."
-  width="80%" />
-</p>
+  style="width:80%" />
+
 <p>The first method involves just serving a local video using the video element, and 
 the second method is using embedded third-party videos.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9110,7 +9283,8 @@ get the entire package's functionality, use the following import:</p>
 
 <pre>1.	import ReactPlayer from "react-player";</pre>
 
-<p>If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:</p>
+<p>If you are, for example, only planning to use videos from a site like YouTube, to reduce 
+bundle size, you can use the following import:</p>
 
 <pre>1.	import ReactPlayer from "react-player/youtube";</pre>
 
@@ -9651,8 +9825,16 @@ calculator app.</p>
   alt="Course summary part ii: Basics of working with React."
   style="width:30%" />
 
-<p>In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals.</p>
-<p>You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components.</p>
+<p>In this course, you learned about the basics of working with React. Let's take a few moments to 
+recap the key topics that you learned about. In the opening lesson, you received an introduction 
+to React. During this introduction, you learned about React, became familiar with how React is 
+used in the real world. You learned how to make the most of the content in this course to ensure 
+that you succeed in your goals.</p>
+<p>You then moved on to the next lesson in which you learned about React components. In this 
+lesson, you learned how to explain components, their architecture, and how they are rendered. 
+Create components and update them using JSX. Describe how folders are structured in a React 
+project and how this benefits developments. You then demonstrated your knowledge of how to 
+import components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d. components and events (260) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9666,8 +9848,15 @@ calculator app.</p>
   alt="Course summary part iv: Events, event handlers and event syntax."
   style="width:30%" />
 
-<p>In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes.</p>
-<p>Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.</p>
+<p>In the next lesson, you explored how to use components in greater detail. This means that 
+you can now declare functional components with props and pass them to another components. 
+Use JSX to add styling to components. Save styles so that they can be reused later and embed 
+JavaScript expressions in attributes.</p>
+<p>Next, you began the second module, which was focused on the roles of data and state in 
+React. In the first lesson of this module, you learned about dynamic events and how to handle 
+them. You can now identify the most common types of events. Use some common event handlers 
+in your code. Use different types of syntax to write event handlers and you demonstrated 
+understanding of the concept of user triggered events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f. data flow and web navigation (260) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9681,9 +9870,15 @@ calculator app.</p>
   alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
   style="width:30%" />
 
-<p>You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed.</p>
-<p>You were also introduce to hooks and now that you can use them to extend the functionality of state, and you were able to identify some common use cases for stateful and stateless components.</p>
-<p>In the next module, you were introduced to navigation, updating, and assets in React. By completing the  lesson, you can now identify the basic types of navigation on websites. Create a basic navigation routes within React router library. Explain how components can be rendered conditionally. Use several different approaches to set up conditional rendering logic.</p>
+<p>You then learned about the relationship between data and events. As a result, you can now 
+describe how data flows between parent and child components and explain the concept of states 
+in React and how it is managed.</p>
+<p>You were also introduce to hooks and now that you can use them to extend the functionality 
+of state, and you were able to identify some common use cases for stateful and stateless components.</p>
+<p>In the next module, you were introduced to navigation, updating, and assets in React. 
+By completing the  lesson, you can now identify the basic types of navigation on websites. 
+Create a basic navigation routes within React router library. Explain how components can be 
+rendered conditionally. Use several different approaches to set up conditional rendering logic.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-g. assets in react (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9692,12 +9887,18 @@ calculator app.</p>
   alt="Assets in React and how to use them."
   style="width:30%" />
 
-<p>In the final section (18) of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components.</p>
-<p>You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In the final section (18) of this module, you explored assets in React and how to use them. 
+You can now explain what assets are and the best ways to store them. Use assets that are 
+embedded in data files and use audio and video assets in your components.</p>
+<p>You've reached the end of this course recap. It's now time to try out what you've 
+learned in the graded assessment. Good luck.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 02 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>02. Build a calculator app</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>I'll now demonstrate how you can use react to build a simple calculator app that is able to perform addition, subtraction, multiplication and division operations. I have some code for this app already written. However, because it's incomplete, it encounters problems when it compiles.</p>
+<p>I'll now demonstrate how you can use react to build a simple calculator app that is able 
+to perform addition, subtraction, multiplication and division operations. I have some code 
+for this app already written. However, because it's incomplete, it encounters problems when 
+it compiles.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-a. 1st problem (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9706,7 +9907,8 @@ calculator app.</p>
   alt="1st problem: useRef is not defined."
   style="width:60%" />
 
-<p>The first problem is that useRef is not defined. So I'll import to useRef to fix that issue and then press control s to recompile.</p>
+<p>The first problem is that useRef is not defined. So I'll import to useRef to fix that 
+issue and then press control s to recompile.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-b. 2nd problem (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9715,7 +9917,8 @@ calculator app.</p>
   alt="2nd problem: useState hook is not defined."
   style="width:60%" />
 
-<p>The second problem is that the useState hook is not defined so let's import that as well. And when I recompile once more, the problems should be resolved.</p>
+<p>The second problem is that the useState hook is not defined so let's import that as well. 
+And when I recompile once more, the problems should be resolved.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-c. calculator, first draft (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9724,10 +9927,18 @@ calculator app.</p>
   alt="Calculator, first draft."
   style="width:60%" />
 
-<p>The structure of the app is there.  Currently it can only perform addition, so I need to add the other functionalities.</p>
-<p>Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable.</p>
-<p>I can use this as a template for the other functions I will write. So I will copy and paste this code into the functions I've started. In the minus function, I update result plus number to result minus number so that it subtracts whatever is in the input. In the times function I update the same snippet to result asterisk number.</p>
-<p>And finally, for the divide function, I use the divide operator or forward slash to make it result slash number. Now, I also have two functions called reset input which sets the input value to zero and reset results which sets the result value to zero as well.</p>
+<p>The structure of the app is there.  Currently it can only perform addition, so I need to 
+add the other functionalities.</p>
+<p>Let's start by examining what I have for the plus function. It runs the prevent default 
+function on the receive event object. And then it invokes a function for updating the state 
+variable.</p>
+<p>I can use this as a template for the other functions I will write. So I will copy and 
+paste this code into the functions I've started. In the minus function, I update result 
+plus number to result minus number so that it subtracts whatever is in the input. In the 
+times function I update the same snippet to result asterisk number.</p>
+<p>And finally, for the divide function, I use the divide operator or forward slash to 
+make it result slash number. Now, I also have two functions called reset input which sets 
+the input value to zero and reset results which sets the result value to zero as well.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9736,7 +9947,13 @@ calculator app.</p>
   alt="."
   style="width:60%" />
 
-<p>Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that.</p>
+<p>Reset input needs to run prevent default and I follow this with inputRef.current.value=0. 
+For reset results, I use a different approach. I have it run prevent default but then 
+instead of setting the value to zero directly, I have it multiplied the previous value by 0. 
+I type this as set result followed by an arrow function that directs prevVal to return prevVal 
+times 0. Now, if I go to the return statement of the app component, I find that I need to add 
+the value of the current total as a JSX expression, so I type result. I can condense this code 
+to a single line, so I'll do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s02-e. five button components added (263) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9745,21 +9962,34 @@ calculator app.</p>
   alt="Five button components bound to on-click events."
   style="width:60%" />
 
-<p>Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes.</p>
+<p>Next, I have to add buttons to trigger the functions that I've written. I paste in five button 
+components that I've written previously, each of which is bound to an on click event. This 
+component is written for the plus function so that is already taken care of. I'll update the 
+other button components by changing the function that is called for each one as well as the 
+text displayed on the button. So the second button calls the minus function. The third button 
+calls times. The fourth course divide, the fifth one calls reset input and the final button 
+calls reset results. Now, I press control s to save my changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-f. simplest working calculator (264) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-f. simplest working calculator (264) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img class="displayed"
   src="/images/w4-s02-f.png?raw=true"
   alt="Simplest working calculator snapshot."
   style="width:40%" />
 
-<p>I'm ready to test out my app so I type 2 in the input fields and then click on the add button. The result changes from 0 to 2 and then adding 2 again, updates it to 4. Next, if I type 1 and then click on subtract, the result becomes 3. If I enter 10 in the input field and click on multiply, I end up with 30 as the new result. And now, if I type 6 and click on divide, I get a value of 5.</p>
-<p>Finally, I can click reset inputs to set the value in the input field to 0. As well as click reset results to clear the results and bring it back to 0, and that's it. My code is complete and my app works as per the requirements.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>I'm ready to test out my app so I type 2 in the input fields and then click on the add 
+button. The result changes from 0 to 2 and then adding 2 again, updates it to 4. Next, if 
+I type 1 and then click on subtract, the result becomes 3. If I enter 10 in the input 
+field and click on multiply, I end up with 30 as the new result. And now, if I type 6 
+and click on divide, I get a value of 5.</p>
+<p>Finally, I can click reset inputs to set the value in the input field to 0. As well 
+as click reset results to clear the results and bring it back to 0, and that's it. My 
+code is complete and my app works as per the requirements.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>03. Building a Tic-Tac-Toe app</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a> to put them into practice and build your second mini-app with React.
+Check out the <a href="https://react.dev/learn/tutorial-tic-tac-toe">Tutorial</a> to put 
+them into practice and build your second mini-app with React.
 
 <p>You will build a small tic-tac-toe game during this tutorial. This
 tutorial does not assume any existing React knowledge. The techniques
@@ -9769,13 +9999,15 @@ and fully understanding it will give you a deep understanding of React.</p>
 <p>The tutorial is divided into several sections:</p>
 
 <ul>
-  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial">Setup for the tutorial</a> will give you a starting point to follow the tutorial.</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#setup-for-the-tutorial">
+    Setup for the tutorial</a> will give you a starting point to follow the tutorial.</p></li>
   <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#overview">Overview</a> will
     teach you the fundamentals of React: components, props, and state.</p></li>
-  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game">Completing the game</a> will teach you the most common techniques in React development.</p></li>
+  <li><p><a href="https://react.dev/learn/tutorial-tic-tac-toe#completing-the-game">Completing 
+    the game</a> will teach you the most common techniques in React development.</p></li>
 
-  <li><a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel">Adding time travel</a> will
-    give you a deeper insight into the unique strengths of React.</li>
+  <li><a href="https://react.dev/learn/tutorial-tic-tac-toe#adding-time-travel">Adding 
+    time travel</a> will give you a deeper insight into the unique strengths of React.</li>
 </ul>
 
 <h3>What are you building?</h3>
