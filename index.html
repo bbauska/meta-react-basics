@@ -2942,24 +2942,20 @@ inspect the results of this transpiling. Once you visit the website,
 make sure to navigate to the <i>Try it out</i> link in the main navigation.</p>
 <p>For example, let's say you have a component that returns a piece of JSX:</p>
 
-<pre>
-function App() {
+<pre>function App() {
   
   return &lt;h1&gt;Hello there&lt;/h1&gt;
-}
-</pre>
+}</pre>
 
 <p>... if you used the Babel transpiler to transpile this JSX syntactic
 sugar code down to plain JavaScript code, you'd get back some unusual
 code:</p>
 
-<pre>
-"use strict";
+<pre>"use strict";
 
 function App() {
   return /#__PURE__/React.createElement("h1", null, "Hello there");
-}
-</pre>
+}</pre>
 
 <p>You just want to focus on the <b>React.createElement("h1", null,
 "Hello there");</b> part. You can ignore the rest.</p>
@@ -2977,39 +2973,33 @@ function App() {
 <p>For example, let's say you have a slightly more complex JSX element
 structure:</p>
 
-<pre>
-function App() { 
+<pre>function App() { 
   return (
     &lt;div&gt;
       &lt;h1&gt;Hello there&lt;/h1&gt;
     &lt;/div&gt;
   )
-}
-</pre>
+}</pre>
 
 <p>... the transpiled return statement in plain JavaScript again returns
 two <b>createElement</b> functions:</p>
 
-<pre>
-"use strict";
+<pre>"use strict";
 function App() {
   return /#__PURE__/React.createElement("div", null, /#__PURE__/
     React.createElement("h1", null, "Hello there"));
-}
-</pre>
+}</pre>
 
 <p>If you format this output, remove the <b>"use strict"</b> line, and
 remove the <b>&#95;&#95;PURE&#95;&#95;</b> comments, you get a more readable output:</p>
 
-<pre>
-function App() {
+<pre>function App() {
   return React.createElement(
     "div",
     null,
     React.createElement("h1", null, "Hello there")
   );
-}
-</pre>
+}</pre>
 
 <p>The third argument of the outer-most <b>React.createElement</b> call
 is another <b>React.createElement</b> call.</p>
@@ -3031,8 +3021,7 @@ the word <b>null</b>:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-"use strict";
+<pre>"use strict";
   
 function App() {
   return React.createElement(
@@ -3040,8 +3029,7 @@ function App() {
     {},
     React.createElement("h1", {}, "Hello there")
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -3051,13 +3039,11 @@ in React.</p>
 
 <p>The way this works is described in React docs using the following code:</p>
 
-<pre>
-React.createElement(
+<pre>React.createElement(
   type,
   [props],
   [...children]
-)
-</pre>
+)</pre>
 
 <h3>The third argument (...children)</h3>
 
@@ -3223,8 +3209,7 @@ a component using classes and functions.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import Heading from "./Heading";
+<pre>import Heading from "./Heading";
 
 function App() {
   return (
@@ -3235,22 +3220,19 @@ function App() {
   );
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
 <p>And here is the completed Heading.js file:</p>
 
-<pre>
-function Heading(props) {
+<pre>function Heading(props) {
   return (
     &lt;h1&gt;Hello, {props.firstName}&lt;/h1&gt;
   )
 }
  
-export default Heading;
-</pre>
+export default Heading;</pre>
 
 <p>Here is the output from the solution code for the App.js file:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3266,30 +3248,26 @@ export default Heading;
 <p><b>Step 1:</b> First, you passed the props object as a parameter to the
 <b>Heading</b> component in the 'Heading.js' file.</p>
 
-<pre>
-function Heading(props) {
+<pre>function Heading(props) {
   return (
     &lt;h1&gt;Hello, &lt;/h1&gt;
   )
 }
   
-export default Heading;
-</pre>
+export default Heading;</pre>
 
 <p><b>Step 2:</b> Next, inside the <b>Heading</b> component's body, you located
 the <b>return</b> statement, and added a JSX expression that accesses the
 <b>firstName</b> property of the props object, inside the <b>return</b>
 statement's <b>h1</b>, after <b>Hello</b>.</p>
 
-<pre>
-function Heading(props) {
+<pre>function Heading(props) {
   return (
     &lt;h1&gt;Hello, {props.firstName}&lt;/h1&gt;
   )
 }
   
-export default Heading;
-</pre>
+export default Heading;</pre>
  
 <p><b>Step 3:</b> Then, inside the App component's return statement, you
 located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
@@ -3298,13 +3276,12 @@ located the <b>&lt;Heading /&gt;</b> JSX element, and added the attribute of
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import Heading from "./Heading";
+<pre>import Heading from "./Heading";
   
 function App() {
   return (
     &lt;div className="App">
-      <Heading firstName="Bob" /&gt;
+      &lt;Heading firstName="Bob" /&gt;
     &lt;/div&gt;
   );
 }
@@ -3324,19 +3301,17 @@ and see how the page updates with the new name.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import Heading from "./Heading";
+<pre>import Heading from "./Heading";
   
 function App() {
   return (
     &lt;div className="App">
-      <Heading firstName="Any name other than Bob" /&gt;
+      &lt;Heading firstName="Any name other than Bob" /&gt;
     &lt;/div&gt;
   );
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 
@@ -3347,20 +3322,18 @@ another name for this value.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import Heading from "./Heading";
+<pre>import Heading from "./Heading";
 
 function App() {
   return (
     &lt;div className="App">
-      <Heading firstName="Any name other than Bob" /&gt;
-      <Heading firstName="Jack" /&gt;
+      &lt;Heading firstName="Any name other than Bob" /&gt;
+      &lt;Heading firstName="Jack" /&gt;
     &lt;/div&gt;
   );
 }
   
-export default App;
-</pre>
+export default App;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3515,7 +3488,7 @@ function Apples(props) {
    return (
      &lt;div className="promo-section">
          &lt;div&gt;
-             <h2>These apples are: {props.color}</h2>
+             &lt;h2&gt;These apples are: {props.color}</h2>
              &lt;/div&gt;
              &lt;div&gt;
              <h3>There are {props.number} apples.</h3>
@@ -3531,13 +3504,11 @@ export default Apples
 
 <p>There is also a <b>Pears</b> component:</p>
 
-<pre>
-function Pears(props) {
+<pre>function Pears(props) {
   return (
-    <h2>I don't like pears, but my friend, {props.friend}, does</h2>
+    &lt;h2&gt;I don't like pears, but my friend, {props.friend}, does&lt;/h2&gt;
   )
-}
-</pre>
+}</pre>
 
 Now, the question is this: Let's say you want to have a <b>Bag</b>
 component, which can be used to "carry" <b>Apples</b> or <b>Pears</b>. How
@@ -3550,8 +3521,7 @@ You can define a <b>Bag</b> component as follows:
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Bag(props) {
+<pre>function Bag(props) {
   const bag = {
     padding: "20px",
     border: "1px solid gray",
@@ -3565,8 +3535,7 @@ function Bag(props) {
   )
 }
 
- export default Bag
-</pre>
+ export default Bag</pre>
 
 </details>
 
@@ -3578,9 +3547,7 @@ But what is this <b>props.children?</b>
 
 Consider a very simple example:
 
-<pre>
-</Example>
-</pre>
+<pre>&lt;/Example&gt;</pre>
 
 The <b>Hello there</b> text is a child of the Example JSX element. The
 Example JSX Element above is an "invocation" of the <b>Example.js</b>
@@ -3591,9 +3558,7 @@ as a <b>named prop</b> when rendering the <b>Example</b> component?
 
 Here's how that would look like:
 
-<pre>
-<Example children="Hello there" /&gt;
-</pre>
+<pre>&lt;Example children="Hello there" /&gt;</pre>
 
 Ok, so, there are two ways to do it. But this is just the beginning.
 
@@ -3603,7 +3568,7 @@ What if you, say, wanted to surround the <b>Hello there</b> text in an
 Obviously, in JSX, that is easily achievable:
 
 <pre>
-<Example children={<h3>Hello there</h3>} /&gt;
+&lt;Example children={<h3>Hello there</h3>} /&gt;
 </pre>
 
 What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
@@ -3612,14 +3577,14 @@ example, named <b>Hello</b>?
 In that case, you'd have to update the code like this:
 
 <pre>
-<Example children={<Hello /&gt;} /&gt;
+&lt;Example children={<Hello /&gt;} /&gt;
 </pre>
 
 You could even make the <b>Hello</b> component more dynamic, by giving it
 its own prop:
 
 <pre>
-<Example children={<Hello message="Hello there" /&gt;} /&gt;
+&lt;Example children={<Hello message="Hello there" /&gt;} /&gt;
 </pre>
 
 So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
@@ -3746,7 +3711,7 @@ function Promo(props) {
         &lt;h1&gt;{props.heading}&lt;/h1&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        <h2>{props.promoSubHeading}</h2>
+        &lt;h2&gt;{props.promoSubHeading}</h2>
       &lt;/div&gt;
     &lt;/div&gt;
   );
@@ -3782,7 +3747,7 @@ function Promo(props) {
         &lt;h1&gt;{props.heading}&lt;/h1&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        <h2>{props.promoSubHeading}</h2>
+        &lt;h2&gt;{props.promoSubHeading}</h2>
       &lt;/div&gt;
     &lt;/div&gt;
   );
@@ -3807,7 +3772,7 @@ function Promo(props) {
           fontWeight:"bold"}}>{props.heading}&lt;/h1&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        <h2>{props.promoSubHeading}</h2>
+        &lt;h2&gt;{props.promoSubHeading}</h2>
       &lt;/div&gt;
     &lt;/div&gt;
   );
@@ -3875,7 +3840,7 @@ const styles = {
         &lt;/h1&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        <h2>{props.promoSubHeading}</h2>
+        &lt;h2&gt;{props.promoSubHeading}</h2>
       &lt;/div&gt;
     &lt;/div&gt;
   );
@@ -4044,9 +4009,7 @@ Changing a component from a function declaration to a function
 expression doesn't change its behavior, or how you write the code to
 render the <b>Nav</b> component. It's still the same:
 
-<pre>
-<Nav first="Home" />
-</pre>
+<pre>&lt;Nav first="Home" /&gt;</pre>
 
 You can also take this concept a step further, using arrow functions.
 
@@ -4058,15 +4021,13 @@ One of the main benefits of using arrow functions is its shorter syntax.
 
 Consider the Nav function expression written as an arrow function:
 
-<pre>
-const Nav = (props) => {
+<pre>const Nav = (props) =&gt; {
   return (
-    <ul>
-      <li>{props.first}</li>
-    </ul>
+    &lt;ul&gt;
+      &lt;li&gt;{props.first}&lt;/li&gt;
+    &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 So, the way to think about this is the following:
 
@@ -4078,15 +4039,11 @@ So, the way to think about this is the following:
 
 -   To reiterate, take the smallest possible <b>anonymous ES5 function</b>:
 
-<pre>
-const example = function() {}
-</pre>
+<pre>const example = function() {}</pre>
 
 And then observe how this is written as an arrow function:
 
-<pre>
-const example = () => {}
-</pre>
+<pre>const example = () =&gt; {}</pre>
 
 Another important rule regarding arrow functions is that using the
 parentheses is optional if there's a single parameter that a function
@@ -4095,15 +4052,13 @@ accepts.
 In other words, another correct way to write the previous Nav arrow
 function component would be to drop the parentheses around 'props':
 
-<pre>
-const Nav = props => {
+<pre>const Nav = props => {
   return (
-    <ul>
-      <li>{props.first}</li>
-    </ul>
+    &lt;ul&gt;
+      &lt;li&gt;{props.first}&lt;/li&gt;
+    &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 In all other cases, when you write arrow functions, <b>for any number of
 parameters other than a single parameter, using parentheses around
@@ -4112,15 +4067,13 @@ parameters is compulsory</b>.
 For example, if your <b>Nav</b> component wasn't accepting any parameters,
 you'd code it with empty parentheses:
 
-<pre>
-const Nav = () => {
+<pre>const Nav = () =&gt; {
   return (
-    <ul>
-      <li>Home</li>
-    </ul>
+    &lt;ul&gt;
+      &lt;li&gt;Home&lt;/li&gt;
+    &lt;/ul&gt;
   )
-}
-</pre>
+}</pre>
 
 Another interesting thing about arrow functions is the <b>implicit
 return</b>. However, it only works if it's on the same line of code as
@@ -4130,9 +4083,7 @@ entire component is a single line of code.
 To demonstrate how this works, let's re-write the <b>Nav</b> component as a
 one-liner:
 
-<pre>
-const Nav = () => <ul><li>Home</li></ul>
-</pre>
+<pre>const Nav = () =&gt; &lt;ul&gt;&lt;li&gt;Home&lt;/li&gt;&lt;/ul&gt;</pre>
 
 Note that with the implicit return, you don't even have to use the
 curly braces that are compulsory function body delimiters in all other
@@ -4146,9 +4097,7 @@ example, the <b>forEach()</b> built-in array method.
 
 For example:
 
-<pre>
-[10, 20, 30].forEach(item => item * 10)
-</pre>
+<pre>[10, 20, 30].forEach(item =&gt; item * 10)</pre>
 
 The output of the above vanilla JavaScript line of code would be three
 number values:
@@ -4164,30 +4113,24 @@ can run in "plain" JavaScript without any additional dependencies.
 
 You could also write this code in ES5 syntax:
 
-<pre>
-[10, 20, 30].forEach(function(item) {
+<pre>[10, 20, 30].forEach(function(item) {
         return item * 10
     }
-)
-</pre>
+)</pre>
 
 Regardless of how you write it, the <b>forEach()</b> method can be run on
 an array. The <b>forEach()</b> method accepts a single parameter: <b>an
 anonymous function</b>. If you write this anonymous function in ES5
 syntax, then it would contain a return statement:
 
-<pre>
-function(item) {
+<pre>function(item) {
     return item * 10
-}
-</pre>
+}</pre>
 
 If you write it as an ES6 function instead, it can be simplified as one
 line:
 
-<pre>
-item => item * 10
-</pre>
+<pre>item =&gt; item * 10</pre>
 
 Both these functions perform the exact same task. Only the syntax is
 different. The ES6 function is a lot shorter because:
@@ -4340,15 +4283,13 @@ functions inside of JSX expressions.
 You are likely familiar with the structure of an if...else conditional.
 Here is a quick refresher:
 
-<pre>
-let name = 'Bob';
+<pre>let name = 'Bob';
 
 if (name == 'Bob') {
   console.log('Hello, Bob');
 } else {
   console.log('Hello, Friend');
-};
-</pre>
+};</pre>
 
 <p>The above code works as follows:</p>
 
@@ -4384,9 +4325,7 @@ engine returns will be the boolean value of <b>false</b>.</p>
 <p>Here is the code that reflects the explanation in the previous
 paragraph:</p>
 
-<pre>
-name == 'Bob' ?
-</pre>
+<pre>name == 'Bob' ?</pre>
 
 <p>Note that the above code is incompleted. I have the condition that I'm
 checking (the <b>name == 'Bob'</b> part). I also have the <b>?</b>
@@ -4396,9 +4335,7 @@ character, which is the colon, that is the <b>:</b> character. This
 character is placed after the question mark character. I can now expand
 my code to include this as well:</p>
 
-<pre>
-name == 'Bob' ? :
-</pre>
+<pre>name == 'Bob' ? :</pre>
 
 This brings me a step closer to completing my ternary operator. Although
 I've added the characters needed to construct the ternary operator, I
@@ -4407,20 +4344,16 @@ still need to add the return values. In other words, if <b>name ==
 Bob!". Otherwise, I want to return the words "I don't know this
 person".
 
-<pre>
-name == Bob ? "Yes, it is Bob" : "I don't know this person";
-</pre>
+<pre>name == Bob ? "Yes, it is Bob" : "I don't know this person";</pre>
 
 This, in essence, is how the ternary operator works. It's just some
 shorthand syntax that I can use as a replacement for the <b>if</b>
 statement. To prove that this is really the case, here's my starting
 if...else example, written as a ternary operator:
 
-<pre>
-let name = 'Bob';
+<pre>let name = 'Bob';
 
-name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');
-</pre>
+name == 'Bob' ? console.log('Hello, Bob') : console.log('Hello, Friend');</pre>
 
 <h3>Using ternary expressions in JSX</h3>
 
@@ -4430,15 +4363,13 @@ to randomly change the text that is displayed.
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Example() {
+<pre>function Example() {
   return (
-    &lt;div className="heading">
-      &lt;h1&gt;{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}&lt;/h1&gt;
+    &lt;div className="heading"&gt;
+      &lt;h1&gt;{Math.random() &gt;= 0.5 ? "Over 0.5" : "Under 0.5"}&lt;/h1&gt;
     &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 </details.
 
@@ -4449,9 +4380,7 @@ want it to parse the code inside as regular JavaScript.</p>
 ternary statement conceptually, expressed in pseudo-code, works like
 this:</p>
 
-<pre>
-comparison ? true : false
-</pre>
+<pre>comparison ? true : false</pre>
 
 In the actual code example at the start of this lesson item, the
 comparison part, which goes to the left of the question mark, is using
@@ -4480,8 +4409,7 @@ return a random number:
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Example2() {
+<pre>function Example2() {
   return (
     &lt;div className="heading">
       &lt;h1&gt;Here's a random number from 0 to 10: 
@@ -4489,8 +4417,7 @@ function Example2() {
       &lt;/h1&gt;
     &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 </details>
 
@@ -4503,16 +4430,14 @@ and arithmetic operators, to display a random number between 0 and 10.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Example3() {
-  const getRandomNum = () => Math.floor(Math.random() * 10) + 1
+<pre>function Example3() {
+  const getRandomNum = () =&gt; Math.floor(Math.random() * 10) + 1
     return (
-      &lt;div className="heading">
+      &lt;div className="heading"&gt;
         &lt;h1&gt;Here's a random number from 0 to 10: { getRandomNum() }&lt;/h1&gt;
       &lt;/div&gt;
     );
-};
-</pre>
+};</pre>
 
 </details>
 
@@ -4525,19 +4450,15 @@ function declaration.</p>
 
 <h4>Function expression:</h4>
 
-<pre>
-const getRandomNum = function() {
+<pre>const getRandomNum = function() {
   return Math.floor(Math.random() * 10) + 1
-} ;
-</pre>
+} ;</pre>
 
 <h4>Function declaration:</h4>
 
-<pre>
-function getRandomNum() {
+<pre>function getRandomNum() {
   return Math.floor(Math.random() *10) + 1
-};
-</pre>
+};</pre>
 
 Of course, there are many other examples. The ones used here are there
 to help you understand how versatile and seamless the JSX syntax is. As
@@ -4560,23 +4481,21 @@ arithmetic operations.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-const bool = false; 
+<pre>const bool = false; 
   
 function Example(props) {
   return (
-    <h2>The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}</h2>
+    &lt;h2&gt;The value of the toggleBoolean prop is: {props.toggleBoolean.toString()}&lt;/h2&gt;
   );
 };
   
 export default function App() { 
   return ( 
-    &lt;div className="App"> 
-      <Example toggleBoolean={!bool} /&gt;
+    &lt;div className="App"&gt;
+      &lt;Example toggleBoolean={!bool} /&gt;
     &lt;/div&gt; 
   ); 
-};
-</pre>
+};</pre>
 
 </details>
 
@@ -4597,34 +4516,32 @@ screen.
 <details open>
   <summary>React code:</summary>
 
-<pre>
-const bool = false;
+<pre>const bool = false;
 const str1 = "just";
   
 function Example(props) {
   return (
     &lt;div&gt;
-      <h2>
+      &lt;h2&gt;
         The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
-      </h2>
-      <p>The value of the math prop is: <em>{props.math}</em></p>
-      <p>The value of the str prop is: <em>{props.str}</em></p>
+      &lt;/h2&gt;
+      &lt;p&gt;The value of the math prop is: &lt;em&gt;{props.math}&lt;/em&gt;&lt;/p&gt;
+      &lt;p&gt;The value of the str prop is: &lt;em&gt;{props.str}&lt;/em&gt;&lt;/p&gt;
     &lt;/div&gt;
   );
 };
 
 export default function App() {
   return (
-    &lt;div className="App">
-      <Example
+    &lt;div className="App"&gt;
+      &lt;Example
         toggleBoolean={!bool}
         math={(10 + 20) / 3}
         str={str1 + ' another ' + 'string'}
       /&gt;
     &lt;/div&gt;
   );
-};
-</pre>
+};</pre>
 
 </details>
 
@@ -4780,7 +4697,7 @@ export default App;
 function Card(props) {
   return (
     &lt;div className="card">
-      <h2>{props.h2}</h2>
+      &lt;h2&gt;{props.h2}</h2>
       <h3>{props.h3}</h3>
     &lt;/div&gt;
   );
@@ -4846,7 +4763,7 @@ function Card(props) {
 function Card(props) {
   return (
     &lt;div&gt;
-      <h2></h2>
+      &lt;h2&gt;</h2>
       <h3></h3>
     &lt;/div&gt;  
   );
@@ -4864,7 +4781,7 @@ function Card(props) {
 function Card(props) {
   return (
     &lt;div className="card">
-      <h2>{props.h2}</h2>
+      &lt;h2&gt;{props.h2}</h2>
       <h3></h3>
     &lt;/div&gt;
   );
@@ -4882,7 +4799,7 @@ function Card(props) {
 function Card(props) {
   return (
     &lt;div className="card">
-      <h2>{props.h2}</h2>
+      &lt;h2&gt;{props.h2}</h2>
       <h3>{props.h3}</h3>
     &lt;/div&gt;
   );
@@ -4900,7 +4817,7 @@ function Card(props) {
 function Card(props) {
   return (
     &lt;div className="card">
-      <h2>{props.h2}</h2>
+      &lt;h2&gt;{props.h2}</h2>
       <h3>{props.h3}</h3>
     &lt;/div&gt;
   );
@@ -5787,9 +5704,9 @@ This approach allows you to directly pass in an ES5 function declaration
 as the <b>onClick</b> event-handling attribute's value:
 
 <pre>
-<button onClick={function() {console.log('first example')}}>
+&lt;button onClick={function() {console.log('first example')}}>
   An inline anonymous ES5 function event handler
-</button>
+&lt;/button&gt;
 </pre>
 
 Although it's possible to write your click handlers using this syntax,
@@ -5802,7 +5719,7 @@ With this approach, you can directly pass in an ES6 function declaration
 as the <b>onClick</b> event-handling attribute's value:
 
 <pre>
-</button>
+&lt;/button&gt;
 </pre>
 
 This approach is much more common then the previous one. If you want to
@@ -5827,9 +5744,9 @@ function App() {
 
   return (
     &lt;div className="thirdExample">
-      <button onClick={thirdExample}>
+      &lt;button onClick={thirdExample}>
         using a separate function declaration
-      </button>
+      &lt;/button&gt;
     &lt;/div&gt;
   );
 };
@@ -5868,9 +5785,9 @@ function App() {
   const fourthExample = () => console.log('fourth example');
   return (
     &lt;div className="fourthExample">
-      <button onClick={fourthExample}>
+      &lt;button onClick={fourthExample}>
         using a separate function expression
-      </button>
+      &lt;/button&gt;
     &lt;/div&gt;
   );
 };
@@ -6079,7 +5996,7 @@ events on a single JSX element.</p>
 10.   return (
 11.     &lt;div&gt;
 12.       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
-13.       <button onClick={handleClick}>Guess the number between 1 and 3</button>
+13.       &lt;button onClick={handleClick}>Guess the number between 1 and 3&lt;/button&gt;
 14.     &lt;/div&gt;
 15.   );
 16. }
@@ -6111,7 +6028,7 @@ closing <b>button</b> tag, to the App component's <b>h1</b> element.</p>
 3.    return (
 4.      &lt;div&gt;
 5.        &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
-6.        <button></button>
+6.        &lt;button&gt;&lt;/button&gt;
 7.      &lt;/div&gt;
 8.    );
 9.  }
@@ -6133,7 +6050,7 @@ added the following text: Guess the number between 1 and 3.</p>
 3.    return (
 4.      &lt;div&gt;
 5.        &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
-6.        <button>Guess the number between 1 and 3</button>
+6.        &lt;button&gt;Guess the number between 1 and 3&lt;/button&gt;
 7.      &lt;/div&gt;
 8.    );
 9.  }
@@ -6155,7 +6072,7 @@ function App() {
   return (
     &lt;div&gt;
       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
-      <button onClick={handleClick}>Guess the number between 1 and 3</button>
+      &lt;button onClick={handleClick}>Guess the number between 1 and 3&lt;/button&gt;
     &lt;/div&gt;
   );
 }
@@ -6183,7 +6100,7 @@ function App() {
   return (
     &lt;div&gt;
       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
-      <button onClick={handleClick}>Guess the number between 1 and 3</button>
+      &lt;button onClick={handleClick}>Guess the number between 1 and 3&lt;/button&gt;
     &lt;/div&gt;
   );
 }
@@ -6768,9 +6685,9 @@ get updated with the latest text that has been typed.</p>
 11.	    <>
 12.	    <input value={inputText} onChange={handleChange} /&gt;
 13.	    <p>You typed: {inputText}</p>
-14.	    <button onClick={() => setText('hello')}>
+14.	    &lt;button onClick={() => setText('hello')}>
 15.	      Reset
-16.	    </button>
+16.	    &lt;/button&gt;
 17.     </&gt;
 18.	  );
 19. }
@@ -6956,7 +6873,7 @@ function TextInputWithFocusButton() {
   return (
     <>
       <input ref={inputEl} type="text" /&gt;
-      <button onClick={onButtonClick}>Focus the input</button>
+      &lt;button onClick={onButtonClick}>Focus the input&lt;/button&gt;
     </&gt;
   );
 }
@@ -7445,8 +7362,8 @@ can focus on it and understand it in isolation.</p>
 14. function Wrapper(props) {
 15.   return (
 16.     &lt;div style={{ border: "10px solid lightgray" }}>
-17.       <h2>Wrapper here</h2>
-18.       <Button msg={props.msg} /&gt;
+17.       &lt;h2&gt;Wrapper here</h2>
+18.       &lt;button msg={props.msg} /&gt;
 19.     &lt;/div&gt;
 20.   );
 21. };
@@ -7455,7 +7372,7 @@ can focus on it and understand it in isolation.</p>
 24.   return (
 25.     &lt;div style={{ border: "20px solid orange" }}>
 26.       <h3>This is the Button component</h3>
-27.       <button onClick={() => alert(props.msg)}>Click me!</button>
+27.       &lt;button onClick={() => alert(props.msg)}>Click me!&lt;/button&gt;
 28.     &lt;/div&gt;
 29.   );
 30. };
@@ -7783,7 +7700,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <pre>
 1.  function FruitsCounter(props) {
 2.    return (
-3.      <h2>Total fruits: {props.fruits.length}</h2>
+3.      &lt;h2&gt;Total fruits: {props.fruits.length}</h2>
 4.    )
 5.  }
 6.
@@ -7861,7 +7778,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <pre>
 1.  function FruitsCounter(props) {
 2.    return (
-3.      <h2>Total fruits: {props.fruits.length}</h2>
+3.      &lt;h2&gt;Total fruits: {props.fruits.length}</h2>
 4.    )
 5.  }
 6.
@@ -8298,8 +8215,7 @@ A Single Page Application allows the user to interact with the website without d
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  import "./App.css";
+<pre>1.  import "./App.css";
 2.  import Homepage from "./Homepage";
 3.  import AboutLittleLemon from "./AboutLittleLemon";
 4.  import Contact from "./Contact";
@@ -8308,22 +8224,21 @@ A Single Page Application allows the user to interact with the website without d
 7.  function App() {
 8.    return (
 9.      &lt;div&gt; 
-10.       <nav>
-11.         <Link to="/" className="nav-item">Homepage</Link>
-12.         <Link to="/about" className="nav-item">About Little Lemon</Link>
-13.         <Link to="/contact" className="nav-item">Contact</Link>
-14.       </nav>
-15.       <Routes> 
-16.         <Route path="/" element={<Homepage /&gt;}></Route>
-17.         <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
-18.         <Route path="/contact" element={<Contact /&gt;}></Route>
-19.	      </Routes>
+10.       &lt;nav&gt;
+11.         &lt;Link to="/" className="nav-item">Homepage</Link>
+12.         &lt;Link to="/about" className="nav-item">About Little Lemon</Link>
+13.         &lt;Link to="/contact" className="nav-item">Contact</Link>
+14.       &lt;/nav&gt;
+15.       &lt;Routes&gt; 
+16.         &lt;Route path="/" element={<Homepage /&gt;}></Route>
+17.         &lt;Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
+18.         &lt;Route path="/contact" element={<Contact /&gt;}></Route>
+19.	      </Routes&gt;
 20.     &lt;/div&gt;
 21.   );
 22.	};
 23.
-24.	export default App;
-</pre>
+24.	export default App;</pre>
 
 </details>
 
@@ -8381,14 +8296,14 @@ page.&lt;/h1&gt;.</p>
 7.	function App() {
 8.	  return (
 9.	    &lt;div&gt; 
-10.	      <nav>
-11.	        <Link to="/" className="nav-item">Homepage</Link>
-12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
-13.	      </nav>
-14.	      <Routes> 
-15.	        <Route path="/" element={<Homepage /&gt;}></Route>
-16.	        <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
-17.	      </Routes>
+10.	      &lt;nav&gt;
+11.	        &lt;Link to="/" className="nav-item">Homepage</Link>
+12.	        &lt;Link to="/about" className="nav-item">About Little Lemon</Link>
+13.	      &lt;/nav&gt;
+14.	      &lt;Routes&gt; 
+15.	        &lt;Route path="/" element={<Homepage /&gt;}></Route>
+16.	        &lt;Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
+17.	      </Routes&gt;
 18.	    &lt;/div&gt;
 19.	  );
 20.	};
@@ -8400,7 +8315,7 @@ page.&lt;/h1&gt;.</p>
 
 <h4>Step 5</h4>
 
-<p>Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another <Link> element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.</p>
+<p>Inside the App.js file's App function's return statement, locate the nav element, and inside of it, add another &lt;Link&gt; element, with the to attribute pointing to contact, the className set to "nav-item", and the the text inside the Link element's opening and closing tags set to Contact.</p>
 
 <details open>
   <summary>React code:</summary>
@@ -8415,15 +8330,15 @@ page.&lt;/h1&gt;.</p>
 7.  function App() {
 8.    return (
 9.      &lt;div&gt; 
-10.	      <nav>
-11.	        <Link to="/" className="nav-item">Homepage</Link>
-12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
-13.	        <Link to="/contact" className="nav-item">Contact</Link>
-14.	      </nav>
-15.	      <Routes> 
-16.	        <Route path="/" element={<Homepage /&gt;}></Route>
-17.	        <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
-18.	      </Routes>
+10.	      &lt;nav&gt;
+11.	        &lt;Link to="/" className="nav-item">Homepage</Link>
+12.	        &lt;Link to="/about" className="nav-item">About Little Lemon</Link>
+13.	        &lt;Link to="/contact" className="nav-item">Contact</Link>
+14.	      &lt;/nav&gt;
+15.	      &lt;Routes&gt; 
+16.	        &lt;Route path="/" element={<Homepage /&gt;}></Route>
+17.	        &lt;Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
+18.	      </Routes&gt;
 19.	    &lt;/div&gt;
 20.	  );
 21.	};
@@ -8441,8 +8356,7 @@ set to {&lt;Contact /&gt;}.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  import "./App.css";
+<pre>1.  import "./App.css";
 2.  import Homepage from "./Homepage";
 3.  import AboutLittleLemon from "./AboutLittleLemon";
 4.  import Contact from "./Contact";
@@ -8451,20 +8365,19 @@ set to {&lt;Contact /&gt;}.</p>
 7.  function App() {
 8.    return (
 9.      &lt;div&gt; 
-10.       <nav>
-11.         <Link to="/" className="nav-item">Homepage</Link>
-12.         <Link to="/about" className="nav-item">About Little Lemon</Link>
-13.         <Link to="/contact" className="nav-item">Contact</Link>
-14.       </nav>
-15.       <Routes> 
-16.         <Route path="/" element={<Homepage /&gt;}></Route>
-17.         <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
-18.         <Route path="/contact" element={<Contact /&gt;}></Route>
-19.       </Routes>
+10.       &lt;nav&gt;
+11.         &lt;Link to="/" className="nav-item">Homepage</Link>
+12.         &lt;Link to="/about" className="nav-item">About Little Lemon</Link>
+13.         &lt;Link to="/contact" className="nav-item">Contact</Link>
+14.       &lt;/nav&gt;
+15.       &lt;Routes&gt; 
+16.         &lt;Route path="/" element={<Homepage /&gt;}></Route>
+17.         &lt;Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
+18.         &lt;Route path="/contact" element={<Contact /&gt;}></Route>
+19.       &lt;/Routes&gt;
 20.     &lt;/div&gt;
 21.   );
-22. };
-</pre>
+22. };</pre>
 
 </details>
 
@@ -8628,18 +8541,17 @@ set to {&lt;Contact /&gt;}.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  function CurrentMessage({day}) {
-2.    const weekday = (day >= 1 && day <= 5);
-3.    const weekend = (day >= 6 && day <= 7);
+<pre>1.  function CurrentMessage({day}) {
+2.    const weekday = (day &gt;= 1 && day &lt;= 5);
+3.    const weekend = (day &gt;= 6 && day &lt;= 7);
 4.    let message;
 5.
 6.    if (weekday) {
-7.      message = <Workdays /&gt;
+7.      message = &lt;Workdays /&gt;
 8.    } else if (weekend) {
-9.      message = <Weekends /&gt;
+9.      message = &lt;Weekends /&gt;
 10.   } else {
-11.	    message = <ErrorComponent /&gt;
+11.	    message = &lt;ErrorComponent /&gt;
 12.	  }
 13.	
 14.	  return (
@@ -8647,8 +8559,7 @@ set to {&lt;Contact /&gt;}.</p>
 16.	      {message}
 17.	    &lt;/div&gt;
 18.	  )
-19.	}
-</pre>
+19.	}</pre>
 
 </details>
 
@@ -8659,20 +8570,18 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  function LogicalAndExample() {
+<pre>1.  function LogicalAndExample() {
 2.    const val = prompt('Anything but a 0')
 3.
 4.    return (
 5.      &lt;div&gt;
 6.        &lt;h1&gt;Please don't type in a zero&lt;/h1&gt;
 7.        {val &&
-8.          <h2>Yay, no 0 was typed in!</h2>
+8.          &lt;h2&gt;Yay, no 0 was typed in!</h2>
 9.        }
 10.     &lt;/div&gt;
 11.   )
-12. }
-</pre>
+12. }</pre>
 
 </details>
 
@@ -8685,16 +8594,12 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 
 <p>To understand what will be output on screen, consider the following example in standard JavaScript:</p>
 
-<pre>
-1.  true && console.log('This will show')
-</pre>
+<pre>1.  true && console.log('This will show')</pre>
 
 <p>If you ran this command in the browser’s console, the text ‘This will show’ will be output.
 On the flip side, consider the following example:</p>
 
-<pre>
-1.  false && console.log('This will never show')
-</pre>
+<pre>1.  false && console.log('This will never show')</pre>
 
 <p>If you ran this command, the output will just be the boolean value of false.
 In other words, if a prop gets evaluated to true, using the && operator, you can render whatever 
@@ -8711,25 +8616,21 @@ certain conditions being met.</p>
 <p>For example, you can set a variable to a different value based on the result of a 
 condition check.</p>
 
-<pre>
-1.  let name; 
-2.  if (Math.random() > 0.5) { 
+<pre>1.  let name; 
+2.  if (Math.random() &gt; 0.5) { 
 3.    name = "Mike" 
 4.  } else { 
 5.    name = "Susan" 
-6.  } 
-</pre>
+6.  }</pre>
 
-<pre>
-1.  let name; 
+<pre>1.  let name; 
 2.  let newUser = true; 
-3.  if (Math.random() > 0.5 && newUser) { 
+3.  if (Math.random() &gt; 0.5 && newUser) { 
 4.    name = "Mike" 
 5.  } else { 
 6.    name = "Susan" 
 7.  } 
 </pre>
-
 <p>Conditional rendering is built on the same principle. By using conditions, you 
 can return different child components. This is often done using the props that are 
 passed into the parent component, but can also be done based on 
@@ -8742,21 +8643,17 @@ parent component and return a different child component based on the value of th
 <p>In this example, the props contains a property named isLoggedIn. When this is set to 
 true, the LogoutButton component is returned. Otherwise, the LoginButton component is returned.</p>
 
-<pre>
-1.  function LogInOutButton(props) {
+<pre>1.  function LogInOutButton(props) {
 2.    const isLoggedIn = props.isLoggedIn;
 3.    if (isLoggedIn) {
-4.      return <LogoutButton /&gt;;
+4.      return &lt;LogoutButton /&gt;;
 5.    } else {
-6.      return <LoginButton /&gt;;
-7.  }
-</pre>
+6.      return &lt;LoginButton /&gt;;
+7.  }</pre>
 
 <p>Then when the LogInOutButton parent component is used, the prop can be passed in.</p>
 
-<pre>
-1.  <LogInOutButton isLoggedIn={false} /&gt;
-</pre>
+<pre>1.  &lt;LogInOutButton isLoggedIn={false} /&gt;</pre>
 
 <p>This is a simple example showing how you can change what is displayed based on a condition 
 check. You will use this often when developing React applications.</p>
@@ -8940,8 +8837,7 @@ webpack. This is because webpack is the built-in tool for the create-react-app.<
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  import React from 'react';
+<pre>1.  import React from 'react';
 2.  import '@atlaskit/css-reset';
 3.  import styled from 'styled-components';
 4.  import './index.css';
@@ -8950,8 +8846,7 @@ webpack. This is because webpack is the built-in tool for the create-react-app.<
 7.  import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 8.  import Nav from './components/Nav';
 9.  import data from './data';
-10. import Loading from './components/Loading';
-</pre>
+10. import Loading from './components/Loading';</pre>
 
 </details>
  
@@ -9079,20 +8974,18 @@ image. I just require it and provide the string with the relative path to the im
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.	import logo from"./assets/logo.png"
+<pre>1.	import logo from"./assets/logo.png"
 2.	
 3.	function App() {
 4.	  return (
-5.	    &lt;div className="App">
+5.	    &lt;div className="App"&gt;
 6.	      &lt;h1&gt;Task: Add an image below&lt;/h1&gt;
 7.	      <img src={logo} alt="Logo" /&gt;
 8.	    &lt;/div&gt;
 9.	  );
 10.	};
 11.	
-12.	export default App;
-</pre>
+12.	export default App;</pre>
 
 </details>
 
@@ -9112,8 +9005,7 @@ First, you imported the logo image.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.	import logo from"./assets/logo.png"
+<pre>1.	import logo from"./assets/logo.png"
 2.	function App() {
 3.	  return (
 4.	    &lt;div className="App">
@@ -9122,8 +9014,7 @@ First, you imported the logo image.</p>
 7.	  );
 8.	};
 9.	
-10.	export default App;
-</pre>
+10.	export default App;</pre>
 
 </details>
 
@@ -9135,20 +9026,18 @@ string of "Logo".
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.	import logo from"./assets/logo.png"
+<pre>1.	import logo from"./assets/logo.png"
 2.	
 3.	function App() {
 4.	  return (
 5.	    &lt;div className="App">
 6.	      &lt;h1&gt;Task: Add an image below&lt;/h1&gt;
-7.	      <img src={logo} alt="Logo" /&gt;
+7.	      &lt;img src={logo} alt="Logo" /&gt;
 8.	    &lt;/div&gt;
 9.	  );
 10.	};
 11.	
-12.	export default App;
-</pre>
+12.	export default App;</pre>
 
 </details>
 
@@ -9278,31 +9167,24 @@ https://www.npmjs.com/package/react-player</p>
 
 <p>To install this package you'll need to use the following command in the terminal:</p>
 
-<pre>
-1.	npm install react-player
-</pre>
+<pre>1.	npm install react-player</pre>
 
 <p>Once you have this package installed, you can start using it in your project.
 There are a few ways that you can import and use the installed package. For example, to 
 get the entire package's functionality, use the following import:</p>
 
-<pre>
-1.	import ReactPlayer from "react-player";
-</pre>
+<pre>1.	import ReactPlayer from "react-player";</pre>
 
 <p>If you are, for example, only planning to use videos from a site like YouTube, to reduce bundle size, you can use the following import:</p>
 
-<pre>
-1.	import ReactPlayer from "react-player/youtube";
-</pre>
+<pre>1.	import ReactPlayer from "react-player/youtube";</pre>
 
 <p>Here’s an example of using the react-player packaged in a small React app:</p>
 
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.	import React from "react";
+<pre>1.	import React from "react";
 2.	import ReactPlayer from "react-player/youtube";
 3.	
 4.	const App = () => {
@@ -9315,12 +9197,11 @@ get the entire package's functionality, use the following import:</p>
 11.	
 12.	const MyVideo = () => {
 13.	  return (
-14.	    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /&gt;
+14.	    &lt;ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /&gt;
 15.	  );
 16.	};
 17.	
-18.	export default App;
-</pre>
+18.	export default App;</pre>
 
 </details>
 
@@ -9438,8 +9319,7 @@ change common settings for the react player.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.	import React from "react"; 
+<pre>1.	import React from "react"; 
 2.	
 3.	function App() { 
 4.	
@@ -9471,14 +9351,13 @@ change common settings for the react player.</p>
 28.	
 29.	  return ( 
 30.	    &lt;div&gt; 
-31.	      <button onClick={toggle1}>Caspian Tern 1</button> 
-32.	      <button onClick={toggle2}>Caspian Tern 2</button> 
+31.	      &lt;button onClick={toggle1}>Caspian Tern 1&lt;/button&gt; 
+32.	      &lt;button onClick={toggle2}>Caspian Tern 2&lt;/button&gt; 
 33.	    &lt;/div&gt; 
 34.	  ); 
 35.	} 
 36.	
-37.	export default App;
-</pre>
+37.	export default App;</pre>
 
 </details>
 
@@ -9500,8 +9379,7 @@ second button.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-1.  import React from "react";
+<pre>1.  import React from "react";
 2.
 3.  function App() {
 4.
@@ -9525,14 +9403,13 @@ second button.</p>
 20.
 21.   return (
 22.     &lt;div&gt;
-23.       <button onClick={toggle1}>Caspian Tern 1</button>
-24.       <button onClick={toggle2}>Caspian Tern 2</button>
+23.       &lt;button onClick={toggle1}&gt;Caspian Tern 1&lt;/button&gt;
+24.       &lt;button onClick={toggle2}&gt;Caspian Tern 2&lt;/button&gt;
 25.     &lt;/div&gt;
 26.   );
 27. }
 28.	
-29. export default App;
-</pre>
+29. export default App;</pre>
 
 </details>
 
@@ -9568,8 +9445,8 @@ event-handling attribute, you should have un-commented the bird2 variable on lin
 20.
 21.   return (
 22.     &lt;div&gt;
-23.       <button onClick={toggle1}>Caspian Tern 1</button>
-24.       <button onClick={toggle2}>Caspian Tern 2</button>
+23.       &lt;button onClick={toggle1}>Caspian Tern 1&lt;/button&gt;
+24.       &lt;button onClick={toggle2}>Caspian Tern 2&lt;/button&gt;
 25.     &lt;/div&gt;
 26.   );
 27. }
@@ -9619,9 +9496,9 @@ functionality as the toggle1 function, but it needed to work with the bird2 vari
 27.	  };
 28.
 29.	  return (
-30.	    <div&gt;
-31.	      <button onClick={toggle1}>Caspian Tern 1</button>
-32.	      <button onClick={toggle2}>Caspian Tern 2</button>
+30.	    &lt;div&gt;
+31.	      &lt;button onClick={toggle1}>Caspian Tern 1&lt;/button&gt;
+32.	      &lt;button onClick={toggle2}>Caspian Tern 2&lt;/button&gt;
 33.	    &lt;/div&gt;
 34.	  );
 35.	}
@@ -9983,9 +9860,9 @@ import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 
@@ -10011,8 +9888,8 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   return (
     <>
-    <div className="status">{status}&lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="status">{status}&lt;/div&gt;
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
       /&gt;
       &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
@@ -10121,7 +9998,7 @@ of that file in the <i>code editor</i> should be:</p>
 
 <pre>
 export default function Square() {
-  return <button className="square">X</button>;
+  return &lt;button className="square">X&lt;/button&gt;;
 }
 </pre>
 
@@ -10149,7 +10026,7 @@ going on:</p>
 
 <pre>
 1.  export default function Square() {
-2.    return <button className="square">X</button>;
+2.    return &lt;button className="square">X&lt;/button&gt;;
 3.  }
 </pre>
 
@@ -10160,13 +10037,13 @@ your file.</p>
 
 <pre>
 1.  export default function Square() {
-2.    return <button className="square">X</button>;
+2.    return &lt;button className="square">X&lt;/button&gt;;
 3.  }
 </pre>
 
 <p>The second line returns a button. The return JavaScript keyword means
 whatever comes after is returned as a value to the caller of the
-function. <button> is a <i>JSX element</i>. A JSX element is a combination
+function. &lt;button&gt; is a <i>JSX element</i>. A JSX element is a combination
 of JavaScript code and HTML tags that describes what you'd like to
 display. className="square" is a button property or <i>prop</i> that tells
 CSS how to style the button. X is the text displayed inside of the
@@ -10224,8 +10101,8 @@ just try and copy paste your square to make two squares like this:</p>
 
 <pre>
 export default function Square() {
-  return <button className="square">X</button><button
-  className="square">X</button>;
+  return &lt;button className="square">X&lt;/button&gt;&lt;button
+  className="square">X&lt;/button&gt;;
 }
 </pre>
 
@@ -10245,8 +10122,8 @@ this:</p>
 export default function Square() {
   return (
     <>
-    <button className="square">X</button>
-    <button className="square">X</button>
+    &lt;button className="square">X&lt;/button&gt;
+    &lt;button className="square">X&lt;/button&gt;
     </&gt;
   );
 }
@@ -10291,20 +10168,20 @@ square a number to make sure you know where each square is displayed.</p>
 export default function Square() {
   return (
     <>
-      <div className="board-row">
-        <button className="square">1</button>
-        <button className="square">2</button>
-        <button className="square">3</button>
+      &lt;div className="board-row">
+        &lt;button className="square">1&lt;/button&gt;
+        &lt;button className="square">2&lt;/button&gt;
+        &lt;button className="square">3&lt;/button&gt;
       &lt;/div&gt;
-      <div className="board-row">
-        <button className="square">4</button>
-        <button className="square">5</button>
-        <button className="square">6</button>
+      &lt;div className="board-row">
+        &lt;button className="square">4&lt;/button&gt;
+        &lt;button className="square">5&lt;/button&gt;
+        &lt;button className="square">6&lt;/button&gt;
       &lt;/div&gt;
-      <div className="board-row">
-      <button className="square">7</button>
-      <button className="square">8</button>
-      <button className="square">9</button>
+      &lt;div className="board-row">
+      &lt;button className="square">7&lt;/button&gt;
+      &lt;button className="square">8&lt;/button&gt;
+      &lt;button className="square">9&lt;/button&gt;
       &lt;/div&gt;
     </&gt;
   );
@@ -10344,20 +10221,20 @@ export default function Board() {
 export default function Board() {
   return (
     <>
-    <div className="board-row">
-      <button className="square">1</button>
-      <button className="square">2</button>
-      <button className="square">3</button>
+    &lt;div className="board-row">
+      &lt;button className="square">1&lt;/button&gt;
+      &lt;button className="square">2&lt;/button&gt;
+      &lt;button className="square">3&lt;/button&gt;
     &lt;/div&gt;
-    <div className="board-row">
-      <button className="square">4</button>
-      <button className="square">5</button>
-      <button className="square">6</button>
+    &lt;div className="board-row">
+      &lt;button className="square">4&lt;/button&gt;
+      &lt;button className="square">5&lt;/button&gt;
+      &lt;button className="square">6&lt;/button&gt;
     &lt;/div&gt;
-    <div className="board-row">
-      <button className="square">7</button>
-      <button className="square">8</button>
-      <button className="square">9</button>
+    &lt;div className="board-row">
+      &lt;button className="square">7&lt;/button&gt;
+      &lt;button className="square">8&lt;/button&gt;
+      &lt;button className="square">9&lt;/button&gt;
     &lt;/div&gt;
     </&gt;
   );
@@ -10387,7 +10264,7 @@ into a new Square component:</p>
 
 <pre>
 function Square() {
-  return <button className="square">1</button>;
+  return &lt;button className="square">1&lt;/button&gt;;
 }
 
 export default function Board() {
@@ -10406,17 +10283,17 @@ using JSX syntax:</p>
 export default function Board() {
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
@@ -10450,7 +10327,7 @@ the <b>Board:</b></p>
 
 <pre>
 function Square({ value }) {
-  return <button className="square">1</button>;
+  return &lt;button className="square">1&lt;/button&gt;;
 }
 </pre>
 
@@ -10461,7 +10338,7 @@ doing it like this:</p>
 
 <pre>
 function Square({ value }) {
-  return <button className="square">value</button>;
+  return &lt;button className="square">value&lt;/button&gt;;
 }
 </pre>
 
@@ -10483,7 +10360,7 @@ you need curly braces. Add curly braces around value in JSX like so:</p>
 
 <pre>
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  return &lt;button className="square">{value}&lt;/button&gt;;
 }
 </pre>
 
@@ -10509,17 +10386,17 @@ each Square component rendered by the Board component:</p>
 export default function Board() {
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value="1" /&gt;
       &lt;Square value="2" /&gt;
       &lt;Square value="3" /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value="4" /&gt;
       &lt;Square value="5" /&gt;
       &lt;Square value="6" /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value="7" /&gt;
       &lt;Square value="8" /&gt;
       &lt;Square value="9" /&gt;
@@ -10549,23 +10426,23 @@ export default function Board() {
 
 <pre>
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  return &lt;button className="square">{value}&lt;/button&gt;;
 }
 
 export default function Board() {
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value="1" /&gt;
       &lt;Square value="2" /&gt;
       &lt;Square value="3" /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value="4" /&gt;
       &lt;Square value="5" /&gt;
       &lt;Square value="6" /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value="7" /&gt;
       &lt;Square value="8" /&gt;
       &lt;Square value="9" /&gt;
@@ -10592,12 +10469,12 @@ function Square({ value }) {
     console.log('clicked!');
   }
   return (
-    <button
+    &lt;button
     className="square"
     onClick={handleClick}
     >
     {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 </pre>
@@ -10657,17 +10534,17 @@ the Board component:</p>
 export default function Board() {
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
@@ -10694,12 +10571,12 @@ function Square() {
     setValue('X');
   }
   return (
-    <button
+    &lt;button
       className="square"
       onClick={handleClick}
       >
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 </pre>
@@ -10707,7 +10584,7 @@ function Square() {
 </details>
 
 <p>By calling this set function from an onClick handler, you're telling
-React to re-render that Square whenever its <button> is clicked. After
+React to re-render that Square whenever its &lt;button&gt; is clicked. After
 the update, the Square's value will be 'X', so you'll see the "X" on
 the game board. Click on any Square, and "X" should show up:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10738,29 +10615,29 @@ function Square() {
     setValue('X');
   }
   return (
-    <button
+    &lt;button
       className="square"
       onClick={handleClick}
       >
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 
 export default function Board() {
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square /&gt;
       &lt;Square /&gt;
       &lt;Square /&gt;
@@ -10868,17 +10745,17 @@ export default function Board() {
 const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} /&gt;
       &lt;Square value={squares[1]} /&gt;
       &lt;Square value={squares[2]} /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[3]} /&gt;
       &lt;Square value={squares[4]} /&gt;
       &lt;Square value={squares[5]} /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[6]} /&gt;
       &lt;Square value={squares[7]} /&gt;
       &lt;Square value={squares[8]} /&gt;
@@ -10896,7 +10773,7 @@ own stateful tracking of value and the button's onClick prop:</p>
 
 <pre>
 function Square({value}) {
-  return <button className="square">{value}</button>;
+  return &lt;button className="square">{value}&lt;/button&gt;;
 }
 </pre>
 
@@ -10916,35 +10793,33 @@ function Square({value}) {
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 
 function Square({ value }) {
-  return <button className="square">{value}</button>;
+  return &lt;button className="square">{value}&lt;/button&gt;;
 }
 export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} /&gt;
       &lt;Square value={squares[1]} /&gt;
       &lt;Square value={squares[2]} /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[3]} /&gt;
       &lt;Square value={squares[4]} /&gt;
       &lt;Square value={squares[5]} /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[6]} /&gt;
       &lt;Square value={squares[7]} /&gt;
       &lt;Square value={squares[8]} /&gt;
       &lt;/div&gt;
     </&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -10963,28 +10838,24 @@ square is clicked. You'll start with the function that the Square
 component will call when it is clicked. You'll call that function
 onSquareClick:</p>
 
-<pre>
-function Square({ value }) {
+<pre>function Square({ value }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 <p>Next, you'll add the onSquareClick function to the Square component's
 props:</p>
 
-<pre>
-function Square({ value, onSquareClick }) {
+<pre>function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 <p>Now you'll connect the onSquareClick prop to a function in the Board
 component that you'll name handleClick. To connect onSquareClick to
@@ -10994,17 +10865,15 @@ first Square component:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-export default function Board() {
+<pre>export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
     &lt;Square value={squares[0]} onSquareClick={handleClick} /&gt;
     //...
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -11115,7 +10984,7 @@ export default function Board() {
   // ...
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
     &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
     /&gt;
     // ...
@@ -11140,7 +11009,7 @@ export default function Board() {
   // ...
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
       /&gt;
       &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
@@ -11148,7 +11017,7 @@ export default function Board() {
       &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
       /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
       /&gt;
       &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
@@ -11156,7 +11025,7 @@ export default function Board() {
       &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
       /&gt;
     &lt;/div&gt;
-   <div className="board-row">
+   &lt;div className="board-row">
      &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
      /&gt;
      &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
@@ -11195,9 +11064,9 @@ component!</p>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 export default function Board() {
@@ -11209,7 +11078,7 @@ export default function Board() {
   }
   return (
     <>
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
       /&gt;
       &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
@@ -11217,7 +11086,7 @@ export default function Board() {
       &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
       /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
       /&gt;
       &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
@@ -11225,7 +11094,7 @@ export default function Board() {
       &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
       /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
       /&gt;
       &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
@@ -11427,9 +11296,9 @@ should look like at this point:
 import { useState } from 'react';
   function Square({value, onSquareClick}) {
     return (
-      <button className="square" onClick={onSquareClick}>
+      &lt;button className="square" onClick={onSquareClick}>
         {value}
-      </button>
+      &lt;/button&gt;
     );
   }
   export default function Board() {
@@ -11450,7 +11319,7 @@ import { useState } from 'react';
     }
   return (
   <>
-  <div className="board-row">
+  &lt;div className="board-row">
     &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
     /&gt;
     &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
@@ -11458,7 +11327,7 @@ import { useState } from 'react';
     &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
     /&gt;
   &lt;/div&gt;
-  <div className="board-row">
+  &lt;div className="board-row">
 </pre>
 
 </details>
@@ -11544,9 +11413,9 @@ export default function Board() {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
   return (
-    <div&gt;
-    <div className="status">{status}&lt;/div&gt;
-    <div className="board-row">
+    &lt;div&gt;
+    &lt;div className="status">{status}&lt;/div&gt;
+    &lt;div className="board-row">
     // ...
   )
 }
@@ -11566,9 +11435,9 @@ import { useState } from 'react';
 
 function Square({value, onSquareClick}) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 export default function Board() {
@@ -11597,8 +11466,8 @@ export default function Board() {
   }
   return (
     <>
-    <div className="status">{status}&lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="status">{status}&lt;/div&gt;
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
       /&gt;
       &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
@@ -11606,7 +11475,7 @@ export default function Board() {
       &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
       /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
       /&gt;
       &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
@@ -11614,7 +11483,7 @@ export default function Board() {
       &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
       /&gt;
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
       />
       &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
@@ -11707,11 +11576,11 @@ function Board() {
 }
 export default function Game() {
   return (
-    <div className="game">
-      <div className="game-board">
+    &lt;div className="game">
+      &lt;div className="game-board">
         <Board />
       &lt;/div&gt;
-      <div className="game-info">
+      &lt;div className="game-info">
         <ol>{/*TODO*/}</ol>
       &lt;/div&gt;
     &lt;/div&gt;
@@ -11778,8 +11647,8 @@ export default function Game() {
   }
   return (
 
-    <div className="game">
-    <div className="game-board">
+    &lt;div className="game">
+    &lt;div className="game-board">
     <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
     />
       //...
@@ -11884,9 +11753,9 @@ is what the code should look like at this point:</p>
 import { useState } from 'react';
   function Square({ value, onSquareClick }) {
     return (
-      <button className="square" onClick={onSquareClick}>
+      &lt;button className="square" onClick={onSquareClick}>
         {value}
-      </button>
+      &lt;/button&gt;
     );
   }
   function Board({ xIsNext, squares, onPlay }) {
@@ -11911,8 +11780,8 @@ import { useState } from 'react';
   }
   return (
     <>
-    <div className="status">{status}&lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="status">{status}&lt;/div&gt;
+    &lt;div className="board-row">
 </pre>
 
 </details>
@@ -11922,7 +11791,7 @@ import { useState } from 'react';
 Since you are recording the tic-tac-toe game's history, you can now
 display a list of past moves to the player.
 
-React elements like <button> are regular JavaScript objects; you can
+React elements like &lt;button&gt; are regular JavaScript objects; you can
 pass them around in your application. To render multiple items in React,
 you can use an array of React elements.
 
@@ -11964,17 +11833,17 @@ export default function Game() {
       }
     return (
       <li>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        &lt;button onClick={() => jumpTo(move)}>{description}&lt;/button&gt;
       </li>
     );
   });
   return (
-    <div className="game">
-      <div className="game-board">
+    &lt;div className="game">
+      &lt;div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
         />
       &lt;/div&gt;
-      <div className="game-info">
+      &lt;div className="game-info">
         <ol>{moves}</ol>
       &lt;/div&gt;
     &lt;/div&gt;
@@ -11997,9 +11866,9 @@ section.
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
@@ -12024,8 +11893,8 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   return (
     <>
-    <div className="status">{status}&lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="status">{status}&lt;/div&gt;
+    &lt;div className="board-row">
       &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
       />
       &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
@@ -12033,7 +11902,7 @@ function Board({ xIsNext, squares, onPlay }) {
       &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
       />
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
       />
       &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
@@ -12041,7 +11910,7 @@ function Board({ xIsNext, squares, onPlay }) {
       &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
       />
     &lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="board-row">
       &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
       />
       &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
@@ -12072,17 +11941,17 @@ export default function Game() {
     }
     return (
       <li>
-        <button onClick={() => jumpTo(move)}>{description}</button>
+        &lt;button onClick={() => jumpTo(move)}>{description}&lt;/button&gt;
       </li>
     );
   });
   return (
-    <div className="game">
-      <div className="game-board">
+    &lt;div className="game">
+      &lt;div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
         />
       &lt;/div&gt;
-      <div className="game-info">
+      &lt;div className="game-info">
         <ol>{moves}</ol>
       &lt;/div&gt;
     &lt;/div&gt;
@@ -12212,7 +12081,7 @@ const moves = history.map((squares, move) => {
   //...
   return (
     <li key={move}>
-      <button onClick={() => jumpTo(move)}>{description}</button>
+      &lt;button onClick={() => jumpTo(move)}>{description}&lt;/button&gt;
     </li>
   );
 });
@@ -12228,9 +12097,9 @@ import { useState } from 'react';
 
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 
@@ -12257,8 +12126,8 @@ function Board({ xIsNext, squares, onPlay }) {
     }
   return (
     <>
-    <div className="status">{status}&lt;/div&gt;
-    <div className="board-row">
+    &lt;div className="status">{status}&lt;/div&gt;
+    &lt;div className="board-row">
   )
 }
 </pre>
@@ -12341,9 +12210,9 @@ step occurred.</p>
 import { useState } from 'react';
 function Square({value, onSquareClick}) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
   {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
@@ -12370,8 +12239,8 @@ const winner = calculateWinner(squares);
 
 return (
   <>
-  <div className="status">{status}&lt;/div&gt;
-  <div className="board-row">
+  &lt;div className="status">{status}&lt;/div&gt;
+  &lt;div className="board-row">
 )
 </pre>
 
@@ -12447,9 +12316,9 @@ React works.</p>
 import { useState } from 'react';
 function Square({ value, onSquareClick }) {
   return (
-    <button className="square" onClick={onSquareClick}>
+    &lt;button className="square" onClick={onSquareClick}>
       {value}
-    </button>
+    &lt;/button&gt;
   );
 }
 function Board({ xIsNext, squares, onPlay }) {
@@ -12474,8 +12343,8 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   return (
   <>
-  <div className="status">{status}&lt;/div&gt;
-  <div className="board-row">
+  &lt;div className="status">{status}&lt;/div&gt;
+  &lt;div className="board-row">
 }
 </pre>
 
@@ -12531,13 +12400,11 @@ be as small as a button, or as large as an entire page.</p>
 
 <p>React components are JavaScript functions that return markup:</p>
 
-<pre>
-function MyButton() {
+<pre>function MyButton() {
   return (
-    <button>I'm a button</button>
+    &lt;button&gt;I'm a button&lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 <p>Now that you've declared MyButton, you can nest it into another
 component:</p>
@@ -12545,16 +12412,14 @@ component:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-export default function MyApp() {
+<pre>export default function MyApp() {
   return (
-    <div&gt;
+    &lt;div&gt;
       &lt;h1&gt;Welcome to my app&lt;/h1&gt;
-        <MyButton />
+        &lt;MyButton /&gt;
     &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -12570,14 +12435,14 @@ with a capital letter, while HTML tags must be lowercase.</p>
 <pre>
 function MyButton() {
   return (
-    <button>
+    &lt;button&gt;
       I'm a button
-    </button>
+    &lt;/button&gt;
   );
 }
 export default function MyApp() {
   return (
-    <div&gt;
+    &lt;div&gt;
       &lt;h1&gt;Welcome to my app&lt;/h1&gt;
       <MyButton />
     &lt;/div&gt;
@@ -12637,7 +12502,7 @@ Then you write the CSS rules for it in a separate CSS file:
   }
 </pre>
 
-<p>React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[<link>]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.</p>
+<p>React does not prescribe how you add CSS files. In the simplest case, you'll add a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link">[&lt;Link&gt;]</a> tag to your HTML. If you use a build tool or a framework, consult its documentation to learn how to add a CSS file to your project.</p>
 
 <h4>Displaying data</h4>
 
@@ -12731,7 +12596,7 @@ if (isLoggedIn) {
 operator</a>.  Unlike if, it works inside JSX:</p>
 
 <pre>
-<div&gt;
+&lt;div&gt;
   {isLoggedIn ? (
     <AdminPanel />
   ) : (
@@ -12744,7 +12609,7 @@ operator</a>.  Unlike if, it works inside JSX:</p>
 logical &amp;&amp; syntax</a>:</p>
 
 <pre>
-<div&gt;
+&lt;div&gt;
   {isLoggedIn && <AdminPanel />}
 &lt;/div&gt;
 </pre>
