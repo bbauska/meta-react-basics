@@ -587,7 +587,7 @@ export function addThree(a + b + c) {
 
 <p>Here's another way you could do it:</p>
 
-<details class="test">
+<details open>
   <summary>React code:</summary>
 
 <pre>function addTwo(a, b) {
@@ -1711,7 +1711,7 @@ rendered?
 <p>You can see the answer below:</p>
 
 <pre>function Example() {
-  return &lt;div&gt;An element</div>
+  return &lt;div&gt;An element&lt;/div>
 }
 
 export default Example</pre>
@@ -1797,11 +1797,11 @@ function Heading() { 
 <p><b>Step 3:</b> Then, inside the parentheses, you added the following code:</p>
 
 <pre>
-<h1>This is an h1 heading</h1>
+&lt;h1>This is an h1 heading&lt;/h1&gt;
 
 function Heading() { 
   return ( 
-    <h1>This is an h1 heading.</h1> 
+    &lt;h1>This is an h1 heading.&lt;/h1&gt; 
   ) 
 } 
 </pre>
@@ -2206,17 +2206,16 @@ one.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Nav() {
+<pre>function Nav() {
   return (
-    <nav className="main-nav"&gt;
-      <ul&gt;
-        <li&gt;Home</li&gt;
-        <li&gt;Articles</li&gt;
-        <li&gt;About</li&gt;
-        <li&gt;Contact</li&gt;
-      </ul&gt;
-    </nav&gt;
+    &lt;nav className="main-nav"&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Home&lt;/li&gt;
+        &lt;li&gt;Articles&lt;/li&gt;
+        &lt;li&gt;About&lt;/li&gt;
+        &lt;li&gt;Contact&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
   );
 };
 
@@ -2229,22 +2228,20 @@ export default Nav;</pre>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Promo() {
+<pre>function Promo() {
   return (
-    <div className="promo-section">
-      <div>
-        <h1>Don't miss this deal!</h1>
-      </div>
-      <div>
-        <h2>Subscribe to my newsletter and get all the shop items at 50% off!</h2>
-      </div>
-    </div>
+    &lt;div className="promo-section"&gt;
+      &lt;div&gt;
+        &lt;h1&gt;Don't miss this deal!&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
+        &lt;h2&gt;Subscribe to my newsletter and get all the shop items at 50% off!&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 };
 
-export default Promo;
-</pre>
+export default Promo;</pre>
 
 </details>
 
@@ -2255,22 +2252,20 @@ components.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Intro1() {
+<pre>function Intro1() {
 
   return (
-    <div className="blog-post-intro">
-      <h2>I've become a React developer!</h2>
-      <div>
-        <p>I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!</p>
-        <p className="link">Read more...</p>
-      </div>
-    </div>
+    &lt;div className="blog-post-intro"&gt;
+      &lt;h2&gt;I've become a React developer!&lt;/h2&gt;
+      &lt;div&gt;
+        &lt;p&gt;I've completed the React Basics course and I'm happy to announce that I'm now a Junior React Developer!&lt;/p&gt;
+        &lt;p className="link"&gt;Read more...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 };
   
-export default Intro1;
-</pre>
+export default Intro1;</pre>
 
 </details>
 
@@ -2279,21 +2274,19 @@ export default Intro1;
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Intro2() {
+<pre>function Intro2() {
   return (
-    <div className="blog-post-intro">
-      <h2>Why I love front-end web development</h2>
-      <div>
-        <p>In this blog post, I'll list 10 reasons why I love to work as a front-end developer.</p>
-        <p className="link">Read more...</p>
-      </div>
-    </div>
+    &lt;div className="blog-post-intro"&gt;
+      &lt;h2&gt;Why I love front-end web development&lt;/h2&gt;
+      &lt;div&gt;
+        &lt;p&gt;In this blog post, I'll list 10 reasons why I love to work as a front-end developer.&lt;/p&gt;
+        &lt;p className="link"&gt;Read more...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 };
 
-export default Intro2;
-</pre>
+export default Intro2;</pre>
 
 </details>
 
@@ -2303,21 +2296,19 @@ export default Intro2;
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Intro3() {
+<pre>function Intro3() {
   return (
-    <div className="blog-post-intro">
-      <h2>What's the best way to style your React apps?</h2>
-      <div>
-        <p>There are so many options to choose from. Here's a high-level overview of the popular ones.</p>
-        <p className="link">Read more...</p>
-      </div>
-    </div>
+    &lt;div className="blog-post-intro"&gt;
+      &lt;h2&gt;What's the best way to style your React apps?&lt;/h2&gt;
+      &lt;div&gt;
+        &lt;p&gt;There are so many options to choose from. Here's a high-level overview of the popular ones.&lt;/p&gt;
+        &lt;p className="link"&gt;Read more...&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 };
 
-export default Intro3;
-</pre>
+export default Intro3;</pre>
 
 </details>
 
@@ -2327,17 +2318,15 @@ here it is:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Footer() {
+<pre>function Footer() {
   return (
-    <div className="copyright">
-      <p>Made with love by Myself</p>
-    </div>
+    &lt;div className="copyright"&gt;
+      &lt;p&gt;Made with love by Myself&lt;/p&gt;
+    &lt;/div&gt;
   );
 };
 
-export default Footer;
-</pre>
+export default Footer;</pre>
 
 </details>
 
@@ -2653,31 +2642,27 @@ a components folder.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Here are the contents of the Heading.js file:</p>
 
-<pre>
-function Heading() {
+<pre>function Heading() {
   return (
-    <h1>This is an h1 heading</h1>
+    &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
   )
 }
   
-export default Heading;
-</pre>
+export default Heading;</pre>
 
 <p>Here are the contents of the App.js file:</p>
 
 <details open>
   <summary>React code:</summary>
 
-<pre>
-export default App;
+<pre>export default App;
 
-    </div>
+    &lt;/div&gt;
   );
 }
    return (
-     <div className="App">
-       <Heading />
-</pre>
+     &lt;div className="App"&gt;
+       &lt;Heading /&gt;</pre>
 
 </details>
 
@@ -2711,24 +2696,20 @@ component file, named "Heading.js".</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function Heading() {
+<pre>function Heading() {
   return (
-    <h1>This is an h1 heading</h1>
+    &lt;h1&gt;This is an h1 heading&lt;/h1&gt;
   )
 }
 
-export default Heading;
-</pre>
+export default Heading;</pre>
 
 </details>
 
 <p><b>Step 2:</b> Next, you imported the <b>Heading</b> component into the
 <b>App</b> component.</p>
 
-<pre>
-import Heading from "./Heading";
-</pre>
+<pre>import Heading from "./Heading";</pre>
 
 <p><b>Step 3:</b> Finally, you removed the sentence that reads: <i>This is the
 starting code for "Your first component" ungraded lab</i> - so that only
@@ -2738,17 +2719,15 @@ component.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import Heading from "./Heading";
+<pre>import Heading from "./Heading";
 
 function App() {
    return (
-    <div className="App">
-      <Heading />
-    </div>
+    &lt;div className="App"&gt;
+      &lt;Heading /&gt;
+    &lt;/div&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 18 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2966,7 +2945,7 @@ make sure to navigate to the <i>Try it out</i> link in the main navigation.</p>
 <pre>
 function App() {
   
-  return <h1>Hello there</h1>
+  return &lt;h1&gt;Hello there&lt;/h1&gt;
 }
 </pre>
 
@@ -3001,9 +2980,9 @@ structure:</p>
 <pre>
 function App() { 
   return (
-    <div>
-      <h1>Hello there</h1>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Hello there&lt;/h1&gt;
+    &lt;/div&gt;
   )
 }
 </pre>
@@ -3249,10 +3228,10 @@ import Heading from "./Heading";
 
 function App() {
   return (
-    <div className="App">
-      <Heading firstName="Bob" />
-      <Heading firstName="Any name other than Bob" />
-    </div>
+    &lt;div className="App">
+      <Heading firstName="Bob" /&gt;
+      <Heading firstName="Any name other than Bob" /&gt;
+    &lt;/div&gt;
   );
 }
   
@@ -3266,7 +3245,7 @@ export default App;
 <pre>
 function Heading(props) {
   return (
-    <h1>Hello, {props.firstName}</h1>
+    &lt;h1&gt;Hello, {props.firstName}&lt;/h1&gt;
   )
 }
  
@@ -3290,7 +3269,7 @@ export default Heading;
 <pre>
 function Heading(props) {
   return (
-    <h1>Hello, </h1>
+    &lt;h1&gt;Hello, &lt;/h1&gt;
   )
 }
   
@@ -3305,7 +3284,7 @@ statement's <b>h1</b>, after <b>Hello</b>.</p>
 <pre>
 function Heading(props) {
   return (
-    <h1>Hello, {props.firstName}</h1>
+    &lt;h1&gt;Hello, {props.firstName}&lt;/h1&gt;
   )
 }
   
@@ -3324,9 +3303,9 @@ import Heading from "./Heading";
   
 function App() {
   return (
-    <div className="App">
-      <Heading firstName="Bob" />
-    </div>
+    &lt;div className="App">
+      <Heading firstName="Bob" /&gt;
+    &lt;/div&gt;
   );
 }
 
@@ -3350,9 +3329,9 @@ import Heading from "./Heading";
   
 function App() {
   return (
-    <div className="App">
-      <Heading firstName="Any name other than Bob" />
-    </div>
+    &lt;div className="App">
+      <Heading firstName="Any name other than Bob" /&gt;
+    &lt;/div&gt;
   );
 }
   
@@ -3373,10 +3352,10 @@ import Heading from "./Heading";
 
 function App() {
   return (
-    <div className="App">
-      <Heading firstName="Any name other than Bob" />
-      <Heading firstName="Jack" />
-    </div>
+    &lt;div className="App">
+      <Heading firstName="Any name other than Bob" /&gt;
+      <Heading firstName="Jack" /&gt;
+    &lt;/div&gt;
   );
 }
   
@@ -3534,14 +3513,14 @@ being carried inside of it, without issues.</p>
 function Apples(props) {
 
    return (
-     <div className="promo-section">
-         <div>
+     &lt;div className="promo-section">
+         &lt;div&gt;
              <h2>These apples are: {props.color}</h2>
-             </div>
-             <div>
+             &lt;/div&gt;
+             &lt;div&gt;
              <h3>There are {props.number} apples.</h3>
-         </div>
-     </div>
+         &lt;/div&gt;
+     &lt;/div&gt;
    )
 }
 
@@ -3580,9 +3559,9 @@ function Bag(props) {
     margin: "20px 0"
   }
   return (
-    <div style={bag}>
+    &lt;div style={bag}>
       {props.children}
-    </div>
+    &lt;/div&gt;
   )
 }
 
@@ -3613,7 +3592,7 @@ as a <b>named prop</b> when rendering the <b>Example</b> component?
 Here's how that would look like:
 
 <pre>
-<Example children="Hello there" />
+<Example children="Hello there" /&gt;
 </pre>
 
 Ok, so, there are two ways to do it. But this is just the beginning.
@@ -3624,7 +3603,7 @@ What if you, say, wanted to surround the <b>Hello there</b> text in an
 Obviously, in JSX, that is easily achievable:
 
 <pre>
-<Example children={<h3>Hello there</h3>} />
+<Example children={<h3>Hello there</h3>} /&gt;
 </pre>
 
 What if the <b>&lt;h3&gt;Hello there&lt;/h3&gt;</b> was a separate component, for
@@ -3633,14 +3612,14 @@ example, named <b>Hello</b>?
 In that case, you'd have to update the code like this:
 
 <pre>
-<Example children={<Hello />} />
+<Example children={<Hello /&gt;} /&gt;
 </pre>
 
 You could even make the <b>Hello</b> component more dynamic, by giving it
 its own prop:
 
 <pre>
-<Example children={<Hello message="Hello there" />} />
+<Example children={<Hello message="Hello there" /&gt;} /&gt;
 </pre>
 
 So, given the <b>Bag</b>, <b>Apples</b>, and <b>Pears</b> examples from the
@@ -3651,14 +3630,14 @@ Here's how you'd render the <b>Bag</b> component with the <b>Apples</b>
 component as its <b>props.children</b>:
 
 <pre>
-<Bag children={<Apples color="yellow" number="5" />} />
+<Bag children={<Apples color="yellow" number="5" /&gt;} /&gt;
 </pre>
 
 And here's how you'd render the <b>Bag</b> component, wrapping the
 <b>Pears</b> component:
 
 <pre>
-<Bag children={<Pears friend="Peter" />} />
+<Bag children={<Pears friend="Peter" /&gt;} /&gt;
 </pre>
 
 While the above syntax might look a bit weird, it's important to
@@ -3668,11 +3647,11 @@ Effectively, the above syntax is the same as the two examples below.
 
 <pre>
 <Bag>
-  <Apples color="yellow" number="5" />
+  <Apples color="yellow" number="5" /&gt;
 </Bag>
 
 <Bag>
-  <Pears friend="Peter" />
+  <Pears friend="Peter" /&gt;
 </Bag>
 </pre>
 
@@ -3682,8 +3661,8 @@ JSX element having multiple children, such as, for example:
 <pre>
 <Trunk>
   <Bag>
-    <Apples color="yellow" number="5" />
-    <Pears friend="Peter" />
+    <Apples color="yellow" number="5" /&gt;
+    <Pears friend="Peter" /&gt;
   </Bag>
 </Trunk>
 </pre>
@@ -3696,7 +3675,7 @@ Before the end of this reading, consider this JSX element again:
 
 <pre>
 <Bag>
-  <Apples color="yellow" number="5" />
+  <Apples color="yellow" number="5" /&gt;
 </Bag>
 </pre>
 
@@ -3762,14 +3741,14 @@ can access those CSS classes using the <b>className</b> attribute.
 <pre>
 function Promo(props) {
   return (
-    <div className="promo-section">
-      <div>
-        <h1>{props.heading}</h1>
-      </div>
-      <div>
+    &lt;div className="promo-section">
+      &lt;div&gt;
+        &lt;h1&gt;{props.heading}&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
         <h2>{props.promoSubHeading}</h2>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
 </pre>
@@ -3798,14 +3777,14 @@ encountered earlier:</p>
 <pre>
 function Promo(props) {
   return (
-    <div className="promo-section">
-      <div>
-        <h1>{props.heading}</h1>
-      </div>
-      <div>
+    &lt;div className="promo-section">
+      &lt;div&gt;
+        &lt;h1&gt;{props.heading}&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
         <h2>{props.promoSubHeading}</h2>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
   
@@ -3822,15 +3801,15 @@ Now you can add some inline styles to it:
 <pre>
 function Promo(props) {
   return (
-    <div className="promo-section">
-      <div>
+    &lt;div className="promo-section">
+      &lt;div&gt;
         <h1 style={{color:"tomato", fontSize:"40px", 
-          fontWeight:"bold"}}>{props.heading}</h1>
-      </div>
-      <div>
+          fontWeight:"bold"}}>{props.heading}&lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
         <h2>{props.promoSubHeading}</h2>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
  
@@ -3843,7 +3822,7 @@ You can start updating the <b>Promo</b> component by adding the JavaScript
 expression syntax:
 
 <pre>
-<h1 style={}>
+&lt;h1 style={}>
 </pre>
 
 As explained previously, this means that whatever code you add inside
@@ -3852,7 +3831,7 @@ JavaScript. Now let's add a <b>style object literal</b> inside of these
 curly braces:
 
 <pre>
-<h1 style={{color:"tomato",fontSize:"40px"}}>
+&lt;h1 style={{color:"tomato",fontSize:"40px"}}>
 </pre>
 
 You can then re-write this object literal:
@@ -3889,16 +3868,16 @@ const styles = {
      fontSize: "40px"
  }
   return (
-    <div className="promo-section">
-      <div>
-        <h1 style={styles}>
+    &lt;div className="promo-section">
+      &lt;div&gt;
+        &lt;h1 style={styles}>
                   {props.heading}
-        </h1>
-      </div>
-      <div>
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div&gt;
         <h2>{props.promoSubHeading}</h2>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
 </pre>
@@ -4454,9 +4433,9 @@ to randomly change the text that is displayed.
 <pre>
 function Example() {
   return (
-    <div className="heading">
-      <h1>{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}</h1>
-    </div>
+    &lt;div className="heading">
+      &lt;h1&gt;{Math.random() >= 0.5 ? "Over 0.5" : "Under 0.5"}&lt;/h1&gt;
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -4504,11 +4483,11 @@ return a random number:
 <pre>
 function Example2() {
   return (
-    <div className="heading">
-      <h1>Here's a random number from 0 to 10: 
+    &lt;div className="heading">
+      &lt;h1&gt;Here's a random number from 0 to 10: 
         { Math.floor(Math.random() * 10) + 1 }
-      </h1>
-    </div>
+      &lt;/h1&gt;
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -4528,9 +4507,9 @@ and arithmetic operators, to display a random number between 0 and 10.</p>
 function Example3() {
   const getRandomNum = () => Math.floor(Math.random() * 10) + 1
     return (
-      <div className="heading">
-        <h1>Here's a random number from 0 to 10: { getRandomNum() }</h1>
-      </div>
+      &lt;div className="heading">
+        &lt;h1&gt;Here's a random number from 0 to 10: { getRandomNum() }&lt;/h1&gt;
+      &lt;/div&gt;
     );
 };
 </pre>
@@ -4592,9 +4571,9 @@ function Example(props) {
   
 export default function App() { 
   return ( 
-    <div className="App"> 
-      <Example toggleBoolean={!bool} />
-    </div> 
+    &lt;div className="App"> 
+      <Example toggleBoolean={!bool} /&gt;
+    &lt;/div&gt; 
   ); 
 };
 </pre>
@@ -4624,25 +4603,25 @@ const str1 = "just";
   
 function Example(props) {
   return (
-    <div>
+    &lt;div&gt;
       <h2>
         The value of the toggleBoolean prop is:{props.toggleBoolean.toString()}
       </h2>
       <p>The value of the math prop is: <em>{props.math}</em></p>
       <p>The value of the str prop is: <em>{props.str}</em></p>
-    </div>
+    &lt;/div&gt;
   );
 };
 
 export default function App() {
   return (
-    <div className="App">
+    &lt;div className="App">
       <Example
         toggleBoolean={!bool}
         math={(10 + 20) / 3}
         str={str1 + ' another ' + 'string'}
-      />
-    </div>
+      /&gt;
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -4755,12 +4734,12 @@ this case the SRC attribute of an html image tag.</p>
 3.	
 4.	function App() {
 5.	  return (
-6.	    <div className="App">
-7.	      <h1>Task: Add three Card elements</h1>
-8.	        <Card h2="First card's h2" h3="First card's h3" />
-9.	        <Card h2="Second card's h2" h3="Second card's h3" />
-10.	        <Card h2="Third card's h2" h3="Third card's h3" />
-11.	    </div>
+6.	    &lt;div className="App">
+7.	      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+8.	        <Card h2="First card's h2" h3="First card's h3" /&gt;
+9.	        <Card h2="Second card's h2" h3="Second card's h3" /&gt;
+10.	        <Card h2="Third card's h2" h3="Third card's h3" /&gt;
+11.	    &lt;/div&gt;
 12.	  );
 13.	};
 14.	
@@ -4778,12 +4757,12 @@ import Card from "./Card";
   
 function App() {
   return (
-    <div className="App">
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
+    &lt;div className="App">
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card h2="First card's h2" h3="First card's h3" /&gt;
+      <Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      <Card h2="Third card's h2" h3="Third card's h3" /&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -4800,10 +4779,10 @@ export default App;
 <pre>
 function Card(props) {
   return (
-    <div className="card">
+    &lt;div className="card">
       <h2>{props.h2}</h2>
       <h3>{props.h3}</h3>
-    </div>
+    &lt;/div&gt;
   );
 };
  
@@ -4851,8 +4830,8 @@ wrapping <b>div</b> element.</p>
 <pre>
 function Card(props) {
   return (
-    <div>
-    </div>
+    &lt;div&gt;
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -4866,10 +4845,10 @@ function Card(props) {
 <pre>
 function Card(props) {
   return (
-    <div>
+    &lt;div&gt;
       <h2></h2>
       <h3></h3>
-    </div>  
+    &lt;/div&gt;  
   );
 };
 </pre>
@@ -4884,10 +4863,10 @@ function Card(props) {
 <pre>
 function Card(props) {
   return (
-    <div className="card">
+    &lt;div className="card">
       <h2>{props.h2}</h2>
       <h3></h3>
-    </div>
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -4902,10 +4881,10 @@ function Card(props) {
 <pre>
 function Card(props) {
   return (
-    <div className="card">
+    &lt;div className="card">
       <h2>{props.h2}</h2>
       <h3>{props.h3}</h3>
-    </div>
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -4920,10 +4899,10 @@ function Card(props) {
 <pre>
 function Card(props) {
   return (
-    <div className="card">
+    &lt;div className="card">
       <h2>{props.h2}</h2>
       <h3>{props.h3}</h3>
-    </div>
+    &lt;/div&gt;
   );
 };
   
@@ -4943,9 +4922,9 @@ import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -4966,12 +4945,12 @@ import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card />
-      <Card />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card /&gt;
+      <Card /&gt;
+      <Card /&gt;
+    &lt;/div&gt;
   );
 };
   
@@ -4992,12 +4971,12 @@ import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" />
-      <Card />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card h2="First card's h2" /&gt;
+      <Card /&gt;
+      <Card /&gt;
+    &lt;/div&gt;
   );
 };
  
@@ -5018,12 +4997,12 @@ import Card from "./Card";
 
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card h2="First card's h2" h3="First card's h3" /&gt;
+      <Card /&gt;
+      <Card /&gt;
+    &lt;/div&gt;
   );
 };
   
@@ -5045,12 +5024,12 @@ import Card from "./Card";
   
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card h2="First card's h2" h3="First card's h3" /&gt;
+      <Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      <Card /&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -5073,12 +5052,12 @@ import Card from "./Card";
 
 function App() {
   return (
-    <div>
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card h2="First card's h2" h3="First card's h3" /&gt;
+      <Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      <Card h2="Third card's h2" h3="Third card's h3" /&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -5101,12 +5080,12 @@ import Card from "./Card";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Task: Add three Card elements</h1>
-      <Card h2="First card's h2" h3="First card's h3" />
-      <Card h2="Second card's h2" h3="Second card's h3" />
-      <Card h2="Third card's h2" h3="Third card's h3" />
-    </div>
+    &lt;div className="App">
+      &lt;h1&gt;Task: Add three Card elements&lt;/h1&gt;
+      <Card h2="First card's h2" h3="First card's h3" /&gt;
+      <Card h2="Second card's h2" h3="Second card's h3" /&gt;
+      <Card h2="Third card's h2" h3="Third card's h3" /&gt;
+    &lt;/div&gt;
   );
 };
 
@@ -5479,8 +5458,8 @@ component:
 function NumBillboard(props) {
   return (
     <>
-      <h1>{prop.num}</h1>
-    </>
+      &lt;h1&gt;{prop.num}&lt;/h1&gt;
+    </&gt;
   )
 }
 
@@ -5847,11 +5826,11 @@ function App() {
   };
 
   return (
-    <div className="thirdExample">
+    &lt;div className="thirdExample">
       <button onClick={thirdExample}>
         using a separate function declaration
       </button>
-    </div>
+    &lt;/div&gt;
   );
 };
 
@@ -5888,11 +5867,11 @@ function expression.</p>
 function App() {
   const fourthExample = () => console.log('fourth example');
   return (
-    <div className="fourthExample">
+    &lt;div className="fourthExample">
       <button onClick={fourthExample}>
         using a separate function expression
       </button>
-    </div>
+    &lt;/div&gt;
   );
 };
 
@@ -6098,10 +6077,10 @@ events on a single JSX element.</p>
 8.    }
 9.  
 10.   return (
-11.     <div>
-12.       <h1>Task: Add a button and handle a click event</h1>
+11.     &lt;div&gt;
+12.       &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
 13.       <button onClick={handleClick}>Guess the number between 1 and 3</button>
-14.     </div>
+14.     &lt;/div&gt;
 15.   );
 16. }
 17.  
@@ -6130,10 +6109,10 @@ closing <b>button</b> tag, to the App component's <b>h1</b> element.</p>
 1.  function App() {
 2.
 3.    return (
-4.      <div>
-5.        <h1>Task: Add a button and handle a click event</h1>
+4.      &lt;div&gt;
+5.        &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
 6.        <button></button>
-7.      </div>
+7.      &lt;/div&gt;
 8.    );
 9.  }
 10.
@@ -6152,10 +6131,10 @@ added the following text: Guess the number between 1 and 3.</p>
 1.  function App() {
 2.
 3.    return (
-4.      <div>
-5.        <h1>Task: Add a button and handle a click event</h1>
+4.      &lt;div&gt;
+5.        &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
 6.        <button>Guess the number between 1 and 3</button>
-7.      </div>
+7.      &lt;/div&gt;
 8.    );
 9.  }
 10.
@@ -6174,10 +6153,10 @@ expression: <b>{handleClick}</b>.</p>
 <pre>
 function App() {
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
       <button onClick={handleClick}>Guess the number between 1 and 3</button>
-    </div>
+    &lt;/div&gt;
   );
 }
   
@@ -6202,10 +6181,10 @@ function App() {
     alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
   }
   return (
-    <div>
-      <h1>Task: Add a button and handle a click event</h1>
+    &lt;div&gt;
+      &lt;h1&gt;Task: Add a button and handle a click event&lt;/h1&gt;
       <button onClick={handleClick}>Guess the number between 1 and 3</button>
-    </div>
+    &lt;/div&gt;
   );
 }
 
@@ -6504,9 +6483,9 @@ the UI.</p>
 <pre>
 function Puppy(props) {
   return (
-    <div>
-      {props.name} has <Bowl bowlShape="square" bowlStatus="full" />
-    </div>
+    &lt;div&gt;
+      {props.name} has <Bowl bowlShape="square" bowlStatus="full" /&gt;
+    &lt;/div&gt;
   );
 };
 </pre>
@@ -6787,12 +6766,12 @@ get updated with the latest text that has been typed.</p>
 9.
 10.	  return (
 11.	    <>
-12.	    <input value={inputText} onChange={handleChange} />
+12.	    <input value={inputText} onChange={handleChange} /&gt;
 13.	    <p>You typed: {inputText}</p>
 14.	    <button onClick={() => setText('hello')}>
 15.	      Reset
 16.	    </button>
-17.     </>
+17.     </&gt;
 18.	  );
 19. }
 </pre>
@@ -6897,7 +6876,7 @@ registration form with fields for first name, last name and email.</p>
 19.	              firstName: e.target.value
 20.	            });
 21.	          }}
-22.	        />
+22.	        /&gt;
 23.	      </label>
 24.	      <label>
 25.	        Last name:
@@ -6909,7 +6888,7 @@ registration form with fields for first name, last name and email.</p>
 31.	              lastName: e.target.value
 32.	            });
 33.	          }}
-34.	        />
+34.	        /&gt;
 35.	      </label>
 36.	      <label>
 37.	        Email:
@@ -6921,14 +6900,14 @@ registration form with fields for first name, last name and email.</p>
 43.	              email: e.target.value
 44.	            });
 45.	          }}
-46.	        />
+46.	        /&gt;
 47.       </label>
 48.       <p>
 49.         {form.firstName}{' '}
 50.         {form.lastName}{' '}
 51.         ({form.email})
 52.       </p>
-53.     </>
+53.     </&gt;
 54.   );
 55. }
 </pre>
@@ -6976,9 +6955,9 @@ function TextInputWithFocusButton() {
   };
   return (
     <>
-      <input ref={inputEl} type="text" />
+      <input ref={inputEl} type="text" /&gt;
       <button onClick={onButtonClick}>Focus the input</button>
-    </>
+    </&gt;
   );
 }
 </pre>
@@ -7451,33 +7430,33 @@ can focus on it and understand it in isolation.</p>
 
 <pre>
 1.  function Main(props) {
-2.    return <Header msg={props.msg} />;
+2.    return <Header msg={props.msg} /&gt;;
 3.  };
 4.
 5.  function Header(props) {
 6.    return (
-7.      <div style={{ border: "10px solid whitesmoke" }}>
-8.        <h1>Header here</h1>
-9.        <Wrapper msg={props.msg} />
-10.     </div>
+7.      &lt;div style={{ border: "10px solid whitesmoke" }}>
+8.        &lt;h1&gt;Header here&lt;/h1&gt;
+9.        <Wrapper msg={props.msg} /&gt;
+10.     &lt;/div&gt;
 11.   );
 12. };
 13.
 14. function Wrapper(props) {
 15.   return (
-16.     <div style={{ border: "10px solid lightgray" }}>
+16.     &lt;div style={{ border: "10px solid lightgray" }}>
 17.       <h2>Wrapper here</h2>
-18.       <Button msg={props.msg} />
-19.     </div>
+18.       <Button msg={props.msg} /&gt;
+19.     &lt;/div&gt;
 20.   );
 21. };
 22.
 23. function Button(props) {
 24.   return (
-25.     <div style={{ border: "20px solid orange" }}>
+25.     &lt;div style={{ border: "20px solid orange" }}>
 26.       <h3>This is the Button component</h3>
 27.       <button onClick={() => alert(props.msg)}>Click me!</button>
-28.     </div>
+28.     &lt;/div&gt;
 29.   );
 30. };
 31.
@@ -7485,7 +7464,7 @@ can focus on it and understand it in isolation.</p>
 33.   return (
 34.     <Main
 35. msg="I passed through the Header and the Wrapper and I reached the Button component"
-36.     />
+36.     /&gt;
 37.   );
 38. };
 39.
@@ -7772,11 +7751,11 @@ This code is probably more complex than most of what you have encountered. Don't
 10.   ]);
 11.
 12.   return (
-13.     <div className="App">
-14.       <h1>Where should the state go?</h1>
-15.       <Fruits fruits={fruits} />
-16.       <FruitsCounter fruits={fruits} />
-17.     </div>
+13.     &lt;div className="App">
+14.       &lt;h1&gt;Where should the state go?&lt;/h1&gt;
+15.       <Fruits fruits={fruits} /&gt;
+16.       <FruitsCounter fruits={fruits} /&gt;
+17.     &lt;/div&gt;
 18.   );
 19. }
 20.
@@ -7790,9 +7769,9 @@ This code is probably more complex than most of what you have encountered. Don't
 <pre>
 1.  function Fruits(props) {
 2.    return (
-3.      <div>
+3.      &lt;div&gt;
 4.        {props.fruits.map(f => <p key={f.id}>{f.fruitName}</p>)}
-5.      </div>
+5.      &lt;/div&gt;
 6.    )
 7.  }
 8.
@@ -7847,11 +7826,11 @@ This code is probably more complex than most of what you have encountered. Don't
 <pre>
 1.	// The updated return statement in App.js:
 2.	return (
-3.	  <div className="App">
-4.	    <h1>Where should the state go?</h1>
-5.	    <Fruits fruits={fruits} />
-6.	    <FruitsCounter fruits={fruits} />
-7.	  </div>
+3.	  &lt;div className="App">
+4.	    &lt;h1&gt;Where should the state go?&lt;/h1&gt;
+5.	    <Fruits fruits={fruits} /&gt;
+6.	    <FruitsCounter fruits={fruits} /&gt;
+7.	  &lt;/div&gt;
 8.	);
 </pre>
 
@@ -7864,9 +7843,9 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <pre>
 1.  function Fruits(props) {
 2.    return (
-3.      <div>
+3.      &lt;div&gt;
 4.        {props.fruits.map(f => <p key={f.id}>{f.fruitName}</p>)}
-5.      </div>
+5.      &lt;/div&gt;
 6.    )
 7.  }
 8.
@@ -8309,7 +8288,7 @@ A Single Page Application allows the user to interact with the website without d
 
 <pre>
 1.  function Contact() {
-2.    return  <h1>Contact Little Lemon on this page.</h1>
+2.    return  &lt;h1&gt;Contact Little Lemon on this page.</h1>
 3.  }
 4.  export default Contact
 </pre>
@@ -8328,18 +8307,18 @@ A Single Page Application allows the user to interact with the website without d
 6.
 7.  function App() {
 8.    return (
-9.      <div> 
+9.      &lt;div&gt; 
 10.       <nav>
 11.         <Link to="/" className="nav-item">Homepage</Link>
 12.         <Link to="/about" className="nav-item">About Little Lemon</Link>
 13.         <Link to="/contact" className="nav-item">Contact</Link>
 14.       </nav>
 15.       <Routes> 
-16.         <Route path="/" element={<Homepage />}></Route>
-17.         <Route path="/about" element={<AboutLittleLemon />}></Route>
-18.         <Route path="/contact" element={<Contact />}></Route>
+16.         <Route path="/" element={<Homepage /&gt;}></Route>
+17.         <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
+18.         <Route path="/contact" element={<Contact /&gt;}></Route>
 19.	      </Routes>
-20.     </div>
+20.     &lt;/div&gt;
 21.   );
 22.	};
 23.
@@ -8380,7 +8359,7 @@ page.&lt;/h1&gt;.</p>
 
 <pre>
 1.  function Contact() {
-2.    return  <h1>Contact Little Lemon on this page.</h1>
+2.    return  &lt;h1&gt;Contact Little Lemon on this page.&lt;/h1&gt;
 3.  };
 4.  export default Contact;
 </pre>
@@ -8401,16 +8380,16 @@ page.&lt;/h1&gt;.</p>
 6.	
 7.	function App() {
 8.	  return (
-9.	    <div> 
+9.	    &lt;div&gt; 
 10.	      <nav>
 11.	        <Link to="/" className="nav-item">Homepage</Link>
 12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
 13.	      </nav>
 14.	      <Routes> 
-15.	        <Route path="/" element={<Homepage />}></Route>
-16.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
+15.	        <Route path="/" element={<Homepage /&gt;}></Route>
+16.	        <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
 17.	      </Routes>
-18.	    </div>
+18.	    &lt;/div&gt;
 19.	  );
 20.	};
 21.	
@@ -8435,17 +8414,17 @@ page.&lt;/h1&gt;.</p>
 6.
 7.  function App() {
 8.    return (
-9.      <div> 
+9.      &lt;div&gt; 
 10.	      <nav>
 11.	        <Link to="/" className="nav-item">Homepage</Link>
 12.	        <Link to="/about" className="nav-item">About Little Lemon</Link>
 13.	        <Link to="/contact" className="nav-item">Contact</Link>
 14.	      </nav>
 15.	      <Routes> 
-16.	        <Route path="/" element={<Homepage />}></Route>
-17.	        <Route path="/about" element={<AboutLittleLemon />}></Route>
+16.	        <Route path="/" element={<Homepage /&gt;}></Route>
+17.	        <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
 18.	      </Routes>
-19.	    </div>
+19.	    &lt;/div&gt;
 20.	  );
 21.	};
 22.	
@@ -8471,18 +8450,18 @@ set to {&lt;Contact /&gt;}.</p>
 6.
 7.  function App() {
 8.    return (
-9.      <div> 
+9.      &lt;div&gt; 
 10.       <nav>
 11.         <Link to="/" className="nav-item">Homepage</Link>
 12.         <Link to="/about" className="nav-item">About Little Lemon</Link>
 13.         <Link to="/contact" className="nav-item">Contact</Link>
 14.       </nav>
 15.       <Routes> 
-16.         <Route path="/" element={<Homepage />}></Route>
-17.         <Route path="/about" element={<AboutLittleLemon />}></Route>
-18.         <Route path="/contact" element={<Contact />}></Route>
+16.         <Route path="/" element={<Homepage /&gt;}></Route>
+17.         <Route path="/about" element={<AboutLittleLemon /&gt;}></Route>
+18.         <Route path="/contact" element={<Contact /&gt;}></Route>
 19.       </Routes>
-20.     </div>
+20.     &lt;/div&gt;
 21.   );
 22. };
 </pre>
@@ -8656,17 +8635,17 @@ set to {&lt;Contact /&gt;}.</p>
 4.    let message;
 5.
 6.    if (weekday) {
-7.      message = <Workdays />
+7.      message = <Workdays /&gt;
 8.    } else if (weekend) {
-9.      message = <Weekends />
+9.      message = <Weekends /&gt;
 10.   } else {
-11.	    message = <ErrorComponent />
+11.	    message = <ErrorComponent /&gt;
 12.	  }
 13.	
 14.	  return (
-15.	    <div>
+15.	    &lt;div&gt;
 16.	      {message}
-17.	    </div>
+17.	    &lt;/div&gt;
 18.	  )
 19.	}
 </pre>
@@ -8685,12 +8664,12 @@ Conditional rendering using the logical AND operator.  Another interesting appro
 2.    const val = prompt('Anything but a 0')
 3.
 4.    return (
-5.      <div>
-6.        <h1>Please don't type in a zero</h1>
+5.      &lt;div&gt;
+6.        &lt;h1&gt;Please don't type in a zero&lt;/h1&gt;
 7.        {val &&
 8.          <h2>Yay, no 0 was typed in!</h2>
 9.        }
-10.     </div>
+10.     &lt;/div&gt;
 11.   )
 12. }
 </pre>
@@ -8767,16 +8746,16 @@ true, the LogoutButton component is returned. Otherwise, the LoginButton compone
 1.  function LogInOutButton(props) {
 2.    const isLoggedIn = props.isLoggedIn;
 3.    if (isLoggedIn) {
-4.      return <LogoutButton />;
+4.      return <LogoutButton /&gt;;
 5.    } else {
-6.      return <LoginButton />;
+6.      return <LoginButton /&gt;;
 7.  }
 </pre>
 
 <p>Then when the LogInOutButton parent component is used, the prop can be passed in.</p>
 
 <pre>
-1.  <LogInOutButton isLoggedIn={false} />
+1.  <LogInOutButton isLoggedIn={false} /&gt;
 </pre>
 
 <p>This is a simple example showing how you can change what is displayed based on a condition 
@@ -9105,10 +9084,10 @@ image. I just require it and provide the string with the relative path to the im
 2.	
 3.	function App() {
 4.	  return (
-5.	    <div className="App">
-6.	      <h1>Task: Add an image below</h1>
-7.	      <img src={logo} alt="Logo" />
-8.	    </div>
+5.	    &lt;div className="App">
+6.	      &lt;h1&gt;Task: Add an image below&lt;/h1&gt;
+7.	      <img src={logo} alt="Logo" /&gt;
+8.	    &lt;/div&gt;
 9.	  );
 10.	};
 11.	
@@ -9137,9 +9116,9 @@ First, you imported the logo image.</p>
 1.	import logo from"./assets/logo.png"
 2.	function App() {
 3.	  return (
-4.	    <div className="App">
-5.	      <h1>Task: Add an image below</h1>
-6.	    </div>
+4.	    &lt;div className="App">
+5.	      &lt;h1&gt;Task: Add an image below&lt;/h1&gt;
+6.	    &lt;/div&gt;
 7.	  );
 8.	};
 9.	
@@ -9161,10 +9140,10 @@ string of "Logo".
 2.	
 3.	function App() {
 4.	  return (
-5.	    <div className="App">
-6.	      <h1>Task: Add an image below</h1>
-7.	      <img src={logo} alt="Logo" />
-8.	    </div>
+5.	    &lt;div className="App">
+6.	      &lt;h1&gt;Task: Add an image below&lt;/h1&gt;
+7.	      <img src={logo} alt="Logo" /&gt;
+8.	    &lt;/div&gt;
 9.	  );
 10.	};
 11.	
@@ -9328,15 +9307,15 @@ get the entire package's functionality, use the following import:</p>
 3.	
 4.	const App = () => {
 5.	  return (
-6.	    <div>
-7.	      <MyVideo />
-8.	    </div>
+6.	    &lt;div&gt;
+7.	      <MyVideo /&gt;
+8.	    &lt;/div&gt;
 9.	  );
 10.	};
 11.	
 12.	const MyVideo = () => {
 13.	  return (
-14.	    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' />
+14.	    <ReactPlayer url='https://www.youtube.com/watch?v=ysz5S6PUM-U' /&gt;
 15.	  );
 16.	};
 17.	
@@ -9491,10 +9470,10 @@ change common settings for the react player.</p>
 27.	  }; 
 28.	
 29.	  return ( 
-30.	    <div> 
+30.	    &lt;div&gt; 
 31.	      <button onClick={toggle1}>Caspian Tern 1</button> 
 32.	      <button onClick={toggle2}>Caspian Tern 2</button> 
-33.	    </div> 
+33.	    &lt;/div&gt; 
 34.	  ); 
 35.	} 
 36.	
@@ -9545,10 +9524,10 @@ second button.</p>
 19.   };
 20.
 21.   return (
-22.     <div>
+22.     &lt;div&gt;
 23.       <button onClick={toggle1}>Caspian Tern 1</button>
 24.       <button onClick={toggle2}>Caspian Tern 2</button>
-25.     </div>
+25.     &lt;/div&gt;
 26.   );
 27. }
 28.	
@@ -9588,10 +9567,10 @@ event-handling attribute, you should have un-commented the bird2 variable on lin
 19.   };
 20.
 21.   return (
-22.     <div>
+22.     &lt;div&gt;
 23.       <button onClick={toggle1}>Caspian Tern 1</button>
 24.       <button onClick={toggle2}>Caspian Tern 2</button>
-25.     </div>
+25.     &lt;/div&gt;
 26.   );
 27. }
 28.
@@ -9640,10 +9619,10 @@ functionality as the toggle1 function, but it needed to work with the bird2 vari
 27.	  };
 28.
 29.	  return (
-30.	    <div>
+30.	    <div&gt;
 31.	      <button onClick={toggle1}>Caspian Tern 1</button>
 32.	      <button onClick={toggle2}>Caspian Tern 2</button>
-33.	    </div>
+33.	    &lt;/div&gt;
 34.	  );
 35.	}
 36.
@@ -10032,15 +10011,15 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   return (
     <>
-    <div className="status">{status}</div>
+    <div className="status">{status}&lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-      />
-      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-      />
-      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-      />
-    </div>
+      &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      /&gt;
+      &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      /&gt;
+      &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      /&gt;
+    &lt;/div&gt;
 </pre>
 
 </details>
@@ -10259,7 +10238,7 @@ Did you want a JSX fragment &lt;&gt;...&lt;/&gt;?</p>
 
 <p>React components need to return a single JSX element and not multiple
 adjacent JSX elements like two buttons. To fix this you can use
-fragments (<> and </>) to wrap multiple adjacent JSX elements like
+fragments (<> and </&gt;) to wrap multiple adjacent JSX elements like
 this:</p>
 
 <pre>
@@ -10268,7 +10247,7 @@ export default function Square() {
     <>
     <button className="square">X</button>
     <button className="square">X</button>
-    </>
+    </&gt;
   );
 }
 </pre>
@@ -10316,18 +10295,18 @@ export default function Square() {
         <button className="square">1</button>
         <button className="square">2</button>
         <button className="square">3</button>
-      </div>
+      &lt;/div&gt;
       <div className="board-row">
         <button className="square">4</button>
         <button className="square">5</button>
         <button className="square">6</button>
-      </div>
+      &lt;/div&gt;
       <div className="board-row">
       <button className="square">7</button>
       <button className="square">8</button>
       <button className="square">9</button>
-      </div>
-    </>
+      &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10369,18 +10348,18 @@ export default function Board() {
       <button className="square">1</button>
       <button className="square">2</button>
       <button className="square">3</button>
-    </div>
+    &lt;/div&gt;
     <div className="board-row">
       <button className="square">4</button>
       <button className="square">5</button>
       <button className="square">6</button>
-    </div>
+    &lt;/div&gt;
     <div className="board-row">
       <button className="square">7</button>
       <button className="square">8</button>
       <button className="square">9</button>
-    </div>
-    </>
+    &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10428,21 +10407,21 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
-    </>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10531,21 +10510,21 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square value="1" />
-      <Square value="2" />
-      <Square value="3" />
-    </div>
+      &lt;Square value="1" /&gt;
+      &lt;Square value="2" /&gt;
+      &lt;Square value="3" /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value="4" />
-      <Square value="5" />
-      <Square value="6" />
-    </div>
+      &lt;Square value="4" /&gt;
+      &lt;Square value="5" /&gt;
+      &lt;Square value="6" /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value="7" />
-      <Square value="8" />
-      <Square value="9" />
-    </div>
-    </>
+      &lt;Square value="7" /&gt;
+      &lt;Square value="8" /&gt;
+      &lt;Square value="9" /&gt;
+    &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10577,21 +10556,21 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square value="1" />
-      <Square value="2" />
-      <Square value="3" />
-    </div>
+      &lt;Square value="1" /&gt;
+      &lt;Square value="2" /&gt;
+      &lt;Square value="3" /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value="4" />
-      <Square value="5" />
-      <Square value="6" />
-    </div>
+      &lt;Square value="4" /&gt;
+      &lt;Square value="5" /&gt;
+      &lt;Square value="6" /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value="7" />
-      <Square value="8" />
-      <Square value="9" />
-    </div>
-    </>
+      &lt;Square value="7" /&gt;
+      &lt;Square value="8" /&gt;
+      &lt;Square value="9" /&gt;
+    &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10679,21 +10658,21 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
-    </>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10772,19 +10751,19 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
-    </div>
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
+      &lt;Square /&gt;
+      &lt;Square /&gt;
+      &lt;Square /&gt;
 </pre>
 
 </details>
@@ -10890,21 +10869,21 @@ const [squares, setSquares] = useState(Array(9).fill(null));
   return (
     <>
     <div className="board-row">
-      <Square value={squares[0]} />
-      <Square value={squares[1]} />
-      <Square value={squares[2]} />
-    </div>
+      &lt;Square value={squares[0]} /&gt;
+      &lt;Square value={squares[1]} /&gt;
+      &lt;Square value={squares[2]} /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[3]} />
-      <Square value={squares[4]} />
-      <Square value={squares[5]} />
-    </div>
+      &lt;Square value={squares[3]} /&gt;
+      &lt;Square value={squares[4]} /&gt;
+      &lt;Square value={squares[5]} /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[6]} />
-      <Square value={squares[7]} />
-      <Square value={squares[8]} />
-    </div>
-    </>
+      &lt;Square value={squares[6]} /&gt;
+      &lt;Square value={squares[7]} /&gt;
+      &lt;Square value={squares[8]} /&gt;
+    &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -10948,21 +10927,21 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square value={squares[0]} />
-      <Square value={squares[1]} />
-      <Square value={squares[2]} />
-    </div>
+      &lt;Square value={squares[0]} /&gt;
+      &lt;Square value={squares[1]} /&gt;
+      &lt;Square value={squares[2]} /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[3]} />
-      <Square value={squares[4]} />
-      <Square value={squares[5]} />
-    </div>
+      &lt;Square value={squares[3]} /&gt;
+      &lt;Square value={squares[4]} /&gt;
+      &lt;Square value={squares[5]} /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[6]} />
-      <Square value={squares[7]} />
-      <Square value={squares[8]} />
-      </div>
-    </>
+      &lt;Square value={squares[6]} /&gt;
+      &lt;Square value={squares[7]} /&gt;
+      &lt;Square value={squares[8]} /&gt;
+      &lt;/div&gt;
+    </&gt;
   );
 }
 </pre>
@@ -11021,7 +11000,7 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-    <Square value={squares[0]} onSquareClick={handleClick} />
+    &lt;Square value={squares[0]} onSquareClick={handleClick} /&gt;
     //...
   );
 }
@@ -11100,7 +11079,7 @@ the onSquareClick prop of square to be handleClick(0) directly in the
 JSX like this, but it won't work:</p>
 
 <pre>
-<Square value={squares[0]} onSquareClick={handleClick(0)} />
+&lt;Square value={squares[0]} onSquareClick={handleClick(0)} /&gt;
 </pre>
 
 <p>Here is why this doesn't work. The handleClick(0) call will be a part of
@@ -11137,8 +11116,8 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-    <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-    />
+    &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
+    /&gt;
     // ...
   );
 }
@@ -11162,30 +11141,30 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-      />
-      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-      />
-      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-      />
-    </div>
+      &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      /&gt;
+      &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      /&gt;
+      &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[3]} onSquareClick={() => handleClick(3)}
-      />
-      <Square value={squares[4]} onSquareClick={() => handleClick(4)}
-      />
-      <Square value={squares[5]} onSquareClick={() => handleClick(5)}
-      />
-    </div>
+      &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
+      /&gt;
+      &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
+      /&gt;
+      &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
+      /&gt;
+    &lt;/div&gt;
    <div className="board-row">
-     <Square value={squares[6]} onSquareClick={() => handleClick(6)}
-     />
-     <Square value={squares[7]} onSquareClick={() => handleClick(7)}
-     />
-     <Square value={squares[8]} onSquareClick={() => handleClick(8)}
-     />
-   </div>
-   </>
+     &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
+     /&gt;
+     &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
+     /&gt;
+     &lt;Square value={squares[8]} onSquareClick={() => handleClick(8)}
+     /&gt;
+   &lt;/div&gt;
+   </&gt;
   );
 };
 </pre>
@@ -11231,29 +11210,29 @@ export default function Board() {
   return (
     <>
     <div className="board-row">
-      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-      />
-      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-      />
-      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-      />
-    </div>
+      &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      /&gt;
+      &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      /&gt;
+      &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[3]} onSquareClick={() => handleClick(3)}
-      />
-      <Square value={squares[4]} onSquareClick={() => handleClick(4)}
-      />
-      <Square value={squares[5]} onSquareClick={() => handleClick(5)}
-      />
-    </div>
+      &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
+      /&gt;
+      &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
+      /&gt;
+      &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
+      /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[6]} onSquareClick={() => handleClick(6)}
-      />
-      <Square value={squares[7]} onSquareClick={() => handleClick(7)}
-      />
-      <Square value={squares[8]} onSquareClick={() => handleClick(8)}
-      />
-    </div>
+      &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
+      /&gt;
+      &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
+      /&gt;
+      &lt;Square value={squares[8]} onSquareClick={() => handleClick(8)}
+      /&gt;
+    &lt;/div&gt;
 </pre>
 
 </details>
@@ -11472,13 +11451,13 @@ import { useState } from 'react';
   return (
   <>
   <div className="board-row">
-    <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-    />
-    <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-    />
-    <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-    />
-  </div>
+    &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
+    /&gt;
+    &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
+    /&gt;
+    &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
+    /&gt;
+  &lt;/div&gt;
   <div className="board-row">
 </pre>
 
@@ -11565,8 +11544,8 @@ export default function Board() {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
   return (
-    <div>
-    <div className="status">{status}</div>
+    <div&gt;
+    <div className="status">{status}&lt;/div&gt;
     <div className="board-row">
     // ...
   )
@@ -11618,31 +11597,31 @@ export default function Board() {
   }
   return (
     <>
-    <div className="status">{status}</div>
+    <div className="status">{status}&lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
-      />
-      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
-      />
-      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
-      />
-    </div>
+      &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      /&gt;
+      &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      /&gt;
+      &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[3]} onSquareClick={() => handleClick(3)}
-      />
-      <Square value={squares[4]} onSquareClick={() => handleClick(4)}
-      />
-      <Square value={squares[5]} onSquareClick={() => handleClick(5)}
-      />
-    </div>
+      &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
+      /&gt;
+      &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
+      /&gt;
+      &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
+      /&gt;
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+      &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
       />
-      <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+      &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
       />
-      <Square value={squares[8]} onSquareClick={() => handleClick(8)}
+      &lt;Square value={squares[8]} onSquareClick={() => handleClick(8)}
       />
-    </div>
+    &lt;/div&gt;
     </>
   );
 }
@@ -11731,11 +11710,11 @@ export default function Game() {
     <div className="game">
       <div className="game-board">
         <Board />
-      </div>
+      &lt;/div&gt;
       <div className="game-info">
         <ol>{/*TODO*/}</ol>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
 </pre>
@@ -11932,7 +11911,7 @@ import { useState } from 'react';
   }
   return (
     <>
-    <div className="status">{status}</div>
+    <div className="status">{status}&lt;/div&gt;
     <div className="board-row">
 </pre>
 
@@ -11994,11 +11973,11 @@ export default function Game() {
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
         />
-      </div>
+      &lt;/div&gt;
       <div className="game-info">
         <ol>{moves}</ol>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
 </pre>
@@ -12045,31 +12024,31 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   return (
     <>
-    <div className="status">{status}</div>
+    <div className="status">{status}&lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[0]} onSquareClick={() => handleClick(0)}
+      &lt;Square value={squares[0]} onSquareClick={() => handleClick(0)}
       />
-      <Square value={squares[1]} onSquareClick={() => handleClick(1)}
+      &lt;Square value={squares[1]} onSquareClick={() => handleClick(1)}
       />
-      <Square value={squares[2]} onSquareClick={() => handleClick(2)}
+      &lt;Square value={squares[2]} onSquareClick={() => handleClick(2)}
       />
-    </div>
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[3]} onSquareClick={() => handleClick(3)}
+      &lt;Square value={squares[3]} onSquareClick={() => handleClick(3)}
       />
-      <Square value={squares[4]} onSquareClick={() => handleClick(4)}
+      &lt;Square value={squares[4]} onSquareClick={() => handleClick(4)}
       />
-      <Square value={squares[5]} onSquareClick={() => handleClick(5)}
+      &lt;Square value={squares[5]} onSquareClick={() => handleClick(5)}
       />
-    </div>
+    &lt;/div&gt;
     <div className="board-row">
-      <Square value={squares[6]} onSquareClick={() => handleClick(6)}
+      &lt;Square value={squares[6]} onSquareClick={() => handleClick(6)}
       />
-      <Square value={squares[7]} onSquareClick={() => handleClick(7)}
+      &lt;Square value={squares[7]} onSquareClick={() => handleClick(7)}
       />
-      <Square value={squares[8]} onSquareClick={() => handleClick(8)}
+      &lt;Square value={squares[8]} onSquareClick={() => handleClick(8)}
       />
-    </div>
+    &lt;/div&gt;
     </>
   );
 }
@@ -12102,11 +12081,11 @@ export default function Game() {
       <div className="game-board">
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay}
         />
-      </div>
+      &lt;/div&gt;
       <div className="game-info">
         <ol>{moves}</ol>
-      </div>
-    </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 }
 function calculateWinner(squares) {
@@ -12278,7 +12257,7 @@ function Board({ xIsNext, squares, onPlay }) {
     }
   return (
     <>
-    <div className="status">{status}</div>
+    <div className="status">{status}&lt;/div&gt;
     <div className="board-row">
   )
 }
@@ -12391,7 +12370,7 @@ const winner = calculateWinner(squares);
 
 return (
   <>
-  <div className="status">{status}</div>
+  <div className="status">{status}&lt;/div&gt;
   <div className="board-row">
 )
 </pre>
@@ -12495,7 +12474,7 @@ function Board({ xIsNext, squares, onPlay }) {
   }
   return (
   <>
-  <div className="status">{status}</div>
+  <div className="status">{status}&lt;/div&gt;
   <div className="board-row">
 }
 </pre>
@@ -12569,10 +12548,10 @@ component:</p>
 <pre>
 export default function MyApp() {
   return (
-    <div>
-      <h1>Welcome to my app</h1>
+    <div&gt;
+      &lt;h1&gt;Welcome to my app&lt;/h1&gt;
         <MyButton />
-    </div>
+    &lt;/div&gt;
   );
 }
 </pre>
@@ -12598,10 +12577,10 @@ function MyButton() {
 }
 export default function MyApp() {
   return (
-    <div>
-      <h1>Welcome to my app</h1>
+    <div&gt;
+      &lt;h1&gt;Welcome to my app&lt;/h1&gt;
       <MyButton />
-    </div>
+    &lt;/div&gt;
   );
 }
 </pre>
@@ -12630,7 +12609,7 @@ into a shared parent, like a &lt;div&gt;...&lt;/div&gt; or an empty
 function AboutPage() {
   return (
     <>
-      <h1>About</h1>
+      &lt;h1&gt;About&lt;/h1&gt;
       <p>Hello there.<br />How do you do?</p>
     </>
   );
@@ -12668,9 +12647,9 @@ and display it to the user. For example, this will display user.name:</p>
 
 <pre>
 return (
-  <h1>
+  &lt;h1&gt;
     {user.name}
-  </h1>
+  &lt;/h1&gt;
 );
 </pre>
 
@@ -12704,7 +12683,7 @@ const user = {
 export default function Profile() {
   return (
     <>
-      <h1>{user.name}</h1>
+      &lt;h1&gt;{user.name}</h1>
       <img
       className="avatar"
       src={user.imageUrl}
@@ -12732,21 +12711,19 @@ attribute when your styles depend on JavaScript variables.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-let content;
+<pre>let content;
 
 if (isLoggedIn) {
 
-  content = <AdminPanel />;
+  content = &lt;AdminPanel /&gt;;
 } else {
-  content = <LoginForm />;
+  content = &lt;LoginForm /&gt;;
 }
   return (
-    <div>
+    &lt;div&gt;
       {content}
-    </div>
-  );
-</pre>
+    &lt;/div&gt;
+  );</pre>
 
 </details>
 
@@ -12754,22 +12731,22 @@ if (isLoggedIn) {
 operator</a>.  Unlike if, it works inside JSX:</p>
 
 <pre>
-<div>
+<div&gt;
   {isLoggedIn ? (
     <AdminPanel />
   ) : (
     <LoginForm />
   )}
-</div>
+&lt;/div&gt;
 </pre>
 
 <p>When you don't need the else branch, you can also use a shorter <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND#short-circuit_evaluation">
 logical &amp;&amp; syntax</a>:</p>
 
 <pre>
-<div>
+<div&gt;
   {isLoggedIn && <AdminPanel />}
-</div>
+&lt;/div&gt;
 </pre>
 
 <p>All of these approaches also work for conditionally specifying
@@ -12799,16 +12776,14 @@ products into an array of &lt;li&gt; items:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-const listItems = products.map(product =>
-  <li key={product.id}>
+<pre>const listItems = products.map(product =&gt;
+  &lt;li key={product.id}&gt;
     {product.title}
-  </li>
+  &lt;/li&gt;
 );
 return (
-  <ul>{listItems}</ul>
-);
-</pre>
+  &lt;ul&gt;{listItems}&lt;/ul&gt;
+);</pre>
 
 </details>
 
@@ -12821,28 +12796,26 @@ later insert, delete, or reorder the items.</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-const products = [
+<pre>const products = [
   { title: 'Cabbage', isFruit: false, id: 1 },
   { title: 'Garlic', isFruit: false, id: 2 },
   { title: 'Apple', isFruit: true, id: 3 },
 ];
 export default function ShoppingList() {
   const listItems = products.map(product =>
-    <li
+    &lt;li
       key={product.id}
       style={{
         color: product.isFruit ? 'magenta' : 'darkgreen'
       }}
-      >
+      &gt;
       {product.title}
-    </li>
+    &lt;/li&gt;
   );
   return (
-    <ul>{listItems}</ul>
+    &lt;ul&gt;{listItems}&lt;/ul&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -12854,19 +12827,17 @@ your components:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function MyButton() {
+<pre>function MyButton() {
 
   function handleClick() {
     alert('You clicked me!');
   }
   return (
-    <button onClick={handleClick}>
+    &lt;button onClick={handleClick}&gt;
       Click me
-    </button>
+    &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -12905,19 +12876,17 @@ counter:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-function MyButton() {
+<pre>function MyButton() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
   }
   return (
-    <button onClick={handleClick}>
+    &lt;button onClick={handleClick}&gt;
       Clicked {count} times
-    </button>
+    &lt;/button&gt;
   );
-}
-</pre>
+}</pre>
 
 </details>
 
@@ -12930,15 +12899,14 @@ state. Click each button separately:</p>
 <details open>
   <summary>React code:</summary>
 
-<pre>
-import { useState } from 'react';
+<pre>import { useState } from 'react';
 export default function MyApp() {
   return (
-    <div>
-      <h1>Counters that update separately</h1>
-      <MyButton />
-      <MyButton />
-    </div>
+    &lt;div&gt;
+      &lt;h1&gt;Counters that update separately&lt;/h1&gt;
+      &lt;MyButton /&gt;
+      &lt;MyButton /&gt;
+    &lt;/div&gt;
   );
 }
 function MyButton() {
@@ -12947,9 +12915,9 @@ function MyButton() {
     setCount(count + 1);
   }
   return (
-    <button onClick={handleClick}>
+    &lt;button onClick={handleClick}&gt;
       Clicked {count} times
-    </button>
+    &lt;/button&gt;
   );
 }
 </pre>
@@ -13172,8 +13140,7 @@ thought process of building a searchable product data table with React.</p>
 <details open>
   <summary>JSON API:</summary>
 
-</pre>
-[
+<pre>[
   { category: "Fruits", price: "$1", stocked: true, name: "Apple"
   },
 
@@ -13191,8 +13158,7 @@ thought process of building a searchable product data table with React.</p>
 
   { category: "Vegetables", price: "$1", stocked: true, name:
   "Peas" }
-]
-</pre>
+]</pre>
 
 </details>
 
