@@ -33,7 +33,8 @@ font-family: Bahnschrift, Inter, Consolas, "Andale Mono WT", "Andale Mono", "Luc
   }
 
   a[href]:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
+    background-color: yellow;
   }
 
   pre:hover, pre:focus { width: min-content; }
