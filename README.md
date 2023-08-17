@@ -12,7 +12,7 @@ meta-react-basics: meta/Coursera - React Basics
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-a. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-a.png?raw=true"
+<img src="/images/w1-a.webp?raw=true"
   alt="meta logo."
   width="125px" />
 </p>
@@ -21,7 +21,7 @@ meta-react-basics: meta/Coursera - React Basics
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-b. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-b.png?raw=true"
+<img src="/images/w1-b.webp?raw=true"
   alt="Coursera logo."
   width="100px" />
 </p>
@@ -73,7 +73,7 @@ with coding.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-a. 3 basics of react (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s01-a.png?raw=true"
+<img src="/images/w1-s01-a.webp?raw=true"
   alt="Develop a working familiarity with a basic structure of react javascript library."
   width="30%" />
 </p>
@@ -99,11 +99,11 @@ on a foundation of components and composability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-b. components & composability (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s01-b.png?raw=true"
+<img src="/images/w1-s01-b.webp?raw=true"
   alt="React is comprised of components."
   width="40%" />
 </p>
-<!-- ![](./images/image005.png){width="4.0in" height="1.6605293088363955in"} -->
+<!-- ![](./images/image005.webp){width="4.0in" height="1.6605293088363955in"} -->
 
 <p>Simple components combined into more complex ones, which eventually
 merge to form a website.</p>
@@ -120,7 +120,7 @@ with <b>state</b> in React apps.</p>
 <!--~~~~~~ w1-s01-c. state - value of variables your working with at any given point (10) ~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s01-c.png?raw=true"
+<img src="/images/w1-s01-c.webp?raw=true"
   alt="State - the value of all variables your working with at any given point."
   width="50%" />
 </p>
@@ -133,7 +133,7 @@ working with at any given point in time.</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-d. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s01-d.png?raw=true"
+<img src="/images/w1-s01-d.webp?raw=true"
   alt="React basics - styling React apps."
   width="30%" />
 </p>
@@ -764,7 +764,7 @@ can name: <b>firstapp</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-a. vs code terminal screen (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s07-a.png?raw=true"
+<img src="/images/w1-s07-a.webp?raw=true"
   alt="VS Code terminal screen."
   width="80%" />
 </p>
@@ -852,7 +852,7 @@ show the following page in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-b. react logo on black screen (27) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s07-b.png?raw=true"
+<img src="/images/w1-s07-b.webp?raw=true"
   alt="React logo on black screen."
   width="40%" />
 </p>
@@ -992,7 +992,7 @@ library from Meta.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-a. sample search screen example (30) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-a.png?raw=true"
+<img src="/images/w1-s09-a.webp?raw=true"
   alt="React search screen example."
   width="50%" />
 </p>
@@ -1006,7 +1006,7 @@ URL doesn't change.</p>
 <!--~~~~~~~ w1-s09-b. spa: rich user interfaces, speed and scalability/flexibility (30) ~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-b.png?raw=true"
+<img src="/images/w1-s09-b.webp?raw=true"
   alt="SPA: Single Page Apps have rich user interfaces, speed and are scalable and flexible."
   width="40%" />
 </p>
@@ -1028,7 +1028,7 @@ and the virtual DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-c. component-based architecture (31) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-c.png?raw=true"
+<img src="/images/w1-s09-c.webp?raw=true"
   alt="Component-based architecture - build upon reusable code."
   width="50%" />
 </p>
@@ -1042,7 +1042,7 @@ reusable components of code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-d. example component (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-d.png?raw=true"
+<img src="/images/w1-s09-d.webp?raw=true"
   alt="Example component.  Update edit profile and update photo."
   width="65%" />
 </p>
@@ -1055,7 +1055,7 @@ components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-e. reusable and independent (32) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-e.png?raw=true"
+<img src="/images/w1-s09-e.webp?raw=true"
   alt="Reusable and independent."
   width="50%" />
 </p>
@@ -1070,7 +1070,7 @@ interact independently from each other.</p>
 <!--~~~~~~~~~~~~~ w1-s09-f. independent developers on independent components (32) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-f.png?raw=true"
+<img src="/images/w1-s09-f.webp?raw=true"
   alt="Components with independent developers."
   width="65%" />
 </p>
@@ -1092,7 +1092,7 @@ components.</p>
 <!--~~~~~~~~~~~ w1-s09-g. example product check out page on e-commerce web app (33) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-g.png?raw=true"
+<img src="/images/w1-s09-g.webp?raw=true"
   alt="Example product check out page on an e-commerce web application."
   width="65%" />
 </p>
@@ -1106,7 +1106,7 @@ sidebar.</p>
 <!--~~~~~~~~~~~~~~~~ w1-s09-h. example header section with logo & nav menu (33) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-h.png?raw=true"
+<img src="/images/w1-s09-h.webp?raw=true"
   alt="Example header section with logo & nav menu."
   width="65%" />
 </p>
@@ -1118,7 +1118,7 @@ a button to view the shopping cart.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s09-i. example payment section component (34) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-i.png?raw=true"
+<img src="/images/w1-s09-i.webp?raw=true"
   alt="Example payment section component."
   width="30%" />
 </p>
@@ -1130,7 +1130,7 @@ payment information.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w1-s09-j. example order summary component (35) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-j.png?raw=true"
+<img src="/images/w1-s09-j.webp?raw=true"
   alt="Example order summary component."
   width="30%" />
 </p>
@@ -1141,7 +1141,7 @@ payment information.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-k. self-contained components (35) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-k.png?raw=true"
+<img src="/images/w1-s09-k.webp?raw=true"
   alt="Self-contained components comprised of HTML, CSS and JavaScript."
   width="50%" />
 </p>
@@ -1157,7 +1157,7 @@ is not limited to just React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s09-l. components and compost ability (36) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-l.png?raw=true"
+<img src="/images/w1-s09-l.webp?raw=true"
   alt="Components and compost ability."
   width="30%" />
 </p>
@@ -1175,7 +1175,7 @@ its associated render method later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-m. tree-like dom (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-m.png?raw=true"
+<img src="/images/w1-s09-m.webp?raw=true"
   alt="Logical tree-like DOM."
   width="15%" />
 </p>
@@ -1195,7 +1195,7 @@ DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s09-n. react components - virtual dom (36) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s09-n.png?raw=true"
+<img src="/images/w1-s09-n.webp?raw=true"
   alt="React components, virtual DOM."
   width="50%" />
 </p>
@@ -1216,7 +1216,7 @@ DOM.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-a. js multiply function (36) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-a.png?raw=true"
+<img src="/images/w1-s10-a.webp?raw=true"
   alt="JavaScript function, multiply."
   width="60%" />
 </p>
@@ -1234,7 +1234,7 @@ components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-b. two react components (37) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-b.png?raw=true"
+<img src="/images/w1-s10-b.webp?raw=true"
   alt="Two types of React components; Functional and Class."
   width="60%" />
 </p>
@@ -1252,7 +1252,7 @@ JavaScript function.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s10-c. default react appl'n: index.js (38) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-c.png?raw=true"
+<img src="/images/w1-s10-c.webp?raw=true"
   alt="Index.js - Default React Appl'n."
   width="40%" />
 </p>
@@ -1265,7 +1265,7 @@ located inside the source folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-d. root component (38) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-d.png?raw=true"
+<img src="/images/w1-s10-d.webp?raw=true"
   alt="Root Component - Root."
   width="60%" />
 </p>
@@ -1281,7 +1281,7 @@ work, such as the import React and import React DOM statements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-e. render syntax (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-e.png?raw=true"
+<img src="/images/w1-s10-e.webp?raw=true"
   alt="Render Syntax - ComponentName."
   width="30%" />
 </p>
@@ -1293,7 +1293,7 @@ the component name inside the left and right-angle brackets and don't forget the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-f. roots components (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-f.png?raw=true"
+<img src="/images/w1-s10-f.webp?raw=true"
   alt="Roots Components."
   width="40%" />
 </p>
@@ -1305,7 +1305,7 @@ to represent the various UI part of the application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-g. index.html (39) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-g.png?raw=true"
+<img src="/images/w1-s10-g.webp?raw=true"
   alt="Index.html - root."
   width="40%" />
 </p>
@@ -1322,7 +1322,7 @@ similar to a JavaScript function with some HTML code inside.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-h. function app in app.js (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-h.png?raw=true"
+<img src="/images/w1-s10-h.webp?raw=true"
   alt="App.js - export default app."
   width="30%" />
 </p>
@@ -1337,11 +1337,11 @@ let's explore how web developers create them in React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-i. jsx syntax (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-i.png?raw=true"
+<img src="/images/w1-s10-i.webp?raw=true"
   alt="."
   width="30%" />
 </p>
-<!-- ![](./images/image032.png){width="3.0in" height="1.0762095363079616in"} -->
+<!-- ![](./images/image032.webp){width="3.0in" height="1.0762095363079616in"} -->
 
 <p>React is scripted using a special syntax called JavaScript XML or JSX.</p>
 <p>For many Reacts developers, this is known as a syntax extension to
@@ -1352,7 +1352,7 @@ default app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-j. app.js with jsx example (40) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-j.png?raw=true"
+<img src="/images/w1-s10-j.webp?raw=true"
   alt="App.js with JSX example 'Hello React'."
   width="40%" />
 </p>
@@ -1373,11 +1373,11 @@ statement of a functional component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-k. must be used as a jsx element (41) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-k.png?raw=true"
+<img src="/images/w1-s10-k.webp?raw=true"
   alt="React component must be used as a JSX element or won't be rendered."
   width="50%" />
 </p>
-<!-- ![](./images/image034.png){width="5.0in" height="2.5359787839020123in"} -->
+<!-- ![](./images/image034.webp){width="5.0in" height="2.5359787839020123in"} -->
 
 <p>It's also important to note that a React component won't render until
 it's used as a JSX element just like a JavaScript function declaration
@@ -1393,11 +1393,11 @@ file Heading.js.</p>
 <!--~~~~~~~~~~~~~~~~ w1-s10-l. capitalized first letter of component name (41) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-l.png?raw=true"
+<img src="/images/w1-s10-l.webp?raw=true"
   alt="First character of a component name is capitalized in React."
   width="65%" />
 </p>
-<!-- ![](./images/image035.png){width="6.5625in" height="0.575in"} -->
+<!-- ![](./images/image035.webp){width="6.5625in" height="0.575in"} -->
 
 <p>Notice that the first letter of the component name is capitalized.</p>
 <p>This is because there's a difference in how React treats capitalized,
@@ -1412,11 +1412,11 @@ from HTML elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-m. heading function with title (42) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-m.png?raw=true"
+<img src="/images/w1-s10-m.webp?raw=true"
   alt="Heading function with title."
   width="30%" />
 </p>
-<!-- ![](./images/image036.png){width="3.0in" height="1.4707939632545932in"} -->
+<!-- ![](./images/image036.webp){width="3.0in" height="1.4707939632545932in"} -->
 
 <p>Now let's continue with our component.</p>
 Next inside the app.js file, create a function named Heading.</p>
@@ -1429,11 +1429,11 @@ assign it the string value of this is some heading text.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-n. title variable (42) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-n.png?raw=true"
+<img src="/images/w1-s10-n.webp?raw=true"
   alt="Title variable."
   width="65%" />
 </p>
-<!-- ![](./images/image037.png){width="6.5625in" height="1.9423611111111112in"} -->
+<!-- ![](./images/image037.webp){width="6.5625in" height="1.9423611111111112in"} -->
 
 <p>Inside the parentheses of the return, insert a heading 1 tag, and inside
 it places the variable named title.</p>
@@ -1451,7 +1451,7 @@ with whatever text value that is stored within the variable named title.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s10-o. trans piling jsx to html (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s10-o.png?raw=true"
+<img src="/images/w1-s10-o.webp?raw=true"
   alt="Trans piling JSX to HTML."
   width="30%" />
 </p>
@@ -1481,7 +1481,7 @@ open in the built-in terminal.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-a. npm init react-app (43) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-a.png?raw=true"
+<img src="/images/w1-s11-a.webp?raw=true"
   alt="npm init react-app."
   width="70%" />
 </p>
@@ -1496,7 +1496,7 @@ inside this folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-b. npm start (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-b.png?raw=true"
+<img src="/images/w1-s11-b.webp?raw=true"
   alt="&gt; npm start."
   width="70%" />
 </p>
@@ -1513,7 +1513,7 @@ localhost:3000 which is the local server.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-c. on your react network (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-c.png?raw=true"
+<img src="/images/w1-s11-c.webp?raw=true"
   alt="On your react network."
   width="70%" />
 </p>
@@ -1526,7 +1526,7 @@ json.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-d. src folder (45) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-d.png?raw=true"
+<img src="/images/w1-s11-d.webp?raw=true"
   alt="SRC (source) folder."
   width="70%" />
 </p>
@@ -1539,7 +1539,7 @@ you to focus on how to build a component in React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-e. app.js (46) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-e.png?raw=true"
+<img src="/images/w1-s11-e.webp?raw=true"
   alt="app.js."
   width="70%" />
 </p>
@@ -1552,7 +1552,7 @@ declaring an app function and I'm exporting it as a default module.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-f. blank app.js (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-f.png?raw=true"
+<img src="/images/w1-s11-f.webp?raw=true"
   alt="blank app.js."
   width="70%" />
 </p>
@@ -1564,7 +1564,7 @@ want to display in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-g. header function (47) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-g.png?raw=true"
+<img src="/images/w1-s11-g.webp?raw=true"
   alt="Header function in app.js."
   width="70%" />
 </p>
@@ -1590,7 +1590,7 @@ again.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-h. hello world (48) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s11-h.png?raw=true"
+<img src="/images/w1-s11-h.webp?raw=true"
   alt="Hello World in React."
   width="70%" />
 </p>
@@ -1811,7 +1811,7 @@ export default App;
 <!--~~~~~~~~~~~~~~~~~~ w1-s13-a. 'your first component' example output (52) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s13-a.png?raw=true"
+<img src="/images/w1-s13-a.webp?raw=true"
   alt="The output of the completed 'Your first component' exercise."
   width="50%" />
 </p>
@@ -1891,7 +1891,7 @@ for app development.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-a. default files and folders (54) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-a.png?raw=true"
+<img src="/images/w1-s14-a.webp?raw=true"
   alt="Default files and folders."
   width="70%" />
 </p>
@@ -1910,7 +1910,7 @@ or source.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-b. node module folder (54) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-b.png?raw=true"
+<img src="/images/w1-s14-b.webp?raw=true"
   alt="Node module folder - repository for all modules in React app."
   width="70%" />
 </p>
@@ -1938,7 +1938,7 @@ work.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-c. public folder (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-c.png?raw=true"
+<img src="/images/w1-s14-c.webp?raw=true"
   alt="Public folder - contains assets displayed to user in app."
   width="70%" />
 </p>
@@ -1955,7 +1955,7 @@ it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-d. index.html (55) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-d.png?raw=true"
+<img src="/images/w1-s14-d.webp?raw=true"
   alt="Index.html."
   width="70%" />
 </p>
@@ -1974,7 +1974,7 @@ You'll find out more about how this works later on in the course.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-e. src folder (56) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-e.png?raw=true"
+<img src="/images/w1-s14-e.webp?raw=true"
   alt="Contents of the SRC (source) folder."
   width="70%" />
 </p>
@@ -2000,7 +2000,7 @@ Let's briefly explore the others.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-f. styles (57) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-f.png?raw=true"
+<img src="/images/w1-s14-f.webp?raw=true"
   alt="App.css contains styles for app.js and index.css contains styles for the entire app."
   width="70%" />
 </p>
@@ -2028,7 +2028,7 @@ you'll learn about them soon.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-g. index.js (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-g.png?raw=true"
+<img src="/images/w1-s14-g.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -2044,7 +2044,7 @@ root of the default app.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-h. root files (58) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-h.png?raw=true"
+<img src="/images/w1-s14-h.webp?raw=true"
   alt="Root files are additional root project files.."
   width="70%" />
 </p>
@@ -2055,7 +2055,7 @@ a README file.
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s14-i. .gitignore for version control (58) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-i.png?raw=true"
+<img src="/images/w1-s14-i.webp?raw=true"
   alt=".gitignore using version control to specify which files/folders to exclude."
   width="70%" />
 </p>
@@ -2070,7 +2070,7 @@ This means that other systems use this file too.
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s14-j. readme.md giving basic project info (59) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-j.png?raw=true"
+<img src="/images/w1-s14-j.webp?raw=true"
   alt="readme.md giving basic project info."
   width="70%" />
 </p>
@@ -2084,7 +2084,7 @@ like GitHub.
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s14-k. package.json list info for npm (59) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-k.png?raw=true"
+<img src="/images/w1-s14-k.webp?raw=true"
   alt="package.json list info for npm."
   width="70%" />
 </p>
@@ -2096,7 +2096,7 @@ itself.
 <!--~~~~~~~~~~~~~~~~~~~~~ w1-s14-l. package-lock.json for recovery (59) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s14-l.png?raw=true"
+<img src="/images/w1-s14-l.webp?raw=true"
   alt="package-lock.json holds list of dependencies with a specific version for recovery."
   width="70%" />
 </p>
@@ -2511,7 +2511,7 @@ powerful UIs based on reusable components of code.
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s16-a. react is collection of components (66) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-a.png?raw=true"
+<img src="/images/w1-s16-a.webp?raw=true"
   alt="React = collection of components."
   width="40%" />
 </p>
@@ -2536,7 +2536,7 @@ For example, do you recall the concept of modules in JavaScript?
 <!--~~~~~~~~~~~~~~~~~~~ w1-s16-b. modules are standalone units of code (67) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-b.png?raw=true"
+<img src="/images/w1-s16-b.webp?raw=true"
   alt="Modules are standalone units of code which may be reused."
   width="40%" />
 </p>
@@ -2553,7 +2553,7 @@ your components by placing them in their own file.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-c.  (67) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-c.png?raw=true"
+<img src="/images/w1-s16-c.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -2573,7 +2573,7 @@ statement.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-d. exports - default and named (68) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-d.png?raw=true"
+<img src="/images/w1-s16-d.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -2597,7 +2597,7 @@ single part or small piece of functionality like a button.
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-e. module - series of components (68) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-e.png?raw=true"
+<img src="/images/w1-s16-e.webp?raw=true"
   alt="Series of components comprise a module."
   width="50%" />
 </p>
@@ -2615,7 +2615,7 @@ scenario.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-f. react and components (69) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-f.png?raw=true"
+<img src="/images/w1-s16-f.webp?raw=true"
   alt="React is comprised of components."
   width="50%" />
 </p>
@@ -2636,7 +2636,7 @@ statements.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-g. import in index.js (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-g.png?raw=true"
+<img src="/images/w1-s16-g.webp?raw=true"
   alt="Import in index.js."
   width="70%" />
 </p>
@@ -2664,7 +2664,7 @@ however, there are a few common approaches you may want to consider.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-h. components folder (70) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-h.png?raw=true"
+<img src="/images/w1-s16-h.webp?raw=true"
   alt="components folder."
   width="40%" />
 </p>
@@ -2677,7 +2677,7 @@ together.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-i. sample react app (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-i.png?raw=true"
+<img src="/images/w1-s16-i.webp?raw=true"
   alt="Payment page of an e-commerce app."
   width="60%" />
 </p>
@@ -2691,7 +2691,7 @@ component in React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-j. header section (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-j.png?raw=true"
+<img src="/images/w1-s16-j.webp?raw=true"
   alt="Header section."
   width="60%" />
 </p>
@@ -2699,7 +2699,7 @@ component in React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-k. payment section as main (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-k.png?raw=true"
+<img src="/images/w1-s16-k.webp?raw=true"
   alt="Main section = payment."
   width="60%" />
 </p>
@@ -2707,7 +2707,7 @@ component in React.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-l. sidebar section (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-l.png?raw=true"
+<img src="/images/w1-s16-l.webp?raw=true"
   alt="Sidebar section."
   width="30%" />
 </p>
@@ -2719,7 +2719,7 @@ component called sidebar.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-m. tree of components (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s16-m.png?raw=true"
+<img src="/images/w1-s16-m.webp?raw=true"
   alt="Tree view of components."
   width="40%" />
 </p>
@@ -2771,7 +2771,7 @@ export default App;
 <!--~~~~~~~~~~~ w1-s17-a. app, heading and index files displayed in src folder (73) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s17-a.png?raw=true"
+<img src="/images/w1-s17-a.webp?raw=true"
   alt="App, heading and index files displayed in src folder."
   width="40%" />
 </p>
@@ -2783,7 +2783,7 @@ export default App;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s17-b. output of exercise (73) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s17-b.png?raw=true"
+<img src="/images/w1-s17-b.webp?raw=true"
   alt="Output of the completed 'Creating and importing components' exercise."
   width="50%" />
 </p>
@@ -2869,7 +2869,7 @@ They are reusable blocks of code that act much like a JavaScript function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-a. react javascript function (74) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-a.png?raw=true"
+<img src="/images/w1-s19-a.webp?raw=true"
   alt="React function props."
   width="60%" />
 </p>
@@ -2882,7 +2882,7 @@ as props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-b. prop example object (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-b.png?raw=true"
+<img src="/images/w1-s19-b.webp?raw=true"
   alt="Props object in React functions."
   width="30%" />
 </p>
@@ -2898,7 +2898,7 @@ object is a special type of variable that can contain many values.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-c. object property (75) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-c.png?raw=true"
+<img src="/images/w1-s19-c.webp?raw=true"
   alt="Object properties in React."
   width="30%" />
 </p>
@@ -2910,7 +2910,7 @@ properties for type, quantity, and color.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-d. object with name-value pairs (76) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-d.png?raw=true"
+<img src="/images/w1-s19-d.webp?raw=true"
   alt="Objects with name-value pairs using dot notation."
   width="60%" />
 </p>
@@ -2921,7 +2921,7 @@ access the object's properties using dot notation.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-e. react props (76) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-c.png?raw=true"
+<img src="/images/w1-s19-c.webp?raw=true"
   alt="React props."
   width="30%" />
 </p>
@@ -2938,7 +2938,7 @@ some props to a component and print them out in a React app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-f. render app in index.js  (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-f.png?raw=true"
+<img src="/images/w1-s19-f.webp?raw=true"
   alt="Render app in index.js."
   width="30%" />
 </p>
@@ -2950,7 +2950,7 @@ can make this heading dynamic by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-g. index and app.js (77) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-g.png?raw=true"
+<img src="/images/w1-s19-g.webp?raw=true"
   alt="Index.js and App.js."
   width="60%" />
 </p>
@@ -2967,7 +2967,7 @@ passed as an argument by the HTML attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-h. app.js with props title (78) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-h.png?raw=true"
+<img src="/images/w1-s19-h.webp?raw=true"
   alt="App.js with props title."
   width="30%" />
 </p>
@@ -2991,7 +2991,7 @@ props data is known as the child.</p>
 <!--~~~~~~~~~~~~~~~~~~~ w1-s19-i. parent to multiple child components (78) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-i.png?raw=true"
+<img src="/images/w1-s19-i.webp?raw=true"
   alt="Parent-Children passing data using props."
   width="40%" />
 </p>
@@ -3012,7 +3012,7 @@ prompts.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s19-j. pure functions - same (79) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s19-j.png?raw=true"
+<img src="/images/w1-s19-j.webp?raw=true"
   alt="Pure Function - Always returns same output for same argument value."
   width="40%" />
 </p>
@@ -3185,7 +3185,7 @@ This makes the app more versatile, helping it consume data easier.<br>
 <!--~~~~~~~~~~~~~~~~~~~~~ w1-s21-a. syntax for props and components (82) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-a.png?raw=true"
+<img src="/images/w1-s21-a.webp?raw=true"
   alt="Syntax for props and components."
   width="40%" />
 </p>
@@ -3200,7 +3200,7 @@ react using components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-b.  (82) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-b.png?raw=true"
+<img src="/images/w1-s21-b.webp?raw=true"
   alt="."
   width="30%" />
 </p>
@@ -3216,14 +3216,14 @@ of code to return the JSX from it inside the function.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-c. jsx nav component (83) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w1-s21-c.png?raw=true"
+<img src="/images/w1-s21-c.webp?raw=true"
   alt="JSX Nav component."
   width="25%" />
 &nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w1-s21-d. attributes building components with props (83) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img src="/images/w1-s21-d.png?raw=true"
+<img src="/images/w1-s21-d.webp?raw=true"
   alt="Attributes used in building components with props in React."
   width="25%" />
 </p>
@@ -3238,7 +3238,7 @@ with a live example of building a component using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-e.  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-e.png?raw=true"
+<img src="/images/w1-s21-e.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -3252,7 +3252,7 @@ as the Children of the app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-f.  (84) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-f.png?raw=true"
+<img src="/images/w1-s21-f.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -3267,7 +3267,7 @@ object to the header component. I'm not using this data and the header component
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-g.  (85) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-g.png?raw=true"
+<img src="/images/w1-s21-g.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -3282,7 +3282,7 @@ of the two properties inside the header component using props dot name and props
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-h.  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-h.png?raw=true"
+<img src="/images/w1-s21-h.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -3295,7 +3295,7 @@ now update the main and sidebar to.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-i.  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-i.png?raw=true"
+<img src="/images/w1-s21-i.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -3308,7 +3308,7 @@ brace props dot greet, closing curly brace. I can now delete the Hello string.</
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s21-j.  (86) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s21-j.png?raw=true"
+<img src="/images/w1-s21-j.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -3362,7 +3362,7 @@ export default Heading;
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s22-a. output of 'passing props' exercise (88) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s22-a.png?raw=true"
+<img src="/images/w1-s22-a.webp?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
   width="60%" />
 </p>
@@ -3480,7 +3480,7 @@ CSS within a component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-a. jsx - write html in javascript (90) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s23-a.png?raw=true"
+<img src="/images/w1-s23-a.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -3493,7 +3493,7 @@ JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s23-b. nav component with unordered list (90) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s23-b.png?raw=true"
+<img src="/images/w1-s23-b.webp?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
   width="30%" />
 </p>
@@ -3510,7 +3510,7 @@ inside the curly braces of the code is essentially regular JavaScript code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-c. jsx component syntax (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s23-c.png?raw=true"
+<img src="/images/w1-s23-c.webp?raw=true"
   alt="JSX component syntax."
   width="60%" />
 </p>
@@ -3523,7 +3523,7 @@ return statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-d. jsx return statement (91) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s23-d.png?raw=true"
+<img src="/images/w1-s23-d.webp?raw=true"
   alt="JSX return statement."
   width="30%" />
 </p>
@@ -3538,14 +3538,14 @@ curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-e. jsx return command div tags (92) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w1-s23-e.png?raw=true"
+<img src="/images/w1-s23-e.webp?raw=true"
   alt="JSX return div command."
   width="30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w1-s23-f. jsx return command less than and greater to (92) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img src="/images/w1-s23-f.png?raw=true"
+<img src="/images/w1-s23-f.webp?raw=true"
   alt="JSX fragment command rather than div."
   width="30%" />
 </p>
@@ -3560,7 +3560,7 @@ are some differences.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-g. jsx component syntax (92) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s23-g.png?raw=true"
+<img src="/images/w1-s23-g.webp?raw=true"
   alt="JSX component syntax."
   width="30%" />
 </p>
@@ -3576,7 +3576,7 @@ do this later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s23-h. html and jsx (93) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s23-h.png?raw=true"
+<img src="/images/w1-s23-h.webp?raw=true"
   alt="JSX and HTML syntax."
   width="60%" />
 </p>
@@ -4002,7 +4002,7 @@ Recall that there are three techniques to include CSS and HTML documents.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-a. index.css (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-a.png?raw=true"
+<img src="/images/w1-s26-a.webp?raw=true"
   alt="Index.css."
   width="60%" />
 </p>
@@ -4013,7 +4013,7 @@ Recall that there are three techniques to include CSS and HTML documents.
 <!--~~~~~~~~~~~~~~~~~~~~~ w1-s26-b. move css style inside component (100) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-b.png?raw=true"
+<img src="/images/w1-s26-b.webp?raw=true"
   alt="Move CSS style inside component."
   width="60%" />
 </p>
@@ -4025,7 +4025,7 @@ the component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-c. external style sheet (100) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-c.png?raw=true"
+<img src="/images/w1-s26-c.webp?raw=true"
   alt="External style sheet."
   width="60%" />
 </p>
@@ -4046,7 +4046,7 @@ This will not affect my component because I'm pasting CSS code into a JavaScript
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-d.  (101) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-d.png?raw=true"
+<img src="/images/w1-s26-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -4057,7 +4057,7 @@ commas. I also need to replace the hyphenated names with camelCase.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-e.  (100) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-e.png?raw=true"
+<img src="/images/w1-s26-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -4068,7 +4068,7 @@ I need to make their respective values a string by wrapping them inside double q
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-f.  (102) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-f.png?raw=true"
+<img src="/images/w1-s26-f.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -4079,7 +4079,7 @@ style as a JSX expression. I then choose save all in the file menu to save my ch
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-g.  (103) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-g.png?raw=true"
+<img src="/images/w1-s26-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -4090,7 +4090,7 @@ That's an example of using inline CSS styling directly inside a component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s26-h.  (104) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s26-h.png?raw=true"
+<img src="/images/w1-s26-h.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -4327,7 +4327,7 @@ The code consists of a paragraph, HTML elements containing the phrase hello worl
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-a. jsx example (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-a.png?raw=true"
+<img src="/images/w1-s28-a.webp?raw=true"
   alt="JSX example."
   width="40%" />
 </p>
@@ -4338,7 +4338,7 @@ element that can then be inserted into the webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-b. html to jsx to react (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-b.png?raw=true"
+<img src="/images/w1-s28-b.webp?raw=true"
   alt="HTML to JSX to React."
   width="40%" />
 </p>
@@ -4348,7 +4348,7 @@ element that can then be inserted into the webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-c. embedded expressions (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-c.png?raw=true"
+<img src="/images/w1-s28-c.webp?raw=true"
   alt="Embedded expressions."
   width="40%" />
 </p>
@@ -4360,7 +4360,7 @@ variables into the HTML of the resulting React elements.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-d. function: formatname (108) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-d.png?raw=true"
+<img src="/images/w1-s28-d.webp?raw=true"
   alt="function: formatname."
   width="40%" />
 </p>
@@ -4371,7 +4371,7 @@ first name and surname with a space character between them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s28-e. embedded function outputs (109) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-e.png?raw=true"
+<img src="/images/w1-s28-e.webp?raw=true"
   alt="Embedded function outputs."
   width="40%" />
 </p>
@@ -4380,7 +4380,7 @@ first name and surname with a space character between them.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w1-s28-f. more embedded function outputs (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-f.png?raw=true"
+<img src="/images/w1-s28-f.webp?raw=true"
   alt="More embedded function outputs."
   width="40%" />
 </p>
@@ -4390,7 +4390,7 @@ variable will be output in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w1-s28-g. expression in html attributes (109) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-g.png?raw=true"
+<img src="/images/w1-s28-g.webp?raw=true"
   alt="Expressions in HTML attributes."
   width="40%" />
 </p>
@@ -4401,7 +4401,7 @@ variable will be output in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~ w1-s28-h. more expressions in html attributes (109) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s28-h.png?raw=true"
+<img src="/images/w1-s28-h.webp?raw=true"
   alt="More expressions in HTML attributes."
   width="40%" />
 </p>
@@ -4747,7 +4747,7 @@ image tag.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-a. embedding jsx expressions (115) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s31-a.png?raw=true"
+<img src="/images/w1-s31-a.webp?raw=true"
   alt="Section 31a - what to expect."
   width="50%" />
 </p>
@@ -4760,7 +4760,7 @@ utilize additional assets within an app by importing components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-b. screenshot app.js (116) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s31-b.png?raw=true"
+<img src="/images/w1-s31-b.webp?raw=true"
   alt="Screenshot App.js."
   width="70%" />
 </p>
@@ -4768,13 +4768,13 @@ utilize additional assets within an app by importing components.</p>
 that returns the h1 header text, hello world.</p>
 <p>I've previously copied the avatar profile image from the Coursera GitHub account which is
 publicly available through the get up API.</p>
-<p>I have pasted the images into the roots of the SRC folder and named it avatar.png.</p>
+<p>I have pasted the images into the roots of the SRC folder and named it avatar.webp.</p>
 <p>In order to use the image I need to import it into the app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s31-c. add logo function to app.js (116) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s31-c.png?raw=true"
+<img src="/images/w1-s31-c.webp?raw=true"
   alt="Add new function in App.js named logo."
   width="70%" />
 </p>
@@ -4792,7 +4792,7 @@ the logo element inside the app components return statement.</p>
 <!--~~~~~~~~~~~~~~~~~~ w1-s31-d. snapshot of preview header and image (117) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s31-d.png?raw=true"
+<img src="/images/w1-s31-d.webp?raw=true"
   alt="Snapshot of preview, displaying header text and an image."
   width="70%" />
 </p>
@@ -4805,7 +4805,7 @@ file and then import and render it as needed.</p>
 <!--~~~~~~~~~~~~~~~~~~ w1-s31-e. embed a jsx expression in an attribute (117) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s31-e.png?raw=true"
+<img src="/images/w1-s31-e.webp?raw=true"
   alt="How to embed a JSX expression in an attribute."
   width="40%" />
 </p>
@@ -4888,7 +4888,7 @@ export default Card;
 <!--~~~~~~~~~~~~~~~ 43. output of completed 'multiple components' exercise (xx) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s32-a.png?raw=true"
+<img src="/images/w1-s32-a.webp?raw=true"
   alt="The output of the completed 'Multiple components' exercise."
   width="60%" />
 </p>
@@ -5198,7 +5198,7 @@ software engineer Katie.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-a. html, css and js (122) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s33-a.png?raw=true"
+<img src="/images/w1-s33-a.webp?raw=true"
   alt="HTML, CSS, and JavaScript (JS)."
   width="40%" />
 </p>
@@ -5214,7 +5214,7 @@ based on reusable components of code like the reactor library.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w1-s33-b. react components and virtual dom (123) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s33-b.png?raw=true"
+<img src="/images/w1-s33-b.webp?raw=true"
   alt="React Components &amp; component style layouts which use the Virtual DOM."
   width="40%" />
 </p>
@@ -5225,7 +5225,7 @@ foundation of UI design.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s33-c. jsx to html (123) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w1-s33-c.png?raw=true"
+<img src="/images/w1-s33-c.webp?raw=true"
   alt="React and JSX, transpire from JSX to HTML."
   width="40%" />
 </p>
@@ -5246,13 +5246,13 @@ JSX elements in a way that is functional and looks good.</p>
 <!--~~~~~~~~~~~~~~~ w1-s33-d. use, define components and invoke functions (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p float="left">
-<img src="/images/w1-s33-d.png?raw=true"
+<img src="/images/w1-s33-d.webp?raw=true"
   alt="Use props and components, define components, and invoke functions."
   width="45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w1-s33-e. use expressions as props and declare components (124) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img src="/images/w1-s33-e.png?raw=true"
+<img src="/images/w1-s33-e.webp?raw=true"
   alt="Use and manipulate props &amp; components, define components using function expressions &amp; arrow functions."
   width="45%" />
 </p>
@@ -5266,13 +5266,13 @@ embedded expressions in attributes.
 <!--~~~~~~~~~~~~~~~~~~~ w1-s33-f. explain react &amp; create components (124) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p float="left">
-<img src="/images/w1-s33-f.png?raw=true"
+<img src="/images/w1-s33-f.webp?raw=true"
   alt="Explain React and create components."
   width="45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w1-s33-g. use props &amp; components, describe assets (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img src="/images/w1-s33-g.png?raw=true"
+<img src="/images/w1-s33-g.webp?raw=true"
   alt="Use props and components, describe assets."
   width="45%" />
 </p>
@@ -5306,7 +5306,7 @@ this module and get ready for the next one.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s01-a. "clicks  movements  commands" (125) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-a.png?raw=true"
+<img src="/images/w2-s01-a.webp?raw=true"
   alt="Clicks  Movements  Commands."
   width="60%" />
 </p>
@@ -5322,7 +5322,7 @@ interaction to occur before they can be triggered.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s01-b. event listener button (125) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-b.png?raw=true"
+<img src="/images/w2-s01-b.webp?raw=true"
   alt="Event Listener Button - onclick."
   width="40%" />
 </p>
@@ -5332,7 +5332,7 @@ by using HTML attributes, commonly referred to as event listeners.</p>
 <!--~~~~~~~~~~~~~~~~ w2-s01-c. on click, add to cart html (126) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-c.png?raw=true"
+<img src="/images/w2-s01-c.webp?raw=true"
   alt="On click, add to cart - html."
   width="60%" />
 </p>
@@ -5350,7 +5350,7 @@ handler to execute some code and respond to the event action is known as
 <!--~~~~~~~~~~~~~~~~~ w2-s01-d. on click, add to cart js (126) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-d.png?raw=true"
+<img src="/images/w2-s01-d.webp?raw=true"
   alt="On click, add to cart - js."
   width="60%" />
 </p>
@@ -5361,7 +5361,7 @@ JavaScript code.
 <!--~~~~~~~~~~~~~~~~ w2-s01-e. on click, add 1 to cart js (127) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-e.png?raw=true"
+<img src="/images/w2-s01-e.webp?raw=true"
   alt="On click, add 1 to cart - js."
   width="60%" />
 </p>
@@ -5375,7 +5375,7 @@ icon.
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s01-f. - 2 item in cart (127) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-f.png?raw=true"
+<img src="/images/w2-s01-f.webp?raw=true"
   alt="On click, add 1 to cart - js."
   width="60%" />
 </p>
@@ -5390,7 +5390,7 @@ work with <b>events</b> as they are handled a bit differently.
 <!--~~~~~~~~~ w2-s01-g. identify types of events & event handling (128) ~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-g.png?raw=true"
+<img src="/images/w2-s01-g.webp?raw=true"
   alt="Identify types of events in React and describe most common. Explain event handling."
   width="60%" />
 </p>
@@ -5405,7 +5405,7 @@ are very similar to HTML event attributes that you may be familiar with.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s01-h. onclick (128) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-h.png?raw=true"
+<img src="/images/w2-s01-h.webp?raw=true"
   alt="onclick event handling (all lowercase) in html, and onClick in camelCase for jsx."
   width="40%" />
 </p>
@@ -5419,7 +5419,7 @@ space.
 <!--~~~~~~~~~~~~~~~~ w2-s01-i. events supported in react (128) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-i.png?raw=true"
+<img src="/images/w2-s01-i.webp?raw=true"
   alt="Events supported in React."
   width="60%" />
 </p>
@@ -5431,7 +5431,7 @@ multiple events.</p>
 <!--~~~~~~~~~~~~~~~~~ w2-s01-j. supported mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-j.png?raw=true"
+<img src="/images/w2-s01-j.webp?raw=true"
   alt="Mouse events supported in React."
   width="60%" />
 </p>
@@ -5442,7 +5442,7 @@ onDoubleClick, and several others.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s01-k. clipboard events (129) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-k.png?raw=true"
+<img src="/images/w2-s01-k.webp?raw=true"
   alt="Clipboard events supported in React."
   width="60%" />
 </p>
@@ -5463,7 +5463,7 @@ cases.
 <!--~~~~~~~~~~~~~~~~~~ w2-s01-l - supported drag n drop mouse events (129) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s01-l.png?raw=true"
+<img src="/images/w2-s01-l.webp?raw=true"
   alt="Drag 'n drop mouse events supported in React."
   width="60%" />
 </p>
@@ -5583,7 +5583,7 @@ components.</p>
 <!--~~~~~~~~~~~ w2-s03-a.  (132) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-a.png?raw=true"
+<img src="/images/w2-s03-a.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5595,7 +5595,7 @@ As I start, I've added a new component to the SRC folder. I named it
 <!--~~~~~~~~~~~ w2-s03-b.  (132) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-b.png?raw=true"
+<img src="/images/w2-s03-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5612,7 +5612,7 @@ Save and the button renders on the screen.</p>
 <!--~~~~~~~~~~~ w2-s03-c.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-c.png?raw=true"
+<img src="/images/w2-s03-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5624,7 +5624,7 @@ distributed the code on several lines to increase readability.</p>
 <!--~~~~~~~~~~~ w2-s03-d.  (133) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-d.png?raw=true"
+<img src="/images/w2-s03-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5641,7 +5641,7 @@ developer tools.</p>
 <!--~~~~~~~~~~~ w2-s03-e.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-e.png?raw=true"
+<img src="/images/w2-s03-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5656,7 +5656,7 @@ pressing and releasing the C button, and finally releasing the Control key.</p>
 <!--~~~~~~~~~~~ w2-s03-f.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-f.png?raw=true"
+<img src="/images/w2-s03-f.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5671,7 +5671,7 @@ different event.</p>
 <!--~~~~~~~~~~~ w2-s03-g.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s03-g.png?raw=true"
+<img src="/images/w2-s03-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5694,7 +5694,7 @@ you need to use <b>event handlers</b> that will then execute an action.</p>
 <!--~~~~~~~~~~~ w2-s04-a.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-a.png?raw=true"
+<img src="/images/w2-s04-a.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5710,7 +5710,7 @@ them.</p>
 <!--~~~~~~~~~~~ w2-s04-b.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-b.png?raw=true"
+<img src="/images/w2-s04-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5728,7 +5728,7 @@ this in plain HTML.</p>
 <!--~~~~~~~~~~~ w2-s04-c.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-c.png?raw=true"
+<img src="/images/w2-s04-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5748,7 +5748,7 @@ find out later.</p>
 <!--~~~~~~~~~~~ w2-s04-d.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-d.png?raw=true"
+<img src="/images/w2-s04-d.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -5769,7 +5769,7 @@ the equation, but the code on the other hand, is a bit more complicated.</p>
 <!--~~~~~~~~~~~ w2-s04-e.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-e.png?raw=true"
+<img src="/images/w2-s04-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5785,7 +5785,7 @@ The rule is to avoid manipulating the DOM directly as much as possible.
 <!--~~~~~~~~~~~ w2-s04-f.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-f.png?raw=true"
+<img src="/images/w2-s04-f.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5795,7 +5795,7 @@ updates to React and let it figure out the rest.
 <!--~~~~~~~~~~~ w2-s04-g.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-g.png?raw=true"
+<img src="/images/w2-s04-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5814,7 +5814,7 @@ pass a reference to the event handling function without invoking it.
 <!--~~~~~~~~~~~ w2-s04-h.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-h.png?raw=true"
+<img src="/images/w2-s04-h.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5834,7 +5834,7 @@ the name of the function to be run. Make sure not to invoke it.
 <!--~~~~~~~~~~~ w2-s04-i.  (1xx) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s04-i.png?raw=true"
+<img src="/images/w2-s04-i.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -5996,7 +5996,7 @@ state, styling, and the use of turning the expressions.</p>
 <!--~~~~~~~~~~~ w2-s06-a.  (143) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-a.png?raw=true"
+<img src="/images/w2-s06-a.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6029,7 +6029,7 @@ However, I don't have the values I'm evaluating yet.</p>
 <!--~~~~~~~~~~~ w2-s06-b.  (144) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-b.png?raw=true"
+<img src="/images/w2-s06-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6042,7 +6042,7 @@ is on in an H one header.</p>
 <!--~~~~~~~~~~~ w2-s06-c.  (144) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-c.png?raw=true"
+<img src="/images/w2-s06-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6054,7 +6054,7 @@ mode on variable is set to true.</p>
 <!--~~~~~~~~~~~ w2-s06-d.  (145) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-d.png?raw=true"
+<img src="/images/w2-s06-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6065,7 +6065,7 @@ value that's stored in dark mode will be rendered.</p>
 <!--~~~~~~~~~~~ w2-s06-e.  (145) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-e.png?raw=true"
+<img src="/images/w2-s06-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6079,7 +6079,7 @@ the dark mode on, variable from true to false.</p>
 <!--~~~~~~~~~~~ w2-s06-f.  (146) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-f.png?raw=true"
+<img src="/images/w2-s06-f.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6099,7 +6099,7 @@ statement.</p>
 <!--~~~~~~~~~~~ w2-s06-g.  (147) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-g.png?raw=true"
+<img src="/images/w2-s06-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6114,7 +6114,7 @@ others can easily examine the code at a later stage. I save.</p>
 <!--~~~~~~~~~~~ w2-s06-h. -  (147) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-h.png?raw=true"
+<img src="/images/w2-s06-h.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6125,7 +6125,7 @@ string output in the console.</p>
 <!--~~~~~~~~~~~ w2-s06-i. -  (148) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s06-i.png?raw=true"
+<img src="/images/w2-s06-i.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -6185,7 +6185,7 @@ events on a single JSX element.</p>
 <!--~~~~~~~~~~~~~ w2-s07-a. output of the completed dynamic events exercise (149) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s07-a.png?raw=true"
+<img src="/images/w2-s07-a.webp?raw=true"
   alt="The output of the completed 'Dynamic events' exercise."
   width="70%" />
 </p>
@@ -6328,7 +6328,7 @@ will explore this concept as it applies to React.</p>
 <!--~~~~~~ w2-s09-a. parent-child unidirectional flow of data and react hierarchy (151) ~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-a.png?raw=true"
+<img src="/images/w2-s09-a.webp?raw=true"
   alt="Parent-Child unidirectional flow of data and React hierarchy."
   width="40%" />
 </p>
@@ -6342,7 +6342,7 @@ contents of the promo heading components that you will create later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-b. promo component (152) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-b.png?raw=true"
+<img src="/images/w2-s09-b.webp?raw=true"
   alt="Promo component."
   width="40%" />
 </p>
@@ -6354,7 +6354,7 @@ by the line export default <b>Promo</b> to make the component accessible.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-c. promoheading component (152) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-c.png?raw=true"
+<img src="/images/w2-s09-c.webp?raw=true"
   alt="PromoHeading component."
   width="40%" />
 </p>
@@ -6366,7 +6366,7 @@ closing parenthesis.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w2-s09-d. promoheading component and export (152) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-d.png?raw=true"
+<img src="/images/w2-s09-d.webp?raw=true"
   alt="PromoHeading component with export."
   width="40%" />
 </p>
@@ -6378,7 +6378,7 @@ the component <b>PromoHeading</b> to return the text 80 percent off sale.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-e. promo component with child (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-e.png?raw=true"
+<img src="/images/w2-s09-e.webp?raw=true"
   alt="Promo component as parent with rendered PromoHeading child component."
   width="40%" />
 </p>
@@ -6389,7 +6389,7 @@ child component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-f. promoheading with 99% off (153) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-f.png?raw=true"
+<img src="/images/w2-s09-f.webp?raw=true"
   alt="PromoHeading component."
   width="40%" />
 </p>
@@ -6401,7 +6401,7 @@ quick fix because there is only one change to deal with.</p>
 <!--~~~~~~~~~~~~~~~~ w2-s09-g. call promoheading and show two messages	(153) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-g.png?raw=true"
+<img src="/images/w2-s09-g.webp?raw=true"
   alt="PromoHeading component."
   width="40%" />
 </p>
@@ -6413,7 +6413,7 @@ component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-h. promo, sidebar and footer (154) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-h.png?raw=true"
+<img src="/images/w2-s09-h.webp?raw=true"
   alt="PromoHeading component."
   width="40%" />
 </p>
@@ -6433,7 +6433,7 @@ more.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-i. single source of truth (154) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-i.png?raw=true"
+<img src="/images/w2-s09-i.webp?raw=true"
   alt="PromoHeading component."
   width="40%" />
 </p>
@@ -6447,7 +6447,7 @@ component using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-j. single source for text (155) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-j.png?raw=true"
+<img src="/images/w2-s09-j.webp?raw=true"
   alt="Singel source for text updates."
   width="40%" />
 </p>
@@ -6458,7 +6458,7 @@ contain two properties named heading and callToAction, both represented as strin
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-k. parent to child component (155) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-k.png?raw=true"
+<img src="/images/w2-s09-k.webp?raw=true"
   alt="Example Parent-Child component."
   width="40%" />
 </p>
@@ -6471,7 +6471,7 @@ component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-l. another example parent-child (155) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-l.png?raw=true"
+<img src="/images/w2-s09-l.webp?raw=true"
   alt="Another example of Parent-Child component."
   width="40%" />
 </p>
@@ -6484,7 +6484,7 @@ parent component when you add the specific JSX element that should be rendered.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-m. promoheading rendering (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-m.png?raw=true"
+<img src="/images/w2-s09-m.webp?raw=true"
   alt="Promoheading rendering."
   width="40%" />
 </p>
@@ -6498,7 +6498,7 @@ component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-n. parent to 3 child component (156) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-n.png?raw=true"
+<img src="/images/w2-s09-n.webp?raw=true"
   alt="Prop states flow from parent to child components."
   width="40%" />
 </p>
@@ -6509,7 +6509,7 @@ to change the data in several places.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s09-o. parent prop to child (156) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s09-o.png?raw=true"
+<img src="/images/w2-s09-o.webp?raw=true"
   alt="Parent prop updates reflect on child components."
   width="40%" />
 </p>
@@ -6607,7 +6607,7 @@ be as efficient as it could be, especially in modern React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-a. data flow in reactjs (158) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-a.png?raw=true"
+<img src="/images/w2-s11-a.webp?raw=true"
   alt="Data flow in ReactJS."
   width="30%" />
 </p>
@@ -6624,7 +6624,7 @@ use of stateless and stateful examples by focusing on data flow.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-b. one-way flow in reactjs (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-b.png?raw=true"
+<img src="/images/w2-s11-b.webp?raw=true"
   alt="Company to you, minimum money (the lazy and greedy keep the rest)."
   width="40%" />
 </p>
@@ -6636,7 +6636,7 @@ to you, never in the opposite direction.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w2-s11-c. data is passed parent to child (159) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-c.png?raw=true"
+<img src="/images/w2-s11-c.webp?raw=true"
   alt="Data is passed parent to child."
   width="40%" />
 </p>
@@ -6648,7 +6648,7 @@ it's just consumed in the child components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s11-d. component templates (159) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-d.png?raw=true"
+<img src="/images/w2-s11-d.webp?raw=true"
   alt="Sample component templates (3)."
   width="40%" />
 </p>
@@ -6659,7 +6659,7 @@ with a data they receive. While this works great, there'd be almost no interacti
 <!--~~~~~~~~~~~~~~ w2-s11-e. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-e.png?raw=true"
+<img src="/images/w2-s11-e.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
   width="60%" />
 </p>
@@ -6671,7 +6671,7 @@ that data is referred to as <b>state</b>.</p>
 <!--~~~~~~~~~~~~~~ w2-s11-f. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-f.png?raw=true"
+<img src="/images/w2-s11-f.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
   width="60%" />
 </p>
@@ -6686,7 +6686,7 @@ component itself.</p>
 <!--~~~~~~~~~~~~~~ w2-s11-g. passing data to child components using props (160) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-g.png?raw=true"
+<img src="/images/w2-s11-g.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
   width="80%" />
 </p>
@@ -6705,7 +6705,7 @@ hours, minutes, and seconds of the date.</p>
 <!--~~~~~~~~~~~~~~ w2-s11-h. passing data to child components using props (159) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s11-h.png?raw=true"
+<img src="/images/w2-s11-h.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
   width="80%" />
 </p>
@@ -6721,7 +6721,7 @@ showcase the use of stateless and stateful examples by focusing on data flow.</p
 <!--~~~~~~~~~~~~~~~~~~~ w2-s12-a. complex components and react hooks (161) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-a.png?raw=true"
+<img src="/images/w2-s12-a.webp?raw=true"
   alt="Complex components and React hooks, how they can be used and why they are useful."
   width="60%" />
 </p>
@@ -6733,7 +6733,7 @@ quite a task and this is where React's hooks can help.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-b. code reuse (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-b.png?raw=true"
+<img src="/images/w2-s12-b.webp?raw=true"
   alt="Code reuse."
   width="60%" />
 </p>
@@ -6743,7 +6743,7 @@ across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s12-c. hooks are functions in react (162) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-c.png?raw=true"
+<img src="/images/w2-s12-c.webp?raw=true"
   alt="Hooks are functions in React."
   width="60%" />
 </p>
@@ -6752,7 +6752,7 @@ across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w2-s12-d. manage the state built into react (162) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-d.png?raw=true"
+<img src="/images/w2-s12-d.webp?raw=true"
   alt="Manage the state built into React."
   width="60%" />
 </p>
@@ -6761,7 +6761,7 @@ across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-e. import the usestate (162) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-e.png?raw=true"
+<img src="/images/w2-s12-e.webp?raw=true"
   alt="Import the useState from React."
   width="40%" />
 </p>
@@ -6770,11 +6770,11 @@ across components.  Let's find out how they do that.</p>
 <!--~~~~~~~~~~~~~~~~~ w2-s12-f & g. showmenu and setshowmenu #1 and #2 (163) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w2-s12-f.png?raw=true"
+<img src="/images/w2-s12-f.webp?raw=true"
   alt="ShowMenu and SetShowMenu, example #1."
   width="40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="/images/w2-s12-g.png?raw=true"
+<img src="/images/w2-s12-g.webp?raw=true"
   alt="ShowMenu and SetShowMenu, example #2."
   width="40%" />
 </p>
@@ -6784,7 +6784,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-h. array destructuring (163) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-h.png?raw=true"
+<img src="/images/w2-s12-h.webp?raw=true"
   alt="Complex components and React hooks."
   width="40%" />
 </p>
@@ -6793,7 +6793,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <!--~~~~~~~~~~~ w2-s12-i. without array destructuring, long &amp; cumbersome (163) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-i.png?raw=true"
+<img src="/images/w2-s12-i.webp?raw=true"
   alt="Without array destructuring, long &amp; cumbersome."
   width="40%" />
 </p>
@@ -6802,7 +6802,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-j. simplifies the code (163) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-j.png?raw=true"
+<img src="/images/w2-s12-j.webp?raw=true"
   alt="showMenu simplified as false."
   width="60%" />
 </p>
@@ -6811,7 +6811,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s12-k. showmenu and setshowmenu (164) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-k.png?raw=true"
+<img src="/images/w2-s12-k.webp?raw=true"
   alt="showMenu and setShowMenu functions."
   width="60%" />
 </p>
@@ -6820,7 +6820,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s12-l. usestate hook - track boolean (164) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s12-l.png?raw=true"
+<img src="/images/w2-s12-l.webp?raw=true"
   alt="useState hook to track the Boolean state value."
   width="40%" />
 </p>
@@ -6885,7 +6885,7 @@ get updated with the latest text that has been typed.</p>
 <!--~~~~~~~~~~~~~~~~~ w2-s13-a. display of word 'welcome' typed to bar (166) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s13-a.png?raw=true"
+<img src="/images/w2-s13-a.webp?raw=true"
   alt="Display of the word "Welcome" typed to bar."
   width="60%" />
 </p>
@@ -6938,7 +6938,7 @@ registration form with fields for first name, last name and email.</p>
 <!--~~~~~~~~~~~~ w2-s13-b. text fields of first name, last name, and e-mail (167) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s13-b.png?raw=true"
+<img src="/images/w2-s13-b.webp?raw=true"
   alt="Text fields of first name, last name, and e-mail."
   width="53%" />
 </p>
@@ -7082,7 +7082,7 @@ understand the benefits of using hooks within a React component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-a. components with props (169) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-a.png?raw=true"
+<img src="/images/w2-s15-a.webp?raw=true"
   alt="Components with props."
   width="40%" />
 </p>
@@ -7096,7 +7096,7 @@ which also allows you to easily change how the component behaves in order to sui
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s15-b. describe state (170) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-b.png?raw=true"
+<img src="/images/w2-s15-b.webp?raw=true"
   alt="Describe State in React and explore its features."
   width="40%" />
 </p>
@@ -7108,7 +7108,7 @@ It's often used to store data that affects the behavior of a component.</p>
 <!--~~~~~~~~~~ w2-s15-c. state - data in a component that determines behavior (170) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-c.png?raw=true"
+<img src="/images/w2-s15-c.webp?raw=true"
   alt="State - data in a component that determines behavior."
   width="40%" />
 </p>
@@ -7118,7 +7118,7 @@ that your app behaves as intended.</p>
 <!--~~~~~~~~~ w2-s15-d.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-d.png?raw=true"
+<img src="/images/w2-s15-d.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7130,7 +7130,7 @@ children by using props.</p>
 <!--~~~~~~~~~ w2-s15-e.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-e.png?raw=true"
+<img src="/images/w2-s15-e.webp?raw=true"
   alt="."
   width="30%" />
 </p>
@@ -7142,7 +7142,7 @@ variables.</p>
 <!--~~~~~~~~~ w2-s15-f.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-f.png?raw=true"
+<img src="/images/w2-s15-f.webp?raw=true"
   alt="."
   width="30%" />
 </p>
@@ -7155,7 +7155,7 @@ better understanding, let's explore an example of each.</p>
 <!--~~~~~~~~~ w2-s15-g.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-g.png?raw=true"
+<img src="/images/w2-s15-g.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -7167,7 +7167,7 @@ This component also renders some texts, but it references a variable to do so.</
 <!--~~~~~~~~~ w2-s15-h.  (171) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-h.png?raw=true"
+<img src="/images/w2-s15-h.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -7178,7 +7178,7 @@ plain JavaScript. This line of code might've already make sense to you.</p>
 <!--~~~~~~~~~ w2-s15-i.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-i.png?raw=true"
+<img src="/images/w2-s15-i.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7188,7 +7188,7 @@ apple, pear, and plum.</p>
 <!--~~~~~~~~~ w2-s15-j.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-j.png?raw=true"
+<img src="/images/w2-s15-j.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7201,7 +7201,7 @@ quickly instead of one at a time.</p>
 <!--~~~~~~~~~ w2-s15-k.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-k.png?raw=true"
+<img src="/images/w2-s15-k.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7213,7 +7213,7 @@ bit of code. React.useState.</p>
 <!--~~~~~~~~~ w2-s15-l.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-l.png?raw=true"
+<img src="/images/w2-s15-l.webp?raw=true"
   alt="State - data in a component that determines behavior."
   width="50%" />
 </p>
@@ -7223,7 +7223,7 @@ access the State object you would use the useState hook.</p>
 <!--~~~~~~~~~ w2-s15-m.  (172) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-m.png?raw=true"
+<img src="/images/w2-s15-m.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7234,7 +7234,7 @@ and a function.</p>
 <!--~~~~~~~~~ w2-s15-n.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-n.png?raw=true"
+<img src="/images/w2-s15-n.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7245,7 +7245,7 @@ but there is a convention to follow.</p>
 <!--~~~~~~~~~ w2-s15-o.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-o.png?raw=true"
+<img src="/images/w2-s15-o.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7256,7 +7256,7 @@ will be used to update the state of a variable.</p>
 <!--~~~~~~~~~ w2-s15-p.  (170) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s15-p.png?raw=true"
+<img src="/images/w2-s15-p.webp?raw=true"
   alt="."
   width="50%" />
 </p>
@@ -7280,7 +7280,7 @@ Hook that you encountered earlier.</p>
 <!--~~~~~~~~~~~~~~~~~ w2-s16-a. usestate hook to access the date state (174) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s16-a.png?raw=true"
+<img src="/images/w2-s16-a.webp?raw=true"
   alt="useState Hook - access the date state."
   width="50%" />
 </p>
@@ -7290,7 +7290,7 @@ arguments. The first of which accesses state and the second of which updates it 
 <!--~~~~~~~~~~~~~~~~~ w2-s16-b. usestate hook to access the date state (174) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s16-b.png?raw=true"
+<img src="/images/w2-s16-b.webp?raw=true"
   alt="useState Hook - access the date state."
   width="50%" />
 </p>
@@ -7300,7 +7300,7 @@ function to update the state.</p>
 <!--~~~~~~~~~~~~ w2-s16-c. observe and manipulate the state of the component (174) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s16-c.png?raw=true"
+<img src="/images/w2-s16-c.webp?raw=true"
   alt="Demonstration how to observe and manipulate the state of a component."
   width="70%" />
 </p>
@@ -7315,7 +7315,7 @@ string. In the return statement, I wrap the heading components in a single div.<
 <!--~~~~~~~~~~~~~~~~~~ w2-s16-d. jsx expression - message prop + word (175) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s16-d.png?raw=true"
+<img src="/images/w2-s16-d.webp?raw=true"
   alt="Example JSX expression with message prop of word + word variable."
   width="50%" />
 </p>
@@ -7327,7 +7327,7 @@ will be evaluated as regular JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~ w2-s16-e. setword function to manipulate messaging (175) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s16-e.png?raw=true"
+<img src="/images/w2-s16-e.webp?raw=true"
   alt="setWord to manipulate messaging."
   width="70%" />
 </p>
@@ -7341,7 +7341,7 @@ directly.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s16-f. onclick event example (175) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s16-f.png?raw=true"
+<img src="/images/w2-s16-f.webp?raw=true"
   alt="onClick event example."
   width="70%" />
 </p>
@@ -7366,7 +7366,7 @@ some of the solutions to managing state in React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-a. managing state example (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-a.png?raw=true"
+<img src="/images/w2-s17-a.webp?raw=true"
   alt="Managing state example."
   width="40%" />
 </p>
@@ -7378,7 +7378,7 @@ consumed it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-b. meals left to eat (177) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-b.png?raw=true"
+<img src="/images/w2-s17-b.webp?raw=true"
   alt="Meals left to eat."
   width="40%" />
 </p>
@@ -7387,7 +7387,7 @@ consumed it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-c. healthy eating app (178) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-c.png?raw=true"
+<img src="/images/w2-s17-c.webp?raw=true"
   alt="Healthy eating app."
   width="40%" />
 </p>
@@ -7398,7 +7398,7 @@ child components, mealsList and counter.</p>
 <!--~~~~~~~~~~~~~~~ w2-s17-d. app component imports mealslist and counter (178) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-d.png?raw=true"
+<img src="/images/w2-s17-d.webp?raw=true"
   alt="App component imports MealsList and Counter components and renders them on screen."
   width="40%" />
 </p>
@@ -7409,7 +7409,7 @@ which are stored in an array.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s17-e. mealslist.js (178) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-e.png?raw=true"
+<img src="/images/w2-s17-e.webp?raw=true"
   alt="MealsList.js."
   width="40%" />
 </p>
@@ -7421,7 +7421,7 @@ user is allowed to eat today.</p>
 <!--~~~~~~~~~~~~~~~ w2-s17-f. mealslist to counter via siblings component (179) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-f.png?raw=true"
+<img src="/images/w2-s17-f.webp?raw=true"
   alt="MealsList to Counter vis siblings components."
   width="40%" />
 </p>
@@ -7436,7 +7436,7 @@ mealsList component?</p>
 <!--~~~~~~~~~~~~~~~~~~~ w2-s17-g. mealslist to app via state component (179) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-g.png?raw=true"
+<img src="/images/w2-s17-g.webp?raw=true"
   alt="MealsList to App via state components."
   width="40%" />
 </p>
@@ -7447,7 +7447,7 @@ components to display different meal items. Let's call this new component mealsI
 <!--~~~~~~~~~~~~~~~~~ w2-s17-h. app to mealslist to mealitem components (180) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-h.png?raw=true"
+<img src="/images/w2-s17-h.webp?raw=true"
   alt="App to MealsList to MealItem components."
   width="40%" />
 </p>
@@ -7464,7 +7464,7 @@ component.</p>
 <!--~~~~~~~~~~~~~~~~~~ w2-s17-i. prop drilling passing parent to child (180) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-i.png?raw=true"
+<img src="/images/w2-s17-i.webp?raw=true"
   alt="Prop drilling passing parent to child and grandchild."
   width="40%" />
 </p>
@@ -7486,7 +7486,7 @@ places in my app, that's a global state issue.</p>
 <!--~~~~~~~~~~~~~ w2-s17-j. api cuts out prop drilling and lifting state up (181) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-j.png?raw=true"
+<img src="/images/w2-s17-j.webp?raw=true"
   alt="API cuts out prop drilling and lifting state up."
   width="40%" />
 </p>
@@ -7496,7 +7496,7 @@ API is that it cuts out the middleman. There's no need for prop drilling and lif
 <!--~~~~~~~~~~~~~~~~~~~~~ w2-s17-k. extract state to separate file (181) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s17-k.png?raw=true"
+<img src="/images/w2-s17-k.webp?raw=true"
   alt="Components which needs data gets it from the context API."
   width="40%" />
 </p>
@@ -7595,7 +7595,7 @@ should alert the string that comes from the props.msg prop.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w2-s18-a. ui boundaries are illustrated (184) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s18-a.png?raw=true"
+<img src="/images/w2-s18-a.webp?raw=true"
   alt="Illustrating the boundaries of each component."
   width="70%" />
 </p>
@@ -7610,7 +7610,7 @@ button, as an alert:</p>
 <!--~~~~~~~~~ w2-s18-b. i passed through the header and wrapper to the button (185) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s18-b.png?raw=true"
+<img src="/images/w2-s18-b.webp?raw=true"
   alt="I passed through the Header and Wrapper to reach the Button component."
   width="70%" />
 </p>
@@ -7631,7 +7631,7 @@ Fortunately, there are tools available to help you do just that.</p>
 <!--~~~~~~~~~~~~ w2-s19-a. context api to manage state and state management (186) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-a.png?raw=true"
+<img src="/images/w2-s19-a.webp?raw=true"
   alt="How context API is used to manage state and perform basic state management."
   width="40%" />
 </p>
@@ -7643,7 +7643,7 @@ found in context API.</p>
 <!--~~~~~~~~~~~~~~~~ w2-s19-b. passing state from 1 component to another (186) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-b.png?raw=true"
+<img src="/images/w2-s19-b.webp?raw=true"
   alt="Passing state from 1 component to another component."
   width="40%" />
 </p>
@@ -7654,7 +7654,7 @@ it is like taking a bus and going through each stop before you get off at the en
 <!--~~~~~~~~~~~ w2-s19-c. context api is like teleporting to your destination (186) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-c.png?raw=true"
+<img src="/images/w2-s19-c.webp?raw=true"
   alt="Context API is like teleporting to your destination."
   width="40%" />
 </p>
@@ -7665,7 +7665,7 @@ of components.</p>
 <!--~~~~~~~~~~~~~~~~~ w2-s19-d. context provider defined to store state (187) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-d.png?raw=true"
+<img src="/images/w2-s19-d.webp?raw=true"
   alt="Context Provider to store state."
   width="60%" />
 </p>
@@ -7676,7 +7676,7 @@ it becomes a context consumer.</p>
 <!--~~~~~~~~~~~~~ w2-s19-e. example utilizing context api to control state (187) ~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-e.png?raw=true"
+<img src="/images/w2-s19-e.webp?raw=true"
   alt="Utilizing context API to control state."
   width="80%" />
 </p>
@@ -7688,7 +7688,7 @@ with context API.</p>
 <!--~~~~~~~~~ w2-s19-f.  (188) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-f.png?raw=true"
+<img src="/images/w2-s19-f.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -7701,7 +7701,7 @@ return  statements.</p>
 <!--~~~~~~~~~ w2-s19-g.  (188) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-g.png?raw=true"
+<img src="/images/w2-s19-g.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -7714,7 +7714,7 @@ return  statements.</p>
 <!--~~~~~~~~~ w2-s19-h.  (189) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-h.png?raw=true"
+<img src="/images/w2-s19-h.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -7727,7 +7727,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s19-i.  (190) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-i.png?raw=true"
+<img src="/images/w2-s19-i.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -7736,7 +7736,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s19-j.  (190) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-j.png?raw=true"
+<img src="/images/w2-s19-j.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -7746,7 +7746,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s19-k.  (191) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s19-k.png?raw=true"
+<img src="/images/w2-s19-k.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -7760,7 +7760,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-a.  (192) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-a.png?raw=true"
+<img src="/images/w2-s20-a.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -7770,7 +7770,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-b.  (192) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-b.png?raw=true"
+<img src="/images/w2-s20-b.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -7781,7 +7781,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-c.  (193) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-c.png?raw=true"
+<img src="/images/w2-s20-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -7790,7 +7790,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-d.  (193) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-d.png?raw=true"
+<img src="/images/w2-s20-d.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -7799,7 +7799,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-e.  (194) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-e.png?raw=true"
+<img src="/images/w2-s20-e.webp?raw=true"
   alt="."
   width="30%" />
 </p>
@@ -7808,7 +7808,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-f.  (194) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-f.png?raw=true"
+<img src="/images/w2-s20-f.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -7817,7 +7817,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~ w2-s20-g.  (194) ~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s20-g.png?raw=true"
+<img src="/images/w2-s20-g.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -7888,7 +7888,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w2-s21-a. where should the state go? (196) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s21-a.png?raw=true"
+<img src="/images/w2-s21-a.webp?raw=true"
   alt="Where should the state go?  Move state from fruits component to the app component."
   width="80%" />
 </p>
@@ -7972,7 +7972,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-a. click, scroll and/or cancel (198) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s22-a.png?raw=true"
+<img src="/images/w2-s22-a.webp?raw=true"
   alt="Click, scroll and/or cancel."
   width="40%" />
 </p>
@@ -7981,7 +7981,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-b. javascript and html (198) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s22-b.png?raw=true"
+<img src="/images/w2-s22-b.webp?raw=true"
   alt="JavaScript and HTML."
   width="40%" />
 </p>
@@ -7990,7 +7990,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-c. state, styling, ternary (198) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s22-c.png?raw=true"
+<img src="/images/w2-s22-c.webp?raw=true"
   alt="State, styling and ternary."
   width="40%" />
 </p>
@@ -7999,7 +7999,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w2-s22-d. stateless vs. stateful (199) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w2-s22-d.png?raw=true"
+<img src="/images/w2-s22-d.webp?raw=true"
   alt="Stateless (not needed to work) vs. Stateful (State must be maintained to work)."
   width="40%" />
 </p>
@@ -8007,11 +8007,11 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <!--~~~~~~~~~~~~~~~ w2-s22-e/f. data and states module summary (module 2) (199) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w2-s22-e.png?raw=true"
+<img src="/images/w2-s22-e.webp?raw=true"
   alt="Module 2 Summary, part i. Data and States."
   width="40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
-<img src="/images/w2-s22-f.png?raw=true"
+<img src="/images/w2-s22-f.webp?raw=true"
   alt="Module 2 Summary, part ii. Data and States."
   width="40%" />
 </p>
@@ -8049,7 +8049,7 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-a.png?raw=true"
+<img src="/images/w3-s01-a.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8059,7 +8059,7 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-b.png?raw=true"
+<img src="/images/w3-s01-b.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8069,7 +8069,7 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-c.png?raw=true"
+<img src="/images/w3-s01-c.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8078,7 +8078,7 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-d.png?raw=true"
+<img src="/images/w3-s01-d.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8087,7 +8087,7 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-e.png?raw=true"
+<img src="/images/w3-s01-e.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8096,7 +8096,7 @@ of content in response to user status or choice.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-f.png?raw=true"
+<img src="/images/w3-s01-f.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8106,7 +8106,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-g.png?raw=true"
+<img src="/images/w3-s01-g.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8115,7 +8115,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-h.png?raw=true"
+<img src="/images/w3-s01-h.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8126,7 +8126,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-i.png?raw=true"
+<img src="/images/w3-s01-i.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8135,7 +8135,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-j.png?raw=true"
+<img src="/images/w3-s01-j.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8144,7 +8144,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-k.png?raw=true"
+<img src="/images/w3-s01-k.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8153,7 +8153,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-l.png?raw=true"
+<img src="/images/w3-s01-l.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8163,7 +8163,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-m.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-m.png?raw=true"
+<img src="/images/w3-s01-m.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8173,7 +8173,7 @@ However, this functionality is not available to developers from the React's libr
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s01-n.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s01-n.png?raw=true"
+<img src="/images/w3-s01-n.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8213,7 +8213,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-a. traditional page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s02-a.png?raw=true"
+<img src="/images/w3-s02-a.webp?raw=true"
   alt="Traditional Page Lifecycle."
   width="40%" />
 </p>
@@ -8221,7 +8221,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-b. spa page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s02-b.png?raw=true"
+<img src="/images/w3-s02-b.webp?raw=true"
   alt="SPA Page Lifecycle."
   width="40%" />
 </p>
@@ -8240,10 +8240,10 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~ w3-s02-c/d. example single page and traditional page applications (208) ~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s02-c.png?raw=true"
+<img src="/images/w3-s02-c.webp?raw=true"
   alt="SPA templates."
   width="40%" />
-<img src="/images/w3-s02-d.png?raw=true"
+<img src="/images/w3-s02-d.webp?raw=true"
   alt="Traditional page application."
   width="40%" />
 </p>
@@ -8267,7 +8267,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-a.png?raw=true"
+<img src="/images/w3-s03-a.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -8277,7 +8277,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-b.png?raw=true"
+<img src="/images/w3-s03-b.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8286,7 +8286,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-c.png?raw=true"
+<img src="/images/w3-s03-c.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8295,7 +8295,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-d.png?raw=true"
+<img src="/images/w3-s03-d.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8303,7 +8303,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-e.png?raw=true"
+<img src="/images/w3-s03-e.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8312,7 +8312,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-f.png?raw=true"
+<img src="/images/w3-s03-f.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8321,7 +8321,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-g.png?raw=true"
+<img src="/images/w3-s03-g.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8331,7 +8331,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-h.png?raw=true"
+<img src="/images/w3-s03-h.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8341,7 +8341,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-i.png?raw=true"
+<img src="/images/w3-s03-i.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8350,7 +8350,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-j.png?raw=true"
+<img src="/images/w3-s03-j.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8359,7 +8359,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-k.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-k.png?raw=true"
+<img src="/images/w3-s03-k.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8369,7 +8369,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-l.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s03-l.png?raw=true"
+<img src="/images/w3-s03-l.webp?raw=true"
   alt="."
   width="30%" />
 </p>
@@ -8425,7 +8425,7 @@ A Single Page Application allows the user to interact with the website without d
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s04-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s04-a.png?raw=true"
+<img src="/images/w3-s04-a.webp?raw=true"
   alt="."
   width="70%" />
 </p>
@@ -8572,7 +8572,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~ w3-s05-a. 3 levels event - components - web page (219) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-a.png?raw=true"
+<img src="/images/w3-s05-a.webp?raw=true"
   alt="Three (3) level tree of event - components - web page."
   width="50%" />
 </p>
@@ -8582,7 +8582,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-b. data to props and state (220) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-b.png?raw=true"
+<img src="/images/w3-s05-b.webp?raw=true"
   alt="Data to props and state."
   width="50%" />
 </p>
@@ -8592,7 +8592,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-c. togglebutton.js to false state (220) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-c.png?raw=true"
+<img src="/images/w3-s05-c.webp?raw=true"
   alt="ToggleButton.js - false state."
   width="50%" />
 </p>
@@ -8602,7 +8602,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-d. togglebutton.js to true state (220) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-d.png?raw=true"
+<img src="/images/w3-s05-d.webp?raw=true"
   alt="ToggleButton.js to true state as sidebar."
   width="50%" />
 </p>
@@ -8612,7 +8612,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~ w3-s05-e. javascript - conditional if statement (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-e.png?raw=true"
+<img src="/images/w3-s05-e.webp?raw=true"
   alt="JavaScript - conditional if statement example."
   width="50%" />
 </p>
@@ -8621,7 +8621,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~ w3-s05-f. get it done or get some rest (boolean) (221) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-f.png?raw=true"
+<img src="/images/w3-s05-f.webp?raw=true"
   alt="Conditional boolean; Get it Done or Get Some Rest."
   width="50%" />
 </p>
@@ -8631,7 +8631,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-g. currentmessage component (221) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-g.png?raw=true"
+<img src="/images/w3-s05-g.webp?raw=true"
   alt="CurrentMessage component."
   width="40%" />
 </p>
@@ -8640,7 +8640,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w3-s05-h. built-in date function sun-sat (222) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-h.png?raw=true"
+<img src="/images/w3-s05-h.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8649,7 +8649,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~ w3-s05-i. two components - each with a message (222) ~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-i.png?raw=true"
+<img src="/images/w3-s05-i.webp?raw=true"
   alt="Two components (workdays and weekends); each with a message."
   width="40%" />
 </p>
@@ -8658,7 +8658,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-j. ternary operator example (222) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-j.png?raw=true"
+<img src="/images/w3-s05-j.webp?raw=true"
   alt="Ternary operator example."
   width="60%" />
 </p>
@@ -8670,7 +8670,7 @@ set to {&lt;Contact /&gt;}.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s05-k. isitsummeryet component (223) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s05-k.png?raw=true"
+<img src="/images/w3-s05-k.webp?raw=true"
   alt="IsItSummerYet component - boolean yes or no."
   width="60%" />
 </p>
@@ -8865,7 +8865,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-a. customized startere app (228) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s08-a.png?raw=true"
+<img src="/images/w3-s08-a.webp?raw=true"
   alt="Customized stater app."
   width="80%" />
 </p>
@@ -8879,7 +8879,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s08-b. happy monday example (229) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s08-b.png?raw=true"
+<img src="/images/w3-s08-b.webp?raw=true"
   alt="Happy Monday React example."
   width="80%" />
 </p>
@@ -8888,7 +8888,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w3-s08-c. conditional and ternary rendering (230) ~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s08-c.png?raw=true"
+<img src="/images/w3-s08-c.webp?raw=true"
   alt="Conditional rendering and React."
   width="40%" />
 </p>
@@ -8913,7 +8913,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-a. assets (230) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-a.png?raw=true"
+<img src="/images/w3-s10-a.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -8922,7 +8922,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~ w3-s10-b. images, stylesheets, fonts and any files needed (231) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-b.png?raw=true"
+<img src="/images/w3-s10-b.webp?raw=true"
   alt="Images, Stylesheets, Fonts and Any files needed."
   width="40%" />
 </p>
@@ -8932,7 +8932,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-c.png?raw=true"
+<img src="/images/w3-s10-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8941,7 +8941,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-d.png?raw=true"
+<img src="/images/w3-s10-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8950,7 +8950,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-e.png?raw=true"
+<img src="/images/w3-s10-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8959,7 +8959,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-f.png?raw=true"
+<img src="/images/w3-s10-f.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8968,7 +8968,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-g.png?raw=true"
+<img src="/images/w3-s10-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8977,7 +8977,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-h.png?raw=true"
+<img src="/images/w3-s10-h.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8988,7 +8988,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-i.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-i.png?raw=true"
+<img src="/images/w3-s10-i.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -8997,7 +8997,7 @@ check. You will use this often when developing React applications.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s10-j.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s10-j.png?raw=true"
+<img src="/images/w3-s10-j.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9096,7 +9096,7 @@ the import statement using the require function to set the file path, or by prov
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s12-a.png?raw=true"
+<img src="/images/w3-s12-a.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9108,7 +9108,7 @@ folder named Central Park.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s12-b.png?raw=true"
+<img src="/images/w3-s12-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9119,7 +9119,7 @@ hand, which is to display three images with some styling.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s12-c.png?raw=true"
+<img src="/images/w3-s12-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9137,7 +9137,7 @@ save my file and notice that my image now displays in the browser.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s12-d.png?raw=true"
+<img src="/images/w3-s12-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9154,7 +9154,7 @@ image. I just require it and provide the string with the relative path to the im
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s12-e.png?raw=true"
+<img src="/images/w3-s12-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9163,7 +9163,7 @@ image. I just require it and provide the string with the relative path to the im
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s12-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s12-f.png?raw=true"
+<img src="/images/w3-s12-f.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9177,7 +9177,7 @@ image. I just require it and provide the string with the relative path to the im
   <summary>React code:</summary>
 
 ```
-1.	import logo from"./assets/logo.png"
+1.	import logo from"./assets/logo.webp"
 2.	
 3.	function App() {
 4.	  return (
@@ -9198,7 +9198,7 @@ image. I just require it and provide the string with the relative path to the im
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s13-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s13-a.png?raw=true"
+<img src="/images/w3-s13-a.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -9210,7 +9210,7 @@ First, you imported the logo image.</p>
   <summary>React code:</summary>
 
 ```
-1.	import logo from"./assets/logo.png"
+1.	import logo from"./assets/logo.webp"
 2.	function App() {
 3.	  return (
 4.	    <div className="App">
@@ -9233,7 +9233,7 @@ string of "Logo".
   <summary>React code:</summary>
 
 ```
-1.	import logo from"./assets/logo.png"
+1.	import logo from"./assets/logo.webp"
 2.	
 3.	function App() {
 4.	  return (
@@ -9258,7 +9258,7 @@ consuming, and sharing video and audio content daily on our devices.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-a.png?raw=true"
+<img src="/images/w3-s14-a.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9270,7 +9270,7 @@ to load a local video asset into your React app using just HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-b.png?raw=true"
+<img src="/images/w3-s14-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9293,7 +9293,7 @@ React component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-c.png?raw=true"
+<img src="/images/w3-s14-c.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -9305,7 +9305,7 @@ video output that way. So far, you've learned about two ways of adding videos to
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-d.png?raw=true"
+<img src="/images/w3-s14-d.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -9315,7 +9315,7 @@ the second method is using embedded third-party videos.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-b.png?raw=true"
+<img src="/images/w3-s14-b.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9326,7 +9326,7 @@ huge. If you visit the npmjs.org website, you'll find millions of various packag
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-b.png?raw=true"
+<img src="/images/w3-s14-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9342,7 +9342,7 @@ will help you make an informed decision on which package to choose.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-g.png?raw=true"
+<img src="/images/w3-s14-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9354,7 +9354,7 @@ regularly maintained. What is the meaning of the stars?</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s14-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s14-h.png?raw=true"
+<img src="/images/w3-s14-h.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9434,7 +9434,7 @@ volume.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-a.png?raw=true"
+<img src="/images/w3-s16-a.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9447,7 +9447,7 @@ import it into my app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-b.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-b.png?raw=true"
+<img src="/images/w3-s16-b.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -9458,7 +9458,7 @@ if I import it.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-c.png?raw=true"
+<img src="/images/w3-s16-c.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9469,7 +9469,7 @@ the app component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-d.png?raw=true"
+<img src="/images/w3-s16-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9485,7 +9485,7 @@ been set up yet.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-e.png?raw=true"
+<img src="/images/w3-s16-e.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9497,7 +9497,7 @@ half the volume so it seems that everything is correct.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-f.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-f.png?raw=true"
+<img src="/images/w3-s16-f.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -9507,7 +9507,7 @@ with a capital C and capital P slash react dash player.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-g.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-g.png?raw=true"
+<img src="/images/w3-s16-g.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9517,7 +9517,7 @@ live demo on the link page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s16-h.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s16-h.png?raw=true"
+<img src="/images/w3-s16-h.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9584,7 +9584,7 @@ change common settings for the react player.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s17-a.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s17-a.png?raw=true"
+<img src="/images/w3-s17-a.webp?raw=true"
   alt="."
   width="80%" />
 </p>
@@ -9743,7 +9743,7 @@ various pages or links on that website from a single component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-a.  (253) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-a.png?raw=true"
+<img src="/images/w3-s18-a.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9754,7 +9754,7 @@ navigation bar, or navbar.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-b.  (254) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-b.png?raw=true"
+<img src="/images/w3-s18-b.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -9765,7 +9765,7 @@ navbar with drop-down menu items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-c.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-c.png?raw=true"
+<img src="/images/w3-s18-c.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9780,7 +9780,7 @@ different pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-d.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-d.png?raw=true"
+<img src="/images/w3-s18-d.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9791,7 +9791,7 @@ implement the basic navigation routes for our webpage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-e.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-e.png?raw=true"
+<img src="/images/w3-s18-e.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9801,7 +9801,7 @@ and you had to add another link to the existing code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-f.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-f.png?raw=true"
+<img src="/images/w3-s18-f.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9817,7 +9817,7 @@ common ways to import asset files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-g.  (255) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-g.png?raw=true"
+<img src="/images/w3-s18-g.webp?raw=true"
   alt="."
   width="40%" />
 </p>
@@ -9829,7 +9829,7 @@ in the public folder.</p>
 <!--~~~~~~~~~~~~~~ w3-s18-h. advantages and disadvantages of embedded assets (256) ~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-h.png?raw=true"
+<img src="/images/w3-s18-h.webp?raw=true"
   alt="Embedded assets: Advantages and Disadvantages."
   width="40%" />
 </p>
@@ -9840,7 +9840,7 @@ inherent in using asset-heavy apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-i. ungraded lab: add an image (256) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-i.png?raw=true"
+<img src="/images/w3-s18-i.webp?raw=true"
   alt="Ungraded lab: Add an image."
   width="60%" />
 </p>
@@ -9852,7 +9852,7 @@ how to find suitable React packages to use when working with audio and video fil
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w3-s18-j. three ways of adding videos (256) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-j.png?raw=true"
+<img src="/images/w3-s18-j.webp?raw=true"
   alt="Three ways to add videos; serving local video, using embedded 3rd-party asshole videos, 
   streamline using NPM."
   width="40%" />
@@ -9864,7 +9864,7 @@ NPM package to streamline the process of adding videos to your app.</p>
 <!--~~~~~~~~~~~~ w3-s18-k. frequency of updates, github page, internet search (257) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-k.png?raw=true"
+<img src="/images/w3-s18-k.webp?raw=true"
   alt="Frequency of updates, Github page, Internet search."
   width="40%" />
 </p>
@@ -9878,7 +9878,7 @@ media player in a React app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w3-s18-l. ungraded lab: finish song app (257) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w3-s18-l.png?raw=true"
+<img src="/images/w3-s18-l.webp?raw=true"
   alt="Final ungraded lab and finish already built app to play bird sounds."
   width="40%" />
 </p>
@@ -9887,14 +9887,14 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 <!--~~~~~~~~~~~~~~~~ w3-s18-m. describe react navigation design and more (257) ~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w3-s18-m.png?raw=true"
+<img src="/images/w3-s18-m.webp?raw=true"
   alt="Describe React navigation design and more."
   width="30%" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w3-s18-n. explain react project structure and more (257) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<img src="/images/w3-s18-n.png?raw=true"
+<img src="/images/w3-s18-n.webp?raw=true"
   alt="Explain React project structure, use and manipulate image and media assets."
   width="30%" />
 </p>
@@ -9930,11 +9930,11 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-a/b. basics of working with react (259) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w4-s01-a.png?raw=true"
+<img src="/images/w4-s01-a.webp?raw=true"
   alt="Course summary: Basics of working with React."
   width="30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="/images/w4-s01-b.png?raw=true"
+<img src="/images/w4-s01-b.webp?raw=true"
   alt="Course summary part ii: Basics of working with React."
   width="30%" />
 </p>
@@ -9944,11 +9944,11 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-c/d. components and events (260) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w4-s01-c.png?raw=true"
+<img src="/images/w4-s01-c.webp?raw=true"
   alt="Course summary part iii: Components in greater detail."
   width="30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="/images/w4-s01-d.png?raw=true"
+<img src="/images/w4-s01-d.webp?raw=true"
   alt="Course summary part iv: Events, event handlers and event syntax."
   width="30%" />
 </p>
@@ -9958,11 +9958,11 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s01-e/f. data flow and web navigation (260) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center">
-<img src="/images/w4-s01-e.png?raw=true"
+<img src="/images/w4-s01-e.webp?raw=true"
   alt="Course summary part v: Data flow, state, hooks, stateful/stateless."
   width="30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="/images/w4-s01-f.png?raw=true"
+<img src="/images/w4-s01-f.webp?raw=true"
   alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
   width="30%" />
 </p>
@@ -9974,7 +9974,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s01-g. assets in react (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s01-g.png?raw=true"
+<img src="/images/w4-s01-g.webp?raw=true"
   alt="Assets in React and how to use them."
   width="30%" />
 </p>
@@ -9988,7 +9988,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-a. 1st problem (261) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s02-a.png?raw=true"
+<img src="/images/w4-s02-a.webp?raw=true"
   alt="1st problem: useRef is not defined."
   width="60%" />
 </p>
@@ -9998,7 +9998,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-b. 2nd problem (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s02-b.png?raw=true"
+<img src="/images/w4-s02-b.webp?raw=true"
   alt="2nd problem: useState hook is not defined."
   width="60%" />
 </p>
@@ -10007,7 +10007,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-c. calculator, first draft (262) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s02-c.png?raw=true"
+<img src="/images/w4-s02-c.webp?raw=true"
   alt="Calculator, first draft."
   width="60%" />
 </p>
@@ -10019,7 +10019,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-d.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s02-d.png?raw=true"
+<img src="/images/w4-s02-d.webp?raw=true"
   alt="."
   width="60%" />
 </p>
@@ -10029,7 +10029,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s02-e. five button components added (263) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s02-e.png?raw=true"
+<img src="/images/w4-s02-e.webp?raw=true"
   alt="Five button components bound to on-click events."
   width="60%" />
 </p>
@@ -10038,7 +10038,7 @@ calculator app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s02-f. simplest working calculator (264) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s02-f.png?raw=true"
+<img src="/images/w4-s02-f.webp?raw=true"
   alt="Simplest working calculator snapshot."
   width="40%" />
 </p>
@@ -10125,7 +10125,7 @@ function Board({ xIsNext, squares, onPlay }) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-a. tic-tac-toe game board (266) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-a.png?raw=true"
+<img src="/images/w4-s03-a.webp?raw=true"
   alt="Tic-tac-toe game board, early initial version."
   width="60%" />
 </p>
@@ -10162,7 +10162,7 @@ export default function Square() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-b. tic-tac-toe first 'x' (266) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-b.png?raw=true"
+<img src="/images/w4-s03-b.webp?raw=true"
   alt="Tic-tac-toe game board, early initial version."
   width="60%" />
 </p>
@@ -10198,7 +10198,7 @@ and try a local setup again later.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-c. codesandbox with starter code (267) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-c.png?raw=true"
+<img src="/images/w4-s03-c.webp?raw=true"
   alt="CodeSandBox with Starter Code."
   width="70%" />
 </p>
@@ -10228,7 +10228,7 @@ this:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-d. x-filled square (268) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
-<img src="/images/w4-s03-d.png?raw=true"
+<img src="/images/w4-s03-d.webp?raw=true"
   alt="X-filled square."
   width="10%" />
 </p>
@@ -10355,7 +10355,7 @@ export default function Square() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-e. two x-filled squares (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
-<img src="/images/w4-s03-e.png?raw=true"
+<img src="/images/w4-s03-e.webp?raw=true"
   alt="Two x-filled squares."
   width="16%" />
 </p>
@@ -10368,7 +10368,7 @@ and...</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-f. nine x-filled squares (270) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
-<img src="/images/w4-s03-f.png?raw=true"
+<img src="/images/w4-s03-f.webp?raw=true"
   alt="Nine x-filled squares."
   width="64%" />
 </p>
@@ -10417,7 +10417,7 @@ styled divs you have your tic-tac-toe board:</p>
 <!--~~~~~~~~~~~~~~~~~~ w4-s03-g. tic-tac-toe filled with numbers 1 - 9 (271) ~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-g.png?raw=true"
+<img src="/images/w4-s03-g.webp?raw=true"
   alt="Tic-tac-toe board filled with numbers 1 thru 9."
   width="30%" />
 </p>
@@ -10533,7 +10533,7 @@ must start with a capital letter.</p>
 <!--~~~~~~~~~~~~~~~~~~~~ w4-s03-h. tic-tac-toe filled with number 1 (273) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-h.png?raw=true"
+<img src="/images/w4-s03-h.webp?raw=true"
   alt="Tic-tac-toe board filled with number 1."
   width="30%" />
 </p>
@@ -10568,7 +10568,7 @@ function Square({ value }) {
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-i. value-filled board as an oops (273) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-i.png?raw=true"
+<img src="/images/w4-s03-i.webp?raw=true"
   alt="Value-filled board as an oops."
   width="30%" />
 </p>
@@ -10589,7 +10589,7 @@ function Square({ value }) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-j. empty board (274) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-j.png?raw=true"
+<img src="/images/w4-s03-j.webp?raw=true"
   alt="Empty board."
   width="30%" />
 </p>
@@ -10633,7 +10633,7 @@ export default function Board() {
 <!--~~~~~~~~~~~~~~~~~~~~~ w4-s03-k. tic-tac-toe board with 1 thru 9 (275) ~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-k.png?raw=true"
+<img src="/images/w4-s03-k.webp?raw=true"
   alt="Tic-tac-toe board filled with numbers 1 - 9."
   width="30%" />
 </p>
@@ -10811,7 +10811,7 @@ the game board. Click on any Square, and "X" should show up:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-l. adding x's to board (278) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-l.gif?raw=true"
+<img src="/images/w4-s03-l.webp?raw=true"
   alt="Adding X's to board."
   width="30%" />
 </p>
@@ -10874,7 +10874,7 @@ browser section in CodeSandbox:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~ w4-s03-m. react devtools in codesandbox (279) ~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-m.png?raw=true"
+<img src="/images/w4-s03-m.webp?raw=true"
   alt="React DevTools in CodeSandbox."
   width="60%" />
 </p>
@@ -10886,7 +10886,7 @@ top left corner of React DevTools:</p>
 <!--~~~~~~~~~~ w4-s03-n. selecting components on the page with react devtools (279) ~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-n.gif?raw=true"
+<img src="/images/w4-s03-n.webp?raw=true"
   alt="Selecting components on the page with React DevTools."
   width="60%" />
 </p>
@@ -11002,7 +11002,7 @@ function Square({value}) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-o. empty tic-tac-toe board (282) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-o.png?raw=true"
+<img src="/images/w4-s03-o.webp?raw=true"
   alt="Empty board."
   width="30%" />
 </p>
@@ -11274,7 +11274,7 @@ them:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-p. filling the board with x's (286) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s03-p.gif?raw=true"
+<img src="/images/w4-s03-p.webp?raw=true"
   alt="Filling the board with x's."
   width="30%" />
 </p>
@@ -11489,7 +11489,7 @@ times:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w4-s03-q. o overwriting an x (290) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="left" width="100%">
-<img src="/images/w4-s03-q.gif?raw=true"
+<img src="/images/w4-s03-q.webp?raw=true"
   alt="O overwriting an X."
   width="30%" />
 </p>
@@ -13055,7 +13055,7 @@ changed:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 47. output of exercise (135) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image047.png?raw=true"
+<img src="/images/image047.webp?raw=true"
   alt="Diagram showing a tree of three components, one parent labeled MyApp
     and two children labeled MyButton. Both MyButton components contain a
     count with value zero."
@@ -13068,7 +13068,7 @@ changed:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ 48. diagram myapp to mybutton count (136) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image048.png?raw=true"
+<img src="/images/image048.webp?raw=true"
   alt="The same diagram as the previous, with the count of the first child
     MyButton component highlighted indicating a click with the count value
 	incremented to one. The second MyButton component still contains value
@@ -13091,7 +13091,7 @@ together, you need to move the state from the individual buttons
 <!--~~~~~~~~~~~~~~~~~ 49. diagram myapp to mybutton initialized to zero (137) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image049.png?raw=true"
+<img src="/images/image049.webp?raw=true"
   alt="Diagram showing a tree of three components, one parent labeled MyApp
     and two children labeled MyButton. MyApp contains a count value of zero
     which is passed down to both of the MyButton components, which also show
@@ -13106,7 +13106,7 @@ together, you need to move the state from the individual buttons
 <!--~~~~~~~~~~~~~~~~~ 50. diagram myapp to mybutton incrementing by one (138) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/image050.png?raw=true"
+<img src="/images/image050.webp?raw=true"
   alt="The same diagram as the previous, with the count of the parent MyApp
     component highlighted indicating a click with the value incremented to
     one. The flow to both of the children MyButton components is also
@@ -13285,7 +13285,7 @@ thought process of building a searchable product data table with React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w4-s04-a. mockup fruits and prices (310) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s04-a.png?raw=true"
+<img src="/images/w4-s04-a.webp?raw=true"
   alt="Mockup of fruit and prices."
   width="30%" />
 </p>
@@ -13324,7 +13324,7 @@ one piece of your data model.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w4-s04-b. data model five components (311) ~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-<img src="/images/w4-s04-b.png?raw=true"
+<img src="/images/w4-s04-b.webp?raw=true"
   alt="Five components in this data model example."
   width="50%" />
 </p>
