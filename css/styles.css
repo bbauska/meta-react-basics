@@ -1,7 +1,7 @@
-<!-- styles.css in meta-react-basics -->
-
+/* styles.css in meta-react-basics */
 img.displayed {
-text-align: center;
+  display: block;
+  margin: 0 auto;
 }
   .border {
     border-width: 1px;
