@@ -10,22 +10,21 @@ meta-react-basics: meta/Coursera - React Basics
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ readme.md in meta-react-basics.bauska.org ~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-a. meta logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-a.webp?raw=true"
+  title="meta logo"
   alt="meta logo."
-  width="125px" />
+  style="width:125px" />
 </p>
-<!-- {width="1.549261811023622in" height="0.5in"} -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-b. coursera logo (01) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-b.webp?raw=true"
+  title="Coursera logo"
   alt="Coursera logo."
-  width="100px" />
+  style="width:100px" />
 </p>
-<!-- {width="1.0175437445319335in" height="0.5in"} -->
+
 <p>React is a powerful JavaScript library that you can use to build user
 interfaces for web and mobile applications (apps).</p>
 
@@ -64,18 +63,18 @@ with coding.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>Module 1 - React Components</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 01 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>01. Introduction to the course: React Basics</h2>
+<h2>1.01 Introduction to the course: React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Welcome to React basics.</p>
 
 <p>In this course, you'll be introduced to the basics of working with React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-a. 3 basics of react (09) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s01-a.webp?raw=true"
+  title="Develop a working familiarity with a basic structure of react javascript library"
   alt="Develop a working familiarity with a basic structure of react javascript library."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- width="4.0in" height="2.5479451006124236in"} -->
 
@@ -97,13 +96,12 @@ UI.</p>
 on a foundation of components and composability.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-b. components & composability (10) ~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s01-b.webp?raw=true"
+  title="React is comprised of components"
   alt="React is comprised of components."
-  width="40%" />
+  style="width:40%" />
 </p>
-<!-- ![](./images/image005.webp){width="4.0in" height="1.6605293088363955in"} -->
 
 <p>Simple components combined into more complex ones, which eventually
 merge to form a website.</p>
@@ -122,7 +120,7 @@ with <b>state</b> in React apps.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s01-c.webp?raw=true"
   alt="State - the value of all variables your working with at any given point."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- (width="5.0in" height="1.949206036745407in"} -->
 
@@ -131,13 +129,11 @@ with <b>state</b> in React apps.</p>
 working with at any given point in time.</b></p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s01-d. react basics - styles (11) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s01-d.webp?raw=true"
   alt="React basics - styling React apps."
-  width="30%" />
+  style="width:30%" />
 </p>
-<!-- {width="4.0in" height="2.840391513560805in"} -->
 
 <p>As you progress through this course, you'll also learn about how to
 style your React apps, which includes the reuse of common styles.</p>
@@ -199,7 +195,7 @@ developers.</p>
 community, and I think it makes building with React even more rewarding
 if you connect with the community as well.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 03 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>03. Course syllabus for React Basics</h2>
+<h2>1.03 Course syllabus for React Basics</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>By the end of this section (03), you will have learned about the scope
 of things to be covered in this course.</p>
@@ -303,7 +299,7 @@ course.</p>
 </ul>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>04. Before you learn React</h2>
+<h2>1.04 Before you learn React</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Do you know the fundamentals of HTML, CSS and JavaScript? Perhaps you
 learned about these technologies from another course. Either way, a
@@ -476,7 +472,7 @@ please visit Meta course titled: <a href="https://www.coursera.org/learn/program
 target="_blank" rel="noopener noreferrer">Programming with JavaScript</a>.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 05 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>05. JavaScript modules, imports - exports</h2>
+<h2>1.05 JavaScript modules, imports - exports</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Before you start creating the next great app, let's explore a little
 more about modules.</p>
@@ -675,7 +671,7 @@ common syntax used - not as a comprehensive overview of modules in
 JavaScript.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 06 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>06. Additional reading</h2>
+<h2>1.06 Additional reading</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Below you will find links to helpful additional readings:</p>
 
@@ -762,13 +758,12 @@ can name: <b>firstapp</b>.</p>
 <p>In VS Code, click on <i>View</i>, <i>Terminal</i> to open the built-in terminal.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-a. vs code terminal screen (25) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s07-a.webp?raw=true"
+  title="VS Code terminal screen"
   alt="VS Code terminal screen."
-  width="80%" />
+  style="width:80%" />
 </p>
-<!-- {width="5.0in" height="2.8125in"} -->
 
 <p>Now run the command to add a brand new React app to the machine:</p>
 
@@ -850,13 +845,12 @@ bar pointing to <a href="http://localhost:3000/">http://localhost:3000</a>, will
 show the following page in your browser:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~ w1-s07-b. react logo on black screen (27) ~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s07-b.webp?raw=true"
+  title="React logo on black screen"
   alt="React logo on black screen."
-  width="40%" />
+  style="width:40%" />
 </p>
-<!-- {width="4.0in" height="2.533333333333333in"} -->
 
 <p>This means that you've successfully:</p>
 
@@ -871,7 +865,7 @@ show the following page in your browser:</p>
 working with the basic building blocks of React: components.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 08 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>08. Why React?</h2>
+<h2>1.08 Why React?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>React is used everywhere in the tech world and you'll have the chance
 to use it throughout your career. It's a very valuable skill set to
@@ -975,9 +969,8 @@ encounter React in your day-to-day work.</p>
 about React too.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>09. React.js overview</h2>
+<h2>1.09 React.js overview</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <p>Recall the concept of the <b>single-page application</b> or SPA for short?</p>
 <p>This is a one-page website where some of the pages content changes based
 on user interaction.</p>
@@ -990,13 +983,12 @@ library from Meta.</p>
 <p>React used to run many of the world's most popular websites.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-a. sample search screen example (30) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s09-a.webp?raw=true"
+  title="React search screen example"
   alt="React search screen example."
-  width="50%" />
+  style="width:50%" />
 </p>
-<!-- {width="5.0in" height="2.86878280839895in"} -->
 
 <p>Often on these sites, you will type a search term into the sites input box.</p>
 <p>The site then returns the relevant content or results.</p>
@@ -1004,13 +996,12 @@ library from Meta.</p>
 URL doesn't change.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~ w1-s09-b. spa: rich user interfaces, speed and scalability/flexibility (30) ~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s09-b.webp?raw=true"
+  title="SPA: Single Page Apps have rich user interfaces, speed and are scalable and flexible"
   alt="SPA: Single Page Apps have rich user interfaces, speed and are scalable and flexible."
-  width="40%" />
+  style="width:40%" />
 </p>
-<!-- {width="4.0in" height="1.472169728783902in"} -->
 
 <p>As SPA's only load the content as required, they can be ideal for
 businesses and enterprises who need a web app that offers rich user
@@ -1026,13 +1017,12 @@ and the virtual DOM.</p>
 <p>One of the core building blocks of React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-c. component-based architecture (31) ~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s09-c.webp?raw=true"
+  title="Component-based architecture - build upon reusable code"
   alt="Component-based architecture - build upon reusable code."
-  width="50%" />
+  style="width:50%" />
 </p>
-<!-- {width="5.0in" height="1.8402121609798776in"} -->
 
 <p>When meta released the React library, it included the concept of
 something called <b>component-based architecture</b>.</p>
@@ -1040,26 +1030,24 @@ something called <b>component-based architecture</b>.</p>
 reusable components of code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-d. example component (31) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s09-d.webp?raw=true"
+  title="Example component.  Update edit profile and update photo"
   alt="Example component.  Update edit profile and update photo."
-  width="65%" />
+  style="width:65%" />
 </p>
-<!-- {width="6.5in" height="2.734815179352581in"} -->
 
 <p>Each <b>component</b> consists of well-defined functionality that can be
 inserted into an application without requiring modification of other
 components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s09-e. reusable and independent (32) ~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s09-e.webp?raw=true"
+  title="Reusable and independent"
   alt="Reusable and independent."
-  width="50%" />
+  style="width:50%" />
 </p>
-<!-- {width="6.5in" height="2.734815179352581in"} -->
 
 <p>Because components are reusable, they can be used multiple times and
 easily inserted anywhere we're needed.</p>
@@ -1068,13 +1056,12 @@ easily inserted anywhere we're needed.</p>
 interact independently from each other.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w1-s09-f. independent developers on independent components (32) ~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
 <img src="/images/w1-s09-f.webp?raw=true"
+  title="Components with independent developers"
   alt="Components with independent developers."
-  width="65%" />
+  style="width:65%" />
 </p>
-<!-- {width="6.0in" height="2.7314293525809274in"} -->
 
 <p>One of the advantages of development using components is that many
 developers can work on the same project without interfering with the
@@ -1094,9 +1081,8 @@ components.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-g.webp?raw=true"
   alt="Example product check out page on an e-commerce web application."
-  width="65%" />
+  style="width:65%" />
 </p>
-<!-- {width="6.0in" height="2.699682852143482in"} -->
 
 <p>For example, consider the product check out page of an e-commerce web
 application.</p>
@@ -1108,7 +1094,7 @@ sidebar.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-h.webp?raw=true"
   alt="Example header section with logo & nav menu."
-  width="65%" />
+  style="width:65%" />
 </p>
 <!-- {width="6.5in" height="0.9354494750656168in"} -->
 
@@ -1120,7 +1106,7 @@ a button to view the shopping cart.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-i.webp?raw=true"
   alt="Example payment section component."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="3.0in" height="1.7358727034120736in"} -->
 
@@ -1132,7 +1118,7 @@ payment information.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-j.webp?raw=true"
   alt="Example order summary component."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="3.0in" height="2.761124234470691in"} -->
 
@@ -1143,7 +1129,7 @@ payment information.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-k.webp?raw=true"
   alt="Self-contained components comprised of HTML, CSS and JavaScript."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- (width="5.0in" height="2.596824146981627in"} -->
 
@@ -1159,7 +1145,7 @@ is not limited to just React.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-l.webp?raw=true"
   alt="Components and compost ability."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="3.0in" height="1.5278346456692913in"} -->
 
@@ -1177,7 +1163,7 @@ its associated render method later.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-m.webp?raw=true"
   alt="Logical tree-like DOM."
-  width="15%" />
+  style="width:15%" />
 </p>
 <!-- {width="1.5in" height="1.5720002187226596in"}  -->
 
@@ -1197,7 +1183,7 @@ DOM.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s09-n.webp?raw=true"
   alt="React components, virtual DOM."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="2.960317147856518in"} -->
 
@@ -1218,7 +1204,7 @@ DOM.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-a.webp?raw=true"
   alt="JavaScript function, multiply."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="6.0in" height="1.6361898512685915in"} -->
 
@@ -1236,7 +1222,7 @@ components.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-b.webp?raw=true"
   alt="Two types of React components; Functional and Class."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="6.0in" height="2.092697944006999in"} -->
 
@@ -1254,7 +1240,7 @@ JavaScript function.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-c.webp?raw=true"
   alt="Index.js - Default React Appl'n."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!-- {width="4.0in" height="2.56380905511811in"} -->
 
@@ -1267,7 +1253,7 @@ located inside the source folder.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-d.webp?raw=true"
   alt="Root Component - Root."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="6.0in" height="2.0984120734908136in"} -->
 
@@ -1283,7 +1269,7 @@ work, such as the import React and import React DOM statements.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-e.webp?raw=true"
   alt="Render Syntax - ComponentName."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="3.0in" height="1.3410400262467193in"} -->
 
@@ -1295,7 +1281,7 @@ the component name inside the left and right-angle brackets and don't forget the
 <p align="center" width="100%">
 <img src="/images/w1-s10-f.webp?raw=true"
   alt="Roots Components."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!-- {width="4.0in" height="1.6334394138232722in"} -->
 
@@ -1307,7 +1293,7 @@ to represent the various UI part of the application.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-g.webp?raw=true"
   alt="Index.html - root."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!-- {width="4.0in" height="2.5053969816272965in"} -->
 
@@ -1324,7 +1310,7 @@ similar to a JavaScript function with some HTML code inside.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-h.webp?raw=true"
   alt="App.js - export default app."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="3.0in" height="3.022305336832896in"} -->
 
@@ -1339,7 +1325,7 @@ let's explore how web developers create them in React.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-i.webp?raw=true"
   alt="."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- ![](./images/image032.webp){width="3.0in" height="1.0762095363079616in"} -->
 
@@ -1354,7 +1340,7 @@ default app component.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-j.webp?raw=true"
   alt="App.js with JSX example 'Hello React'."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!-- {width="4.0in" height="1.7951323272090989in"} -->
 
@@ -1375,7 +1361,7 @@ statement of a functional component.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-k.webp?raw=true"
   alt="React component must be used as a JSX element or won't be rendered."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- ![](./images/image034.webp){width="5.0in" height="2.5359787839020123in"} -->
 
@@ -1395,7 +1381,7 @@ file Heading.js.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-l.webp?raw=true"
   alt="First character of a component name is capitalized in React."
-  width="65%" />
+  style="width:65%" />
 </p>
 <!-- ![](./images/image035.webp){width="6.5625in" height="0.575in"} -->
 
@@ -1414,7 +1400,7 @@ from HTML elements.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-m.webp?raw=true"
   alt="Heading function with title."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- ![](./images/image036.webp){width="3.0in" height="1.4707939632545932in"} -->
 
@@ -1431,7 +1417,7 @@ assign it the string value of this is some heading text.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-n.webp?raw=true"
   alt="Title variable."
-  width="65%" />
+  style="width:65%" />
 </p>
 <!-- ![](./images/image037.webp){width="6.5625in" height="1.9423611111111112in"} -->
 
@@ -1453,7 +1439,7 @@ with whatever text value that is stored within the variable named title.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s10-o.webp?raw=true"
   alt="Trans piling JSX to HTML."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="3.0in" height="0.8577777777777778in"} -->
 
@@ -1483,7 +1469,7 @@ open in the built-in terminal.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s11-a.webp?raw=true"
   alt="npm init react-app."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Now, I'll execute the command npm init, React app dot .</p>
@@ -1512,7 +1498,7 @@ localhost:3000 which is the local server.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s11-c. on your react network (44) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p align="center" style="width:100%">
 <img src="/images/w1-s11-c.webp?raw=true"
   alt="On your react network."
   width="70%" />
@@ -1528,7 +1514,7 @@ json.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s11-d.webp?raw=true"
   alt="SRC (source) folder."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>For now, the only folder I need to work in as the SRC folder.</p>
@@ -1554,7 +1540,7 @@ declaring an app function and I'm exporting it as a default module.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s11-f.webp?raw=true"
   alt="blank app.js."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>I save my file and notice that my app is just a blank page.</p>
@@ -1566,7 +1552,7 @@ want to display in the browser.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s11-g.webp?raw=true"
   alt="Header function in app.js."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>To do this, I create another function called header, and in the function
@@ -1592,7 +1578,7 @@ again.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s11-h.webp?raw=true"
   alt="Hello World in React."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Great, my code is working now.</p>
@@ -1813,7 +1799,7 @@ export default App;
 <p align="center" width="100%">
 <img src="/images/w1-s13-a.webp?raw=true"
   alt="The output of the completed 'Your first component' exercise."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="0.8566437007874016in"} -->
 
@@ -1893,7 +1879,7 @@ for app development.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s14-a.webp?raw=true"
   alt="Default files and folders."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Let's begin by examining how the default files and folders are laid out
@@ -1912,7 +1898,7 @@ or source.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s14-b.webp?raw=true"
   alt="Node module folder - repository for all modules in React app."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>First, let's begin with the node modules folder.</p>
@@ -1940,7 +1926,7 @@ work.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s14-c.webp?raw=true"
   alt="Public folder - contains assets displayed to user in app."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Next is the public folder, and it contains the assets that will be
@@ -1957,7 +1943,7 @@ it.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s14-d.webp?raw=true"
   alt="Index.html."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 While all these files are necessary, the most important one to know
@@ -1976,7 +1962,7 @@ You'll find out more about how this works later on in the course.
 <p align="center" width="100%">
 <img src="/images/w1-s14-e.webp?raw=true"
   alt="Contents of the SRC (source) folder."
-  width="70%" />
+  style="width:70%" />
 </p>
 Finally, let's explore the contents of the SRC or source folder.
 
@@ -2002,7 +1988,7 @@ Let's briefly explore the others.
 <p align="center" width="100%">
 <img src="/images/w1-s14-f.webp?raw=true"
   alt="App.css contains styles for app.js and index.css contains styles for the entire app."
-  width="70%" />
+  style="width:70%" />
 </p>
 App.css contains the styles for the app.js components, and the index.css
 file contains the styles to use in the entire app.
@@ -2030,7 +2016,7 @@ you'll learn about them soon.
 <p align="center" width="100%">
 <img src="/images/w1-s14-g.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 It's that this point is also worth remembering that the most important
 file in the entire source folder is the index.js file.
@@ -2046,7 +2032,7 @@ root of the default app.
 <p align="center" width="100%">
 <img src="/images/w1-s14-h.webp?raw=true"
   alt="Root files are additional root project files.."
-  width="70%" />
+  style="width:70%" />
 </p>
 Root files are additional files that are found in the root of the
 project folder itself and include a gitignore file, two json files, and
@@ -2057,7 +2043,7 @@ a README file.
 <p align="center" width="100%">
 <img src="/images/w1-s14-i.webp?raw=true"
   alt=".gitignore using version control to specify which files/folders to exclude."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 The .gitignore file is using version control and it's used to specify
@@ -2072,7 +2058,7 @@ This means that other systems use this file too.
 <p align="center" width="100%">
 <img src="/images/w1-s14-j.webp?raw=true"
   alt="readme.md giving basic project info."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 The README.md file is a markdown file that gives some basic information
@@ -2086,7 +2072,7 @@ like GitHub.
 <p align="center" width="100%">
 <img src="/images/w1-s14-k.webp?raw=true"
   alt="package.json list info for npm."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 The package.json file lists information pertaining to my app, which
@@ -2098,7 +2084,7 @@ itself.
 <p align="center" width="100%">
 <img src="/images/w1-s14-l.webp?raw=true"
   alt="package-lock.json holds list of dependencies with a specific version for recovery."
-  width="70%" />
+  style="width:70%" />
 </p>
 Finally, the package-lock.json file holds the list of all dependencies
 with a specific version.
@@ -2513,7 +2499,7 @@ powerful UIs based on reusable components of code.
 <p align="center" width="100%">
 <img src="/images/w1-s16-a.webp?raw=true"
   alt="React = collection of components."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 In order to create a fully functioning React app, you need to create a
@@ -2538,7 +2524,7 @@ For example, do you recall the concept of modules in JavaScript?
 <p align="center" width="100%">
 <img src="/images/w1-s16-b.webp?raw=true"
   alt="Modules are standalone units of code which may be reused."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 Modules are standalone units of code that you can reuse again and again.
@@ -2555,7 +2541,7 @@ your components by placing them in their own file.
 <p align="center" width="100%">
 <img src="/images/w1-s16-c.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 Then you can use the import and export statements to make the false
@@ -2575,7 +2561,7 @@ statement.
 <p align="center" width="100%">
 <img src="/images/w1-s16-d.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 In JavaScript, there are two types of exports, default exports and named
@@ -2599,7 +2585,7 @@ single part or small piece of functionality like a button.
 <p align="center" width="100%">
 <img src="/images/w1-s16-e.webp?raw=true"
   alt="Series of components comprise a module."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 Then you can think of a module as something that's larger than just one
@@ -2617,7 +2603,7 @@ scenario.
 <p align="center" width="100%">
 <img src="/images/w1-s16-f.webp?raw=true"
   alt="React is comprised of components."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 Suppose you're a developer currently in the process of building an
@@ -2638,7 +2624,7 @@ statements.
 <p align="center" width="100%">
 <img src="/images/w1-s16-g.webp?raw=true"
   alt="Import in index.js."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 You may have already noticed the import statement in the default
@@ -2666,7 +2652,7 @@ however, there are a few common approaches you may want to consider.
 <p align="center" width="100%">
 <img src="/images/w1-s16-h.webp?raw=true"
   alt="components folder."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 One approach is to place all components in a folder named components.
@@ -2679,7 +2665,7 @@ together.
 <p align="center" width="100%">
 <img src="/images/w1-s16-i.webp?raw=true"
   alt="Payment page of an e-commerce app."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 For example, suppose you are building a payment page for an e-commerce
@@ -2693,7 +2679,7 @@ component in React.
 <p align="center" width="100%">
 <img src="/images/w1-s16-j.webp?raw=true"
   alt="Header section."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-k. payment section as main (71) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2701,7 +2687,7 @@ component in React.
 <p align="center" width="100%">
 <img src="/images/w1-s16-k.webp?raw=true"
   alt="Main section = payment."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ w1-s16-l. sidebar section (72) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2709,7 +2695,7 @@ component in React.
 <p align="center" width="100%">
 <img src="/images/w1-s16-l.webp?raw=true"
   alt="Sidebar section."
-  width="30%" />
+  style="width:30%" />
 </p>
 
 First, a Header section using a component called header, then a Payment
@@ -2721,7 +2707,7 @@ component called sidebar.
 <p align="center" width="100%">
 <img src="/images/w1-s16-m.webp?raw=true"
   alt="Tree view of components."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 Each component will be called and have its contents returned to the root
@@ -2773,7 +2759,7 @@ export default App;
 <p align="center" width="100%">
 <img src="/images/w1-s17-a.webp?raw=true"
   alt="App, heading and index files displayed in src folder."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!-- {width="3.7708333333333335in" height="1.3125in"} -->
 
@@ -2785,7 +2771,7 @@ export default App;
 <p align="center" width="100%">
 <img src="/images/w1-s17-b.webp?raw=true"
   alt="Output of the completed 'Creating and importing components' exercise."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="1.220472440944882in"} -->
 
@@ -2871,7 +2857,7 @@ They are reusable blocks of code that act much like a JavaScript function.
 <p align="center" width="100%">
 <img src="/images/w1-s19-a.webp?raw=true"
   alt="React function props."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Recall that in JavaScript, you can make your functions more flexible by
 declaring them with parameters that allow you to pass in values as
@@ -2884,7 +2870,7 @@ as props.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-b.webp?raw=true"
   alt="Props object in React functions."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>In this section (19), you will learn about the props object and how
 developers use it to pass data from one component to another. Then
@@ -2900,7 +2886,7 @@ object is a special type of variable that can contain many values.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-c.webp?raw=true"
   alt="Object properties in React."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>You use objects when you need to store groups of related data of
 different types. Each data type is known as an object property, for
@@ -2912,7 +2898,7 @@ properties for type, quantity, and color.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-d.webp?raw=true"
   alt="Objects with name-value pairs using dot notation."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>Remember that these properties consist of name-value pairs, and you can
@@ -2923,7 +2909,7 @@ access the object's properties using dot notation.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-c.webp?raw=true"
   alt="React props."
-  width="30%" />
+  style="width:30%" />
 </p>
 
 <p>In React, you can use a similar technique to pass data from one
@@ -2940,7 +2926,7 @@ some props to a component and print them out in a React app.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-f.webp?raw=true"
   alt="Render app in index.js."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>Suppose you have the default code for the React app open in the index.js
 file, you call the app component. Inside the app component, you return
@@ -2952,7 +2938,7 @@ can make this heading dynamic by using props.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-g.webp?raw=true"
   alt="Index.js and App.js."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Let's now explore the syntax involved to create this. In the root
 component, index.js, you send the value you want to pass to the app
@@ -2969,7 +2955,7 @@ passed as an argument by the HTML attribute.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-h.webp?raw=true"
   alt="App.js with props title."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>Once again, remember to enclose your code inside curly brackets so React
 knows that you want to work with the props object and not static text.</p>
@@ -2993,7 +2979,7 @@ props data is known as the child.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-i.webp?raw=true"
   alt="Parent-Children passing data using props."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>As you've just learned with the example earlier, this parent-child
 relationship allows parent components of past data down to child
@@ -3014,7 +3000,7 @@ prompts.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s19-j.webp?raw=true"
   alt="Pure Function - Always returns same output for same argument value."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Another important limitation has to do with something called pure
 functions. In programming, a pure function is a function that will
@@ -3187,7 +3173,7 @@ This makes the app more versatile, helping it consume data easier.<br>
 <p align="center" width="100%">
 <img src="/images/w1-s21-a.webp?raw=true"
   alt="Syntax for props and components."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 <p>In this section (21) you'll learn the syntax involved to use props and
@@ -3202,7 +3188,7 @@ react using components.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s21-b.webp?raw=true"
   alt="."
-  width="30%" />
+  style="width:30%" />
 </p>
 
 Now you'll be introduced to a new component called the Nav component.
@@ -3218,14 +3204,14 @@ of code to return the JSX from it inside the function.
 <p align="center">
 <img src="/images/w1-s21-c.webp?raw=true"
   alt="JSX Nav component."
-  width="25%" />
+  style="width:25%" />
 &nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w1-s21-d. attributes building components with props (83) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s21-d.webp?raw=true"
   alt="Attributes used in building components with props in React."
-  width="25%" />
+  style="width:25%" />
 </p>
 
 <p>For example, the return statement can contain several HTLM like elements, 
@@ -3240,7 +3226,7 @@ with a live example of building a component using props.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s21-e.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Here's a practical way to work with props. I'm in my app with the header main and sidebar 
@@ -3254,7 +3240,7 @@ as the Children of the app component.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s21-f.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>First the header component receives a name prop, with a value of ANNA and a color prop
@@ -3269,7 +3255,7 @@ object to the header component. I'm not using this data and the header component
 <p align="center" width="100%">
 <img src="/images/w1-s21-g.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>So let me open the head of component and I'll first pass in the props object. For now, 
@@ -3284,7 +3270,7 @@ of the two properties inside the header component using props dot name and props
 <p align="center" width="100%">
 <img src="/images/w1-s21-h.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>To make sure that the expressions are evaluated 
 inside the JSX syntax, I must surround them with an opening and a closing curly brace. 
@@ -3297,7 +3283,7 @@ now update the main and sidebar to.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s21-i.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Back in the app components render statement, I add the greet prop with the value of 
@@ -3310,7 +3296,7 @@ brace props dot greet, closing curly brace. I can now delete the Hello string.</
 <p align="center" width="100%">
 <img src="/images/w1-s21-j.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Similarly in the sidebar components file, I'll also receive the props object and 
@@ -3364,7 +3350,7 @@ export default Heading;
 <p align="center" width="100%">
 <img src="/images/w1-s22-a.webp?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- (width="6.0in" height="1.8693788276465442in"} -->
 
@@ -3482,7 +3468,7 @@ CSS within a component.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-a.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>What is it that makes JSX so special? In one word,
 expressiveness. Developers can express what they want to react to render
@@ -3495,7 +3481,7 @@ JavaScript code.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-b.webp?raw=true"
   alt="Output of the completed 'Passing Props' exercise."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>For example, you can add a navigation function to a website by creating a nav component. 
 Then place the HTML semantic nav element, and an unordered list inside. 
@@ -3512,7 +3498,7 @@ inside the curly braces of the code is essentially regular JavaScript code.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-c.webp?raw=true"
   alt="JSX component syntax."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For example, you could calculate a series of simple expressions
 using the Li or list item tag. This means that you can think of the
@@ -3525,7 +3511,7 @@ return statement.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-d.webp?raw=true"
   alt="JSX return statement."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>Now that you've learned a little more about JSX expressions, let's focus on some JSX rules 
 inside the return statement of the function.</p>
@@ -3540,14 +3526,14 @@ curly braces.</p>
 <p align="center">
 <img src="/images/w1-s23-e.webp?raw=true"
   alt="JSX return div command."
-  width="30%" />
+  style="width:30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~ w1-s23-f. jsx return command less than and greater to (92) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s23-f.webp?raw=true"
   alt="JSX fragment command rather than div."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>It's also important to remember that the HTML code must be wrapped in a top level
 element, such as a div tag. If you do not want to add extra div elements
@@ -3562,7 +3548,7 @@ are some differences.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-g.webp?raw=true"
   alt="JSX component syntax."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>For example, you cannot use the keyword class to work with CSS classes in your HTML elements. 
 This is because class is a reserved keyword in JavaScript, you must use a slightly different
@@ -3578,7 +3564,7 @@ do this later.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s23-h.webp?raw=true"
   alt="JSX and HTML syntax."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For now, just know that this is the closest to what you would do like if you were working 
 with HTML, and CSS website layouts.  There are some other differences, and you'll learn 
@@ -4004,7 +3990,7 @@ Recall that there are three techniques to include CSS and HTML documents.
 <p align="center" width="100%">
 <img src="/images/w1-s26-a.webp?raw=true"
   alt="Index.css."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>The first is in line by utilizing the style attribute inside the HTML element.</p>
 <p>Next is internal by using the style elements in the head section.</p>
@@ -4015,7 +4001,7 @@ Recall that there are three techniques to include CSS and HTML documents.
 <p align="center" width="100%">
 <img src="/images/w1-s26-b.webp?raw=true"
   alt="Move CSS style inside component."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>In this section (26), you'll learn how to take CSS style rules from an external 
 file named index.CSS and add it inside a component as an internal style. 
@@ -4027,7 +4013,7 @@ the component.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s26-c.webp?raw=true"
   alt="External style sheet."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>Notice that the components are styled by the external style sheet, index dot CSS.</p>
@@ -4048,7 +4034,7 @@ This will not affect my component because I'm pasting CSS code into a JavaScript
 <p align="center" width="100%">
 <img src="/images/w1-s26-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>I need to make some changes to turn the CSS rule into a JavaScript object. To do this, I need 
 to declare a site style as a const variable and then replace the semi-colons and the code with 
@@ -4059,7 +4045,7 @@ commas. I also need to replace the hyphenated names with camelCase.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s26-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>It's important to know that because CSS declarations like background are now an object property, 
 I need to make their respective values a string by wrapping them inside double quotes.</p>
@@ -4070,7 +4056,7 @@ I need to make their respective values a string by wrapping them inside double q
 <p align="center" width="100%">
 <img src="/images/w1-s26-f.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>I also need to repeat this for the other news tile elements as well. Finally, inside the a site tag 
 and return statements of the component, I need to add a style attribute by typing style equals aside 
@@ -4081,7 +4067,7 @@ style as a JSX expression. I then choose save all in the file menu to save my ch
 <p align="center" width="100%">
 <img src="/images/w1-s26-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>Notice that the sidebar components appears in the browser as before, I edited the index.CSS file. 
@@ -4092,7 +4078,7 @@ That's an example of using inline CSS styling directly inside a component.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s26-h.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>In this section (26), you learned how to take CSS style rules from an external file 
@@ -4329,7 +4315,7 @@ The code consists of a paragraph, HTML elements containing the phrase hello worl
 <p align="center" width="100%">
 <img src="/images/w1-s28-a.webp?raw=true"
   alt="JSX example."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>It is assigned to the constant variable named Result.</p>
 <p>Note that when this JSX code executes, the result variable will contain a React 
@@ -4340,7 +4326,7 @@ element that can then be inserted into the webpage.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-b.webp?raw=true"
   alt="HTML to JSX to React."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>This is one of the key features of JSX.</p>
 <p>Building React elements from HTML code automatically.</p>
@@ -4350,7 +4336,7 @@ element that can then be inserted into the webpage.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-c.webp?raw=true"
   alt="Embedded expressions."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Let's explore another important feature of JSX, which is embedded expressions.</p>
 <p>Embedded expressions allow developers to insert the values of JavaScript
@@ -4362,7 +4348,7 @@ variables into the HTML of the resulting React elements.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-d.webp?raw=true"
   alt="function: formatname."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Let's say you need to output the person's name in a specific format. To do 
 this, you can first create a function named format name that will return the 
@@ -4373,7 +4359,7 @@ first name and surname with a space character between them.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-e.webp?raw=true"
   alt="Embedded function outputs."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In your JSX, you can then call this function inside the curly brackets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -4382,7 +4368,7 @@ first name and surname with a space character between them.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-f.webp?raw=true"
   alt="More embedded function outputs."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>As with the previous example, the value that the function generates for the JavaScript 
 variable will be output in HTML.</p>
@@ -4392,7 +4378,7 @@ variable will be output in HTML.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-g.webp?raw=true"
   alt="Expressions in HTML attributes."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Expressions can also be used for HTML attributes.</p>
 <p>This is useful if you need to insert the address of a person's profile picture.</p>
@@ -4403,7 +4389,7 @@ variable will be output in HTML.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s28-h.webp?raw=true"
   alt="More expressions in HTML attributes."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The image will be displayed using the img elements, so you should embed the URL 
 variable into the src attributes.</p>
@@ -4749,7 +4735,7 @@ image tag.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s31-a.webp?raw=true"
   alt="Section 31a - what to expect."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>Over the next few minutes I'll guide you through the process
 as I complete the steps. And by the end of this section (31) you'll be
@@ -4762,7 +4748,7 @@ utilize additional assets within an app by importing components.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s31-b.webp?raw=true"
   alt="Screenshot App.js."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>Now I'm in the App.js file of a new project and start with an app component
 that returns the h1 header text, hello world.</p>
@@ -4776,7 +4762,7 @@ publicly available through the get up API.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s31-c.webp?raw=true"
   alt="Add new function in App.js named logo."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>I then add a new function in the App.js file named logo. The logo function is 
 essentially a separate component. But to keep things clean for this example, 
@@ -4794,7 +4780,7 @@ the logo element inside the app components return statement.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s31-d.webp?raw=true"
   alt="Snapshot of preview, displaying header text and an image."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>Lemme now preview my app in the browser. Great, so it displays the header text along with the 
 image.</p>
@@ -4807,7 +4793,7 @@ file and then import and render it as needed.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s31-e.webp?raw=true"
   alt="How to embed a JSX expression in an attribute."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>And that's a demonstration on how you can embed a JSX expression in an attribute. In
 this case the SRC attribute of an html image tag.</p>
@@ -4890,7 +4876,7 @@ export default Card;
 <p align="center" width="100%">
 <img src="/images/w1-s32-a.webp?raw=true"
   alt="The output of the completed 'Multiple components' exercise."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="6.020833333333333in" height="3.3621489501312336in"} -->
 
@@ -5200,7 +5186,7 @@ software engineer Katie.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s33-a.webp?raw=true"
   alt="HTML, CSS, and JavaScript (JS)."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Then to lay the foundation for the hands-on labs, you had a quick
 summary of the fundamentals of HTML, CSS and JavaScript.</p>
@@ -5216,7 +5202,7 @@ based on reusable components of code like the reactor library.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s33-b.webp?raw=true"
   alt="React Components &amp; component style layouts which use the Virtual DOM."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>You learned about component types and components style layouts that use the
 virtual DOM. And you learned how to create components that form the
@@ -5227,7 +5213,7 @@ foundation of UI design.</p>
 <p align="center" width="100%">
 <img src="/images/w1-s33-c.webp?raw=true"
   alt="React and JSX, transpire from JSX to HTML."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In this lesson, you also learned more about JSX, a special kind of
 syntax that acts like an extension of JavaScript. You learned how to
@@ -5248,13 +5234,13 @@ JSX elements in a way that is functional and looks good.</p>
 <p float="left">
 <img src="/images/w1-s33-d.webp?raw=true"
   alt="Use props and components, define components, and invoke functions."
-  width="45%" />
+  style="width:45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~ w1-s33-e. use expressions as props and declare components (124) ~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s33-e.webp?raw=true"
   alt="Use and manipulate props &amp; components, define components using function expressions &amp; arrow functions."
-  width="45%" />
+  style="width:45%" />
 </p>
 
 As part of this lesson, you learned how to use and manipulate props and
@@ -5268,13 +5254,13 @@ embedded expressions in attributes.
 <p float="left">
 <img src="/images/w1-s33-f.webp?raw=true"
   alt="Explain React and create components."
-  width="45%" />
+  style="width:45%" />
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w1-s33-g. use props &amp; components, describe assets (124) ~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w1-s33-g.webp?raw=true"
   alt="Use props and components, describe assets."
-  width="45%" />
+  style="width:45%" />
 </p>
 
 <p>After completing this module, you are now able to explain the concept
@@ -5308,7 +5294,7 @@ this module and get ready for the next one.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s01-a.webp?raw=true"
   alt="Clicks  Movements  Commands."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>By now, you're probably familiar with <b>events</b> in JavaScript. Recall
@@ -5324,7 +5310,7 @@ interaction to occur before they can be triggered.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s01-b.webp?raw=true"
   alt="Event Listener Button - onclick."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Every HTML element contains a set of events that developers can access
 by using HTML attributes, commonly referred to as event listeners.</p>
@@ -5334,7 +5320,7 @@ by using HTML attributes, commonly referred to as event listeners.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s01-c.webp?raw=true"
   alt="On click, add to cart - html."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For example, it's a common feature of a website or app to have a button
 that when clicked, causes something to happen. This action is an example
@@ -5352,7 +5338,7 @@ handler to execute some code and respond to the event action is known as
 <p align="center" width="100%">
 <img src="/images/w2-s01-d.webp?raw=true"
   alt="On click, add to cart - js."
-  width="60%" />
+  style="width:60%" />
 </p>
 For example, you might want to listen for a click event on an Add to
 Cart button. Once you capture such an event, you might want to run some
@@ -5363,7 +5349,7 @@ JavaScript code.
 <p align="center" width="100%">
 <img src="/images/w2-s01-e.webp?raw=true"
   alt="On click, add 1 to cart - js."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 In this example, I just circled with a number 1 in the
@@ -5377,7 +5363,7 @@ icon.
 <p align="center" width="100%">
 <img src="/images/w2-s01-f.webp?raw=true"
   alt="On click, add 1 to cart - js."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 The circle then displays the number 2 to indicate that there are
@@ -5392,7 +5378,7 @@ work with <b>events</b> as they are handled a bit differently.
 <p align="center" width="100%">
 <img src="/images/w2-s01-g.webp?raw=true"
   alt="Identify types of events in React and describe most common. Explain event handling."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>By the end of this section (01), you'll be able to identify the broad
@@ -5407,7 +5393,7 @@ are very similar to HTML event attributes that you may be familiar with.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s01-h.webp?raw=true"
   alt="onclick event handling (all lowercase) in html, and onClick in camelCase for jsx."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>For example, the click handling attributes in HTML is the onclick
 attribute with all the letters lowercased. The equivalent click handling
@@ -5421,7 +5407,7 @@ space.
 <p align="center" width="100%">
 <img src="/images/w2-s01-i.webp?raw=true"
   alt="Events supported in React."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>There are many events supported in React, which can be divided into
 several groups. Those groups include clipboard Events, composition
@@ -5433,7 +5419,7 @@ multiple events.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s01-j.webp?raw=true"
   alt="Mouse events supported in React."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 For example, supported mouse events include onClick, onContextMenu,
@@ -5444,7 +5430,7 @@ onDoubleClick, and several others.
 <p align="center" width="100%">
 <img src="/images/w2-s01-k.webp?raw=true"
   alt="Clipboard events supported in React."
-  width="60%" />
+  style="width:60%" />
 </p>
 You will also find that the clipboard group has the useful events:
 onCopy, onCuts, and onPaste. There are far too many events to cover
@@ -5465,7 +5451,7 @@ cases.
 <p align="center" width="100%">
 <img src="/images/w2-s01-l.webp?raw=true"
   alt="Drag 'n drop mouse events supported in React."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 For example, several of the mouse events are limited to the drag and
@@ -5585,7 +5571,7 @@ components.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s03-a.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 As I start, I've added a new component to the SRC folder. I named it
@@ -5597,7 +5583,7 @@ As I start, I've added a new component to the SRC folder. I named it
 <p align="center" width="100%">
 <img src="/images/w2-s03-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 Let me simplify the app.js file as return statement. First, I'll delete
@@ -5614,7 +5600,7 @@ Save and the button renders on the screen.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s03-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Now I would like to handle a click on this button. I add the onclick
 synthetic events than an equals sign and opening curly brace.
@@ -5626,7 +5612,7 @@ distributed the code on several lines to increase readability.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s03-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Now I'm setting up the click handling behavior. Whenever a user clicks
 on the button that will evaluate an expression named <b>clickHandler</b>, I
@@ -5643,7 +5629,7 @@ developer tools.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s03-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Now I locate and activate the console tab in the developer tools, I'll also zoom in 
 on the button.  When I click the button, the word clicked appears in the console for 
@@ -5658,7 +5644,7 @@ pressing and releasing the C button, and finally releasing the Control key.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s03-f.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>Control K, C that comments out all the highlighted code, right under
@@ -5673,7 +5659,7 @@ different event.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s03-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For example, I can replace the onclick attribute with the on mouse over
 attribute and update my event handling function accordingly to read
@@ -5696,7 +5682,7 @@ you need to use <b>event handlers</b> that will then execute an action.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s04-a.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>For example, suppose you use a button to open a menu. Clicking the
@@ -5712,7 +5698,7 @@ them.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s04-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>By the end of this section (04), you'll be able to describe the syntax
 differences for using <b>event handlers</b> in HTML and React. You will
@@ -5730,7 +5716,7 @@ this in plain HTML.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s04-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>You might open a tag called button with the ID <b>js-btn</b>. You then
 assign the <b>on click</b> event handling attribute and set it equal to the
@@ -5750,7 +5736,7 @@ find out later.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s04-d.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>But for now, you should understand that the equivalent code in
 JavaScript consists of two primary steps. First, you should use
@@ -5771,7 +5757,7 @@ the equation, but the code on the other hand, is a bit more complicated.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s04-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 Specifically, you need to first declare a constant called <b>JS button</b>
 and assign the value from the DOM. Then you need to add the <b>click
@@ -5787,7 +5773,7 @@ The rule is to avoid manipulating the DOM directly as much as possible.
 <p align="center" width="100%">
 <img src="/images/w2-s04-f.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 You should set everything up declaratively, meaning that you describe
 updates to React and let it figure out the rest.
@@ -5797,7 +5783,7 @@ updates to React and let it figure out the rest.
 <p align="center" width="100%">
 <img src="/images/w2-s04-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 This is best done using event attribute, unfortunately, one-to-one
@@ -5816,7 +5802,7 @@ pass a reference to the event handling function without invoking it.
 <p align="center" width="100%">
 <img src="/images/w2-s04-h.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 To illustrate that point, let's compare the syntax of an HTML click
@@ -5836,7 +5822,7 @@ the name of the function to be run. Make sure not to invoke it.
 <p align="center" width="100%">
 <img src="/images/w2-s04-i.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 Finally, one more feature only using React is the passing of function
@@ -5998,7 +5984,7 @@ state, styling, and the use of turning the expressions.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-a.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Let's say that you have a component that uses state to keep a Boolean value 
 of dark mode on. Based on whether the value of this variable is true or false,
@@ -6031,7 +6017,7 @@ However, I don't have the values I'm evaluating yet.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Instead I define these values by declaring
 three variables above the return statements. These are dark mode on,
@@ -6044,7 +6030,7 @@ is on in an H one header.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>I save my changes and I get the sentence. Dark
 mode is on in the browser.</p>
@@ -6056,7 +6042,7 @@ mode on variable is set to true.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Just to do a quick test, I can change the variable name of dark mode 
 on in the turn array to the value of true. Since this value is true, the 
@@ -6067,7 +6053,7 @@ value that's stored in dark mode will be rendered.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>If I change the value of true to false, the value
 that's stored in light mode will be displayed. I have replaced the test
@@ -6081,7 +6067,7 @@ the dark mode on, variable from true to false.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-f.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>So, under this turner restatement I'll add a button with an on click event handler.</p>
 <p>I'll also define the handle click function.</p>
@@ -6101,7 +6087,7 @@ statement.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>The logic states that if the dark mode on is set to true,
 then console log dark mode is on otherwise console log light mode is on.</p>
@@ -6116,7 +6102,7 @@ others can easily examine the code at a later stage. I save.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-h.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>And once my app re compiles, if I click the click me button, I get the appropriate
@@ -6127,7 +6113,7 @@ string output in the console.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s06-i.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>This brings me to an interesting
 conclusion. Although the console log is updating, there are no changes
@@ -6187,7 +6173,7 @@ events on a single JSX element.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s07-a.webp?raw=true"
   alt="The output of the completed 'Dynamic events' exercise."
-  width="70%" />
+  style="width:70%" />
 </p>
 <!-- {width="7.083333333333333in" height="0.9637893700787401in"} -->
 <p><b>Step 1.</b> First, you added a <b>button</b> element, with an opening and a
@@ -6330,7 +6316,7 @@ will explore this concept as it applies to React.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-a.webp?raw=true"
   alt="Parent-Child unidirectional flow of data and React hierarchy."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By the end of this section (09), you'll be able to describe the
 parent-child unidirectional flow of data, and you'll gain an
@@ -6344,7 +6330,7 @@ contents of the promo heading components that you will create later.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-b.webp?raw=true"
   alt="Promo component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To build the promo component, you can declare the function promo and
 then write a return statement inside of curly braces. This statement has
@@ -6356,7 +6342,7 @@ by the line export default <b>Promo</b> to make the component accessible.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-c.webp?raw=true"
   alt="PromoHeading component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Next, let's write the <b>PromoHeading</b> component. You can declare
 function <b>PromoHeading</b> and in curly braces type return, opening,
@@ -6368,7 +6354,7 @@ closing parenthesis.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-d.webp?raw=true"
   alt="PromoHeading component with export."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Once again, don't forget to export the components
 to make it available. Success.</p>
@@ -6380,7 +6366,7 @@ the component <b>PromoHeading</b> to return the text 80 percent off sale.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-e.webp?raw=true"
   alt="Promo component as parent with rendered PromoHeading child component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In this example, the <b>Promo</b> component is known as a parent component,
 and the component it renders, <b>PromoHeading</b>, is referred to as the
@@ -6391,7 +6377,7 @@ child component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-f.webp?raw=true"
   alt="PromoHeading component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Now, let's say that the discount increases to 99 percent off and you
 need to update the code to reflect this. One approach is to update the
@@ -6403,7 +6389,7 @@ quick fix because there is only one change to deal with.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-g.webp?raw=true"
   alt="PromoHeading component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>However, let's explore a more complex situation. This time, your
 manager asks you to call the <b>PromoHeading</b> component in the sidebar
@@ -6415,7 +6401,7 @@ component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-h.webp?raw=true"
   alt="PromoHeading component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>They also want two messages displayed "99 percent of all items" and
 "everything must go". These new requirements mean that the approach of
@@ -6435,7 +6421,7 @@ more.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-i.webp?raw=true"
   alt="PromoHeading component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>But instead of writing the same code over and over, you can change
 your approach. You can establish a single source of truth that contains
@@ -6449,7 +6435,7 @@ component using props.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-j.webp?raw=true"
   alt="Singel source for text updates."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Now, let's use this approach to update the Promo component. First, you create a 
 single source of truth, a JavaScript object named data. Data is an object that will 
@@ -6460,7 +6446,7 @@ contain two properties named heading and callToAction, both represented as strin
 <p align="center" width="100%">
 <img src="/images/w2-s09-k.webp?raw=true"
   alt="Example Parent-Child component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Next, you update the Promo component to pass the heading and the callToAction
 values of the data object to the PromoHeading component. This is known
@@ -6473,7 +6459,7 @@ component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-l.webp?raw=true"
   alt="Another example of Parent-Child component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To do this, you need to first delete the existing h1 in the return statement, 
 and then add a new h1 for props.heading, and then h2 for props.callToAction.</p>
@@ -6486,7 +6472,7 @@ parent component when you add the specific JSX element that should be rendered.<
 <p align="center" width="100%">
 <img src="/images/w2-s09-m.webp?raw=true"
   alt="Promoheading rendering."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>This was achieved when you rendered the PromoHeading inside the Promo component. Here you access
 the properties on the data object using the regular dots notation syntax
@@ -6500,7 +6486,7 @@ component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-n.webp?raw=true"
   alt="Prop states flow from parent to child components."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Remember that in React, the prop states always flow from the
 parent to the child component, and using props helps you avoid the need
@@ -6511,7 +6497,7 @@ to change the data in several places.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s09-o.webp?raw=true"
   alt="Parent prop updates reflect on child components."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Instead, you make the change at
 the data source, the parent, and the updates will be applied to the
@@ -6609,7 +6595,7 @@ be as efficient as it could be, especially in modern React.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-a.webp?raw=true"
   alt="Data flow in ReactJS."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>In this section (11), you're going to learn about data flow in ReactJS.
 In this case, data flow is in one direction only. Immediately a question
@@ -6626,7 +6612,7 @@ use of stateless and stateful examples by focusing on data flow.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-b.webp?raw=true"
   alt="Company to you, minimum money (the lazy and greedy keep the rest)."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Imagine that data is money and the money is controlled by your employer. This
 money can be considered props. This money props is passed to you and
@@ -6638,7 +6624,7 @@ to you, never in the opposite direction.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-c.webp?raw=true"
   alt="Data is passed parent to child."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In React, data is passed down from parent components to a child components 
 via props. A child components can't mutate or change its props. It can only 
@@ -6650,7 +6636,7 @@ it's just consumed in the child components.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-d.webp?raw=true"
   alt="Sample component templates (3)."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>However, if this was always the case, then all you'd have in a React app 
 is separate pieces of the DOM acting as component templates to be filled up 
@@ -6661,7 +6647,7 @@ with a data they receive. While this works great, there'd be almost no interacti
 <p align="center" width="100%">
 <img src="/images/w2-s11-e.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>You've learned about passing data to a child component using props.
@@ -6673,7 +6659,7 @@ that data is referred to as <b>state</b>.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-f.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>All the data in React can be divided into <b>props</b> data and <b>states</b>
 data. Props data is data outside the components that it receives and
@@ -6688,7 +6674,7 @@ component itself.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-g.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>To demonstrate this, let's open up VS Code and work through an example.
 I've built a new app using Create React app. I have two files created,
@@ -6707,7 +6693,7 @@ hours, minutes, and seconds of the date.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s11-h.webp?raw=true"
   alt="Passing data to child components using props in ReactJS."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Now when I run the app, the state of the app component flows. It stays down to the child 
 component props, and the H1 elements will display the current date and time. Well done.</p>
@@ -6723,7 +6709,7 @@ showcase the use of stateless and stateful examples by focusing on data flow.</p
 <p align="center" width="100%">
 <img src="/images/w2-s12-a.webp?raw=true"
   alt="Complex components and React hooks, how they can be used and why they are useful."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>In this section (12), you'll be introduced to what hooks are, how they can be used and 
 why they are useful. As you progress as a React developer, you'll likely soon use complex 
@@ -6735,7 +6721,7 @@ quite a task and this is where React's hooks can help.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s12-b.webp?raw=true"
   alt="Code reuse."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>One key benefit of hooks is that they solve the problem of unnecessary code reuse 
 across components.  Let's find out how they do that.</p>
@@ -6745,7 +6731,7 @@ across components.  Let's find out how they do that.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s12-c.webp?raw=true"
   alt="Hooks are functions in React."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Hooks are functions that were introduced in React version 16.8. They let you hook into React state and lifestyle features from components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6754,7 +6740,7 @@ across components.  Let's find out how they do that.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s12-d.webp?raw=true"
   alt="Manage the state built into React."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Let's observe an example hook. Specifically, you'll examine an instance of the useState hook as it's the most commonly used one. This hook is used to manage the state within a component and keep track of it and it's built directly into React.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6763,7 +6749,7 @@ across components.  Let's find out how they do that.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s12-e.webp?raw=true"
   alt="Import the useState from React."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To use it, the first thing you need to do is import the useState from React so that it's available for use.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6772,11 +6758,11 @@ across components.  Let's find out how they do that.</p>
 <p align="center">
 <img src="/images/w2-s12-f.webp?raw=true"
   alt="ShowMenu and SetShowMenu, example #1."
-  width="40%" />
+  style="width:40%" />
 &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="/images/w2-s12-g.webp?raw=true"
   alt="ShowMenu and SetShowMenu, example #2."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The next step is to declare a state variable within a component. You can provide any name to the state variable and the set state function. For this example, let's call the state variable showMenu and the set state function setShowMenu.</p>
 If you've learned JavaScript, this syntax may feel somewhat familiar to you. You are probably wondering what exactly this code does. Well, it's actually doing something that you've likely encountered before.</p>
@@ -6786,7 +6772,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <p align="center" width="100%">
 <img src="/images/w2-s12-h.webp?raw=true"
   alt="Complex components and React hooks."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Notice that the convention is to name the state variable and the set of function using array destructuring. When you declare a state variable using the useState, it returns a pair which is an array with two items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6795,7 +6781,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <p align="center" width="100%">
 <img src="/images/w2-s12-i.webp?raw=true"
   alt="Without array destructuring, long &amp; cumbersome."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Without array destructuring, the code would be long and cumbersome. Since it's more confusing and tedious to access the array items by index, array destructuring is preferred and it significantly simplifies the code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6804,7 +6790,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <p align="center" width="100%">
 <img src="/images/w2-s12-j.webp?raw=true"
   alt="showMenu simplified as false."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>You now have a new state variable called showMenu. The useState then sets the initial value of showMenu as false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6813,7 +6799,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <p align="center" width="100%">
 <img src="/images/w2-s12-k.webp?raw=true"
   alt="showMenu and setShowMenu functions."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>To summarize, calling the useState hook does two things. It creates a state variable with an initial value that represents the current state, which in this example is showMenu. And it creates a function to set that states variable value, which in this case is setShowMenu. The function setShowMenu is used to update the value of show menu bypassing the Boolean value to it. It does not matter what names you use for the state variables. You can define them based on your component and use case.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -6822,7 +6808,7 @@ If you've learned JavaScript, this syntax may feel somewhat familiar to you. You
 <p align="center" width="100%">
 <img src="/images/w2-s12-l.webp?raw=true"
   alt="useState hook to track the Boolean state value."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The useState hook should be called at the top level of your component. In this example, notice that the useState hook was used to track the Boolean state value. 
 You can use the useState hook to track any type of data. It could be strings, numbers, arrays, Booleans or objects.</p>
@@ -6887,7 +6873,7 @@ get updated with the latest text that has been typed.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s13-a.webp?raw=true"
   alt="Display of the word "Welcome" typed to bar."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="5.979166666666667in" height="2.25in"} -->
 
@@ -6940,7 +6926,7 @@ registration form with fields for first name, last name and email.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s13-b.webp?raw=true"
   alt="Text fields of first name, last name, and e-mail."
-  width="53%" />
+  style="width:53%" />
 </p>
 <!-- {width="5.375in" height="2.4791666666666665in"} -->
 
@@ -7084,7 +7070,7 @@ understand the benefits of using hooks within a React component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-a.webp?raw=true"
   alt="Components with props."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>If you create this feature in a React app, you could create a component named clock and then 
 parsing the status values via props.</p>
@@ -7098,7 +7084,7 @@ which also allows you to easily change how the component behaves in order to sui
 <p align="center" width="100%">
 <img src="/images/w2-s15-b.webp?raw=true"
   alt="Describe State in React and explore its features."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By the end of this section (15), you'll be able to describe what State is in React and why 
 developers use it to control what is displayed in the browser from a component. It helps to 
@@ -7110,7 +7096,7 @@ It's often used to store data that affects the behavior of a component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-c.webp?raw=true"
   alt="State - data in a component that determines behavior."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>State is important because it allows components to stay in sync with each other and ensure 
 that your app behaves as intended.</p>
@@ -7120,7 +7106,7 @@ that your app behaves as intended.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-d.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 <p>For example, if one component updates its State, all other components that depend on that 
@@ -7132,7 +7118,7 @@ children by using props.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-e.webp?raw=true"
   alt="."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>If the child components have their own grandchild components, then the child components 
 might have some States that they send us props to those grandchild components. In React, 
@@ -7144,7 +7130,7 @@ variables.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-f.webp?raw=true"
   alt="."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>When a component is created, it gets an initial State. The State is used to initialize the 
 component's properties.</p>
@@ -7157,7 +7143,7 @@ better understanding, let's explore an example of each.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-g.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 <p>First is an app component with no state defined. It performs a single action, which is to 
@@ -7169,7 +7155,7 @@ This component also renders some texts, but it references a variable to do so.</
 <p align="center" width="100%">
 <img src="/images/w2-s15-h.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>We'll explore how that works a little later. For now, notice the syntax using the first 
 line of the app's function body. If you're familiar with how array destructuring works in 
@@ -7180,7 +7166,7 @@ plain JavaScript. This line of code might've already make sense to you.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-i.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>To make things clear, consider an example array called fruits, which contains the three strings, 
 apple, pear, and plum.</p>
@@ -7190,7 +7176,7 @@ apple, pear, and plum.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-j.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 <p>With its ES6 version, JavaScript introduced the concept of array destructuring, which 
@@ -7203,7 +7189,7 @@ quickly instead of one at a time.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-k.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 <p>With this in mind, let's come back to that line in the stateful component. Notice that the 
@@ -7215,7 +7201,7 @@ bit of code. React.useState.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-l.webp?raw=true"
   alt="State - data in a component that determines behavior."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>Hooks allow developers to hook into some otherwise inaccessible functionality. For example, to 
 access the State object you would use the useState hook.</p>
@@ -7225,7 +7211,7 @@ access the State object you would use the useState hook.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-m.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>To better understand what is being destructured in the app component, let's call a console 
 log to the useState hook. The output reveals an array holding two things, the string Hello 
@@ -7236,7 +7222,7 @@ and a function.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-n.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>In this case, Hello is the state value assigned to the word state variable. The function is 
 a built-in one that is not declared.  The function can be destructured with any name you'd like, 
@@ -7247,7 +7233,7 @@ but there is a convention to follow.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-o.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>If you set the States variable name to be Greet, then the destructured state function 
 should be setGreet. This is because the second destructured variable is a function that 
@@ -7258,7 +7244,7 @@ will be used to update the state of a variable.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s15-p.webp?raw=true"
   alt="."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>Let's examine an updated version of this stateful function component. Notice that the 
 setGreet variable is not actually run, that is something that is done elsewhere.</p>
@@ -7282,7 +7268,7 @@ Hook that you encountered earlier.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s16-a.webp?raw=true"
   alt="useState Hook - access the date state."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>The useState Hook allows a components to define and track state. It does this with two 
 arguments. The first of which accesses state and the second of which updates it with a function.</p>
@@ -7292,7 +7278,7 @@ arguments. The first of which accesses state and the second of which updates it 
 <p align="center" width="100%">
 <img src="/images/w2-s16-b.webp?raw=true"
   alt="useState Hook - access the date state."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>For example, you can use the date variable to access the date state. Then use the set date 
 function to update the state.</p>
@@ -7302,7 +7288,7 @@ function to update the state.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s16-c.webp?raw=true"
   alt="Demonstration how to observe and manipulate the state of a component."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>To help you understand how useful we use useState Hook can be, you're now going to explore 
 an example that demonstrates how to use it to observe and manipulate the state of the component.</p>
@@ -7317,7 +7303,7 @@ string. In the return statement, I wrap the heading components in a single div.<
 <p align="center" width="100%">
 <img src="/images/w2-s16-d.webp?raw=true"
   alt="Example JSX expression with message prop of word + word variable."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>I pass the message prop of word plus, and then "at Little Lemon", all wrapped in an opening 
 and closing curly brace. You already know that's an opening and a closing curly brace 
@@ -7329,7 +7315,7 @@ will be evaluated as regular JavaScript.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s16-e.webp?raw=true"
   alt="setWord to manipulate messaging."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>The JavaScript engine takes the word Eat and concatenates it, so the words at Little Lemon. 
 Thus, in the browser window, I get the words eat at little lemon. If I want to update the value 
@@ -7343,7 +7329,7 @@ directly.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s16-f.webp?raw=true"
   alt="onClick event example."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>Instead of updating it directly, I can update it based on a click event. I have another 
 element called button and onClick is equal to handleClick. I now set another function which 
@@ -7368,7 +7354,7 @@ some of the solutions to managing state in React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-a.webp?raw=true"
   alt="Managing state example."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To illustrate a scenario in which states needs to be managed, consider a small React app 
 that helps promote a healthier lifestyle by allowing the user to monitor their food intake. 
@@ -7380,7 +7366,7 @@ consumed it.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-b.webp?raw=true"
   alt="Meals left to eat."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The app then updates to show how many meals that are still left to be consumed for the day.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7389,7 +7375,7 @@ consumed it.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-c.webp?raw=true"
   alt="Healthy eating app."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The app consists of three components. A root components called App.js, and then two 
 child components, mealsList and counter.</p>
@@ -7400,7 +7386,7 @@ child components, mealsList and counter.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-d.webp?raw=true"
   alt="App component imports MealsList and Counter components and renders them on screen."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>First, the app component imports the mealsList and Counter components and renders them 
 on the screen. Next, the mealsList component uses use state to hook to list days meals 
@@ -7411,7 +7397,7 @@ which are stored in an array.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-e.webp?raw=true"
   alt="MealsList.js."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The array elements are saved inside the todaysMeals variable. Then the meals state 
 variable is initialized to hold this value. In other words, the meals state variable 
@@ -7423,7 +7409,7 @@ user is allowed to eat today.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-f.webp?raw=true"
   alt="MealsList to Counter vis siblings components."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>While this coding components structure may look good, there is a bit of a problem. 
 The counter component needs to get state information from the mealsList components, 
@@ -7438,7 +7424,7 @@ mealsList component?</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-g.webp?raw=true"
   alt="MealsList to App via state components."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Let's explore a possible solution. First, you can simplify the mealsList component by 
 extracting the returned value into its own components, then you can work with the separate 
@@ -7449,7 +7435,7 @@ components to display different meal items. Let's call this new component mealsI
 <p align="center" width="100%">
 <img src="/images/w2-s17-h.webp?raw=true"
   alt="App to MealsList to MealItem components."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To do this, you can use the practice known as lifting state up. This means that you move the 
 state from mealsList up to the app components, then you can pass stage three props using the 
@@ -7466,7 +7452,7 @@ component.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-i.webp?raw=true"
   alt="Prop drilling passing parent to child and grandchild."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The question you must now ask is, what is wrong with prop drilling? Prop drilling is 
 a commonly used term to describe having to pass Stage 3 props in several layers of 
@@ -7488,7 +7474,7 @@ places in my app, that's a global state issue.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s17-j.webp?raw=true"
   alt="API cuts out prop drilling and lifting state up."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>An elegant solution for this issue is Reacts Context API. One way to think about the context 
 API is that it cuts out the middleman. There's no need for prop drilling and lifting state up.</p>
@@ -7498,7 +7484,7 @@ API is that it cuts out the middleman. There's no need for prop drilling and lif
 <p align="center" width="100%">
 <img src="/images/w2-s17-k.webp?raw=true"
   alt="Components which needs data gets it from the context API."
-  width="40%" />
+  style="width:40%" />
 </p>
 Instead, the component that needs the data simply gets it from the context API. The way that 
 this is achieved is by extracting the state into a separate file that holds the state in 
@@ -7597,7 +7583,7 @@ should alert the string that comes from the props.msg prop.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s18-a.webp?raw=true"
   alt="Illustrating the boundaries of each component."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>This screenshot illustrates the boundaries of each component. The Main component can’t 
 be found in the UI because it’s just rendering the Header component. The Header component 
@@ -7612,7 +7598,7 @@ button, as an alert:</p>
 <p align="center" width="100%">
 <img src="/images/w2-s18-b.webp?raw=true"
   alt="I passed through the Header and Wrapper to reach the Button component."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>The alert’s message reads “I passed through the Header and the Wrapper and I reached 
 the Button component”.</p>
@@ -7633,7 +7619,7 @@ Fortunately, there are tools available to help you do just that.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-a.webp?raw=true"
   alt="How context API is used to manage state and perform basic state management."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By the end of this section (19), you'll understand how context API can be used to 
 manage state more efficiently across multiple levels of components. You'll also be 
@@ -7645,7 +7631,7 @@ found in context API.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-b.webp?raw=true"
   alt="Passing state from 1 component to another component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By this point, you're probably familiar with the practice of passing states from 
 one component to another by using props. While passing props helps to manage states, 
@@ -7656,7 +7642,7 @@ it is like taking a bus and going through each stop before you get off at the en
 <p align="center" width="100%">
 <img src="/images/w2-s19-c.webp?raw=true"
   alt="Context API is like teleporting to your destination."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In comparison, using the context API is like teleporting to your destination 
 instantly. It's a way to bypass the redundant passing of data through multiple levels 
@@ -7667,7 +7653,7 @@ of components.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-d.webp?raw=true"
   alt="Context Provider to store state."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>To set it up, you need to add a piece of code that will be your context provider. 
 It's also where the state will be stored. When a component needs to use the state, 
@@ -7678,7 +7664,7 @@ it becomes a context consumer.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-e.webp?raw=true"
   alt="Utilizing context API to control state."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Now let's examine a simple app that utilizes the context API to control state. 
 In my app.js file, I'll use some code for a star to set up. You can also find 
@@ -7690,7 +7676,7 @@ with context API.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-f.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>In the app components, I have import statements for meals provider and meals list. 
 The meals provider provides contexts state data and gives it to all the components 
@@ -7703,7 +7689,7 @@ return  statements.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-g.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>The meals provide a component to holds all the states which is organized with the help of the context API.  First I set the meals contexts variable using the React.createContext function. Next, I declare the today's meals array, which contains several food items saved as strings. I then coach the meals provider as an ES6 function that accepts the children value. This value holds everything that we wrapped into the meals provider component when it gets rendered inside the app component. The children value is just returned from the meals provider, wraps into the MealsContexts.Provider JSX elements.</p>
 
@@ -7716,7 +7702,7 @@ return  statements.</p>
 <p align="center" width="100%">
 <img src="/images/w2-s19-h.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 
 <p>Let's break down how this component works in more detail. First, I'm destructuring the meals property from the objects returned from the use meals list context call. The original object has a single property named meals, which holds an array of three meals strings.</p>
@@ -7729,7 +7715,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s19-i.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Lastly, let's examine the counter component. Note that it gets the context data in the same way that the meals list component does. This is the usefulness of having a centralized state store. It allows me to simply reach into the states provider directly from whatever components needed without having to do prop drilling or lifting upstate.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7738,7 +7724,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s19-j.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Next, let me show you how the useReducer hook works. Let's move on to the useReducer hook. You can think of it as a superpower to use states. While the use state hook starts with an initial state, the useReducer also gets a reducer function in addition to the initial state. Let me illustrate that with a code example.</p>
 <p>Let's say I have a rideshare app that represents the amount of money in my wallet. The initial state is a value of 100 and the action of picking up a customer increases the value while the action of refueling my vehicle decreases it. I've applied to reduce a function which takes in the state and the action. Instead of using set states like in the use state hook, I'll use the dispatch method of the useReducer hook, which accepts an object literal with a single property type set to a matching action.type whose behavior is defined inside the reducer function.</p>
@@ -7748,7 +7734,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s19-k.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Now when I interact with this app in the browser, I can increase the money value by clicking the a new customer button or decrease it by clicking be refilled the tank button.</p>
 <p>In this section (19), you learned how the useContext and useReducer hooks can be used to manage state more efficiently across multiple levels of components.</p>
@@ -7762,7 +7748,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-a.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By the end of this section (20), you'll be able to describe the differences between types of state and choose the best types to suit a given need and explain how the dynamic nature of React calls a structured decisions to influence complexity.</p>
 <p>The distinction between stateful and stateless components is that a stateful component holds states as internal data and its state changes based on the way that the app is built; often as a result of user actions. A stateless component however, doesn't store states and any changes must be inherited through props.</p>
@@ -7772,7 +7758,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-b.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>When deciding if a component should be stateless or stateful, you can refer to the following rules. Use stateless components when your component doesn't need to maintain its own state in order to work. Use stateful components when your component does need to maintain its own state in order to work.</p>
 
@@ -7783,7 +7769,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>A common approach for organizing components in React is to have a stateful component as the parent which then sends its states down to several stateless components that then receive the state and render it on the screen. The children components are stateless because they don't have their own state and only receive their parent state when passed down by using props.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7792,7 +7778,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-d.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Keep in mind that you should never change the values of props in children components as they are immutable. Now that you know the basic logic, let's break down a specific example of this approach in action starting with two components; the app component and the child  component which returns a message. In the app component, the useState hook defines and keeps the states that will be passed to the child component as the props object. The app component renders the child component and passes the date to it in a string format as a prop named message.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7801,7 +7787,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-e.webp?raw=true"
   alt="."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>One thing to keep in mind and something that is often overlooked by React beginners is that a prop doesn't always have to pass state. In addition to state, JavaScript values and functions can also be passed to the child component. It's still data but it's props data rather than state data.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7810,7 +7796,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-f.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In the child component, there is an h1 element. The content of this element will be the message prop that is passed into the component. Note the props are not changed or updated and the components as they are immutable, meaning they can't be changed. Since the child component doesn't store any state, it is a stateless component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7819,7 +7805,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s20-g.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>All of its data comes from the props passed into the component. The app component stores the state which can be changed through events and functions and is therefore a stateful component.</p>
 <p>In this section (20), you learned why and when to utilize stateful or stateless components in your React apps based on your specific needs. You also observed that although a stateless component can't directly pass state, it can still trigger actions that will update the state of other components.</p>
@@ -7890,7 +7876,7 @@ This code is probably more complex than most of what you have encountered. Don't
 <p align="center" width="100%">
 <img src="/images/w2-s21-a.webp?raw=true"
   alt="Where should the state go?  Move state from fruits component to the app component."
-  width="80%" />
+  style="width:80%" />
 </p>
 
 <h4>Step 1.</h4>
@@ -7974,7 +7960,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <p align="center" width="100%">
 <img src="/images/w2-s22-a.webp?raw=true"
   alt="Click, scroll and/or cancel."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Now that you've completed this lesson, you can describe how data flows in react, including data from a parent to a child component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7983,7 +7969,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <p align="center" width="100%">
 <img src="/images/w2-s22-b.webp?raw=true"
   alt="JavaScript and HTML."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Explain what state is and how it relates to component behavior. And describe some common approaches for state management.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -7992,7 +7978,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <p align="center" width="100%">
 <img src="/images/w2-s22-c.webp?raw=true"
   alt="State, styling and ternary."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To sum it up in this module, you've learned about two of the most important things that make react apps interactive namely state and events.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8001,7 +7987,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 <p align="center" width="100%">
 <img src="/images/w2-s22-d.webp?raw=true"
   alt="Stateless (not needed to work) vs. Stateful (State must be maintained to work)."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ w2-s22-e/f. data and states module summary (module 2) (199) ~~~~~~~~~~~~~~~~-->
@@ -8013,7 +7999,7 @@ Now all that you need to do is to update the code in the Fruits components to ac
 &nbsp; &nbsp; &nbsp; &nbsp;
 <img src="/images/w2-s22-f.webp?raw=true"
   alt="Module 2 Summary, part ii. Data and States."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In the upcoming module, you'll learn about working with links and routing as well as using assets in react. This should finalize your preparations for coding your own portfolio project in react. Excellent. You've made great progress in your journey towards becoming a react developer.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 23 of module 2 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8051,7 +8037,7 @@ of content in response to user status or choice.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s01-a.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In this section (01), you will learn about the basic types of navigation on websites and how the navigation process works in React. Now, if you think about the history of web layouts and web navigation, it's likely development of other great inventions throughout history.</p>
 <p>For example, after the Wright Brothers flew the first plane in 1903 and Kitty Hawk, North Carolina, there was a period of a few decades where engineers were experimenting with different designs. Planes with two or three sets of wings were the order of the day. Finally, after this initial exploration stage, airplane design settled down and the rules and best practices of building airplanes were established.</p>
@@ -8061,7 +8047,7 @@ of content in response to user status or choice.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s01-b.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Like the development of rules of airplane construction, after the experimental years of the early web, the Web Design and Development Community settled on a few accepted unexpected designs. The focus and modern website navigation user interfaces is on utility. Stephen Krug's famous book on user experience Don't Make Me Think sums up the rule that developers are following today.</p>
 <p>It's your duty as a web developer and designer to follow the best practices that have already been established. For example, a steering wheel does not belong on a washing machine, or an old-style phone dial does not belong in a car. In the same way, you wouldn't want to confuse your website visitors by giving them navigation that might look and feel smart, but that's completely different from what their used to.</p>
@@ -8071,7 +8057,7 @@ of content in response to user status or choice.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s01-c.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>You might be wondering what is accepted modern website navigation, and how does it work in React. Website navigation is the parts of any website that allows you to browse through various pages or links on that website from a single component. There are several practical implementations of this user interface pattern. Let's explore each briefly now.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8080,7 +8066,7 @@ of content in response to user status or choice.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s01-d.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The most common navigation components are, a horizontal navigation bar, a vertical navigation menu, a menu hiding behind a button, and a footer navigation menu.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8089,7 +8075,7 @@ of content in response to user status or choice.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s01-e.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>The horizontal navigation bar is often referred to as a navbar, and the vertical navigation bar is also known as a sidebar navigation. The menu hiding behind the button is usually represented by an icon that has three horizontal lines and is thus referred to as the burger icon or the burger menu.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8098,7 +8084,7 @@ of content in response to user status or choice.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s01-f.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Alternative to this is the drop-down navigation menu, known as the mega menu. This menu is usually also hiding behind a button and it's usually used as a sub or large menu on e-commerce sites and other sites that require many links. 
 The footer navigation menu is usually displayed as several visual columns containing links. All these mentioned menu patterns can often be used simultaneously in different parts of the same page.</p>
@@ -8108,7 +8094,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-g.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Additionally, a more complex navigation UI can include multiple navigation approaches in a single component. You may, for example, have a horizontal navigation bar or navbar with drop-down menu items.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8117,7 +8103,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-h.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>If you're using a smaller resolution, the navigation bar displays as a burger menu icon. When you click on the burger menu icon a mobile sidebar or a vertical menu appears. Now you're familiar with some of the navigation types that are available in your React apps.</p>
 
@@ -8128,7 +8114,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-i.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>While visually everything looks the same, in the code, React navigation works a bit differently. This is because the entire app is loaded inside a single div. You're not actually visiting different pages like you would with hyperlinks and HTML files. Instead, the content of that single div is controlled by React, and it's based on changes to the virtual DOM. It either updates the existing view or loads a completely new view, giving the user the impression of visiting a completely different URL.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8137,7 +8123,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-j.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Recall that with HTML, developers can use a list to make a navigation menu. Each list item contains a hyperlink to an HTML file, then some CSS to style the menu, like the display inline property to make the list display horizontally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8146,7 +8132,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-k.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To help illustrate how React's navigation works, think about how the buttons on the inside of an elevator work. Pressing the button will take you to the selected floor. Similarly, if you click on it, each link on a website takes you to a different page.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8155,7 +8141,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-l.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 <p>If however, you're in a React elevator, It says if the elevator never moves.</p>
@@ -8165,7 +8151,7 @@ The footer navigation menu is usually displayed as several visual columns contai
 <p align="center" width="100%">
 <img src="/images/w3-s01-m.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Instead, when you press a button in this React's elevator, the entire construction of that given floor is injected into a single floor of this impossible building.
 However, this functionality is not available to developers from the React's library itself. In order to achieve this illusion of a multi-page website, you need to add the React router library to your React projects.</p>
@@ -8175,7 +8161,7 @@ However, this functionality is not available to developers from the React's libr
 <p align="center" width="100%">
 <img src="/images/w3-s01-n.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Once again, you add this using the import statement and you'll learn more about how to do this soon.</p>
 
@@ -8215,7 +8201,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s02-a.webp?raw=true"
   alt="Traditional Page Lifecycle."
-  width="40%" />
+  style="width:40%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s02-b. spa page lifecycle (207) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8223,7 +8209,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s02-b.webp?raw=true"
   alt="SPA Page Lifecycle."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 <h4>An Example of a Single-Page App</h4>
@@ -8242,10 +8228,10 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s02-c.webp?raw=true"
   alt="SPA templates."
-  width="40%" />
+  style="width:40%" />
 <img src="/images/w3-s02-d.webp?raw=true"
   alt="Traditional page application."
-  width="40%" />
+  style="width:40%" />
 </p>
 
 <p>You have a web application that has a navigation bar on top and two pages. One page shows the latest news, and the other shows the current user’s profile page. The navigation bar contains a link for each page.</p>
@@ -8269,7 +8255,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-a.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Let's examine a starter app that I've already prepared. It has two components which are named Homepage and Aboutme. Currently, Homepage is written to display the header text, Welcome to my site on the page. The Aboutme component displays the header text About Me. Both components are children of the app component.</p>
 <p>Notice that Homepage and Aboutme are both imported into the app component and referenced using anchor tags. However, with the default React library, these anchor tags won't work as expected. This is because React can't imitate multi-page websites.</p>
@@ -8279,7 +8265,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-b.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>However, I can make this possible with the help of another library known as React Router.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8288,7 +8274,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-c.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>As you may have guessed from the name React Router gives you more control over the routing of components. I'll install it using the npm command, npm i react-router-dom@6. To confirm that it's available, I inspect package.json and find the new entry in the dependencies, which is react-router-dom 6.3.0. Now that react-router is installed, I'm ready to make my broken links work.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8297,7 +8283,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-d.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~ w3-s03-e.  (2) ~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8305,7 +8291,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-e.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>First, I'll access the index.js file, and enter a statement to import browser router from react-router-dom. Once I've imported it, I need to wrap the app jsx element inside the browser router by placing it between the browser router tags.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8314,7 +8300,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-f.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>With that done, let's return to app.js. Here I need to import routes and route from react-router-dom. I also need to replace the child jsx elements with some different code. Homepage becomes route path equals and then forward slash between double quotes. This is followed by element equals and then the homepage jsx elements inside of curly braces. Note that the route tag is self-closing and has no children inside. For Aboutme, I add a similar line, but I'll add about-me after the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8323,7 +8309,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-g.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>These slides will also be encased between route tags. If I go to my browser and type the exact link on one of the routes, for example, /Aboutme, I'll get only the Aboutme components showing under the navigation. However, if I remove the Aboutme from the URL, in other words, if I open the root route that is represented with a forward slash, then it will show the text from the homepage component under the navigation bar.</p>
@@ -8333,7 +8319,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-h.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>Notice that I'm grouping all the routes by wrapping them inside the routes jsx element. Also note that the nav tags are outside of the routes tag, meaning that navigation is outside the routes.</p>
@@ -8343,7 +8329,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-i.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>Finally, I need to replace the anchor tags with React router links. This allows the correct component to be loaded when the link is clicked, rather than simply refreshing the page. In the app component, the anchor tag for homepage becomes link to equals and then the forward slash between double quotes. This is followed by class name equals and then nav-item in double quotes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8352,7 +8338,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-j.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 <p>For Aboutme, the change is similar except that about-me appears after the forward slash.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8361,7 +8347,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-k.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <p>I also need to import link from react-router-dom and save my changes. Now when I click on either of the navbar links, the correct content loads in the browser.</p>
@@ -8371,7 +8357,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s03-l.webp?raw=true"
   alt="."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>In this section (03), you learned how to install the react-router library and neutralize some of the key functionalities to create a navbar. Now you're ready to learn about more efficient ways for users to navigate your apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 04 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8427,7 +8413,7 @@ A Single Page Application allows the user to interact with the website without d
 <p align="center" width="100%">
 <img src="/images/w3-s04-a.webp?raw=true"
   alt="."
-  width="70%" />
+  style="width:70%" />
 </p>
 
 <h4>Step 1</h4>
@@ -8574,7 +8560,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-a.webp?raw=true"
   alt="Three (3) level tree of event - components - web page."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>And when you have components that are responsive to events such as clicks, this can add another layer of complexity. Fortunately, there are several approaches for writing the logic to ensure that this process goes smoothly and requires less work from you.</p>
 <p>By the end of this section (05) you'll have a high level understanding of conditional rendering and know how to set it up using ternary operators.</p>
@@ -8584,7 +8570,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-b.webp?raw=true"
   alt="Data to props and state."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>Recall that state is a component internal data, which that component can control or change as opposed to props, which the component receives but cannot alter.</p>
 <p>In an app, you can render components conditionally based on whether a specific state data has specific values. In other words, when you write the rendering logic in the main app component, you'll need to reference the state of the other components.</p>
@@ -8594,7 +8580,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-c.webp?raw=true"
   alt="ToggleButton.js - false state."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 <p>For example, suppose you have a component that contains code for a button that shows a sidebar, the button controls the state of the toggle sidebar variable, which is set to false.</p>
@@ -8604,7 +8590,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-d.webp?raw=true"
   alt="ToggleButton.js to true state as sidebar."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 <p>When the button is clicked, the state of the toggle sidebar variable is updated to True, and the sidebar component is displayed.</p>
@@ -8614,7 +8600,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-e.webp?raw=true"
   alt="JavaScript - conditional if statement example."
-  width="50%" />
+  style="width:50%" />
 </p>
 <p>To make this possible react works with conditional concepts and syntax that are already available in JavaScript. For example, recall the conditional if statement in JavaScript, developers use it to run code conditionally based on whether something is either true or false.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8623,7 +8609,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-f.webp?raw=true"
   alt="Conditional boolean; Get it Done or Get Some Rest."
-  width="50%" />
+  style="width:50%" />
 </p>
 
 <p>To illustrate conditional rendering in action, let's first consider an example productivity app. Based on the device's data at the time of access, the app displays one of two messages.  For work days, the message is, Get it done! For weekends, it displays, Get some rest. As a developer, there are a few ways you can achieve this functionality in react.</p>
@@ -8633,7 +8619,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-g.webp?raw=true"
   alt="CurrentMessage component."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>But in this section (05), you'll focus on using the ternary operator to write simplified, if else conditions, you start by creating a component called CurrentMessage.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8642,7 +8628,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-h.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>This component uses the built in date function in JavaScript, along with the get day method to store the day of the week as a number, where zero represents Sunday, and six, the following Saturday.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8651,7 +8637,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-i.webp?raw=true"
   alt="Two components (workdays and weekends); each with a message."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Next, you create the two components that each holds one of the messages to be displayed. Let's name these components Workdays and Weekends. The current message component needs to render the appropriate components based on the value returned from the getDay function call.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8660,7 +8646,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-j.webp?raw=true"
   alt="Ternary operator example."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>Let's set up the conditions to make that happen. Recall that the ternary operator takes three commands. First is the condition, which in this example uses the logical and operator. The condition checks if the value stored in the day variable is greater than or equal to one, and less than or equal to five. Then the question mark symbol, followed by the expression to execute if the condition evaluates as true.</p>
@@ -8672,7 +8658,7 @@ set to {&lt;Contact /&gt;}.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s05-k.webp?raw=true"
   alt="IsItSummerYet component - boolean yes or no."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>So let's refer to a simpler version that uses boolean values. In this example component, IsItSummerYet, the variable summer is set to a value of true. A ternary operator returns to the expression after the question mark if the condition before the question mark is true. Otherwise, it returns the expression after the colon symbol. So since the variable, summer, evaluates to true, rendering this component will return the string, Let's go to the beach.</p>
 <p>In this section (05), you learned about conditional rendering and how to implement it within dynamic apps by using ternary operators.</p>
@@ -8867,7 +8853,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s08-a.webp?raw=true"
   alt="Customized stater app."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>I use the create react app to build the starter react app. I'll go through the code in this customized starter app to demonstrate some conditional rendering and practice.  The goal of my app is to use the local computers' time and based on the return values, output various messages inside the same return statement. All wrapped in a single development.</p>
 <p>Specifically, I want to quote a small app that displays a message for a given work day. And if it's morning time, ask the user if they've had their breakfast yet. I start my app component code by declaring a time variable and assigning the call to the date constructor to it. I then set the day variable.  And I used the built-in to locale string function that exists on the date object to specify the locale as English US. I also specify the weekday value as long which displays the days as full words such as Monday, Tuesday, Wednesday, and so on. Next, I declare a morning variable that stores a Boolean value based on whether the current time is greater than or equal to 6 and less than or equal to 12. Finally, I declare a day message variable but I'm not assigning any value to it yet.</p>
@@ -8881,7 +8867,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s08-b.webp?raw=true"
   alt="Happy Monday React example."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>If I change the get hours value from 12 to 19 and save my code. Notice that a new message is displayed underneath the heading that reads have you had breakfast yet? That's all it takes to build quite a dynamic component that conditionally renders various kinds of strings in its return statement.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8890,7 +8876,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s08-c.webp?raw=true"
   alt="Conditional rendering and React."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In this section (08), you learned about the various approaches to conditional rendering and react using the if-else statement. And ternary operators to render components conditionally.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 09 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8915,7 +8901,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-a.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By the end of this section (10), you'll know what assets are and how developers keep them organized in React. You'll also learn some of the common ways to import asset files to be used in your React apps.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8924,7 +8910,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-b.webp?raw=true"
   alt="Images, Stylesheets, Fonts and Any files needed."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Let's begin by making sure you fully understand what developers mean when they mention the term, assets. In React, assets can be things like images, style sheets, fonts, media files, or basically any file that's needed by your app at runtime. In other words, assets are all the files that your React app needs to have access to in order to work as intended.</p>
 <p>For example, you might code your app to display specific images or use certain fonts. But if you run your app without these being available, it might exhibit unexpected behavior, such as displaying a placeholder when using a default font.</p>
@@ -8934,7 +8920,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>That's why it's important to keep assets easily and readily available to your components. A common way to do this is to add an assets folder inside of a source folder and keep all your apps assets there. Some assets can also be placed inside the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8943,7 +8929,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For example, in the default React installation, you'll find that some images such as favicon and Logo 512 are stored there by default. The general rule for asset storage is that if your app can compile without it, you can keep it in the public folder.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8952,7 +8938,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For instance, favicon is in the public folder because no component depends on it. In other words, React doesn't need to use the favicon file to compile all the components into an app that will get served in your local browser while you're building your app.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8961,7 +8947,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-f.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>However, suppose you have an image that needs to be imported into one of the app components, then it's best stored in the assets folder. Now you're familiar with the concept of assets in React. Let's explore how to use assets.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8970,7 +8956,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Suppose you're a developer working on an app that helps people adopt animals in their local area. You have built most of the apps components, but you are waiting on the adoption center to send you pictures of the animals that are looking for a new home. In preparation for this, you create the assets folder in the React application. The pictures arrive and you place them inside the assets folder so they can be added to your components.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8979,7 +8965,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-h.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>To add an asset file to a component, you first need to import it. This can be done with an import statement. For example, suppose these components will display a picture of a cat, you type the keyword, import, followed by the name you want to give your asset.</p>
 
@@ -8990,7 +8976,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-i.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>The next step is to create the function and write a return statement. Inside the return statement, you use the image tag and then set the source attribute to reference the asset's name, which is cat in curly braces.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -8999,7 +8985,7 @@ check. You will use this often when developing React applications.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s10-j.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Alternatively, instead of the asset name, you can reference the path to the assets folder relative to the component. You can do this with the require keyword as well as curly braces that encase the JSX Expression and act as delimiters. It's important to know that with this method, you no longer need the import statement. This is because you're using the required syntax right inside the JSX Expression that's assigned to the SRC JSX attribute.</p>
 
@@ -9098,7 +9084,7 @@ the import statement using the require function to set the file path, or by prov
 <p align="center" width="100%">
 <img src="/images/w3-s12-a.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>To demonstrate how you can work with embedded assets, I've created a basic app 
 called Embedded Assets. In my app source folder I added the assets folder which 
@@ -9110,7 +9096,7 @@ folder named Central Park.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s12-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>To view the code of the app component, I click on the app.Js file. Notice that the 
 starting code of my app component just under some text that describes the task at 
@@ -9121,7 +9107,7 @@ hand, which is to display three images with some styling.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s12-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>For this, I'm going to demonstrate the three distinct ways to import images and react. 
 The first way is to use the import method and I want to demonstrate how you set a name for 
@@ -9139,7 +9125,7 @@ save my file and notice that my image now displays in the browser.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s12-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Okay, so that's one way to import an image using the import statement. The second way to 
 import an image is by using the require keyword.  To do this, I create this image with an 
@@ -9156,7 +9142,7 @@ image. I just require it and provide the string with the relative path to the im
 <p align="center" width="100%">
 <img src="/images/w3-s12-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Now I'll demonstrate the third way to import an image asset by loading an image file hosted on the internet. Instead of a local file, this time I want to display a random image URL from a photo hosting website. To do this, I create a variable by typing const than the variable name random image URL that I use the equals operator followed by the URL for the random image. I can now add my third image element inside the return statement. To do this, I add random image URL to the source attribute.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9165,7 +9151,7 @@ image. I just require it and provide the string with the relative path to the im
 <p align="center" width="100%">
 <img src="/images/w3-s12-f.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>So there you have it. The three different ways to use image assets in a react component.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ section: 13 of module 3 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9200,7 +9186,7 @@ image. I just require it and provide the string with the relative path to the im
 <p align="center" width="100%">
 <img src="/images/w3-s13-a.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 
 <p>Step 1
@@ -9260,7 +9246,7 @@ consuming, and sharing video and audio content daily on our devices.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s14-a.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>By the end of this section (14), you'll learn how React developers use audio and 
 video assets within an app. You'll also explore how to find suitable React packages 
@@ -9272,7 +9258,7 @@ to load a local video asset into your React app using just HTML.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s14-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>You can use the readily available HTML5 video tag to load a local video asset to your 
 React app. Like loading an image or any other kind of asset file, you can just declare a 
@@ -9295,7 +9281,7 @@ React component.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s14-c.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>You might be wondering, why do you want to prepare it as a separate component? 
 One of the reasons is that you'd be able to easily switch one video with another 
@@ -9307,7 +9293,7 @@ video output that way. So far, you've learned about two ways of adding videos to
 <p align="center" width="100%">
 <img src="/images/w3-s14-d.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>The first method involves just serving a local video using the video element, and 
 the second method is using embedded third-party videos.</p>
@@ -9317,7 +9303,7 @@ the second method is using embedded third-party videos.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s14-b.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>There's another approach you may consider, namely using a third-party NPM package 
 to streamline the process of adding videos to your app. The NPM package ecosystem is 
@@ -9328,7 +9314,7 @@ huge. If you visit the npmjs.org website, you'll find millions of various packag
 <p align="center" width="100%">
 <img src="/images/w3-s14-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>To make it easier on yourself, type React video in the search bar of the 
 npmjs.org website to find some of the frequently downloaded NPM packages. 
@@ -9344,7 +9330,7 @@ will help you make an informed decision on which package to choose.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s14-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 An example of a package that fits all these criteria is the React player package. Visit 
 the packages GitHub URL at github.com/CookPete/react-player. You'll find that they 
@@ -9356,7 +9342,7 @@ regularly maintained. What is the meaning of the stars?</p>
 <p align="center" width="100%">
 <img src="/images/w3-s14-h.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>When a developer visits any repository on GitHub, they can show their appreciation of the 
 project by clicking the Start button. This is known as starring a repo. This can be done for 
@@ -9436,7 +9422,7 @@ volume.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-a.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Let's examine another app that I've created using create react app. Currently it's pretty 
 basic and only renders an 81 heading that reads React Player example, let's make that heading 
@@ -9449,7 +9435,7 @@ import it into my app component.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-b.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>To install the module, I'll run the command $ npm install react-player. Once it has 
 finished installing the module becomes available to any component in my project but only 
@@ -9460,7 +9446,7 @@ if I import it.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-c.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>So I'll use the command import react player followed by react player and double quotes.  
 Now I'm ready to add the imported react player package as a component and render it from 
@@ -9471,7 +9457,7 @@ the app component.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>I also want to pre set a few settings for the player specifically to ensure 
 that the video doesn't play automatically on the page loads and to have the starting 
@@ -9487,7 +9473,7 @@ been set up yet.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-e.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>So let's add that link to the video RL variable now that everything is set up. 
 I'll click file and save and then verify that everything works as expected in the 
@@ -9499,7 +9485,7 @@ half the volume so it seems that everything is correct.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-f.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 <p>Finally, you can find the projects get happy or L at dot com slash cook pete 
 with a capital C and capital P slash react dash player.</p>
@@ -9509,7 +9495,7 @@ with a capital C and capital P slash react dash player.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-g.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>This page contains an about section on the right in which you'll find a link to the 
 live demo on the link page.</p>
@@ -9519,7 +9505,7 @@ live demo on the link page.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s16-h.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>You can select from several video sources and change the video settings such as 
 playback speed, light mode, loop and more. If you would like to know more about the 
@@ -9586,7 +9572,7 @@ change common settings for the react player.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s17-a.webp?raw=true"
   alt="."
-  width="80%" />
+  style="width:80%" />
 </p>
 
 <p>Step 1<br>
@@ -9745,7 +9731,7 @@ various pages or links on that website from a single component.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-a.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>In modern website navigation, the user interface is all about functionality. 
 You learned about the most common navigation components, like the horizontal 
@@ -9756,7 +9742,7 @@ navigation bar, or navbar.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-b.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>But of course, most websites have more complex navigation UI that include 
 multiple navigation approaches in a single component, like combining a horizontal 
@@ -9767,7 +9753,7 @@ navbar with drop-down menu items.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-c.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>You learned that there's a key difference between the navigation of websites built 
 with React, versus those built with HTML and CSS. With React-powered web pages, 
@@ -9782,7 +9768,7 @@ different pages.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-d.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>To achieve the solution of a multi-page websites, you learn that you need to add the 
 React Router library to your React projects, and you practice using it to create and 
@@ -9793,7 +9779,7 @@ implement the basic navigation routes for our webpage.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-e.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In this lesson's ungraded lab, you used code from the lesson item title to the navbar, 
 and you had to add another link to the existing code.</p>
@@ -9803,7 +9789,7 @@ and you had to add another link to the existing code.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-f.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>After this, you learned about conditional rendering, which is necessary for React 
 to be able to dynamically change webpage content. As part of this section, you learned 
@@ -9819,7 +9805,7 @@ common ways to import asset files.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-g.webp?raw=true"
   alt="."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>A common way to organize assets is to add an assets folder inside of the source folder, and 
 keep all your app's assets there. Some assets can also be placed inside the public folder. The 
@@ -9831,7 +9817,7 @@ in the public folder.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-h.webp?raw=true"
   alt="Embedded assets: Advantages and Disadvantages."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>In this part of the module, you learned how to use embedded assets, and about the 
 advantages and disadvantages of embedding assets, as well as about the trade-offs 
@@ -9842,7 +9828,7 @@ inherent in using asset-heavy apps.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-i.webp?raw=true"
   alt="Ungraded lab: Add an image."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>In the first ungraded lab of this lesson, you learned how to add an image from 
 the assets folder that had already been added to the SRC folder. What's more, you 
@@ -9855,7 +9841,7 @@ how to find suitable React packages to use when working with audio and video fil
 <img src="/images/w3-s18-j.webp?raw=true"
   alt="Three ways to add videos; serving local video, using embedded 3rd-party asshole videos, 
   streamline using NPM."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>You learned about three ways of adding videos to your apps; by serving a local video 
 using the video elements, using embedded third-party videos. We're using a third-party 
@@ -9866,7 +9852,7 @@ NPM package to streamline the process of adding videos to your app.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-k.webp?raw=true"
   alt="Frequency of updates, Github page, Internet search."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>Additionally, you learned what you can do to help you decide what package to use. 
 You should check the frequency of updates, check the packages GitHub page, and perform 
@@ -9880,7 +9866,7 @@ media player in a React app.</p>
 <p align="center" width="100%">
 <img src="/images/w3-s18-l.webp?raw=true"
   alt="Final ungraded lab and finish already built app to play bird sounds."
-  width="40%" />
+  style="width:40%" />
 </p>
 Your final ungraded lab of the module was to finish an already-built app with a user interface that allows visitors to play bird sounds by pressing buttons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -9889,14 +9875,14 @@ Your final ungraded lab of the module was to finish an already-built app with a 
 <p align="center">
 <img src="/images/w3-s18-m.webp?raw=true"
   alt="Describe React navigation design and more."
-  width="30%" />
+  style="width:30%" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~ w3-s18-n. explain react project structure and more (257) ~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <img src="/images/w3-s18-n.webp?raw=true"
   alt="Explain React project structure, use and manipulate image and media assets."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>Now that you've completed the module, you should be able to describe navigation design in 
 React with a focus on single and multi-page navigation, create and implement a root in the 
@@ -9932,11 +9918,11 @@ calculator app.</p>
 <p align="center">
 <img src="/images/w4-s01-a.webp?raw=true"
   alt="Course summary: Basics of working with React."
-  width="30%" />
+  style="width:30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/images/w4-s01-b.webp?raw=true"
   alt="Course summary part ii: Basics of working with React."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>In this course, you learned about the basics of working with React. Let's take a few moments to recap the key topics that you learned about. In the opening lesson, you received an introduction to React. During this introduction, you learned about React, became familiar with how React is used in the real world. You learned how to make the most of the content in this course to ensure that you succeed in your goals.</p>
 <p>You then moved on to the next lesson in which you learned about React components. In this lesson, you learned how to explain components, their architecture, and how they are rendered. Create components and update them using JSX. Describe how folders are structured in a React project and how this benefits developments. You then demonstrated your knowledge of how to import components.</p>
@@ -9946,11 +9932,11 @@ calculator app.</p>
 <p align="center">
 <img src="/images/w4-s01-c.webp?raw=true"
   alt="Course summary part iii: Components in greater detail."
-  width="30%" />
+  style="width:30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/images/w4-s01-d.webp?raw=true"
   alt="Course summary part iv: Events, event handlers and event syntax."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>In the next lesson, you explored how to use components in greater detail. This means that you can now declare functional components with props and pass them to another components. Use JSX to add styling to components. Save styles so that they can be reused later and embed JavaScript expressions in attributes.</p>
 <p>Next, you began the second module, which was focused on the roles of data and state in React. In the first lesson of this module, you learned about dynamic events and how to handle them. You can now identify the most common types of events. Use some common event handlers in your code. Use different types of syntax to write event handlers and you demonstrated understanding of the concept of user triggered events.</p>
@@ -9960,11 +9946,11 @@ calculator app.</p>
 <p align="center">
 <img src="/images/w4-s01-e.webp?raw=true"
   alt="Course summary part v: Data flow, state, hooks, stateful/stateless."
-  width="30%" />
+  style="width:30%" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/images/w4-s01-f.webp?raw=true"
   alt="Course summary part vi: Website navigation types, nav routes, conditional rendering."
-  width="30%" />
+  style="width:30%" />
 </p>
 
 <p>You then learned about the relationship between data and events. As a result, you can now describe how data flows between parent and child components and explain the concept of states in React and how it is managed.</p>
@@ -9976,7 +9962,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s01-g.webp?raw=true"
   alt="Assets in React and how to use them."
-  width="30%" />
+  style="width:30%" />
 </p>
 <p>In the final section (18) of this module, you explored assets in React and how to use them. You can now explain what assets are and the best ways to store them. Use assets that are embedded in data files and use audio and video assets in your components.</p>
 <p>You've reached the end of this course recap. It's now time to try out what you've learned in the graded assessment. Good luck.</p>
@@ -9990,7 +9976,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s02-a.webp?raw=true"
   alt="1st problem: useRef is not defined."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>The first problem is that useRef is not defined. So I'll import to useRef to fix that issue and then press control s to recompile.</p>
@@ -10000,7 +9986,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s02-b.webp?raw=true"
   alt="2nd problem: useState hook is not defined."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>The second problem is that the useState hook is not defined so let's import that as well. And when I recompile once more, the problems should be resolved.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10009,7 +9995,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s02-c.webp?raw=true"
   alt="Calculator, first draft."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>The structure of the app is there.  Currently it can only perform addition, so I need to add the other functionalities.</p>
 <p>Let's start by examining what I have for the plus function. It runs the prevent default function on the receive event object. And then it invokes a function for updating the state variable.</p>
@@ -10021,7 +10007,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s02-d.webp?raw=true"
   alt="."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <p>Reset input needs to run prevent default and I follow this with inputRef.current.value=0. For reset results, I use a different approach. I have it run prevent default but then instead of setting the value to zero directly, I have it multiplied the previous value by 0. I type this as set result followed by an arrow function that directs prevVal to return prevVal times 0. Now, if I go to the return statement of the app component, I find that I need to add the value of the current total as a JSX expression, so I type result. I can condense this code to a single line, so I'll do that.</p>
@@ -10031,7 +10017,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s02-e.webp?raw=true"
   alt="Five button components bound to on-click events."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>Next, I have to add buttons to trigger the functions that I've written. I paste in five button components that I've written previously, each of which is bound to an on click event. This component is written for the plus function so that is already taken care of. I'll update the other button components by changing the function that is called for each one as well as the text displayed on the button. So the second button calls the minus function. The third button calls times. The fourth course divide, the fifth one calls reset input and the final button calls reset results. Now, I press control s to save my changes.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -10040,7 +10026,7 @@ calculator app.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s02-f.webp?raw=true"
   alt="Simplest working calculator snapshot."
-  width="40%" />
+  style="width:40%" />
 </p>
 <p>I'm ready to test out my app so I type 2 in the input fields and then click on the add button. The result changes from 0 to 2 and then adding 2 again, updates it to 4. Next, if I type 1 and then click on subtract, the result becomes 3. If I enter 10 in the input field and click on multiply, I end up with 30 as the new result. And now, if I type 6 and click on divide, I get a value of 5.</p>
 <p>Finally, I can click reset inputs to set the value in the input field to 0. As well as click reset results to clear the results and bring it back to 0, and that's it. My code is complete and my app works as per the requirements.</p>
@@ -10127,7 +10113,7 @@ function Board({ xIsNext, squares, onPlay }) {
 <p align="center" width="100%">
 <img src="/images/w4-s03-a.webp?raw=true"
   alt="Tic-tac-toe game board, early initial version."
-  width="60%" />
+  style="width:60%" />
 </p>
 <p>If the code doesn't make sense to you yet, or if you are unfamiliar with
 the code's syntax, don't worry! The goal of this tutorial is to help you
@@ -10164,7 +10150,7 @@ export default function Square() {
 <p align="center" width="100%">
 <img src="/images/w4-s03-b.webp?raw=true"
   alt="Tic-tac-toe game board, early initial version."
-  width="60%" />
+  style="width:60%" />
 </p>
 
 <h4>Note</h4>
@@ -10200,7 +10186,7 @@ and try a local setup again later.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-c.webp?raw=true"
   alt="CodeSandBox with Starter Code."
-  width="70%" />
+  style="width:70%" />
 </p>
 <!-- {width="5.0in" height="2.3164555993000877in"} -->
 
@@ -10230,7 +10216,7 @@ this:</p>
 <p align="left" width="100%">
 <img src="/images/w4-s03-d.webp?raw=true"
   alt="X-filled square."
-  width="10%" />
+  style="width:10%" />
 </p>
 <!-- {width="0.9583333333333334in" height="0.9583333333333334in"} -->
 
@@ -10357,7 +10343,7 @@ export default function Square() {
 <p align="left" width="100%">
 <img src="/images/w4-s03-e.webp?raw=true"
   alt="Two x-filled squares."
-  width="16%" />
+  style="width:16%" />
 </p>
 <!-- {width="1.6041666666666667in" height="0.9166666666666666in"} -->
 
@@ -10370,7 +10356,7 @@ and...</p>
 <p align="left" width="100%">
 <img src="/images/w4-s03-f.webp?raw=true"
   alt="Nine x-filled squares."
-  width="64%" />
+  style="width:64%" />
 </p>
 <!-- {width="6.458333333333333in" height="1.0in"} -->
 
@@ -10419,7 +10405,7 @@ styled divs you have your tic-tac-toe board:</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-g.webp?raw=true"
   alt="Tic-tac-toe board filled with numbers 1 thru 9."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.0in" height="2.0in"} -->
 
@@ -10535,7 +10521,7 @@ must start with a capital letter.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-h.webp?raw=true"
   alt="Tic-tac-toe board filled with number 1."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.0in" height="2.054054024496938in"} -->
 
@@ -10570,7 +10556,7 @@ function Square({ value }) {
 <p align="center" width="100%">
 <img src="/images/w4-s03-i.webp?raw=true"
   alt="Value-filled board as an oops."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.0in" height="1.6666666666666667in"} -->
 
@@ -10591,7 +10577,7 @@ function Square({ value }) {
 <p align="center" width="100%">
 <img src="/images/w4-s03-j.webp?raw=true"
   alt="Empty board."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.0in" height="1.964912510936133in"} -->
 
@@ -10635,7 +10621,7 @@ export default function Board() {
 <p align="center" width="100%">
 <img src="/images/w4-s03-k.webp?raw=true"
   alt="Tic-tac-toe board filled with numbers 1 - 9."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.0in" height="2.0in"} -->
 
@@ -10813,7 +10799,7 @@ the game board. Click on any Square, and "X" should show up:</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-l.webp?raw=true"
   alt="Adding X's to board."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
@@ -10876,7 +10862,7 @@ browser section in CodeSandbox:</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-m.webp?raw=true"
   alt="React DevTools in CodeSandbox."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="5.0in" height="3.720173884514436in"} -->
 
@@ -10888,7 +10874,7 @@ top left corner of React DevTools:</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-n.webp?raw=true"
   alt="Selecting components on the page with React DevTools."
-  width="60%" />
+  style="width:60%" />
 </p>
 <!-- {width="5.0in" height="3.7in"} -->
 
@@ -11004,7 +10990,7 @@ function Square({value}) {
 <p align="center" width="100%">
 <img src="/images/w4-s03-o.webp?raw=true"
   alt="Empty board."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.0in" height="1.964912510936133in"} -->
 
@@ -11276,7 +11262,7 @@ them:</p>
 <p align="center" width="100%">
 <img src="/images/w4-s03-p.webp?raw=true"
   alt="Filling the board with x's."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
@@ -11491,7 +11477,7 @@ times:</p>
 <p align="left" width="100%">
 <img src="/images/w4-s03-q.webp?raw=true"
   alt="O overwriting an X."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- {width="2.5in" height="2.5625in"} -->
 
@@ -13059,7 +13045,7 @@ changed:</p>
   alt="Diagram showing a tree of three components, one parent labeled MyApp
     and two children labeled MyButton. Both MyButton components contain a
     count with value zero."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="4.50859908136483in"} -->
 
@@ -13073,7 +13059,7 @@ changed:</p>
     MyButton component highlighted indicating a click with the count value
 	incremented to one. The second MyButton component still contains value
 	zero."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- (width="5.0in" height="4.50859908136483in"} -->
 
@@ -13096,7 +13082,7 @@ together, you need to move the state from the individual buttons
     and two children labeled MyButton. MyApp contains a count value of zero
     which is passed down to both of the MyButton components, which also show
     value zero."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="4.6951224846894135in"} -->
 
@@ -13112,7 +13098,7 @@ together, you need to move the state from the individual buttons
     one. The flow to both of the children MyButton components is also
     highlighted, and the count value in each child is set to one indicating
     the value was passed down."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="4.695121391076116in"} -->
 
@@ -13287,7 +13273,7 @@ thought process of building a searchable product data table with React.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s04-a.webp?raw=true"
   alt="Mockup of fruit and prices."
-  width="30%" />
+  style="width:30%" />
 </p>
 <!-- width="3.125in" height="3.5208333333333335in"} -->
 
@@ -13326,7 +13312,7 @@ one piece of your data model.</p>
 <p align="center" width="100%">
 <img src="/images/w4-s04-b.webp?raw=true"
   alt="Five components in this data model example."
-  width="50%" />
+  style="width:50%" />
 </p>
 <!-- {width="5.0in" height="3.1in"} -->
 
